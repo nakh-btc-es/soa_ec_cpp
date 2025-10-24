@@ -1,0 +1,305 @@
+function aoRequiredMethods = ep_ec_aa_required_methods_get(sAutosarModelName)
+% Analyzes the AA model and returns all required methods.
+%
+%  function aoRequiredMethods = ep_ec_aa_required_methods_get(sAutosarModelName)
+%
+%  INPUT              DESCRIPTION
+%    sAutosarModelName           (string)    name of the AUTOSAR model (default = current model)
+%
+%  OUTPUT            DESCRIPTION
+%    aoProvidedMethods           (objects)   array of Eca.ec.wrapper.RequiredMethod objects
+%
+%
+% ! Requirement: Provided model has to be loaded/open.
+%
+
+
+%%
+bNonAutosar = true;
+
+if (nargin < 1)
+    sAutosarModelName = bdroot(gcs);
+end
+aoRequiredMethods = repmat(Eca.aa.wrapper.RequiredMethod, 1, 0);
+
+casAllCallerBlocks = i_getAllCallers(sAutosarModelName);
+if isempty(casAllCallerBlocks)
+    return;
+end
+
+if (bNonAutosar)
+   sArComponentPath = '';
+   sArComponentName = '';
+else
+    oArProps = autosar.api.getAUTOSARProperties(sAutosarModelName);
+    oArSLMap = autosar.api.getSimulinkMapping(sAutosarModelName);
+    sArComponentPath = oArProps.get('XmlOptions', 'ComponentQualifiedName');
+    sArComponentName = oArProps.get(sArComponentPath, 'Name');
+end
+
+[~, aiIdxUniqProtoName, aiIdxPosition] = unique(get_param(casAllCallerBlocks, 'FunctionPrototype'));
+casCallerBlocks = casAllCallerBlocks(aiIdxUniqProtoName);
+nCalls = numel(casCallerBlocks);
+
+aoRequiredMethods = repmat(Eca.aa.wrapper.RequiredMethod, 1, nCalls);
+abSelect = false(size(aoRequiredMethods));
+for iBlk = 1:nCalls
+    sCallerBlock = casCallerBlocks{iBlk};
+
+    sFunctionPrototype = get_param(sCallerBlock, 'FunctionPrototype');
+    sFunctionName = i_getFunctionName(sFunctionPrototype);
+    if ~isempty(sFunctionName)
+        try
+            if (bNonAutosar)
+                casParts = strsplit(sFunctionName, '.');
+                sArPortName = casParts{1};
+                sArMethodOrFieldName = casParts{2};            
+            else
+                [sArPortName, sArMethodOrFieldName] = oArSLMap.getFunctionCaller(sFunctionName);
+            end
+
+        catch oEx %#ok<NASGU>
+            warning('EP:FUNC_CALLER_MISSING', 'No mapped AUTOSAR method found for function caller %s.', sFunctionName);
+            continue;
+        end
+
+        abSelect(iBlk) = true;
+        aoRequiredMethods(iBlk).sCallerBlock = sCallerBlock;
+        aoRequiredMethods(iBlk).casAllCallerBlocks = casAllCallerBlocks(aiIdxPosition == iBlk);
+        
+        aoRequiredMethods(iBlk).sFunctionPrototype = sFunctionPrototype;
+        aoRequiredMethods(iBlk).sFunctionName      = sFunctionName;
+
+        [aoInArgs, aoOutArgs] = i_getFunctionArguments(sCallerBlock);
+        aoRequiredMethods(iBlk).aoFunctionInArgs = aoInArgs;
+        aoRequiredMethods(iBlk).aoFunctionOutArgs = aoOutArgs;
+
+        if bNonAutosar
+            casArReqPortPath = {};
+            sArMethodPath = '';
+            sArFieldPath = '';
+            sArServiceInterfacePath = 'IF';
+        else
+            casArReqPortPath = find(oArProps, sArComponentPath, 'RequiredPort', ...
+                'Name',     sArPortName, ...
+                'PathType', 'FullyQualified');
+            sArServiceInterfacePath = get(oArProps, char(casArReqPortPath), 'Interface', 'PathType', 'FullyQualified');
+            [sArMethodPath, sArFieldPath] = i_getMethodOrFieldPath(oArProps, sArServiceInterfacePath, sArMethodOrFieldName);
+            aoRequiredMethods(iBlk).sArComponentName = sArComponentName;       
+        end
+        aoRequiredMethods(iBlk).sArInterfaceName = i_getNameFromPath(sArServiceInterfacePath);
+        aoRequiredMethods(iBlk).sArPortName      = sArPortName;
+
+        if ~isempty(sArFieldPath)
+            aoRequiredMethods(iBlk).sArMethodName  = '';
+            aoRequiredMethods(iBlk).sArFieldName   = sArMethodOrFieldName;
+            aoRequiredMethods(iBlk).aoArMethodArgs = i_getFieldAccessArguments(aoInArgs, aoOutArgs);
+            if isempty(aoInArgs)
+                sFieldAccessKind = 'get';
+            else
+                sFieldAccessKind = 'set';
+            end
+            aoRequiredMethods(iBlk).sFieldAccessKind = sFieldAccessKind;
+        else
+            aoRequiredMethods(iBlk).sArMethodName    = sArMethodOrFieldName;
+            aoRequiredMethods(iBlk).sArFieldName     = '';
+            if ~(bNonAutosar)
+                aoRequiredMethods(iBlk).aoArMethodArgs   = i_getMethodArguments(oArProps, sArMethodPath);      
+            end
+            aoRequiredMethods(iBlk).sFieldAccessKind = '';
+        end
+    end
+end
+aoRequiredMethods = aoRequiredMethods(abSelect);
+end
+
+
+%%
+function [sArMethodPath, sArFieldPath] = i_getMethodOrFieldPath(oArProps, sArServiceInterfacePath, sArMethodOrFieldName)
+sArMethodPath = '';
+sArFieldPath = '';
+
+sArMethodOrFieldPath = [sArServiceInterfacePath '/' sArMethodOrFieldName];
+casFoundMethodPaths = oArProps.get(sArServiceInterfacePath, 'Methods', 'PathType', 'FullyQualified');
+if ~isempty(casFoundMethodPaths) && any(strcmp(sArMethodOrFieldPath, casFoundMethodPaths))
+    sArMethodPath = sArMethodOrFieldPath;
+end
+
+casFoundFieldPaths = oArProps.get(sArServiceInterfacePath, 'Fields', 'PathType', 'FullyQualified');
+if ~isempty(casFoundFieldPaths) && any(strcmp(sArMethodOrFieldPath, casFoundFieldPaths))
+    sArFieldPath = sArMethodOrFieldPath;
+end
+end
+
+
+%%
+function [aoInArgs, aoOutArgs] = i_getFunctionArguments(sCallerBlock)
+sFunctionPrototype = get_param(sCallerBlock, 'FunctionPrototype');
+sModelName = bdroot(sCallerBlock);
+
+casInArgNames = i_getInputArgs(sFunctionPrototype);
+sInArgsSpec   = get_param(sCallerBlock, 'InputArgumentSpecifications');
+aoInArgs      = i_getFunctionArgsFromSpec(casInArgNames, sModelName, sInArgsSpec);
+
+casOutArgNames = i_getOutputArgs(sFunctionPrototype);
+sOutArgsSpec   = get_param(sCallerBlock, 'OutputArgumentSpecifications');
+aoOutArgs      = i_getFunctionArgsFromSpec(casOutArgNames, sModelName, sOutArgsSpec);
+end
+
+
+%%
+function aoArgs = i_getFunctionArgsFromSpec(casArgNames, sModelName, sArgSpec)
+aoArgs = repmat(Eca.aa.wrapper.FunctionArg, 1, 0);
+if isempty(casArgNames)
+    return;
+end
+
+nArgs = numel(casArgNames);
+caxArgInstances = Simulink.data.evalinGlobal(sModelName, ['{' sArgSpec '}']);
+if (numel(caxArgInstances) ~= nArgs)
+    warning('EP:INCONSISTEN_NUMBER_OF_ARGS', ...
+        'Expected number of args %d not found in specification "%s".', nArgs, sArgSpec);
+    return;
+end
+
+aoArgs = arrayfun(@(idx) i_evalFunctionArg(casArgNames{idx}, caxArgInstances{idx}, sModelName), 1:nArgs);
+end
+
+
+%%
+function oArg = i_evalFunctionArg(sArgName, xArgInstance, sModelName)
+oArg = Eca.aa.wrapper.FunctionArg;
+
+if isa(xArgInstance, 'Simulink.Parameter')
+    if (numel(xArgInstance) > 1)
+        sOutDataTypeStr = xArgInstance(1).DataType;
+        aiSize = xArgInstance(1).Dimensions.* size(xArgInstance);
+    else
+        sOutDataTypeStr = xArgInstance.DataType;
+        aiSize = xArgInstance.Dimensions.* size(xArgInstance);
+    end
+
+else
+    aiSize = size(xArgInstance);
+
+    sClass = class(xArgInstance);
+    if strcmp(sClass, 'logical') %#ok<ISLOG> 
+        sOutDataTypeStr = 'boolean';
+    elseif strcmp(sClass, 'embedded.fi') %#ok<STISA> 
+        sOutDataTypeStr = fixdt(xArgInstance.numerictype);
+    else
+        if ~isempty(enumeration(sClass)) % special handling for enums
+            sOutDataTypeStr = ['Enum: ' sClass];
+        else
+            sOutDataTypeStr = sClass;
+        end
+    end
+end
+oArg.sName = sArgName;
+oArg.aiDim = i_createPortDimFromSize(aiSize);
+oArg.sOutDataTypeStr = sOutDataTypeStr;
+oArg.stTypeInfo = i_getTypeInfo(sOutDataTypeStr, sModelName);
+
+oArg.sDataType = oArg.stTypeInfo.sType;
+oArg.sCodeDataType = ep_ec_sltype_to_ctype(sModelName, oArg.sDataType);
+end
+
+
+%%
+function stTypeInfo = i_getTypeInfo(sDataType, sModelContext)
+hResolverFunc = atgcv_m01_generic_resolver_get(sModelContext);
+stTypeInfo = ep_sl_type_info_get(sDataType, hResolverFunc);
+end
+
+
+%%
+function aiDim = i_createPortDimFromSize(aiSize)
+if isempty(aiSize)
+    aiDim = [];
+else
+    aiDim = [numel(aiSize), reshape(aiSize, 1, [])];
+end
+end
+
+
+%%
+function aoArgs = i_getMethodArguments(oArProps, sMethodPath)
+casArgumentsPaths = get(oArProps, sMethodPath, 'Arguments', 'PathType', 'FullyQualified');
+nArgs = numel(casArgumentsPaths);
+
+aoArgs = repmat(Eca.aa.wrapper.MethodArg, 1, nArgs);
+for i = 1:nArgs
+    sArgPath = casArgumentsPaths{i};
+
+    aoArgs(i).sName = i_getNameFromPath(sArgPath);
+    aoArgs(i).sDirection = get(oArProps, sArgPath, 'Direction');
+end
+end
+
+
+%%
+function aoFieldAccessArgs = i_getFieldAccessArguments(aoInArgs, aoOutArgs)
+aoFieldAccessArgs = [ ...
+    arrayfun(@(o) i_translateSlFunctionArgToArMethodArg(o, 'in'), aoInArgs), ...
+    arrayfun(@(o) i_translateSlFunctionArgToArMethodArg(o, 'out'), aoOutArgs)];
+end
+
+
+%%
+function oArMethodArg = i_translateSlFunctionArgToArMethodArg(oFuncArg, sDirection)
+oArMethodArg = Eca.aa.wrapper.MethodArg;
+oArMethodArg.sName = oFuncArg.sName;
+oArMethodArg.sDirection = sDirection;
+end
+
+
+%%
+function casAllCallerBlocks = i_getAllCallers(sAutosarModelName)
+casAllCallerBlocks = find_system(sAutosarModelName, ...
+    'MatchFilter',    @Simulink.match.activeVariants, ...
+    'LookUnderMasks', 'all', ...
+    'FollowLinks',    'on', ...
+    'BlockType',      'FunctionCaller');
+end
+
+
+%%
+function cas = i_getInputArgs(sFunProto)
+cas = {};
+sExp = '\((.*)\)';
+tks = regexp(sFunProto, sExp, 'tokens');
+if ~isempty(tks)
+    tks2 = regexp(tks{1}{1}, '(\w+)', 'tokens');
+    for k = 1:numel(tks2)
+        cas{k} = char(tks2{k});
+    end
+end
+end
+
+
+%%
+function cas = i_getOutputArgs(sFunProto)
+cas = {};
+sExp = '(.*) *=';
+tks = regexp(sFunProto, sExp, 'tokens');
+if ~isempty(tks)
+    tks2 = regexp(tks{1}{1}, '(\w+)', 'tokens');
+    for k = 1:numel(tks2)
+        cas{k} = char(tks2{k});
+    end
+end
+end
+
+
+%%
+function sFnName = i_getFunctionName(sFunctionPrototype)
+sExp = '=*((\w|\.)+) *\(';
+tks = regexp(sFunctionPrototype, sExp, 'tokens');
+sFnName = char(tks{1});
+end
+
+
+%%
+function sName = i_getNameFromPath(sPath)
+[~, sName] = fileparts(sPath);
+end

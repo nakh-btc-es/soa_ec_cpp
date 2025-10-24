@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="CalibrationSupport"/>
+    <Architecture id="id1" name="CalibrationSupport [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="Subsystem/Subsystem/Subsystem"/>
+      <Path refId="id1" path="Subsystem.c:1:Subsystem"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In2"/>
+        <Path refId="id1" path="Sa1_In2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out3"/>
+        <Path refId="id1" path="Sa1_Out3"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

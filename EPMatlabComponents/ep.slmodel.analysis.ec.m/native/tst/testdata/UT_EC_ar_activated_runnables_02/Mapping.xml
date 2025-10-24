@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Wrapper_activated_runnables"/>
+    <Architecture id="id1" name="Wrapper_activated_runnables [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Wrapper_activated_runnables.c:1:Wrapper_activated_runnables_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in1" refId="id0"/>
+        <Path path="RteStub_in1_if_in1_p_in1_el" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in3" refId="id0"/>
+        <Path path="RteStub_in3_if_in3_p_in3_el" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Mock_op_X/dsin_op_X_y" refId="id0"/>
+        <Path path="dsin_op_X_y" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Mock_op_Z/dsin_op_Z_y" refId="id0"/>
+        <Path path="dsin_op_Z_y" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="out1" refId="id0"/>
+        <Path path="RteStub_out1_if_out1_p_out1_el" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="out3" refId="id0"/>
+        <Path path="RteStub_out3_if_out3_p_out3_el" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_op_X/dsout_op_X_u" refId="id0"/>
+        <Path path="dsout_op_X_u" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_op_Z/dsout_op_Z_u" refId="id0"/>
+        <Path path="dsout_op_Z_u" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="activated_runnables/activated_runnables/sub_A" refId="id0"/>
+      <Path path="Wrapper_activated_runnables.c:1:Wrapper_activated_runnables_step/activated_runnables.c:1:runa_A" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="activated_runnables/activated_runnables/sub_A/in" refId="id0"/>
+        <Path path="RteStub_in1_if_in1_p_in1_el" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Mock_op_X/dsin_op_X_y" refId="id0"/>
+        <Path path="dsin_op_X_y" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="activated_runnables/activated_runnables/sub_A/out" refId="id0"/>
+        <Path path="RteStub_out1_if_out1_p_out1_el" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_op_X/dsout_op_X_u" refId="id0"/>
+        <Path path="dsout_op_X_u" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="activated_runnables/activated_runnables/sub_C" refId="id0"/>
+      <Path path="Wrapper_activated_runnables.c:1:Wrapper_activated_runnables_step/activated_runnables.c:1:runa_C" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="activated_runnables/activated_runnables/sub_C/in" refId="id0"/>
+        <Path path="RteStub_in3_if_in3_p_in3_el" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Mock_op_Z/dsin_op_Z_y" refId="id0"/>
+        <Path path="dsin_op_Z_y" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="activated_runnables/activated_runnables/sub_C/out" refId="id0"/>
+        <Path path="RteStub_out3_if_out3_p_out3_el" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_op_Z/dsout_op_Z_u" refId="id0"/>
+        <Path path="dsout_op_Z_u" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

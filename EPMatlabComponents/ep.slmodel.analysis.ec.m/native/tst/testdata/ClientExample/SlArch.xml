@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_client_example\ut_results\AddModelInfo.xml" modelVersion="1.29" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_client_example\Wrapper_SWC.slx" modelCreationDate="2020-05-18T15:34:49" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.29" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_client_example\Wrapper_SWC.slx" creationDate="2020-05-18T15:34:49" modificationDate="2020-06-03T15:24:26">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_SWC" path="" sampleTime="0.05" name="Wrapper_SWC" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="B" physicalPath="Wrapper_SWC/B" path="B">
+        <boolean/>
+      </inport>
+      <parameter name="C" path="SWC/SWC/R1/Constant" physicalPath="SWC/R1/Constant" modelRef="model002" origin="explicit_param" workspace="C" initValue="1.0">
+        <boolean/>
+        <usageContext path="SWC/SWC/R1/Constant" physicalPath="SWC/R1/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="D" path="SWC/SWC/R2/Constant" physicalPath="SWC/R2/Constant" modelRef="model002" origin="explicit_param" workspace="D" initValue="0.0">
+        <boolean/>
+        <usageContext path="SWC/SWC/R2/Constant" physicalPath="SWC/R2/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="Param_A" path="Mock_getA/Constant" physicalPath="Wrapper_SWC/Mock_getA/Constant" origin="explicit_param" workspace="Param_A" initValue="1.0">
+        <boolean/>
+        <usageContext path="Mock_getA/Constant" physicalPath="Wrapper_SWC/Mock_getA/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="Param_ERR" path="Mock_getA/Constant1" physicalPath="Wrapper_SWC/Mock_getA/Constant1" origin="explicit_param" workspace="Param_ERR" initValue="0.0">
+        <uint8/>
+        <usageContext path="Mock_getA/Constant1" physicalPath="Wrapper_SWC/Mock_getA/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="last_A_and_B" physicalPath="Wrapper_SWC/last_A_and_B" path="last_A_and_B">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="new_B" physicalPath="Wrapper_SWC/new_B" path="new_B">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="B_or_D" physicalPath="Wrapper_SWC/B_or_D" path="B_or_D">
+        <boolean/>
+      </outport>
+      <display physicalPath="SWC/R1/Logical&#10;Operator" path="SWC/SWC/R1/Logical&#10;Operator" name="Logical&#10;Operator" portNumber="1" modelRef="model002" signalName="a_and_b">
+        <boolean/>
+      </display>
+      <display physicalPath="SWC/R2/Unit Delay" path="SWC/SWC/R2/Unit Delay" name="Unit Delay" portNumber="1" modelRef="model002" signalName="last_b">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="SWC/R1" path="SWC/SWC/R1" sampleTime="0.1" name="R1" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="B" physicalPath="SWC/R1/B" path="SWC/SWC/R1/B" modelRef="model002">
+        <boolean/>
+      </inport>
+      <parameter name="C" path="SWC/SWC/R1/Constant" physicalPath="SWC/R1/Constant" modelRef="model002" origin="explicit_param" workspace="C" initValue="1.0">
+        <boolean/>
+        <usageContext path="SWC/SWC/R1/Constant" physicalPath="SWC/R1/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="last_A_and_B" physicalPath="SWC/R1/last_A_and_B" path="SWC/SWC/R1/last_A_and_B" modelRef="model002">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="new_B" physicalPath="SWC/R1/new_B" path="SWC/SWC/R1/new_B" modelRef="model002">
+        <boolean/>
+      </outport>
+      <display physicalPath="SWC/R1/Logical&#10;Operator" path="SWC/SWC/R1/Logical&#10;Operator" name="Logical&#10;Operator" portNumber="1" modelRef="model002" signalName="a_and_b">
+        <boolean/>
+      </display>
+      <slfunc_caller path="SWC/SWC/R1/Function Caller" pathCaller="SWC/R1/Function Caller" pathFunction="Wrapper_SWC/Mock_getA"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="SWC/R2" path="SWC/SWC/R2" sampleTime="0.05" name="R2" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="B" physicalPath="SWC/R2/B" path="SWC/SWC/R2/B" modelRef="model002">
+        <boolean/>
+      </inport>
+      <parameter name="D" path="SWC/SWC/R2/Constant" physicalPath="SWC/R2/Constant" modelRef="model002" origin="explicit_param" workspace="D" initValue="0.0">
+        <boolean/>
+        <usageContext path="SWC/SWC/R2/Constant" physicalPath="SWC/R2/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="B_or_D" physicalPath="SWC/R2/B_or_D" path="SWC/SWC/R2/B_or_D" modelRef="model002">
+        <boolean/>
+      </outport>
+      <display physicalPath="SWC/R2/Unit Delay" path="SWC/SWC/R2/Unit Delay" name="Unit Delay" portNumber="1" modelRef="model002" signalName="last_b">
+        <boolean/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.111" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_client_example\SWC.slx" creationDate="2019-10-02T12:31:08" modificationDate="2024-09-12T19:53:32"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,92 @@
+<!-- DTD description for the Interface Assumptions                        -->
+<!--                                                                      -->
+<!-- author: hornstein@btc-es.de                                          -->
+<!-- (c) 2009 BTC Embedded Systems AG, Germany.                           -->
+
+
+<!-- InterfaceAssumption: root node                                       -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      Subsystem   list of all subystems with assumptions in profile   -->
+<!--                                                                      -->
+<!ELEMENT InterfaceAssumption (Subsystem*)>
+
+
+<!-- Subsystem: subystem of the profile                                   -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      id        unique ID of subsystem as defined by ModelAnalysis    -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      Assumption+  list of assumptions for the subsystem.             -->
+<!--                                                                      -->
+<!ELEMENT Subsystem (Assumption*)>
+<!ATTLIST Subsystem
+               id        ID    #REQUIRED>
+
+
+<!-- Assumption: assumption as a group of valid relations on IF objects   -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      origin           origin of the assumption                       -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      ConstRelation    relation of an interface object to a const     -->
+<!--      IntraRelation    relation of two or more interface objects to   -->
+<!--                       one another                                    -->
+<!--      TimeRelation     relation of values of an interface object in   -->
+<!--                       the course of time                             -->
+<!--                                                                      -->
+<!ELEMENT Assumption ((ConstRelation|IntraRelation|TimeRelation)+)>
+<!ATTLIST Assumption
+               origin      CDATA    #REQUIRED>
+
+
+<!-- ConstRelation: relation between one IF object and a const value      -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      kind       kind of relation                                     -->
+<!--      leftIfid   unique ID of IF object as defined by ModelAnalysis   -->
+<!--      rightConst value of the constant as float                       -->
+<!--                                                                      -->
+<!ELEMENT ConstRelation EMPTY>
+<!ATTLIST ConstRelation
+               kind       (LES|
+                           LEQ|
+                           EQU|
+                           NEQ|
+                           GEQ|
+                           GRT)    #REQUIRED
+               leftIfid   CDATA    #REQUIRED
+               rightConst CDATA    #REQUIRED>
+
+
+<!-- IntraRelation: relation between two IF objects                       -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      kind       kind of relation                                     -->
+<!--      leftIfid   unique ID of IF object as defined by ModelAnalysis   -->
+<!--      rightIfid  unique ID of IF object as defined by ModelAnalysis   -->
+<!--                                                                      -->
+<!ELEMENT IntraRelation EMPTY>
+<!ATTLIST IntraRelation
+               kind       (LES|
+                           LEQ|
+                           EQU|
+                           NEQ|
+                           GEQ|
+                           GRT)    #REQUIRED
+               leftIfid   CDATA    #REQUIRED
+               rightIfid  CDATA    #REQUIRED>
+
+
+<!-- TimeRelation: relation of current to previous value of IF object     -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      kind       kind of relation                                     -->
+<!--      ifid       unique ID of IF object as defined by ModelAnalysis   -->
+<!--                                                                      -->
+<!ELEMENT TimeRelation EMPTY>
+<!ATTLIST TimeRelation
+               kind       (CONST)    #REQUIRED
+               ifid        CDATA    #REQUIRED>

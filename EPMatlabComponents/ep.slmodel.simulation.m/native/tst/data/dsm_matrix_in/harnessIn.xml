@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<EnumType name="boolean">
+			<EnumValue name="false" ordinal="0" />
+			<EnumValue name="true" ordinal="1" />
+		</EnumType>
+	</Types>
+	<Outports sampleTime="0.2">
+		<Outport kind="DataStoreRead" dim1="1" dim2="3" type="int8" portNr="1">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In1(1)(1)</ScalarRef>
+				<ScalarRef>INPUT:In1(1)(2)</ScalarRef>
+				<ScalarRef>INPUT:In1(1)(3)</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport kind="DataStoreRead" type="boolean" portNr="2">
+			<ScalarRefs>
+				<ScalarRef>INPUT:sub_D1/In1</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport kind="DataStoreRead" dim1="2" dim2="3" type="boolean" portNr="3">
+			<ScalarRefs>
+				<ScalarRef>INPUT:sub_D1/sub_Y/In2(1)(1)</ScalarRef>
+				<ScalarRef>INPUT:sub_D1/sub_Y/In2(2)(1)</ScalarRef>
+				<ScalarRef>INPUT:sub_D1/sub_Y/In2(1)(2)</ScalarRef>
+				<ScalarRef>INPUT:sub_D1/sub_Y/In2(2)(2)</ScalarRef>
+				<ScalarRef>INPUT:sub_D1/sub_Y/In2(1)(3)</ScalarRef>
+				<ScalarRef>INPUT:sub_D1/sub_Y/In2(2)(3)</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+	</Outports>
+</SFunction>

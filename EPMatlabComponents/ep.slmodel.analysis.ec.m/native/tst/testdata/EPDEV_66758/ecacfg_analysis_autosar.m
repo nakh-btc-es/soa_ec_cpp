@@ -1,0 +1,134 @@
+function stConfig = ecacfg_analysis_autosar(stConfig, stAdditionalInfo)
+%
+% stConfig                                      (struct)  describing settings needed for the analysis
+%
+%   .General                                    (struct)  describing general settings (see below stGeneral)
+%       .bAnalyzeDsm                            (boolean)
+%       .casSwcType                             (cell array of strings)
+%       .casAutosarVersions
+%       .bStubRteApiForNonTestedRunnables       (boolean)
+%       .bExcludeScopesWithClientCalls          (boolean)
+%       .bAnalyzeLowerScopeIOAsAutosarItf       (boolean)
+%       .bExcludeScopesWithMissingIOMapping     (boolean)
+%       .bExcludeScopesWithoutMapping           (boolean)
+%       .bExcludeParamsWithoutMapping           (boolean)
+%       .sStubCodeFolderPath                    (string)
+% ----------------------
+%   .ScopeCfg                                   (struct)   describing scope specific settings (see below stScopeCfg)
+%       .AnalyzeScopesHierarchy                 (boolean)
+%       .RootScope                              (struct)   describing root scope specific settings
+%           .SearchFromFunction                 (string)
+%           .UseUniqRootLevelBlock              (boolean)
+%           .AllowModelRefBlock                 (boolean)
+%       .LowerScope                             (struct)
+%           .Subsys                             (struct)
+%               .Allow                          (boolean)
+%       .Subsys                                 (struct)
+%           .PropFilter                         (array of structures)
+%               .BlockParameterName             (string)
+%               .BlockParameterValue            (string)
+% ----------------------
+%   .ParameterDOCfg                             (struct)
+%       .SearchGlobal                           (struct)
+%           .DataObjectName                     (string)
+%           .DataObjectClass                    (string)
+%           .FilterMethod                       (string)
+%           .PropFilter                         (array of structures)
+%               .Property                       (struct)
+%                   .Name                       (string)
+%                   .Value                      (cell array of strings)
+% ----------------------
+%   .LocalDOCfg                                 (struct)
+%       .SearchGlobal                           (struct)
+%           .TestPointActive                    (boolean)
+%           .DataObjectName                     (cell array of strings)
+%           .DataObjectClass                    (cell array of strings)
+%           .PropFilter                         (array of structures)
+%               .Property                       (struct)
+%                   .Name                       (string)
+%                   .Value                      (cell array of strings)
+% ----------------------
+%   .DefineDOCfg                                (struct)
+%       .SearchGlobal                           (struct)
+%           .DataObjectName                     (cell array of strings)
+%           .DataObjectClass                    (cell array of strings)
+%           .PropFilter                         (array of structures)
+%               .Property                       (struct)
+%                   .Name                       (string)
+%                   .Value                      (cell array of strings)
+%%
+% -----------------------------------------------------------------------------
+% 
+% DEFAULT VALUES
+% 
+% -----------------------------------------------------------------------------
+% ss = 0; pp = 0; ll = 0; dd = 0;
+% 
+% stConfig.General.bAnalyzeDsm = true;
+% stConfig.General.casSwcType = {'Application'};
+% stConfig.General.casAutosarVersions = {'3.1', '3.2', '4.0', '4.1', '4.2', '4.3', '4.4'};
+% stConfig.General.bStubRteApiForNonTestedRunnables   = true;
+% stConfig.General.bAnalyzeLowerScopeIOAsAutosarItf   = false;
+stConfig.General.bExcludeScopesWithMissingIOMapping = true;
+% stConfig.General.bExcludeScopesWithoutMapping       = false;
+% stConfig.General.bExcludeParamsWithoutMapping       = true;
+% stConfig.General.sStubCodeFolderPath                = '.';
+% 
+% 
+% %Scopes identification
+% stConfig.ScopeCfg.AnalyzeScopesHierarchy = true;
+% stConfig.ScopeCfg.RootScope.SearchFromFunction = ''; 
+% stConfig.ScopeCfg.LowerScope.Subsys.Allow = true;
+% ss=ss+1;
+% stConfig.ScopeCfg.Subsys.PropFilter(ss).BlockParameterName  = 'IsSubsystemVirtual';
+% stConfig.ScopeCfg.Subsys.PropFilter(ss).BlockParameterValue = 'off'; 
+% ss=ss+1;
+% stConfig.ScopeCfg.Subsys.PropFilter(ss).BlockParameterName  = 'RTWSystemCode';
+% stConfig.ScopeCfg.Subsys.PropFilter(ss).BlockParameterValue = {'Nonreusable function', 'Reusable function'}; 
+% 
+% 
+% %Parameters interfaces identification
+% %Regular Expressions:  "^c" for every parameter starting with "c" (e.g. cParamName)
+% stConfig.ParameterDOCfg.SearchGlobal.DataObjectName      = {'.'};
+% stConfig.ParameterDOCfg.SearchGlobal.DataObjectClass     = {'Simulink.Parameter', 'mpt.Parameter',...
+%     'AUTOSAR.Parameter', 'AUTOSAR4.Parameter', 'Simulink.Breakpoint', 'Simulink.LookupTable'};
+% stConfig.ParameterDOCfg.SearchGlobal.PropFilter          = [];
+% pp=pp+1;
+% stConfig.ParameterDOCfg.SearchGlobal.PropFilter(pp).Property(1).Name  = 'CoderInfo.StorageClass';
+% stConfig.ParameterDOCfg.SearchGlobal.PropFilter(pp).Property(1).Value = {'Custom'};
+% stConfig.ParameterDOCfg.SearchGlobal.PropFilter(pp).Property(2).Name  = 'CoderInfo.CustomStorageClass';
+% stConfig.ParameterDOCfg.SearchGlobal.PropFilter(pp).Property(2).Value = {'Const', 'Default', 'ConstVolatile',...
+%     'Global','ExportToFile','Volatile',...
+%     'ImportFromFile', 'GetSet', 'Struct', ...
+%     'CalPrm', 'InternalCalPrm'};
+% pp=pp+1;
+% stConfig.ParameterDOCfg.SearchGlobal.PropFilter(pp).Property(1).Name  = 'CoderInfo.StorageClass';
+% stConfig.ParameterDOCfg.SearchGlobal.PropFilter(pp).Property(1).Value = {'ExportedGlobal','ImportedExtern'};
+% 
+% 
+% %Locals interfaces identification
+% stConfig.LocalDOCfg.SearchGlobal.TestPointActive = true;
+% stConfig.LocalDOCfg.SearchGlobal.DataObjectName  = {'.'};
+% stConfig.LocalDOCfg.SearchGlobal.DataObjectClass = {'BTC.Signal', 'Simulink.Signal', 'mpt.Signal', 'AUTOSAR.Signal', 'AUTOSAR4.Signal'};
+% ll=ll+1;
+% stConfig.LocalDOCfg.SearchGlobal.PropFilter(ll).Property(1).Name     = 'CoderInfo.StorageClass';
+% stConfig.LocalDOCfg.SearchGlobal.PropFilter(ll).Property(1).Value    = {'Custom'};
+% stConfig.LocalDOCfg.SearchGlobal.PropFilter(ll).Property(2).Name     = 'CoderInfo.CustomStorageClass';
+% stConfig.LocalDOCfg.SearchGlobal.PropFilter(ll).Property(2).Value    = {'Global','FileScope','Reusable', ...
+%     'ExportToFile', 'Default','GetSet','ImportFromFile', 'BitField','Struct','Volatile', 'PerInstanceMemory'};
+% ll=ll+1;
+% stConfig.LocalDOCfg.SearchGlobal.PropFilter(ll).Property(1).Name     = 'CoderInfo.StorageClass';
+% stConfig.LocalDOCfg.SearchGlobal.PropFilter(ll).Property(1).Value    = {'ExportedGlobal','ImportedExtern'};
+% 
+% 
+% %Defines macros identification (for Stub generation)
+% %Regular Expressions:  "^c" for every parameter starting with "c" (e.g. cParamName)
+% stConfig.DefineDOCfg.SearchGlobal.DataObjectName      = {'.'};
+% stConfig.DefineDOCfg.SearchGlobal.DataObjectClass     = {'BTC.Parameter', 'Simulink.Parameter', 'mpt.Parameter'};
+% stConfig.DefineDOCfg.SearchGlobal.PropFilter          = [];
+% dd=dd+1;
+% stConfig.DefineDOCfg.SearchGlobal.PropFilter(dd).Property(1).Name     = 'CoderInfo.StorageClass';
+% stConfig.DefineDOCfg.SearchGlobal.PropFilter(dd).Property(1).Value    = {'Custom'};
+% stConfig.DefineDOCfg.SearchGlobal.PropFilter(dd).Property(2).Name     = 'CoderInfo.CustomStorageClass';
+% stConfig.DefineDOCfg.SearchGlobal.PropFilter(dd).Property(2).Value    = {'ImportedDefine'};
+end

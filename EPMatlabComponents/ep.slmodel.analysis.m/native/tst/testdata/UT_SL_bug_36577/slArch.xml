@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_bts_36577\init_big_model.m" modelVersion="1.11" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_bts_36577\big_model.mdl" modelCreationDate="2016-09-21T11:02:32" creator="Alexander Hornstein">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.11" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_bts_36577\big_model.mdl" creationDate="2016-09-21T11:02:32" modificationDate="2024-09-11T18:44:23" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_bts_36577\init_big_model.m">
+    <subsystem subsysID="ss1" physicalPath="big_model/myFrame" path="myFrame" sampleTime="0.02" name="myFrame" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="big_model/myFrame/In1" path="myFrame/In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="big_model/myFrame/In2" path="myFrame/In2">
+        <double/>
+      </inport>
+      <parameter name="myX" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" modelRef="model002" origin="explicit_param" workspace="myX" initValue="7.2">
+        <double/>
+        <usageContext path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+        <usageContext path="myFrame/top_B/sub_B3/sub_C/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <parameter name="myY" path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ/Gain" physicalPath="sub_Y/sub_YY/sub_ZZ/Gain" modelRef="model003" origin="explicit_param" workspace="myY" initValue="-2.3">
+        <double/>
+        <usageContext path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ/Gain" physicalPath="sub_Y/sub_YY/sub_ZZ/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="myZ" path="myFrame/top_A/Gain" physicalPath="big_model/myFrame/top_A/Gain" origin="explicit_param" workspace="myZ" initValue="1.3">
+        <double/>
+        <usageContext path="myFrame/top_A/Gain" physicalPath="big_model/myFrame/top_A/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="big_model/myFrame/Out1" path="myFrame/Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="big_model/myFrame/Out2" path="myFrame/Out2">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="big_model/myFrame/Out3" path="myFrame/Out3">
+        <double/>
+      </outport>
+      <display physicalPath="big_model/myFrame/top_A/Gain" path="myFrame/top_A/Gain" name="Gain" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="big_model/myFrame/top_B/sub_B1/Gain" path="myFrame/top_B/sub_B1/Gain" name="Gain" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="sub_Y/sub_YY/Saturation" path="myFrame/top_B/sub_B2/sub_YY/Saturation" name="Saturation" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+      <display physicalPath="sub_Y/sub_YY/sub_ZZ/Gain" path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ/Gain" name="Gain" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+      <display physicalPath="sub_X/Unit Delay" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/Unit Delay" name="Unit Delay" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="sub_X/sub_LOW/Gain" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" name="Gain" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="sub_X/Unit Delay" path="myFrame/top_B/sub_B3/sub_C/Unit Delay" name="Unit Delay" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="sub_X/sub_LOW/Gain" path="myFrame/top_B/sub_B3/sub_C/sub_LOW/Gain" name="Gain" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="big_model/myFrame/top_A" path="myFrame/top_A" sampleTime="0.02" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="big_model/myFrame/top_A/In1" path="myFrame/top_A/In1">
+        <double/>
+      </inport>
+      <parameter name="myZ" path="myFrame/top_A/Gain" physicalPath="big_model/myFrame/top_A/Gain" origin="explicit_param" workspace="myZ" initValue="1.3">
+        <double/>
+        <usageContext path="myFrame/top_A/Gain" physicalPath="big_model/myFrame/top_A/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="big_model/myFrame/top_A/Out1" path="myFrame/top_A/Out1">
+        <double/>
+      </outport>
+      <display physicalPath="big_model/myFrame/top_A/Gain" path="myFrame/top_A/Gain" name="Gain" portNumber="1">
+        <double/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="big_model/myFrame/top_B" path="myFrame/top_B" sampleTime="0.02" name="top_B" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="big_model/myFrame/top_B/In1" path="myFrame/top_B/In1">
+        <double/>
+      </inport>
+      <parameter name="myX" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" modelRef="model002" origin="explicit_param" workspace="myX" initValue="7.2">
+        <double/>
+        <usageContext path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+        <usageContext path="myFrame/top_B/sub_B3/sub_C/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <parameter name="myY" path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ/Gain" physicalPath="sub_Y/sub_YY/sub_ZZ/Gain" modelRef="model003" origin="explicit_param" workspace="myY" initValue="-2.3">
+        <double/>
+        <usageContext path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ/Gain" physicalPath="sub_Y/sub_YY/sub_ZZ/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="big_model/myFrame/top_B/Out1" path="myFrame/top_B/Out1">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="big_model/myFrame/top_B/Out2" path="myFrame/top_B/Out2">
+        <double/>
+      </outport>
+      <display physicalPath="big_model/myFrame/top_B/sub_B1/Gain" path="myFrame/top_B/sub_B1/Gain" name="Gain" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="sub_Y/sub_YY/Saturation" path="myFrame/top_B/sub_B2/sub_YY/Saturation" name="Saturation" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+      <display physicalPath="sub_Y/sub_YY/sub_ZZ/Gain" path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ/Gain" name="Gain" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+      <display physicalPath="sub_X/Unit Delay" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/Unit Delay" name="Unit Delay" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="sub_X/sub_LOW/Gain" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" name="Gain" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="sub_X/Unit Delay" path="myFrame/top_B/sub_B3/sub_C/Unit Delay" name="Unit Delay" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="sub_X/sub_LOW/Gain" path="myFrame/top_B/sub_B3/sub_C/sub_LOW/Gain" name="Gain" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss10"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="big_model/myFrame/top_B/sub_B1" path="myFrame/top_B/sub_B1" sampleTime="0.02" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="big_model/myFrame/top_B/sub_B1/In1" path="myFrame/top_B/sub_B1/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="big_model/myFrame/top_B/sub_B1/Out1" path="myFrame/top_B/sub_B1/Out1">
+        <double/>
+      </outport>
+      <display physicalPath="big_model/myFrame/top_B/sub_B1/Gain" path="myFrame/top_B/sub_B1/Gain" name="Gain" portNumber="1">
+        <double/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="sub_Y" path="myFrame/top_B/sub_B2" sampleTime="0.02" name="sub_B2" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="In1" physicalPath="sub_Y/In1" path="myFrame/top_B/sub_B2/In1" modelRef="model003">
+        <double/>
+      </inport>
+      <parameter name="myX" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" modelRef="model002" origin="explicit_param" workspace="myX" initValue="7.2">
+        <double/>
+        <usageContext path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <parameter name="myY" path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ/Gain" physicalPath="sub_Y/sub_YY/sub_ZZ/Gain" modelRef="model003" origin="explicit_param" workspace="myY" initValue="-2.3">
+        <double/>
+        <usageContext path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ/Gain" physicalPath="sub_Y/sub_YY/sub_ZZ/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sub_Y/Out1" path="myFrame/top_B/sub_B2/Out1" modelRef="model003">
+        <boolean/>
+      </outport>
+      <display physicalPath="sub_Y/sub_YY/Saturation" path="myFrame/top_B/sub_B2/sub_YY/Saturation" name="Saturation" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+      <display physicalPath="sub_Y/sub_YY/sub_ZZ/Gain" path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ/Gain" name="Gain" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+      <display physicalPath="sub_X/Unit Delay" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/Unit Delay" name="Unit Delay" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="sub_X/sub_LOW/Gain" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" name="Gain" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="sub_Y/sub_YY" path="myFrame/top_B/sub_B2/sub_YY" sampleTime="0.02" name="sub_YY" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="In1" physicalPath="sub_Y/sub_YY/In1" path="myFrame/top_B/sub_B2/sub_YY/In1" modelRef="model003">
+        <double/>
+      </inport>
+      <parameter name="myX" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" modelRef="model002" origin="explicit_param" workspace="myX" initValue="7.2">
+        <double/>
+        <usageContext path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <parameter name="myY" path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ/Gain" physicalPath="sub_Y/sub_YY/sub_ZZ/Gain" modelRef="model003" origin="explicit_param" workspace="myY" initValue="-2.3">
+        <double/>
+        <usageContext path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ/Gain" physicalPath="sub_Y/sub_YY/sub_ZZ/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sub_Y/sub_YY/Out1" path="myFrame/top_B/sub_B2/sub_YY/Out1" modelRef="model003">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="sub_Y/sub_YY/Out2" path="myFrame/top_B/sub_B2/sub_YY/Out2" modelRef="model003">
+        <double/>
+      </outport>
+      <display physicalPath="sub_Y/sub_YY/Saturation" path="myFrame/top_B/sub_B2/sub_YY/Saturation" name="Saturation" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+      <display physicalPath="sub_Y/sub_YY/sub_ZZ/Gain" path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ/Gain" name="Gain" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+      <display physicalPath="sub_X/Unit Delay" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/Unit Delay" name="Unit Delay" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="sub_X/sub_LOW/Gain" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" name="Gain" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss9"/>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="sub_X" path="myFrame/top_B/sub_B2/sub_YY/sub_XX" sampleTime="0.02" name="sub_XX" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="sub_X/In1" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/In1" modelRef="model002">
+        <double/>
+      </inport>
+      <parameter name="myX" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" modelRef="model002" origin="explicit_param" workspace="myX" initValue="7.2">
+        <double/>
+        <usageContext path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sub_X/Out1" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/Out1" modelRef="model002">
+        <double/>
+      </outport>
+      <display physicalPath="sub_X/Unit Delay" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/Unit Delay" name="Unit Delay" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="sub_X/sub_LOW/Gain" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" name="Gain" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="sub_X/sub_LOW" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW" sampleTime="0.02" name="sub_LOW" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="sub_X/sub_LOW/In1" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/In1" modelRef="model002">
+        <double/>
+      </inport>
+      <parameter name="myX" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" modelRef="model002" origin="explicit_param" workspace="myX" initValue="7.2">
+        <double/>
+        <usageContext path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sub_X/sub_LOW/Out1" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Out1" modelRef="model002">
+        <double/>
+      </outport>
+      <display physicalPath="sub_X/sub_LOW/Gain" path="myFrame/top_B/sub_B2/sub_YY/sub_XX/sub_LOW/Gain" name="Gain" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="sub_Y/sub_YY/sub_ZZ" path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ" sampleTime="0.02" name="sub_ZZ" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="In1" physicalPath="sub_Y/sub_YY/sub_ZZ/In1" path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ/In1" modelRef="model003">
+        <double/>
+      </inport>
+      <parameter name="myY" path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ/Gain" physicalPath="sub_Y/sub_YY/sub_ZZ/Gain" modelRef="model003" origin="explicit_param" workspace="myY" initValue="-2.3">
+        <double/>
+        <usageContext path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ/Gain" physicalPath="sub_Y/sub_YY/sub_ZZ/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sub_Y/sub_YY/sub_ZZ/Out1" path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ/Out1" modelRef="model003">
+        <double/>
+      </outport>
+      <display physicalPath="sub_Y/sub_YY/sub_ZZ/Gain" path="myFrame/top_B/sub_B2/sub_YY/sub_ZZ/Gain" name="Gain" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="big_model/myFrame/top_B/sub_B3" path="myFrame/top_B/sub_B3" sampleTime="0.02" name="sub_B3" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="big_model/myFrame/top_B/sub_B3/In1" path="myFrame/top_B/sub_B3/In1">
+        <double/>
+      </inport>
+      <parameter name="myX" path="myFrame/top_B/sub_B3/sub_C/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" modelRef="model002" origin="explicit_param" workspace="myX" initValue="7.2">
+        <double/>
+        <usageContext path="myFrame/top_B/sub_B3/sub_C/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="big_model/myFrame/top_B/sub_B3/Out1" path="myFrame/top_B/sub_B3/Out1">
+        <double/>
+      </outport>
+      <display physicalPath="sub_X/Unit Delay" path="myFrame/top_B/sub_B3/sub_C/Unit Delay" name="Unit Delay" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="sub_X/sub_LOW/Gain" path="myFrame/top_B/sub_B3/sub_C/sub_LOW/Gain" name="Gain" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss11"/>
+    </subsystem>
+    <subsystem subsysID="ss11" physicalPath="sub_X" path="myFrame/top_B/sub_B3/sub_C" sampleTime="0.02" name="sub_C" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="sub_X/In1" path="myFrame/top_B/sub_B3/sub_C/In1" modelRef="model002">
+        <double/>
+      </inport>
+      <parameter name="myX" path="myFrame/top_B/sub_B3/sub_C/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" modelRef="model002" origin="explicit_param" workspace="myX" initValue="7.2">
+        <double/>
+        <usageContext path="myFrame/top_B/sub_B3/sub_C/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sub_X/Out1" path="myFrame/top_B/sub_B3/sub_C/Out1" modelRef="model002">
+        <double/>
+      </outport>
+      <display physicalPath="sub_X/Unit Delay" path="myFrame/top_B/sub_B3/sub_C/Unit Delay" name="Unit Delay" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="sub_X/sub_LOW/Gain" path="myFrame/top_B/sub_B3/sub_C/sub_LOW/Gain" name="Gain" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss12"/>
+    </subsystem>
+    <subsystem subsysID="ss12" physicalPath="sub_X/sub_LOW" path="myFrame/top_B/sub_B3/sub_C/sub_LOW" sampleTime="0.02" name="sub_LOW" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="sub_X/sub_LOW/In1" path="myFrame/top_B/sub_B3/sub_C/sub_LOW/In1" modelRef="model002">
+        <double/>
+      </inport>
+      <parameter name="myX" path="myFrame/top_B/sub_B3/sub_C/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" modelRef="model002" origin="explicit_param" workspace="myX" initValue="7.2">
+        <double/>
+        <usageContext path="myFrame/top_B/sub_B3/sub_C/sub_LOW/Gain" physicalPath="sub_X/sub_LOW/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sub_X/sub_LOW/Out1" path="myFrame/top_B/sub_B3/sub_C/sub_LOW/Out1" modelRef="model002">
+        <double/>
+      </outport>
+      <display physicalPath="sub_X/sub_LOW/Gain" path="myFrame/top_B/sub_B3/sub_C/sub_LOW/Gain" name="Gain" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.7" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_bts_36577\sub_X.mdl" creationDate="2016-09-21T10:54:52" modificationDate="2024-09-11T18:44:23" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_bts_36577\init_big_model.m"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="1.15" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_bts_36577\sub_Y.mdl" creationDate="2016-09-21T10:59:02" modificationDate="2024-09-11T18:44:23" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_bts_36577\init_big_model.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

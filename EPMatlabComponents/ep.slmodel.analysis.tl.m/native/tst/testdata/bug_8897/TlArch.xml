@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.37" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_8897\osc_obsVlvDelay.mdl" modelCreationDate="2008-03-01T10:24:16" creator="alexh">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.37" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_8897\osc_obsVlvDelay.mdl" creationDate="2008-03-01T10:24:16" modificationDate="2021-11-16T14:09:33">
+    <subsystem subsysID="ss1" physicalPath="osc_obsVlvDelay/obsVlvDelay/Subsystem/obsVlvDelay" path="obsVlvDelay/Subsystem/obsVlvDelay" sampleTime="0.005" name="obsVlvDelay" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="stVlvIn_bool" physicalPath="osc_obsVlvDelay/obsVlvDelay/Subsystem/obsVlvDelay/stVlvIn_bool" path="obsVlvDelay/Subsystem/obsVlvDelay/stVlvIn_bool">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="dylVlvOff_s" physicalPath="osc_obsVlvDelay/obsVlvDelay/Subsystem/obsVlvDelay/dylVlvOff_s" path="obsVlvDelay/Subsystem/obsVlvDelay/dylVlvOff_s">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000001e-01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="dlyVlvOn_s" physicalPath="osc_obsVlvDelay/obsVlvDelay/Subsystem/obsVlvDelay/dlyVlvOn_s" path="obsVlvDelay/Subsystem/obsVlvDelay/dlyVlvOn_s">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000001e-01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="tsmpl_s" physicalPath="osc_obsVlvDelay/obsVlvDelay/Subsystem/obsVlvDelay/tsmpl_s" path="obsVlvDelay/Subsystem/obsVlvDelay/tsmpl_s">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e-04" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000002e-02"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="stVlvOut" physicalPath="osc_obsVlvDelay/obsVlvDelay/Subsystem/obsVlvDelay/stVlvOut" path="obsVlvDelay/Subsystem/obsVlvDelay/stVlvOut">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </outport>
+      <display physicalPath="osc_obsVlvDelay/obsVlvDelay/Subsystem/obsVlvDelay/vlvDlyHiGea/stVlvOut" path="obsVlvDelay/Subsystem/obsVlvDelay/vlvDlyHiGea/stVlvOut" name="stVlvOut" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="osc_obsVlvDelay/obsVlvDelay/Subsystem/obsVlvDelay/vlvDlyHiGea" path="obsVlvDelay/Subsystem/obsVlvDelay/vlvDlyHiGea" sampleTime="0.005" name="vlvDlyHiGea" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="stVlvIn_bool" physicalPath="osc_obsVlvDelay/obsVlvDelay/Subsystem/obsVlvDelay/vlvDlyHiGea/stVlvIn_bool" path="obsVlvDelay/Subsystem/obsVlvDelay/vlvDlyHiGea/stVlvIn_bool">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="dlyVlvOn_s" physicalPath="osc_obsVlvDelay/obsVlvDelay/Subsystem/obsVlvDelay/vlvDlyHiGea/dlyVlvOn_s" path="obsVlvDelay/Subsystem/obsVlvDelay/vlvDlyHiGea/dlyVlvOn_s">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000001e-01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="dylVlvOff_s" physicalPath="osc_obsVlvDelay/obsVlvDelay/Subsystem/obsVlvDelay/vlvDlyHiGea/dylVlvOff_s" path="obsVlvDelay/Subsystem/obsVlvDelay/vlvDlyHiGea/dylVlvOff_s">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000001e-01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="tsmpl_s" physicalPath="osc_obsVlvDelay/obsVlvDelay/Subsystem/obsVlvDelay/vlvDlyHiGea/tsmpl_s" path="obsVlvDelay/Subsystem/obsVlvDelay/vlvDlyHiGea/tsmpl_s">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e-04" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000002e-02"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="stVlvOut" physicalPath="osc_obsVlvDelay/obsVlvDelay/Subsystem/obsVlvDelay/vlvDlyHiGea/stVlvOut" path="obsVlvDelay/Subsystem/obsVlvDelay/vlvDlyHiGea/stVlvOut">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="library" modelVersion="1.119" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_8897\lib_vlvDly.mdl" creationDate="2007-10-01T11:57:22" modificationDate="2021-11-16T14:09:33"/>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_simple_04\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_simple_04\start.m" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_simple_04\powerwindow_sl.mdl" modelCreationDate="2015-01-28T14:40:34" creator="Wolfgang Meincke">
+  <toolInfo name="Matlab" release="(R2020a)" version="9.8" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020a)" version="10.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_simple_04\powerwindow_sl.mdl" creationDate="2015-01-28T14:40:34" modificationDate="2024-10-30T14:52:23" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_simple_04\start.m">
+    <subsystem subsysID="ss1" physicalPath="powerwindow_sl" path="" sampleTime="0.01" name="powerwindow_sl" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="driver_up" physicalPath="powerwindow_sl/driver_up" path="driver_up" signalName="driver_up">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="2" name="driver_down" physicalPath="powerwindow_sl/driver_down" path="driver_down" signalName="driver_down">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="3" name="passenger_up" physicalPath="powerwindow_sl/passenger_up" path="passenger_up" signalName="passenger_up">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="4" name="passenger_down" physicalPath="powerwindow_sl/passenger_down" path="passenger_down" signalName="passenger_down">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="5" name="obstacle_position" physicalPath="powerwindow_sl/obstacle_position" path="obstacle_position" signalName="obstacle_position">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.001,0)" wordLength="16" isSigned="0" slope="0.001" bias="0.0" min="0.0" max="0.45"/>
+      </inport>
+      <inport portNumber="6" name="window_position" physicalPath="powerwindow_sl/window_position" path="window_position" signalName="window_position">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.001,0)" wordLength="16" isSigned="0" slope="0.001" bias="0.0" min="0.0" max="0.45"/>
+      </inport>
+      <parameter name="auto_down_time" path="powerwindow_controller/Constant1" physicalPath="powerwindow_sl/powerwindow_controller/Constant1" origin="explicit_param" workspace="auto_down_time" initValue="100.0">
+        <uint8 min="0.0" max="255.0"/>
+        <usageContext path="powerwindow_controller/Constant1" physicalPath="powerwindow_sl/powerwindow_controller/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="auto_up_time" path="powerwindow_controller/Constant2" physicalPath="powerwindow_sl/powerwindow_controller/Constant2" origin="explicit_param" workspace="auto_up_time" initValue="100.0">
+        <uint8 min="0.0" max="255.0"/>
+        <usageContext path="powerwindow_controller/Constant2" physicalPath="powerwindow_sl/powerwindow_controller/Constant2" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="emergency_down_time" path="powerwindow_controller/Constant" physicalPath="powerwindow_sl/powerwindow_controller/Constant" origin="explicit_param" workspace="emergency_down_time" initValue="100.0">
+        <uint8 min="0.0" max="255.0"/>
+        <usageContext path="powerwindow_controller/Constant" physicalPath="powerwindow_sl/powerwindow_controller/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="position_endstop_top" path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/Constant" physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/detect_endstop/Constant" origin="explicit_param" workspace="position_endstop_top" initValue="0.4">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.001,0)" wordLength="16" isSigned="0" slope="0.001" bias="0.0" min="0.35" max="0.45"/>
+        <usageContext path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/Constant" physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/detect_endstop/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="obstacle_detection" physicalPath="powerwindow_sl/obstacle_detection" path="obstacle_detection" signalName="obstacle_detection">
+        <boolean min="0" max="1"/>
+      </outport>
+      <outport portNumber="2" name="move_up" physicalPath="powerwindow_sl/move_up" path="move_up" signalName="move_up">
+        <boolean min="0" max="1"/>
+      </outport>
+      <outport portNumber="3" name="move_down" physicalPath="powerwindow_sl/move_down" path="move_down" signalName="move_down">
+        <boolean min="0" max="1"/>
+      </outport>
+      <outport portNumber="4" name="Out1" physicalPath="powerwindow_sl/Out1" path="Out1" signalName="out1">
+        <boolean min="0" max="1"/>
+      </outport>
+      <outport portNumber="5" name="Out2" physicalPath="powerwindow_sl/Out2" path="Out2" signalName="out2">
+        <boolean min="0" max="1"/>
+      </outport>
+      <outport portNumber="6" name="Out3" physicalPath="powerwindow_sl/Out3" path="Out3" signalName="out3">
+        <boolean min="0" max="1"/>
+      </outport>
+      <display physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_bottom_disp" path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_bottom_disp" name="endstop_bottom_disp" portNumber="1" signalName="endstop_bottom">
+        <boolean min="0" max="1"/>
+      </display>
+      <display physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_top_disp" path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_top_disp" name="endstop_top_disp" portNumber="1" signalName="endstop_top">
+        <boolean min="0" max="1"/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="powerwindow_sl/powerwindow_controller" path="powerwindow_controller" sampleTime="0.01" name="powerwindow_controller" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="driver_up" physicalPath="powerwindow_sl/powerwindow_controller/driver_up" path="powerwindow_controller/driver_up" signalName="driver_up">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="2" name="driver_down" physicalPath="powerwindow_sl/powerwindow_controller/driver_down" path="powerwindow_controller/driver_down" signalName="driver_down">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="3" name="passenger_up" physicalPath="powerwindow_sl/powerwindow_controller/passenger_up" path="powerwindow_controller/passenger_up" signalName="passenger_up">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="4" name="passenger_down" physicalPath="powerwindow_sl/powerwindow_controller/passenger_down" path="powerwindow_controller/passenger_down" signalName="passenger_down">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="5" name="obstacle_position" physicalPath="powerwindow_sl/powerwindow_controller/obstacle_position" path="powerwindow_controller/obstacle_position" signalName="obstacle_position">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.001,0)" wordLength="16" isSigned="0" slope="0.001" bias="0.0" min="0.0" max="0.45"/>
+      </inport>
+      <inport portNumber="6" name="window_position" physicalPath="powerwindow_sl/powerwindow_controller/window_position" path="powerwindow_controller/window_position" signalName="window_position">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.001,0)" wordLength="16" isSigned="0" slope="0.001" bias="0.0" min="0.0" max="0.45"/>
+      </inport>
+      <parameter name="auto_down_time" path="powerwindow_controller/Constant1" physicalPath="powerwindow_sl/powerwindow_controller/Constant1" origin="explicit_param" workspace="auto_down_time" initValue="100.0">
+        <uint8 min="0.0" max="255.0"/>
+        <usageContext path="powerwindow_controller/Constant1" physicalPath="powerwindow_sl/powerwindow_controller/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="auto_up_time" path="powerwindow_controller/Constant2" physicalPath="powerwindow_sl/powerwindow_controller/Constant2" origin="explicit_param" workspace="auto_up_time" initValue="100.0">
+        <uint8 min="0.0" max="255.0"/>
+        <usageContext path="powerwindow_controller/Constant2" physicalPath="powerwindow_sl/powerwindow_controller/Constant2" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="emergency_down_time" path="powerwindow_controller/Constant" physicalPath="powerwindow_sl/powerwindow_controller/Constant" origin="explicit_param" workspace="emergency_down_time" initValue="100.0">
+        <uint8 min="0.0" max="255.0"/>
+        <usageContext path="powerwindow_controller/Constant" physicalPath="powerwindow_sl/powerwindow_controller/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="position_endstop_top" path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/Constant" physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/detect_endstop/Constant" origin="explicit_param" workspace="position_endstop_top" initValue="0.4">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.001,0)" wordLength="16" isSigned="0" slope="0.001" bias="0.0" min="0.35" max="0.45"/>
+        <usageContext path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/Constant" physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/detect_endstop/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="obstacle_detection" physicalPath="powerwindow_sl/powerwindow_controller/obstacle_detection" path="powerwindow_controller/obstacle_detection">
+        <boolean min="0" max="1"/>
+      </outport>
+      <outport portNumber="2" name="move_up" physicalPath="powerwindow_sl/powerwindow_controller/move_up" path="powerwindow_controller/move_up" signalName="moveUp">
+        <boolean min="0" max="1"/>
+      </outport>
+      <outport portNumber="3" name="move_down" physicalPath="powerwindow_sl/powerwindow_controller/move_down" path="powerwindow_controller/move_down" signalName="moveDown">
+        <boolean min="0" max="1"/>
+      </outport>
+      <outport portNumber="4" name="Out1" physicalPath="powerwindow_sl/powerwindow_controller/Out1" path="powerwindow_controller/Out1" signalName="out1">
+        <boolean min="0" max="1"/>
+      </outport>
+      <outport portNumber="5" name="Out2" physicalPath="powerwindow_sl/powerwindow_controller/Out2" path="powerwindow_controller/Out2" signalName="out2">
+        <boolean min="0" max="1"/>
+      </outport>
+      <outport portNumber="6" name="Out3" physicalPath="powerwindow_sl/powerwindow_controller/Out3" path="powerwindow_controller/Out3" signalName="out3">
+        <boolean min="0" max="1"/>
+      </outport>
+      <display physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_bottom_disp" path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_bottom_disp" name="endstop_bottom_disp" portNumber="1" signalName="endstop_bottom">
+        <boolean min="0" max="1"/>
+      </display>
+      <display physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_top_disp" path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_top_disp" name="endstop_top_disp" portNumber="1" signalName="endstop_top">
+        <boolean min="0" max="1"/>
+      </display>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss11"/>
+      <subsystem refSubsysID="ss19"/>
+      <subsystem refSubsysID="ss22"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="validated_driver" path="powerwindow_controller/Model" sampleTime="0.01" name="Model" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="In1" physicalPath="validated_driver/In1" path="powerwindow_controller/Model/In1" modelRef="model003" signalName="driver_up">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="validated_driver/In2" path="powerwindow_controller/Model/In2" modelRef="model003" signalName="driver_down">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="validated_driver/In3" path="powerwindow_controller/Model/In3" modelRef="model003" signalName="endstop_top">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="validated_driver/In4" path="powerwindow_controller/Model/In4" modelRef="model003" signalName="endstop_bottom">
+        <boolean min="0" max="1"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="validated_driver/Out1" path="powerwindow_controller/Model/Out1" modelRef="model003" signalName="driver_validated_neutral">
+        <boolean min="0" max="1"/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="validated_driver/Out2" path="powerwindow_controller/Model/Out2" modelRef="model003" signalName="out2_Model">
+        <boolean min="0" max="1"/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="validated_driver/Out3" path="powerwindow_controller/Model/Out3" modelRef="model003" signalName="driver_validated_down">
+        <boolean min="0" max="1"/>
+      </outport>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss8"/>
+      <subsystem refSubsysID="ss9"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="validated_driver/Subsystem" path="powerwindow_controller/Model/Subsystem" sampleTime="0.01" name="Subsystem" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="In1" physicalPath="validated_driver/Subsystem/In1" path="powerwindow_controller/Model/Subsystem/In1" modelRef="model003" signalName="endstop_bottom">
+        <boolean min="0" max="1"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="validated_driver/Subsystem/Out1" path="powerwindow_controller/Model/Subsystem/Out1" modelRef="model003" signalName="endstop_bottom">
+        <boolean min="0" max="1"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="check_down" path="powerwindow_controller/Model/validate_driver/Model" sampleTime="0.01" name="Model" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="abc" physicalPath="check_down/abc" path="powerwindow_controller/Model/validate_driver/Model/abc" modelRef="model002">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="abc1" physicalPath="check_down/abc1" path="powerwindow_controller/Model/validate_driver/Model/abc1" modelRef="model002">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="validated_up" physicalPath="check_down/validated_up" path="powerwindow_controller/Model/validate_driver/Model/validated_up" modelRef="model002">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="validated_driver/validate_driver/check_up" path="powerwindow_controller/Model/validate_driver/check_up" sampleTime="0.01" name="check_up" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="action" physicalPath="validated_driver/validate_driver/check_up/action" path="powerwindow_controller/Model/validate_driver/check_up/action" modelRef="model003">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="endstop" physicalPath="validated_driver/validate_driver/check_up/endstop" path="powerwindow_controller/Model/validate_driver/check_up/endstop" modelRef="model003" signalName="driver_down_var">
+        <boolean min="0" max="1"/>
+      </inport>
+      <outport portNumber="1" name="checked_action" physicalPath="validated_driver/validate_driver/check_up/checked_action" path="powerwindow_controller/Model/validate_driver/check_up/checked_action" modelRef="model003" signalName="checked_action">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="validated_driver/validate_driver/driver_switch" path="powerwindow_controller/Model/validate_driver/driver_switch" sampleTime="0.01" name="driver_switch" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="driver_up" physicalPath="validated_driver/validate_driver/driver_switch/driver_up" path="powerwindow_controller/Model/validate_driver/driver_switch/driver_up" modelRef="model003" signalName="driver_up">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="2" name="driver_down" physicalPath="validated_driver/validate_driver/driver_switch/driver_down" path="powerwindow_controller/Model/validate_driver/driver_switch/driver_down" modelRef="model003" signalName="driver_down">
+        <boolean min="0" max="1"/>
+      </inport>
+      <outport portNumber="1" name="neutral" physicalPath="validated_driver/validate_driver/driver_switch/neutral" path="powerwindow_controller/Model/validate_driver/driver_switch/neutral" modelRef="model003">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="up" physicalPath="validated_driver/validate_driver/driver_switch/up" path="powerwindow_controller/Model/validate_driver/driver_switch/up" modelRef="model003">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="down" physicalPath="validated_driver/validate_driver/driver_switch/down" path="powerwindow_controller/Model/validate_driver/driver_switch/down" modelRef="model003">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss11" physicalPath="validated_driver1" path="powerwindow_controller/Model1" sampleTime="0.01" name="Model1" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="In1" physicalPath="validated_driver1/In1" path="powerwindow_controller/Model1/In1" modelRef="model004" signalName="driver_up">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="validated_driver1/In2" path="powerwindow_controller/Model1/In2" modelRef="model004" signalName="driver_down">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="validated_driver1/In3" path="powerwindow_controller/Model1/In3" modelRef="model004" signalName="endstop_top">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="validated_driver1/In4" path="powerwindow_controller/Model1/In4" modelRef="model004" signalName="endstop_bottom">
+        <boolean min="0" max="1"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="validated_driver1/Out1" path="powerwindow_controller/Model1/Out1" modelRef="model004">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="validated_driver1/Out2" path="powerwindow_controller/Model1/Out2" modelRef="model004">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="validated_driver1/Out3" path="powerwindow_controller/Model1/Out3" modelRef="model004">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss13"/>
+    </subsystem>
+    <subsystem subsysID="ss13" physicalPath="check_down" path="powerwindow_controller/Model1/validate_driver1/Model" sampleTime="0.01" name="Model" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="abc" physicalPath="check_down/abc" path="powerwindow_controller/Model1/validate_driver1/Model/abc" modelRef="model002">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="abc1" physicalPath="check_down/abc1" path="powerwindow_controller/Model1/validate_driver1/Model/abc1" modelRef="model002">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="validated_up" physicalPath="check_down/validated_up" path="powerwindow_controller/Model1/validate_driver1/Model/validated_up" modelRef="model002">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss19" physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop" path="powerwindow_controller/detect_obstacle_endstop" sampleTime="0.01" name="detect_obstacle_endstop" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="obstacle_position" physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/obstacle_position" path="powerwindow_controller/detect_obstacle_endstop/obstacle_position" signalName="obstacle_position">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.001,0)" wordLength="16" isSigned="0" slope="0.001" bias="0.0" min="0.0" max="0.45"/>
+      </inport>
+      <inport portNumber="2" name="window_position" physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/window_position" path="powerwindow_controller/detect_obstacle_endstop/window_position" signalName="window_position">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.001,0)" wordLength="16" isSigned="0" slope="0.001" bias="0.0" min="0.0" max="0.45"/>
+      </inport>
+      <inport portNumber="3" name="move_up" physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/move_up" path="powerwindow_controller/detect_obstacle_endstop/move_up" signalName="prev_move_up">
+        <boolean min="0" max="1"/>
+      </inport>
+      <parameter name="position_endstop_top" path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/Constant" physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/detect_endstop/Constant" origin="explicit_param" workspace="position_endstop_top" initValue="0.4">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.001,0)" wordLength="16" isSigned="0" slope="0.001" bias="0.0" min="0.35" max="0.45"/>
+        <usageContext path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/Constant" physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/detect_endstop/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="obstacle" physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/obstacle" path="powerwindow_controller/detect_obstacle_endstop/obstacle">
+        <boolean min="0" max="1"/>
+      </outport>
+      <outport portNumber="2" name="endstop_top" physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/endstop_top" path="powerwindow_controller/detect_obstacle_endstop/endstop_top" signalName="endstop_top">
+        <boolean min="0" max="1"/>
+      </outport>
+      <outport portNumber="3" name="endstop_bottom" physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/endstop_bottom" path="powerwindow_controller/detect_obstacle_endstop/endstop_bottom" signalName="endstop_bottom">
+        <boolean min="0" max="1"/>
+      </outport>
+      <display physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_bottom_disp" path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_bottom_disp" name="endstop_bottom_disp" portNumber="1" signalName="endstop_bottom">
+        <boolean min="0" max="1"/>
+      </display>
+      <display physicalPath="powerwindow_sl/powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_top_disp" path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_top_disp" name="endstop_top_disp" portNumber="1" signalName="endstop_top">
+        <boolean min="0" max="1"/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss22" physicalPath="powerwindow_sl/powerwindow_controller/validate_passenger" path="powerwindow_controller/validate_passenger" sampleTime="0.01" name="validate_passenger" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="up" physicalPath="powerwindow_sl/powerwindow_controller/validate_passenger/up" path="powerwindow_controller/validate_passenger/up" signalName="passenger_up">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="2" name="down" physicalPath="powerwindow_sl/powerwindow_controller/validate_passenger/down" path="powerwindow_controller/validate_passenger/down" signalName="passenger_down">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="3" name="endstop_top" physicalPath="powerwindow_sl/powerwindow_controller/validate_passenger/endstop_top" path="powerwindow_controller/validate_passenger/endstop_top" signalName="endstop_top">
+        <boolean min="0" max="1"/>
+      </inport>
+      <inport portNumber="4" name="endstop_bottom" physicalPath="powerwindow_sl/powerwindow_controller/validate_passenger/endstop_bottom" path="powerwindow_controller/validate_passenger/endstop_bottom" signalName="endstop_bottom">
+        <boolean min="0" max="1"/>
+      </inport>
+      <outport portNumber="1" name="validated_neutral" physicalPath="powerwindow_sl/powerwindow_controller/validate_passenger/validated_neutral" path="powerwindow_controller/validate_passenger/validated_neutral">
+        <boolean min="0" max="1"/>
+      </outport>
+      <outport portNumber="2" name="validated_up" physicalPath="powerwindow_sl/powerwindow_controller/validate_passenger/validated_up" path="powerwindow_controller/validate_passenger/validated_up">
+        <boolean min="0" max="1"/>
+      </outport>
+      <outport portNumber="3" name="validated_down" physicalPath="powerwindow_sl/powerwindow_controller/validate_passenger/validated_down" path="powerwindow_controller/validate_passenger/validated_down" signalName="checked_action">
+        <boolean min="0" max="1"/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_simple_04\check_down.slx" creationDate="2018-07-05T14:59:10" modificationDate="2024-10-30T14:52:23" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_simple_04\start.m"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_simple_04\validated_driver.slx" creationDate="2018-07-04T10:09:24" modificationDate="2024-10-30T14:52:23" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_simple_04\start.m"/>
+  <model modelID="model004" modelKind="model_ref" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_simple_04\validated_driver1.slx" creationDate="2018-07-04T10:09:24" modificationDate="2024-10-30T14:52:23" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_simple_04\start.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,209 @@
+function [stResult, oOnCleanUpCloseModel, oEx] = sltu_sim_vector(stTestData, varargin)
+% Utility function to perform extraction and simulation in one step.
+
+oEx = [];
+
+stArgs = i_evalArgs(stTestData, varargin{:});
+try
+    if strcmp(stArgs.OriginalSimulationMode, 'SL MIL (Toplevel)')
+        stArgs = rmfield(stArgs, 'Kind');
+        caxArgs = i_transformBackToKeyVals(stArgs);
+        [stExtractInfo, stExtractOpenInfo, bSimSuccessful] = ep_sltop_sim_vector(caxArgs{:});
+    else
+        if strcmp(stArgs.Kind, 'TL')
+            caxArgs = i_transformBackToKeyVals(stArgs);
+            [stExtractInfo, stExtractOpenInfo, bSimSuccessful] = ep_tl_sim_vector(caxArgs{:});
+        else
+            caxArgs = i_transformBackToKeyVals(stArgs);
+            [stExtractInfo, stExtractOpenInfo, bSimSuccessful] = ep_sl_sim_vector(caxArgs{:});
+        end
+    end
+catch oEx
+    % in case the caller is not expecting an exception, just rethrow it; otherwise return robustly
+    if (nargout < 3)
+        rethrow(oEx);
+    else
+        stResult = [];
+        oOnCleanUpCloseModel = [];
+        return;
+    end
+end
+oOnCleanUpCloseModel = onCleanup(@() i_robustClose(stExtractOpenInfo));
+
+[~, sExtractionModelName] = fileparts(stExtractInfo.ExtractionModel);
+stResult = struct( ...
+    'sModelName',             sExtractionModelName, ...
+    'bSimSuccessful',         bSimSuccessful, ...
+    'sSimulatedVector',       stArgs.ResultVectorFile, ...
+    'stExtractInfo',          stExtractInfo, ...
+    'stExtractOpenInfo',      stExtractOpenInfo, ...
+    'sExtractionMessageFile', stArgs.ExtractionMessageFile, ...
+    'sSimMessageFile',        stArgs.MessageFile);
+end
+
+
+%%
+function i_robustClose(stExtractOpenInfo)
+if isempty(stExtractOpenInfo)
+    % nothing to do here; the extracted model was already closed or because of internal exceptions
+    return;
+end
+try
+    ep_sim_close_model(stExtractOpenInfo)
+catch oEx
+    fprintf('\nError closing the extracted model: ... \n%s\n', oEx.getReport('basic'));
+end
+end
+
+
+%%
+function stArgs = i_evalArgs(stTestData, varargin)
+casValidKeys = { ...
+    'Kind', 'ModelFile', 'InitScript', ...
+    'ActivateMil', 'InitModel', 'MessageFile', ...
+    'ExtractionModelFile', 'ExtractionModel', 'ExtractionScript',...
+    'Name', 'Mode', 'EnableCalibration', ...
+    'EnableLogging', 'BreakLinks', 'PreserveLibLinks', 'UseTldsStubs', ...
+    'ModelRefMode', 'InitVectorFile', 'ValidVector', ...
+    'ResultVectorFile', 'SimulationMode', ...
+    'PILConfig', 'PILTimeout', 'ExtractionMessageFile', ...
+    'KeepExtractionModelOpen', 'OpenExtractionModel', ...
+    'EvalStacktrace', 'MIL_RND_METH', ...
+    'TL_HOOK_MODE', 'REUSE_MODEL_CALLBACKS', 'OriginalSimulationMode', 'Progress', ...
+    'EnableCleanCode','SimulationHook','OriginalScopePath', 'PhysicalScopePath', 'VectorName',...
+    'InteractiveSimulation', 'HarnessModelFileIn', 'HarnessModelFileOut', 'SutAsModelRef', 'InputsVectorFile', ...
+    'ParamsVectorFile', 'OutputsVectorFile', 'LocalsVectorFile'};
+
+stArgs = ep_core_transform_args(varargin, casValidKeys);
+if ~isfield(stArgs, 'OriginalSimulationMode')
+    error('Original simulation model not given.')
+end
+
+stArgs = i_enhanceWithDefaults(stTestData, stArgs);
+end
+
+
+%%
+function sMode = i_deriveMode(sOriginalSimulationMode)
+switch sOriginalSimulationMode
+    case {'SL MIL', 'SL MIL (Toplevel)', 'SL SIL', 'TL MIL'}
+        sMode = 'MIL';
+        
+    case {'TL SIL', 'TL SIL OLD'}
+        sMode = 'SIL';
+        
+    otherwise
+        error('Match for original simulation model not implemeted yet.')
+end
+end
+
+
+%%
+function sFile = i_addPrefix(sFile, sPrefix)
+[p, f, e] = fileparts(sFile);
+sFile = fullfile(p, [sPrefix, f, e]);
+end
+
+
+%%
+function stArgs = i_enhanceWithDefaults(stTestData, stArgs)
+sMode = i_deriveMode(stArgs.OriginalSimulationMode);
+stModeArgs = i_getDefaultValuesByMode(sMode, stArgs.OriginalSimulationMode);
+stDefaultArgs = struct( ...
+    'ModelFile',                stTestData.sModelFile, ...
+    'InitScript',               stTestData.sInitScriptFile, ...
+    'ExtractionModelFile',      stTestData.sExtractionModelFile, ...
+    'HarnessModelFileIn',       stTestData.sInputHarnessFile, ...
+    'HarnessModelFileOut',      stTestData.sOutputHarnessFile, ...
+    'ExtractionMessageFile',    i_addPrefix(stTestData.sMessageFile, 'extr_'), ...
+    'MessageFile',              stTestData.sMessageFile, ...
+    'Kind',                     stTestData.sModelKind, ...
+    'ResultVectorFile',         stTestData.sResultVectorFile, ...
+    'InputsVectorFile',         stTestData.sInputsVectorFile, ...
+    'ParamsVectorFile',         stTestData.sParamsVectorFile, ...
+    'OutputsVectorFile',        stTestData.sOutputsVectorFile, ...
+    'LocalsVectorFile',         stTestData.sLocalsVectorFile, ...
+    'InitVectorFile',           stTestData.sInitVectorFile, ...
+    'InitModel',                true, ...
+    'ActivateMil',              false, ...
+    'Mode',                     sMode, ...
+    'EnableCalibration',        true, ...
+    'EnableLogging',            true, ...
+    'BreakLinks',               stModeArgs.BreakLinks, ...
+    'PreserveLibLinks',         {{}}, ...
+    'ModelRefMode',             stModeArgs.ModelRefMode, ...
+    'MIL_RND_METH',             '', ...
+    'TL_HOOK_MODE',             false, ...
+    'REUSE_MODEL_CALLBACKS',    {{}}, ...
+    'SutAsModelRef',            false, ...
+    'ExtractionModel',          '', ...
+    'ExtractionScript',         '', ...
+    'Name',                     '', ...
+    'SimulationMode',           'normal', ...
+    'OpenExtractionModel',      true, ...
+    'KeepExtractionModelOpen',  true, ...
+    'PILConfig',                '', ...
+    'PILTimeout',               int64(0), ...
+    'UseTldsStubs',             false, ...
+    'OriginalScopePath',        '', ...
+    'PhysicalScopePath',        '', ...
+    'VectorName',               '', ...
+    'InteractiveSimulation',    false, ...
+    'Progress',                 ep.core.ipc.matlab.server.progress.impl.ProgressImpl());
+
+
+casDefaultArgNames = fieldnames(stDefaultArgs);
+for i = 1:numel(casDefaultArgNames)
+    sArgName = casDefaultArgNames{i};
+    
+    if ~isfield(stArgs, sArgName)
+        stArgs.(sArgName) = stDefaultArgs.(sArgName);
+    end
+end
+end
+
+
+%%
+function stArgs = i_getDefaultValuesByMode(sMode, sOriginalSimMode)
+stArgs = struct( ...
+    'ModelRefMode', ep_sl.Constants.BREAK_REFS, ...
+    'BreakLinks',   true);
+
+switch sMode
+    case 'SIL'
+        stArgs.ModelRefMode = ep_sl.Constants.KEEP_REFS;
+        stArgs.BreakLinks   = false;
+        
+    case 'MIL'
+        switch sOriginalSimMode
+            case 'SL MIL (Toplevel)'
+                stArgs.ModelRefMode = ep_sl.Constants.KEEP_REFS;
+                stArgs.BreakLinks   = false;
+            case 'SL MIL'
+                if verLessThan('matlab', '9.3')
+                    stArgs.ModelRefMode = ep_sl.Constants.BREAK_REFS; % ML2015b
+                else
+                    stArgs.ModelRefMode = ep_sl.Constants.COPY_REFS;
+                end
+            otherwise
+                % just keep the defaults
+        end
+    otherwise
+        % use the defaults
+end
+end
+
+
+%%
+function caxArgs = i_transformBackToKeyVals(stArgs)
+casKeys = fieldnames(stArgs);
+nKeys = numel(casKeys);
+
+caxArgs = cell(1, nKeys);
+for i = 1:numel(casKeys)
+    sKey = casKeys{i};
+    
+    caxArgs{2*i - 1} = sKey;
+    caxArgs{2*i} = stArgs.(sKey);    
+end
+end

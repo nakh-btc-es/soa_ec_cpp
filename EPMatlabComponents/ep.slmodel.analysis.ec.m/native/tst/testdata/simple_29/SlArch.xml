@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_29\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_29\Init.m" modelVersion="1.357" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_29\simple_buses.slx" modelCreationDate="2017-10-08T01:28:24" creator="nabilekhoury">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.357" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_29\simple_buses.slx" creationDate="2017-10-08T01:28:24" modificationDate="2024-09-12T18:37:17" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_29\Init.m">
+    <subsystem subsysID="ss1" physicalPath="simple_buses" path="" sampleTime="0.01" name="simple_buses" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="InBusA" physicalPath="simple_buses/InBusA" path="InBusA" signalName="InBusA">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="OutBusA" physicalPath="simple_buses/OutBusA" path="OutBusA" signalName="OutBusA">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="simple_buses/Top/subsys1" path="Top/subsys1" sampleTime="0.01" name="subsys1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="simple_buses/Top/subsys1/In1" path="Top/subsys1/In1" signalName="blabla">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="simple_buses/Top/subsys1/Out1" path="Top/subsys1/Out1" signalName="aa">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

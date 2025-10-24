@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="4.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241002T162327_18688\tmp_ut_scaling_enums\scaling_enums.slx" modelCreationDate="2024-09-30T09:26:04" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="5.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="4.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241002T162327_18688\tmp_ut_scaling_enums\scaling_enums.slx" creationDate="2024-09-30T09:26:04" modificationDate="2024-10-02T16:24:07">
+    <subsystem subsysID="ss1" physicalPath="scaling_enums/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="0.2" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="scaling_enums/top_A/Subsystem/top_A/In1" path="top_A/Subsystem/top_A/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <enumType name="AlphaType">
+            <enumElement name="A" value="1"/>
+            <enumElement name="B" value="2"/>
+            <enumElement name="C" value="3"/>
+          </enumType>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="scaling_enums/top_A/Subsystem/top_A/In2" path="top_A/Subsystem/top_A/In2">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="scaling_enums/top_A/Subsystem/top_A/In3" path="top_A/Subsystem/top_A/In3">
+        <miltype>
+          <enumType name="BasicColors">
+            <enumElement name="red" value="-1"/>
+            <enumElement name="blue" value="0"/>
+            <enumElement name="green" value="2"/>
+          </enumType>
+        </miltype>
+        <siltype>
+          <enumType name="ColorEnum">
+            <enumElement name="my_RED" value="-1"/>
+            <enumElement name="my_BLUE" value="0"/>
+            <enumElement name="my_GREEN" value="2"/>
+          </enumType>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="scaling_enums/top_A/Subsystem/top_A/In4" path="top_A/Subsystem/top_A/In4">
+        <miltype>
+          <enumType name="MoralType">
+            <enumElement name="BAD" value="-5"/>
+            <enumElement name="GOOD" value="7"/>
+          </enumType>
+        </miltype>
+        <siltype>
+          <enumType name="GoodBadEnum">
+            <enumElement name="BAD" value="-5"/>
+            <enumElement name="GOOD" value="7"/>
+          </enumType>
+        </siltype>
+      </inport>
+      <inport portNumber="5" name="In5" physicalPath="scaling_enums/top_A/Subsystem/top_A/In5" path="top_A/Subsystem/top_A/In5">
+        <miltype>
+          <int32/>
+        </miltype>
+        <siltype>
+          <enumType name="ScalingSwitchType">
+            <enumElement name="off" value="1"/>
+            <enumElement name="on" value="42"/>
+          </enumType>
+        </siltype>
+      </inport>
+      <inport portNumber="6" name="In6" physicalPath="scaling_enums/top_A/Subsystem/top_A/In6" path="top_A/Subsystem/top_A/In6">
+        <miltype>
+          <enumType name="SwitchType">
+            <enumElement name="off" value="-1"/>
+            <enumElement name="on" value="1"/>
+          </enumType>
+        </miltype>
+        <siltype>
+          <enumType name="ScalingSwitchType">
+            <enumElement name="off" value="1"/>
+            <enumElement name="on" value="42"/>
+          </enumType>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="scaling_enums/top_A/Subsystem/top_A/Out1" path="top_A/Subsystem/top_A/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="scaling_enums/top_A/Subsystem/top_A/Out2" path="top_A/Subsystem/top_A/Out2">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <enumType name="AlphaType">
+            <enumElement name="A" value="1"/>
+            <enumElement name="B" value="2"/>
+            <enumElement name="C" value="3"/>
+          </enumType>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="scaling_enums/top_A/Subsystem/top_A/Out3" path="top_A/Subsystem/top_A/Out3">
+        <miltype>
+          <enumType name="BasicColors">
+            <enumElement name="red" value="-1"/>
+            <enumElement name="blue" value="0"/>
+            <enumElement name="green" value="2"/>
+          </enumType>
+        </miltype>
+        <siltype>
+          <enumType name="ColorEnum">
+            <enumElement name="my_RED" value="-1"/>
+            <enumElement name="my_BLUE" value="0"/>
+            <enumElement name="my_GREEN" value="2"/>
+          </enumType>
+        </siltype>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="scaling_enums/top_A/Subsystem/top_A/Out4" path="top_A/Subsystem/top_A/Out4">
+        <miltype>
+          <enumType name="MoralType">
+            <enumElement name="BAD" value="-5"/>
+            <enumElement name="GOOD" value="7"/>
+          </enumType>
+        </miltype>
+        <siltype>
+          <enumType name="GoodBadEnum">
+            <enumElement name="BAD" value="-5"/>
+            <enumElement name="GOOD" value="7"/>
+          </enumType>
+        </siltype>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="scaling_enums/top_A/Subsystem/top_A/Out5" path="top_A/Subsystem/top_A/Out5">
+        <miltype>
+          <int32/>
+        </miltype>
+        <siltype>
+          <enumType name="ScalingSwitchType">
+            <enumElement name="off" value="1"/>
+            <enumElement name="on" value="42"/>
+          </enumType>
+        </siltype>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="scaling_enums/top_A/Subsystem/top_A/Out6" path="top_A/Subsystem/top_A/Out6">
+        <miltype>
+          <enumType name="SwitchType">
+            <enumElement name="off" value="-1"/>
+            <enumElement name="on" value="1"/>
+          </enumType>
+        </miltype>
+        <siltype>
+          <enumType name="ScalingSwitchType">
+            <enumElement name="off" value="1"/>
+            <enumElement name="on" value="42"/>
+          </enumType>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

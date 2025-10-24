@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.41" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_const_sf_cal\const_sf_cal_tl30.mdl" modelCreationDate="2008-10-14T15:41:20" creator="alex">
+  <toolInfo name="Matlab" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.41" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_const_sf_cal\const_sf_cal_tl30.mdl" creationDate="2008-10-14T15:41:20" modificationDate="2021-11-18T10:22:09">
+    <subsystem subsysID="ss1" physicalPath="const_sf_cal_tl30/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="const_sf_cal_tl30/top_A/Subsystem/top_A/in1" path="top_A/Subsystem/top_A/in1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="Const1[const]" path="top_A/Subsystem/top_A/Const1" physicalPath="const_sf_cal_tl30/top_A/Subsystem/top_A/Const1" origin="const" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Const1" targetLinkBlockKind="TL_Constant" physicalPath="const_sf_cal_tl30/top_A/Subsystem/top_A/Const1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="out1" physicalPath="const_sf_cal_tl30/top_A/Subsystem/top_A/out1" path="top_A/Subsystem/top_A/out1">
+        <miltype signalName="y">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="y">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="out2" physicalPath="const_sf_cal_tl30/top_A/Subsystem/top_A/out2" path="top_A/Subsystem/top_A/out2">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="const_sf_cal_tl30/top_A/Subsystem/top_A/inlined_sub/sub_B2" path="top_A/Subsystem/top_A/inlined_sub/sub_B2" sampleTime="1" name="sub_B2" scopeKind="SUT" kind="subsystem"/>
+    <subsystem subsysID="ss3" physicalPath="const_sf_cal_tl30/top_A/Subsystem/top_A/sub_B1" path="top_A/Subsystem/top_A/sub_B1" sampleTime="1" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="const_sf_cal_tl30/top_A/Subsystem/top_A/sub_B1/In1" path="top_A/Subsystem/top_A/sub_B1/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="const_sf_cal_tl30/top_A/Subsystem/top_A/sub_B1/In2" path="top_A/Subsystem/top_A/sub_B1/In2">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="const_sf_cal_tl30/top_A/Subsystem/top_A/sub_B1/Out1" path="top_A/Subsystem/top_A/sub_B1/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

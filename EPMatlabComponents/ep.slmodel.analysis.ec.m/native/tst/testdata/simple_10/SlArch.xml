@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20200908T161243_10532\tmp_ut_simple_10\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20200908T161243_10532\tmp_ut_simple_10\startEC.m" modelVersion="1.76" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200908T161243_10532\tmp_ut_simple_10\ArrayDisp_EC.slx" modelCreationDate="2007-08-31T15:40:11" creator="developer">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.76" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200908T161243_10532\tmp_ut_simple_10\ArrayDisp_EC.slx" creationDate="2007-08-31T15:40:11" modificationDate="2020-09-08T14:23:10" initScript="C:\Users\developer\AppData\Local\Temp\ut20200908T161243_10532\tmp_ut_simple_10\startEC.m">
+    <subsystem subsysID="ss1" physicalPath="ArrayDisp_EC" path="" sampleTime="0.2" name="ArrayDisp_EC" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ArrayDisp_EC/In1" path="In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ArrayDisp_EC/In2" path="In2">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="ArrayDisp_EC/In3" path="In3">
+        <double/>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="ArrayDisp_EC/In4" path="In4">
+        <double/>
+      </inport>
+      <inport portNumber="5" name="In5" physicalPath="ArrayDisp_EC/In5" path="In5">
+        <double/>
+      </inport>
+      <inport portNumber="6" name="In6" physicalPath="ArrayDisp_EC/In6" path="In6">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ArrayDisp_EC/Out1" path="Out1" signalName="BTCAnnotatedOutport_Out1">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="ArrayDisp_EC/Subsystem" path="Subsystem" sampleTime="0.2" name="Subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ArrayDisp_EC/Subsystem/In1" path="Subsystem/In1" signalName="BTCAnnotatedInport_In1">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ArrayDisp_EC/Subsystem/In2" path="Subsystem/In2" signalName="BTCAnnotatedInport_In2">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ArrayDisp_EC/Subsystem/Out1" path="Subsystem/Out1">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="powerwindow_sl"/>
+    <Architecture id="id1" name="powerwindow_sl [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="powerwindow_sl.c:1:powerwindow_sl_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="driver_up" refId="id0"/>
+        <Path path="driver_up" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="driver_down" refId="id0"/>
+        <Path path="driver_down" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="passenger_up" refId="id0"/>
+        <Path path="passenger_up" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="passenger_down" refId="id0"/>
+        <Path path="passenger_down" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="obstacle_position" refId="id0"/>
+        <Path path="obstacle_position" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="window_position" refId="id0"/>
+        <Path path="window_position" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="obstacle_detection" refId="id0"/>
+        <Path path="obstacle_detection" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="move_up" refId="id0"/>
+        <Path path="move_up" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="move_down" refId="id0"/>
+        <Path path="move_down" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out2" refId="id0"/>
+        <Path path="out2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out3" refId="id0"/>
+        <Path path="out3" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_bottom_disp(1)" refId="id0"/>
+        <Path path="endstop_bottom" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_top_disp(1)" refId="id0"/>
+        <Path path="endstop_top" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="auto_down_time" refId="id0"/>
+        <Path path="auto_down_time" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="auto_up_time" refId="id0"/>
+        <Path path="auto_up_time" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="emergency_down_time" refId="id0"/>
+        <Path path="emergency_down_time" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="position_endstop_top" refId="id0"/>
+        <Path path="position_endstop_top" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="powerwindow_controller" refId="id0"/>
+      <Path path="powerwindow_sl.c:1:powerwindow_sl_step/powerwindow_controller_step.c:1:powerwindow_controller_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/driver_up" refId="id0"/>
+        <Path path="driver_up" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/driver_down" refId="id0"/>
+        <Path path="driver_down" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/passenger_up" refId="id0"/>
+        <Path path="passenger_up" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/passenger_down" refId="id0"/>
+        <Path path="passenger_down" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/obstacle_position" refId="id0"/>
+        <Path path="obstacle_position" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/window_position" refId="id0"/>
+        <Path path="window_position" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/obstacle_detection" refId="id0"/>
+        <Path path="obstacle_detection" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/move_up" refId="id0"/>
+        <Path path="move_up" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/move_down" refId="id0"/>
+        <Path path="move_down" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/Out1" refId="id0"/>
+        <Path path="out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/Out2" refId="id0"/>
+        <Path path="out2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/Out3" refId="id0"/>
+        <Path path="out3" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_bottom_disp(1)" refId="id0"/>
+        <Path path="endstop_bottom" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_top_disp(1)" refId="id0"/>
+        <Path path="endstop_top" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="auto_down_time" refId="id0"/>
+        <Path path="auto_down_time" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="auto_up_time" refId="id0"/>
+        <Path path="auto_up_time" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="emergency_down_time" refId="id0"/>
+        <Path path="emergency_down_time" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="position_endstop_top" refId="id0"/>
+        <Path path="position_endstop_top" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="powerwindow_controller/validate_passenger" refId="id0"/>
+      <Path path="powerwindow_sl.c:1:powerwindow_sl_step/powerwindow_controller_step.c:1:powerwindow_controller_step/validate_passenger.c:1:validate_passenger" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/validate_passenger/up" refId="id0"/>
+        <Path path="passenger_up" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/validate_passenger/down" refId="id0"/>
+        <Path path="passenger_down" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/validate_passenger/endstop_top" refId="id0"/>
+        <Path path="endstop_top" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/validate_passenger/endstop_bottom" refId="id0"/>
+        <Path path="endstop_bottom" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/validate_passenger/validated_neutral" refId="id0"/>
+        <Path path="passenger_validated_neutral" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/validate_passenger/validated_up" refId="id0"/>
+        <Path path="passenger_validated_up" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/validate_passenger/validated_down" refId="id0"/>
+        <Path path="passenger_validated_down" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="powerwindow_controller/detect_obstacle_endstop" refId="id0"/>
+      <Path path="powerwindow_sl.c:1:powerwindow_sl_step/powerwindow_controller_step.c:1:powerwindow_controller_step/detect_obstacle_endstop.c:1:detect_obstacle_endstop" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/detect_obstacle_endstop/obstacle_position" refId="id0"/>
+        <Path path="obstacle_position" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/detect_obstacle_endstop/window_position" refId="id0"/>
+        <Path path="window_position" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/detect_obstacle_endstop/move_up" refId="id0"/>
+        <Path path="prev_move_up" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/detect_obstacle_endstop/obstacle" refId="id0"/>
+        <Path path="obstacle_detection" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/detect_obstacle_endstop/endstop_top" refId="id0"/>
+        <Path path="endstop_top" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/detect_obstacle_endstop/endstop_bottom" refId="id0"/>
+        <Path path="endstop_bottom" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_bottom_disp(1)" refId="id0"/>
+        <Path path="endstop_bottom" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="powerwindow_controller/detect_obstacle_endstop/detect_endstop/endstop_top_disp(1)" refId="id0"/>
+        <Path path="endstop_top" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="position_endstop_top" refId="id0"/>
+        <Path path="position_endstop_top" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="powerwindow_controller/Model" refId="id0"/>
+      <Path path="powerwindow_sl.c:1:powerwindow_sl_step/powerwindow_controller_step.c:1:powerwindow_controller_step/validated_driver.c:1:validated_driver" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/Model/In1" refId="id0"/>
+        <Path path="driver_up" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/Model/In2" refId="id0"/>
+        <Path path="driver_down" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/Model/In3" refId="id0"/>
+        <Path path="endstop_top" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/Model/In4" refId="id0"/>
+        <Path path="endstop_bottom" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/Model/Out1" refId="id0"/>
+        <Path path="driver_validated_neutral" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/Model/Out2" refId="id0"/>
+        <Path path="out2_Model" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/Model/Out3" refId="id0"/>
+        <Path path="driver_validated_down" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="powerwindow_controller/Model/Subsystem" refId="id0"/>
+      <Path path="powerwindow_sl.c:1:powerwindow_sl_step/powerwindow_controller_step.c:1:powerwindow_controller_step/validated_driver.c:1:validated_driver/test.c:1:test" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/Model/Subsystem/In1" refId="id0"/>
+        <Path path="endstop_bottom" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/Model/Subsystem/Out1" refId="id0"/>
+        <Path path="driver_validated_up_subsystem" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="powerwindow_controller/Model/validate_driver/check_up" refId="id0"/>
+      <Path path="powerwindow_sl.c:1:powerwindow_sl_step/powerwindow_controller_step.c:1:powerwindow_controller_step/validated_driver.c:1:validated_driver/check_up_fct.c:1:check_up_fct" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/Model/validate_driver/check_up/endstop" refId="id0"/>
+        <Path path="endstop_top" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="powerwindow_controller/Model/validate_driver/driver_switch" refId="id0"/>
+      <Path path="powerwindow_sl.c:1:powerwindow_sl_step/powerwindow_controller_step.c:1:powerwindow_controller_step/validated_driver.c:1:validated_driver/driver_switch.c:1:driver_switch" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/Model/validate_driver/driver_switch/driver_up" refId="id0"/>
+        <Path path="driver_up" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/Model/validate_driver/driver_switch/driver_down" refId="id0"/>
+        <Path path="driver_down" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="powerwindow_controller/Model/validate_driver/Model" refId="id0"/>
+      <Path path="powerwindow_sl.c:1:powerwindow_sl_step/powerwindow_controller_step.c:1:powerwindow_controller_step/validated_driver.c:1:validated_driver/check_down.c:1:check_down" refId="id1"/>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="powerwindow_controller/Model1" refId="id0"/>
+      <Path path="powerwindow_sl.c:1:powerwindow_sl_step/powerwindow_controller_step.c:1:powerwindow_controller_step/validated_driver1.c:1:validated_driver1" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/Model1/In1" refId="id0"/>
+        <Path path="driver_up" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/Model1/In2" refId="id0"/>
+        <Path path="driver_down" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/Model1/In3" refId="id0"/>
+        <Path path="endstop_top" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="powerwindow_controller/Model1/In4" refId="id0"/>
+        <Path path="endstop_bottom" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/Model1/Out1" refId="id0"/>
+        <Path path="out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/Model1/Out2" refId="id0"/>
+        <Path path="out2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="powerwindow_controller/Model1/Out3" refId="id0"/>
+        <Path path="out3" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="powerwindow_controller/Model1/validate_driver1/Model" refId="id0"/>
+      <Path path="powerwindow_sl.c:1:powerwindow_sl_step/powerwindow_controller_step.c:1:powerwindow_controller_step/validated_driver1.c:1:validated_driver1/check_down.c:1:check_down" refId="id1"/>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

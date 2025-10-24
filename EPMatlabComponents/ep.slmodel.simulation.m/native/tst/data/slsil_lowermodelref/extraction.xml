@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="26A">
+	<Scope uid="26A" name="lowermodelref_slsil" path="lowermodelref_slsil" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="lowermodelref_slsil" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_367" signalType="uint8" isFloat="yes">
+				<ifName ifid="if_367" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_368" signalType="double" isFloat="yes">
+				<ifName ifid="if_368" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<Display name="DataTypeConversion1" path="lowermodelref_slsil/FrameOfFrame/ModelBlk/sut/DataTypeConversion1" physicalPath="simple_model/sut/DataTypeConversion1" portNumber="1">
+			<Variable varid="varif_369" signalType="double" isFloat="yes">
+				<ifName ifid="if_369" lsb="1" offset="0" displayName="DataTypeConversion1" identifier="LOCAL:FrameOfFrame/ModelBlk/sut/DataTypeConversion1" />
+			</Variable>
+		</Display>
+		<Display name="Gain" path="lowermodelref_slsil/FrameOfFrame/ModelBlk/sut/Gain" physicalPath="simple_model/sut/Gain" portNumber="1">
+			<Variable varid="varif_370" signalName="loc" signalType="double" isFloat="yes">
+				<ifName ifid="if_370" lsb="1" offset="0" displayName="Gain" identifier="LOCAL:FrameOfFrame/ModelBlk/sut/Gain" />
+			</Variable>
+		</Display>
+		<Calibration name="K" path="lowermodelref_slsil/FrameOfFrame/ModelBlk/sut/Gain" physicalPath="simple_model/sut/Gain" origin="explicit_param">
+			<CalibrationUsage path="lowermodelref_slsil/FrameOfFrame/ModelBlk/sut/Gain" physicalPath="simple_model/sut/Gain" blockAttribute="Gain" />
+			<Variable varid="varif_371" signalType="uint8" isFloat="yes">
+				<ifName ifid="if_371" initValue="2" lsb="1" offset="0" displayName="K" identifier="PARAMETER:FrameOfFrame/ModelBlk/sut/Gain/K" />
+			</Variable>
+		</Calibration>
+		<Model name="lowermodelref_slsil" modelPath="/E:/ModelsDev/EC/lowermodelref_slsil/ml2017b/lowermodelref_slsil.slx" type="SimulinkModel" />
+		<Scope uid="268" name="FrameOfFrame" path="lowermodelref_slsil/FrameOfFrame" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="lowermodelref_slsil/FrameOfFrame" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_377" signalType="uint8" isFloat="yes">
+					<ifName ifid="if_377" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_378" signalType="double" isFloat="yes">
+					<ifName ifid="if_378" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<Display name="DataTypeConversion1" path="lowermodelref_slsil/FrameOfFrame/ModelBlk/sut/DataTypeConversion1" physicalPath="simple_model/sut/DataTypeConversion1" portNumber="1">
+				<Variable varid="varif_379" signalType="double" isFloat="yes">
+					<ifName ifid="if_379" lsb="1" offset="0" displayName="DataTypeConversion1" identifier="LOCAL:ModelBlk/sut/DataTypeConversion1" />
+				</Variable>
+			</Display>
+			<Display name="Gain" path="lowermodelref_slsil/FrameOfFrame/ModelBlk/sut/Gain" physicalPath="simple_model/sut/Gain" portNumber="1">
+				<Variable varid="varif_380" signalName="loc" signalType="double" isFloat="yes">
+					<ifName ifid="if_380" lsb="1" offset="0" displayName="Gain" identifier="LOCAL:ModelBlk/sut/Gain" />
+				</Variable>
+			</Display>
+			<Calibration name="K" path="lowermodelref_slsil/FrameOfFrame/ModelBlk/sut/Gain" physicalPath="simple_model/sut/Gain" origin="explicit_param">
+				<CalibrationUsage path="lowermodelref_slsil/FrameOfFrame/ModelBlk/sut/Gain" physicalPath="simple_model/sut/Gain" blockAttribute="Gain" />
+				<Variable varid="varif_381" signalType="uint8" isFloat="yes">
+					<ifName ifid="if_381" initValue="2" lsb="1" offset="0" displayName="K" identifier="PARAMETER:ModelBlk/sut/Gain/K" />
+				</Variable>
+			</Calibration>
+			<Model name="lowermodelref_slsil" modelPath="/E:/ModelsDev/EC/lowermodelref_slsil/ml2017b/lowermodelref_slsil.slx" type="SimulinkModel" />
+			<Scope uid="269" name="ModelBlk" path="lowermodelref_slsil/FrameOfFrame/ModelBlk" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="simple_model" subsystemLogging="on">
+				<InPort name="in" portNumber="1" compositeSig="none">
+					<Variable varid="varif_387" signalType="uint8" isFloat="yes">
+						<ifName ifid="if_387" lsb="1" offset="0" displayName="in" identifier="INPUT:in" />
+					</Variable>
+				</InPort>
+				<OutPort name="out" portNumber="1" compositeSig="none">
+					<Variable varid="varif_388" signalName="out" signalType="uint8" isFloat="yes">
+						<ifName ifid="if_388" lsb="1" offset="0" displayName="out" identifier="OUTPUT:out" />
+					</Variable>
+				</OutPort>
+				<Display name="DataTypeConversion1" path="lowermodelref_slsil/FrameOfFrame/ModelBlk/sut/DataTypeConversion1" physicalPath="simple_model/sut/DataTypeConversion1" portNumber="1">
+					<Variable varid="varif_389" signalType="double" isFloat="yes">
+						<ifName ifid="if_389" lsb="1" offset="0" displayName="DataTypeConversion1" identifier="LOCAL:sut/DataTypeConversion1" />
+					</Variable>
+				</Display>
+				<Display name="Gain" path="lowermodelref_slsil/FrameOfFrame/ModelBlk/sut/Gain" physicalPath="simple_model/sut/Gain" portNumber="1">
+					<Variable varid="varif_390" signalName="loc" signalType="double" isFloat="yes">
+						<ifName ifid="if_390" lsb="1" offset="0" displayName="Gain" identifier="LOCAL:sut/Gain" />
+					</Variable>
+				</Display>
+				<Calibration name="K" path="lowermodelref_slsil/FrameOfFrame/ModelBlk/sut/Gain" physicalPath="simple_model/sut/Gain" origin="explicit_param">
+					<CalibrationUsage path="lowermodelref_slsil/FrameOfFrame/ModelBlk/sut/Gain" physicalPath="simple_model/sut/Gain" blockAttribute="Gain" />
+					<Variable varid="varif_391" signalType="uint8" isFloat="yes">
+						<ifName ifid="if_391" initValue="2" lsb="1" offset="0" displayName="K" identifier="PARAMETER:sut/Gain/K" />
+					</Variable>
+				</Calibration>
+				<Model name="simple_model" modelPath="/E:/ModelsDev/EC/lowermodelref_slsil/ml2017b/simple_model.mdl" type="SimulinkModel" />
+			</Scope>
+		</Scope>
+	</Scope>
+</ExtractionModel>

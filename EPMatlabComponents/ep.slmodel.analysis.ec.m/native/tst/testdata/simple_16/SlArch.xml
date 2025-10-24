@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_16\SYSTEM_STARTUP.m" modelVersion="1.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_16\Wrapper_IPT_CAN_SWC.slx" modelCreationDate="2019-05-10T14:58:46" creator="developer">
+  <toolInfo name="Matlab" release="(R2019b)" version="9.7" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2019b)" version="10.0" patchLevel=""/>
+  <model modelKind="model" modelID="model001" modelVersion="1.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_16\Wrapper_IPT_CAN_SWC.slx" creationDate="2019-05-10T14:58:46" initScript="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_16\SYSTEM_STARTUP.m">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC" path="Wrapper_IPT_CAN_SWC" sampleTime="0.01" name="Wrapper_IPT_CAN_SWC" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="HLd_flg_VehSpdValid" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_flg_VehSpdValid" path="Wrapper_IPT_CAN_SWC/HLd_flg_VehSpdValid">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="HLd_n_VehSpdVal" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_n_VehSpdVal" path="Wrapper_IPT_CAN_SWC/HLd_n_VehSpdVal">
+        <uint16/>
+      </inport>
+      <inport portNumber="3" name="HLd_flg_ReadySt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_flg_ReadySt" path="Wrapper_IPT_CAN_SWC/HLd_flg_ReadySt">
+        <boolean/>
+      </inport>
+      <inport portNumber="4" name="HLd_flg_VehHVCnctCmd" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_flg_VehHVCnctCmd" path="Wrapper_IPT_CAN_SWC/HLd_flg_VehHVCnctCmd">
+        <boolean/>
+      </inport>
+      <inport portNumber="5" name="HLd_flg_VehHVCnctCmdValid" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_flg_VehHVCnctCmdValid" path="Wrapper_IPT_CAN_SWC/HLd_flg_VehHVCnctCmdValid">
+        <boolean/>
+      </inport>
+      <inport portNumber="6" name="HLd_flg_VMSChaStopReq" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_flg_VMSChaStopReq" path="Wrapper_IPT_CAN_SWC/HLd_flg_VMSChaStopReq">
+        <boolean/>
+      </inport>
+      <inport portNumber="7" name="HLd_flg_KL15CAN" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_flg_KL15CAN" path="Wrapper_IPT_CAN_SWC/HLd_flg_KL15CAN">
+        <boolean/>
+      </inport>
+      <inport portNumber="8" name="HLd_flg_KLR" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_flg_KLR" path="Wrapper_IPT_CAN_SWC/HLd_flg_KLR">
+        <boolean/>
+      </inport>
+      <inport portNumber="9" name="HLd_flg_KL50" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_flg_KL50" path="Wrapper_IPT_CAN_SWC/HLd_flg_KL50">
+        <boolean/>
+      </inport>
+      <inport portNumber="10" name="HLd_flg_FrontCrashSt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_flg_FrontCrashSt" path="Wrapper_IPT_CAN_SWC/HLd_flg_FrontCrashSt">
+        <boolean/>
+      </inport>
+      <inport portNumber="11" name="HLd_flg_BackCrashSt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_flg_BackCrashSt" path="Wrapper_IPT_CAN_SWC/HLd_flg_BackCrashSt">
+        <boolean/>
+      </inport>
+      <inport portNumber="12" name="HLd_flg_LeftCrashSt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_flg_LeftCrashSt" path="Wrapper_IPT_CAN_SWC/HLd_flg_LeftCrashSt">
+        <boolean/>
+      </inport>
+      <inport portNumber="13" name="HLd_flg_RightCrashSt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_flg_RightCrashSt" path="Wrapper_IPT_CAN_SWC/HLd_flg_RightCrashSt">
+        <boolean/>
+      </inport>
+      <inport portNumber="14" name="HLd_enum_CrashIntensity" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_enum_CrashIntensity" path="Wrapper_IPT_CAN_SWC/HLd_enum_CrashIntensity">
+        <uint8/>
+      </inport>
+      <inport portNumber="15" name="IPTd_flg_TesterClearDTC" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_flg_TesterClearDTC" path="Wrapper_IPT_CAN_SWC/IPTd_flg_TesterClearDTC">
+        <boolean/>
+      </inport>
+      <inport portNumber="16" name="HLd_enum_OBCSt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_enum_OBCSt" path="Wrapper_IPT_CAN_SWC/HLd_enum_OBCSt">
+        <uint8/>
+      </inport>
+      <inport portNumber="17" name="HLd_flg_OBCChaWakeUp" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_flg_OBCChaWakeUp" path="Wrapper_IPT_CAN_SWC/HLd_flg_OBCChaWakeUp">
+        <boolean/>
+      </inport>
+      <inport portNumber="18" name="HLd_flg_OBCCC" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_flg_OBCCC" path="Wrapper_IPT_CAN_SWC/HLd_flg_OBCCC">
+        <boolean/>
+      </inport>
+      <inport portNumber="19" name="HLd_flg_ElecLockSt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_flg_ElecLockSt" path="Wrapper_IPT_CAN_SWC/HLd_flg_ElecLockSt">
+        <boolean/>
+      </inport>
+      <inport portNumber="20" name="HLd_flg_OBCHVIL" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_flg_OBCHVIL" path="Wrapper_IPT_CAN_SWC/HLd_flg_OBCHVIL">
+        <boolean/>
+      </inport>
+      <inport portNumber="21" name="HLd_flg_OBCSlowChaCnctSt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_flg_OBCSlowChaCnctSt" path="Wrapper_IPT_CAN_SWC/HLd_flg_OBCSlowChaCnctSt">
+        <boolean/>
+      </inport>
+      <inport portNumber="22" name="HLd_i_OBCIptCur" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_i_OBCIptCur" path="Wrapper_IPT_CAN_SWC/HLd_i_OBCIptCur">
+        <uint16/>
+      </inport>
+      <inport portNumber="23" name="HLd_v_OBCIptVolt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_v_OBCIptVolt" path="Wrapper_IPT_CAN_SWC/HLd_v_OBCIptVolt">
+        <uint16/>
+      </inport>
+      <inport portNumber="24" name="HLd_v_OBCChaVolt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_v_OBCChaVolt" path="Wrapper_IPT_CAN_SWC/HLd_v_OBCChaVolt">
+        <uint16/>
+      </inport>
+      <inport portNumber="25" name="HLd_i_OBCChaCur" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_i_OBCChaCur" path="Wrapper_IPT_CAN_SWC/HLd_i_OBCChaCur">
+        <uint16/>
+      </inport>
+      <inport portNumber="26" name="HLd_i_HVLoadCurReq" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_i_HVLoadCurReq" path="Wrapper_IPT_CAN_SWC/HLd_i_HVLoadCurReq">
+        <uint16/>
+      </inport>
+      <inport portNumber="27" name="HLd_l_Odograph" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/HLd_l_Odograph" path="Wrapper_IPT_CAN_SWC/HLd_l_Odograph">
+        <uint32/>
+      </inport>
+      <parameter name="IPTc_dbgsw_ElecLockSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_ElecLockSt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_HVLoadCurReq" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_HVLoadCurReq">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCCC" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCCC">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCChaCur" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCChaCur">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCChaVolt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCChaVolt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCChaWakeUp" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCChaWakeUp">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCHVIL" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCHVIL">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCIptCur" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCIptCur">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCIptVolt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCIptVolt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCSlowChaCnctSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCSlowChaCnctSt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCSt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_Odograph" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_Odograph">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_VMSChaStopReq" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_VMSChaStopReq">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_VehHVCnctCmd" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_VehHVCnctCmd">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_VehHVCnctCmdValid" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_VehHVCnctCmdValid">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_VehSpdVal" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_VehSpdVal">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_ElecLockSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_ElecLockSt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_HVLoadCurReq" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_HVLoadCurReq">
+        <single min="0.0000000000000000e+00" max="5.1000000000000000e+01"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCCC" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCCC">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCChaCur" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCChaCur">
+        <single min="0.0000000000000000e+00" max="3.0000000000000000e+01"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCChaVolt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCChaVolt">
+        <single min="0.0000000000000000e+00" max="4.6500000000000000e+02"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCChaWakeUp" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCChaWakeUp">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCHVIL" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCHVIL">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCIptCur" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCIptCur">
+        <single min="0.0000000000000000e+00" max="4.6000000000000000e+01"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCIptVolt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCIptVolt">
+        <single min="0.0000000000000000e+00" max="2.7500000000000000e+02"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCSlowChaCnctSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCSlowChaCnctSt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCSt">
+        <uint8 min="0" max="255"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_Odograph" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_Odograph">
+        <single min="0.0000000000000000e+00" max="9.9999900000000000e+05"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_VMSChaStopReq" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_VMSChaStopReq">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_VehHVCnctCmd" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_VehHVCnctCmd">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_VehHVCnctCmdValid" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_VehHVCnctCmdValid">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_VehSpdVal" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_VehSpdVal">
+        <single min="0.0000000000000000e+00" max="3.2767000000000002e+02"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="IPTd_flg_VehHVCnctCmd" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_flg_VehHVCnctCmd" path="Wrapper_IPT_CAN_SWC/IPTd_flg_VehHVCnctCmd">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="IPTd_flg_VMSChaStopReq" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_flg_VMSChaStopReq" path="Wrapper_IPT_CAN_SWC/IPTd_flg_VMSChaStopReq">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="IPTd_flg_VehHVCnctCmdValid" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_flg_VehHVCnctCmdValid" path="Wrapper_IPT_CAN_SWC/IPTd_flg_VehHVCnctCmdValid">
+        <boolean/>
+      </outport>
+      <outport portNumber="4" name="IPTd_flg_FrontCrashSt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_flg_FrontCrashSt" path="Wrapper_IPT_CAN_SWC/IPTd_flg_FrontCrashSt">
+        <boolean/>
+      </outport>
+      <outport portNumber="5" name="IPTd_flg_BackCrashSt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_flg_BackCrashSt" path="Wrapper_IPT_CAN_SWC/IPTd_flg_BackCrashSt">
+        <boolean/>
+      </outport>
+      <outport portNumber="6" name="IPTd_flg_LeftCrashSt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_flg_LeftCrashSt" path="Wrapper_IPT_CAN_SWC/IPTd_flg_LeftCrashSt">
+        <boolean/>
+      </outport>
+      <outport portNumber="7" name="IPTd_flg_RightCrashSt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_flg_RightCrashSt" path="Wrapper_IPT_CAN_SWC/IPTd_flg_RightCrashSt">
+        <boolean/>
+      </outport>
+      <outport portNumber="8" name="IPTd_enum_CrashIntensity" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_enum_CrashIntensity" path="Wrapper_IPT_CAN_SWC/IPTd_enum_CrashIntensity">
+        <uint8/>
+      </outport>
+      <outport portNumber="9" name="IPTd_enum_OBCSt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_enum_OBCSt" path="Wrapper_IPT_CAN_SWC/IPTd_enum_OBCSt">
+        <enumType name="IPT_ENUM_OBCST">
+          <enumElement name="IPT_OBCIdle_St" value="0"/>
+          <enumElement name="IPT_OBCStandby_St" value="1"/>
+          <enumElement name="IPT_OBCCharging_St" value="2"/>
+          <enumElement name="IPT_OBCDerating_St" value="3"/>
+          <enumElement name="IPT_OBCStop_St" value="4"/>
+          <enumElement name="IPT_OBCFailure_St" value="5"/>
+          <enumElement name="IPT_OBCBatteryHeating_St" value="6"/>
+        </enumType>
+      </outport>
+      <outport portNumber="10" name="IPTd_flg_OBCChaWakeUp" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_flg_OBCChaWakeUp" path="Wrapper_IPT_CAN_SWC/IPTd_flg_OBCChaWakeUp">
+        <boolean/>
+      </outport>
+      <outport portNumber="11" name="IPTd_flg_OBCCC" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_flg_OBCCC" path="Wrapper_IPT_CAN_SWC/IPTd_flg_OBCCC">
+        <boolean/>
+      </outport>
+      <outport portNumber="12" name="IPTd_flg_ElecLockSt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_flg_ElecLockSt" path="Wrapper_IPT_CAN_SWC/IPTd_flg_ElecLockSt">
+        <boolean/>
+      </outport>
+      <outport portNumber="13" name="IPTd_flg_OBCHVIL" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_flg_OBCHVIL" path="Wrapper_IPT_CAN_SWC/IPTd_flg_OBCHVIL">
+        <boolean/>
+      </outport>
+      <outport portNumber="14" name="IPTd_flg_OBCSlowChaCnctSt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_flg_OBCSlowChaCnctSt" path="Wrapper_IPT_CAN_SWC/IPTd_flg_OBCSlowChaCnctSt">
+        <boolean/>
+      </outport>
+      <outport portNumber="15" name="IPTd_i_OBCIptCur" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_i_OBCIptCur" path="Wrapper_IPT_CAN_SWC/IPTd_i_OBCIptCur">
+        <single/>
+      </outport>
+      <outport portNumber="16" name="IPTd_v_OBCIptVolt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_v_OBCIptVolt" path="Wrapper_IPT_CAN_SWC/IPTd_v_OBCIptVolt">
+        <single/>
+      </outport>
+      <outport portNumber="17" name="IPTd_v_OBCChaVolt" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_v_OBCChaVolt" path="Wrapper_IPT_CAN_SWC/IPTd_v_OBCChaVolt">
+        <single/>
+      </outport>
+      <outport portNumber="18" name="IPTd_i_OBCChaCur" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_i_OBCChaCur" path="Wrapper_IPT_CAN_SWC/IPTd_i_OBCChaCur">
+        <single/>
+      </outport>
+      <outport portNumber="19" name="IPTd_i_HVLoadCurReq" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_i_HVLoadCurReq" path="Wrapper_IPT_CAN_SWC/IPTd_i_HVLoadCurReq">
+        <single/>
+      </outport>
+      <outport portNumber="20" name="IPTd_cflt_CANFaultDiagnostic" physicalPath="Wrapper_IPT_CAN_SWC/Wrapper_IPT_CAN_SWC/IPTd_cflt_CANFaultDiagnostic" path="Wrapper_IPT_CAN_SWC/IPTd_cflt_CANFaultDiagnostic">
+        <bus busType="non_virtual" busObjectName="IPTd_cflt_CANFaultDiagnostic">
+          <signal signalName="&lt;signal1&gt;.IPTd_cflt_Crash_fault">
+            <boolean/>
+          </signal>
+        </bus>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss11"/>
+      <subsystem refSubsysID="ss31"/>
+      <subsystem refSubsysID="ss35"/>
+      <subsystem refSubsysID="ss39"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="IPT_CAN_SWC/GWE_BCM_1_BMS_0x363_100ms" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_BCM_1_BMS_0x363_100ms" sampleTime="0.1" name="GWE_BCM_1_BMS_0x363_100ms" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="HLd_flg_KL15CAN" physicalPath="IPT_CAN_SWC/GWE_BCM_1_BMS_0x363_100ms/HLd_flg_KL15CAN" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_BCM_1_BMS_0x363_100ms/HLd_flg_KL15CAN" modelRef="model002">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="HLd_flg_KLR" physicalPath="IPT_CAN_SWC/GWE_BCM_1_BMS_0x363_100ms/HLd_flg_KLR" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_BCM_1_BMS_0x363_100ms/HLd_flg_KLR" modelRef="model002">
+        <boolean/>
+      </inport>
+      <inport portNumber="3" name="HLd_flg_KL50" physicalPath="IPT_CAN_SWC/GWE_BCM_1_BMS_0x363_100ms/HLd_flg_KL50" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_BCM_1_BMS_0x363_100ms/HLd_flg_KL50" modelRef="model002">
+        <boolean/>
+      </inport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms" sampleTime="0.01" name="GWE_Brake_1_BMS_0x130_10ms" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="HLd_flg_VehSpdValid" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/HLd_flg_VehSpdValid" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/HLd_flg_VehSpdValid" modelRef="model002">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="HLd_n_VehSpdVal" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/HLd_n_VehSpdVal" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/HLd_n_VehSpdVal" modelRef="model002">
+        <uint16/>
+      </inport>
+      <parameter name="IPTc_dbgsw_VehSpdVal" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_VehSpdVal">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_VehSpdVal" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_VehSpdVal">
+        <single min="0.0000000000000000e+00" max="3.2767000000000002e+02"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/CANtoActualValue" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/CANtoActualValue" sampleTime="0.01" name="CANtoActualValue" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/CANtoActualValue/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/CANtoActualValue/in" modelRef="model002" signalName="HLd_n_VehSpdVal">
+        <uint16 min="0" max="65535"/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/CANtoActualValue/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/CANtoActualValue/out" modelRef="model002">
+        <single/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/saturation" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/saturation" sampleTime="0.01" name="saturation" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="input" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/saturation/input" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/saturation/input" modelRef="model002">
+        <single/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/saturation/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/saturation/out" modelRef="model002">
+        <single min="0.0000000000000000e+00" max="3.2767000000000002e+02"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" sampleTime="0.01" name="signal_debug2" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2/in" modelRef="model002">
+        <single/>
+      </inport>
+      <parameter name="IPTc_dbgsw_VehSpdVal" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_VehSpdVal">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_VehSpdVal" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_VehSpdVal">
+        <single min="0.0000000000000000e+00" max="3.2767000000000002e+02"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_Brake_1_BMS_0x130_10ms/GWE_Brake_1_BMS_0x130_10ms/signal_debug2/out" modelRef="model002">
+        <single/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms" sampleTime="0.5" name="GWE_ICM_1_BMS_0x470_500ms" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="HLd_l_Odograph" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/HLd_l_Odograph" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/HLd_l_Odograph" modelRef="model002">
+        <uint32/>
+      </inport>
+      <parameter name="IPTc_dbgsw_Odograph" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_Odograph">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_Odograph" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_Odograph">
+        <single min="0.0000000000000000e+00" max="9.9999900000000000e+05"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <subsystem refSubsysID="ss8"/>
+      <subsystem refSubsysID="ss9"/>
+      <subsystem refSubsysID="ss10"/>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/CANtoActualValue" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/CANtoActualValue" sampleTime="0.5" name="CANtoActualValue" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/CANtoActualValue/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/CANtoActualValue/in" modelRef="model002" signalName="HLd_l_Odograph">
+        <uint32 min="0" max="4294967295"/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/CANtoActualValue/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/CANtoActualValue/out" modelRef="model002">
+        <single/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/saturation" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/saturation" sampleTime="0.5" name="saturation" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="input" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/saturation/input" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/saturation/input" modelRef="model002">
+        <single/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/saturation/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/saturation/out" modelRef="model002">
+        <single/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" sampleTime="0.5" name="signal_debug2" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2/in" modelRef="model002">
+        <single/>
+      </inport>
+      <parameter name="IPTc_dbgsw_Odograph" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_Odograph">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_Odograph" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_Odograph">
+        <single min="0.0000000000000000e+00" max="9.9999900000000000e+05"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/GWE_ICM_1_BMS_0x470_500ms/GWE_ICM_1_BMS_0x470_500ms/signal_debug2/out" modelRef="model002">
+        <single/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss11" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms" sampleTime="0.2" name="OBC_1_BMS_0x396_200ms" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="HLd_enum_OBCSt" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_enum_OBCSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_enum_OBCSt" modelRef="model002">
+        <uint8/>
+      </inport>
+      <inport portNumber="2" name="HLd_flg_OBCChaWakeUp" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_flg_OBCChaWakeUp" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_flg_OBCChaWakeUp" modelRef="model002">
+        <boolean/>
+      </inport>
+      <inport portNumber="3" name="HLd_flg_OBCCC" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_flg_OBCCC" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_flg_OBCCC" modelRef="model002">
+        <boolean/>
+      </inport>
+      <inport portNumber="4" name="HLd_flg_ElecLockSt" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_flg_ElecLockSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_flg_ElecLockSt" modelRef="model002">
+        <boolean/>
+      </inport>
+      <inport portNumber="5" name="HLd_flg_OBCHVIL" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_flg_OBCHVIL" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_flg_OBCHVIL" modelRef="model002">
+        <boolean/>
+      </inport>
+      <inport portNumber="6" name="HLd_flg_OBCSlowChaCnctSt" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_flg_OBCSlowChaCnctSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_flg_OBCSlowChaCnctSt" modelRef="model002">
+        <boolean/>
+      </inport>
+      <inport portNumber="7" name="HLd_i_OBCIptCur" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_i_OBCIptCur" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_i_OBCIptCur" modelRef="model002">
+        <uint16/>
+      </inport>
+      <inport portNumber="8" name="HLd_v_OBCIptVolt" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_v_OBCIptVolt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_v_OBCIptVolt" modelRef="model002">
+        <uint16/>
+      </inport>
+      <inport portNumber="9" name="HLd_v_OBCChaVolt" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_v_OBCChaVolt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_v_OBCChaVolt" modelRef="model002">
+        <uint16/>
+      </inport>
+      <inport portNumber="10" name="HLd_i_OBCChaCur" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_i_OBCChaCur" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/HLd_i_OBCChaCur" modelRef="model002">
+        <uint16/>
+      </inport>
+      <parameter name="IPTc_dbgsw_ElecLockSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_ElecLockSt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCCC" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCCC">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCChaCur" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCChaCur">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCChaVolt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCChaVolt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCChaWakeUp" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCChaWakeUp">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCHVIL" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCHVIL">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCIptCur" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCIptCur">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCIptVolt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCIptVolt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCSlowChaCnctSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCSlowChaCnctSt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_OBCSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCSt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_ElecLockSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_ElecLockSt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCCC" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCCC">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCChaCur" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCChaCur">
+        <single min="0.0000000000000000e+00" max="3.0000000000000000e+01"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCChaVolt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCChaVolt">
+        <single min="0.0000000000000000e+00" max="4.6500000000000000e+02"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCChaWakeUp" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCChaWakeUp">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCHVIL" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCHVIL">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCIptCur" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCIptCur">
+        <single min="0.0000000000000000e+00" max="4.6000000000000000e+01"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCIptVolt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCIptVolt">
+        <single min="0.0000000000000000e+00" max="2.7500000000000000e+02"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCSlowChaCnctSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCSlowChaCnctSt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCSt">
+        <uint8 min="0" max="255"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="IPTd_enum_OBCSt" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_enum_OBCSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_enum_OBCSt" modelRef="model002">
+        <enumType name="IPT_ENUM_OBCST">
+          <enumElement name="IPT_OBCIdle_St" value="0"/>
+          <enumElement name="IPT_OBCStandby_St" value="1"/>
+          <enumElement name="IPT_OBCCharging_St" value="2"/>
+          <enumElement name="IPT_OBCDerating_St" value="3"/>
+          <enumElement name="IPT_OBCStop_St" value="4"/>
+          <enumElement name="IPT_OBCFailure_St" value="5"/>
+          <enumElement name="IPT_OBCBatteryHeating_St" value="6"/>
+        </enumType>
+      </outport>
+      <outport portNumber="2" name="IPTd_flg_OBCChaWakeUp" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_flg_OBCChaWakeUp" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_flg_OBCChaWakeUp" modelRef="model002">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="IPTd_flg_OBCCC" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_flg_OBCCC" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_flg_OBCCC" modelRef="model002">
+        <boolean/>
+      </outport>
+      <outport portNumber="4" name="IPTd_flg_ElecLockSt" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_flg_ElecLockSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_flg_ElecLockSt" modelRef="model002">
+        <boolean/>
+      </outport>
+      <outport portNumber="5" name="IPTd_flg_OBCHVIL" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_flg_OBCHVIL" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_flg_OBCHVIL" modelRef="model002">
+        <boolean/>
+      </outport>
+      <outport portNumber="6" name="IPTd_flg_OBCSlowChaCnctSt" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_flg_OBCSlowChaCnctSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_flg_OBCSlowChaCnctSt" modelRef="model002">
+        <boolean/>
+      </outport>
+      <outport portNumber="7" name="IPTd_i_OBCIptCur" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_i_OBCIptCur" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_i_OBCIptCur" modelRef="model002">
+        <single/>
+      </outport>
+      <outport portNumber="8" name="IPTd_v_OBCIptVolt" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_v_OBCIptVolt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_v_OBCIptVolt" modelRef="model002">
+        <single/>
+      </outport>
+      <outport portNumber="9" name="IPTd_v_OBCChaVolt" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_v_OBCChaVolt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_v_OBCChaVolt" modelRef="model002">
+        <single/>
+      </outport>
+      <outport portNumber="10" name="IPTd_i_OBCChaCur" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_i_OBCChaCur" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/IPTd_i_OBCChaCur" modelRef="model002">
+        <single/>
+      </outport>
+      <subsystem refSubsysID="ss12"/>
+      <subsystem refSubsysID="ss13"/>
+      <subsystem refSubsysID="ss14"/>
+      <subsystem refSubsysID="ss15"/>
+      <subsystem refSubsysID="ss16"/>
+      <subsystem refSubsysID="ss17"/>
+      <subsystem refSubsysID="ss18"/>
+      <subsystem refSubsysID="ss19"/>
+      <subsystem refSubsysID="ss20"/>
+      <subsystem refSubsysID="ss21"/>
+      <subsystem refSubsysID="ss22"/>
+      <subsystem refSubsysID="ss23"/>
+      <subsystem refSubsysID="ss24"/>
+      <subsystem refSubsysID="ss25"/>
+      <subsystem refSubsysID="ss26"/>
+      <subsystem refSubsysID="ss27"/>
+      <subsystem refSubsysID="ss28"/>
+      <subsystem refSubsysID="ss29"/>
+      <subsystem refSubsysID="ss30"/>
+    </subsystem>
+    <subsystem subsysID="ss12" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue" sampleTime="0.2" name="CANtoActualValue" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue/in" modelRef="model002" signalName="HLd_v_OBCChaVolt">
+        <uint16/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue/out" modelRef="model002">
+        <single/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss13" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue1" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue1" sampleTime="0.2" name="CANtoActualValue1" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue1/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue1/in" modelRef="model002" signalName="HLd_i_OBCChaCur">
+        <uint16/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue1/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue1/out" modelRef="model002">
+        <single/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss14" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue2" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue2" sampleTime="0.2" name="CANtoActualValue2" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue2/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue2/in" modelRef="model002" signalName="HLd_i_OBCIptCur">
+        <uint16/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue2/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue2/out" modelRef="model002">
+        <single/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss15" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue3" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue3" sampleTime="0.2" name="CANtoActualValue3" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue3/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue3/in" modelRef="model002" signalName="HLd_v_OBCIptVolt">
+        <uint16 min="0" max="65535"/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue3/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/CANtoActualValue3/out" modelRef="model002">
+        <single/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss16" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation" sampleTime="0.2" name="saturation" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="input" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation/input" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation/input" modelRef="model002">
+        <single/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation/out" modelRef="model002">
+        <single/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss17" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation1" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation1" sampleTime="0.2" name="saturation1" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="input" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation1/input" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation1/input" modelRef="model002">
+        <single/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation1/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation1/out" modelRef="model002">
+        <single/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss18" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation2" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation2" sampleTime="0.2" name="saturation2" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="input" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation2/input" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation2/input" modelRef="model002" signalName="HLd_enum_OBCSt">
+        <uint8 min="0" max="255"/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation2/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation2/out" modelRef="model002">
+        <uint8/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss19" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation4" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation4" sampleTime="0.2" name="saturation4" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="input" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation4/input" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation4/input" modelRef="model002">
+        <single/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation4/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation4/out" modelRef="model002">
+        <single/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss20" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation5" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation5" sampleTime="0.2" name="saturation5" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="input" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation5/input" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation5/input" modelRef="model002">
+        <single/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation5/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/saturation5/out" modelRef="model002">
+        <single/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss21" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" sampleTime="0.2" name="signal_debug" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug/in" modelRef="model002">
+        <single/>
+      </inport>
+      <parameter name="IPTc_dbgsw_OBCIptCur" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCIptCur">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCIptCur" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCIptCur">
+        <single min="0.0000000000000000e+00" max="4.6000000000000000e+01"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug/out" modelRef="model002">
+        <single min="0.0000000000000000e+00" max="4.6000000000000000e+01"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss22" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" sampleTime="0.2" name="signal_debug1" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1/in" modelRef="model002" signalName="HLd_flg_OBCChaWakeUp">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </inport>
+      <parameter name="IPTc_dbgsw_OBCChaWakeUp" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCChaWakeUp">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCChaWakeUp" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCChaWakeUp">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug1/out" modelRef="model002">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss23" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" sampleTime="0.2" name="signal_debug2" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2/in" modelRef="model002">
+        <single/>
+      </inport>
+      <parameter name="IPTc_dbgsw_OBCIptVolt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCIptVolt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCIptVolt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCIptVolt">
+        <single min="0.0000000000000000e+00" max="2.7500000000000000e+02"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug2/out" modelRef="model002">
+        <single min="0.0000000000000000e+00" max="2.7500000000000000e+02"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss24" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" sampleTime="0.2" name="signal_debug3" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3/in" modelRef="model002">
+        <uint8/>
+      </inport>
+      <parameter name="IPTc_dbgsw_OBCSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCSt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCSt">
+        <uint8 min="0" max="255"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug3/out" modelRef="model002">
+        <uint8/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss25" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" sampleTime="0.2" name="signal_debug4" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4/in" modelRef="model002" signalName="HLd_flg_ElecLockSt">
+        <boolean/>
+      </inport>
+      <parameter name="IPTc_dbgsw_ElecLockSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_ElecLockSt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_ElecLockSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_ElecLockSt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug4/out" modelRef="model002">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss26" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" sampleTime="0.2" name="signal_debug5" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5/in" modelRef="model002" signalName="HLd_flg_OBCCC">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </inport>
+      <parameter name="IPTc_dbgsw_OBCCC" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCCC">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCCC" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCCC">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug5/out" modelRef="model002">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss27" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" sampleTime="0.2" name="signal_debug6" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6/in" modelRef="model002" signalName="HLd_flg_OBCSlowChaCnctSt">
+        <boolean/>
+      </inport>
+      <parameter name="IPTc_dbgsw_OBCSlowChaCnctSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCSlowChaCnctSt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCSlowChaCnctSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCSlowChaCnctSt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug6/out" modelRef="model002">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss28" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" sampleTime="0.2" name="signal_debug7" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7/in" modelRef="model002">
+        <single/>
+      </inport>
+      <parameter name="IPTc_dbgsw_OBCChaCur" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCChaCur">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCChaCur" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCChaCur">
+        <single min="0.0000000000000000e+00" max="3.0000000000000000e+01"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug7/out" modelRef="model002">
+        <single min="0.0000000000000000e+00" max="3.0000000000000000e+01"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss29" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" sampleTime="0.2" name="signal_debug8" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8/in" modelRef="model002">
+        <single/>
+      </inport>
+      <parameter name="IPTc_dbgsw_OBCChaVolt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCChaVolt">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCChaVolt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCChaVolt">
+        <single min="0.0000000000000000e+00" max="4.6500000000000000e+02"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug8/out" modelRef="model002">
+        <single min="0.0000000000000000e+00" max="4.6500000000000000e+02"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss30" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" sampleTime="0.2" name="signal_debug9" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9/in" modelRef="model002" signalName="HLd_flg_OBCHVIL">
+        <boolean/>
+      </inport>
+      <parameter name="IPTc_dbgsw_OBCHVIL" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_OBCHVIL">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_OBCHVIL" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_OBCHVIL">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/OBC_1_BMS_0x396_200ms/OBC_1_BMS_0x396_200ms/signal_debug9/out" modelRef="model002">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss31" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms" sampleTime="0.1" name="SDM_1_BMS_0x016_100ms" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="HLd_flg_FrontCrashSt" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/HLd_flg_FrontCrashSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/HLd_flg_FrontCrashSt" modelRef="model002">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="HLd_flg_BackCrashSt" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/HLd_flg_BackCrashSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/HLd_flg_BackCrashSt" modelRef="model002">
+        <boolean/>
+      </inport>
+      <inport portNumber="3" name="HLd_flg_LeftCrashSt" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/HLd_flg_LeftCrashSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/HLd_flg_LeftCrashSt" modelRef="model002">
+        <boolean/>
+      </inport>
+      <inport portNumber="4" name="HLd_flg_RightCrashSt" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/HLd_flg_RightCrashSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/HLd_flg_RightCrashSt" modelRef="model002">
+        <boolean/>
+      </inport>
+      <inport portNumber="5" name="HLd_enum_CrashIntensity" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/HLd_enum_CrashIntensity" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/HLd_enum_CrashIntensity" modelRef="model002">
+        <uint8/>
+      </inport>
+      <inport portNumber="6" name="IPTd_flg_TesterClearDTC" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/IPTd_flg_TesterClearDTC" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/IPTd_flg_TesterClearDTC" modelRef="model002">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="IPTd_flg_FrontCrashSt" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/IPTd_flg_FrontCrashSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/IPTd_flg_FrontCrashSt" modelRef="model002">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="IPTd_flg_BackCrashSt" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/IPTd_flg_BackCrashSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/IPTd_flg_BackCrashSt" modelRef="model002">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="IPTd_flg_LeftCrashSt" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/IPTd_flg_LeftCrashSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/IPTd_flg_LeftCrashSt" modelRef="model002">
+        <boolean/>
+      </outport>
+      <outport portNumber="4" name="IPTd_flg_RightCrashSt" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/IPTd_flg_RightCrashSt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/IPTd_flg_RightCrashSt" modelRef="model002">
+        <boolean/>
+      </outport>
+      <outport portNumber="5" name="IPTd_enum_CrashIntensity" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/IPTd_enum_CrashIntensity" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/IPTd_enum_CrashIntensity" modelRef="model002">
+        <uint8/>
+      </outport>
+      <outport portNumber="6" name="IPTd_cflt_CANFaultDiagnostic" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/IPTd_cflt_CANFaultDiagnostic" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/IPTd_cflt_CANFaultDiagnostic" modelRef="model002">
+        <bus busType="non_virtual" busObjectName="IPTd_cflt_CANFaultDiagnostic">
+          <signal signalName="&lt;signal1&gt;.IPTd_cflt_Crash_fault">
+            <boolean/>
+          </signal>
+        </bus>
+      </outport>
+      <subsystem refSubsysID="ss32"/>
+      <subsystem refSubsysID="ss34"/>
+    </subsystem>
+    <subsystem subsysID="ss32" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/FaultConfirmLatchToBS1" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/FaultConfirmLatchToBS1" sampleTime="0.1" name="FaultConfirmLatchToBS1" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="ifault" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/FaultConfirmLatchToBS1/ifault" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/FaultConfirmLatchToBS1/ifault" modelRef="model002" signalName="IPTd_iflt_Crash_fault">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </inport>
+      <inport portNumber="2" name="TesterReset" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/FaultConfirmLatchToBS1/TesterReset" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/FaultConfirmLatchToBS1/TesterReset" modelRef="model002">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="cfault_latch" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/FaultConfirmLatchToBS1/cfault_latch" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/FaultConfirmLatchToBS1/cfault_latch" modelRef="model002">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </outport>
+      <subsystem refSubsysID="ss33"/>
+    </subsystem>
+    <subsystem subsysID="ss33" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/FaultConfirmLatchToBS1/Fault_Confirmed/latch_reset" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/FaultConfirmLatchToBS1/Fault_Confirmed/latch_reset" sampleTime="0.01" name="latch_reset" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/FaultConfirmLatchToBS1/Fault_Confirmed/latch_reset/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/FaultConfirmLatchToBS1/Fault_Confirmed/latch_reset/in" modelRef="model002" signalName="cfault">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="reset" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/FaultConfirmLatchToBS1/Fault_Confirmed/latch_reset/reset" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/FaultConfirmLatchToBS1/Fault_Confirmed/latch_reset/reset" modelRef="model002">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/FaultConfirmLatchToBS1/Fault_Confirmed/latch_reset/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/FaultConfirmLatchToBS1/Fault_Confirmed/latch_reset/out" modelRef="model002">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss34" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/saturation4" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/saturation4" sampleTime="0.1" name="saturation4" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="input" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/saturation4/input" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/saturation4/input" modelRef="model002" signalName="HLd_enum_CrashIntensity">
+        <uint8 min="0" max="255"/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/saturation4/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/SDM_1_BMS_0x016_100ms/SDM_1_BMS_0x016_100ms/saturation4/out" modelRef="model002">
+        <uint8/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss35" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms" sampleTime="0.01" name="VCU_1_BMS_0x190_10ms" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="HLd_flg_ReadySt" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/HLd_flg_ReadySt" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/HLd_flg_ReadySt" modelRef="model002">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="HLd_flg_VehHVCnctCmd" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/HLd_flg_VehHVCnctCmd" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/HLd_flg_VehHVCnctCmd" modelRef="model002">
+        <boolean/>
+      </inport>
+      <inport portNumber="3" name="HLd_flg_VehHVCnctCmdValid" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/HLd_flg_VehHVCnctCmdValid" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/HLd_flg_VehHVCnctCmdValid" modelRef="model002">
+        <boolean/>
+      </inport>
+      <inport portNumber="4" name="HLd_flg_VMSChaStopReq" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/HLd_flg_VMSChaStopReq" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/HLd_flg_VMSChaStopReq" modelRef="model002">
+        <boolean/>
+      </inport>
+      <parameter name="IPTc_dbgsw_VMSChaStopReq" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_VMSChaStopReq">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_VehHVCnctCmd" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_VehHVCnctCmd">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgsw_VehHVCnctCmdValid" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_VehHVCnctCmdValid">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_VMSChaStopReq" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_VMSChaStopReq">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_VehHVCnctCmd" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_VehHVCnctCmd">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_VehHVCnctCmdValid" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_VehHVCnctCmdValid">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="IPTd_flg_VehHVCnctCmd" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/IPTd_flg_VehHVCnctCmd" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/IPTd_flg_VehHVCnctCmd" modelRef="model002">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="IPTd_flg_VMSChaStopReq" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/IPTd_flg_VMSChaStopReq" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/IPTd_flg_VMSChaStopReq" modelRef="model002">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="IPTd_flg_VehHVCnctCmdValid" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/IPTd_flg_VehHVCnctCmdValid" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/IPTd_flg_VehHVCnctCmdValid" modelRef="model002">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss36"/>
+      <subsystem refSubsysID="ss37"/>
+      <subsystem refSubsysID="ss38"/>
+    </subsystem>
+    <subsystem subsysID="ss36" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" sampleTime="0.01" name="signal_debug" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug/in" modelRef="model002">
+        <boolean/>
+      </inport>
+      <parameter name="IPTc_dbgsw_VehHVCnctCmd" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_VehHVCnctCmd">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_VehHVCnctCmd" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_VehHVCnctCmd">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug/out" modelRef="model002">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss37" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" sampleTime="0.01" name="signal_debug1" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1/in" modelRef="model002" signalName="HLd_flg_VMSChaStopReq">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </inport>
+      <parameter name="IPTc_dbgsw_VMSChaStopReq" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_VMSChaStopReq">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_VMSChaStopReq" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_VMSChaStopReq">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug1/out" modelRef="model002">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss38" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" sampleTime="0.01" name="signal_debug2" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2/in" modelRef="model002" signalName="HLd_flg_VehHVCnctCmdValid">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </inport>
+      <parameter name="IPTc_dbgsw_VehHVCnctCmdValid" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_VehHVCnctCmdValid">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_VehHVCnctCmdValid" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_VehHVCnctCmdValid">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_1_BMS_0x190_10ms/VCU_1_BMS_0x190_10ms/signal_debug2/out" modelRef="model002">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss39" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms" sampleTime="0.1" name="VCU_2_BMS_0x480_100ms" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="HLd_i_HVLoadCurReq" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/HLd_i_HVLoadCurReq" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/HLd_i_HVLoadCurReq" modelRef="model002">
+        <uint16/>
+      </inport>
+      <parameter name="IPTc_dbgsw_HVLoadCurReq" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_HVLoadCurReq">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_HVLoadCurReq" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_HVLoadCurReq">
+        <single min="0.0000000000000000e+00" max="5.1000000000000000e+01"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="IPTd_i_HVLoadCurReq" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/IPTd_i_HVLoadCurReq" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/IPTd_i_HVLoadCurReq" modelRef="model002">
+        <single/>
+      </outport>
+      <subsystem refSubsysID="ss40"/>
+      <subsystem refSubsysID="ss41"/>
+      <subsystem refSubsysID="ss42"/>
+    </subsystem>
+    <subsystem subsysID="ss40" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/CANtoActualValue" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/CANtoActualValue" sampleTime="0.1" name="CANtoActualValue" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/CANtoActualValue/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/CANtoActualValue/in" modelRef="model002" signalName="HLd_i_HVLoadCurReq">
+        <uint16 min="0" max="65535"/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/CANtoActualValue/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/CANtoActualValue/out" modelRef="model002">
+        <single/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss41" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/saturation1" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/saturation1" sampleTime="0.1" name="saturation1" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="input" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/saturation1/input" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/saturation1/input" modelRef="model002">
+        <single/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/saturation1/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/saturation1/out" modelRef="model002">
+        <single/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss42" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" sampleTime="0.1" name="signal_debug2" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2/in" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2/in" modelRef="model002">
+        <single/>
+      </inport>
+      <parameter name="IPTc_dbgsw_HVLoadCurReq" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgsw_HVLoadCurReq">
+        <boolean min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <parameter name="IPTc_dbgval_HVLoadCurReq" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" modelRef="model002" initValue="0.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="IPTc_dbgval_HVLoadCurReq">
+        <single min="0.0000000000000000e+00" max="5.1000000000000000e+01"/>
+        <usageContext path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2" simulinkBlockType="SubSystem" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2/out" path="Wrapper_IPT_CAN_SWC/IPT_CAN_SWC/VCU_2_BMS_0x480_100ms/VCU_2_BMS_0x480_100ms/signal_debug2/out" modelRef="model002">
+        <single/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelKind="model_ref" modelID="model002" modelVersion="1.9771" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_16\IPT_CAN_SWC.slx" creationDate="2014-08-12T10:29:49" initScript="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_16\SYSTEM_STARTUP.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

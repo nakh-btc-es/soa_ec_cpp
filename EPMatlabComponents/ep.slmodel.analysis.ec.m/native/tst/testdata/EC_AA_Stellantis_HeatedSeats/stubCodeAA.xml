@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aa-component name="HeatedSeats_HPC" aa_version="R22-11" model_name="HeatedSeats_HPC" matlab_version="R2024b">
+  <types>
+    <type typeId="t13" name="Idt_ADAS_FD_HMI_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t15" name="Idt_ADAS_FD_INFO2_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t16" name="Idt_ADAS_FD_INFO_C2_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t14" name="Idt_ADAS_FD_INFO_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t17" name="Idt_ADAS_STEERING_COMMAND_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t18" name="Idt_APM_VDCM_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t19" name="Idt_ASCM_FD_2_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t7" name="Idt_AbortCrankingAtc" kind="non-primitive">
+      <namespaces>
+        <namespace symbol="ignitionmanagement"/>
+      </namespaces>
+    </type>
+    <type typeId="t20" name="Idt_BATTERY_HV_STATUS1_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t21" name="Idt_BATTERY_HV_VLIMITS_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t22" name="Idt_BRAKE_FD_1_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t23" name="Idt_BRAKE_FD_2_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t24" name="Idt_BRAKE_FD_3_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t25" name="Idt_BRAKE_FD_4_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t26" name="Idt_BRAKE_FD_5_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t27" name="Idt_CHARGE_SCHEDULE_HCP1_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t28" name="Idt_CHARGE_SCHEDULE_NEXT_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t29" name="Idt_CLIMATE_SCHEDULE_HCP1_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t30" name="Idt_CVPAM_FD_ControlI_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t31" name="Idt_CVPAM_FD_INFO_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t8" name="Idt_CmdIgnSts" kind="non-primitive">
+      <namespaces>
+        <namespace symbol="ignitionmanagement"/>
+      </namespaces>
+    </type>
+    <type typeId="t1" name="Idt_Cooled_Seats" kind="non-primitive">
+      <namespaces>
+        <namespace symbol="com"/>
+      </namespaces>
+    </type>
+    <type typeId="t32" name="Idt_DRV_MONITOR1_FD_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t2" name="Idt_Driver_Side" kind="non-primitive">
+      <namespaces>
+        <namespace symbol="com"/>
+      </namespaces>
+    </type>
+    <type typeId="t33" name="Idt_EPS_FD_1_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t34" name="Idt_EPS_FD_2_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t35" name="Idt_HCP_CHARGING_STAT_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t36" name="Idt_HVBATTERY_RM_CELLS1_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t37" name="Idt_HVBATTERY_RM_CELLS2_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t38" name="Idt_HVBATTERY_RM_CELLS3_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t39" name="Idt_HVBATTERY_RM_CELLS4_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t40" name="Idt_HVBATTERY_RM_CELLS5_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t41" name="Idt_HVBATTERY_RM_CELLS6_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t42" name="Idt_HVBATTERY_RM_CELLS7_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t43" name="Idt_HVBATTERY_RM_CELLS8_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t44" name="Idt_HVBATTERY_RM_CHARGING1_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t45" name="Idt_HVBATTERY_RM_MODS1_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t46" name="Idt_HVBATTERY_RM_MODS2_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t47" name="Idt_HV_CHARGER1_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t48" name="Idt_HYBRID_CHARGING_STATUS_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t49" name="Idt_HYBRID_DISPLAY_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t50" name="Idt_HYBRID_POWERTRAIN5_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t52" name="Idt_HYBRID_RM_MOTORS_2_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t51" name="Idt_HYBRID_RM_MOTORS_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t6" name="Idt_Heated_Seats" kind="non-primitive">
+      <namespaces>
+        <namespace symbol="com"/>
+      </namespaces>
+    </type>
+    <type typeId="t53" name="Idt_IMPACT_INFO_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t54" name="Idt_IRVM_ZCU_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t9" name="Idt_KeyInIgnSts" kind="non-primitive">
+      <namespaces>
+        <namespace symbol="ignitionmanagement"/>
+      </namespaces>
+    </type>
+    <type typeId="t55" name="Idt_MCPA_DATA2_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t56" name="Idt_MCPB_DATA2_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t57" name="Idt_ORC_FD_1_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t58" name="Idt_ORC_FD_2_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t10" name="Idt_OperationalModeSts" kind="non-primitive">
+      <namespaces>
+        <namespace symbol="ignitionmanagement"/>
+      </namespaces>
+    </type>
+    <type typeId="t59" name="Idt_PDC_INFO_FD_VDCM" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t60" name="Idt_PT_ENERGY_FD_1_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t61" name="Idt_PT_SYSTEM_FD_1_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t62" name="Idt_PT_THERMAL_FD_1_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t63" name="Idt_PT_TORQUE_FD_1_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t11" name="Idt_RunStartRly" kind="non-primitive">
+      <namespaces>
+        <namespace symbol="ignitionmanagement"/>
+      </namespaces>
+    </type>
+    <type typeId="t64" name="Idt_STEERING_COLUMN_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t4" name="Idt_SeatHeatReq_CL" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="heatedseatservicecr"/>
+      </namespaces>
+    </type>
+    <type typeId="t5" name="Idt_SeatHeatReq_CR" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="heatedseatservicecr"/>
+      </namespaces>
+    </type>
+    <type typeId="t3" name="Idt_SeatHeatSts" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="heatedseatservicecr"/>
+      </namespaces>
+    </type>
+    <type typeId="t72" name="Idt_SelectNextSeatHeatLevel_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="centralventedseatservice"/>
+      </namespaces>
+    </type>
+    <type typeId="t12" name="Idt_StTypSts" kind="non-primitive">
+      <namespaces>
+        <namespace symbol="ignitionmanagement"/>
+      </namespaces>
+    </type>
+    <type typeId="t65" name="Idt_TPM_INFO_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t66" name="Idt_VDCM_OBCM2_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t67" name="Idt_VEHDYN_FD_1_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+    </type>
+    <type typeId="t68" name="Idt_VentedSeatSts_DT" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="ventedseatservicecl"/>
+      </namespaces>
+    </type>
+    <type typeId="t70" name="Idt_VentedSeatSts_DT1" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="ventedseatservicecr"/>
+      </namespaces>
+    </type>
+    <type typeId="t69" name="Idt_VentedSeatsLevel_DT_CL" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="ventedseatservicecl"/>
+      </namespaces>
+    </type>
+    <type typeId="t71" name="Idt_VentedSeatsLevel_DT_CR" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="ventedseatservicecl"/>
+      </namespaces>
+    </type>
+  </types>
+  <interfaces>
+    <interface name="Cooled_Seats">
+      <namespaces>
+        <namespace symbol="proxi">
+          <namespace symbol="cooled_seats"/>
+        </namespace>
+      </namespaces>
+      <methods>
+        <method methodId="met1" name="Cooled_Seats_getter_Getter">
+          <out name="Cooled_Seats_getter_value"/>
+        </method>
+      </methods>
+      <fields>
+        <field fieldId="f1" name="Cooled_Seats_getter" typeRef="t1"/>
+      </fields>
+    </interface>
+    <interface name="Driver_Side">
+      <namespaces>
+        <namespace symbol="proxi">
+          <namespace symbol="driver_side"/>
+        </namespace>
+      </namespaces>
+      <methods>
+        <method methodId="met2" name="Driver_Side_getter_Getter">
+          <out name="Driver_Side_getter_value"/>
+        </method>
+      </methods>
+      <fields>
+        <field fieldId="f2" name="Driver_Side_getter" typeRef="t2"/>
+      </fields>
+    </interface>
+    <interface name="HeatedSeatServiceCL">
+      <namespaces>
+        <namespace symbol="heatedseatservicecl"/>
+      </namespaces>
+      <events>
+        <event eventId="ev1" name="EvSeatHeatStsRL" typeRef="t3"/>
+      </events>
+      <methods>
+        <method methodId="met3" name="ReqSeatHeatLevel">
+          <in name="ReqSeatHeatLevel" typeRef="t4"/>
+        </method>
+      </methods>
+    </interface>
+    <interface name="HeatedSeatServiceCR">
+      <namespaces>
+        <namespace symbol="heatedseatservicecr"/>
+      </namespaces>
+      <events>
+        <event eventId="ev2" name="EvSeatHeatStsFL" typeRef="t3"/>
+        <event eventId="ev3" name="EvSeatHeatStsFR" typeRef="t3"/>
+        <event eventId="ev4" name="EvSeatHeatStsRR" typeRef="t3"/>
+      </events>
+      <methods>
+        <method methodId="met4" name="ReqSeatHeatLevel">
+          <in name="SeatHeatReq" typeRef="t5"/>
+        </method>
+      </methods>
+    </interface>
+    <interface name="Heated_Seats">
+      <namespaces>
+        <namespace symbol="proxi">
+          <namespace symbol="heated_seats"/>
+        </namespace>
+      </namespaces>
+      <methods>
+        <method methodId="met5" name="Heated_Seats_getter_Getter">
+          <out name="Heated_Seats_getter_value"/>
+        </method>
+      </methods>
+      <fields>
+        <field fieldId="f3" name="Heated_Seats_getter" typeRef="t6"/>
+      </fields>
+    </interface>
+    <interface name="IgnitionManagement">
+      <namespaces>
+        <namespace symbol="ignitionmanagement"/>
+      </namespaces>
+      <fields>
+        <field fieldId="f4" name="AbortCrankingAtc" typeRef="t7"/>
+        <field fieldId="f5" name="CmdIgnSts" typeRef="t8"/>
+        <field fieldId="f6" name="KeyInIgnSts" typeRef="t9"/>
+        <field fieldId="f7" name="OperationalModeSts" typeRef="t10"/>
+        <field fieldId="f8" name="RunStartRly" typeRef="t11"/>
+        <field fieldId="f9" name="StTypSts" typeRef="t12"/>
+      </fields>
+    </interface>
+    <interface name="PSOMEIP_ZCU_CL">
+      <namespaces>
+        <namespace symbol="psomeip_zcu_cl"/>
+      </namespaces>
+      <events>
+        <event eventId="ev5" name="ADAS_FD_HMI" typeRef="t13"/>
+        <event eventId="ev6" name="ADAS_FD_INFO" typeRef="t14"/>
+        <event eventId="ev7" name="ADAS_FD_INFO2" typeRef="t15"/>
+        <event eventId="ev8" name="ADAS_FD_INFO_C2" typeRef="t16"/>
+        <event eventId="ev9" name="ADAS_STEERING_COMMANDS" typeRef="t17"/>
+        <event eventId="ev10" name="APM_VDCM" typeRef="t18"/>
+        <event eventId="ev11" name="ASCM_FD_2" typeRef="t19"/>
+        <event eventId="ev12" name="BATTERY_HV_STATUS1" typeRef="t20"/>
+        <event eventId="ev13" name="BATTERY_HV_VLIMITS" typeRef="t21"/>
+        <event eventId="ev14" name="BRAKE_FD_1" typeRef="t22"/>
+        <event eventId="ev15" name="BRAKE_FD_2" typeRef="t23"/>
+        <event eventId="ev16" name="BRAKE_FD_3" typeRef="t24"/>
+        <event eventId="ev17" name="BRAKE_FD_4" typeRef="t25"/>
+        <event eventId="ev18" name="BRAKE_FD_5" typeRef="t26"/>
+        <event eventId="ev19" name="CHARGE_SCHEDULE_HCP1" typeRef="t27"/>
+        <event eventId="ev20" name="CHARGE_SCHEDULE_NEXT" typeRef="t28"/>
+        <event eventId="ev21" name="CLIMATE_SCHEDULE_HCP1" typeRef="t29"/>
+        <event eventId="ev22" name="CVPAM_FD_Control" typeRef="t30"/>
+        <event eventId="ev23" name="CVPAM_FD_INFO" typeRef="t31"/>
+        <event eventId="ev24" name="DRV_MONITOR1_FD" typeRef="t32"/>
+        <event eventId="ev25" name="EPS_FD_1" typeRef="t33"/>
+        <event eventId="ev26" name="EPS_FD_2" typeRef="t34"/>
+        <event eventId="ev27" name="HCP_CHARGING_STAT" typeRef="t35"/>
+        <event eventId="ev28" name="HVBATTERY_RM_CELLS1" typeRef="t36"/>
+        <event eventId="ev29" name="HVBATTERY_RM_CELLS2" typeRef="t37"/>
+        <event eventId="ev30" name="HVBATTERY_RM_CELLS3" typeRef="t38"/>
+        <event eventId="ev31" name="HVBATTERY_RM_CELLS4" typeRef="t39"/>
+        <event eventId="ev32" name="HVBATTERY_RM_CELLS5" typeRef="t40"/>
+        <event eventId="ev33" name="HVBATTERY_RM_CELLS6" typeRef="t41"/>
+        <event eventId="ev34" name="HVBATTERY_RM_CELLS7" typeRef="t42"/>
+        <event eventId="ev35" name="HVBATTERY_RM_CELLS8" typeRef="t43"/>
+        <event eventId="ev36" name="HVBATTERY_RM_CHARGING1" typeRef="t44"/>
+        <event eventId="ev37" name="HVBATTERY_RM_MODS1" typeRef="t45"/>
+        <event eventId="ev38" name="HVBATTERY_RM_MODS2" typeRef="t46"/>
+        <event eventId="ev39" name="HV_CHARGER1" typeRef="t47"/>
+        <event eventId="ev40" name="HYBRID_CHARGING_STATUS" typeRef="t48"/>
+        <event eventId="ev41" name="HYBRID_DISPLAY" typeRef="t49"/>
+        <event eventId="ev42" name="HYBRID_POWERTRAIN5" typeRef="t50"/>
+        <event eventId="ev43" name="HYBRID_RM_MOTORS" typeRef="t51"/>
+        <event eventId="ev44" name="HYBRID_RM_MOTORS_2" typeRef="t52"/>
+        <event eventId="ev45" name="IMPACT_INFO" typeRef="t53"/>
+        <event eventId="ev46" name="IRVM_ZCU" typeRef="t54"/>
+        <event eventId="ev47" name="MCPA_DATA2" typeRef="t55"/>
+        <event eventId="ev48" name="MCPB_DATA2" typeRef="t56"/>
+        <event eventId="ev49" name="ORC_FD_1" typeRef="t57"/>
+        <event eventId="ev50" name="ORC_FD_2" typeRef="t58"/>
+        <event eventId="ev51" name="PDC_INFO_FD_VDCM" typeRef="t59"/>
+        <event eventId="ev52" name="PT_ENERGY_FD_1" typeRef="t60"/>
+        <event eventId="ev53" name="PT_SYSTEM_FD_1" typeRef="t61"/>
+        <event eventId="ev54" name="PT_THERMAL_FD_1" typeRef="t62"/>
+        <event eventId="ev55" name="PT_TORQUE_FD_1" typeRef="t63"/>
+        <event eventId="ev56" name="STEERING_COLUMN" typeRef="t64"/>
+        <event eventId="ev57" name="TPM_INFO" typeRef="t65"/>
+        <event eventId="ev58" name="VDCM_OBCM2" typeRef="t66"/>
+        <event eventId="ev59" name="VEHDYN_FD_1" typeRef="t67"/>
+      </events>
+    </interface>
+    <interface name="VentedSeatServiceCL">
+      <namespaces>
+        <namespace symbol="ventedseatservicecl"/>
+      </namespaces>
+      <events>
+        <event eventId="ev60" name="EvVentedSeatsStsRL" typeRef="t68"/>
+      </events>
+      <methods>
+        <method methodId="met6" name="SelectVentedSeatLevel">
+          <in name="ventedSeatsLevel" typeRef="t69"/>
+        </method>
+      </methods>
+    </interface>
+    <interface name="VentedSeatServiceCR">
+      <namespaces>
+        <namespace symbol="ventedseatservicecr"/>
+      </namespaces>
+      <events>
+        <event eventId="ev61" name="EvVentedSeatStsFL" typeRef="t70"/>
+        <event eventId="ev62" name="EvVentedSeatStsFR" typeRef="t70"/>
+        <event eventId="ev63" name="EvVentedSeatStsRR" typeRef="t70"/>
+      </events>
+      <methods>
+        <method methodId="met7" name="SelectVentedSeatLevel">
+          <in name="ventedSeatsLevel" typeRef="t71"/>
+        </method>
+      </methods>
+    </interface>
+    <interface name="CentralHeatedSeatService">
+      <namespaces>
+        <namespace symbol="centralheatedseatservice"/>
+      </namespaces>
+      <methods>
+        <method methodId="met8" name="SelectNextSeatHeatLevel">
+          <in name="SelectNextSeatHeatLevel" typeRef="t72"/>
+        </method>
+      </methods>
+    </interface>
+  </interfaces>
+  <ports>
+    <rport name="Rp_Cooled_Seats" instanceKey="HeatedSeats_HPC/HeatedSeats_HPC_RootSwComponentPrototype/Rp_Cooled_Seats">
+      <field-refs>
+        <field-ref fieldRef="f1" getterFunc="Cooled_Seats_Rp_Cooled_Seats_Cooled_Seats_getter_get"/>
+      </field-refs>
+    </rport>
+    <rport name="Rp_Driver_Side" instanceKey="HeatedSeats_HPC/HeatedSeats_HPC_RootSwComponentPrototype/Rp_Driver_Side">
+      <field-refs>
+        <field-ref fieldRef="f2" getterFunc="Driver_Side_Rp_Driver_Side_Driver_Side_getter_get"/>
+      </field-refs>
+    </rport>
+    <rport name="Rp_HeatedSeatServiceCL" instanceKey="HeatedSeats_HPC/HeatedSeats_HPC_RootSwComponentPrototype/Rp_HeatedSeatServiceCL">
+      <event-refs>
+        <event-ref eventRef="ev1" var="Rp_HeatedSeatServiceCL_EvSeatHeatStsRL"/>
+      </event-refs>
+      <method-refs>
+        <method-ref methodRef="met3" func="HeatedSeatServiceCL_Rp_HeatedSeatServiceCL_ReqSeatHeatLevel"/>
+      </method-refs>
+    </rport>
+    <rport name="Rp_HeatedSeatServiceCR" instanceKey="HeatedSeats_HPC/HeatedSeats_HPC_RootSwComponentPrototype/Rp_HeatedSeatServiceCR">
+      <event-refs>
+        <event-ref eventRef="ev2" var="Rp_HeatedSeatServiceCR_EvSeatHeatStsFL"/>
+        <event-ref eventRef="ev3" var="Rp_HeatedSeatServiceCR_EvSeatHeatStsFR"/>
+        <event-ref eventRef="ev4" var="Rp_HeatedSeatServiceCR_EvSeatHeatStsRR"/>
+      </event-refs>
+      <method-refs>
+        <method-ref methodRef="met4" func="HeatedSeatServiceCR_Rp_HeatedSeatServiceCR_ReqSeatHeatLevel"/>
+      </method-refs>
+    </rport>
+    <rport name="Rp_Heated_Seats" instanceKey="HeatedSeats_HPC/HeatedSeats_HPC_RootSwComponentPrototype/Rp_Heated_Seats">
+      <field-refs>
+        <field-ref fieldRef="f3" getterFunc="Heated_Seats_Rp_Heated_Seats_Heated_Seats_getter_get"/>
+      </field-refs>
+    </rport>
+    <rport name="Rp_IgnitionManagement" instanceKey="HeatedSeats_HPC/HeatedSeats_HPC_RootSwComponentPrototype/Rp_IgnitionManagement">
+      <field-refs>
+        <field-ref fieldRef="f4" notifierVar="Rp_IgnitionManagement_AbortCrankingAtc"/>
+        <field-ref fieldRef="f5" notifierVar="Rp_IgnitionManagement_CmdIgnSts"/>
+        <field-ref fieldRef="f6" notifierVar="Rp_IgnitionManagement_KeyInIgnSts"/>
+        <field-ref fieldRef="f7" notifierVar="Rp_IgnitionManagement_OperationalModeSts"/>
+        <field-ref fieldRef="f8" notifierVar="Rp_IgnitionManagement_RunStartRly"/>
+        <field-ref fieldRef="f9" notifierVar="Rp_IgnitionManagement_StTypSts"/>
+      </field-refs>
+    </rport>
+    <rport name="Rp_PSOMEIP_ZCU_CL" instanceKey="HeatedSeats_HPC/HeatedSeats_HPC_RootSwComponentPrototype/Rp_PSOMEIP_ZCU_CL">
+      <event-refs>
+        <event-ref eventRef="ev5" var="Rp_PSOMEIP_ZCU_CL_ADAS_FD_HMI"/>
+        <event-ref eventRef="ev6" var="Rp_PSOMEIP_ZCU_CL_ADAS_FD_INFO"/>
+        <event-ref eventRef="ev7" var="Rp_PSOMEIP_ZCU_CL_ADAS_FD_INFO2"/>
+        <event-ref eventRef="ev8" var="Rp_PSOMEIP_ZCU_CL_ADAS_FD_INFO_C2"/>
+        <event-ref eventRef="ev9" var="Rp_PSOMEIP_ZCU_CL_ADAS_STEERING_COMMANDS"/>
+        <event-ref eventRef="ev10" var="Rp_PSOMEIP_ZCU_CL_APM_VDCM"/>
+        <event-ref eventRef="ev11" var="Rp_PSOMEIP_ZCU_CL_ASCM_FD_2"/>
+        <event-ref eventRef="ev12" var="Rp_PSOMEIP_ZCU_CL_BATTERY_HV_STATUS1"/>
+        <event-ref eventRef="ev13" var="Rp_PSOMEIP_ZCU_CL_BATTERY_HV_VLIMITS"/>
+        <event-ref eventRef="ev14" var="Rp_PSOMEIP_ZCU_CL_BRAKE_FD_1"/>
+        <event-ref eventRef="ev15" var="Rp_PSOMEIP_ZCU_CL_BRAKE_FD_2"/>
+        <event-ref eventRef="ev16" var="Rp_PSOMEIP_ZCU_CL_BRAKE_FD_3"/>
+        <event-ref eventRef="ev17" var="Rp_PSOMEIP_ZCU_CL_BRAKE_FD_4"/>
+        <event-ref eventRef="ev18" var="Rp_PSOMEIP_ZCU_CL_BRAKE_FD_5"/>
+        <event-ref eventRef="ev19" var="Rp_PSOMEIP_ZCU_CL_CHARGE_SCHEDULE_HCP1"/>
+        <event-ref eventRef="ev20" var="Rp_PSOMEIP_ZCU_CL_CHARGE_SCHEDULE_NEXT"/>
+        <event-ref eventRef="ev21" var="Rp_PSOMEIP_ZCU_CL_CLIMATE_SCHEDULE_HCP1"/>
+        <event-ref eventRef="ev22" var="Rp_PSOMEIP_ZCU_CL_CVPAM_FD_Control"/>
+        <event-ref eventRef="ev23" var="Rp_PSOMEIP_ZCU_CL_CVPAM_FD_INFO"/>
+        <event-ref eventRef="ev24" var="Rp_PSOMEIP_ZCU_CL_DRV_MONITOR1_FD"/>
+        <event-ref eventRef="ev25" var="Rp_PSOMEIP_ZCU_CL_EPS_FD_1"/>
+        <event-ref eventRef="ev26" var="Rp_PSOMEIP_ZCU_CL_EPS_FD_2"/>
+        <event-ref eventRef="ev27" var="Rp_PSOMEIP_ZCU_CL_HCP_CHARGING_STAT"/>
+        <event-ref eventRef="ev28" var="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS1"/>
+        <event-ref eventRef="ev29" var="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS2"/>
+        <event-ref eventRef="ev30" var="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS3"/>
+        <event-ref eventRef="ev31" var="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS4"/>
+        <event-ref eventRef="ev32" var="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS5"/>
+        <event-ref eventRef="ev33" var="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS6"/>
+        <event-ref eventRef="ev34" var="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS7"/>
+        <event-ref eventRef="ev35" var="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS8"/>
+        <event-ref eventRef="ev36" var="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CHARGING1"/>
+        <event-ref eventRef="ev37" var="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_MODS1"/>
+        <event-ref eventRef="ev38" var="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_MODS2"/>
+        <event-ref eventRef="ev39" var="Rp_PSOMEIP_ZCU_CL_HV_CHARGER1"/>
+        <event-ref eventRef="ev40" var="Rp_PSOMEIP_ZCU_CL_HYBRID_CHARGING_STATUS"/>
+        <event-ref eventRef="ev41" var="Rp_PSOMEIP_ZCU_CL_HYBRID_DISPLAY"/>
+        <event-ref eventRef="ev42" var="Rp_PSOMEIP_ZCU_CL_HYBRID_POWERTRAIN5"/>
+        <event-ref eventRef="ev43" var="Rp_PSOMEIP_ZCU_CL_HYBRID_RM_MOTORS"/>
+        <event-ref eventRef="ev44" var="Rp_PSOMEIP_ZCU_CL_HYBRID_RM_MOTORS_2"/>
+        <event-ref eventRef="ev45" var="Rp_PSOMEIP_ZCU_CL_IMPACT_INFO"/>
+        <event-ref eventRef="ev46" var="Rp_PSOMEIP_ZCU_CL_IRVM_ZCU"/>
+        <event-ref eventRef="ev47" var="Rp_PSOMEIP_ZCU_CL_MCPA_DATA2"/>
+        <event-ref eventRef="ev48" var="Rp_PSOMEIP_ZCU_CL_MCPB_DATA2"/>
+        <event-ref eventRef="ev49" var="Rp_PSOMEIP_ZCU_CL_ORC_FD_1"/>
+        <event-ref eventRef="ev50" var="Rp_PSOMEIP_ZCU_CL_ORC_FD_2"/>
+        <event-ref eventRef="ev51" var="Rp_PSOMEIP_ZCU_CL_PDC_INFO_FD_VDCM"/>
+        <event-ref eventRef="ev52" var="Rp_PSOMEIP_ZCU_CL_PT_ENERGY_FD_1"/>
+        <event-ref eventRef="ev53" var="Rp_PSOMEIP_ZCU_CL_PT_SYSTEM_FD_1"/>
+        <event-ref eventRef="ev54" var="Rp_PSOMEIP_ZCU_CL_PT_THERMAL_FD_1"/>
+        <event-ref eventRef="ev55" var="Rp_PSOMEIP_ZCU_CL_PT_TORQUE_FD_1"/>
+        <event-ref eventRef="ev56" var="Rp_PSOMEIP_ZCU_CL_STEERING_COLUMN"/>
+        <event-ref eventRef="ev57" var="Rp_PSOMEIP_ZCU_CL_TPM_INFO"/>
+        <event-ref eventRef="ev58" var="Rp_PSOMEIP_ZCU_CL_VDCM_OBCM2"/>
+        <event-ref eventRef="ev59" var="Rp_PSOMEIP_ZCU_CL_VEHDYN_FD_1"/>
+      </event-refs>
+    </rport>
+    <rport name="Rp_VentedSeatServiceCL" instanceKey="HeatedSeats_HPC/HeatedSeats_HPC_RootSwComponentPrototype/Rp_VentedSeatServiceCL">
+      <event-refs>
+        <event-ref eventRef="ev60" var="Rp_VentedSeatServiceCL_EvVentedSeatsStsRL"/>
+      </event-refs>
+      <method-refs>
+        <method-ref methodRef="met6" func="VentedSeatServiceCL_Rp_VentedSeatServiceCL_SelectVentedSeatLevel"/>
+      </method-refs>
+    </rport>
+    <rport name="Rp_VentedSeatServiceCR" instanceKey="HeatedSeats_HPC/HeatedSeats_HPC_RootSwComponentPrototype/Rp_VentedSeatServiceCR">
+      <event-refs>
+        <event-ref eventRef="ev61" var="Rp_VentedSeatServiceCR_EvVentedSeatStsFL"/>
+        <event-ref eventRef="ev62" var="Rp_VentedSeatServiceCR_EvVentedSeatStsFR"/>
+        <event-ref eventRef="ev63" var="Rp_VentedSeatServiceCR_EvVentedSeatStsRR"/>
+      </event-refs>
+      <method-refs>
+        <method-ref methodRef="met7" func="VentedSeatServiceCR_Rp_VentedSeatServiceCR_SelectVentedSeatLevel"/>
+      </method-refs>
+    </rport>
+    <pport name="Pp_CentralHeatedSeatService" instanceKey="HeatedSeats_HPC/HeatedSeats_HPC_RootSwComponentPrototype/Pp_CentralHeatedSeatService">
+      <method-refs>
+        <method-ref methodRef="met8" func="sut_Pp_CentralHeatedSeatService_SelectNextSeatHeatLevel"/>
+      </method-refs>
+    </pport>
+  </ports>
+</aa-component>

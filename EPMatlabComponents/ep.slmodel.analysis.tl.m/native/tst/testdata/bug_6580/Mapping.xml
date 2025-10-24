@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="simple_multi_inport"/>
+    <Architecture id="id1" name="simple_multi_inport [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="top_sys/Subsystem/top_sys"/>
+      <Path refId="id1" path="top_sys.c:1:top_sys"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="in1"/>
+        <Path refId="id1" path="Sa1_in1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out1"/>
+        <Path refId="id1" path="Sa1_out1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out2"/>
+        <Path refId="id1" path="Sa1_out2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out3"/>
+        <Path refId="id1" path="Sa1_out3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out4"/>
+        <Path refId="id1" path="Sa1_out4"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out5"/>
+        <Path refId="id1" path="Sa1_out5"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out6"/>
+        <Path refId="id1" path="Sa1_out6"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out7"/>
+        <Path refId="id1" path="Sa1_out7"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_sys/Subsystem/top_sys/sub_01"/>
+      <Path refId="id1" path="top_sys.c:1:top_sys/top_sys.c:1:Sa2_sub_01"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa2_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa2_Relational_Operator"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_sys/Subsystem/top_sys/sub_02"/>
+      <Path refId="id1" path="top_sys.c:1:top_sys/top_sys.c:1:Sa3_sub_02"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_in1"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="[0]"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa3_Out1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_sys/Subsystem/top_sys/sub_03"/>
+      <Path refId="id1" path="top_sys.c:1:top_sys/top_sys.c:1:Sa4_sub_03"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_in1"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="[1]"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa4_Relational_Operator"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_sys/Subsystem/top_sys/sub_04"/>
+      <Path refId="id1" path="top_sys.c:1:top_sys/top_sys.c:1:Sa5_sub_04"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa5_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In2"/>
+        <Path refId="id1" path="Sa1_in1"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="[0]"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa5_Relational_Operator"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_sys/Subsystem/top_sys/sub_05"/>
+      <Path refId="id1" path="top_sys.c:1:top_sys/top_sys.c:1:Sa6_sub_05"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_in1"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="[0]"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In2"/>
+        <Path refId="id1" path="Sa1_in1"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="[1]"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa6_Relational_Operator"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

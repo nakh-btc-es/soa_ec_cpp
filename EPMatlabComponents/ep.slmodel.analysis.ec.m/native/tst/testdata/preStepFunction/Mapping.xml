@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="preStepFunction"/>
+    <Architecture id="id1" name="preStepFunction [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="preStepFunction.c:1:preStepFunction_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="in" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="out" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="TopLevel" refId="id0"/>
+      <Path path="preStepFunction.c:1:preStepFunction_step/TopLevel_func.c:1:TopLevel_func" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="TopLevel/In1" refId="id0"/>
+        <Path path="in" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="TopLevel/Out1" refId="id0"/>
+        <Path path="out" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

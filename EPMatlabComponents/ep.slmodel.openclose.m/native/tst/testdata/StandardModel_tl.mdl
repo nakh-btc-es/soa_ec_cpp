@@ -1,0 +1,2502 @@
+Model {
+  Name			  "StandardModel_tl"
+  Version		  7.5
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    2
+    Inport {
+      Name		      "In1"
+    }
+    Inport {
+      Name		      "In2"
+    }
+    NumRootOutports	    3
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      Name		      "Out1"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      Name		      "Out2"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      Name		      "Out3"
+    }
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.424"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  PreLoadFcn		  "if exist('tl_preloadfcn','file'), tl_preloadfcn(gcs,101); end"
+  PostLoadFcn		  "if exist('tl_postloadfcn','file'), tl_postloadfcn(gcs,101); end"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  MaxMDLFileLineLength	  120
+  PreSaveFcn		  "if exist('tl_presavefcn','file'), tl_presavefcn(gcs); end"
+  InitFcn		  "if exist('tlds_init','file'), tlds_init(gcs); end"
+  StartFcn		  "if exist('tlds_start','file'), tlds_start(gcs); end"
+  StopFcn		  "if exist('tlds_stop','file'), tlds_stop(gcs); end"
+  UserBdParams		  "DS_PROJECTFILE;TL_MAIN_DATA;TLRevision;TL_MODEL_COMMENT"
+  DS_PROJECTFILE	  "StandardModel.dd"
+  TL_MAIN_DATA		  "{'codeopt',{'optlevel',0,'stateactcodinglimit',1},'logopt',{'plotinterval',0.1},'date',735991.67578"
+  "921292,'advcodeopt',{'ExtendedBlockComments';'on';'GenerateEmptyConditionalBranches';'on';'PolySpaceSupport';'on'}}"
+  TLRevision		  "101"
+  Created		  "Fri Mar 10 11:47:00 2006"
+  Creator		  "alex"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "alex"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Tue Jan 27 16:13:14 2015"
+  RTWModifiedTimeStamp	  344275993
+  ModelVersionFormat	  "1.%<AutoIncrement:424>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  on
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  off
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.10.0"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.10.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.01"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "FixedStepDiscrete"
+	  SolverName		  "FixedStepDiscrete"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.10.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "StructureWithTime"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.10.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    4
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "OptimizeModelRefInitCode"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  off
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  off
+	  BufferReuse		  off
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  off
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  off
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.10.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"none"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskCondExecSysMsg "none"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.10.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.10.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.10.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.10.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "IncludeHyperlinkInReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  on
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.10.0"
+	      Array {
+		Type			"Cell"
+		Dimension		9
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.10.0"
+	      Array {
+		Type			"Cell"
+		Dimension		12
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTCodeCoverageTool     "None"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Data Import//Export"
+      ConfigPrmDlgPosition    " [ 520, 225, 1400, 855 ] "
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "fixdt(1,16,0)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Ground
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Relay
+      OnSwitchValue	      "eps"
+      OffSwitchValue	      "eps"
+      OnOutputValue	      "1"
+      OffOutputValue	      "0"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "All ports same datatype"
+      OutDataType	      "fixdt(1,16,0)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: All ports same datatype"
+      LockScale		      off
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimit	      "0.5"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      AllowDiffInputSizes     off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      UnitDelay
+      X0		      "0"
+      SampleTime	      "1"
+      StateMustResolveToSignalObject off
+      RTWStateStorageClass    "Auto"
+    }
+  }
+  System {
+    Name		    "StandardModel_tl"
+    Location		    [590, 129, 1250, 960]
+    Open		    off
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    95
+    Block {
+      BlockType		      Inport
+      Name		      "In1"
+      SID		      1
+      Position		      [75, 248, 105, 262]
+      BackgroundColor	      "orange"
+      IconDisplay	      "Port number"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "In2"
+      SID		      2
+      Position		      [75, 603, 105, 617]
+      BackgroundColor	      "orange"
+      Port		      "2"
+      IconDisplay	      "Port number"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "MIL Handler"
+      SID		      95
+      Ports		      []
+      Position		      [15, 15, 75, 30]
+      BackgroundColor	      "gray"
+      DropShadow	      on
+      ShowName		      off
+      LibraryVersion	      "1.1"
+      SourceBlock	      "tllib/MIL Handler"
+      SourceType	      "TL_MilHandler"
+      data		      "{'date',735991.67578725691}"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "TargetLink Main Dialog"
+      SID		      3
+      Ports		      []
+      Position		      [210, 15, 300, 45]
+      BackgroundColor	      "green"
+      DropShadow	      on
+      LibraryVersion	      "1.1"
+      SourceBlock	      "tllib/TargetLink Main Dialog"
+      SourceType	      "TL_MainDialog"
+      ShowPortLabels	      "none"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "standartSubsystem"
+      SID		      4
+      Tag		      "TargetLink Simulation Frame"
+      Ports		      [2, 3]
+      Position		      [180, 74, 330, 786]
+      BackgroundColor	      "lightBlue"
+      DropShadow	      on
+      CopyFcn		      "if exist('tl_copyfcn','file'), tl_copyfcn(gcbh); end"
+      NameChangeFcn	      "if exist('tl_framenamechangefcn','file'), tl_framenamechangefcn(gcbh); end"
+      OpenFcn		      "if exist('open_tlsubsystem','file')\n   open_tlsubsystem(gcbh);\nelse\n   tlsubsystem = ...\n   "
+      "   find_system(gcb, ...\n      'LookUnderMasks','on', ...\n      'FollowLinks','on', ...\n      'Tag','MIL Subsy"
+      "stem');\n   open_system(tlsubsystem);\nend"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskType		      "TL_SimFrame"
+      MaskDisplay	      "disp('TargetLink\\nModel-\\nin-the-loop\\nmode')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"standartSubsystem"
+	Location		[320, 100, 843, 478]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  5
+	  Position		  [15, 67, 40, 73]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In2"
+	  SID			  6
+	  Position		  [15, 82, 40, 88]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Subsystem"
+	  SID			  7
+	  Ports			  [2, 3]
+	  Position		  [115, 68, 195, 92]
+	  OpenFcn		  "warndlg(get_param(gcb,'MaskHelp'),'Serious Warning');"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskType		  "TL_Enable"
+	  MaskHelp		  "This subsystem keeps the TargetLink subsystem (subsystem with TargetLink blocks for production code ge"
+	  "neration), and is needed for the TargetLink simulation frame to work properly. DO NOT DELETE OR MODIFY IT!"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "Subsystem"
+	    Location		    [434, 421, 870, 560]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      SID		      8
+	      Position		      [15, 67, 40, 73]
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In2"
+	      SID		      9
+	      Position		      [15, 82, 40, 88]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "standartSubsystem"
+	      SID		      12
+	      Tag		      "MIL Subsystem"
+	      Description	      "a"
+	      Ports		      [2, 3]
+	      Position		      [115, 68, 195, 92]
+	      BackgroundColor	      "lightBlue"
+	      DropShadow	      on
+	      CopyFcn		      "if exist('tl_copyfcn','file'), tl_copyfcn(gcbh); end"
+	      NameChangeFcn	      "if exist('tl_namechangefcn','file'), tl_namechangefcn(gcbh); end"
+	      DestroyFcn	      "if exist('update_tl_main_dlg','file'), update_tl_main_dlg('TL_subs_display'); end"
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      MaskDisplay	      "disp('TargetLink Subsystem')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      off
+	      MaskIconRotate	      "none"
+	      MaskPortRotate	      "default"
+	      MaskIconUnits	      "autoscale"
+	      System {
+		Name			"standartSubsystem"
+		Location		[30, 221, 1271, 745]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  SID			  13
+		  Position		  [215, 203, 245, 217]
+		  CopyFcn		  "if exist('tl_reset_reviewflag','file')==2\n    tl_reset_reviewflag(gcbh);\nend\nif exist('tl_check_por"
+		  "ts','file')\n    tl_check_ports(gcbh);\nend\n"
+		  DeleteFcn		  "if exist('delete_tlblock','file')==2,delete_tlblock(gcbh);end"
+		  NameChangeFcn		  "if exist('rename_tlblock','file')==2,rename_tlblock(gcbh);end\nif exist('tl_check_ports','file')"
+		  ", tl_check_ports(gcbh); end"
+		  OpenFcn		  "if exist('tl_open_blockdlg','file')==2,tl_open_blockdlg(gcbh);else,open_system(gcbh,'parameter');end"
+		  IconDisplay		  "Port number"
+		  PortDimensions	  "1"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^0"
+		  MaskType		  "TL_Inport"
+		  MaskHelp		  "eval(['if exist(''tl_online_help'',''file'') == 2, tl_online_help(''Topic'',''TL_Inport''),else, web("
+		  "[''jar:file:///'',matlabroot,''/help/toolbox/simulink/help.jar!/slref/' lower(get_param(gcbh,'Blocktype')) '.html'"
+		  "'], ''-helpbrowser''),end'])"
+		  MaskPromptString	  "data"
+		  MaskStyleString	  "edit"
+		  MaskTunableValueString  "on"
+		  MaskEnableString	  "on"
+		  MaskVisibilityString	  "off"
+		  MaskToolTipString	  "on"
+		  MaskVariables		  "data=&1;"
+		  MaskDisplay		  "plot([0.2 0.35 NaN 0.65 0.8],[0 1 NaN 0 1]);\n"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  off
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "normalized"
+		  MaskValueString	  "{'logdata',{'plotchannels',[]},'date',735991.6757871412}"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "In2"
+		  SID			  14
+		  Position		  [205, 358, 235, 372]
+		  CopyFcn		  "if exist('tl_reset_reviewflag','file')==2\n    tl_reset_reviewflag(gcbh);\nend\nif exist('tl_check_por"
+		  "ts','file')\n    tl_check_ports(gcbh);\nend\n"
+		  DeleteFcn		  "if exist('delete_tlblock','file')==2,delete_tlblock(gcbh);end"
+		  NameChangeFcn		  "if exist('rename_tlblock','file')==2,rename_tlblock(gcbh);end\nif exist('tl_check_ports','file')"
+		  ", tl_check_ports(gcbh); end"
+		  OpenFcn		  "if exist('tl_open_blockdlg','file')==2,tl_open_blockdlg(gcbh);else,open_system(gcbh,'parameter');end"
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  PortDimensions	  "1"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^0"
+		  MaskType		  "TL_Inport"
+		  MaskHelp		  "eval(['if exist(''tl_online_help'',''file'') == 2, tl_online_help(''Topic'',''TL_Inport''),else, web("
+		  "[''jar:file:///'',matlabroot,''/help/toolbox/simulink/help.jar!/slref/' lower(get_param(gcbh,'Blocktype')) '.html'"
+		  "'], ''-helpbrowser''),end'])"
+		  MaskPromptString	  "data"
+		  MaskStyleString	  "edit"
+		  MaskTunableValueString  "on"
+		  MaskEnableString	  "on"
+		  MaskVisibilityString	  "off"
+		  MaskToolTipString	  "on"
+		  MaskVariables		  "data=&1;"
+		  MaskDisplay		  "plot([0.2 0.35 NaN 0.65 0.8],[0 1 NaN 0 1]);\n"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  off
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "normalized"
+		  MaskValueString	  "{'logdata',{'plotchannels',[]},'output',{'max',300,'min',-800,'lsb',2^-2,'offset',-4},'date',73"
+		  "5991.67578673607}"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "AtomicSubsystem"
+		  SID			  15
+		  Ports			  [2, 1]
+		  Position		  [345, 134, 490, 441]
+		  BackgroundColor	  "lightBlue"
+		  TreatAsAtomicUnit	  on
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  System {
+		    Name		    "AtomicSubsystem"
+		    Location		    [180, 334, 1084, 878]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "In"
+		    SID			    16
+		    Position		    [90, 43, 120, 57]
+		    CopyFcn		    "if exist('tl_reset_reviewflag','file')==2,tl_reset_reviewflag(gcbh);end"
+		    DeleteFcn		    "if exist('delete_tlblock','file')==2,delete_tlblock(gcbh);end"
+		    NameChangeFcn	    "if exist('rename_tlblock','file')==2,rename_tlblock(gcbh);end"
+		    OpenFcn		    "if exist('tl_open_blockdlg','file')==2,tl_open_blockdlg(gcbh);else,open_system(gcbh,'parameter');e"
+		    "nd"
+		    IconDisplay		    "Port number"
+		    PortDimensions	    "1"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    MaskType		    "TL_Inport"
+		    MaskHelp		    "eval(['if exist(''tl_online_help'',''file'') == 2, tl_online_help(''Topic'',''TL_Inport''),else, "
+		    "web([''jar:file:///'',matlabroot,''/help/toolbox/simulink/help.jar!/slref/' lower(get_param(gcbh,'Blocktype')) '"
+		    ".html''], ''-helpbrowser''),end'])"
+		    MaskPromptString	    "data"
+		    MaskStyleString	    "edit"
+		    MaskTunableValueString  "on"
+		    MaskEnableString	    "on"
+		    MaskVisibilityString    "off"
+		    MaskToolTipString	    "on"
+		    MaskVariables	    "data=&1;"
+		    MaskDisplay		    "plot([0.2 0.35 NaN 0.65 0.8],[0 1 NaN 0 1]);\n"
+		    MaskIconFrame	    off
+		    MaskIconOpaque	    off
+		    MaskIconRotate	    "none"
+		    MaskPortRotate	    "default"
+		    MaskIconUnits	    "normalized"
+		    MaskValueString	    "{'logdata',{'plotchannels',[]},'output',{'class','FCN_ARG'},'date',735991.67578631942}"
+		    }
+		    Block {
+		    BlockType		    Inport
+		    Name		    "maxRate"
+		    SID			    17
+		    Position		    [80, 138, 110, 152]
+		    CopyFcn		    "if exist('tl_reset_reviewflag','file')==2,tl_reset_reviewflag(gcbh);end"
+		    DeleteFcn		    "if exist('delete_tlblock','file')==2,delete_tlblock(gcbh);end"
+		    NameChangeFcn	    "if exist('rename_tlblock','file')==2,rename_tlblock(gcbh);end"
+		    OpenFcn		    "if exist('tl_open_blockdlg','file')==2,tl_open_blockdlg(gcbh);else,open_system(gcbh,'parameter');e"
+		    "nd"
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    PortDimensions	    "1"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    MaskType		    "TL_Inport"
+		    MaskHelp		    "eval(['if exist(''tl_online_help'',''file'') == 2, tl_online_help(''Topic'',''TL_Inport''),else, "
+		    "web([''jar:file:///'',matlabroot,''/help/toolbox/simulink/help.jar!/slref/' lower(get_param(gcbh,'Blocktype')) '"
+		    ".html''], ''-helpbrowser''),end'])"
+		    MaskPromptString	    "data"
+		    MaskStyleString	    "edit"
+		    MaskTunableValueString  "on"
+		    MaskEnableString	    "on"
+		    MaskVisibilityString    "off"
+		    MaskToolTipString	    "on"
+		    MaskVariables	    "data=&1;"
+		    MaskDisplay		    "plot([0.2 0.35 NaN 0.65 0.8],[0 1 NaN 0 1]);\n"
+		    MaskIconFrame	    off
+		    MaskIconOpaque	    off
+		    MaskIconRotate	    "none"
+		    MaskPortRotate	    "default"
+		    MaskIconUnits	    "normalized"
+		    MaskValueString	    "{'logdata',{'plotchannels',[]},'output',{'class','FCN_REF_ARG'},'date',735991.6757859143}"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Function"
+		    SID			    18
+		    Ports		    []
+		    Position		    [75, 260, 155, 285]
+		    BackgroundColor	    "green"
+		    DropShadow		    on
+		    LibraryVersion	    "1.1"
+		    SourceBlock		    "tllib/Function"
+		    SourceType		    "TL_Function"
+		    ShowPortLabels	    "FromPortIcon"
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData off
+		    RTWMemSecFuncInitTerm   "Inherit from model"
+		    RTWMemSecFuncExecute    "Inherit from model"
+		    RTWMemSecDataConstants  "Inherit from model"
+		    RTWMemSecDataInternal   "Inherit from model"
+		    RTWMemSecDataParameters "Inherit from model"
+		    data		    "{'stepfunctionclass','STATIC_FCN','date',735991.6757809954}"
+		    }
+		    Block {
+		    BlockType		    Relay
+		    Name		    "Relay"
+		    SID			    22
+		    Position		    [395, 240, 435, 280]
+		    BlockMirror		    on
+		    BackgroundColor	    "lightBlue"
+		    NamePlacement	    "alternate"
+		    CopyFcn		    "set_param(gcb,'ReferenceBlock',''); set_param(gcb,'Tag','COPIED_DURING_UPGRADE');set_param(gcb,'Co"
+		    "pyFcn','');"
+		    DeleteFcn		    "if exist('delete_tlblock','file')==2,delete_tlblock(gcbh);end"
+		    NameChangeFcn	    "if exist('rename_tlblock','file')==2,rename_tlblock(gcbh);end"
+		    OpenFcn		    "if exist('tl_open_blockdlg','file')==2,tl_open_blockdlg(gcbh);else,open_system(gcbh,'parameter');e"
+		    "nd"
+		    OnSwitchValue	    "1"
+		    OffSwitchValue	    "-1"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    MaskType		    "TL_Relay"
+		    MaskHelp		    "eval(['if exist(''tl_online_help'',''file'') == 2, tl_online_help(''Topic'',''TL_Relay''),else, w"
+		    "eb([''jar:file:///'',matlabroot,''/help/toolbox/simulink/help.jar!/slref/' lower(get_param(gcbh,'Blocktype')) '."
+		    "html''], ''-helpbrowser''),end'])"
+		    MaskPromptString	    "data"
+		    MaskStyleString	    "edit"
+		    MaskTunableValueString  "on"
+		    MaskEnableString	    "on"
+		    MaskVisibilityString    "off"
+		    MaskToolTipString	    "on"
+		    MaskVariables	    "data=&1;"
+		    MaskDisplay		    "plot([-0.05, 1.05, NaN, -0.05, 1.05],[.01, .01, NaN, .99, .99])\n"
+		    MaskIconFrame	    on
+		    MaskIconOpaque	    off
+		    MaskIconRotate	    "none"
+		    MaskPortRotate	    "default"
+		    MaskIconUnits	    "normalized"
+		    MaskValueString	    "{'logdata',{'plotchannels',[]},'onoutput',{'class','CAL'},'offoutput',{'class','CAL'},'onsw"
+		    "itch',{'class','CAL'},'offswitch',{'class','CAL'},'date',735991.67578543979}"
+		    }
+		    Block {
+		    BlockType		    Switch
+		    Name		    "Switch1"
+		    SID			    23
+		    Position		    [560, 135, 600, 195]
+		    BackgroundColor	    "lightBlue"
+		    CopyFcn		    "set_param(gcb,'ReferenceBlock',''); set_param(gcb,'Tag','COPIED_DURING_UPGRADE');set_param(gcb,'Co"
+		    "pyFcn','');"
+		    DeleteFcn		    "if exist('delete_tlblock','file')==2,delete_tlblock(gcbh);end"
+		    NameChangeFcn	    "if exist('rename_tlblock','file')==2,rename_tlblock(gcbh);end"
+		    OpenFcn		    "if exist('tl_open_blockdlg','file')==2,tl_open_blockdlg(gcbh);else,open_system(gcbh,'parameter');e"
+		    "nd"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    MaskType		    "TL_Switch"
+		    MaskHelp		    "eval(['if exist(''tl_online_help'',''file'') == 2, tl_online_help(''Topic'',''TL_Switch''),else, "
+		    "web([''jar:file:///'',matlabroot,''/help/toolbox/simulink/help.jar!/slref/' lower(get_param(gcbh,'Blocktype')) '"
+		    ".html''], ''-helpbrowser''),end'])"
+		    MaskPromptString	    "data"
+		    MaskStyleString	    "edit"
+		    MaskTunableValueString  "on"
+		    MaskEnableString	    "on"
+		    MaskVisibilityString    "off"
+		    MaskToolTipString	    "on"
+		    MaskVariables	    "data=&1;"
+		    MaskDisplay		    "plot([-0.05, 1.05, NaN, -0.05, 1.05],[.01, .01, NaN, .99, .99])\n"
+		    MaskIconFrame	    on
+		    MaskIconOpaque	    off
+		    MaskIconRotate	    "none"
+		    MaskPortRotate	    "default"
+		    MaskIconUnits	    "normalized"
+		    MaskValueString	    "{'logdata',{'plotchannels',[]},'threshold',{'class','CAL'},'date',735991.67578491895}"
+		    }
+		    Block {
+		    BlockType		    Switch
+		    Name		    "Switch2"
+		    SID			    24
+		    Position		    [515, 310, 555, 370]
+		    BackgroundColor	    "lightBlue"
+		    CopyFcn		    "set_param(gcb,'ReferenceBlock',''); set_param(gcb,'Tag','COPIED_DURING_UPGRADE');set_param(gcb,'Co"
+		    "pyFcn','');"
+		    DeleteFcn		    "if exist('delete_tlblock','file')==2,delete_tlblock(gcbh);end"
+		    NameChangeFcn	    "if exist('rename_tlblock','file')==2,rename_tlblock(gcbh);end"
+		    OpenFcn		    "if exist('tl_open_blockdlg','file')==2,tl_open_blockdlg(gcbh);else,open_system(gcbh,'parameter');e"
+		    "nd"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    MaskType		    "TL_Switch"
+		    MaskHelp		    "eval(['if exist(''tl_online_help'',''file'') == 2, tl_online_help(''Topic'',''TL_Switch''),else, "
+		    "web([''jar:file:///'',matlabroot,''/help/toolbox/simulink/help.jar!/slref/' lower(get_param(gcbh,'Blocktype')) '"
+		    ".html''], ''-helpbrowser''),end'])"
+		    MaskPromptString	    "data"
+		    MaskStyleString	    "edit"
+		    MaskTunableValueString  "on"
+		    MaskEnableString	    "on"
+		    MaskVisibilityString    "off"
+		    MaskToolTipString	    "on"
+		    MaskVariables	    "data=&1;"
+		    MaskDisplay		    "plot([-0.05, 1.05, NaN, -0.05, 1.05],[.01, .01, NaN, .99, .99])\n"
+		    MaskIconFrame	    on
+		    MaskIconOpaque	    off
+		    MaskIconRotate	    "none"
+		    MaskPortRotate	    "default"
+		    MaskIconUnits	    "normalized"
+		    MaskValueString	    "{'logdata',{'plotchannels',[]},'threshold',{'class','CAL'},'date',735991.67578460649}"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Out1"
+		    SID			    25
+		    Position		    [710, 333, 740, 347]
+		    CopyFcn		    "if exist('tl_reset_reviewflag','file')==2,tl_reset_reviewflag(gcbh);end"
+		    DeleteFcn		    "if exist('delete_tlblock','file')==2,delete_tlblock(gcbh);end"
+		    NameChangeFcn	    "if exist('rename_tlblock','file')==2,rename_tlblock(gcbh);end"
+		    OpenFcn		    "if exist('tl_open_blockdlg','file')==2,tl_open_blockdlg(gcbh);else,open_system(gcbh,'parameter');e"
+		    "nd"
+		    IconDisplay		    "Port number"
+		    PortDimensions	    "1"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    MaskType		    "TL_Outport"
+		    MaskHelp		    "eval(['if exist(''tl_online_help'',''file'') == 2, tl_online_help(''Topic'',''TL_Outport''),else,"
+		    " web([''jar:file:///'',matlabroot,''/help/toolbox/simulink/help.jar!/slref/' lower(get_param(gcbh,'Blocktype')) "
+		    "'.html''], ''-helpbrowser''),end'])"
+		    MaskPromptString	    "data"
+		    MaskStyleString	    "edit"
+		    MaskTunableValueString  "on"
+		    MaskEnableString	    "on"
+		    MaskVisibilityString    "off"
+		    MaskToolTipString	    "on"
+		    MaskVariables	    "data=&1;"
+		    MaskDisplay		    "plot([0.2 0.35 NaN 0.65 0.8],[0 1 NaN 0 1]);\n"
+		    MaskIconFrame	    off
+		    MaskIconOpaque	    off
+		    MaskIconRotate	    "none"
+		    MaskPortRotate	    "default"
+		    MaskIconUnits	    "normalized"
+		    MaskValueString	    "{'logdata',{'plotchannels',[]},'output',{'class','FCN_RETURN'},'date',735991.67578423605}"
+		    }
+		    Line {
+		    SrcBlock		    "Relay"
+		    SrcPort		    1
+		    Points		    [-10, 0; 0, 60]
+		    DstBlock		    "Switch2"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Switch1"
+		    SrcPort		    1
+		    Points		    [15, 0; 0, 135; -125, 0; 0, 60]
+		    DstBlock		    "Switch2"
+		    DstPort		    3
+		    }
+		    Line {
+		    SrcBlock		    "Switch2"
+		    SrcPort		    1
+		    DstBlock		    "Out1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "maxRate"
+		    SrcPort		    1
+		    DstBlock		    "Switch1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "In"
+		    SrcPort		    1
+		    Points		    [140, 0]
+		    Branch {
+		    Points		    [265, 0; 0, 135]
+		    DstBlock		    "Switch1"
+		    DstPort		    3
+		    }
+		    Branch {
+		    Points		    [0, 35; 80, 0; 0, 75]
+		    Branch {
+		    Points		    [0, 60; 145, 0]
+		    Branch {
+		    Points		    [10, 0; 0, -55]
+		    DstBlock		    "Switch1"
+		    DstPort		    2
+		    }
+		    Branch {
+		    Points		    [0, 40]
+		    DstBlock		    "Relay"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    Points		    [-20, 0; 0, 180]
+		    DstBlock		    "Switch2"
+		    DstPort		    2
+		    }
+		    }
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "AtomicSubsystem1"
+		  SID			  26
+		  Ports			  [1, 3]
+		  Position		  [670, 136, 810, 444]
+		  BackgroundColor	  "lightBlue"
+		  TreatAsAtomicUnit	  on
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  System {
+		    Name		    "AtomicSubsystem1"
+		    Location		    [-49, 361, 1219, 1072]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "In1"
+		    SID			    27
+		    Position		    [120, 293, 150, 307]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Function"
+		    SID			    28
+		    Ports		    []
+		    Position		    [550, 95, 630, 120]
+		    BackgroundColor	    "green"
+		    DropShadow		    on
+		    LibraryVersion	    "1.1"
+		    SourceBlock		    "tllib/Function"
+		    SourceType		    "TL_Function"
+		    ShowPortLabels	    "FromPortIcon"
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData off
+		    RTWMemSecFuncInitTerm   "Inherit from model"
+		    RTWMemSecFuncExecute    "Inherit from model"
+		    RTWMemSecDataConstants  "Inherit from model"
+		    RTWMemSecDataInternal   "Inherit from model"
+		    RTWMemSecDataParameters "Inherit from model"
+		    data		    "{'date',735991.67578077549}"
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "StateChart"
+		    SID			    29
+		    Description		    "Stateflow diagram to determine control system operating mode"
+		    Ports		    [0, 1]
+		    Position		    [735, 215, 920, 535]
+		    BackgroundColor	    "green"
+		    PermitHierarchicalResolution "ExplicitOnly"
+		    TreatAsAtomicUnit	    on
+		    MinAlgLoopOccurrences   off
+		    PropExecContextOutsideSubsystem off
+		    RTWSystemCode	    "Auto"
+		    FunctionWithSeparateData off
+		    Opaque		    off
+		    Array {
+		    Type		    "Handle"
+		    Dimension		    0
+		    PropName		    "AvailSigsLoadSave"
+		    }
+		    RequestExecContextInheritance off
+		    MaskHideContents	    off
+		    MaskType		    "Stateflow"
+		    MaskDescription	    "Stateflow diagram"
+		    MaskDisplay		    "plot(sf('Private','sfblk','xIcon'),sf('Private','sfblk','yIcon'));text(0.5,0,sf('Private', 'sf"
+		    "blk', 'tIcon'),'HorizontalAl','Center','VerticalAl','Bottom');"
+		    MaskSelfModifiable	    on
+		    MaskIconFrame	    off
+		    MaskIconOpaque	    off
+		    MaskIconRotate	    "none"
+		    MaskPortRotate	    "default"
+		    MaskIconUnits	    "autoscale"
+		    System {
+		    Name		    "StateChart"
+		    Location		    [253, 221, 867, 588]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    SIDHighWatermark	    9
+		    Block {
+		    BlockType		    Demux
+		    Name		    " Demux "
+		    SID			    7
+		    Ports		    [1, 1]
+		    Position		    [270, 160, 320, 200]
+		    Outputs		    "1"
+		    }
+		    Block {
+		    BlockType		    Ground
+		    Name		    " Ground "
+		    SID			    8
+		    Position		    [20, 121, 40, 139]
+		    }
+		    Block {
+		    BlockType		    "S-Function"
+		    Name		    " SFunction "
+		    SID			    6
+		    Tag			    "Stateflow S-Function StandardModel_tl 1"
+		    Ports		    [1, 2]
+		    Position		    [180, 100, 230, 160]
+		    FunctionName	    "sf_sfun"
+		    Parameters		    "Calvariable"
+		    PortCounts		    "[1 2]"
+		    EnableBusSupport	    on
+		    Port {
+		    PortNumber		    2
+		    Name		    "fail_O2"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Terminator
+		    Name		    " Terminator "
+		    SID			    9
+		    Position		    [460, 171, 480, 189]
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "fail_O2"
+		    SID			    5
+		    Position		    [460, 101, 480, 119]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    }
+		    Line {
+		    SrcBlock		    " SFunction "
+		    SrcPort		    1
+		    DstBlock		    " Demux "
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "fail_O2"
+		    Labels		    [0, 0]
+		    SrcBlock		    " SFunction "
+		    SrcPort		    2
+		    DstBlock		    "fail_O2"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    " Ground "
+		    SrcPort		    1
+		    DstBlock		    " SFunction "
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    " Demux "
+		    SrcPort		    1
+		    DstBlock		    " Terminator "
+		    DstPort		    1
+		    }
+		    }
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "Subsystem2"
+		    SID			    30
+		    Ports		    [1, 2]
+		    Position		    [305, 149, 475, 451]
+		    BackgroundColor	    "green"
+		    TreatAsAtomicUnit	    on
+		    MinAlgLoopOccurrences   off
+		    PropExecContextOutsideSubsystem off
+		    RTWSystemCode	    "Auto"
+		    FunctionWithSeparateData off
+		    Opaque		    off
+		    RequestExecContextInheritance off
+		    MaskHideContents	    off
+		    System {
+		    Name		    "Subsystem2"
+		    Location		    [72, 110, 1165, 446]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "In1"
+		    SID			    31
+		    Position		    [320, 138, 350, 152]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant"
+		    SID			    32
+		    Position		    [320, 216, 360, 254]
+		    BackgroundColor	    "lightBlue"
+		    CopyFcn		    "set_param(gcb,'ReferenceBlock',''); set_param(gcb,'Tag','COPIED_DURING_UPGRADE');set_param(gcb,'Co"
+		    "pyFcn','');"
+		    DeleteFcn		    "if exist('delete_tlblock','file')==2,delete_tlblock(gcbh);end"
+		    NameChangeFcn	    "if exist('rename_tlblock','file')==2,rename_tlblock(gcbh);end"
+		    OpenFcn		    "if exist('tl_open_blockdlg','file')==2,tl_open_blockdlg(gcbh);else,open_system(gcbh,'parameter');e"
+		    "nd"
+		    Value		    "10"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    MaskType		    "TL_Constant"
+		    MaskHelp		    "eval(['if exist(''tl_online_help'',''file'') == 2, tl_online_help(''Topic'',''TL_Constant''),else"
+		    ", web([''jar:file:///'',matlabroot,''/help/toolbox/simulink/help.jar!/slref/' lower(get_param(gcbh,'Blocktype'))"
+		    " '.html''], ''-helpbrowser''),end'])"
+		    MaskPromptString	    "data"
+		    MaskStyleString	    "edit"
+		    MaskTunableValueString  "on"
+		    MaskEnableString	    "on"
+		    MaskVisibilityString    "off"
+		    MaskToolTipString	    "on"
+		    MaskVariables	    "data=&1;"
+		    MaskDisplay		    "plot([-0.05, 1.05, NaN, -0.05, 1.05],[.01, .01, NaN, .99, .99])\n"
+		    MaskIconFrame	    on
+		    MaskIconOpaque	    off
+		    MaskIconRotate	    "none"
+		    MaskPortRotate	    "default"
+		    MaskIconUnits	    "normalized"
+		    MaskValueString	    "{'output',{'class','GLOBAL'},'date',735991.6757838194}"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant1"
+		    SID			    33
+		    Position		    [315, 296, 355, 334]
+		    BackgroundColor	    "lightBlue"
+		    CopyFcn		    "set_param(gcb,'ReferenceBlock',''); set_param(gcb,'Tag','COPIED_DURING_UPGRADE');set_param(gcb,'Co"
+		    "pyFcn','');"
+		    DeleteFcn		    "if exist('delete_tlblock','file')==2,delete_tlblock(gcbh);end"
+		    NameChangeFcn	    "if exist('rename_tlblock','file')==2,rename_tlblock(gcbh);end"
+		    OpenFcn		    "if exist('tl_open_blockdlg','file')==2,tl_open_blockdlg(gcbh);else,open_system(gcbh,'parameter');e"
+		    "nd"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    MaskType		    "TL_Constant"
+		    MaskHelp		    "eval(['if exist(''tl_online_help'',''file'') == 2, tl_online_help(''Topic'',''TL_Constant''),else"
+		    ", web([''jar:file:///'',matlabroot,''/help/toolbox/simulink/help.jar!/slref/' lower(get_param(gcbh,'Blocktype'))"
+		    " '.html''], ''-helpbrowser''),end'])"
+		    MaskPromptString	    "data"
+		    MaskStyleString	    "edit"
+		    MaskTunableValueString  "on"
+		    MaskEnableString	    "on"
+		    MaskVisibilityString    "off"
+		    MaskToolTipString	    "on"
+		    MaskVariables	    "data=&1;"
+		    MaskDisplay		    "plot([-0.05, 1.05, NaN, -0.05, 1.05],[.01, .01, NaN, .99, .99])\n"
+		    MaskIconFrame	    on
+		    MaskIconOpaque	    off
+		    MaskIconRotate	    "none"
+		    MaskPortRotate	    "default"
+		    MaskIconUnits	    "normalized"
+		    MaskValueString	    "{'output',{'class','CAL'},'date',735991.67578361114}"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Function"
+		    SID			    34
+		    Ports		    []
+		    Position		    [125, 115, 205, 140]
+		    BackgroundColor	    "green"
+		    DropShadow		    on
+		    LibraryVersion	    "1.1"
+		    SourceBlock		    "tllib/Function"
+		    SourceType		    "TL_Function"
+		    ShowPortLabels	    "FromPortIcon"
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData off
+		    RTWMemSecFuncInitTerm   "Inherit from model"
+		    RTWMemSecFuncExecute    "Inherit from model"
+		    RTWMemSecDataConstants  "Inherit from model"
+		    RTWMemSecDataInternal   "Inherit from model"
+		    RTWMemSecDataParameters "Inherit from model"
+		    data		    "{'date',735991.67578054394}"
+		    }
+		    Block {
+		    BlockType		    Product
+		    Name		    "Product"
+		    SID			    35
+		    Ports		    [2, 1]
+		    Position		    [455, 225, 495, 265]
+		    CopyFcn		    "set_param(gcb,'ReferenceBlock',''); set_param(gcb,'Tag','COPIED_DURING_UPGRADE');set_param(gcb,'Co"
+		    "pyFcn','');"
+		    DeleteFcn		    "if exist('delete_tlblock','file')==2,delete_tlblock(gcbh);end"
+		    NameChangeFcn	    "if exist('rename_tlblock','file')==2,rename_tlblock(gcbh);end"
+		    OpenFcn		    "if exist('tl_open_blockdlg','file')==2,tl_open_blockdlg(gcbh);else,open_system(gcbh,'parameter');e"
+		    "nd"
+		    Inputs		    "*/"
+		    InputSameDT		    off
+		    OutDataTypeMode	    "Inherit via internal rule"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    OutDataTypeStr	    "Inherit: Inherit via internal rule"
+		    SaturateOnIntegerOverflow off
+		    MaskType		    "TL_Product"
+		    MaskHelp		    "eval(['if exist(''tl_online_help'',''file'') == 2, tl_online_help(''Topic'',''TL_Product''),else,"
+		    " web([''jar:file:///'',matlabroot,''/help/toolbox/simulink/help.jar!/slref/' lower(get_param(gcbh,'Blocktype')) "
+		    "'.html''], ''-helpbrowser''),end'])"
+		    MaskPromptString	    "data"
+		    MaskStyleString	    "edit"
+		    MaskTunableValueString  "on"
+		    MaskEnableString	    "on"
+		    MaskVisibilityString    "off"
+		    MaskToolTipString	    "on"
+		    MaskVariables	    "data=&1;"
+		    MaskDisplay		    "plot([-0.05, 1.05, NaN, -0.05, 1.05],[.01, .01, NaN, .99, .99])\n"
+		    MaskIconFrame	    on
+		    MaskIconOpaque	    off
+		    MaskIconRotate	    "none"
+		    MaskPortRotate	    "default"
+		    MaskIconUnits	    "normalized"
+		    MaskValueString	    "{'logdata',{'plotchannels',[]},'date',735991.67578336806}"
+		    }
+		    Block {
+		    BlockType		    Saturate
+		    Name		    "Saturation"
+		    SID			    36
+		    Ports		    [1, 1]
+		    Position		    [485, 132, 525, 158]
+		    BackgroundColor	    "lightBlue"
+		    CopyFcn		    "set_param(gcb,'ReferenceBlock',''); set_param(gcb,'Tag','COPIED_DURING_UPGRADE');set_param(gcb,'Co"
+		    "pyFcn','');"
+		    DeleteFcn		    "if exist('delete_tlblock','file')==2,delete_tlblock(gcbh);end"
+		    NameChangeFcn	    "if exist('rename_tlblock','file')==2,rename_tlblock(gcbh);end"
+		    OpenFcn		    "if exist('tl_open_blockdlg','file')==2,tl_open_blockdlg(gcbh);else,open_system(gcbh,'parameter');e"
+		    "nd"
+		    UpperLimit		    "2"
+		    LowerLimit		    "0"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    MaskType		    "TL_Saturate"
+		    MaskHelp		    "eval(['if exist(''tl_online_help'',''file'') == 2, tl_online_help(''Topic'',''TL_Saturate''),else"
+		    ", web([''jar:file:///'',matlabroot,''/help/toolbox/simulink/help.jar!/slref/' lower(get_param(gcbh,'Blocktype'))"
+		    " '.html''], ''-helpbrowser''),end'])"
+		    MaskPromptString	    "data"
+		    MaskStyleString	    "edit"
+		    MaskTunableValueString  "on"
+		    MaskEnableString	    "on"
+		    MaskVisibilityString    "off"
+		    MaskToolTipString	    "on"
+		    MaskVariables	    "data=&1;"
+		    MaskDisplay		    "plot([-0.05, 1.05, NaN, -0.05, 1.05],[.01, .01, NaN, .99, .99])\n"
+		    MaskIconFrame	    on
+		    MaskIconOpaque	    off
+		    MaskIconRotate	    "none"
+		    MaskPortRotate	    "default"
+		    MaskIconUnits	    "normalized"
+		    MaskValueString	    "{'logdata',{'plotchannels',[]},'output',{'max',255,'min',0,'type','uint16'},'lowerlimit',{'"
+		    "class','CAL'},'upperlimit',{'class','CAL'},'date',735991.67578311346}"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Out1"
+		    SID			    37
+		    Position		    [650, 138, 680, 152]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Out2"
+		    SID			    38
+		    Position		    [645, 238, 675, 252]
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    }
+		    Line {
+		    SrcBlock		    "In1"
+		    SrcPort		    1
+		    DstBlock		    "Saturation"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Saturation"
+		    SrcPort		    1
+		    DstBlock		    "Out1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Constant1"
+		    SrcPort		    1
+		    Points		    [40, 0; 0, -60]
+		    DstBlock		    "Product"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Constant"
+		    SrcPort		    1
+		    DstBlock		    "Product"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Product"
+		    SrcPort		    1
+		    DstBlock		    "Out2"
+		    DstPort		    1
+		    }
+		    }
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Out1"
+		    SID			    39
+		    Position		    [615, 218, 645, 232]
+		    IconDisplay		    "Port number"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Out2"
+		    SID			    40
+		    Position		    [630, 368, 660, 382]
+		    Port		    "2"
+		    IconDisplay		    "Port number"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "Out3"
+		    SID			    41
+		    Position		    [1085, 368, 1115, 382]
+		    Port		    "3"
+		    IconDisplay		    "Port number"
+		    OutDataType		    "sfix(16)"
+		    OutScaling		    "2^0"
+		    }
+		    Line {
+		    SrcBlock		    "Subsystem2"
+		    SrcPort		    2
+		    DstBlock		    "Out2"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "In1"
+		    SrcPort		    1
+		    DstBlock		    "Subsystem2"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Subsystem2"
+		    SrcPort		    1
+		    DstBlock		    "Out1"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "StateChart"
+		    SrcPort		    1
+		    DstBlock		    "Out3"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Function"
+		  SID			  42
+		  Ports			  []
+		  Position		  [535, 35, 639, 70]
+		  BackgroundColor	  "green"
+		  DropShadow		  on
+		  LibraryVersion	  "1.1"
+		  SourceBlock		  "tllib/Function"
+		  SourceType		  "TL_Function"
+		  ShowPortLabels	  "FromPortIcon"
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  data			  "{'date',735991.67578028934}"
+		}
+		Block {
+		  BlockType		  UnitDelay
+		  Name			  "Unit Delay"
+		  SID			  48
+		  Position		  [845, 170, 885, 210]
+		  CopyFcn		  "set_param(gcb,'ReferenceBlock',''); set_param(gcb,'Tag','COPIED_DURING_UPGRADE');set_param(gcb,'CopyFc"
+		  "n','');"
+		  DeleteFcn		  "if exist('delete_tlblock','file')==2,delete_tlblock(gcbh);end"
+		  NameChangeFcn		  "if exist('rename_tlblock','file')==2,rename_tlblock(gcbh);end"
+		  OpenFcn		  "if exist('tl_open_blockdlg','file')==2,tl_open_blockdlg(gcbh);else,open_system(gcbh,'parameter');end"
+		  X0			  "-2"
+		  SampleTime		  "-1"
+		  MaskType		  "TL_UnitDelay"
+		  MaskHelp		  "eval(['if exist(''tl_online_help'',''file'') == 2, tl_online_help(''Topic'',''TL_UnitDelay''),else, w"
+		  "eb([''jar:file:///'',matlabroot,''/help/toolbox/simulink/help.jar!/slref/' lower(get_param(gcbh,'Blocktype')) '.ht"
+		  "ml''], ''-helpbrowser''),end'])"
+		  MaskPromptString	  "data"
+		  MaskStyleString	  "edit"
+		  MaskTunableValueString  "on"
+		  MaskEnableString	  "on"
+		  MaskVisibilityString	  "off"
+		  MaskToolTipString	  "on"
+		  MaskVariables		  "data=&1;"
+		  MaskDisplay		  "plot([-0.05, 1.05, NaN, -0.05, 1.05],[.01, .01, NaN, .99, .99])\n"
+		  MaskIconFrame		  on
+		  MaskIconOpaque	  off
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "normalized"
+		  MaskValueString	  "{'logdata',{'plotchannels',[]},'date',735991.6757827315}"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  SID			  49
+		  Position		  [985, 183, 1015, 197]
+		  CopyFcn		  "if exist('tl_reset_reviewflag','file')==2\n    tl_reset_reviewflag(gcbh);\nend\nif exist('tl_check_por"
+		  "ts','file')\n    tl_check_ports(gcbh);\nend\n"
+		  DeleteFcn		  "if exist('delete_tlblock','file')==2,delete_tlblock(gcbh);end"
+		  NameChangeFcn		  "if exist('rename_tlblock','file')==2,rename_tlblock(gcbh);end\nif exist('tl_check_ports','file')"
+		  ", tl_check_ports(gcbh); end"
+		  OpenFcn		  "if exist('tl_open_blockdlg','file')==2,tl_open_blockdlg(gcbh);else,open_system(gcbh,'parameter');end"
+		  IconDisplay		  "Port number"
+		  PortDimensions	  "1"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^0"
+		  MaskType		  "TL_Outport"
+		  MaskHelp		  "eval(['if exist(''tl_online_help'',''file'') == 2, tl_online_help(''Topic'',''TL_Outport''),else, web"
+		  "([''jar:file:///'',matlabroot,''/help/toolbox/simulink/help.jar!/slref/' lower(get_param(gcbh,'Blocktype')) '.html"
+		  "''], ''-helpbrowser''),end'])"
+		  MaskPromptString	  "data"
+		  MaskStyleString	  "edit"
+		  MaskTunableValueString  "on"
+		  MaskEnableString	  "on"
+		  MaskVisibilityString	  "off"
+		  MaskToolTipString	  "on"
+		  MaskVariables		  "data=&1;"
+		  MaskDisplay		  "plot([0.2 0.35 NaN 0.65 0.8],[0 1 NaN 0 1]);\n"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  off
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "normalized"
+		  MaskValueString	  "{'logdata',{'plotchannels',[]},'output',{'lsb',2^-1,'offset',-3,'checkmin',1,'checkmax',1},'dat"
+		  "e',735991.6757824074}"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out2"
+		  SID			  50
+		  Position		  [980, 283, 1010, 297]
+		  CopyFcn		  "if exist('tl_reset_reviewflag','file')==2\n    tl_reset_reviewflag(gcbh);\nend\nif exist('tl_check_por"
+		  "ts','file')\n    tl_check_ports(gcbh);\nend\n"
+		  DeleteFcn		  "if exist('delete_tlblock','file')==2,delete_tlblock(gcbh);end"
+		  NameChangeFcn		  "if exist('rename_tlblock','file')==2,rename_tlblock(gcbh);end\nif exist('tl_check_ports','file')"
+		  ", tl_check_ports(gcbh); end"
+		  OpenFcn		  "if exist('tl_open_blockdlg','file')==2,tl_open_blockdlg(gcbh);else,open_system(gcbh,'parameter');end"
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  PortDimensions	  "1"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^0"
+		  MaskType		  "TL_Outport"
+		  MaskHelp		  "eval(['if exist(''tl_online_help'',''file'') == 2, tl_online_help(''Topic'',''TL_Outport''),else, web"
+		  "([''jar:file:///'',matlabroot,''/help/toolbox/simulink/help.jar!/slref/' lower(get_param(gcbh,'Blocktype')) '.html"
+		  "''], ''-helpbrowser''),end'])"
+		  MaskPromptString	  "data"
+		  MaskStyleString	  "edit"
+		  MaskTunableValueString  "on"
+		  MaskEnableString	  "on"
+		  MaskVisibilityString	  "off"
+		  MaskToolTipString	  "on"
+		  MaskVariables		  "data=&1;"
+		  MaskDisplay		  "plot([0.2 0.35 NaN 0.65 0.8],[0 1 NaN 0 1]);\n"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  off
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "normalized"
+		  MaskValueString	  "{'logdata',{'plotchannels',[]},'date',735991.67578196758}"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out3"
+		  SID			  51
+		  Position		  [975, 383, 1005, 397]
+		  CopyFcn		  "if exist('tl_reset_reviewflag','file')==2\n    tl_reset_reviewflag(gcbh);\nend\nif exist('tl_check_por"
+		  "ts','file')\n    tl_check_ports(gcbh);\nend\n"
+		  DeleteFcn		  "if exist('delete_tlblock','file')==2,delete_tlblock(gcbh);end"
+		  NameChangeFcn		  "if exist('rename_tlblock','file')==2,rename_tlblock(gcbh);end\nif exist('tl_check_ports','file')"
+		  ", tl_check_ports(gcbh); end"
+		  OpenFcn		  "if exist('tl_open_blockdlg','file')==2,tl_open_blockdlg(gcbh);else,open_system(gcbh,'parameter');end"
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		  PortDimensions	  "1"
+		  OutDataType		  "sfix(16)"
+		  OutScaling		  "2^0"
+		  MaskType		  "TL_Outport"
+		  MaskHelp		  "eval(['if exist(''tl_online_help'',''file'') == 2, tl_online_help(''Topic'',''TL_Outport''),else, web"
+		  "([''jar:file:///'',matlabroot,''/help/toolbox/simulink/help.jar!/slref/' lower(get_param(gcbh,'Blocktype')) '.html"
+		  "''], ''-helpbrowser''),end'])"
+		  MaskPromptString	  "data"
+		  MaskStyleString	  "edit"
+		  MaskTunableValueString  "on"
+		  MaskEnableString	  "on"
+		  MaskVisibilityString	  "off"
+		  MaskToolTipString	  "on"
+		  MaskVariables		  "data=&1;"
+		  MaskDisplay		  "plot([0.2 0.35 NaN 0.65 0.8],[0 1 NaN 0 1]);\n"
+		  MaskIconFrame		  off
+		  MaskIconOpaque	  off
+		  MaskIconRotate	  "none"
+		  MaskPortRotate	  "default"
+		  MaskIconUnits		  "normalized"
+		  MaskValueString	  "{'logdata',{'plotchannels',[]},'output',{'type','Int32'},'date',735991.67578146991}"
+		}
+		Line {
+		  SrcBlock		  "AtomicSubsystem1"
+		  SrcPort		  3
+		  DstBlock		  "Out3"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "AtomicSubsystem1"
+		  SrcPort		  2
+		  DstBlock		  "Out2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Unit Delay"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [1, 0; 0, 0]
+		  SrcBlock		  "In2"
+		  SrcPort		  1
+		  DstBlock		  "AtomicSubsystem"
+		  DstPort		  2
+		}
+		Line {
+		  Labels		  [1, 0; 0, 0]
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "AtomicSubsystem"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "AtomicSubsystem"
+		  SrcPort		  1
+		  DstBlock		  "AtomicSubsystem1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "AtomicSubsystem1"
+		  SrcPort		  1
+		  DstBlock		  "Unit Delay"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      SID		      52
+	      Position		      [280, 62, 305, 68]
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out2"
+	      SID		      53
+	      Position		      [280, 77, 305, 83]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out3"
+	      SID		      54
+	      Position		      [280, 92, 305, 98]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Line {
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "standartSubsystem"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In2"
+	      SrcPort		      1
+	      DstBlock		      "standartSubsystem"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "standartSubsystem"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "standartSubsystem"
+	      SrcPort		      2
+	      DstBlock		      "Out2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "standartSubsystem"
+	      SrcPort		      3
+	      DstBlock		      "Out3"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  55
+	  Position		  [280, 62, 305, 68]
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  SID			  56
+	  Position		  [280, 77, 305, 83]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out3"
+	  SID			  57
+	  Position		  [280, 92, 305, 98]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  OutDataType		  "sfix(16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Subsystem"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In2"
+	  SrcPort		  1
+	  DstBlock		  "Subsystem"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Subsystem"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Subsystem"
+	  SrcPort		  2
+	  DstBlock		  "Out2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Subsystem"
+	  SrcPort		  3
+	  DstBlock		  "Out3"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Out1"
+      SID		      58
+      Position		      [410, 188, 440, 202]
+      BackgroundColor	      "yellow"
+      IconDisplay	      "Port number"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Out2"
+      SID		      59
+      Position		      [405, 423, 435, 437]
+      BackgroundColor	      "yellow"
+      Port		      "2"
+      IconDisplay	      "Port number"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Out3"
+      SID		      60
+      Position		      [405, 658, 435, 672]
+      BackgroundColor	      "yellow"
+      Port		      "3"
+      IconDisplay	      "Port number"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Line {
+      SrcBlock		      "In1"
+      SrcPort		      1
+      DstBlock		      "standartSubsystem"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "In2"
+      SrcPort		      1
+      DstBlock		      "standartSubsystem"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "standartSubsystem"
+      SrcPort		      1
+      DstBlock		      "Out1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "standartSubsystem"
+      SrcPort		      2
+      DstBlock		      "Out2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "standartSubsystem"
+      SrcPort		      3
+      DstBlock		      "Out3"
+      DstPort		      1
+    }
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.5 (R2010a) dated Jan 19 2010, 19:48:30
+#
+#
+
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "StandardModel_tl"
+    created		    "05-Mar-2007 11:18:14"
+    isLibrary		    0
+    firstTarget		    13
+    sfVersion		    75014000
+  }
+  chart {
+    id			    2
+    name		    "standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart"
+    description		    "$TL$ functionname=$O; $TL$"
+    windowPosition	    [3 -104.25 960 690]
+    viewLimits		    [0 1833 0 1308]
+    zoomFactor		    2
+    transitionColor	    [0.29 0.329 0.503]
+    transitionLabelColor    [0.29 0.329 0.503]
+    selectionColor	    [0.866 0.035 0.507]
+    screen		    [1 1 1280 1024 1.333333333333333]
+    treeNode		    [0 3 0 0]
+    viewObj		    2
+    machine		    1
+    subviewS {
+      zoomFactor	      2
+    }
+    ssIdHighWaterMark	    9
+    decomposition	    SET_CHART
+    firstData		    10
+    updateMethod	    DISCRETE
+    sampleTime		    "0.01"
+    chartFileNumber	    1
+    disableImplicitCasting  1
+    supportVariableSizing   0
+  }
+  state {
+    id			    3
+    description		    "This state determines the validity of the exhaust gas oxygen sensor (EGO) data.\n$TL$ name=$C_X_"
+    "$O$R; $TL$"
+    labelString		    "OxygenSensMode"
+    position		    [22.184 11.387 419.702 283.217]
+    fontSize		    13.54
+    arrowSize		    12
+    chart		    2
+    treeNode		    [2 6 0 0]
+    firstTransition	    7
+    subgrouped		    1
+    subviewer		    2
+    subviewS {
+      x1		      -15
+      y1		      -15
+      pos		      [0 0 504.327 205.592]
+      fontSize		      13.54
+    }
+    ssIdNumber		    1
+    type		    AND_STATE
+    decomposition	    CLUSTER_STATE
+    executionOrder	    1
+  }
+  state {
+    id			    4
+    description		    "Normal EGO sensor operation gives a reliable indication of excess oxygen in the exhaust gas, fro"
+    "m which air/fuel mixture can be inferred.\n$TL$ name=$C_X_$O$R; $TL$"
+    labelString		    "O2_Normal\nentry: fail_O2 = 0;"
+    position		    [63 223.5 139.5 60]
+    fontSize		    14
+    chart		    2
+    treeNode		    [3 0 5 0]
+    subviewer		    2
+    ssIdNumber		    2
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    5
+    description		    "The EGO sensor has failed.\n$TL$ name=$C_X_$O$R; $TL$"
+    labelString		    "O2_Fail\nentry: fail_O2 = 1;"
+    position		    [287.863 63.423 146.99 55.291]
+    fontSize		    14
+    arrowSize		    6.67
+    chart		    2
+    treeNode		    [3 0 6 4]
+    subviewer		    2
+    ssIdNumber		    3
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    6
+    description		    "The EGO sensor must come up to temperature before its data is reliable.\n$TL$ name=$C_X_$O$R; $T"
+    "L$"
+    labelString		    "O2_Warmup\nentry: fail_O2 = 1;"
+    position		    [44.203 51.16 130.081 46.922]
+    fontSize		    14
+    arrowSize		    6.67
+    chart		    2
+    treeNode		    [3 0 0 5]
+    subviewer		    2
+    ssIdNumber		    4
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  transition {
+    id			    7
+    description		    "It is assumed that the time o2_t_thresh is sufficient for the sensor to warm up to operational t"
+    "emperature."
+    labelString		    "[Calvariable== 5]"
+    labelPosition	    [83.99 115.455 109.321 20.952]
+    fontSize		    14
+    src {
+      id		      6
+      intersection	      [3 0 1 0.7187 80.7895 98.082 0 0]
+    }
+    dst {
+      id		      4
+      intersection	      [4 -1 0 0.4444 63 256.8333 0 0]
+    }
+    midPoint		    [42.0873 194.2979]
+    chart		    2
+    linkNode		    [3 0 8]
+    dataLimits		    [37.849 80.79 98.082 259.233]
+    subviewer		    2
+    executionOrder	    1
+    ssIdNumber		    5
+  }
+  transition {
+    id			    8
+    labelPosition	    [62.357 110.409 7.488 11.973]
+    fontSize		    7.526
+    arrowSize		    6.67
+    src {
+      intersection	      [0 0 0 0.8711 51.7846 113.2413 0 0]
+    }
+    dst {
+      id		      6
+      intersection	      [3 0 1 0.8004 70.1723 98.082 0 0]
+    }
+    midPoint		    [59.6312 110.9871]
+    chart		    2
+    linkNode		    [3 7 9]
+    dataLimits		    [51.785 72.173 98.082 113.241]
+    subviewer		    2
+    executionOrder	    1
+    ssIdNumber		    6
+  }
+  transition {
+    id			    9
+    description		    "The failure condition is indicated by excessive output voltage."
+    labelString		    "[Calvariable == 7]"
+    labelPosition	    [233.854 252.14 113.814 20.952]
+    fontSize		    14
+    arrowSize		    6.67
+    src {
+      id		      4
+      intersection	      [2 1 0 0.3827 202.5 246.463 0 0]
+    }
+    dst {
+      id		      5
+      intersection	      [3 0 1 0.1617 411.0782 118.714 0 0]
+    }
+    midPoint		    [400 180]
+    chart		    2
+    linkNode		    [3 8 0]
+    dataLimits		    [202.5 413.079 118.714 250.3]
+    subviewer		    2
+    executionOrder	    1
+    ssIdNumber		    7
+  }
+  data {
+    id			    10
+    ssIdNumber		    8
+    name		    "Calvariable"
+    description		    "minimum manifold pressure expected at zero speed\n$TL$ name=$C_V_$O$R; type=Int32; class=CAL; $T"
+    "L$"
+    linkNode		    [2 0 11]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    machine		    1
+    props {
+      range {
+	minimum			"0"
+	maximum			"1"
+      }
+      initialValue	      "1"
+      type {
+	primitive		SF_INT32_TYPE
+	units			"bar (absolute)"
+      }
+    }
+    dataType		    "int32"
+  }
+  data {
+    id			    11
+    ssIdNumber		    9
+    name		    "fail_O2"
+    description		    "failure of oxygene sensor\n$TL$ name=$O; type=Int32; class=MERGEABLE_DISP; $TL$"
+    linkNode		    [2 10 0]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      range {
+	minimum			"0"
+	maximum			"1"
+      }
+      type {
+	primitive		SF_INT32_TYPE
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "int32"
+  }
+  instance {
+    id			    12
+    name		    "standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart"
+    machine		    1
+    chart		    2
+  }
+  target {
+    id			    13
+    name		    "sfun"
+    codeFlags		    ""
+    machine		    1
+    linkNode		    [1 0 0]
+  }
+}

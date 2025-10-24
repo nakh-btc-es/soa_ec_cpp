@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+    <xs:element name="TestVector">
+        <xs:annotation>
+            <xs:documentation> A TestVector </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Inputs" type="SignalGroupType" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>The vector input signals group</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="Outputs" type="SignalGroupType" minOccurs="1" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>The vector output signals group</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="SimStatus" type="SimStatus" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Result status of simulation, without this tree, the
+                            current vector is a stimuli vector </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="ExecutionTime" type="ExecutionTimeType" minOccurs="0"
+                    maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Execution time result of a PIL simulation
+                        </xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="StackSize" type="StackSizeType" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>Execution stack size result of a PIL
+                            simulation</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+
+            <xs:attribute name="startStep" type="xs:unsignedLong" use="required">
+                <xs:annotation>
+                    <xs:documentation>First step of simulation.</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="length" type="xs:positiveInteger" use="required">
+                <xs:annotation>
+                    <xs:documentation>Trace length (number of states, started at startStep) (&gt;=1)
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="name" type="xs:string" use="required"> </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:complexType name="SignalGroupType">
+        <xs:sequence>
+            <xs:element name="Object" type="InterfaceObjectType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>The vector interface objects</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+
+    </xs:complexType>
+
+    <xs:complexType name="InterfaceObjectType">
+        <xs:attribute name="ifid" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>Unique object ID (corresponding IDs in MIL/SIL).This ID
+                    establishes the relation between the simulated objects from MIL and SIL. General
+                    rule: objects with the same ID are related. </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="interpolation" type="interpolationType" default="none" use="optional">
+            <xs:annotation>
+                <xs:documentation>Interpolation for recorded timeseries with gaps.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="matFile" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation>Data for the simulation (corresponding IDs in MIL/SIL) will be
+                    stored in the MAT file.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="identifier" type="xs:string"></xs:attribute>
+        <xs:attribute name="signalType" type="xs:string"></xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="RecType">
+        <xs:attribute name="state" type="xs:unsignedLong" use="required">
+            <xs:annotation>
+                <xs:documentation>Number of simulation state (&gt;=0)</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="value" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>The recorded value. If value is "*" the value is treated as "don't
+                    care".</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="SimStatus">
+        <xs:attribute name="status" type="statusType" use="required"/>
+    </xs:complexType>
+
+    <xs:simpleType name="statusType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="success"/>
+            <xs:enumeration value="warning"/>
+            <xs:enumeration value="error"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="interpolationType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="none"/>
+            <xs:enumeration value="zoh"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="ExecutionTimeType">
+        <xs:attribute name="value" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>The recorded value. If value is "*" the value is treated as "don't
+                    care".</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+
+    </xs:complexType>
+
+    <xs:complexType name="StackSizeType">
+        <xs:attribute name="value" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>The recorded value. If value is "*" the value is treated as "don't
+                    care".</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+
+    </xs:complexType>
+
+</xs:schema>

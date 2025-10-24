@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architectureConstraints>
+  <scope path="top_A/Subsystem/top_A">
+    <assumptions origin="tl_indexsearch:input">
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(1)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(2)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(2)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(3)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(3)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(4)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(4)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(5)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(5)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(6)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(6)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(7)"/>
+    </assumptions>
+    <assumptions origin="tl_lookup2d:col">
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_P(1)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_P(2)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_P(2)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_P(3)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_P(3)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_P(4)"/>
+    </assumptions>
+    <assumptions origin="tl_lookup2d:row">
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_N(1)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_N(2)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_N(2)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_N(3)"/>
+    </assumptions>
+    <assumptions origin="tl_lookup1d:input">
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(1)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(2)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(2)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(3)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(3)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(4)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(4)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(5)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(5)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(6)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(6)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(7)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(7)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(8)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(8)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(9)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(9)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(10)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(10)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(11)"/>
+    </assumptions>
+    <assumptions origin="tl_ratelimiter:fslewrate">
+      <signalValue signal="top_A/Subsystem/top_A/sub_B3/limiter_B3/c_limiter_fall_B3" relation="leq" value="0.0000000000000000e+00"/>
+    </assumptions>
+    <assumptions origin="tl_ratelimiter:rslewrate">
+      <signalValue signal="top_A/Subsystem/top_A/sub_B3/limiter_B3/c_limiter_rise_B3" relation="geq" value="0.0000000000000000e+00"/>
+    </assumptions>
+    <assumptions origin="tl_relay">
+      <signalSignal relation="leq" signal1="top_A/Subsystem/top_A/sub_B5/Relay/c_offswitch_B5" signal2="top_A/Subsystem/top_A/sub_B5/Relay/c_onswitch_B5"/>
+    </assumptions>
+  </scope>
+  <scope path="top_A/Subsystem/top_A/sub_B3">
+    <assumptions origin="tl_ratelimiter:fslewrate">
+      <signalValue signal="top_A/Subsystem/top_A/sub_B3/limiter_B3/c_limiter_fall_B3" relation="leq" value="0.0000000000000000e+00"/>
+    </assumptions>
+    <assumptions origin="tl_ratelimiter:rslewrate">
+      <signalValue signal="top_A/Subsystem/top_A/sub_B3/limiter_B3/c_limiter_rise_B3" relation="geq" value="0.0000000000000000e+00"/>
+    </assumptions>
+  </scope>
+  <scope path="top_A/Subsystem/top_A/sub_B5">
+    <assumptions origin="tl_relay">
+      <signalSignal relation="leq" signal1="top_A/Subsystem/top_A/sub_B5/Relay/c_offswitch_B5" signal2="top_A/Subsystem/top_A/sub_B5/Relay/c_onswitch_B5"/>
+    </assumptions>
+  </scope>
+  <scope path="top_A/Subsystem/top_A/sub_B7">
+    <assumptions origin="tl_indexsearch:input">
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(1)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(2)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(2)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(3)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(3)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(4)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(4)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(5)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(5)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(6)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(6)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_prelook/c_prelook_B7(7)"/>
+    </assumptions>
+    <assumptions origin="tl_lookup2d:col">
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_P(1)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_P(2)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_P(2)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_P(3)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_P(3)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_P(4)"/>
+    </assumptions>
+    <assumptions origin="tl_lookup2d:row">
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_N(1)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_N(2)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_N(2)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_2d/c_var_N(3)"/>
+    </assumptions>
+    <assumptions origin="tl_lookup1d:input">
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(1)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(2)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(2)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(3)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(3)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(4)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(4)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(5)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(5)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(6)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(6)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(7)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(7)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(8)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(8)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(9)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(9)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(10)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(10)" relation="les" signal2="top_A/Subsystem/top_A/sub_B7/B7_lookup_1d/c_xlook_B7(11)"/>
+    </assumptions>
+  </scope>
+</architectureConstraints>

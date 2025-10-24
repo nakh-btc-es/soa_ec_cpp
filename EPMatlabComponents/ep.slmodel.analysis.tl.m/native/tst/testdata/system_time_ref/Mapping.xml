@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="system_time"/>
+    <Architecture id="id1" name="system_time [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A"/>
+      <Path refId="id1" path="top_A.c:1:Sa1_top_A"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort"/>
+        <Path refId="id1" path="Sa1_InPort"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort1"/>
+        <Path refId="id1" path="Sa1_InPort1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort2"/>
+        <Path refId="id1" path="Sa1_InPort2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort3"/>
+        <Path refId="id1" path="Sa1_InPort3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort"/>
+        <Path refId="id1" path="Sa1_OutPort"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/Model"/>
+      <Path refId="id1" path="top_A.c:1:Sa1_top_A/inner_model.c:1:inner_step"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort"/>
+        <Path refId="id1" path="Sb1_InPort"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort1"/>
+        <Path refId="id1" path="Sb1_InPort1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort2"/>
+        <Path refId="id1" path="Sb1_InPort2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort3"/>
+        <Path refId="id1" path="Sb1_InPort3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort"/>
+        <Path refId="id1" path="Sb1_OutPort"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort1"/>
+        <Path refId="id1" path="Sb1_OutPort1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort2"/>
+        <Path refId="id1" path="Sb1_OutPort2"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/Model/sub_B1"/>
+      <Path refId="id1" path="top_A.c:1:Sa1_top_A/inner_model.c:1:inner_step/inner_model.c:1:Sb2_sub_B1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sb1_InPort1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sb2_Discrete_Time_Integrator"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/Model/sub_B2"/>
+      <Path refId="id1" path="top_A.c:1:Sa1_top_A/inner_model.c:1:inner_step/inner_model.c:1:Sb3_sub_B2"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sb1_InPort1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In2"/>
+        <Path refId="id1" path="Sb1_InPort3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sb3_Discrete_Time_Integrator"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

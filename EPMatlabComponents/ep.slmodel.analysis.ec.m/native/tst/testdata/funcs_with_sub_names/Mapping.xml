@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="funcs_with_subsystem_names"/>
+    <Architecture id="id1" name="funcs_with_subsystem_names [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="funcs_with_subsystem_names.c:1:funcs_with_subsystem_names_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="SigA" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="SigB" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="top_A/sub_X" refId="id0"/>
+      <Path path="funcs_with_subsystem_names.c:1:funcs_with_subsystem_names_step/funcs_with_subsystem_names.c:1:sub_X" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/sub_X/In1" refId="id0"/>
+        <Path path="SigA" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/sub_X/Out1" refId="id0"/>
+        <Path path="SigF" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="top_A/sub_X/sub_C" refId="id0"/>
+      <Path path="funcs_with_subsystem_names.c:1:funcs_with_subsystem_names_step/funcs_with_subsystem_names.c:1:sub_X/funcs_with_subsystem_names.c:1:sub_C1" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/sub_X/sub_C/In1" refId="id0"/>
+        <Path path="SigA" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/sub_X/sub_C/Out1" refId="id0"/>
+        <Path path="SigE" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="top_A/sub_Y" refId="id0"/>
+      <Path path="funcs_with_subsystem_names.c:1:funcs_with_subsystem_names_step/funcs_with_subsystem_names.c:1:sub_Y" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/sub_Y/In1" refId="id0"/>
+        <Path path="SigA" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/sub_Y/Out1" refId="id0"/>
+        <Path path="SigJ" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="top_A/sub_Y/sub_C" refId="id0"/>
+      <Path path="funcs_with_subsystem_names.c:1:funcs_with_subsystem_names_step/funcs_with_subsystem_names.c:1:sub_Y/funcs_with_subsystem_names.c:1:sub_C2" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/sub_Y/sub_C/In1" refId="id0"/>
+        <Path path="SigA" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/sub_Y/sub_C/Out1" refId="id0"/>
+        <Path path="SigI" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

@@ -1,0 +1,71 @@
+function ut_em_968
+% UPDATED LEGACY UT
+% Old name: ut_mt01_em_968
+%
+% Legacy comment:
+%  BUG: -->
+%      Typedefs for RTE Struct are missing Struct-Tag definition. Nevertheless
+%      the arguments Arg in Modelana are referencing the Type "struct xxx_tag".
+
+%% check Fixed Point Toolbox license
+if ~license('test', 'fixed_point_toolbox')
+    MU_MESSAGE('TEST SKIPPED. Fixed Point Toolbox license required for test execution.');
+    return;
+end
+
+%% cleanup
+sltu_cleanup();
+
+%% arrange
+sUTModel = 'em_968';
+sUTSuite = 'UT_TL';
+
+sPwd = pwd();
+sTestRoot = fullfile(sPwd, ['tmp_', mfilename()]);
+
+sTestDataDir = fullfile(ut_testdata_dir_get(), sUTModel);
+
+[xOnCleanupDoCleanupEnv, xEnv, sResultDir, stTestData] = sltu_prepare_ats_env(sUTModel, sUTSuite, sTestRoot);
+
+sModelFile  = stTestData.sTlModelFile;
+sInitScript = stTestData.sTlInitScriptFile;
+[~, sModel] = fileparts(sModelFile);
+
+xOnCleanupCloseModel = sltu_load_models(xEnv, sModelFile, sInitScript);
+xOrderedCleanup = onCleanup(@() cellfun(@delete, {xOnCleanupCloseModel, xOnCleanupDoCleanupEnv}));
+
+%% act
+stOpt = struct( ...
+    'sTlModel',         sModel, ...
+    'xEnv',             xEnv);
+
+stOpt = ut_prepare_options(stOpt, sResultDir);
+sMessageFile = ut_ep_model_analyse(stOpt);
+
+
+%% assert
+if verLessThan('tl', '5.0')
+    sTestDataSubDir = fullfile(sTestDataDir, 'tl41');
+else
+    sTestDataSubDir = fullfile(sTestDataDir, 'tl50');
+end
+
+sExpectedTlArch = fullfile(sTestDataDir, 'TlArch.xml');
+SLTU_ASSERT_VALID_TL_ARCH(stOpt.sTlResultFile);
+SLTU_ASSERT_EQUAL_TL_ARCH(sExpectedTlArch, stOpt.sTlResultFile);
+
+sExpectedMapping = fullfile(sTestDataSubDir, 'Mapping.xml');
+SLTU_ASSERT_VALID_MAPPING(stOpt.sMappingResultFile);
+SLTU_ASSERT_EQUAL_MAPPING(sExpectedMapping, stOpt.sMappingResultFile);
+
+sExpectedCodeModel = fullfile(sTestDataSubDir, 'CodeModel.xml');
+SLTU_ASSERT_VALID_CODE_MODEL(stOpt.sCResultFile);
+SLTU_ASSERT_EQUAL_CODE_MODEL(sExpectedCodeModel, stOpt.sCResultFile);
+
+sExpectedTlConstraints = fullfile(sTestDataDir, 'TlConstr.xml');
+SLTU_ASSERT_VALID_CONSTRAINTS(stOpt.sTlArchConstrFile);
+SLTU_ASSERT_EQUAL_CONSTRAINTS(sExpectedTlConstraints, stOpt.sTlArchConstrFile);
+
+sExpectedMessageFile = fullfile(sTestDataDir, 'error.xml');
+SLTU_ASSERT_EQUAL_MESSAGES(sExpectedMessageFile, sMessageFile);
+end

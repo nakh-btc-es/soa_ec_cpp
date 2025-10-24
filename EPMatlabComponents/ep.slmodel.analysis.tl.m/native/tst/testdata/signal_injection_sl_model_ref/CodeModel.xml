@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\26a0111c7\signal_injection_sl_model_ref\TLProj\top_A" name="top_A.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\26a0111c7\signal_injection_sl_model_ref\TLProj\mySub" name="mySub.c" kind="source" annotate="yes" id="fID2"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\26a0111c7\signal_injection_sl_model_ref\TLSim" name="top_A_fri.c" kind="source" annotate="no" id="fID3"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\26a0111c7\signal_injection_sl_model_ref\TLSim" name="mySub_fri.c" kind="source" annotate="no" id="fID4"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\26a0111c7\signal_injection_sl_model_ref\TLProj\top_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\26a0111c7\signal_injection_sl_model_ref\TLProj\mySub"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\26a0111c7\signal_injection_sl_model_ref\TLSim"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="simple_signal_injection [C-Code]">
+    <Function name="top_A" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="cal" var="myCal" scaling="scID1" initVal="3.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SmodelRef1_Logical_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SmodelRef1_Relational_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SmodelRef1_Relational_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="StatusSignal" scaling="scID1"/>
+        <InterfaceObj kind="out" var="SystemState" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="step_modelRef" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="cal" var="myCal" scaling="scID1" initVal="3.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SmodelRef1_Logical_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SmodelRef1_Relational_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SmodelRef1_Relational_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="StatusSignal" scaling="scID1"/>
+        <InterfaceObj kind="out" var="SystemState" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

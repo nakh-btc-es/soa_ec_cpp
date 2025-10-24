@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="aar_communication"/>
+    <Architecture id="id1" name="aar_communication [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="S1/Subsystem/S1"/>
+      <Path refId="id1" path="S1.cpp:1:S1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="RP_ServiceB&#10;EventB"/>
+        <Path refId="id1" path="Event_AdaptiveSwc_RP_ServiceB_EventB_NoServiceDiscovery_S1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="RP_ServiceB&#10;FieldB"/>
+        <Path refId="id1" path="Field_AdaptiveSwc_RP_ServiceB_FieldB_NoServiceDiscovery_S1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="PP_ServiceA&#10;MethodA&#10;in"/>
+        <Path refId="id1" path="in_a"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="PP_ServiceA&#10;EventA"/>
+        <Path refId="id1" path="Event_AdaptiveSwc_PP_ServiceA_EventA_S1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="RP_ServiceB&#10;FieldB&#10;out"/>
+        <Path refId="id1" path="Field_AdaptiveSwc_RP_ServiceB_FieldB_NoServiceDiscovery_S1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="PP_ServiceA&#10;MethodA&#10;out"/>
+        <Path refId="id1" path="out_a"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="S1/Subsystem/S1/f_EventCommunication"/>
+      <Path refId="id1" path="S1.cpp:1:S1/AdaptiveSwc.cpp:1:f_EventCommunication"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="RP_ServiceB&#10;EventB"/>
+        <Path refId="id1" path="Event_AdaptiveSwc_RP_ServiceB_EventB_NoServiceDiscovery_S1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="PP_ServiceA&#10;EventA"/>
+        <Path refId="id1" path="Event_AdaptiveSwc_PP_ServiceA_EventA_S1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="S1/Subsystem/S1/f_FieldCommunication"/>
+      <Path refId="id1" path="S1.cpp:1:S1/AdaptiveSwc.cpp:1:f_FieldCommunication"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="RP_ServiceB&#10;FieldB"/>
+        <Path refId="id1" path="Field_AdaptiveSwc_RP_ServiceB_FieldB_NoServiceDiscovery_S1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="RP_ServiceB&#10;FieldB&#10;out"/>
+        <Path refId="id1" path="Field_AdaptiveSwc_RP_ServiceB_FieldB_NoServiceDiscovery_S1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="S1/Subsystem/S1/f_MethodBehavior"/>
+      <Path refId="id1" path="S1.cpp:1:S1/AdaptiveSwc.cpp:1:f_MethodBehavior"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="in"/>
+        <Path refId="id1" path="in"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out"/>
+        <Path refId="id1" path="out"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="S1/Subsystem/S1/f_MethodCall"/>
+      <Path refId="id1" path="S1.cpp:1:S1/AdaptiveSwc.cpp:1:f_MethodCall"/>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="S1/Subsystem/S1/f_PersistantDataCommunication"/>
+      <Path refId="id1" path="S1.cpp:1:S1/AdaptiveSwc.cpp:1:f_PersistantDataCommunication"/>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

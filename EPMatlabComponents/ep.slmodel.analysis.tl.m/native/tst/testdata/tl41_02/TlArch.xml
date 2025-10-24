@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.85" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_tl_41_02\new_blocks.slx" modelCreationDate="2016-01-26T14:26:24" creator="alex">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.85" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_tl_41_02\new_blocks.slx" creationDate="2016-01-26T14:26:24" modificationDate="2021-11-22T09:02:28">
+    <subsystem subsysID="ss1" physicalPath="new_blocks/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="0.2" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="BusInport" physicalPath="new_blocks/top_A/Subsystem/top_A/BusInport" path="top_A/Subsystem/top_A/BusInport">
+        <miltype>
+          <bus>
+            <signal signalName="e.d.a">
+              <int16/>
+            </signal>
+            <signal signalName="e.d.b">
+              <int8/>
+            </signal>
+            <signal signalName="e.c">
+              <uint8/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="e.d.a">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="e.d.b">
+              <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+            </signal>
+            <signal signalName="e.c">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="BusOutport" physicalPath="new_blocks/top_A/Subsystem/top_A/BusOutport" path="top_A/Subsystem/top_A/BusOutport">
+        <miltype>
+          <bus>
+            <signal signalName="e9.d.a">
+              <int16/>
+            </signal>
+            <signal signalName="e9.d.b">
+              <int16/>
+            </signal>
+            <signal signalName="e9.c">
+              <int16/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="e9.d.a">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="e9.d.b">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="e9.c">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="Outport" physicalPath="new_blocks/top_A/Subsystem/top_A/Outport" path="top_A/Subsystem/top_A/Outport">
+        <miltype>
+          <nonUniformArray size="3">
+            <signal index="1">
+              <uint8/>
+            </signal>
+            <signal index="2">
+              <uint8/>
+            </signal>
+            <signal index="3">
+              <uint8/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="3">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="3">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="new_blocks/top_A/Subsystem/top_A/sub_B1" path="top_A/Subsystem/top_A/sub_B1" sampleTime="0.2" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="new_blocks/top_A/Subsystem/top_A/sub_B1/In1" path="top_A/Subsystem/top_A/sub_B1/In1">
+        <miltype>
+          <bus>
+            <signal signalName="e.d.a">
+              <int16/>
+            </signal>
+            <signal signalName="e.d.b">
+              <int16/>
+            </signal>
+            <signal signalName="e.c">
+              <int16/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="e.d.a">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="e.d.b">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="e.c">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="new_blocks/top_A/Subsystem/top_A/sub_B1/Out1" path="top_A/Subsystem/top_A/sub_B1/Out1">
+        <miltype>
+          <bus>
+            <signal signalName="e6.d.a">
+              <int16/>
+            </signal>
+            <signal signalName="e6.d.b">
+              <int16/>
+            </signal>
+            <signal signalName="e6.c">
+              <int16/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="e6.d.a">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="e6.d.b">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="e6.c">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="new_blocks/top_A/Subsystem/top_A/sub_B2" path="top_A/Subsystem/top_A/sub_B2" sampleTime="0.2" name="sub_B2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="new_blocks/top_A/Subsystem/top_A/sub_B2/In1" path="top_A/Subsystem/top_A/sub_B2/In1">
+        <miltype>
+          <bus busType="non_virtual" busObjectName="e1">
+            <signal signalName="ff.d.a">
+              <int16/>
+            </signal>
+            <signal signalName="ff.d.b">
+              <int8/>
+            </signal>
+            <signal signalName="ff.c">
+              <uint8/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus busType="non_virtual" busObjectName="e1">
+            <signal signalName="ff.d.a">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="ff.d.b">
+              <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+            </signal>
+            <signal signalName="ff.c">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="new_blocks/top_A/Subsystem/top_A/sub_B2/Out1" path="top_A/Subsystem/top_A/sub_B2/Out1">
+        <miltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <uint8/>
+            </signal>
+            <signal index="2">
+              <uint8/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="new_blocks/top_A/Subsystem/top_A/sub_B2/Out2" path="top_A/Subsystem/top_A/sub_B2/Out2">
+        <miltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <uint8/>
+            </signal>
+            <signal index="2">
+              <uint8/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

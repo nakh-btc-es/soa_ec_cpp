@@ -1,0 +1,487 @@
+{
+  "model_info": {
+    "name": "signal_dvPrivate_acMethod",
+    "version": "1.20",
+    "namespace": "btc_soa",
+    "simulink_coder_version": "24.2 (R2024b)",
+    "target": "ert.tlc",
+    "hardware": "Intel->x86-64 (Windows64)",
+    "generated_date": "Fri Oct 24 20:49:05 2025",
+    "objectives": [
+      "Execution efficiency",
+      "Traceability"
+    ]
+  },
+  "class_structure": {
+    "main_class": {
+      "name": "signal_dvPrivate_acMethod",
+      "type": "final class",
+      "namespace": "btc_soa",
+      "description": "Signal processing class with unit delays and parameter scaling"
+    }
+  },
+"inputs": {
+    "description": "External input signals (ExtU structure)",
+    "signals": [
+        {
+          "name": "InScalar_dvPrivate_amMethod",
+          "signal_info": {
+            "classification": "scalar",
+            "data_type": "float",
+            "dimensions": "1x1"
+          },
+          "simulink_port": "<Root>/InScalar_dvPrivate_amMethod",
+          "data_visibility": "private",
+          "access_method": "method",
+          "setter_method": "setInScalar_dvPrivate_amMethod(float)",
+          "default_value": 0.0,
+          "description": "Scalar input signal"
+        },
+        {
+          "name": "InArray_dvPrivate_amMethod",
+          "signal_info": {
+            "classification": "array",
+            "data_type": "float",
+            "dimensions": "2x1",
+            "element_count": 2
+          },
+          "simulink_port": "<Root>/InArray_dvPrivate_amMethod",
+          "data_visibility": "private",
+          "access_method": "method",
+          "setter_method": "setInArray_dvPrivate_amMethod(float[2])",
+          "default_value": [0.0, 0.0],
+          "description": "Array input signal with 2 elements"
+        },
+        {
+          "name": "InBus_dvPrivate_amMethod",
+          "signal_info": {
+            "classification": "bus",
+            "data_type": "custom_struct",
+            "bus_type": "myBus",
+            "element_count": 2
+          },
+          "simulink_port": "<Root>/InBus_dvPrivate_amMethod",
+          "data_visibility": "private",
+          "access_method": "method",
+          "setter_method": "setInBus_dvPrivate_amMethod(myBus)",
+          "default_value": {
+            "FlptSig1": 0.0,
+            "FlptSig2": 0.0
+          },
+          "description": "Bus input signal containing FlptSig1 and FlptSig2"
+        },
+        {
+          "name": "InBusElm_dvPrivate_amMethod_Fxp",
+          "signal_info": {
+            "classification": "scalar",
+            "data_type": "int16_t",
+            "dimensions": "1x1",
+            "fixed_point": true
+          },
+          "simulink_port": "<Root>/InBusElm_dvPrivate_amMethod_FxptSig1",
+          "data_visibility": "private",
+          "access_method": "method",
+          "setter_method": "setInBusElm_dvPrivate_amMethod_FxptSig1(int16_t)",
+          "default_value": 0,
+          "description": "Fixed-point bus element signal 1"
+        },
+        {
+          "name": "InBusElm_dvPrivate_amMethod_F_p",
+          "signal_info": {
+            "classification": "scalar",
+            "data_type": "int16_t",
+            "dimensions": "1x1",
+            "fixed_point": true
+          },
+          "simulink_port": "<Root>/InBusElm_dvPrivate_amMethod_FxptSig2",
+          "data_visibility": "private",
+          "access_method": "method",
+          "setter_method": "setInBusElm_dvPrivate_amMethod_FxptSig2(int16_t)",
+          "default_value": 0,
+          "description": "Fixed-point bus element signal 2"
+        },
+        {
+          "name": "InBusElm_dvPrivate_amMethod1_Fx",
+          "type": "int16_t",
+          "signal_info": {
+            "classification": "scalar",
+            "data_type": "int16_t",
+            "dimensions": "1x1",
+            "fixed_point": true
+          },
+          "simulink_port": "<Root>/InBusElm_dvPrivate_amMethod1_FxptSig1",
+          "data_visibility": "private",
+          "access_method": "method",
+          "setter_method": "setInBusElm_dvPrivate_amMethod1_FxptSig1(int16_t)",
+          "default_value": 0,
+          "description": "Fixed-point bus element signal 3"
+        },
+        {
+          "name": "InBusElm_dvPrivate_amMethod1__p",
+          "type": "int16_t",
+          "signal_info": {
+            "classification": "scalar",
+            "data_type": "int16_t",
+            "dimensions": "1x1",
+            "fixed_point": true
+          },
+          "simulink_port": "<Root>/InBusElm_dvPrivate_amMethod1_FxptSig2",
+          "data_visibility": "private",
+          "access_method": "method",
+          "setter_method": "setInBusElm_dvPrivate_amMethod1_FxptSig2(int16_t)",
+          "default_value": 0,
+          "description": "Fixed-point bus element signal 4"
+        }
+        ]
+      },
+"outputs": {
+    "description": "External output signals (ExtY structure)",
+    "signals": [
+    {
+        "name": "OutScalar_dvPrivate_amMethod",
+        "type": "float",
+        "signal_info": {
+            "classification": "scalar",
+            "data_type": "float",
+            "dimensions": "1x1"
+        },
+        "simulink_port": "<Root>/OutScalar_dvPrivate_amMethod",
+        "data_visibility": "private",
+        "access_method": "method",
+        "getter_method": "getOutScalar_dvPrivate_amMethod() const",
+        "default_value": 0.0,
+        "description": "Processed scalar output signal (gain applied to delayed input)",
+        "processing": "ParamScalar * LocScalar_dvPrivate_amMethod"
+    },
+    {
+        "name": "OutArray_dvPrivate_amMethod",
+        "type": "float[2]",
+        "signal_info": {
+            "classification": "array",
+            "data_type": "float",
+            "dimensions": "2x1",
+            "element_count": 2
+        },
+        "simulink_port": "<Root>/OutArray_dvPrivate_amMethod",
+        "data_visibility": "private",
+        "access_method": "method",
+        "getter_method": "getOutArray_dvPrivate_amMethod() const",
+        "default_value": [0.0, 0.0],
+        "description": "Processed array output signal (element-wise gain applied to delayed input)",
+        "processing": "ParamArray[i] * LocArray_dvPrivate_amMethod[i]"
+    },
+    {
+        "name": "OutBus_dvPrivate_amMethod",
+        "type": "myBus",
+        "signal_info": {
+            "classification": "bus",
+            "data_type": "custom_struct",
+            "bus_type": "myBus",
+            "element_count": 2
+        },
+        "simulink_port": "<Root>/OutBus_dvPrivate_amMethod",
+        "data_visibility": "private",
+        "access_method": "method",
+        "getter_method": "getOutBus_dvPrivate_amMethod() const",
+        "default_value": {
+          "FlptSig1": 0.0,
+          "FlptSig2": 0.0
+        },
+        "description": "Bus output signal (direct pass-through from input)",
+        "processing": "rtY.OutBus_dvPrivate_amMethod = rtU.InBus_dvPrivate_amMethod"
+    },
+    {
+        "name": "OutBusElm_dvPrivate_amMethod_Fx",
+        "type": "int16_t",
+        "signal_info": {
+            "classification": "scalar",
+            "data_type": "int16_t",
+            "dimensions": "1x1",
+            "fixed_point": true
+        },
+        "simulink_port": "<Root>/OutBusElm_dvPrivate_amMethod_FxptSig1",
+        "data_visibility": "private",
+        "access_method": "method",
+        "getter_method": "getOutBusElm_dvPrivate_amMethod_FxptSig1() const",
+        "default_value": 0,
+        "description": "Fixed-point bus element output 1 (pass-through)",
+        "processing": "rtY.OutBusElm_dvPrivate_amMethod_Fx = rtU.InBusElm_dvPrivate_amMethod_Fxp"
+    },
+    {
+        "name": "OutBusElm_dvPrivate_amMethod__p",
+        "type": "int16_t",
+        "signal_info": {
+            "classification": "scalar",
+            "data_type": "int16_t",
+            "dimensions": "1x1",
+            "fixed_point": true
+        },
+        "simulink_port": "<Root>/OutBusElm_dvPrivate_amMethod_FxptSig2",
+        "data_visibility": "private",
+        "access_method": "method",
+        "getter_method": "getOutBusElm_dvPrivate_amMethod_FxptSig2() const",
+        "default_value": 0,
+        "description": "Fixed-point bus element output 2"
+    },
+    {
+        "name": "OutBusElm_dvPrivate_amMethod1_p",
+        "type": "int16_t",
+        "signal_info": {
+            "classification": "scalar",
+            "data_type": "int16_t",
+            "dimensions": "1x1",
+            "fixed_point": true
+        },
+        "simulink_port": "<Root>/OutBusElm_dvPrivate_amMethod1_FxptSig1",
+        "data_visibility": "private",
+        "access_method": "method",
+        "getter_method": "getOutBusElm_dvPrivate_amMethod1_FxptSig1() const",
+        "default_value": 0,
+        "description": "Fixed-point bus element output 3"
+    },
+    {
+        "name": "OutBusElm_dvPrivate_amMethod1_F",
+        "type": "int16_t",
+        "signal_info": {
+            "classification": "scalar",
+            "data_type": "int16_t",
+            "dimensions": "1x1",
+            "fixed_point": true
+        },
+        "simulink_port": "<Root>/OutBusElm_dvPrivate_amMethod1_FxptSig2",
+        "data_visibility": "private",
+        "access_method": "method",
+        "getter_method": "getOutBusElm_dvPrivate_amMethod1_FxptSig2() const",
+        "default_value": 0,
+        "description": "Fixed-point bus element output 4 (pass-through)",
+        "processing": "rtY.OutBusElm_dvPrivate_amMethod1_F = rtU.InBusElm_dvPrivate_amMethod1__p"
+    }
+    ]
+},
+"parameters": {
+    "description": "Tunable parameters and initial conditions (P structure)",
+    "parameters": [
+        {
+            "name": "ParamArray",
+            "signal_info": {
+                "classification": "array",
+                "data_type": "float",
+                "dimensions": "2x1",
+                "element_count": 2
+            },
+            "data_visibility": "private",
+            "access_method": "method",
+            "default_value": [2.0, 2.0],
+            "simulink_reference": "<Root>/Gain1",
+            "description": "Array parameter for gain operation on array signals"
+        },
+        {
+            "name": "ParamScalar",
+            "signal_info": {
+                "classification": "scalar",
+                "data_type": "float",
+                "dimensions": "1x1"
+            },
+            "data_visibility": "private",
+            "access_method": "method",
+            "default_value": 2.0,
+            "simulink_reference": "<Root>/Gain",
+            "description": "Scalar parameter for gain operation on scalar signals"
+        },
+        {
+            "name": "UnitDelay_InitialCondition",
+            "signal_info": {
+                "classification": "scalar",
+                "data_type": "float",
+                "dimensions": "1x1"
+            },
+            "data_visibility": "private",
+            "access_method": "method",
+            "default_value": 0.0,
+            "simulink_reference": "<Root>/Unit Delay",
+            "description": "Initial condition for array unit delay block"
+        },
+        {
+            "name": "UnitDelay1_InitialCondition",
+            "signal_info": {
+                "classification": "scalar",
+                "data_type": "float",
+                "dimensions": "1x1"
+            },
+            "data_visibility": "private",
+            "access_method": "method",
+            "default_value": 0.0,
+            "simulink_reference": "<Root>/Unit Delay1",
+            "description": "Initial condition for scalar unit delay block"
+        }
+    ]
+},
+"local_variables": {
+    "description": "Block states and internal variables (DW structure)",
+    "state_variables": [
+        {
+            "name": "LocArray_dvPrivate_amMethod",
+            "signal_info": {
+                "classification": "array",
+                "data_type": "float",
+                "dimensions": "2x1",
+                "element_count": 2
+            },
+            "simulink_block": "<Root>/Unit Delay",
+            "data_visibility": "private",
+            "access_method": "method",
+            "default_value": [0.0, 0.0],
+            "description": "State storage for array unit delay - maintains previous array input values",
+            "initialization": "UnitDelay_InitialCondition",
+            "update_logic": "rtDW.LocArray_dvPrivate_amMethod[i] = rtU.InArray_dvPrivate_amMethod[i]"
+        },
+        {
+            "name": "LocScalar_dvPrivate_amMethod",
+            "signal_info": {
+                "classification": "scalar",
+                "data_type": "float",
+                "dimensions": "1x1"
+            },
+            "simulink_block": "<Root>/Unit Delay1",
+            "data_visibility": "private",
+            "access_method": "method",
+            "default_value": 0.0,
+            "description": "State storage for scalar unit delay - maintains previous scalar input value",
+            "initialization": "UnitDelay1_InitialCondition",
+            "update_logic": "rtDW.LocScalar_dvPrivate_amMethod = rtU.InScalar_dvPrivate_amMethod"
+        }
+    ],
+    "private_members": [
+        {
+            "name": "rtU",
+            "signal_info": {
+                "classification": "struct",
+                "data_type": "ExtU",
+                "dimensions": "1x1"
+            },
+            "data_visibility": "private",
+            "access_method": "method",
+            "default_value": {},
+            "description": "Private instance of external inputs structure"
+        },
+        {
+            "name": "rtY",
+            "signal_info": {
+                "classification": "struct",
+                "data_type": "ExtY",
+                "dimensions": "1x1"
+            },
+            "data_visibility": "private",
+            "access_method": "method",
+            "default_value": {},
+            "description": "Private instance of external outputs structure"
+        },
+        {
+            "name": "rtDW",
+            "signal_info": {
+                "classification": "struct",
+                "data_type": "DW",
+                "dimensions": "1x1"
+            },
+            "data_visibility": "private",
+            "access_method": "method",
+            "default_value": {},
+            "description": "Private instance of block states structure"
+        },
+        {
+            "name": "rtP",
+            "signal_info": {
+                "classification": "struct",
+                "data_type": "P",
+                "dimensions": "1x1",
+                "storage_class": "static"
+            },
+            "data_visibility": "private",
+            "access_method": "method",
+            "default_value": {},
+            "description": "Static instance of parameters structure"
+        }
+    ]
+},
+  "custom_types": {
+    "myBus": {
+      "description": "Bus structure for grouped float signals",
+      "fields": [
+        {
+          "name": "FlptSig1",
+          "type": "float",
+          "description": "First floating-point signal in bus"
+        },
+        {
+          "name": "FlptSig2",
+          "type": "float",
+          "description": "Second floating-point signal in bus"
+        }
+      ]
+    }
+  },
+  "api_methods": {
+    "initialization": [
+      {
+        "name": "initialize()",
+        "description": "Initializes block states with initial conditions",
+        "access": "public"
+      }
+    ],
+    "execution": [
+      {
+        "name": "step()",
+        "description": "Executes one time step of the model",
+        "access": "public"
+      }
+    ],
+    "input_setters": [
+      {
+        "name": "setInScalar_dvPrivate_amMethod(float)",
+        "description": "Sets scalar input value"
+      },
+      {
+        "name": "setInArray_dvPrivate_amMethod(float[2])",
+        "description": "Sets array input values"
+      },
+      {
+        "name": "setInBus_dvPrivate_amMethod(myBus)",
+        "description": "Sets bus input value"
+      }
+    ],
+    "output_getters": [
+      {
+        "name": "getOutScalar_dvPrivate_amMethod() const",
+        "description": "Gets processed scalar output value"
+      },
+      {
+        "name": "getOutArray_dvPrivate_amMethod() const",
+        "description": "Gets processed array output values"
+      },
+      {
+        "name": "getOutBus_dvPrivate_amMethod() const",
+        "description": "Gets bus output value"
+      }
+    ],
+    "state_management": [
+      {
+        "name": "getDWork() const",
+        "description": "Gets current block states"
+      },
+      {
+        "name": "setDWork(const DW*)",
+        "description": "Sets block states"
+      }
+    ],
+    "parameter_management": [
+      {
+        "name": "getBlockParameters() const",
+        "description": "Gets current parameter values"
+      },
+      {
+        "name": "setBlockParameters(const P*)",
+        "description": "Sets parameter values"
+      }
+    ]
+  }
+}

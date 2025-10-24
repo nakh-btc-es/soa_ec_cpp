@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="osc_obsVlvDelay"/>
+    <Architecture id="id1" name="osc_obsVlvDelay [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="obsVlvDelay/Subsystem/obsVlvDelay"/>
+      <Path refId="id1" path="obsVlvDelay.c:1:obsVlvDelay"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="stVlvIn_bool"/>
+        <Path refId="id1" path="Sc1_stVlvIn_bool"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="dylVlvOff_s"/>
+        <Path refId="id1" path="Sc1_dylVlvOff_s"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="dlyVlvOn_s"/>
+        <Path refId="id1" path="Sc1_dlyVlvOn_s"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="tsmpl_s"/>
+        <Path refId="id1" path="Sc1_tsmpl_s"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="stVlvOut"/>
+        <Path refId="id1" path="DISP_Sc1_stVlvOut"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="obsVlvDelay/Subsystem/obsVlvDelay/vlvDlyHiGea/stVlvOut(1)"/>
+        <Path refId="id1" path="ISV_Sdly1_vlvDlyHiGea_0.DISP_Sdly1_stVlvOut"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="obsVlvDelay/Subsystem/obsVlvDelay/vlvDlyHiGea"/>
+      <Path refId="id1" path="obsVlvDelay.c:1:obsVlvDelay/gaObserver.c:1:valveDelay"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="stVlvIn_bool"/>
+        <Path refId="id1" path="Sdly1_stVlvIn_bool"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="dlyVlvOn_s"/>
+        <Path refId="id1" path="Sdly1_dlyVlvOn_s"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="dylVlvOff_s"/>
+        <Path refId="id1" path="Sdly1_dylVlvOff_s"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="tsmpl_s"/>
+        <Path refId="id1" path="Sdly1_tsmpl_s"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="stVlvOut"/>
+        <Path refId="id1" path="ISV_Sdly1_vlvDlyHiGea_0.DISP_Sdly1_stVlvOut"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

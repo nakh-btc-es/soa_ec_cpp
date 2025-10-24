@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<BusType name="BTC_BusObj1" virtual="false">
+			<Comp name="In4.InBus1.a" type="double" dim1="1" dim2="3" />
+			<Comp name="In4.InBus1.b" type="double" width="3" />
+			<Comp name="In4.InBus1.c" type="double" dim1="4" dim2="2" />
+			<Comp name="In4.InBus1.Alias1" type="double" />
+			<Comp name="In4.InBus1.Color1" type="DDColor" />
+		</BusType>
+		<BusType name="BTC_BusObj2" virtual="false">
+			<Comp name="In5.InBus2.Alias2" type="double" />
+			<Comp name="In5.InBus2.Color2" type="DDColor" />
+			<Comp name="In5.InBus2.a1" type="single" width="2" />
+			<Comp name="In5.InBus2.a2" type="uint32" dim1="2" dim2="3" />
+			<Comp name="In5.InBus2.b_bus_obj.a" type="double" dim1="1" dim2="3" />
+			<Comp name="In5.InBus2.b_bus_obj.b" type="double" width="3" />
+			<Comp name="In5.InBus2.b_bus_obj.c" type="double" dim1="4" dim2="2" />
+			<Comp name="In5.InBus2.b_bus_obj.Alias1" type="double" />
+			<Comp name="In5.InBus2.b_bus_obj.Color1" type="DDColor" />
+		</BusType>
+	</Types>
+	<Outports sampleTime="0.2">
+		<Outport portNr="1" dim1="1" dim2="3" type="double">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In1(1)(1)</ScalarRef>
+				<ScalarRef>INPUT:In1(1)(2)</ScalarRef>
+				<ScalarRef>INPUT:In1(1)(3)</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="2" dim1="2" dim2="2" type="int16">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In2(1)(1)</ScalarRef>
+				<ScalarRef>INPUT:In2(2)(1)</ScalarRef>
+				<ScalarRef>INPUT:In2(1)(2)</ScalarRef>
+				<ScalarRef>INPUT:In2(2)(2)</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="3" type="single">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In3</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="4" width="1" type="BTC_BusObj1">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In4.InBus1.a(1)(1)</ScalarRef>
+				<ScalarRef>INPUT:In4.InBus1.a(1)(2)</ScalarRef>
+				<ScalarRef>INPUT:In4.InBus1.a(1)(3)</ScalarRef>
+				<ScalarRef>INPUT:In4.InBus1.b(1)</ScalarRef>
+				<ScalarRef>INPUT:In4.InBus1.b(2)</ScalarRef>
+				<ScalarRef>INPUT:In4.InBus1.b(3)</ScalarRef>
+				<ScalarRef>INPUT:In4.InBus1.c(1)(1)</ScalarRef>
+				<ScalarRef>INPUT:In4.InBus1.c(2)(1)</ScalarRef>
+				<ScalarRef>INPUT:In4.InBus1.c(3)(1)</ScalarRef>
+				<ScalarRef>INPUT:In4.InBus1.c(4)(1)</ScalarRef>
+				<ScalarRef>INPUT:In4.InBus1.c(1)(2)</ScalarRef>
+				<ScalarRef>INPUT:In4.InBus1.c(2)(2)</ScalarRef>
+				<ScalarRef>INPUT:In4.InBus1.c(3)(2)</ScalarRef>
+				<ScalarRef>INPUT:In4.InBus1.c(4)(2)</ScalarRef>
+				<ScalarRef>INPUT:In4.InBus1.Alias1</ScalarRef>
+				<ScalarRef>INPUT:In4.InBus1.Color1</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="5" width="1" type="BTC_BusObj2">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In5.InBus2.Alias2</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.Color2</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.a1(1)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.a1(2)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.a2(1)(1)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.a2(2)(1)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.a2(1)(2)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.a2(2)(2)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.a2(1)(3)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.a2(2)(3)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.b_bus_obj.a(1)(1)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.b_bus_obj.a(1)(2)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.b_bus_obj.a(1)(3)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.b_bus_obj.b(1)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.b_bus_obj.b(2)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.b_bus_obj.b(3)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.b_bus_obj.c(1)(1)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.b_bus_obj.c(2)(1)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.b_bus_obj.c(3)(1)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.b_bus_obj.c(4)(1)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.b_bus_obj.c(1)(2)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.b_bus_obj.c(2)(2)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.b_bus_obj.c(3)(2)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.b_bus_obj.c(4)(2)</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.b_bus_obj.Alias1</ScalarRef>
+				<ScalarRef>INPUT:In5.InBus2.b_bus_obj.Color1</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="6" type="double">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In6</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="7" type="int16">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In7</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="8" type="uint32">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In8</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="9" type="uint32">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In9</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="10" width="1" type="BTC_BusObj2">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.Alias2</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.Color2</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.a1(1)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.a1(2)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.a2(1)(1)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.a2(2)(1)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.a2(1)(2)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.a2(2)(2)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.a2(1)(3)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.a2(2)(3)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.b_bus_obj.a(1)(1)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.b_bus_obj.a(1)(2)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.b_bus_obj.a(1)(3)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.b_bus_obj.b(1)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.b_bus_obj.b(2)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.b_bus_obj.b(3)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.b_bus_obj.c(1)(1)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.b_bus_obj.c(2)(1)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.b_bus_obj.c(3)(1)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.b_bus_obj.c(4)(1)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.b_bus_obj.c(1)(2)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.b_bus_obj.c(2)(2)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.b_bus_obj.c(3)(2)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.b_bus_obj.c(4)(2)</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.b_bus_obj.Alias1</ScalarRef>
+				<ScalarRef>INPUT:In10.{&lt;signal1&gt;}.b_bus_obj.Color1</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+	</Outports>
+</SFunction>

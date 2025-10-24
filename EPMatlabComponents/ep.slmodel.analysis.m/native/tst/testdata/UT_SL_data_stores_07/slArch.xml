@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_07\init_data_stores_07.m" modelVersion="1.51" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_07\data_stores_07.mdl" modelCreationDate="2018-03-01T09:07:54" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.51" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_07\data_stores_07.mdl" creationDate="2018-03-01T09:07:54" modificationDate="2024-09-11T18:28:10" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_07\init_data_stores_07.m">
+    <subsystem subsysID="ss1" physicalPath="data_stores_07/top_A" path="top_A" sampleTime="0.2" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_stores_07/top_A/In1" path="top_A/In1">
+        <int16/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="data_stores_07/top_A/In2" path="top_A/In2">
+        <int16/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="data_stores_07/top_A/In3" path="top_A/In3">
+        <int16/>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="data_stores_07/top_A/In4" path="top_A/In4">
+        <int16/>
+      </inport>
+      <inport portNumber="5" name="In5" physicalPath="data_stores_07/top_A/In5" path="top_A/In5">
+        <int16/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_07/top_A/Out1" path="top_A/Out1">
+        <int16/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="data_stores_07/top_A/Out2" path="top_A/Out2">
+        <int16/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="data_stores_07/top_A/Out3" path="top_A/Out3">
+        <int16/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="data_stores_07/top_A/Out4" path="top_A/Out4">
+        <int16/>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="data_stores_07/top_A/Out5" path="top_A/Out5">
+        <int16/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss12"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="data_stores_07/top_A/sub_B0" path="top_A/sub_B0" sampleTime="0.2" name="sub_B0" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_stores_07/top_A/sub_B0/In1" path="top_A/sub_B0/In1">
+        <int16/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_07/top_A/sub_B0/Out1" path="top_A/sub_B0/Out1">
+        <int16/>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="data_stores_07/top_A/sub_B0/sub_C1" path="top_A/sub_B0/sub_C1" sampleTime="0.2" name="sub_C1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_stores_07/top_A/sub_B0/sub_C1/In1" path="top_A/sub_B0/sub_C1/In1">
+        <int16/>
+      </inport>
+      <outport portNumber="0" name="DS_out1" physicalPath="data_stores_07/top_A/sub_B0/sub_C1/DS_out1" path="top_A/sub_B0/sub_C1/DS_out1" signalName="myDS" initValue="0.0">
+        <int16/>
+        <dataStoreMemory signalName="myDS"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="data_stores_07/top_A/sub_B0/sub_C2" path="top_A/sub_B0/sub_C2" sampleTime="0.2" name="sub_C2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="DS_in1" physicalPath="data_stores_07/top_A/sub_B0/sub_C2/DS_in1" path="top_A/sub_B0/sub_C2/DS_in1" signalName="myDS" initValue="0.0">
+        <int16/>
+        <dataStoreMemory signalName="myDS"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_07/top_A/sub_B0/sub_C2/Out1" path="top_A/sub_B0/sub_C2/Out1">
+        <int16/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="data_stores_07/top_A/sub_X" path="top_A/sub_X" sampleTime="0.2" name="sub_X" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_stores_07/top_A/sub_X/In1" path="top_A/sub_X/In1">
+        <int16/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="data_stores_07/top_A/sub_X/In2" path="top_A/sub_X/In2">
+        <int16/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_07/top_A/sub_X/Out1" path="top_A/sub_X/Out1">
+        <int16/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="data_stores_07/top_A/sub_X/Out2" path="top_A/sub_X/Out2">
+        <int16/>
+      </outport>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss9"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="data_stores_07/top_A/sub_X/sub_B1" path="top_A/sub_X/sub_B1" sampleTime="0.2" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_stores_07/top_A/sub_X/sub_B1/In1" path="top_A/sub_X/sub_B1/In1">
+        <int16/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_07/top_A/sub_X/sub_B1/Out1" path="top_A/sub_X/sub_B1/Out1">
+        <int16/>
+      </outport>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="data_stores_07/top_A/sub_X/sub_B1/sub_C3" path="top_A/sub_X/sub_B1/sub_C3" sampleTime="0.2" name="sub_C3" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_stores_07/top_A/sub_X/sub_B1/sub_C3/In1" path="top_A/sub_X/sub_B1/sub_C3/In1">
+        <int16/>
+      </inport>
+      <outport portNumber="0" name="DS_out1" physicalPath="data_stores_07/top_A/sub_X/sub_B1/sub_C3/DS_out1" path="top_A/sub_X/sub_B1/sub_C3/DS_out1" signalName="myDS" initValue="0.0">
+        <int16/>
+        <dataStoreMemory signalName="myDS" physicalPath="data_stores_07/top_A/sub_X/DS"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="data_stores_07/top_A/sub_X/sub_B1/sub_C4" path="top_A/sub_X/sub_B1/sub_C4" sampleTime="0.2" name="sub_C4" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="DS_in1" physicalPath="data_stores_07/top_A/sub_X/sub_B1/sub_C4/DS_in1" path="top_A/sub_X/sub_B1/sub_C4/DS_in1" signalName="myDS" initValue="0.0">
+        <int16/>
+        <dataStoreMemory signalName="myDS" physicalPath="data_stores_07/top_A/sub_X/DS"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_07/top_A/sub_X/sub_B1/sub_C4/Out1" path="top_A/sub_X/sub_B1/sub_C4/Out1">
+        <int16/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="data_stores_07/top_A/sub_X/sub_B2" path="top_A/sub_X/sub_B2" sampleTime="0.2" name="sub_B2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_stores_07/top_A/sub_X/sub_B2/In1" path="top_A/sub_X/sub_B2/In1">
+        <int16/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_07/top_A/sub_X/sub_B2/Out1" path="top_A/sub_X/sub_B2/Out1">
+        <int16/>
+      </outport>
+      <subsystem refSubsysID="ss10"/>
+      <subsystem refSubsysID="ss11"/>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="data_stores_07/top_A/sub_X/sub_B2/sub_C5" path="top_A/sub_X/sub_B2/sub_C5" sampleTime="0.2" name="sub_C5" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_stores_07/top_A/sub_X/sub_B2/sub_C5/In1" path="top_A/sub_X/sub_B2/sub_C5/In1">
+        <int16/>
+      </inport>
+      <outport portNumber="0" name="DS_out1" physicalPath="data_stores_07/top_A/sub_X/sub_B2/sub_C5/DS_out1" path="top_A/sub_X/sub_B2/sub_C5/DS_out1" signalName="myDS" initValue="0.0">
+        <int16/>
+        <dataStoreMemory signalName="myDS" physicalPath="data_stores_07/top_A/sub_X/DS"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss11" physicalPath="data_stores_07/top_A/sub_X/sub_B2/sub_C6" path="top_A/sub_X/sub_B2/sub_C6" sampleTime="0.2" name="sub_C6" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="DS_in1" physicalPath="data_stores_07/top_A/sub_X/sub_B2/sub_C6/DS_in1" path="top_A/sub_X/sub_B2/sub_C6/DS_in1" signalName="myDS" initValue="0.0">
+        <int16/>
+        <dataStoreMemory signalName="myDS" physicalPath="data_stores_07/top_A/sub_X/DS"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_07/top_A/sub_X/sub_B2/sub_C6/Out1" path="top_A/sub_X/sub_B2/sub_C6/Out1">
+        <int16/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss12" physicalPath="data_stores_07/top_A/sub_Y" path="top_A/sub_Y" sampleTime="0.2" name="sub_Y" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_stores_07/top_A/sub_Y/In1" path="top_A/sub_Y/In1">
+        <int16/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="data_stores_07/top_A/sub_Y/In2" path="top_A/sub_Y/In2">
+        <int16/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_07/top_A/sub_Y/Out1" path="top_A/sub_Y/Out1">
+        <int16/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="data_stores_07/top_A/sub_Y/Out2" path="top_A/sub_Y/Out2">
+        <int16/>
+      </outport>
+      <subsystem refSubsysID="ss13"/>
+      <subsystem refSubsysID="ss16"/>
+    </subsystem>
+    <subsystem subsysID="ss13" physicalPath="data_stores_07/top_A/sub_Y/sub_B3" path="top_A/sub_Y/sub_B3" sampleTime="0.2" name="sub_B3" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_stores_07/top_A/sub_Y/sub_B3/In1" path="top_A/sub_Y/sub_B3/In1">
+        <int16/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_07/top_A/sub_Y/sub_B3/Out1" path="top_A/sub_Y/sub_B3/Out1">
+        <int16/>
+      </outport>
+      <subsystem refSubsysID="ss14"/>
+      <subsystem refSubsysID="ss15"/>
+    </subsystem>
+    <subsystem subsysID="ss14" physicalPath="data_stores_07/top_A/sub_Y/sub_B3/sub_C7" path="top_A/sub_Y/sub_B3/sub_C7" sampleTime="0.2" name="sub_C7" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_stores_07/top_A/sub_Y/sub_B3/sub_C7/In1" path="top_A/sub_Y/sub_B3/sub_C7/In1">
+        <int16/>
+      </inport>
+      <outport portNumber="0" name="DS_out1" physicalPath="data_stores_07/top_A/sub_Y/sub_B3/sub_C7/DS_out1" path="top_A/sub_Y/sub_B3/sub_C7/DS_out1" signalName="myDS" initValue="0.0">
+        <int16/>
+        <dataStoreMemory signalName="myDS" physicalPath="data_stores_07/top_A/sub_Y/sub_B3/DS"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss15" physicalPath="data_stores_07/top_A/sub_Y/sub_B3/sub_C8" path="top_A/sub_Y/sub_B3/sub_C8" sampleTime="0.2" name="sub_C8" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="DS_in1" physicalPath="data_stores_07/top_A/sub_Y/sub_B3/sub_C8/DS_in1" path="top_A/sub_Y/sub_B3/sub_C8/DS_in1" signalName="myDS" initValue="0.0">
+        <int16/>
+        <dataStoreMemory signalName="myDS" physicalPath="data_stores_07/top_A/sub_Y/sub_B3/DS"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_07/top_A/sub_Y/sub_B3/sub_C8/Out1" path="top_A/sub_Y/sub_B3/sub_C8/Out1">
+        <int16/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss16" physicalPath="data_stores_07/top_A/sub_Y/sub_B4" path="top_A/sub_Y/sub_B4" sampleTime="0.2" name="sub_B4" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_stores_07/top_A/sub_Y/sub_B4/In1" path="top_A/sub_Y/sub_B4/In1">
+        <int16/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_07/top_A/sub_Y/sub_B4/Out1" path="top_A/sub_Y/sub_B4/Out1">
+        <int16/>
+      </outport>
+      <subsystem refSubsysID="ss17"/>
+      <subsystem refSubsysID="ss18"/>
+    </subsystem>
+    <subsystem subsysID="ss17" physicalPath="data_stores_07/top_A/sub_Y/sub_B4/sub_C10" path="top_A/sub_Y/sub_B4/sub_C10" sampleTime="0.2" name="sub_C10" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="DS_in1" physicalPath="data_stores_07/top_A/sub_Y/sub_B4/sub_C10/DS_in1" path="top_A/sub_Y/sub_B4/sub_C10/DS_in1" signalName="myDS" initValue="0.0">
+        <int16/>
+        <dataStoreMemory signalName="myDS" physicalPath="data_stores_07/top_A/sub_Y/sub_B4/DS"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_07/top_A/sub_Y/sub_B4/sub_C10/Out1" path="top_A/sub_Y/sub_B4/sub_C10/Out1">
+        <int16/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss18" physicalPath="data_stores_07/top_A/sub_Y/sub_B4/sub_C9" path="top_A/sub_Y/sub_B4/sub_C9" sampleTime="0.2" name="sub_C9" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_stores_07/top_A/sub_Y/sub_B4/sub_C9/In1" path="top_A/sub_Y/sub_B4/sub_C9/In1">
+        <int16/>
+      </inport>
+      <outport portNumber="0" name="DS_out1" physicalPath="data_stores_07/top_A/sub_Y/sub_B4/sub_C9/DS_out1" path="top_A/sub_Y/sub_B4/sub_C9/DS_out1" signalName="myDS" initValue="0.0">
+        <int16/>
+        <dataStoreMemory signalName="myDS" physicalPath="data_stores_07/top_A/sub_Y/sub_B4/DS"/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

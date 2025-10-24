@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.11" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230605T172524_12480\tmp_ut_aob_injection\aob_injection.slx" modelCreationDate="2021-01-27T11:05:16" creator="developer">
+  <toolInfo name="Matlab" release="(R2019a)" version="9.6" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2019a)" version="9.3" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="5.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.11" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230605T172524_12480\tmp_ut_aob_injection\aob_injection.slx" creationDate="2021-01-27T11:05:16" modificationDate="2023-06-05T17:26:03">
+    <subsystem subsysID="ss1" physicalPath="aob_injection/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="0.01" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="InPort" physicalPath="aob_injection/top_A/Subsystem/top_A/InPort" path="top_A/Subsystem/top_A/InPort">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="0" name="Data Store&#10;Read2" physicalPath="aob_injection/top_A/Subsystem/top_A/Data Store&#10;Read2" path="top_A/Subsystem/top_A/Data Store&#10;Read2">
+        <miltype>
+          <bus busType="non_virtual" busObjectName="BoolBus">
+            <signal signalName="BusBoolDS.b1">
+              <boolean/>
+            </signal>
+            <signal signalName="BusBoolDS.b2">
+              <boolean/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus busType="non_virtual" busObjectName="BoolBus">
+            <signal initValue="0.0000000000000000e+00" signalName="BusBoolDS.b1">
+              <Bool/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" signalName="BusBoolDS.b2">
+              <Bool/>
+            </signal>
+          </bus>
+        </siltype>
+        <dataStoreMemory signalName="BusBoolDS"/>
+      </inport>
+      <outport portNumber="1" name="OutPort" physicalPath="aob_injection/top_A/Subsystem/top_A/OutPort" path="top_A/Subsystem/top_A/OutPort">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

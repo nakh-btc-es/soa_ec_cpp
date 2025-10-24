@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.100" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_34089\bus_objects.mdl" modelCreationDate="2014-09-01T15:06:54" creator="Administrator">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.100" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_34089\bus_objects.mdl" creationDate="2014-09-01T15:06:54" modificationDate="2021-11-18T08:20:56">
+    <subsystem subsysID="ss1" physicalPath="bus_objects/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="Bus Inport1" physicalPath="bus_objects/top_A/Subsystem/top_A/Bus Inport1" path="top_A/Subsystem/top_A/Bus Inport1">
+        <miltype>
+          <bus>
+            <signal signalName="p1.b">
+              <boolean/>
+            </signal>
+            <signal signalName="p1.a">
+              <single/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="p1.b">
+              <Bool/>
+            </signal>
+            <signal signalName="p1.a">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="Bus Inport2" physicalPath="bus_objects/top_A/Subsystem/top_A/Bus Inport2" path="top_A/Subsystem/top_A/Bus Inport2">
+        <miltype>
+          <bus>
+            <signal signalName="p2.c">
+              <int16/>
+            </signal>
+            <signal signalName="p2.a.b">
+              <boolean/>
+            </signal>
+            <signal signalName="p2.a.a">
+              <single/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="p2.c">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="p2.a.b">
+              <Bool/>
+            </signal>
+            <signal signalName="p2.a.a">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="bus_objects/top_A/Subsystem/top_A/Out1" path="top_A/Subsystem/top_A/Out1">
+        <miltype>
+          <bus>
+            <signal signalName="z_hallo.x">
+              <nonUniformArray size="2">
+                <signal index="1">
+                  <int8/>
+                </signal>
+                <signal index="2">
+                  <int8/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="z_hallo.z">
+              <int32/>
+            </signal>
+            <signal signalName="z_hallo.y">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <single/>
+                </signal>
+                <signal index="2">
+                  <single/>
+                </signal>
+                <signal index="3">
+                  <single/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="z_hallo.x">
+              <nonUniformArray size="2">
+                <signal index="1">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="z_hallo.z">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="z_hallo.y">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="3">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="bus_objects/top_A/Subsystem/top_A/Out2" path="top_A/Subsystem/top_A/Out2">
+        <miltype>
+          <bus>
+            <signal signalName="&lt;signal1&gt;.z.x">
+              <nonUniformArray size="2">
+                <signal index="1">
+                  <int8/>
+                </signal>
+                <signal index="2">
+                  <int8/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.z.z">
+              <int32/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.z.y">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <single/>
+                </signal>
+                <signal index="2">
+                  <single/>
+                </signal>
+                <signal index="3">
+                  <single/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.a.c">
+              <int16/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.a.a.b">
+              <boolean/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.a.a.a">
+              <single/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="&lt;signal1&gt;.z.x">
+              <nonUniformArray size="2">
+                <signal index="1">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.z.z">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.z.y">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="3">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.a.c">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.a.a.b">
+              <Bool/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.a.a.a">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="OutPort" physicalPath="bus_objects/top_A/Subsystem/top_A/OutPort" path="top_A/Subsystem/top_A/OutPort">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="bus_objects/top_A/Subsystem/top_A/sub_B1" path="top_A/Subsystem/top_A/sub_B1" sampleTime="1" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="bus_objects/top_A/Subsystem/top_A/sub_B1/In1" path="top_A/Subsystem/top_A/sub_B1/In1">
+        <miltype>
+          <bus>
+            <signal signalName="p1.b">
+              <boolean/>
+            </signal>
+            <signal signalName="p1.a">
+              <single/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="p1.b">
+              <Bool/>
+            </signal>
+            <signal signalName="p1.a">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="bus_objects/top_A/Subsystem/top_A/sub_B1/Out1" path="top_A/Subsystem/top_A/sub_B1/Out1">
+        <miltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <boolean/>
+            </signal>
+            <signal index="2">
+              <boolean/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <Bool/>
+            </signal>
+            <signal index="2">
+              <Bool/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="bus_objects/top_A/Subsystem/top_A/sub_B1/sub_C1" path="top_A/Subsystem/top_A/sub_B1/sub_C1" sampleTime="1" name="sub_C1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="bus_objects/top_A/Subsystem/top_A/sub_B1/sub_C1/In1" path="top_A/Subsystem/top_A/sub_B1/sub_C1/In1">
+        <miltype signalName="x2">
+          <boolean/>
+        </miltype>
+        <siltype signalName="x2">
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="bus_objects/top_A/Subsystem/top_A/sub_B1/sub_C1/In2" path="top_A/Subsystem/top_A/sub_B1/sub_C1/In2">
+        <miltype signalName="x1">
+          <single/>
+        </miltype>
+        <siltype signalName="x1">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="bus_objects/top_A/Subsystem/top_A/sub_B1/sub_C1/Out1" path="top_A/Subsystem/top_A/sub_B1/sub_C1/Out1">
+        <miltype signalName="y">
+          <boolean/>
+        </miltype>
+        <siltype signalName="y">
+          <Bool/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="bus_objects/top_A/Subsystem/top_A/sub_B2" path="top_A/Subsystem/top_A/sub_B2" sampleTime="1" name="sub_B2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="bus_objects/top_A/Subsystem/top_A/sub_B2/In1" path="top_A/Subsystem/top_A/sub_B2/In1">
+        <miltype signalName="c">
+          <int16/>
+        </miltype>
+        <siltype signalName="c">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="bus_objects/top_A/Subsystem/top_A/sub_B2/In2" path="top_A/Subsystem/top_A/sub_B2/In2">
+        <miltype>
+          <bus>
+            <signal signalName="a.b">
+              <boolean/>
+            </signal>
+            <signal signalName="a.a">
+              <single/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="a.b">
+              <Bool/>
+            </signal>
+            <signal signalName="a.a">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="bus_objects/top_A/Subsystem/top_A/sub_B2/Out1" path="top_A/Subsystem/top_A/sub_B2/Out1">
+        <miltype signalName="z">
+          <int32/>
+        </miltype>
+        <siltype signalName="z">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="bus_objects/top_A/Subsystem/top_A/sub_B2/Out2" path="top_A/Subsystem/top_A/sub_B2/Out2">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="bus_objects/top_A/Subsystem/top_A/sub_B2/sub_C2" path="top_A/Subsystem/top_A/sub_B2/sub_C2" sampleTime="1" name="sub_C2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="bus_objects/top_A/Subsystem/top_A/sub_B2/sub_C2/In1" path="top_A/Subsystem/top_A/sub_B2/sub_C2/In1">
+        <miltype signalName="b">
+          <boolean/>
+        </miltype>
+        <siltype signalName="b">
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="bus_objects/top_A/Subsystem/top_A/sub_B2/sub_C2/In2" path="top_A/Subsystem/top_A/sub_B2/sub_C2/In2">
+        <miltype signalName="a">
+          <single/>
+        </miltype>
+        <siltype signalName="a">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="bus_objects/top_A/Subsystem/top_A/sub_B2/sub_C2/Out1" path="top_A/Subsystem/top_A/sub_B2/sub_C2/Out1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

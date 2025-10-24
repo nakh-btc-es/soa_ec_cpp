@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>btc_es</groupId>
+    <artifactId>ep.legacy.core.utils.m</artifactId>
+    <packaging>nar</packaging>
+
+    <parent>
+        <groupId>btc_es</groupId>
+        <artifactId>ep.matlabcomponents.matlab.parent</artifactId>
+        <version>243.0.6-SNAPSHOT</version>
+        <relativePath>../../releng/ep.matlabcomponents.matlab.parent</relativePath>
+    </parent>
+
+    <properties>
+        <matlab.private>privat</matlab.private>
+        <!-- Subdirectory of src where private scripts are stored (not belonging to modules interface).-->
+        <test.timeout>15m</test.timeout>
+        <!-- Default value for test timeout: 15 minutes. (Possible units: h (hours) m (minutes) s (seconds) -->
+        <test.source.directory>${project.basedir}/ut</test.source.directory>
+        <!-- this path is automatically added to Matlab path when executing tests. -->
+        <test.exec.directory>${project.basedir}/tst</test.exec.directory>
+        <!-- In this directory MUNITTEST is executed. -->
+        <!-- <maven.test.skip>false</maven.test.skip> -->
+        <!--  M Plugins not yet executed  -->
+    </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.btc</groupId>
+            <artifactId>ct.nativeaccess</artifactId>
+            <version>${coretech.version}</version>
+            <scope>compile</scope>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.btc</groupId>
+            <artifactId>ct.core</artifactId>
+            <version>${coretech.version}</version>
+            <scope>compile</scope>
+            <type>jar</type>
+        </dependency>
+        <!-- Test Dependencies -->
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.core.ipc.matlab</artifactId>
+            <version>${ep.core.version}</version>
+            <scope>test</scope>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.test.utils.m</artifactId>
+            <version>${project.version}</version>
+            <scope>test</scope>
+            <type>nar</type>
+        </dependency>
+    </dependencies>
+ </project>

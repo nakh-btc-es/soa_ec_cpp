@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<EnumType name="SlDemoRangeCheck">
+			<EnumValue name="LowerLimit" ordinal="-1" />
+			<EnumValue name="InRange" ordinal="0" />
+			<EnumValue name="UpperLimit" ordinal="1" />
+		</EnumType>
+		<EnumType name="myLED">
+			<EnumValue name="GREEN" ordinal="1" />
+			<EnumValue name="BLUE" ordinal="8" />
+		</EnumType>
+		<EnumType name="myMode">
+			<EnumValue name="OFF" ordinal="0" />
+			<EnumValue name="ON" ordinal="1" />
+		</EnumType>
+	</Types>
+	<Inports>
+		<Inport portNr="1" type="SlDemoRangeCheck">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out1</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="2" type="myLED">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out2</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="3" width="1" type="" kind="VirtualBus">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:normalSLBus.{&lt;signal1&gt;}.myMode_ON</ScalarRef>
+				<ScalarRef>OUTPUT:normalSLBus.{&lt;signal1&gt;}.myMode_OFF</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="4" width="1" type="" kind="VirtualBus">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:myEnumBus.myEnumBus.myMode_OFF</ScalarRef>
+				<ScalarRef>OUTPUT:myEnumBus.myEnumBus.myMode_ON</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="5" type="myLED">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out5</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="6" type="myLED">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:GREEN</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="7" dim1="2" dim2="2" type="myMode">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:myEnumMatrixOut(1)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:myEnumMatrixOut(2)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:myEnumMatrixOut(1)(2)</ScalarRef>
+				<ScalarRef>OUTPUT:myEnumMatrixOut(2)(2)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+	</Inports>
+</SFunction>

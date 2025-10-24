@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\353442cb7\em_968\TLProj\sim_Calcn" name="sim_Calcn.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\353442cb7\em_968\TLProj\Calcn" name="Calcn.c" kind="source" annotate="yes" id="fID2"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\353442cb7\em_968\TLBuild\te_Calcn\HostPC64_MSVC" name="RteIv.c" kind="source" annotate="no" id="fID3"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\353442cb7\em_968\TLBuild\te_Calcn\HostPC64_MSVC" name="Rte.c" kind="source" annotate="no" id="fID4"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\353442cb7\em_968\TLSim" name="sim_Calcn_fri.c" kind="source" annotate="no" id="fID5"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\353442cb7\em_968\TLSim" name="Calcn_fri.c" kind="source" annotate="no" id="fID6"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\353442cb7\em_968\TLProj\sim_Calcn"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\353442cb7\em_968\TLProj\Calcn"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\353442cb7\em_968\TLBuild\te_Calcn\HostPC64_MSVC"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\353442cb7\em_968\TLSim"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.0\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.0\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.0\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="__SIL__"/>
+    <Define name="BTC_EP_TL_VERSION" value="50"/>
+  </Defines>
+  <Functions archName="te_Calcn [C-Code]">
+    <Function name="sim_Calcn" initFunc="Rte_Start" sampleTime="0.001">
+      <Args>
+        <Arg name="Sa1_Out">
+          <Variable name="Arg_In_Out_a_"/>
+        </Arg>
+      </Args>
+      <Interface>
+        <InterfaceObj kind="in" var="IF_Sa1_trqAA"/>
+        <InterfaceObj kind="in" var="IF_Sa1_trqAA_a" scaling="scID1"/>
+        <InterfaceObj kind="in" var="IF_Sa1_vA"/>
+        <InterfaceObj kind="in" var="IF_Sa1_vA_a" scaling="scID1"/>
+        <InterfaceObj kind="in" var="IF_Sa1_lTR"/>
+        <InterfaceObj kind="in" var="IF_Sa1_lTR_a" scaling="scID1"/>
+        <InterfaceObj kind="in" var="IF_Sa1_stAD" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa1_Out" access="-&gt;Float"/>
+        <InterfaceObj kind="out" var="Sa1_Out" access="-&gt;Qly" scaling="scID1" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+      </Interface>
+    </Function>
+    <Function name="Calcn" initFunc="Rte_Start" sampleTime="0.001">
+      <Args>
+        <Arg name="SCaln1_trqAA">
+          <Variable name="Arg_In_Out_Caln__c"/>
+        </Arg>
+        <Arg name="SCaln1_vA">
+          <Variable name="Arg_In_Out_Caln__d"/>
+        </Arg>
+        <Arg name="SCaln1_lTR">
+          <Variable name="Arg_In_Out_Caln__b"/>
+        </Arg>
+        <Arg name="SCaln1_Out">
+          <Variable name="Arg_In_Out_Caln__a"/>
+        </Arg>
+        <Arg name="stAD">
+          <ArrayRef size="8"/>
+        </Arg>
+      </Args>
+      <Interface>
+        <InterfaceObj kind="in" var="SCaln1_trqAA" access="-&gt;FloatAryAxles"/>
+        <InterfaceObj kind="in" var="SCaln1_trqAA" access="-&gt;QlyAryAxles" scaling="scID1" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        <InterfaceObj kind="in" var="SCaln1_vA" access="-&gt;FloatAry8"/>
+        <InterfaceObj kind="in" var="SCaln1_vA" access="-&gt;QlyAry8" scaling="scID1" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        <InterfaceObj kind="in" var="SCaln1_lTR" access="-&gt;FloatAry8"/>
+        <InterfaceObj kind="in" var="SCaln1_lTR" access="-&gt;QlyAry8" scaling="scID1" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        <InterfaceObj kind="in" var="stAD" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="SCaln1_Out" access="-&gt;Float"/>
+        <InterfaceObj kind="out" var="SCaln1_Out" access="-&gt;Qly" scaling="scID1" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

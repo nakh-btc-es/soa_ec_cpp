@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" modelVersion="24.0" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_disp_09\SimModel_sl.mdl" modelCreationDate="2006-03-10T11:47:00" creator="obaer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="24.0" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_disp_09\SimModel_sl.mdl" creationDate="2006-03-10T11:47:00" modificationDate="2022-02-11T13:29:07">
+    <subsystem subsysID="ss1" physicalPath="SimModel_sl/standardSubsystem" path="standardSubsystem" sampleTime="0.01" name="standardSubsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="SimModel_sl/standardSubsystem/In1" path="standardSubsystem/In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="SimModel_sl/standardSubsystem/In2" path="standardSubsystem/In2">
+        <double/>
+      </inport>
+      <parameter name="expl_p1_gain" path="standardSubsystem/FLP_Sub/Gain" physicalPath="SimModel_sl/standardSubsystem/FLP_Sub/Gain" initValue="6.2500000000000000e-02" origin="explicit_param" restricted="false">
+        <double/>
+        <usageContext path="standardSubsystem/FLP_Sub/Gain" physicalPath="SimModel_sl/standardSubsystem/FLP_Sub/Gain" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </parameter>
+      <outport portNumber="1" name="Out3" physicalPath="SimModel_sl/standardSubsystem/Out3" path="standardSubsystem/Out3">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="b_out3" physicalPath="SimModel_sl/standardSubsystem/b_out3" path="standardSubsystem/b_out3">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="b_out4" physicalPath="SimModel_sl/standardSubsystem/b_out4" path="standardSubsystem/b_out4">
+        <boolean/>
+      </outport>
+      <outport portNumber="4" name="b_out5" physicalPath="SimModel_sl/standardSubsystem/b_out5" path="standardSubsystem/b_out5">
+        <boolean/>
+      </outport>
+      <display physicalPath="SimModel_sl/standardSubsystem/FLP_Sub/Gain" path="standardSubsystem/FLP_Sub/Gain" name="Gain" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="SimModel_sl/standardSubsystem/FLP_Sub/RelOp1" path="standardSubsystem/FLP_Sub/RelOp1" name="RelOp1" portNumber="1">
+        <boolean/>
+      </display>
+      <display physicalPath="SimModel_sl/standardSubsystem/FLP_Sub/RelOp2" path="standardSubsystem/FLP_Sub/RelOp2" name="RelOp2" portNumber="1">
+        <boolean/>
+      </display>
+      <display physicalPath="SimModel_sl/standardSubsystem/FLP_Sub/RelOp3" path="standardSubsystem/FLP_Sub/RelOp3" name="RelOp3" portNumber="1">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="SimModel_sl/standardSubsystem/AtomicSubsystem" path="standardSubsystem/AtomicSubsystem" sampleTime="0.01" name="AtomicSubsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In" physicalPath="SimModel_sl/standardSubsystem/AtomicSubsystem/In" path="standardSubsystem/AtomicSubsystem/In">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="maxRate" physicalPath="SimModel_sl/standardSubsystem/AtomicSubsystem/maxRate" path="standardSubsystem/AtomicSubsystem/maxRate">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="SimModel_sl/standardSubsystem/AtomicSubsystem/Out1" path="standardSubsystem/AtomicSubsystem/Out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="SimModel_sl/standardSubsystem/FLP_Sub" path="standardSubsystem/FLP_Sub" sampleTime="0.01" name="FLP_Sub" scopeKind="SUT" kind="subsystem">
+      <parameter name="expl_p1_gain" path="standardSubsystem/FLP_Sub/Gain" physicalPath="SimModel_sl/standardSubsystem/FLP_Sub/Gain" initValue="6.2500000000000000e-02" origin="explicit_param" restricted="false">
+        <double/>
+        <usageContext path="standardSubsystem/FLP_Sub/Gain" physicalPath="SimModel_sl/standardSubsystem/FLP_Sub/Gain" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </parameter>
+      <outport portNumber="1" name="b_out3" physicalPath="SimModel_sl/standardSubsystem/FLP_Sub/b_out3" path="standardSubsystem/FLP_Sub/b_out3">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="b_out4" physicalPath="SimModel_sl/standardSubsystem/FLP_Sub/b_out4" path="standardSubsystem/FLP_Sub/b_out4">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="b_out5" physicalPath="SimModel_sl/standardSubsystem/FLP_Sub/b_out5" path="standardSubsystem/FLP_Sub/b_out5">
+        <boolean/>
+      </outport>
+      <display physicalPath="SimModel_sl/standardSubsystem/FLP_Sub/Gain" path="standardSubsystem/FLP_Sub/Gain" name="Gain" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="SimModel_sl/standardSubsystem/FLP_Sub/RelOp1" path="standardSubsystem/FLP_Sub/RelOp1" name="RelOp1" portNumber="1">
+        <boolean/>
+      </display>
+      <display physicalPath="SimModel_sl/standardSubsystem/FLP_Sub/RelOp2" path="standardSubsystem/FLP_Sub/RelOp2" name="RelOp2" portNumber="1">
+        <boolean/>
+      </display>
+      <display physicalPath="SimModel_sl/standardSubsystem/FLP_Sub/RelOp3" path="standardSubsystem/FLP_Sub/RelOp3" name="RelOp3" portNumber="1">
+        <boolean/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

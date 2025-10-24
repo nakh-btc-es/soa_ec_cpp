@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="6.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_ep_2096\ep_import_error.mdl" modelCreationDate="2020-06-15T15:12:50" creator="ElAttalM">
+  <toolInfo name="Matlab" release="(R2022b)" version="9.13" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2022b)" version="10.6" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="22.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="6.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_ep_2096\ep_import_error.mdl" creationDate="2020-06-15T15:12:50" modificationDate="2023-05-26T09:18:34">
+    <subsystem subsysID="ss1" physicalPath="ep_import_error/Subsystem/Subsystem/Subsystem" path="Subsystem/Subsystem/Subsystem" sampleTime="0.2" name="Subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="SigInjection" physicalPath="runnable_model/Injection/ZFDivA_SignalInjectionOrTunneling/SigInjection" path="Subsystem/Subsystem/Subsystem/Model/Model/Injection/ZFDivA_SignalInjectionOrTunneling/SigInjection" modelRef="model002">
+        <miltype signalName="SigInjection">
+          <double/>
+        </miltype>
+        <siltype signalName="SigInjection">
+          <Float32/>
+        </siltype>
+        <dataStoreMemory signalName="SigInjection"/>
+      </inport>
+      <calibration name="ANGLE_SENSOR_POSITION" path="Subsystem/Subsystem/Subsystem/Model/Model/ANGLE_SENSOR_POSITION" physicalPath="runnable_model/ANGLE_SENSOR_POSITION" modelRef="model002" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/ColumnSwc/PIC/ANGLE_SENSOR_POSITION" workspace="ANGLE_SENSOR_POSITION">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <Float32/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/Model/Model/ANGLE_SENSOR_POSITION" targetLinkBlockKind="TL_Constant" physicalPath="runnable_model/ANGLE_SENSOR_POSITION" simulinkBlockType="Constant" blockAttribute="output" modelRef="model002"/>
+      </calibration>
+      <outport portNumber="0" name="SigTunneling" physicalPath="runnable_model/Tunneling/ZFDivA_SignalInjectionOrTunneling/SigTunneling" path="Subsystem/Subsystem/Subsystem/Model/Model/Tunneling/ZFDivA_SignalInjectionOrTunneling/SigTunneling" modelRef="model002">
+        <miltype signalName="SigTunneling">
+          <double/>
+        </miltype>
+        <siltype signalName="SigTunneling">
+          <Float32/>
+        </siltype>
+        <dataStoreMemory signalName="SigTunneling"/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="component_model" path="Subsystem/Subsystem/Subsystem/Model" sampleTime="0.2" name="Model" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="0" name="SigInjection" physicalPath="runnable_model/Injection/ZFDivA_SignalInjectionOrTunneling/SigInjection" path="Subsystem/Subsystem/Subsystem/Model/Model/Injection/ZFDivA_SignalInjectionOrTunneling/SigInjection" modelRef="model002">
+        <miltype signalName="SigInjection">
+          <double/>
+        </miltype>
+        <siltype signalName="SigInjection">
+          <Float32/>
+        </siltype>
+        <dataStoreMemory signalName="SigInjection"/>
+      </inport>
+      <calibration name="ANGLE_SENSOR_POSITION" path="Subsystem/Subsystem/Subsystem/Model/Model/ANGLE_SENSOR_POSITION" physicalPath="runnable_model/ANGLE_SENSOR_POSITION" modelRef="model002" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/ColumnSwc/PIC/ANGLE_SENSOR_POSITION" workspace="ANGLE_SENSOR_POSITION">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <Float32/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/Model/Model/ANGLE_SENSOR_POSITION" targetLinkBlockKind="TL_Constant" physicalPath="runnable_model/ANGLE_SENSOR_POSITION" simulinkBlockType="Constant" blockAttribute="output" modelRef="model002"/>
+      </calibration>
+      <outport portNumber="0" name="SigTunneling" physicalPath="runnable_model/Tunneling/ZFDivA_SignalInjectionOrTunneling/SigTunneling" path="Subsystem/Subsystem/Subsystem/Model/Model/Tunneling/ZFDivA_SignalInjectionOrTunneling/SigTunneling" modelRef="model002">
+        <miltype signalName="SigTunneling">
+          <double/>
+        </miltype>
+        <siltype signalName="SigTunneling">
+          <Float32/>
+        </siltype>
+        <dataStoreMemory signalName="SigTunneling"/>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="runnable_model" path="Subsystem/Subsystem/Subsystem/Model/Model" sampleTime="0.2" name="Model" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="0" name="SigInjection" physicalPath="runnable_model/Injection/ZFDivA_SignalInjectionOrTunneling/SigInjection" path="Subsystem/Subsystem/Subsystem/Model/Model/Injection/ZFDivA_SignalInjectionOrTunneling/SigInjection" modelRef="model002">
+        <miltype signalName="SigInjection">
+          <double/>
+        </miltype>
+        <siltype signalName="SigInjection">
+          <Float32/>
+        </siltype>
+        <dataStoreMemory signalName="SigInjection"/>
+      </inport>
+      <calibration name="ANGLE_SENSOR_POSITION" path="Subsystem/Subsystem/Subsystem/Model/Model/ANGLE_SENSOR_POSITION" physicalPath="runnable_model/ANGLE_SENSOR_POSITION" modelRef="model002" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/ColumnSwc/PIC/ANGLE_SENSOR_POSITION" workspace="ANGLE_SENSOR_POSITION">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <Float32/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/Model/Model/ANGLE_SENSOR_POSITION" targetLinkBlockKind="TL_Constant" physicalPath="runnable_model/ANGLE_SENSOR_POSITION" simulinkBlockType="Constant" blockAttribute="output" modelRef="model002"/>
+      </calibration>
+      <outport portNumber="0" name="SigTunneling" physicalPath="runnable_model/Tunneling/ZFDivA_SignalInjectionOrTunneling/SigTunneling" path="Subsystem/Subsystem/Subsystem/Model/Model/Tunneling/ZFDivA_SignalInjectionOrTunneling/SigTunneling" modelRef="model002">
+        <miltype signalName="SigTunneling">
+          <double/>
+        </miltype>
+        <siltype signalName="SigTunneling">
+          <Float32/>
+        </siltype>
+        <dataStoreMemory signalName="SigTunneling"/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="6.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_ep_2096\runnable_model.mdl" creationDate="2020-06-25T11:18:22" modificationDate="2023-05-26T09:18:35"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="6.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_ep_2096\component_model.mdl" creationDate="2020-06-25T11:28:00" modificationDate="2023-05-26T09:18:35"/>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

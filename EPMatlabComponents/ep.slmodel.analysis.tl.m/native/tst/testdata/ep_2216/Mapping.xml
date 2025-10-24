@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="clutchAdapt_EV"/>
+    <Architecture id="id1" name="clutchAdapt_EV [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt"/>
+      <Path refId="id1" path="clutchAdapt.c:1:clutchAdapt"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchPos"/>
+        <Path refId="id1" path="f_clutchPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchPosSt"/>
+        <Path refId="id1" path="f_clutchPosSt"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchPosClosed"/>
+        <Path refId="id1" path="f_clutchPosClosed"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchPosOpen"/>
+        <Path refId="id1" path="f_clutchPosOpen"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchPosCalibrated"/>
+        <Path refId="id1" path="f_clutchPosCalibrated"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_engCoolantTemp"/>
+        <Path refId="id1" path="f_engCoolantTemp"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_engCoolantTempSt"/>
+        <Path refId="id1" path="f_engCoolantTempSt"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_hours"/>
+        <Path refId="id1" path="f_hours"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_hoursSt"/>
+        <Path refId="id1" path="f_hoursSt"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_minutes"/>
+        <Path refId="id1" path="f_minutes"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_minutesSt"/>
+        <Path refId="id1" path="f_minutesSt"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_dateNum"/>
+        <Path refId="id1" path="f_dateNum"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_dateNumSt"/>
+        <Path refId="id1" path="f_dateNumSt"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_taskTime"/>
+        <Path refId="id1" path="f_taskTime"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_o_clutchCycles_In"/>
+        <Path refId="id1" path="GMCA_o_clutchCycles_In"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_o_clutchRestPosRunIn_In"/>
+        <Path refId="id1" path="GMCA_o_clutchRestPosRunIn_In"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_o_clutchRestPosWear_In"/>
+        <Path refId="id1" path="GMCA_o_clutchRestPosWear_In"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_o_recentTimeClamp15off_In"/>
+        <Path refId="id1" path="GMCA_o_recentTimeClamp15off_In"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="GMCA_o_clutchCycles_Out"/>
+        <Path refId="id1" path="GMCA_o_clutchCycles_Out"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="GMCA_o_clutchRestPosRunIn_Out"/>
+        <Path refId="id1" path="GMCA_o_clutchRestPosRunIn_Out"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="GMCA_o_clutchRestPosWear_Out"/>
+        <Path refId="id1" path="GMCA_o_clutchRestPosWear_Out"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="GMCA_o_recentTimeClamp15off_Out"/>
+        <Path refId="id1" path="GMCA_o_recentTimeClamp15off_Out"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="f_clutchDist"/>
+        <Path refId="id1" path="f_clutchDist"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="f_clutchDistSt"/>
+        <Path refId="id1" path="f_clutchDistSt"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="f_clutchPosImplausDiagSt"/>
+        <Path refId="id1" path="f_clutchPosImplausDiagSt"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="f_clutchCycles"/>
+        <Path refId="id1" path="f_clutchCycles"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="f_clutchRestPosRunIn"/>
+        <Path refId="id1" path="f_clutchRestPosRunIn"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="f_clutchRestPosWear"/>
+        <Path refId="id1" path="f_clutchRestPosWear"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_upperTreshPos/GMCA_p_upperTreshPos"/>
+        <Path refId="id1" path="GMCA_p_upperTreshPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_timerDetermRestPos/GMCA_p_timerDetermRestPos"/>
+        <Path refId="id1" path="GMCA_p_timerDetermRestPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_restPosToleranzValue/GMCA_p_restPosToleranzValue"/>
+        <Path refId="id1" path="GMCA_p_restPosToleranzValue"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_lowerTreshPos/GMCA_p_lowerTreshPos"/>
+        <Path refId="id1" path="GMCA_p_lowerTreshPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_diagLowClutchPosInvalid/GMCA_p_diagLowClutchPosInvalid"/>
+        <Path refId="id1" path="GMCA_p_diagLowClutchPosInvalid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCAaa_p_clutchCyclesThrOpen/GMCAaa_p_clutchCyclesThrOpen"/>
+        <Path refId="id1" path="GMCAaa_p_clutchCyclesThrOpen"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCAaa_p_clutchCyclesThrClosed/GMCAaa_p_clutchCyclesThrClosed"/>
+        <Path refId="id1" path="GMCAaa_p_clutchCyclesThrClosed"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCA_p_clutchCyclesTreshold/GMCA_p_clutchCyclesTreshold"/>
+        <Path refId="id1" path="GMCA_p_clutchCyclesTreshold"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_upperCoolantTemp/GMCA_p_upperCoolantTemp"/>
+        <Path refId="id1" path="GMCA_p_upperCoolantTemp"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_tolAdaptRestWear/GMCA_p_tolAdaptRestWear"/>
+        <Path refId="id1" path="GMCA_p_tolAdaptRestWear"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_timeClamp15off/GMCA_p_timeClamp15off"/>
+        <Path refId="id1" path="GMCA_p_timeClamp15off"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_lowerCoolantTemp/GMCA_p_lowerCoolantTemp"/>
+        <Path refId="id1" path="GMCA_p_lowerCoolantTemp"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_addWearParam/GMCA_p_addWearParam"/>
+        <Path refId="id1" path="GMCA_p_addWearParam"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_p_minClutchAdjustableRange/GMCA_p_minClutchAdjustableRange"/>
+        <Path refId="id1" path="GMCA_p_minClutchAdjustableRange"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_p_maxClutchAdjustableRange/GMCA_p_maxClutchAdjustableRange"/>
+        <Path refId="id1" path="GMCA_p_maxClutchAdjustableRange"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/AVdeterm/GMCA_p_clutchPosAV/GMCA_p_clutchPosAV"/>
+        <Path refId="id1" path="GMCA_p_clutchPosAV"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/AVdeterm/GMCA_clutchPosAV(1)"/>
+        <Path refId="id1" path="GMCA_clutchPosAV"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_actClutchRestPos(1)"/>
+        <Path refId="id1" path="GMCA_actClutchRestPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_clutchAdjustableRange(1)"/>
+        <Path refId="id1" path="GMCA_clutchAdjustableRange"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_clutchRangeNotPlausSt(1)"/>
+        <Path refId="id1" path="GMCA_clutchRangeNotPlausSt"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_clutchRestPosOpertgState"/>
+        <Path refId="id1" path="GMCA_clutchRestPosOpertgState"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_clutchRestPosWearComp(1)"/>
+        <Path refId="id1" path="GMCA_clutchRestPosWearComp"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_clutchRestPosWearing"/>
+        <Path refId="id1" path="GMCA_clutchRestPosWearing"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/timeLagClamp15offOn/GMCA_recentTimeClamp15offSt(1)"/>
+        <Path refId="id1" path="GMCA_recentTimeClamp15offSt"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/timeLagClamp15offOn/GMCA_timeClamp15off(1)"/>
+        <Path refId="id1" path="GMCA_timeClamp15off"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/timeLagClamp15offOn/GMCA_timeClamp15on(1)"/>
+        <Path refId="id1" path="GMCA_timeClamp15on"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/timeLagClamp15offOn/GMCA_timeLagClamp15offOn(1)"/>
+        <Path refId="id1" path="GMCA_timeLagClamp15offOn"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCA_clutchRunIn(1)"/>
+        <Path refId="id1" path="GMCA_clutchRunIn"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_adaptRangeInvalidSt(1)"/>
+        <Path refId="id1" path="GMCA_adaptRangeInvalidSt"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_diagLowClutchPos(1)"/>
+        <Path refId="id1" path="GMCA_diagLowClutchPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_restPosToleranz(1)"/>
+        <Path refId="id1" path="GMCA_restPosToleranz"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_clutchRestPos"/>
+        <Path refId="id1" path="GMCA_clutchRestPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_clutchRestPosSt"/>
+        <Path refId="id1" path="GMCA_clutchRestPosSt"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_lowerTreshPos"/>
+        <Path refId="id1" path="GMCA_lowerTreshPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_adaptRestPosTempMD"/>
+        <Path refId="id1" path="GMCA_adaptRestPosTempMD"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_adaptTempVar1"/>
+        <Path refId="id1" path="GMCA_adaptTempVar1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_adaptTempVar2"/>
+        <Path refId="id1" path="GMCA_adaptTempVar2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_adaptTempVar3"/>
+        <Path refId="id1" path="GMCA_adaptTempVar3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_counterTempComp"/>
+        <Path refId="id1" path="GMCA_counterTempComp"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_adaptWearMD"/>
+        <Path refId="id1" path="GMCA_adaptWearMD"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_adaptRestPosRunInMD"/>
+        <Path refId="id1" path="GMCA_adaptRestPosRunInMD"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_restPosRunIn1"/>
+        <Path refId="id1" path="GMCA_restPosRunIn1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_restPosRunIn2"/>
+        <Path refId="id1" path="GMCA_restPosRunIn2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_restPosRunIn3"/>
+        <Path refId="id1" path="GMCA_restPosRunIn3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_counter"/>
+        <Path refId="id1" path="GMCA_counter"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/GMCA_ClutchCycMD"/>
+        <Path refId="id1" path="GMCA_ClutchCycMD"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_determRestPosMD"/>
+        <Path refId="id1" path="GMCA_determRestPosMD"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_restPos1"/>
+        <Path refId="id1" path="GMCA_restPos1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_restPos2"/>
+        <Path refId="id1" path="GMCA_restPos2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_restPos3"/>
+        <Path refId="id1" path="GMCA_restPos3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_timerRestPos"/>
+        <Path refId="id1" path="GMCA_timerRestPos"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp"/>
+      <Path refId="id1" path="clutchAdapt.c:1:clutchAdapt/clutchAdapt.c:1:epfcn1_adaptRestPosTem"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_o_clutchRestPosWear_Out"/>
+        <Path refId="id1" path="DD_CGMCAa10_GM__RestPosWear_Out"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_clutchRestPosSt"/>
+        <Path refId="id1" path="DD_CGMCAa10_GM__clutchRestPosSt"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_clutchRestPos"/>
+        <Path refId="id1" path="DD_CGMCAa10_GMCA_clutchRestPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_clutchRunIn"/>
+        <Path refId="id1" path="DD_CGMCAa10_GMCA_clutchRunIn"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchPosCalibrated"/>
+        <Path refId="id1" path="f_clutchPosCalibrated"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="GMCA_clutchRestPosOpertgState"/>
+        <Path refId="id1" path="GMCA_clutchRestPosOpertgState"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_adaptRestPosTempMD"/>
+        <Path refId="id1" path="GMCA_adaptRestPosTempMD"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_adaptTempVar1"/>
+        <Path refId="id1" path="GMCA_adaptTempVar1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_adaptTempVar2"/>
+        <Path refId="id1" path="GMCA_adaptTempVar2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_adaptTempVar3"/>
+        <Path refId="id1" path="GMCA_adaptTempVar3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_counterTempComp"/>
+        <Path refId="id1" path="GMCA_counterTempComp"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear"/>
+      <Path refId="id1" path="clutchAdapt.c:1:clutchAdapt/clutchAdapt.c:1:epfcn2_adaptWear"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_clutchRunIn"/>
+        <Path refId="id1" path="DD_CGMCAa18_GMCA_clutchRunIn"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_o_clutchRestPosRunIn_Out"/>
+        <Path refId="id1" path="DD_CGMCAa18_GM__estPosRunIn_Out"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_clutchRestPos"/>
+        <Path refId="id1" path="DD_CGMCAa18_GMCA_clutchRestPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_clutchRestPosSt"/>
+        <Path refId="id1" path="DD_CGMCAa18_GM__clutchRestPosSt"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchPosCalibrated"/>
+        <Path refId="id1" path="DD_CGMCAa18_f___chPosCalibrated"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchPosClosed"/>
+        <Path refId="id1" path="DD_CGMCAa18_f_clutchPosClosed"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_o_clutchRestPosWear_In"/>
+        <Path refId="id1" path="DD_CGMCAa18_GM__hRestPosWear_In"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_p_addWearParam"/>
+        <Path refId="id1" path="GMCA_p_addWearParam"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_p_tolAdaptRestWear"/>
+        <Path refId="id1" path="GMCA_p_tolAdaptRestWear"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_clutchRestPosWearComp"/>
+        <Path refId="id1" path="GMCA_clutchRestPosWearComp"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="GMCA_clutchRestPosWearing"/>
+        <Path refId="id1" path="GMCA_clutchRestPosWearing"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_adaptWearMD"/>
+        <Path refId="id1" path="GMCA_adaptWearMD"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn"/>
+      <Path refId="id1" path="clutchAdapt.c:1:clutchAdapt/clutchAdapt.c:1:epfcn3_adaptRestPosRun"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_clutchRunIn"/>
+        <Path refId="id1" path="DD_CGMCAa1_GMCA_clutchRunIn"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_clutchRestPos"/>
+        <Path refId="id1" path="DD_CGMCAa1_GMCA_clutchRestPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_clutchRestPosSt"/>
+        <Path refId="id1" path="DD_CGMCAa1_GMCA_clutchRestPosSt"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_o_clutchRestPosRunIn_In"/>
+        <Path refId="id1" path="GMCA_o_clutchRestPosRunIn_In"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchPosCalibrated"/>
+        <Path refId="id1" path="DD_CGMCAa1_f_c__chPosCalibrated"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchPosClosed"/>
+        <Path refId="id1" path="DD_CGMCAa1_f_clutchPosClosed"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchPosSt"/>
+        <Path refId="id1" path="DD_CGMCAa1_f_clutchPosSt"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="GMCA_o_clutchRestPosRunIn_Out"/>
+        <Path refId="id1" path="DD_CGMCAa1_GMC__estPosRunIn_Out"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_adaptRestPosRunInMD"/>
+        <Path refId="id1" path="GMCA_adaptRestPosRunInMD"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_restPosRunIn1"/>
+        <Path refId="id1" path="GMCA_restPosRunIn1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_restPosRunIn2"/>
+        <Path refId="id1" path="GMCA_restPosRunIn2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_restPosRunIn3"/>
+        <Path refId="id1" path="GMCA_restPosRunIn3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_counter"/>
+        <Path refId="id1" path="GMCA_counter"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles"/>
+      <Path refId="id1" path="clutchAdapt.c:1:clutchAdapt/clutchAdapt.c:1:epfcn4_chartClutchCycl"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchPosCalibrated"/>
+        <Path refId="id1" path="DD_CGMCAa24_f___chPosCalibrated"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_o_clutchCycles_In"/>
+        <Path refId="id1" path="DD_CGMCAa24_GM__clutchCycles_In"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchPosSt"/>
+        <Path refId="id1" path="DD_CGMCAa24_f_clutchPosSt"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchDist"/>
+        <Path refId="id1" path="DD_CGMCAa24_f_clutchDist"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchDistSt"/>
+        <Path refId="id1" path="DD_CGMCAa24_f_clutchDistSt"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCAaa_p_clutchCyclesThrClosed"/>
+        <Path refId="id1" path="GMCAaa_p_clutchCyclesThrClosed"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCAaa_p_clutchCyclesThrOpen"/>
+        <Path refId="id1" path="GMCAaa_p_clutchCyclesThrOpen"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="GMCA_o_clutchCycles_Out"/>
+        <Path refId="id1" path="DD_CGMCAa24_GM__lutchCycles_Out"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/GMCA_ClutchCycMD"/>
+        <Path refId="id1" path="GMCA_ClutchCycMD"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos"/>
+      <Path refId="id1" path="clutchAdapt.c:1:clutchAdapt/clutchAdapt.c:1:epfcn5_determRestPos"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_o_clutchCycles_Out"/>
+        <Path refId="id1" path="DD_CGMCAa30_GM__lutchCycles_Out"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_clutchPosAV"/>
+        <Path refId="id1" path="DD_CGMCAa30_GMCA_clutchPosAV"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchPosSt"/>
+        <Path refId="id1" path="f_clutchPosSt"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_taskTime"/>
+        <Path refId="id1" path="f_taskTime"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_o_clutchRestPosWear_In"/>
+        <Path refId="id1" path="GMCA_o_clutchRestPosWear_In"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchPosCalibrated"/>
+        <Path refId="id1" path="f_clutchPosCalibrated"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="f_clutchPosClosed"/>
+        <Path refId="id1" path="f_clutchPosClosed"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_restPosToleranz"/>
+        <Path refId="id1" path="GMCA_restPosToleranz"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_p_timerDetermRestPos"/>
+        <Path refId="id1" path="GMCA_p_timerDetermRestPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_p_upperTreshPos"/>
+        <Path refId="id1" path="DD_CGMCAa30_GM__p_upperTreshPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="GMCA_p_lowerTreshPos"/>
+        <Path refId="id1" path="GMCA_p_lowerTreshPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="GMCA_clutchRestPos"/>
+        <Path refId="id1" path="GMCA_clutchRestPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="GMCA_clutchRestPosSt"/>
+        <Path refId="id1" path="GMCA_clutchRestPosSt"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="GMCA_lowerTreshPos"/>
+        <Path refId="id1" path="GMCA_lowerTreshPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_determRestPosMD"/>
+        <Path refId="id1" path="GMCA_determRestPosMD"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_restPos1"/>
+        <Path refId="id1" path="GMCA_restPos1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_restPos2"/>
+        <Path refId="id1" path="GMCA_restPos2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_restPos3"/>
+        <Path refId="id1" path="GMCA_restPos3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_timerRestPos"/>
+        <Path refId="id1" path="GMCA_timerRestPos"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

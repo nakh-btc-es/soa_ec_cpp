@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\110831ae7\dummy_inport_sf\TLProj\top_A1" name="top_A1.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\110831ae7\dummy_inport_sf\TLSim" name="top_A1_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\110831ae7\dummy_inport_sf\TLProj\top_A1"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\110831ae7\dummy_inport_sf\TLSim"/>
+    <IncludePath path="C:\dspace\TL42p5\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dspace\TL42p5\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dspace\TL42p5\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="42"/>
+  </Defines>
+  <Functions archName="dummy_inport_sf [C-Code]">
+    <Function name="top_A1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_In1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_In2" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_In3" scaling="scID1"/>
+        <InterfaceObj kind="cal" var="c" scaling="scID1" initVal="4.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="b" scaling="scID1" initVal="4.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="a" scaling="scID1" initVal="4.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa1_Out1" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Ca1_y1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa1_Const4" scaling="scID1" initVal="2.1000000000000000e+01"/>
+        <InterfaceObj kind="disp" var="Ca4_y1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca7_y1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa2_sub_B1" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa2_In1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="a" scaling="scID1" initVal="4.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa2_In3" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa2_In5" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa2_Out1" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Ca4_y1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa4_sub_C1" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa2_In1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="a" scaling="scID1" initVal="4.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa2_In3" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa2_In5" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Ca4_y1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca4_y1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa3_sub_B2" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_In1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="a" scaling="scID1" initVal="4.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="b" scaling="scID1" initVal="4.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="IF_Sa1_In3" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Ca7_y1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca7_y1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

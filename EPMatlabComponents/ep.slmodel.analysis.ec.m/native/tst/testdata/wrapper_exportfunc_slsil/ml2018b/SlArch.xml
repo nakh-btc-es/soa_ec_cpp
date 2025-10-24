@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_sl_sil_analysis_04\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_sl_sil_analysis_04\start.m" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_sl_sil_analysis_04\wrapper_exportfunc_slsil.mdl" modelCreationDate="2015-01-28T14:40:34" creator="Wolfgang Meincke">
+  <toolInfo name="Matlab" release="(R2020a)" version="9.8" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020a)" version="10.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_sl_sil_analysis_04\wrapper_exportfunc_slsil.mdl" creationDate="2015-01-28T14:40:34" modificationDate="2024-10-30T17:34:00" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_sl_sil_analysis_04\start.m">
+    <subsystem subsysID="ss1" physicalPath="wrapper_exportfunc_slsil/FrameOfFrame" path="FrameOfFrame" sampleTime="0.01" name="FrameOfFrame" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="wrapper_exportfunc_slsil/FrameOfFrame/In1" path="FrameOfFrame/In1">
+        <uint8 min="0" max="10"/>
+      </inport>
+      <parameter name="K" path="FrameOfFrame/Modelblk/sut/Gain" physicalPath="simple_model_expfun/sut/Gain" modelRef="model002" origin="explicit_param" workspace="K" initValue="2.0">
+        <uint8 min="0.0" max="255.0"/>
+        <usageContext path="FrameOfFrame/Modelblk/sut/Gain" physicalPath="simple_model_expfun/sut/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="wrapper_exportfunc_slsil/FrameOfFrame/Out1" path="FrameOfFrame/Out1">
+        <uint8/>
+      </outport>
+      <display physicalPath="simple_model_expfun/sut/Data Type Conversion1" path="FrameOfFrame/Modelblk/sut/Data Type Conversion1" name="Data Type Conversion1" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="simple_model_expfun/sut/Gain" path="FrameOfFrame/Modelblk/sut/Gain" name="Gain" portNumber="1" modelRef="model002" signalName="loc">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="simple_model_expfun/sut" path="FrameOfFrame/Modelblk/sut" sampleTime="0.01" name="sut" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="simple_model_expfun/sut/in" path="FrameOfFrame/Modelblk/sut/in" modelRef="model002" signalName="in">
+        <uint8 min="0" max="10"/>
+      </inport>
+      <parameter name="K" path="FrameOfFrame/Modelblk/sut/Gain" physicalPath="simple_model_expfun/sut/Gain" modelRef="model002" origin="explicit_param" workspace="K" initValue="2.0">
+        <uint8 min="0.0" max="255.0"/>
+        <usageContext path="FrameOfFrame/Modelblk/sut/Gain" physicalPath="simple_model_expfun/sut/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="simple_model_expfun/sut/out" path="FrameOfFrame/Modelblk/sut/out" modelRef="model002" signalName="out">
+        <uint8 min="0" max="10"/>
+      </outport>
+      <display physicalPath="simple_model_expfun/sut/Data Type Conversion1" path="FrameOfFrame/Modelblk/sut/Data Type Conversion1" name="Data Type Conversion1" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="simple_model_expfun/sut/Gain" path="FrameOfFrame/Modelblk/sut/Gain" name="Gain" portNumber="1" modelRef="model002" signalName="loc">
+        <double/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_sl_sil_analysis_04\simple_model_expfun.mdl" creationDate="2015-01-28T14:40:34" modificationDate="2024-10-30T17:34:01" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_sl_sil_analysis_04\start.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

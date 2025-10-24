@@ -1,0 +1,89 @@
+---
+title: Signal Processing Class Diagram - signal_dvPrivate_acMethod
+---
+classDiagram
+    namespace btc_soa {
+        class signal_dvPrivate_acMethod {
+            <<final>>
+            +signal_dvPrivate_acMethod()
+            +~signal_dvPrivate_acMethod()
+            +initialize() void
+            +step() void
+            +setInScalar_dvPrivate_amMethod(float) void
+            +setInArray_dvPrivate_amMethod(float[2]) void
+            +setInBus_dvPrivate_amMethod(myBus) void
+            +setInBusElm_dvPrivate_amMethod_FxptSig1(int16_t) void
+            +setInBusElm_dvPrivate_amMethod1_FxptSig2(int16_t) void
+            +getOutScalar_dvPrivate_amMethod() float
+            +getOutArray_dvPrivate_amMethod() const float*
+            +getOutBus_dvPrivate_amMethod() myBus
+            +getOutBusElm_dvPrivate_amMethod_FxptSig1() int16_t
+            +getOutBusElm_dvPrivate_amMethod1_FxptSig2() int16_t
+            +getDWork() const DW&
+            +setDWork(const DW*) void
+            +getBlockParameters() const P&
+            +setBlockParameters(const P*) void
+            -rtU ExtU
+            -rtY ExtY
+            -rtDW DW
+            -rtP P$
+        }
+        
+        class DW {
+            <<struct>>
+            +LocArray_dvPrivate_amMethod[2] float
+            +LocScalar_dvPrivate_amMethod float
+        }
+        
+        class ExtU {
+            <<struct>>
+            +InScalar_dvPrivate_amMethod float
+            +InArray_dvPrivate_amMethod[2] float
+            +InBus_dvPrivate_amMethod myBus
+            +InBusElm_dvPrivate_amMethod_Fxp int16_t
+            +InBusElm_dvPrivate_amMethod_F_p int16_t
+            +InBusElm_dvPrivate_amMethod1_Fx int16_t
+            +InBusElm_dvPrivate_amMethod1__p int16_t
+        }
+        
+        class ExtY {
+            <<struct>>
+            +OutScalar_dvPrivate_amMethod float
+            +OutArray_dvPrivate_amMethod[2] float
+            +OutBus_dvPrivate_amMethod myBus
+            +OutBusElm_dvPrivate_amMethod_Fx int16_t
+            +OutBusElm_dvPrivate_amMethod__p int16_t
+            +OutBusElm_dvPrivate_amMethod1_p int16_t
+            +OutBusElm_dvPrivate_amMethod1_F int16_t
+        }
+        
+        class P {
+            <<struct>>
+            +ParamArray[2] float
+            +ParamScalar float
+            +UnitDelay_InitialCondition float
+            +UnitDelay1_InitialCondition float
+        }
+    }
+    
+    class myBus {
+        <<struct>>
+        +FlptSig1 float
+        +FlptSig2 float
+    }
+    
+    %% Relationships
+    signal_dvPrivate_acMethod *-- DW : contains
+    signal_dvPrivate_acMethod *-- ExtU : contains
+    signal_dvPrivate_acMethod *-- ExtY : contains
+    signal_dvPrivate_acMethod *-- P : contains (static)
+    ExtU *-- myBus : uses
+    ExtY *-- myBus : uses
+    
+    %% Notes
+    %% note for signal_dvPrivate_acMethod "Generated from Simulink model\nSignal processing with unit delays\nSupports scalar, array, and bus signals"
+    %% note for myBus "Bus structure with float signals\nUsed for input and output"
+    %% note for DW "Block states for unit delays\nMaintains previous values"
+    %% note for ExtU "External input signals\nConnects to Simulink inports"
+    %% note for ExtY "External output signals\nConnects to Simulink outports"
+    %% note for P "Parameters and initial conditions\nConfigurable values"

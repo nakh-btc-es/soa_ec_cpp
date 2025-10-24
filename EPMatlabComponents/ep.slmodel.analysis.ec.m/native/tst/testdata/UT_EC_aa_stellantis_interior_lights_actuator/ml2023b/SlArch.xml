@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_stellantis_interior_lights_actuator\ut_results\AddModelInfo.xml" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_stellantis_interior_lights_actuator\Wrapper_modified_InteriorLights_ActuatorSrv.slx" modelCreationDate="2025-01-13T17:20:33" creator="developer">
+  <toolInfo name="Matlab" release="(R2023b)" version="23.2" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2023b)" version="23.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_stellantis_interior_lights_actuator\Wrapper_modified_InteriorLights_ActuatorSrv.slx" creationDate="2025-01-13T17:20:33" modificationDate="2025-01-13T17:20:39">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_modified_InteriorLights_ActuatorSrv" path="" sampleTime="0.01" name="Wrapper_modified_InteriorLights_ActuatorSrv" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="CS_ActuatorData_IntrLiPWM_TarTime_In" physicalPath="Wrapper_modified_InteriorLights_ActuatorSrv/Client Function Mocks/call_CS_ActuatorData_IntrLiPWM/CS_ActuatorData_IntrLiPWM_TarTime_In" path="Client Function Mocks/call_CS_ActuatorData_IntrLiPWM/CS_ActuatorData_IntrLiPWM_TarTime_In" signalName="c_C5CBD">
+        <uint16/>
+        <dataStoreMemory signalName="c_C5CBD"/>
+      </inport>
+      <inport portNumber="0" name="CS_ActuatorData_IntrLiPWM_TarPWM_In" physicalPath="Wrapper_modified_InteriorLights_ActuatorSrv/Client Function Mocks/call_CS_ActuatorData_IntrLiPWM/CS_ActuatorData_IntrLiPWM_TarPWM_In" path="Client Function Mocks/call_CS_ActuatorData_IntrLiPWM/CS_ActuatorData_IntrLiPWM_TarPWM_In" signalName="c_D93F5">
+        <uint8/>
+        <dataStoreMemory signalName="c_D93F5"/>
+      </inport>
+      <outport portNumber="1" name="Lamp_PWM" physicalPath="Wrapper_modified_InteriorLights_ActuatorSrv/Lamp_PWM" path="Lamp_PWM" isMessage="true">
+        <uint8/>
+      </outport>
+      <outport portNumber="2" name="Lamp_Sts" physicalPath="Wrapper_modified_InteriorLights_ActuatorSrv/Lamp_Sts" path="Lamp_Sts" isMessage="true">
+        <uint8/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_stellantis_interior_lights_actuator\W_client_modified_InteriorLights_ActuatorSrv.slx" creationDate="2025-01-13T17:20:34" modificationDate="2025-01-13T17:20:35"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="4.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_stellantis_interior_lights_actuator\modified_InteriorLights_ActuatorSrv.slx" creationDate="2023-02-21T06:20:13" modificationDate="2025-01-13T17:20:28"/>
+  <model modelID="model004" modelKind="model_ref" modelVersion="1.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_stellantis_interior_lights_actuator\W_integ_modified_InteriorLights_ActuatorSrv.slx" creationDate="2025-01-13T17:20:34" modificationDate="2025-01-13T17:20:37"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

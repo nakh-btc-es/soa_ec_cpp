@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="modelwithenums"/>
+    <Architecture id="id1" name="modelwithenums [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="modelwithenums.c:1:modelwithenums_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in" refId="id0"/>
+        <Path path="in_sig" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="out" refId="id0"/>
+        <Path path="out_sig" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="nonvirtual_bus_ec.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_epdev_47391\nonvirtual_bus_ec_ert_rtw"/>
+    <File annotate="yes" id="ID72" kind="source" name="sub_B1.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_epdev_47391\nonvirtual_bus_ec_ert_rtw"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_epdev_47391"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_epdev_47391\nonvirtual_bus_ec_ert_rtw"/>
+    <IncludePath path="C:\Matlab\R2019b\extern\include"/>
+    <IncludePath path="C:\Matlab\R2019b\simulink\include"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\src"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\src\ext_mode\common"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\ert"/>
+  </IncludePaths>
+  <Functions archName="nonvirtual_bus_ec [C-Code]">
+    <Function fileref="ID71" initFunc="nonvirtual_bus_ec_initialize" name="nonvirtual_bus_ec_step">
+      <Interface>
+        <InterfaceObj kind="in" var="a"/>
+        <InterfaceObj kind="in" var="b"/>
+        <InterfaceObj kind="in" var="x"/>
+        <InterfaceObj kind="in" var="y"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_top_A_Out1"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_top_A_Out2"/>
+        <InterfaceObj access=".c.a" kind="out" var="BTCAnnotatedOutportBus_Out3"/>
+        <InterfaceObj access=".c.b" kind="out" var="BTCAnnotatedOutportBus_Out3"/>
+        <InterfaceObj access=".z.x" kind="out" var="BTCAnnotatedOutportBus_Out3"/>
+        <InterfaceObj access=".z.y" kind="out" var="BTCAnnotatedOutportBus_Out3"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="nonvirtual_bus_ec_initialize" name="top_A_func">
+      <Interface>
+        <InterfaceObj kind="in" var="a"/>
+        <InterfaceObj kind="in" var="b"/>
+        <InterfaceObj access=".x" kind="in" var="z"/>
+        <InterfaceObj access=".y" kind="in" var="z"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_top_A_Out1"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_top_A_Out2"/>
+        <InterfaceObj access=".c.a" kind="out" var="BTCAnnotatedOutportBus_Out3"/>
+        <InterfaceObj access=".c.b" kind="out" var="BTCAnnotatedOutportBus_Out3"/>
+        <InterfaceObj access=".z.x" kind="out" var="BTCAnnotatedOutportBus_Out3"/>
+        <InterfaceObj access=".z.y" kind="out" var="BTCAnnotatedOutportBus_Out3"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID72" initFunc="nonvirtual_bus_ec_initialize" name="sub_B1">
+      <Interface>
+        <InterfaceObj access=".a" kind="in" var="c"/>
+        <InterfaceObj access=".b" kind="in" var="c"/>
+        <InterfaceObj kind="out" var="b1_out"/>
+        <InterfaceObj access=".a" kind="out" var="b1_out2"/>
+        <InterfaceObj access=".b" kind="out" var="b1_out2"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="nonvirtual_bus_ec_initialize" name="func_B2">
+      <Interface>
+        <InterfaceObj access=".c.a" kind="in" var="w"/>
+        <InterfaceObj access=".c.b" kind="in" var="w"/>
+        <InterfaceObj access=".z.x" kind="in" var="w"/>
+        <InterfaceObj access=".z.y" kind="in" var="w"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_top_A_Out2"/>
+        <InterfaceObj access=".c.a" kind="out" var="BTCAnnotatedOutportBus_Out3"/>
+        <InterfaceObj access=".c.b" kind="out" var="BTCAnnotatedOutportBus_Out3"/>
+        <InterfaceObj access=".z.x" kind="out" var="BTCAnnotatedOutportBus_Out3"/>
+        <InterfaceObj access=".z.y" kind="out" var="BTCAnnotatedOutportBus_Out3"/>
+      </Interface>
+    </Function>
+  </Functions>
+</CodeModel>

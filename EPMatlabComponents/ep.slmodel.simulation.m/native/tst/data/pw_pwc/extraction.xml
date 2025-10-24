@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="280">
+	<Scope uid="280" name="power_window_control" path="powerwindow_sl/power_window_control" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="powerwindow_sl/power_window_control" subsystemLogging="on">
+		<InPort name="driver_neutral" portNumber="1" compositeSig="none">
+			<Variable varid="varif_339" signalType="boolean" isFloat="yes">
+				<ifName ifid="if_339" lsb="1" offset="0" displayName="driver_neutral" identifier="INPUT:driver_neutral" />
+			</Variable>
+		</InPort>
+		<InPort name="driver_up" portNumber="2" compositeSig="none">
+			<Variable varid="varif_340" signalType="boolean" isFloat="yes">
+				<ifName ifid="if_340" lsb="1" offset="0" displayName="driver_up" identifier="INPUT:driver_up" />
+			</Variable>
+		</InPort>
+		<InPort name="driver_down" portNumber="3" compositeSig="none">
+			<Variable varid="varif_341" signalType="boolean" isFloat="yes">
+				<ifName ifid="if_341" lsb="1" offset="0" displayName="driver_down" identifier="INPUT:driver_down" />
+			</Variable>
+		</InPort>
+		<InPort name="passenger_neutral" portNumber="4" compositeSig="none">
+			<Variable varid="varif_342" signalType="boolean" isFloat="yes">
+				<ifName ifid="if_342" lsb="1" offset="0" displayName="passenger_neutral" identifier="INPUT:passenger_neutral" />
+			</Variable>
+		</InPort>
+		<InPort name="passenger_up" portNumber="5" compositeSig="none">
+			<Variable varid="varif_343" signalType="boolean" isFloat="yes">
+				<ifName ifid="if_343" lsb="1" offset="0" displayName="passenger_up" identifier="INPUT:passenger_up" />
+			</Variable>
+		</InPort>
+		<InPort name="passenger_down" portNumber="6" compositeSig="none">
+			<Variable varid="varif_344" signalType="boolean" isFloat="yes">
+				<ifName ifid="if_344" lsb="1" offset="0" displayName="passenger_down" identifier="INPUT:passenger_down" />
+			</Variable>
+		</InPort>
+		<InPort name="obstacle_position" portNumber="7" compositeSig="none">
+			<Variable varid="varif_345" signalType="double" isFloat="yes">
+				<ifName ifid="if_345" lsb="1" offset="0" displayName="obstacle_position" identifier="INPUT:obstacle_position" />
+			</Variable>
+		</InPort>
+		<InPort name="window_position" portNumber="8" compositeSig="none">
+			<Variable varid="varif_346" signalName="window_position" signalType="double" isFloat="yes">
+				<ifName ifid="if_346" lsb="1" offset="0" displayName="window_position" identifier="INPUT:window_position" />
+			</Variable>
+		</InPort>
+		<OutPort name="obstacle_detection" portNumber="1" compositeSig="none">
+			<Variable varid="varif_347" signalName="obstacle_detection" signalType="boolean" isFloat="yes">
+				<ifName ifid="if_347" lsb="1" offset="0" displayName="obstacle_detection" identifier="OUTPUT:obstacle_detection" />
+			</Variable>
+		</OutPort>
+		<OutPort name="move_up" portNumber="2" compositeSig="none">
+			<Variable varid="varif_348" signalName="moveUp" signalType="boolean" isFloat="yes">
+				<ifName ifid="if_348" lsb="1" offset="0" displayName="move_up" identifier="OUTPUT:move_up" />
+			</Variable>
+		</OutPort>
+		<OutPort name="move_down" portNumber="3" compositeSig="none">
+			<Variable varid="varif_349" signalName="moveDown" signalType="boolean" isFloat="yes">
+				<ifName ifid="if_349" lsb="1" offset="0" displayName="move_down" identifier="OUTPUT:move_down" />
+			</Variable>
+		</OutPort>
+		<Calibration name="auto_down_time" path="powerwindow_sl/power_window_control/Constant1" physicalPath="powerwindow_sl/power_window_control/Constant1" origin="explicit_param">
+			<CalibrationUsage path="powerwindow_sl/power_window_control/Constant1" physicalPath="powerwindow_sl/power_window_control/Constant1" blockAttribute="Value" />
+			<Variable varid="varif_350" signalType="double" isFloat="yes">
+				<ifName ifid="if_350" initValue="100.0" lsb="1" offset="0" displayName="auto_down_time" identifier="PARAMETER:Constant1/auto_down_time" />
+			</Variable>
+		</Calibration>
+		<Calibration name="auto_up_time" path="powerwindow_sl/power_window_control/Constant2" physicalPath="powerwindow_sl/power_window_control/Constant2" origin="explicit_param">
+			<CalibrationUsage path="powerwindow_sl/power_window_control/Constant2" physicalPath="powerwindow_sl/power_window_control/Constant2" blockAttribute="Value" />
+			<Variable varid="varif_351" signalType="double" isFloat="yes">
+				<ifName ifid="if_351" initValue="100.0" lsb="1" offset="0" displayName="auto_up_time" identifier="PARAMETER:Constant2/auto_up_time" />
+			</Variable>
+		</Calibration>
+		<Calibration name="emergency_down_time" path="powerwindow_sl/power_window_control/Constant" physicalPath="powerwindow_sl/power_window_control/Constant" origin="explicit_param">
+			<CalibrationUsage path="powerwindow_sl/power_window_control/Constant" physicalPath="powerwindow_sl/power_window_control/Constant" blockAttribute="Value" />
+			<Variable varid="varif_352" signalType="double" isFloat="yes">
+				<ifName ifid="if_352" initValue="100.0" lsb="1" offset="0" displayName="emergency_down_time" identifier="PARAMETER:Constant/emergency_down_time" />
+			</Variable>
+		</Calibration>
+		<Calibration name="position_endstop_top" path="powerwindow_sl/power_window_control/detect_obstacle_endstop/detect_endstop/position_&#xA;endstop_top" physicalPath="powerwindow_sl/power_window_control/detect_obstacle_endstop/detect_endstop/position_&#xA;endstop_top" origin="explicit_param">
+			<CalibrationUsage path="powerwindow_sl/power_window_control/detect_obstacle_endstop/detect_endstop/position_&#xA;endstop_top" physicalPath="powerwindow_sl/power_window_control/detect_obstacle_endstop/detect_endstop/position_&#xA;endstop_top" blockAttribute="Value" />
+			<Variable varid="varif_353" signalType="double" isFloat="yes">
+				<ifName ifid="if_353" initValue="0.4" lsb="1" offset="0" displayName="position_endstop_top" identifier="PARAMETER:detect_obstacle_endstop/detect_endstop/position_&#xA;endstop_top/position_endstop_top" />
+			</Variable>
+		</Calibration>
+		<Model name="powerwindow_sl" modelPath="/E:/ModelsDev/SL/PowerWindowSimple/ml2015a/powerwindow_sl.mdl" type="SimulinkModel" />
+		<Scope uid="285" name="control" path="powerwindow_sl/power_window_control/control" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="STATEFLOW" physicalPath="powerwindow_sl/power_window_control/control" subsystemLogging="on">
+			<InPort name="auto_up_time" portNumber="1" compositeSig="none">
+				<Variable varid="varif_368" signalType="double" isFloat="yes">
+					<ifName ifid="if_368" lsb="1" offset="0" displayName="auto_up_time" identifier="INPUT:auto_up_time" />
+				</Variable>
+			</InPort>
+			<InPort name="auto_down_time" portNumber="2" compositeSig="none">
+				<Variable varid="varif_369" signalType="double" isFloat="yes">
+					<ifName ifid="if_369" lsb="1" offset="0" displayName="auto_down_time" identifier="INPUT:auto_down_time" />
+				</Variable>
+			</InPort>
+			<InPort name="emergency_down_time" portNumber="3" compositeSig="none">
+				<Variable varid="varif_370" signalType="double" isFloat="yes">
+					<ifName ifid="if_370" lsb="1" offset="0" displayName="emergency_down_time" identifier="INPUT:emergency_down_time" />
+				</Variable>
+			</InPort>
+			<InPort name="driver_neutral" portNumber="4" compositeSig="none">
+				<Variable varid="varif_371" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_371" lsb="1" offset="0" displayName="driver_neutral" identifier="INPUT:driver_neutral" />
+				</Variable>
+			</InPort>
+			<InPort name="driver_up" portNumber="5" compositeSig="none">
+				<Variable varid="varif_372" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_372" lsb="1" offset="0" displayName="driver_up" identifier="INPUT:driver_up" />
+				</Variable>
+			</InPort>
+			<InPort name="driver_down" portNumber="6" compositeSig="none">
+				<Variable varid="varif_373" signalName="checked_action" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_373" lsb="1" offset="0" displayName="driver_down" identifier="INPUT:driver_down" />
+				</Variable>
+			</InPort>
+			<InPort name="passenger_neutral" portNumber="7" compositeSig="none">
+				<Variable varid="varif_374" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_374" lsb="1" offset="0" displayName="passenger_neutral" identifier="INPUT:passenger_neutral" />
+				</Variable>
+			</InPort>
+			<InPort name="passenger_up" portNumber="8" compositeSig="none">
+				<Variable varid="varif_375" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_375" lsb="1" offset="0" displayName="passenger_up" identifier="INPUT:passenger_up" />
+				</Variable>
+			</InPort>
+			<InPort name="passenger_down" portNumber="9" compositeSig="none">
+				<Variable varid="varif_376" signalName="checked_action" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_376" lsb="1" offset="0" displayName="passenger_down" identifier="INPUT:passenger_down" />
+				</Variable>
+			</InPort>
+			<InPort name="obstacle" portNumber="10" compositeSig="none">
+				<Variable varid="varif_377" signalName="obstacle_detection" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_377" lsb="1" offset="0" displayName="obstacle" identifier="INPUT:obstacle" />
+				</Variable>
+			</InPort>
+			<InPort name="endstop_bottom" portNumber="11" compositeSig="none">
+				<Variable varid="varif_378" signalName="endstop_bottom" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_378" lsb="1" offset="0" displayName="endstop_bottom" identifier="INPUT:endstop_bottom" />
+				</Variable>
+			</InPort>
+			<InPort name="endstop_top" portNumber="12" compositeSig="none">
+				<Variable varid="varif_379" signalName="endstop_top" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_379" lsb="1" offset="0" displayName="endstop_top" identifier="INPUT:endstop_top" />
+				</Variable>
+			</InPort>
+			<OutPort name="moveDown" portNumber="1" compositeSig="none">
+				<Variable varid="varif_380" signalName="moveDown" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_380" lsb="1" offset="0" displayName="moveDown" identifier="OUTPUT:moveDown" />
+				</Variable>
+			</OutPort>
+			<OutPort name="moveUp" portNumber="2" compositeSig="none">
+				<Variable varid="varif_381" signalName="moveUp" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_381" lsb="1" offset="0" displayName="moveUp" identifier="OUTPUT:moveUp" />
+				</Variable>
+			</OutPort>
+			<Model name="powerwindow_sl" modelPath="/E:/ModelsDev/SL/PowerWindowSimple/ml2015a/powerwindow_sl.mdl" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="286" name="detect_obstacle_endstop" path="powerwindow_sl/power_window_control/detect_obstacle_endstop" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="powerwindow_sl/power_window_control/detect_obstacle_endstop" subsystemLogging="on">
+			<InPort name="obstacle_position" portNumber="1" compositeSig="none">
+				<Variable varid="varif_389" signalType="double" isFloat="yes">
+					<ifName ifid="if_389" lsb="1" offset="0" displayName="obstacle_position" identifier="INPUT:obstacle_position" />
+				</Variable>
+			</InPort>
+			<InPort name="window_position" portNumber="2" compositeSig="none">
+				<Variable varid="varif_390" signalName="window_position" signalType="double" isFloat="yes">
+					<ifName ifid="if_390" lsb="1" offset="0" displayName="window_position" identifier="INPUT:window_position" />
+				</Variable>
+			</InPort>
+			<InPort name="move_up" portNumber="3" compositeSig="none">
+				<Variable varid="varif_391" signalName="moveUp" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_391" lsb="1" offset="0" displayName="move_up" identifier="INPUT:move_up" />
+				</Variable>
+			</InPort>
+			<OutPort name="obstacle" portNumber="1" compositeSig="none">
+				<Variable varid="varif_392" signalName="obstacle_detection" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_392" lsb="1" offset="0" displayName="obstacle" identifier="OUTPUT:obstacle" />
+				</Variable>
+			</OutPort>
+			<OutPort name="endstop_top" portNumber="2" compositeSig="none">
+				<Variable varid="varif_393" signalName="endstop_top" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_393" lsb="1" offset="0" displayName="endstop_top" identifier="OUTPUT:endstop_top" />
+				</Variable>
+			</OutPort>
+			<OutPort name="endstop_bottom" portNumber="3" compositeSig="none">
+				<Variable varid="varif_394" signalName="endstop_bottom" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_394" lsb="1" offset="0" displayName="endstop_bottom" identifier="OUTPUT:endstop_bottom" />
+				</Variable>
+			</OutPort>
+			<Calibration name="position_endstop_top" path="powerwindow_sl/power_window_control/detect_obstacle_endstop/detect_endstop/position_&#xA;endstop_top" physicalPath="powerwindow_sl/power_window_control/detect_obstacle_endstop/detect_endstop/position_&#xA;endstop_top" origin="explicit_param">
+				<CalibrationUsage path="powerwindow_sl/power_window_control/detect_obstacle_endstop/detect_endstop/position_&#xA;endstop_top" physicalPath="powerwindow_sl/power_window_control/detect_obstacle_endstop/detect_endstop/position_&#xA;endstop_top" blockAttribute="Value" />
+				<Variable varid="varif_395" signalType="double" isFloat="yes">
+					<ifName ifid="if_395" initValue="0.4" lsb="1" offset="0" displayName="position_endstop_top" identifier="PARAMETER:detect_endstop/position_&#xA;endstop_top/position_endstop_top" />
+				</Variable>
+			</Calibration>
+			<Model name="powerwindow_sl" modelPath="/E:/ModelsDev/SL/PowerWindowSimple/ml2015a/powerwindow_sl.mdl" type="SimulinkModel" />
+			<Scope uid="289" name="detect_endstop" path="powerwindow_sl/power_window_control/detect_obstacle_endstop/detect_endstop" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="powerwindow_sl/power_window_control/detect_obstacle_endstop/detect_endstop" subsystemLogging="on">
+				<InPort name="window_position" portNumber="1" compositeSig="none">
+					<Variable varid="varif_400" signalName="window_position" signalType="double" isFloat="yes">
+						<ifName ifid="if_400" lsb="1" offset="0" displayName="window_position" identifier="INPUT:window_position" />
+					</Variable>
+				</InPort>
+				<OutPort name="endstop_top" portNumber="1" compositeSig="none">
+					<Variable varid="varif_401" signalName="endstop_top" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_401" lsb="1" offset="0" displayName="endstop_top" identifier="OUTPUT:endstop_top" />
+					</Variable>
+				</OutPort>
+				<OutPort name="endstop_bottom" portNumber="2" compositeSig="none">
+					<Variable varid="varif_402" signalName="endstop_bottom" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_402" lsb="1" offset="0" displayName="endstop_bottom" identifier="OUTPUT:endstop_bottom" />
+					</Variable>
+				</OutPort>
+				<Calibration name="position_endstop_top" path="powerwindow_sl/power_window_control/detect_obstacle_endstop/detect_endstop/position_&#xA;endstop_top" physicalPath="powerwindow_sl/power_window_control/detect_obstacle_endstop/detect_endstop/position_&#xA;endstop_top" origin="explicit_param">
+					<CalibrationUsage path="powerwindow_sl/power_window_control/detect_obstacle_endstop/detect_endstop/position_&#xA;endstop_top" physicalPath="powerwindow_sl/power_window_control/detect_obstacle_endstop/detect_endstop/position_&#xA;endstop_top" blockAttribute="Value" />
+					<Variable varid="varif_403" signalType="double" isFloat="yes">
+						<ifName ifid="if_403" initValue="0.4" lsb="1" offset="0" displayName="position_endstop_top" identifier="PARAMETER:position_&#xA;endstop_top/position_endstop_top" />
+					</Variable>
+				</Calibration>
+				<Model name="powerwindow_sl" modelPath="/E:/ModelsDev/SL/PowerWindowSimple/ml2015a/powerwindow_sl.mdl" type="SimulinkModel" />
+			</Scope>
+			<Scope uid="28A" name="detect_obstacle" path="powerwindow_sl/power_window_control/detect_obstacle_endstop/detect_obstacle" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="powerwindow_sl/power_window_control/detect_obstacle_endstop/detect_obstacle" subsystemLogging="on">
+				<InPort name="obstacle_position" portNumber="1" compositeSig="none">
+					<Variable varid="varif_408" signalType="double" isFloat="yes">
+						<ifName ifid="if_408" lsb="1" offset="0" displayName="obstacle_position" identifier="INPUT:obstacle_position" />
+					</Variable>
+				</InPort>
+				<InPort name="window_position" portNumber="2" compositeSig="none">
+					<Variable varid="varif_409" signalName="window_position" signalType="double" isFloat="yes">
+						<ifName ifid="if_409" lsb="1" offset="0" displayName="window_position" identifier="INPUT:window_position" />
+					</Variable>
+				</InPort>
+				<InPort name="move_up" portNumber="3" compositeSig="none">
+					<Variable varid="varif_410" signalName="moveUp" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_410" lsb="1" offset="0" displayName="move_up" identifier="INPUT:move_up" />
+					</Variable>
+				</InPort>
+				<OutPort name="obstacle" portNumber="1" compositeSig="none">
+					<Variable varid="varif_411" signalName="obstacle_detection" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_411" lsb="1" offset="0" displayName="obstacle" identifier="OUTPUT:obstacle" />
+					</Variable>
+				</OutPort>
+				<Model name="powerwindow_sl" modelPath="/E:/ModelsDev/SL/PowerWindowSimple/ml2015a/powerwindow_sl.mdl" type="SimulinkModel" />
+			</Scope>
+		</Scope>
+		<Scope uid="287" name="validate_driver" path="powerwindow_sl/power_window_control/validate_driver" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="powerwindow_sl/power_window_control/validate_driver" subsystemLogging="on">
+			<InPort name="neutral" portNumber="1" compositeSig="none">
+				<Variable varid="varif_420" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_420" lsb="1" offset="0" displayName="neutral" identifier="INPUT:neutral" />
+				</Variable>
+			</InPort>
+			<InPort name="up" portNumber="2" compositeSig="none">
+				<Variable varid="varif_421" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_421" lsb="1" offset="0" displayName="up" identifier="INPUT:up" />
+				</Variable>
+			</InPort>
+			<InPort name="down" portNumber="3" compositeSig="none">
+				<Variable varid="varif_422" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_422" lsb="1" offset="0" displayName="down" identifier="INPUT:down" />
+				</Variable>
+			</InPort>
+			<InPort name="endstop_top" portNumber="4" compositeSig="none">
+				<Variable varid="varif_423" signalName="endstop_top" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_423" lsb="1" offset="0" displayName="endstop_top" identifier="INPUT:endstop_top" />
+				</Variable>
+			</InPort>
+			<InPort name="endstop_bottom" portNumber="5" compositeSig="none">
+				<Variable varid="varif_424" signalName="endstop_bottom" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_424" lsb="1" offset="0" displayName="endstop_bottom" identifier="INPUT:endstop_bottom" />
+				</Variable>
+			</InPort>
+			<OutPort name="validated_neutral" portNumber="1" compositeSig="none">
+				<Variable varid="varif_425" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_425" lsb="1" offset="0" displayName="validated_neutral" identifier="OUTPUT:validated_neutral" />
+				</Variable>
+			</OutPort>
+			<OutPort name="validated_up" portNumber="2" compositeSig="none">
+				<Variable varid="varif_426" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_426" lsb="1" offset="0" displayName="validated_up" identifier="OUTPUT:validated_up" />
+				</Variable>
+			</OutPort>
+			<OutPort name="validated_down" portNumber="3" compositeSig="none">
+				<Variable varid="varif_427" signalName="checked_action" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_427" lsb="1" offset="0" displayName="validated_down" identifier="OUTPUT:validated_down" />
+				</Variable>
+			</OutPort>
+			<Model name="powerwindow_sl" modelPath="/E:/ModelsDev/SL/PowerWindowSimple/ml2015a/powerwindow_sl.mdl" type="SimulinkModel" />
+			<Scope uid="28B" name="check_down" path="powerwindow_sl/power_window_control/validate_driver/check_down" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="powerwindow_sl/power_window_control/validate_driver/check_down" subsystemLogging="on">
+				<InPort name="action" portNumber="1" compositeSig="none">
+					<Variable varid="varif_431" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_431" lsb="1" offset="0" displayName="action" identifier="INPUT:action" />
+					</Variable>
+				</InPort>
+				<InPort name="endstop" portNumber="2" compositeSig="none">
+					<Variable varid="varif_432" signalName="endstop_bottom" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_432" lsb="1" offset="0" displayName="endstop" identifier="INPUT:endstop" />
+					</Variable>
+				</InPort>
+				<OutPort name="checked_action" portNumber="1" compositeSig="none">
+					<Variable varid="varif_433" signalName="checked_action" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_433" lsb="1" offset="0" displayName="checked_action" identifier="OUTPUT:checked_action" />
+					</Variable>
+				</OutPort>
+				<Model name="powerwindow_sl" modelPath="/E:/ModelsDev/SL/PowerWindowSimple/ml2015a/powerwindow_sl.mdl" type="SimulinkModel" />
+			</Scope>
+			<Scope uid="28C" name="check_up" path="powerwindow_sl/power_window_control/validate_driver/check_up" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="powerwindow_sl/power_window_control/validate_driver/check_up" subsystemLogging="on">
+				<InPort name="action" portNumber="1" compositeSig="none">
+					<Variable varid="varif_437" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_437" lsb="1" offset="0" displayName="action" identifier="INPUT:action" />
+					</Variable>
+				</InPort>
+				<InPort name="endstop" portNumber="2" compositeSig="none">
+					<Variable varid="varif_438" signalName="endstop_top" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_438" lsb="1" offset="0" displayName="endstop" identifier="INPUT:endstop" />
+					</Variable>
+				</InPort>
+				<OutPort name="checked_action" portNumber="1" compositeSig="none">
+					<Variable varid="varif_439" signalName="checked_action" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_439" lsb="1" offset="0" displayName="checked_action" identifier="OUTPUT:checked_action" />
+					</Variable>
+				</OutPort>
+				<Model name="powerwindow_sl" modelPath="/E:/ModelsDev/SL/PowerWindowSimple/ml2015a/powerwindow_sl.mdl" type="SimulinkModel" />
+			</Scope>
+			<Scope uid="28D" name="mutually_exclusive" path="powerwindow_sl/power_window_control/validate_driver/mutually_exclusive" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="powerwindow_sl/power_window_control/validate_driver/mutually_exclusive" subsystemLogging="on">
+				<InPort name="neutral" portNumber="1" compositeSig="none">
+					<Variable varid="varif_446" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_446" lsb="1" offset="0" displayName="neutral" identifier="INPUT:neutral" />
+					</Variable>
+				</InPort>
+				<InPort name="up" portNumber="2" compositeSig="none">
+					<Variable varid="varif_447" signalName="checked_action" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_447" lsb="1" offset="0" displayName="up" identifier="INPUT:up" />
+					</Variable>
+				</InPort>
+				<InPort name="down" portNumber="3" compositeSig="none">
+					<Variable varid="varif_448" signalName="checked_action" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_448" lsb="1" offset="0" displayName="down" identifier="INPUT:down" />
+					</Variable>
+				</InPort>
+				<OutPort name="validated_neutral" portNumber="1" compositeSig="none">
+					<Variable varid="varif_449" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_449" lsb="1" offset="0" displayName="validated_neutral" identifier="OUTPUT:validated_neutral" />
+					</Variable>
+				</OutPort>
+				<OutPort name="validated_up" portNumber="2" compositeSig="none">
+					<Variable varid="varif_450" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_450" lsb="1" offset="0" displayName="validated_up" identifier="OUTPUT:validated_up" />
+					</Variable>
+				</OutPort>
+				<OutPort name="validated_down" portNumber="3" compositeSig="none">
+					<Variable varid="varif_451" signalName="checked_action" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_451" lsb="1" offset="0" displayName="validated_down" identifier="OUTPUT:validated_down" />
+					</Variable>
+				</OutPort>
+				<Model name="powerwindow_sl" modelPath="/E:/ModelsDev/SL/PowerWindowSimple/ml2015a/powerwindow_sl.mdl" type="SimulinkModel" />
+			</Scope>
+		</Scope>
+		<Scope uid="288" name="validate_passenger" path="powerwindow_sl/power_window_control/validate_passenger" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="powerwindow_sl/power_window_control/validate_passenger" subsystemLogging="on">
+			<InPort name="neutral" portNumber="1" compositeSig="none">
+				<Variable varid="varif_460" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_460" lsb="1" offset="0" displayName="neutral" identifier="INPUT:neutral" />
+				</Variable>
+			</InPort>
+			<InPort name="up" portNumber="2" compositeSig="none">
+				<Variable varid="varif_461" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_461" lsb="1" offset="0" displayName="up" identifier="INPUT:up" />
+				</Variable>
+			</InPort>
+			<InPort name="down" portNumber="3" compositeSig="none">
+				<Variable varid="varif_462" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_462" lsb="1" offset="0" displayName="down" identifier="INPUT:down" />
+				</Variable>
+			</InPort>
+			<InPort name="endstop_top" portNumber="4" compositeSig="none">
+				<Variable varid="varif_463" signalName="endstop_top" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_463" lsb="1" offset="0" displayName="endstop_top" identifier="INPUT:endstop_top" />
+				</Variable>
+			</InPort>
+			<InPort name="endstop_bottom" portNumber="5" compositeSig="none">
+				<Variable varid="varif_464" signalName="endstop_bottom" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_464" lsb="1" offset="0" displayName="endstop_bottom" identifier="INPUT:endstop_bottom" />
+				</Variable>
+			</InPort>
+			<OutPort name="validated_neutral" portNumber="1" compositeSig="none">
+				<Variable varid="varif_465" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_465" lsb="1" offset="0" displayName="validated_neutral" identifier="OUTPUT:validated_neutral" />
+				</Variable>
+			</OutPort>
+			<OutPort name="validated_up" portNumber="2" compositeSig="none">
+				<Variable varid="varif_466" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_466" lsb="1" offset="0" displayName="validated_up" identifier="OUTPUT:validated_up" />
+				</Variable>
+			</OutPort>
+			<OutPort name="validated_down" portNumber="3" compositeSig="none">
+				<Variable varid="varif_467" signalName="checked_action" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_467" lsb="1" offset="0" displayName="validated_down" identifier="OUTPUT:validated_down" />
+				</Variable>
+			</OutPort>
+			<Model name="powerwindow_sl" modelPath="/E:/ModelsDev/SL/PowerWindowSimple/ml2015a/powerwindow_sl.mdl" type="SimulinkModel" />
+			<Scope uid="28E" name="check_down" path="powerwindow_sl/power_window_control/validate_passenger/check_down" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="powerwindow_sl/power_window_control/validate_passenger/check_down" subsystemLogging="on">
+				<InPort name="action" portNumber="1" compositeSig="none">
+					<Variable varid="varif_471" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_471" lsb="1" offset="0" displayName="action" identifier="INPUT:action" />
+					</Variable>
+				</InPort>
+				<InPort name="endstop" portNumber="2" compositeSig="none">
+					<Variable varid="varif_472" signalName="endstop_bottom" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_472" lsb="1" offset="0" displayName="endstop" identifier="INPUT:endstop" />
+					</Variable>
+				</InPort>
+				<OutPort name="checked_action" portNumber="1" compositeSig="none">
+					<Variable varid="varif_473" signalName="checked_action" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_473" lsb="1" offset="0" displayName="checked_action" identifier="OUTPUT:checked_action" />
+					</Variable>
+				</OutPort>
+				<Model name="powerwindow_sl" modelPath="/E:/ModelsDev/SL/PowerWindowSimple/ml2015a/powerwindow_sl.mdl" type="SimulinkModel" />
+			</Scope>
+			<Scope uid="28F" name="check_up" path="powerwindow_sl/power_window_control/validate_passenger/check_up" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="powerwindow_sl/power_window_control/validate_passenger/check_up" subsystemLogging="on">
+				<InPort name="action" portNumber="1" compositeSig="none">
+					<Variable varid="varif_477" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_477" lsb="1" offset="0" displayName="action" identifier="INPUT:action" />
+					</Variable>
+				</InPort>
+				<InPort name="endstop" portNumber="2" compositeSig="none">
+					<Variable varid="varif_478" signalName="endstop_top" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_478" lsb="1" offset="0" displayName="endstop" identifier="INPUT:endstop" />
+					</Variable>
+				</InPort>
+				<OutPort name="checked_action" portNumber="1" compositeSig="none">
+					<Variable varid="varif_479" signalName="checked_action" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_479" lsb="1" offset="0" displayName="checked_action" identifier="OUTPUT:checked_action" />
+					</Variable>
+				</OutPort>
+				<Model name="powerwindow_sl" modelPath="/E:/ModelsDev/SL/PowerWindowSimple/ml2015a/powerwindow_sl.mdl" type="SimulinkModel" />
+			</Scope>
+			<Scope uid="28G" name="mutually_exclusive" path="powerwindow_sl/power_window_control/validate_passenger/mutually_exclusive" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="powerwindow_sl/power_window_control/validate_passenger/mutually_exclusive" subsystemLogging="on">
+				<InPort name="neutral" portNumber="1" compositeSig="none">
+					<Variable varid="varif_486" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_486" lsb="1" offset="0" displayName="neutral" identifier="INPUT:neutral" />
+					</Variable>
+				</InPort>
+				<InPort name="up" portNumber="2" compositeSig="none">
+					<Variable varid="varif_487" signalName="checked_action" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_487" lsb="1" offset="0" displayName="up" identifier="INPUT:up" />
+					</Variable>
+				</InPort>
+				<InPort name="down" portNumber="3" compositeSig="none">
+					<Variable varid="varif_488" signalName="checked_action" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_488" lsb="1" offset="0" displayName="down" identifier="INPUT:down" />
+					</Variable>
+				</InPort>
+				<OutPort name="validated_neutral" portNumber="1" compositeSig="none">
+					<Variable varid="varif_489" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_489" lsb="1" offset="0" displayName="validated_neutral" identifier="OUTPUT:validated_neutral" />
+					</Variable>
+				</OutPort>
+				<OutPort name="validated_up" portNumber="2" compositeSig="none">
+					<Variable varid="varif_490" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_490" lsb="1" offset="0" displayName="validated_up" identifier="OUTPUT:validated_up" />
+					</Variable>
+				</OutPort>
+				<OutPort name="validated_down" portNumber="3" compositeSig="none">
+					<Variable varid="varif_491" signalName="checked_action" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_491" lsb="1" offset="0" displayName="validated_down" identifier="OUTPUT:validated_down" />
+					</Variable>
+				</OutPort>
+				<Model name="powerwindow_sl" modelPath="/E:/ModelsDev/SL/PowerWindowSimple/ml2015a/powerwindow_sl.mdl" type="SimulinkModel" />
+			</Scope>
+		</Scope>
+	</Scope>
+</ExtractionModel>

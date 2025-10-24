@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="266">
+	<Types>
+		<EnumType name="Value">
+			<EnumValue name="Value1" ordinal="0" />
+			<EnumValue name="Value2" ordinal="1" />
+		</EnumType>
+	</Types>
+	<Scope uid="266" name="main" path="main" sampleTime="0.05" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="main">
+		<InPort name="A" portNumber="1" compositeSig="none" type="double">
+			<Variable varid="varif_381" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_381" initValue="0.0" lsb="1.0" offset="0.0" displayName="A" identifier="INPUT:A" />
+			</Variable>
+		</InPort>
+		<OutPort name="B" portNumber="1" compositeSig="none" type="Value">
+			<Variable varid="varif_384" signalType="Value" isSignalTypeEnum="yes" tlTypeName="Value" type="Value">
+				<ifName ifid="if_384" initValue="0" lsb="1.0" offset="0.0" displayName="B" identifier="OUTPUT:B" />
+			</Variable>
+		</OutPort>
+		<Model name="main" modelPath="/E:/ModelsDev/UT_EC/enums_sldd/ml2018b/main.slx" type="SimulinkModel" />
+		<Scope uid="265" name="Test" path="main/Test" sampleTime="0.05" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="main/Test">
+			<InPort name="A" portNumber="1" compositeSig="none" type="double">
+				<Variable varid="varif_386" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+					<ifName ifid="if_386" initValue="0.0" lsb="1.0" offset="0.0" displayName="A" identifier="INPUT:A" />
+				</Variable>
+			</InPort>
+			<OutPort name="B" portNumber="1" compositeSig="none" type="Value">
+				<Variable varid="varif_388" signalType="Value" isSignalTypeEnum="yes" tlTypeName="Value" type="Value">
+					<ifName ifid="if_388" initValue="0" lsb="1.0" offset="0.0" displayName="B" identifier="OUTPUT:B" />
+				</Variable>
+			</OutPort>
+			<Model name="main" modelPath="/E:/ModelsDev/UT_EC/enums_sldd/ml2018b/main.slx" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="dcmc"/>
+    <Architecture id="id1" name="dcmc [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="TL_VelocityController/Subsystem/TL_VelocityController"/>
+      <Path refId="id1" path="TL_VelocityController.c:1:TL_VelocityController"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="ECU signal&#10;reference&#10;velocity"/>
+        <Path refId="id1" path="Rte_RefVelocitySensor_EcuRefVelocity_OP_GET_ref_velocity"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="ECU signal &#10;velocity"/>
+        <Path refId="id1" path="Rte_VelocitySensor_EcuVelocity_OP_GET_velocity"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="ECU UPi&#10;voltage"/>
+        <Path refId="id1" path="Rte_UPiActuator_EcuUPi_OP_SET_upi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/Kp/Kp"/>
+        <Path refId="id1" path="DD_S13_Kp"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/sPI(1)"/>
+        <Path refId="id1" path="S13_sPI"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TL_VelocityController/Subsystem/TL_VelocityController/Force&#10;Actuator"/>
+      <Path refId="id1" path="TL_VelocityController.c:1:TL_VelocityController/actuator_upi.c:1:ActuatorUPi"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="(UPi)"/>
+        <Path refId="id1" path="upi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="(EcuUPi)"/>
+        <Path refId="id1" path="Rte_UPiActuator_EcuUPi_OP_SET_upi"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller"/>
+      <Path refId="id1" path="TL_VelocityController.c:1:TL_VelocityController/controller.c:1:controller_runnable"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="(RefVelocity)"/>
+        <Path refId="id1" path="Rte_PIController_RefVelocity_OP_GET_ref_velocity"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="(Velocity)"/>
+        <Path refId="id1" path="Rte_PIController_Velocity_OP_GET_velocity"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="(UPi)"/>
+        <Path refId="id1" path="Rte_PIController_Upi_OP_SET_upi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/Kp/Kp"/>
+        <Path refId="id1" path="DD_S13_Kp"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/sPI(1)"/>
+        <Path refId="id1" path="S13_sPI"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TL_VelocityController/Subsystem/TL_VelocityController/Reference&#10;Velocity"/>
+      <Path refId="id1" path="TL_VelocityController.c:1:TL_VelocityController/sensor_refvelocity.c:1:RefSensorVelocity"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="(EcuRefVelocity)"/>
+        <Path refId="id1" path="Rte_RefVelocitySensor_EcuRefVelocity_OP_GET_ref_velocity"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="(RefVelocity)"/>
+        <Path refId="id1" path="ref_velocity"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TL_VelocityController/Subsystem/TL_VelocityController/Velocity&#10;Sensor"/>
+      <Path refId="id1" path="TL_VelocityController.c:1:TL_VelocityController/sensor_velocity.c:1:SensorVelocity"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="(EcuVelocity)"/>
+        <Path refId="id1" path="Rte_VelocitySensor_EcuVelocity_OP_GET_velocity"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="(Velocity)"/>
+        <Path refId="id1" path="velocity"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

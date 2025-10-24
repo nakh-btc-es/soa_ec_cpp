@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="2CM">
+	<Scope uid="2CM" name="Main" path="Main" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_385" signalType="double" isFloat="yes">
+				<ifName ifid="if_385" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_386" signalType="double" isFloat="yes">
+				<ifName ifid="if_386" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+			</Variable>
+		</InPort>
+		<InPort name="Control" portNumber="3" compositeSig="none">
+			<Variable varid="varif_387" width1="1" width2="6" signalType="double" signalDim="[2 1 6]" isFloat="yes">
+				<ifName ifid="if_389" index1="1" index2="1" lsb="1" offset="0" displayName="Control(1)(1)" identifier="INPUT:Control(1)(1)" />
+				<ifName ifid="if_390" index1="1" index2="2" lsb="1" offset="0" displayName="Control(1)(2)" identifier="INPUT:Control(1)(2)" />
+				<ifName ifid="if_391" index1="1" index2="3" lsb="1" offset="0" displayName="Control(1)(3)" identifier="INPUT:Control(1)(3)" />
+				<ifName ifid="if_392" index1="1" index2="4" lsb="1" offset="0" displayName="Control(1)(4)" identifier="INPUT:Control(1)(4)" />
+				<ifName ifid="if_393" index1="1" index2="5" lsb="1" offset="0" displayName="Control(1)(5)" identifier="INPUT:Control(1)(5)" />
+				<ifName ifid="if_394" index1="1" index2="6" lsb="1" offset="0" displayName="Control(1)(6)" identifier="INPUT:Control(1)(6)" />
+			</Variable>
+		</InPort>
+		<OutPort name="OutSimpleModel" portNumber="1" compositeSig="none">
+			<Variable varid="varif_395" signalType="double" isFloat="yes">
+				<ifName ifid="if_395" lsb="1" offset="0" displayName="OutSimpleModel" identifier="OUTPUT:OutSimpleModel" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutSubFromLib" portNumber="2" compositeSig="none">
+			<Variable varid="varif_396" signalType="double" isFloat="yes">
+				<ifName ifid="if_396" lsb="1" offset="0" displayName="OutSubFromLib" identifier="OUTPUT:OutSubFromLib" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutControlPortsSub" portNumber="3" compositeSig="none">
+			<Variable varid="varif_397" signalType="double" isFloat="yes">
+				<ifName ifid="if_397" lsb="1" offset="0" displayName="OutControlPortsSub" identifier="OUTPUT:OutControlPortsSub" />
+			</Variable>
+		</OutPort>
+		<Display name="Sum" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+			<Variable varid="varif_398" signalType="double" isFloat="yes">
+				<ifName ifid="if_398" lsb="1" offset="0" displayName="TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" identifier="LOCAL:SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" />
+			</Variable>
+		</Display>
+		<Display name="Sum" path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+			<Variable varid="varif_399" signalType="double" isFloat="yes">
+				<ifName ifid="if_399" lsb="1" offset="0" displayName="Subsystem/Subsystem/Add_Ref_Sub/Sum" identifier="LOCAL:SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Sum" />
+			</Variable>
+		</Display>
+		<Display name="Sum" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+			<Variable varid="varif_400" signalType="double" isFloat="yes">
+				<ifName ifid="if_400" lsb="1" offset="0" displayName="TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" identifier="LOCAL:SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" />
+			</Variable>
+		</Display>
+		<Calibration name="param_SubsystemRef" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" origin="explicit_param">
+			<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" blockAttribute="Value" />
+			<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem1/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem1/Constant" blockAttribute="Value" />
+			<CalibrationUsage path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem1/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem1/Constant" blockAttribute="Value" />
+			<CalibrationUsage path="Main/SubsystemFromLibrary/Subsystem/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" blockAttribute="Value" />
+			<CalibrationUsage path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" blockAttribute="Value" />
+			<Variable varid="varif_401" signalType="double" isFloat="yes">
+				<ifName ifid="if_401" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant/param_SubsystemRef" />
+			</Variable>
+		</Calibration>
+		<Calibration name="param_add" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" origin="explicit_param">
+			<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+			<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+			<CalibrationUsage path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+			<Variable varid="varif_402" signalType="double" isFloat="yes">
+				<ifName ifid="if_402" initValue="33.0" lsb="1" offset="0" displayName="param_add" identifier="PARAMETER:SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant/param_add" />
+			</Variable>
+		</Calibration>
+		<Calibration name="param_topLevelSubsystemRef" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Constant" origin="explicit_param">
+			<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Constant" blockAttribute="Value" />
+			<CalibrationUsage path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Constant" blockAttribute="Value" />
+			<Variable varid="varif_403" signalType="double" isFloat="yes">
+				<ifName ifid="if_403" initValue="2.0" lsb="1" offset="0" displayName="param_topLevelSubsystemRef" identifier="PARAMETER:SimpleSubsystem/TopLevel/ReferencedSubsystem/Constant/param_topLevelSubsystemRef" />
+			</Variable>
+		</Calibration>
+		<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+		<Scope uid="2Bk" name="ControlPortsSubsystem" path="Main/ControlPortsSubsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/ControlPortsSubsystem" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_407" signalType="double" isFloat="yes">
+					<ifName ifid="if_407" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<InPort name="Trigger" portNumber="2" compositeSig="none">
+				<Variable varid="varif_408" width1="1" width2="6" signalType="double" signalDim="[2 1 6]" isFloat="yes">
+					<ifName ifid="if_410" index1="1" index2="1" lsb="1" offset="0" displayName="Trigger(1)(1)" identifier="INPUT:Trigger(1)(1)" />
+					<ifName ifid="if_411" index1="1" index2="2" lsb="1" offset="0" displayName="Trigger(1)(2)" identifier="INPUT:Trigger(1)(2)" />
+					<ifName ifid="if_412" index1="1" index2="3" lsb="1" offset="0" displayName="Trigger(1)(3)" identifier="INPUT:Trigger(1)(3)" />
+					<ifName ifid="if_413" index1="1" index2="4" lsb="1" offset="0" displayName="Trigger(1)(4)" identifier="INPUT:Trigger(1)(4)" />
+					<ifName ifid="if_414" index1="1" index2="5" lsb="1" offset="0" displayName="Trigger(1)(5)" identifier="INPUT:Trigger(1)(5)" />
+					<ifName ifid="if_415" index1="1" index2="6" lsb="1" offset="0" displayName="Trigger(1)(6)" identifier="INPUT:Trigger(1)(6)" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_416" signalType="double" isFloat="yes">
+					<ifName ifid="if_416" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+			<Scope uid="2Bn" name="IfAction Subsystem Reference" path="Main/ControlPortsSubsystem/IfAction Subsystem Reference" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/ControlPortsSubsystem/IfAction Subsystem Reference" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_419" signalType="double" isFloat="yes">
+						<ifName ifid="if_419" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_420" signalType="double" isFloat="yes">
+						<ifName ifid="if_420" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+					</Variable>
+				</OutPort>
+				<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+				<Scope uid="2Br" name="Else Sub" path="Main/ControlPortsSubsystem/IfAction Subsystem Reference/Else Sub" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/ControlPortsSubsystem/IfAction Subsystem Reference/Else Sub" subsystemLogging="on">
+					<InPort name="In1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_423" signalType="double" isFloat="yes">
+							<ifName ifid="if_423" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+						</Variable>
+					</InPort>
+					<OutPort name="Out1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_424" signalType="double" isFloat="yes">
+							<ifName ifid="if_424" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+						</Variable>
+					</OutPort>
+					<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+				</Scope>
+				<Scope uid="2Bs" name="If Action Subsystem" path="Main/ControlPortsSubsystem/IfAction Subsystem Reference/If Action Subsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/ControlPortsSubsystem/IfAction Subsystem Reference/If Action Subsystem" subsystemLogging="on">
+					<InPort name="In1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_427" signalType="double" isFloat="yes">
+							<ifName ifid="if_427" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+						</Variable>
+					</InPort>
+					<OutPort name="Out1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_428" signalType="double" isFloat="yes">
+							<ifName ifid="if_428" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+						</Variable>
+					</OutPort>
+					<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+				</Scope>
+			</Scope>
+			<Scope uid="2Bo" name="Model Trigger Enable" path="Main/ControlPortsSubsystem/Model Trigger Enable" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Model_Reference_Trigger" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_432" signalType="double" isFloat="yes">
+						<ifName ifid="if_432" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+					</Variable>
+				</InPort>
+				<InPort name="Control" portNumber="2" compositeSig="none">
+					<Variable varid="varif_433" width1="1" width2="6" signalType="double" signalDim="[2 1 6]" isFloat="yes">
+						<ifName ifid="if_435" index1="1" index2="1" lsb="1" offset="0" displayName="Control(1)(1)" identifier="INPUT:Control(1)(1)" />
+						<ifName ifid="if_436" index1="1" index2="2" lsb="1" offset="0" displayName="Control(1)(2)" identifier="INPUT:Control(1)(2)" />
+						<ifName ifid="if_437" index1="1" index2="3" lsb="1" offset="0" displayName="Control(1)(3)" identifier="INPUT:Control(1)(3)" />
+						<ifName ifid="if_438" index1="1" index2="4" lsb="1" offset="0" displayName="Control(1)(4)" identifier="INPUT:Control(1)(4)" />
+						<ifName ifid="if_439" index1="1" index2="5" lsb="1" offset="0" displayName="Control(1)(5)" identifier="INPUT:Control(1)(5)" />
+						<ifName ifid="if_440" index1="1" index2="6" lsb="1" offset="0" displayName="Control(1)(6)" identifier="INPUT:Control(1)(6)" />
+					</Variable>
+				</InPort>
+				<OutPort name="eOut" portNumber="1" compositeSig="none">
+					<Variable varid="varif_441" signalType="double" isFloat="yes">
+						<ifName ifid="if_441" lsb="1" offset="0" displayName="eOut" identifier="OUTPUT:eOut" />
+					</Variable>
+				</OutPort>
+				<Model name="Model_Reference_Trigger" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Model_Reference_Trigger.slx" type="SimulinkModel" />
+				<Scope uid="2Bt" name="Subsystem Reference" path="Main/ControlPortsSubsystem/Model Trigger Enable/Subsystem Reference" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Model_Reference_Trigger/Subsystem Reference" subsystemLogging="on">
+					<InPort name="In1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_444" signalType="double" isFloat="yes">
+							<ifName ifid="if_444" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+						</Variable>
+					</InPort>
+					<OutPort name="eOut" portNumber="1" compositeSig="none">
+						<Variable varid="varif_445" signalType="double" isFloat="yes">
+							<ifName ifid="if_445" lsb="1" offset="0" displayName="eOut" identifier="OUTPUT:eOut" />
+						</Variable>
+					</OutPort>
+					<Model name="Model_Reference_Trigger" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Model_Reference_Trigger.slx" type="SimulinkModel" />
+				</Scope>
+			</Scope>
+			<Scope uid="2Bp" name="Resettable Subsystem Reference" path="Main/ControlPortsSubsystem/Resettable Subsystem Reference" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/ControlPortsSubsystem/Resettable Subsystem Reference" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_449" signalType="double" isFloat="yes">
+						<ifName ifid="if_449" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+					</Variable>
+				</InPort>
+				<InPort name="Reset" portNumber="2" compositeSig="none">
+					<Variable varid="varif_450" signalType="double" isFloat="yes">
+						<ifName ifid="if_450" lsb="1" offset="0" displayName="Reset" identifier="INPUT:Reset" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_451" signalType="double" isFloat="yes">
+						<ifName ifid="if_451" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+					</Variable>
+				</OutPort>
+				<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+				<Scope uid="2Bu" name="ResettableSubsystem" path="Main/ControlPortsSubsystem/Resettable Subsystem Reference/ResettableSubsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/ControlPortsSubsystem/Resettable Subsystem Reference/ResettableSubsystem" subsystemLogging="on">
+					<InPort name="In1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_454" signalType="double" isFloat="yes">
+							<ifName ifid="if_454" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+						</Variable>
+					</InPort>
+					<OutPort name="Out1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_455" signalType="double" isFloat="yes">
+							<ifName ifid="if_455" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+						</Variable>
+					</OutPort>
+					<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+				</Scope>
+			</Scope>
+			<Scope uid="2Bq" name="Trigger And Enable Subsystem" path="Main/ControlPortsSubsystem/Trigger And Enable Subsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/ControlPortsSubsystem/Trigger And Enable Subsystem" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_462" width1="1" width2="6" signalType="double" signalDim="[2 1 6]" isFloat="yes">
+						<ifName ifid="if_464" index1="1" index2="1" lsb="1" offset="0" displayName="In1(1)(1)" identifier="INPUT:In1(1)(1)" />
+						<ifName ifid="if_465" index1="1" index2="2" lsb="1" offset="0" displayName="In1(1)(2)" identifier="INPUT:In1(1)(2)" />
+						<ifName ifid="if_466" index1="1" index2="3" lsb="1" offset="0" displayName="In1(1)(3)" identifier="INPUT:In1(1)(3)" />
+						<ifName ifid="if_467" index1="1" index2="4" lsb="1" offset="0" displayName="In1(1)(4)" identifier="INPUT:In1(1)(4)" />
+						<ifName ifid="if_468" index1="1" index2="5" lsb="1" offset="0" displayName="In1(1)(5)" identifier="INPUT:In1(1)(5)" />
+						<ifName ifid="if_469" index1="1" index2="6" lsb="1" offset="0" displayName="In1(1)(6)" identifier="INPUT:In1(1)(6)" />
+					</Variable>
+				</InPort>
+				<InPort name="In2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_470" signalType="double" isFloat="yes">
+						<ifName ifid="if_470" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+					</Variable>
+				</InPort>
+				<InPort name="In3" portNumber="3" compositeSig="none">
+					<Variable varid="varif_471" width1="1" width2="6" signalType="double" signalDim="[2 1 6]" isFloat="yes">
+						<ifName ifid="if_473" index1="1" index2="1" lsb="1" offset="0" displayName="In3(1)(1)" identifier="INPUT:In3(1)(1)" />
+						<ifName ifid="if_474" index1="1" index2="2" lsb="1" offset="0" displayName="In3(1)(2)" identifier="INPUT:In3(1)(2)" />
+						<ifName ifid="if_475" index1="1" index2="3" lsb="1" offset="0" displayName="In3(1)(3)" identifier="INPUT:In3(1)(3)" />
+						<ifName ifid="if_476" index1="1" index2="4" lsb="1" offset="0" displayName="In3(1)(4)" identifier="INPUT:In3(1)(4)" />
+						<ifName ifid="if_477" index1="1" index2="5" lsb="1" offset="0" displayName="In3(1)(5)" identifier="INPUT:In3(1)(5)" />
+						<ifName ifid="if_478" index1="1" index2="6" lsb="1" offset="0" displayName="In3(1)(6)" identifier="INPUT:In3(1)(6)" />
+					</Variable>
+				</InPort>
+				<InPort name="In4" portNumber="4" compositeSig="none">
+					<Variable varid="varif_479" signalType="double" isFloat="yes">
+						<ifName ifid="if_479" lsb="1" offset="0" displayName="In4" identifier="INPUT:In4" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_480" signalType="double" isFloat="yes">
+						<ifName ifid="if_480" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+					</Variable>
+				</OutPort>
+				<OutPort name="Out2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_481" signalType="double" isFloat="yes">
+						<ifName ifid="if_481" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+					</Variable>
+				</OutPort>
+				<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+				<Scope uid="2Bv" name="Enable Subsystem Reference" path="Main/ControlPortsSubsystem/Trigger And Enable Subsystem/Enable Subsystem Reference" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/ControlPortsSubsystem/Trigger And Enable Subsystem/Enable Subsystem Reference" subsystemLogging="on">
+					<InPort name="In1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_484" signalType="double" isFloat="yes">
+							<ifName ifid="if_484" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+						</Variable>
+					</InPort>
+					<OutPort name="Out1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_485" signalType="double" isFloat="yes">
+							<ifName ifid="if_485" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+						</Variable>
+					</OutPort>
+					<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+				</Scope>
+				<Scope uid="2Bw" name="Trigger Subsystem Reference" path="Main/ControlPortsSubsystem/Trigger And Enable Subsystem/Trigger Subsystem Reference" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/ControlPortsSubsystem/Trigger And Enable Subsystem/Trigger Subsystem Reference" subsystemLogging="on">
+					<InPort name="In1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_488" signalType="double" isFloat="yes">
+							<ifName ifid="if_488" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+						</Variable>
+					</InPort>
+					<OutPort name="Out1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_489" signalType="double" isFloat="yes">
+							<ifName ifid="if_489" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+						</Variable>
+					</OutPort>
+					<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+				</Scope>
+			</Scope>
+		</Scope>
+		<Scope uid="2Bl" name="SimpleSubsystem" path="Main/SimpleSubsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/SimpleSubsystem" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_499" signalType="double" isFloat="yes">
+					<ifName ifid="if_499" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<InPort name="In2" portNumber="2" compositeSig="none">
+				<Variable varid="varif_500" signalType="double" isFloat="yes">
+					<ifName ifid="if_500" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_501" signalType="double" isFloat="yes">
+					<ifName ifid="if_501" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<Display name="Sum" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+				<Variable varid="varif_502" signalType="double" isFloat="yes">
+					<ifName ifid="if_502" lsb="1" offset="0" displayName="TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" identifier="LOCAL:TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" />
+				</Variable>
+			</Display>
+			<Display name="Sum" path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+				<Variable varid="varif_503" signalType="double" isFloat="yes">
+					<ifName ifid="if_503" lsb="1" offset="0" displayName="Subsystem/Subsystem/Add_Ref_Sub/Sum" identifier="LOCAL:TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Sum" />
+				</Variable>
+			</Display>
+			<Display name="Sum" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+				<Variable varid="varif_504" signalType="double" isFloat="yes">
+					<ifName ifid="if_504" lsb="1" offset="0" displayName="TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" identifier="LOCAL:TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" />
+				</Variable>
+			</Display>
+			<Calibration name="param_SubsystemRef" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" origin="explicit_param">
+				<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" blockAttribute="Value" />
+				<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem1/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem1/Constant" blockAttribute="Value" />
+				<CalibrationUsage path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem1/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem1/Constant" blockAttribute="Value" />
+				<Variable varid="varif_505" signalType="double" isFloat="yes">
+					<ifName ifid="if_505" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:TopLevel/ReferencedSubsystem/Subsystem1/Constant/param_SubsystemRef" />
+				</Variable>
+			</Calibration>
+			<Calibration name="param_add" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" origin="explicit_param">
+				<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+				<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+				<CalibrationUsage path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+				<Variable varid="varif_506" signalType="double" isFloat="yes">
+					<ifName ifid="if_506" initValue="33.0" lsb="1" offset="0" displayName="param_add" identifier="PARAMETER:TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant/param_add" />
+				</Variable>
+			</Calibration>
+			<Calibration name="param_topLevelSubsystemRef" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Constant" origin="explicit_param">
+				<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Constant" blockAttribute="Value" />
+				<CalibrationUsage path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Constant" blockAttribute="Value" />
+				<Variable varid="varif_507" signalType="double" isFloat="yes">
+					<ifName ifid="if_507" initValue="2.0" lsb="1" offset="0" displayName="param_topLevelSubsystemRef" identifier="PARAMETER:TopLevel/ReferencedSubsystem/Constant/param_topLevelSubsystemRef" />
+				</Variable>
+			</Calibration>
+			<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+			<Scope uid="2Bx" name="TopLevel" path="Main/SimpleSubsystem/TopLevel" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/SimpleSubsystem/TopLevel" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_516" signalType="double" isFloat="yes">
+						<ifName ifid="if_516" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+					</Variable>
+				</InPort>
+				<InPort name="In2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_517" signalType="double" isFloat="yes">
+						<ifName ifid="if_517" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_518" signalType="double" isFloat="yes">
+						<ifName ifid="if_518" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+					</Variable>
+				</OutPort>
+				<Display name="Sum" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+					<Variable varid="varif_519" signalType="double" isFloat="yes">
+						<ifName ifid="if_519" lsb="1" offset="0" displayName="ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" identifier="LOCAL:ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" />
+					</Variable>
+				</Display>
+				<Display name="Sum" path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+					<Variable varid="varif_520" signalType="double" isFloat="yes">
+						<ifName ifid="if_520" lsb="1" offset="0" displayName="Subsystem/Subsystem/Add_Ref_Sub/Sum" identifier="LOCAL:Subsystem/Subsystem/Add_Ref_Sub/Sum" />
+					</Variable>
+				</Display>
+				<Calibration name="param_SubsystemRef" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" origin="explicit_param">
+					<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" blockAttribute="Value" />
+					<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem1/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem1/Constant" blockAttribute="Value" />
+					<Variable varid="varif_521" signalType="double" isFloat="yes">
+						<ifName ifid="if_521" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:ReferencedSubsystem/Subsystem1/Constant/param_SubsystemRef" />
+					</Variable>
+				</Calibration>
+				<Calibration name="param_add" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" origin="explicit_param">
+					<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+					<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+					<Variable varid="varif_522" signalType="double" isFloat="yes">
+						<ifName ifid="if_522" initValue="33.0" lsb="1" offset="0" displayName="param_add" identifier="PARAMETER:ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant/param_add" />
+					</Variable>
+				</Calibration>
+				<Calibration name="param_topLevelSubsystemRef" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Constant" origin="explicit_param">
+					<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Constant" blockAttribute="Value" />
+					<Variable varid="varif_523" signalType="double" isFloat="yes">
+						<ifName ifid="if_523" initValue="2.0" lsb="1" offset="0" displayName="param_topLevelSubsystemRef" identifier="PARAMETER:ReferencedSubsystem/Constant/param_topLevelSubsystemRef" />
+					</Variable>
+				</Calibration>
+				<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+				<Scope uid="2Bz" name="ReferencedSubsystem" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem" subsystemLogging="on">
+					<InPort name="In1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_532" signalType="double" isFloat="yes">
+							<ifName ifid="if_532" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+						</Variable>
+					</InPort>
+					<InPort name="In2" portNumber="2" compositeSig="none">
+						<Variable varid="varif_533" signalType="double" isFloat="yes">
+							<ifName ifid="if_533" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+						</Variable>
+					</InPort>
+					<OutPort name="Out1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_534" signalType="double" isFloat="yes">
+							<ifName ifid="if_534" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+						</Variable>
+					</OutPort>
+					<OutPort name="Out2" portNumber="2" compositeSig="none">
+						<Variable varid="varif_535" signalType="double" isFloat="yes">
+							<ifName ifid="if_535" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+						</Variable>
+					</OutPort>
+					<Display name="Sum" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+						<Variable varid="varif_536" signalType="double" isFloat="yes">
+							<ifName ifid="if_536" lsb="1" offset="0" displayName="Sum" identifier="LOCAL:Subsystem/Add_Ref_Sub/Sum" />
+						</Variable>
+					</Display>
+					<Calibration name="param_SubsystemRef" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" origin="explicit_param">
+						<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" blockAttribute="Value" />
+						<Variable varid="varif_537" signalType="double" isFloat="yes">
+							<ifName ifid="if_537" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:Subsystem1/Constant/param_SubsystemRef" />
+						</Variable>
+					</Calibration>
+					<Calibration name="param_add" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" origin="explicit_param">
+						<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+						<Variable varid="varif_538" signalType="double" isFloat="yes">
+							<ifName ifid="if_538" initValue="33.0" lsb="1" offset="0" displayName="param_add" identifier="PARAMETER:Subsystem/Add_Ref_Sub/Constant/param_add" />
+						</Variable>
+					</Calibration>
+					<Calibration name="param_topLevelSubsystemRef" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Constant" origin="explicit_param">
+						<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Constant" blockAttribute="Value" />
+						<Variable varid="varif_539" signalType="double" isFloat="yes">
+							<ifName ifid="if_539" initValue="2.0" lsb="1" offset="0" displayName="param_topLevelSubsystemRef" identifier="PARAMETER:Constant/param_topLevelSubsystemRef" />
+						</Variable>
+					</Calibration>
+					<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+					<Scope uid="2C1" name="Subsystem" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem" subsystemLogging="on">
+						<InPort name="In1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_544" signalType="double" isFloat="yes">
+								<ifName ifid="if_544" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+							</Variable>
+						</InPort>
+						<OutPort name="Out1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_545" signalType="double" isFloat="yes">
+								<ifName ifid="if_545" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+							</Variable>
+						</OutPort>
+						<Display name="Sum" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+							<Variable varid="varif_546" signalType="double" isFloat="yes">
+								<ifName ifid="if_546" lsb="1" offset="0" displayName="Sum" identifier="LOCAL:Add_Ref_Sub/Sum" />
+							</Variable>
+						</Display>
+						<Calibration name="param_add" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" origin="explicit_param">
+							<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+							<Variable varid="varif_547" signalType="double" isFloat="yes">
+								<ifName ifid="if_547" initValue="33.0" lsb="1" offset="0" displayName="param_add" identifier="PARAMETER:Add_Ref_Sub/Constant/param_add" />
+							</Variable>
+						</Calibration>
+						<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+						<Scope uid="2C3" name="Add_Ref_Sub" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub" subsystemLogging="on">
+							<InPort name="In1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_552" signalType="double" isFloat="yes">
+									<ifName ifid="if_552" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+								</Variable>
+							</InPort>
+							<OutPort name="Out1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_553" signalType="double" isFloat="yes">
+									<ifName ifid="if_553" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+								</Variable>
+							</OutPort>
+							<Display name="Sum" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+								<Variable varid="varif_554" signalType="double" isFloat="yes">
+									<ifName ifid="if_554" lsb="1" offset="0" displayName="Sum" identifier="LOCAL:Sum" />
+								</Variable>
+							</Display>
+							<Calibration name="param_add" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" origin="explicit_param">
+								<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+								<Variable varid="varif_555" signalType="double" isFloat="yes">
+									<ifName ifid="if_555" initValue="33.0" lsb="1" offset="0" displayName="param_add" identifier="PARAMETER:Constant/param_add" />
+								</Variable>
+							</Calibration>
+							<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+						</Scope>
+					</Scope>
+					<Scope uid="2C2" name="Subsystem1" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1" subsystemLogging="on">
+						<InPort name="In1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_561" signalType="double" isFloat="yes">
+								<ifName ifid="if_561" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+							</Variable>
+						</InPort>
+						<InPort name="In2" portNumber="2" compositeSig="none">
+							<Variable varid="varif_562" signalType="double" isFloat="yes">
+								<ifName ifid="if_562" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+							</Variable>
+						</InPort>
+						<OutPort name="Out1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_563" signalType="double" isFloat="yes">
+								<ifName ifid="if_563" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+							</Variable>
+						</OutPort>
+						<OutPort name="Out2" portNumber="2" compositeSig="none">
+							<Variable varid="varif_564" signalType="double" isFloat="yes">
+								<ifName ifid="if_564" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+							</Variable>
+						</OutPort>
+						<Calibration name="param_SubsystemRef" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" origin="explicit_param">
+							<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Constant" blockAttribute="Value" />
+							<Variable varid="varif_565" signalType="double" isFloat="yes">
+								<ifName ifid="if_565" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:Constant/param_SubsystemRef" />
+							</Variable>
+						</Calibration>
+						<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+						<Scope uid="2C4" name="Subsystem" path="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Subsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/SimpleSubsystem/TopLevel/ReferencedSubsystem/Subsystem1/Subsystem" subsystemLogging="on">
+							<InPort name="In1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_568" signalType="double" isFloat="yes">
+									<ifName ifid="if_568" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+								</Variable>
+							</InPort>
+							<OutPort name="Out1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_569" signalType="double" isFloat="yes">
+									<ifName ifid="if_569" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+								</Variable>
+							</OutPort>
+							<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+						</Scope>
+					</Scope>
+				</Scope>
+				<Scope uid="2C0" name="Subsystem" path="Main/SimpleSubsystem/TopLevel/Subsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem" subsystemLogging="on">
+					<InPort name="In1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_577" signalType="double" isFloat="yes">
+							<ifName ifid="if_577" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+						</Variable>
+					</InPort>
+					<InPort name="In2" portNumber="2" compositeSig="none">
+						<Variable varid="varif_578" signalType="double" isFloat="yes">
+							<ifName ifid="if_578" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+						</Variable>
+					</InPort>
+					<OutPort name="Out1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_579" signalType="double" isFloat="yes">
+							<ifName ifid="if_579" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+						</Variable>
+					</OutPort>
+					<OutPort name="Out2" portNumber="2" compositeSig="none">
+						<Variable varid="varif_580" signalType="double" isFloat="yes">
+							<ifName ifid="if_580" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+						</Variable>
+					</OutPort>
+					<Display name="Sum" path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+						<Variable varid="varif_581" signalType="double" isFloat="yes">
+							<ifName ifid="if_581" lsb="1" offset="0" displayName="Sum" identifier="LOCAL:Subsystem/Add_Ref_Sub/Sum" />
+						</Variable>
+					</Display>
+					<Calibration name="param_SubsystemRef" path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem1/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem1/Constant" origin="explicit_param">
+						<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem1/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem1/Constant" blockAttribute="Value" />
+						<Variable varid="varif_582" signalType="double" isFloat="yes">
+							<ifName ifid="if_582" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:Subsystem1/Constant/param_SubsystemRef" />
+						</Variable>
+					</Calibration>
+					<Calibration name="param_add" path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" origin="explicit_param">
+						<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+						<Variable varid="varif_583" signalType="double" isFloat="yes">
+							<ifName ifid="if_583" initValue="33.0" lsb="1" offset="0" displayName="param_add" identifier="PARAMETER:Subsystem/Add_Ref_Sub/Constant/param_add" />
+						</Variable>
+					</Calibration>
+					<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+					<Scope uid="2C5" name="Subsystem" path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem" subsystemLogging="on">
+						<InPort name="In1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_588" signalType="double" isFloat="yes">
+								<ifName ifid="if_588" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+							</Variable>
+						</InPort>
+						<OutPort name="Out1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_589" signalType="double" isFloat="yes">
+								<ifName ifid="if_589" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+							</Variable>
+						</OutPort>
+						<Display name="Sum" path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+							<Variable varid="varif_590" signalType="double" isFloat="yes">
+								<ifName ifid="if_590" lsb="1" offset="0" displayName="Sum" identifier="LOCAL:Add_Ref_Sub/Sum" />
+							</Variable>
+						</Display>
+						<Calibration name="param_add" path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" origin="explicit_param">
+							<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+							<Variable varid="varif_591" signalType="double" isFloat="yes">
+								<ifName ifid="if_591" initValue="33.0" lsb="1" offset="0" displayName="param_add" identifier="PARAMETER:Add_Ref_Sub/Constant/param_add" />
+							</Variable>
+						</Calibration>
+						<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+						<Scope uid="2C7" name="Add_Ref_Sub" path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub" subsystemLogging="on">
+							<InPort name="In1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_596" signalType="double" isFloat="yes">
+									<ifName ifid="if_596" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+								</Variable>
+							</InPort>
+							<OutPort name="Out1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_597" signalType="double" isFloat="yes">
+									<ifName ifid="if_597" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+								</Variable>
+							</OutPort>
+							<Display name="Sum" path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+								<Variable varid="varif_598" signalType="double" isFloat="yes">
+									<ifName ifid="if_598" lsb="1" offset="0" displayName="Sum" identifier="LOCAL:Sum" />
+								</Variable>
+							</Display>
+							<Calibration name="param_add" path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" origin="explicit_param">
+								<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+								<Variable varid="varif_599" signalType="double" isFloat="yes">
+									<ifName ifid="if_599" initValue="33.0" lsb="1" offset="0" displayName="param_add" identifier="PARAMETER:Constant/param_add" />
+								</Variable>
+							</Calibration>
+							<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+						</Scope>
+					</Scope>
+					<Scope uid="2C6" name="Subsystem1" path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem1" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem1" subsystemLogging="on">
+						<InPort name="In1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_605" signalType="double" isFloat="yes">
+								<ifName ifid="if_605" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+							</Variable>
+						</InPort>
+						<InPort name="In2" portNumber="2" compositeSig="none">
+							<Variable varid="varif_606" signalType="double" isFloat="yes">
+								<ifName ifid="if_606" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+							</Variable>
+						</InPort>
+						<OutPort name="Out1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_607" signalType="double" isFloat="yes">
+								<ifName ifid="if_607" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+							</Variable>
+						</OutPort>
+						<OutPort name="Out2" portNumber="2" compositeSig="none">
+							<Variable varid="varif_608" signalType="double" isFloat="yes">
+								<ifName ifid="if_608" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+							</Variable>
+						</OutPort>
+						<Calibration name="param_SubsystemRef" path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem1/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem1/Constant" origin="explicit_param">
+							<CalibrationUsage path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem1/Constant" physicalPath="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem1/Constant" blockAttribute="Value" />
+							<Variable varid="varif_609" signalType="double" isFloat="yes">
+								<ifName ifid="if_609" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:Constant/param_SubsystemRef" />
+							</Variable>
+						</Calibration>
+						<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+						<Scope uid="2C8" name="Model" path="Main/SimpleSubsystem/TopLevel/Subsystem/Subsystem1/Model" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ModelSimple" subsystemLogging="on">
+							<InPort name="In1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_612" signalType="double" isFloat="yes">
+									<ifName ifid="if_612" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+								</Variable>
+							</InPort>
+							<OutPort name="Out1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_613" signalType="double" isFloat="yes">
+									<ifName ifid="if_613" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+								</Variable>
+							</OutPort>
+							<Model name="ModelSimple" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/ModelSimple.slx" type="SimulinkModel" />
+						</Scope>
+					</Scope>
+				</Scope>
+			</Scope>
+			<Scope uid="2By" name="TopLevel_ModelRef" path="Main/SimpleSubsystem/TopLevel_ModelRef" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ReferencedSubsystem" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_622" signalType="double" isFloat="yes">
+						<ifName ifid="if_622" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+					</Variable>
+				</InPort>
+				<InPort name="In2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_623" signalType="double" isFloat="yes">
+						<ifName ifid="if_623" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_624" signalType="double" isFloat="yes">
+						<ifName ifid="if_624" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+					</Variable>
+				</OutPort>
+				<OutPort name="Out2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_625" signalType="double" isFloat="yes">
+						<ifName ifid="if_625" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+					</Variable>
+				</OutPort>
+				<Display name="Sum" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+					<Variable varid="varif_626" signalType="double" isFloat="yes">
+						<ifName ifid="if_626" lsb="1" offset="0" displayName="Sum" identifier="LOCAL:ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" />
+					</Variable>
+				</Display>
+				<Calibration name="param_SubsystemRef" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem1/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem1/Constant" origin="explicit_param">
+					<CalibrationUsage path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem1/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem1/Constant" blockAttribute="Value" />
+					<Variable varid="varif_627" signalType="double" isFloat="yes">
+						<ifName ifid="if_627" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:ReferencedSubsystem/Subsystem1/Constant/param_SubsystemRef" />
+					</Variable>
+				</Calibration>
+				<Calibration name="param_add" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" origin="explicit_param">
+					<CalibrationUsage path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+					<Variable varid="varif_628" signalType="double" isFloat="yes">
+						<ifName ifid="if_628" initValue="33.0" lsb="1" offset="0" displayName="param_add" identifier="PARAMETER:ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant/param_add" />
+					</Variable>
+				</Calibration>
+				<Calibration name="param_topLevelSubsystemRef" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Constant" origin="explicit_param">
+					<CalibrationUsage path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Constant" blockAttribute="Value" />
+					<Variable varid="varif_629" signalType="double" isFloat="yes">
+						<ifName ifid="if_629" initValue="2.0" lsb="1" offset="0" displayName="param_topLevelSubsystemRef" identifier="PARAMETER:ReferencedSubsystem/Constant/param_topLevelSubsystemRef" />
+					</Variable>
+				</Calibration>
+				<Model name="ReferencedSubsystem" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/ReferencedSubsystem.slx" type="SimulinkModel" />
+				<Scope uid="2C9" name="ReferencedSubsystem" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ReferencedSubsystem/ReferencedSubsystem" subsystemLogging="on">
+					<InPort name="In1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_638" signalType="double" isFloat="yes">
+							<ifName ifid="if_638" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+						</Variable>
+					</InPort>
+					<InPort name="In2" portNumber="2" compositeSig="none">
+						<Variable varid="varif_639" signalType="double" isFloat="yes">
+							<ifName ifid="if_639" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+						</Variable>
+					</InPort>
+					<OutPort name="Out1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_640" signalType="double" isFloat="yes">
+							<ifName ifid="if_640" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+						</Variable>
+					</OutPort>
+					<OutPort name="Out2" portNumber="2" compositeSig="none">
+						<Variable varid="varif_641" signalType="double" isFloat="yes">
+							<ifName ifid="if_641" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+						</Variable>
+					</OutPort>
+					<Display name="Sum" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+						<Variable varid="varif_642" signalType="double" isFloat="yes">
+							<ifName ifid="if_642" lsb="1" offset="0" displayName="Sum" identifier="LOCAL:Subsystem/Add_Ref_Sub/Sum" />
+						</Variable>
+					</Display>
+					<Calibration name="param_SubsystemRef" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem1/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem1/Constant" origin="explicit_param">
+						<CalibrationUsage path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem1/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem1/Constant" blockAttribute="Value" />
+						<Variable varid="varif_643" signalType="double" isFloat="yes">
+							<ifName ifid="if_643" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:Subsystem1/Constant/param_SubsystemRef" />
+						</Variable>
+					</Calibration>
+					<Calibration name="param_add" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" origin="explicit_param">
+						<CalibrationUsage path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+						<Variable varid="varif_644" signalType="double" isFloat="yes">
+							<ifName ifid="if_644" initValue="33.0" lsb="1" offset="0" displayName="param_add" identifier="PARAMETER:Subsystem/Add_Ref_Sub/Constant/param_add" />
+						</Variable>
+					</Calibration>
+					<Calibration name="param_topLevelSubsystemRef" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Constant" origin="explicit_param">
+						<CalibrationUsage path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Constant" blockAttribute="Value" />
+						<Variable varid="varif_645" signalType="double" isFloat="yes">
+							<ifName ifid="if_645" initValue="2.0" lsb="1" offset="0" displayName="param_topLevelSubsystemRef" identifier="PARAMETER:Constant/param_topLevelSubsystemRef" />
+						</Variable>
+					</Calibration>
+					<Model name="ReferencedSubsystem" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/ReferencedSubsystem.slx" type="SimulinkModel" />
+					<Scope uid="2CA" name="Subsystem" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem" subsystemLogging="on">
+						<InPort name="In1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_650" signalType="double" isFloat="yes">
+								<ifName ifid="if_650" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+							</Variable>
+						</InPort>
+						<OutPort name="Out1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_651" signalType="double" isFloat="yes">
+								<ifName ifid="if_651" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+							</Variable>
+						</OutPort>
+						<Display name="Sum" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+							<Variable varid="varif_652" signalType="double" isFloat="yes">
+								<ifName ifid="if_652" lsb="1" offset="0" displayName="Sum" identifier="LOCAL:Add_Ref_Sub/Sum" />
+							</Variable>
+						</Display>
+						<Calibration name="param_add" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" origin="explicit_param">
+							<CalibrationUsage path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+							<Variable varid="varif_653" signalType="double" isFloat="yes">
+								<ifName ifid="if_653" initValue="33.0" lsb="1" offset="0" displayName="param_add" identifier="PARAMETER:Add_Ref_Sub/Constant/param_add" />
+							</Variable>
+						</Calibration>
+						<Model name="ReferencedSubsystem" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/ReferencedSubsystem.slx" type="SimulinkModel" />
+						<Scope uid="2CC" name="Add_Ref_Sub" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem/Add_Ref_Sub" subsystemLogging="on">
+							<InPort name="In1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_658" signalType="double" isFloat="yes">
+									<ifName ifid="if_658" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+								</Variable>
+							</InPort>
+							<OutPort name="Out1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_659" signalType="double" isFloat="yes">
+									<ifName ifid="if_659" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+								</Variable>
+							</OutPort>
+							<Display name="Sum" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Sum" portNumber="1">
+								<Variable varid="varif_660" signalType="double" isFloat="yes">
+									<ifName ifid="if_660" lsb="1" offset="0" displayName="Sum" identifier="LOCAL:Sum" />
+								</Variable>
+							</Display>
+							<Calibration name="param_add" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" origin="explicit_param">
+								<CalibrationUsage path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem/Add_Ref_Sub/Constant" blockAttribute="Value" />
+								<Variable varid="varif_661" signalType="double" isFloat="yes">
+									<ifName ifid="if_661" initValue="33.0" lsb="1" offset="0" displayName="param_add" identifier="PARAMETER:Constant/param_add" />
+								</Variable>
+							</Calibration>
+							<Model name="ReferencedSubsystem" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/ReferencedSubsystem.slx" type="SimulinkModel" />
+						</Scope>
+					</Scope>
+					<Scope uid="2CB" name="Subsystem1" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem1" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem1" subsystemLogging="on">
+						<InPort name="In1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_667" signalType="double" isFloat="yes">
+								<ifName ifid="if_667" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+							</Variable>
+						</InPort>
+						<InPort name="In2" portNumber="2" compositeSig="none">
+							<Variable varid="varif_668" signalType="double" isFloat="yes">
+								<ifName ifid="if_668" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+							</Variable>
+						</InPort>
+						<OutPort name="Out1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_669" signalType="double" isFloat="yes">
+								<ifName ifid="if_669" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+							</Variable>
+						</OutPort>
+						<OutPort name="Out2" portNumber="2" compositeSig="none">
+							<Variable varid="varif_670" signalType="double" isFloat="yes">
+								<ifName ifid="if_670" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+							</Variable>
+						</OutPort>
+						<Calibration name="param_SubsystemRef" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem1/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem1/Constant" origin="explicit_param">
+							<CalibrationUsage path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem1/Constant" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem1/Constant" blockAttribute="Value" />
+							<Variable varid="varif_671" signalType="double" isFloat="yes">
+								<ifName ifid="if_671" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:Constant/param_SubsystemRef" />
+							</Variable>
+						</Calibration>
+						<Model name="ReferencedSubsystem" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/ReferencedSubsystem.slx" type="SimulinkModel" />
+						<Scope uid="2CD" name="Subsystem" path="Main/SimpleSubsystem/TopLevel_ModelRef/ReferencedSubsystem/Subsystem1/Subsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ReferencedSubsystem/ReferencedSubsystem/Subsystem1/Subsystem" subsystemLogging="on">
+							<InPort name="In1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_674" signalType="double" isFloat="yes">
+									<ifName ifid="if_674" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+								</Variable>
+							</InPort>
+							<OutPort name="Out1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_675" signalType="double" isFloat="yes">
+									<ifName ifid="if_675" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+								</Variable>
+							</OutPort>
+							<Model name="ReferencedSubsystem" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/ReferencedSubsystem.slx" type="SimulinkModel" />
+						</Scope>
+					</Scope>
+				</Scope>
+			</Scope>
+		</Scope>
+		<Scope uid="2Bm" name="SubsystemFromLibrary" path="Main/SubsystemFromLibrary" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/SubsystemFromLibrary" subsystemLogging="on">
+			<InPort name="In2" portNumber="1" compositeSig="none">
+				<Variable varid="varif_680" signalType="double" isFloat="yes">
+					<ifName ifid="if_680" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+				</Variable>
+			</InPort>
+			<InPort name="In3" portNumber="2" compositeSig="none">
+				<Variable varid="varif_681" signalType="double" isFloat="yes">
+					<ifName ifid="if_681" lsb="1" offset="0" displayName="In3" identifier="INPUT:In3" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out2" portNumber="1" compositeSig="none">
+				<Variable varid="varif_682" signalType="double" isFloat="yes">
+					<ifName ifid="if_682" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+				</Variable>
+			</OutPort>
+			<Calibration name="param_SubsystemRef" path="Main/SubsystemFromLibrary/Subsystem/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" origin="explicit_param">
+				<CalibrationUsage path="Main/SubsystemFromLibrary/Subsystem/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" blockAttribute="Value" />
+				<CalibrationUsage path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" blockAttribute="Value" />
+				<Variable varid="varif_683" signalType="double" isFloat="yes">
+					<ifName ifid="if_683" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:Subsystem/TopLevel_ModelRef/ReferencedSubsystem/Constant/param_SubsystemRef" />
+				</Variable>
+			</Calibration>
+			<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+			<Scope uid="2CE" name="Subsystem" path="Main/SubsystemFromLibrary/Subsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/SubsystemFromLibrary/Subsystem" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_689" signalType="double" isFloat="yes">
+						<ifName ifid="if_689" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+					</Variable>
+				</InPort>
+				<InPort name="In2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_690" signalType="double" isFloat="yes">
+						<ifName ifid="if_690" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_691" signalType="double" isFloat="yes">
+						<ifName ifid="if_691" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+					</Variable>
+				</OutPort>
+				<OutPort name="Out2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_692" signalType="double" isFloat="yes">
+						<ifName ifid="if_692" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+					</Variable>
+				</OutPort>
+				<Calibration name="param_SubsystemRef" path="Main/SubsystemFromLibrary/Subsystem/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" origin="explicit_param">
+					<CalibrationUsage path="Main/SubsystemFromLibrary/Subsystem/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" blockAttribute="Value" />
+					<Variable varid="varif_693" signalType="double" isFloat="yes">
+						<ifName ifid="if_693" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:TopLevel_ModelRef/ReferencedSubsystem/Constant/param_SubsystemRef" />
+					</Variable>
+				</Calibration>
+				<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+				<Scope uid="2CG" name="TopLevel_ModelRef" path="Main/SubsystemFromLibrary/Subsystem/TopLevel_ModelRef" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ModelReference" subsystemLogging="on">
+					<InPort name="In1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_699" signalType="double" isFloat="yes">
+							<ifName ifid="if_699" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+						</Variable>
+					</InPort>
+					<InPort name="In2" portNumber="2" compositeSig="none">
+						<Variable varid="varif_700" signalType="double" isFloat="yes">
+							<ifName ifid="if_700" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+						</Variable>
+					</InPort>
+					<OutPort name="Out1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_701" signalType="double" isFloat="yes">
+							<ifName ifid="if_701" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+						</Variable>
+					</OutPort>
+					<OutPort name="Out2" portNumber="2" compositeSig="none">
+						<Variable varid="varif_702" signalType="double" isFloat="yes">
+							<ifName ifid="if_702" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+						</Variable>
+					</OutPort>
+					<Calibration name="param_SubsystemRef" path="Main/SubsystemFromLibrary/Subsystem/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" origin="explicit_param">
+						<CalibrationUsage path="Main/SubsystemFromLibrary/Subsystem/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" blockAttribute="Value" />
+						<Variable varid="varif_703" signalType="double" isFloat="yes">
+							<ifName ifid="if_703" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:ReferencedSubsystem/Constant/param_SubsystemRef" />
+						</Variable>
+					</Calibration>
+					<Model name="ModelReference" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/ModelReference.slx" type="SimulinkModel" />
+					<Scope uid="2CH" name="ReferencedSubsystem" path="Main/SubsystemFromLibrary/Subsystem/TopLevel_ModelRef/ReferencedSubsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ModelReference/ReferencedSubsystem" subsystemLogging="on">
+						<InPort name="In1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_709" signalType="double" isFloat="yes">
+								<ifName ifid="if_709" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+							</Variable>
+						</InPort>
+						<InPort name="In2" portNumber="2" compositeSig="none">
+							<Variable varid="varif_710" signalType="double" isFloat="yes">
+								<ifName ifid="if_710" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+							</Variable>
+						</InPort>
+						<OutPort name="Out1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_711" signalType="double" isFloat="yes">
+								<ifName ifid="if_711" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+							</Variable>
+						</OutPort>
+						<OutPort name="Out2" portNumber="2" compositeSig="none">
+							<Variable varid="varif_712" signalType="double" isFloat="yes">
+								<ifName ifid="if_712" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+							</Variable>
+						</OutPort>
+						<Calibration name="param_SubsystemRef" path="Main/SubsystemFromLibrary/Subsystem/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" origin="explicit_param">
+							<CalibrationUsage path="Main/SubsystemFromLibrary/Subsystem/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" blockAttribute="Value" />
+							<Variable varid="varif_713" signalType="double" isFloat="yes">
+								<ifName ifid="if_713" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:Constant/param_SubsystemRef" />
+							</Variable>
+						</Calibration>
+						<Model name="ModelReference" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/ModelReference.slx" type="SimulinkModel" />
+						<Scope uid="2CI" name="Model" path="Main/SubsystemFromLibrary/Subsystem/TopLevel_ModelRef/ReferencedSubsystem/Model" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ModelSimple" subsystemLogging="on">
+							<InPort name="In1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_716" signalType="double" isFloat="yes">
+									<ifName ifid="if_716" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+								</Variable>
+							</InPort>
+							<OutPort name="Out1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_717" signalType="double" isFloat="yes">
+									<ifName ifid="if_717" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+								</Variable>
+							</OutPort>
+							<Model name="ModelSimple" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/ModelSimple.slx" type="SimulinkModel" />
+						</Scope>
+					</Scope>
+				</Scope>
+			</Scope>
+			<Scope uid="2CF" name="TopLevel_RefSub" path="Main/SubsystemFromLibrary/TopLevel_RefSub" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/SubsystemFromLibrary/TopLevel_RefSub" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_723" signalType="double" isFloat="yes">
+						<ifName ifid="if_723" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+					</Variable>
+				</InPort>
+				<InPort name="In2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_724" signalType="double" isFloat="yes">
+						<ifName ifid="if_724" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_725" signalType="double" isFloat="yes">
+						<ifName ifid="if_725" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+					</Variable>
+				</OutPort>
+				<OutPort name="Out2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_726" signalType="double" isFloat="yes">
+						<ifName ifid="if_726" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+					</Variable>
+				</OutPort>
+				<Calibration name="param_SubsystemRef" path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" origin="explicit_param">
+					<CalibrationUsage path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" blockAttribute="Value" />
+					<Variable varid="varif_727" signalType="double" isFloat="yes">
+						<ifName ifid="if_727" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:TopLevel_ModelRef/ReferencedSubsystem/Constant/param_SubsystemRef" />
+					</Variable>
+				</Calibration>
+				<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+				<Scope uid="2CJ" name="TopLevel_ModelRef" path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ModelReference" subsystemLogging="on">
+					<InPort name="In1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_733" signalType="double" isFloat="yes">
+							<ifName ifid="if_733" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+						</Variable>
+					</InPort>
+					<InPort name="In2" portNumber="2" compositeSig="none">
+						<Variable varid="varif_734" signalType="double" isFloat="yes">
+							<ifName ifid="if_734" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+						</Variable>
+					</InPort>
+					<OutPort name="Out1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_735" signalType="double" isFloat="yes">
+							<ifName ifid="if_735" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+						</Variable>
+					</OutPort>
+					<OutPort name="Out2" portNumber="2" compositeSig="none">
+						<Variable varid="varif_736" signalType="double" isFloat="yes">
+							<ifName ifid="if_736" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+						</Variable>
+					</OutPort>
+					<Calibration name="param_SubsystemRef" path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" origin="explicit_param">
+						<CalibrationUsage path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" blockAttribute="Value" />
+						<Variable varid="varif_737" signalType="double" isFloat="yes">
+							<ifName ifid="if_737" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:ReferencedSubsystem/Constant/param_SubsystemRef" />
+						</Variable>
+					</Calibration>
+					<Model name="ModelReference" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/ModelReference.slx" type="SimulinkModel" />
+					<Scope uid="2CK" name="ReferencedSubsystem" path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ModelReference/ReferencedSubsystem" subsystemLogging="on">
+						<InPort name="In1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_743" signalType="double" isFloat="yes">
+								<ifName ifid="if_743" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+							</Variable>
+						</InPort>
+						<InPort name="In2" portNumber="2" compositeSig="none">
+							<Variable varid="varif_744" signalType="double" isFloat="yes">
+								<ifName ifid="if_744" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+							</Variable>
+						</InPort>
+						<OutPort name="Out1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_745" signalType="double" isFloat="yes">
+								<ifName ifid="if_745" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+							</Variable>
+						</OutPort>
+						<OutPort name="Out2" portNumber="2" compositeSig="none">
+							<Variable varid="varif_746" signalType="double" isFloat="yes">
+								<ifName ifid="if_746" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+							</Variable>
+						</OutPort>
+						<Calibration name="param_SubsystemRef" path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" origin="explicit_param">
+							<CalibrationUsage path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" blockAttribute="Value" />
+							<Variable varid="varif_747" signalType="double" isFloat="yes">
+								<ifName ifid="if_747" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:Constant/param_SubsystemRef" />
+							</Variable>
+						</Calibration>
+						<Model name="ModelReference" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/ModelReference.slx" type="SimulinkModel" />
+						<Scope uid="2CL" name="Model" path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem/Model" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ModelSimple" subsystemLogging="on">
+							<InPort name="In1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_750" signalType="double" isFloat="yes">
+									<ifName ifid="if_750" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+								</Variable>
+							</InPort>
+							<OutPort name="Out1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_751" signalType="double" isFloat="yes">
+									<ifName ifid="if_751" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+								</Variable>
+							</OutPort>
+							<Model name="ModelSimple" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/ModelSimple.slx" type="SimulinkModel" />
+						</Scope>
+					</Scope>
+				</Scope>
+			</Scope>
+		</Scope>
+	</Scope>
+</ExtractionModel>

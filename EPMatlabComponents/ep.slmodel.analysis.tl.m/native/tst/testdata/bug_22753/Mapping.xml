@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="NestedFctCall"/>
+    <Architecture id="id1" name="NestedFctCall [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="Subsystem/Subsystem/Subsystem"/>
+      <Path refId="id1" path="Subsystem.c:1:Sa1_Subsystem"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out3"/>
+        <Path refId="id1" path="Sa1_Out3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out2"/>
+        <Path refId="id1" path="Sa1_Out2"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="Subsystem/Subsystem/Subsystem/Subsystem"/>
+      <Path refId="id1" path="Subsystem.c:1:Sa1_Subsystem/Subsystem.c:1:Sa3_Subsystem"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In2"/>
+        <Path refId="id1" path="Sa4_Sum"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out2"/>
+        <Path refId="id1" path="Sa3_Sum"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

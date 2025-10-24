@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="data_store_bus.c" path="C:\Users\developer\AppData\Local\Temp\ut20220105T113640_8812\tmp_ut_ds_bus_01\data_store_bus_ert_rtw"/>
+    <File annotate="yes" id="ID72" kind="source" name="model_sub_D1.c" path="C:\Users\developer\AppData\Local\Temp\ut20220105T113640_8812\tmp_ut_ds_bus_01\slprj\ert\model_sub_D1"/>
+    <File annotate="yes" id="ID73" kind="source" name="model_sub_D2.c" path="C:\Users\developer\AppData\Local\Temp\ut20220105T113640_8812\tmp_ut_ds_bus_01\slprj\ert\model_sub_D2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20220105T113640_8812\tmp_ut_ds_bus_01\slprj\ert\model_sub_D2"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20220105T113640_8812\tmp_ut_ds_bus_01\slprj\ert\model_sub_D1"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20220105T113640_8812\tmp_ut_ds_bus_01"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20220105T113640_8812\tmp_ut_ds_bus_01\data_store_bus_ert_rtw"/>
+    <IncludePath path="C:\Matlab\R2019a\extern\include"/>
+    <IncludePath path="C:\Matlab\R2019a\simulink\include"/>
+    <IncludePath path="C:\Matlab\R2019a\rtw\c\src"/>
+    <IncludePath path="C:\Matlab\R2019a\rtw\c\src\ext_mode\common"/>
+    <IncludePath path="C:\Matlab\R2019a\rtw\c\ert"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20220105T113640_8812\tmp_ut_ds_bus_01\slprj\ert\_sharedutils"/>
+  </IncludePaths>
+  <Functions archName="data_store_bus [C-Code]">
+    <Function fileref="ID71" initFunc="data_store_bus_initialize" name="data_store_bus_step">
+      <Interface>
+        <InterfaceObj access=".a" kind="in" var="in_a"/>
+        <InterfaceObj access=".b" kind="in" var="in_a"/>
+        <InterfaceObj access=".a" kind="in" var="in_d1"/>
+        <InterfaceObj access=".b" kind="in" var="in_d1"/>
+        <InterfaceObj access=".a" kind="out" var="out_c"/>
+        <InterfaceObj access=".b" kind="out" var="out_c"/>
+        <InterfaceObj access=".a" kind="out" var="out_d3"/>
+        <InterfaceObj access=".b" kind="out" var="out_d3"/>
+        <InterfaceObj access=".a" kind="out" var="alias_x1"/>
+        <InterfaceObj access=".b" kind="out" var="alias_x1"/>
+        <InterfaceObj access=".a" kind="out" var="StoreSig_X2"/>
+        <InterfaceObj access=".b" kind="out" var="StoreSig_X2"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="data_store_bus_initialize" name="sub_A">
+      <Interface>
+        <InterfaceObj access=".a" kind="in" var="in_a"/>
+        <InterfaceObj access=".b" kind="in" var="in_a"/>
+        <InterfaceObj access=".a" kind="out" var="bla_A"/>
+        <InterfaceObj access=".b" kind="out" var="bla_A"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="data_store_bus_initialize" name="sub_B">
+      <Interface>
+        <InterfaceObj access=".a" kind="in" var="bla_A"/>
+        <InterfaceObj access=".b" kind="in" var="bla_A"/>
+        <InterfaceObj access=".a" kind="out" var="BusStore2"/>
+        <InterfaceObj access=".b" kind="out" var="BusStore2"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="data_store_bus_initialize" name="sub_C">
+      <Interface>
+        <InterfaceObj access=".a" kind="in" var="BusStore2"/>
+        <InterfaceObj access=".b" kind="in" var="BusStore2"/>
+        <InterfaceObj access=".a" kind="out" var="out_c"/>
+        <InterfaceObj access=".b" kind="out" var="out_c"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="data_store_bus_initialize" name="sub_D3">
+      <Interface>
+        <InterfaceObj access=".a" kind="in" var="StoreSig_X2"/>
+        <InterfaceObj access=".b" kind="in" var="StoreSig_X2"/>
+        <InterfaceObj access=".a" kind="out" var="out_d3"/>
+        <InterfaceObj access=".b" kind="out" var="out_d3"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID72" initFunc="data_store_bus_initialize" name="model_sub_D1">
+      <Interface>
+        <InterfaceObj access=".a" kind="in" var="in_d1"/>
+        <InterfaceObj access=".b" kind="in" var="in_d1"/>
+        <InterfaceObj access=".a" kind="out" var="alias_x1"/>
+        <InterfaceObj access=".b" kind="out" var="alias_x1"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID73" initFunc="data_store_bus_initialize" name="model_sub_D2">
+      <Interface>
+        <InterfaceObj access=".a" kind="in" var="alias_x1"/>
+        <InterfaceObj access=".b" kind="in" var="alias_x1"/>
+        <InterfaceObj access=".a" kind="out" var="StoreSig_X2"/>
+        <InterfaceObj access=".b" kind="out" var="StoreSig_X2"/>
+      </Interface>
+    </Function>
+  </Functions>
+</CodeModel>

@@ -1,0 +1,18 @@
+%% ============================================================================
+%% 
+%%  
+%% 
+%%
+%% Modified version of the TLC example provided by Mathworks
+%%
+
+%selectfile NULL_FILE
+
+%if !EXISTS("_ERT_GEN_TESTINTERFACE_")
+  %assign _ERT_GEN_TESTINTERFACE_ = 1
+  
+  %matlab assignin("base", "btc_info_graphmap", ::CompiledModel.SystemGraphicalMap)
+
+%endif %% _ERT_GEN_TESTINTERFACE_
+
+%% [EOF] ep_ec_model_analysis.tlc

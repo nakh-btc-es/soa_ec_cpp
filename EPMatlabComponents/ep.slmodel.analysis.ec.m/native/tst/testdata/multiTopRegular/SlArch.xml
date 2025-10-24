@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_multiTopRegular\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_multiTopRegular\init.m" modelVersion="1.45" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_multiTopRegular\multi_top.mdl" modelCreationDate="2019-07-15T13:51:36" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.45" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_multiTopRegular\multi_top.mdl" creationDate="2019-07-15T13:51:36" modificationDate="2024-09-12T19:05:15" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_multiTopRegular\init.m">
+    <subsystem subsysID="ss1" physicalPath="multi_top" path="" sampleTime="2" name="multi_top" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="multi_top/In1" path="In1" signalName="sig_in1">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="multi_top/In2" path="In2" signalName="sig_in2">
+        <boolean/>
+      </inport>
+      <parameter name="paramA" path="top_A/Constant" physicalPath="multi_top/top_A/Constant" origin="explicit_param" workspace="paramA" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/Constant" physicalPath="multi_top/top_A/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="multi_top/Out1" path="Out1" signalName="sig_out1">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="multi_top/Chart_B" path="Chart_B" sampleTime="2" name="Chart_B" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="u" physicalPath="multi_top/Chart_B/u" path="Chart_B/u" signalName="sig_in2">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="y" physicalPath="multi_top/Chart_B/y" path="Chart_B/y" signalName="y">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="multi_top/top_A" path="top_A" sampleTime="2" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="multi_top/top_A/In1" path="top_A/In1" signalName="sig_in1">
+        <boolean/>
+      </inport>
+      <parameter name="paramA" path="top_A/Constant" physicalPath="multi_top/top_A/Constant" origin="explicit_param" workspace="paramA" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/Constant" physicalPath="multi_top/top_A/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="multi_top/top_A/Out1" path="top_A/Out1" signalName="sig_A">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

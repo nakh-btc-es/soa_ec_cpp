@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20241030T153040_14848\tmp_AA_Stellantis_HeatedSeats\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T153040_14848\tmp_AA_Stellantis_HeatedSeats\init_Wrapper_HeatedSeats_HPC.m" modelVersion="1.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T153040_14848\tmp_AA_Stellantis_HeatedSeats\Wrapper_HeatedSeats_HPC.slx" modelCreationDate="2024-11-01T08:36:53" creator="developer">
+  <toolInfo name="Matlab" release="(R2024b)" version="24.2" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2024b)" version="24.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T153040_14848\tmp_AA_Stellantis_HeatedSeats\Wrapper_HeatedSeats_HPC.slx" creationDate="2024-11-01T08:36:53" modificationDate="2024-11-01T08:37:23" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T153040_14848\tmp_AA_Stellantis_HeatedSeats\init_Wrapper_HeatedSeats_HPC.m">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_HeatedSeats_HPC" path="" sampleTime="0.05" name="Wrapper_HeatedSeats_HPC" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="Rp_HeatedSeatServiceCL_EvSeatHeatStsRL" physicalPath="Wrapper_HeatedSeats_HPC/Rp_HeatedSeatServiceCL_EvSeatHeatStsRL" path="Rp_HeatedSeatServiceCL_EvSeatHeatStsRL" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_SeatHeatSts">
+          <signal signalName="HeatLevel_t">
+            <enumType name="Idt_HeatLevel_t">
+              <enumElement name="HeatLevel_Off" value="0"/>
+              <enumElement name="HeatLevel_High" value="1"/>
+              <enumElement name="HeatLevel_Medium" value="2"/>
+              <enumElement name="HeatLevel_Low" value="3"/>
+            </enumType>
+          </signal>
+          <signal signalName="FailSts_t">
+            <enumType name="Idt_FailSts_t">
+              <enumElement name="FailSts_NotPresent" value="0"/>
+              <enumElement name="FailSts_Present" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="2" name="Rp_HeatedSeatServiceCR_EvSeatHeatStsFL" physicalPath="Wrapper_HeatedSeats_HPC/Rp_HeatedSeatServiceCR_EvSeatHeatStsFL" path="Rp_HeatedSeatServiceCR_EvSeatHeatStsFL" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_SeatHeatSts">
+          <signal signalName="HeatLevel_t">
+            <enumType name="Idt_HeatLevel_t">
+              <enumElement name="HeatLevel_Off" value="0"/>
+              <enumElement name="HeatLevel_High" value="1"/>
+              <enumElement name="HeatLevel_Medium" value="2"/>
+              <enumElement name="HeatLevel_Low" value="3"/>
+            </enumType>
+          </signal>
+          <signal signalName="FailSts_t">
+            <enumType name="Idt_FailSts_t">
+              <enumElement name="FailSts_NotPresent" value="0"/>
+              <enumElement name="FailSts_Present" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="3" name="Rp_HeatedSeatServiceCR_EvSeatHeatStsFR" physicalPath="Wrapper_HeatedSeats_HPC/Rp_HeatedSeatServiceCR_EvSeatHeatStsFR" path="Rp_HeatedSeatServiceCR_EvSeatHeatStsFR" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_SeatHeatSts">
+          <signal signalName="HeatLevel_t">
+            <enumType name="Idt_HeatLevel_t">
+              <enumElement name="HeatLevel_Off" value="0"/>
+              <enumElement name="HeatLevel_High" value="1"/>
+              <enumElement name="HeatLevel_Medium" value="2"/>
+              <enumElement name="HeatLevel_Low" value="3"/>
+            </enumType>
+          </signal>
+          <signal signalName="FailSts_t">
+            <enumType name="Idt_FailSts_t">
+              <enumElement name="FailSts_NotPresent" value="0"/>
+              <enumElement name="FailSts_Present" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="4" name="Rp_HeatedSeatServiceCR_EvSeatHeatStsRR" physicalPath="Wrapper_HeatedSeats_HPC/Rp_HeatedSeatServiceCR_EvSeatHeatStsRR" path="Rp_HeatedSeatServiceCR_EvSeatHeatStsRR" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_SeatHeatSts">
+          <signal signalName="HeatLevel_t">
+            <enumType name="Idt_HeatLevel_t">
+              <enumElement name="HeatLevel_Off" value="0"/>
+              <enumElement name="HeatLevel_High" value="1"/>
+              <enumElement name="HeatLevel_Medium" value="2"/>
+              <enumElement name="HeatLevel_Low" value="3"/>
+            </enumType>
+          </signal>
+          <signal signalName="FailSts_t">
+            <enumType name="Idt_FailSts_t">
+              <enumElement name="FailSts_NotPresent" value="0"/>
+              <enumElement name="FailSts_Present" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="5" name="Rp_IgnitionManagement_AbortCrankingAtc_update" physicalPath="Wrapper_HeatedSeats_HPC/Rp_IgnitionManagement_AbortCrankingAtc_update" path="Rp_IgnitionManagement_AbortCrankingAtc_update">
+        <enumType name="Idt_AbortCrankingAtc">
+          <enumElement name="AbortCrankingAtc_NotActive" value="0"/>
+          <enumElement name="AbortCrankingAtc_Active" value="1"/>
+        </enumType>
+      </inport>
+      <inport portNumber="6" name="Rp_IgnitionManagement_CmdIgnSts_update" physicalPath="Wrapper_HeatedSeats_HPC/Rp_IgnitionManagement_CmdIgnSts_update" path="Rp_IgnitionManagement_CmdIgnSts_update">
+        <enumType name="Idt_CmdIgnSts">
+          <enumElement name="CmdIgnSts_Initialization" value="0"/>
+          <enumElement name="CmdIgnSts_IGN_LK" value="1"/>
+          <enumElement name="CmdIgnSts_ACC" value="2"/>
+          <enumElement name="CmdIgnSts_RUN" value="3"/>
+          <enumElement name="CmdIgnSts_START" value="4"/>
+          <enumElement name="CmdIgnSts_SNA" value="7"/>
+        </enumType>
+      </inport>
+      <inport portNumber="7" name="Rp_IgnitionManagement_KeyInIgnSts_update" physicalPath="Wrapper_HeatedSeats_HPC/Rp_IgnitionManagement_KeyInIgnSts_update" path="Rp_IgnitionManagement_KeyInIgnSts_update">
+        <enumType name="Idt_KeyInIgnSts">
+          <enumElement name="KeyInIgnSts_KeyDefault" value="0"/>
+          <enumElement name="KeyInIgnSts_KeyNotInIgnition" value="1"/>
+          <enumElement name="KeyInIgnSts_KeyInIgnition" value="2"/>
+          <enumElement name="KeyInIgnSts_SNA" value="3"/>
+        </enumType>
+      </inport>
+      <inport portNumber="8" name="Rp_IgnitionManagement_OperationalModeSts_update" physicalPath="Wrapper_HeatedSeats_HPC/Rp_IgnitionManagement_OperationalModeSts_update" path="Rp_IgnitionManagement_OperationalModeSts_update">
+        <enumType name="Idt_OperationalModeSts">
+          <enumElement name="OperationalModeSts_Initialization" value="0"/>
+          <enumElement name="OperationalModeSts_Ignition_Off_WithoutKey" value="1"/>
+          <enumElement name="OperationalModeSts_Ignition_Off" value="2"/>
+          <enumElement name="OperationalModeSts_Ignition_Acc" value="3"/>
+          <enumElement name="OperationalModeSts_Ignition_On" value="4"/>
+          <enumElement name="OperationalModeSts_Ignition_Pre_Start" value="5"/>
+          <enumElement name="OperationalModeSts_Ignition_Start" value="6"/>
+          <enumElement name="OperationalModeSts_Ignition_Cranking" value="7"/>
+          <enumElement name="OperationalModeSts_Ignition_On_EngOn" value="8"/>
+          <enumElement name="OperationalModeSts_Ignition_Pre_Acc" value="9"/>
+          <enumElement name="OperationalModeSts_Ignition_Pre_Off" value="10"/>
+          <enumElement name="OperationalModeSts_Automatic_Cranking" value="11"/>
+          <enumElement name="OperationalModeSts_Automatic_Stop" value="12"/>
+          <enumElement name="OperationalModeSts_Key_Authenticated" value="13"/>
+          <enumElement name="OperationalModeSts_Not_Used" value="14"/>
+          <enumElement name="OperationalModeSts_SNA" value="15"/>
+        </enumType>
+      </inport>
+      <inport portNumber="9" name="Rp_IgnitionManagement_RunStartRly_update" physicalPath="Wrapper_HeatedSeats_HPC/Rp_IgnitionManagement_RunStartRly_update" path="Rp_IgnitionManagement_RunStartRly_update">
+        <enumType name="Idt_RunStartRly">
+          <enumElement name="RunStartRly_OFF" value="0"/>
+          <enumElement name="RunStartRly_ON" value="1"/>
+        </enumType>
+      </inport>
+      <inport portNumber="10" name="Rp_IgnitionManagement_StTypSts_update" physicalPath="Wrapper_HeatedSeats_HPC/Rp_IgnitionManagement_StTypSts_update" path="Rp_IgnitionManagement_StTypSts_update">
+        <enumType name="Idt_StTypSts">
+          <enumElement name="StTypSts_StTypSts_Start_No_Active" value="0"/>
+          <enumElement name="StTypSts_StTypSts_Normal_Start" value="1"/>
+          <enumElement name="StTypSts_StTypSts_Tip_Start" value="2"/>
+          <enumElement name="StTypSts_StTypSts_Remote_Start" value="3"/>
+          <enumElement name="StTypSts_StTypSts_SNA" value="4"/>
+        </enumType>
+      </inport>
+      <inport portNumber="11" name="Rp_PSOMEIP_ZCU_CL_ADAS_FD_HMI" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_ADAS_FD_HMI" path="Rp_PSOMEIP_ZCU_CL_ADAS_FD_HMI" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_ADAS_FD_HMI_DT">
+          <signal signalName="ACC_Blind">
+            <enumType name="Idt_ACC_Blind">
+              <enumElement name="ACC_Blind_Cx0_Fail_Not_Present" value="0"/>
+              <enumElement name="ACC_Blind_Cx1_Fail_Present" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="12" name="Rp_PSOMEIP_ZCU_CL_ADAS_FD_INFO" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_ADAS_FD_INFO" path="Rp_PSOMEIP_ZCU_CL_ADAS_FD_INFO" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_ADAS_FD_INFO_DT">
+          <signal signalName="ACC_Drive_Cmd">
+            <enumType name="Idt_ACC_Drive_Cmd">
+              <enumElement name="ACC_Drive_Cmd_Cx0_Not_Enabled" value="0"/>
+              <enumElement name="ACC_Drive_Cmd_Cx1_Enabled" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="13" name="Rp_PSOMEIP_ZCU_CL_ADAS_FD_INFO2" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_ADAS_FD_INFO2" path="Rp_PSOMEIP_ZCU_CL_ADAS_FD_INFO2" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_ADAS_FD_INFO2_DT">
+          <signal signalName="AHB_Blind">
+            <enumType name="Idt_AHB_Blind">
+              <enumElement name="AHB_Blind_Cx0_OFF" value="0"/>
+              <enumElement name="AHB_Blind_Cx1_ON" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="14" name="Rp_PSOMEIP_ZCU_CL_ADAS_FD_INFO_C2" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_ADAS_FD_INFO_C2" path="Rp_PSOMEIP_ZCU_CL_ADAS_FD_INFO_C2" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_ADAS_FD_INFO_C2_DT">
+          <signal signalName="MAC_ADAS_INFO_C2">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="15" name="Rp_PSOMEIP_ZCU_CL_ADAS_STEERING_COMMANDS" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_ADAS_STEERING_COMMANDS" path="Rp_PSOMEIP_ZCU_CL_ADAS_STEERING_COMMANDS" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_ADAS_STEERING_COMMAND_DT">
+          <signal signalName="ACC_DistSwDec">
+            <enumType name="Idt_ACC_DistSwDec">
+              <enumElement name="ACC_DistSwDec_Cx0_Not_Pressed" value="0"/>
+              <enumElement name="ACC_DistSwDec_Cx1_Pressed" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="16" name="Rp_PSOMEIP_ZCU_CL_APM_VDCM" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_APM_VDCM" path="Rp_PSOMEIP_ZCU_CL_APM_VDCM" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_APM_VDCM_DT">
+          <signal signalName="APM_FailureType">
+            <enumType name="Idt_APM_FailureType">
+              <enumElement name="APM_FailureType_Cx0_No_failure" value="0"/>
+              <enumElement name="APM_FailureType_Cx1_Failure_chargingInhibited" value="1"/>
+              <enumElement name="APM_FailureType_Cx2_Failure_chargingAllowed" value="2"/>
+              <enumElement name="APM_FailureType_Cx3_SNA" value="3"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="17" name="Rp_PSOMEIP_ZCU_CL_ASCM_FD_2" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_ASCM_FD_2" path="Rp_PSOMEIP_ZCU_CL_ASCM_FD_2" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_ASCM_FD_2_DT">
+          <signal signalName="ADC_Stat">
+            <enumType name="Idt_ADC_Stat">
+              <enumElement name="ADC_Stat_Cx0_MODE_1" value="0"/>
+              <enumElement name="ADC_Stat_Cx1_MODE_2" value="1"/>
+              <enumElement name="ADC_Stat_Cx2_MODE_3" value="2"/>
+              <enumElement name="ADC_Stat_Cx3_SNA" value="3"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="18" name="Rp_PSOMEIP_ZCU_CL_BATTERY_HV_STATUS1" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_BATTERY_HV_STATUS1" path="Rp_PSOMEIP_ZCU_CL_BATTERY_HV_STATUS1" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_BATTERY_HV_STATUS1_DT">
+          <signal signalName="BPCM_HV_BatIntrlk_InternalStat">
+            <enumType name="Idt_BPCM_HV_BatIntrlk_InternalStat">
+              <enumElement name="BPCM_HV_BatIntrlk_InternalStat_Cx0_Not_Performed" value="0"/>
+              <enumElement name="BPCM_HV_BatIntrlk_InternalStat_Cx1_OK" value="1"/>
+              <enumElement name="BPCM_HV_BatIntrlk_InternalStat_Cx2_Fail" value="2"/>
+              <enumElement name="BPCM_HV_BatIntrlk_InternalStat_Cx3_Invalid" value="3"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="19" name="Rp_PSOMEIP_ZCU_CL_BATTERY_HV_VLIMITS" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_BATTERY_HV_VLIMITS" path="Rp_PSOMEIP_ZCU_CL_BATTERY_HV_VLIMITS" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_BATTERY_HV_VLIMITS_DT">
+          <signal signalName="BPCM_Cell_Volt_Avg">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="20" name="Rp_PSOMEIP_ZCU_CL_BRAKE_FD_1" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_BRAKE_FD_1" path="Rp_PSOMEIP_ZCU_CL_BRAKE_FD_1" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_BRAKE_FD_1_DT">
+          <signal signalName="Cntr_BRAKE1">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="21" name="Rp_PSOMEIP_ZCU_CL_BRAKE_FD_2" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_BRAKE_FD_2" path="Rp_PSOMEIP_ZCU_CL_BRAKE_FD_2" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_BRAKE_FD_2_DT">
+          <signal signalName="VehicleSpeedVSOSig">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="22" name="Rp_PSOMEIP_ZCU_CL_BRAKE_FD_3" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_BRAKE_FD_3" path="Rp_PSOMEIP_ZCU_CL_BRAKE_FD_3" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_BRAKE_FD_3_DT">
+          <signal signalName="LHF_FastPulseCounter">
+            <uint8/>
+          </signal>
+          <signal signalName="LHR_FastPulseCounter">
+            <uint8/>
+          </signal>
+          <signal signalName="RHF_FastPulseCounter">
+            <uint8/>
+          </signal>
+          <signal signalName="RHR_FastPulseCounter">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="23" name="Rp_PSOMEIP_ZCU_CL_BRAKE_FD_4" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_BRAKE_FD_4" path="Rp_PSOMEIP_ZCU_CL_BRAKE_FD_4" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_BRAKE_FD_4_DT">
+          <signal signalName="ClampForce">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="24" name="Rp_PSOMEIP_ZCU_CL_BRAKE_FD_5" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_BRAKE_FD_5" path="Rp_PSOMEIP_ZCU_CL_BRAKE_FD_5" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_BRAKE_FD_5_DT">
+          <signal signalName="ABSFailSts">
+            <enumType name="Idt_ABSFailSts">
+              <enumElement name="ABSFailSts_Cx0_Fail_Not_Present" value="0"/>
+              <enumElement name="ABSFailSts_Cx1_Fail_Present" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="25" name="Rp_PSOMEIP_ZCU_CL_CHARGE_SCHEDULE_HCP1" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_CHARGE_SCHEDULE_HCP1" path="Rp_PSOMEIP_ZCU_CL_CHARGE_SCHEDULE_HCP1" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_CHARGE_SCHEDULE_HCP1_DT">
+          <signal signalName="Charge_Schedule_Type1_Sts">
+            <enumType name="Idt_Charge_Schedule_Type1_Sts">
+              <enumElement name="Charge_Schedule_Type1_Sts_Cx0_No_Selection" value="0"/>
+              <enumElement name="Charge_Schedule_Type1_Sts_Cx1_Standard_Charge" value="1"/>
+              <enumElement name="Charge_Schedule_Type1_Sts_Cx2_External_Charge" value="2"/>
+              <enumElement name="Charge_Schedule_Type1_Sts_Cx3_Reserved" value="3"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="26" name="Rp_PSOMEIP_ZCU_CL_CHARGE_SCHEDULE_NEXT" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_CHARGE_SCHEDULE_NEXT" path="Rp_PSOMEIP_ZCU_CL_CHARGE_SCHEDULE_NEXT" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_CHARGE_SCHEDULE_NEXT_DT">
+          <signal signalName="Next_Charge_End_Time_Hr">
+            <enumType name="Idt_Next_Charge_End_Time_Hr">
+              <enumElement name="Next_Charge_End_Time_Hr_Cx00_Hour_0" value="0"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx01_Hour_1" value="1"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx02_Hour_2" value="2"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx03_Hour_3" value="3"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx04_Hour_4" value="4"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx05_Hour_5" value="5"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx06_Hour_6" value="6"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx07_Hour_7" value="7"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx08_Hour_8" value="8"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx09_Hour_9" value="9"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx0A_Hour_10" value="10"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx0B_Hour_11" value="11"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx0C_Hour_12" value="12"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx0D_Hour_13" value="13"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx0E_Hour_14" value="14"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx0F_Hour_15" value="15"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx10_Hour_16" value="16"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx11_Hour_17" value="17"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx12_Hour_18" value="18"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx13_Hour_19" value="19"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx14_Hour_20" value="20"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx15_Hour_21" value="21"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx16_Hour_22" value="22"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx17_Hour_23" value="23"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx19_Charge_Until_Full" value="25"/>
+              <enumElement name="Next_Charge_End_Time_Hr_Cx1F_SNA" value="31"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="27" name="Rp_PSOMEIP_ZCU_CL_CLIMATE_SCHEDULE_HCP1" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_CLIMATE_SCHEDULE_HCP1" path="Rp_PSOMEIP_ZCU_CL_CLIMATE_SCHEDULE_HCP1" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_CLIMATE_SCHEDULE_HCP1_DT">
+          <signal signalName="AllowClimateSchd1_Sts">
+            <enumType name="Idt_AllowClimateSchd1_Sts">
+              <enumElement name="AllowClimateSchd1_Sts_Cx0_Any_Time_" value="0"/>
+              <enumElement name="AllowClimateSchd1_Sts_Cx1_Plugged_In_Only" value="1"/>
+              <enumElement name="AllowClimateSchd1_Sts_Cx2_Plugged_In_and_In_Charge_Schd" value="2"/>
+              <enumElement name="AllowClimateSchd1_Sts_Cx3_SNA" value="3"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="28" name="Rp_PSOMEIP_ZCU_CL_CVPAM_FD_Control" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_CVPAM_FD_Control" path="Rp_PSOMEIP_ZCU_CL_CVPAM_FD_Control" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_CVPAM_FD_ControlI_DT">
+          <signal signalName="MessageCounter_CVPAM_FD_Control">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="29" name="Rp_PSOMEIP_ZCU_CL_CVPAM_FD_INFO" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_CVPAM_FD_INFO" path="Rp_PSOMEIP_ZCU_CL_CVPAM_FD_INFO" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_CVPAM_FD_INFO_DT">
+          <signal signalName="Alert_CHF">
+            <enumType name="Idt_Alert_CHF">
+              <enumElement name="Alert_CHF_Cx0_No_object_detected" value="0"/>
+              <enumElement name="Alert_CHF_Cx1_1_Arc" value="1"/>
+              <enumElement name="Alert_CHF_Cx2_2_Arc" value="2"/>
+              <enumElement name="Alert_CHF_Cx3_3_Arc" value="3"/>
+              <enumElement name="Alert_CHF_Cx4_4_Arc" value="4"/>
+              <enumElement name="Alert_CHF_Cx5_5_Arc" value="5"/>
+              <enumElement name="Alert_CHF_Cx6_6_Arc" value="6"/>
+              <enumElement name="Alert_CHF_Cx7_SNA" value="7"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="30" name="Rp_PSOMEIP_ZCU_CL_DRV_MONITOR1_FD" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_DRV_MONITOR1_FD" path="Rp_PSOMEIP_ZCU_CL_DRV_MONITOR1_FD" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_DRV_MONITOR1_FD_DT">
+          <signal signalName="Cntr_DRV_MONITOR1">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="31" name="Rp_PSOMEIP_ZCU_CL_EPS_FD_1" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_EPS_FD_1" path="Rp_PSOMEIP_ZCU_CL_EPS_FD_1" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_EPS_FD_1_DT">
+          <signal signalName="Cntr_EPS1">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="32" name="Rp_PSOMEIP_ZCU_CL_EPS_FD_2" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_EPS_FD_2" path="Rp_PSOMEIP_ZCU_CL_EPS_FD_2" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_EPS_FD_2_DT">
+          <signal signalName="EPS_MODE_STAT">
+            <enumType name="Idt_EPS_MODE_STAT">
+              <enumElement name="EPS_MODE_STAT_Cx0_MODE_1" value="0"/>
+              <enumElement name="EPS_MODE_STAT_Cx1_MODE_2" value="1"/>
+              <enumElement name="EPS_MODE_STAT_Cx2_MODE_3" value="2"/>
+              <enumElement name="EPS_MODE_STAT_Cx3_LAST" value="3"/>
+              <enumElement name="EPS_MODE_STAT_Cx7_SNA" value="7"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="33" name="Rp_PSOMEIP_ZCU_CL_HCP_CHARGING_STAT" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HCP_CHARGING_STAT" path="Rp_PSOMEIP_ZCU_CL_HCP_CHARGING_STAT" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HCP_CHARGING_STAT_DT">
+          <signal signalName="Chargeport_Lock_Status">
+            <enumType name="Idt_Chargeport_Lock_Status">
+              <enumElement name="Chargeport_Lock_Status_Cx0_Default" value="0"/>
+              <enumElement name="Chargeport_Lock_Status_Cx1_Locked" value="1"/>
+              <enumElement name="Chargeport_Lock_Status_Cx2_Unlocked" value="2"/>
+              <enumElement name="Chargeport_Lock_Status_Cx3_reserved" value="3"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="34" name="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS1" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS1" path="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS1" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HVBATTERY_RM_CELLS1_DT">
+          <signal signalName="HVBatCellVoltage_Cell001">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="35" name="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS2" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS2" path="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS2" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HVBATTERY_RM_CELLS2_DT">
+          <signal signalName="HVBatCellVoltage_Cell028">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="36" name="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS3" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS3" path="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS3" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HVBATTERY_RM_CELLS3_DT">
+          <signal signalName="HVBatCellVoltage_Cell055">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="37" name="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS4" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS4" path="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS4" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HVBATTERY_RM_CELLS4_DT">
+          <signal signalName="HVBatCellVoltage_Cell082">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="38" name="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS5" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS5" path="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS5" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HVBATTERY_RM_CELLS5_DT">
+          <signal signalName="HVBatCellVoltage_Cell109">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="39" name="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS6" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS6" path="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS6" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HVBATTERY_RM_CELLS6_DT">
+          <signal signalName="HVBatCellVoltage_Cell136">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="40" name="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS7" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS7" path="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS7" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HVBATTERY_RM_CELLS7_DT">
+          <signal signalName="HVBatCellVoltage_Cell163">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="41" name="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS8" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS8" path="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CELLS8" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HVBATTERY_RM_CELLS8_DT">
+          <signal signalName="HVBatCellVoltage_Cell190">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="42" name="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CHARGING1" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CHARGING1" path="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_CHARGING1" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HVBATTERY_RM_CHARGING1_DT">
+          <signal signalName="HighestWarningLevel">
+            <enumType name="Idt_HighestWarningLevel">
+              <enumElement name="HighestWarningLevel_Cx0_No_Faults" value="0"/>
+              <enumElement name="HighestWarningLevel_Cx1_Level_1" value="1"/>
+              <enumElement name="HighestWarningLevel_Cx2_Level_2" value="2"/>
+              <enumElement name="HighestWarningLevel_Cx3_Level_3" value="3"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="43" name="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_MODS1" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_MODS1" path="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_MODS1" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HVBATTERY_RM_MODS1_DT">
+          <signal signalName="HVBatModuleTemp_01">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="44" name="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_MODS2" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_MODS2" path="Rp_PSOMEIP_ZCU_CL_HVBATTERY_RM_MODS2" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HVBATTERY_RM_MODS2_DT">
+          <signal signalName="HVBatModuleTemp_39">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="45" name="Rp_PSOMEIP_ZCU_CL_HV_CHARGER1" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HV_CHARGER1" path="Rp_PSOMEIP_ZCU_CL_HV_CHARGER1" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HV_CHARGER1_DT">
+          <signal signalName="OBCInterlockSts">
+            <enumType name="Idt_OBCInterlockSts">
+              <enumElement name="OBCInterlockSts_Cx0_Not_Performed" value="0"/>
+              <enumElement name="OBCInterlockSts_Cx1_OK" value="1"/>
+              <enumElement name="OBCInterlockSts_Cx2_Fail" value="2"/>
+              <enumElement name="OBCInterlockSts_Cx3_Invalid" value="3"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="46" name="Rp_PSOMEIP_ZCU_CL_HYBRID_CHARGING_STATUS" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HYBRID_CHARGING_STATUS" path="Rp_PSOMEIP_ZCU_CL_HYBRID_CHARGING_STATUS" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HYBRID_CHARGING_STATUS_DT">
+          <signal signalName="ACCurrent_MaxCal">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="47" name="Rp_PSOMEIP_ZCU_CL_HYBRID_DISPLAY" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HYBRID_DISPLAY" path="Rp_PSOMEIP_ZCU_CL_HYBRID_DISPLAY" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HYBRID_DISPLAY_DT">
+          <signal signalName="ChargeSystemSts_DPT">
+            <enumType name="Idt_ChargeSystemSts_DPT">
+              <enumElement name="ChargeSystemSts_DPT_Cx0_NotCharging" value="0"/>
+              <enumElement name="ChargeSystemSts_DPT_Cx1_Charging" value="1"/>
+              <enumElement name="ChargeSystemSts_DPT_Cx2_ChargeInterrupted" value="2"/>
+              <enumElement name="ChargeSystemSts_DPT_Cx3_ChargeComplete" value="3"/>
+              <enumElement name="ChargeSystemSts_DPT_Cx7_SNA" value="7"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="48" name="Rp_PSOMEIP_ZCU_CL_HYBRID_POWERTRAIN5" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HYBRID_POWERTRAIN5" path="Rp_PSOMEIP_ZCU_CL_HYBRID_POWERTRAIN5" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HYBRID_POWERTRAIN5_DT">
+          <signal signalName="BattPowerUse_Display">
+            <enumType name="Idt_BattPowerUse_Display">
+              <enumElement name="BattPowerUse_Display_Cx0_Valid" value="0"/>
+              <enumElement name="BattPowerUse_Display_Cx1_Not_Valid" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="49" name="Rp_PSOMEIP_ZCU_CL_HYBRID_RM_MOTORS" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HYBRID_RM_MOTORS" path="Rp_PSOMEIP_ZCU_CL_HYBRID_RM_MOTORS" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HYBRID_RM_MOTORS_DT">
+          <signal signalName="MotorA_DC_Current">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="50" name="Rp_PSOMEIP_ZCU_CL_HYBRID_RM_MOTORS_2" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_HYBRID_RM_MOTORS_2" path="Rp_PSOMEIP_ZCU_CL_HYBRID_RM_MOTORS_2" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_HYBRID_RM_MOTORS_2_DT">
+          <signal signalName="APM_CtrlSts_Fbk">
+            <enumType name="Idt_APM_CtrlSts_Fbk">
+              <enumElement name="APM_CtrlSts_Fbk_Cx0_IDLE" value="0"/>
+              <enumElement name="APM_CtrlSts_Fbk_Cx1_Buck_CV_voltage" value="1"/>
+              <enumElement name="APM_CtrlSts_Fbk_Cx2_Buck_CC_current_control" value="2"/>
+              <enumElement name="APM_CtrlSts_Fbk_Cx3_APM_Temporary_Fault" value="3"/>
+              <enumElement name="APM_CtrlSts_Fbk_Cx4_Buck_Special" value="4"/>
+              <enumElement name="APM_CtrlSts_Fbk_Cx6_PreCharge" value="6"/>
+              <enumElement name="APM_CtrlSts_Fbk_Cx7_DisCharge" value="7"/>
+              <enumElement name="APM_CtrlSts_Fbk_Cx8_OFF" value="8"/>
+              <enumElement name="APM_CtrlSts_Fbk_Cx9_Derating" value="9"/>
+              <enumElement name="APM_CtrlSts_Fbk_CxA_APM_Critical_Fault" value="10"/>
+              <enumElement name="APM_CtrlSts_Fbk_CxF_SNA" value="15"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="51" name="Rp_PSOMEIP_ZCU_CL_IMPACT_INFO" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_IMPACT_INFO" path="Rp_PSOMEIP_ZCU_CL_IMPACT_INFO" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_IMPACT_INFO_DT">
+          <signal signalName="IMPACT_A">
+            <enumType name="Idt_IMPACT_A">
+              <enumElement name="IMPACT_A_Cx0_Do_Not_Actuate" value="0"/>
+              <enumElement name="IMPACT_A_Cx1_Actuate" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="52" name="Rp_PSOMEIP_ZCU_CL_IRVM_ZCU" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_IRVM_ZCU" path="Rp_PSOMEIP_ZCU_CL_IRVM_ZCU" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_IRVM_ZCU_DT">
+          <signal signalName="COMM_FAULT">
+            <enumType name="Idt_COMM_FAULT">
+              <enumElement name="COMM_FAULT_Cx0_No_Fault" value="0"/>
+              <enumElement name="COMM_FAULT_Cx1_Comm_Fault" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="53" name="Rp_PSOMEIP_ZCU_CL_MCPA_DATA2" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_MCPA_DATA2" path="Rp_PSOMEIP_ZCU_CL_MCPA_DATA2" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_MCPA_DATA2_DT">
+          <signal signalName="MCPA_Temp">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="54" name="Rp_PSOMEIP_ZCU_CL_MCPB_DATA2" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_MCPB_DATA2" path="Rp_PSOMEIP_ZCU_CL_MCPB_DATA2" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_MCPB_DATA2_DT">
+          <signal signalName="MCPB_Temp">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="55" name="Rp_PSOMEIP_ZCU_CL_ORC_FD_1" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_ORC_FD_1" path="Rp_PSOMEIP_ZCU_CL_ORC_FD_1" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_ORC_FD_1_DT">
+          <signal signalName="AirBagFailSts">
+            <enumType name="Idt_AirBagFailSts">
+              <enumElement name="AirBagFailSts_Cx0_Fail_Not_Present_Lamp_Off" value="0"/>
+              <enumElement name="AirBagFailSts_Cx1_Fail_Not_Present_Lamp_Flashing" value="1"/>
+              <enumElement name="AirBagFailSts_Cx2_Fail_Present_Lamp_On" value="2"/>
+              <enumElement name="AirBagFailSts_Cx3_Not_Used" value="3"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="56" name="Rp_PSOMEIP_ZCU_CL_ORC_FD_2" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_ORC_FD_2" path="Rp_PSOMEIP_ZCU_CL_ORC_FD_2" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_ORC_FD_2_DT">
+          <signal signalName="Cntr_ORC2">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="57" name="Rp_PSOMEIP_ZCU_CL_PDC_INFO_FD_VDCM" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_PDC_INFO_FD_VDCM" path="Rp_PSOMEIP_ZCU_CL_PDC_INFO_FD_VDCM" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_PDC_INFO_FD_VDCM">
+          <signal signalName="CurrentCanNMState_FD03_VDCM">
+            <enumType name="Idt_CurrentCanNMState_FD03_VDCM">
+              <enumElement name="CurrentCanNMState_FD03_VDCM_Cx0_Uninitialized_State" value="0"/>
+              <enumElement name="CurrentCanNMState_FD03_VDCM_Cx1_Bus_Sleep_State" value="1"/>
+              <enumElement name="CurrentCanNMState_FD03_VDCM_Cx2_Prepare_Bus_State" value="2"/>
+              <enumElement name="CurrentCanNMState_FD03_VDCM_Cx3_Ready_Sleep_State" value="3"/>
+              <enumElement name="CurrentCanNMState_FD03_VDCM_Cx4_Normal_Operation_State" value="4"/>
+              <enumElement name="CurrentCanNMState_FD03_VDCM_Cx5_Repeat_Message_State" value="5"/>
+              <enumElement name="CurrentCanNMState_FD03_VDCM_Cx6_Synchronize_State" value="6"/>
+              <enumElement name="CurrentCanNMState_FD03_VDCM_Cx7_Offline_State" value="7"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="58" name="Rp_PSOMEIP_ZCU_CL_PT_ENERGY_FD_1" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_PT_ENERGY_FD_1" path="Rp_PSOMEIP_ZCU_CL_PT_ENERGY_FD_1" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_PT_ENERGY_FD_1_DT">
+          <signal signalName="APM2_BoostSwitchControl">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="59" name="Rp_PSOMEIP_ZCU_CL_PT_SYSTEM_FD_1" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_PT_SYSTEM_FD_1" path="Rp_PSOMEIP_ZCU_CL_PT_SYSTEM_FD_1" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_PT_SYSTEM_FD_1_DT">
+          <signal signalName="PowertrainPrplsnActv_PT">
+            <enumType name="Idt_PowertrainPrplsnActv_PT">
+              <enumElement name="PowertrainPrplsnActv_PT_Cx0_NOT_ACTIVE" value="0"/>
+              <enumElement name="PowertrainPrplsnActv_PT_Cx1_ACTIVE" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="60" name="Rp_PSOMEIP_ZCU_CL_PT_THERMAL_FD_1" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_PT_THERMAL_FD_1" path="Rp_PSOMEIP_ZCU_CL_PT_THERMAL_FD_1" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_PT_THERMAL_FD_1_DT">
+          <signal signalName="ClimateFail">
+            <enumType name="Idt_ClimateFail">
+              <enumElement name="ClimateFail_Cx0_FAIL_NOT_PRESENT" value="0"/>
+              <enumElement name="ClimateFail_Cx1_FAIL_PRESENT" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="61" name="Rp_PSOMEIP_ZCU_CL_PT_TORQUE_FD_1" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_PT_TORQUE_FD_1" path="Rp_PSOMEIP_ZCU_CL_PT_TORQUE_FD_1" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_PT_TORQUE_FD_1_DT">
+          <signal signalName="Veh_StandStill_Req_OPD">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="62" name="Rp_PSOMEIP_ZCU_CL_STEERING_COLUMN" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_STEERING_COLUMN" path="Rp_PSOMEIP_ZCU_CL_STEERING_COLUMN" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_STEERING_COLUMN_DT">
+          <signal signalName="F_WprSw4Posn">
+            <enumType name="Idt_F_WprSw4Posn">
+              <enumElement name="F_WprSw4Posn_Cx0_AUTO1" value="0"/>
+              <enumElement name="F_WprSw4Posn_Cx1_AUTO2" value="1"/>
+              <enumElement name="F_WprSw4Posn_Cx2_INTERVAL1" value="2"/>
+              <enumElement name="F_WprSw4Posn_Cx3_INTERVAL2" value="3"/>
+              <enumElement name="F_WprSw4Posn_Cx4_OFF" value="4"/>
+              <enumElement name="F_WprSw4Posn_Cx7_FAILURE" value="7"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="63" name="Rp_PSOMEIP_ZCU_CL_TPM_INFO" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_TPM_INFO" path="Rp_PSOMEIP_ZCU_CL_TPM_INFO" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_TPM_INFO_DT">
+          <signal signalName="InflationState_LHF_Tyre">
+            <enumType name="Idt_InflationState_LHF_Tyre">
+              <enumElement name="InflationState_LHF_Tyre_Cx0_Normal_Tyre_Pressure" value="0"/>
+              <enumElement name="InflationState_LHF_Tyre_Cx1_Under_Inflated_Tyre" value="1"/>
+              <enumElement name="InflationState_LHF_Tyre_Cx2_SignificantlyUnderInflatedTyre" value="2"/>
+              <enumElement name="InflationState_LHF_Tyre_Cx3_Over_Inflated_Tyre" value="3"/>
+              <enumElement name="InflationState_LHF_Tyre_Cx4_Sensor_Missing" value="4"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="64" name="Rp_PSOMEIP_ZCU_CL_VDCM_OBCM2" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_VDCM_OBCM2" path="Rp_PSOMEIP_ZCU_CL_VDCM_OBCM2" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_VDCM_OBCM2_DT">
+          <signal signalName="AC_Chrg_Branch_Voltage_VDCM">
+            <uint16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="65" name="Rp_PSOMEIP_ZCU_CL_VEHDYN_FD_1" physicalPath="Wrapper_HeatedSeats_HPC/Rp_PSOMEIP_ZCU_CL_VEHDYN_FD_1" path="Rp_PSOMEIP_ZCU_CL_VEHDYN_FD_1" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_VEHDYN_FD_1_DT">
+          <signal signalName="Acceleration_Sts">
+            <enumType name="Idt_Acceleration_Sts">
+              <enumElement name="Acceleration_Sts_Cx0_IDLE" value="0"/>
+              <enumElement name="Acceleration_Sts_Cx1_DriverRq" value="1"/>
+              <enumElement name="Acceleration_Sts_Cx2_Confirmed" value="2"/>
+              <enumElement name="Acceleration_Sts_Cx3_BrakePressed" value="3"/>
+              <enumElement name="Acceleration_Sts_Cx4_FullThrottle" value="4"/>
+              <enumElement name="Acceleration_Sts_Cx5_InProgress" value="5"/>
+              <enumElement name="Acceleration_Sts_Cx6_Aborted" value="6"/>
+              <enumElement name="Acceleration_Sts_Cx7_NotAllowed" value="7"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="66" name="Rp_VentedSeatServiceCL_EvVentedSeatsStsRL" physicalPath="Wrapper_HeatedSeats_HPC/Rp_VentedSeatServiceCL_EvVentedSeatsStsRL" path="Rp_VentedSeatServiceCL_EvVentedSeatsStsRL" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_VentedSeatSts_DT">
+          <signal signalName="ventedLevel">
+            <enumType name="Idt_ventedLevel">
+              <enumElement name="ventedLevel_Off" value="0"/>
+              <enumElement name="ventedLevel_High" value="1"/>
+              <enumElement name="ventedLevel_Medium" value="2"/>
+              <enumElement name="ventedLevel_Low" value="3"/>
+            </enumType>
+          </signal>
+          <signal signalName="failureSts">
+            <enumType name="Idt_failureSts">
+              <enumElement name="failureSts_NotPresent" value="0"/>
+              <enumElement name="failureSts_Present" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="67" name="Rp_VentedSeatServiceCR_EvVentedSeatStsFL" physicalPath="Wrapper_HeatedSeats_HPC/Rp_VentedSeatServiceCR_EvVentedSeatStsFL" path="Rp_VentedSeatServiceCR_EvVentedSeatStsFL" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_VentedSeatSts_DT1">
+          <signal signalName="ventedLevel">
+            <enumType name="Idt_ventedLevel1">
+              <enumElement name="ventedLevel_Off" value="0"/>
+              <enumElement name="ventedLevel_High" value="1"/>
+              <enumElement name="ventedLevel_Medium" value="2"/>
+              <enumElement name="ventedLevel_Low" value="3"/>
+            </enumType>
+          </signal>
+          <signal signalName="failureSts">
+            <enumType name="Idt_failureSts1">
+              <enumElement name="failureSts_NotPresent" value="0"/>
+              <enumElement name="failureSts_Present" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="68" name="Rp_VentedSeatServiceCR_EvVentedSeatStsFR" physicalPath="Wrapper_HeatedSeats_HPC/Rp_VentedSeatServiceCR_EvVentedSeatStsFR" path="Rp_VentedSeatServiceCR_EvVentedSeatStsFR" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_VentedSeatSts_DT1">
+          <signal signalName="ventedLevel">
+            <enumType name="Idt_ventedLevel1">
+              <enumElement name="ventedLevel_Off" value="0"/>
+              <enumElement name="ventedLevel_High" value="1"/>
+              <enumElement name="ventedLevel_Medium" value="2"/>
+              <enumElement name="ventedLevel_Low" value="3"/>
+            </enumType>
+          </signal>
+          <signal signalName="failureSts">
+            <enumType name="Idt_failureSts1">
+              <enumElement name="failureSts_NotPresent" value="0"/>
+              <enumElement name="failureSts_Present" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="69" name="Rp_VentedSeatServiceCR_EvVentedSeatStsRR" physicalPath="Wrapper_HeatedSeats_HPC/Rp_VentedSeatServiceCR_EvVentedSeatStsRR" path="Rp_VentedSeatServiceCR_EvVentedSeatStsRR" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="Idt_VentedSeatSts_DT1">
+          <signal signalName="ventedLevel">
+            <enumType name="Idt_ventedLevel1">
+              <enumElement name="ventedLevel_Off" value="0"/>
+              <enumElement name="ventedLevel_High" value="1"/>
+              <enumElement name="ventedLevel_Medium" value="2"/>
+              <enumElement name="ventedLevel_Low" value="3"/>
+            </enumType>
+          </signal>
+          <signal signalName="failureSts">
+            <enumType name="Idt_failureSts1">
+              <enumElement name="failureSts_NotPresent" value="0"/>
+              <enumElement name="failureSts_Present" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="0" name="Pp_CentralHeatedSeatService_SelectNextSeatHeatLevel_SelectNextSeatHeatLevel_In" physicalPath="Wrapper_HeatedSeats_HPC/Client Function Mocks/call_Pp_CentralHeatedSeatService_SelectNextSeatHeatLevel/Pp_CentralHeatedSeatService_SelectNextSeatHeatLevel_SelectNextSeatHeatLevel_In" path="Client Function Mocks/call_Pp_CentralHeatedSeatService_SelectNextSeatHeatLevel/Pp_CentralHeatedSeatService_SelectNextSeatHeatLevel_SelectNextSeatHeatLevel_In" signalName="c_6A582">
+        <bus busType="non_virtual" busObjectName="Idt_SelectNextSeatHeatLevel_DT">
+          <signal signalName="DriverSeat">
+            <enumType name="Idt_DriverSeat">
+              <enumElement name="DriverSeat_Not_Pressed" value="0"/>
+              <enumElement name="DriverSeat_Pressed" value="1"/>
+            </enumType>
+          </signal>
+          <signal signalName="PassengerSeat">
+            <enumType name="Idt_PassengerSeat">
+              <enumElement name="seatPosition_Not_Pressed" value="0"/>
+              <enumElement name="seatPosition_Pressed" value="1"/>
+            </enumType>
+          </signal>
+          <signal signalName="RearLeft">
+            <enumType name="Idt_RearLeft">
+              <enumElement name="seatPosition_Not_Pressed" value="0"/>
+              <enumElement name="seatPosition_Pressed" value="1"/>
+            </enumType>
+          </signal>
+          <signal signalName="RearRight">
+            <enumType name="Idt_RearRight">
+              <enumElement name="seatPosition_Not_Pressed" value="0"/>
+              <enumElement name="seatPosition_Pressed" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="c_6A582"/>
+      </inport>
+      <inport portNumber="0" name="Rp_Driver_Side_Driver_Side_getter_get_Driver_Side_getter_value_Out" physicalPath="W_server_mock_HeatedSeats_HPC/Mock_Driver_Side_Rp_Driver_Side_Driver_Side_getter_get/Rp_Driver_Side_Driver_Side_getter_get_Driver_Side_getter_value_Out" path="W_server_mock_HeatedSeats_HPC/Mock_Driver_Side_Rp_Driver_Side_Driver_Side_getter_get/Rp_Driver_Side_Driver_Side_getter_get_Driver_Side_getter_value_Out" modelRef="model006" signalName="s_09BB3" initValue="0">
+        <enumType name="Idt_Driver_Side">
+          <enumElement name="Driver_Side_LeftSide" value="0"/>
+          <enumElement name="Driver_Side_RightSide" value="1"/>
+        </enumType>
+        <dataStoreMemory signalName="s_09BB3"/>
+      </inport>
+      <inport portNumber="0" name="Rp_Cooled_Seats_Cooled_Seats_getter_get_Cooled_Seats_getter_value_Out" physicalPath="W_server_mock_HeatedSeats_HPC/Mock_Cooled_Seats_Rp_Cooled_Seats_Cooled_Seats_getter_get/Rp_Cooled_Seats_Cooled_Seats_getter_get_Cooled_Seats_getter_value_Out" path="W_server_mock_HeatedSeats_HPC/Mock_Cooled_Seats_Rp_Cooled_Seats_Cooled_Seats_getter_get/Rp_Cooled_Seats_Cooled_Seats_getter_get_Cooled_Seats_getter_value_Out" modelRef="model006" signalName="s_49664" initValue="0">
+        <enumType name="Idt_Cooled_Seats">
+          <enumElement name="Cooled_Seats_Absent" value="0"/>
+          <enumElement name="Cooled_Seats_FrontSeats" value="1"/>
+          <enumElement name="Cooled_Seats_FrontAndRearSeats" value="2"/>
+          <enumElement name="Cooled_Seats_NotUsed" value="3"/>
+        </enumType>
+        <dataStoreMemory signalName="s_49664"/>
+      </inport>
+      <inport portNumber="0" name="Rp_Heated_Seats_Heated_Seats_getter_get_Heated_Seats_getter_value_Out" physicalPath="W_server_mock_HeatedSeats_HPC/Mock_Heated_Seats_Rp_Heated_Seats_Heated_Seats_getter_get/Rp_Heated_Seats_Heated_Seats_getter_get_Heated_Seats_getter_value_Out" path="W_server_mock_HeatedSeats_HPC/Mock_Heated_Seats_Rp_Heated_Seats_Heated_Seats_getter_get/Rp_Heated_Seats_Heated_Seats_getter_get_Heated_Seats_getter_value_Out" modelRef="model006" signalName="s_4B3AF" initValue="0">
+        <enumType name="Idt_Heated_Seats">
+          <enumElement name="Heated_Seats_Absent" value="0"/>
+          <enumElement name="Heated_Seats_FrontSeats" value="1"/>
+          <enumElement name="Heated_Seats_FrontAndRearSeats" value="2"/>
+          <enumElement name="Heated_Seats_NotUsed" value="3"/>
+        </enumType>
+        <dataStoreMemory signalName="s_4B3AF"/>
+      </inport>
+      <outport portNumber="0" name="Rp_HeatedSeatServiceCL_ReqSeatHeatLevel_ReqSeatHeatLevel_In" physicalPath="W_server_mock_HeatedSeats_HPC/Mock_HeatedSeatServiceCL_Rp_HeatedSeatServiceCL_ReqSeatHeatLevel/Rp_HeatedSeatServiceCL_ReqSeatHeatLevel_ReqSeatHeatLevel_In" path="W_server_mock_HeatedSeats_HPC/Mock_HeatedSeatServiceCL_Rp_HeatedSeatServiceCL_ReqSeatHeatLevel/Rp_HeatedSeatServiceCL_ReqSeatHeatLevel_ReqSeatHeatLevel_In" modelRef="model006" signalName="s_289E5">
+        <bus busType="non_virtual" busObjectName="Idt_SeatHeatReq_CL">
+          <signal signalName="SeatPosition_t">
+            <enumType name="Idt_SeatPosition_t_CL">
+              <enumElement name="RearLeft" value="2"/>
+            </enumType>
+          </signal>
+          <signal signalName="HeatLevel_t">
+            <enumType name="Idt_HeatLevel_t">
+              <enumElement name="HeatLevel_Off" value="0"/>
+              <enumElement name="HeatLevel_High" value="1"/>
+              <enumElement name="HeatLevel_Medium" value="2"/>
+              <enumElement name="HeatLevel_Low" value="3"/>
+            </enumType>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="s_289E5"/>
+      </outport>
+      <outport portNumber="0" name="Rp_VentedSeatServiceCL_SelectVentedSeatLevel_ventedSeatsLevel_In" physicalPath="W_server_mock_HeatedSeats_HPC/Mock_VentedSeatServiceCL_Rp_VentedSeatServiceCL_SelectVentedSeatLevel/Rp_VentedSeatServiceCL_SelectVentedSeatLevel_ventedSeatsLevel_In" path="W_server_mock_HeatedSeats_HPC/Mock_VentedSeatServiceCL_Rp_VentedSeatServiceCL_SelectVentedSeatLevel/Rp_VentedSeatServiceCL_SelectVentedSeatLevel_ventedSeatsLevel_In" modelRef="model006" signalName="s_514EF">
+        <bus busType="non_virtual" busObjectName="Idt_VentedSeatsLevel_DT_CL">
+          <signal signalName="seatPosition">
+            <enumType name="Idt_SeatPosition_t_CL">
+              <enumElement name="RearLeft" value="2"/>
+            </enumType>
+          </signal>
+          <signal signalName="ventedLevel">
+            <enumType name="Idt_ventedLevel">
+              <enumElement name="ventedLevel_Off" value="0"/>
+              <enumElement name="ventedLevel_High" value="1"/>
+              <enumElement name="ventedLevel_Medium" value="2"/>
+              <enumElement name="ventedLevel_Low" value="3"/>
+            </enumType>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="s_514EF"/>
+      </outport>
+      <outport portNumber="0" name="Rp_HeatedSeatServiceCR_ReqSeatHeatLevel_SeatHeatReq_In" physicalPath="W_server_mock_HeatedSeats_HPC/Mock_HeatedSeatServiceCR_Rp_HeatedSeatServiceCR_ReqSeatHeatLevel/Rp_HeatedSeatServiceCR_ReqSeatHeatLevel_SeatHeatReq_In" path="W_server_mock_HeatedSeats_HPC/Mock_HeatedSeatServiceCR_Rp_HeatedSeatServiceCR_ReqSeatHeatLevel/Rp_HeatedSeatServiceCR_ReqSeatHeatLevel_SeatHeatReq_In" modelRef="model006" signalName="s_D2EA4">
+        <bus busType="non_virtual" busObjectName="Idt_SeatHeatReq_CR">
+          <signal signalName="SeatPosition_t">
+            <enumType name="Idt_SeatPosition_t_CR">
+              <enumElement name="FrontLeft" value="0"/>
+              <enumElement name="FrontRight" value="1"/>
+              <enumElement name="RearRight" value="3"/>
+            </enumType>
+          </signal>
+          <signal signalName="HeatLevel_t">
+            <enumType name="Idt_HeatLevel_t">
+              <enumElement name="HeatLevel_Off" value="0"/>
+              <enumElement name="HeatLevel_High" value="1"/>
+              <enumElement name="HeatLevel_Medium" value="2"/>
+              <enumElement name="HeatLevel_Low" value="3"/>
+            </enumType>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="s_D2EA4"/>
+      </outport>
+      <outport portNumber="0" name="Rp_VentedSeatServiceCR_SelectVentedSeatLevel_ventedSeatsLevel_In" physicalPath="W_server_mock_HeatedSeats_HPC/Mock_VentedSeatServiceCR_Rp_VentedSeatServiceCR_SelectVentedSeatLevel/Rp_VentedSeatServiceCR_SelectVentedSeatLevel_ventedSeatsLevel_In" path="W_server_mock_HeatedSeats_HPC/Mock_VentedSeatServiceCR_Rp_VentedSeatServiceCR_SelectVentedSeatLevel/Rp_VentedSeatServiceCR_SelectVentedSeatLevel_ventedSeatsLevel_In" modelRef="model006" signalName="s_F1FD1">
+        <bus busType="non_virtual" busObjectName="Idt_VentedSeatsLevel_DT_CR">
+          <signal signalName="seatPosition">
+            <enumType name="Idt_SeatPosition_t_CR">
+              <enumElement name="FrontLeft" value="0"/>
+              <enumElement name="FrontRight" value="1"/>
+              <enumElement name="RearRight" value="3"/>
+            </enumType>
+          </signal>
+          <signal signalName="ventedLevel">
+            <enumType name="Idt_ventedLevel">
+              <enumElement name="ventedLevel_Off" value="0"/>
+              <enumElement name="ventedLevel_High" value="1"/>
+              <enumElement name="ventedLevel_Medium" value="2"/>
+              <enumElement name="ventedLevel_Low" value="3"/>
+            </enumType>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="s_F1FD1"/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.9" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T153040_14848\tmp_AA_Stellantis_HeatedSeats\HeatedSeats_HPC.slx" creationDate="2024-10-30T13:37:30" modificationDate="2024-10-30T15:49:14" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T153040_14848\tmp_AA_Stellantis_HeatedSeats\init_Wrapper_HeatedSeats_HPC.m"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T153040_14848\tmp_AA_Stellantis_HeatedSeats\W_client_HeatedSeats_HPC.slx" creationDate="2024-11-01T08:37:04" modificationDate="2024-11-01T08:37:04" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T153040_14848\tmp_AA_Stellantis_HeatedSeats\init_Wrapper_HeatedSeats_HPC.m"/>
+  <model modelID="model004" modelKind="model_ref" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T153040_14848\tmp_AA_Stellantis_HeatedSeats\W_server_HeatedSeats_HPC.slx" creationDate="2024-11-01T08:37:01" modificationDate="2024-11-01T08:37:03" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T153040_14848\tmp_AA_Stellantis_HeatedSeats\init_Wrapper_HeatedSeats_HPC.m"/>
+  <model modelID="model005" modelKind="model_ref" modelVersion="1.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T153040_14848\tmp_AA_Stellantis_HeatedSeats\W_integ_HeatedSeats_HPC.slx" creationDate="2024-11-01T08:37:01" modificationDate="2024-11-01T08:37:07" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T153040_14848\tmp_AA_Stellantis_HeatedSeats\init_Wrapper_HeatedSeats_HPC.m"/>
+  <model modelID="model006" modelKind="model_ref" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T153040_14848\tmp_AA_Stellantis_HeatedSeats\W_server_mock_HeatedSeats_HPC.slx" creationDate="2024-11-01T08:36:56" modificationDate="2024-11-01T08:36:59" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T153040_14848\tmp_AA_Stellantis_HeatedSeats\init_Wrapper_HeatedSeats_HPC.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

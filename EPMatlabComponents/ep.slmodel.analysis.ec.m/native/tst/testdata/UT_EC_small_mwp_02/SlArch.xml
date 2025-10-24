@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_small_mwp_02\ut_results\AddModelInfo.xml" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_small_mwp_02\main_model.slx" modelCreationDate="2022-05-06T15:09:32" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_small_mwp_02\main_model.slx" creationDate="2022-05-06T15:09:32" modificationDate="2024-09-12T19:13:21">
+    <subsystem subsysID="ss1" physicalPath="main_model" path="" sampleTime="0.2" name="main_model" scopeKind="SUT" kind="subsystem">
+      <parameter name="A" path="sub_X/Constant" physicalPath="sub_model/Constant" modelRef="model002" origin="explicit_param" workspace="A" initValue="3.0">
+        <int32/>
+        <usageContext path="sub_X/Constant" physicalPath="sub_model/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="sub_model"/>
+      </parameter>
+      <parameter name="P" path="sub_X" physicalPath="main_model/sub_X" origin="explicit_param" workspace="P" initValue="777.0">
+        <int32/>
+        <usageContext path="sub_X" physicalPath="main_model/sub_X" simulinkBlockType="ModelReference" blockAttribute="ParameterArgumentValuesAsString"/>
+        <source kind="ModelWorkspace" file="main_model"/>
+      </parameter>
+      <parameter name="Q" path="sub_X" physicalPath="main_model/sub_X" origin="explicit_param" workspace="Q" initValue="-333.0">
+        <int32/>
+        <usageContext path="sub_X" physicalPath="main_model/sub_X" simulinkBlockType="ModelReference" blockAttribute="ParameterArgumentValuesAsString"/>
+        <source kind="ModelWorkspace" file="main_model"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="main_model/Out1" path="Out1" signalName="ou1">
+        <int32/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="sub_model" path="sub_X" sampleTime="0.2" name="sub_X" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <parameter name="A" path="sub_X/Constant" physicalPath="sub_model/Constant" modelRef="model002" origin="explicit_param" workspace="A" initValue="3.0">
+        <int32/>
+        <usageContext path="sub_X/Constant" physicalPath="sub_model/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="sub_model"/>
+      </parameter>
+      <parameter name="B" path="sub_X/Constant1" physicalPath="sub_model/Constant1" modelRef="model002" origin="explicit_param" workspace="B" initValue="5.0">
+        <int32/>
+        <usageContext path="sub_X/Constant1" physicalPath="sub_model/Constant1" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="sub_model"/>
+      </parameter>
+      <parameter name="C" path="sub_X/Constant2" physicalPath="sub_model/Constant2" modelRef="model002" origin="explicit_param" workspace="C" initValue="7.0">
+        <int32/>
+        <usageContext path="sub_X/Constant2" physicalPath="sub_model/Constant2" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="sub_model"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sub_model/Out1" path="sub_X/Out1" modelRef="model002" signalName="out_a">
+        <int32/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_small_mwp_02\sub_model.slx" creationDate="2022-05-06T11:47:02" modificationDate="2024-09-12T19:13:21"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

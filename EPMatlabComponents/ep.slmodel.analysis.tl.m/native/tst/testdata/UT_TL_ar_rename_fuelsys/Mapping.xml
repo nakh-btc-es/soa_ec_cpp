@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="TL_Fuelsys"/>
+    <Architecture id="id1" name="TL_Fuelsys [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController"/>
+      <Path refId="id1" path="TL_FuelRateController.c:1:TL_FuelRateController"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="RpRawSensors."/>
+        <Path refId="id1" path="Sc1_rawThrottle"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.rawThrottle"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="RpRawSensors."/>
+        <Path refId="id1" path="Sc1_rawSpeed"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.rawSpeed"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="RpRawSensors."/>
+        <Path refId="id1" path="Sc1_rawEgo"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.rawEgo"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="RpRawSensors."/>
+        <Path refId="id1" path="Sc1_rawMap"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.rawMap"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="PpFuelRate."/>
+        <Path refId="id1" path="Sc1_PpFuelRate_"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_SensorCorrection/Pressure Estimation&#10;Interpolation (n-D)&#10;using PreLook-Up/PressEst"/>
+        <Path refId="id1" path="PressEst_z_table"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_SensorCorrection/Speed Estimation&#10;Interpolation (n-D)&#10;using PreLook-Up/SpeedEst"/>
+        <Path refId="id1" path="SpeedEst_z_table"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_SensorCorrection/Throttle Estimation&#10;Interpolation (n-D)&#10;using PreLook-Up/ThrotEst"/>
+        <Path refId="id1" path="ThrotEst_z_table"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysController/Run_AirflowCalculation/Pumping Constant/pumpCon"/>
+        <Path refId="id1" path="pumpCon_z_table"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_SensorCorrection/Throttle Index Search/ThrottleAxis"/>
+        <Path refId="id1" path="Rte_CalPrm_AxisParams_ThrottleAxis"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_SensorCorrection/Map Index Search/FuelsysSensors/AxisParams/MapAxis"/>
+        <Path refId="id1" path="Rte_CalPrm_AxisParams_MapAxis"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_SensorCorrection/Speed Index Search/FuelsysSensors/AxisParams/SpeedAxis"/>
+        <Path refId="id1" path="Rte_CalPrm_AxisParams_SpeedAxis"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysController/Run_AirflowCalculation/Map Index Search/FuelsysController/AxisData/MapAxis"/>
+        <Path refId="id1" path="Rte_CalPrm_AxisData_MapAxis"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysController/Run_AirflowCalculation/Speed Index Search/FuelsysController/AxisData/SpeedAxis"/>
+        <Path refId="id1" path="Rte_CalPrm_AxisData_SpeedAxis"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysController/Run_FuelRateCalcRich/F|A Rich/FA_Rich"/>
+        <Path refId="id1" path="Rte_SharedCal_FuelsysController_FA_Rich"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysController/Run_FuelRateCalcNormal/F|A Norm/FA_Normal"/>
+        <Path refId="id1" path="Rte_SharedCal_FuelsysController_FA_Normal"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_DetectSensorFailures/Irv_FailEgo.(1)"/>
+        <Path refId="id1" path="Rte_Irv_FuelsysSensors_FailEgo"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_DetectSensorFailures/Irv_FailPress.(1)"/>
+        <Path refId="id1" path="Rte_Irv_FuelsysSensors_FailMap"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_DetectSensorFailures/Irv_FailSpeed.(1)"/>
+        <Path refId="id1" path="Rte_Irv_FuelsysSensors_FailSpeed"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_DetectSensorFailures/Irv_FailThrottle.(1)"/>
+        <Path refId="id1" path="Rte_Irv_FuelsysSensors_FailThrottle"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysController/Run_OnEntryDisable/NumOfDisablings(1)"/>
+        <Path refId="id1" path="NumOfDisablings"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_DetectSensorFailures/DetectSensorFailures/fail_THROT"/>
+        <Path refId="id1" path="fail_THROT"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_DetectSensorFailures/DetectSensorFailures/fail_SPEED"/>
+        <Path refId="id1" path="fail_SPEED"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_DetectSensorFailures/DetectSensorFailures/fail_O2"/>
+        <Path refId="id1" path="fail_O2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_DetectSensorFailures/DetectSensorFailures/fail_PRESS"/>
+        <Path refId="id1" path="fail_PRESS"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_DetectSensorFailures/DetectSensorFailures/fuel_mode"/>
+        <Path refId="id1" path="fuel_mode"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysController/Run_AirflowCalculation"/>
+      <Path refId="id1" path="TL_FuelRateController.c:1:TL_FuelRateController/btc_yyy_FuelsysController.c:1:Run_AirflowCalculation"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="CorrectedSensors."/>
+        <Path refId="id1" path="Rte_FuelsysController_RpCorrectedSensors_Sensors.Throttle"/>
+        <SignalMapping>
+          <Path refId="id0" path=".throttle angle.c_Throttle"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="CorrectedSensors."/>
+        <Path refId="id1" path="Rte_FuelsysController_RpCorrectedSensors_Sensors.Speed"/>
+        <SignalMapping>
+          <Path refId="id0" path=".throttle angle.c_Speed"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="CorrectedSensors."/>
+        <Path refId="id1" path="Rte_FuelsysController_RpCorrectedSensors_Sensors.Ego"/>
+        <SignalMapping>
+          <Path refId="id0" path=".throttle angle.c_Ego"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="CorrectedSensors."/>
+        <Path refId="id1" path="Rte_FuelsysController_RpCorrectedSensors_Sensors.Map"/>
+        <SignalMapping>
+          <Path refId="id0" path=".throttle angle.c_Map"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Estimated&#10;Airflow."/>
+        <Path refId="id1" path="Rte_Irv_FuelsysController_EstimatedAirflow"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysController/Run_AirflowCalculation/Pumping Constant/pumpCon"/>
+        <Path refId="id1" path="pumpCon_z_table"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysController/Run_AirflowCalculation/Map Index Search/FuelsysController/AxisData/MapAxis"/>
+        <Path refId="id1" path="Rte_CalPrm_AxisData_MapAxis"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysController/Run_AirflowCalculation/Speed Index Search/FuelsysController/AxisData/SpeedAxis"/>
+        <Path refId="id1" path="Rte_CalPrm_AxisData_SpeedAxis"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysController/Run_AirflowCorrection"/>
+      <Path refId="id1" path="TL_FuelRateController.c:1:TL_FuelRateController/btc_yyy_FuelsysController.c:1:Run_AirflowCorrection"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="CorrectedSensors."/>
+        <Path refId="id1" path="Rte_FuelsysController_RpCorrectedSensors_Sensors.Throttle"/>
+        <SignalMapping>
+          <Path refId="id0" path=".throttle angle.c_Throttle"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="CorrectedSensors."/>
+        <Path refId="id1" path="Rte_FuelsysController_RpCorrectedSensors_Sensors.Speed"/>
+        <SignalMapping>
+          <Path refId="id0" path=".throttle angle.c_Speed"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="CorrectedSensors."/>
+        <Path refId="id1" path="Rte_FuelsysController_RpCorrectedSensors_Sensors.Ego"/>
+        <SignalMapping>
+          <Path refId="id0" path=".throttle angle.c_Ego"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="CorrectedSensors."/>
+        <Path refId="id1" path="Rte_FuelsysController_RpCorrectedSensors_Sensors.Map"/>
+        <SignalMapping>
+          <Path refId="id0" path=".throttle angle.c_Map"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Airflow&#10;Correction."/>
+        <Path refId="id1" path="Rte_Irv_FuelsysController_AirflowCorrection"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysController/Run_FuelRateCalcNormal"/>
+      <Path refId="id1" path="TL_FuelRateController.c:1:TL_FuelRateController/btc_yyy_FuelsysController.c:1:Run_FuelRateCalcNormal"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Estimated&#10;Airflow."/>
+        <Path refId="id1" path="Rte_Irv_FuelsysController_EstimatedAirflow"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Airflow&#10;Correction."/>
+        <Path refId="id1" path="Rte_Irv_FuelsysController_AirflowCorrection"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="FuelRate."/>
+        <Path refId="id1" path="Rte_FuelsysController_PpFuelRate_FuelRate"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysController/Run_FuelRateCalcNormal/F|A Norm/FA_Normal"/>
+        <Path refId="id1" path="Rte_SharedCal_FuelsysController_FA_Normal"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysController/Run_FuelRateCalcRich"/>
+      <Path refId="id1" path="TL_FuelRateController.c:1:TL_FuelRateController/btc_yyy_FuelsysController.c:1:Run_FuelRateCalcRich"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Estimated&#10;Airflow."/>
+        <Path refId="id1" path="Rte_Irv_FuelsysController_EstimatedAirflow"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Airflow&#10;Correction."/>
+        <Path refId="id1" path="Rte_Irv_FuelsysController_AirflowCorrection"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="FuelRate."/>
+        <Path refId="id1" path="Rte_FuelsysController_PpFuelRate_FuelRate"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysController/Run_FuelRateCalcRich/F|A Rich/FA_Rich"/>
+        <Path refId="id1" path="Rte_SharedCal_FuelsysController_FA_Rich"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysController/Run_OnEntryDisable"/>
+      <Path refId="id1" path="TL_FuelRateController.c:1:TL_FuelRateController/btc_yyy_FuelsysController.c:1:Run_OnEntryDisable"/>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysController/Run_OnEntryDisable/NumOfDisablings(1)"/>
+        <Path refId="id1" path="NumOfDisablings"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_DetectSensorFailures"/>
+      <Path refId="id1" path="TL_FuelRateController.c:1:TL_FuelRateController/btc_yyy_FuelsysSensors.c:1:Run_DetectSensorFailures"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Throttle."/>
+        <Path refId="id1" path="Rte_FuelsysSensors_RpRawSensors_Throttle"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Speed."/>
+        <Path refId="id1" path="Rte_FuelsysSensors_RpRawSensors_Speed"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Ego."/>
+        <Path refId="id1" path="Rte_FuelsysSensors_RpRawSensors_Ego"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Map."/>
+        <Path refId="id1" path="Rte_FuelsysSensors_RpRawSensors_Map"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Irv_FailThrottle."/>
+        <Path refId="id1" path="Rte_Irv_FuelsysSensors_FailThrottle"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Irv_FailSpeed."/>
+        <Path refId="id1" path="Rte_Irv_FuelsysSensors_FailSpeed"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Irv_FailEgo."/>
+        <Path refId="id1" path="Rte_Irv_FuelsysSensors_FailEgo"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Irv_FailPress."/>
+        <Path refId="id1" path="Rte_Irv_FuelsysSensors_FailMap"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Rte_Switch&#10;FuelMode"/>
+        <Path refId="id1" path="PpFuelMode_FuelMode"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_DetectSensorFailures/DetectSensorFailures/fail_THROT"/>
+        <Path refId="id1" path="fail_THROT"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_DetectSensorFailures/DetectSensorFailures/fail_SPEED"/>
+        <Path refId="id1" path="fail_SPEED"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_DetectSensorFailures/DetectSensorFailures/fail_O2"/>
+        <Path refId="id1" path="fail_O2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_DetectSensorFailures/DetectSensorFailures/fail_PRESS"/>
+        <Path refId="id1" path="fail_PRESS"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_DetectSensorFailures/DetectSensorFailures/fuel_mode"/>
+        <Path refId="id1" path="fuel_mode"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_SensorCorrection"/>
+      <Path refId="id1" path="TL_FuelRateController.c:1:TL_FuelRateController/btc_yyy_FuelsysSensors.c:1:Run_SensorCorrection"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Throttle."/>
+        <Path refId="id1" path="Rte_FuelsysSensors_RpRawSensors_Throttle"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Speed."/>
+        <Path refId="id1" path="Rte_FuelsysSensors_RpRawSensors_Speed"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Ego."/>
+        <Path refId="id1" path="Rte_FuelsysSensors_RpRawSensors_Ego"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Map."/>
+        <Path refId="id1" path="Rte_FuelsysSensors_RpRawSensors_Map"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Irv_FailThrottle."/>
+        <Path refId="id1" path="Rte_Irv_FuelsysSensors_FailThrottle"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Irv_FailSpeed."/>
+        <Path refId="id1" path="Rte_Irv_FuelsysSensors_FailSpeed"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Irv_FailEgo."/>
+        <Path refId="id1" path="Rte_Irv_FuelsysSensors_FailEgo"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Irv_FailMap"/>
+        <Path refId="id1" path="Rte_Irv_FuelsysSensors_FailMap"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="CorrectedSensors."/>
+        <Path refId="id1" path="Rte_FuelsysSensors_PpCorrectedSensors_Sensors.Throttle"/>
+        <SignalMapping>
+          <Path refId="id0" path=".CorrectedSensors.c_Throttle"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="CorrectedSensors."/>
+        <Path refId="id1" path="Rte_FuelsysSensors_PpCorrectedSensors_Sensors.Speed"/>
+        <SignalMapping>
+          <Path refId="id0" path=".CorrectedSensors.c_Speed"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="CorrectedSensors."/>
+        <Path refId="id1" path="Rte_FuelsysSensors_PpCorrectedSensors_Sensors.Ego"/>
+        <SignalMapping>
+          <Path refId="id0" path=".CorrectedSensors.c_Ego"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="CorrectedSensors."/>
+        <Path refId="id1" path="Rte_FuelsysSensors_PpCorrectedSensors_Sensors.Map"/>
+        <SignalMapping>
+          <Path refId="id0" path=".CorrectedSensors.c_Map"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_SensorCorrection/Pressure Estimation&#10;Interpolation (n-D)&#10;using PreLook-Up/PressEst"/>
+        <Path refId="id1" path="PressEst_z_table"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_SensorCorrection/Speed Estimation&#10;Interpolation (n-D)&#10;using PreLook-Up/SpeedEst"/>
+        <Path refId="id1" path="SpeedEst_z_table"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_SensorCorrection/Throttle Estimation&#10;Interpolation (n-D)&#10;using PreLook-Up/ThrotEst"/>
+        <Path refId="id1" path="ThrotEst_z_table"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_SensorCorrection/Throttle Index Search/ThrottleAxis"/>
+        <Path refId="id1" path="Rte_CalPrm_AxisParams_ThrottleAxis"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_SensorCorrection/Map Index Search/FuelsysSensors/AxisParams/MapAxis"/>
+        <Path refId="id1" path="Rte_CalPrm_AxisParams_MapAxis"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="TL_FuelRateController/Subsystem/TL_FuelRateController/FuelsysSensors/Run_SensorCorrection/Speed Index Search/FuelsysSensors/AxisParams/SpeedAxis"/>
+        <Path refId="id1" path="Rte_CalPrm_AxisParams_SpeedAxis"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

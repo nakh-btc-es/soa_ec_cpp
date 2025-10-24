@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20200911T073210_1920\tmp_ut_ep_1912\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20200911T073210_1920\tmp_ut_ep_1912\DATA.m" modelVersion="1.30" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200911T073210_1920\tmp_ut_ep_1912\Copy_of_BUSdemo.slx" modelCreationDate="2018-08-21T05:20:46" creator="DELL">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.30" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200911T073210_1920\tmp_ut_ep_1912\Copy_of_BUSdemo.slx" creationDate="2018-08-21T05:20:46" modificationDate="2020-09-10T15:37:19" initScript="C:\Users\developer\AppData\Local\Temp\ut20200911T073210_1920\tmp_ut_ep_1912\DATA.m">
+    <subsystem subsysID="ss1" physicalPath="Copy_of_BUSdemo" path="" sampleTime="0.01" name="Copy_of_BUSdemo" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="A" physicalPath="Copy_of_BUSdemo/A" path="A" signalName="A">
+        <uint8/>
+      </inport>
+      <inport portNumber="2" name="B" physicalPath="Copy_of_BUSdemo/B" path="B" signalName="B">
+        <uint8/>
+      </inport>
+      <inport portNumber="3" name="virtualbusIN1" physicalPath="Copy_of_BUSdemo/virtualbusIN1" path="virtualbusIN1" signalName="virtualbusIN1">
+        <bus busType="non_virtual" busObjectName="virtualbusIN">
+          <signal signalName="C">
+            <uint8/>
+          </signal>
+          <signal signalName="D">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="4" name="nonvirtualbusIN" physicalPath="Copy_of_BUSdemo/nonvirtualbusIN" path="nonvirtualbusIN" signalName="nonvirtualbusIN">
+        <bus busType="non_virtual" busObjectName="nonvirtualbusIN1">
+          <signal signalName="E">
+            <uint8/>
+          </signal>
+          <signal signalName="F">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="virtualbusOUT" physicalPath="Copy_of_BUSdemo/virtualbusOUT" path="virtualbusOUT" signalName="virtualbusOUT">
+        <bus busType="non_virtual" busObjectName="virtualbusOUT">
+          <signal signalName="A">
+            <uint8/>
+          </signal>
+          <signal signalName="B">
+            <uint8/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="2" name="C" physicalPath="Copy_of_BUSdemo/C" path="C" signalName="C">
+        <uint8/>
+      </outport>
+      <outport portNumber="3" name="D" physicalPath="Copy_of_BUSdemo/D" path="D" signalName="D">
+        <uint8/>
+      </outport>
+      <outport portNumber="4" name="E" physicalPath="Copy_of_BUSdemo/E" path="E" signalName="E">
+        <uint8/>
+      </outport>
+      <outport portNumber="5" name="F" physicalPath="Copy_of_BUSdemo/F" path="F" signalName="F">
+        <uint8/>
+      </outport>
+      <outport portNumber="6" name="nonvirtualbusOUT" physicalPath="Copy_of_BUSdemo/nonvirtualbusOUT" path="nonvirtualbusOUT" signalName="nonvirtualbusOUT">
+        <bus busType="non_virtual" busObjectName="nonvirtualbusOUT1">
+          <signal signalName="F">
+            <uint8/>
+          </signal>
+          <signal signalName="E">
+            <uint8/>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

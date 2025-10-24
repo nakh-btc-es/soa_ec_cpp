@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_min_max_00\min_max_init.m" modelVersion="1.18" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_min_max_00\min_max_sl.mdl" modelCreationDate="2015-11-02T16:59:55" creator="Alexander Hornstein">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.18" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_min_max_00\min_max_sl.mdl" creationDate="2015-11-02T16:59:55" modificationDate="2024-09-11T18:20:39" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_min_max_00\min_max_init.m">
+    <subsystem subsysID="ss1" physicalPath="min_max_sl/top_A" path="top_A" sampleTime="0.02" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="min_max_sl/top_A/In1" path="top_A/In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="min_max_sl/top_A/In2" path="top_A/In2">
+        <double min="-1.5"/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="min_max_sl/top_A/In3" path="top_A/In3">
+        <double max="1.7"/>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="min_max_sl/top_A/In4" path="top_A/In4">
+        <double min="0.4" max="2.3"/>
+      </inport>
+      <inport portNumber="5" name="In5" physicalPath="min_max_sl/top_A/In5" path="top_A/In5">
+        <double min="-6.3" max="2.04939015319192"/>
+      </inport>
+      <inport portNumber="6" name="In6" physicalPath="min_max_sl/top_A/In6" path="top_A/In6">
+        <double min="-9.99" max="9.99"/>
+      </inport>
+      <inport portNumber="7" name="In7" physicalPath="min_max_sl/top_A/In7" path="top_A/In7">
+        <double min="-4.245" max="4.245"/>
+      </inport>
+      <parameter name="myVar" path="top_A/In5" physicalPath="min_max_sl/top_A/In5" origin="explicit_param" workspace="myVar" initValue="7.3">
+        <double/>
+        <usageContext path="top_A/In5" physicalPath="min_max_sl/top_A/In5" simulinkBlockType="Inport" blockAttribute="OutMax"/>
+        <usageContext path="top_A/Out5" physicalPath="min_max_sl/top_A/Out5" simulinkBlockType="Outport" blockAttribute="OutMin"/>
+        <usageContext path="top_A/Out6" physicalPath="min_max_sl/top_A/Out6" simulinkBlockType="Outport" blockAttribute="OutMax"/>
+      </parameter>
+      <parameter name="myOtherVar" path="top_A/Out6" physicalPath="min_max_sl/top_A/Out6" origin="explicit_param" workspace="myOtherVar" initValue="-9.99">
+        <double/>
+        <usageContext path="top_A/Out6" physicalPath="min_max_sl/top_A/Out6" simulinkBlockType="Outport" blockAttribute="OutMax"/>
+        <usageContext path="top_A/In6" physicalPath="min_max_sl/top_A/In6" simulinkBlockType="Inport" blockAttribute="OutMin"/>
+        <usageContext path="top_A/In6" physicalPath="min_max_sl/top_A/In6" simulinkBlockType="Inport" blockAttribute="OutMax"/>
+        <source kind="ModelWorkspace" file="min_max_sl"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="min_max_sl/top_A/Out1" path="top_A/Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="min_max_sl/top_A/Out2" path="top_A/Out2">
+        <double min="-1.5"/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="min_max_sl/top_A/Out3" path="top_A/Out3">
+        <double max="1.7"/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="min_max_sl/top_A/Out4" path="top_A/Out4">
+        <double min="0.4" max="2.3"/>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="min_max_sl/top_A/Out5" path="top_A/Out5">
+        <double min="-6.3" max="2.04939015319192"/>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="min_max_sl/top_A/Out6" path="top_A/Out6">
+        <double min="-9.99" max="9.99"/>
+      </outport>
+      <outport portNumber="7" name="Out7" physicalPath="min_max_sl/top_A/Out7" path="top_A/Out7">
+        <double min="-4.245" max="4.245"/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

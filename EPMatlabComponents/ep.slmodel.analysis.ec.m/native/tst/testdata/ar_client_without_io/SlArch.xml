@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20220124T154629_2816\tmp_ar_client_without_io\ut_results\AddModelInfo.xml" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20220124T154629_2816\tmp_ar_client_without_io\Wrapper_ar_client_without_io.slx" modelCreationDate="2022-01-24T15:46:38" creator="developer">
+  <toolInfo name="Matlab" release="(R2019a)" version="9.6" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2019a)" version="9.3" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20220124T154629_2816\tmp_ar_client_without_io\Wrapper_ar_client_without_io.slx" creationDate="2022-01-24T15:46:38" modificationDate="2022-01-24T15:46:42">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_ar_client_without_io" path="" sampleTime="0.01" name="Wrapper_ar_client_without_io" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="ref1" physicalPath="Wrapper_ar_client_without_io/ref1" path="ref1">
+        <single/>
+      </inport>
+      <outport portNumber="1" name="u1" physicalPath="Wrapper_ar_client_without_io/u1" path="u1">
+        <single/>
+      </outport>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="ar_client_without_io/sub_A" path="ar_client_without_io/ar_client_without_io/sub_A" sampleTime="0.01" name="sub_A" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="ref" physicalPath="ar_client_without_io/sub_A/ref" path="ar_client_without_io/ar_client_without_io/sub_A/ref" modelRef="model002">
+        <single/>
+      </inport>
+      <outport portNumber="1" name="u" physicalPath="ar_client_without_io/sub_A/u" path="ar_client_without_io/ar_client_without_io/sub_A/u" modelRef="model002">
+        <single/>
+      </outport>
+      <slfunc_caller path="ar_client_without_io/ar_client_without_io/sub_A/Function Caller" pathCaller="ar_client_without_io/sub_A/Function Caller" pathFunction="Wrapper_ar_client_without_io/Mock_clearGlobalVar"/>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.7" modelPath="C:\Users\developer\AppData\Local\Temp\ut20220124T154629_2816\tmp_ar_client_without_io\ar_client_without_io.slx" creationDate="2021-07-30T10:59:22" modificationDate="2022-01-24T14:58:30"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

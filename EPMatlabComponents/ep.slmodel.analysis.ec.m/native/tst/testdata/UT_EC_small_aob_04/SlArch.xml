@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20201001T154738_19520\tmp_small_aob_04\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20201001T154738_19520\tmp_small_aob_04\init_model.m" modelVersion="1.21" modelPath="C:\Users\developer\AppData\Local\Temp\ut20201001T154738_19520\tmp_small_aob_04\small_aob.slx" modelCreationDate="2020-09-17T12:46:11" creator="developer">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.21" modelPath="C:\Users\developer\AppData\Local\Temp\ut20201001T154738_19520\tmp_small_aob_04\small_aob.slx" creationDate="2020-09-17T12:46:11" modificationDate="2020-10-01T15:48:18" initScript="C:\Users\developer\AppData\Local\Temp\ut20201001T154738_19520\tmp_small_aob_04\init_model.m">
+    <subsystem subsysID="ss1" physicalPath="small_aob" path="" sampleTime="0.1" name="small_aob" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="small_aob/In1" path="In1" signalName="sig_in1">
+        <bus busType="non_virtual" busObjectName="HighScalarLowScalar">
+          <signal signalName="x">
+            <bus busType="non_virtual" busObjectName="LowScalar">
+              <signal signalName="a">
+                <uint8 max="10"/>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="small_aob/In2" path="In2" signalName="sig_in2">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HighScalarLowScalar">
+            <signal signalName="x">
+              <bus busType="non_virtual" busObjectName="LowScalar">
+                <signal signalName="a">
+                  <uint8 max="10"/>
+                </signal>
+                <signal signalName="b">
+                  <boolean/>
+                </signal>
+              </bus>
+            </signal>
+            <signal signalName="b">
+              <boolean/>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="small_aob/In3" path="In3" signalName="sig_in3">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighScalarLowScalar">
+              <signal signalName="x">
+                <bus busType="non_virtual" busObjectName="LowScalar">
+                  <signal signalName="a">
+                    <uint8 max="10"/>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="small_aob/In4" path="In4" signalName="sig_in4">
+        <bus busType="non_virtual" busObjectName="HighScalarLowMatrix">
+          <signal signalName="x">
+            <bus busType="non_virtual" busObjectName="LowMatrix">
+              <signal signalName="a">
+                <array size="3" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <uint8 max="10"/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <boolean/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="5" name="In5" physicalPath="small_aob/In5" path="In5" signalName="sig_in5">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighScalarLowMatrix">
+              <signal signalName="x">
+                <bus busType="non_virtual" busObjectName="LowMatrix">
+                  <signal signalName="a">
+                    <array size="3" startIndex="1">
+                      <array size="2" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <array size="1" startIndex="1">
+                      <array size="3" startIndex="1">
+                        <boolean/>
+                      </array>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="6" name="In6" physicalPath="small_aob/In6" path="In6" signalName="sig_in6">
+        <bus busType="non_virtual" busObjectName="HighArrayLowArray">
+          <signal signalName="x">
+            <array size="4" startIndex="1">
+              <bus busType="non_virtual" busObjectName="LowArray">
+                <signal signalName="a">
+                  <array size="3" startIndex="1">
+                    <uint8 max="10"/>
+                  </array>
+                </signal>
+                <signal signalName="b">
+                  <array size="2" startIndex="1">
+                    <boolean/>
+                  </array>
+                </signal>
+              </bus>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="7" name="In7" physicalPath="small_aob/In7" path="In7" signalName="sig_in7">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighArrayLowMatrix">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowMatrix">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <array size="2" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <array size="1" startIndex="1">
+                        <array size="3" startIndex="1">
+                          <boolean/>
+                        </array>
+                      </array>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="8" name="In8" physicalPath="small_aob/In8" path="In8" signalName="sig_in8">
+        <bus busType="non_virtual" busObjectName="HighMatrixLowMatrix">
+          <signal signalName="x">
+            <array size="2" startIndex="1">
+              <array size="3" startIndex="1">
+                <bus busType="non_virtual" busObjectName="LowMatrix">
+                  <signal signalName="a">
+                    <array size="3" startIndex="1">
+                      <array size="2" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <array size="1" startIndex="1">
+                      <array size="3" startIndex="1">
+                        <boolean/>
+                      </array>
+                    </array>
+                  </signal>
+                </bus>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="3" startIndex="1">
+                <boolean/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="9" name="In9" physicalPath="small_aob/In9" path="In9" signalName="sig_in9">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighMatrixLowMatrix">
+              <signal signalName="x">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowMatrix">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <array size="2" startIndex="1">
+                            <uint8 max="10"/>
+                          </array>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <array size="1" startIndex="1">
+                          <array size="3" startIndex="1">
+                            <boolean/>
+                          </array>
+                        </array>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <array size="3" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <boolean/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="small_aob/Out1" path="Out1" signalName="sig_out1">
+        <bus busType="non_virtual" busObjectName="HighScalarLowScalar">
+          <signal signalName="x">
+            <bus busType="non_virtual" busObjectName="LowScalar">
+              <signal signalName="a">
+                <uint8 max="10"/>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="small_aob/Out2" path="Out2" signalName="sig_out2">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HighScalarLowScalar">
+            <signal signalName="x">
+              <bus busType="non_virtual" busObjectName="LowScalar">
+                <signal signalName="a">
+                  <uint8 max="10"/>
+                </signal>
+                <signal signalName="b">
+                  <boolean/>
+                </signal>
+              </bus>
+            </signal>
+            <signal signalName="b">
+              <boolean/>
+            </signal>
+          </bus>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="small_aob/Out3" path="Out3" signalName="sig_out3">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighScalarLowScalar">
+              <signal signalName="x">
+                <bus busType="non_virtual" busObjectName="LowScalar">
+                  <signal signalName="a">
+                    <uint8 max="10"/>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="small_aob/Out4" path="Out4" signalName="sig_out4">
+        <bus busType="non_virtual" busObjectName="HighScalarLowMatrix">
+          <signal signalName="x">
+            <bus busType="non_virtual" busObjectName="LowMatrix">
+              <signal signalName="a">
+                <array size="3" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <uint8 max="10"/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <boolean/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="small_aob/Out5" path="Out5" signalName="sig_out5">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighScalarLowMatrix">
+              <signal signalName="x">
+                <bus busType="non_virtual" busObjectName="LowMatrix">
+                  <signal signalName="a">
+                    <array size="3" startIndex="1">
+                      <array size="2" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <array size="1" startIndex="1">
+                      <array size="3" startIndex="1">
+                        <boolean/>
+                      </array>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="small_aob/Out6" path="Out6" signalName="sig_out6">
+        <bus busType="non_virtual" busObjectName="HighArrayLowArray">
+          <signal signalName="x">
+            <array size="4" startIndex="1">
+              <bus busType="non_virtual" busObjectName="LowArray">
+                <signal signalName="a">
+                  <array size="3" startIndex="1">
+                    <uint8 max="10"/>
+                  </array>
+                </signal>
+                <signal signalName="b">
+                  <array size="2" startIndex="1">
+                    <boolean/>
+                  </array>
+                </signal>
+              </bus>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="7" name="Out7" physicalPath="small_aob/Out7" path="Out7" signalName="sig_out7">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighArrayLowMatrix">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowMatrix">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <array size="2" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <array size="1" startIndex="1">
+                        <array size="3" startIndex="1">
+                          <boolean/>
+                        </array>
+                      </array>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="8" name="Out8" physicalPath="small_aob/Out8" path="Out8" signalName="sig_out8">
+        <bus busType="non_virtual" busObjectName="HighMatrixLowMatrix">
+          <signal signalName="x">
+            <array size="2" startIndex="1">
+              <array size="3" startIndex="1">
+                <bus busType="non_virtual" busObjectName="LowMatrix">
+                  <signal signalName="a">
+                    <array size="3" startIndex="1">
+                      <array size="2" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <array size="1" startIndex="1">
+                      <array size="3" startIndex="1">
+                        <boolean/>
+                      </array>
+                    </array>
+                  </signal>
+                </bus>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="3" startIndex="1">
+                <boolean/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="9" name="Out9" physicalPath="small_aob/Out9" path="Out9" signalName="sig_out9">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighMatrixLowMatrix">
+              <signal signalName="x">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowMatrix">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <array size="2" startIndex="1">
+                            <uint8 max="10"/>
+                          </array>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <array size="1" startIndex="1">
+                          <array size="3" startIndex="1">
+                            <boolean/>
+                          </array>
+                        </array>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <array size="3" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <boolean/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

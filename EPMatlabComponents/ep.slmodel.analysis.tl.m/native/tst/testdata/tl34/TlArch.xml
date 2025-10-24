@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.35" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_tl_34\ReplaceableDataItems.mdl" modelCreationDate="2012-09-24T17:12:14" creator="dSPACE GmbH">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.35" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_tl_34\ReplaceableDataItems.mdl" creationDate="2012-09-24T17:12:14" modificationDate="2021-11-22T08:27:05">
+    <subsystem subsysID="ss1" physicalPath="ReplaceableDataItems/controller/Subsystem/controller" path="controller/Subsystem/controller" sampleTime="0.01" name="controller" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="throttle" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/throttle" path="controller/Subsystem/controller/throttle">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32 min="0.0000000000000000e+00" max="1.2000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="speed" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/speed" path="controller/Subsystem/controller/speed">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32 min="0.0000000000000000e+00" max="1.0000000000000000e+03"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="EGO" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/EGO" path="controller/Subsystem/controller/EGO">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32 min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="press" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/press" path="controller/Subsystem/controller/press">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32 min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="fuel_rate" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/fuel_rate" path="controller/Subsystem/controller/fuel_rate">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32 min="0.0000000000000000e+00" max="7.9000000000000004e+00"/>
+        </siltype>
+      </outport>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/Discrete-Time&#10;Integrator" path="controller/Subsystem/controller/AirflowCalculation/Discrete-Time&#10;Integrator" name="Discrete-Time&#10;Integrator" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/EGO GT Threshold" path="controller/Subsystem/controller/AirflowCalculation/EGO GT Threshold" name="EGO GT Threshold" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/MAP x PC x speed" path="controller/Subsystem/controller/AirflowCalculation/MAP x PC x speed" name="MAP x PC x speed" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/Saturation" path="controller/Subsystem/controller/AirflowCalculation/Saturation" name="Saturation" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/e0" path="controller/Subsystem/controller/AirflowCalculation/e0" name="e0" portNumber="1">
+        <miltype signalName="e0">
+          <double/>
+        </miltype>
+        <siltype signalName="e0">
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/hold&#10;integrator" path="controller/Subsystem/controller/AirflowCalculation/hold&#10;integrator" name="hold&#10;integrator" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/not normal&#10;operation" path="controller/Subsystem/controller/AirflowCalculation/not normal&#10;operation" name="not normal&#10;operation" portNumber="1">
+        <miltype signalName="not normal operation">
+          <double/>
+        </miltype>
+        <siltype signalName="not normal operation">
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/Logical&#10;Operator" path="controller/Subsystem/controller/ControlLogic/Logical&#10;Operator" name="Logical&#10;Operator" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/Relational&#10;Operator" path="controller/Subsystem/controller/ControlLogic/Relational&#10;Operator" name="Relational&#10;Operator" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/Relational&#10;Operator1" path="controller/Subsystem/controller/ControlLogic/Relational&#10;Operator1" name="Relational&#10;Operator1" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/Relational&#10;Operator2" path="controller/Subsystem/controller/ControlLogic/Relational&#10;Operator2" name="Relational&#10;Operator2" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/Sum" path="controller/Subsystem/controller/ControlLogic/Sum" name="Sum" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/F//A" path="controller/Subsystem/controller/FuelCalculation/F//A" name="F/A" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Logical&#10;Operator" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Logical&#10;Operator" name="Logical&#10;Operator" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Relational&#10;Operator1" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Relational&#10;Operator1" name="Relational&#10;Operator1" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Relational&#10;Operator2" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Relational&#10;Operator2" name="Relational&#10;Operator2" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Sum2" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Sum2" name="Sum2" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/mode&#10;select" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/mode&#10;select" name="mode&#10;select" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/feedforward&#10;fuel rate" path="controller/Subsystem/controller/FuelCalculation/feedforward&#10;fuel rate" name="feedforward&#10;fuel rate" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation" path="controller/Subsystem/controller/AirflowCalculation" sampleTime="0.01" name="AirflowCalculation" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="throttle (estimated)" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/throttle (estimated)" path="controller/Subsystem/controller/AirflowCalculation/throttle (estimated)">
+        <miltype signalName="throttle angle">
+          <double/>
+        </miltype>
+        <siltype signalName="throttle angle">
+          <Float32/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="speed_est" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/speed_est" path="controller/Subsystem/controller/AirflowCalculation/speed_est">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32 min="2.9000000000000000e+01" max="8.2140000000000000e+03"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="EGO_est" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/EGO_est" path="controller/Subsystem/controller/AirflowCalculation/EGO_est">
+        <miltype>
+          <uint8/>
+        </miltype>
+        <siltype>
+          <Float32 min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="MAP_est" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/MAP_est" path="controller/Subsystem/controller/AirflowCalculation/MAP_est">
+        <miltype signalName="manifold pressure, Pm">
+          <double/>
+        </miltype>
+        <siltype signalName="manifold pressure, Pm">
+          <Float32 min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="5" name="fail_O2" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/fail_O2" path="controller/Subsystem/controller/AirflowCalculation/fail_O2">
+        <miltype signalName="O2 fail&#10;(warmup)">
+          <boolean/>
+        </miltype>
+        <siltype signalName="O2 fail&#10;(warmup)">
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="6" name="fuel_mode" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/fuel_mode" path="controller/Subsystem/controller/AirflowCalculation/fuel_mode">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="est_air_flow" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/est_air_flow" path="controller/Subsystem/controller/AirflowCalculation/est_air_flow">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="feedback_correction" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/feedback_correction" path="controller/Subsystem/controller/AirflowCalculation/feedback_correction">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </outport>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/Discrete-Time&#10;Integrator" path="controller/Subsystem/controller/AirflowCalculation/Discrete-Time&#10;Integrator" name="Discrete-Time&#10;Integrator" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/EGO GT Threshold" path="controller/Subsystem/controller/AirflowCalculation/EGO GT Threshold" name="EGO GT Threshold" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/MAP x PC x speed" path="controller/Subsystem/controller/AirflowCalculation/MAP x PC x speed" name="MAP x PC x speed" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/Saturation" path="controller/Subsystem/controller/AirflowCalculation/Saturation" name="Saturation" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/e0" path="controller/Subsystem/controller/AirflowCalculation/e0" name="e0" portNumber="1">
+        <miltype signalName="e0">
+          <double/>
+        </miltype>
+        <siltype signalName="e0">
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/hold&#10;integrator" path="controller/Subsystem/controller/AirflowCalculation/hold&#10;integrator" name="hold&#10;integrator" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/AirflowCalculation/not normal&#10;operation" path="controller/Subsystem/controller/AirflowCalculation/not normal&#10;operation" name="not normal&#10;operation" portNumber="1">
+        <miltype signalName="not normal operation">
+          <double/>
+        </miltype>
+        <siltype signalName="not normal operation">
+          <Bool/>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic" path="controller/Subsystem/controller/ControlLogic" sampleTime="0.01" name="ControlLogic" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="throttle" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/throttle" path="controller/Subsystem/controller/ControlLogic/throttle">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="Speed" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/Speed" path="controller/Subsystem/controller/ControlLogic/Speed">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="EGO" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/EGO" path="controller/Subsystem/controller/ControlLogic/EGO">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="press" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/press" path="controller/Subsystem/controller/ControlLogic/press">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="fail_throt" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/fail_throt" path="controller/Subsystem/controller/ControlLogic/fail_throt">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="fail_speed" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/fail_speed" path="controller/Subsystem/controller/ControlLogic/fail_speed">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="fail_02" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/fail_02" path="controller/Subsystem/controller/ControlLogic/fail_02">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="4" name="fail_Press" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/fail_Press" path="controller/Subsystem/controller/ControlLogic/fail_Press">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="5" name="fuel_mode" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/fuel_mode" path="controller/Subsystem/controller/ControlLogic/fuel_mode">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </siltype>
+      </outport>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/Logical&#10;Operator" path="controller/Subsystem/controller/ControlLogic/Logical&#10;Operator" name="Logical&#10;Operator" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/Relational&#10;Operator" path="controller/Subsystem/controller/ControlLogic/Relational&#10;Operator" name="Relational&#10;Operator" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/Relational&#10;Operator1" path="controller/Subsystem/controller/ControlLogic/Relational&#10;Operator1" name="Relational&#10;Operator1" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/Relational&#10;Operator2" path="controller/Subsystem/controller/ControlLogic/Relational&#10;Operator2" name="Relational&#10;Operator2" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/ControlLogic/Sum" path="controller/Subsystem/controller/ControlLogic/Sum" name="Sum" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation" path="controller/Subsystem/controller/FuelCalculation" sampleTime="0.01" name="FuelCalculation" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="est_air_flow" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/est_air_flow" path="controller/Subsystem/controller/FuelCalculation/est_air_flow">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="feedback&#10;correction" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/feedback&#10;correction" path="controller/Subsystem/controller/FuelCalculation/feedback&#10;correction">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="fail_O2" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/fail_O2" path="controller/Subsystem/controller/FuelCalculation/fail_O2">
+        <miltype signalName="fail_O2">
+          <boolean/>
+        </miltype>
+        <siltype signalName="fail_O2">
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="fuel_mode" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/fuel_mode" path="controller/Subsystem/controller/FuelCalculation/fuel_mode">
+        <miltype signalName="fuel_mode">
+          <double/>
+        </miltype>
+        <siltype signalName="fuel_mode">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="fuel_rate" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/fuel_rate" path="controller/Subsystem/controller/FuelCalculation/fuel_rate">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32 min="0.0000000000000000e+00" max="7.9000000000000004e+00"/>
+        </siltype>
+      </outport>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/F//A" path="controller/Subsystem/controller/FuelCalculation/F//A" name="F/A" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Logical&#10;Operator" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Logical&#10;Operator" name="Logical&#10;Operator" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Relational&#10;Operator1" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Relational&#10;Operator1" name="Relational&#10;Operator1" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Relational&#10;Operator2" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Relational&#10;Operator2" name="Relational&#10;Operator2" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Sum2" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Sum2" name="Sum2" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/mode&#10;select" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/mode&#10;select" name="mode&#10;select" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="ReplaceableDataItems/controller/Subsystem/controller/FuelCalculation/feedforward&#10;fuel rate" path="controller/Subsystem/controller/FuelCalculation/feedforward&#10;fuel rate" name="feedforward&#10;fuel rate" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy" path="controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy" sampleTime="0.01" name="SensorCorrectionAndFaultRedundancy" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="throttle" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/throttle" path="controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/throttle">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32 min="0.0000000000000000e+00" max="1.2000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="speed" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/speed" path="controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/speed">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32 min="0.0000000000000000e+00" max="1.0000000000000000e+03"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="EGO" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/EGO" path="controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/EGO">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32 min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="press" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/press" path="controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/press">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32 min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="5" name="fail_THROT" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/fail_THROT" path="controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/fail_THROT">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="6" name="fail_SPEED" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/fail_SPEED" path="controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/fail_SPEED">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="7" name="fail_O2" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/fail_O2" path="controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/fail_O2">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="8" name="fail_PRESS" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/fail_PRESS" path="controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/fail_PRESS">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="throttle&#10;(estimated)" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/throttle&#10;(estimated)" path="controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/throttle&#10;(estimated)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="speed&#10;(estimated)" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/speed&#10;(estimated)" path="controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/speed&#10;(estimated)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32 min="2.9504999999999999e+01" max="8.2131000000000004e+03"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="EGO&#10;(estimated)" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/EGO&#10;(estimated)" path="controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/EGO&#10;(estimated)">
+        <miltype>
+          <uint8/>
+        </miltype>
+        <siltype>
+          <Float32 min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+      </outport>
+      <outport portNumber="4" name="MAP&#10;(estimated)" physicalPath="ReplaceableDataItems/controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/MAP&#10;(estimated)" path="controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy/MAP&#10;(estimated)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32 min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

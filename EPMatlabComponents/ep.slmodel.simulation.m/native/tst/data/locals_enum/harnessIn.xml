@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<EnumType name="LocalsEnumCars">
+			<EnumValue name="BMW" ordinal="-88" />
+			<EnumValue name="AUDI" ordinal="-11" />
+			<EnumValue name="FORD" ordinal="5" />
+		</EnumType>
+	</Types>
+	<Outports sampleTime="2">
+		<Outport portNr="1" dim1="2" dim2="2" type="LocalsEnumCars">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In1(1)(1)</ScalarRef>
+				<ScalarRef>INPUT:In1(2)(1)</ScalarRef>
+				<ScalarRef>INPUT:In1(1)(2)</ScalarRef>
+				<ScalarRef>INPUT:In1(2)(2)</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+	</Outports>
+</SFunction>

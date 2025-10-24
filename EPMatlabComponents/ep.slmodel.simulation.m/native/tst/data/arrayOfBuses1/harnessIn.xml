@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<BusType name="LowBus" virtual="false">
+			<Comp name="b" type="boolean" />
+			<Comp name="a" type="uint8" width="2" />
+		</BusType>
+	</Types>
+	<Outports sampleTime="0.01">
+		<Outport portNr="1" type="LowBus">
+			<ScalarRefs>
+				<ScalarRef displayName="In1.a1.b">INPUT:In1.a1.b</ScalarRef>
+				<ScalarRef displayName="In1.a1.a(1)">INPUT:In1.a1.a(1)</ScalarRef>
+				<ScalarRef displayName="In1.a1.a(2)">INPUT:In1.a1.a(2)</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="2" type="LowBus">
+			<ScalarRefs>
+				<ScalarRef displayName="In2.a2.b">INPUT:In2.a2.b</ScalarRef>
+				<ScalarRef displayName="In2.a2.a(1)">INPUT:In2.a2.a(1)</ScalarRef>
+				<ScalarRef displayName="In2.a2.a(2)">INPUT:In2.a2.a(2)</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+	</Outports>
+</SFunction>

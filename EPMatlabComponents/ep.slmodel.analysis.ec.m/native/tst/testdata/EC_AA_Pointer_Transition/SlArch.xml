@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20241101T090415_1932\tmp_AA_Pointer_Transition\ut_results\AddModelInfo.xml" modelVersion="6.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241101T090415_1932\tmp_AA_Pointer_Transition\point_transition.slx" modelCreationDate="2023-02-02T17:52:30" creator="developer">
+  <toolInfo name="Matlab" release="(R2024b)" version="24.2" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2024b)" version="24.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="6.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241101T090415_1932\tmp_AA_Pointer_Transition\point_transition.slx" creationDate="2023-02-02T17:52:30" modificationDate="2024-11-01T09:06:19">
+    <subsystem subsysID="ss1" physicalPath="point_transition" path="" sampleTime="0.2" name="point_transition" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="ReceivePointA" physicalPath="point_transition/ReceivePointA" path="ReceivePointA" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="PointType">
+          <signal signalName="x">
+            <double/>
+          </signal>
+          <signal signalName="y">
+            <double/>
+          </signal>
+          <signal signalName="z">
+            <double/>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="SendPointB" physicalPath="point_transition/SendPointB" path="SendPointB" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="PointType">
+          <signal signalName="x">
+            <double/>
+          </signal>
+          <signal signalName="y">
+            <double/>
+          </signal>
+          <signal signalName="z">
+            <double/>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

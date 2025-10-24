@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_ar_incomplete\ut_results\AddModelInfo.xml" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_ar_incomplete\Wrapper_ar_incomplete.slx" modelCreationDate="2024-09-16T10:17:19" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_ar_incomplete\Wrapper_ar_incomplete.slx" creationDate="2024-09-16T10:17:19" modificationDate="2024-09-16T10:17:23">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_ar_incomplete" path="" sampleTime="1" name="Wrapper_ar_incomplete" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="InX" physicalPath="Wrapper_ar_incomplete/InX" path="InX">
+        <int32/>
+      </inport>
+      <inport portNumber="2" name="InY" physicalPath="Wrapper_ar_incomplete/InY" path="InY">
+        <int32/>
+      </inport>
+      <parameter name="ParamX" path="ar_incomplete" physicalPath="Wrapper_ar_incomplete/ar_incomplete" origin="explicit_param" workspace="ParamX" initValue="3.0">
+        <int32/>
+        <usageContext path="ar_incomplete" physicalPath="Wrapper_ar_incomplete/ar_incomplete" simulinkBlockType="SubSystem"/>
+        <source kind="ModelWorkspace" file="Wrapper_ar_incomplete"/>
+      </parameter>
+      <outport portNumber="1" name="OutX" physicalPath="Wrapper_ar_incomplete/OutX" path="OutX">
+        <int32/>
+      </outport>
+      <outport portNumber="2" name="OutY" physicalPath="Wrapper_ar_incomplete/OutY" path="OutY">
+        <int32/>
+      </outport>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="ar_incomplete/sub_RunA" path="ar_incomplete/ar_incomplete/sub_RunA" sampleTime="1" name="sub_RunA" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="InX" physicalPath="ar_incomplete/sub_RunA/InX" path="ar_incomplete/ar_incomplete/sub_RunA/InX" modelRef="model002">
+        <int32/>
+      </inport>
+      <inport portNumber="2" name="InY" physicalPath="ar_incomplete/sub_RunA/InY" path="ar_incomplete/ar_incomplete/sub_RunA/InY" modelRef="model002">
+        <int32/>
+      </inport>
+      <parameter name="ParamX" path="ar_incomplete/ar_incomplete/sub_RunA/ConstX" physicalPath="ar_incomplete/sub_RunA/ConstX" modelRef="model002" origin="explicit_param" workspace="ParamX" initValue="3.0">
+        <int32/>
+        <usageContext path="ar_incomplete/ar_incomplete/sub_RunA/ConstX" physicalPath="ar_incomplete/sub_RunA/ConstX" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="ar_incomplete"/>
+      </parameter>
+      <outport portNumber="1" name="OutX" physicalPath="ar_incomplete/sub_RunA/OutX" path="ar_incomplete/ar_incomplete/sub_RunA/OutX" modelRef="model002">
+        <int32/>
+      </outport>
+      <outport portNumber="2" name="OutY" physicalPath="ar_incomplete/sub_RunA/OutY" path="ar_incomplete/ar_incomplete/sub_RunA/OutY" modelRef="model002">
+        <int32/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="2.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_ar_incomplete\ar_incomplete.slx" creationDate="2024-08-27T08:55:45" modificationDate="2024-09-16T10:17:18"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_em_781\preload_state_space.m" modelVersion="1.96" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_em_781\ut_fxpdemo_state_space.mdl" modelCreationDate="1998-06-19T13:34:10" creator="The MathWorks Inc.">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.96" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_em_781\ut_fxpdemo_state_space.mdl" creationDate="1998-06-19T13:34:10" modificationDate="2024-09-11T18:34:40" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_em_781\preload_state_space.m">
+    <subsystem subsysID="ss1" physicalPath="ut_fxpdemo_state_space/Subsystem" path="Subsystem" sampleTime="0.01" name="Subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ut_fxpdemo_state_space/Subsystem/In1" path="Subsystem/In1" signalName="Original IEEE-Double Continuous-Time Input">
+        <double/>
+      </inport>
+      <parameter name="Ab_z" path="Subsystem/Fixed Point &#10;State Space Balanced Realization" physicalPath="ut_fxpdemo_state_space/Subsystem/Fixed Point &#10;State Space Balanced Realization" origin="explicit_param" workspace="Ab_z">
+        <nonUniformArray size="3">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="0.9674035706045734">
+                <double/>
+              </signal>
+              <signal index="2" initValue="0.17082385481248963">
+                <double/>
+              </signal>
+              <signal index="3" initValue="-0.0242324942444494">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="-0.17082385481248874">
+                <double/>
+              </signal>
+              <signal index="2" initValue="0.9262229583662602">
+                <double/>
+              </signal>
+              <signal index="3" initValue="0.08771391722590671">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="3">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="-0.024232494244442293">
+                <double/>
+              </signal>
+              <signal index="2" initValue="-0.08771391722590849">
+                <double/>
+              </signal>
+              <signal index="3" initValue="0.8102695749252646">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Subsystem/Fixed Point &#10;State Space Balanced Realization" physicalPath="ut_fxpdemo_state_space/Subsystem/Fixed Point &#10;State Space Balanced Realization" simulinkBlockType="SubSystem" blockAttribute="A"/>
+      </parameter>
+      <parameter name="Ac_s" path="Subsystem/State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/State-Space" origin="explicit_param" workspace="Ac_s">
+        <nonUniformArray size="3">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="-27.999999999999996">
+                <double/>
+              </signal>
+              <signal index="2" initValue="-17.5">
+                <double/>
+              </signal>
+              <signal index="3" initValue="-15.625">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="32.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="0.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="0.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="3">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="0.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="16.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="0.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Subsystem/State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/State-Space" simulinkBlockType="StateSpace" blockAttribute="A"/>
+      </parameter>
+      <parameter name="Ac_z" path="Subsystem/Discrete State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/Discrete State-Space" origin="explicit_param" workspace="Ac_z">
+        <nonUniformArray size="3">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="2.7038961038961036">
+                <double/>
+              </signal>
+              <signal index="2" initValue="-1.2333333333333334">
+                <double/>
+              </signal>
+              <signal index="3" initValue="0.7558441558441559">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="2.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="0.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="0.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="3">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="0.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="0.5">
+                <double/>
+              </signal>
+              <signal index="3" initValue="0.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Subsystem/Discrete State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/Discrete State-Space" simulinkBlockType="DiscreteStateSpace" blockAttribute="A"/>
+      </parameter>
+      <parameter name="Bb_z" path="Subsystem/Fixed Point &#10;State Space Balanced Realization" physicalPath="ut_fxpdemo_state_space/Subsystem/Fixed Point &#10;State Space Balanced Realization" origin="explicit_param" workspace="Bb_z">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="0.4644116057306894">
+            <double/>
+          </signal>
+          <signal index="2" initValue="0.5846246027939209">
+            <double/>
+          </signal>
+          <signal index="3" initValue="0.3819182365314698">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Subsystem/Fixed Point &#10;State Space Balanced Realization" physicalPath="ut_fxpdemo_state_space/Subsystem/Fixed Point &#10;State Space Balanced Realization" simulinkBlockType="SubSystem" blockAttribute="B"/>
+      </parameter>
+      <parameter name="Bc_s" path="Subsystem/State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/State-Space" origin="explicit_param" workspace="Bc_s">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="8.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="0.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="0.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Subsystem/State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/State-Space" simulinkBlockType="StateSpace" blockAttribute="B"/>
+      </parameter>
+      <parameter name="Bc_z" path="Subsystem/Discrete State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/Discrete State-Space" origin="explicit_param" workspace="Bc_z">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="0.125">
+            <double/>
+          </signal>
+          <signal index="2" initValue="0.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="0.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Subsystem/Discrete State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/Discrete State-Space" simulinkBlockType="DiscreteStateSpace" blockAttribute="B"/>
+      </parameter>
+      <parameter name="Cb_z" path="Subsystem/Fixed Point &#10;State Space Balanced Realization" physicalPath="ut_fxpdemo_state_space/Subsystem/Fixed Point &#10;State Space Balanced Realization" origin="explicit_param" workspace="Cb_z">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="0.4644116057308575">
+            <double/>
+          </signal>
+          <signal index="2" initValue="-0.5846246027937679">
+            <double/>
+          </signal>
+          <signal index="3" initValue="0.38191823653116347">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Subsystem/Fixed Point &#10;State Space Balanced Realization" physicalPath="ut_fxpdemo_state_space/Subsystem/Fixed Point &#10;State Space Balanced Realization" simulinkBlockType="SubSystem" blockAttribute="C"/>
+      </parameter>
+      <parameter name="Cc_s" path="Subsystem/State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/State-Space" origin="explicit_param" workspace="Cc_s">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="0.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="0.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="7.8125">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Subsystem/State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/State-Space" simulinkBlockType="StateSpace" blockAttribute="C"/>
+      </parameter>
+      <parameter name="Cc_z" path="Subsystem/Discrete State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/Discrete State-Space" origin="explicit_param" workspace="Cc_z">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="0.1580300219261258">
+            <double/>
+          </signal>
+          <signal index="2" initValue="0.007388167388167388">
+            <double/>
+          </signal>
+          <signal index="3" initValue="0.048646764490920334">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Subsystem/Discrete State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/Discrete State-Space" simulinkBlockType="DiscreteStateSpace" blockAttribute="C"/>
+      </parameter>
+      <parameter name="Db_z" path="Subsystem/Fixed Point &#10;State Space Balanced Realization" physicalPath="ut_fxpdemo_state_space/Subsystem/Fixed Point &#10;State Space Balanced Realization" origin="explicit_param" workspace="Db_z" initValue="0.003463203463203463">
+        <double/>
+        <usageContext path="Subsystem/Fixed Point &#10;State Space Balanced Realization" physicalPath="ut_fxpdemo_state_space/Subsystem/Fixed Point &#10;State Space Balanced Realization" simulinkBlockType="SubSystem" blockAttribute="D"/>
+      </parameter>
+      <parameter name="Dc_s" path="Subsystem/State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/State-Space" origin="explicit_param" workspace="Dc_s" initValue="0.0">
+        <double/>
+        <usageContext path="Subsystem/State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/State-Space" simulinkBlockType="StateSpace" blockAttribute="D"/>
+      </parameter>
+      <parameter name="Dc_z" path="Subsystem/Discrete State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/Discrete State-Space" origin="explicit_param" workspace="Dc_z" initValue="0.003463203463203463">
+        <double/>
+        <usageContext path="Subsystem/Discrete State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/Discrete State-Space" simulinkBlockType="DiscreteStateSpace" blockAttribute="D"/>
+      </parameter>
+      <parameter name="SampleTime" path="Subsystem/Discrete State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/Discrete State-Space" origin="explicit_param" workspace="SampleTime" initValue="0.01">
+        <double/>
+        <usageContext path="Subsystem/Discrete State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/Discrete State-Space" simulinkBlockType="DiscreteStateSpace" blockAttribute="SampleTime"/>
+        <usageContext path="Subsystem/Zero-Order&#10;Hold2" physicalPath="ut_fxpdemo_state_space/Subsystem/Zero-Order&#10;Hold2" simulinkBlockType="ZeroOrderHold" blockAttribute="SampleTime"/>
+      </parameter>
+      <parameter name="myConst" path="Subsystem/Constant1" physicalPath="ut_fxpdemo_state_space/Subsystem/Constant1" origin="explicit_param" workspace="myConst" initValue="0.0067">
+        <fixedPoint simulinkTypeName="fixdt(1,12,4)" wordLength="16" isSigned="1" slope="0.0625" bias="0.0" min="-128.0" max="127.9375"/>
+        <usageContext path="Subsystem/Constant1" physicalPath="ut_fxpdemo_state_space/Subsystem/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="xb0_z" path="Subsystem/Fixed Point &#10;State Space Balanced Realization" physicalPath="ut_fxpdemo_state_space/Subsystem/Fixed Point &#10;State Space Balanced Realization" origin="explicit_param" workspace="xb0_z">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="0.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="0.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="0.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Subsystem/Fixed Point &#10;State Space Balanced Realization" physicalPath="ut_fxpdemo_state_space/Subsystem/Fixed Point &#10;State Space Balanced Realization" simulinkBlockType="SubSystem" blockAttribute="InitialCondition"/>
+      </parameter>
+      <parameter name="xc0_s" path="Subsystem/State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/State-Space" origin="explicit_param" workspace="xc0_s">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="0.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="0.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="0.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Subsystem/State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/State-Space" simulinkBlockType="StateSpace" blockAttribute="InitialCondition"/>
+      </parameter>
+      <parameter name="xc0_z" path="Subsystem/Discrete State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/Discrete State-Space" origin="explicit_param" workspace="xc0_z">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="0.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="0.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="0.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Subsystem/Discrete State-Space" physicalPath="ut_fxpdemo_state_space/Subsystem/Discrete State-Space" simulinkBlockType="DiscreteStateSpace" blockAttribute="InitialCondition"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="ut_fxpdemo_state_space/Subsystem/Out1" path="Subsystem/Out1" signalName="Value of Fixed-Point Discrete-Time Signal">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="ut_fxpdemo_state_space/Subsystem/Out2" path="Subsystem/Out2">
+        <fixedPoint simulinkTypeName="fixdt(1,12,4)" wordLength="16" isSigned="1" slope="0.0625" bias="0.0" min="-128.0" max="127.9375"/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="ut_fxpdemo_state_space/Subsystem/Out3" path="Subsystem/Out3" signalName="IEEE-Double Discrete-Time Output">
+        <double/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="ut_fxpdemo_state_space/Subsystem/Out4" path="Subsystem/Out4" signalName="Value of Fixed-Point Discrete-Time Balanced Output">
+        <double/>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="ut_fxpdemo_state_space/Subsystem/Out5" path="Subsystem/Out5" signalName="IEEE-Double Continuous-Time Output">
+        <double/>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="ut_fxpdemo_state_space/Subsystem/Out6" path="Subsystem/Out6" signalName="Value of Fixed-Point Discrete-Time Canonical Output">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

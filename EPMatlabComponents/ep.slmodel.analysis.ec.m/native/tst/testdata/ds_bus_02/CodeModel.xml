@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="data_store_bus.c" path="C:\Users\developer\AppData\Local\Temp\ut20220105T114246_8812\tmp_ut_ds_bus_02\data_store_bus_ert_rtw"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20220105T114246_8812\tmp_ut_ds_bus_02"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20220105T114246_8812\tmp_ut_ds_bus_02\data_store_bus_ert_rtw"/>
+    <IncludePath path="C:\Matlab\R2019a\extern\include"/>
+    <IncludePath path="C:\Matlab\R2019a\simulink\include"/>
+    <IncludePath path="C:\Matlab\R2019a\rtw\c\src"/>
+    <IncludePath path="C:\Matlab\R2019a\rtw\c\src\ext_mode\common"/>
+    <IncludePath path="C:\Matlab\R2019a\rtw\c\ert"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20220105T114246_8812\tmp_ut_ds_bus_02\slprj\ert\_sharedutils"/>
+  </IncludePaths>
+  <Functions archName="data_store_bus [C-Code]">
+    <Function fileref="ID71" initFunc="data_store_bus_initialize" name="data_store_bus_step">
+      <Interface>
+        <InterfaceObj access=".a" kind="in" var="in_a"/>
+        <InterfaceObj access=".b" kind="in" var="in_a"/>
+        <InterfaceObj access=".sig1" kind="in" var="in_x1"/>
+        <InterfaceObj access=".sig2.a" kind="in" var="in_x1"/>
+        <InterfaceObj access=".sig2.b" kind="in" var="in_x1"/>
+        <InterfaceObj access=".sig3" kind="in" var="in_x1"/>
+        <InterfaceObj access=".a" kind="out" var="out_c"/>
+        <InterfaceObj access=".b" kind="out" var="out_c"/>
+        <InterfaceObj access=".sig1" kind="out" var="out1_x2"/>
+        <InterfaceObj access=".sig2.a" kind="out" var="out1_x2"/>
+        <InterfaceObj access=".sig2.b" kind="out" var="out1_x2"/>
+        <InterfaceObj access=".sig3" kind="out" var="out1_x2"/>
+        <InterfaceObj kind="out" var="out2_x2"/>
+        <InterfaceObj access=".sig1" kind="out" var="alias_x1"/>
+        <InterfaceObj access=".sig2.a" kind="out" var="alias_x1"/>
+        <InterfaceObj access=".sig2.b" kind="out" var="alias_x1"/>
+        <InterfaceObj access=".sig3" kind="out" var="alias_x1"/>
+        <InterfaceObj access=".a" kind="out" var="StoreSig_X2"/>
+        <InterfaceObj access=".b" kind="out" var="StoreSig_X2"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="data_store_bus_initialize" name="sub_A">
+      <Interface>
+        <InterfaceObj access=".a" kind="in" var="in_a"/>
+        <InterfaceObj access=".b" kind="in" var="in_a"/>
+        <InterfaceObj access=".a" kind="out" var="bla_A"/>
+        <InterfaceObj access=".b" kind="out" var="bla_A"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="data_store_bus_initialize" name="sub_B">
+      <Interface>
+        <InterfaceObj access=".a" kind="in" var="bla_A"/>
+        <InterfaceObj access=".b" kind="in" var="bla_A"/>
+        <InterfaceObj access=".a" kind="out" var="BusStore2"/>
+        <InterfaceObj access=".b" kind="out" var="BusStore2"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="data_store_bus_initialize" name="sub_C">
+      <Interface>
+        <InterfaceObj access=".a" kind="in" var="BusStore2"/>
+        <InterfaceObj access=".b" kind="in" var="BusStore2"/>
+        <InterfaceObj access=".a" kind="out" var="out_c"/>
+        <InterfaceObj access=".b" kind="out" var="out_c"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="data_store_bus_initialize" name="sub_X1">
+      <Interface>
+        <InterfaceObj access=".sig1" kind="in" var="in_x1"/>
+        <InterfaceObj access=".sig2.a" kind="in" var="in_x1"/>
+        <InterfaceObj access=".sig2.b" kind="in" var="in_x1"/>
+        <InterfaceObj access=".sig3" kind="in" var="in_x1"/>
+        <InterfaceObj access=".sig1" kind="out" var="alias_x1"/>
+        <InterfaceObj access=".sig2.a" kind="out" var="alias_x1"/>
+        <InterfaceObj access=".sig2.b" kind="out" var="alias_x1"/>
+        <InterfaceObj access=".sig3" kind="out" var="alias_x1"/>
+        <InterfaceObj access=".a" kind="out" var="StoreSig_X2"/>
+        <InterfaceObj access=".b" kind="out" var="StoreSig_X2"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="data_store_bus_initialize" name="sub_X2">
+      <Interface>
+        <InterfaceObj access=".sig1" kind="in" var="alias_x1"/>
+        <InterfaceObj access=".sig2.a" kind="in" var="alias_x1"/>
+        <InterfaceObj access=".sig2.b" kind="in" var="alias_x1"/>
+        <InterfaceObj access=".sig3" kind="in" var="alias_x1"/>
+        <InterfaceObj access=".a" kind="in" var="StoreSig_X2"/>
+        <InterfaceObj access=".b" kind="in" var="StoreSig_X2"/>
+        <InterfaceObj access=".sig1" kind="out" var="out1_x2"/>
+        <InterfaceObj access=".sig2.a" kind="out" var="out1_x2"/>
+        <InterfaceObj access=".sig2.b" kind="out" var="out1_x2"/>
+        <InterfaceObj access=".sig3" kind="out" var="out1_x2"/>
+        <InterfaceObj kind="out" var="out2_x2"/>
+      </Interface>
+    </Function>
+  </Functions>
+</CodeModel>

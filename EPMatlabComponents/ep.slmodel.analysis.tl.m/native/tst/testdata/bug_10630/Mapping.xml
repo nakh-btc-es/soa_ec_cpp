@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="shared_interface"/>
+    <Architecture id="id1" name="shared_interface [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A"/>
+      <Path refId="id1" path="top_A.c:1:top_A"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="in1"/>
+        <Path refId="id1" path="Sa1_in1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out1"/>
+        <Path refId="id1" path="top_A:return"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_shared"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:osc_shared_fcn"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="ISV_Sosc1_sub_shared_1.InPort_Sosc1_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="ISV_Sosc1_sub_shared_1.OutPort_Sosc1_Out1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_shared/sub_B"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:osc_shared_fcn/top_A.c:1:osc_shared_subfcn"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="ISV_Sosc1_sub_shared_0.ConstCal_Sosc1_Const1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In2"/>
+        <Path refId="id1" path="ISV_Sosc1_sub_shared_1.InPort_Sosc1_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="ISV_Sosc1_sub_shared_2.RelOpOut_Sosc2_RelOp1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

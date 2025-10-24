@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="disp_model"/>
+    <Architecture id="id1" name="disp_model [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="top_B/Subsystem/top_B"/>
+      <Path refId="id1" path="top_B.c:1:top_B"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort1"/>
+        <Path refId="id1" path="Sb1_InPort1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort2"/>
+        <Path refId="id1" path="Sb1_InPort2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort1"/>
+        <Path refId="id1" path="Sb1_OutPort1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_B/Subsystem/top_B/Chart_X/y"/>
+        <Path refId="id1" path="Cb1_y"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_B/Subsystem/top_B/Gain(1)"/>
+        <Path refId="id1" path="Sb1_Gain"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_B/Subsystem/top_B/InPort1(1)"/>
+        <Path refId="id1" path="Sb1_InPort1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_B/Subsystem/top_B/InPort2(1)"/>
+        <Path refId="id1" path="Sb1_InPort2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_B/Subsystem/top_B/Logical&#10;Operator(1)"/>
+        <Path refId="id1" path="Sb1_Logical_Operator"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_B/Subsystem/top_B/Relational&#10;Operator(1)"/>
+        <Path refId="id1" path="Sb1_Relational_Operator"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_B/Subsystem/top_B/Relational&#10;Operator1(1)"/>
+        <Path refId="id1" path="Sb1_Relational_Operator1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_B/Subsystem/top_B/Unit Delay(1)"/>
+        <Path refId="id1" path="Sb1_Unit_Delay"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_B/Subsystem/top_B/Chart_X/x"/>
+        <Path refId="id1" path="Cb1_x"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_B/Subsystem/top_B/Chart_X"/>
+      <Path refId="id1" path="top_B.c:1:top_B/top_B.c:1:Cb1_Chart_X"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="u"/>
+        <Path refId="id1" path="Cb1_u"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="y"/>
+        <Path refId="id1" path="Cb1_y"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_B/Subsystem/top_B/Chart_X/x"/>
+        <Path refId="id1" path="Cb1_x"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

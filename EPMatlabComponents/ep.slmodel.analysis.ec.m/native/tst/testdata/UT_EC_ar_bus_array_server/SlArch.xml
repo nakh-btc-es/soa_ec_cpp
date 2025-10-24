@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240709T163941_14480\tmp_ar_bus_array_server\ut_results\AddModelInfo.xml" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240709T163941_14480\tmp_ar_bus_array_server\Wrapper_ar_bus_array_server.slx" modelCreationDate="2024-07-09T16:40:11" creator="developer">
+  <toolInfo name="Matlab" release="(R2020a)" version="9.8" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020a)" version="10.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240709T163941_14480\tmp_ar_bus_array_server\Wrapper_ar_bus_array_server.slx" creationDate="2024-07-09T16:40:11" modificationDate="2024-07-09T16:40:18">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_ar_bus_array_server" path="" sampleTime="0.1" name="Wrapper_ar_bus_array_server" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="X_in" physicalPath="Wrapper_ar_bus_array_server/X_in" path="X_in">
+        <array size="2" startIndex="1">
+          <array size="2" startIndex="1">
+            <int16/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="2" name="in_get_A_u1" physicalPath="Wrapper_ar_bus_array_server/in_get_A_u1" path="in_get_A_u1" signalName="in_get_A_u1">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="BusZ">
+            <signal signalName="field_a">
+              <array size="2" startIndex="1">
+                <array size="1" startIndex="1">
+                  <int8/>
+                </array>
+              </array>
+            </signal>
+            <signal signalName="field_b">
+              <array size="1" startIndex="1">
+                <array size="3" startIndex="1">
+                  <int32/>
+                </array>
+              </array>
+            </signal>
+            <signal signalName="field_c">
+              <array size="4" startIndex="1">
+                <boolean/>
+              </array>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <inport portNumber="3" name="in_get_A_u2" physicalPath="Wrapper_ar_bus_array_server/in_get_A_u2" path="in_get_A_u2" signalName="in_get_A_u2">
+        <array size="4" startIndex="1">
+          <array size="1" startIndex="1">
+            <bus busType="non_virtual" busObjectName="BusZ">
+              <signal signalName="field_a">
+                <array size="2" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <int8/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="field_b">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <int32/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="field_c">
+                <array size="4" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="4" name="in_get_A_u3" physicalPath="Wrapper_ar_bus_array_server/in_get_A_u3" path="in_get_A_u3" signalName="in_get_A_u3">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="BusZ">
+              <signal signalName="field_a">
+                <array size="2" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <int8/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="field_b">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <int32/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="field_c">
+                <array size="4" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="5" name="in_get_set_B_u1" physicalPath="Wrapper_ar_bus_array_server/in_get_set_B_u1" path="in_get_set_B_u1" signalName="in_get_set_B_u1">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <bus busType="non_virtual" busObjectName="BusZ">
+              <signal signalName="field_a">
+                <array size="2" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <int8/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="field_b">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <int32/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="field_c">
+                <array size="4" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="6" name="in_get_set_B_u2" physicalPath="Wrapper_ar_bus_array_server/in_get_set_B_u2" path="in_get_set_B_u2" signalName="in_get_set_B_u2">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="7" name="in_get_set_C_u1" physicalPath="Wrapper_ar_bus_array_server/in_get_set_C_u1" path="in_get_set_C_u1" signalName="in_get_set_C_u1">
+        <bus busType="non_virtual" busObjectName="BusZ">
+          <signal signalName="field_a">
+            <array size="2" startIndex="1">
+              <array size="1" startIndex="1">
+                <int8/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="field_b">
+            <array size="1" startIndex="1">
+              <array size="3" startIndex="1">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="field_c">
+            <array size="4" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="X_out" physicalPath="Wrapper_ar_bus_array_server/X_out" path="X_out">
+        <array size="2" startIndex="1">
+          <array size="2" startIndex="1">
+            <int16/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="2" name="out_get_set_B_y1" physicalPath="Wrapper_ar_bus_array_server/out_get_set_B_y1" path="out_get_set_B_y1" signalName="out_get_set_B_y1">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <bus busType="non_virtual" busObjectName="BusZ">
+              <signal signalName="field_a">
+                <array size="2" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <int8/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="field_b">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <int32/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="field_c">
+                <array size="4" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="3" name="out_get_set_B_y2" physicalPath="Wrapper_ar_bus_array_server/out_get_set_B_y2" path="out_get_set_B_y2" signalName="out_get_set_B_y2">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="4" name="out_get_set_C_y1" physicalPath="Wrapper_ar_bus_array_server/out_get_set_C_y1" path="out_get_set_C_y1" signalName="out_get_set_C_y1">
+        <bus busType="non_virtual" busObjectName="BusZ">
+          <signal signalName="field_a">
+            <array size="2" startIndex="1">
+              <array size="1" startIndex="1">
+                <int8/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="field_b">
+            <array size="1" startIndex="1">
+              <array size="3" startIndex="1">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="field_c">
+            <array size="4" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="5" name="out_set_A_y1" physicalPath="Wrapper_ar_bus_array_server/out_set_A_y1" path="out_set_A_y1" signalName="out_set_A_y1">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="BusZ">
+            <signal signalName="field_a">
+              <array size="2" startIndex="1">
+                <array size="1" startIndex="1">
+                  <int8/>
+                </array>
+              </array>
+            </signal>
+            <signal signalName="field_b">
+              <array size="1" startIndex="1">
+                <array size="3" startIndex="1">
+                  <int32/>
+                </array>
+              </array>
+            </signal>
+            <signal signalName="field_c">
+              <array size="4" startIndex="1">
+                <boolean/>
+              </array>
+            </signal>
+          </bus>
+        </array>
+      </outport>
+      <outport portNumber="6" name="out_set_A_y2" physicalPath="Wrapper_ar_bus_array_server/out_set_A_y2" path="out_set_A_y2" signalName="out_set_A_y2">
+        <array size="4" startIndex="1">
+          <array size="1" startIndex="1">
+            <bus busType="non_virtual" busObjectName="BusZ">
+              <signal signalName="field_a">
+                <array size="2" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <int8/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="field_b">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <int32/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="field_c">
+                <array size="4" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="7" name="out_set_A_y3" physicalPath="Wrapper_ar_bus_array_server/out_set_A_y3" path="out_set_A_y3" signalName="out_set_A_y3">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="BusZ">
+              <signal signalName="field_a">
+                <array size="2" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <int8/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="field_b">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <int32/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="field_c">
+                <array size="4" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <subsystem refSubsysID="ss10"/>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="ar_bus_array_server/Runnable_X_Subsystem" path="ar_bus_array_server/ar_bus_array_server/Runnable_X_Subsystem" sampleTime="0.1" name="Runnable_X_Subsystem" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="ar_bus_array_server/Runnable_X_Subsystem/In1" path="ar_bus_array_server/ar_bus_array_server/Runnable_X_Subsystem/In1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <array size="2" startIndex="1">
+            <int16/>
+          </array>
+        </array>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ar_bus_array_server/Runnable_X_Subsystem/Out1" path="ar_bus_array_server/ar_bus_array_server/Runnable_X_Subsystem/Out1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <array size="2" startIndex="1">
+            <int16/>
+          </array>
+        </array>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.8" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240709T163941_14480\tmp_ar_bus_array_server\ar_bus_array_server.slx" creationDate="2024-07-09T11:00:28" modificationDate="2024-07-09T16:40:07"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

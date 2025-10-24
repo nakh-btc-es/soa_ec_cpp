@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Wrapper_modified_InteriorLights_ActuatorSrv"/>
+    <Architecture id="id1" name="Wrapper_modified_InteriorLights_ActuatorSrv [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Wrapper_modified_InteriorLights_ActuatorSrv.cpp:1:Wrapper_modified_InteriorLights_ActuatorSrv_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Client Function Mocks/call_CS_ActuatorData_IntrLiPWM/CS_ActuatorData_IntrLiPWM_TarTime_In" refId="id0"/>
+        <Path path="CS_ActuatorData_IntrLiPWM_TarTime_In" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Client Function Mocks/call_CS_ActuatorData_IntrLiPWM/CS_ActuatorData_IntrLiPWM_TarPWM_In" refId="id0"/>
+        <Path path="CS_ActuatorData_IntrLiPWM_TarPWM_In" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Lamp_PWM" refId="id0"/>
+        <Path path="OutData_PPort_Lamp_PWM" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Lamp_Sts" refId="id0"/>
+        <Path path="OutData_PPort_Lamp_Sts" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

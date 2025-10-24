@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Wrapper_ar_mrate_one"/>
+    <Architecture id="id1" name="Wrapper_ar_mrate_one [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Wrapper_ar_mrate_one.c:1:Wrapper_ar_mrate_one_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="RteStub_r_IF_rport_in1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In2" refId="id0"/>
+        <Path path="RteStub_r_IF_rport_in2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Mock_external_sum_func/dsin_external_sum_func_y" refId="id0"/>
+        <Path path="dsin_external_sum_func_y" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="RteStub_s_IF_sport_out" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_external_sum_func/dsout_external_sum_func_u1" refId="id0"/>
+        <Path path="dsout_external_sum_func_u1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_external_sum_func/dsout_external_sum_func_u2" refId="id0"/>
+        <Path path="dsout_external_sum_func_u2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="ar_mrate_one/ar_mrate_one" refId="id0"/>
+      <Path path="Wrapper_ar_mrate_one.c:1:Wrapper_ar_mrate_one_step/ar_mrate_one.c:1:runa1" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="ar_mrate_one/ar_mrate_one/In1" refId="id0"/>
+        <Path path="RteStub_r_IF_rport_in1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="ar_mrate_one/ar_mrate_one/In2" refId="id0"/>
+        <Path path="RteStub_r_IF_rport_in2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Mock_external_sum_func/dsin_external_sum_func_y" refId="id0"/>
+        <Path path="dsin_external_sum_func_y" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="ar_mrate_one/ar_mrate_one/Out1" refId="id0"/>
+        <Path path="RteStub_s_IF_sport_out" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_external_sum_func/dsout_external_sum_func_u1" refId="id0"/>
+        <Path path="dsout_external_sum_func_u1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_external_sum_func/dsout_external_sum_func_u2" refId="id0"/>
+        <Path path="dsout_external_sum_func_u2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

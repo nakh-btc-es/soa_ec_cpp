@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Model"/>
+    <Architecture id="id1" name="Model [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Model.c:1:Model_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="In_Main" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="Out_Main" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="TopLevel_Main/InnerSubsystemNoFctFound/Gain(1)" refId="id0"/>
+        <Path path="In_InnerSubsystemFctFound" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="paramMain" refId="id0"/>
+        <Path path="paramMain" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="paramSub" refId="id0"/>
+        <Path path="paramSub" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="TopLevel_Main/InnerSubsystemNoFctFound" refId="id0"/>
+      <Path path="Model.c:1:Model_step/Model_InnerSubsystemNoFctFound.c:1:Model_InnerSubsystemNoFctFound" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="TopLevel_Main/InnerSubsystemNoFctFound/In1" refId="id0"/>
+        <Path path="In_InnerSubsystemNoFctFound" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="TopLevel_Main/InnerSubsystemNoFctFound/Out1" refId="id0"/>
+        <Path path="Out_InnerSubsystemNoFctFound" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="TopLevel_Main/InnerSubsystemNoFctFound/Gain(1)" refId="id0"/>
+        <Path path="In_InnerSubsystemFctFound" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="paramSub" refId="id0"/>
+        <Path path="paramSub" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="TopLevel_Main/InnerSubsystemNoFctFound/InnerSubsystemFctFound" refId="id0"/>
+      <Path path="Model.c:1:Model_step/Model_InnerSubsystemNoFctFound.c:1:Model_InnerSubsystemNoFctFound/sub.c:1:sub" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="TopLevel_Main/InnerSubsystemNoFctFound/InnerSubsystemFctFound/In1" refId="id0"/>
+        <Path path="In_InnerSubsystemFctFound" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="TopLevel_Main/InnerSubsystemNoFctFound/InnerSubsystemFctFound/Out1" refId="id0"/>
+        <Path path="Out_InnerSubsystemFctFound" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="paramSub" refId="id0"/>
+        <Path path="paramSub" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

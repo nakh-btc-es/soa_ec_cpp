@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\29d0a568a\bug_36050\TLProj\SIL\TOxiCatUs_VD" name="TOxiCatUs_VD.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\29d0a568a\bug_36050\TLSim" name="TOxiCatUs_VD_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\29d0a568a\bug_36050\TLProj\SIL\TOxiCatUs_VD"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\29d0a568a\bug_36050\TLSim"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="TOxiCatUs_VD [C-Code]">
+    <Function name="Sa1_TOxiCatUs_VD" sampleTime="0.02">
+      <Interface>
+        <InterfaceObj kind="in" var="Air_tAFS" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="CoEng_st" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="CoEng_stLoIdlDet" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="EngDa_tEng" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="EnvT_t" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Epm_nEng" scaling="scID3" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Exh_tOxiCatDs" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Exh_tSensTOxiCatUs" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="FId_TOxiCatUsDiaInhib" scaling="scID2"/>
+        <InterfaceObj kind="in" var="FId_TOxiCatUsRplVal" scaling="scID2"/>
+        <InterfaceObj kind="in" var="InjCtl_qSetUnBal" scaling="scID4" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="PFltRgn_stModeActv" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="SCR_tAdapUCatUsT" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="StSys_stValidReq" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="SCR_stWrmUpLstDrvCyc" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_TransStgDfl_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tiStdStActvDel_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tiEngRunDel_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tiEngRunDelOff_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tThresEnvEng_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tThresEngUCat_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tUsEnvOffs_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tThresOxiCatUsDs_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tWrnThresHi_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tWrnThresHiRgn_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tShOffThresHi_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tShOffThresHiRgn_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tHealThresHi_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tiPT1_C" scaling="scID5" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Exh_tOxiCatUs" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Exh_tAdapTOxiCatUs" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="TOxiCatUs_tFlt_mp" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="TOxiCatUs_stNplDynChkEna_mp" scaling="scID2"/>
+        <InterfaceObj kind="disp" var="TOxiCatUs_stNplStatChkEna_mp" scaling="scID2"/>
+        <InterfaceObj kind="disp" var="TOxiCatUs_stStdStActvDel_mp" scaling="scID2"/>
+      </Interface>
+    </Function>
+    <Function name="Sa2_InitHandling" fileref="fID1" sampleTime="0.02">
+      <Interface>
+        <InterfaceObj kind="in" var="Air_tAFS" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="CoEng_st" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="CoEng_stLoIdlDet" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="EngDa_tEng" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="EnvT_t" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Epm_nEng" scaling="scID3" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Exh_tOxiCatDs" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Exh_tSensTOxiCatUs" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="FId_TOxiCatUsDiaInhib" scaling="scID2"/>
+        <InterfaceObj kind="in" var="FId_TOxiCatUsRplVal" scaling="scID2"/>
+        <InterfaceObj kind="in" var="InjCtl_qSetUnBal" scaling="scID4" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="PFltRgn_stModeActv" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="SCR_tAdapUCatUsT" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="StSys_stValidReq" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="SCR_stWrmUpLstDrvCyc" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa7_Multiport_Switch" scaling="scID2"/>
+        <InterfaceObj kind="in" var="Sa4_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa4_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa5_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa5_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa2_Unit_Delay1" scaling="scID2"/>
+        <InterfaceObj kind="in" var="Sa14_Switch_R"/>
+        <InterfaceObj kind="in" var="Sa6_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa6_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa25_Logical_Operator5" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa2_Unit_Delay1" scaling="scID2"/>
+      </Interface>
+    </Function>
+    <Function name="Sa3_Input_Filter" fileref="fID1" sampleTime="0.02">
+      <Interface>
+        <InterfaceObj kind="in" var="Air_tAFS" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="CoEng_st" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="CoEng_stLoIdlDet" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="EngDa_tEng" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="EnvT_t" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Epm_nEng" scaling="scID3" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Exh_tOxiCatDs" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Exh_tSensTOxiCatUs" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="FId_TOxiCatUsDiaInhib" scaling="scID2"/>
+        <InterfaceObj kind="in" var="FId_TOxiCatUsRplVal" scaling="scID2"/>
+        <InterfaceObj kind="in" var="InjCtl_qSetUnBal" scaling="scID4" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="PFltRgn_stModeActv" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="SCR_tAdapUCatUsT" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="StSys_stValidReq" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="SCR_stWrmUpLstDrvCyc" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa7_Multiport_Switch" scaling="scID2"/>
+        <InterfaceObj kind="in" var="Sa4_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa4_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa5_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa5_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa2_Unit_Delay1" scaling="scID2"/>
+        <InterfaceObj kind="in" var="Sa14_Switch_R"/>
+        <InterfaceObj kind="in" var="Sa6_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa6_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa25_Logical_Operator5" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tiPT1_C" scaling="scID5" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa14_Switch_R"/>
+        <InterfaceObj kind="disp" var="TOxiCatUs_tFlt_mp" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa4_Physical_range_check" fileref="fID1" sampleTime="0.02">
+      <Interface>
+        <InterfaceObj kind="in" var="Air_tAFS" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="CoEng_st" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="CoEng_stLoIdlDet" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="EngDa_tEng" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="EnvT_t" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Epm_nEng" scaling="scID3" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Exh_tOxiCatDs" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Exh_tSensTOxiCatUs" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="FId_TOxiCatUsDiaInhib" scaling="scID2"/>
+        <InterfaceObj kind="in" var="FId_TOxiCatUsRplVal" scaling="scID2"/>
+        <InterfaceObj kind="in" var="InjCtl_qSetUnBal" scaling="scID4" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="PFltRgn_stModeActv" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="SCR_tAdapUCatUsT" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="StSys_stValidReq" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="SCR_stWrmUpLstDrvCyc" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa7_Multiport_Switch" scaling="scID2"/>
+        <InterfaceObj kind="in" var="Sa4_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa4_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa5_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa5_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa2_Unit_Delay1" scaling="scID2"/>
+        <InterfaceObj kind="in" var="Sa14_Switch_R"/>
+        <InterfaceObj kind="in" var="Sa6_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa6_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa25_Logical_Operator5" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tWrnThresHi_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tWrnThresHiRgn_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tShOffThresHi_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tShOffThresHiRgn_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tHealThresHi_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa4_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa4_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa5_Plausibility_check" fileref="fID1" sampleTime="0.02">
+      <Interface>
+        <InterfaceObj kind="in" var="Air_tAFS" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="CoEng_st" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="CoEng_stLoIdlDet" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="EngDa_tEng" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="EnvT_t" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Epm_nEng" scaling="scID3" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Exh_tOxiCatDs" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Exh_tSensTOxiCatUs" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="FId_TOxiCatUsDiaInhib" scaling="scID2"/>
+        <InterfaceObj kind="in" var="FId_TOxiCatUsRplVal" scaling="scID2"/>
+        <InterfaceObj kind="in" var="InjCtl_qSetUnBal" scaling="scID4" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="PFltRgn_stModeActv" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="SCR_tAdapUCatUsT" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="StSys_stValidReq" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="SCR_stWrmUpLstDrvCyc" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa7_Multiport_Switch" scaling="scID2"/>
+        <InterfaceObj kind="in" var="Sa4_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa4_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa5_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa5_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa2_Unit_Delay1" scaling="scID2"/>
+        <InterfaceObj kind="in" var="Sa14_Switch_R"/>
+        <InterfaceObj kind="in" var="Sa6_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa6_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa25_Logical_Operator5" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tUsEnvOffs_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tThresOxiCatUsDs_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa5_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa5_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa6_Release_Conditions" fileref="fID1" sampleTime="0.02">
+      <Interface>
+        <InterfaceObj kind="in" var="Air_tAFS" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="CoEng_st" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="CoEng_stLoIdlDet" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="EngDa_tEng" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="EnvT_t" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Epm_nEng" scaling="scID3" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Exh_tOxiCatDs" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Exh_tSensTOxiCatUs" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="FId_TOxiCatUsDiaInhib" scaling="scID2"/>
+        <InterfaceObj kind="in" var="FId_TOxiCatUsRplVal" scaling="scID2"/>
+        <InterfaceObj kind="in" var="InjCtl_qSetUnBal" scaling="scID4" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="PFltRgn_stModeActv" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="SCR_tAdapUCatUsT" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="StSys_stValidReq" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="SCR_stWrmUpLstDrvCyc" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa7_Multiport_Switch" scaling="scID2"/>
+        <InterfaceObj kind="in" var="Sa4_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa4_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa5_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa5_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa2_Unit_Delay1" scaling="scID2"/>
+        <InterfaceObj kind="in" var="Sa14_Switch_R"/>
+        <InterfaceObj kind="in" var="Sa6_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa6_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa25_Logical_Operator5" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tiStdStActvDel_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tiEngRunDel_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tiEngRunDelOff_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tThresEnvEng_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_tThresEngUCat_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa6_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa6_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa25_Logical_Operator5" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="TOxiCatUs_stNplDynChkEna_mp" scaling="scID2"/>
+        <InterfaceObj kind="disp" var="TOxiCatUs_stNplStatChkEna_mp" scaling="scID2"/>
+        <InterfaceObj kind="disp" var="TOxiCatUs_stStdStActvDel_mp" scaling="scID2"/>
+      </Interface>
+    </Function>
+    <Function name="Sa7_Replace_value" fileref="fID1" sampleTime="0.02">
+      <Interface>
+        <InterfaceObj kind="in" var="Air_tAFS" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="CoEng_st" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="CoEng_stLoIdlDet" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="EngDa_tEng" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="EnvT_t" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Epm_nEng" scaling="scID3" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Exh_tOxiCatDs" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Exh_tSensTOxiCatUs" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="FId_TOxiCatUsDiaInhib" scaling="scID2"/>
+        <InterfaceObj kind="in" var="FId_TOxiCatUsRplVal" scaling="scID2"/>
+        <InterfaceObj kind="in" var="InjCtl_qSetUnBal" scaling="scID4" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="PFltRgn_stModeActv" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="SCR_tAdapUCatUsT" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="StSys_stValidReq" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="SCR_stWrmUpLstDrvCyc" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa7_Multiport_Switch" scaling="scID2"/>
+        <InterfaceObj kind="in" var="Sa4_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa4_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa5_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa5_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa2_Unit_Delay1" scaling="scID2"/>
+        <InterfaceObj kind="in" var="Sa14_Switch_R"/>
+        <InterfaceObj kind="in" var="Sa6_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa6_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa25_Logical_Operator5" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="TOxiCatUs_TransStgDfl_C" scaling="scID2" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa7_Multiport_Switch" scaling="scID2"/>
+      </Interface>
+    </Function>
+    <Function name="Sa12_System_reactions" fileref="fID1" sampleTime="0.02">
+      <Interface>
+        <InterfaceObj kind="in" var="Air_tAFS" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="CoEng_st" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="CoEng_stLoIdlDet" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="EngDa_tEng" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="EnvT_t" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Epm_nEng" scaling="scID3" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Exh_tOxiCatDs" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Exh_tSensTOxiCatUs" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="FId_TOxiCatUsDiaInhib" scaling="scID2"/>
+        <InterfaceObj kind="in" var="FId_TOxiCatUsRplVal" scaling="scID2"/>
+        <InterfaceObj kind="in" var="InjCtl_qSetUnBal" scaling="scID4" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="PFltRgn_stModeActv" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="SCR_tAdapUCatUsT" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="StSys_stValidReq" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="SCR_stWrmUpLstDrvCyc" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa7_Multiport_Switch" scaling="scID2"/>
+        <InterfaceObj kind="in" var="Sa4_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa4_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa5_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa5_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa2_Unit_Delay1" scaling="scID2"/>
+        <InterfaceObj kind="in" var="Sa14_Switch_R"/>
+        <InterfaceObj kind="in" var="Sa6_Logical_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa6_Logical_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa25_Logical_Operator5" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02"/>
+    <Scaling id="scID2" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00"/>
+    <Scaling id="scID3" lsb="5.0000000000000000e-01" offset="0.0000000000000000e+00"/>
+    <Scaling id="scID4" lsb="2.0000000000000000e-02" offset="-0.0000000000000000e+00"/>
+    <Scaling id="scID5" lsb="1.0000000000000001e-01" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_epdev_46691\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_epdev_46691\init.m" modelVersion="1.39" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_epdev_46691\sf_matrix_modified.slx" modelCreationDate="2001-10-22T21:57:28" creator="The MathWorks, Inc.">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.39" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_epdev_46691\sf_matrix_modified.slx" creationDate="2001-10-22T21:57:28" modificationDate="2024-09-12T18:42:36" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_epdev_46691\init.m">
+    <subsystem subsysID="ss1" physicalPath="sf_matrix_modified" path="" sampleTime="2" name="sf_matrix_modified" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sf_matrix_modified/In1" path="In1" signalName="data1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sf_matrix_modified/In2" path="In2" signalName="data2">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <parameter name="param1" path="sub_A/Chart" physicalPath="sf_matrix_modified/sub_A/Chart" origin="explicit_param" workspace="param1">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="1.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="1.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_A/Chart" physicalPath="sf_matrix_modified/sub_A/Chart" simulinkBlockType="SubSystem" blockAttribute="Parameter"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sf_matrix_modified/Out1" path="Out1" signalName="final_out">
+        <array size="2" startIndex="1">
+          <array size="4" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="sf_matrix_modified/sub_A/Chart" path="sub_A/Chart" name="final_out" stateflowVariable="final_out" portNumber="1" signalName="final_out">
+        <array size="2" startIndex="33">
+          <array size="4" startIndex="33">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_matrix_modified/sub_A/In1" path="sub_A/In1" name="In1" portNumber="1" signalName="data1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_matrix_modified/sub_A/In2" path="sub_A/In2" name="In2" portNumber="1" signalName="data2">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="sf_matrix_modified/sub_A" path="sub_A" sampleTime="2" name="sub_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sf_matrix_modified/sub_A/In1" path="sub_A/In1" signalName="data1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sf_matrix_modified/sub_A/In2" path="sub_A/In2" signalName="data2">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <parameter name="param1" path="sub_A/Chart" physicalPath="sf_matrix_modified/sub_A/Chart" origin="explicit_param" workspace="param1">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="1.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="1.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_A/Chart" physicalPath="sf_matrix_modified/sub_A/Chart" simulinkBlockType="SubSystem" blockAttribute="Parameter"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sf_matrix_modified/sub_A/Out1" path="sub_A/Out1" signalName="final_out">
+        <array size="2" startIndex="1">
+          <array size="4" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="sf_matrix_modified/sub_A/Chart" path="sub_A/Chart" name="final_out" stateflowVariable="final_out" portNumber="1" signalName="final_out">
+        <array size="2" startIndex="33">
+          <array size="4" startIndex="33">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_matrix_modified/sub_A/In1" path="sub_A/In1" name="In1" portNumber="1" signalName="data1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_matrix_modified/sub_A/In2" path="sub_A/In2" name="In2" portNumber="1" signalName="data2">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="sf_matrix_modified/sub_A/Chart" path="sub_A/Chart" sampleTime="2" name="Chart" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="data1" physicalPath="sf_matrix_modified/sub_A/Chart/data1" path="sub_A/Chart/data1" signalName="data1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="2" name="data2" physicalPath="sf_matrix_modified/sub_A/Chart/data2" path="sub_A/Chart/data2" signalName="data2">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <parameter name="param1" path="sub_A/Chart" physicalPath="sf_matrix_modified/sub_A/Chart" origin="explicit_param" workspace="param1">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="1.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="1.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_A/Chart" physicalPath="sf_matrix_modified/sub_A/Chart" simulinkBlockType="SubSystem" blockAttribute="Parameter"/>
+      </parameter>
+      <outport portNumber="1" name="final_out" physicalPath="sf_matrix_modified/sub_A/Chart/final_out" path="sub_A/Chart/final_out" signalName="final_out">
+        <array size="2" startIndex="1">
+          <array size="4" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="autosarmultirunnables_ep_scheduler_stub.c" path="C:\Users\developer\AppData\Local\Temp\ut20210901T090956_8540\tmp_ut_simple_33\Wrapper_autosarmultirunnables_ep_stubs"/>
+    <File annotate="yes" id="ID72" kind="source" name="autosarmultirunnables.c" path="C:\Users\developer\AppData\Local\Temp\ut20210901T090956_8540\tmp_ut_simple_33\autosarmultirunnables_autosar_rtw"/>
+    <File annotate="no" id="ID73" kind="library" name="Rte_ASWC.c" path="C:\Users\developer\AppData\Local\Temp\ut20210901T090956_8540\tmp_ut_simple_33\autosarmultirunnables_autosar_rtw\stub"/>
+    <File annotate="no" id="ID74" kind="library" name="autosarmultirunnables_ep_rte_stub.c" path="C:\Users\developer\AppData\Local\Temp\ut20210901T090956_8540\tmp_ut_simple_33\Wrapper_autosarmultirunnables_ep_stubs"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20210901T090956_8540\tmp_ut_simple_33\Wrapper_autosarmultirunnables_ep_stubs"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20210901T090956_8540\tmp_ut_simple_33"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20210901T090956_8540\tmp_ut_simple_33\autosarmultirunnables_autosar_rtw"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20210901T090956_8540\tmp_ut_simple_33\autosarmultirunnables_autosar_rtw\stub"/>
+    <IncludePath path="C:\Matlab\R2017b\extern\include"/>
+    <IncludePath path="C:\Matlab\R2017b\simulink\include"/>
+    <IncludePath path="C:\Matlab\R2017b\rtw\c\src"/>
+    <IncludePath path="C:\Matlab\R2017b\rtw\c\src\ext_mode\common"/>
+    <IncludePath path="C:\Matlab\R2017b\rtw\c\ert"/>
+  </IncludePaths>
+  <Functions archName="Wrapper_autosarmultirunnables [C-Code]">
+    <Function fileref="ID71" initFunc="swc_wrapper_scheduler_init" name="swc_wrapper_scheduler_step" postInitFunc="BTC_init_RTE_params">
+      <Interface>
+        <InterfaceObj kind="in" var="RteStub_Interface1_RPort_DE1"/>
+        <InterfaceObj kind="in" var="RteStub_Interface1_RPort_DE1_err"/>
+        <InterfaceObj kind="in" var="RteStub_Interface1_RPort_DE2"/>
+        <InterfaceObj kind="out" var="RteStub_Interface2_PPort_DE1"/>
+        <InterfaceObj kind="out" var="RteStub_Interface2_PPort_DE2"/>
+        <InterfaceObj kind="out" var="RteStub_Interface2_PPort_DE3"/>
+        <InterfaceObj kind="out" var="RteStub_Interface2_PPort_DE4"/>
+        <InterfaceObj kind="cal" var="Rte_CData_K_data"/>
+        <InterfaceObj kind="disp" var="loc_irv1"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID72" initFunc="Runnable_Init" name="Runnable1" postInitFunc="BTC_init_RTE_params">
+      <Interface>
+        <InterfaceObj kind="in" var="RteStub_Interface1_RPort_DE1"/>
+        <InterfaceObj kind="in" var="RteStub_Interface1_RPort_DE1_err"/>
+        <InterfaceObj kind="in" var="RteStub_IRV3"/>
+        <InterfaceObj kind="out" var="RteStub_Interface2_PPort_DE1"/>
+        <InterfaceObj kind="out" var="RteStub_IRV1"/>
+        <InterfaceObj kind="cal" var="Rte_CData_K_data"/>
+        <InterfaceObj kind="disp" var="loc_irv1"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID72" initFunc="Runnable_Init" name="Runnable2" postInitFunc="BTC_init_RTE_params">
+      <Interface>
+        <InterfaceObj kind="in" var="RteStub_IRV1"/>
+        <InterfaceObj kind="in" var="RteStub_IRV2"/>
+        <InterfaceObj kind="out" var="RteStub_Interface2_PPort_DE3"/>
+        <InterfaceObj kind="out" var="RteStub_Interface2_PPort_DE4"/>
+        <InterfaceObj kind="out" var="RteStub_IRV4"/>
+      </Interface>
+    </Function>
+    <Function initFunc="Runnable_Init" name="substract_subsys_fun" postInitFunc="BTC_init_RTE_params">
+      <Interface>
+        <InterfaceObj kind="out" var="local2"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID72" initFunc="Runnable_Init" name="Runnable3" postInitFunc="BTC_init_RTE_params">
+      <Interface>
+        <InterfaceObj kind="in" var="RteStub_IRV4"/>
+        <InterfaceObj kind="in" var="RteStub_Interface1_RPort_DE2"/>
+        <InterfaceObj kind="out" var="RteStub_IRV3"/>
+        <InterfaceObj kind="out" var="RteStub_Interface2_PPort_DE2"/>
+        <InterfaceObj kind="out" var="RteStub_IRV2"/>
+      </Interface>
+    </Function>
+  </Functions>
+</CodeModel>

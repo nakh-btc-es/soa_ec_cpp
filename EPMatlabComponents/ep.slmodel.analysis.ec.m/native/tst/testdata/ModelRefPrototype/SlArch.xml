@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ModelRefPrototype\ut_results\AddModelInfo.xml" modelVersion="1.51" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ModelRefPrototype\ModelRefLocals_main.slx" modelCreationDate="2019-09-16T15:34:04" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.51" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ModelRefPrototype\ModelRefLocals_main.slx" creationDate="2019-09-16T15:34:04" modificationDate="2024-09-12T18:41:41">
+    <subsystem subsysID="ss1" physicalPath="ModelRefLocals_main" path="" sampleTime="0.1" name="ModelRefLocals_main" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ModelRefLocals_main/In1" path="In1" signalName="s_in1">
+        <boolean/>
+      </inport>
+      <parameter name="paramA" path="constA" physicalPath="ModelRefLocals_main/constA" origin="explicit_param" workspace="paramA" initValue="1">
+        <boolean/>
+        <usageContext path="constA" physicalPath="ModelRefLocals_main/constA" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="paramB" path="sub_A/m1/constB" physicalPath="ModelRefLocals_sub1/constB" modelRef="model002" origin="explicit_param" workspace="paramB" initValue="1">
+        <boolean/>
+        <usageContext path="sub_A/m1/constB" physicalPath="ModelRefLocals_sub1/constB" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="paramC" path="sub_A/m2/constC" physicalPath="ModelRefLocals_sub2/constC" modelRef="model004" origin="explicit_param" workspace="paramC" initValue="1">
+        <boolean/>
+        <usageContext path="sub_A/m2/constC" physicalPath="ModelRefLocals_sub2/constC" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+      </parameter>
+      <parameter name="paramD" path="sub_A/m2/sub_M/mySub/interSub/m3/constD" physicalPath="ModelRefLocals_sub3/constD" modelRef="model003" origin="explicit_param" workspace="paramD" initValue="1">
+        <boolean/>
+        <usageContext path="sub_A/m2/sub_M/mySub/interSub/m3/constD" physicalPath="ModelRefLocals_sub3/constD" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="ModelRefLocals_main/Out1" path="Out1" signalName="s_out1">
+        <boolean/>
+      </outport>
+      <display physicalPath="ModelRefLocals_main/LogOp" path="LogOp" name="LogOp" portNumber="1" signalName="sig_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_main/constA" path="constA" name="constA" portNumber="1" signalName="sig_constA">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_main/sub_A/LogOp" path="sub_A/LogOp" name="LogOp" portNumber="1" signalName="and_op1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_main/sub_A/LogOp1" path="sub_A/LogOp1" name="LogOp1" portNumber="1" signalName="subA_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub1/LogOp" path="sub_A/m1/LogOp" name="LogOp" portNumber="1" modelRef="model002" signalName="sub1_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub1/constB" path="sub_A/m1/constB" name="constB" portNumber="1" modelRef="model002" signalName="sig_constB">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub1/sub_H/LogOp" path="sub_A/m1/sub_H/LogOp" name="LogOp" portNumber="1" modelRef="model002" signalName="subH_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub2/LogOp" path="sub_A/m2/LogOp" name="LogOp" portNumber="1" modelRef="model004" signalName="sub2_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub2/constC" path="sub_A/m2/constC" name="constC" portNumber="1" modelRef="model004" signalName="sig_constC">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/Data Type Conversion1" path="sub_A/m2/sub_M/mySub/interSub/Data Type Conversion1" name="Data Type Conversion1" portNumber="1" modelRef="model004" signalName="sig_inter">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/extra_Sub/LogOp" path="sub_A/m2/sub_M/mySub/interSub/extra_Sub/LogOp" name="LogOp" portNumber="1" modelRef="model004" signalName="sig_extra">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/LogOp" path="sub_A/m2/sub_M/mySub/interSub/m3/LogOp" name="LogOp" portNumber="1" modelRef="model003" signalName="sub3_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/constD" path="sub_A/m2/sub_M/mySub/interSub/m3/constD" name="constD" portNumber="1" modelRef="model003" signalName="sig_constD">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/sub_X/LogOp" path="sub_A/m2/sub_M/mySub/interSub/m3/sub_X/LogOp" name="LogOp" portNumber="1" modelRef="model003" signalName="subM_out1">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="ModelRefLocals_main/sub_A" path="sub_A" sampleTime="0.1" name="sub_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ModelRefLocals_main/sub_A/In1" path="sub_A/In1" signalName="sig_in1">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ModelRefLocals_main/sub_A/In2" path="sub_A/In2" signalName="sig_constA">
+        <boolean/>
+      </inport>
+      <parameter name="paramB" path="sub_A/m1/constB" physicalPath="ModelRefLocals_sub1/constB" modelRef="model002" origin="explicit_param" workspace="paramB" initValue="1">
+        <boolean/>
+        <usageContext path="sub_A/m1/constB" physicalPath="ModelRefLocals_sub1/constB" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="paramC" path="sub_A/m2/constC" physicalPath="ModelRefLocals_sub2/constC" modelRef="model004" origin="explicit_param" workspace="paramC" initValue="1">
+        <boolean/>
+        <usageContext path="sub_A/m2/constC" physicalPath="ModelRefLocals_sub2/constC" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+      </parameter>
+      <parameter name="paramD" path="sub_A/m2/sub_M/mySub/interSub/m3/constD" physicalPath="ModelRefLocals_sub3/constD" modelRef="model003" origin="explicit_param" workspace="paramD" initValue="1">
+        <boolean/>
+        <usageContext path="sub_A/m2/sub_M/mySub/interSub/m3/constD" physicalPath="ModelRefLocals_sub3/constD" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="ModelRefLocals_main/sub_A/Out1" path="sub_A/Out1" signalName="subA_out1">
+        <boolean/>
+      </outport>
+      <display physicalPath="ModelRefLocals_main/sub_A/LogOp" path="sub_A/LogOp" name="LogOp" portNumber="1" signalName="and_op1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_main/sub_A/LogOp1" path="sub_A/LogOp1" name="LogOp1" portNumber="1" signalName="subA_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub1/LogOp" path="sub_A/m1/LogOp" name="LogOp" portNumber="1" modelRef="model002" signalName="sub1_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub1/constB" path="sub_A/m1/constB" name="constB" portNumber="1" modelRef="model002" signalName="sig_constB">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub1/sub_H/LogOp" path="sub_A/m1/sub_H/LogOp" name="LogOp" portNumber="1" modelRef="model002" signalName="subH_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub2/LogOp" path="sub_A/m2/LogOp" name="LogOp" portNumber="1" modelRef="model004" signalName="sub2_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub2/constC" path="sub_A/m2/constC" name="constC" portNumber="1" modelRef="model004" signalName="sig_constC">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/Data Type Conversion1" path="sub_A/m2/sub_M/mySub/interSub/Data Type Conversion1" name="Data Type Conversion1" portNumber="1" modelRef="model004" signalName="sig_inter">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/extra_Sub/LogOp" path="sub_A/m2/sub_M/mySub/interSub/extra_Sub/LogOp" name="LogOp" portNumber="1" modelRef="model004" signalName="sig_extra">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/LogOp" path="sub_A/m2/sub_M/mySub/interSub/m3/LogOp" name="LogOp" portNumber="1" modelRef="model003" signalName="sub3_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/constD" path="sub_A/m2/sub_M/mySub/interSub/m3/constD" name="constD" portNumber="1" modelRef="model003" signalName="sig_constD">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/sub_X/LogOp" path="sub_A/m2/sub_M/mySub/interSub/m3/sub_X/LogOp" name="LogOp" portNumber="1" modelRef="model003" signalName="subM_out1">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="ModelRefLocals_sub1" path="sub_A/m1" sampleTime="0.1" name="m1" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="ModelRefLocals_sub1/In1" path="sub_A/m1/In1" modelRef="model002" signalName="s_sub1_in1">
+        <boolean/>
+      </inport>
+      <parameter name="paramB" path="sub_A/m1/constB" physicalPath="ModelRefLocals_sub1/constB" modelRef="model002" origin="explicit_param" workspace="paramB" initValue="1">
+        <boolean/>
+        <usageContext path="sub_A/m1/constB" physicalPath="ModelRefLocals_sub1/constB" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="ModelRefLocals_sub1/Out1" path="sub_A/m1/Out1" modelRef="model002" signalName="s_sub1_out">
+        <boolean/>
+      </outport>
+      <display physicalPath="ModelRefLocals_sub1/LogOp" path="sub_A/m1/LogOp" name="LogOp" portNumber="1" modelRef="model002" signalName="sub1_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub1/constB" path="sub_A/m1/constB" name="constB" portNumber="1" modelRef="model002" signalName="sig_constB">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub1/sub_H/LogOp" path="sub_A/m1/sub_H/LogOp" name="LogOp" portNumber="1" modelRef="model002" signalName="subH_out1">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="ModelRefLocals_sub1/sub_H" path="sub_A/m1/sub_H" sampleTime="0.1" name="sub_H" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="ModelRefLocals_sub1/sub_H/In1" path="sub_A/m1/sub_H/In1" modelRef="model002" signalName="sub1_in1">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ModelRefLocals_sub1/sub_H/In2" path="sub_A/m1/sub_H/In2" modelRef="model002" signalName="sig_constB">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ModelRefLocals_sub1/sub_H/Out1" path="sub_A/m1/sub_H/Out1" modelRef="model002" signalName="subH_out1">
+        <boolean/>
+      </outport>
+      <display physicalPath="ModelRefLocals_sub1/sub_H/LogOp" path="sub_A/m1/sub_H/LogOp" name="LogOp" portNumber="1" modelRef="model002" signalName="subH_out1">
+        <boolean/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="ModelRefLocals_sub2" path="sub_A/m2" sampleTime="0.1" name="m2" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="In1" physicalPath="ModelRefLocals_sub2/In1" path="sub_A/m2/In1" modelRef="model004" signalName="sub2_in1">
+        <boolean/>
+      </inport>
+      <parameter name="paramC" path="sub_A/m2/constC" physicalPath="ModelRefLocals_sub2/constC" modelRef="model004" origin="explicit_param" workspace="paramC" initValue="1">
+        <boolean/>
+        <usageContext path="sub_A/m2/constC" physicalPath="ModelRefLocals_sub2/constC" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+      </parameter>
+      <parameter name="paramD" path="sub_A/m2/sub_M/mySub/interSub/m3/constD" physicalPath="ModelRefLocals_sub3/constD" modelRef="model003" origin="explicit_param" workspace="paramD" initValue="1">
+        <boolean/>
+        <usageContext path="sub_A/m2/sub_M/mySub/interSub/m3/constD" physicalPath="ModelRefLocals_sub3/constD" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="ModelRefLocals_sub2/Out1" path="sub_A/m2/Out1" modelRef="model004" signalName="sub2_out1">
+        <boolean/>
+      </outport>
+      <display physicalPath="ModelRefLocals_sub2/LogOp" path="sub_A/m2/LogOp" name="LogOp" portNumber="1" modelRef="model004" signalName="sub2_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub2/constC" path="sub_A/m2/constC" name="constC" portNumber="1" modelRef="model004" signalName="sig_constC">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/Data Type Conversion1" path="sub_A/m2/sub_M/mySub/interSub/Data Type Conversion1" name="Data Type Conversion1" portNumber="1" modelRef="model004" signalName="sig_inter">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/extra_Sub/LogOp" path="sub_A/m2/sub_M/mySub/interSub/extra_Sub/LogOp" name="LogOp" portNumber="1" modelRef="model004" signalName="sig_extra">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/LogOp" path="sub_A/m2/sub_M/mySub/interSub/m3/LogOp" name="LogOp" portNumber="1" modelRef="model003" signalName="sub3_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/constD" path="sub_A/m2/sub_M/mySub/interSub/m3/constD" name="constD" portNumber="1" modelRef="model003" signalName="sig_constD">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/sub_X/LogOp" path="sub_A/m2/sub_M/mySub/interSub/m3/sub_X/LogOp" name="LogOp" portNumber="1" modelRef="model003" signalName="subM_out1">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="ModelRefLocals_sub2/sub_M" path="sub_A/m2/sub_M" sampleTime="0.1" name="sub_M" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="In1" physicalPath="ModelRefLocals_sub2/sub_M/In1" path="sub_A/m2/sub_M/In1" modelRef="model004" signalName="sub2_in1">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ModelRefLocals_sub2/sub_M/In2" path="sub_A/m2/sub_M/In2" modelRef="model004" signalName="sig_constC">
+        <boolean/>
+      </inport>
+      <parameter name="paramD" path="sub_A/m2/sub_M/mySub/interSub/m3/constD" physicalPath="ModelRefLocals_sub3/constD" modelRef="model003" origin="explicit_param" workspace="paramD" initValue="1">
+        <boolean/>
+        <usageContext path="sub_A/m2/sub_M/mySub/interSub/m3/constD" physicalPath="ModelRefLocals_sub3/constD" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="ModelRefLocals_sub2/sub_M/Out1" path="sub_A/m2/sub_M/Out1" modelRef="model004" signalName="sig_inter">
+        <boolean/>
+      </outport>
+      <display physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/Data Type Conversion1" path="sub_A/m2/sub_M/mySub/interSub/Data Type Conversion1" name="Data Type Conversion1" portNumber="1" modelRef="model004" signalName="sig_inter">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/extra_Sub/LogOp" path="sub_A/m2/sub_M/mySub/interSub/extra_Sub/LogOp" name="LogOp" portNumber="1" modelRef="model004" signalName="sig_extra">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/LogOp" path="sub_A/m2/sub_M/mySub/interSub/m3/LogOp" name="LogOp" portNumber="1" modelRef="model003" signalName="sub3_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/constD" path="sub_A/m2/sub_M/mySub/interSub/m3/constD" name="constD" portNumber="1" modelRef="model003" signalName="sig_constD">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/sub_X/LogOp" path="sub_A/m2/sub_M/mySub/interSub/m3/sub_X/LogOp" name="LogOp" portNumber="1" modelRef="model003" signalName="subM_out1">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss7"/>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="ModelRefLocals_sub2/sub_M/mySub" path="sub_A/m2/sub_M/mySub" sampleTime="0.1" name="mySub" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="In1" physicalPath="ModelRefLocals_sub2/sub_M/mySub/In1" path="sub_A/m2/sub_M/mySub/In1" modelRef="model004" signalName="sub2_in1">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ModelRefLocals_sub2/sub_M/mySub/In2" path="sub_A/m2/sub_M/mySub/In2" modelRef="model004" signalName="sig_constC">
+        <boolean/>
+      </inport>
+      <parameter name="paramD" path="sub_A/m2/sub_M/mySub/interSub/m3/constD" physicalPath="ModelRefLocals_sub3/constD" modelRef="model003" origin="explicit_param" workspace="paramD" initValue="1">
+        <boolean/>
+        <usageContext path="sub_A/m2/sub_M/mySub/interSub/m3/constD" physicalPath="ModelRefLocals_sub3/constD" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="ModelRefLocals_sub2/sub_M/mySub/Out1" path="sub_A/m2/sub_M/mySub/Out1" modelRef="model004" signalName="sig_inter">
+        <boolean/>
+      </outport>
+      <display physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/Data Type Conversion1" path="sub_A/m2/sub_M/mySub/interSub/Data Type Conversion1" name="Data Type Conversion1" portNumber="1" modelRef="model004" signalName="sig_inter">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/extra_Sub/LogOp" path="sub_A/m2/sub_M/mySub/interSub/extra_Sub/LogOp" name="LogOp" portNumber="1" modelRef="model004" signalName="sig_extra">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/LogOp" path="sub_A/m2/sub_M/mySub/interSub/m3/LogOp" name="LogOp" portNumber="1" modelRef="model003" signalName="sub3_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/constD" path="sub_A/m2/sub_M/mySub/interSub/m3/constD" name="constD" portNumber="1" modelRef="model003" signalName="sig_constD">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/sub_X/LogOp" path="sub_A/m2/sub_M/mySub/interSub/m3/sub_X/LogOp" name="LogOp" portNumber="1" modelRef="model003" signalName="subM_out1">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub" path="sub_A/m2/sub_M/mySub/interSub" sampleTime="0.1" name="interSub" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="In1" physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/In1" path="sub_A/m2/sub_M/mySub/interSub/In1" modelRef="model004" signalName="sub2_in1">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/In2" path="sub_A/m2/sub_M/mySub/interSub/In2" modelRef="model004" signalName="sig_constC">
+        <boolean/>
+      </inport>
+      <parameter name="paramD" path="sub_A/m2/sub_M/mySub/interSub/m3/constD" physicalPath="ModelRefLocals_sub3/constD" modelRef="model003" origin="explicit_param" workspace="paramD" initValue="1">
+        <boolean/>
+        <usageContext path="sub_A/m2/sub_M/mySub/interSub/m3/constD" physicalPath="ModelRefLocals_sub3/constD" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/Out1" path="sub_A/m2/sub_M/mySub/interSub/Out1" modelRef="model004" signalName="sig_inter">
+        <boolean/>
+      </outport>
+      <display physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/Data Type Conversion1" path="sub_A/m2/sub_M/mySub/interSub/Data Type Conversion1" name="Data Type Conversion1" portNumber="1" modelRef="model004" signalName="sig_inter">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/extra_Sub/LogOp" path="sub_A/m2/sub_M/mySub/interSub/extra_Sub/LogOp" name="LogOp" portNumber="1" modelRef="model004" signalName="sig_extra">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/LogOp" path="sub_A/m2/sub_M/mySub/interSub/m3/LogOp" name="LogOp" portNumber="1" modelRef="model003" signalName="sub3_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/constD" path="sub_A/m2/sub_M/mySub/interSub/m3/constD" name="constD" portNumber="1" modelRef="model003" signalName="sig_constD">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/sub_X/LogOp" path="sub_A/m2/sub_M/mySub/interSub/m3/sub_X/LogOp" name="LogOp" portNumber="1" modelRef="model003" signalName="subM_out1">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss9"/>
+      <subsystem refSubsysID="ss10"/>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/extra_Sub" path="sub_A/m2/sub_M/mySub/interSub/extra_Sub" sampleTime="0.1" name="extra_Sub" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="In1" physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/extra_Sub/In1" path="sub_A/m2/sub_M/mySub/interSub/extra_Sub/In1" modelRef="model004" signalName="sub2_in1">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/extra_Sub/In2" path="sub_A/m2/sub_M/mySub/interSub/extra_Sub/In2" modelRef="model004" signalName="sig_constC">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/extra_Sub/Out1" path="sub_A/m2/sub_M/mySub/interSub/extra_Sub/Out1" modelRef="model004" signalName="sig_extra">
+        <boolean/>
+      </outport>
+      <display physicalPath="ModelRefLocals_sub2/sub_M/mySub/interSub/extra_Sub/LogOp" path="sub_A/m2/sub_M/mySub/interSub/extra_Sub/LogOp" name="LogOp" portNumber="1" modelRef="model004" signalName="sig_extra">
+        <boolean/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="ModelRefLocals_sub3" path="sub_A/m2/sub_M/mySub/interSub/m3" sampleTime="0.1" name="m3" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="In1" physicalPath="ModelRefLocals_sub3/In1" path="sub_A/m2/sub_M/mySub/interSub/m3/In1" modelRef="model003" signalName="sub3_in1">
+        <boolean/>
+      </inport>
+      <parameter name="paramD" path="sub_A/m2/sub_M/mySub/interSub/m3/constD" physicalPath="ModelRefLocals_sub3/constD" modelRef="model003" origin="explicit_param" workspace="paramD" initValue="1">
+        <boolean/>
+        <usageContext path="sub_A/m2/sub_M/mySub/interSub/m3/constD" physicalPath="ModelRefLocals_sub3/constD" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="ModelRefLocals_sub3/Out1" path="sub_A/m2/sub_M/mySub/interSub/m3/Out1" modelRef="model003" signalName="sub3_out1">
+        <boolean/>
+      </outport>
+      <display physicalPath="ModelRefLocals_sub3/LogOp" path="sub_A/m2/sub_M/mySub/interSub/m3/LogOp" name="LogOp" portNumber="1" modelRef="model003" signalName="sub3_out1">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/constD" path="sub_A/m2/sub_M/mySub/interSub/m3/constD" name="constD" portNumber="1" modelRef="model003" signalName="sig_constD">
+        <boolean/>
+      </display>
+      <display physicalPath="ModelRefLocals_sub3/sub_X/LogOp" path="sub_A/m2/sub_M/mySub/interSub/m3/sub_X/LogOp" name="LogOp" portNumber="1" modelRef="model003" signalName="subM_out1">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss11"/>
+    </subsystem>
+    <subsystem subsysID="ss11" physicalPath="ModelRefLocals_sub3/sub_X" path="sub_A/m2/sub_M/mySub/interSub/m3/sub_X" sampleTime="0.1" name="sub_X" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="In1" physicalPath="ModelRefLocals_sub3/sub_X/In1" path="sub_A/m2/sub_M/mySub/interSub/m3/sub_X/In1" modelRef="model003" signalName="sub3_in1">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ModelRefLocals_sub3/sub_X/In2" path="sub_A/m2/sub_M/mySub/interSub/m3/sub_X/In2" modelRef="model003" signalName="sig_constD">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ModelRefLocals_sub3/sub_X/Out1" path="sub_A/m2/sub_M/mySub/interSub/m3/sub_X/Out1" modelRef="model003" signalName="subM_out1">
+        <boolean/>
+      </outport>
+      <display physicalPath="ModelRefLocals_sub3/sub_X/LogOp" path="sub_A/m2/sub_M/mySub/interSub/m3/sub_X/LogOp" name="LogOp" portNumber="1" modelRef="model003" signalName="subM_out1">
+        <boolean/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.29" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ModelRefPrototype\ModelRefLocals_sub1.slx" creationDate="2019-09-16T15:34:04" modificationDate="2024-09-12T18:41:41"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="1.33" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ModelRefPrototype\ModelRefLocals_sub3.slx" creationDate="2019-09-16T15:34:04" modificationDate="2024-09-12T18:41:41"/>
+  <model modelID="model004" modelKind="model_ref" modelVersion="1.38" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ModelRefPrototype\ModelRefLocals_sub2.slx" creationDate="2019-09-16T15:34:04" modificationDate="2024-09-12T18:41:41"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

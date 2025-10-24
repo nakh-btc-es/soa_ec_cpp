@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_nested_runnables\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_nested_runnables\Init.m" modelVersion="1.435" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_nested_runnables\AR_nested_runnables.slx" modelCreationDate="2004-08-13T15:50:23" creator="The MathWorks, Inc.">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.435" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_nested_runnables\AR_nested_runnables.slx" creationDate="2004-08-13T15:50:23" modificationDate="2024-09-12T19:39:27" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_nested_runnables\Init.m">
+    <subsystem subsysID="ss1" physicalPath="AR_nested_runnables" path="" sampleTime="1" name="AR_nested_runnables" scopeKind="DUMMY" kind="subsystem">
+      <inport portNumber="1" name="Runnable3" physicalPath="AR_nested_runnables/Runnable3" path="Runnable3">
+        <unsupportedTypeInformation/>
+      </inport>
+      <inport portNumber="2" name="Runnable1" physicalPath="AR_nested_runnables/Runnable1" path="Runnable1">
+        <unsupportedTypeInformation/>
+      </inport>
+      <inport portNumber="3" name="Runnable2" physicalPath="AR_nested_runnables/Runnable2" path="Runnable2">
+        <unsupportedTypeInformation/>
+      </inport>
+      <inport portNumber="4" name="RPort_DE1" physicalPath="AR_nested_runnables/RPort_DE1" path="RPort_DE1">
+        <double/>
+      </inport>
+      <inport portNumber="5" name="RPort_DE1&#10;(ErrorStatus)" physicalPath="AR_nested_runnables/RPort_DE1&#10;(ErrorStatus)" path="RPort_DE1&#10;(ErrorStatus)">
+        <uint8/>
+      </inport>
+      <inport portNumber="6" name="RPort_DE2" physicalPath="AR_nested_runnables/RPort_DE2" path="RPort_DE2">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <parameter name="K" path="Subsystem/Subsystem/Runnable1_subsystem/Gain" physicalPath="AR_nested_runnables/Subsystem/Subsystem/Runnable1_subsystem/Gain" origin="explicit_param" workspace="K" initValue="-1.0">
+        <int8/>
+        <usageContext path="Subsystem/Subsystem/Runnable1_subsystem/Gain" physicalPath="AR_nested_runnables/Subsystem/Subsystem/Runnable1_subsystem/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <outport portNumber="1" name="PPort_DE1" physicalPath="AR_nested_runnables/PPort_DE1" path="PPort_DE1">
+        <int8/>
+      </outport>
+      <outport portNumber="2" name="PPort_DE2" physicalPath="AR_nested_runnables/PPort_DE2" path="PPort_DE2">
+        <int8/>
+      </outport>
+      <outport portNumber="3" name="PPort_DE3" physicalPath="AR_nested_runnables/PPort_DE3" path="PPort_DE3">
+        <array size="2" startIndex="1">
+          <int8/>
+        </array>
+      </outport>
+      <outport portNumber="4" name="PPort_DE4" physicalPath="AR_nested_runnables/PPort_DE4" path="PPort_DE4">
+        <double/>
+      </outport>
+      <display physicalPath="AR_nested_runnables/Subsystem/Subsystem/Runnable1_subsystem/EnabledSubsys" path="Subsystem/Subsystem/Runnable1_subsystem/EnabledSubsys" name="EnabledSubsys" portNumber="1" signalName="loc_irv1">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss7"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="AR_nested_runnables/Runnable3_subsystem" path="Runnable3_subsystem" sampleTime="5" name="Runnable3_subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="AR_nested_runnables/Runnable3_subsystem/In1" path="Runnable3_subsystem/In1" signalName="irv4">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="AR_nested_runnables/Runnable3_subsystem/In2" path="Runnable3_subsystem/In2">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <outport portNumber="1" name="TicToc_irv" physicalPath="AR_nested_runnables/Runnable3_subsystem/TicToc_irv" path="Runnable3_subsystem/TicToc_irv">
+        <int8/>
+      </outport>
+      <outport portNumber="2" name="TicToc" physicalPath="AR_nested_runnables/Runnable3_subsystem/TicToc" path="Runnable3_subsystem/TicToc">
+        <int8/>
+      </outport>
+      <outport portNumber="3" name="Multiplier" physicalPath="AR_nested_runnables/Runnable3_subsystem/Multiplier" path="Runnable3_subsystem/Multiplier">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="AR_nested_runnables/Subsystem/Runnable2_subsystem" path="Subsystem/Runnable2_subsystem" sampleTime="1" name="Runnable2_subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="AR_nested_runnables/Subsystem/Runnable2_subsystem/In1" path="Subsystem/Runnable2_subsystem/In1" signalName="irv1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="AR_nested_runnables/Subsystem/Runnable2_subsystem/In2" path="Subsystem/Runnable2_subsystem/In2" signalName="irv2">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="TicToc" physicalPath="AR_nested_runnables/Subsystem/Runnable2_subsystem/TicToc" path="Subsystem/Runnable2_subsystem/TicToc">
+        <array size="2" startIndex="1">
+          <int8/>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Subtracter" physicalPath="AR_nested_runnables/Subsystem/Runnable2_subsystem/Subtracter" path="Subsystem/Runnable2_subsystem/Subtracter">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Subtracter_irv" physicalPath="AR_nested_runnables/Subsystem/Runnable2_subsystem/Subtracter_irv" path="Subsystem/Runnable2_subsystem/Subtracter_irv">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="AR_nested_runnables/Subsystem/Runnable2_subsystem/SubstractSubsys" path="Subsystem/Runnable2_subsystem/SubstractSubsys" sampleTime="1" name="SubstractSubsys" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="AR_nested_runnables/Subsystem/Runnable2_subsystem/SubstractSubsys/In1" path="Subsystem/Runnable2_subsystem/SubstractSubsys/In1" signalName="irv1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="AR_nested_runnables/Subsystem/Runnable2_subsystem/SubstractSubsys/In2" path="Subsystem/Runnable2_subsystem/SubstractSubsys/In2" signalName="irv2">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="AR_nested_runnables/Subsystem/Runnable2_subsystem/SubstractSubsys/Out1" path="Subsystem/Runnable2_subsystem/SubstractSubsys/Out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="AR_nested_runnables/Subsystem/Subsystem/Runnable1_subsystem" path="Subsystem/Subsystem/Runnable1_subsystem" sampleTime="1" name="Runnable1_subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="AR_nested_runnables/Subsystem/Subsystem/Runnable1_subsystem/In1" path="Subsystem/Subsystem/Runnable1_subsystem/In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="ErrorStatus" physicalPath="AR_nested_runnables/Subsystem/Subsystem/Runnable1_subsystem/ErrorStatus" path="Subsystem/Subsystem/Runnable1_subsystem/ErrorStatus">
+        <uint8/>
+      </inport>
+      <inport portNumber="3" name="In2" physicalPath="AR_nested_runnables/Subsystem/Subsystem/Runnable1_subsystem/In2" path="Subsystem/Subsystem/Runnable1_subsystem/In2" signalName="irv3">
+        <int8/>
+      </inport>
+      <parameter name="K" path="Subsystem/Subsystem/Runnable1_subsystem/Gain" physicalPath="AR_nested_runnables/Subsystem/Subsystem/Runnable1_subsystem/Gain" origin="explicit_param" workspace="K" initValue="-1.0">
+        <int8/>
+        <usageContext path="Subsystem/Subsystem/Runnable1_subsystem/Gain" physicalPath="AR_nested_runnables/Subsystem/Subsystem/Runnable1_subsystem/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <outport portNumber="1" name="TicToc" physicalPath="AR_nested_runnables/Subsystem/Subsystem/Runnable1_subsystem/TicToc" path="Subsystem/Subsystem/Runnable1_subsystem/TicToc">
+        <int8/>
+      </outport>
+      <outport portNumber="2" name="Adder" physicalPath="AR_nested_runnables/Subsystem/Subsystem/Runnable1_subsystem/Adder" path="Subsystem/Subsystem/Runnable1_subsystem/Adder">
+        <double/>
+      </outport>
+      <display physicalPath="AR_nested_runnables/Subsystem/Subsystem/Runnable1_subsystem/EnabledSubsys" path="Subsystem/Subsystem/Runnable1_subsystem/EnabledSubsys" name="EnabledSubsys" portNumber="1" signalName="loc_irv1">
+        <double/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

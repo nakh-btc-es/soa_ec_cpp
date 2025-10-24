@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Wrapper_aa_event_tiny"/>
+    <Architecture id="id1" name="Wrapper_aa_event_tiny [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Wrapper_aa_event_tiny.cpp:1:Wrapper_aa_event_tiny_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="r_port_In1_ev" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In2" refId="id0"/>
+        <Path path="r_port_In2_ev" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In3" refId="id0"/>
+        <Path path="r2_port_u1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In4" refId="id0"/>
+        <Path path="r2_port_u2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="p2_port_y" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out2" refId="id0"/>
+        <Path path="p_port_Out1_ev" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_sl_sil_analysis_06\ut_results\AddModelInfo.xml" modelVersion="1.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_sl_sil_analysis_06\main.slx" modelCreationDate="2022-05-12T15:43:46" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_sl_sil_analysis_06\main.slx" creationDate="2022-05-12T15:43:46" modificationDate="2024-09-12T20:48:09">
+    <subsystem subsysID="ss1" physicalPath="main" path="" sampleTime="0.2" name="main" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="main/In1" path="In1" signalName="main_in">
+        <uint32/>
+      </inport>
+      <parameter name="AA" path="Model/Constant1" physicalPath="sub/Constant1" modelRef="model002" origin="explicit_param" workspace="AA" initValue="10.0">
+        <uint32/>
+        <usageContext path="Model/Constant1" physicalPath="sub/Constant1" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="BB" path="Constant1" physicalPath="main/Constant1" origin="explicit_param" workspace="BB" initValue="20.0">
+        <uint32/>
+        <usageContext path="Constant1" physicalPath="main/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="main/Out1" path="Out1" signalName="main_out">
+        <uint32/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="sub" path="Model" sampleTime="0.2" name="Model" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="sub/In1" path="Model/In1" modelRef="model002" signalName="sub_in">
+        <uint32/>
+      </inport>
+      <parameter name="AA" path="Model/Constant1" physicalPath="sub/Constant1" modelRef="model002" origin="explicit_param" workspace="AA" initValue="10.0">
+        <uint32/>
+        <usageContext path="Model/Constant1" physicalPath="sub/Constant1" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sub/Out1" path="Model/Out1" modelRef="model002" signalName="sub_out">
+        <uint32/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.4" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_sl_sil_analysis_06\sub.slx" creationDate="2022-05-12T15:35:03" modificationDate="2024-09-12T20:48:09"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

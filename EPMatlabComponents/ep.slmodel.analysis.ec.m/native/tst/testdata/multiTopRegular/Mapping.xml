@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="multi_top"/>
+    <Architecture id="id1" name="multi_top [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="multi_top.c:1:multi_top_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="sig_in1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In2" refId="id0"/>
+        <Path path="sig_in2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="sig_out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="paramA" refId="id0"/>
+        <Path path="paramA" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="top_A" refId="id0"/>
+      <Path path="multi_top.c:1:multi_top_step/multi_top.c:1:func_A" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/In1" refId="id0"/>
+        <Path path="sig_in1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/Out1" refId="id0"/>
+        <Path path="sig_A" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="paramA" refId="id0"/>
+        <Path path="paramA" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="Chart_B" refId="id0"/>
+      <Path path="multi_top.c:1:multi_top_step/multi_top.c:1:func_B" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Chart_B/u" refId="id0"/>
+        <Path path="sig_in2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Chart_B/y" refId="id0"/>
+        <Path path="sig_y" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

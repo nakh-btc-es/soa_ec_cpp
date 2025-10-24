@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+  <Types>
+    <EnumType name="enumAuto">
+      <EnumValue name="a" ordinal="1"/>
+      <EnumValue name="b" ordinal="2"/>
+      <EnumValue name="c" ordinal="4"/>
+    </EnumType>
+    <EnumType name="enumExported">
+      <EnumValue name="a" ordinal="1"/>
+      <EnumValue name="b" ordinal="2"/>
+      <EnumValue name="c" ordinal="4"/>
+    </EnumType>
+    <EnumType name="enumImported">
+      <EnumValue name="a" ordinal="1"/>
+      <EnumValue name="b" ordinal="2"/>
+      <EnumValue name="c" ordinal="4"/>
+    </EnumType>
+  </Types>
+  <Outports sampleTime="0.2">
+    <Outport portNr="1" type="enumAuto">
+      <ScalarRefs>
+        <ScalarRef displayName="AliasEnumAuto">INPUT:AliasEnumAuto</ScalarRef>
+      </ScalarRefs>
+    </Outport>
+    <Outport portNr="2" type="enumExported">
+      <ScalarRefs>
+        <ScalarRef displayName="AliasEnumExported">INPUT:AliasEnumExported</ScalarRef>
+      </ScalarRefs>
+    </Outport>
+    <Outport portNr="3" type="enumImported">
+      <ScalarRefs>
+        <ScalarRef displayName="AliasEnumImported">INPUT:AliasEnumImported</ScalarRef>
+      </ScalarRefs>
+    </Outport>
+  </Outports>
+</SFunction>

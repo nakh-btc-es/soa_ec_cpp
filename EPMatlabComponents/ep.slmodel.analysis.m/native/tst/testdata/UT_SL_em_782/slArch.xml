@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_em_782\model_start.m" modelVersion="1.117" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_em_782\scen_DSFXP_sl.mdl" modelCreationDate="2009-08-25T14:19:55" creator="obaer">
+  <toolInfo name="Matlab" release="(R2020a)" version="9.8" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020a)" version="10.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.117" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_em_782\scen_DSFXP_sl.mdl" creationDate="2009-08-25T14:19:55" modificationDate="2024-10-30T13:58:52" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_em_782\model_start.m">
+    <subsystem subsysID="ss1" physicalPath="scen_DSFXP_sl/Subsystem" path="Subsystem" sampleTime="0.1" name="Subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in." physicalPath="scen_DSFXP_sl/Subsystem/in." path="Subsystem/in.">
+        <fixedPoint simulinkTypeName="fixdt(0,8,3)" wordLength="8" isSigned="0" slope="0.125" bias="0.0" min="0.0" max="31.875"/>
+      </inport>
+      <parameter name="myParam" path="Subsystem/SS1/ET_C1&#10;" physicalPath="scen_DSFXP_sl/Subsystem/SS1/ET_C1&#10;" origin="explicit_param" workspace="myParam" initValue="-4.46014E43">
+        <fixedPoint simulinkTypeName="fixdt(1,16,-130)" wordLength="16" isSigned="1" slope="1.3611294676837539E39" bias="0.0" min="-4.4601490397061246E+43" max="2.5127E+43"/>
+        <usageContext path="Subsystem/SS1/ET_C1&#10;" physicalPath="scen_DSFXP_sl/Subsystem/SS1/ET_C1&#10;" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="out." physicalPath="scen_DSFXP_sl/Subsystem/out." path="Subsystem/out.">
+        <fixedPoint simulinkTypeName="fixdt(1,4,16)" wordLength="8" isSigned="1" slope="1.52587890625E-5" bias="0.0" min="-1.220703125E-4" max="1.068115234375E-4"/>
+      </outport>
+      <outport portNumber="2" name="out.1" physicalPath="scen_DSFXP_sl/Subsystem/out.1" path="Subsystem/out.1">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="out.2" physicalPath="scen_DSFXP_sl/Subsystem/out.2" path="Subsystem/out.2">
+        <int16/>
+      </outport>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/Constant1" path="Subsystem/SS1/Constant1" name="Constant1" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/ET_C1&#10;" path="Subsystem/SS1/ET_C1&#10;" name="ET_C1&#10;" portNumber="1">
+        <fixedPoint simulinkTypeName="fixdt(1,16,-130)" wordLength="16" isSigned="1" slope="1.3611294676837539E39" bias="0.0" min="-4.4601490397061246E43" max="2.5127E43"/>
+      </display>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/Max_2^-20" path="Subsystem/SS1/Max_2^-20" name="Max_2^-20" portNumber="1">
+        <int16 min="0" max="0"/>
+      </display>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/Max_UInt32 - 1" path="Subsystem/SS1/Max_UInt32 - 1" name="Max_UInt32 - 1" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/Product" path="Subsystem/SS1/Product" name="Product" portNumber="1">
+        <fixedPoint simulinkTypeName="fixdt(1,4,16)" wordLength="8" isSigned="1" slope="1.52587890625E-5" bias="0.0" min="-1.220703125E-4" max="1.068115234375E-4"/>
+      </display>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/RelOp_1" path="Subsystem/SS1/RelOp_1" name="RelOp_1" portNumber="1">
+        <boolean/>
+      </display>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/RelOp_2" path="Subsystem/SS1/RelOp_2" name="RelOp_2" portNumber="1">
+        <boolean/>
+      </display>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/RelOp_4" path="Subsystem/SS1/RelOp_4" name="RelOp_4" portNumber="1">
+        <int16/>
+      </display>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/Signal Specification1" path="Subsystem/SS1/Signal Specification1" name="Signal Specification1" portNumber="1">
+        <fixedPoint simulinkTypeName="fixdt(1,16,-130)" wordLength="16" isSigned="1" slope="1.3611294676837539E39" bias="0.0" min="-4.4601490397061246E43" max="2.5127E43"/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="scen_DSFXP_sl/Subsystem/SS1" path="Subsystem/SS1" sampleTime="0.1" name="SS1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="scen_DSFXP_sl/Subsystem/SS1/In1" path="Subsystem/SS1/In1">
+        <fixedPoint simulinkTypeName="fixdt(0,8,3)" wordLength="8" isSigned="0" slope="0.125" bias="0.0" min="0.0" max="31.875"/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="scen_DSFXP_sl/Subsystem/SS1/In2" path="Subsystem/SS1/In2" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="a">
+            <fixedPoint simulinkTypeName="fixdt(0,8,3,'DataTypeOverride','Off')" wordLength="8" isSigned="0" slope="0.125" bias="0.0" min="0.0" max="31.875"/>
+          </signal>
+        </bus>
+      </inport>
+      <parameter name="myParam" path="Subsystem/SS1/ET_C1&#10;" physicalPath="scen_DSFXP_sl/Subsystem/SS1/ET_C1&#10;" origin="explicit_param" workspace="myParam" initValue="-4.46014E43">
+        <fixedPoint simulinkTypeName="fixdt(1,16,-130)" wordLength="16" isSigned="1" slope="1.3611294676837539E39" bias="0.0" min="-4.4601490397061246E+43" max="2.5127E+43"/>
+        <usageContext path="Subsystem/SS1/ET_C1&#10;" physicalPath="scen_DSFXP_sl/Subsystem/SS1/ET_C1&#10;" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="scen_DSFXP_sl/Subsystem/SS1/Out1" path="Subsystem/SS1/Out1">
+        <fixedPoint simulinkTypeName="fixdt(1,4,16)" wordLength="8" isSigned="1" slope="1.52587890625E-5" bias="0.0" min="-1.220703125E-4" max="1.068115234375E-4"/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="scen_DSFXP_sl/Subsystem/SS1/Out2" path="Subsystem/SS1/Out2">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="scen_DSFXP_sl/Subsystem/SS1/Out3" path="Subsystem/SS1/Out3">
+        <int16/>
+      </outport>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/Constant1" path="Subsystem/SS1/Constant1" name="Constant1" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/ET_C1&#10;" path="Subsystem/SS1/ET_C1&#10;" name="ET_C1&#10;" portNumber="1">
+        <fixedPoint simulinkTypeName="fixdt(1,16,-130)" wordLength="16" isSigned="1" slope="1.3611294676837539E39" bias="0.0" min="-4.4601490397061246E43" max="2.5127E43"/>
+      </display>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/Max_2^-20" path="Subsystem/SS1/Max_2^-20" name="Max_2^-20" portNumber="1">
+        <int16 min="0" max="0"/>
+      </display>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/Max_UInt32 - 1" path="Subsystem/SS1/Max_UInt32 - 1" name="Max_UInt32 - 1" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/Product" path="Subsystem/SS1/Product" name="Product" portNumber="1">
+        <fixedPoint simulinkTypeName="fixdt(1,4,16)" wordLength="8" isSigned="1" slope="1.52587890625E-5" bias="0.0" min="-1.220703125E-4" max="1.068115234375E-4"/>
+      </display>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/RelOp_1" path="Subsystem/SS1/RelOp_1" name="RelOp_1" portNumber="1">
+        <boolean/>
+      </display>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/RelOp_2" path="Subsystem/SS1/RelOp_2" name="RelOp_2" portNumber="1">
+        <boolean/>
+      </display>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/RelOp_4" path="Subsystem/SS1/RelOp_4" name="RelOp_4" portNumber="1">
+        <int16/>
+      </display>
+      <display physicalPath="scen_DSFXP_sl/Subsystem/SS1/Signal Specification1" path="Subsystem/SS1/Signal Specification1" name="Signal Specification1" portNumber="1">
+        <fixedPoint simulinkTypeName="fixdt(1,16,-130)" wordLength="16" isSigned="1" slope="1.3611294676837539E39" bias="0.0" min="-4.4601490397061246E43" max="2.5127E43"/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

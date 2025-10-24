@@ -1,0 +1,1187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.856" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_ep_2216\clutchAdapt_EV.slx" modelCreationDate="2003-03-17T10:31:45" creator="rainerw">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p7"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.856" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_ep_2216\clutchAdapt_EV.slx" creationDate="2003-03-17T10:31:45" modificationDate="2021-02-19T11:43:34">
+    <subsystem subsysID="ss1" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt" path="clutchAdapt/Subsystem/clutchAdapt" sampleTime="0.01" name="clutchAdapt" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="f_clutchPos" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_clutchPos" path="clutchAdapt/Subsystem/clutchAdapt/f_clutchPos">
+        <miltype signalName="f_clutchPos">
+          <double/>
+        </miltype>
+        <siltype signalName="f_clutchPos">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="f_clutchPosSt" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_clutchPosSt" path="clutchAdapt/Subsystem/clutchAdapt/f_clutchPosSt">
+        <miltype signalName="f_clutchPosSt">
+          <double/>
+        </miltype>
+        <siltype signalName="f_clutchPosSt">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="f_clutchPosClosed" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_clutchPosClosed" path="clutchAdapt/Subsystem/clutchAdapt/f_clutchPosClosed">
+        <miltype signalName="f_clutchPosClosed">
+          <double/>
+        </miltype>
+        <siltype signalName="f_clutchPosClosed">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="f_clutchPosOpen" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_clutchPosOpen" path="clutchAdapt/Subsystem/clutchAdapt/f_clutchPosOpen">
+        <miltype signalName="f_clutchPosOpen">
+          <double/>
+        </miltype>
+        <siltype signalName="f_clutchPosOpen">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="5" name="f_clutchPosCalibrated" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_clutchPosCalibrated" path="clutchAdapt/Subsystem/clutchAdapt/f_clutchPosCalibrated">
+        <miltype signalName="f_clutchPosCalibrated">
+          <double/>
+        </miltype>
+        <siltype signalName="f_clutchPosCalibrated">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="6" name="f_engCoolantTemp" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_engCoolantTemp" path="clutchAdapt/Subsystem/clutchAdapt/f_engCoolantTemp">
+        <miltype signalName="f_engCoolantTemp">
+          <double/>
+        </miltype>
+        <siltype signalName="f_engCoolantTemp">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-4.0000000000000000e+01" min="-4.0000000000000000e+01" max="2.1000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="7" name="f_engCoolantTempSt" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_engCoolantTempSt" path="clutchAdapt/Subsystem/clutchAdapt/f_engCoolantTempSt">
+        <miltype signalName="f_engCoolantTempSt">
+          <double/>
+        </miltype>
+        <siltype signalName="f_engCoolantTempSt">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="3.0000000000000000e+01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="8" name="f_hours" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_hours" path="clutchAdapt/Subsystem/clutchAdapt/f_hours">
+        <miltype signalName="f_hours">
+          <double/>
+        </miltype>
+        <siltype signalName="f_hours">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="9" name="f_hoursSt" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_hoursSt" path="clutchAdapt/Subsystem/clutchAdapt/f_hoursSt">
+        <miltype signalName="f_hoursSt">
+          <double/>
+        </miltype>
+        <siltype signalName="f_hoursSt">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="3.0000000000000000e+01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="10" name="f_minutes" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_minutes" path="clutchAdapt/Subsystem/clutchAdapt/f_minutes">
+        <miltype signalName="f_minutes">
+          <double/>
+        </miltype>
+        <siltype signalName="f_minutes">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="11" name="f_minutesSt" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_minutesSt" path="clutchAdapt/Subsystem/clutchAdapt/f_minutesSt">
+        <miltype signalName="f_minutesSt">
+          <double/>
+        </miltype>
+        <siltype signalName="f_minutesSt">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="3.0000000000000000e+01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="12" name="f_dateNum" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_dateNum" path="clutchAdapt/Subsystem/clutchAdapt/f_dateNum">
+        <miltype signalName="f_dateNum">
+          <double/>
+        </miltype>
+        <siltype signalName="f_dateNum">
+          <fixedPoint baseType="UInt32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="1.0000000000000000e+00" max="9.3502000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="13" name="f_dateNumSt" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_dateNumSt" path="clutchAdapt/Subsystem/clutchAdapt/f_dateNumSt">
+        <miltype signalName="f_dateNumSt">
+          <double/>
+        </miltype>
+        <siltype signalName="f_dateNumSt">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="3.2000000000000000e+01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="14" name="f_taskTime" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_taskTime" path="clutchAdapt/Subsystem/clutchAdapt/f_taskTime">
+        <miltype signalName="f_taskTime">
+          <double/>
+        </miltype>
+        <siltype signalName="f_taskTime">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="15" name="GMCA_o_clutchCycles_In" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/GMCA_o_clutchCycles_In" path="clutchAdapt/Subsystem/clutchAdapt/GMCA_o_clutchCycles_In">
+        <miltype signalName="GMCA_o_clutchCycles_In">
+          <double/>
+        </miltype>
+        <siltype signalName="GMCA_o_clutchCycles_In">
+          <fixedPoint baseType="UInt32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="4.2949672950000000e+09"/>
+        </siltype>
+      </inport>
+      <inport portNumber="16" name="GMCA_o_clutchRestPosRunIn_In" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/GMCA_o_clutchRestPosRunIn_In" path="clutchAdapt/Subsystem/clutchAdapt/GMCA_o_clutchRestPosRunIn_In">
+        <miltype signalName="GMCA_o_clutchRestPosRunIn_In">
+          <double/>
+        </miltype>
+        <siltype signalName="GMCA_o_clutchRestPosRunIn_In">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="17" name="GMCA_o_clutchRestPosWear_In" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/GMCA_o_clutchRestPosWear_In" path="clutchAdapt/Subsystem/clutchAdapt/GMCA_o_clutchRestPosWear_In">
+        <miltype signalName="GMCA_o_clutchRestPosWear_In">
+          <double/>
+        </miltype>
+        <siltype signalName="GMCA_o_clutchRestPosWear_In">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="18" name="GMCA_o_recentTimeClamp15off_In" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/GMCA_o_recentTimeClamp15off_In" path="clutchAdapt/Subsystem/clutchAdapt/GMCA_o_recentTimeClamp15off_In">
+        <miltype signalName="GMCA_o_recentTimeClamp15off_In">
+          <double/>
+        </miltype>
+        <siltype signalName="GMCA_o_recentTimeClamp15off_In">
+          <fixedPoint baseType="UInt32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="4.2949672950000000e+09"/>
+        </siltype>
+      </inport>
+      <calibration name="GMCA_p_upperTreshPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_upperTreshPos" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_upperTreshPos" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/EV_CAL_GMCA_p_upperTreshPos" workspace="GMCA_p_upperTreshPos">
+        <miltype initValue="6.0000000000000000e+01">
+          <double/>
+        </miltype>
+        <siltype initValue="6.0000000000000000e+01">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="2.0000000000000000e+01" max="8.0000000000000000e+01"/>
+        </siltype>
+        <usageContext path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_upperTreshPos" targetLinkBlockKind="TL_Constant" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_upperTreshPos" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="GMCA_p_timerDetermRestPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_timerDetermRestPos" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_timerDetermRestPos" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/EV_CAL_GMCA_p_timerDetermRestPos" workspace="GMCA_p_timerDetermRestPos">
+        <miltype initValue="2.5000000000000000e+02">
+          <double/>
+        </miltype>
+        <siltype initValue="2.5000000000000000e+02">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="5.0000000000000000e+03"/>
+        </siltype>
+        <usageContext path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_timerDetermRestPos" targetLinkBlockKind="TL_Constant" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_timerDetermRestPos" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="GMCA_p_restPosToleranzValue" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_restPosToleranzValue" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_restPosToleranzValue" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/EV_CAL_GMCA_p_restPosToleranzValue" workspace="GMCA_p_restPosToleranzValue">
+        <miltype initValue="1.0000000000000001e-01">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000001e-01">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.0000000000000000e+01"/>
+        </siltype>
+        <usageContext path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_restPosToleranzValue" targetLinkBlockKind="TL_Constant" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_restPosToleranzValue" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="GMCA_p_lowerTreshPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_lowerTreshPos" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_lowerTreshPos" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/EV_CAL_GMCA_p_lowerTreshPos" workspace="GMCA_p_lowerTreshPos">
+        <miltype initValue="5.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000000e+00">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.0000000000000000e+01"/>
+        </siltype>
+        <usageContext path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_lowerTreshPos" targetLinkBlockKind="TL_Constant" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_lowerTreshPos" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="GMCA_p_diagLowClutchPosInvalid" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_diagLowClutchPosInvalid" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_diagLowClutchPosInvalid" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/EV_CAL_GMCA_p_diagLowClutchPosInvalid" workspace="GMCA_p_diagLowClutchPosInvalid">
+        <miltype initValue="5.0000000000000000e+01">
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000000e+01">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+02"/>
+        </siltype>
+        <usageContext path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_diagLowClutchPosInvalid" targetLinkBlockKind="TL_Constant" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_p_diagLowClutchPosInvalid" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="GMCAaa_p_clutchCyclesThrOpen" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCAaa_p_clutchCyclesThrOpen" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCAaa_p_clutchCyclesThrOpen" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/EV_CAL_GMCAaa_p_clutchCyclesThrOpen" workspace="GMCAaa_p_clutchCyclesThrOpen">
+        <miltype initValue="3.0000000000000000e+01">
+          <double/>
+        </miltype>
+        <siltype initValue="3.0000000000000000e+01">
+          <fixedPoint baseType="UInt8" lsb="4.0000000000000002e-01" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+02"/>
+        </siltype>
+        <usageContext path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCAaa_p_clutchCyclesThrOpen" targetLinkBlockKind="TL_Constant" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCAaa_p_clutchCyclesThrOpen" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="GMCAaa_p_clutchCyclesThrClosed" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCAaa_p_clutchCyclesThrClosed" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCAaa_p_clutchCyclesThrClosed" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/EV_CAL_GMCAaa_p_clutchCyclesThrClosed" workspace="GMCAaa_p_clutchCyclesThrClosed">
+        <miltype initValue="2.5000000000000000e+01">
+          <double/>
+        </miltype>
+        <siltype initValue="2.5000000000000000e+01">
+          <fixedPoint baseType="UInt8" lsb="4.0000000000000002e-01" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+02"/>
+        </siltype>
+        <usageContext path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCAaa_p_clutchCyclesThrClosed" targetLinkBlockKind="TL_Constant" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCAaa_p_clutchCyclesThrClosed" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="GMCA_p_clutchCyclesTreshold" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCA_p_clutchCyclesTreshold" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCA_p_clutchCyclesTreshold" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/EV_CAL_GMCA_p_clutchCyclesTreshold" workspace="GMCA_p_clutchCyclesTreshold">
+        <miltype initValue="5.0000000000000000e+01">
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000000e+01">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5000000000000000e+02"/>
+        </siltype>
+        <usageContext path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCA_p_clutchCyclesTreshold" targetLinkBlockKind="TL_Constant" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCA_p_clutchCyclesTreshold" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="GMCA_p_upperCoolantTemp" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_upperCoolantTemp" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_upperCoolantTemp" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/EV_CAL_GMCA_p_upperCoolantTemp" workspace="GMCA_p_upperCoolantTemp">
+        <miltype initValue="5.0000000000000000e+01">
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000000e+01">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-4.0000000000000000e+01" min="-4.0000000000000000e+01" max="2.1000000000000000e+02"/>
+        </siltype>
+        <usageContext path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_upperCoolantTemp" targetLinkBlockKind="TL_Constant" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_upperCoolantTemp" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="GMCA_p_tolAdaptRestWear" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_tolAdaptRestWear" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_tolAdaptRestWear" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/EV_CAL_GMCA_p_tolAdaptRestWear" workspace="GMCA_p_tolAdaptRestWear">
+        <miltype initValue="5.0000000000000003e-02">
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000003e-02">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+        <usageContext path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_tolAdaptRestWear" targetLinkBlockKind="TL_Constant" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_tolAdaptRestWear" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="GMCA_p_timeClamp15off" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_timeClamp15off" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_timeClamp15off" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/EV_CAL_GMCA_p_timeClamp15off" workspace="GMCA_p_timeClamp15off">
+        <miltype initValue="6.0000000000000000e+01">
+          <double/>
+        </miltype>
+        <siltype initValue="6.0000000000000000e+01">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="6.5535000000000000e+04"/>
+        </siltype>
+        <usageContext path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_timeClamp15off" targetLinkBlockKind="TL_Constant" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_timeClamp15off" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="GMCA_p_lowerCoolantTemp" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_lowerCoolantTemp" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_lowerCoolantTemp" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/EV_CAL_GMCA_p_lowerCoolantTemp" workspace="GMCA_p_lowerCoolantTemp">
+        <miltype initValue="-1.0000000000000000e+01">
+          <double/>
+        </miltype>
+        <siltype initValue="-1.0000000000000000e+01">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-4.0000000000000000e+01" min="-4.0000000000000000e+01" max="2.1000000000000000e+02"/>
+        </siltype>
+        <usageContext path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_lowerCoolantTemp" targetLinkBlockKind="TL_Constant" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_lowerCoolantTemp" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="GMCA_p_addWearParam" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_addWearParam" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_addWearParam" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/EV_CAL_GMCA_p_addWearParam" workspace="GMCA_p_addWearParam">
+        <miltype initValue="5.0000000000000003e-02">
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000003e-02">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+        <usageContext path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_addWearParam" targetLinkBlockKind="TL_Constant" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_p_addWearParam" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="GMCA_p_minClutchAdjustableRange" path="clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_p_minClutchAdjustableRange" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_p_minClutchAdjustableRange" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/EV_CAL_GMCA_p_minClutchAdjustableRange" workspace="GMCA_p_minClutchAdjustableRange">
+        <miltype initValue="1.0000000000000000e+01">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+01">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="1.0000000000000000e+01" max="8.0000000000000000e+01"/>
+        </siltype>
+        <usageContext path="clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_p_minClutchAdjustableRange" targetLinkBlockKind="TL_Constant" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_p_minClutchAdjustableRange" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="GMCA_p_maxClutchAdjustableRange" path="clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_p_maxClutchAdjustableRange" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_p_maxClutchAdjustableRange" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/EV_CAL_GMCA_p_maxClutchAdjustableRange" workspace="GMCA_p_maxClutchAdjustableRange">
+        <miltype initValue="3.0000000000000000e+01">
+          <double/>
+        </miltype>
+        <siltype initValue="3.0000000000000000e+01">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="2.0000000000000000e+01" max="8.0000000000000000e+01"/>
+        </siltype>
+        <usageContext path="clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_p_maxClutchAdjustableRange" targetLinkBlockKind="TL_Constant" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_p_maxClutchAdjustableRange" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="GMCA_p_clutchPosAV" path="clutchAdapt/Subsystem/clutchAdapt/AVdeterm/GMCA_p_clutchPosAV" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/AVdeterm/GMCA_p_clutchPosAV" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/EV_CAL_GMCA_p_clutchPosAV" workspace="GMCA_p_clutchPosAV">
+        <miltype initValue="5.2000000000000000e+01">
+          <double/>
+        </miltype>
+        <siltype initValue="5.2000000000000000e+01">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+        <usageContext path="clutchAdapt/Subsystem/clutchAdapt/AVdeterm/GMCA_p_clutchPosAV" targetLinkBlockKind="TL_Constant" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/AVdeterm/GMCA_p_clutchPosAV" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="GMCA_o_clutchCycles_Out" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/GMCA_o_clutchCycles_Out" path="clutchAdapt/Subsystem/clutchAdapt/GMCA_o_clutchCycles_Out">
+        <miltype signalName="GMCA_o_clutchCycles_Out">
+          <double/>
+        </miltype>
+        <siltype signalName="GMCA_o_clutchCycles_Out">
+          <fixedPoint baseType="UInt32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="4.2949672950000000e+09"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="GMCA_o_clutchRestPosRunIn_Out" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/GMCA_o_clutchRestPosRunIn_Out" path="clutchAdapt/Subsystem/clutchAdapt/GMCA_o_clutchRestPosRunIn_Out">
+        <miltype signalName="GMCA_o_clutchRestPosRunIn_Out">
+          <double min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </miltype>
+        <siltype signalName="GMCA_o_clutchRestPosRunIn_Out">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="GMCA_o_clutchRestPosWear_Out" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/GMCA_o_clutchRestPosWear_Out" path="clutchAdapt/Subsystem/clutchAdapt/GMCA_o_clutchRestPosWear_Out">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </outport>
+      <outport portNumber="4" name="GMCA_o_recentTimeClamp15off_Out" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/GMCA_o_recentTimeClamp15off_Out" path="clutchAdapt/Subsystem/clutchAdapt/GMCA_o_recentTimeClamp15off_Out">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="4.2949672950000000e+09"/>
+        </siltype>
+      </outport>
+      <outport portNumber="5" name="f_clutchDist" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_clutchDist" path="clutchAdapt/Subsystem/clutchAdapt/f_clutchDist">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="4.0000000000000002e-01" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+02"/>
+        </siltype>
+      </outport>
+      <outport portNumber="6" name="f_clutchDistSt" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_clutchDistSt" path="clutchAdapt/Subsystem/clutchAdapt/f_clutchDistSt">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="3.0000000000000000e+01"/>
+        </siltype>
+      </outport>
+      <outport portNumber="7" name="f_clutchPosImplausDiagSt" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_clutchPosImplausDiagSt" path="clutchAdapt/Subsystem/clutchAdapt/f_clutchPosImplausDiagSt">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="3.2000000000000000e+01"/>
+        </siltype>
+      </outport>
+      <outport portNumber="8" name="f_clutchCycles" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_clutchCycles" path="clutchAdapt/Subsystem/clutchAdapt/f_clutchCycles">
+        <miltype signalName="GMCA_o_clutchCycles_Out">
+          <double/>
+        </miltype>
+        <siltype signalName="GMCA_o_clutchCycles_Out">
+          <fixedPoint baseType="UInt32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="4.2949672950000000e+09"/>
+        </siltype>
+      </outport>
+      <outport portNumber="9" name="f_clutchRestPosRunIn" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_clutchRestPosRunIn" path="clutchAdapt/Subsystem/clutchAdapt/f_clutchRestPosRunIn">
+        <miltype signalName="GMCA_o_clutchRestPosRunIn_Out">
+          <double min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </miltype>
+        <siltype signalName="GMCA_o_clutchRestPosRunIn_Out">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </outport>
+      <outport portNumber="10" name="f_clutchRestPosWear" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/f_clutchRestPosWear" path="clutchAdapt/Subsystem/clutchAdapt/f_clutchRestPosWear">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </outport>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/AVdeterm/GMCA_clutchPosAV" path="clutchAdapt/Subsystem/clutchAdapt/AVdeterm/GMCA_clutchPosAV" name="GMCA_clutchPosAV" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_actClutchRestPos" path="clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_actClutchRestPos" name="GMCA_actClutchRestPos" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_clutchAdjustableRange" path="clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_clutchAdjustableRange" name="GMCA_clutchAdjustableRange" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="1.0000000000000000e+01" max="8.0000000000000000e+01"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_clutchRangeNotPlausSt" path="clutchAdapt/Subsystem/clutchAdapt/absRelClutchPosition/GMCA_clutchRangeNotPlausSt" name="GMCA_clutchRangeNotPlausSt" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="3.4000000000000000e+01"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" name="GMCA_clutchRestPosOpertgState" stateflowVariable="GMCA_clutchRestPosOpertgState" portNumber="1">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_clutchRestPosOpertgState">
+          <double min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_clutchRestPosOpertgState">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_clutchRestPosWearComp" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/GMCA_clutchRestPosWearComp" name="GMCA_clutchRestPosWearComp" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear" name="GMCA_clutchRestPosWearing" stateflowVariable="GMCA_clutchRestPosWearing" portNumber="1">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_clutchRestPosWearing">
+          <double min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_clutchRestPosWearing">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5100000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/timeLagClamp15offOn/GMCA_recentTimeClamp15offSt" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/timeLagClamp15offOn/GMCA_recentTimeClamp15offSt" name="GMCA_recentTimeClamp15offSt" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/timeLagClamp15offOn/GMCA_timeClamp15off" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/timeLagClamp15offOn/GMCA_timeClamp15off" name="GMCA_timeClamp15off" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="4.2949672950000000e+09"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/timeLagClamp15offOn/GMCA_timeClamp15on" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/timeLagClamp15offOn/GMCA_timeClamp15on" name="GMCA_timeClamp15on" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="4.2949672950000000e+09"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/timeLagClamp15offOn/GMCA_timeLagClamp15offOn" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/timeLagClamp15offOn/GMCA_timeLagClamp15offOn" name="GMCA_timeLagClamp15offOn" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="4.2949672950000000e+09"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCA_clutchRunIn" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/GMCA_clutchRunIn" name="GMCA_clutchRunIn" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_adaptRangeInvalidSt" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_adaptRangeInvalidSt" name="GMCA_adaptRangeInvalidSt" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="3.4000000000000000e+01"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_diagLowClutchPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_diagLowClutchPos" name="GMCA_diagLowClutchPos" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_restPosToleranz" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/GMCA_restPosToleranz" name="GMCA_restPosToleranz" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt32" lsb="1.0000000000000001e-05" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="3.0000000000000000e+01"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" name="GMCA_clutchRestPos" stateflowVariable="GMCA_clutchRestPos" portNumber="1">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_clutchRestPos">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_clutchRestPos">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" name="GMCA_clutchRestPosSt" stateflowVariable="GMCA_clutchRestPosSt" portNumber="2">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_clutchRestPosSt">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_clutchRestPosSt">
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" name="GMCA_lowerTreshPos" stateflowVariable="GMCA_lowerTreshPos" portNumber="3">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_lowerTreshPos">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_lowerTreshPos">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="-2.0000000000000000e+01" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" name="GMCA_adaptRestPosTempMD" stateflowVariable="GMCA_adaptRestPosTempMD">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptRestPosTempMD">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptRestPosTempMD">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="5.0000000000000000e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" name="GMCA_adaptTempVar1" stateflowVariable="GMCA_adaptTempVar1">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptTempVar1">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptTempVar1">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" name="GMCA_adaptTempVar2" stateflowVariable="GMCA_adaptTempVar2">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptTempVar2">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptTempVar2">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" name="GMCA_adaptTempVar3" stateflowVariable="GMCA_adaptTempVar3">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptTempVar3">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptTempVar3">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" name="GMCA_counterTempComp" stateflowVariable="GMCA_counterTempComp">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_counterTempComp">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_counterTempComp">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear" name="GMCA_adaptWearMD" stateflowVariable="GMCA_adaptWearMD">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptWearMD">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptWearMD">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" name="GMCA_adaptRestPosRunInMD" stateflowVariable="GMCA_adaptRestPosRunInMD">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptRestPosRunInMD">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptRestPosRunInMD">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="6.0000000000000000e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" name="GMCA_restPosRunIn1" stateflowVariable="GMCA_restPosRunIn1">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_restPosRunIn1">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_restPosRunIn1">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" name="GMCA_restPosRunIn2" stateflowVariable="GMCA_restPosRunIn2">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_restPosRunIn2">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_restPosRunIn2">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" name="GMCA_restPosRunIn3" stateflowVariable="GMCA_restPosRunIn3">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_restPosRunIn3">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_restPosRunIn3">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" name="GMCA_counter" stateflowVariable="GMCA_counter">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_counter">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_counter">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles" name="GMCA_ClutchCycMD" stateflowVariable="GMCA_ClutchCycMD">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_ClutchCycMD">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_ClutchCycMD">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" name="GMCA_determRestPosMD" stateflowVariable="GMCA_determRestPosMD">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_determRestPosMD">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_determRestPosMD">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="5.0000000000000000e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" name="GMCA_restPos1" stateflowVariable="GMCA_restPos1">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_restPos1">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_restPos1">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" name="GMCA_restPos2" stateflowVariable="GMCA_restPos2">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_restPos2">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_restPos2">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" name="GMCA_restPos3" stateflowVariable="GMCA_restPos3">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_restPos3">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_restPos3">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" name="GMCA_timerRestPos" stateflowVariable="GMCA_timerRestPos">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_timerRestPos">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_timerRestPos">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+04"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" sampleTime="0.01" name="adaptRestPosTemp" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="GMCA_o_clutchRestPosWear_Out" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_o_clutchRestPosWear_Out" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_o_clutchRestPosWear_Out">
+        <miltype>
+          <double min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="GMCA_clutchRestPosSt" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_clutchRestPosSt" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_clutchRestPosSt">
+        <miltype signalName="GMCA_clutchRestPosSt">
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype signalName="GMCA_clutchRestPosSt">
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="GMCA_clutchRestPos" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_clutchRestPos" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_clutchRestPos">
+        <miltype signalName="GMCA_clutchRestPos">
+          <double min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </miltype>
+        <siltype signalName="GMCA_clutchRestPos">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="GMCA_clutchRunIn" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_clutchRunIn" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_clutchRunIn">
+        <miltype>
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="5" name="f_clutchPosCalibrated" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/f_clutchPosCalibrated" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/f_clutchPosCalibrated">
+        <miltype signalName="f_clutchPosCalibrated">
+          <double min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </miltype>
+        <siltype signalName="f_clutchPosCalibrated">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="GMCA_clutchRestPosOpertgState" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_clutchRestPosOpertgState" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp/GMCA_clutchRestPosOpertgState">
+        <miltype signalName="GMCA_clutchRestPosOpertgState">
+          <double min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_clutchRestPosOpertgState">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </outport>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" name="GMCA_adaptRestPosTempMD" stateflowVariable="GMCA_adaptRestPosTempMD">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptRestPosTempMD">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptRestPosTempMD">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="5.0000000000000000e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" name="GMCA_adaptTempVar1" stateflowVariable="GMCA_adaptTempVar1">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptTempVar1">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptTempVar1">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" name="GMCA_adaptTempVar2" stateflowVariable="GMCA_adaptTempVar2">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptTempVar2">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptTempVar2">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" name="GMCA_adaptTempVar3" stateflowVariable="GMCA_adaptTempVar3">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptTempVar3">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptTempVar3">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosTemp" name="GMCA_counterTempComp" stateflowVariable="GMCA_counterTempComp">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_counterTempComp">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_counterTempComp">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear" sampleTime="0.01" name="adaptWear" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="GMCA_clutchRunIn" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_clutchRunIn" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_clutchRunIn">
+        <miltype>
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="GMCA_o_clutchRestPosRunIn_Out" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_o_clutchRestPosRunIn_Out" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_o_clutchRestPosRunIn_Out">
+        <miltype signalName="GMCA_o_clutchRestPosRunIn_Out">
+          <double min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </miltype>
+        <siltype signalName="GMCA_o_clutchRestPosRunIn_Out">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="GMCA_clutchRestPos" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_clutchRestPos" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_clutchRestPos">
+        <miltype signalName="GMCA_clutchRestPos">
+          <double min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </miltype>
+        <siltype signalName="GMCA_clutchRestPos">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="GMCA_clutchRestPosSt" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_clutchRestPosSt" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_clutchRestPosSt">
+        <miltype signalName="GMCA_clutchRestPosSt">
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype signalName="GMCA_clutchRestPosSt">
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="5" name="f_clutchPosCalibrated" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/f_clutchPosCalibrated" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/f_clutchPosCalibrated">
+        <miltype signalName="f_clutchPosCalibrated">
+          <double/>
+        </miltype>
+        <siltype signalName="f_clutchPosCalibrated">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="6" name="f_clutchPosClosed" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/f_clutchPosClosed" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/f_clutchPosClosed">
+        <miltype signalName="f_clutchPosClosed">
+          <double min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </miltype>
+        <siltype signalName="f_clutchPosClosed">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="7" name="GMCA_o_clutchRestPosWear_In" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_o_clutchRestPosWear_In" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_o_clutchRestPosWear_In">
+        <miltype signalName="GMCA_o_clutchRestPosWear_In">
+          <double min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </miltype>
+        <siltype signalName="GMCA_o_clutchRestPosWear_In">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="8" name="GMCA_p_addWearParam" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_p_addWearParam" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_p_addWearParam">
+        <miltype>
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="5.0000000000000003e-02">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="9" name="GMCA_p_tolAdaptRestWear" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_p_tolAdaptRestWear" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_p_tolAdaptRestWear">
+        <miltype>
+          <double min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </miltype>
+        <siltype initValue="5.0000000000000003e-02">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="10" name="GMCA_clutchRestPosWearComp" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_clutchRestPosWearComp" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_clutchRestPosWearComp">
+        <miltype>
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="GMCA_clutchRestPosWearing" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_clutchRestPosWearing" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear/GMCA_clutchRestPosWearing">
+        <miltype signalName="GMCA_clutchRestPosWearing">
+          <double min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_clutchRestPosWearing">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5100000000000000e+02"/>
+        </siltype>
+      </outport>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear" path="clutchAdapt/Subsystem/clutchAdapt/adaptOperatgStage/adaptRestPosWear/adaptWear" name="GMCA_adaptWearMD" stateflowVariable="GMCA_adaptWearMD">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptWearMD">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptWearMD">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" sampleTime="0.01" name="adaptRestPosRunIn" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="GMCA_clutchRunIn" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_clutchRunIn" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_clutchRunIn">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="GMCA_clutchRestPos" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_clutchRestPos" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_clutchRestPos">
+        <miltype signalName="GMCA_clutchRestPos">
+          <double/>
+        </miltype>
+        <siltype signalName="GMCA_clutchRestPos">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="6.5535000000000002e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="GMCA_clutchRestPosSt" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_clutchRestPosSt" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_clutchRestPosSt">
+        <miltype signalName="GMCA_clutchRestPosSt">
+          <double/>
+        </miltype>
+        <siltype signalName="GMCA_clutchRestPosSt">
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="GMCA_o_clutchRestPosRunIn_In" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_o_clutchRestPosRunIn_In" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_o_clutchRestPosRunIn_In">
+        <miltype signalName="GMCA_o_clutchRestPosRunIn_In">
+          <double/>
+        </miltype>
+        <siltype signalName="GMCA_o_clutchRestPosRunIn_In">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="5" name="f_clutchPosCalibrated" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/f_clutchPosCalibrated" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/f_clutchPosCalibrated">
+        <miltype signalName="f_clutchPosCalibrated">
+          <double/>
+        </miltype>
+        <siltype signalName="f_clutchPosCalibrated">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="6" name="f_clutchPosClosed" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/f_clutchPosClosed" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/f_clutchPosClosed">
+        <miltype signalName="f_clutchPosClosed">
+          <double/>
+        </miltype>
+        <siltype signalName="f_clutchPosClosed">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="6.5535000000000002e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="7" name="f_clutchPosSt" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/f_clutchPosSt" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/f_clutchPosSt">
+        <miltype signalName="f_clutchPosSt">
+          <double/>
+        </miltype>
+        <siltype signalName="f_clutchPosSt">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="GMCA_o_clutchRestPosRunIn_Out" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_o_clutchRestPosRunIn_Out" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn/GMCA_o_clutchRestPosRunIn_Out">
+        <miltype signalName="GMCA_o_clutchRestPosRunIn_Out">
+          <double min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_o_clutchRestPosRunIn_Out">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </outport>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" name="GMCA_adaptRestPosRunInMD" stateflowVariable="GMCA_adaptRestPosRunInMD">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptRestPosRunInMD">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_adaptRestPosRunInMD">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="6.0000000000000000e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" name="GMCA_restPosRunIn1" stateflowVariable="GMCA_restPosRunIn1">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_restPosRunIn1">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_restPosRunIn1">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" name="GMCA_restPosRunIn2" stateflowVariable="GMCA_restPosRunIn2">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_restPosRunIn2">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_restPosRunIn2">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" name="GMCA_restPosRunIn3" stateflowVariable="GMCA_restPosRunIn3">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_restPosRunIn3">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_restPosRunIn3">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" path="clutchAdapt/Subsystem/clutchAdapt/adaptRestPosRunIn" name="GMCA_counter" stateflowVariable="GMCA_counter">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_counter">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_counter">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles" sampleTime="0.01" name="chartClutchCycles" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="f_clutchPosCalibrated" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/f_clutchPosCalibrated" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/f_clutchPosCalibrated">
+        <miltype signalName="f_clutchPosCalibrated">
+          <double/>
+        </miltype>
+        <siltype signalName="f_clutchPosCalibrated">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="GMCA_o_clutchCycles_In" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/GMCA_o_clutchCycles_In" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/GMCA_o_clutchCycles_In">
+        <miltype signalName="GMCA_o_clutchCycles_In">
+          <double/>
+        </miltype>
+        <siltype signalName="GMCA_o_clutchCycles_In">
+          <fixedPoint baseType="UInt32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="4.2949672950000000e+09"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="f_clutchPosSt" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/f_clutchPosSt" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/f_clutchPosSt">
+        <miltype signalName="f_clutchPosSt">
+          <double/>
+        </miltype>
+        <siltype signalName="f_clutchPosSt">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="f_clutchDist" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/f_clutchDist" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/f_clutchDist">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="4.0000000000000002e-01" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0200000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="5" name="f_clutchDistSt" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/f_clutchDistSt" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/f_clutchDistSt">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="6" name="GMCAaa_p_clutchCyclesThrClosed" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/GMCAaa_p_clutchCyclesThrClosed" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/GMCAaa_p_clutchCyclesThrClosed">
+        <miltype>
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+02"/>
+        </miltype>
+        <siltype initValue="2.5000000000000000e+01">
+          <fixedPoint baseType="UInt8" lsb="4.0000000000000002e-01" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="7" name="GMCAaa_p_clutchCyclesThrOpen" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/GMCAaa_p_clutchCyclesThrOpen" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/GMCAaa_p_clutchCyclesThrOpen">
+        <miltype>
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+02"/>
+        </miltype>
+        <siltype initValue="3.0000000000000000e+01">
+          <fixedPoint baseType="UInt8" lsb="4.0000000000000002e-01" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="GMCA_o_clutchCycles_Out" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/GMCA_o_clutchCycles_Out" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles/GMCA_o_clutchCycles_Out">
+        <miltype signalName="GMCA_o_clutchCycles_Out">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_o_clutchCycles_Out">
+          <fixedPoint baseType="UInt32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="4.2949672950000000e+09"/>
+        </siltype>
+      </outport>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles" path="clutchAdapt/Subsystem/clutchAdapt/clutchCycleAndPhase/chartClutchCycles" name="GMCA_ClutchCycMD" stateflowVariable="GMCA_ClutchCycMD">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_ClutchCycMD">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_ClutchCycMD">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" sampleTime="0.01" name="determRestPos" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="GMCA_o_clutchCycles_Out" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_o_clutchCycles_Out" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_o_clutchCycles_Out">
+        <miltype signalName="GMCA_o_clutchCycles_Out">
+          <double/>
+        </miltype>
+        <siltype signalName="GMCA_o_clutchCycles_Out">
+          <fixedPoint baseType="UInt32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="4.2949672950000000e+09"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="GMCA_clutchPosAV" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_clutchPosAV" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_clutchPosAV">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="6.5535000000000002e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="f_clutchPosSt" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/f_clutchPosSt" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/f_clutchPosSt">
+        <miltype signalName="f_clutchPosSt">
+          <double/>
+        </miltype>
+        <siltype signalName="f_clutchPosSt">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="f_taskTime" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/f_taskTime" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/f_taskTime">
+        <miltype signalName="f_taskTime">
+          <double/>
+        </miltype>
+        <siltype signalName="f_taskTime">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="5" name="GMCA_o_clutchRestPosWear_In" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_o_clutchRestPosWear_In" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_o_clutchRestPosWear_In">
+        <miltype signalName="GMCA_o_clutchRestPosWear_In">
+          <double/>
+        </miltype>
+        <siltype signalName="GMCA_o_clutchRestPosWear_In">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="6" name="f_clutchPosCalibrated" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/f_clutchPosCalibrated" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/f_clutchPosCalibrated">
+        <miltype signalName="f_clutchPosCalibrated">
+          <double/>
+        </miltype>
+        <siltype signalName="f_clutchPosCalibrated">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="7" name="f_clutchPosClosed" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/f_clutchPosClosed" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/f_clutchPosClosed">
+        <miltype signalName="f_clutchPosClosed">
+          <double/>
+        </miltype>
+        <siltype signalName="f_clutchPosClosed">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="8" name="GMCA_restPosToleranz" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_restPosToleranz" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_restPosToleranz">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt32" lsb="1.0000000000000001e-05" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="3.0000000000000000e+01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="9" name="GMCA_p_timerDetermRestPos" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_p_timerDetermRestPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_p_timerDetermRestPos">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype initValue="2.5000000000000000e+02">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="5.0000000000000000e+03"/>
+        </siltype>
+      </inport>
+      <inport portNumber="10" name="GMCA_p_upperTreshPos" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_p_upperTreshPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_p_upperTreshPos">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="6.5535000000000002e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="11" name="GMCA_p_lowerTreshPos" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_p_lowerTreshPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_p_lowerTreshPos">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000000e+00">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.0000000000000000e+01"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="GMCA_clutchRestPos" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_clutchRestPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_clutchRestPos">
+        <miltype signalName="GMCA_clutchRestPos">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_clutchRestPos">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="GMCA_clutchRestPosSt" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_clutchRestPosSt" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_clutchRestPosSt">
+        <miltype signalName="GMCA_clutchRestPosSt">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_clutchRestPosSt">
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="GMCA_lowerTreshPos" physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_lowerTreshPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos/GMCA_lowerTreshPos">
+        <miltype signalName="GMCA_lowerTreshPos">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_lowerTreshPos">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="-2.0000000000000000e+01" max="1.5000000000000000e+02"/>
+        </siltype>
+      </outport>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" name="GMCA_determRestPosMD" stateflowVariable="GMCA_determRestPosMD">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_determRestPosMD">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_determRestPosMD">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="5.0000000000000000e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" name="GMCA_restPos1" stateflowVariable="GMCA_restPos1">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_restPos1">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_restPos1">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" name="GMCA_restPos2" stateflowVariable="GMCA_restPos2">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_restPos2">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_restPos2">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" name="GMCA_restPos3" stateflowVariable="GMCA_restPos3">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_restPos3">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_restPos3">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="clutchAdapt_EV/clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" path="clutchAdapt/Subsystem/clutchAdapt/determRestPos/determRestPos" name="GMCA_timerRestPos" stateflowVariable="GMCA_timerRestPos">
+        <miltype initValue="0.0000000000000000e+00" signalName="GMCA_timerRestPos">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="GMCA_timerRestPos">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.5000000000000000e+04"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

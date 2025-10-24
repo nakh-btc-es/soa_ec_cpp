@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_ut_ar_multi_instance\ut_results\AddModelInfo.xml" modelVersion="4.4" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_ut_ar_multi_instance\ar_multi_instance.slx" modelCreationDate="2023-08-17T17:41:41" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="4.4" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_ut_ar_multi_instance\ar_multi_instance.slx" creationDate="2023-08-17T17:41:41" modificationDate="2024-09-16T10:14:36">
+    <subsystem subsysID="ss1" physicalPath="ar_multi_instance" path="" sampleTime="0.2" name="ar_multi_instance" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ar_multi_instance/In1" path="In1">
+        <int8/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ar_multi_instance/In2" path="In2">
+        <int8/>
+      </inport>
+      <parameter name="param2_a" path="Constant1" physicalPath="ar_multi_instance/Constant1" origin="explicit_param" workspace="param2_a" initValue="2.0">
+        <int8/>
+        <usageContext path="Constant1" physicalPath="ar_multi_instance/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <source kind="ModelWorkspace" file="ar_multi_instance"/>
+      </parameter>
+      <parameter name="param2_b" path="Constant4" physicalPath="ar_multi_instance/Constant4" origin="explicit_param" workspace="param2_b" initValue="-2.0">
+        <int8/>
+        <usageContext path="Constant4" physicalPath="ar_multi_instance/Constant4" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <source kind="ModelWorkspace" file="ar_multi_instance"/>
+      </parameter>
+      <parameter name="param3_b" path="Constant5" physicalPath="ar_multi_instance/Constant5" origin="explicit_param" workspace="param3_b" initValue="-3.0">
+        <int8/>
+        <usageContext path="Constant5" physicalPath="ar_multi_instance/Constant5" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <source kind="ModelWorkspace" file="ar_multi_instance"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="ar_multi_instance/Out1" path="Out1">
+        <int8/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeModel>
+   <Files>
+      <File annotate="yes" id="ID71" kind="source" name="ecp_stub_swc_scheduler.c" path="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\tst\tmpdir\tmp_ut_simple_16\Wrapper_IPT_CAN_SWC_ecp_stub"/>
+      <File annotate="yes" id="ID72" kind="source" name="IPT_CAN_SWC.c" path="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\tst\tmpdir\tmp_ut_simple_16\IPT_CAN_SWC_autosar_rtw"/>
+      <File annotate="no" id="ID74" kind="library" name="Rte_IPT_CAN_SWC.c" path="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\tst\tmpdir\tmp_ut_simple_16\IPT_CAN_SWC_autosar_rtw\stub"/>
+      <File annotate="no" id="ID75" kind="library" name="IPT_CAN_SWC_ecp_rte_stub.c" path="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\tst\tmpdir\tmp_ut_simple_16\Wrapper_IPT_CAN_SWC_ecp_stub"/>
+   </Files>
+   <IncludePaths>
+      <IncludePath path="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\tst\tmpdir\tmp_ut_simple_16\Wrapper_IPT_CAN_SWC_ecp_stub"/>
+      <IncludePath path="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\src\includes"/>
+      <IncludePath path="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\tst\tmpdir\tmp_ut_simple_16"/>
+      <IncludePath path="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\tst\tmpdir\tmp_ut_simple_16\IPT_CAN_SWC_autosar_rtw"/>
+      <IncludePath path="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\tst\tmpdir\tmp_ut_simple_16\IPT_CAN_SWC_autosar_rtw\stub"/>
+      <IncludePath path="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\tst\tmpdir\tmp_ut_simple_16\slprj\autosar\_sharedutils"/>
+   </IncludePaths>
+   <Functions archName="Wrapper_IPT_CAN_SWC [C-Code]" sampleTime="0.01">
+      <Function fileref="ID71" initFunc="swc_wrapper_scheduler_init" name="swc_wrapper_scheduler_step">
+         <Interface>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_VehSpdValid_HLd_flg_VehSpdValid_HLd_flg_VehSpdValid"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_n_VehSpdVal_HLd_n_VehSpdVal_HLd_n_VehSpdVal"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_ReadySt_HLd_flg_ReadySt_HLd_flg_ReadySt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_VehHVCnctCmd_HLd_flg_VehHVCnctCmd_HLd_flg_VehHVCnctCmd"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_VehHVCnctCmdValid_HLd_flg_VehHVCnctCmdValid_HLd_flg_VehHVCnctCmdValid"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_VMSChaStopReq_HLd_flg_VMSChaStopReq_HLd_flg_VMSChaStopReq"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_KL15CAN_HLd_flg_KL15CAN_HLd_flg_KL15CAN"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_KLR_HLd_flg_KLR_HLd_flg_KLR"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_KL50_HLd_flg_KL50_HLd_flg_KL50"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_FrontCrashSt_HLd_flg_FrontCrashSt_HLd_flg_FrontCrashSt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_BackCrashSt_HLd_flg_BackCrashSt_HLd_flg_BackCrashSt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_LeftCrashSt_HLd_flg_LeftCrashSt_HLd_flg_LeftCrashSt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_RightCrashSt_HLd_flg_RightCrashSt_HLd_flg_RightCrashSt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_enum_CrashIntensity_HLd_enum_CrashIntensity_HLd_enum_CrashIntensity"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_IPTd_flg_TesterClearDTC_IPTd_flg_TesterClearDTC_IPTd_flg_TesterClearDTC"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_enum_OBCSt_HLd_enum_OBCSt_HLd_enum_OBCSt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_OBCChaWakeUp_HLd_flg_OBCChaWakeUp_HLd_flg_OBCChaWakeUp"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_OBCCC_HLd_flg_OBCCC_HLd_flg_OBCCC"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_ElecLockSt_HLd_flg_ElecLockSt_HLd_flg_ElecLockSt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_OBCHVIL_HLd_flg_OBCHVIL_HLd_flg_OBCHVIL"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_OBCSlowChaCnctSt_HLd_flg_OBCSlowChaCnctSt_HLd_flg_OBCSlowChaCnctSt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_i_OBCIptCur_HLd_i_OBCIptCur_HLd_i_OBCIptCur"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_v_OBCIptVolt_HLd_v_OBCIptVolt_HLd_v_OBCIptVolt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_v_OBCChaVolt_HLd_v_OBCChaVolt_HLd_v_OBCChaVolt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_i_OBCChaCur_HLd_i_OBCChaCur_HLd_i_OBCChaCur"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_i_HVLoadCurReq_HLd_i_HVLoadCurReq_HLd_i_HVLoadCurReq"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_l_Odograph_HLd_l_Odograph_HLd_l_Odograph"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_VehHVCnctCmd_IPTd_flg_VehHVCnctCmd_IPTd_flg_VehHVCnctCmd"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_VMSChaStopReq_IPTd_flg_VMSChaStopReq_IPTd_flg_VMSChaStopReq"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_VehHVCnctCmdValid_IPTd_flg_VehHVCnctCmdValid_IPTd_flg_VehHVCnctCmdValid"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_FrontCrashSt_IPTd_flg_FrontCrashSt_IPTd_flg_FrontCrashSt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_BackCrashSt_IPTd_flg_BackCrashSt_IPTd_flg_BackCrashSt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_LeftCrashSt_IPTd_flg_LeftCrashSt_IPTd_flg_LeftCrashSt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_RightCrashSt_IPTd_flg_RightCrashSt_IPTd_flg_RightCrashSt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_enum_CrashIntensity_IPTd_enum_CrashIntensity_IPTd_enum_CrashIntensity"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_enum_OBCSt_IPTd_enum_OBCSt_IPTd_enum_OBCSt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_OBCChaWakeUp_IPTd_flg_OBCChaWakeUp_IPTd_flg_OBCChaWakeUp"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_OBCCC_IPTd_flg_OBCCC_IPTd_flg_OBCCC"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_ElecLockSt_IPTd_flg_ElecLockSt_IPTd_flg_ElecLockSt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_OBCHVIL_IPTd_flg_OBCHVIL_IPTd_flg_OBCHVIL"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_OBCSlowChaCnctSt_IPTd_flg_OBCSlowChaCnctSt_IPTd_flg_OBCSlowChaCnctSt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_i_OBCIptCur_IPTd_i_OBCIptCur_IPTd_i_OBCIptCur"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_v_OBCIptVolt_IPTd_v_OBCIptVolt_IPTd_v_OBCIptVolt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_v_OBCChaVolt_IPTd_v_OBCChaVolt_IPTd_v_OBCChaVolt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_i_OBCChaCur_IPTd_i_OBCChaCur_IPTd_i_OBCChaCur"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_i_HVLoadCurReq_IPTd_i_HVLoadCurReq_IPTd_i_HVLoadCurReq"/>
+            <InterfaceObj access=".IPTd_cflt_Crash_fault" kind="out" scaling="ID2001" var="RteStub_IPTd_cflt_CANFaultDiagnostic_IPTd_cflt_CANFaultDiagnostic_IPTd_cflt_CANFaultDiagnostic"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_ElecLockSt"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_HVLoadCurReq"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCCC"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCChaCur"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCChaVolt"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCChaWakeUp"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCHVIL"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCIptCur"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCIptVolt"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCSlowChaCnctSt"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCSt"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_Odograph"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_VMSChaStopReq"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_VehHVCnctCmd"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_VehHVCnctCmdValid"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_VehSpdVal"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgval_ElecLockSt"/>
+            <InterfaceObj initVal="0" kind="cal" max="51" min="0" scaling="ID2001" var="IPTc_dbgval_HVLoadCurReq"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgval_OBCCC"/>
+            <InterfaceObj initVal="0" kind="cal" max="30" min="0" scaling="ID2001" var="IPTc_dbgval_OBCChaCur"/>
+            <InterfaceObj initVal="0" kind="cal" max="465" min="0" scaling="ID2001" var="IPTc_dbgval_OBCChaVolt"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgval_OBCChaWakeUp"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgval_OBCHVIL"/>
+            <InterfaceObj initVal="0" kind="cal" max="46" min="0" scaling="ID2001" var="IPTc_dbgval_OBCIptCur"/>
+            <InterfaceObj initVal="0" kind="cal" max="275" min="0" scaling="ID2001" var="IPTc_dbgval_OBCIptVolt"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgval_OBCSlowChaCnctSt"/>
+            <InterfaceObj initVal="0" kind="cal" max="255" min="0" scaling="ID2001" var="IPTc_dbgval_OBCSt"/>
+            <InterfaceObj initVal="0" kind="cal" max="999999" min="0" scaling="ID2001" var="IPTc_dbgval_Odograph"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgval_VMSChaStopReq"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgval_VehHVCnctCmd"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgval_VehHVCnctCmdValid"/>
+            <InterfaceObj initVal="0" kind="cal" max="327.67" min="0" scaling="ID2001" var="IPTc_dbgval_VehSpdVal"/>
+         </Interface>
+      </Function>
+      <Function fileref="ID72" initFunc="IPT_CAN_SWC_Init" name="TE_0x130_10ms">
+         <Interface>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_VehSpdValid_HLd_flg_VehSpdValid_HLd_flg_VehSpdValid"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_n_VehSpdVal_HLd_n_VehSpdVal_HLd_n_VehSpdVal"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_VehSpdVal"/>
+            <InterfaceObj initVal="0" kind="cal" max="327.67" min="0" scaling="ID2001" var="IPTc_dbgval_VehSpdVal"/>
+         </Interface>
+      </Function>
+      <Function fileref="ID72" initFunc="IPT_CAN_SWC_Init" name="TE_0x190_10ms">
+         <Interface>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_ReadySt_HLd_flg_ReadySt_HLd_flg_ReadySt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_VehHVCnctCmd_HLd_flg_VehHVCnctCmd_HLd_flg_VehHVCnctCmd"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_VehHVCnctCmdValid_HLd_flg_VehHVCnctCmdValid_HLd_flg_VehHVCnctCmdValid"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_VMSChaStopReq_HLd_flg_VMSChaStopReq_HLd_flg_VMSChaStopReq"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_VehHVCnctCmd_IPTd_flg_VehHVCnctCmd_IPTd_flg_VehHVCnctCmd"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_VMSChaStopReq_IPTd_flg_VMSChaStopReq_IPTd_flg_VMSChaStopReq"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_VehHVCnctCmdValid_IPTd_flg_VehHVCnctCmdValid_IPTd_flg_VehHVCnctCmdValid"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_VMSChaStopReq"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_VehHVCnctCmd"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_VehHVCnctCmdValid"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgval_VMSChaStopReq"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgval_VehHVCnctCmd"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgval_VehHVCnctCmdValid"/>
+         </Interface>
+      </Function>
+      <Function fileref="ID72" initFunc="IPT_CAN_SWC_Init" name="TE_0x363_100ms">
+         <Interface>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_KL15CAN_HLd_flg_KL15CAN_HLd_flg_KL15CAN"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_KLR_HLd_flg_KLR_HLd_flg_KLR"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_KL50_HLd_flg_KL50_HLd_flg_KL50"/>
+         </Interface>
+      </Function>
+      <Function fileref="ID72" initFunc="IPT_CAN_SWC_Init" name="TE_0x016_100ms">
+         <Interface>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_FrontCrashSt_HLd_flg_FrontCrashSt_HLd_flg_FrontCrashSt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_BackCrashSt_HLd_flg_BackCrashSt_HLd_flg_BackCrashSt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_LeftCrashSt_HLd_flg_LeftCrashSt_HLd_flg_LeftCrashSt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_RightCrashSt_HLd_flg_RightCrashSt_HLd_flg_RightCrashSt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_enum_CrashIntensity_HLd_enum_CrashIntensity_HLd_enum_CrashIntensity"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_IPTd_flg_TesterClearDTC_IPTd_flg_TesterClearDTC_IPTd_flg_TesterClearDTC"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_FrontCrashSt_IPTd_flg_FrontCrashSt_IPTd_flg_FrontCrashSt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_BackCrashSt_IPTd_flg_BackCrashSt_IPTd_flg_BackCrashSt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_LeftCrashSt_IPTd_flg_LeftCrashSt_IPTd_flg_LeftCrashSt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_RightCrashSt_IPTd_flg_RightCrashSt_IPTd_flg_RightCrashSt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_enum_CrashIntensity_IPTd_enum_CrashIntensity_IPTd_enum_CrashIntensity"/>
+            <InterfaceObj access=".IPTd_cflt_Crash_fault" kind="out" scaling="ID2001" var="RteStub_IPTd_cflt_CANFaultDiagnostic_IPTd_cflt_CANFaultDiagnostic_IPTd_cflt_CANFaultDiagnostic"/>
+         </Interface>
+      </Function>
+      <Function fileref="ID72" initFunc="IPT_CAN_SWC_Init" name="TE_0x396_200ms">
+         <Interface>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_enum_OBCSt_HLd_enum_OBCSt_HLd_enum_OBCSt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_OBCChaWakeUp_HLd_flg_OBCChaWakeUp_HLd_flg_OBCChaWakeUp"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_OBCCC_HLd_flg_OBCCC_HLd_flg_OBCCC"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_ElecLockSt_HLd_flg_ElecLockSt_HLd_flg_ElecLockSt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_OBCHVIL_HLd_flg_OBCHVIL_HLd_flg_OBCHVIL"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_flg_OBCSlowChaCnctSt_HLd_flg_OBCSlowChaCnctSt_HLd_flg_OBCSlowChaCnctSt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_i_OBCIptCur_HLd_i_OBCIptCur_HLd_i_OBCIptCur"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_v_OBCIptVolt_HLd_v_OBCIptVolt_HLd_v_OBCIptVolt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_v_OBCChaVolt_HLd_v_OBCChaVolt_HLd_v_OBCChaVolt"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_i_OBCChaCur_HLd_i_OBCChaCur_HLd_i_OBCChaCur"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_enum_OBCSt_IPTd_enum_OBCSt_IPTd_enum_OBCSt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_OBCChaWakeUp_IPTd_flg_OBCChaWakeUp_IPTd_flg_OBCChaWakeUp"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_OBCCC_IPTd_flg_OBCCC_IPTd_flg_OBCCC"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_ElecLockSt_IPTd_flg_ElecLockSt_IPTd_flg_ElecLockSt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_OBCHVIL_IPTd_flg_OBCHVIL_IPTd_flg_OBCHVIL"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_flg_OBCSlowChaCnctSt_IPTd_flg_OBCSlowChaCnctSt_IPTd_flg_OBCSlowChaCnctSt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_i_OBCIptCur_IPTd_i_OBCIptCur_IPTd_i_OBCIptCur"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_v_OBCIptVolt_IPTd_v_OBCIptVolt_IPTd_v_OBCIptVolt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_v_OBCChaVolt_IPTd_v_OBCChaVolt_IPTd_v_OBCChaVolt"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_i_OBCChaCur_IPTd_i_OBCChaCur_IPTd_i_OBCChaCur"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_ElecLockSt"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCCC"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCChaCur"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCChaVolt"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCChaWakeUp"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCHVIL"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCIptCur"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCIptVolt"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCSlowChaCnctSt"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_OBCSt"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgval_ElecLockSt"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgval_OBCCC"/>
+            <InterfaceObj initVal="0" kind="cal" max="30" min="0" scaling="ID2001" var="IPTc_dbgval_OBCChaCur"/>
+            <InterfaceObj initVal="0" kind="cal" max="465" min="0" scaling="ID2001" var="IPTc_dbgval_OBCChaVolt"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgval_OBCChaWakeUp"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgval_OBCHVIL"/>
+            <InterfaceObj initVal="0" kind="cal" max="46" min="0" scaling="ID2001" var="IPTc_dbgval_OBCIptCur"/>
+            <InterfaceObj initVal="0" kind="cal" max="275" min="0" scaling="ID2001" var="IPTc_dbgval_OBCIptVolt"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgval_OBCSlowChaCnctSt"/>
+            <InterfaceObj initVal="0" kind="cal" max="255" min="0" scaling="ID2001" var="IPTc_dbgval_OBCSt"/>
+         </Interface>
+      </Function>
+      <Function fileref="ID72" initFunc="IPT_CAN_SWC_Init" name="TE_0x480_100ms">
+         <Interface>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_i_HVLoadCurReq_HLd_i_HVLoadCurReq_HLd_i_HVLoadCurReq"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="RteStub_IPTd_i_HVLoadCurReq_IPTd_i_HVLoadCurReq_IPTd_i_HVLoadCurReq"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_HVLoadCurReq"/>
+            <InterfaceObj initVal="0" kind="cal" max="51" min="0" scaling="ID2001" var="IPTc_dbgval_HVLoadCurReq"/>
+         </Interface>
+      </Function>
+      <Function fileref="ID72" initFunc="IPT_CAN_SWC_Init" name="TE_0x470_500ms">
+         <Interface>
+            <InterfaceObj kind="in" scaling="ID2001" var="RteStub_HLd_l_Odograph_HLd_l_Odograph_HLd_l_Odograph"/>
+            <InterfaceObj initVal="0" kind="cal" max="1" min="0" scaling="ID2001" var="IPTc_dbgsw_Odograph"/>
+            <InterfaceObj initVal="0" kind="cal" max="999999" min="0" scaling="ID2001" var="IPTc_dbgval_Odograph"/>
+         </Interface>
+      </Function>
+   </Functions>
+   <Scalings>
+      <Scaling id="ID2001" lsb="1" offset="0"/>
+   </Scalings>
+</CodeModel>

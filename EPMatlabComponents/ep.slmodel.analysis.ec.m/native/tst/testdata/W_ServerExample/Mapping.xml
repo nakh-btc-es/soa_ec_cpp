@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Wrapper_SWC"/>
+    <Architecture id="id1" name="Wrapper_SWC [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Wrapper_SWC.c:1:Wrapper_SWC_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="B" refId="id0"/>
+        <Path path="RteStub_my_SRItf_RR_B_elem_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_Serv_Runa_fct_A" refId="id0"/>
+        <Path path="in_Serv_Runa_fct_A" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="A_or_last_B" refId="id0"/>
+        <Path path="RteStub_my_SRItf_PP_A_or_last_B_elem_A_or_last_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="out_Serv_Runa_fct_A_and_B" refId="id0"/>
+        <Path path="out_Serv_Runa_fct_A_and_B" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

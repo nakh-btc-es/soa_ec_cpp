@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="26p">
+	<Types>
+		<BusType name="A" virtual="false">
+			<Comp name="a" type="fixdt(1,18,0.001,0)" />
+			<Comp name="a1" type="fixdt(1,30,2.7777776718139649e-7,0)" />
+			<Comp name="a2" type="fixdt(0,16,0.1,-100)" />
+			<Comp name="a3" type="fixdt(1,30,2.7777776718139649e-7,0)" />
+			<Comp name="a4" type="fixdt(0,16,0.1,-100)" />
+			<Comp name="a5" type="fixdt(1,31,2.7777776718139649e-7,0)" />
+			<Comp name="a6" type="uint8" />
+		</BusType>
+	</Types>
+	<Scope uid="26p" name="testbus1" path="testbus1" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="testbus1">
+		<InPort name="Input" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="A" signalName="&lt;signal1&gt;" type="A">
+			<Variable varid="varif_389" signalName="{&lt;signal1&gt;}.a" signalType="fixdt(1,18,0.001,0)" tlTypeName="int32" type="fixdt(1,18,0.001,0)">
+				<ifName ifid="if_389" initValue="0.0" lsb="0.001" offset="0.0" displayName="Input.{&lt;signal1&gt;}.a" identifier="INPUT:Input.{&lt;signal1&gt;}.a" />
+			</Variable>
+			<Variable varid="varif_390" signalName="{&lt;signal1&gt;}.a1" signalType="fixdt(1,30,2.7777776718139649e-7,0)" tlTypeName="int32" type="fixdt(1,30,2.7777776718139649e-7,0)">
+				<ifName ifid="if_390" initValue="0.0" lsb="2.777777671813965E-7" offset="0.0" displayName="Input.{&lt;signal1&gt;}.a1" identifier="INPUT:Input.{&lt;signal1&gt;}.a1" />
+			</Variable>
+			<Variable varid="varif_391" signalName="{&lt;signal1&gt;}.a2" signalType="fixdt(0,16,0.1,-100)" tlTypeName="uint16" type="fixdt(0,16,0.1,-100)">
+				<ifName ifid="if_391" initValue="0.0" lsb="0.1" offset="-100.0" displayName="Input.{&lt;signal1&gt;}.a2" identifier="INPUT:Input.{&lt;signal1&gt;}.a2" />
+			</Variable>
+			<Variable varid="varif_392" signalName="{&lt;signal1&gt;}.a3" signalType="fixdt(1,30,2.7777776718139649e-7,0)" tlTypeName="int32" type="fixdt(1,30,2.7777776718139649e-7,0)">
+				<ifName ifid="if_392" initValue="0.0" lsb="2.777777671813965E-7" offset="0.0" displayName="Input.{&lt;signal1&gt;}.a3" identifier="INPUT:Input.{&lt;signal1&gt;}.a3" />
+			</Variable>
+			<Variable varid="varif_393" signalName="{&lt;signal1&gt;}.a4" signalType="fixdt(0,16,0.1,-100)" tlTypeName="uint16" type="fixdt(0,16,0.1,-100)">
+				<ifName ifid="if_393" initValue="0.0" lsb="0.1" offset="-100.0" displayName="Input.{&lt;signal1&gt;}.a4" identifier="INPUT:Input.{&lt;signal1&gt;}.a4" />
+			</Variable>
+			<Variable varid="varif_394" signalName="{&lt;signal1&gt;}.a5" signalType="fixdt(1,31,2.7777776718139649e-7,0)" tlTypeName="int32" type="fixdt(1,31,2.7777776718139649e-7,0)">
+				<ifName ifid="if_394" initValue="0.0" lsb="2.777777671813965E-7" offset="0.0" displayName="Input.{&lt;signal1&gt;}.a5" identifier="INPUT:Input.{&lt;signal1&gt;}.a5" />
+			</Variable>
+			<Variable varid="varif_395" signalName="{&lt;signal1&gt;}.a6" signalType="uint8" tlTypeName="uint8" type="uint8">
+				<ifName ifid="if_395" initValue="0" lsb="1.0" offset="0.0" displayName="Input.{&lt;signal1&gt;}.a6" identifier="INPUT:Input.{&lt;signal1&gt;}.a6" />
+			</Variable>
+		</InPort>
+		<OutPort name="Output" portNumber="1" compositeSig="none" signalName="a" type="fixdt(1,18,0.001,0)">
+			<Variable varid="varif_397" signalName="a" signalType="fixdt(1,18,0.001,0)" tlTypeName="int32" type="fixdt(1,18,0.001,0)">
+				<ifName ifid="if_397" initValue="0.0" lsb="0.001" offset="0.0" displayName="Output" identifier="OUTPUT:Output" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Output1" portNumber="2" compositeSig="none" signalName="a1" type="fixdt(1,30,2.7777776718139649e-7,0)">
+			<Variable varid="varif_399" signalName="a1" signalType="fixdt(1,30,2.7777776718139649e-7,0)" tlTypeName="int32" type="fixdt(1,30,2.7777776718139649e-7,0)">
+				<ifName ifid="if_399" initValue="0.0" lsb="2.777777671813965E-7" offset="0.0" displayName="Output1" identifier="OUTPUT:Output1" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Output2" portNumber="3" compositeSig="none" signalName="a2" type="fixdt(0,16,0.1,-100)">
+			<Variable varid="varif_401" signalName="a2" signalType="fixdt(0,16,0.1,-100)" tlTypeName="uint16" type="fixdt(0,16,0.1,-100)">
+				<ifName ifid="if_401" initValue="0.0" lsb="0.1" offset="-100.0" displayName="Output2" identifier="OUTPUT:Output2" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Output3" portNumber="4" compositeSig="none" signalName="a3" type="fixdt(1,30,2.7777776718139649e-7,0)">
+			<Variable varid="varif_403" signalName="a3" signalType="fixdt(1,30,2.7777776718139649e-7,0)" tlTypeName="int32" type="fixdt(1,30,2.7777776718139649e-7,0)">
+				<ifName ifid="if_403" initValue="0.0" lsb="2.777777671813965E-7" offset="0.0" displayName="Output3" identifier="OUTPUT:Output3" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Output4" portNumber="5" compositeSig="none" signalName="a4" type="fixdt(0,16,0.1,-100)">
+			<Variable varid="varif_405" signalName="a4" signalType="fixdt(0,16,0.1,-100)" tlTypeName="uint16" type="fixdt(0,16,0.1,-100)">
+				<ifName ifid="if_405" initValue="0.0" lsb="0.1" offset="-100.0" displayName="Output4" identifier="OUTPUT:Output4" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Output5" portNumber="6" compositeSig="none" signalName="a5" type="fixdt(1,31,2.7777776718139649e-7,0)">
+			<Variable varid="varif_407" signalName="a5" signalType="fixdt(1,31,2.7777776718139649e-7,0)" tlTypeName="int32" type="fixdt(1,31,2.7777776718139649e-7,0)">
+				<ifName ifid="if_407" initValue="0.0" lsb="2.777777671813965E-7" offset="0.0" displayName="Output5" identifier="OUTPUT:Output5" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Output6" portNumber="7" compositeSig="none" signalName="a6" type="uint8">
+			<Variable varid="varif_409" signalName="a6" signalType="uint8" tlTypeName="uint8" type="uint8">
+				<ifName ifid="if_409" initValue="0" lsb="1.0" offset="0.0" displayName="Output6" identifier="OUTPUT:Output6" />
+			</Variable>
+		</OutPort>
+		<Model name="testbus1" modelPath="/E:/bugfix/EP3391/demo/testbus1.slx" type="SimulinkModel" />
+		<Scope uid="26o" name="Subsystem" path="testbus1/Subsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="testbus1/Subsystem">
+			<InPort name="Input" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="A" signalName="&lt;signal1&gt;" type="A">
+				<Variable varid="varif_415" signalName="{&lt;signal1&gt;}.a" signalType="fixdt(1,18,0.001,0)" tlTypeName="int32" type="fixdt(1,18,0.001,0)">
+					<ifName ifid="if_415" initValue="0.0" lsb="0.001" offset="0.0" displayName="Input.{&lt;signal1&gt;}.a" identifier="INPUT:Input.{&lt;signal1&gt;}.a" />
+				</Variable>
+				<Variable varid="varif_416" signalName="{&lt;signal1&gt;}.a1" signalType="fixdt(1,30,2.7777776718139649e-7,0)" tlTypeName="int32" type="fixdt(1,30,2.7777776718139649e-7,0)">
+					<ifName ifid="if_416" initValue="0.0" lsb="2.777777671813965E-7" offset="0.0" displayName="Input.{&lt;signal1&gt;}.a1" identifier="INPUT:Input.{&lt;signal1&gt;}.a1" />
+				</Variable>
+				<Variable varid="varif_417" signalName="{&lt;signal1&gt;}.a2" signalType="fixdt(0,16,0.1,-100)" tlTypeName="uint16" type="fixdt(0,16,0.1,-100)">
+					<ifName ifid="if_417" initValue="0.0" lsb="0.1" offset="-100.0" displayName="Input.{&lt;signal1&gt;}.a2" identifier="INPUT:Input.{&lt;signal1&gt;}.a2" />
+				</Variable>
+				<Variable varid="varif_418" signalName="{&lt;signal1&gt;}.a3" signalType="fixdt(1,30,2.7777776718139649e-7,0)" tlTypeName="int32" type="fixdt(1,30,2.7777776718139649e-7,0)">
+					<ifName ifid="if_418" initValue="0.0" lsb="2.777777671813965E-7" offset="0.0" displayName="Input.{&lt;signal1&gt;}.a3" identifier="INPUT:Input.{&lt;signal1&gt;}.a3" />
+				</Variable>
+				<Variable varid="varif_419" signalName="{&lt;signal1&gt;}.a4" signalType="fixdt(0,16,0.1,-100)" tlTypeName="uint16" type="fixdt(0,16,0.1,-100)">
+					<ifName ifid="if_419" initValue="0.0" lsb="0.1" offset="-100.0" displayName="Input.{&lt;signal1&gt;}.a4" identifier="INPUT:Input.{&lt;signal1&gt;}.a4" />
+				</Variable>
+				<Variable varid="varif_420" signalName="{&lt;signal1&gt;}.a5" signalType="fixdt(1,31,2.7777776718139649e-7,0)" tlTypeName="int32" type="fixdt(1,31,2.7777776718139649e-7,0)">
+					<ifName ifid="if_420" initValue="0.0" lsb="2.777777671813965E-7" offset="0.0" displayName="Input.{&lt;signal1&gt;}.a5" identifier="INPUT:Input.{&lt;signal1&gt;}.a5" />
+				</Variable>
+				<Variable varid="varif_421" signalName="{&lt;signal1&gt;}.a6" signalType="uint8" tlTypeName="uint8" type="uint8">
+					<ifName ifid="if_421" initValue="0" lsb="1.0" offset="0.0" displayName="Input.{&lt;signal1&gt;}.a6" identifier="INPUT:Input.{&lt;signal1&gt;}.a6" />
+				</Variable>
+			</InPort>
+			<OutPort name="Output" portNumber="1" compositeSig="none" signalName="a" type="fixdt(1,18,0.001,0)">
+				<Variable varid="varif_423" signalName="a" signalType="fixdt(1,18,0.001,0)" tlTypeName="int32" type="fixdt(1,18,0.001,0)">
+					<ifName ifid="if_423" initValue="0.0" lsb="0.001" offset="0.0" displayName="Output" identifier="OUTPUT:Output" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Output1" portNumber="2" compositeSig="none" signalName="a1" type="fixdt(1,30,2.7777776718139649e-7,0)">
+				<Variable varid="varif_425" signalName="a1" signalType="fixdt(1,30,2.7777776718139649e-7,0)" tlTypeName="int32" type="fixdt(1,30,2.7777776718139649e-7,0)">
+					<ifName ifid="if_425" initValue="0.0" lsb="2.777777671813965E-7" offset="0.0" displayName="Output1" identifier="OUTPUT:Output1" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Output2" portNumber="3" compositeSig="none" signalName="a2" type="fixdt(0,16,0.1,-100)">
+				<Variable varid="varif_427" signalName="a2" signalType="fixdt(0,16,0.1,-100)" tlTypeName="uint16" type="fixdt(0,16,0.1,-100)">
+					<ifName ifid="if_427" initValue="0.0" lsb="0.1" offset="-100.0" displayName="Output2" identifier="OUTPUT:Output2" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Output3" portNumber="4" compositeSig="none" signalName="a3" type="fixdt(1,30,2.7777776718139649e-7,0)">
+				<Variable varid="varif_429" signalName="a3" signalType="fixdt(1,30,2.7777776718139649e-7,0)" tlTypeName="int32" type="fixdt(1,30,2.7777776718139649e-7,0)">
+					<ifName ifid="if_429" initValue="0.0" lsb="2.777777671813965E-7" offset="0.0" displayName="Output3" identifier="OUTPUT:Output3" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Output4" portNumber="5" compositeSig="none" signalName="a4" type="fixdt(0,16,0.1,-100)">
+				<Variable varid="varif_431" signalName="a4" signalType="fixdt(0,16,0.1,-100)" tlTypeName="uint16" type="fixdt(0,16,0.1,-100)">
+					<ifName ifid="if_431" initValue="0.0" lsb="0.1" offset="-100.0" displayName="Output4" identifier="OUTPUT:Output4" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Output5" portNumber="6" compositeSig="none" signalName="a5" type="fixdt(1,31,2.7777776718139649e-7,0)">
+				<Variable varid="varif_433" signalName="a5" signalType="fixdt(1,31,2.7777776718139649e-7,0)" tlTypeName="int32" type="fixdt(1,31,2.7777776718139649e-7,0)">
+					<ifName ifid="if_433" initValue="0.0" lsb="2.777777671813965E-7" offset="0.0" displayName="Output5" identifier="OUTPUT:Output5" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Output6" portNumber="7" compositeSig="none" signalName="a6" type="uint8">
+				<Variable varid="varif_435" signalName="a6" signalType="uint8" tlTypeName="uint8" type="uint8">
+					<ifName ifid="if_435" initValue="0" lsb="1.0" offset="0.0" displayName="Output6" identifier="OUTPUT:Output6" />
+				</Variable>
+			</OutPort>
+			<Model name="testbus1" modelPath="/E:/bugfix/EP3391/demo/testbus1.slx" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

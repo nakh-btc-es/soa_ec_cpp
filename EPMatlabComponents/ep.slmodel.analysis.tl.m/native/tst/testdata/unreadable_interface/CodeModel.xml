@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\1484d96cb5\unreadable_interface\TLProj\top_A" name="top_A.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\1484d96cb5\unreadable_interface\TLSim" name="top_A_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\1484d96cb5\unreadable_interface\TLProj\top_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\1484d96cb5\unreadable_interface\TLSim"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="unreadable_interface [C-Code]">
+    <Function name="top_A" sampleTime="1.0">
+      <Args>
+        <Arg name="Sa1_Gain1_gain">
+          <Variable name="Sa1_Gain1_gain_a"/>
+        </Arg>
+        <Arg name="Sa1_Gain2_gain">
+          <Variable name="Sa1_Gain2_gain_a"/>
+        </Arg>
+        <Arg name="Sa1_Gain3_gain">
+          <Variable name="Sa1_Gain3_gain_a"/>
+        </Arg>
+        <Arg name="Sa1_InPort2">
+          <ArrayRef size="2"/>
+        </Arg>
+        <Arg name="Sa1_OutPort2">
+          <ArrayRef size="2"/>
+        </Arg>
+        <Arg name="Sa1_Gain2">
+          <ArrayRef size="2"/>
+        </Arg>
+      </Args>
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_InPort1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_InPort2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort3" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa1_Sum" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa2_sub_B1" fileref="fID1" sampleTime="1.0">
+      <Args>
+        <Arg name="Sa2_Gain1_gain">
+          <Variable name="Sa2_Gain1_gain_a"/>
+        </Arg>
+      </Args>
+      <Interface>
+        <InterfaceObj kind="in" var="Sa2_InPort1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa2_OutPort1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa3_sub_B2" fileref="fID1" sampleTime="1.0">
+      <Args>
+        <Arg name="Sa3_Gain2_gain">
+          <Variable name="Sa3_Gain2_gain_a"/>
+        </Arg>
+        <Arg name="Sa3_InPort1">
+          <ArrayRef size="2"/>
+        </Arg>
+        <Arg name="Sa3_OutPort1">
+          <ArrayRef size="2"/>
+        </Arg>
+        <Arg name="Sa3_Gain2">
+          <ArrayRef size="2"/>
+        </Arg>
+      </Args>
+      <Interface>
+        <InterfaceObj kind="in" var="Sa3_InPort1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa3_OutPort1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa4_sub_B3" fileref="fID1" sampleTime="1.0">
+      <Args>
+        <Arg name="Sa4_Gain1_gain">
+          <Variable name="Sa4_Gain1_gain_a"/>
+        </Arg>
+        <Arg name="Sa4_Gain1">
+          <ArrayRef size="2"/>
+        </Arg>
+      </Args>
+      <Interface>
+        <InterfaceObj kind="in" var="Sa4_InPort1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa4_InPort2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa4_OutPort1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa4_OutPort2" scaling="scID1"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

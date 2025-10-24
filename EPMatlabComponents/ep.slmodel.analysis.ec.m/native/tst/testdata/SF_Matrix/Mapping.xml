@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="sf_matrix_modified"/>
+    <Architecture id="id1" name="sf_matrix_modified [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="sf_matrix_modified.c:1:sf_matrix_modified_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="data1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(2)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(3)" refId="id0"/>
+          <Path path="[4]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(1)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(2)" refId="id0"/>
+          <Path path="[3]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(3)" refId="id0"/>
+          <Path path="[5]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In2" refId="id0"/>
+        <Path path="data2" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(2)" refId="id0"/>
+          <Path path="[3]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(1)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(2)" refId="id0"/>
+          <Path path="[4]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(3)(1)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(3)(2)" refId="id0"/>
+          <Path path="[5]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="final_out" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(2)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(3)" refId="id0"/>
+          <Path path="[4]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(4)" refId="id0"/>
+          <Path path="[6]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(1)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(2)" refId="id0"/>
+          <Path path="[3]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(3)" refId="id0"/>
+          <Path path="[5]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(4)" refId="id0"/>
+          <Path path="[7]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_A/In1(1)" refId="id0"/>
+        <Path path="data1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(2)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(3)" refId="id0"/>
+          <Path path="[4]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(1)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(2)" refId="id0"/>
+          <Path path="[3]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(3)" refId="id0"/>
+          <Path path="[5]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_A/In2(1)" refId="id0"/>
+        <Path path="data2" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(2)" refId="id0"/>
+          <Path path="[3]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(1)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(2)" refId="id0"/>
+          <Path path="[4]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(3)(1)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(3)(2)" refId="id0"/>
+          <Path path="[5]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_A/Chart/final_out" refId="id0"/>
+        <Path path="final_out" refId="id1"/>
+        <SignalMapping>
+          <Path path="(33)(33)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(33)(34)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(33)(35)" refId="id0"/>
+          <Path path="[4]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(33)(36)" refId="id0"/>
+          <Path path="[6]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(34)(33)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(34)(34)" refId="id0"/>
+          <Path path="[3]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(34)(35)" refId="id0"/>
+          <Path path="[5]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(34)(36)" refId="id0"/>
+          <Path path="[7]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="param1" refId="id0"/>
+        <Path path="param1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(2)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(3)" refId="id0"/>
+          <Path path="[4]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(1)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(2)" refId="id0"/>
+          <Path path="[3]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(3)" refId="id0"/>
+          <Path path="[5]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_A" refId="id0"/>
+      <Path path="sf_matrix_modified.c:1:sf_matrix_modified_step/sf_matrix_modified.c:1:func_A" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_A/In1" refId="id0"/>
+        <Path path="data1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(2)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(3)" refId="id0"/>
+          <Path path="[4]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(1)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(2)" refId="id0"/>
+          <Path path="[3]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(3)" refId="id0"/>
+          <Path path="[5]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_A/In2" refId="id0"/>
+        <Path path="data2" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(2)" refId="id0"/>
+          <Path path="[3]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(1)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(2)" refId="id0"/>
+          <Path path="[4]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(3)(1)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(3)(2)" refId="id0"/>
+          <Path path="[5]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_A/Out1" refId="id0"/>
+        <Path path="final_out" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(2)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(3)" refId="id0"/>
+          <Path path="[4]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(4)" refId="id0"/>
+          <Path path="[6]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(1)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(2)" refId="id0"/>
+          <Path path="[3]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(3)" refId="id0"/>
+          <Path path="[5]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(4)" refId="id0"/>
+          <Path path="[7]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_A/Chart/final_out" refId="id0"/>
+        <Path path="final_out" refId="id1"/>
+        <SignalMapping>
+          <Path path="(33)(33)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(33)(34)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(33)(35)" refId="id0"/>
+          <Path path="[4]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(33)(36)" refId="id0"/>
+          <Path path="[6]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(34)(33)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(34)(34)" refId="id0"/>
+          <Path path="[3]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(34)(35)" refId="id0"/>
+          <Path path="[5]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(34)(36)" refId="id0"/>
+          <Path path="[7]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="param1" refId="id0"/>
+        <Path path="param1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(2)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(3)" refId="id0"/>
+          <Path path="[4]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(1)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(2)" refId="id0"/>
+          <Path path="[3]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(3)" refId="id0"/>
+          <Path path="[5]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_A/Chart" refId="id0"/>
+      <Path path="sf_matrix_modified.c:1:sf_matrix_modified_step/sf_matrix_modified.c:1:func_A/sf_matrix_modified.c:1:func_chart" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_A/Chart/data1" refId="id0"/>
+        <Path path="data1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(2)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(3)" refId="id0"/>
+          <Path path="[4]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(1)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(2)" refId="id0"/>
+          <Path path="[3]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(3)" refId="id0"/>
+          <Path path="[5]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_A/Chart/data2" refId="id0"/>
+        <Path path="data2" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(2)" refId="id0"/>
+          <Path path="[3]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(1)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(2)" refId="id0"/>
+          <Path path="[4]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(3)(1)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(3)(2)" refId="id0"/>
+          <Path path="[5]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_A/Chart/final_out" refId="id0"/>
+        <Path path="final_out" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(2)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(3)" refId="id0"/>
+          <Path path="[4]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(4)" refId="id0"/>
+          <Path path="[6]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(1)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(2)" refId="id0"/>
+          <Path path="[3]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(3)" refId="id0"/>
+          <Path path="[5]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(4)" refId="id0"/>
+          <Path path="[7]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="param1" refId="id0"/>
+        <Path path="param1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(2)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(1)(3)" refId="id0"/>
+          <Path path="[4]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(1)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(2)" refId="id0"/>
+          <Path path="[3]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)(3)" refId="id0"/>
+          <Path path="[5]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

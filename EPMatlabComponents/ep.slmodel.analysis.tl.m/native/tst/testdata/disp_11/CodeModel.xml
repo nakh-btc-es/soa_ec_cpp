@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\disp_11\TLProj\top_A" name="top_A.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\disp_11\TLSim" name="top_A_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\disp_11\TLProj\top_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\disp_11\TLSim"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="sfchart_locals_tl [C-Code]">
+    <Function name="top_A" sampleTime="2.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_In1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_sigA" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_sigB" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa1_sigA_a" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_sigB_a" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sa1_In4" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_In5" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_Out1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_sigA_b" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_sigB_b" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa1_sigA_c" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_sigB_c" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa1_Out4" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_Out5" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Ca1_y" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca3_y" access=".a" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca3_y" access=".b" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca5_y" access=".a" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca5_y" access=".b" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca7_y1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca7_y2" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca1_x" scaling="scID1" min="-1.0000000000000000e+01" max="2.2000000000000000e+01" initVal="-1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca3_x" access=".a" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca3_x" access=".b" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca5_x" access=".a" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca5_x" access=".b" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca7_x1" scaling="scID1" min="-1.0000000000000000e+01" max="2.2000000000000000e+01" initVal="-1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca7_x2" scaling="scID1" min="-1.0000000000000000e+01" max="2.2000000000000000e+01" initVal="-1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Ca1_Chart1" sampleTime="2.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_In1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Ca1_y" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca1_x" scaling="scID1" min="-1.0000000000000000e+01" max="2.2000000000000000e+01" initVal="-1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Ca3_Chart2" sampleTime="2.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_sigA" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_sigB" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Ca3_y" access=".a" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Ca3_y" access=".b" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca3_x" access=".a" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca3_x" access=".b" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Ca5_Chart3" sampleTime="2.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_sigA_a" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_sigB_a" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Ca5_y" access=".a" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Ca5_y" access=".b" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca5_x" access=".a" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca5_x" access=".b" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Ca7_Chart4" sampleTime="2.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_In4" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_In5" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Ca7_y1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Ca7_y2" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca7_x1" scaling="scID1" min="-1.0000000000000000e+01" max="2.2000000000000000e+01" initVal="-1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca7_x2" scaling="scID1" min="-1.0000000000000000e+01" max="2.2000000000000000e+01" initVal="-1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

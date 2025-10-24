@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="datastore.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_datastore_matchGraphItf\datastore_ert_rtw"/>
+    <File annotate="yes" id="ID72" kind="source" name="datastore_ReadA.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_datastore_matchGraphItf\datastore_ert_rtw"/>
+    <File annotate="yes" id="ID73" kind="source" name="datastore_ReadWriteA_ReadWriteB.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_datastore_matchGraphItf\datastore_ert_rtw"/>
+    <File annotate="yes" id="ID74" kind="source" name="WriteB.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_datastore_matchGraphItf\slprj\ert\dataStoreModelToReference"/>
+    <File annotate="yes" id="ID75" kind="source" name="WriteO.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_datastore_matchGraphItf\slprj\ert\dataStoreModelToReference"/>
+    <File annotate="yes" id="ID76" kind="source" name="dataStoreModelToReference.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_datastore_matchGraphItf\slprj\ert\dataStoreModelToReference"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_datastore_matchGraphItf\slprj\ert\dataStoreModelToReference"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_datastore_matchGraphItf"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_datastore_matchGraphItf\datastore_ert_rtw"/>
+    <IncludePath path="C:\Matlab\R2021a\extern\include"/>
+    <IncludePath path="C:\Matlab\R2021a\simulink\include"/>
+    <IncludePath path="C:\Matlab\R2021a\rtw\c\src"/>
+    <IncludePath path="C:\Matlab\R2021a\rtw\c\src\ext_mode\common"/>
+    <IncludePath path="C:\Matlab\R2021a\rtw\c\ert"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_datastore_matchGraphItf\slprj\ert\_sharedutils"/>
+  </IncludePaths>
+  <Defines/>
+  <Functions archName="datastore [C-Code]">
+    <Function fileref="ID71" initFunc="datastore_initialize" name="datastore_step">
+      <Interface>
+        <InterfaceObj kind="in" var="In_WriteB"/>
+        <InterfaceObj kind="in" var="In_ReadWriteA_ReadWriteB"/>
+        <InterfaceObj kind="in" var="In_ReadD_ChartD"/>
+        <InterfaceObj kind="in" var="In_ChartE_WriteE"/>
+        <InterfaceObj kind="out" var="Out_ReadA"/>
+        <InterfaceObj kind="out" var="Out_ReadWriteA_ReadWriteB"/>
+        <InterfaceObj kind="out" var="Out_ReadD_ChartD"/>
+        <InterfaceObj kind="out" var="O_ReadD_ChartD"/>
+        <InterfaceObj kind="out" var="O_ReadO"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID72" initFunc="datastore_initialize" name="ReadA">
+      <Interface>
+        <InterfaceObj kind="in" var="A"/>
+        <InterfaceObj kind="out" var="rty_Out"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="datastore_initialize" name="ReadL">
+      <Interface>
+        <InterfaceObj kind="in" var="L"/>
+        <InterfaceObj kind="out" var="rty_Out"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="datastore_initialize" name="ReadD_ChartD">
+      <Interface>
+        <InterfaceObj kind="in" var="rtu_I"/>
+        <InterfaceObj kind="out" var="rty_Out"/>
+        <InterfaceObj kind="out" var="rty_O"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="datastore_initialize" name="ChartE_WriteE">
+      <Interface>
+        <InterfaceObj kind="in" var="rtu_In"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID73" initFunc="datastore_initialize" name="ReadWriteA_ReadWriteB">
+      <Interface>
+        <InterfaceObj kind="in" var="rtu_In"/>
+        <InterfaceObj kind="out" var="rty_Out"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID76" initFunc="datastore_initialize" name="dataStoreModelToReference">
+      <Interface>
+        <InterfaceObj kind="in" var="In_WriteB"/>
+        <InterfaceObj kind="in" var="A"/>
+        <InterfaceObj kind="out" var="Out_ReadO"/>
+        <InterfaceObj kind="out" var="B"/>
+      </Interface>
+    </Function>
+    <Function initFunc="datastore_initialize" name="WriteB">
+      <Interface>
+        <InterfaceObj kind="in" var="rtu_In"/>
+        <InterfaceObj kind="out" var="B"/>
+      </Interface>
+    </Function>
+    <Function initFunc="datastore_initialize" name="WriteM">
+      <Interface>
+        <InterfaceObj kind="in" var="rtu_In"/>
+        <InterfaceObj kind="out" var="M"/>
+      </Interface>
+    </Function>
+    <Function initFunc="datastore_initialize" name="WriteO">
+      <Interface>
+        <InterfaceObj kind="in" var="rtu_In_WriteB"/>
+        <InterfaceObj kind="in" var="A"/>
+        <InterfaceObj kind="out" var="rty_Out_ReadO"/>
+      </Interface>
+    </Function>
+  </Functions>
+</CodeModel>

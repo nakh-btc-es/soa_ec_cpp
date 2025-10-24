@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="26T">
+	<Types>
+		<EnumType name="boolean">
+			<EnumValue name="false" ordinal="0" />
+			<EnumValue name="true" ordinal="1" />
+		</EnumType>
+		<BusType name="LowBus" virtual="false">
+			<Comp name="a" type="uint8" width="3" />
+			<Comp name="b" type="boolean" />
+		</BusType>
+	</Types>
+	<Scope uid="26T" name="ds_with_buses" path="ds_with_buses" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ds_with_buses">
+		<InPort name="In1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="LowBus" signalName="&lt;signal1&gt;" type="LowBus">
+			<Variable varid="varif_378" signalName="{&lt;signal1&gt;}.a" width1="3" signalType="uint8" signalDim="[1 3]" tlTypeName="uint8" width="3" type="uint8">
+				<ifName ifid="if_380" index1="1" initValue="0" lsb="1.0" offset="0.0" displayName="In1.{&lt;signal1&gt;}.a(1)" identifier="INPUT:In1.{&lt;signal1&gt;}.a(1)" />
+				<ifName ifid="if_381" index1="2" initValue="0" lsb="1.0" offset="0.0" displayName="In1.{&lt;signal1&gt;}.a(2)" identifier="INPUT:In1.{&lt;signal1&gt;}.a(2)" />
+				<ifName ifid="if_382" index1="3" initValue="0" lsb="1.0" offset="0.0" displayName="In1.{&lt;signal1&gt;}.a(3)" identifier="INPUT:In1.{&lt;signal1&gt;}.a(3)" />
+			</Variable>
+			<Variable varid="varif_379" signalName="{&lt;signal1&gt;}.b" signalType="boolean" tlTypeName="boolean" type="boolean">
+				<ifName ifid="if_379" initValue="0" lsb="1.0" offset="0.0" displayName="In1.{&lt;signal1&gt;}.b" identifier="INPUT:In1.{&lt;signal1&gt;}.b" />
+			</Variable>
+		</InPort>
+		<DataStoreRead name="ds_in" path="ds_with_buses/ds_in" physicalPath="ds_with_buses/ds_in" portNumber="0" signal="Sig2" compositeSig="bus" busType="NON_VIRTUAL" busObj="LowBus" signalName="Sig2" type="LowBus">
+			<Variable varid="varif_388" signalName="Sig2.a" width1="3" signalType="uint8" signalDim="[1 3]" tlTypeName="uint8" width="3" type="uint8">
+				<ifName ifid="if_390" index1="1" initValue="0" lsb="1.0" offset="0.0" displayName="ds_in@Sig2.Sig2.a(1)" identifier="INPUT:ds_in.Sig2.a(1)" />
+				<ifName ifid="if_391" index1="2" initValue="0" lsb="1.0" offset="0.0" displayName="ds_in@Sig2.Sig2.a(2)" identifier="INPUT:ds_in.Sig2.a(2)" />
+				<ifName ifid="if_392" index1="3" initValue="0" lsb="1.0" offset="0.0" displayName="ds_in@Sig2.Sig2.a(3)" identifier="INPUT:ds_in.Sig2.a(3)" />
+			</Variable>
+			<Variable varid="varif_389" signalName="Sig2.b" signalType="boolean" tlTypeName="boolean" type="boolean">
+				<ifName ifid="if_389" initValue="0" lsb="1.0" offset="0.0" displayName="ds_in@Sig2.Sig2.b" identifier="INPUT:ds_in.Sig2.b" />
+			</Variable>
+		</DataStoreRead>
+		<OutPort name="Out1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="LowBus" signalName="&lt;signal1&gt;" type="LowBus">
+			<Variable varid="varif_398" signalName="{&lt;signal1&gt;}.a" width1="3" signalType="uint8" signalDim="[1 3]" tlTypeName="uint8" width="3" type="uint8">
+				<ifName ifid="if_400" index1="1" initValue="0" lsb="1.0" offset="0.0" displayName="Out1.{&lt;signal1&gt;}.a(1)" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.a(1)" />
+				<ifName ifid="if_401" index1="2" initValue="0" lsb="1.0" offset="0.0" displayName="Out1.{&lt;signal1&gt;}.a(2)" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.a(2)" />
+				<ifName ifid="if_402" index1="3" initValue="0" lsb="1.0" offset="0.0" displayName="Out1.{&lt;signal1&gt;}.a(3)" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.a(3)" />
+			</Variable>
+			<Variable varid="varif_399" signalName="{&lt;signal1&gt;}.b" signalType="boolean" tlTypeName="boolean" type="boolean">
+				<ifName ifid="if_399" initValue="0" lsb="1.0" offset="0.0" displayName="Out1.{&lt;signal1&gt;}.b" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.b" />
+			</Variable>
+		</OutPort>
+		<DataStoreWrite name="ds_out" path="ds_with_buses/ds_out" physicalPath="ds_with_buses/ds_out" portNumber="0" signal="Sig1" compositeSig="bus" busType="NON_VIRTUAL" busObj="LowBus" signalName="Sig1" type="LowBus">
+			<Variable varid="varif_408" signalName="Sig1.a" width1="3" signalType="uint8" signalDim="[1 3]" tlTypeName="uint8" width="3" type="uint8">
+				<ifName ifid="if_410" index1="1" initValue="0" lsb="1.0" offset="0.0" displayName="ds_out@Sig1.Sig1.a(1)" identifier="OUTPUT:ds_out.Sig1.a(1)" />
+				<ifName ifid="if_411" index1="2" initValue="0" lsb="1.0" offset="0.0" displayName="ds_out@Sig1.Sig1.a(2)" identifier="OUTPUT:ds_out.Sig1.a(2)" />
+				<ifName ifid="if_412" index1="3" initValue="0" lsb="1.0" offset="0.0" displayName="ds_out@Sig1.Sig1.a(3)" identifier="OUTPUT:ds_out.Sig1.a(3)" />
+			</Variable>
+			<Variable varid="varif_409" signalName="Sig1.b" signalType="boolean" tlTypeName="boolean" type="boolean">
+				<ifName ifid="if_409" initValue="0" lsb="1.0" offset="0.0" displayName="ds_out@Sig1.Sig1.b" identifier="OUTPUT:ds_out.Sig1.b" />
+			</Variable>
+		</DataStoreWrite>
+		<Model name="ds_with_buses" modelPath="/E:/ModelsDev/UT_SL/data_store_bus/ml2015asp1/ds_with_buses.slx" type="SimulinkModel" />
+	</Scope>
+</ExtractionModel>

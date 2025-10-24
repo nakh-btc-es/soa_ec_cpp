@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_20\init.m" modelVersion="1.46" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_20\SWC_CruiseControlMain_Test_Embedded_2.slx" modelCreationDate="2018-08-08T19:58:47" creator="WLEEPER">
+  <toolInfo name="Matlab" release="(R2019b)" version="9.7" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2019b)" version="10.0" patchLevel=""/>
+  <model modelKind="model" modelID="model001" modelVersion="1.46" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_20\SWC_CruiseControlMain_Test_Embedded_2.slx" creationDate="2018-08-08T19:58:47" initScript="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_20\init.m">
+    <subsystem subsysID="ss1" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys" path="SWC_CruiseControlMain_OnOff_sys" sampleTime="0.2" name="SWC_CruiseControlMain_OnOff_sys" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="Rp_CC_TurnCruiseControlOnOff_DE_CruiseOnOffReq_read" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Rp_CC_TurnCruiseControlOnOff_DE_CruiseOnOffReq_read" path="SWC_CruiseControlMain_OnOff_sys/Rp_CC_TurnCruiseControlOnOff_DE_CruiseOnOffReq_read">
+        <enumType name="CruiseControlRqType">
+          <enumElement name="TURN_CRUISE_CONTROL_OFF" value="0"/>
+          <enumElement name="TURN_CRUISE_CONTROL_ON" value="1"/>
+        </enumType>
+      </inport>
+      <inport portNumber="2" name="Rp_CC_VehIgnStatus_DE_VehIgnStatus_read" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Rp_CC_VehIgnStatus_DE_VehIgnStatus_read" path="SWC_CruiseControlMain_OnOff_sys/Rp_CC_VehIgnStatus_DE_VehIgnStatus_read">
+        <enumType name="VehIgnStatusType">
+          <enumElement name="VEH_IGN_OFF" value="0"/>
+          <enumElement name="VEH_IGN_ON" value="1"/>
+        </enumType>
+      </inport>
+      <outport portNumber="1" name="Pp_CC_SetCruiseControlOnOff_DE_CruiseOnOffSet_write" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Pp_CC_SetCruiseControlOnOff_DE_CruiseOnOffSet_write" path="SWC_CruiseControlMain_OnOff_sys/Pp_CC_SetCruiseControlOnOff_DE_CruiseOnOffSet_write" signalName="Ctrl_State_Output">
+        <enumType name="CruiseControlStType">
+          <enumElement name="CRUISE_CONTROL_OFF" value="0"/>
+          <enumElement name="CRUISE_CONTROL_ON" value="1"/>
+        </enumType>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1" sampleTime="0.2" name="Subsystem1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="io_DesVehSpd" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1/io_DesVehSpd" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/io_DesVehSpd">
+        <single/>
+      </inport>
+      <inport portNumber="2" name="io_VehSpd" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1/io_VehSpd" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/io_VehSpd">
+        <single/>
+      </inport>
+      <inport portNumber="3" name="io_CurVehTorque" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1/io_CurVehTorque" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/io_CurVehTorque">
+        <single/>
+      </inport>
+      <inport portNumber="4" name="io_cruise_on_off_cmd" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1/io_cruise_on_off_cmd" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/io_cruise_on_off_cmd">
+        <enumType name="CruiseControlRqType">
+          <enumElement name="TURN_CRUISE_CONTROL_OFF" value="0"/>
+          <enumElement name="TURN_CRUISE_CONTROL_ON" value="1"/>
+        </enumType>
+      </inport>
+      <inport portNumber="5" name="io_VehIgnStatus" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1/io_VehIgnStatus" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/io_VehIgnStatus">
+        <enumType name="VehIgnStatusType">
+          <enumElement name="VEH_IGN_OFF" value="0"/>
+          <enumElement name="VEH_IGN_ON" value="1"/>
+        </enumType>
+      </inport>
+      <outport portNumber="1" name="cc_VehTorqueCmd" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1/cc_VehTorqueCmd" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/cc_VehTorqueCmd" signalName="cc_VehTorqueCmd">
+        <single/>
+      </outport>
+      <outport portNumber="2" name="CruiseCtrlSet_On_Off" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1/CruiseCtrlSet_On_Off" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/CruiseCtrlSet_On_Off" signalName="Ctrl_State_Output">
+        <enumType name="CruiseControlStType">
+          <enumElement name="CRUISE_CONTROL_OFF" value="0"/>
+          <enumElement name="CRUISE_CONTROL_ON" value="1"/>
+        </enumType>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1/Chart1" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/Chart1" sampleTime="0.2" name="Chart1" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="io_cruise_on_off_cmd" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1/Chart1/io_cruise_on_off_cmd" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/Chart1/io_cruise_on_off_cmd">
+        <enumType name="CruiseControlRqType">
+          <enumElement name="TURN_CRUISE_CONTROL_OFF" value="0"/>
+          <enumElement name="TURN_CRUISE_CONTROL_ON" value="1"/>
+        </enumType>
+      </inport>
+      <inport portNumber="2" name="VehIgnStatus" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1/Chart1/VehIgnStatus" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/Chart1/VehIgnStatus">
+        <enumType name="VehIgnStatusType">
+          <enumElement name="VEH_IGN_OFF" value="0"/>
+          <enumElement name="VEH_IGN_ON" value="1"/>
+        </enumType>
+      </inport>
+      <outport portNumber="1" name="Ctrl_State_Output" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1/Chart1/Ctrl_State_Output" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/Chart1/Ctrl_State_Output" signalName="Ctrl_State_Output">
+        <enumType name="CruiseControlStType">
+          <enumElement name="CRUISE_CONTROL_OFF" value="0"/>
+          <enumElement name="CRUISE_CONTROL_ON" value="1"/>
+        </enumType>
+      </outport>
+      <outport portNumber="2" name="CruiseCtrl_On_Off_Indicator" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1/Chart1/CruiseCtrl_On_Off_Indicator" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/Chart1/CruiseCtrl_On_Off_Indicator" signalName="CruiseCtrl_On_Off_Indicator">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1/Enabled&#10;Subsystem/Subsystem" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/Enabled&#10;Subsystem/Subsystem" sampleTime="0.2" name="Subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="io_DesVehSpd" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1/Enabled&#10;Subsystem/Subsystem/io_DesVehSpd" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/Enabled&#10;Subsystem/Subsystem/io_DesVehSpd">
+        <single/>
+      </inport>
+      <inport portNumber="2" name="io_VehSpd" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1/Enabled&#10;Subsystem/Subsystem/io_VehSpd" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/Enabled&#10;Subsystem/Subsystem/io_VehSpd">
+        <single/>
+      </inport>
+      <inport portNumber="3" name="io_CurVehTorque" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1/Enabled&#10;Subsystem/Subsystem/io_CurVehTorque" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/Enabled&#10;Subsystem/Subsystem/io_CurVehTorque">
+        <single/>
+      </inport>
+      <outport portNumber="1" name="cc_VehTorqueCmd" physicalPath="SWC_CruiseControlMain_Test_Embedded_2/SWC_CruiseControlMain_OnOff_sys/Subsystem1/Enabled&#10;Subsystem/Subsystem/cc_VehTorqueCmd" path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/Enabled&#10;Subsystem/Subsystem/cc_VehTorqueCmd" signalName="cc_VehTorqueCmd">
+        <single/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelKind="library" modelID="model002" modelVersion="0.293" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_20\commonlib-master\Simulink\common_library.slx" creationDate="2017-02-20T22:26:40" initScript="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_20\init.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

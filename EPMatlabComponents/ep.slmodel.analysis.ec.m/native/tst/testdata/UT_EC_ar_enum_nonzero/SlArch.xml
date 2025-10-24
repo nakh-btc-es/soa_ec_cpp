@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240314T130351_2724\tmp_ar_enum_nonzero\ut_results\AddModelInfo.xml" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240314T130351_2724\tmp_ar_enum_nonzero\Wrapper_ar_enum_nonzero.slx" modelCreationDate="2024-03-14T13:05:40" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240314T130351_2724\tmp_ar_enum_nonzero\Wrapper_ar_enum_nonzero.slx" creationDate="2024-03-14T13:05:40" modificationDate="2024-03-14T13:05:44">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_ar_enum_nonzero" path="" sampleTime="0.01" name="Wrapper_ar_enum_nonzero" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="x1" physicalPath="Wrapper_ar_enum_nonzero/x1" path="x1">
+        <enumType name="IDT_EnumType_A">
+          <enumElement name="a" value="11"/>
+          <enumElement name="b" value="22"/>
+          <enumElement name="x" value="127"/>
+        </enumType>
+      </inport>
+      <inport portNumber="2" name="x2" physicalPath="Wrapper_ar_enum_nonzero/x2" path="x2">
+        <enumType name="IDT_EnumType_B">
+          <enumElement name="c" value="33"/>
+          <enumElement name="d" value="44"/>
+          <enumElement name="dd" value="0"/>
+          <enumElement name="ddd" value="-3"/>
+        </enumType>
+      </inport>
+      <inport portNumber="3" name="x3" physicalPath="Wrapper_ar_enum_nonzero/x3" path="x3">
+        <enumType name="IDT_EnumType_C">
+          <enumElement name="c" value="0"/>
+          <enumElement name="d" value="2"/>
+          <enumElement name="cc" value="3"/>
+          <enumElement name="ccc" value="-4"/>
+        </enumType>
+      </inport>
+      <inport portNumber="4" name="x4" physicalPath="Wrapper_ar_enum_nonzero/x4" path="x4">
+        <enumType name="IDT_EnumType_D">
+          <enumElement name="c" value="0"/>
+          <enumElement name="d" value="2"/>
+        </enumType>
+      </inport>
+      <inport portNumber="5" name="x5" physicalPath="Wrapper_ar_enum_nonzero/x5" path="x5">
+        <enumType name="IDT_EnumType_E">
+          <enumElement name="type_e_x" value="-5"/>
+        </enumType>
+      </inport>
+      <outport portNumber="1" name="y1" physicalPath="Wrapper_ar_enum_nonzero/y1" path="y1">
+        <enumType name="IDT_EnumType_A2">
+          <enumElement name="a2" value="11"/>
+          <enumElement name="b2" value="22"/>
+          <enumElement name="x2" value="127"/>
+        </enumType>
+      </outport>
+      <outport portNumber="2" name="y2" physicalPath="Wrapper_ar_enum_nonzero/y2" path="y2">
+        <enumType name="IDT_EnumType_B2">
+          <enumElement name="c" value="33"/>
+          <enumElement name="d" value="44"/>
+          <enumElement name="dd" value="0"/>
+          <enumElement name="ddd" value="-3"/>
+        </enumType>
+      </outport>
+      <outport portNumber="3" name="y3" physicalPath="Wrapper_ar_enum_nonzero/y3" path="y3">
+        <enumType name="IDT_EnumType_C2">
+          <enumElement name="c" value="0"/>
+          <enumElement name="d" value="2"/>
+          <enumElement name="cc" value="3"/>
+          <enumElement name="ccc" value="-4"/>
+        </enumType>
+      </outport>
+      <outport portNumber="4" name="y4" physicalPath="Wrapper_ar_enum_nonzero/y4" path="y4">
+        <enumType name="IDT_EnumType_D2">
+          <enumElement name="c2" value="0"/>
+          <enumElement name="d2" value="2"/>
+        </enumType>
+      </outport>
+      <outport portNumber="5" name="y5" physicalPath="Wrapper_ar_enum_nonzero/y5" path="y5">
+        <enumType name="IDT_EnumType_E2">
+          <enumElement name="type_e_x2" value="-13"/>
+        </enumType>
+      </outport>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="ar_enum_nonzero/Runa_sub" path="ar_enum_nonzero/ar_enum_nonzero/Runa_sub" sampleTime="0.01" name="Runa_sub" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="x1" physicalPath="ar_enum_nonzero/Runa_sub/x1" path="ar_enum_nonzero/ar_enum_nonzero/Runa_sub/x1" modelRef="model002">
+        <enumType name="IDT_EnumType_A">
+          <enumElement name="a" value="11"/>
+          <enumElement name="b" value="22"/>
+          <enumElement name="x" value="127"/>
+        </enumType>
+      </inport>
+      <inport portNumber="2" name="x2" physicalPath="ar_enum_nonzero/Runa_sub/x2" path="ar_enum_nonzero/ar_enum_nonzero/Runa_sub/x2" modelRef="model002">
+        <enumType name="IDT_EnumType_B">
+          <enumElement name="c" value="33"/>
+          <enumElement name="d" value="44"/>
+          <enumElement name="dd" value="0"/>
+          <enumElement name="ddd" value="-3"/>
+        </enumType>
+      </inport>
+      <inport portNumber="3" name="x3" physicalPath="ar_enum_nonzero/Runa_sub/x3" path="ar_enum_nonzero/ar_enum_nonzero/Runa_sub/x3" modelRef="model002">
+        <enumType name="IDT_EnumType_C">
+          <enumElement name="c" value="0"/>
+          <enumElement name="d" value="2"/>
+          <enumElement name="cc" value="3"/>
+          <enumElement name="ccc" value="-4"/>
+        </enumType>
+      </inport>
+      <inport portNumber="4" name="x4" physicalPath="ar_enum_nonzero/Runa_sub/x4" path="ar_enum_nonzero/ar_enum_nonzero/Runa_sub/x4" modelRef="model002">
+        <enumType name="IDT_EnumType_D">
+          <enumElement name="c" value="0"/>
+          <enumElement name="d" value="2"/>
+        </enumType>
+      </inport>
+      <inport portNumber="5" name="x5" physicalPath="ar_enum_nonzero/Runa_sub/x5" path="ar_enum_nonzero/ar_enum_nonzero/Runa_sub/x5" modelRef="model002">
+        <enumType name="IDT_EnumType_E">
+          <enumElement name="type_e_x" value="-5"/>
+        </enumType>
+      </inport>
+      <outport portNumber="1" name="y1" physicalPath="ar_enum_nonzero/Runa_sub/y1" path="ar_enum_nonzero/ar_enum_nonzero/Runa_sub/y1" modelRef="model002">
+        <enumType name="IDT_EnumType_A2">
+          <enumElement name="a2" value="11"/>
+          <enumElement name="b2" value="22"/>
+          <enumElement name="x2" value="127"/>
+        </enumType>
+      </outport>
+      <outport portNumber="2" name="y2" physicalPath="ar_enum_nonzero/Runa_sub/y2" path="ar_enum_nonzero/ar_enum_nonzero/Runa_sub/y2" modelRef="model002">
+        <enumType name="IDT_EnumType_B2">
+          <enumElement name="c" value="33"/>
+          <enumElement name="d" value="44"/>
+          <enumElement name="dd" value="0"/>
+          <enumElement name="ddd" value="-3"/>
+        </enumType>
+      </outport>
+      <outport portNumber="3" name="y3" physicalPath="ar_enum_nonzero/Runa_sub/y3" path="ar_enum_nonzero/ar_enum_nonzero/Runa_sub/y3" modelRef="model002">
+        <enumType name="IDT_EnumType_C2">
+          <enumElement name="c" value="0"/>
+          <enumElement name="d" value="2"/>
+          <enumElement name="cc" value="3"/>
+          <enumElement name="ccc" value="-4"/>
+        </enumType>
+      </outport>
+      <outport portNumber="4" name="y4" physicalPath="ar_enum_nonzero/Runa_sub/y4" path="ar_enum_nonzero/ar_enum_nonzero/Runa_sub/y4" modelRef="model002">
+        <enumType name="IDT_EnumType_D2">
+          <enumElement name="c2" value="0"/>
+          <enumElement name="d2" value="2"/>
+        </enumType>
+      </outport>
+      <outport portNumber="5" name="y5" physicalPath="ar_enum_nonzero/Runa_sub/y5" path="ar_enum_nonzero/ar_enum_nonzero/Runa_sub/y5" modelRef="model002">
+        <enumType name="IDT_EnumType_E2">
+          <enumElement name="type_e_x2" value="-13"/>
+        </enumType>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.15" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240314T130351_2724\tmp_ar_enum_nonzero\ar_enum_nonzero.slx" creationDate="2024-03-14T10:01:53" modificationDate="2024-03-14T13:04:04"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

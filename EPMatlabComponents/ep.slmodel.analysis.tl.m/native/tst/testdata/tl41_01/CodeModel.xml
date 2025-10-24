@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl41_01\TLProj\TL_Controller" name="controller.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl41_01\TLSim" name="RteIv.c" kind="source" annotate="no" id="fID2"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl41_01\TLSim" name="Rte_Controller.c" kind="source" annotate="no" id="fID3"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl41_01\TLSim" name="Rte.c" kind="source" annotate="no" id="fID4"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl41_01\TLSim" name="TL_Controller_ARfrm.c" kind="source" annotate="no" id="fID5"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl41_01\TLSim" name="TL_Controller_fri.c" kind="source" annotate="no" id="fID6"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl41_01\TLProj\TL_Controller"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl41_01\TLSim"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="ar_poscontrol [C-Code]">
+    <Function name="controller_runnable" initFunc="Rte_Start" postInitFunc="Task_Init_Controller" proxyFunc="Task_controller_runnable_Wrapper" sampleTime="0.001">
+      <Interface>
+        <InterfaceObj kind="in" var="Rte_Controller_RequiredSignals_ref" scaling="scID1" min="-3.2000000000000000e+01" max="3.1999023437500000e+01"/>
+        <InterfaceObj kind="in" var="Rte_Irv_Controller_LinPos" scaling="scID1" min="-3.2000000000000000e+01" max="3.1999023437500000e+01" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="activation" scaling="scID2"/>
+        <InterfaceObj kind="out" var="Rte_Controller_ProvidedSignal_upi" scaling="scID3" min="-6.4000000000000000e+01" max="6.3998046875000000e+01" initVal="-1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="linearization_runnable" initFunc="Rte_Start" postInitFunc="Task_Init_Controller" proxyFunc="Task_linearization_runnable_Wrapper" sampleTime="0.001">
+      <Interface>
+        <InterfaceObj kind="in" var="Rte_Controller_RequiredSignals_pos" scaling="scID1" min="-3.2000000000000000e+01" max="3.1999023437500000e+01"/>
+        <InterfaceObj kind="out" var="Rte_Irv_Controller_LinPos" scaling="scID1" min="-3.2000000000000000e+01" max="3.1999023437500000e+01" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00"/>
+    <Scaling id="scID2" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+    <Scaling id="scID3" lsb="1.9531250000000000e-03" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

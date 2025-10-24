@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="cal_in_2_modules"/>
+    <Architecture id="id1" name="cal_in_2_modules [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="Subsystem/Subsystem/Subsystem"/>
+      <Path refId="id1" path="Subsystem.c:1:Subsystem"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="in."/>
+        <Path refId="id1" path="Sa1_in_"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out."/>
+        <Path refId="id1" path="Subsystem:return"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out.1"/>
+        <Path refId="id1" path="Sa1_out_1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay/Relay[relay_out_off]"/>
+        <Path refId="id1" path="Sa2_Relay_offoutput"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay/Relay[relay_out_on]"/>
+        <Path refId="id1" path="Sa2_Relay_onoutput"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="Subsystem/Subsystem/Subsystem/Saturation/Saturation[sat_lower]"/>
+        <Path refId="id1" path="Sa1_Saturation_lower">
+          <Property name="module" value="Subsystem.c"/>
+        </Path>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="Subsystem/Subsystem/Subsystem/Saturation/Saturation[sat_upper]"/>
+        <Path refId="id1" path="Sa1_Saturation_upper"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="Subsystem/Subsystem/Subsystem/Atomic Subsystem"/>
+      <Path refId="id1" path="Subsystem.c:1:Subsystem/additionalfile.c:1:Sa2_Atomic_Subsystem"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa2_In1"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa2_Atomic_Subsystem:return"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay/Relay[relay_out_off]"/>
+        <Path refId="id1" path="Sa2_Relay_offoutput"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay/Relay[relay_out_on]"/>
+        <Path refId="id1" path="Sa2_Relay_onoutput"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="Subsystem/Subsystem/Subsystem/local_cal"/>
+      <Path refId="id1" path="Subsystem.c:1:Subsystem/Subsystem.c:1:Sa3_local_cal"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa3_In1"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa3_local_cal:return"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

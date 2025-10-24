@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.40" modelPath="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_ep_2325\ep2325.slx" modelCreationDate="2021-03-12T11:05:52" creator="developer">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.40" modelPath="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_ep_2325\ep2325.slx" creationDate="2021-03-12T11:05:52" modificationDate="2021-03-15T10:13:43">
+    <subsystem subsysID="ss1" physicalPath="ep2325/top/Subsystem/top" path="top/Subsystem/top" sampleTime="0.1" name="top" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ep2325/top/Subsystem/top/In1" path="top/Subsystem/top/In1">
+        <miltype>
+          <bus busType="non_virtual" busObjectName="Bus2325">
+            <signal signalName="&lt;signal1&gt;.Sig1">
+              <double/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.Sig2">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus busType="non_virtual" busObjectName="Bus2325">
+            <signal signalName="&lt;signal1&gt;.Sig1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.Sig2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ep2325/top/Subsystem/top/Out1" path="top/Subsystem/top/Out1">
+        <miltype>
+          <bus busType="non_virtual" busObjectName="Bus2325">
+            <signal signalName="&lt;signal1&gt;.Sig1">
+              <double/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.Sig2">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus busType="non_virtual" busObjectName="Bus2325">
+            <signal signalName="&lt;signal1&gt;.Sig1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.Sig2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+      <display physicalPath="ref_ep2325/Bus Inport" path="top/Subsystem/top/ref_ep2325/Bus Inport" name="Bus Inport" portNumber="1" modelRef="model002">
+        <miltype>
+          <bus busType="non_virtual" busObjectName="Bus2325">
+            <signal signalName="&lt;signal1&gt;.Sig1">
+              <double/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.Sig2">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus busType="non_virtual" busObjectName="Bus2325">
+            <signal signalName="&lt;signal1&gt;.Sig1">
+              <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.Sig2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="ref_ep2325" path="top/Subsystem/top/ref_ep2325" sampleTime="0.1" name="ref_ep2325" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="Bus Inport" physicalPath="ref_ep2325/Bus Inport" path="top/Subsystem/top/ref_ep2325/Bus Inport" modelRef="model002">
+        <miltype>
+          <bus busType="non_virtual" busObjectName="Bus2325">
+            <signal signalName="&lt;signal1&gt;.Sig1">
+              <double/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.Sig2">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus busType="non_virtual" busObjectName="Bus2325">
+            <signal signalName="&lt;signal1&gt;.Sig1">
+              <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.Sig2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Bus Outport" physicalPath="ref_ep2325/Bus Outport" path="top/Subsystem/top/ref_ep2325/Bus Outport" modelRef="model002">
+        <miltype>
+          <bus busType="non_virtual" busObjectName="Bus2325">
+            <signal signalName="&lt;signal1&gt;.Sig1">
+              <double/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.Sig2">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus busType="non_virtual" busObjectName="Bus2325">
+            <signal signalName="&lt;signal1&gt;.Sig1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.Sig2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+      <display physicalPath="ref_ep2325/Bus Inport" path="top/Subsystem/top/ref_ep2325/Bus Inport" name="Bus Inport" portNumber="1" modelRef="model002">
+        <miltype>
+          <bus busType="non_virtual" busObjectName="Bus2325">
+            <signal signalName="&lt;signal1&gt;.Sig1">
+              <double/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.Sig2">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus busType="non_virtual" busObjectName="Bus2325">
+            <signal signalName="&lt;signal1&gt;.Sig1">
+              <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+            </signal>
+            <signal signalName="&lt;signal1&gt;.Sig2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.39" modelPath="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_ep_2325\ref_ep2325.slx" creationDate="2021-03-12T11:05:52" modificationDate="2021-03-15T10:13:43"/>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

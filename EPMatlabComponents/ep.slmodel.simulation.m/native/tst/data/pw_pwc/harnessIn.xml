@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<EnumType name="boolean">
+			<EnumValue name="false" ordinal="0" />
+			<EnumValue name="true" ordinal="1" />
+		</EnumType>
+	</Types>
+	<Outports sampleTime="0.01">
+		<Outport portNr="1" type="boolean">
+			<ScalarRefs>
+				<ScalarRef>INPUT:driver_neutral</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="2" type="boolean">
+			<ScalarRefs>
+				<ScalarRef>INPUT:driver_up</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="3" type="boolean">
+			<ScalarRefs>
+				<ScalarRef>INPUT:driver_down</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="4" type="boolean">
+			<ScalarRefs>
+				<ScalarRef>INPUT:passenger_neutral</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="5" type="boolean">
+			<ScalarRefs>
+				<ScalarRef>INPUT:passenger_up</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="6" type="boolean">
+			<ScalarRefs>
+				<ScalarRef>INPUT:passenger_down</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="7" type="double">
+			<ScalarRefs>
+				<ScalarRef>INPUT:obstacle_position</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="8" type="double">
+			<ScalarRefs>
+				<ScalarRef>INPUT:window_position</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+	</Outports>
+</SFunction>

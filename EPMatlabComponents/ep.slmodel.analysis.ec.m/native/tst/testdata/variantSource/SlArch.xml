@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_variantSource\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_variantSource\init_model.m" modelVersion="1.39" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_variantSource\variant_source.slx" modelCreationDate="2019-06-05T14:51:56" creator="nabilekhoury">
+  <toolInfo name="Matlab" release="(R2019b)" version="9.7" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2019b)" version="10.0" patchLevel=""/>
+  <model modelKind="model" modelID="model001" modelVersion="1.39" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_variantSource\variant_source.slx" creationDate="2019-06-05T14:51:56" initScript="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_variantSource\init_model.m">
+    <subsystem subsysID="ss1" physicalPath="variant_source" path="" sampleTime="0.01" name="variant_source" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="variant_source/In1" path="In1" signalName="inTop1">
+        <single/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="variant_source/In2" path="In2" signalName="inTop2">
+        <single/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="variant_source/Out1" path="Out1" signalName="out">
+        <single/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="variant_source/Subsystem" path="Subsystem" sampleTime="0.01" name="Subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="variant_source/Subsystem/In1" path="Subsystem/In1" signalName="inTop1">
+        <single/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="variant_source/Subsystem/In2" path="Subsystem/In2" signalName="inTop2">
+        <single/>
+      </inport>
+      <outport portNumber="1" name="Out" physicalPath="variant_source/Subsystem/Out" path="Subsystem/Out">
+        <single/>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="variant_source/Subsystem/LowerSUT" path="Subsystem/LowerSUT" sampleTime="0.01" name="LowerSUT" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="variant_source/Subsystem/LowerSUT/In1" path="Subsystem/LowerSUT/In1" signalName="in1">
+        <single/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="variant_source/Subsystem/LowerSUT/In2" path="Subsystem/LowerSUT/In2" signalName="in2">
+        <single/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="variant_source/Subsystem/LowerSUT/Out1" path="Subsystem/LowerSUT/Out1">
+        <single/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

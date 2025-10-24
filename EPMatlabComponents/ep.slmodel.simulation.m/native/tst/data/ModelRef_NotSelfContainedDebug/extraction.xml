@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="263">
+	<Scope uid="263" name="Main" path="Main" sampleTime="1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_374" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_374" initValue="0.0" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_376" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_376" initValue="0.0" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<Model name="Main" modelPath="/E:/ModelsDev/SL/ModelRef_NotSelfContainedDebug/ml2015a/Main.slx" type="SimulinkModel" />
+		<Scope uid="261" name="TopLevel" path="Main/TopLevel" sampleTime="1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/TopLevel" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_378" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_378" initValue="0.0" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_380" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_380" initValue="0.0" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<Model name="Main" modelPath="/E:/ModelsDev/SL/ModelRef_NotSelfContainedDebug/ml2015a/Main.slx" type="SimulinkModel" />
+			<Scope uid="262" name="Subsystem" path="Main/TopLevel/Subsystem" sampleTime="1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Subsystem" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_382" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_382" initValue="0.0" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_384" signalName="out" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_384" initValue="0.0" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+					</Variable>
+				</OutPort>
+				<Model name="Subsystem" modelPath="/E:/ModelsDev/SL/ModelRef_NotSelfContainedDebug/ml2015a/Subsystem.slx" type="SimulinkModel" />
+			</Scope>
+		</Scope>
+	</Scope>
+</ExtractionModel>

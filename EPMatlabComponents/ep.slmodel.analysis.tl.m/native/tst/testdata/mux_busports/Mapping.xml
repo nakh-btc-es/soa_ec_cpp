@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="mux1_2006"/>
+    <Architecture id="id1" name="mux1_2006 [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="mux1/Subsystem/mux1"/>
+      <Path refId="id1" path="mux1.c:1:mux1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort"/>
+        <Path refId="id1" path="Sa1_InPort"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort1"/>
+        <Path refId="id1" path="Sa1_InPort1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort2"/>
+        <Path refId="id1" path="Sa1_InPort2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort"/>
+        <Path refId="id1" path="Sa1_OutPort"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort1"/>
+        <Path refId="id1" path="Sa1_OutPort1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort2"/>
+        <Path refId="id1" path="Sa1_OutPort2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort3"/>
+        <Path refId="id1" path="Sa1_OutPort3"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="mux1/Subsystem/mux1/Atomic Subsystem"/>
+      <Path refId="id1" path="mux1.c:1:mux1/mux1.c:1:Sa2_Atomic_Subsystem"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_InPort"/>
+        <SignalMapping>
+          <Path refId="id0" path="(1)"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_InPort1"/>
+        <SignalMapping>
+          <Path refId="id0" path="(2)"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_InPort2"/>
+        <SignalMapping>
+          <Path refId="id0" path="(3)"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="IF_Sa2_Out1"/>
+        <SignalMapping>
+          <Path refId="id0" path="(1)"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="IF_Sa2_Out1_a"/>
+        <SignalMapping>
+          <Path refId="id0" path="(2)"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out2"/>
+        <Path refId="id1" path="Sa2_Gain"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="mux1/Subsystem/mux1/Atomic Subsystem1"/>
+      <Path refId="id1" path="mux1.c:1:mux1/mux1.c:1:Sa3_Atomic_Subsystem1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_InPort2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="IF_Sa3_Out1"/>
+        <SignalMapping>
+          <Path refId="id0" path="(1)"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa3_Gain"/>
+        <SignalMapping>
+          <Path refId="id0" path="(2)"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

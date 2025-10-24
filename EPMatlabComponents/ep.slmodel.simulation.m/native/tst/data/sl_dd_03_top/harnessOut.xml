@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction mdfDialect="EP2.9">
+	<Types>
+		<EnumType name="boolean">
+			<EnumValue name="false" ordinal="0" />
+			<EnumValue name="true" ordinal="1" />
+		</EnumType>
+		<EnumType name="CarPart">
+			<EnumValue name="Tire" ordinal="0" />
+			<EnumValue name="Door" ordinal="1" />
+			<EnumValue name="Motor" ordinal="2" />
+			<EnumValue name="Wheel" ordinal="3" />
+			<EnumValue name="Windshield" ordinal="4" />
+		</EnumType>
+	</Types>
+	<Inports debug="false">
+		<Inport portNr="1" type="int8">
+			<ScalarRefs>
+				<ScalarRef displayName="Out1">OUTPUT:Out1</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="2" type="int16">
+			<ScalarRefs>
+				<ScalarRef displayName="Out2">OUTPUT:Out2</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="3" type="int32">
+			<ScalarRefs>
+				<ScalarRef displayName="Out3">OUTPUT:Out3</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="4" type="boolean">
+			<ScalarRefs>
+				<ScalarRef displayName="Out4">OUTPUT:Out4</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="5" type="double">
+			<ScalarRefs>
+				<ScalarRef displayName="Out5">OUTPUT:Out5</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="6" type="single">
+			<ScalarRefs>
+				<ScalarRef displayName="Out6">OUTPUT:Out6</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="7" type="fixdt(1,16,-12)">
+			<ScalarRefs>
+				<ScalarRef displayName="Out7">OUTPUT:Out7</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="8" type="CarPart">
+			<ScalarRefs>
+				<ScalarRef displayName="Out8">OUTPUT:Out8</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="9" type="double">
+			<ScalarRefs>
+				<ScalarRef displayName="Out10">OUTPUT:Out10</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="10" dim1="8" dim2="12" type="int8">
+			<ScalarRefs>
+				<ScalarRef displayName="Out12(1)(1)">OUTPUT:Out12(1)(1)</ScalarRef>
+				<ScalarRef displayName="Out12(2)(1)">OUTPUT:Out12(2)(1)</ScalarRef>
+				<ScalarRef displayName="Out12(3)(1)">OUTPUT:Out12(3)(1)</ScalarRef>
+				<ScalarRef displayName="Out12(4)(1)">OUTPUT:Out12(4)(1)</ScalarRef>
+				<ScalarRef displayName="Out12(5)(1)">OUTPUT:Out12(5)(1)</ScalarRef>
+				<ScalarRef displayName="Out12(6)(1)">OUTPUT:Out12(6)(1)</ScalarRef>
+				<ScalarRef displayName="Out12(7)(1)">OUTPUT:Out12(7)(1)</ScalarRef>
+				<ScalarRef displayName="Out12(8)(1)">OUTPUT:Out12(8)(1)</ScalarRef>
+				<ScalarRef displayName="Out12(1)(2)">OUTPUT:Out12(1)(2)</ScalarRef>
+				<ScalarRef displayName="Out12(2)(2)">OUTPUT:Out12(2)(2)</ScalarRef>
+				<ScalarRef displayName="Out12(3)(2)">OUTPUT:Out12(3)(2)</ScalarRef>
+				<ScalarRef displayName="Out12(4)(2)">OUTPUT:Out12(4)(2)</ScalarRef>
+				<ScalarRef displayName="Out12(5)(2)">OUTPUT:Out12(5)(2)</ScalarRef>
+				<ScalarRef displayName="Out12(6)(2)">OUTPUT:Out12(6)(2)</ScalarRef>
+				<ScalarRef displayName="Out12(7)(2)">OUTPUT:Out12(7)(2)</ScalarRef>
+				<ScalarRef displayName="Out12(8)(2)">OUTPUT:Out12(8)(2)</ScalarRef>
+				<ScalarRef displayName="Out12(1)(3)">OUTPUT:Out12(1)(3)</ScalarRef>
+				<ScalarRef displayName="Out12(2)(3)">OUTPUT:Out12(2)(3)</ScalarRef>
+				<ScalarRef displayName="Out12(3)(3)">OUTPUT:Out12(3)(3)</ScalarRef>
+				<ScalarRef displayName="Out12(4)(3)">OUTPUT:Out12(4)(3)</ScalarRef>
+				<ScalarRef displayName="Out12(5)(3)">OUTPUT:Out12(5)(3)</ScalarRef>
+				<ScalarRef displayName="Out12(6)(3)">OUTPUT:Out12(6)(3)</ScalarRef>
+				<ScalarRef displayName="Out12(7)(3)">OUTPUT:Out12(7)(3)</ScalarRef>
+				<ScalarRef displayName="Out12(8)(3)">OUTPUT:Out12(8)(3)</ScalarRef>
+				<ScalarRef displayName="Out12(1)(4)">OUTPUT:Out12(1)(4)</ScalarRef>
+				<ScalarRef displayName="Out12(2)(4)">OUTPUT:Out12(2)(4)</ScalarRef>
+				<ScalarRef displayName="Out12(3)(4)">OUTPUT:Out12(3)(4)</ScalarRef>
+				<ScalarRef displayName="Out12(4)(4)">OUTPUT:Out12(4)(4)</ScalarRef>
+				<ScalarRef displayName="Out12(5)(4)">OUTPUT:Out12(5)(4)</ScalarRef>
+				<ScalarRef displayName="Out12(6)(4)">OUTPUT:Out12(6)(4)</ScalarRef>
+				<ScalarRef displayName="Out12(7)(4)">OUTPUT:Out12(7)(4)</ScalarRef>
+				<ScalarRef displayName="Out12(8)(4)">OUTPUT:Out12(8)(4)</ScalarRef>
+				<ScalarRef displayName="Out12(1)(5)">OUTPUT:Out12(1)(5)</ScalarRef>
+				<ScalarRef displayName="Out12(2)(5)">OUTPUT:Out12(2)(5)</ScalarRef>
+				<ScalarRef displayName="Out12(3)(5)">OUTPUT:Out12(3)(5)</ScalarRef>
+				<ScalarRef displayName="Out12(4)(5)">OUTPUT:Out12(4)(5)</ScalarRef>
+				<ScalarRef displayName="Out12(5)(5)">OUTPUT:Out12(5)(5)</ScalarRef>
+				<ScalarRef displayName="Out12(6)(5)">OUTPUT:Out12(6)(5)</ScalarRef>
+				<ScalarRef displayName="Out12(7)(5)">OUTPUT:Out12(7)(5)</ScalarRef>
+				<ScalarRef displayName="Out12(8)(5)">OUTPUT:Out12(8)(5)</ScalarRef>
+				<ScalarRef displayName="Out12(1)(6)">OUTPUT:Out12(1)(6)</ScalarRef>
+				<ScalarRef displayName="Out12(2)(6)">OUTPUT:Out12(2)(6)</ScalarRef>
+				<ScalarRef displayName="Out12(3)(6)">OUTPUT:Out12(3)(6)</ScalarRef>
+				<ScalarRef displayName="Out12(4)(6)">OUTPUT:Out12(4)(6)</ScalarRef>
+				<ScalarRef displayName="Out12(5)(6)">OUTPUT:Out12(5)(6)</ScalarRef>
+				<ScalarRef displayName="Out12(6)(6)">OUTPUT:Out12(6)(6)</ScalarRef>
+				<ScalarRef displayName="Out12(7)(6)">OUTPUT:Out12(7)(6)</ScalarRef>
+				<ScalarRef displayName="Out12(8)(6)">OUTPUT:Out12(8)(6)</ScalarRef>
+				<ScalarRef displayName="Out12(1)(7)">OUTPUT:Out12(1)(7)</ScalarRef>
+				<ScalarRef displayName="Out12(2)(7)">OUTPUT:Out12(2)(7)</ScalarRef>
+				<ScalarRef displayName="Out12(3)(7)">OUTPUT:Out12(3)(7)</ScalarRef>
+				<ScalarRef displayName="Out12(4)(7)">OUTPUT:Out12(4)(7)</ScalarRef>
+				<ScalarRef displayName="Out12(5)(7)">OUTPUT:Out12(5)(7)</ScalarRef>
+				<ScalarRef displayName="Out12(6)(7)">OUTPUT:Out12(6)(7)</ScalarRef>
+				<ScalarRef displayName="Out12(7)(7)">OUTPUT:Out12(7)(7)</ScalarRef>
+				<ScalarRef displayName="Out12(8)(7)">OUTPUT:Out12(8)(7)</ScalarRef>
+				<ScalarRef displayName="Out12(1)(8)">OUTPUT:Out12(1)(8)</ScalarRef>
+				<ScalarRef displayName="Out12(2)(8)">OUTPUT:Out12(2)(8)</ScalarRef>
+				<ScalarRef displayName="Out12(3)(8)">OUTPUT:Out12(3)(8)</ScalarRef>
+				<ScalarRef displayName="Out12(4)(8)">OUTPUT:Out12(4)(8)</ScalarRef>
+				<ScalarRef displayName="Out12(5)(8)">OUTPUT:Out12(5)(8)</ScalarRef>
+				<ScalarRef displayName="Out12(6)(8)">OUTPUT:Out12(6)(8)</ScalarRef>
+				<ScalarRef displayName="Out12(7)(8)">OUTPUT:Out12(7)(8)</ScalarRef>
+				<ScalarRef displayName="Out12(8)(8)">OUTPUT:Out12(8)(8)</ScalarRef>
+				<ScalarRef displayName="Out12(1)(9)">OUTPUT:Out12(1)(9)</ScalarRef>
+				<ScalarRef displayName="Out12(2)(9)">OUTPUT:Out12(2)(9)</ScalarRef>
+				<ScalarRef displayName="Out12(3)(9)">OUTPUT:Out12(3)(9)</ScalarRef>
+				<ScalarRef displayName="Out12(4)(9)">OUTPUT:Out12(4)(9)</ScalarRef>
+				<ScalarRef displayName="Out12(5)(9)">OUTPUT:Out12(5)(9)</ScalarRef>
+				<ScalarRef displayName="Out12(6)(9)">OUTPUT:Out12(6)(9)</ScalarRef>
+				<ScalarRef displayName="Out12(7)(9)">OUTPUT:Out12(7)(9)</ScalarRef>
+				<ScalarRef displayName="Out12(8)(9)">OUTPUT:Out12(8)(9)</ScalarRef>
+				<ScalarRef displayName="Out12(1)(10)">OUTPUT:Out12(1)(10)</ScalarRef>
+				<ScalarRef displayName="Out12(2)(10)">OUTPUT:Out12(2)(10)</ScalarRef>
+				<ScalarRef displayName="Out12(3)(10)">OUTPUT:Out12(3)(10)</ScalarRef>
+				<ScalarRef displayName="Out12(4)(10)">OUTPUT:Out12(4)(10)</ScalarRef>
+				<ScalarRef displayName="Out12(5)(10)">OUTPUT:Out12(5)(10)</ScalarRef>
+				<ScalarRef displayName="Out12(6)(10)">OUTPUT:Out12(6)(10)</ScalarRef>
+				<ScalarRef displayName="Out12(7)(10)">OUTPUT:Out12(7)(10)</ScalarRef>
+				<ScalarRef displayName="Out12(8)(10)">OUTPUT:Out12(8)(10)</ScalarRef>
+				<ScalarRef displayName="Out12(1)(11)">OUTPUT:Out12(1)(11)</ScalarRef>
+				<ScalarRef displayName="Out12(2)(11)">OUTPUT:Out12(2)(11)</ScalarRef>
+				<ScalarRef displayName="Out12(3)(11)">OUTPUT:Out12(3)(11)</ScalarRef>
+				<ScalarRef displayName="Out12(4)(11)">OUTPUT:Out12(4)(11)</ScalarRef>
+				<ScalarRef displayName="Out12(5)(11)">OUTPUT:Out12(5)(11)</ScalarRef>
+				<ScalarRef displayName="Out12(6)(11)">OUTPUT:Out12(6)(11)</ScalarRef>
+				<ScalarRef displayName="Out12(7)(11)">OUTPUT:Out12(7)(11)</ScalarRef>
+				<ScalarRef displayName="Out12(8)(11)">OUTPUT:Out12(8)(11)</ScalarRef>
+				<ScalarRef displayName="Out12(1)(12)">OUTPUT:Out12(1)(12)</ScalarRef>
+				<ScalarRef displayName="Out12(2)(12)">OUTPUT:Out12(2)(12)</ScalarRef>
+				<ScalarRef displayName="Out12(3)(12)">OUTPUT:Out12(3)(12)</ScalarRef>
+				<ScalarRef displayName="Out12(4)(12)">OUTPUT:Out12(4)(12)</ScalarRef>
+				<ScalarRef displayName="Out12(5)(12)">OUTPUT:Out12(5)(12)</ScalarRef>
+				<ScalarRef displayName="Out12(6)(12)">OUTPUT:Out12(6)(12)</ScalarRef>
+				<ScalarRef displayName="Out12(7)(12)">OUTPUT:Out12(7)(12)</ScalarRef>
+				<ScalarRef displayName="Out12(8)(12)">OUTPUT:Out12(8)(12)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="11" dim1="1" dim2="4" type="double">
+			<ScalarRefs>
+				<ScalarRef displayName="Out15(1)(1)">OUTPUT:Out15(1)(1)</ScalarRef>
+				<ScalarRef displayName="Out15(1)(2)">OUTPUT:Out15(1)(2)</ScalarRef>
+				<ScalarRef displayName="Out15(1)(3)">OUTPUT:Out15(1)(3)</ScalarRef>
+				<ScalarRef displayName="Out15(1)(4)">OUTPUT:Out15(1)(4)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="12" dim1="3" dim2="13" type="double">
+			<ScalarRefs>
+				<ScalarRef displayName="Out16(1)(1)">OUTPUT:Out16(1)(1)</ScalarRef>
+				<ScalarRef displayName="Out16(2)(1)">OUTPUT:Out16(2)(1)</ScalarRef>
+				<ScalarRef displayName="Out16(3)(1)">OUTPUT:Out16(3)(1)</ScalarRef>
+				<ScalarRef displayName="Out16(1)(2)">OUTPUT:Out16(1)(2)</ScalarRef>
+				<ScalarRef displayName="Out16(2)(2)">OUTPUT:Out16(2)(2)</ScalarRef>
+				<ScalarRef displayName="Out16(3)(2)">OUTPUT:Out16(3)(2)</ScalarRef>
+				<ScalarRef displayName="Out16(1)(3)">OUTPUT:Out16(1)(3)</ScalarRef>
+				<ScalarRef displayName="Out16(2)(3)">OUTPUT:Out16(2)(3)</ScalarRef>
+				<ScalarRef displayName="Out16(3)(3)">OUTPUT:Out16(3)(3)</ScalarRef>
+				<ScalarRef displayName="Out16(1)(4)">OUTPUT:Out16(1)(4)</ScalarRef>
+				<ScalarRef displayName="Out16(2)(4)">OUTPUT:Out16(2)(4)</ScalarRef>
+				<ScalarRef displayName="Out16(3)(4)">OUTPUT:Out16(3)(4)</ScalarRef>
+				<ScalarRef displayName="Out16(1)(5)">OUTPUT:Out16(1)(5)</ScalarRef>
+				<ScalarRef displayName="Out16(2)(5)">OUTPUT:Out16(2)(5)</ScalarRef>
+				<ScalarRef displayName="Out16(3)(5)">OUTPUT:Out16(3)(5)</ScalarRef>
+				<ScalarRef displayName="Out16(1)(6)">OUTPUT:Out16(1)(6)</ScalarRef>
+				<ScalarRef displayName="Out16(2)(6)">OUTPUT:Out16(2)(6)</ScalarRef>
+				<ScalarRef displayName="Out16(3)(6)">OUTPUT:Out16(3)(6)</ScalarRef>
+				<ScalarRef displayName="Out16(1)(7)">OUTPUT:Out16(1)(7)</ScalarRef>
+				<ScalarRef displayName="Out16(2)(7)">OUTPUT:Out16(2)(7)</ScalarRef>
+				<ScalarRef displayName="Out16(3)(7)">OUTPUT:Out16(3)(7)</ScalarRef>
+				<ScalarRef displayName="Out16(1)(8)">OUTPUT:Out16(1)(8)</ScalarRef>
+				<ScalarRef displayName="Out16(2)(8)">OUTPUT:Out16(2)(8)</ScalarRef>
+				<ScalarRef displayName="Out16(3)(8)">OUTPUT:Out16(3)(8)</ScalarRef>
+				<ScalarRef displayName="Out16(1)(9)">OUTPUT:Out16(1)(9)</ScalarRef>
+				<ScalarRef displayName="Out16(2)(9)">OUTPUT:Out16(2)(9)</ScalarRef>
+				<ScalarRef displayName="Out16(3)(9)">OUTPUT:Out16(3)(9)</ScalarRef>
+				<ScalarRef displayName="Out16(1)(10)">OUTPUT:Out16(1)(10)</ScalarRef>
+				<ScalarRef displayName="Out16(2)(10)">OUTPUT:Out16(2)(10)</ScalarRef>
+				<ScalarRef displayName="Out16(3)(10)">OUTPUT:Out16(3)(10)</ScalarRef>
+				<ScalarRef displayName="Out16(1)(11)">OUTPUT:Out16(1)(11)</ScalarRef>
+				<ScalarRef displayName="Out16(2)(11)">OUTPUT:Out16(2)(11)</ScalarRef>
+				<ScalarRef displayName="Out16(3)(11)">OUTPUT:Out16(3)(11)</ScalarRef>
+				<ScalarRef displayName="Out16(1)(12)">OUTPUT:Out16(1)(12)</ScalarRef>
+				<ScalarRef displayName="Out16(2)(12)">OUTPUT:Out16(2)(12)</ScalarRef>
+				<ScalarRef displayName="Out16(3)(12)">OUTPUT:Out16(3)(12)</ScalarRef>
+				<ScalarRef displayName="Out16(1)(13)">OUTPUT:Out16(1)(13)</ScalarRef>
+				<ScalarRef displayName="Out16(2)(13)">OUTPUT:Out16(2)(13)</ScalarRef>
+				<ScalarRef displayName="Out16(3)(13)">OUTPUT:Out16(3)(13)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="13" dim1="1" dim2="11" type="boolean">
+			<ScalarRefs>
+				<ScalarRef displayName="Out11(1)(1)">OUTPUT:Out11(1)(1)</ScalarRef>
+				<ScalarRef displayName="Out11(1)(2)">OUTPUT:Out11(1)(2)</ScalarRef>
+				<ScalarRef displayName="Out11(1)(3)">OUTPUT:Out11(1)(3)</ScalarRef>
+				<ScalarRef displayName="Out11(1)(4)">OUTPUT:Out11(1)(4)</ScalarRef>
+				<ScalarRef displayName="Out11(1)(5)">OUTPUT:Out11(1)(5)</ScalarRef>
+				<ScalarRef displayName="Out11(1)(6)">OUTPUT:Out11(1)(6)</ScalarRef>
+				<ScalarRef displayName="Out11(1)(7)">OUTPUT:Out11(1)(7)</ScalarRef>
+				<ScalarRef displayName="Out11(1)(8)">OUTPUT:Out11(1)(8)</ScalarRef>
+				<ScalarRef displayName="Out11(1)(9)">OUTPUT:Out11(1)(9)</ScalarRef>
+				<ScalarRef displayName="Out11(1)(10)">OUTPUT:Out11(1)(10)</ScalarRef>
+				<ScalarRef displayName="Out11(1)(11)">OUTPUT:Out11(1)(11)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="14" dim1="2" dim2="17" type="uint32">
+			<ScalarRefs>
+				<ScalarRef displayName="Out13(1)(1)">OUTPUT:Out13(1)(1)</ScalarRef>
+				<ScalarRef displayName="Out13(2)(1)">OUTPUT:Out13(2)(1)</ScalarRef>
+				<ScalarRef displayName="Out13(1)(2)">OUTPUT:Out13(1)(2)</ScalarRef>
+				<ScalarRef displayName="Out13(2)(2)">OUTPUT:Out13(2)(2)</ScalarRef>
+				<ScalarRef displayName="Out13(1)(3)">OUTPUT:Out13(1)(3)</ScalarRef>
+				<ScalarRef displayName="Out13(2)(3)">OUTPUT:Out13(2)(3)</ScalarRef>
+				<ScalarRef displayName="Out13(1)(4)">OUTPUT:Out13(1)(4)</ScalarRef>
+				<ScalarRef displayName="Out13(2)(4)">OUTPUT:Out13(2)(4)</ScalarRef>
+				<ScalarRef displayName="Out13(1)(5)">OUTPUT:Out13(1)(5)</ScalarRef>
+				<ScalarRef displayName="Out13(2)(5)">OUTPUT:Out13(2)(5)</ScalarRef>
+				<ScalarRef displayName="Out13(1)(6)">OUTPUT:Out13(1)(6)</ScalarRef>
+				<ScalarRef displayName="Out13(2)(6)">OUTPUT:Out13(2)(6)</ScalarRef>
+				<ScalarRef displayName="Out13(1)(7)">OUTPUT:Out13(1)(7)</ScalarRef>
+				<ScalarRef displayName="Out13(2)(7)">OUTPUT:Out13(2)(7)</ScalarRef>
+				<ScalarRef displayName="Out13(1)(8)">OUTPUT:Out13(1)(8)</ScalarRef>
+				<ScalarRef displayName="Out13(2)(8)">OUTPUT:Out13(2)(8)</ScalarRef>
+				<ScalarRef displayName="Out13(1)(9)">OUTPUT:Out13(1)(9)</ScalarRef>
+				<ScalarRef displayName="Out13(2)(9)">OUTPUT:Out13(2)(9)</ScalarRef>
+				<ScalarRef displayName="Out13(1)(10)">OUTPUT:Out13(1)(10)</ScalarRef>
+				<ScalarRef displayName="Out13(2)(10)">OUTPUT:Out13(2)(10)</ScalarRef>
+				<ScalarRef displayName="Out13(1)(11)">OUTPUT:Out13(1)(11)</ScalarRef>
+				<ScalarRef displayName="Out13(2)(11)">OUTPUT:Out13(2)(11)</ScalarRef>
+				<ScalarRef displayName="Out13(1)(12)">OUTPUT:Out13(1)(12)</ScalarRef>
+				<ScalarRef displayName="Out13(2)(12)">OUTPUT:Out13(2)(12)</ScalarRef>
+				<ScalarRef displayName="Out13(1)(13)">OUTPUT:Out13(1)(13)</ScalarRef>
+				<ScalarRef displayName="Out13(2)(13)">OUTPUT:Out13(2)(13)</ScalarRef>
+				<ScalarRef displayName="Out13(1)(14)">OUTPUT:Out13(1)(14)</ScalarRef>
+				<ScalarRef displayName="Out13(2)(14)">OUTPUT:Out13(2)(14)</ScalarRef>
+				<ScalarRef displayName="Out13(1)(15)">OUTPUT:Out13(1)(15)</ScalarRef>
+				<ScalarRef displayName="Out13(2)(15)">OUTPUT:Out13(2)(15)</ScalarRef>
+				<ScalarRef displayName="Out13(1)(16)">OUTPUT:Out13(1)(16)</ScalarRef>
+				<ScalarRef displayName="Out13(2)(16)">OUTPUT:Out13(2)(16)</ScalarRef>
+				<ScalarRef displayName="Out13(1)(17)">OUTPUT:Out13(1)(17)</ScalarRef>
+				<ScalarRef displayName="Out13(2)(17)">OUTPUT:Out13(2)(17)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="15" dim1="6" dim2="5" type="fixdt(1,16,1)">
+			<ScalarRefs>
+				<ScalarRef displayName="Out17(1)(1)">OUTPUT:Out17(1)(1)</ScalarRef>
+				<ScalarRef displayName="Out17(2)(1)">OUTPUT:Out17(2)(1)</ScalarRef>
+				<ScalarRef displayName="Out17(3)(1)">OUTPUT:Out17(3)(1)</ScalarRef>
+				<ScalarRef displayName="Out17(4)(1)">OUTPUT:Out17(4)(1)</ScalarRef>
+				<ScalarRef displayName="Out17(5)(1)">OUTPUT:Out17(5)(1)</ScalarRef>
+				<ScalarRef displayName="Out17(6)(1)">OUTPUT:Out17(6)(1)</ScalarRef>
+				<ScalarRef displayName="Out17(1)(2)">OUTPUT:Out17(1)(2)</ScalarRef>
+				<ScalarRef displayName="Out17(2)(2)">OUTPUT:Out17(2)(2)</ScalarRef>
+				<ScalarRef displayName="Out17(3)(2)">OUTPUT:Out17(3)(2)</ScalarRef>
+				<ScalarRef displayName="Out17(4)(2)">OUTPUT:Out17(4)(2)</ScalarRef>
+				<ScalarRef displayName="Out17(5)(2)">OUTPUT:Out17(5)(2)</ScalarRef>
+				<ScalarRef displayName="Out17(6)(2)">OUTPUT:Out17(6)(2)</ScalarRef>
+				<ScalarRef displayName="Out17(1)(3)">OUTPUT:Out17(1)(3)</ScalarRef>
+				<ScalarRef displayName="Out17(2)(3)">OUTPUT:Out17(2)(3)</ScalarRef>
+				<ScalarRef displayName="Out17(3)(3)">OUTPUT:Out17(3)(3)</ScalarRef>
+				<ScalarRef displayName="Out17(4)(3)">OUTPUT:Out17(4)(3)</ScalarRef>
+				<ScalarRef displayName="Out17(5)(3)">OUTPUT:Out17(5)(3)</ScalarRef>
+				<ScalarRef displayName="Out17(6)(3)">OUTPUT:Out17(6)(3)</ScalarRef>
+				<ScalarRef displayName="Out17(1)(4)">OUTPUT:Out17(1)(4)</ScalarRef>
+				<ScalarRef displayName="Out17(2)(4)">OUTPUT:Out17(2)(4)</ScalarRef>
+				<ScalarRef displayName="Out17(3)(4)">OUTPUT:Out17(3)(4)</ScalarRef>
+				<ScalarRef displayName="Out17(4)(4)">OUTPUT:Out17(4)(4)</ScalarRef>
+				<ScalarRef displayName="Out17(5)(4)">OUTPUT:Out17(5)(4)</ScalarRef>
+				<ScalarRef displayName="Out17(6)(4)">OUTPUT:Out17(6)(4)</ScalarRef>
+				<ScalarRef displayName="Out17(1)(5)">OUTPUT:Out17(1)(5)</ScalarRef>
+				<ScalarRef displayName="Out17(2)(5)">OUTPUT:Out17(2)(5)</ScalarRef>
+				<ScalarRef displayName="Out17(3)(5)">OUTPUT:Out17(3)(5)</ScalarRef>
+				<ScalarRef displayName="Out17(4)(5)">OUTPUT:Out17(4)(5)</ScalarRef>
+				<ScalarRef displayName="Out17(5)(5)">OUTPUT:Out17(5)(5)</ScalarRef>
+				<ScalarRef displayName="Out17(6)(5)">OUTPUT:Out17(6)(5)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="16" width="8" type="boolean" signalName="ssBoolSig">
+			<ScalarRefs>
+				<ScalarRef displayName="Out9(1)">OUTPUT:Out9(1)</ScalarRef>
+				<ScalarRef displayName="Out9(2)">OUTPUT:Out9(2)</ScalarRef>
+				<ScalarRef displayName="Out9(3)">OUTPUT:Out9(3)</ScalarRef>
+				<ScalarRef displayName="Out9(4)">OUTPUT:Out9(4)</ScalarRef>
+				<ScalarRef displayName="Out9(5)">OUTPUT:Out9(5)</ScalarRef>
+				<ScalarRef displayName="Out9(6)">OUTPUT:Out9(6)</ScalarRef>
+				<ScalarRef displayName="Out9(7)">OUTPUT:Out9(7)</ScalarRef>
+				<ScalarRef displayName="Out9(8)">OUTPUT:Out9(8)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="17" type="double" signalName="ssDoubleSig">
+			<ScalarRefs>
+				<ScalarRef displayName="Out14">OUTPUT:Out14</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+	</Inports>
+</SFunction>

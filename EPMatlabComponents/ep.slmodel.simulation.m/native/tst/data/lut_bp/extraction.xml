@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="24i">
+	<Scope uid="24i" name="simple_lut" path="simple_lut" sampleTime="2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="simple_lut" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_215" signalName="sig_in1" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_215" initValue="0.0" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_217" signalName="sig_out1" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_217" initValue="0.0" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_219" signalName="sig_out2" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_219" initValue="0.0" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out3" portNumber="3" compositeSig="none">
+			<Variable varid="varif_221" signalName="sig_out3" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_221" initValue="0.0" lsb="1" offset="0" displayName="Out3" identifier="OUTPUT:Out3" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out4" portNumber="4" compositeSig="none">
+			<Variable varid="varif_223" signalName="sig_out4" signalType="uint32" tlTypeName="uint32">
+				<ifName ifid="if_223" initValue="0" lsb="1" offset="0" displayName="Out4" identifier="OUTPUT:Out4" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out5" portNumber="5" compositeSig="none">
+			<Variable varid="varif_225" signalName="sig_out5" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_225" initValue="0.0" lsb="1" offset="0" displayName="Out5" identifier="OUTPUT:Out5" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out6" portNumber="6" compositeSig="none">
+			<Variable varid="varif_227" signalName="sig_out6" signalType="single" isFloat="yes" tlTypeName="single">
+				<ifName ifid="if_227" initValue="0.0" lsb="1" offset="0" displayName="Out6" identifier="OUTPUT:Out6" />
+			</Variable>
+		</OutPort>
+		<Display name="Prelookup1" path="simple_lut/Prelookup1" physicalPath="simple_lut/Prelookup1" portNumber="1">
+			<Variable varid="varif_229" signalName="sig_inner2" signalType="uint32" tlTypeName="uint32">
+				<ifName ifid="if_229" initValue="0" lsb="1" offset="0" displayName="Prelookup1" identifier="LOCAL:Prelookup1" />
+			</Variable>
+		</Display>
+		<Display name="Prelookup1" path="simple_lut/Prelookup1" physicalPath="simple_lut/Prelookup1" portNumber="2">
+			<Variable varid="varif_231" signalName="sig_inner3" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_231" initValue="0.0" lsb="1" offset="0" displayName="Prelookup1#2" identifier="LOCAL:Prelookup1:2" />
+			</Variable>
+		</Display>
+		<Display name="ExplicitLut2" path="simple_lut/ExplicitLut2" physicalPath="simple_lut/ExplicitLut2" portNumber="1">
+			<Variable varid="varif_233" signalName="sig_inner1" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_233" initValue="0.0" lsb="1" offset="0" displayName="ExplicitLut2" identifier="LOCAL:ExplicitLut2" />
+			</Variable>
+		</Display>
+		<Display name="Data Type Conversion" path="simple_lut/Data Type Conversion" physicalPath="simple_lut/Data Type Conversion" portNumber="1">
+			<Variable varid="varif_235" signalName="sig_inner4" signalType="uint32" tlTypeName="uint32">
+				<ifName ifid="if_235" initValue="0" lsb="1" offset="0" displayName="{Data Type Conversion}" identifier="LOCAL:Data Type Conversion" />
+			</Variable>
+		</Display>
+		<Display name="Subtract" path="simple_lut/Subtract" physicalPath="simple_lut/Subtract" portNumber="1">
+			<Variable varid="varif_237" signalName="sig_inner5" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_237" initValue="0.0" lsb="1" offset="0" displayName="Subtract" identifier="LOCAL:Subtract" />
+			</Variable>
+		</Display>
+		<Calibration name="bp1" path="simple_lut/Prelookup1" physicalPath="simple_lut/Prelookup1" origin="explicit_param" startIdx="1">
+			<CalibrationUsage path="simple_lut/Prelookup1" physicalPath="simple_lut/Prelookup1" blockAttribute="BreakpointObject" />
+			<CalibrationUsage path="simple_lut/RefLut1" physicalPath="simple_lut/RefLut1" blockAttribute="undefined" />
+			<Variable varid="varif_240" width1="5" signalType="double" signalDim="[1 5]" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_241" index1="1" initValue="0.0" lsb="1" offset="0" displayName="bp1(1)" identifier="PARAMETER:Prelookup1/bp1(1)" />
+				<ifName ifid="if_242" index1="2" initValue="0.0" lsb="1" offset="0" displayName="bp1(2)" identifier="PARAMETER:Prelookup1/bp1(2)" />
+				<ifName ifid="if_243" index1="3" initValue="0.0" lsb="1" offset="0" displayName="bp1(3)" identifier="PARAMETER:Prelookup1/bp1(3)" />
+				<ifName ifid="if_244" index1="4" initValue="0.0" lsb="1" offset="0" displayName="bp1(4)" identifier="PARAMETER:Prelookup1/bp1(4)" />
+				<ifName ifid="if_245" index1="5" initValue="0.0" lsb="1" offset="0" displayName="bp1(5)" identifier="PARAMETER:Prelookup1/bp1(5)" />
+			</Variable>
+		</Calibration>
+		<Calibration name="bp2" path="simple_lut/Prelookup2" physicalPath="simple_lut/Prelookup2" origin="explicit_param" startIdx="1">
+			<CalibrationUsage path="simple_lut/Prelookup2" physicalPath="simple_lut/Prelookup2" blockAttribute="BreakpointObject" />
+			<Variable varid="varif_247" width1="5" signalType="double" signalDim="[1 5]" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_248" index1="1" initValue="0.0" lsb="1" offset="0" displayName="bp2(1)" identifier="PARAMETER:Prelookup2/bp2(1)" />
+				<ifName ifid="if_249" index1="2" initValue="0.0" lsb="1" offset="0" displayName="bp2(2)" identifier="PARAMETER:Prelookup2/bp2(2)" />
+				<ifName ifid="if_250" index1="3" initValue="0.0" lsb="1" offset="0" displayName="bp2(3)" identifier="PARAMETER:Prelookup2/bp2(3)" />
+				<ifName ifid="if_251" index1="4" initValue="0.0" lsb="1" offset="0" displayName="bp2(4)" identifier="PARAMETER:Prelookup2/bp2(4)" />
+				<ifName ifid="if_252" index1="5" initValue="0.0" lsb="1" offset="0" displayName="bp2(5)" identifier="PARAMETER:Prelookup2/bp2(5)" />
+			</Variable>
+		</Calibration>
+		<Calibration name="lut1" path="simple_lut/RefLut1" physicalPath="simple_lut/RefLut1" origin="explicit_param" startIdx="1">
+			<CalibrationUsage path="simple_lut/RefLut1" physicalPath="simple_lut/RefLut1" blockAttribute="LookupTableObject" />
+			<Variable varid="varif_254" width1="5" signalType="double" signalDim="[1 5]" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_255" index1="1" initValue="0.0" lsb="1" offset="0" displayName="lut1(1)" identifier="PARAMETER:RefLut1/lut1(1)" />
+				<ifName ifid="if_256" index1="2" initValue="0.0" lsb="1" offset="0" displayName="lut1(2)" identifier="PARAMETER:RefLut1/lut1(2)" />
+				<ifName ifid="if_257" index1="3" initValue="0.0" lsb="1" offset="0" displayName="lut1(3)" identifier="PARAMETER:RefLut1/lut1(3)" />
+				<ifName ifid="if_258" index1="4" initValue="0.0" lsb="1" offset="0" displayName="lut1(4)" identifier="PARAMETER:RefLut1/lut1(4)" />
+				<ifName ifid="if_259" index1="5" initValue="0.0" lsb="1" offset="0" displayName="lut1(5)" identifier="PARAMETER:RefLut1/lut1(5)" />
+			</Variable>
+		</Calibration>
+		<Calibration name="lut2" path="simple_lut/ExplicitLut2" physicalPath="simple_lut/ExplicitLut2" origin="explicit_param" startIdx="1">
+			<CalibrationUsage path="simple_lut/ExplicitLut2" physicalPath="simple_lut/ExplicitLut2" blockAttribute="LookupTableObject" />
+			<Variable varid="varif_262" width1="10" signalType="double" signalDim="[1 10]" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_263" index1="1" initValue="0.0" lsb="1" offset="0" displayName="lut2(1)" identifier="PARAMETER:ExplicitLut2/lut2(1)" />
+				<ifName ifid="if_264" index1="2" initValue="0.0" lsb="1" offset="0" displayName="lut2(2)" identifier="PARAMETER:ExplicitLut2/lut2(2)" />
+				<ifName ifid="if_265" index1="3" initValue="0.0" lsb="1" offset="0" displayName="lut2(3)" identifier="PARAMETER:ExplicitLut2/lut2(3)" />
+				<ifName ifid="if_266" index1="4" initValue="0.0" lsb="1" offset="0" displayName="lut2(4)" identifier="PARAMETER:ExplicitLut2/lut2(4)" />
+				<ifName ifid="if_267" index1="5" initValue="0.0" lsb="1" offset="0" displayName="lut2(5)" identifier="PARAMETER:ExplicitLut2/lut2(5)" />
+				<ifName ifid="if_268" index1="6" initValue="0.0" lsb="1" offset="0" displayName="lut2(6)" identifier="PARAMETER:ExplicitLut2/lut2(6)" />
+				<ifName ifid="if_269" index1="7" initValue="0.0" lsb="1" offset="0" displayName="lut2(7)" identifier="PARAMETER:ExplicitLut2/lut2(7)" />
+				<ifName ifid="if_270" index1="8" initValue="0.0" lsb="1" offset="0" displayName="lut2(8)" identifier="PARAMETER:ExplicitLut2/lut2(8)" />
+				<ifName ifid="if_271" index1="9" initValue="0.0" lsb="1" offset="0" displayName="lut2(9)" identifier="PARAMETER:ExplicitLut2/lut2(9)" />
+				<ifName ifid="if_272" index1="10" initValue="0.0" lsb="1" offset="0" displayName="lut2(10)" identifier="PARAMETER:ExplicitLut2/lut2(10)" />
+			</Variable>
+		</Calibration>
+		<Calibration name="lut3" path="simple_lut/RefLut3" physicalPath="simple_lut/RefLut3" origin="explicit_param" startIdx="1">
+			<CalibrationUsage path="simple_lut/RefLut3" physicalPath="simple_lut/RefLut3" blockAttribute="LookupTableObject" />
+			<Variable varid="varif_275" width1="5" signalType="single" signalDim="[1 5]" isFloat="yes" tlTypeName="single">
+				<ifName ifid="if_276" index1="1" initValue="0.0" lsb="1" offset="0" displayName="lut3(1)" identifier="PARAMETER:RefLut3/lut3(1)" />
+				<ifName ifid="if_277" index1="2" initValue="0.0" lsb="1" offset="0" displayName="lut3(2)" identifier="PARAMETER:RefLut3/lut3(2)" />
+				<ifName ifid="if_278" index1="3" initValue="0.0" lsb="1" offset="0" displayName="lut3(3)" identifier="PARAMETER:RefLut3/lut3(3)" />
+				<ifName ifid="if_279" index1="4" initValue="0.0" lsb="1" offset="0" displayName="lut3(4)" identifier="PARAMETER:RefLut3/lut3(4)" />
+				<ifName ifid="if_280" index1="5" initValue="0.0" lsb="1" offset="0" displayName="lut3(5)" identifier="PARAMETER:RefLut3/lut3(5)" />
+			</Variable>
+		</Calibration>
+		<Calibration name="lut4" path="simple_lut/ExplicitLut4" physicalPath="simple_lut/ExplicitLut4" origin="explicit_param" startIdx="1">
+			<CalibrationUsage path="simple_lut/ExplicitLut4" physicalPath="simple_lut/ExplicitLut4" blockAttribute="LookupTableObject" />
+			<Variable varid="varif_282" width1="10" signalType="double" signalDim="[1 10]" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_283" index1="1" initValue="0.0" lsb="1" offset="0" displayName="lut4(1)" identifier="PARAMETER:ExplicitLut4/lut4(1)" />
+				<ifName ifid="if_284" index1="2" initValue="0.0" lsb="1" offset="0" displayName="lut4(2)" identifier="PARAMETER:ExplicitLut4/lut4(2)" />
+				<ifName ifid="if_285" index1="3" initValue="0.0" lsb="1" offset="0" displayName="lut4(3)" identifier="PARAMETER:ExplicitLut4/lut4(3)" />
+				<ifName ifid="if_286" index1="4" initValue="0.0" lsb="1" offset="0" displayName="lut4(4)" identifier="PARAMETER:ExplicitLut4/lut4(4)" />
+				<ifName ifid="if_287" index1="5" initValue="0.0" lsb="1" offset="0" displayName="lut4(5)" identifier="PARAMETER:ExplicitLut4/lut4(5)" />
+				<ifName ifid="if_288" index1="6" initValue="0.0" lsb="1" offset="0" displayName="lut4(6)" identifier="PARAMETER:ExplicitLut4/lut4(6)" />
+				<ifName ifid="if_289" index1="7" initValue="0.0" lsb="1" offset="0" displayName="lut4(7)" identifier="PARAMETER:ExplicitLut4/lut4(7)" />
+				<ifName ifid="if_290" index1="8" initValue="0.0" lsb="1" offset="0" displayName="lut4(8)" identifier="PARAMETER:ExplicitLut4/lut4(8)" />
+				<ifName ifid="if_291" index1="9" initValue="0.0" lsb="1" offset="0" displayName="lut4(9)" identifier="PARAMETER:ExplicitLut4/lut4(9)" />
+				<ifName ifid="if_292" index1="10" initValue="0.0" lsb="1" offset="0" displayName="lut4(10)" identifier="PARAMETER:ExplicitLut4/lut4(10)" />
+			</Variable>
+		</Calibration>
+		<Calibration name="myBp" path="simple_lut/RefLut3" physicalPath="simple_lut/RefLut3" origin="explicit_param" startIdx="1">
+			<CalibrationUsage path="simple_lut/RefLut3" physicalPath="simple_lut/RefLut3" blockAttribute="undefined" />
+			<Variable varid="varif_294" width1="5" signalType="double" signalDim="[1 5]" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_295" index1="1" initValue="0.0" lsb="1" offset="0" displayName="myBp(1)" identifier="PARAMETER:RefLut3/myBp(1)" />
+				<ifName ifid="if_296" index1="2" initValue="0.0" lsb="1" offset="0" displayName="myBp(2)" identifier="PARAMETER:RefLut3/myBp(2)" />
+				<ifName ifid="if_297" index1="3" initValue="0.0" lsb="1" offset="0" displayName="myBp(3)" identifier="PARAMETER:RefLut3/myBp(3)" />
+				<ifName ifid="if_298" index1="4" initValue="0.0" lsb="1" offset="0" displayName="myBp(4)" identifier="PARAMETER:RefLut3/myBp(4)" />
+				<ifName ifid="if_299" index1="5" initValue="0.0" lsb="1" offset="0" displayName="myBp(5)" identifier="PARAMETER:RefLut3/myBp(5)" />
+			</Variable>
+		</Calibration>
+		<Calibration name="p" path="simple_lut/Constant" physicalPath="simple_lut/Constant" origin="explicit_param">
+			<CalibrationUsage path="simple_lut/Constant" physicalPath="simple_lut/Constant" blockAttribute="Value" />
+			<Variable varid="varif_301" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_301" initValue="0.0" lsb="1" offset="0" displayName="p" identifier="PARAMETER:Constant/p" />
+			</Variable>
+		</Calibration>
+		<Model name="simple_lut" modelPath="/E:/ModelsDev/UT_EC/simple_lut_01/ml2016b/simple_lut.slx" type="SimulinkModel" />
+	</Scope>
+</ExtractionModel>

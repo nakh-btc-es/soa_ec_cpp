@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20201001T154738_19520\tmp_small_aob_01\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20201001T154738_19520\tmp_small_aob_01\init_model.m" modelVersion="1.5" modelPath="C:\Users\developer\AppData\Local\Temp\ut20201001T154738_19520\tmp_small_aob_01\small_aob.slx" modelCreationDate="2020-09-17T12:46:11" creator="developer">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.5" modelPath="C:\Users\developer\AppData\Local\Temp\ut20201001T154738_19520\tmp_small_aob_01\small_aob.slx" creationDate="2020-09-17T12:46:11" modificationDate="2020-10-01T15:47:41" initScript="C:\Users\developer\AppData\Local\Temp\ut20201001T154738_19520\tmp_small_aob_01\init_model.m">
+    <subsystem subsysID="ss1" physicalPath="small_aob" path="" sampleTime="0.1" name="small_aob" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="small_aob/In1" path="In1" signalName="sig_in">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="LowBus">
+            <signal signalName="a">
+              <uint8 max="10"/>
+            </signal>
+            <signal signalName="b">
+              <boolean/>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="small_aob/Out1" path="Out1" signalName="sig_out">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="LowBus">
+            <signal signalName="a">
+              <uint8 max="10"/>
+            </signal>
+            <signal signalName="b">
+              <boolean/>
+            </signal>
+          </bus>
+        </array>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

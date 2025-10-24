@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="21X">
+	<Scope uid="21X" name="multi_top" path="multi_top" sampleTime="2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="multi_top" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_78" signalName="sig_in1" signalType="boolean" tlTypeName="boolean">
+				<ifName ifid="if_78" initValue="0" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_80" signalName="sig_in2" signalType="boolean" tlTypeName="boolean">
+				<ifName ifid="if_80" initValue="0" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_82" signalName="sig_out1" signalType="boolean" tlTypeName="boolean">
+				<ifName ifid="if_82" initValue="0" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<Calibration name="paramA" path="multi_top/top_A/Constant" physicalPath="multi_top/top_A/Constant" origin="explicit_param">
+			<CalibrationUsage path="multi_top/top_A/Constant" physicalPath="multi_top/top_A/Constant" blockAttribute="Value" />
+			<Variable varid="varif_84" signalType="boolean" tlTypeName="boolean">
+				<ifName ifid="if_84" initValue="0" lsb="1" offset="0" displayName="paramA" identifier="PARAMETER:top_A/Constant/paramA" />
+			</Variable>
+		</Calibration>
+		<Model name="multi_top" modelPath="/E:/ModelsDev/SL/MultiTopRegular/ml2015asp1/multi_top.mdl" type="SimulinkModel" />
+		<Scope uid="21V" name="Chart_B" path="multi_top/Chart_B" sampleTime="2" scopeKind="SUT" type="SimulinkScope" kind="STATEFLOW" physicalPath="multi_top/Chart_B" subsystemLogging="on">
+			<InPort name="u" portNumber="1" compositeSig="none">
+				<Variable varid="varif_86" signalName="sig_in2" signalType="boolean" tlTypeName="boolean">
+					<ifName ifid="if_86" initValue="0" lsb="1" offset="0" displayName="u" identifier="INPUT:u" />
+				</Variable>
+			</InPort>
+			<OutPort name="y" portNumber="1" compositeSig="none">
+				<Variable varid="varif_88" signalName="y" signalType="boolean" tlTypeName="boolean">
+					<ifName ifid="if_88" initValue="0" lsb="1" offset="0" displayName="y" identifier="OUTPUT:y" />
+				</Variable>
+			</OutPort>
+			<Model name="multi_top" modelPath="/E:/ModelsDev/SL/MultiTopRegular/ml2015asp1/multi_top.mdl" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="21W" name="top_A" path="multi_top/top_A" sampleTime="2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="multi_top/top_A" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_90" signalName="sig_in1" signalType="boolean" tlTypeName="boolean">
+					<ifName ifid="if_90" initValue="0" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_92" signalName="sig_A" signalType="boolean" tlTypeName="boolean">
+					<ifName ifid="if_92" initValue="0" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<Calibration name="paramA" path="multi_top/top_A/Constant" physicalPath="multi_top/top_A/Constant" origin="explicit_param">
+				<CalibrationUsage path="multi_top/top_A/Constant" physicalPath="multi_top/top_A/Constant" blockAttribute="Value" />
+				<Variable varid="varif_94" signalType="boolean" tlTypeName="boolean">
+					<ifName ifid="if_94" initValue="0" lsb="1" offset="0" displayName="paramA" identifier="PARAMETER:Constant/paramA" />
+				</Variable>
+			</Calibration>
+			<Model name="multi_top" modelPath="/E:/ModelsDev/SL/MultiTopRegular/ml2015asp1/multi_top.mdl" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

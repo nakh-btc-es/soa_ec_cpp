@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_constraintsLut\ut_results\AddModelInfo.xml" modelVersion="1.19" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_constraintsLut\constraints_lut.slx" modelCreationDate="2020-02-06T17:28:49" creator="developer">
+  <toolInfo name="Matlab" release="(R2020a)" version="9.8" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020a)" version="10.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.19" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_constraintsLut\constraints_lut.slx" creationDate="2020-02-06T17:28:49" modificationDate="2024-10-30T15:43:39">
+    <subsystem subsysID="ss1" physicalPath="constraints_lut" path="" sampleTime="0.2" name="constraints_lut" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="constraints_lut/In1" path="In1" signalName="a">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="constraints_lut/In2" path="In2" signalName="c">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="constraints_lut/In3" path="In3" signalName="e">
+        <double/>
+      </inport>
+      <parameter name="paramA" path="sub_A/Prelookup" physicalPath="constraints_lut/sub_A/Prelookup" origin="explicit_param" workspace="paramA">
+        <nonUniformArray size="6">
+          <signal index="1" initValue="-5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="2" initValue="-3.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="3" initValue="-2.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="4" initValue="0.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="5" initValue="2.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="6" initValue="4.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_A/Prelookup" physicalPath="constraints_lut/sub_A/Prelookup" simulinkBlockType="PreLookup" blockAttribute="BreakpointsData"/>
+      </parameter>
+      <parameter name="paramB_x" path="sub_A/1-D Lookup&#10;Table" physicalPath="constraints_lut/sub_A/1-D Lookup&#10;Table" origin="explicit_param" workspace="paramB_x">
+        <nonUniformArray size="5">
+          <signal index="1" initValue="-5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="2" initValue="-3.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="3" initValue="0.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="4" initValue="2.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="5" initValue="4.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_A/1-D Lookup&#10;Table" physicalPath="constraints_lut/sub_A/1-D Lookup&#10;Table" simulinkBlockType="Lookup_n-D" blockAttribute="BreakpointsForDimension1"/>
+        <usageContext path="sub_B/1-D Lookup&#10;Table1" physicalPath="constraints_lut/sub_B/1-D Lookup&#10;Table1" simulinkBlockType="Lookup_n-D" blockAttribute="Table"/>
+      </parameter>
+      <parameter name="paramB_y" path="sub_A/1-D Lookup&#10;Table" physicalPath="constraints_lut/sub_A/1-D Lookup&#10;Table" origin="explicit_param" workspace="paramB_y">
+        <nonUniformArray size="5">
+          <signal index="1" initValue="-5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="2" initValue="-3.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="3" initValue="0.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="4" initValue="2.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="5" initValue="4.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_A/1-D Lookup&#10;Table" physicalPath="constraints_lut/sub_A/1-D Lookup&#10;Table" simulinkBlockType="Lookup_n-D" blockAttribute="Table"/>
+        <usageContext path="sub_B/1-D Lookup&#10;Table1" physicalPath="constraints_lut/sub_B/1-D Lookup&#10;Table1" simulinkBlockType="Lookup_n-D" blockAttribute="BreakpointsForDimension1"/>
+      </parameter>
+      <parameter name="paramC_u1" path="sub_B/4-D Lookup&#10;Table" physicalPath="constraints_lut/sub_B/4-D Lookup&#10;Table" origin="explicit_param" workspace="paramC_u1">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="2" initValue="5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_B/4-D Lookup&#10;Table" physicalPath="constraints_lut/sub_B/4-D Lookup&#10;Table" simulinkBlockType="Lookup_n-D" blockAttribute="BreakpointsForDimension1"/>
+      </parameter>
+      <parameter name="paramC_u2" path="sub_B/4-D Lookup&#10;Table" physicalPath="constraints_lut/sub_B/4-D Lookup&#10;Table" origin="explicit_param" workspace="paramC_u2">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="2" initValue="5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_B/4-D Lookup&#10;Table" physicalPath="constraints_lut/sub_B/4-D Lookup&#10;Table" simulinkBlockType="Lookup_n-D" blockAttribute="BreakpointsForDimension2"/>
+      </parameter>
+      <parameter name="paramC_u3" path="sub_B/4-D Lookup&#10;Table" physicalPath="constraints_lut/sub_B/4-D Lookup&#10;Table" origin="explicit_param" workspace="paramC_u3">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="2" initValue="5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_B/4-D Lookup&#10;Table" physicalPath="constraints_lut/sub_B/4-D Lookup&#10;Table" simulinkBlockType="Lookup_n-D" blockAttribute="BreakpointsForDimension3"/>
+      </parameter>
+      <parameter name="paramC_u4" path="sub_B/4-D Lookup&#10;Table" physicalPath="constraints_lut/sub_B/4-D Lookup&#10;Table" origin="explicit_param" workspace="paramC_u4">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="2" initValue="5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_B/4-D Lookup&#10;Table" physicalPath="constraints_lut/sub_B/4-D Lookup&#10;Table" simulinkBlockType="Lookup_n-D" blockAttribute="BreakpointsForDimension4"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="constraints_lut/Out1" path="Out1" signalName="b">
+        <uint32/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="constraints_lut/Out2" path="Out2" signalName="d">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="constraints_lut/Out3" path="Out3" signalName="g">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="constraints_lut/sub_A" path="sub_A" sampleTime="0.2" name="sub_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="a" physicalPath="constraints_lut/sub_A/a" path="sub_A/a" signalName="a">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="c" physicalPath="constraints_lut/sub_A/c" path="sub_A/c" signalName="c">
+        <double/>
+      </inport>
+      <parameter name="paramA" path="sub_A/Prelookup" physicalPath="constraints_lut/sub_A/Prelookup" origin="explicit_param" workspace="paramA">
+        <nonUniformArray size="6">
+          <signal index="1" initValue="-5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="2" initValue="-3.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="3" initValue="-2.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="4" initValue="0.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="5" initValue="2.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="6" initValue="4.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_A/Prelookup" physicalPath="constraints_lut/sub_A/Prelookup" simulinkBlockType="PreLookup" blockAttribute="BreakpointsData"/>
+      </parameter>
+      <parameter name="paramB_x" path="sub_A/1-D Lookup&#10;Table" physicalPath="constraints_lut/sub_A/1-D Lookup&#10;Table" origin="explicit_param" workspace="paramB_x">
+        <nonUniformArray size="5">
+          <signal index="1" initValue="-5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="2" initValue="-3.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="3" initValue="0.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="4" initValue="2.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="5" initValue="4.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_A/1-D Lookup&#10;Table" physicalPath="constraints_lut/sub_A/1-D Lookup&#10;Table" simulinkBlockType="Lookup_n-D" blockAttribute="BreakpointsForDimension1"/>
+      </parameter>
+      <parameter name="paramB_y" path="sub_A/1-D Lookup&#10;Table" physicalPath="constraints_lut/sub_A/1-D Lookup&#10;Table" origin="explicit_param" workspace="paramB_y">
+        <nonUniformArray size="5">
+          <signal index="1" initValue="-5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="2" initValue="-3.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="3" initValue="0.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="4" initValue="2.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="5" initValue="4.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_A/1-D Lookup&#10;Table" physicalPath="constraints_lut/sub_A/1-D Lookup&#10;Table" simulinkBlockType="Lookup_n-D" blockAttribute="Table"/>
+      </parameter>
+      <outport portNumber="1" name="b" physicalPath="constraints_lut/sub_A/b" path="sub_A/b" signalName="b">
+        <uint32/>
+      </outport>
+      <outport portNumber="2" name="d" physicalPath="constraints_lut/sub_A/d" path="sub_A/d" signalName="d">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="constraints_lut/sub_B" path="sub_B" sampleTime="0.2" name="sub_B" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="d" physicalPath="constraints_lut/sub_B/d" path="sub_B/d" signalName="d">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="c" physicalPath="constraints_lut/sub_B/c" path="sub_B/c" signalName="c">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="e" physicalPath="constraints_lut/sub_B/e" path="sub_B/e" signalName="e">
+        <double/>
+      </inport>
+      <parameter name="paramB_x" path="sub_B/1-D Lookup&#10;Table1" physicalPath="constraints_lut/sub_B/1-D Lookup&#10;Table1" origin="explicit_param" workspace="paramB_x">
+        <nonUniformArray size="5">
+          <signal index="1" initValue="-5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="2" initValue="-3.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="3" initValue="0.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="4" initValue="2.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="5" initValue="4.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_B/1-D Lookup&#10;Table1" physicalPath="constraints_lut/sub_B/1-D Lookup&#10;Table1" simulinkBlockType="Lookup_n-D" blockAttribute="Table"/>
+      </parameter>
+      <parameter name="paramB_y" path="sub_B/1-D Lookup&#10;Table1" physicalPath="constraints_lut/sub_B/1-D Lookup&#10;Table1" origin="explicit_param" workspace="paramB_y">
+        <nonUniformArray size="5">
+          <signal index="1" initValue="-5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="2" initValue="-3.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="3" initValue="0.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="4" initValue="2.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="5" initValue="4.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_B/1-D Lookup&#10;Table1" physicalPath="constraints_lut/sub_B/1-D Lookup&#10;Table1" simulinkBlockType="Lookup_n-D" blockAttribute="BreakpointsForDimension1"/>
+      </parameter>
+      <parameter name="paramC_u1" path="sub_B/4-D Lookup&#10;Table" physicalPath="constraints_lut/sub_B/4-D Lookup&#10;Table" origin="explicit_param" workspace="paramC_u1">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="2" initValue="5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_B/4-D Lookup&#10;Table" physicalPath="constraints_lut/sub_B/4-D Lookup&#10;Table" simulinkBlockType="Lookup_n-D" blockAttribute="BreakpointsForDimension1"/>
+      </parameter>
+      <parameter name="paramC_u2" path="sub_B/4-D Lookup&#10;Table" physicalPath="constraints_lut/sub_B/4-D Lookup&#10;Table" origin="explicit_param" workspace="paramC_u2">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="2" initValue="5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_B/4-D Lookup&#10;Table" physicalPath="constraints_lut/sub_B/4-D Lookup&#10;Table" simulinkBlockType="Lookup_n-D" blockAttribute="BreakpointsForDimension2"/>
+      </parameter>
+      <parameter name="paramC_u3" path="sub_B/4-D Lookup&#10;Table" physicalPath="constraints_lut/sub_B/4-D Lookup&#10;Table" origin="explicit_param" workspace="paramC_u3">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="2" initValue="5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_B/4-D Lookup&#10;Table" physicalPath="constraints_lut/sub_B/4-D Lookup&#10;Table" simulinkBlockType="Lookup_n-D" blockAttribute="BreakpointsForDimension3"/>
+      </parameter>
+      <parameter name="paramC_u4" path="sub_B/4-D Lookup&#10;Table" physicalPath="constraints_lut/sub_B/4-D Lookup&#10;Table" origin="explicit_param" workspace="paramC_u4">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal index="2" initValue="5.0">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="sub_B/4-D Lookup&#10;Table" physicalPath="constraints_lut/sub_B/4-D Lookup&#10;Table" simulinkBlockType="Lookup_n-D" blockAttribute="BreakpointsForDimension4"/>
+      </parameter>
+      <outport portNumber="1" name="g" physicalPath="constraints_lut/sub_B/g" path="sub_B/g" signalName="g">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

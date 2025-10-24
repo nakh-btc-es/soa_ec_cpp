@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="DataStore_PerInstanceMemory"/>
+    <Architecture id="id1" name="DataStore_PerInstanceMemory [C-Code]"/>
+    <ScopeMapping>
+      <Path path="Subsystem" refId="id0"/>
+      <Path path="DataStore_PerInstanceMemory.c:1:Runnable1Simbol" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/In1" refId="id0"/>
+        <Path path="RteStub_New_In1_ReceiverPort1_DataElement1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Subsystem/Data Store&#10;Write" refId="id0"/>
+        <Path path="Rte_Pim_ali_data" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="Subsystem1" refId="id0"/>
+      <Path path="DataStore_PerInstanceMemory.c:1:Runnable2" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem1/In1" refId="id0"/>
+        <Path path="RteStub_In1_In1_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem1/Data Store&#10;Read" refId="id0"/>
+        <Path path="Rte_Pim_ali_data" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Subsystem1/Out1" refId="id0"/>
+        <Path path="RteStub_Out2_Out2_Out2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

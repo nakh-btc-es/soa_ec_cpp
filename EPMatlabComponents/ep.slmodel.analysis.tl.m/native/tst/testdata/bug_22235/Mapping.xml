@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="special_path_model"/>
+    <Architecture id="id1" name="special_path_model [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="some[abc] sub &amp; more/top_A/Subsystem/top_A"/>
+      <Path refId="id1" path="top_A.c:1:top_A"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sb1_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sb1_Out1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Ga*-_++#in1/a"/>
+        <Path refId="id1" path="a"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Gain%d1/b"/>
+        <Path refId="id1" path="b"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Gain[1]/c"/>
+        <Path refId="id1" path="c"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Gain[1](1)"/>
+        <Path refId="id1" path="z"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Gain%d1(1)"/>
+        <Path refId="id1" path="y"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Ga*-_++#in1(1)"/>
+        <Path refId="id1" path="x"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Sb6_sub_CZ"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="y"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="z"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Gain[1]/c"/>
+        <Path refId="id1" path="c"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Gain[1](1)"/>
+        <Path refId="id1" path="z"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Sb5_sub_BY"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="x"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="y"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Gain%d1/b"/>
+        <Path refId="id1" path="b"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Gain%d1(1)"/>
+        <Path refId="id1" path="y"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Sb7_sub_AX"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sb1_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="x"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Ga*-_++#in1/a"/>
+        <Path refId="id1" path="a"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Ga*-_++#in1(1)"/>
+        <Path refId="id1" path="x"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="sldemo_mdlref_depgraph_tl"/>
+    <Architecture id="id1" name="sldemo_mdlref_depgraph_tl [C-Code]"/>
+    <Architecture id="id2" name="sldemo_mdlref_depgraph"/>
+    <ScopeMapping>
+      <Path refId="id0" path="TopSubsystem/Subsystem/TopSubsystem"/>
+      <Path refId="id1" path="TopSubsystem.c:1:TopSubsystem"/>
+      <Path refId="id2" path="TopSubsystem"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort"/>
+        <Path refId="id2" path="InPort"/>
+        <Path refId="id1" path="Sa1_InPort"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id2" path="Out1"/>
+        <Path refId="id1" path="Sa1_Out1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out2"/>
+        <Path refId="id2" path="Out2"/>
+        <Path refId="id1" path="Sa1_Out2"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TopSubsystem/Subsystem/TopSubsystem/heat2cost"/>
+      <Path refId="id1" path="TopSubsystem.c:1:TopSubsystem/sldemo_mdlref_heat2cost_tl.c:1:STEP_Sd1"/>
+      <Path refId="id2" path="TopSubsystem/heat2cost"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Heat"/>
+        <Path refId="id2" path="Heat"/>
+        <Path refId="id1" path="Sd1_Heat"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Cost"/>
+        <Path refId="id2" path="Cost"/>
+        <Path refId="id1" path="Sd1_Cost"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TopSubsystem/Subsystem/TopSubsystem/house"/>
+      <Path refId="id1" path="TopSubsystem.c:1:TopSubsystem/sldemo_mdlref_house_tl.c:1:STEP_Se1"/>
+      <Path refId="id2" path="TopSubsystem/house"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Heat"/>
+        <Path refId="id2" path="Heat"/>
+        <Path refId="id1" path="Se1_Heat"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Tout"/>
+        <Path refId="id2" path="Tout"/>
+        <Path refId="id1" path="Se1_Tout"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Tin"/>
+        <Path refId="id2" path="Tin"/>
+        <Path refId="id1" path="Se1_Tin"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TopSubsystem/Subsystem/TopSubsystem/outdoor temp"/>
+      <Path refId="id1" path="TopSubsystem.c:1:TopSubsystem/sldemo_mdlref_outdoor_temp_tl.c:1:STEP_Sg1"/>
+      <Path refId="id2" path="TopSubsystem/outdoor temp"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort"/>
+        <Path refId="id2" path="InPort"/>
+        <Path refId="id1" path="Sg1_InPort"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Tout"/>
+        <Path refId="id2" path="Tout"/>
+        <Path refId="id1" path="Sg1_Tout"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TopSubsystem/Subsystem/TopSubsystem/outdoor temp/Fahrenheit to Celsius"/>
+      <Path refId="id1" path="TopSubsystem.c:1:TopSubsystem/sldemo_mdlref_outdoor_temp_tl.c:1:STEP_Sg1/sldemo_mdlref_F2C_tl2.c:1:STEP_Sb21"/>
+      <Path refId="id2" path="TopSubsystem/outdoor temp/Fahrenheit to Celsius"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="F"/>
+        <Path refId="id2" path="F"/>
+        <Path refId="id1" path="Sb21_F"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="C"/>
+        <Path refId="id2" path="C"/>
+        <Path refId="id1" path="Sb21_C"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TopSubsystem/Subsystem/TopSubsystem/thermostat"/>
+      <Path refId="id1" path="TopSubsystem.c:1:TopSubsystem/sldemo_mdlref_heater_tl.c:1:STEP_Sf1"/>
+      <Path refId="id2" path="TopSubsystem/thermostat"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Tin"/>
+        <Path refId="id2" path="Tin"/>
+        <Path refId="id1" path="Sf1_Tin"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Heat"/>
+        <Path refId="id2" path="Heat"/>
+        <Path refId="id1" path="Sf1_Heat"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TopSubsystem/Subsystem/TopSubsystem/thermostat/Fahrenheit to Celsius"/>
+      <Path refId="id1" path="TopSubsystem.c:1:TopSubsystem/sldemo_mdlref_heater_tl.c:1:STEP_Sf1/sldemo_mdlref_F2C_tl1.c:1:STEP_Sb11"/>
+      <Path refId="id2" path="TopSubsystem/thermostat/Fahrenheit to Celsius"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="F"/>
+        <Path refId="id2" path="F"/>
+        <Path refId="id1" path="Sb11_F"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="C"/>
+        <Path refId="id2" path="C"/>
+        <Path refId="id1" path="Sb11_C"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TopSubsystem/Subsystem/TopSubsystem/thermostat/Thermostat"/>
+      <Path refId="id1" path="TopSubsystem.c:1:TopSubsystem/sldemo_mdlref_heater_tl.c:1:STEP_Sf1/sldemo_mdlref_thermostat_tl.c:1:STEP_Sc1"/>
+      <Path refId="id2" path="TopSubsystem/thermostat/Thermostat"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Terr"/>
+        <Path refId="id2" path="Terr"/>
+        <Path refId="id1" path="Sc1_Terr"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Blower&#10;switch"/>
+        <Path refId="id2" path="Blower&#10;switch"/>
+        <Path refId="id1" path="Sc1_Blower_switch"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

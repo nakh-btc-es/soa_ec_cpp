@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="datastore"/>
+    <Architecture id="id1" name="datastore [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In_WriteB" refId="id0"/>
+        <Path path="In_WriteB" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In_ReadWriteA_ReadWriteB" refId="id0"/>
+        <Path path="In_ReadWriteA_ReadWriteB" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In_Chart_AB" refId="id0"/>
+        <Path path="In_Chart_AB" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In_ReadD_ChartD" refId="id0"/>
+        <Path path="In_ReadD_ChartD" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In_ChartE_WriteE" refId="id0"/>
+        <Path path="In_ChartE_WriteE" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In_Chart_FG" refId="id0"/>
+        <Path path="In_Chart_FG" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/Read F" refId="id0"/>
+        <Path path="F" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out_ReadA" refId="id0"/>
+        <Path path="Out_ReadA" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out_ReadWriteA_ReadWriteB" refId="id0"/>
+        <Path path="Out_ReadWriteA_ReadWriteB" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out_Chart_AB" refId="id0"/>
+        <Path path="Out_Chart_AB" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out_Chart_FG" refId="id0"/>
+        <Path path="Out_Chart_FG" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out_ReadD_ChartD" refId="id0"/>
+        <Path path="Out_ReadD_ChartD" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="O_ReadD_ChartD" refId="id0"/>
+        <Path path="O_ReadD_ChartD" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/Write G" refId="id0"/>
+        <Path path="G" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/ReadA" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/datastore.c:1:ReadA" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/ReadA/Read A" refId="id0"/>
+        <Path path="A" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/ReadA/Out" refId="id0"/>
+        <Path path="OutA" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/ReadL" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/datastore.c:1:ReadL" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/ReadL/Read L" refId="id0"/>
+        <Path path="L" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/ReadL/Out" refId="id0"/>
+        <Path path="outL" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/WriteB" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/datastore.c:1:WriteB" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/WriteB/In" refId="id0"/>
+        <Path path="In_WriteB" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/WriteB/Write B" refId="id0"/>
+        <Path path="B" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/WriteM" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/datastore.c:1:WriteM" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/WriteM/In" refId="id0"/>
+        <Path path="In_WriteB" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/WriteM/Write M" refId="id0"/>
+        <Path path="M" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/Chart_AB" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/datastore.c:1:Chart_AB" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/Chart_AB/In" refId="id0"/>
+        <Path path="In_Chart_AB" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/Chart_AB/Out" refId="id0"/>
+        <Path path="Out_Chart_AB" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/Chart_FG" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/datastore.c:1:Chart_FG" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/Chart_FG/In" refId="id0"/>
+        <Path path="In_Chart_FG" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/Chart_FG/Out" refId="id0"/>
+        <Path path="Out_Chart_FG" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/Chart_FG/G" refId="id0"/>
+        <Path path="G" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/ReadD_ChartD" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/datastore.c:1:ReadD_ChartD" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/ReadD_ChartD/I" refId="id0"/>
+        <Path path="In_ReadD_ChartD" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/ReadD_ChartD/Out" refId="id0"/>
+        <Path path="Out_ReadD_ChartD" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/ReadD_ChartD/O" refId="id0"/>
+        <Path path="O_ReadD_ChartD" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/ChartE_WriteE" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/datastore.c:1:ChartE_WriteE" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/ChartE_WriteE/In" refId="id0"/>
+        <Path path="In_ChartE_WriteE" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/ReadWriteA_ReadWriteB" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/datastore.c:1:ReadWriteA_ReadWriteB" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/ReadWriteA_ReadWriteB/In" refId="id0"/>
+        <Path path="In_ReadWriteA_ReadWriteB" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/ReadWriteA_ReadWriteB/Out" refId="id0"/>
+        <Path path="Out_ReadWriteA_ReadWriteB" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

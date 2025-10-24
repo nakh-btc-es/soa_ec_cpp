@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architectureConstraints>
+  <scope path="">
+    <assumptions origin="BreakpointObject">
+      <signalSignal signal1="bp_obj(1)" relation="les" signal2="bp_obj(2)"/>
+      <signalSignal signal1="bp_obj(2)" relation="les" signal2="bp_obj(3)"/>
+      <signalSignal signal1="bp_obj(3)" relation="les" signal2="bp_obj(4)"/>
+      <signalSignal signal1="bp_obj(4)" relation="les" signal2="bp_obj(5)"/>
+    </assumptions>
+    <assumptions origin="LowerLimit">
+      <signalSignal signal1="Saturation/lower_p" relation="leq" signal2="Saturation/upper_p"/>
+    </assumptions>
+    <assumptions origin="OffSwitchValue">
+      <signalSignal signal1="Relay/off_p" relation="leq" signal2="Relay/on_p"/>
+    </assumptions>
+  </scope>
+</architectureConstraints>

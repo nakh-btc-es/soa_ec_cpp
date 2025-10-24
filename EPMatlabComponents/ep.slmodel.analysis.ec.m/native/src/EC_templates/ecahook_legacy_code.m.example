@@ -1,0 +1,76 @@
+function stConfig = ecahook_legacy_code(stConfig, stAdditionalInfo)
+% Return information about additionnal source files to include in the c-code architecture
+%
+%  astSrcFiles : Array of structures
+%     .path    : full path to the c-file
+%     .codecov : T/F to activate code coverage for this file
+%     .hide    : T/F to treart just as a compilation file (no function
+%                selection, not code coverage)
+%
+%  casInclPaths : Cell array of strings
+%
+%  astDefines  : Array of structures
+%     .name    : name of the pre-processor macro
+%     .value   : value of the pre-processor macro (optional)
+%
+%  sPreStepFunctionName : External preStep function name
+%%
+% -------------------------------- Examples --------------------------------
+%%Enter absolute path of c-file
+%
+% cc = 0; dd= 0;
+%
+% cc = cc+1;
+% astSrcFiles(cc).path    = 'C:/libs/file1.c';
+% astSrcFiles(cc).hide    = false;
+% astSrcFiles(cc).codecov = false;
+% cc = cc+1;
+% astSrcFiles(cc).path    = 'C:/libs/file2.c';
+% astSrcFiles(cc).hide    = true;
+% astSrcFiles(cc).codecov = false;
+%
+%%Enter absolute path of include directories
+% casInclPaths = {'C:/libs'};
+%
+%%Enter Defines
+% dd = dd+1;
+% astDefines(dd).name  =  'MACRO_DEFINTION';
+% dd = dd+1;
+% astDefines(dd).name  =  'MACRO_DEFINITION_WITH_VALUE';
+% astDefines(dd).value =  '0';
+%
+%
+% stConfig.astSrcFiles   = astSrcFiles;
+% stConfig.astDefines    = astDefines;
+% stConfig.casInclPaths  = casInclPaths;
+%--------------------------------------------------------------------------
+%
+% -----------------------------------------------------------------------------
+% 
+% Additional Infos
+% 
+% -----------------------------------------------------------------------------
+%
+%   stAdditionalInfo           (struct)    struct containing the following fields
+%      .sModelName             (string)       the model's name
+%      .sModelPath             (string)       the model's path 
+%      .sInitFilePath          (string)       the init file's path
+%      .sInitFileName          (string)       the init file's name
+%      .sStubCodeFolder        (string)       the stub Code Folder
+%      .casReferencedModels    (cell)         all models referenced by the main model
+%      .bIsWrapperMode         (boolean)      special mode that is active in the Wrapper workflow
+%      .sWrappedAutosarModel   (string)       the wrapped AUTOSAR model in the Wrapper wofklow
+%
+
+%%
+% -----------------------------------------------------------------------------
+% 
+% DEFAULT VALUES
+% 
+% -----------------------------------------------------------------------------
+% stConfig = struct(...
+%     'astSrcFiles',            [], ...
+%     'casInclPaths',           {{}}, ...
+%     'astDefines',             [], ...
+%     'sPreStepFunctionName',   '');
+end

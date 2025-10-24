@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\c50d39f\closed_loop_03\TLProj\power_window_control" name="power_window_control.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\c50d39f\closed_loop_03\TLSim" name="power_window_control_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\c50d39f\closed_loop_03\TLProj\power_window_control"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\c50d39f\closed_loop_03\TLSim"/>
+    <IncludePath path="C:\dspace\TL42\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dspace\TL42\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dspace\TL42\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="42"/>
+  </Defines>
+  <Functions archName="powerwindow_closed_loop [C-Code]">
+    <Function name="power_window_control" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="in" var="driver_neutral" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="driver_up" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="driver_down" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="passenger_neutral" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="passenger_up" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="passenger_down" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="obstacle_position" scaling="scID1" min="0.0000000000000000e+00" max="4.5000000000000001e-01"/>
+        <InterfaceObj kind="in" var="window_position" scaling="scID1" min="0.0000000000000000e+00" max="4.5000000000000001e-01"/>
+        <InterfaceObj kind="cal" var="position_endstop_top" scaling="scID1" min="3.4999999999999998e-01" max="4.5000000000000001e-01" initVal="4.0000000000000002e-01"/>
+        <InterfaceObj kind="cal" var="auto_up_time" scaling="scID2" min="0.0000000000000000e+00" max="5.0000000000000000e+02" initVal="1.0000000000000000e+02"/>
+        <InterfaceObj kind="cal" var="emergency_down_time" scaling="scID2" min="0.0000000000000000e+00" max="5.0000000000000000e+02" initVal="1.0000000000000000e+02"/>
+        <InterfaceObj kind="cal" var="auto_down_time" scaling="scID2" min="0.0000000000000000e+00" max="5.0000000000000000e+02" initVal="1.0000000000000000e+02"/>
+        <InterfaceObj kind="out" var="Sa1_obctacle_detection" scaling="scID2"/>
+        <InterfaceObj kind="out" var="Sa1_move_up" scaling="scID2"/>
+        <InterfaceObj kind="out" var="Sa1_move_down" scaling="scID2"/>
+        <InterfaceObj kind="disp" var="obstacle_position" scaling="scID1" min="0.0000000000000000e+00" max="4.5000000000000001e-01"/>
+        <InterfaceObj kind="disp" var="window_position" scaling="scID1" min="0.0000000000000000e+00" max="4.5000000000000001e-01"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e-03" offset="0.0000000000000000e+00"/>
+    <Scaling id="scID2" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

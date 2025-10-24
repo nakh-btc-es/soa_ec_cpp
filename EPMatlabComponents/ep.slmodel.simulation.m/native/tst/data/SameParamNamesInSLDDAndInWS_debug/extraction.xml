@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="28l">
+	<Scope uid="28l" name="main" path="main" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="main" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_375" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_375" initValue="0.0" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_378" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_379" index1="1" initValue="0.0" lsb="1" offset="0" displayName="Out1(1)" identifier="OUTPUT:Out1(1)" />
+				<ifName ifid="if_380" index1="2" initValue="0.0" lsb="1" offset="0" displayName="Out1(2)" identifier="OUTPUT:Out1(2)" />
+			</Variable>
+		</OutPort>
+		<Display name="Gain" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" portNumber="1">
+			<Variable varid="varif_382" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_382" initValue="0.0" lsb="1" offset="0" displayName="Gain" identifier="LOCAL:TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" />
+			</Variable>
+		</Display>
+		<Display name="Gain1" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" portNumber="1" startIdx="1">
+			<Variable varid="varif_384" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_385" index1="1" initValue="0.0" lsb="1" offset="0" displayName="Gain1(1)" identifier="LOCAL:TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1(1)" />
+				<ifName ifid="if_386" index1="2" initValue="0.0" lsb="1" offset="0" displayName="Gain1(2)" identifier="LOCAL:TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1(2)" />
+			</Variable>
+		</Display>
+		<Calibration name="a" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" origin="explicit_param">
+			<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" blockAttribute="Gain" />
+			<Variable varid="varif_388" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_388" initValue="0.0" lsb="1" offset="0" displayName="a" identifier="PARAMETER:TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain/a" />
+			</Variable>
+		</Calibration>
+		<Calibration name="c" path="main/TopLevel/Subsystem/Gain" physicalPath="main/TopLevel/Subsystem/Gain" origin="explicit_param">
+			<CalibrationUsage path="main/TopLevel/Subsystem/Gain" physicalPath="main/TopLevel/Subsystem/Gain" blockAttribute="Gain" />
+			<Variable varid="varif_390" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_390" initValue="0.0" lsb="1" offset="0" displayName="c" identifier="PARAMETER:TopLevel/Subsystem/Gain/c" />
+			</Variable>
+		</Calibration>
+		<Calibration name="w" path="main/TopLevel/Gain2" physicalPath="main/TopLevel/Gain2" origin="explicit_param">
+			<CalibrationUsage path="main/TopLevel/Gain2" physicalPath="main/TopLevel/Gain2" blockAttribute="Gain" />
+			<Variable varid="varif_392" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_392" initValue="0.0" lsb="1" offset="0" displayName="w" identifier="PARAMETER:TopLevel/Gain2/w" />
+			</Variable>
+		</Calibration>
+		<Calibration name="b" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" origin="explicit_param" startIdx="1">
+			<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" blockAttribute="Gain" />
+			<Variable varid="varif_395" width1="2" signalType="int16" signalDim="[1 2]" tlTypeName="int16">
+				<ifName ifid="if_396" index1="1" initValue="0" lsb="1" offset="0" displayName="b(1)" identifier="PARAMETER:TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1/b(1)" />
+				<ifName ifid="if_397" index1="2" initValue="0" lsb="1" offset="0" displayName="b(2)" identifier="PARAMETER:TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1/b(2)" />
+			</Variable>
+		</Calibration>
+		<Calibration name="d" path="main/TopLevel/Subsystem/Gain1" physicalPath="main/TopLevel/Subsystem/Gain1" origin="explicit_param">
+			<CalibrationUsage path="main/TopLevel/Subsystem/Gain1" physicalPath="main/TopLevel/Subsystem/Gain1" blockAttribute="Gain" />
+			<Variable varid="varif_399" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_399" initValue="0.0" lsb="1" offset="0" displayName="d" identifier="PARAMETER:TopLevel/Subsystem/Gain1/d" />
+			</Variable>
+		</Calibration>
+		<Calibration name="m_s" path="main/TopLevel/Subsystem/Gain2" physicalPath="main/TopLevel/Subsystem/Gain2" origin="explicit_param">
+			<CalibrationUsage path="main/TopLevel/Subsystem/Gain2" physicalPath="main/TopLevel/Subsystem/Gain2" blockAttribute="Gain" />
+			<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain2" physicalPath="param/Atomic Subsystem/Gain2" blockAttribute="Gain" />
+			<Variable varid="varif_401" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_401" initValue="0.0" lsb="1" offset="0" displayName="m_s" identifier="PARAMETER:TopLevel/Subsystem/Gain2/m_s" />
+			</Variable>
+		</Calibration>
+		<Calibration name="m_s_w" path="main/TopLevel/Gain" physicalPath="main/TopLevel/Gain" origin="explicit_param">
+			<CalibrationUsage path="main/TopLevel/Gain" physicalPath="main/TopLevel/Gain" blockAttribute="Gain" />
+			<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Gain" physicalPath="param/Gain" blockAttribute="Gain" />
+			<Variable varid="varif_403" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_403" initValue="0.0" lsb="1" offset="0" displayName="m_s_w" identifier="PARAMETER:TopLevel/Gain/m_s_w" />
+			</Variable>
+		</Calibration>
+		<Calibration name="m_w" path="main/TopLevel/Gain1" physicalPath="main/TopLevel/Gain1" origin="explicit_param">
+			<CalibrationUsage path="main/TopLevel/Gain1" physicalPath="main/TopLevel/Gain1" blockAttribute="Gain" />
+			<Variable varid="varif_405" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_405" initValue="0.0" lsb="1" offset="0" displayName="m_w" identifier="PARAMETER:TopLevel/Gain1/m_w" />
+			</Variable>
+		</Calibration>
+		<Calibration name="ref1" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" origin="explicit_param" startIdx="1">
+			<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" blockAttribute="Gain" />
+			<Variable varid="varif_407" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_408" index1="1" initValue="0.0" lsb="1" offset="0" displayName="ref1(1)" identifier="PARAMETER:TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain/ref1(1)" />
+				<ifName ifid="if_409" index1="2" initValue="0.0" lsb="1" offset="0" displayName="ref1(2)" identifier="PARAMETER:TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain/ref1(2)" />
+			</Variable>
+		</Calibration>
+		<Calibration name="ref2" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" origin="explicit_param">
+			<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" blockAttribute="Gain" />
+			<Variable varid="varif_411" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_411" initValue="0.0" lsb="1" offset="0" displayName="ref2" identifier="PARAMETER:TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1/ref2" />
+			</Variable>
+		</Calibration>
+		<Calibration name="s_w" path="main/TopLevel/Subsystem/RefModel/Gain1" physicalPath="param/Gain1" origin="explicit_param">
+			<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Gain1" physicalPath="param/Gain1" blockAttribute="Gain" />
+			<Variable varid="varif_413" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_413" initValue="0.0" lsb="1" offset="0" displayName="s_w" identifier="PARAMETER:TopLevel/Subsystem/RefModel/Gain1/s_w" />
+			</Variable>
+		</Calibration>
+		<Model name="main" modelPath="/E:/ModelsDev/SL/SameParamNamesInSLDDAndInWS/ml2019a/main.slx" type="SimulinkModel" />
+		<Scope uid="28g" name="TopLevel" path="main/TopLevel" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="main/TopLevel" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_415" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_415" initValue="0.0" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_417" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_418" index1="1" initValue="0.0" lsb="1" offset="0" displayName="Out1(1)" identifier="OUTPUT:Out1(1)" />
+					<ifName ifid="if_419" index1="2" initValue="0.0" lsb="1" offset="0" displayName="Out1(2)" identifier="OUTPUT:Out1(2)" />
+				</Variable>
+			</OutPort>
+			<Display name="Gain" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" portNumber="1">
+				<Variable varid="varif_421" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_421" initValue="0.0" lsb="1" offset="0" displayName="Gain" identifier="LOCAL:Subsystem/RefModel/Atomic Subsystem/Gain" />
+				</Variable>
+			</Display>
+			<Display name="Gain1" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" portNumber="1" startIdx="1">
+				<Variable varid="varif_423" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_424" index1="1" initValue="0.0" lsb="1" offset="0" displayName="Gain1(1)" identifier="LOCAL:Subsystem/RefModel/Atomic Subsystem/Gain1(1)" />
+					<ifName ifid="if_425" index1="2" initValue="0.0" lsb="1" offset="0" displayName="Gain1(2)" identifier="LOCAL:Subsystem/RefModel/Atomic Subsystem/Gain1(2)" />
+				</Variable>
+			</Display>
+			<Calibration name="a" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" origin="explicit_param">
+				<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" blockAttribute="Gain" />
+				<Variable varid="varif_427" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_427" initValue="0.0" lsb="1" offset="0" displayName="a" identifier="PARAMETER:Subsystem/RefModel/Atomic Subsystem/Gain/a" />
+				</Variable>
+			</Calibration>
+			<Calibration name="c" path="main/TopLevel/Subsystem/Gain" physicalPath="main/TopLevel/Subsystem/Gain" origin="explicit_param">
+				<CalibrationUsage path="main/TopLevel/Subsystem/Gain" physicalPath="main/TopLevel/Subsystem/Gain" blockAttribute="Gain" />
+				<Variable varid="varif_429" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_429" initValue="0.0" lsb="1" offset="0" displayName="c" identifier="PARAMETER:Subsystem/Gain/c" />
+				</Variable>
+			</Calibration>
+			<Calibration name="w" path="main/TopLevel/Gain2" physicalPath="main/TopLevel/Gain2" origin="explicit_param">
+				<CalibrationUsage path="main/TopLevel/Gain2" physicalPath="main/TopLevel/Gain2" blockAttribute="Gain" />
+				<Variable varid="varif_431" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_431" initValue="0.0" lsb="1" offset="0" displayName="w" identifier="PARAMETER:Gain2/w" />
+				</Variable>
+			</Calibration>
+			<Calibration name="b" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" origin="explicit_param" startIdx="1">
+				<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" blockAttribute="Gain" />
+				<Variable varid="varif_433" width1="2" signalType="int16" signalDim="[1 2]" tlTypeName="int16">
+					<ifName ifid="if_434" index1="1" initValue="0" lsb="1" offset="0" displayName="b(1)" identifier="PARAMETER:Subsystem/RefModel/Atomic Subsystem/Gain1/b(1)" />
+					<ifName ifid="if_435" index1="2" initValue="0" lsb="1" offset="0" displayName="b(2)" identifier="PARAMETER:Subsystem/RefModel/Atomic Subsystem/Gain1/b(2)" />
+				</Variable>
+			</Calibration>
+			<Calibration name="d" path="main/TopLevel/Subsystem/Gain1" physicalPath="main/TopLevel/Subsystem/Gain1" origin="explicit_param">
+				<CalibrationUsage path="main/TopLevel/Subsystem/Gain1" physicalPath="main/TopLevel/Subsystem/Gain1" blockAttribute="Gain" />
+				<Variable varid="varif_437" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_437" initValue="0.0" lsb="1" offset="0" displayName="d" identifier="PARAMETER:Subsystem/Gain1/d" />
+				</Variable>
+			</Calibration>
+			<Calibration name="m_s" path="main/TopLevel/Subsystem/Gain2" physicalPath="main/TopLevel/Subsystem/Gain2" origin="explicit_param">
+				<CalibrationUsage path="main/TopLevel/Subsystem/Gain2" physicalPath="main/TopLevel/Subsystem/Gain2" blockAttribute="Gain" />
+				<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain2" physicalPath="param/Atomic Subsystem/Gain2" blockAttribute="Gain" />
+				<Variable varid="varif_439" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_439" initValue="0.0" lsb="1" offset="0" displayName="m_s" identifier="PARAMETER:Subsystem/Gain2/m_s" />
+				</Variable>
+			</Calibration>
+			<Calibration name="m_s_w" path="main/TopLevel/Gain" physicalPath="main/TopLevel/Gain" origin="explicit_param">
+				<CalibrationUsage path="main/TopLevel/Gain" physicalPath="main/TopLevel/Gain" blockAttribute="Gain" />
+				<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Gain" physicalPath="param/Gain" blockAttribute="Gain" />
+				<Variable varid="varif_441" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_441" initValue="0.0" lsb="1" offset="0" displayName="m_s_w" identifier="PARAMETER:Gain/m_s_w" />
+				</Variable>
+			</Calibration>
+			<Calibration name="m_w" path="main/TopLevel/Gain1" physicalPath="main/TopLevel/Gain1" origin="explicit_param">
+				<CalibrationUsage path="main/TopLevel/Gain1" physicalPath="main/TopLevel/Gain1" blockAttribute="Gain" />
+				<Variable varid="varif_443" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_443" initValue="0.0" lsb="1" offset="0" displayName="m_w" identifier="PARAMETER:Gain1/m_w" />
+				</Variable>
+			</Calibration>
+			<Calibration name="ref1" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" origin="explicit_param" startIdx="1">
+				<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" blockAttribute="Gain" />
+				<Variable varid="varif_445" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_446" index1="1" initValue="0.0" lsb="1" offset="0" displayName="ref1(1)" identifier="PARAMETER:Subsystem/RefModel/Atomic Subsystem/Model/Gain/ref1(1)" />
+					<ifName ifid="if_447" index1="2" initValue="0.0" lsb="1" offset="0" displayName="ref1(2)" identifier="PARAMETER:Subsystem/RefModel/Atomic Subsystem/Model/Gain/ref1(2)" />
+				</Variable>
+			</Calibration>
+			<Calibration name="ref2" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" origin="explicit_param">
+				<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" blockAttribute="Gain" />
+				<Variable varid="varif_449" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_449" initValue="0.0" lsb="1" offset="0" displayName="ref2" identifier="PARAMETER:Subsystem/RefModel/Atomic Subsystem/Model/Gain1/ref2" />
+				</Variable>
+			</Calibration>
+			<Calibration name="s_w" path="main/TopLevel/Subsystem/RefModel/Gain1" physicalPath="param/Gain1" origin="explicit_param">
+				<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Gain1" physicalPath="param/Gain1" blockAttribute="Gain" />
+				<Variable varid="varif_451" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_451" initValue="0.0" lsb="1" offset="0" displayName="s_w" identifier="PARAMETER:Subsystem/RefModel/Gain1/s_w" />
+				</Variable>
+			</Calibration>
+			<Model name="main" modelPath="/E:/ModelsDev/SL/SameParamNamesInSLDDAndInWS/ml2019a/main.slx" type="SimulinkModel" />
+			<Scope uid="28h" name="Subsystem" path="main/TopLevel/Subsystem" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="main/TopLevel/Subsystem" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_453" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_453" initValue="0.0" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_455" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_456" index1="1" initValue="0.0" lsb="1" offset="0" displayName="Out1(1)" identifier="OUTPUT:Out1(1)" />
+						<ifName ifid="if_457" index1="2" initValue="0.0" lsb="1" offset="0" displayName="Out1(2)" identifier="OUTPUT:Out1(2)" />
+					</Variable>
+				</OutPort>
+				<Display name="Gain" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" portNumber="1">
+					<Variable varid="varif_459" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_459" initValue="0.0" lsb="1" offset="0" displayName="Gain" identifier="LOCAL:RefModel/Atomic Subsystem/Gain" />
+					</Variable>
+				</Display>
+				<Display name="Gain1" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" portNumber="1" startIdx="1">
+					<Variable varid="varif_461" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_462" index1="1" initValue="0.0" lsb="1" offset="0" displayName="Gain1(1)" identifier="LOCAL:RefModel/Atomic Subsystem/Gain1(1)" />
+						<ifName ifid="if_463" index1="2" initValue="0.0" lsb="1" offset="0" displayName="Gain1(2)" identifier="LOCAL:RefModel/Atomic Subsystem/Gain1(2)" />
+					</Variable>
+				</Display>
+				<Calibration name="a" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" origin="explicit_param">
+					<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" blockAttribute="Gain" />
+					<Variable varid="varif_465" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_465" initValue="0.0" lsb="1" offset="0" displayName="a" identifier="PARAMETER:RefModel/Atomic Subsystem/Gain/a" />
+					</Variable>
+				</Calibration>
+				<Calibration name="c" path="main/TopLevel/Subsystem/Gain" physicalPath="main/TopLevel/Subsystem/Gain" origin="explicit_param">
+					<CalibrationUsage path="main/TopLevel/Subsystem/Gain" physicalPath="main/TopLevel/Subsystem/Gain" blockAttribute="Gain" />
+					<Variable varid="varif_467" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_467" initValue="0.0" lsb="1" offset="0" displayName="c" identifier="PARAMETER:Gain/c" />
+					</Variable>
+				</Calibration>
+				<Calibration name="b" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" origin="explicit_param" startIdx="1">
+					<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" blockAttribute="Gain" />
+					<Variable varid="varif_469" width1="2" signalType="int16" signalDim="[1 2]" tlTypeName="int16">
+						<ifName ifid="if_470" index1="1" initValue="0" lsb="1" offset="0" displayName="b(1)" identifier="PARAMETER:RefModel/Atomic Subsystem/Gain1/b(1)" />
+						<ifName ifid="if_471" index1="2" initValue="0" lsb="1" offset="0" displayName="b(2)" identifier="PARAMETER:RefModel/Atomic Subsystem/Gain1/b(2)" />
+					</Variable>
+				</Calibration>
+				<Calibration name="d" path="main/TopLevel/Subsystem/Gain1" physicalPath="main/TopLevel/Subsystem/Gain1" origin="explicit_param">
+					<CalibrationUsage path="main/TopLevel/Subsystem/Gain1" physicalPath="main/TopLevel/Subsystem/Gain1" blockAttribute="Gain" />
+					<Variable varid="varif_473" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_473" initValue="0.0" lsb="1" offset="0" displayName="d" identifier="PARAMETER:Gain1/d" />
+					</Variable>
+				</Calibration>
+				<Calibration name="m_s" path="main/TopLevel/Subsystem/Gain2" physicalPath="main/TopLevel/Subsystem/Gain2" origin="explicit_param">
+					<CalibrationUsage path="main/TopLevel/Subsystem/Gain2" physicalPath="main/TopLevel/Subsystem/Gain2" blockAttribute="Gain" />
+					<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain2" physicalPath="param/Atomic Subsystem/Gain2" blockAttribute="Gain" />
+					<Variable varid="varif_475" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_475" initValue="0.0" lsb="1" offset="0" displayName="m_s" identifier="PARAMETER:Gain2/m_s" />
+					</Variable>
+				</Calibration>
+				<Calibration name="m_s_w" path="main/TopLevel/Subsystem/RefModel/Gain" physicalPath="param/Gain" origin="explicit_param">
+					<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Gain" physicalPath="param/Gain" blockAttribute="Gain" />
+					<Variable varid="varif_477" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_477" initValue="0.0" lsb="1" offset="0" displayName="m_s_w" identifier="PARAMETER:RefModel/Gain/m_s_w" />
+					</Variable>
+				</Calibration>
+				<Calibration name="ref1" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" origin="explicit_param" startIdx="1">
+					<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" blockAttribute="Gain" />
+					<Variable varid="varif_479" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_480" index1="1" initValue="0.0" lsb="1" offset="0" displayName="ref1(1)" identifier="PARAMETER:RefModel/Atomic Subsystem/Model/Gain/ref1(1)" />
+						<ifName ifid="if_481" index1="2" initValue="0.0" lsb="1" offset="0" displayName="ref1(2)" identifier="PARAMETER:RefModel/Atomic Subsystem/Model/Gain/ref1(2)" />
+					</Variable>
+				</Calibration>
+				<Calibration name="ref2" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" origin="explicit_param">
+					<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" blockAttribute="Gain" />
+					<Variable varid="varif_483" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_483" initValue="0.0" lsb="1" offset="0" displayName="ref2" identifier="PARAMETER:RefModel/Atomic Subsystem/Model/Gain1/ref2" />
+					</Variable>
+				</Calibration>
+				<Calibration name="s_w" path="main/TopLevel/Subsystem/RefModel/Gain1" physicalPath="param/Gain1" origin="explicit_param">
+					<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Gain1" physicalPath="param/Gain1" blockAttribute="Gain" />
+					<Variable varid="varif_485" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_485" initValue="0.0" lsb="1" offset="0" displayName="s_w" identifier="PARAMETER:RefModel/Gain1/s_w" />
+					</Variable>
+				</Calibration>
+				<Model name="main" modelPath="/E:/ModelsDev/SL/SameParamNamesInSLDDAndInWS/ml2019a/main.slx" type="SimulinkModel" />
+				<Scope uid="28i" name="RefModel" path="main/TopLevel/Subsystem/RefModel" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="param" subsystemLogging="on">
+					<InPort name="In1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_487" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_487" initValue="0.0" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+						</Variable>
+					</InPort>
+					<OutPort name="Out1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_489" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_490" index1="1" initValue="0.0" lsb="1" offset="0" displayName="Out1(1)" identifier="OUTPUT:Out1(1)" />
+							<ifName ifid="if_491" index1="2" initValue="0.0" lsb="1" offset="0" displayName="Out1(2)" identifier="OUTPUT:Out1(2)" />
+						</Variable>
+					</OutPort>
+					<Display name="Gain" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" portNumber="1">
+						<Variable varid="varif_493" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_493" initValue="0.0" lsb="1" offset="0" displayName="Gain" identifier="LOCAL:Atomic Subsystem/Gain" />
+						</Variable>
+					</Display>
+					<Display name="Gain1" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" portNumber="1" startIdx="1">
+						<Variable varid="varif_495" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_496" index1="1" initValue="0.0" lsb="1" offset="0" displayName="Gain1(1)" identifier="LOCAL:Atomic Subsystem/Gain1(1)" />
+							<ifName ifid="if_497" index1="2" initValue="0.0" lsb="1" offset="0" displayName="Gain1(2)" identifier="LOCAL:Atomic Subsystem/Gain1(2)" />
+						</Variable>
+					</Display>
+					<Calibration name="a" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" origin="explicit_param">
+						<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" blockAttribute="Gain" />
+						<Variable varid="varif_499" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_499" initValue="0.0" lsb="1" offset="0" displayName="a" identifier="PARAMETER:Atomic Subsystem/Gain/a" />
+						</Variable>
+					</Calibration>
+					<Calibration name="b" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" origin="explicit_param" startIdx="1">
+						<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" blockAttribute="Gain" />
+						<Variable varid="varif_501" width1="2" signalType="int16" signalDim="[1 2]" tlTypeName="int16">
+							<ifName ifid="if_502" index1="1" initValue="0" lsb="1" offset="0" displayName="b(1)" identifier="PARAMETER:Atomic Subsystem/Gain1/b(1)" />
+							<ifName ifid="if_503" index1="2" initValue="0" lsb="1" offset="0" displayName="b(2)" identifier="PARAMETER:Atomic Subsystem/Gain1/b(2)" />
+						</Variable>
+					</Calibration>
+					<Calibration name="m_s" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain2" physicalPath="param/Atomic Subsystem/Gain2" origin="explicit_param">
+						<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain2" physicalPath="param/Atomic Subsystem/Gain2" blockAttribute="Gain" />
+						<Variable varid="varif_505" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_505" initValue="0.0" lsb="1" offset="0" displayName="m_s" identifier="PARAMETER:Atomic Subsystem/Gain2/m_s" />
+						</Variable>
+					</Calibration>
+					<Calibration name="m_s_w" path="main/TopLevel/Subsystem/RefModel/Gain" physicalPath="param/Gain" origin="explicit_param">
+						<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Gain" physicalPath="param/Gain" blockAttribute="Gain" />
+						<Variable varid="varif_507" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_507" initValue="0.0" lsb="1" offset="0" displayName="m_s_w" identifier="PARAMETER:Gain/m_s_w" />
+						</Variable>
+					</Calibration>
+					<Calibration name="ref1" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" origin="explicit_param" startIdx="1">
+						<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" blockAttribute="Gain" />
+						<Variable varid="varif_509" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_510" index1="1" initValue="0.0" lsb="1" offset="0" displayName="ref1(1)" identifier="PARAMETER:Atomic Subsystem/Model/Gain/ref1(1)" />
+							<ifName ifid="if_511" index1="2" initValue="0.0" lsb="1" offset="0" displayName="ref1(2)" identifier="PARAMETER:Atomic Subsystem/Model/Gain/ref1(2)" />
+						</Variable>
+					</Calibration>
+					<Calibration name="ref2" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" origin="explicit_param">
+						<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" blockAttribute="Gain" />
+						<Variable varid="varif_513" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_513" initValue="0.0" lsb="1" offset="0" displayName="ref2" identifier="PARAMETER:Atomic Subsystem/Model/Gain1/ref2" />
+						</Variable>
+					</Calibration>
+					<Calibration name="s_w" path="main/TopLevel/Subsystem/RefModel/Gain1" physicalPath="param/Gain1" origin="explicit_param">
+						<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Gain1" physicalPath="param/Gain1" blockAttribute="Gain" />
+						<Variable varid="varif_515" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_515" initValue="0.0" lsb="1" offset="0" displayName="s_w" identifier="PARAMETER:Gain1/s_w" />
+						</Variable>
+					</Calibration>
+					<Model name="param" modelPath="/E:/ModelsDev/SL/SameParamNamesInSLDDAndInWS/ml2019a/param.mdl" type="SimulinkModel" />
+					<Scope uid="28j" name="Atomic Subsystem" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="param/Atomic Subsystem" subsystemLogging="on">
+						<InPort name="In1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_517" signalType="double" isFloat="yes" tlTypeName="double">
+								<ifName ifid="if_517" initValue="0.0" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+							</Variable>
+						</InPort>
+						<OutPort name="Out1" portNumber="1" compositeSig="none">
+							<Variable varid="varif_519" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes" tlTypeName="double">
+								<ifName ifid="if_520" index1="1" initValue="0.0" lsb="1" offset="0" displayName="Out1(1)" identifier="OUTPUT:Out1(1)" />
+								<ifName ifid="if_521" index1="2" initValue="0.0" lsb="1" offset="0" displayName="Out1(2)" identifier="OUTPUT:Out1(2)" />
+							</Variable>
+						</OutPort>
+						<Display name="Gain" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" portNumber="1">
+							<Variable varid="varif_523" signalType="double" isFloat="yes" tlTypeName="double">
+								<ifName ifid="if_523" initValue="0.0" lsb="1" offset="0" displayName="Gain" identifier="LOCAL:Gain" />
+							</Variable>
+						</Display>
+						<Display name="Gain1" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" portNumber="1" startIdx="1">
+							<Variable varid="varif_525" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes" tlTypeName="double">
+								<ifName ifid="if_526" index1="1" initValue="0.0" lsb="1" offset="0" displayName="Gain1(1)" identifier="LOCAL:Gain1(1)" />
+								<ifName ifid="if_527" index1="2" initValue="0.0" lsb="1" offset="0" displayName="Gain1(2)" identifier="LOCAL:Gain1(2)" />
+							</Variable>
+						</Display>
+						<Calibration name="a" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" origin="explicit_param">
+							<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" blockAttribute="Gain" />
+							<Variable varid="varif_529" signalType="double" isFloat="yes" tlTypeName="double">
+								<ifName ifid="if_529" initValue="0.0" lsb="1" offset="0" displayName="a" identifier="PARAMETER:Gain/a" />
+							</Variable>
+						</Calibration>
+						<Calibration name="b" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" origin="explicit_param" startIdx="1">
+							<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" blockAttribute="Gain" />
+							<Variable varid="varif_531" width1="2" signalType="int16" signalDim="[1 2]" tlTypeName="int16">
+								<ifName ifid="if_532" index1="1" initValue="0" lsb="1" offset="0" displayName="b(1)" identifier="PARAMETER:Gain1/b(1)" />
+								<ifName ifid="if_533" index1="2" initValue="0" lsb="1" offset="0" displayName="b(2)" identifier="PARAMETER:Gain1/b(2)" />
+							</Variable>
+						</Calibration>
+						<Calibration name="m_s" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain2" physicalPath="param/Atomic Subsystem/Gain2" origin="explicit_param">
+							<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain2" physicalPath="param/Atomic Subsystem/Gain2" blockAttribute="Gain" />
+							<Variable varid="varif_535" signalType="double" isFloat="yes" tlTypeName="double">
+								<ifName ifid="if_535" initValue="0.0" lsb="1" offset="0" displayName="m_s" identifier="PARAMETER:Gain2/m_s" />
+							</Variable>
+						</Calibration>
+						<Calibration name="ref1" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" origin="explicit_param" startIdx="1">
+							<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" blockAttribute="Gain" />
+							<Variable varid="varif_537" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes" tlTypeName="double">
+								<ifName ifid="if_538" index1="1" initValue="0.0" lsb="1" offset="0" displayName="ref1(1)" identifier="PARAMETER:Model/Gain/ref1(1)" />
+								<ifName ifid="if_539" index1="2" initValue="0.0" lsb="1" offset="0" displayName="ref1(2)" identifier="PARAMETER:Model/Gain/ref1(2)" />
+							</Variable>
+						</Calibration>
+						<Calibration name="ref2" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" origin="explicit_param">
+							<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" blockAttribute="Gain" />
+							<Variable varid="varif_541" signalType="double" isFloat="yes" tlTypeName="double">
+								<ifName ifid="if_541" initValue="0.0" lsb="1" offset="0" displayName="ref2" identifier="PARAMETER:Model/Gain1/ref2" />
+							</Variable>
+						</Calibration>
+						<Model name="param" modelPath="/E:/ModelsDev/SL/SameParamNamesInSLDDAndInWS/ml2019a/param.mdl" type="SimulinkModel" />
+						<Scope uid="28k" name="Model" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ref" subsystemLogging="on">
+							<InPort name="In1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_543" signalType="double" isFloat="yes" tlTypeName="double">
+									<ifName ifid="if_543" initValue="0.0" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+								</Variable>
+							</InPort>
+							<InPort name="In2" portNumber="2" compositeSig="none">
+								<Variable varid="varif_545" signalType="double" isFloat="yes" tlTypeName="double">
+									<ifName ifid="if_545" initValue="0.0" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+								</Variable>
+							</InPort>
+							<OutPort name="Out1" portNumber="1" compositeSig="none">
+								<Variable varid="varif_547" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes" tlTypeName="double">
+									<ifName ifid="if_548" index1="1" initValue="0.0" lsb="1" offset="0" displayName="Out1(1)" identifier="OUTPUT:Out1(1)" />
+									<ifName ifid="if_549" index1="2" initValue="0.0" lsb="1" offset="0" displayName="Out1(2)" identifier="OUTPUT:Out1(2)" />
+								</Variable>
+							</OutPort>
+							<Calibration name="ref1" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" origin="explicit_param" startIdx="1">
+								<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" blockAttribute="Gain" />
+								<Variable varid="varif_551" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes" tlTypeName="double">
+									<ifName ifid="if_552" index1="1" initValue="0.0" lsb="1" offset="0" displayName="ref1(1)" identifier="PARAMETER:Gain/ref1(1)" />
+									<ifName ifid="if_553" index1="2" initValue="0.0" lsb="1" offset="0" displayName="ref1(2)" identifier="PARAMETER:Gain/ref1(2)" />
+								</Variable>
+							</Calibration>
+							<Calibration name="ref2" path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" origin="explicit_param">
+								<CalibrationUsage path="main/TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" blockAttribute="Gain" />
+								<Variable varid="varif_555" signalType="double" isFloat="yes" tlTypeName="double">
+									<ifName ifid="if_555" initValue="0.0" lsb="1" offset="0" displayName="ref2" identifier="PARAMETER:Gain1/ref2" />
+								</Variable>
+							</Calibration>
+							<Model name="ref" modelPath="/E:/ModelsDev/SL/SameParamNamesInSLDDAndInWS/ml2019a/ref.slx" type="SimulinkModel" />
+						</Scope>
+					</Scope>
+				</Scope>
+			</Scope>
+		</Scope>
+	</Scope>
+</ExtractionModel>

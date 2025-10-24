@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="bus_disp"/>
+    <Architecture id="id1" name="bus_disp [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A"/>
+      <Path refId="id1" path="top_A.c:1:top_A"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_In1_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa1_Out1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Const2(1)"/>
+        <Path refId="id1" path="Sa1_Const2_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Const3(1)"/>
+        <Path refId="id1" path="Sa1_Const3_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/In1(1)"/>
+        <Path refId="id1" path="Sa1_In1_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B1/Out1(1)"/>
+        <Path refId="id1" path="Sa2_Out1_bus_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B3/In1(1)"/>
+        <Path refId="id1" path="Sa4_d_bus_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B3/Out1(1)"/>
+        <Path refId="id1" path="Sa4_e.Sa4_c.Sa4_b_bus_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.c.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B1"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Sa2_sub_B1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa2_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa2_Out1_bus_valid"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B2"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Sa3_sub_B2"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa3_a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.c.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_Const4"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.c.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_In1_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa3_a_a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.c.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa1_Const4"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.c.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa1_In1_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B3"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Sa4_sub_B3"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_Const3_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.c.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa4_b"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.c.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa4_d_bus_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa1_Const3_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.c.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa4_e.Sa4_c.Sa4_b_bus_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.c.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa4_e.Sa4_d"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B3/In1(1)"/>
+        <Path refId="id1" path="Sa4_d_bus_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

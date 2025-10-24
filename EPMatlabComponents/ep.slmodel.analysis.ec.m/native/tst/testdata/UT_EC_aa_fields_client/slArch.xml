@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20241028T170845_18072\tmp_aa_fields_client\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20241028T170845_18072\tmp_aa_fields_client\init_Wrapper_mClient.m" modelVersion="1.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241028T170845_18072\tmp_aa_fields_client\Wrapper_mClient.slx" modelCreationDate="2024-10-29T10:53:29" creator="developer">
+  <toolInfo name="Matlab" release="(R2024b)" version="24.2" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2024b)" version="24.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241028T170845_18072\tmp_aa_fields_client\Wrapper_mClient.slx" creationDate="2024-10-29T10:53:29" modificationDate="2024-10-29T10:54:05" initScript="C:\Users\developer\AppData\Local\Temp\ut20241028T170845_18072\tmp_aa_fields_client\init_Wrapper_mClient.m">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_mClient" path="" sampleTime="0.2" name="Wrapper_mClient" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="client_aField_Update" physicalPath="Wrapper_mClient/client_aField_Update" path="client_aField_Update">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="SetterInMessage" physicalPath="Wrapper_mClient/SetterInMessage" path="SetterInMessage" isMessage="true">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="InPassMST" physicalPath="Wrapper_mClient/InPassMST" path="InPassMST" isMessage="true">
+        <double/>
+      </inport>
+      <inport portNumber="4" name="busIncompleteUpIn" physicalPath="Wrapper_mClient/busIncompleteUpIn" path="busIncompleteUpIn" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="secondBus">
+          <signal signalName="a">
+            <int16/>
+          </signal>
+          <signal signalName="b">
+            <int16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="5" name="busIncIn" physicalPath="Wrapper_mClient/busIncIn" path="busIncIn" isMessage="true">
+        <int16/>
+      </inport>
+      <inport portNumber="6" name="onlySubsysIn" physicalPath="Wrapper_mClient/onlySubsysIn" path="onlySubsysIn" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="a">
+            <int16/>
+          </signal>
+          <signal signalName="c">
+            <int16/>
+          </signal>
+          <signal signalName="x">
+            <int16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="7" name="onlyUpdateIn" physicalPath="Wrapper_mClient/onlyUpdateIn" path="onlyUpdateIn" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="secondBus">
+          <signal signalName="a">
+            <int16/>
+          </signal>
+          <signal signalName="b">
+            <int16/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="8" name="SecondPortIn" physicalPath="Wrapper_mClient/SecondPortIn" path="SecondPortIn" isMessage="true">
+        <double/>
+      </inport>
+      <inport portNumber="0" name="provPorts_injectorFunc_u_In" physicalPath="Wrapper_mClient/Client Function Mocks/call_provPorts_injectorFunc/provPorts_injectorFunc_u_In" path="Client Function Mocks/call_provPorts_injectorFunc/provPorts_injectorFunc_u_In" signalName="c_D5FA6">
+        <double/>
+        <dataStoreMemory signalName="c_D5FA6"/>
+      </inport>
+      <inport portNumber="0" name="client_aField_set_aFieldValue_Out" physicalPath="W_server_mock_mClient/Mock_client_client_aField_set/client_aField_set_aFieldValue_Out" path="W_server_mock_mClient/Mock_client_client_aField_set/client_aField_set_aFieldValue_Out" modelRef="model006" signalName="s_0E6B7">
+        <double/>
+        <dataStoreMemory signalName="s_0E6B7"/>
+      </inport>
+      <inport portNumber="0" name="client_onlyMethodF_get_c_Out" physicalPath="W_server_mock_mClient/Mock_client_client_onlyMethodF_get/client_onlyMethodF_get_c_Out" path="W_server_mock_mClient/Mock_client_client_onlyMethodF_get/client_onlyMethodF_get_c_Out" modelRef="model006" signalName="s_2DBEA">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="a">
+            <int16/>
+          </signal>
+          <signal signalName="c">
+            <int16/>
+          </signal>
+          <signal signalName="x">
+            <int16/>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="s_2DBEA"/>
+      </inport>
+      <inport portNumber="0" name="otherClient_nmsMethodField_set_val_Out" physicalPath="W_server_mock_mClient/Mock_otherProxy_otherClient_nmsMethodField_set/otherClient_nmsMethodField_set_val_Out" path="W_server_mock_mClient/Mock_otherProxy_otherClient_nmsMethodField_set/otherClient_nmsMethodField_set_val_Out" modelRef="model006" signalName="s_57243">
+        <int16/>
+        <dataStoreMemory signalName="s_57243"/>
+      </inport>
+      <inport portNumber="0" name="client_busIncomplete_get_a_Out" physicalPath="W_server_mock_mClient/Mock_client_client_busIncomplete_get/client_busIncomplete_get_a_Out" path="W_server_mock_mClient/Mock_client_client_busIncomplete_get/client_busIncomplete_get_a_Out" modelRef="model006" signalName="s_62BA7">
+        <bus busType="non_virtual" busObjectName="secondBus">
+          <signal signalName="a">
+            <int16/>
+          </signal>
+          <signal signalName="b">
+            <int16/>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="s_62BA7"/>
+      </inport>
+      <inport portNumber="0" name="client_onlyMethodF_set_a_Out" physicalPath="W_server_mock_mClient/Mock_client_client_onlyMethodF_set/client_onlyMethodF_set_a_Out" path="W_server_mock_mClient/Mock_client_client_onlyMethodF_set/client_onlyMethodF_set_a_Out" modelRef="model006" signalName="s_7129F">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="a">
+            <int16/>
+          </signal>
+          <signal signalName="c">
+            <int16/>
+          </signal>
+          <signal signalName="x">
+            <int16/>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="s_7129F"/>
+      </inport>
+      <inport portNumber="0" name="client_aField_get_aFieldValue_Out" physicalPath="W_server_mock_mClient/Mock_client_client_aField_get/client_aField_get_aFieldValue_Out" path="W_server_mock_mClient/Mock_client_client_aField_get/client_aField_get_aFieldValue_Out" modelRef="model006" signalName="s_94B0B">
+        <double/>
+        <dataStoreMemory signalName="s_94B0B"/>
+      </inport>
+      <inport portNumber="0" name="otherClient_nmsMethodField_get_val_Out" physicalPath="W_server_mock_mClient/Mock_otherProxy_otherClient_nmsMethodField_get/otherClient_nmsMethodField_get_val_Out" path="W_server_mock_mClient/Mock_otherProxy_otherClient_nmsMethodField_get/otherClient_nmsMethodField_get_val_Out" modelRef="model006" signalName="s_DF603">
+        <int16/>
+        <dataStoreMemory signalName="s_DF603"/>
+      </inport>
+      <outport portNumber="1" name="SetterOutMessage" physicalPath="Wrapper_mClient/SetterOutMessage" path="SetterOutMessage" isMessage="true">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="GetterOutMessage" physicalPath="Wrapper_mClient/GetterOutMessage" path="GetterOutMessage" isMessage="true">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="MSTValueOut" physicalPath="Wrapper_mClient/MSTValueOut" path="MSTValueOut" isMessage="true">
+        <double/>
+      </outport>
+      <outport portNumber="4" name="PassTriggerSumOut" physicalPath="Wrapper_mClient/PassTriggerSumOut" path="PassTriggerSumOut" isMessage="true">
+        <double/>
+      </outport>
+      <outport portNumber="5" name="GetSetSumOut" physicalPath="Wrapper_mClient/GetSetSumOut" path="GetSetSumOut" isMessage="true">
+        <double/>
+      </outport>
+      <outport portNumber="6" name="busImcompleteMSTOut1" physicalPath="Wrapper_mClient/busImcompleteMSTOut1" path="busImcompleteMSTOut1" isMessage="true">
+        <int16/>
+      </outport>
+      <outport portNumber="7" name="busImcompleteMSTOut2" physicalPath="Wrapper_mClient/busImcompleteMSTOut2" path="busImcompleteMSTOut2" isMessage="true">
+        <int16/>
+      </outport>
+      <outport portNumber="8" name="onlyUpdateMSTOut1" physicalPath="Wrapper_mClient/onlyUpdateMSTOut1" path="onlyUpdateMSTOut1" isMessage="true">
+        <int16/>
+      </outport>
+      <outport portNumber="9" name="onlyUpdateMSTOut2" physicalPath="Wrapper_mClient/onlyUpdateMSTOut2" path="onlyUpdateMSTOut2" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="a">
+            <int16/>
+          </signal>
+          <signal signalName="c">
+            <int16/>
+          </signal>
+          <signal signalName="x">
+            <int16/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="10" name="onlyUpdateMSTOut3" physicalPath="Wrapper_mClient/onlyUpdateMSTOut3" path="onlyUpdateMSTOut3" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="a">
+            <int16/>
+          </signal>
+          <signal signalName="c">
+            <int16/>
+          </signal>
+          <signal signalName="x">
+            <int16/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="11" name="SecondPortOut" physicalPath="Wrapper_mClient/SecondPortOut" path="SecondPortOut" isMessage="true">
+        <int16/>
+      </outport>
+      <outport portNumber="0" name="provPorts_outputFunc_y_Out" physicalPath="Wrapper_mClient/Client Function Mocks/call_provPorts_outputFunc/provPorts_outputFunc_y_Out" path="Client Function Mocks/call_provPorts_outputFunc/provPorts_outputFunc_y_Out" signalName="c_207B5">
+        <double/>
+        <dataStoreMemory signalName="c_207B5"/>
+      </outport>
+      <outport portNumber="0" name="client_aField_set_newValue_In" physicalPath="W_server_mock_mClient/Mock_client_client_aField_set/client_aField_set_newValue_In" path="W_server_mock_mClient/Mock_client_client_aField_set/client_aField_set_newValue_In" modelRef="model006" signalName="s_29C1C">
+        <double/>
+        <dataStoreMemory signalName="s_29C1C"/>
+      </outport>
+      <outport portNumber="0" name="client_onlyMethodF_set_newValue_In" physicalPath="W_server_mock_mClient/Mock_client_client_onlyMethodF_set/client_onlyMethodF_set_newValue_In" path="W_server_mock_mClient/Mock_client_client_onlyMethodF_set/client_onlyMethodF_set_newValue_In" modelRef="model006" signalName="s_5642F">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="a">
+            <int16/>
+          </signal>
+          <signal signalName="c">
+            <int16/>
+          </signal>
+          <signal signalName="x">
+            <int16/>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="s_5642F"/>
+      </outport>
+      <outport portNumber="0" name="otherClient_nmsMethodField_set_input_In" physicalPath="W_server_mock_mClient/Mock_otherProxy_otherClient_nmsMethodField_set/otherClient_nmsMethodField_set_input_In" path="W_server_mock_mClient/Mock_otherProxy_otherClient_nmsMethodField_set/otherClient_nmsMethodField_set_input_In" modelRef="model006" signalName="s_7B6C0">
+        <int16/>
+        <dataStoreMemory signalName="s_7B6C0"/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241028T170845_18072\tmp_aa_fields_client\W_client_mClient.slx" creationDate="2024-10-29T10:53:39" modificationDate="2024-10-29T10:53:40" initScript="C:\Users\developer\AppData\Local\Temp\ut20241028T170845_18072\tmp_aa_fields_client\init_Wrapper_mClient.m"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241028T170845_18072\tmp_aa_fields_client\W_server_mClient.slx" creationDate="2024-10-29T10:53:38" modificationDate="2024-10-29T10:53:39" initScript="C:\Users\developer\AppData\Local\Temp\ut20241028T170845_18072\tmp_aa_fields_client\init_Wrapper_mClient.m"/>
+  <model modelID="model004" modelKind="model_ref" modelVersion="1.7" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241028T170845_18072\tmp_aa_fields_client\mClient.slx" creationDate="2024-10-29T09:00:56" modificationDate="2024-10-29T09:28:58" initScript="C:\Users\developer\AppData\Local\Temp\ut20241028T170845_18072\tmp_aa_fields_client\init_Wrapper_mClient.m"/>
+  <model modelID="model005" modelKind="model_ref" modelVersion="1.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241028T170845_18072\tmp_aa_fields_client\W_integ_mClient.slx" creationDate="2024-10-29T10:53:37" modificationDate="2024-10-29T10:53:42" initScript="C:\Users\developer\AppData\Local\Temp\ut20241028T170845_18072\tmp_aa_fields_client\init_Wrapper_mClient.m"/>
+  <model modelID="model006" modelKind="model_ref" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241028T170845_18072\tmp_aa_fields_client\W_server_mock_mClient.slx" creationDate="2024-10-29T10:53:32" modificationDate="2024-10-29T10:53:36" initScript="C:\Users\developer\AppData\Local\Temp\ut20241028T170845_18072\tmp_aa_fields_client\init_Wrapper_mClient.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

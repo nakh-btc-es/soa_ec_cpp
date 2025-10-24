@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="atomic"/>
+    <Architecture id="id1" name="atomic [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="atomic.c:1:atomic_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="In_Main" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="Out_Main" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="TopLevel_Main/InnerSubsystemNoAtomic/Gain(1)" refId="id0"/>
+        <Path path="In_InnerSubsystemFctFound" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="paramMain" refId="id0"/>
+        <Path path="paramMain" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="paramSub" refId="id0"/>
+        <Path path="paramSub" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="TopLevel_Main/InnerSubsystemNoAtomic/InnerSubsystemFctFound" refId="id0"/>
+      <Path path="atomic.c:1:atomic_step/sub.c:1:sub" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="TopLevel_Main/InnerSubsystemNoAtomic/InnerSubsystemFctFound/In1" refId="id0"/>
+        <Path path="In_InnerSubsystemFctFound" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="TopLevel_Main/InnerSubsystemNoAtomic/InnerSubsystemFctFound/Out1" refId="id0"/>
+        <Path path="Out_InnerSubsystemFctFound" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="paramSub" refId="id0"/>
+        <Path path="paramSub" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

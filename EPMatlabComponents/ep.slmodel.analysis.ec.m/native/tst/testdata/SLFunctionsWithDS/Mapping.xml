@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="sl_func_ds"/>
+    <Architecture id="id1" name="sl_func_ds [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="sl_func_ds.c:1:sl_func_ds_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="sig_in1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In2" refId="id0"/>
+        <Path path="sig_in2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="myFunction/readB" refId="id0"/>
+        <Path path="store_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_M/sub_V1/sub_C/getC_block/readC" refId="id0"/>
+        <Path path="store_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="myFunction2/readE" refId="id0"/>
+        <Path path="store_E" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="sig_out" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out2" refId="id0"/>
+        <Path path="sig_out2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out3" refId="id0"/>
+        <Path path="sig_XXX" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="myFunction/writeA" refId="id0"/>
+        <Path path="store_A" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_M/setD_block/writeD" refId="id0"/>
+        <Path path="store_D" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_M/sub_V2/sub_D/RelOpD(1)" refId="id0"/>
+        <Path path="compare_sigs" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_M/sub_V1/sub_C/sub_sub_C2/readC_directly(1)" refId="id0"/>
+        <Path path="direct_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_M/sub_V1/sub_C/getC_in_same_context(1)" refId="id0"/>
+        <Path path="read_fromC" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_A/myCaller(1)" refId="id0"/>
+        <Path path="sig_X" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_M/sub_V1/sub_B/myCaller(1)" refId="id0"/>
+        <Path path="sig_XX" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ParamA" refId="id0"/>
+        <Path path="ParamA" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_A" refId="id0"/>
+      <Path path="sl_func_ds.c:1:sl_func_ds_step/sl_func_ds.c:1:func_A" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_A/In1" refId="id0"/>
+        <Path path="sig_in2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="myFunction/readB" refId="id0"/>
+        <Path path="store_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_A/Out1" refId="id0"/>
+        <Path path="sig_X" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="myFunction/writeA" refId="id0"/>
+        <Path path="store_A" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_A/myCaller(1)" refId="id0"/>
+        <Path path="sig_X" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_M" refId="id0"/>
+      <Path path="sl_func_ds.c:1:sl_func_ds_step/sub_model_01.c:1:sub_model_01" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_M/In1" refId="id0"/>
+        <Path path="var_in1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_M/In2" refId="id0"/>
+        <Path path="var_in2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="myFunction/readB" refId="id0"/>
+        <Path path="store_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_M/sub_V1/sub_C/getC_block/readC" refId="id0"/>
+        <Path path="store_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_M/Out1" refId="id0"/>
+        <Path path="var_out" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="myFunction/writeA" refId="id0"/>
+        <Path path="store_A" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_M/setD_block/writeD" refId="id0"/>
+        <Path path="store_D" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_M/sub_V2/sub_D/RelOpD(1)" refId="id0"/>
+        <Path path="compare_sigs" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_M/sub_V1/sub_C/sub_sub_C2/readC_directly(1)" refId="id0"/>
+        <Path path="direct_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_M/sub_V1/sub_C/getC_in_same_context(1)" refId="id0"/>
+        <Path path="read_fromC" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_M/sub_V1/sub_B/myCaller(1)" refId="id0"/>
+        <Path path="sig_XX" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_M/sub_V1/sub_B" refId="id0"/>
+      <Path path="sl_func_ds.c:1:sl_func_ds_step/sub_model_01.c:1:sub_model_01/sub_model_01.c:1:func_B" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_M/sub_V1/sub_B/In1" refId="id0"/>
+        <Path path="var_in2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="myFunction/readB" refId="id0"/>
+        <Path path="store_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_M/sub_V1/sub_B/Out1" refId="id0"/>
+        <Path path="sig_XX" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="myFunction/writeA" refId="id0"/>
+        <Path path="store_A" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_M/sub_V1/sub_B/myCaller(1)" refId="id0"/>
+        <Path path="sig_XX" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_M/sub_V1/sub_C" refId="id0"/>
+      <Path path="sl_func_ds.c:1:sl_func_ds_step/sub_model_01.c:1:sub_model_01/sub_model_01.c:1:func_C" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_M/sub_V1/sub_C/getC_block/readC" refId="id0"/>
+        <Path path="store_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_M/sub_V1/sub_C/Out1" refId="id0"/>
+        <Path path="read_fromC" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_M/sub_V1/sub_C/Out2" refId="id0"/>
+        <Path path="sum_c" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_M/sub_V1/sub_C/sub_sub_C2/readC_directly(1)" refId="id0"/>
+        <Path path="direct_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_M/sub_V1/sub_C/getC_in_same_context(1)" refId="id0"/>
+        <Path path="read_fromC" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_M/sub_V1/sub_C/sub_sub_C" refId="id0"/>
+      <Path path="sl_func_ds.c:1:sl_func_ds_step/sub_model_01.c:1:sub_model_01/sub_model_01.c:1:func_C/sub_model_01.c:1:func_func_c" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_M/sub_V1/sub_C/getC_block/readC" refId="id0"/>
+        <Path path="store_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_M/sub_V1/sub_C/sub_sub_C/Out2" refId="id0"/>
+        <Path path="sig_inner_fromC" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_M/sub_V1/sub_C/sub_sub_C2" refId="id0"/>
+      <Path path="sl_func_ds.c:1:sl_func_ds_step/sub_model_01.c:1:sub_model_01/sub_model_01.c:1:func_C/sub_model_01.c:1:func_func_c2" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_M/sub_V1/sub_C/getC_block/readC" refId="id0"/>
+        <Path path="store_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_M/sub_V1/sub_C/sub_sub_C2/Out2" refId="id0"/>
+        <Path path="c_plus_c" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_M/sub_V1/sub_C/sub_sub_C2/readC_directly(1)" refId="id0"/>
+        <Path path="direct_C" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_M/sub_V2/sub_D" refId="id0"/>
+      <Path path="sl_func_ds.c:1:sl_func_ds_step/sub_model_01.c:1:sub_model_01/sub_model_01.c:1:func_D" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_M/sub_V2/sub_D/In1" refId="id0"/>
+        <Path path="read_fromC" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_M/sub_V2/sub_D/In2" refId="id0"/>
+        <Path path="sum_c" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_M/setD_block/writeD" refId="id0"/>
+        <Path path="store_D" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="sub_M/sub_V2/sub_D/RelOpD(1)" refId="id0"/>
+        <Path path="compare_sigs" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

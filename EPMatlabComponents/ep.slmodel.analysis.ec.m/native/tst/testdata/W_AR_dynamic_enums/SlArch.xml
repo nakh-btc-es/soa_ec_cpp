@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20201223T153633_9952\tmp_ut_w_dynamic_enums\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20201223T153633_9952\tmp_ut_w_dynamic_enums\init_Wrapper_dynamic_enums.m" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20201223T153633_9952\tmp_ut_w_dynamic_enums\Wrapper_dynamic_enums.slx" modelCreationDate="2020-12-23T15:36:43" creator="developer">
+  <toolInfo name="Matlab" release="(R2019b)" version="9.7" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2019b)" version="10.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20201223T153633_9952\tmp_ut_w_dynamic_enums\Wrapper_dynamic_enums.slx" creationDate="2020-12-23T15:36:43" modificationDate="2020-12-23T15:36:47" initScript="C:\Users\developer\AppData\Local\Temp\ut20201223T153633_9952\tmp_ut_w_dynamic_enums\init_Wrapper_dynamic_enums.m">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_dynamic_enums" path="" sampleTime="0.01" name="Wrapper_dynamic_enums" scopeKind="SUT" kind="subsystem">
+      <outport portNumber="1" name="P_StCntctDcvRly_StCntctDcvRly" physicalPath="Wrapper_dynamic_enums/P_StCntctDcvRly_StCntctDcvRly" path="P_StCntctDcvRly_StCntctDcvRly">
+        <enumType name="TxtStCntctDcvRly3">
+          <enumElement name="CNTCT_INI" value="0"/>
+          <enumElement name="CNTCT_OFF" value="1"/>
+          <enumElement name="DCV_CNTCT_NEG_ON" value="2"/>
+          <enumElement name="DCV_CNTCT_POS_ON" value="3"/>
+          <enumElement name="DCV_OPEN_REQ" value="4"/>
+          <enumElement name="WCH_CNTCT_POS_ON" value="5"/>
+          <enumElement name="WCH_CNTCT_NEG_ON" value="6"/>
+          <enumElement name="WCH_OPEN_REQ" value="7"/>
+          <enumElement name="CNTCT_ERR" value="255"/>
+        </enumType>
+      </outport>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="dynamic_enums/dynamic_enums_sys" path="dynamic_enums/dynamic_enums/dynamic_enums_sys" sampleTime="0.01" name="dynamic_enums_sys" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <outport portNumber="1" name="P_StCntctDcvRly_StCntctDcvRly_write" physicalPath="dynamic_enums/dynamic_enums_sys/P_StCntctDcvRly_StCntctDcvRly_write" path="dynamic_enums/dynamic_enums/dynamic_enums_sys/P_StCntctDcvRly_StCntctDcvRly_write" modelRef="model002">
+        <enumType name="TxtStCntctDcvRly3">
+          <enumElement name="CNTCT_INI" value="0"/>
+          <enumElement name="CNTCT_OFF" value="1"/>
+          <enumElement name="DCV_CNTCT_NEG_ON" value="2"/>
+          <enumElement name="DCV_CNTCT_POS_ON" value="3"/>
+          <enumElement name="DCV_OPEN_REQ" value="4"/>
+          <enumElement name="WCH_CNTCT_POS_ON" value="5"/>
+          <enumElement name="WCH_CNTCT_NEG_ON" value="6"/>
+          <enumElement name="WCH_OPEN_REQ" value="7"/>
+          <enumElement name="CNTCT_ERR" value="255"/>
+        </enumType>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.67" modelPath="C:\Users\developer\AppData\Local\Temp\ut20201223T153633_9952\tmp_ut_w_dynamic_enums\dynamic_enums.slx" creationDate="2020-07-27T14:55:40" modificationDate="2020-12-23T15:33:05" initScript="C:\Users\developer\AppData\Local\Temp\ut20201223T153633_9952\tmp_ut_w_dynamic_enums\init_Wrapper_dynamic_enums.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

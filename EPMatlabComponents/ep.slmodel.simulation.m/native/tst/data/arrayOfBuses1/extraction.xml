@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="29g">
+	<Scope uid="29g" name="Subsystem" path="aob_model/Subsystem" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="aob_model/Subsystem" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="LowBus">
+			<Variable varid="varif_554" signalName="a1.b" signalType="boolean" tlTypeName="boolean">
+				<ifName ifid="if_554" initValue="0" lsb="1" offset="0" displayName="In1.a1.b" identifier="INPUT:In1.a1.b" />
+			</Variable>
+			<Variable varid="varif_555" signalName="a1.a" width1="2" signalType="uint8" signalDim="[1 2]" tlTypeName="uint8">
+				<ifName ifid="if_556" index1="1" initValue="0" lsb="1" offset="0" displayName="In1.a1.a(1)" identifier="INPUT:In1.a1.a(1)" />
+				<ifName ifid="if_557" index1="2" initValue="0" lsb="1" offset="0" displayName="In1.a1.a(2)" identifier="INPUT:In1.a1.a(2)" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="bus" busType="NON_VIRTUAL" busObj="LowBus">
+			<Variable varid="varif_563" signalName="a2.b" signalType="boolean" tlTypeName="boolean">
+				<ifName ifid="if_563" initValue="0" lsb="1" offset="0" displayName="In2.a2.b" identifier="INPUT:In2.a2.b" />
+			</Variable>
+			<Variable varid="varif_564" signalName="a2.a" width1="2" signalType="uint8" signalDim="[1 2]" tlTypeName="uint8">
+				<ifName ifid="if_565" index1="1" initValue="0" lsb="1" offset="0" displayName="In2.a2.a(1)" identifier="INPUT:In2.a2.a(1)" />
+				<ifName ifid="if_566" index1="2" initValue="0" lsb="1" offset="0" displayName="In2.a2.a(2)" identifier="INPUT:In2.a2.a(2)" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="LowBus">
+			<Variable varid="varif_572" signalName="a3" width1="2" width2="2" signalDim="[2 2 2]" isFloat="yes">
+				<ifName ifid="if_575" index1="1" initValue="0" lsb="1" offset="0" displayName="Out1.a3(1).b" identifier="OUTPUT:Out1.a3(1).b" />
+				<ifName ifid="if_577" index1="1" index2="1" initValue="0" lsb="1" offset="0" displayName="Out1.a3(1).a(1)" identifier="OUTPUT:Out1.a3(1).a(1)" />
+				<ifName ifid="if_578" index1="1" index2="2" initValue="0" lsb="1" offset="0" displayName="Out1.a3(1).a(2)" identifier="OUTPUT:Out1.a3(1).a(2)" />
+				<ifName ifid="if_579" index1="2" initValue="0" lsb="1" offset="0" displayName="Out1.a3(2).b" identifier="OUTPUT:Out1.a3(2).b" />
+				<ifName ifid="if_581" index1="2" index2="1" initValue="0" lsb="1" offset="0" displayName="Out1.a3(2).a(1)" identifier="OUTPUT:Out1.a3(2).a(1)" />
+				<ifName ifid="if_582" index1="2" index2="2" initValue="0" lsb="1" offset="0" displayName="Out1.a3(2).a(2)" identifier="OUTPUT:Out1.a3(2).a(2)" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="bus" busType="NON_VIRTUAL" busObj="LowBus">
+			<Variable varid="varif_589" signalName="a4" width1="2" width2="1" signalDim="[2 2 1]" isFloat="yes">
+				<ifName ifid="if_593" index1="1" index2="1" initValue="0" lsb="1" offset="0" displayName="Out2.a4(1)(1).b" identifier="OUTPUT:Out2.a4(1)(1).b" />
+				<ifName ifid="if_595" index1="1" index2="1" initValue="0" lsb="1" offset="0" displayName="Out2.a4(1)(1).a(1)" identifier="OUTPUT:Out2.a4(1)(1).a(1)" />
+				<ifName ifid="if_596" index1="1" index2="1" initValue="0" lsb="1" offset="0" displayName="Out2.a4(1)(1).a(2)" identifier="OUTPUT:Out2.a4(1)(1).a(2)" />
+				<ifName ifid="if_598" index1="2" index2="1" initValue="0" lsb="1" offset="0" displayName="Out2.a4(2)(1).b" identifier="OUTPUT:Out2.a4(2)(1).b" />
+				<ifName ifid="if_600" index1="2" index2="1" initValue="0" lsb="1" offset="0" displayName="Out2.a4(2)(1).a(1)" identifier="OUTPUT:Out2.a4(2)(1).a(1)" />
+				<ifName ifid="if_601" index1="2" index2="1" initValue="0" lsb="1" offset="0" displayName="Out2.a4(2)(1).a(2)" identifier="OUTPUT:Out2.a4(2)(1).a(2)" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out3" portNumber="3" compositeSig="bus" busType="NON_VIRTUAL" busObj="LowBus">
+			<Variable varid="varif_608" signalName="a5" width1="1" width2="2" signalDim="[2 1 2]" isFloat="yes">
+				<ifName ifid="if_612" index1="1" index2="1" initValue="0" lsb="1" offset="0" displayName="Out3.a5(1)(1).b" identifier="OUTPUT:Out3.a5(1)(1).b" />
+				<ifName ifid="if_614" index1="1" index2="1" initValue="0" lsb="1" offset="0" displayName="Out3.a5(1)(1).a(1)" identifier="OUTPUT:Out3.a5(1)(1).a(1)" />
+				<ifName ifid="if_615" index1="1" index2="1" initValue="0" lsb="1" offset="0" displayName="Out3.a5(1)(1).a(2)" identifier="OUTPUT:Out3.a5(1)(1).a(2)" />
+				<ifName ifid="if_616" index1="1" index2="2" initValue="0" lsb="1" offset="0" displayName="Out3.a5(1)(2).b" identifier="OUTPUT:Out3.a5(1)(2).b" />
+				<ifName ifid="if_618" index1="1" index2="2" initValue="0" lsb="1" offset="0" displayName="Out3.a5(1)(2).a(1)" identifier="OUTPUT:Out3.a5(1)(2).a(1)" />
+				<ifName ifid="if_619" index1="1" index2="2" initValue="0" lsb="1" offset="0" displayName="Out3.a5(1)(2).a(2)" identifier="OUTPUT:Out3.a5(1)(2).a(2)" />
+			</Variable>
+		</OutPort>
+		<Model name="aob_model" modelPath="/E:/ModelsDev/UT_MIL_SL/array_of_buses/ml2015asp1/aob_model.slx" type="SimulinkModel" />
+	</Scope>
+</ExtractionModel>

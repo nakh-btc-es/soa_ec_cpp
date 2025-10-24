@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_sf_array_of_buses\init_model.m" modelVersion="1.22" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_sf_array_of_buses\sf_aob_model.slx" modelCreationDate="2020-09-14T13:11:58" creator="developer">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.22" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_sf_array_of_buses\sf_aob_model.slx" creationDate="2020-09-14T13:11:58" modificationDate="2020-09-14T15:50:02" initScript="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_sf_array_of_buses\init_model.m">
+    <subsystem subsysID="ss1" physicalPath="sf_aob_model" path="" sampleTime="0.1" name="sf_aob_model" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="u" physicalPath="sf_aob_model/u" path="u" signalName="in1">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="LowBus">
+            <signal signalName="a">
+              <array size="3" startIndex="1">
+                <uint8 max="10"/>
+              </array>
+            </signal>
+            <signal signalName="b">
+              <boolean/>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sf_aob_model/Out1" path="Out1" signalName="out1">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="LowBus">
+            <signal signalName="a">
+              <array size="3" startIndex="1">
+                <uint8 max="10"/>
+              </array>
+            </signal>
+            <signal signalName="b">
+              <boolean/>
+            </signal>
+          </bus>
+        </array>
+      </outport>
+      <outport portNumber="2" name="y" physicalPath="sf_aob_model/y" path="y" signalName="out1">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="Out2" physicalPath="sf_aob_model/Out2" path="Out2" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="LowBus">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <uint8 max="10"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </outport>
+      <display physicalPath="sf_aob_model/chart3" path="chart3" name="x" stateflowVariable="x" signalName="x">
+        <boolean/>
+      </display>
+      <display physicalPath="sf_aob_model/sub_B1/chart2" path="sub_B1/chart2" name="x" stateflowVariable="x" signalName="x">
+        <bus busType="non_virtual" busObjectName="LowBus">
+          <signal signalName="a">
+            <array size="3" startIndex="0">
+              <uint8 max="10"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="sf_aob_model/chart3" path="chart3" sampleTime="0.1" name="chart3" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="u" physicalPath="sf_aob_model/chart3/u" path="chart3/u" signalName="b">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="y" physicalPath="sf_aob_model/chart3/y" path="chart3/y" signalName="y">
+        <boolean/>
+      </outport>
+      <display physicalPath="sf_aob_model/chart3" path="chart3" name="x" stateflowVariable="x" signalName="x">
+        <boolean/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="sf_aob_model/sub_B1" path="sub_B1" sampleTime="0.1" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="sf_aob_model/sub_B1/in1" path="sub_B1/in1" signalName="in1">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="LowBus">
+            <signal signalName="a">
+              <array size="3" startIndex="1">
+                <uint8 max="10"/>
+              </array>
+            </signal>
+            <signal signalName="b">
+              <boolean/>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="sf_aob_model/sub_B1/out1" path="sub_B1/out1" signalName="out1">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="LowBus">
+            <signal signalName="a">
+              <array size="3" startIndex="1">
+                <uint8 max="10"/>
+              </array>
+            </signal>
+            <signal signalName="b">
+              <boolean/>
+            </signal>
+          </bus>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="sf_aob_model/sub_B1/Out2" path="sub_B1/Out2" signalName="out1">
+        <bus busType="non_virtual" busObjectName="LowBus">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <uint8 max="10"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="sf_aob_model/sub_B1/Out3" path="sub_B1/Out3" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="LowBus">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <uint8 max="10"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </outport>
+      <display physicalPath="sf_aob_model/sub_B1/chart2" path="sub_B1/chart2" name="x" stateflowVariable="x" signalName="x">
+        <bus busType="non_virtual" busObjectName="LowBus">
+          <signal signalName="a">
+            <array size="3" startIndex="0">
+              <uint8 max="10"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </display>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="sf_aob_model/sub_B1/chart1" path="sub_B1/chart1" sampleTime="0.1" name="chart1" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="u" physicalPath="sf_aob_model/sub_B1/chart1/u" path="sub_B1/chart1/u" signalName="in1">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="LowBus">
+            <signal signalName="a">
+              <array size="3" startIndex="1">
+                <uint8 max="10"/>
+              </array>
+            </signal>
+            <signal signalName="b">
+              <boolean/>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <outport portNumber="1" name="y" physicalPath="sf_aob_model/sub_B1/chart1/y" path="sub_B1/chart1/y" signalName="y">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="LowBus">
+            <signal signalName="a">
+              <array size="3" startIndex="1">
+                <uint8 max="10"/>
+              </array>
+            </signal>
+            <signal signalName="b">
+              <boolean/>
+            </signal>
+          </bus>
+        </array>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="sf_aob_model/sub_B1/chart2" path="sub_B1/chart2" sampleTime="0.1" name="chart2" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="u" physicalPath="sf_aob_model/sub_B1/chart2/u" path="sub_B1/chart2/u" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="LowBus">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <uint8 max="10"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="y" physicalPath="sf_aob_model/sub_B1/chart2/y" path="sub_B1/chart2/y" signalName="y">
+        <bus busType="non_virtual" busObjectName="LowBus">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <uint8 max="10"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </outport>
+      <display physicalPath="sf_aob_model/sub_B1/chart2" path="sub_B1/chart2" name="x" stateflowVariable="x" signalName="x">
+        <bus busType="non_virtual" busObjectName="LowBus">
+          <signal signalName="a">
+            <array size="3" startIndex="0">
+              <uint8 max="10"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_model_workspace_params_02\init.m" modelVersion="1.14" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_model_workspace_params_02\mw_param.slx" modelCreationDate="2021-09-10T15:30:23" creator="developer">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.14" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_model_workspace_params_02\mw_param.slx" creationDate="2021-09-10T15:30:23" modificationDate="2022-03-29T14:59:09" initScript="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_model_workspace_params_02\init.m">
+    <subsystem subsysID="ss1" physicalPath="mw_param" path="" sampleTime="0.2" name="mw_param" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="mw_param/In1" path="In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="mw_param/In2" path="In2">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="mw_param/In3" path="In3">
+        <double/>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="mw_param/In4" path="In4">
+        <double/>
+      </inport>
+      <inport portNumber="5" name="In5" physicalPath="mw_param/In5" path="In5">
+        <double/>
+      </inport>
+      <parameter name="myBaseParam" path="Model/Gain2" physicalPath="refA/Gain2" modelRef="model002" origin="explicit_param" workspace="myBaseParam" initValue="4.2000000000000000e+01">
+        <double/>
+        <usageContext path="Model/Gain2" physicalPath="refA/Gain2" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="mw_param/Out1" path="Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="mw_param/Out2" path="Out2">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="mw_param/Out3" path="Out3">
+        <double/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="mw_param/Out4" path="Out4">
+        <double/>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="mw_param/Out5" path="Out5">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="refA" path="Model" sampleTime="0.2" name="Model" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="refA/In1" path="Model/In1" modelRef="model002">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="refA/In2" path="Model/In2" modelRef="model002">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="refA/In3" path="Model/In3" modelRef="model002">
+        <double/>
+      </inport>
+      <parameter name="myBaseParam" path="Model/Gain2" physicalPath="refA/Gain2" modelRef="model002" origin="explicit_param" workspace="myBaseParam" initValue="4.2000000000000000e+01">
+        <double/>
+        <usageContext path="Model/Gain2" physicalPath="refA/Gain2" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="refA/Out1" path="Model/Out1" modelRef="model002">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="refA/Out2" path="Model/Out2" modelRef="model002">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="refA/Out3" path="Model/Out3" modelRef="model002">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="refB" path="Model1" sampleTime="0.2" name="Model1" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="In1" physicalPath="refB/In1" path="Model1/In1" modelRef="model003">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="refB/Out1" path="Model1/Out1" modelRef="model003">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="refC" path="Model2" sampleTime="0.2" name="Model2" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="In1" physicalPath="refC/In1" path="Model2/In1" modelRef="model004">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="refC/Out1" path="Model2/Out1" modelRef="model004">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.11" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_model_workspace_params_02\refA.slx" creationDate="2022-03-04T14:15:50" modificationDate="2022-03-29T14:59:09" initScript="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_model_workspace_params_02\init.m"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="1.6" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_model_workspace_params_02\refB.slx" creationDate="2022-03-04T14:15:50" modificationDate="2022-03-29T14:59:09" initScript="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_model_workspace_params_02\init.m"/>
+  <model modelID="model004" modelKind="model_ref" modelVersion="1.6" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_model_workspace_params_02\refC.slx" creationDate="2022-03-04T14:15:50" modificationDate="2022-03-29T14:59:09" initScript="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_model_workspace_params_02\init.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

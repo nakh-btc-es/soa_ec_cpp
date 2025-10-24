@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aa-component name="aa_methods_multi_args" aa_version="R21-11" model_name="aa_methods_busses" matlab_version="R2023b">
+  <types>
+    <type typeId="t2" name="myBus1" kind="non-primitive" category="structure"/>
+    <type typeId="t1" name="rt_Array_myBus2_2" kind="non-primitive"/>
+    <type typeId="t3" name="rt_Array_myBus2_3" kind="non-primitive"/>
+  </types>
+  <interfaces>
+    <interface name="ports">
+      <events>
+        <event eventId="ev1" name="In_Event" typeRef="t1"/>
+        <event eventId="ev2" name="Out_Event" typeRef="t1"/>
+      </events>
+    </interface>
+    <interface name="c">
+      <events>
+        <event eventId="ev3" name="Event1"/>
+      </events>
+      <methods>
+        <method methodId="met1" name="myFirstCall">
+          <in name="u" typeRef="t2"/>
+          <out name="y" typeRef="t2"/>
+        </method>
+        <method methodId="met2" name="mySecondCall">
+          <in name="u" typeRef="t1"/>
+          <out name="y" typeRef="t1"/>
+        </method>
+      </methods>
+    </interface>
+    <interface name="s">
+      <methods>
+        <method methodId="met3" name="myFirstFunction">
+          <out name="y" typeRef="t2"/>
+          <in name="u" typeRef="t2"/>
+        </method>
+        <method methodId="met4" name="mySecondFunction">
+          <in name="u" typeRef="t3"/>
+          <out name="y" typeRef="t3"/>
+        </method>
+      </methods>
+    </interface>
+  </interfaces>
+  <ports>
+    <rport name="in2" instanceKey="1">
+      <event-refs>
+        <event-ref eventRef="ev1" var="in2_In_Event"/>
+      </event-refs>
+    </rport>
+    <rport name="c" instanceKey="2">
+      <method-refs>
+        <method-ref methodRef="met1" func="c_c_myFirstCall"/>
+        <method-ref methodRef="met2" func="c_c_mySecondCall"/>
+      </method-refs>
+    </rport>
+    <rport name="in1" instanceKey="3">
+      <event-refs>
+        <event-ref eventRef="ev1" var="in1_In_Event"/>
+      </event-refs>
+    </rport>
+    <rport name="in3" instanceKey="4">
+      <event-refs>
+        <event-ref eventRef="ev1" var="in3_In_Event"/>
+      </event-refs>
+    </rport>
+    <rport name="in4" instanceKey="5">
+      <event-refs>
+        <event-ref eventRef="ev1" var="in4_In_Event"/>
+      </event-refs>
+    </rport>
+    <pport name="out2" instanceKey="6">
+      <event-refs>
+        <event-ref eventRef="ev2" var="out2_Out_Event"/>
+      </event-refs>
+    </pport>
+    <pport name="out1" instanceKey="7">
+      <event-refs>
+        <event-ref eventRef="ev2" var="out1_Out_Event"/>
+      </event-refs>
+    </pport>
+    <pport name="s" instanceKey="8">
+      <method-refs>
+        <method-ref methodRef="met3" func="sut_s_myFirstFunction"/>
+        <method-ref methodRef="met4" func="sut_s_mySecondFunction"/>
+      </method-refs>
+    </pport>
+    <pport name="out3" instanceKey="9">
+      <event-refs>
+        <event-ref eventRef="ev2" var="out3_Out_Event"/>
+      </event-refs>
+    </pport>
+    <pport name="out4" instanceKey="10">
+      <event-refs>
+        <event-ref eventRef="ev2" var="out4_Out_Event"/>
+      </event-refs>
+    </pport>
+  </ports>
+</aa-component>

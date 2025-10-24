@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="fixed_point_tl"/>
+    <Architecture id="id1" name="fixed_point_tl [C-Code]"/>
+    <Architecture id="id2" name="fixed_point"/>
+    <ScopeMapping>
+      <Path refId="id0" path="Subsystem/Subsystem/Subsystem"/>
+      <Path refId="id1" path="Subsystem.c:1:Subsystem"/>
+      <Path refId="id2" path="Subsystem"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id2" path="In1"/>
+        <Path refId="id1" path="Sa1_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id2" path="Out1"/>
+        <Path refId="id1" path="Sa1_Out1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="Subsystem/Subsystem/Subsystem/Constant/fixed_point_param"/>
+        <Path refId="id2" path="Subsystem/Constant/fixed_point_param"/>
+        <Path refId="id1" path="Sa1_Constant"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

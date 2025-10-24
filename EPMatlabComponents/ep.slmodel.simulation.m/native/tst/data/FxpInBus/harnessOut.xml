@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction mdfDialect="EP2.9">
+	<Types>
+		<EnumType name="boolean">
+			<EnumValue name="false" ordinal="0" />
+			<EnumValue name="true" ordinal="1" />
+		</EnumType>
+		<EnumType name="MyMood">
+			<EnumValue name="bad" ordinal="0" />
+			<EnumValue name="good" ordinal="3" />
+		</EnumType>
+		<BusType name="MainBus" virtual="false">
+			<Comp name="sig_b" type="boolean" />
+			<Comp name="sig_e" type="MyMood" />
+			<Comp name="sig_s" type="single" />
+			<Comp name="sig_fxp1" type="fixdt(1,16,0.0009765625,0.5)" />
+			<Comp name="sig_fxp2" type="fixdt(1,32,6.103515625e-5,0)" />
+		</BusType>
+	</Types>
+	<Inports debug="false">
+		<Inport portNr="1" type="boolean" signalName="sig_b">
+			<ScalarRefs>
+				<ScalarRef displayName="Out1">OUTPUT:Out1</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="2" type="MyMood" signalName="sig_e">
+			<ScalarRefs>
+				<ScalarRef displayName="Out2">OUTPUT:Out2</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="3" type="single" signalName="sig_s">
+			<ScalarRefs>
+				<ScalarRef displayName="Out3">OUTPUT:Out3</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="4" type="fixdt(1,16,0.0009765625,0.5)" signalName="sig_fxp1">
+			<ScalarRefs>
+				<ScalarRef displayName="Out4">OUTPUT:Out4</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="5" type="fixdt(1,32,14)" signalName="sig_fxp2">
+			<ScalarRefs>
+				<ScalarRef displayName="Out5">OUTPUT:Out5</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="6" type="MainBus" signalName="sig_bus">
+			<ScalarRefs>
+				<ScalarRef displayName="Out6.sig_bus.sig_b">OUTPUT:Out6.sig_bus.sig_b</ScalarRef>
+				<ScalarRef displayName="Out6.sig_bus.sig_e">OUTPUT:Out6.sig_bus.sig_e</ScalarRef>
+				<ScalarRef displayName="Out6.sig_bus.sig_s">OUTPUT:Out6.sig_bus.sig_s</ScalarRef>
+				<ScalarRef displayName="Out6.sig_bus.sig_fxp1">OUTPUT:Out6.sig_bus.sig_fxp1</ScalarRef>
+				<ScalarRef displayName="Out6.sig_bus.sig_fxp2">OUTPUT:Out6.sig_bus.sig_fxp2</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+	</Inports>
+</SFunction>

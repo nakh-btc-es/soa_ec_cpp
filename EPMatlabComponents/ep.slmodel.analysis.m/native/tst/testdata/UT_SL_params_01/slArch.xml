@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_params_01\init_params_01.m" modelVersion="1.3" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_params_01\params_01.slx" modelCreationDate="2021-09-08T14:05:56" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.3" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_params_01\params_01.slx" creationDate="2021-09-08T14:05:56" modificationDate="2024-09-11T18:39:44" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_params_01\init_params_01.m">
+    <subsystem subsysID="ss1" physicalPath="params_01" path="" sampleTime="0.1" name="params_01" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="params_01/In1" path="In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="params_01/In2" path="In2">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="params_01/In3" path="In3">
+        <double/>
+      </inport>
+      <parameter name="A" path="Gain" physicalPath="params_01/Gain" origin="explicit_param" workspace="A" initValue="7.0">
+        <double/>
+        <usageContext path="Gain" physicalPath="params_01/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+        <usageContext path="Gain2" physicalPath="params_01/Gain2" simulinkBlockType="Gain"/>
+      </parameter>
+      <parameter name="B" path="Gain1" physicalPath="params_01/Gain1" origin="explicit_param" workspace="B" initValue="9.0">
+        <double/>
+        <usageContext path="Gain1" physicalPath="params_01/Gain1" simulinkBlockType="Gain" blockAttribute="Gain"/>
+        <usageContext path="Gain2" physicalPath="params_01/Gain2" simulinkBlockType="Gain"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="params_01/Out1" path="Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="params_01/Out2" path="Out2">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="params_01/Out3" path="Out3">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

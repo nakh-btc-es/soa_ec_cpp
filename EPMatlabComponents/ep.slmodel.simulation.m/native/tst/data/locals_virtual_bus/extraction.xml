@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="2OF">
+	<Scope uid="2OF" name="VirtualBusLocals" path="ManyLocals/LocalCases/VirtualBusLocals" sampleTime="2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ManyLocals/LocalCases/VirtualBusLocals" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_1469" signalType="double" isFloat="yes">
+				<ifName ifid="if_1469" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_1470" width1="3" signalType="double" signalDim="[1 3]" isFloat="yes">
+				<ifName ifid="if_1471" index1="1" lsb="1" offset="0" displayName="In2(1)" identifier="INPUT:In2(1)" />
+				<ifName ifid="if_1472" index1="2" lsb="1" offset="0" displayName="In2(2)" identifier="INPUT:In2(2)" />
+				<ifName ifid="if_1473" index1="3" lsb="1" offset="0" displayName="In2(3)" identifier="INPUT:In2(3)" />
+			</Variable>
+		</InPort>
+		<InPort name="In3" portNumber="3" compositeSig="none">
+			<Variable varid="varif_1474" width1="2" width2="2" signalType="double" signalDim="[2 2 2]" isFloat="yes">
+				<ifName ifid="if_1477" index1="1" index2="1" lsb="1" offset="0" displayName="In3(1)(1)" identifier="INPUT:In3(1)(1)" />
+				<ifName ifid="if_1479" index1="2" index2="1" lsb="1" offset="0" displayName="In3(2)(1)" identifier="INPUT:In3(2)(1)" />
+				<ifName ifid="if_1478" index1="1" index2="2" lsb="1" offset="0" displayName="In3(1)(2)" identifier="INPUT:In3(1)(2)" />
+				<ifName ifid="if_1480" index1="2" index2="2" lsb="1" offset="0" displayName="In3(2)(2)" identifier="INPUT:In3(2)(2)" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_1481" signalName="signal1" signalType="double" isFloat="yes">
+				<ifName ifid="if_1481" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_1482" signalName="signal2" width1="3" signalType="double" signalDim="[1 3]" isFloat="yes">
+				<ifName ifid="if_1483" index1="1" lsb="1" offset="0" displayName="Out2(1)" identifier="OUTPUT:Out2(1)" />
+				<ifName ifid="if_1484" index1="2" lsb="1" offset="0" displayName="Out2(2)" identifier="OUTPUT:Out2(2)" />
+				<ifName ifid="if_1485" index1="3" lsb="1" offset="0" displayName="Out2(3)" identifier="OUTPUT:Out2(3)" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out3" portNumber="3" compositeSig="none">
+			<Variable varid="varif_1486" signalName="signal3" width1="2" width2="2" signalType="double" signalDim="[2 2 2]" isFloat="yes">
+				<ifName ifid="if_1489" index1="1" index2="1" lsb="1" offset="0" displayName="Out3(1)(1)" identifier="OUTPUT:Out3(1)(1)" />
+				<ifName ifid="if_1491" index1="2" index2="1" lsb="1" offset="0" displayName="Out3(2)(1)" identifier="OUTPUT:Out3(2)(1)" />
+				<ifName ifid="if_1490" index1="1" index2="2" lsb="1" offset="0" displayName="Out3(1)(2)" identifier="OUTPUT:Out3(1)(2)" />
+				<ifName ifid="if_1492" index1="2" index2="2" lsb="1" offset="0" displayName="Out3(2)(2)" identifier="OUTPUT:Out3(2)(2)" />
+			</Variable>
+		</OutPort>
+		<Display name="In1" path="ManyLocals/LocalCases/VirtualBusLocals/Atomic Subsystem/In1" physicalPath="ManyLocals/LocalCases/VirtualBusLocals/Atomic Subsystem/In1" portNumber="1" busType="VIRTUAL">
+			<Variable varid="varif_1494" signalName="&lt;signal1&gt;.signal1" signalType="double" isFloat="yes">
+				<ifName ifid="if_1494" lsb="1" offset="0" displayName="{Atomic Subsystem}/In1.{&lt;signal1&gt;}.signal1" identifier="LOCAL:Atomic Subsystem/In1.{&lt;signal1&gt;}.signal1" />
+			</Variable>
+			<Variable varid="varif_1495" signalName="&lt;signal1&gt;.signal2" width1="3" signalType="double" signalDim="[1 3]" isFloat="yes">
+				<ifName ifid="if_1497" index1="1" lsb="1" offset="0" displayName="{Atomic Subsystem}/In1.{&lt;signal1&gt;}.signal2(1)" identifier="LOCAL:Atomic Subsystem/In1.{&lt;signal1&gt;}.signal2(1)" />
+				<ifName ifid="if_1498" index1="2" lsb="1" offset="0" displayName="{Atomic Subsystem}/In1.{&lt;signal1&gt;}.signal2(2)" identifier="LOCAL:Atomic Subsystem/In1.{&lt;signal1&gt;}.signal2(2)" />
+				<ifName ifid="if_1499" index1="3" lsb="1" offset="0" displayName="{Atomic Subsystem}/In1.{&lt;signal1&gt;}.signal2(3)" identifier="LOCAL:Atomic Subsystem/In1.{&lt;signal1&gt;}.signal2(3)" />
+			</Variable>
+			<Variable varid="varif_1496" signalName="&lt;signal1&gt;.signal3" width1="2" width2="2" signalType="double" signalDim="[2 2 2]" isFloat="yes">
+				<ifName ifid="if_1502" index1="1" index2="1" lsb="1" offset="0" displayName="{Atomic Subsystem}/In1.{&lt;signal1&gt;}.signal3(1)(1)" identifier="LOCAL:Atomic Subsystem/In1.{&lt;signal1&gt;}.signal3(1)(1)" />
+				<ifName ifid="if_1504" index1="2" index2="1" lsb="1" offset="0" displayName="{Atomic Subsystem}/In1.{&lt;signal1&gt;}.signal3(2)(1)" identifier="LOCAL:Atomic Subsystem/In1.{&lt;signal1&gt;}.signal3(2)(1)" />
+				<ifName ifid="if_1503" index1="1" index2="2" lsb="1" offset="0" displayName="{Atomic Subsystem}/In1.{&lt;signal1&gt;}.signal3(1)(2)" identifier="LOCAL:Atomic Subsystem/In1.{&lt;signal1&gt;}.signal3(1)(2)" />
+				<ifName ifid="if_1505" index1="2" index2="2" lsb="1" offset="0" displayName="{Atomic Subsystem}/In1.{&lt;signal1&gt;}.signal3(2)(2)" identifier="LOCAL:Atomic Subsystem/In1.{&lt;signal1&gt;}.signal3(2)(2)" />
+			</Variable>
+		</Display>
+		<Model name="ManyLocals" modelPath="/E:/ModelsDev/SL/ManyLocals/ml2015asp1/ManyLocals.slx" type="SimulinkModel" />
+		<Scope uid="2OJ" name="Atomic Subsystem" path="ManyLocals/LocalCases/VirtualBusLocals/Atomic Subsystem" sampleTime="2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ManyLocals/LocalCases/VirtualBusLocals/Atomic Subsystem" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="bus" busType="VIRTUAL">
+				<Variable varid="varif_1510" signalName="&lt;signal1&gt;.signal1" signalType="double" isFloat="yes">
+					<ifName ifid="if_1510" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.signal1" identifier="INPUT:In1.{&lt;signal1&gt;}.signal1" />
+				</Variable>
+				<Variable varid="varif_1511" signalName="&lt;signal1&gt;.signal2" width1="3" signalType="double" signalDim="[1 3]" isFloat="yes">
+					<ifName ifid="if_1513" index1="1" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.signal2(1)" identifier="INPUT:In1.{&lt;signal1&gt;}.signal2(1)" />
+					<ifName ifid="if_1514" index1="2" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.signal2(2)" identifier="INPUT:In1.{&lt;signal1&gt;}.signal2(2)" />
+					<ifName ifid="if_1515" index1="3" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.signal2(3)" identifier="INPUT:In1.{&lt;signal1&gt;}.signal2(3)" />
+				</Variable>
+				<Variable varid="varif_1512" signalName="&lt;signal1&gt;.signal3" width1="2" width2="2" signalType="double" signalDim="[2 2 2]" isFloat="yes">
+					<ifName ifid="if_1518" index1="1" index2="1" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.signal3(1)(1)" identifier="INPUT:In1.{&lt;signal1&gt;}.signal3(1)(1)" />
+					<ifName ifid="if_1520" index1="2" index2="1" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.signal3(2)(1)" identifier="INPUT:In1.{&lt;signal1&gt;}.signal3(2)(1)" />
+					<ifName ifid="if_1519" index1="1" index2="2" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.signal3(1)(2)" identifier="INPUT:In1.{&lt;signal1&gt;}.signal3(1)(2)" />
+					<ifName ifid="if_1521" index1="2" index2="2" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.signal3(2)(2)" identifier="INPUT:In1.{&lt;signal1&gt;}.signal3(2)(2)" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="bus" busType="VIRTUAL">
+				<Variable varid="varif_1523" signalName="&lt;signal1&gt;.signal1" signalType="double" isFloat="yes">
+					<ifName ifid="if_1523" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.signal1" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.signal1" />
+				</Variable>
+				<Variable varid="varif_1524" signalName="&lt;signal1&gt;.signal2" width1="3" signalType="double" signalDim="[1 3]" isFloat="yes">
+					<ifName ifid="if_1526" index1="1" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.signal2(1)" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.signal2(1)" />
+					<ifName ifid="if_1527" index1="2" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.signal2(2)" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.signal2(2)" />
+					<ifName ifid="if_1528" index1="3" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.signal2(3)" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.signal2(3)" />
+				</Variable>
+				<Variable varid="varif_1525" signalName="&lt;signal1&gt;.signal3" width1="2" width2="2" signalType="double" signalDim="[2 2 2]" isFloat="yes">
+					<ifName ifid="if_1531" index1="1" index2="1" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.signal3(1)(1)" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.signal3(1)(1)" />
+					<ifName ifid="if_1533" index1="2" index2="1" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.signal3(2)(1)" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.signal3(2)(1)" />
+					<ifName ifid="if_1532" index1="1" index2="2" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.signal3(1)(2)" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.signal3(1)(2)" />
+					<ifName ifid="if_1534" index1="2" index2="2" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.signal3(2)(2)" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.signal3(2)(2)" />
+				</Variable>
+			</OutPort>
+			<Display name="In1" path="ManyLocals/LocalCases/VirtualBusLocals/Atomic Subsystem/In1" physicalPath="ManyLocals/LocalCases/VirtualBusLocals/Atomic Subsystem/In1" portNumber="1" busType="VIRTUAL">
+				<Variable varid="varif_1536" signalName="&lt;signal1&gt;.signal1" signalType="double" isFloat="yes">
+					<ifName ifid="if_1536" lsb="1" offset="0" displayName="In1:local.{&lt;signal1&gt;}.signal1" identifier="LOCAL:In1.{&lt;signal1&gt;}.signal1" />
+				</Variable>
+				<Variable varid="varif_1537" signalName="&lt;signal1&gt;.signal2" width1="3" signalType="double" signalDim="[1 3]" isFloat="yes">
+					<ifName ifid="if_1539" index1="1" lsb="1" offset="0" displayName="In1:local.{&lt;signal1&gt;}.signal2(1)" identifier="LOCAL:In1.{&lt;signal1&gt;}.signal2(1)" />
+					<ifName ifid="if_1540" index1="2" lsb="1" offset="0" displayName="In1:local.{&lt;signal1&gt;}.signal2(2)" identifier="LOCAL:In1.{&lt;signal1&gt;}.signal2(2)" />
+					<ifName ifid="if_1541" index1="3" lsb="1" offset="0" displayName="In1:local.{&lt;signal1&gt;}.signal2(3)" identifier="LOCAL:In1.{&lt;signal1&gt;}.signal2(3)" />
+				</Variable>
+				<Variable varid="varif_1538" signalName="&lt;signal1&gt;.signal3" width1="2" width2="2" signalType="double" signalDim="[2 2 2]" isFloat="yes">
+					<ifName ifid="if_1544" index1="1" index2="1" lsb="1" offset="0" displayName="In1:local.{&lt;signal1&gt;}.signal3(1)(1)" identifier="LOCAL:In1.{&lt;signal1&gt;}.signal3(1)(1)" />
+					<ifName ifid="if_1546" index1="2" index2="1" lsb="1" offset="0" displayName="In1:local.{&lt;signal1&gt;}.signal3(2)(1)" identifier="LOCAL:In1.{&lt;signal1&gt;}.signal3(2)(1)" />
+					<ifName ifid="if_1545" index1="1" index2="2" lsb="1" offset="0" displayName="In1:local.{&lt;signal1&gt;}.signal3(1)(2)" identifier="LOCAL:In1.{&lt;signal1&gt;}.signal3(1)(2)" />
+					<ifName ifid="if_1547" index1="2" index2="2" lsb="1" offset="0" displayName="In1:local.{&lt;signal1&gt;}.signal3(2)(2)" identifier="LOCAL:In1.{&lt;signal1&gt;}.signal3(2)(2)" />
+				</Variable>
+			</Display>
+			<Model name="ManyLocals" modelPath="/E:/ModelsDev/SL/ManyLocals/ml2015asp1/ManyLocals.slx" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

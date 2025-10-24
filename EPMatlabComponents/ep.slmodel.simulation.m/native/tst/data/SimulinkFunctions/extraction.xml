@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="25F">
+	<Types />
+	<Scope uid="25F" name="HiddenBelow" path="slFunctions/InnerSystem/HiddenBelow" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="slFunctions/InnerSystem/HiddenBelow">
+		<InPort name="In1" portNumber="1" compositeSig="none" type="double">
+			<Variable varid="varif_320" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_320" initValue="0.0" lsb="1.0" offset="0.0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none" type="double">
+			<Variable varid="varif_322" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_322" initValue="0.0" lsb="1.0" offset="0.0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<Model name="slFunctions" modelPath="/E:/ModelsDev/SL/SimulinkFunctions/ml2017a/slFunctions.slx" type="SimulinkModel" />
+		<SLFunctionCaller pathCaller="slFunctions/InnerSystem/HiddenBelow/Function Caller1" pathFunction="slFunctions/FirstFunction" />
+		<SLFunctionCaller pathCaller="slFunctions/InnerSystem/HiddenBelow/Function Caller2" pathFunction="slFunctions/FirstFunction" />
+		<Scope uid="25G" name="UnderHidden" path="slFunctions/InnerSystem/HiddenBelow/UnderHidden" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="slFunctions/InnerSystem/HiddenBelow/UnderHidden">
+			<InPort name="In1" portNumber="1" compositeSig="none" type="double">
+				<Variable varid="varif_324" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+					<ifName ifid="if_324" initValue="0.0" lsb="1.0" offset="0.0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none" type="double">
+				<Variable varid="varif_326" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+					<ifName ifid="if_326" initValue="0.0" lsb="1.0" offset="0.0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<Model name="slFunctions" modelPath="/E:/ModelsDev/SL/SimulinkFunctions/ml2017a/slFunctions.slx" type="SimulinkModel" />
+			<SLFunctionCaller pathCaller="slFunctions/InnerSystem/HiddenBelow/UnderHidden/Function Caller1" pathFunction="slFunctions/FirstFunction" />
+			<SLFunctionCaller pathCaller="slFunctions/InnerSystem/HiddenBelow/Function Caller2" pathFunction="slFunctions/FirstFunction" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

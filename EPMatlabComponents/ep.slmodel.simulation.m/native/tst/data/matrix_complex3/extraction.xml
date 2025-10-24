@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="2Cm">
+	<Scope uid="2Cm" name="Permute" path="Matrix/Subsystem/Permute" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Matrix/Subsystem/Permute" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_658" width1="1" width2="4" signalType="double" signalDim="[2 1 4]" isFloat="yes">
+				<ifName ifid="if_660" index1="1" index2="1" lsb="1" offset="0" displayName="In1(1)(1)" identifier="INPUT:In1(1)(1)" />
+				<ifName ifid="if_661" index1="1" index2="2" lsb="1" offset="0" displayName="In1(1)(2)" identifier="INPUT:In1(1)(2)" />
+				<ifName ifid="if_662" index1="1" index2="3" lsb="1" offset="0" displayName="In1(1)(3)" identifier="INPUT:In1(1)(3)" />
+				<ifName ifid="if_663" index1="1" index2="4" lsb="1" offset="0" displayName="In1(1)(4)" identifier="INPUT:In1(1)(4)" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_664" width1="3" width2="1" signalType="double" signalDim="[2 3 1]" isFloat="yes">
+				<ifName ifid="if_668" index1="1" index2="1" lsb="1" offset="0" displayName="In2(1)(1)" identifier="INPUT:In2(1)(1)" />
+				<ifName ifid="if_669" index1="2" index2="1" lsb="1" offset="0" displayName="In2(2)(1)" identifier="INPUT:In2(2)(1)" />
+				<ifName ifid="if_670" index1="3" index2="1" lsb="1" offset="0" displayName="In2(3)(1)" identifier="INPUT:In2(3)(1)" />
+			</Variable>
+		</InPort>
+		<InPort name="In3" portNumber="3" compositeSig="none">
+			<Variable varid="varif_671" width1="4" width2="5" signalType="double" signalDim="[2 4 5]" isFloat="yes">
+				<ifName ifid="if_676" index1="1" index2="1" lsb="1" offset="0" displayName="In3(1)(1)" identifier="INPUT:In3(1)(1)" />
+				<ifName ifid="if_681" index1="2" index2="1" lsb="1" offset="0" displayName="In3(2)(1)" identifier="INPUT:In3(2)(1)" />
+				<ifName ifid="if_686" index1="3" index2="1" lsb="1" offset="0" displayName="In3(3)(1)" identifier="INPUT:In3(3)(1)" />
+				<ifName ifid="if_691" index1="4" index2="1" lsb="1" offset="0" displayName="In3(4)(1)" identifier="INPUT:In3(4)(1)" />
+				<ifName ifid="if_677" index1="1" index2="2" lsb="1" offset="0" displayName="In3(1)(2)" identifier="INPUT:In3(1)(2)" />
+				<ifName ifid="if_682" index1="2" index2="2" lsb="1" offset="0" displayName="In3(2)(2)" identifier="INPUT:In3(2)(2)" />
+				<ifName ifid="if_687" index1="3" index2="2" lsb="1" offset="0" displayName="In3(3)(2)" identifier="INPUT:In3(3)(2)" />
+				<ifName ifid="if_692" index1="4" index2="2" lsb="1" offset="0" displayName="In3(4)(2)" identifier="INPUT:In3(4)(2)" />
+				<ifName ifid="if_678" index1="1" index2="3" lsb="1" offset="0" displayName="In3(1)(3)" identifier="INPUT:In3(1)(3)" />
+				<ifName ifid="if_683" index1="2" index2="3" lsb="1" offset="0" displayName="In3(2)(3)" identifier="INPUT:In3(2)(3)" />
+				<ifName ifid="if_688" index1="3" index2="3" lsb="1" offset="0" displayName="In3(3)(3)" identifier="INPUT:In3(3)(3)" />
+				<ifName ifid="if_693" index1="4" index2="3" lsb="1" offset="0" displayName="In3(4)(3)" identifier="INPUT:In3(4)(3)" />
+				<ifName ifid="if_679" index1="1" index2="4" lsb="1" offset="0" displayName="In3(1)(4)" identifier="INPUT:In3(1)(4)" />
+				<ifName ifid="if_684" index1="2" index2="4" lsb="1" offset="0" displayName="In3(2)(4)" identifier="INPUT:In3(2)(4)" />
+				<ifName ifid="if_689" index1="3" index2="4" lsb="1" offset="0" displayName="In3(3)(4)" identifier="INPUT:In3(3)(4)" />
+				<ifName ifid="if_694" index1="4" index2="4" lsb="1" offset="0" displayName="In3(4)(4)" identifier="INPUT:In3(4)(4)" />
+				<ifName ifid="if_680" index1="1" index2="5" lsb="1" offset="0" displayName="In3(1)(5)" identifier="INPUT:In3(1)(5)" />
+				<ifName ifid="if_685" index1="2" index2="5" lsb="1" offset="0" displayName="In3(2)(5)" identifier="INPUT:In3(2)(5)" />
+				<ifName ifid="if_690" index1="3" index2="5" lsb="1" offset="0" displayName="In3(3)(5)" identifier="INPUT:In3(3)(5)" />
+				<ifName ifid="if_695" index1="4" index2="5" lsb="1" offset="0" displayName="In3(4)(5)" identifier="INPUT:In3(4)(5)" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_696" width1="4" width2="1" signalType="double" signalDim="[2 4 1]" isFloat="yes">
+				<ifName ifid="if_701" index1="1" index2="1" lsb="1" offset="0" displayName="Out1(1)(1)" identifier="OUTPUT:Out1(1)(1)" />
+				<ifName ifid="if_702" index1="2" index2="1" lsb="1" offset="0" displayName="Out1(2)(1)" identifier="OUTPUT:Out1(2)(1)" />
+				<ifName ifid="if_703" index1="3" index2="1" lsb="1" offset="0" displayName="Out1(3)(1)" identifier="OUTPUT:Out1(3)(1)" />
+				<ifName ifid="if_704" index1="4" index2="1" lsb="1" offset="0" displayName="Out1(4)(1)" identifier="OUTPUT:Out1(4)(1)" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_705" width1="1" width2="3" signalType="double" signalDim="[2 1 3]" isFloat="yes">
+				<ifName ifid="if_707" index1="1" index2="1" lsb="1" offset="0" displayName="Out2(1)(1)" identifier="OUTPUT:Out2(1)(1)" />
+				<ifName ifid="if_708" index1="1" index2="2" lsb="1" offset="0" displayName="Out2(1)(2)" identifier="OUTPUT:Out2(1)(2)" />
+				<ifName ifid="if_709" index1="1" index2="3" lsb="1" offset="0" displayName="Out2(1)(3)" identifier="OUTPUT:Out2(1)(3)" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out3" portNumber="3" compositeSig="none">
+			<Variable varid="varif_710" width1="5" width2="4" signalType="double" signalDim="[2 5 4]" isFloat="yes">
+				<ifName ifid="if_716" index1="1" index2="1" lsb="1" offset="0" displayName="Out3(1)(1)" identifier="OUTPUT:Out3(1)(1)" />
+				<ifName ifid="if_720" index1="2" index2="1" lsb="1" offset="0" displayName="Out3(2)(1)" identifier="OUTPUT:Out3(2)(1)" />
+				<ifName ifid="if_724" index1="3" index2="1" lsb="1" offset="0" displayName="Out3(3)(1)" identifier="OUTPUT:Out3(3)(1)" />
+				<ifName ifid="if_728" index1="4" index2="1" lsb="1" offset="0" displayName="Out3(4)(1)" identifier="OUTPUT:Out3(4)(1)" />
+				<ifName ifid="if_732" index1="5" index2="1" lsb="1" offset="0" displayName="Out3(5)(1)" identifier="OUTPUT:Out3(5)(1)" />
+				<ifName ifid="if_717" index1="1" index2="2" lsb="1" offset="0" displayName="Out3(1)(2)" identifier="OUTPUT:Out3(1)(2)" />
+				<ifName ifid="if_721" index1="2" index2="2" lsb="1" offset="0" displayName="Out3(2)(2)" identifier="OUTPUT:Out3(2)(2)" />
+				<ifName ifid="if_725" index1="3" index2="2" lsb="1" offset="0" displayName="Out3(3)(2)" identifier="OUTPUT:Out3(3)(2)" />
+				<ifName ifid="if_729" index1="4" index2="2" lsb="1" offset="0" displayName="Out3(4)(2)" identifier="OUTPUT:Out3(4)(2)" />
+				<ifName ifid="if_733" index1="5" index2="2" lsb="1" offset="0" displayName="Out3(5)(2)" identifier="OUTPUT:Out3(5)(2)" />
+				<ifName ifid="if_718" index1="1" index2="3" lsb="1" offset="0" displayName="Out3(1)(3)" identifier="OUTPUT:Out3(1)(3)" />
+				<ifName ifid="if_722" index1="2" index2="3" lsb="1" offset="0" displayName="Out3(2)(3)" identifier="OUTPUT:Out3(2)(3)" />
+				<ifName ifid="if_726" index1="3" index2="3" lsb="1" offset="0" displayName="Out3(3)(3)" identifier="OUTPUT:Out3(3)(3)" />
+				<ifName ifid="if_730" index1="4" index2="3" lsb="1" offset="0" displayName="Out3(4)(3)" identifier="OUTPUT:Out3(4)(3)" />
+				<ifName ifid="if_734" index1="5" index2="3" lsb="1" offset="0" displayName="Out3(5)(3)" identifier="OUTPUT:Out3(5)(3)" />
+				<ifName ifid="if_719" index1="1" index2="4" lsb="1" offset="0" displayName="Out3(1)(4)" identifier="OUTPUT:Out3(1)(4)" />
+				<ifName ifid="if_723" index1="2" index2="4" lsb="1" offset="0" displayName="Out3(2)(4)" identifier="OUTPUT:Out3(2)(4)" />
+				<ifName ifid="if_727" index1="3" index2="4" lsb="1" offset="0" displayName="Out3(3)(4)" identifier="OUTPUT:Out3(3)(4)" />
+				<ifName ifid="if_731" index1="4" index2="4" lsb="1" offset="0" displayName="Out3(4)(4)" identifier="OUTPUT:Out3(4)(4)" />
+				<ifName ifid="if_735" index1="5" index2="4" lsb="1" offset="0" displayName="Out3(5)(4)" identifier="OUTPUT:Out3(5)(4)" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out4" portNumber="4" compositeSig="none">
+			<Variable varid="varif_736" width1="2" width2="2" signalType="double" signalDim="[2 2 2]" isFloat="yes">
+				<ifName ifid="if_739" index1="1" index2="1" lsb="1" offset="0" displayName="Out4(1)(1)" identifier="OUTPUT:Out4(1)(1)" />
+				<ifName ifid="if_741" index1="2" index2="1" lsb="1" offset="0" displayName="Out4(2)(1)" identifier="OUTPUT:Out4(2)(1)" />
+				<ifName ifid="if_740" index1="1" index2="2" lsb="1" offset="0" displayName="Out4(1)(2)" identifier="OUTPUT:Out4(1)(2)" />
+				<ifName ifid="if_742" index1="2" index2="2" lsb="1" offset="0" displayName="Out4(2)(2)" identifier="OUTPUT:Out4(2)(2)" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out5" portNumber="5" compositeSig="none">
+			<Variable varid="varif_743" width1="4" width2="2" signalType="double" signalDim="[2 4 2]" isFloat="yes">
+				<ifName ifid="if_748" index1="1" index2="1" lsb="1" offset="0" displayName="Out5(1)(1)" identifier="OUTPUT:Out5(1)(1)" />
+				<ifName ifid="if_750" index1="2" index2="1" lsb="1" offset="0" displayName="Out5(2)(1)" identifier="OUTPUT:Out5(2)(1)" />
+				<ifName ifid="if_752" index1="3" index2="1" lsb="1" offset="0" displayName="Out5(3)(1)" identifier="OUTPUT:Out5(3)(1)" />
+				<ifName ifid="if_754" index1="4" index2="1" lsb="1" offset="0" displayName="Out5(4)(1)" identifier="OUTPUT:Out5(4)(1)" />
+				<ifName ifid="if_749" index1="1" index2="2" lsb="1" offset="0" displayName="Out5(1)(2)" identifier="OUTPUT:Out5(1)(2)" />
+				<ifName ifid="if_751" index1="2" index2="2" lsb="1" offset="0" displayName="Out5(2)(2)" identifier="OUTPUT:Out5(2)(2)" />
+				<ifName ifid="if_753" index1="3" index2="2" lsb="1" offset="0" displayName="Out5(3)(2)" identifier="OUTPUT:Out5(3)(2)" />
+				<ifName ifid="if_755" index1="4" index2="2" lsb="1" offset="0" displayName="Out5(4)(2)" identifier="OUTPUT:Out5(4)(2)" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out6" portNumber="6" compositeSig="none">
+			<Variable varid="varif_756" signalType="double" isFloat="yes">
+				<ifName ifid="if_756" lsb="1" offset="0" displayName="Out6" identifier="OUTPUT:Out6" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out7" portNumber="7" compositeSig="none">
+			<Variable varid="varif_757" signalType="double" isFloat="yes">
+				<ifName ifid="if_757" lsb="1" offset="0" displayName="Out7" identifier="OUTPUT:Out7" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out8" portNumber="8" compositeSig="none">
+			<Variable varid="varif_758" signalType="double" isFloat="yes">
+				<ifName ifid="if_758" lsb="1" offset="0" displayName="Out8" identifier="OUTPUT:Out8" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out9" portNumber="9" compositeSig="none">
+			<Variable varid="varif_759" signalType="double" isFloat="yes">
+				<ifName ifid="if_759" lsb="1" offset="0" displayName="Out9" identifier="OUTPUT:Out9" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out10" portNumber="10" compositeSig="none">
+			<Variable varid="varif_760" signalType="double" isFloat="yes">
+				<ifName ifid="if_760" lsb="1" offset="0" displayName="Out10" identifier="OUTPUT:Out10" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out11" portNumber="11" compositeSig="none">
+			<Variable varid="varif_761" signalType="double" isFloat="yes">
+				<ifName ifid="if_761" lsb="1" offset="0" displayName="Out11" identifier="OUTPUT:Out11" />
+			</Variable>
+		</OutPort>
+		<Model name="Matrix" modelPath="/E:/ModelsDev/SL/Matrix/ml2017a/Matrix.slx" type="SimulinkModel" />
+		<Scope uid="2Cn" name="Concatenate" path="Matrix/Subsystem/Permute/Concatenate" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Matrix/Subsystem/Permute/Concatenate" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_766" width1="4" width2="1" signalType="double" signalDim="[2 4 1]" isFloat="yes">
+					<ifName ifid="if_771" index1="1" index2="1" lsb="1" offset="0" displayName="In1(1)(1)" identifier="INPUT:In1(1)(1)" />
+					<ifName ifid="if_772" index1="2" index2="1" lsb="1" offset="0" displayName="In1(2)(1)" identifier="INPUT:In1(2)(1)" />
+					<ifName ifid="if_773" index1="3" index2="1" lsb="1" offset="0" displayName="In1(3)(1)" identifier="INPUT:In1(3)(1)" />
+					<ifName ifid="if_774" index1="4" index2="1" lsb="1" offset="0" displayName="In1(4)(1)" identifier="INPUT:In1(4)(1)" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_775" width1="4" width2="2" signalType="double" signalDim="[2 4 2]" isFloat="yes">
+					<ifName ifid="if_780" index1="1" index2="1" lsb="1" offset="0" displayName="Out1(1)(1)" identifier="OUTPUT:Out1(1)(1)" />
+					<ifName ifid="if_782" index1="2" index2="1" lsb="1" offset="0" displayName="Out1(2)(1)" identifier="OUTPUT:Out1(2)(1)" />
+					<ifName ifid="if_784" index1="3" index2="1" lsb="1" offset="0" displayName="Out1(3)(1)" identifier="OUTPUT:Out1(3)(1)" />
+					<ifName ifid="if_786" index1="4" index2="1" lsb="1" offset="0" displayName="Out1(4)(1)" identifier="OUTPUT:Out1(4)(1)" />
+					<ifName ifid="if_781" index1="1" index2="2" lsb="1" offset="0" displayName="Out1(1)(2)" identifier="OUTPUT:Out1(1)(2)" />
+					<ifName ifid="if_783" index1="2" index2="2" lsb="1" offset="0" displayName="Out1(2)(2)" identifier="OUTPUT:Out1(2)(2)" />
+					<ifName ifid="if_785" index1="3" index2="2" lsb="1" offset="0" displayName="Out1(3)(2)" identifier="OUTPUT:Out1(3)(2)" />
+					<ifName ifid="if_787" index1="4" index2="2" lsb="1" offset="0" displayName="Out1(4)(2)" identifier="OUTPUT:Out1(4)(2)" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out2" portNumber="2" compositeSig="none">
+				<Variable varid="varif_788" signalType="double" isFloat="yes">
+					<ifName ifid="if_788" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out3" portNumber="3" compositeSig="none">
+				<Variable varid="varif_789" signalType="double" isFloat="yes">
+					<ifName ifid="if_789" lsb="1" offset="0" displayName="Out3" identifier="OUTPUT:Out3" />
+				</Variable>
+			</OutPort>
+			<Model name="Matrix" modelPath="/E:/ModelsDev/SL/Matrix/ml2017a/Matrix.slx" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="2Co" name="Reshape" path="Matrix/Subsystem/Permute/Reshape" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Matrix/Subsystem/Permute/Reshape" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_796" width1="4" width2="1" signalType="double" signalDim="[2 4 1]" isFloat="yes">
+					<ifName ifid="if_801" index1="1" index2="1" lsb="1" offset="0" displayName="In1(1)(1)" identifier="INPUT:In1(1)(1)" />
+					<ifName ifid="if_802" index1="2" index2="1" lsb="1" offset="0" displayName="In1(2)(1)" identifier="INPUT:In1(2)(1)" />
+					<ifName ifid="if_803" index1="3" index2="1" lsb="1" offset="0" displayName="In1(3)(1)" identifier="INPUT:In1(3)(1)" />
+					<ifName ifid="if_804" index1="4" index2="1" lsb="1" offset="0" displayName="In1(4)(1)" identifier="INPUT:In1(4)(1)" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_805" width1="2" width2="2" signalType="double" signalDim="[2 2 2]" isFloat="yes">
+					<ifName ifid="if_808" index1="1" index2="1" lsb="1" offset="0" displayName="Out1(1)(1)" identifier="OUTPUT:Out1(1)(1)" />
+					<ifName ifid="if_810" index1="2" index2="1" lsb="1" offset="0" displayName="Out1(2)(1)" identifier="OUTPUT:Out1(2)(1)" />
+					<ifName ifid="if_809" index1="1" index2="2" lsb="1" offset="0" displayName="Out1(1)(2)" identifier="OUTPUT:Out1(1)(2)" />
+					<ifName ifid="if_811" index1="2" index2="2" lsb="1" offset="0" displayName="Out1(2)(2)" identifier="OUTPUT:Out1(2)(2)" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out2" portNumber="2" compositeSig="none">
+				<Variable varid="varif_812" signalType="double" isFloat="yes">
+					<ifName ifid="if_812" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out3" portNumber="3" compositeSig="none">
+				<Variable varid="varif_813" signalType="double" isFloat="yes">
+					<ifName ifid="if_813" lsb="1" offset="0" displayName="Out3" identifier="OUTPUT:Out3" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out4" portNumber="4" compositeSig="none">
+				<Variable varid="varif_814" signalType="double" isFloat="yes">
+					<ifName ifid="if_814" lsb="1" offset="0" displayName="Out4" identifier="OUTPUT:Out4" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out5" portNumber="5" compositeSig="none">
+				<Variable varid="varif_815" signalType="double" isFloat="yes">
+					<ifName ifid="if_815" lsb="1" offset="0" displayName="Out5" identifier="OUTPUT:Out5" />
+				</Variable>
+			</OutPort>
+			<Model name="Matrix" modelPath="/E:/ModelsDev/SL/Matrix/ml2017a/Matrix.slx" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

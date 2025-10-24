@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="27x">
+	<Types>
+		<EnumType name="boolean">
+			<EnumValue name="false" ordinal="0" />
+			<EnumValue name="true" ordinal="1" />
+		</EnumType>
+		<BusType name="SimpleBus" virtual="false">
+			<Comp name="a" type="boolean" />
+			<Comp name="b" type="int32" width="3" />
+		</BusType>
+	</Types>
+	<Scope uid="27x" name="data_store_bus" path="data_store_bus" sampleTime="1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="data_store_bus">
+		<InPort name="In1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="SimpleBus" signalName="Lukas" type="SimpleBus">
+			<Variable varid="varif_379" signalName="Lukas.a" signalType="boolean" tlTypeName="boolean" type="boolean">
+				<ifName ifid="if_379" initValue="0" lsb="1.0" offset="0.0" displayName="In1.Lukas.a" identifier="INPUT:In1.Lukas.a" />
+			</Variable>
+			<Variable varid="varif_380" signalName="Lukas.b" width1="3" signalType="int32" signalDim="[1 3]" tlTypeName="int32" width="3" type="int32">
+				<ifName ifid="if_381" index1="1" initValue="0" lsb="1.0" offset="0.0" displayName="In1.Lukas.b(1)" identifier="INPUT:In1.Lukas.b(1)" />
+				<ifName ifid="if_382" index1="2" initValue="0" lsb="1.0" offset="0.0" displayName="In1.Lukas.b(2)" identifier="INPUT:In1.Lukas.b(2)" />
+				<ifName ifid="if_383" index1="3" initValue="0" lsb="1.0" offset="0.0" displayName="In1.Lukas.b(3)" identifier="INPUT:In1.Lukas.b(3)" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="SimpleBus" signalName="c" type="SimpleBus">
+			<Variable varid="varif_389" signalName="c.a" signalType="boolean" tlTypeName="boolean" type="boolean">
+				<ifName ifid="if_389" initValue="0" lsb="1.0" offset="0.0" displayName="Out1.c.a" identifier="OUTPUT:Out1.c.a" />
+			</Variable>
+			<Variable varid="varif_390" signalName="c.b" width1="3" signalType="int32" signalDim="[1 3]" tlTypeName="int32" width="3" type="int32">
+				<ifName ifid="if_391" index1="1" initValue="0" lsb="1.0" offset="0.0" displayName="Out1.c.b(1)" identifier="OUTPUT:Out1.c.b(1)" />
+				<ifName ifid="if_392" index1="2" initValue="0" lsb="1.0" offset="0.0" displayName="Out1.c.b(2)" identifier="OUTPUT:Out1.c.b(2)" />
+				<ifName ifid="if_393" index1="3" initValue="0" lsb="1.0" offset="0.0" displayName="Out1.c.b(3)" identifier="OUTPUT:Out1.c.b(3)" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="bus" busType="NON_VIRTUAL" busObj="SimpleBus" signalName="e" type="SimpleBus">
+			<Variable varid="varif_399" signalName="e.a" signalType="boolean" tlTypeName="boolean" type="boolean">
+				<ifName ifid="if_399" initValue="0" lsb="1.0" offset="0.0" displayName="Out2.e.a" identifier="OUTPUT:Out2.e.a" />
+			</Variable>
+			<Variable varid="varif_400" signalName="e.b" width1="3" signalType="int32" signalDim="[1 3]" tlTypeName="int32" width="3" type="int32">
+				<ifName ifid="if_401" index1="1" initValue="0" lsb="1.0" offset="0.0" displayName="Out2.e.b(1)" identifier="OUTPUT:Out2.e.b(1)" />
+				<ifName ifid="if_402" index1="2" initValue="0" lsb="1.0" offset="0.0" displayName="Out2.e.b(2)" identifier="OUTPUT:Out2.e.b(2)" />
+				<ifName ifid="if_403" index1="3" initValue="0" lsb="1.0" offset="0.0" displayName="Out2.e.b(3)" identifier="OUTPUT:Out2.e.b(3)" />
+			</Variable>
+		</OutPort>
+		<Model name="data_store_bus" modelPath="/E:/ModelsDev/UT_SL/ds_bus_01/ml2019a/data_store_bus.slx" type="SimulinkModel" />
+		<Scope uid="27s" name="sub_A" path="data_store_bus/sub_A" sampleTime="1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="data_store_bus/sub_A">
+			<InPort name="In1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="SimpleBus" signalName="Lukas" type="SimpleBus">
+				<Variable varid="varif_409" signalName="Lukas.a" signalType="boolean" tlTypeName="boolean" type="boolean">
+					<ifName ifid="if_409" initValue="0" lsb="1.0" offset="0.0" displayName="In1.Lukas.a" identifier="INPUT:In1.Lukas.a" />
+				</Variable>
+				<Variable varid="varif_410" signalName="Lukas.b" width1="3" signalType="int32" signalDim="[1 3]" tlTypeName="int32" width="3" type="int32">
+					<ifName ifid="if_411" index1="1" initValue="0" lsb="1.0" offset="0.0" displayName="In1.Lukas.b(1)" identifier="INPUT:In1.Lukas.b(1)" />
+					<ifName ifid="if_412" index1="2" initValue="0" lsb="1.0" offset="0.0" displayName="In1.Lukas.b(2)" identifier="INPUT:In1.Lukas.b(2)" />
+					<ifName ifid="if_413" index1="3" initValue="0" lsb="1.0" offset="0.0" displayName="In1.Lukas.b(3)" identifier="INPUT:In1.Lukas.b(3)" />
+				</Variable>
+			</InPort>
+			<DataStoreWrite name="Data Store&#xA;Write" path="data_store_bus/sub_A/Data Store&#xA;Write" physicalPath="data_store_bus/sub_A/Data Store&#xA;Write" portNumber="0" signal="BusStore1" compositeSig="bus" busType="NON_VIRTUAL" busObj="SimpleBus" signalName="BusStore1" type="SimpleBus">
+				<Variable varid="varif_419" signalName="BusStore1.a" signalType="boolean" tlTypeName="boolean" type="boolean">
+					<ifName ifid="if_419" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nWrite@BusStore1}.BusStore1.a" identifier="OUTPUT:Data Store&#xA;Write.BusStore1.a" />
+				</Variable>
+				<Variable varid="varif_420" signalName="BusStore1.b" width1="3" signalType="int32" signalDim="[1 3]" tlTypeName="int32" width="3" type="int32">
+					<ifName ifid="if_421" index1="1" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nWrite@BusStore1}.BusStore1.b(1)" identifier="OUTPUT:Data Store&#xA;Write.BusStore1.b(1)" />
+					<ifName ifid="if_422" index1="2" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nWrite@BusStore1}.BusStore1.b(2)" identifier="OUTPUT:Data Store&#xA;Write.BusStore1.b(2)" />
+					<ifName ifid="if_423" index1="3" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nWrite@BusStore1}.BusStore1.b(3)" identifier="OUTPUT:Data Store&#xA;Write.BusStore1.b(3)" />
+				</Variable>
+			</DataStoreWrite>
+			<Model name="data_store_bus" modelPath="/E:/ModelsDev/UT_SL/ds_bus_01/ml2019a/data_store_bus.slx" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="27t" name="sub_B" path="data_store_bus/sub_B" sampleTime="1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="data_store_bus/sub_B">
+			<DataStoreRead name="Data Store&#xA;Read" path="data_store_bus/sub_B/Data Store&#xA;Read" physicalPath="data_store_bus/sub_B/Data Store&#xA;Read" portNumber="0" signal="BusStore1" compositeSig="bus" busType="NON_VIRTUAL" busObj="SimpleBus" signalName="BusStore1" type="SimpleBus">
+				<Variable varid="varif_429" signalName="BusStore1.a" signalType="boolean" tlTypeName="boolean" type="boolean">
+					<ifName ifid="if_429" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nRead@BusStore1}.BusStore1.a" identifier="INPUT:Data Store&#xA;Read.BusStore1.a" />
+				</Variable>
+				<Variable varid="varif_430" signalName="BusStore1.b" width1="3" signalType="int32" signalDim="[1 3]" tlTypeName="int32" width="3" type="int32">
+					<ifName ifid="if_431" index1="1" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nRead@BusStore1}.BusStore1.b(1)" identifier="INPUT:Data Store&#xA;Read.BusStore1.b(1)" />
+					<ifName ifid="if_432" index1="2" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nRead@BusStore1}.BusStore1.b(2)" identifier="INPUT:Data Store&#xA;Read.BusStore1.b(2)" />
+					<ifName ifid="if_433" index1="3" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nRead@BusStore1}.BusStore1.b(3)" identifier="INPUT:Data Store&#xA;Read.BusStore1.b(3)" />
+				</Variable>
+			</DataStoreRead>
+			<DataStoreWrite name="Data Store&#xA;Write" path="data_store_bus/sub_B/Data Store&#xA;Write" physicalPath="data_store_bus/sub_B/Data Store&#xA;Write" portNumber="0" signal="BusStore2" compositeSig="bus" busType="NON_VIRTUAL" busObj="SimpleBus" signalName="BusStore2" type="SimpleBus">
+				<Variable varid="varif_439" signalName="BusStore2.a" signalType="boolean" tlTypeName="boolean" type="boolean">
+					<ifName ifid="if_439" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nWrite@BusStore2}.BusStore2.a" identifier="OUTPUT:Data Store&#xA;Write.BusStore2.a" />
+				</Variable>
+				<Variable varid="varif_440" signalName="BusStore2.b" width1="3" signalType="int32" signalDim="[1 3]" tlTypeName="int32" width="3" type="int32">
+					<ifName ifid="if_441" index1="1" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nWrite@BusStore2}.BusStore2.b(1)" identifier="OUTPUT:Data Store&#xA;Write.BusStore2.b(1)" />
+					<ifName ifid="if_442" index1="2" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nWrite@BusStore2}.BusStore2.b(2)" identifier="OUTPUT:Data Store&#xA;Write.BusStore2.b(2)" />
+					<ifName ifid="if_443" index1="3" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nWrite@BusStore2}.BusStore2.b(3)" identifier="OUTPUT:Data Store&#xA;Write.BusStore2.b(3)" />
+				</Variable>
+			</DataStoreWrite>
+			<Model name="data_store_bus" modelPath="/E:/ModelsDev/UT_SL/ds_bus_01/ml2019a/data_store_bus.slx" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="27u" name="sub_C" path="data_store_bus/sub_C" sampleTime="1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="data_store_bus/sub_C">
+			<DataStoreRead name="Data Store&#xA;Read" path="data_store_bus/sub_C/Data Store&#xA;Read" physicalPath="data_store_bus/sub_C/Data Store&#xA;Read" portNumber="0" signal="BusStore2" compositeSig="bus" busType="NON_VIRTUAL" busObj="SimpleBus" signalName="BusStore2" type="SimpleBus">
+				<Variable varid="varif_449" signalName="BusStore2.a" signalType="boolean" tlTypeName="boolean" type="boolean">
+					<ifName ifid="if_449" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nRead@BusStore2}.BusStore2.a" identifier="INPUT:Data Store&#xA;Read.BusStore2.a" />
+				</Variable>
+				<Variable varid="varif_450" signalName="BusStore2.b" width1="3" signalType="int32" signalDim="[1 3]" tlTypeName="int32" width="3" type="int32">
+					<ifName ifid="if_451" index1="1" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nRead@BusStore2}.BusStore2.b(1)" identifier="INPUT:Data Store&#xA;Read.BusStore2.b(1)" />
+					<ifName ifid="if_452" index1="2" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nRead@BusStore2}.BusStore2.b(2)" identifier="INPUT:Data Store&#xA;Read.BusStore2.b(2)" />
+					<ifName ifid="if_453" index1="3" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nRead@BusStore2}.BusStore2.b(3)" identifier="INPUT:Data Store&#xA;Read.BusStore2.b(3)" />
+				</Variable>
+			</DataStoreRead>
+			<OutPort name="Out1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="SimpleBus" signalName="c" type="SimpleBus">
+				<Variable varid="varif_459" signalName="c.a" signalType="boolean" tlTypeName="boolean" type="boolean">
+					<ifName ifid="if_459" initValue="0" lsb="1.0" offset="0.0" displayName="Out1.c.a" identifier="OUTPUT:Out1.c.a" />
+				</Variable>
+				<Variable varid="varif_460" signalName="c.b" width1="3" signalType="int32" signalDim="[1 3]" tlTypeName="int32" width="3" type="int32">
+					<ifName ifid="if_461" index1="1" initValue="0" lsb="1.0" offset="0.0" displayName="Out1.c.b(1)" identifier="OUTPUT:Out1.c.b(1)" />
+					<ifName ifid="if_462" index1="2" initValue="0" lsb="1.0" offset="0.0" displayName="Out1.c.b(2)" identifier="OUTPUT:Out1.c.b(2)" />
+					<ifName ifid="if_463" index1="3" initValue="0" lsb="1.0" offset="0.0" displayName="Out1.c.b(3)" identifier="OUTPUT:Out1.c.b(3)" />
+				</Variable>
+			</OutPort>
+			<Model name="data_store_bus" modelPath="/E:/ModelsDev/UT_SL/ds_bus_01/ml2019a/data_store_bus.slx" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="27v" name="sub_D" path="data_store_bus/sub_D" sampleTime="1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="data_store_bus/sub_D">
+			<InPort name="In1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="SimpleBus" signalName="Lukas" type="SimpleBus">
+				<Variable varid="varif_469" signalName="Lukas.a" signalType="boolean" tlTypeName="boolean" type="boolean">
+					<ifName ifid="if_469" initValue="0" lsb="1.0" offset="0.0" displayName="In1.Lukas.a" identifier="INPUT:In1.Lukas.a" />
+				</Variable>
+				<Variable varid="varif_470" signalName="Lukas.b" width1="3" signalType="int32" signalDim="[1 3]" tlTypeName="int32" width="3" type="int32">
+					<ifName ifid="if_471" index1="1" initValue="0" lsb="1.0" offset="0.0" displayName="In1.Lukas.b(1)" identifier="INPUT:In1.Lukas.b(1)" />
+					<ifName ifid="if_472" index1="2" initValue="0" lsb="1.0" offset="0.0" displayName="In1.Lukas.b(2)" identifier="INPUT:In1.Lukas.b(2)" />
+					<ifName ifid="if_473" index1="3" initValue="0" lsb="1.0" offset="0.0" displayName="In1.Lukas.b(3)" identifier="INPUT:In1.Lukas.b(3)" />
+				</Variable>
+			</InPort>
+			<DataStoreWrite name="Data Store&#xA;Write" path="data_store_bus/sub_D/Data Store&#xA;Write" physicalPath="data_store_bus/sub_D/Data Store&#xA;Write" portNumber="0" signal="MyGlobalStore" compositeSig="bus" busType="NON_VIRTUAL" busObj="SimpleBus" signalName="MyGlobalStore" type="SimpleBus">
+				<Variable varid="varif_479" signalName="MyGlobalStore.a" signalType="boolean" tlTypeName="boolean" type="boolean">
+					<ifName ifid="if_479" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nWrite@MyGlobalStore}.MyGlobalStore.a" identifier="OUTPUT:Data Store&#xA;Write.MyGlobalStore.a" />
+				</Variable>
+				<Variable varid="varif_480" signalName="MyGlobalStore.b" width1="3" signalType="int32" signalDim="[1 3]" tlTypeName="int32" width="3" type="int32">
+					<ifName ifid="if_481" index1="1" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nWrite@MyGlobalStore}.MyGlobalStore.b(1)" identifier="OUTPUT:Data Store&#xA;Write.MyGlobalStore.b(1)" />
+					<ifName ifid="if_482" index1="2" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nWrite@MyGlobalStore}.MyGlobalStore.b(2)" identifier="OUTPUT:Data Store&#xA;Write.MyGlobalStore.b(2)" />
+					<ifName ifid="if_483" index1="3" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nWrite@MyGlobalStore}.MyGlobalStore.b(3)" identifier="OUTPUT:Data Store&#xA;Write.MyGlobalStore.b(3)" />
+				</Variable>
+			</DataStoreWrite>
+			<Model name="data_store_bus" modelPath="/E:/ModelsDev/UT_SL/ds_bus_01/ml2019a/data_store_bus.slx" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="27w" name="sub_E" path="data_store_bus/sub_E" sampleTime="1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="data_store_bus/sub_E">
+			<DataStoreRead name="Data Store&#xA;Read" path="data_store_bus/sub_E/Data Store&#xA;Read" physicalPath="data_store_bus/sub_E/Data Store&#xA;Read" portNumber="0" signal="MyGlobalStore" compositeSig="bus" busType="NON_VIRTUAL" busObj="SimpleBus" signalName="MyGlobalStore" type="SimpleBus">
+				<Variable varid="varif_489" signalName="MyGlobalStore.a" signalType="boolean" tlTypeName="boolean" type="boolean">
+					<ifName ifid="if_489" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nRead@MyGlobalStore}.MyGlobalStore.a" identifier="INPUT:Data Store&#xA;Read.MyGlobalStore.a" />
+				</Variable>
+				<Variable varid="varif_490" signalName="MyGlobalStore.b" width1="3" signalType="int32" signalDim="[1 3]" tlTypeName="int32" width="3" type="int32">
+					<ifName ifid="if_491" index1="1" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nRead@MyGlobalStore}.MyGlobalStore.b(1)" identifier="INPUT:Data Store&#xA;Read.MyGlobalStore.b(1)" />
+					<ifName ifid="if_492" index1="2" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nRead@MyGlobalStore}.MyGlobalStore.b(2)" identifier="INPUT:Data Store&#xA;Read.MyGlobalStore.b(2)" />
+					<ifName ifid="if_493" index1="3" initValue="0" lsb="1.0" offset="0.0" displayName="{Data Store\nRead@MyGlobalStore}.MyGlobalStore.b(3)" identifier="INPUT:Data Store&#xA;Read.MyGlobalStore.b(3)" />
+				</Variable>
+			</DataStoreRead>
+			<OutPort name="Out1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="SimpleBus" signalName="e" type="SimpleBus">
+				<Variable varid="varif_499" signalName="e.a" signalType="boolean" tlTypeName="boolean" type="boolean">
+					<ifName ifid="if_499" initValue="0" lsb="1.0" offset="0.0" displayName="Out1.e.a" identifier="OUTPUT:Out1.e.a" />
+				</Variable>
+				<Variable varid="varif_500" signalName="e.b" width1="3" signalType="int32" signalDim="[1 3]" tlTypeName="int32" width="3" type="int32">
+					<ifName ifid="if_501" index1="1" initValue="0" lsb="1.0" offset="0.0" displayName="Out1.e.b(1)" identifier="OUTPUT:Out1.e.b(1)" />
+					<ifName ifid="if_502" index1="2" initValue="0" lsb="1.0" offset="0.0" displayName="Out1.e.b(2)" identifier="OUTPUT:Out1.e.b(2)" />
+					<ifName ifid="if_503" index1="3" initValue="0" lsb="1.0" offset="0.0" displayName="Out1.e.b(3)" identifier="OUTPUT:Out1.e.b(3)" />
+				</Variable>
+			</OutPort>
+			<Model name="data_store_bus" modelPath="/E:/ModelsDev/UT_SL/ds_bus_01/ml2019a/data_store_bus.slx" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

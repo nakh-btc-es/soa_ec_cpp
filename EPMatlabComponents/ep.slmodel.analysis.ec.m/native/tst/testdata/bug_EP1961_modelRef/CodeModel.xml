@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="Model.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1961\Model_ert_rtw"/>
+    <File annotate="yes" id="ID72" kind="source" name="Model_InnerSubsystemNoFctFound.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1961\Model_ert_rtw"/>
+    <File annotate="yes" id="ID73" kind="source" name="RefMod_InnerSubsystemNoFctFound.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1961\slprj\ert\RefModel"/>
+    <File annotate="yes" id="ID74" kind="source" name="RefModel.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1961\slprj\ert\RefModel"/>
+    <File annotate="yes" id="ID75" kind="source" name="sub.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1961\slprj\ert\RefModel"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1961\slprj\ert\RefModel"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1961"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1961\Model_ert_rtw"/>
+    <IncludePath path="C:\Matlab\R2019b\extern\include"/>
+    <IncludePath path="C:\Matlab\R2019b\simulink\include"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\src"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\src\ext_mode\common"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\ert"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1961\slprj\ert\_sharedutils"/>
+  </IncludePaths>
+  <Functions archName="Model [C-Code]">
+    <Function fileref="ID71" initFunc="Model_initialize" name="Model_step">
+      <Interface>
+        <InterfaceObj kind="in" var="In_Main"/>
+        <InterfaceObj kind="out" var="Out_Main"/>
+        <InterfaceObj kind="cal" var="paramMain"/>
+        <InterfaceObj kind="cal" var="paramSub"/>
+        <InterfaceObj kind="disp" var="In_InnerSubsystemFctFound"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID72" initFunc="Model_initialize" name="Model_InnerSubsystemNoFctFound">
+      <Interface>
+        <InterfaceObj kind="in" var="In_InnerSubsystemNoFctFound"/>
+        <InterfaceObj kind="out" var="Out_InnerSubsystemNoFctFound"/>
+        <InterfaceObj kind="cal" var="paramSub"/>
+        <InterfaceObj kind="disp" var="In_InnerSubsystemFctFound"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID74" initFunc="Model_initialize" name="RefModel">
+      <Interface>
+        <InterfaceObj kind="in" var="In_InnerSubsystemNoFctFound"/>
+        <InterfaceObj kind="out" var="Out_InnerSubsystemNoFctFound"/>
+        <InterfaceObj kind="cal" var="paramSub"/>
+        <InterfaceObj kind="disp" var="In_InnerSubsystemFctFound"/>
+      </Interface>
+    </Function>
+    <Function initFunc="Model_initialize" name="RefModel_InnerSubsystemNoFctFound">
+      <Interface>
+        <InterfaceObj kind="in" var="In_InnerSubsystemNoFctFound"/>
+        <InterfaceObj kind="out" var="Out_InnerSubsystemNoFctFound"/>
+        <InterfaceObj kind="cal" var="paramSub"/>
+        <InterfaceObj kind="disp" var="In_InnerSubsystemFctFound"/>
+      </Interface>
+    </Function>
+    <Function initFunc="Model_initialize" name="sub">
+      <Interface>
+        <InterfaceObj kind="in" var="In_InnerSubsystemFctFound"/>
+        <InterfaceObj kind="out" var="Out_InnerSubsystemFctFound"/>
+        <InterfaceObj kind="cal" var="paramSub"/>
+      </Interface>
+    </Function>
+  </Functions>
+</CodeModel>

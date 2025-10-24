@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\bus_03\TLProj\top_A" name="top_A.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\bus_03\TLSim" name="top_A_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\bus_03\TLProj\top_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\bus_03\TLSim"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="bus_port2 [C-Code]">
+    <Function name="top_A" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_in1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_in2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_out1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_out2" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa2_sub_B1" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_in1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_in2" access="[1]" scaling="scID1"/>
+        <InterfaceObj kind="in" var="A_cal" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="B_cal" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa2_Sum1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa3_sub_B2" fileref="fID1" sampleTime="1.0">
+      <Args>
+        <Arg name="Sa3_a">
+          <ArrayRef size="2"/>
+        </Arg>
+      </Args>
+      <Interface>
+        <InterfaceObj kind="in" var="Sa3_a" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa3_b_middle" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa3_a_cal" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa3_b_cal" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa3_Sum1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa4_sub_B3" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_in1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_in2" access="[1]" scaling="scID1"/>
+        <InterfaceObj kind="in" var="A_cal" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="B_cal" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa4_Sum1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa5_sub_B4" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_in1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa5_a_mux" access=".Sa5_b_middle" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa5_a_mux" access=".Sa5_a_cal" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa5_b_cal" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa5_Sum1" scaling="scID1"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

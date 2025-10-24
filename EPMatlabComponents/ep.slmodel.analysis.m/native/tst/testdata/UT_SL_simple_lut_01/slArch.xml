@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_simple_lut_01\init_model.m" modelVersion="1.24" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_simple_lut_01\simple_lut.slx" modelCreationDate="2019-12-04T14:27:26" creator="developer">
+  <toolInfo name="Matlab" release="(R2020a)" version="9.8" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020a)" version="10.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.24" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_simple_lut_01\simple_lut.slx" creationDate="2019-12-04T14:27:26" modificationDate="2024-10-30T13:45:03" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_simple_lut_01\init_model.m">
+    <subsystem subsysID="ss1" physicalPath="simple_lut" path="" sampleTime="2" name="simple_lut" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="simple_lut/In1" path="In1" signalName="sig_in1">
+        <double/>
+      </inport>
+      <parameter name="bp1" path="Prelookup1" physicalPath="simple_lut/Prelookup1" origin="explicit_param" workspace="bp1">
+        <nonUniformArray size="5">
+          <signal index="1" initValue="5.0">
+            <double min="0.0" max="77.0"/>
+          </signal>
+          <signal index="2" initValue="6.0">
+            <double min="0.0" max="77.0"/>
+          </signal>
+          <signal index="3" initValue="7.0">
+            <double min="0.0" max="77.0"/>
+          </signal>
+          <signal index="4" initValue="8.0">
+            <double min="0.0" max="77.0"/>
+          </signal>
+          <signal index="5" initValue="9.0">
+            <double min="0.0" max="77.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Prelookup1" physicalPath="simple_lut/Prelookup1" simulinkBlockType="PreLookup" blockAttribute="BreakpointObject"/>
+        <usageContext path="RefLut1" physicalPath="simple_lut/RefLut1" simulinkBlockType="Interpolation_n-D"/>
+      </parameter>
+      <parameter name="bp2" path="Prelookup2" physicalPath="simple_lut/Prelookup2" origin="explicit_param" workspace="bp2">
+        <nonUniformArray size="5">
+          <signal index="1" initValue="5.0">
+            <double min="0.0" max="77.0"/>
+          </signal>
+          <signal index="2" initValue="6.0">
+            <double min="0.0" max="77.0"/>
+          </signal>
+          <signal index="3" initValue="7.0">
+            <double min="0.0" max="77.0"/>
+          </signal>
+          <signal index="4" initValue="8.0">
+            <double min="0.0" max="77.0"/>
+          </signal>
+          <signal index="5" initValue="9.0">
+            <double min="0.0" max="77.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Prelookup2" physicalPath="simple_lut/Prelookup2" simulinkBlockType="PreLookup" blockAttribute="BreakpointObject"/>
+      </parameter>
+      <parameter name="lut1" path="RefLut1" physicalPath="simple_lut/RefLut1" origin="explicit_param" workspace="lut1">
+        <nonUniformArray size="5">
+          <signal index="1" initValue="2.5">
+            <double/>
+          </signal>
+          <signal index="2" initValue="3.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="3.5">
+            <double/>
+          </signal>
+          <signal index="4" initValue="4.0">
+            <double/>
+          </signal>
+          <signal index="5" initValue="4.5">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="RefLut1" physicalPath="simple_lut/RefLut1" simulinkBlockType="Interpolation_n-D" blockAttribute="LookupTableObject"/>
+      </parameter>
+      <parameter name="lut2" path="ExplicitLut2" physicalPath="simple_lut/ExplicitLut2" origin="explicit_param" workspace="lut2">
+        <nonUniformArray size="10">
+          <signal index="1" initValue="0.7">
+            <double max="120.2"/>
+          </signal>
+          <signal index="2" initValue="1.4">
+            <double max="120.2"/>
+          </signal>
+          <signal index="3" initValue="2.0999999999999996">
+            <double max="120.2"/>
+          </signal>
+          <signal index="4" initValue="2.8">
+            <double max="120.2"/>
+          </signal>
+          <signal index="5" initValue="3.5">
+            <double max="120.2"/>
+          </signal>
+          <signal index="6" initValue="4.199999999999999">
+            <double max="120.2"/>
+          </signal>
+          <signal index="7" initValue="4.8999999999999995">
+            <double max="120.2"/>
+          </signal>
+          <signal index="8" initValue="5.6">
+            <double max="120.2"/>
+          </signal>
+          <signal index="9" initValue="6.3">
+            <double max="120.2"/>
+          </signal>
+          <signal index="10" initValue="7.0">
+            <double max="120.2"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="ExplicitLut2" physicalPath="simple_lut/ExplicitLut2" simulinkBlockType="Lookup_n-D" blockAttribute="LookupTableObject"/>
+      </parameter>
+      <parameter name="lut3" path="RefLut3" physicalPath="simple_lut/RefLut3" origin="explicit_param" workspace="lut3">
+        <nonUniformArray size="5">
+          <signal index="1" initValue="10.0">
+            <single min="-100.0" max="100.0"/>
+          </signal>
+          <signal index="2" initValue="12.0">
+            <single min="-100.0" max="100.0"/>
+          </signal>
+          <signal index="3" initValue="14.0">
+            <single min="-100.0" max="100.0"/>
+          </signal>
+          <signal index="4" initValue="16.0">
+            <single min="-100.0" max="100.0"/>
+          </signal>
+          <signal index="5" initValue="18.0">
+            <single min="-100.0" max="100.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="RefLut3" physicalPath="simple_lut/RefLut3" simulinkBlockType="Interpolation_n-D" blockAttribute="LookupTableObject"/>
+      </parameter>
+      <parameter name="lut4" path="ExplicitLut4" physicalPath="simple_lut/ExplicitLut4" origin="explicit_param" workspace="lut4">
+        <nonUniformArray size="10">
+          <signal index="1" initValue="-1.5">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="2" initValue="-3.0">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="3" initValue="-4.5">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="4" initValue="-6.0">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="5" initValue="-7.5">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="6" initValue="-9.0">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="7" initValue="-10.5">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="8" initValue="-12.0">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="9" initValue="-13.5">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="10" initValue="-15.0">
+            <double min="-15.5"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="ExplicitLut4" physicalPath="simple_lut/ExplicitLut4" simulinkBlockType="Lookup_n-D" blockAttribute="LookupTableObject"/>
+      </parameter>
+      <parameter name="myBp" path="RefLut3" physicalPath="simple_lut/RefLut3" origin="explicit_param" workspace="myBp">
+        <nonUniformArray size="5">
+          <signal index="1" initValue="3.0">
+            <double min="-2.0"/>
+          </signal>
+          <signal index="2" initValue="4.0">
+            <double min="-2.0"/>
+          </signal>
+          <signal index="3" initValue="5.0">
+            <double min="-2.0"/>
+          </signal>
+          <signal index="4" initValue="6.0">
+            <double min="-2.0"/>
+          </signal>
+          <signal index="5" initValue="7.0">
+            <double min="-2.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="RefLut3" physicalPath="simple_lut/RefLut3" simulinkBlockType="Interpolation_n-D"/>
+      </parameter>
+      <parameter name="p" path="Constant" physicalPath="simple_lut/Constant" origin="explicit_param" workspace="p" initValue="7.1">
+        <double min="6.0" max="8.0"/>
+        <usageContext path="Constant" physicalPath="simple_lut/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="simple_lut/Out1" path="Out1" signalName="sig_out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="simple_lut/Out2" path="Out2" signalName="sig_out2">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="simple_lut/Out3" path="Out3" signalName="sig_out3">
+        <double/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="simple_lut/Out4" path="Out4" signalName="sig_out4">
+        <uint32/>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="simple_lut/Out5" path="Out5" signalName="sig_out5">
+        <double/>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="simple_lut/Out6" path="Out6" signalName="sig_out6">
+        <single/>
+      </outport>
+      <display physicalPath="simple_lut/Data Type Conversion" path="Data Type Conversion" name="Data Type Conversion" portNumber="1" signalName="sig_inner4">
+        <uint32/>
+      </display>
+      <display physicalPath="simple_lut/ExplicitLut2" path="ExplicitLut2" name="ExplicitLut2" portNumber="1" signalName="sig_inner1">
+        <double/>
+      </display>
+      <display physicalPath="simple_lut/Prelookup1" path="Prelookup1" name="Prelookup1" portNumber="1" signalName="sig_inner2">
+        <uint32/>
+      </display>
+      <display physicalPath="simple_lut/Prelookup1" path="Prelookup1" name="Prelookup1" portNumber="2" signalName="sig_inner3">
+        <double/>
+      </display>
+      <display physicalPath="simple_lut/Subtract" path="Subtract" name="Subtract" portNumber="1" signalName="sig_inner5">
+        <double/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="288">
+	<Scope uid="288" name="Atomic Subsystem" path="simple/Atomic Subsystem" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="simple/Atomic Subsystem" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_444" signalType="MyColor" isSignalTypeEnum="yes" isFloat="yes">
+				<ifName ifid="if_444" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_445" signalType="MyColor" isSignalTypeEnum="yes" isFloat="yes">
+				<ifName ifid="if_445" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+			</Variable>
+		</InPort>
+		<InPort name="In3" portNumber="3" compositeSig="none">
+			<Variable varid="varif_446" signalType="double" isFloat="yes">
+				<ifName ifid="if_446" lsb="1" offset="0" displayName="In3" identifier="INPUT:In3" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_447" signalType="MyColor" isSignalTypeEnum="yes" isFloat="yes">
+				<ifName ifid="if_447" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_448" signalType="MyColor" isSignalTypeEnum="yes" isFloat="yes">
+				<ifName ifid="if_448" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out3" portNumber="3" compositeSig="none">
+			<Variable varid="varif_449" signalType="double" isFloat="yes">
+				<ifName ifid="if_449" lsb="1" offset="0" displayName="Out3" identifier="OUTPUT:Out3" />
+			</Variable>
+		</OutPort>
+		<Display name="Constant" path="simple/Atomic Subsystem/Constant" physicalPath="simple/Atomic Subsystem/Constant" portNumber="1">
+			<Variable varid="varif_450" signalType="MyColor" isSignalTypeEnum="yes" isFloat="yes">
+				<ifName ifid="if_450" lsb="1" offset="0" displayName="Constant" identifier="LOCAL:Constant" />
+			</Variable>
+		</Display>
+		<Display name="Constant1" path="simple/Atomic Subsystem/Constant1" physicalPath="simple/Atomic Subsystem/Constant1" portNumber="1" startIdx="1">
+			<Variable varid="varif_451" width1="2" signalType="MyColor" isSignalTypeEnum="yes" signalDim="[1 2]" isFloat="yes">
+				<ifName ifid="if_452" index1="1" lsb="1" offset="0" displayName="Constant1(1)" identifier="LOCAL:Constant1(1)" />
+				<ifName ifid="if_453" index1="2" lsb="1" offset="0" displayName="Constant1(2)" identifier="LOCAL:Constant1(2)" />
+			</Variable>
+		</Display>
+		<Display name="Constant2" path="simple/Atomic Subsystem/Constant2" physicalPath="simple/Atomic Subsystem/Constant2" portNumber="1" startIdx="1">
+			<Variable varid="varif_454" width1="2" width2="2" signalType="MyColor" isSignalTypeEnum="yes" signalDim="[2 2 2]" isFloat="yes">
+				<ifName ifid="if_457" index1="1" index2="1" lsb="1" offset="0" displayName="Constant2(1)(1)" identifier="LOCAL:Constant2(1)(1)" />
+				<ifName ifid="if_459" index1="2" index2="1" lsb="1" offset="0" displayName="Constant2(2)(1)" identifier="LOCAL:Constant2(2)(1)" />
+				<ifName ifid="if_458" index1="1" index2="2" lsb="1" offset="0" displayName="Constant2(1)(2)" identifier="LOCAL:Constant2(1)(2)" />
+				<ifName ifid="if_460" index1="2" index2="2" lsb="1" offset="0" displayName="Constant2(2)(2)" identifier="LOCAL:Constant2(2)(2)" />
+			</Variable>
+		</Display>
+		<Display name="Gain" path="simple/Atomic Subsystem/Gain" physicalPath="simple/Atomic Subsystem/Gain" portNumber="1">
+			<Variable varid="varif_461" signalType="double" isFloat="yes">
+				<ifName ifid="if_461" lsb="1" offset="0" displayName="Gain" identifier="LOCAL:Gain" />
+			</Variable>
+		</Display>
+		<Display name="Data Type Conversion2" path="simple/Atomic Subsystem/Subsystem/Data Type Conversion2" physicalPath="simple/Atomic Subsystem/Subsystem/Data Type Conversion2" portNumber="1">
+			<Variable varid="varif_462" signalType="MyColor" isSignalTypeEnum="yes" isFloat="yes">
+				<ifName ifid="if_462" lsb="1" offset="0" displayName="{Data Type Conversion2}" identifier="LOCAL:Subsystem/Data Type Conversion2" />
+			</Variable>
+		</Display>
+		<Calibration name="pEnum" path="simple/Atomic Subsystem/Constant" physicalPath="simple/Atomic Subsystem/Constant" origin="explicit_param">
+			<CalibrationUsage path="simple/Atomic Subsystem/Constant" physicalPath="simple/Atomic Subsystem/Constant" blockAttribute="Value" />
+			<Variable varid="varif_463" signalType="MyColor" isSignalTypeEnum="yes" isFloat="yes">
+				<ifName ifid="if_463" initValue="0" lsb="1" offset="0" displayName="pEnum" identifier="PARAMETER:Constant/pEnum" />
+			</Variable>
+		</Calibration>
+		<Calibration name="pEnumMatrix" path="simple/Atomic Subsystem/Constant2" physicalPath="simple/Atomic Subsystem/Constant2" origin="explicit_param" startIdx="1">
+			<CalibrationUsage path="simple/Atomic Subsystem/Constant2" physicalPath="simple/Atomic Subsystem/Constant2" blockAttribute="Value" />
+			<Variable varid="varif_464" width1="2" width2="2" signalType="MyColor" isSignalTypeEnum="yes" signalDim="[2 2 2]" isFloat="yes">
+				<ifName ifid="if_467" index1="1" index2="1" initValue="0" lsb="1" offset="0" displayName="pEnumMatrix(1)(1)" identifier="PARAMETER:Constant2/pEnumMatrix(1)(1)" />
+				<ifName ifid="if_469" index1="2" index2="1" initValue="1" lsb="1" offset="0" displayName="pEnumMatrix(2)(1)" identifier="PARAMETER:Constant2/pEnumMatrix(2)(1)" />
+				<ifName ifid="if_468" index1="1" index2="2" initValue="1" lsb="1" offset="0" displayName="pEnumMatrix(1)(2)" identifier="PARAMETER:Constant2/pEnumMatrix(1)(2)" />
+				<ifName ifid="if_470" index1="2" index2="2" initValue="2" lsb="1" offset="0" displayName="pEnumMatrix(2)(2)" identifier="PARAMETER:Constant2/pEnumMatrix(2)(2)" />
+			</Variable>
+		</Calibration>
+		<Calibration name="pEnumVector" path="simple/Atomic Subsystem/Constant1" physicalPath="simple/Atomic Subsystem/Constant1" origin="explicit_param" startIdx="1">
+			<CalibrationUsage path="simple/Atomic Subsystem/Constant1" physicalPath="simple/Atomic Subsystem/Constant1" blockAttribute="Value" />
+			<Variable varid="varif_471" width1="2" signalType="MyColor" isSignalTypeEnum="yes" signalDim="[1 2]" isFloat="yes">
+				<ifName ifid="if_472" index1="1" initValue="0" lsb="1" offset="0" displayName="pEnumVector(1)" identifier="PARAMETER:Constant1/pEnumVector(1)" />
+				<ifName ifid="if_473" index1="2" initValue="1" lsb="1" offset="0" displayName="pEnumVector(2)" identifier="PARAMETER:Constant1/pEnumVector(2)" />
+			</Variable>
+		</Calibration>
+		<Calibration name="pNum" path="simple/Atomic Subsystem/Gain" physicalPath="simple/Atomic Subsystem/Gain" origin="explicit_param">
+			<CalibrationUsage path="simple/Atomic Subsystem/Gain" physicalPath="simple/Atomic Subsystem/Gain" blockAttribute="Gain" />
+			<Variable varid="varif_474" signalType="double" isFloat="yes">
+				<ifName ifid="if_474" initValue="4.0" lsb="1" offset="0" displayName="pNum" identifier="PARAMETER:Gain/pNum" />
+			</Variable>
+		</Calibration>
+		<Model name="simple" modelPath="/E:/ModelsDev/UT_MIL_SL/enumParameter/ml2015asp1/simple.mdl" type="SimulinkModel" />
+		<Scope uid="287" name="Subsystem" path="simple/Atomic Subsystem/Subsystem" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="simple/Atomic Subsystem/Subsystem" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_505" signalType="MyColor" isSignalTypeEnum="yes" isFloat="yes">
+					<ifName ifid="if_505" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<InPort name="In2" portNumber="2" compositeSig="none">
+				<Variable varid="varif_506" signalType="MyColor" isSignalTypeEnum="yes" isFloat="yes">
+					<ifName ifid="if_506" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+				</Variable>
+			</InPort>
+			<InPort name="In3" portNumber="3" compositeSig="none">
+				<Variable varid="varif_507" width1="2" signalType="MyColor" isSignalTypeEnum="yes" signalDim="[1 2]" isFloat="yes">
+					<ifName ifid="if_508" index1="1" lsb="1" offset="0" displayName="In3(1)" identifier="INPUT:In3(1)" />
+					<ifName ifid="if_509" index1="2" lsb="1" offset="0" displayName="In3(2)" identifier="INPUT:In3(2)" />
+				</Variable>
+			</InPort>
+			<InPort name="In4" portNumber="4" compositeSig="none">
+				<Variable varid="varif_510" width1="2" width2="2" signalType="MyColor" isSignalTypeEnum="yes" signalDim="[2 2 2]" isFloat="yes">
+					<ifName ifid="if_513" index1="1" index2="1" lsb="1" offset="0" displayName="In4(1)(1)" identifier="INPUT:In4(1)(1)" />
+					<ifName ifid="if_515" index1="2" index2="1" lsb="1" offset="0" displayName="In4(2)(1)" identifier="INPUT:In4(2)(1)" />
+					<ifName ifid="if_514" index1="1" index2="2" lsb="1" offset="0" displayName="In4(1)(2)" identifier="INPUT:In4(1)(2)" />
+					<ifName ifid="if_516" index1="2" index2="2" lsb="1" offset="0" displayName="In4(2)(2)" identifier="INPUT:In4(2)(2)" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_517" signalType="MyColor" isSignalTypeEnum="yes" isFloat="yes">
+					<ifName ifid="if_517" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<Display name="Data Type Conversion2" path="simple/Atomic Subsystem/Subsystem/Data Type Conversion2" physicalPath="simple/Atomic Subsystem/Subsystem/Data Type Conversion2" portNumber="1">
+				<Variable varid="varif_518" signalType="MyColor" isSignalTypeEnum="yes" isFloat="yes">
+					<ifName ifid="if_518" lsb="1" offset="0" displayName="{Data Type Conversion2}" identifier="LOCAL:Data Type Conversion2" />
+				</Variable>
+			</Display>
+			<Model name="simple" modelPath="/E:/ModelsDev/UT_MIL_SL/enumParameter/ml2015asp1/simple.mdl" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

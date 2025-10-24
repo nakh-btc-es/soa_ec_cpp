@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="powerwindow_closed_loop"/>
+    <Architecture id="id1" name="powerwindow_closed_loop [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control"/>
+      <Path refId="id1" path="power_window_control.c:1:power_window_control"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="driver_neutral"/>
+        <Path refId="id1" path="driver_neutral"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="driver_up"/>
+        <Path refId="id1" path="driver_up"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="driver_down"/>
+        <Path refId="id1" path="driver_down"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Ipassenger_neutral"/>
+        <Path refId="id1" path="passenger_neutral"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="passenger_up"/>
+        <Path refId="id1" path="passenger_up"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="passenger_down"/>
+        <Path refId="id1" path="passenger_down"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="obstacle_position"/>
+        <Path refId="id1" path="obstacle_position"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="window_position"/>
+        <Path refId="id1" path="window_position"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="obctacle_detection"/>
+        <Path refId="id1" path="Sa1_obctacle_detection"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="move_up"/>
+        <Path refId="id1" path="Sa1_move_up"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="move_down"/>
+        <Path refId="id1" path="Sa1_move_down"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/detect_obstacle_endstop/detect_endstop/Constant1/position_endstop_top"/>
+        <Path refId="id1" path="position_endstop_top"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant3/auto_up_time"/>
+        <Path refId="id1" path="auto_up_time"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant2/emergency_down_time"/>
+        <Path refId="id1" path="emergency_down_time"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant1/auto_down_time"/>
+        <Path refId="id1" path="auto_down_time"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/obstacle_position(1)"/>
+        <Path refId="id1" path="obstacle_position"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/window_position(1)"/>
+        <Path refId="id1" path="window_position"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

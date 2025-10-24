@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="fcn_call_if"/>
+    <Architecture id="id1" name="fcn_call_if [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B1"/>
+      <Path refId="id1" path="top_A.c:1:Sa2_sub_B1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="a"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="a"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B1/Gain1(1)"/>
+        <Path refId="id1" path="Sa2_Gain1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B2/sub_C"/>
+      <Path refId="id1" path="top_A.c:1:Sa4_sub_C"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="b"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="b"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B2/sub_C/Gain1/c"/>
+        <Path refId="id1" path="c"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B2/sub_C/Gain1(1)"/>
+        <Path refId="id1" path="Sa4_Gain1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

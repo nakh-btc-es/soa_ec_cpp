@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="HvacHmi_Service.c" path="E:\ModelsDev\UT_EC\ar_wrapper_caller_bus_if\ml2018b\results_ec_analysis\csourcecollect-results\Dc"/>
+    <File annotate="no" id="ID72" kind="library" name="HvacHmi_Service_ep_rte_stub.c" path="E:\ModelsDev\UT_EC\ar_wrapper_caller_bus_if\ml2018b\results_ec_analysis\csourcecollect-results\D6"/>
+    <File annotate="no" id="ID73" kind="source" name="Mock_Cp_Proxi_GetValue.c" path="E:\ModelsDev\UT_EC\ar_wrapper_caller_bus_if\ml2018b\results_ec_analysis\csourcecollect-results\D2"/>
+    <File annotate="no" id="ID74" kind="source" name="Rte_Call_HvacHmi_Service_Cp_Proxi_GetValue.c" path="E:\ModelsDev\UT_EC\ar_wrapper_caller_bus_if\ml2018b\results_ec_analysis\csourcecollect-results\D2"/>
+    <File annotate="yes" id="ID75" kind="source" name="Wrapper_HvacHmi_Service.c" path="E:\ModelsDev\UT_EC\ar_wrapper_caller_bus_if\ml2018b\results_ec_analysis\csourcecollect-results\D2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="E:\ModelsDev\UT_EC\ar_wrapper_caller_bus_if\ml2018b\results_ec_analysis\csourcecollect-results\."/>
+    <IncludePath path="E:\ModelsDev\UT_EC\ar_wrapper_caller_bus_if\ml2018b\results_ec_analysis\csourcecollect-results\Db"/>
+    <IncludePath path="E:\ModelsDev\UT_EC\ar_wrapper_caller_bus_if\ml2018b\results_ec_analysis\csourcecollect-results\D9"/>
+    <IncludePath path="E:\ModelsDev\UT_EC\ar_wrapper_caller_bus_if\ml2018b\results_ec_analysis\csourcecollect-results\D8"/>
+    <IncludePath path="E:\ModelsDev\UT_EC\ar_wrapper_caller_bus_if\ml2018b\results_ec_analysis\csourcecollect-results\D7"/>
+    <IncludePath path="E:\ModelsDev\UT_EC\ar_wrapper_caller_bus_if\ml2018b\results_ec_analysis\csourcecollect-results\D5"/>
+    <IncludePath path="E:\ModelsDev\UT_EC\ar_wrapper_caller_bus_if\ml2018b\results_ec_analysis\csourcecollect-results\D3"/>
+    <IncludePath path="E:\ModelsDev\UT_EC\ar_wrapper_caller_bus_if\ml2018b\results_ec_analysis\csourcecollect-results\D1"/>
+  </IncludePaths>
+  <Defines/>
+  <Functions archName="Wrapper_HvacHmi_Service [C-Code]">
+    <Function initFunc="Wrapper_HvacHmi_Service_initialize" name="Wrapper_HvacHmi_Service_step">
+      <Interface>
+        <InterfaceObj kind="in" var="RteStub_EvtCmdIgnSts_Rp_EvtCmdIgnSts_EvtCmdIgnSts"/>
+        <InterfaceObj access=".FrontHVAC_BlwFuncReq" kind="in" var="in_Trigger_HVAC_AirFlowControlRequest_1"/>
+        <InterfaceObj access=".FrontHVAC_BlwJumpValueReq" kind="in" var="in_Trigger_HVAC_AirFlowControlRequest_1"/>
+        <InterfaceObj kind="in" var="in_Trigger_HVAC_AirFlowControlRequest_MhCategory_t"/>
+        <InterfaceObj access=".CDSF_FrontLeftModeDefrost_Req" kind="in" var="in_Trigger_HVAC_DistributionModeRequest_1"/>
+        <InterfaceObj access=".CDSF_FrontLeftModePanel_Req" kind="in" var="in_Trigger_HVAC_DistributionModeRequest_1"/>
+        <InterfaceObj access=".CDSF_FrontLeftModeFloor_Req" kind="in" var="in_Trigger_HVAC_DistributionModeRequest_1"/>
+        <InterfaceObj access=".CDSF_FrontRightModeDefrost_Req" kind="in" var="in_Trigger_HVAC_DistributionModeRequest_1"/>
+        <InterfaceObj access=".CDSF_FrontRightModePanel_Req" kind="in" var="in_Trigger_HVAC_DistributionModeRequest_1"/>
+        <InterfaceObj access=".CDSF_FrontRightModeFloor_Req" kind="in" var="in_Trigger_HVAC_DistributionModeRequest_1"/>
+        <InterfaceObj kind="in" var="in_Trigger_HVAC_DistributionModeRequest_MhCategory_t"/>
+        <InterfaceObj kind="in" var="in_Trigger_HVAC_Recirculation_Req_MhCategory_t"/>
+        <InterfaceObj access=".FrontHVAC_Func" kind="in" var="in_Trigger_TemperatureRequest_MhTemperatureRequest_DT"/>
+        <InterfaceObj access=".FrontHVAC_Func_jumpVAL" kind="in" var="in_Trigger_TemperatureRequest_MhTemperatureRequest_DT"/>
+        <InterfaceObj kind="in" var="in_Trigger_TemperatureRequest_MhCategory_t"/>
+        <InterfaceObj kind="in" var="dsin_Cp_Proxi_GetValue_ERR"/>
+        <InterfaceObj kind="in" var="dsin_Cp_Proxi_GetValue_Parameter_Size"/>
+        <InterfaceObj kind="in" var="dsin_Cp_Proxi_GetValue_Parameter_Value"/>
+        <InterfaceObj kind="out" var="RteStub_EvtHVAC_BlowerStatus_Customer_Pp_EvtHVAC_BlowerStatus_Customer_HVAC_BlowerStatus_Customer"/>
+        <InterfaceObj access=".HVACLeftMode_Sts" kind="out" var="RteStub_EvtHVAC_DistributionMode_Customer_Pp_EvtHVAC_DistributionMode_Customer_HVAC_DistributionMode_Customer"/>
+        <InterfaceObj access=".HVACRightMode_Sts" kind="out" var="RteStub_EvtHVAC_DistributionMode_Customer_Pp_EvtHVAC_DistributionMode_Customer_HVAC_DistributionMode_Customer"/>
+        <InterfaceObj access=".recirc_sts" kind="out" var="RteStub_EvtHVAC_Recirculation_Status_Client_Pp_EvtHVAC_Recirculation_Status_Client_HVAC_Recirculation_Status_Client"/>
+        <InterfaceObj access=".recirc_mode_sts" kind="out" var="RteStub_EvtHVAC_Recirculation_Status_Client_Pp_EvtHVAC_Recirculation_Status_Client_HVAC_Recirculation_Status_Client"/>
+        <InterfaceObj kind="out" var="RteStub_EvtHVACSync_Sts_Pp_EvtHVACSync_Sts_HVACSync_Sts"/>
+        <InterfaceObj kind="out" var="RteStub_EvtHVAC_BlowerStatus_Internal_Pp_EvtHVAC_BlowerStatus_Internal_HVAC_BlowerStatus_Internal"/>
+        <InterfaceObj access=".HVACLeftMode_Sts" kind="out" var="RteStub_EvtHVAC_DistributionMode_Internal_Pp_EvtHVAC_DistributionMode_Internal_HVAC_DistributionMode_Internal"/>
+        <InterfaceObj access=".HVACRightMode_Sts" kind="out" var="RteStub_EvtHVAC_DistributionMode_Internal_Pp_EvtHVAC_DistributionMode_Internal_HVAC_DistributionMode_Internal"/>
+        <InterfaceObj access=".HVACDRVTemp" kind="out" var="RteStub_EvtTemperatureStatus_Customer_Pp_EvtTemperatureStatus_Customer_TemperatureStatus_Customer"/>
+        <InterfaceObj access=".HVACPSNTemp" kind="out" var="RteStub_EvtTemperatureStatus_Customer_Pp_EvtTemperatureStatus_Customer_TemperatureStatus_Customer"/>
+        <InterfaceObj access=".HVAC_FL_Temp" kind="out" var="RteStub_EvtTemperatureStatus_Internal_Pp_EvtTemperatureStatus_Internal_TemperatureStatus_Internal"/>
+        <InterfaceObj access=".HVAC_FR_Temp" kind="out" var="RteStub_EvtTemperatureStatus_Internal_Pp_EvtTemperatureStatus_Internal_TemperatureStatus_Internal"/>
+        <InterfaceObj kind="out" var="out_Trigger_HVAC_AirFlowControlRequest_MhreqResp_t"/>
+        <InterfaceObj kind="out" var="out_Trigger_HVAC_DistributionModeRequest_MhreqResp_t"/>
+        <InterfaceObj kind="out" var="out_Trigger_HVAC_Recirculation_Req_MhreqResp_t"/>
+        <InterfaceObj kind="out" var="out_Trigger_TemperatureRequest_MhreqResp_t"/>
+        <InterfaceObj kind="out" var="dsout_Cp_Proxi_GetValue_Parameter_ID"/>
+        <InterfaceObj kind="out" var="dsout_Cp_Proxi_GetValue_Parameter_Size"/>
+        <InterfaceObj kind="out" var="dsout_Cp_Proxi_GetValue_Parameter_Value"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="HvacHmiInit" name="HvacHmi_Service_Main">
+      <Interface>
+        <InterfaceObj kind="in" var="RteStub_EvtCmdIgnSts_Rp_EvtCmdIgnSts_EvtCmdIgnSts"/>
+        <InterfaceObj access=".FrontHVAC_BlwFuncReq" kind="in" var="RteStub_IRV_Getter_HVAC_AirFlowControlRequest"/>
+        <InterfaceObj access=".FrontHVAC_BlwJumpValueReq" kind="in" var="RteStub_IRV_Getter_HVAC_AirFlowControlRequest"/>
+        <InterfaceObj access=".CDSF_FrontLeftModeDefrost_Req" kind="in" var="RteStub_IRV_Getter_HVAC_DistributionModeRequest"/>
+        <InterfaceObj access=".CDSF_FrontLeftModePanel_Req" kind="in" var="RteStub_IRV_Getter_HVAC_DistributionModeRequest"/>
+        <InterfaceObj access=".CDSF_FrontLeftModeFloor_Req" kind="in" var="RteStub_IRV_Getter_HVAC_DistributionModeRequest"/>
+        <InterfaceObj access=".CDSF_FrontRightModeDefrost_Req" kind="in" var="RteStub_IRV_Getter_HVAC_DistributionModeRequest"/>
+        <InterfaceObj access=".CDSF_FrontRightModePanel_Req" kind="in" var="RteStub_IRV_Getter_HVAC_DistributionModeRequest"/>
+        <InterfaceObj access=".CDSF_FrontRightModeFloor_Req" kind="in" var="RteStub_IRV_Getter_HVAC_DistributionModeRequest"/>
+        <InterfaceObj access=".FrontHVAC_Func" kind="in" var="RteStub_IRV_Getter_TemperatureRequest"/>
+        <InterfaceObj access=".FrontHVAC_Func_jumpVAL" kind="in" var="RteStub_IRV_Getter_TemperatureRequest"/>
+        <InterfaceObj kind="in" var="dsin_Cp_Proxi_GetValue_ERR"/>
+        <InterfaceObj kind="in" var="dsin_Cp_Proxi_GetValue_Parameter_Size"/>
+        <InterfaceObj kind="in" var="dsin_Cp_Proxi_GetValue_Parameter_Value"/>
+        <InterfaceObj kind="out" var="RteStub_EvtHVAC_BlowerStatus_Customer_Pp_EvtHVAC_BlowerStatus_Customer_HVAC_BlowerStatus_Customer"/>
+        <InterfaceObj access=".HVACLeftMode_Sts" kind="out" var="RteStub_EvtHVAC_DistributionMode_Customer_Pp_EvtHVAC_DistributionMode_Customer_HVAC_DistributionMode_Customer"/>
+        <InterfaceObj access=".HVACRightMode_Sts" kind="out" var="RteStub_EvtHVAC_DistributionMode_Customer_Pp_EvtHVAC_DistributionMode_Customer_HVAC_DistributionMode_Customer"/>
+        <InterfaceObj access=".recirc_sts" kind="out" var="RteStub_EvtHVAC_Recirculation_Status_Client_Pp_EvtHVAC_Recirculation_Status_Client_HVAC_Recirculation_Status_Client"/>
+        <InterfaceObj access=".recirc_mode_sts" kind="out" var="RteStub_EvtHVAC_Recirculation_Status_Client_Pp_EvtHVAC_Recirculation_Status_Client_HVAC_Recirculation_Status_Client"/>
+        <InterfaceObj kind="out" var="RteStub_EvtHVACSync_Sts_Pp_EvtHVACSync_Sts_HVACSync_Sts"/>
+        <InterfaceObj kind="out" var="RteStub_EvtHVAC_BlowerStatus_Internal_Pp_EvtHVAC_BlowerStatus_Internal_HVAC_BlowerStatus_Internal"/>
+        <InterfaceObj access=".HVACLeftMode_Sts" kind="out" var="RteStub_EvtHVAC_DistributionMode_Internal_Pp_EvtHVAC_DistributionMode_Internal_HVAC_DistributionMode_Internal"/>
+        <InterfaceObj access=".HVACRightMode_Sts" kind="out" var="RteStub_EvtHVAC_DistributionMode_Internal_Pp_EvtHVAC_DistributionMode_Internal_HVAC_DistributionMode_Internal"/>
+        <InterfaceObj access=".HVACDRVTemp" kind="out" var="RteStub_EvtTemperatureStatus_Customer_Pp_EvtTemperatureStatus_Customer_TemperatureStatus_Customer"/>
+        <InterfaceObj access=".HVACPSNTemp" kind="out" var="RteStub_EvtTemperatureStatus_Customer_Pp_EvtTemperatureStatus_Customer_TemperatureStatus_Customer"/>
+        <InterfaceObj access=".HVAC_FL_Temp" kind="out" var="RteStub_EvtTemperatureStatus_Internal_Pp_EvtTemperatureStatus_Internal_TemperatureStatus_Internal"/>
+        <InterfaceObj access=".HVAC_FR_Temp" kind="out" var="RteStub_EvtTemperatureStatus_Internal_Pp_EvtTemperatureStatus_Internal_TemperatureStatus_Internal"/>
+        <InterfaceObj kind="out" var="dsout_Cp_Proxi_GetValue_Parameter_ID"/>
+        <InterfaceObj kind="out" var="dsout_Cp_Proxi_GetValue_Parameter_Size"/>
+        <InterfaceObj kind="out" var="dsout_Cp_Proxi_GetValue_Parameter_Value"/>
+      </Interface>
+    </Function>
+  </Functions>
+</CodeModel>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeModel>
+   <Files>
+      <File annotate="yes" id="ID71" kind="source" name="virtual_parent.c"
+            path="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.import.ec.m\native\tst\tmpdir\tmp_ut_local_analyze_02\virtual_parent_ert_rtw"/>
+   </Files>
+   <IncludePaths>
+      <IncludePath path="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\src\includes"/>
+      <IncludePath path="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.import.ec.m\native\tst\tmpdir\tmp_ut_local_analyze_02"/>
+      <IncludePath path="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.import.ec.m\native\tst\tmpdir\tmp_ut_local_analyze_02\virtual_parent_ert_rtw"/>
+      <IncludePath path="E:\EP2\Dev\EPSimulinkModel\com.btc.ep.slmodel.import.ec.m\native\tst\tmpdir\tmp_ut_local_analyze_02\slprj\ert\_sharedutils"/>
+   </IncludePaths>
+   <Functions archName="virtual_parent [C-Code]" sampleTime="0.2">
+      <Function fileref="ID71" initFunc="virtual_parent_initialize" name="virtual_parent_step">
+         <Interface>
+            <InterfaceObj kind="in" scaling="ID2001" var="in1"/>
+            <InterfaceObj kind="in" scaling="ID2001" var="in2"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="out1"/>
+            <InterfaceObj initVal="true" kind="cal" scaling="ID2001" var="param_A"/>
+            <InterfaceObj initVal="false" kind="cal" scaling="ID2001" var="param_B"/>
+            <InterfaceObj kind="disp" scaling="ID2001" var="out1"/>
+            <InterfaceObj kind="disp" scaling="ID2001" var="out_A"/>
+            <InterfaceObj kind="disp" scaling="ID2001" var="out_B"/>
+         </Interface>
+      </Function>
+      <Function fileref="ID71" initFunc="virtual_parent_initialize" name="func_A">
+         <Interface>
+            <InterfaceObj kind="in" scaling="ID2001" var="in1"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="out_A"/>
+            <InterfaceObj initVal="true" kind="cal" scaling="ID2001" var="param_A"/>
+            <InterfaceObj kind="disp" scaling="ID2001" var="out_A"/>
+         </Interface>
+      </Function>
+      <Function fileref="ID71" initFunc="virtual_parent_initialize" name="func_B">
+         <Interface>
+            <InterfaceObj kind="in" scaling="ID2001" var="in2"/>
+            <InterfaceObj kind="out" scaling="ID2001" var="out_B"/>
+            <InterfaceObj initVal="false" kind="cal" scaling="ID2001" var="param_B"/>
+            <InterfaceObj kind="disp" scaling="ID2001" var="out_B"/>
+         </Interface>
+      </Function>
+   </Functions>
+   <Scalings>
+      <Scaling id="ID2001" lsb="1" offset="0"/>
+   </Scalings>
+</CodeModel>

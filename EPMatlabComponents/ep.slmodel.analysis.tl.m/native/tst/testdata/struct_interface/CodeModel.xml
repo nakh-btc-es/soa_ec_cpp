@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\struct_interface\TLProj\Subsystem1" name="Subsystem1.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\struct_interface\TLSim" name="Subsystem1_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\struct_interface\TLProj\Subsystem1"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\struct_interface\TLSim"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="struct_interface [C-Code]">
+    <Function name="Subsystem1" sampleTime="0.01">
+      <Args>
+        <Arg name="Input">
+          <Variable name="Arg_In_Out_a__a"/>
+        </Arg>
+        <Arg name="Output">
+          <Variable name="Arg_In_Out_a_"/>
+        </Arg>
+      </Args>
+      <Interface>
+        <InterfaceObj kind="in" var="Input" access="-&gt;Input_1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Input" access="-&gt;Input_2" scaling="scID1"/>
+        <InterfaceObj kind="in" var="DD_Sa1_in3" scaling="scID2"/>
+        <InterfaceObj kind="out" var="Output" access="-&gt;Output_2" scaling="scID3"/>
+        <InterfaceObj kind="out" var="Output" access="-&gt;Output_3" scaling="scID4"/>
+        <InterfaceObj kind="out" var="Output" access="-&gt;Output_1" scaling="scID1"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+    <Scaling id="scID2" lsb="7.8125000000000000e-03" offset="0.0000000000000000e+00"/>
+    <Scaling id="scID3" lsb="5.0000000000000000e-01" offset="-2.0000000000000000e+00"/>
+    <Scaling id="scID4" lsb="2.5000000000000000e-01" offset="-3.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

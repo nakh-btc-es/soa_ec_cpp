@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architectureConstraints>
+  <scope path="top_A/Subsystem/top_A">
+    <assumptions origin="tl_saturate:upperlimit">
+      <signalValue signal="top_A/Subsystem/top_A/Sat1/d" relation="geq" value="-1.0000000000000000e+00"/>
+    </assumptions>
+    <assumptions origin="tl_saturate:lowerlimit">
+      <signalValue signal="top_A/Subsystem/top_A/Sat2/c" relation="leq" value="1.0000000000000000e+00"/>
+    </assumptions>
+    <assumptions origin="tl_saturate">
+      <signalSignal relation="leq" signal1="top_A/Subsystem/top_A/Sat3/e" signal2="top_A/Subsystem/top_A/Sat3/b"/>
+    </assumptions>
+  </scope>
+</architectureConstraints>

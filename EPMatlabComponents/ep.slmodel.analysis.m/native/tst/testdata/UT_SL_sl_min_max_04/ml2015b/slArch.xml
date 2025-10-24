@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_min_max_04\min_max_init.m" modelVersion="1.31" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_min_max_04\min_max_sl.mdl" modelCreationDate="2017-03-20T13:25:24" creator="Alexander Hornstein">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.31" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_min_max_04\min_max_sl.mdl" creationDate="2017-03-20T13:25:24" modificationDate="2024-09-12T14:52:32" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_min_max_04\min_max_init.m">
+    <subsystem subsysID="ss1" physicalPath="min_max_sl/top_A" path="top_A" sampleTime="0.02" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="min_max_sl/top_A/In1" path="top_A/In1" signalName="sigA">
+        <double min="-10.5" max="11.5"/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="min_max_sl/top_A/In2" path="top_A/In2" signalName="sigB">
+        <single max="13.7"/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="min_max_sl/top_A/In3" path="top_A/In3">
+        <double/>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="min_max_sl/top_A/In4" path="top_A/In4" signalName="sigC">
+        <double min="14.2" max="15.7"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="min_max_sl/top_A/Out1" path="top_A/Out1" signalName="sigA">
+        <double min="-10.5" max="11.5"/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="min_max_sl/top_A/Out2" path="top_A/Out2" signalName="sigB">
+        <single min="-155.2" max="13.7"/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="min_max_sl/top_A/Out3" path="top_A/Out3" signalName="y1">
+        <double min="-18.9" max="253.23"/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="min_max_sl/top_A/Out4" path="top_A/Out4" signalName="y3">
+        <double min="-118.19"/>
+      </outport>
+      <display physicalPath="min_max_sl/top_A/In1" path="top_A/In1" name="In1" portNumber="1" signalName="sigA">
+        <double min="-10.5" max="11.5"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/In2" path="top_A/In2" name="In2" portNumber="1" signalName="sigB">
+        <single max="13.7"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/In4" path="top_A/In4" name="In4" portNumber="1" signalName="sigC">
+        <double min="14.2" max="15.7"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Chart" path="top_A/Chart" name="y1" stateflowVariable="y1" portNumber="1" signalName="y1">
+        <double min="-18.899999999999999" max="253.22999999999999"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Chart" path="top_A/Chart" name="y2" stateflowVariable="y2" portNumber="2" signalName="y2">
+        <single min="-155.2" max="13.7"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Chart" path="top_A/Chart" name="y3" stateflowVariable="y3" portNumber="3" signalName="y3">
+        <double min="-118.19"/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="min_max_sl/top_A/Chart" path="top_A/Chart" sampleTime="0.02" name="Chart" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="u1" physicalPath="min_max_sl/top_A/Chart/u1" path="top_A/Chart/u1">
+        <double min="-17.199999999999999" max="17.300000000000001"/>
+      </inport>
+      <inport portNumber="2" name="u2" physicalPath="min_max_sl/top_A/Chart/u2" path="top_A/Chart/u2" signalName="sigB">
+        <single max="4.2000000000000002"/>
+      </inport>
+      <inport portNumber="3" name="u3" physicalPath="min_max_sl/top_A/Chart/u3" path="top_A/Chart/u3" signalName="sigC">
+        <double min="14.2" max="15.7"/>
+      </inport>
+      <outport portNumber="1" name="y1" physicalPath="min_max_sl/top_A/Chart/y1" path="top_A/Chart/y1" signalName="y1">
+        <double min="-18.899999999999999" max="253.22999999999999"/>
+      </outport>
+      <outport portNumber="2" name="y2" physicalPath="min_max_sl/top_A/Chart/y2" path="top_A/Chart/y2" signalName="y2">
+        <single min="-155.2" max="13.7"/>
+      </outport>
+      <outport portNumber="3" name="y3" physicalPath="min_max_sl/top_A/Chart/y3" path="top_A/Chart/y3" signalName="y3">
+        <double min="-118.19"/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

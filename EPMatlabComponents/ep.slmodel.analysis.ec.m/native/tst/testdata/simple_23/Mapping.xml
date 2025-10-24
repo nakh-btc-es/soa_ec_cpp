@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="PhaTempU"/>
+    <Architecture id="id1" name="PhaTempU [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="PhaTempU.c:1:PhaTempU_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="tPhaTempU" refId="id0"/>
+        <Path path="tPhaTempU" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="PhaTempUCali" refId="id0"/>
+        <Path path="PhaTempUCali.ia_stPhaTempULimHi" refId="id1"/>
+        <SignalMapping>
+          <Path path=".PhaTempUCali.ia_stPhaTempULimHi" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="PhaTempUCali" refId="id0"/>
+        <Path path="PhaTempUCali.ia_stPhaTempULimLo" refId="id1"/>
+        <SignalMapping>
+          <Path path=".PhaTempUCali.ia_stPhaTempULimLo" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="PhaTempUCali" refId="id0"/>
+        <Path path="PhaTempUCali.ia_tPhaTempU" refId="id1"/>
+        <SignalMapping>
+          <Path path=".PhaTempUCali.ia_tPhaTempU" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ia_bPhaTempUEnaMan_C" refId="id0"/>
+        <Path path="ia_bPhaTempUEnaMan_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ia_stPhaTempULimHiEnaMan_C" refId="id0"/>
+        <Path path="ia_stPhaTempULimHiEnaMan_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ia_stPhaTempULimHiMan_C" refId="id0"/>
+        <Path path="ia_stPhaTempULimHiMan_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ia_stPhaTempULimLoEnaMan_C" refId="id0"/>
+        <Path path="ia_stPhaTempULimLoEnaMan_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ia_stPhaTempULimLoMan_C" refId="id0"/>
+        <Path path="ia_stPhaTempULimLoMan_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ia_tPhaTempErrRplcVal_C" refId="id0"/>
+        <Path path="ia_tPhaTempErrRplcVal_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ia_tPhaTempULimHi_C" refId="id0"/>
+        <Path path="ia_tPhaTempULimHi_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ia_tPhaTempULimLo_C" refId="id0"/>
+        <Path path="ia_tPhaTempULimLo_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ia_tPhaTempUMan_C" refId="id0"/>
+        <Path path="ia_tPhaTempUMan_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ia_tiFilPhaTempU_C" refId="id0"/>
+        <Path path="ia_tiFilPhaTempU_C" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

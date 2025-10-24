@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="bug_32712"/>
+    <Architecture id="id1" name="bug_32712 [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A"/>
+      <Path refId="id1" path="top_A.c:1:top_A"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort"/>
+        <Path refId="id1" path="Sa1_InPort"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort"/>
+        <Path refId="id1" path="Sa1_OutPort"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Model_B/Model_C/Saturation/c"/>
+        <Path refId="id1" path="c"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Model_B/Saturation/b"/>
+        <Path refId="id1" path="b"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Saturation/a"/>
+        <Path refId="id1" path="a"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Saturation(1)"/>
+        <Path refId="id1" path="Sa1_Saturation"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Model_B/Saturation(1)"/>
+        <Path refId="id1" path="Sb1_Saturation"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Model_B/Model_C/Saturation(1)"/>
+        <Path refId="id1" path="Sc1_Saturation"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/Model_B"/>
+      <Path refId="id1" path="top_A.c:1:top_A/sub_B.c:1:step_b"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort"/>
+        <Path refId="id1" path="Sb1_InPort"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort"/>
+        <Path refId="id1" path="Sb1_OutPort"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Model_B/Model_C/Saturation/c"/>
+        <Path refId="id1" path="c"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Model_B/Saturation/b"/>
+        <Path refId="id1" path="b"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Model_B/Saturation(1)"/>
+        <Path refId="id1" path="Sb1_Saturation"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Model_B/Model_C/Saturation(1)"/>
+        <Path refId="id1" path="Sc1_Saturation"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/Model_B/Model_C"/>
+      <Path refId="id1" path="top_A.c:1:top_A/sub_B.c:1:step_b/sub_C.c:1:step_c"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort"/>
+        <Path refId="id1" path="Sc1_InPort"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort"/>
+        <Path refId="id1" path="Sc1_OutPort"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Model_B/Model_C/Saturation/c"/>
+        <Path refId="id1" path="c"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Model_B/Model_C/Saturation(1)"/>
+        <Path refId="id1" path="Sc1_Saturation"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

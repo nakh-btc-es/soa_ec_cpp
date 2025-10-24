@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\45bcb9e9\bug_34573\TLProj\top_A" name="top_A.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\45bcb9e9\bug_34573\TLProj\sub_B" name="my_cals.c" kind="source" annotate="yes" id="fID2"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\45bcb9e9\bug_34573\TLProj\sub_B" name="sub_B.c" kind="source" annotate="yes" id="fID3"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\45bcb9e9\bug_34573\TLProj\sub_C1" name="sub_C1.c" kind="source" annotate="yes" id="fID4"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\45bcb9e9\bug_34573\TLSim" name="top_A_fri.c" kind="source" annotate="no" id="fID5"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\45bcb9e9\bug_34573\TLSim" name="sub_B_fri.c" kind="source" annotate="no" id="fID6"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\45bcb9e9\bug_34573\TLSim" name="sub_C1_fri.c" kind="source" annotate="no" id="fID7"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\45bcb9e9\bug_34573\TLProj\top_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\45bcb9e9\bug_34573\TLProj\sub_B"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\45bcb9e9\bug_34573\TLProj\sub_C1"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\45bcb9e9\bug_34573\TLSim"/>
+    <IncludePath path="C:\dspace\TL42\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dspace\TL42\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dspace\TL42\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="42"/>
+  </Defines>
+  <Functions archName="increm_subs [C-Code]">
+    <Function name="top_A" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_in1" scaling="scID1"/>
+        <InterfaceObj kind="cal" var="c" scaling="scID1" initVal="7.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="b" scaling="scID1" initVal="7.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="a" scaling="scID1" initVal="7.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa1_out1" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sid_sub_B1_Gain_a" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sid_sub_B2_Gain_c" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sid_sub_B3_Gain_b" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sid_sub_C1_Gain_c" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sid_sub_B1_sub_B" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sid_sub_B1_In1" scaling="scID1"/>
+        <InterfaceObj kind="cal" var="c" scaling="scID1" initVal="7.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="b" scaling="scID1" initVal="7.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="a" scaling="scID1" initVal="7.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sid_sub_B1_Out1" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sid_sub_B1_Gain_a" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sid_sub_B2_Gain_c" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sid_sub_B3_Gain_b" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sid_sub_C1_Gain_c" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sid_sub_B2_sub_C2" fileref="fID3" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sid_sub_B2_In1" scaling="scID1"/>
+        <InterfaceObj kind="cal" var="c" scaling="scID1" initVal="7.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sid_sub_B2_Out1" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sid_sub_B2_Gain_c" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sid_sub_C1_sub_C1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sid_sub_C1_In1" scaling="scID1"/>
+        <InterfaceObj kind="cal" var="c" scaling="scID1" initVal="7.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sid_sub_C1_Out1" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sid_sub_C1_Gain_c" scaling="scID1"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLProj\controller" name="ControllerMain.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLProj\controller" name="DispsEntireSystem.c" kind="source" annotate="yes" id="fID2"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLProj\controller" name="InOutEntireSystem.c" kind="source" annotate="yes" id="fID3"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLProj\controller" name="tl_rdi_AirflowCalculation.c" kind="source" annotate="yes" id="fID4"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLProj\controller" name="tl_rdi_ControlLogic.c" kind="source" annotate="yes" id="fID5"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLProj\controller" name="tl_rdi_SensorCorrectionAndFaultRedundancy.c" kind="source" annotate="yes" id="fID6"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLProj\AirflowCalculation" name="AirflowCalculation.c" kind="source" annotate="yes" id="fID7"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLProj\ControlLogic" name="ControlLogic.c" kind="source" annotate="yes" id="fID8"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLProj\FuelCalculation" name="FuelCalculation.c" kind="source" annotate="yes" id="fID9"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLProj\SensorCorrectionAndFaultRedundancy" name="SensorCorrectionAndFaultRedundancy.c" kind="source" annotate="yes" id="fID10"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLSim" name="controller_fri.c" kind="source" annotate="no" id="fID11"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLSim" name="AirflowCalculation_fri.c" kind="source" annotate="no" id="fID12"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLSim" name="ControlLogic_fri.c" kind="source" annotate="no" id="fID13"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLSim" name="FuelCalculation_fri.c" kind="source" annotate="no" id="fID14"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLSim" name="SensorCorrectionAndFaultRedundancy_fri.c" kind="source" annotate="no" id="fID15"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLSim\StubCode\FuelCalculation" name="tl_rdi_FuelCalculation.c" kind="source" annotate="no" id="fID16"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLProj\controller"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLProj\AirflowCalculation"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLProj\ControlLogic"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLProj\FuelCalculation"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLProj\SensorCorrectionAndFaultRedundancy"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLSim"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl34\TLSim\StubCode\FuelCalculation"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="ReplaceableDataItems [C-Code]">
+    <Function name="ControllerMain" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="in" var="throttle" min="0.0000000000000000e+00" max="1.2000000000000000e+02"/>
+        <InterfaceObj kind="in" var="speed" min="0.0000000000000000e+00" max="1.0000000000000000e+03"/>
+        <InterfaceObj kind="in" var="EGO" min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="pressure" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="fuel_rate" min="0.0000000000000000e+00" max="7.9000000000000004e+00"/>
+        <InterfaceObj kind="disp" var="SAirCalc1_Disc__Time_Integrator"/>
+        <InterfaceObj kind="disp" var="SAirCalc1_EGO_GT_Threshold" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SAirCalc1_MAP_x_PC_x_speed"/>
+        <InterfaceObj kind="disp" var="SAirCalc1_Saturation"/>
+        <InterfaceObj kind="disp" var="SAirCalc1_e0"/>
+        <InterfaceObj kind="disp" var="SAirCalc1_hold_integrator"/>
+        <InterfaceObj kind="disp" var="SAirCalc1_not_normal_operation" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SCntrl1_Logical_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SCntrl1_Relational_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SCntrl1_Relational_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SCntrl1_Relational_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SCntrl1_Sum" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="SFuelCalc1_F_A"/>
+        <InterfaceObj kind="disp" var="SFuelCalc2_Logical_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SFuelCalc2_Relational_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SFuelCalc2_Relational_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SFuelCalc2_Sum2"/>
+        <InterfaceObj kind="disp" var="SFuelCalc2_mode_select" scaling="scID1" min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SFuelCalc1_fee__rward_fuel_rate"/>
+      </Interface>
+    </Function>
+    <Function name="AirflowCalculation" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="in" var="throttle_est_InputsAirCalc_rdi" replaceable="yes"/>
+        <InterfaceObj kind="in" var="speed_est_InputsAirCalc_rdi" replaceable="yes" min="2.9000000000000000e+01" max="8.2140000000000000e+03"/>
+        <InterfaceObj kind="in" var="EGO_est_InputsAirCalc_rdi" replaceable="yes" min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Map_est_InputsAirCalc_rdi" replaceable="yes" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="fail_O2_InputsAirCalc_rdi" replaceable="yes" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="fuel_mode_InputsAirCalc_rdi" replaceable="yes" scaling="scID1" min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="est_air_flow_OutputsAirCalc_rdi" replaceable="yes"/>
+        <InterfaceObj kind="out" var="feedb_corr_OutputsAirCalc_rdi" replaceable="yes"/>
+        <InterfaceObj kind="disp" var="SAirCalc1_Disc__Time_Integrator"/>
+        <InterfaceObj kind="disp" var="SAirCalc1_EGO_GT_Threshold" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SAirCalc1_MAP_x_PC_x_speed"/>
+        <InterfaceObj kind="disp" var="SAirCalc1_Saturation"/>
+        <InterfaceObj kind="disp" var="SAirCalc1_e0"/>
+        <InterfaceObj kind="disp" var="SAirCalc1_hold_integrator"/>
+        <InterfaceObj kind="disp" var="SAirCalc1_not_normal_operation" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="ControlLogic" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="in" var="throttle_InputsCntrl_rdi" replaceable="yes"/>
+        <InterfaceObj kind="in" var="Speed_InputsCntrl_rdi" replaceable="yes"/>
+        <InterfaceObj kind="in" var="EGO_InputsCntrl_rdi" replaceable="yes"/>
+        <InterfaceObj kind="in" var="pressure_InputsCntrl_rdi" replaceable="yes"/>
+        <InterfaceObj kind="out" var="fail_throttle_OutputsCntrl_rdi" replaceable="yes" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="fail_speed_OutputsCntrl_rdi" replaceable="yes" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="fail_o2_OutputsCntrl_rdi" replaceable="yes" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="fail_press_OutputsCntrl_rdi" replaceable="yes" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="fuel_mode_OutputsCntrl_rdi" replaceable="yes" scaling="scID1" min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SCntrl1_Logical_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SCntrl1_Relational_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SCntrl1_Relational_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SCntrl1_Relational_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SCntrl1_Sum" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="FuelRateCalculation" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="in" var="est_air_flow_InputsFuelCalc_rdi" replaceable="yes"/>
+        <InterfaceObj kind="in" var="fback_corr_InputsFuelCalc_rdi" replaceable="yes"/>
+        <InterfaceObj kind="in" var="fail_o2_InputsFuelCalc_rdi" replaceable="yes" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="fuel_mode_InputsFuelCalc_rdi" replaceable="yes" scaling="scID1" min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="fuel_rate_OutputsFuelCalc_rdi" replaceable="yes" min="0.0000000000000000e+00" max="7.9000000000000004e+00"/>
+        <InterfaceObj kind="disp" var="SFuelCalc1_F_A"/>
+        <InterfaceObj kind="disp" var="SFuelCalc2_Logical_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SFuelCalc2_Relational_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SFuelCalc2_Relational_Operator2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SFuelCalc2_Sum2"/>
+        <InterfaceObj kind="disp" var="SFuelCalc2_mode_select" scaling="scID1" min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="SFuelCalc1_fee__rward_fuel_rate"/>
+      </Interface>
+    </Function>
+    <Function name="SensorCorrection" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="in" var="throttle_InputsSensCorr_rdi" replaceable="yes" min="0.0000000000000000e+00" max="1.2000000000000000e+02"/>
+        <InterfaceObj kind="in" var="speed_InputsSensCorr_rdi" replaceable="yes" min="0.0000000000000000e+00" max="1.0000000000000000e+03"/>
+        <InterfaceObj kind="in" var="EGO_InputsSensCorr_rdi" replaceable="yes" min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="press_InputsSensCorr_rdi" replaceable="yes" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="fail_THROT_InputsSensCorr_rdi" replaceable="yes" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="fail_SPEED_InputsSensCorr_rdi" replaceable="yes" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="fail_O2_InputsSensCorr_rdi" replaceable="yes" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="fail_PRESS_InputsSensCorr_rdi" replaceable="yes" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="throt_est_OutputsSensCorr_rdi" replaceable="yes"/>
+        <InterfaceObj kind="out" var="speed_est_OutputsSensCorr_rdi" replaceable="yes" min="2.9504999999999999e+01" max="8.2131000000000004e+03"/>
+        <InterfaceObj kind="out" var="EGO_est_OutputsSensCorr_rdi" replaceable="yes" min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="MAP_est_OutputsSensCorr_rdi" replaceable="yes" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_client_server_fxp\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_client_server_fxp\init_Wrapper_ar_client_server_fxp.m" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_client_server_fxp\Wrapper_ar_client_server_fxp.slx" modelCreationDate="2024-09-12T20:23:19" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_client_server_fxp\Wrapper_ar_client_server_fxp.slx" creationDate="2024-09-12T20:23:19" modificationDate="2024-09-12T20:23:24" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_client_server_fxp\init_Wrapper_ar_client_server_fxp.m">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_ar_client_server_fxp" path="" sampleTime="0.01" name="Wrapper_ar_client_server_fxp" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="Wrapper_ar_client_server_fxp/in1" path="in1">
+        <fixedPoint simulinkTypeName="fixdt(1,32,8)" wordLength="32" isSigned="1" slope="0.00390625" bias="0.0" min="-8388608.0" max="8388607.99609375"/>
+      </inport>
+      <inport portNumber="2" name="in2" physicalPath="Wrapper_ar_client_server_fxp/in2" path="in2">
+        <fixedPoint simulinkTypeName="fixdt(0,32,0.0078125,2)" wordLength="32" isSigned="0" slope="0.0078125" bias="2.0" min="2.0" max="3.35544339921875E7"/>
+      </inport>
+      <inport portNumber="3" name="in3" physicalPath="Wrapper_ar_client_server_fxp/in3" path="in3">
+        <fixedPoint simulinkTypeName="fixdt(1,16,5)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-1024.0" max="1023.96875"/>
+      </inport>
+      <inport portNumber="4" name="in_myServFunc_u" physicalPath="Wrapper_ar_client_server_fxp/in_myServFunc_u" path="in_myServFunc_u" signalName="in_myServFunc_u">
+        <fixedPoint simulinkTypeName="fixdt(1,16,0.0625,0.5)" wordLength="16" isSigned="1" slope="0.0625" bias="0.5" min="-2047.5" max="2048.4375"/>
+      </inport>
+      <inport portNumber="0" name="dsin_abs_min_e" physicalPath="Wrapper_ar_client_server_fxp/Mock_abs_min/dsin_abs_min_e" path="Mock_abs_min/dsin_abs_min_e" signalName="dsin_abs_min_e">
+        <uint8/>
+        <dataStoreMemory signalName="dsin_abs_min_e"/>
+      </inport>
+      <inport portNumber="0" name="dsin_abs_min_y" physicalPath="Wrapper_ar_client_server_fxp/Mock_abs_min/dsin_abs_min_y" path="Mock_abs_min/dsin_abs_min_y" signalName="dsin_abs_min_y">
+        <fixedPoint simulinkTypeName="fixdt(0,32,0.015625,-2)" wordLength="32" isSigned="0" slope="0.015625" bias="-2.0" min="-2.0" max="6.7108861984375E7"/>
+        <dataStoreMemory signalName="dsin_abs_min_y"/>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="Wrapper_ar_client_server_fxp/out1" path="out1">
+        <fixedPoint simulinkTypeName="fixdt(0,32,0.015625,-2)" wordLength="32" isSigned="0" slope="0.015625" bias="-2.0" min="-2.0" max="6.7108861984375E7"/>
+      </outport>
+      <outport portNumber="2" name="out2" physicalPath="Wrapper_ar_client_server_fxp/out2" path="out2">
+        <fixedPoint simulinkTypeName="fixdt(1,16,0.0625,0.5)" wordLength="16" isSigned="1" slope="0.0625" bias="0.5" min="-2047.5" max="2048.4375"/>
+      </outport>
+      <outport portNumber="3" name="out_myServFunc_y" physicalPath="Wrapper_ar_client_server_fxp/out_myServFunc_y" path="out_myServFunc_y" signalName="out_myServFunc_y">
+        <fixedPoint simulinkTypeName="fixdt(1,16,5)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-1024.0" max="1023.96875"/>
+      </outport>
+      <outport portNumber="4" name="out_myServFunc_e" physicalPath="Wrapper_ar_client_server_fxp/out_myServFunc_e" path="out_myServFunc_e" signalName="out_myServFunc_e">
+        <uint8/>
+      </outport>
+      <outport portNumber="0" name="dsout_abs_min_u1" physicalPath="Wrapper_ar_client_server_fxp/Mock_abs_min/dsout_abs_min_u1" path="Mock_abs_min/dsout_abs_min_u1" signalName="dsout_abs_min_u1">
+        <fixedPoint simulinkTypeName="fixdt(1,32,0.00390625,0)" wordLength="32" isSigned="1" slope="0.00390625" bias="0.0" min="-8388608.0" max="8388607.99609375"/>
+        <dataStoreMemory signalName="dsout_abs_min_u1"/>
+      </outport>
+      <outport portNumber="0" name="dsout_abs_min_u2" physicalPath="Wrapper_ar_client_server_fxp/Mock_abs_min/dsout_abs_min_u2" path="Mock_abs_min/dsout_abs_min_u2" signalName="dsout_abs_min_u2" initValue="2.0">
+        <fixedPoint simulinkTypeName="fixdt(0,32,0.0078125,2)" wordLength="32" isSigned="0" slope="0.0078125" bias="2.0" min="2.0" max="3.35544339921875E7"/>
+        <dataStoreMemory signalName="dsout_abs_min_u2"/>
+      </outport>
+      <subsystem refSubsysID="ss7"/>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="ar_client_server_fxp/subA" path="ar_client_server_fxp/ar_client_server_fxp/subA" sampleTime="0.01" name="subA" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="A" physicalPath="ar_client_server_fxp/subA/A" path="ar_client_server_fxp/ar_client_server_fxp/subA/A" modelRef="model002">
+        <fixedPoint simulinkTypeName="fixdt(1,32,8)" wordLength="32" isSigned="1" slope="0.00390625" bias="0.0" min="-8388608.0" max="8388607.99609375"/>
+      </inport>
+      <inport portNumber="2" name="B" physicalPath="ar_client_server_fxp/subA/B" path="ar_client_server_fxp/ar_client_server_fxp/subA/B" modelRef="model002">
+        <fixedPoint simulinkTypeName="fixdt(0,32,0.0078125,2)" wordLength="32" isSigned="0" slope="0.0078125" bias="2.0" min="2.0" max="3.35544339921875E7"/>
+      </inport>
+      <inport portNumber="0" name="dsin_abs_min_e" physicalPath="Wrapper_ar_client_server_fxp/Mock_abs_min/dsin_abs_min_e" path="Mock_abs_min/dsin_abs_min_e" signalName="dsin_abs_min_e">
+        <uint8/>
+        <dataStoreMemory signalName="dsin_abs_min_e"/>
+      </inport>
+      <inport portNumber="0" name="dsin_abs_min_y" physicalPath="Wrapper_ar_client_server_fxp/Mock_abs_min/dsin_abs_min_y" path="Mock_abs_min/dsin_abs_min_y" signalName="dsin_abs_min_y">
+        <fixedPoint simulinkTypeName="fixdt(0,32,0.015625,-2)" wordLength="32" isSigned="0" slope="0.015625" bias="-2.0" min="-2.0" max="6.7108861984375E7"/>
+        <dataStoreMemory signalName="dsin_abs_min_y"/>
+      </inport>
+      <outport portNumber="1" name="u" physicalPath="ar_client_server_fxp/subA/u" path="ar_client_server_fxp/ar_client_server_fxp/subA/u" modelRef="model002">
+        <fixedPoint simulinkTypeName="fixdt(0,32,0.015625,-2)" wordLength="32" isSigned="0" slope="0.015625" bias="-2.0" min="-2.0" max="6.7108861984375E7"/>
+      </outport>
+      <outport portNumber="2" name="err" physicalPath="ar_client_server_fxp/subA/err" path="ar_client_server_fxp/ar_client_server_fxp/subA/err" modelRef="model002">
+        <uint8/>
+      </outport>
+      <outport portNumber="0" name="dsout_abs_min_u1" physicalPath="Wrapper_ar_client_server_fxp/Mock_abs_min/dsout_abs_min_u1" path="Mock_abs_min/dsout_abs_min_u1" signalName="dsout_abs_min_u1">
+        <fixedPoint simulinkTypeName="fixdt(1,32,0.00390625,0)" wordLength="32" isSigned="1" slope="0.00390625" bias="0.0" min="-8388608.0" max="8388607.99609375"/>
+        <dataStoreMemory signalName="dsout_abs_min_u1"/>
+      </outport>
+      <outport portNumber="0" name="dsout_abs_min_u2" physicalPath="Wrapper_ar_client_server_fxp/Mock_abs_min/dsout_abs_min_u2" path="Mock_abs_min/dsout_abs_min_u2" signalName="dsout_abs_min_u2" initValue="2.0">
+        <fixedPoint simulinkTypeName="fixdt(0,32,0.0078125,2)" wordLength="32" isSigned="0" slope="0.0078125" bias="2.0" min="2.0" max="3.35544339921875E7"/>
+        <dataStoreMemory signalName="dsout_abs_min_u2"/>
+      </outport>
+      <slfunc_caller path="ar_client_server_fxp/ar_client_server_fxp/subA/Function Caller" pathCaller="ar_client_server_fxp/subA/Function Caller" pathFunction="Wrapper_ar_client_server_fxp/Mock_abs_min"/>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.18" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_client_server_fxp\ar_client_server_fxp.slx" creationDate="2021-08-02T16:04:48" modificationDate="2024-09-12T20:23:16" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_client_server_fxp\init_Wrapper_ar_client_server_fxp.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

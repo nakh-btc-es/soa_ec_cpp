@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.17" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_32712\bug_32712.mdl" modelCreationDate="2014-06-20T15:03:46" creator="Administrator">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.17" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_32712\bug_32712.mdl" creationDate="2014-06-20T15:03:46" modificationDate="2021-11-17T11:25:24">
+    <subsystem subsysID="ss1" physicalPath="bug_32712/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="InPort" physicalPath="bug_32712/top_A/Subsystem/top_A/InPort" path="top_A/Subsystem/top_A/InPort">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="c" path="top_A/Subsystem/top_A/Model_B/Model_C/Saturation" physicalPath="sub_C/Saturation" modelRef="model002" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/c">
+        <miltype initValue="3.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="3.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Model_B/Model_C/Saturation" targetLinkBlockKind="TL_Saturate" physicalPath="sub_C/Saturation" simulinkBlockType="Saturate" blockAttribute="upperlimit" restriction="tl_saturate:upperlimit" modelRef="model002"/>
+      </calibration>
+      <calibration name="b" path="top_A/Subsystem/top_A/Model_B/Saturation" physicalPath="sub_B/Saturation" modelRef="model003" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/b">
+        <miltype initValue="3.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="3.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Model_B/Saturation" targetLinkBlockKind="TL_Saturate" physicalPath="sub_B/Saturation" simulinkBlockType="Saturate" blockAttribute="upperlimit" restriction="tl_saturate:upperlimit" modelRef="model003"/>
+      </calibration>
+      <calibration name="a" path="top_A/Subsystem/top_A/Saturation" physicalPath="bug_32712/top_A/Subsystem/top_A/Saturation" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/a">
+        <miltype initValue="3.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="3.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Saturation" targetLinkBlockKind="TL_Saturate" physicalPath="bug_32712/top_A/Subsystem/top_A/Saturation" simulinkBlockType="Saturate" blockAttribute="upperlimit" restriction="tl_saturate:upperlimit"/>
+      </calibration>
+      <outport portNumber="1" name="OutPort" physicalPath="bug_32712/top_A/Subsystem/top_A/OutPort" path="top_A/Subsystem/top_A/OutPort">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="bug_32712/top_A/Subsystem/top_A/Saturation" path="top_A/Subsystem/top_A/Saturation" name="Saturation" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="sub_B/Saturation" path="top_A/Subsystem/top_A/Model_B/Saturation" name="Saturation" portNumber="1" modelRef="model003">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="sub_C/Saturation" path="top_A/Subsystem/top_A/Model_B/Model_C/Saturation" name="Saturation" portNumber="1" modelRef="model002">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="sub_B" path="top_A/Subsystem/top_A/Model_B" sampleTime="1" name="Model_B" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="InPort" physicalPath="sub_B/InPort" path="top_A/Subsystem/top_A/Model_B/InPort" modelRef="model003">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="c" path="top_A/Subsystem/top_A/Model_B/Model_C/Saturation" physicalPath="sub_C/Saturation" modelRef="model002" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/c">
+        <miltype initValue="3.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="3.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Model_B/Model_C/Saturation" targetLinkBlockKind="TL_Saturate" physicalPath="sub_C/Saturation" simulinkBlockType="Saturate" blockAttribute="upperlimit" restriction="tl_saturate:upperlimit" modelRef="model002"/>
+      </calibration>
+      <calibration name="b" path="top_A/Subsystem/top_A/Model_B/Saturation" physicalPath="sub_B/Saturation" modelRef="model003" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/b">
+        <miltype initValue="3.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="3.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Model_B/Saturation" targetLinkBlockKind="TL_Saturate" physicalPath="sub_B/Saturation" simulinkBlockType="Saturate" blockAttribute="upperlimit" restriction="tl_saturate:upperlimit" modelRef="model003"/>
+      </calibration>
+      <outport portNumber="1" name="OutPort" physicalPath="sub_B/OutPort" path="top_A/Subsystem/top_A/Model_B/OutPort" modelRef="model003">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="sub_B/Saturation" path="top_A/Subsystem/top_A/Model_B/Saturation" name="Saturation" portNumber="1" modelRef="model003">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="sub_C/Saturation" path="top_A/Subsystem/top_A/Model_B/Model_C/Saturation" name="Saturation" portNumber="1" modelRef="model002">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="sub_C" path="top_A/Subsystem/top_A/Model_B/Model_C" sampleTime="1" name="Model_C" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="InPort" physicalPath="sub_C/InPort" path="top_A/Subsystem/top_A/Model_B/Model_C/InPort" modelRef="model002">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="c" path="top_A/Subsystem/top_A/Model_B/Model_C/Saturation" physicalPath="sub_C/Saturation" modelRef="model002" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/c">
+        <miltype initValue="3.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="3.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Model_B/Model_C/Saturation" targetLinkBlockKind="TL_Saturate" physicalPath="sub_C/Saturation" simulinkBlockType="Saturate" blockAttribute="upperlimit" restriction="tl_saturate:upperlimit" modelRef="model002"/>
+      </calibration>
+      <outport portNumber="1" name="OutPort" physicalPath="sub_C/OutPort" path="top_A/Subsystem/top_A/Model_B/Model_C/OutPort" modelRef="model002">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="sub_C/Saturation" path="top_A/Subsystem/top_A/Model_B/Model_C/Saturation" name="Saturation" portNumber="1" modelRef="model002">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.12" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_32712\sub_C.mdl" creationDate="2014-06-20T15:08:30" modificationDate="2021-11-17T11:25:24"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="1.13" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_32712\sub_B.mdl" creationDate="2014-06-20T15:08:30" modificationDate="2021-11-17T11:25:24"/>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

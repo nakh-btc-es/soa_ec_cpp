@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" modelVersion="1.47" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_enum_02_sldd\enum_model_02.mdl" modelCreationDate="2017-09-13T11:31:09" creator="developer">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.47" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_enum_02_sldd\enum_model_02.mdl" creationDate="2017-09-13T11:31:09" modificationDate="2020-07-21T15:50:02">
+    <subsystem subsysID="ss1" physicalPath="enum_model_02/top_A" path="top_A" sampleTime="0.2" name="top_A" scopeKind="SUT" kind="subsystem">
+      <parameter name="MyNumberParam" path="top_A/Chart" physicalPath="enum_model_02/top_A/Chart" initValue="1" origin="explicit_param" restricted="false" workspace="MyNumberParam">
+        <enumType name="MyNumber">
+          <enumElement name="ZERO" value="0"/>
+          <enumElement name="ONE" value="1"/>
+          <enumElement name="SEVEN" value="7"/>
+        </enumType>
+        <usageContext path="top_A/Chart" physicalPath="enum_model_02/top_A/Chart" simulinkBlockType="SubSystem" blockAttribute="Parameter"/>
+        <usageContext path="top_A/Const2" physicalPath="enum_model_02/top_A/Const2" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="paramA" path="top_A/Const1" physicalPath="enum_model_02/top_A/Const1" initValue="7" origin="explicit_param" restricted="false" workspace="paramA">
+        <enumType name="MyNumber">
+          <enumElement name="ZERO" value="0"/>
+          <enumElement name="ONE" value="1"/>
+          <enumElement name="SEVEN" value="7"/>
+        </enumType>
+        <usageContext path="top_A/Const1" physicalPath="enum_model_02/top_A/Const1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="paramB" path="top_A/Chart" physicalPath="enum_model_02/top_A/Chart" initValue="0" origin="explicit_param" restricted="false" workspace="paramB">
+        <enumType name="MyState">
+          <enumElement name="BAD" value="0"/>
+          <enumElement name="GOOD" value="1"/>
+          <enumElement name="AWESOME" value="2"/>
+          <enumElement name="bad" value="0"/>
+          <enumElement name="good" value="1"/>
+          <enumElement name="awesome" value="2"/>
+        </enumType>
+        <usageContext path="top_A/Chart" physicalPath="enum_model_02/top_A/Chart" simulinkBlockType="SubSystem" blockAttribute="Parameter"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="enum_model_02/top_A/Out1" path="top_A/Out1">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="enum_model_02/top_A/Out2" path="top_A/Out2" signalName="y">
+        <enumType name="MyNumber">
+          <enumElement name="ZERO" value="0"/>
+          <enumElement name="ONE" value="1"/>
+          <enumElement name="SEVEN" value="7"/>
+        </enumType>
+      </outport>
+      <display physicalPath="enum_model_02/top_A/Chart" path="top_A/Chart" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <enumType name="MyNumber">
+          <enumElement name="ZERO" value="0"/>
+          <enumElement name="ONE" value="1"/>
+          <enumElement name="SEVEN" value="7"/>
+        </enumType>
+      </display>
+      <display physicalPath="enum_model_02/top_A/RelOp1" path="top_A/RelOp1" name="RelOp1" portNumber="1">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="enum_model_02/top_A/Chart" path="top_A/Chart" sampleTime="0.2" name="Chart" scopeKind="SUT" kind="stateflow">
+      <parameter name="MyNumberParam" path="top_A/Chart" physicalPath="enum_model_02/top_A/Chart" initValue="1" origin="explicit_param" restricted="false" workspace="MyNumberParam">
+        <enumType name="MyNumber">
+          <enumElement name="ZERO" value="0"/>
+          <enumElement name="ONE" value="1"/>
+          <enumElement name="SEVEN" value="7"/>
+        </enumType>
+        <usageContext path="top_A/Chart" physicalPath="enum_model_02/top_A/Chart" simulinkBlockType="SubSystem" blockAttribute="Parameter"/>
+      </parameter>
+      <parameter name="paramB" path="top_A/Chart" physicalPath="enum_model_02/top_A/Chart" initValue="0" origin="explicit_param" restricted="false" workspace="paramB">
+        <enumType name="MyState">
+          <enumElement name="BAD" value="0"/>
+          <enumElement name="GOOD" value="1"/>
+          <enumElement name="AWESOME" value="2"/>
+          <enumElement name="bad" value="0"/>
+          <enumElement name="good" value="1"/>
+          <enumElement name="awesome" value="2"/>
+        </enumType>
+        <usageContext path="top_A/Chart" physicalPath="enum_model_02/top_A/Chart" simulinkBlockType="SubSystem" blockAttribute="Parameter"/>
+      </parameter>
+      <outport portNumber="1" name="y" physicalPath="enum_model_02/top_A/Chart/y" path="top_A/Chart/y" signalName="y">
+        <enumType name="MyNumber">
+          <enumElement name="ZERO" value="0"/>
+          <enumElement name="ONE" value="1"/>
+          <enumElement name="SEVEN" value="7"/>
+        </enumType>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

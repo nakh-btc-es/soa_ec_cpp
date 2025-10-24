@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20230926T170450_1280\tmp_many_stubs_bus\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20230926T170450_1280\tmp_many_stubs_bus\init.m" modelVersion="1.77" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230926T170450_1280\tmp_many_stubs_bus\manyStubsBus.slx" modelCreationDate="2023-09-13T12:23:16" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.77" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230926T170450_1280\tmp_many_stubs_bus\manyStubsBus.slx" creationDate="2023-09-13T12:23:16" modificationDate="2023-09-26T17:05:41" initScript="C:\Users\developer\AppData\Local\Temp\ut20230926T170450_1280\tmp_many_stubs_bus\init.m">
+    <subsystem subsysID="ss1" physicalPath="manyStubsBus" path="" sampleTime="0.2" name="manyStubsBus" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="InBus1" physicalPath="manyStubsBus/InBus1" path="InBus1" signalName="myBusSignal1">
+        <bus busType="non_virtual" busObjectName="mySimpleBus">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <array size="3" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <double/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="2" name="InBus2" physicalPath="manyStubsBus/InBus2" path="InBus2" signalName="myBusSignal2">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="mySimpleBus">
+            <signal signalName="a">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <double/>
+                </array>
+              </array>
+            </signal>
+            <signal signalName="b">
+              <double/>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <inport portNumber="3" name="InBus3" physicalPath="manyStubsBus/InBus3" path="InBus3" signalName="myBusSignal_ImportedFromFile">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="mySimpleBus">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <double/>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="4" name="InBus4" physicalPath="manyStubsBus/InBus4" path="InBus4" signalName="myBusSignal_ImportedExtern">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="mySimpleBus">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <double/>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </inport>
+      <outport portNumber="1" name="OutBus1" physicalPath="manyStubsBus/OutBus1" path="OutBus1" signalName="myBusSignal3">
+        <array size="1" startIndex="1">
+          <array size="2" startIndex="1">
+            <bus busType="non_virtual" busObjectName="mySimpleBus">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <double/>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="2" name="OutBus2" physicalPath="manyStubsBus/OutBus2" path="OutBus2" signalName="myBusSignal4">
+        <array size="2" startIndex="1">
+          <array size="2" startIndex="1">
+            <bus busType="non_virtual" busObjectName="mySimpleBus">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <double/>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="3" name="IsEqual" physicalPath="manyStubsBus/IsEqual" path="IsEqual" signalName="testOut">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="4" name="OutBus3" physicalPath="manyStubsBus/OutBus3" path="OutBus3" signalName="myNestedBusSignal">
+        <bus busType="non_virtual" busObjectName="myNestedBus">
+          <signal signalName="myBusSignal3">
+            <array size="1" startIndex="1">
+              <array size="2" startIndex="1">
+                <bus busType="non_virtual" busObjectName="mySimpleBus">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <array size="3" startIndex="1">
+                        <double/>
+                      </array>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <double/>
+                  </signal>
+                </bus>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="myBusSignal4">
+            <array size="2" startIndex="1">
+              <array size="2" startIndex="1">
+                <bus busType="non_virtual" busObjectName="mySimpleBus">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <array size="3" startIndex="1">
+                        <double/>
+                      </array>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <double/>
+                  </signal>
+                </bus>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="5" name="Out1" physicalPath="manyStubsBus/Out1" path="Out1" signalName="element1">
+        <bus busType="non_virtual" busObjectName="mySimpleBus">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <array size="3" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <double/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="6" name="Out2" physicalPath="manyStubsBus/Out2" path="Out2" signalName="element2">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="mySimpleBus">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <double/>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="manyStubsBus/Selector" path="Selector" name="Selector" portNumber="1" signalName="localSignal">
+        <bus busType="non_virtual" busObjectName="mySimpleBus">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <array size="3" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <double/>
+          </signal>
+        </bus>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

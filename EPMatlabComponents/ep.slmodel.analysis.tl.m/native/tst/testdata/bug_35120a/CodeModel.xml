@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\3ec189742\bug_35120a\TLProj\top_A" name="top_A.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\3ec189742\bug_35120a\TLProj\top_A" name="top_A_lut.c" kind="source" annotate="yes" id="fID2"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\3ec189742\bug_35120a\TLSim" name="top_A_fri.c" kind="source" annotate="no" id="fID3"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\3ec189742\bug_35120a\TLProj\top_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\3ec189742\bug_35120a\TLSim"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="multi_disp [C-Code]">
+    <Function name="top_A" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_In1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_Out1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_Out2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_Out3" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_Out4" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_Out5" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_Out6" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_Out7" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Ca1_z" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca4_y" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa1_Custom_Code_Block_y2" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa1_Custom_Code_Block_y4" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa1_Custom_Code_Block_y5" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa1_In1" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa1_Prelookup_f" scaling="scID2" min="0.0000000000000000e+00" max="9.9609375000000000e-01"/>
+        <InterfaceObj kind="disp" var="Sa2_Gain8" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa3_Gain8" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa4_Gain8" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa5_Gain8" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa6_Gain8" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa7_Gain8" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa8_Gain8" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa9_Gain8" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa10_Gain8" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa11_Gain8" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa12_Gain8" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa13_Gain8" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa14_Gain15" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa14_Gain6" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa14_Gain7" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa14_Gain8" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa14_Gain9" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa14_b" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa14_d" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa14_Product4" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Ca1_x1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca1_x2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca4_x1" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa14_sub_B" fileref="fID1" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_In1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa14_b" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa14_d" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa14_Out1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa14_Out2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa14_Out3" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa14_Out4" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa14_Out5" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa14_Out6" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa14_Gain15" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa14_Gain6" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa14_Gain7" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa14_Gain8" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa14_Gain9" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa14_b" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa14_d" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa14_Product4" scaling="scID1"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+    <Scaling id="scID2" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

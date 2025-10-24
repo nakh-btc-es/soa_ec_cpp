@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20200911T073210_1920\tmp_ut_ep_1898\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20200911T073210_1920\tmp_ut_ep_1898\runsamp.m" modelVersion="1.117" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200911T073210_1920\tmp_ut_ep_1898\SAMPLE.slx" modelCreationDate="2019-11-11T05:52:46" creator="thiyagarajan.sundara">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.117" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200911T073210_1920\tmp_ut_ep_1898\SAMPLE.slx" creationDate="2019-11-11T05:52:46" modificationDate="2020-09-10T15:36:44" initScript="C:\Users\developer\AppData\Local\Temp\ut20200911T073210_1920\tmp_ut_ep_1898\runsamp.m">
+    <subsystem subsysID="ss1" physicalPath="SAMPLE" path="" sampleTime="0.2" name="SAMPLE" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="mainbus" physicalPath="SAMPLE/mainbus" path="mainbus" signalName="Input_sig">
+        <bus busType="non_virtual" busObjectName="PRE">
+          <signal signalName="rad">
+            <array size="4" startIndex="1">
+              <array size="4" startIndex="1">
+                <uint8/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="radio">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="deg" physicalPath="SAMPLE/deg" path="deg" signalName="deg">
+        <array size="4" startIndex="1">
+          <array size="4" startIndex="1">
+            <single/>
+          </array>
+        </array>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="SAMPLE/SAMP" path="SAMP" sampleTime="0.2" name="SAMP" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="Input_sig" physicalPath="SAMPLE/SAMP/Input_sig" path="SAMP/Input_sig" signalName="Input_sig">
+        <bus busObjectName="PRE">
+          <signal signalName="rad">
+            <array size="4" startIndex="1">
+              <array size="4" startIndex="1">
+                <uint8/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="radio">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="deg" physicalPath="SAMPLE/SAMP/deg" path="SAMP/deg">
+        <array size="4" startIndex="1">
+          <array size="4" startIndex="1">
+            <single/>
+          </array>
+        </array>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

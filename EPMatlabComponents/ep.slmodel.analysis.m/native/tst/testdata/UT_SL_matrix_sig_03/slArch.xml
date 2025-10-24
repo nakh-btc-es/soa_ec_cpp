@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" modelVersion="1.8" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_matrix_sig_03\matrix_model_sl.mdl" modelCreationDate="2015-02-02T09:23:30" creator="alex">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.8" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_matrix_sig_03\matrix_model_sl.mdl" creationDate="2015-02-02T09:23:30" modificationDate="2020-09-08T09:30:36">
+    <subsystem subsysID="ss1" physicalPath="matrix_model_sl/top_A" path="top_A" sampleTime="0.1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="matrix_model_sl/top_A/In1" path="top_A/In1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="matrix_model_sl/top_A/Out1" path="top_A/Out1">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="matrix_model_sl/top_A/sub_B" path="top_A/sub_B" sampleTime="0.1" name="sub_B" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="matrix_model_sl/top_A/sub_B/In1" path="top_A/sub_B/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="matrix_model_sl/top_A/sub_B/Out1" path="top_A/sub_B/Out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

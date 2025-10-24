@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_sf_locals_02\init_model.m" modelVersion="12.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_sf_locals_02\sf_locals.mdl" modelCreationDate="2019-02-15T14:39:30" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="12.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_sf_locals_02\sf_locals.mdl" creationDate="2019-02-15T14:39:30" modificationDate="2024-09-11T18:19:59" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_sf_locals_02\init_model.m">
+    <subsystem subsysID="ss1" physicalPath="sf_locals" path="" sampleTime="2" name="sf_locals" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sf_locals/In1" path="In1">
+        <int32/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sf_locals/In2" path="In2" signalName="a">
+        <array size="3" startIndex="1">
+          <int32/>
+        </array>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="sf_locals/In3" path="In3" signalName="b">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </inport>
+      <parameter name="p1" path="top_A/sub_B1/Chart1" physicalPath="sf_locals/top_A/sub_B1/Chart1" origin="explicit_param" workspace="p1" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B1/Chart1" physicalPath="sf_locals/top_A/sub_B1/Chart1" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+        <usageContext path="top_A/sub_B2/Chart1" physicalPath="sf_locals/top_A/sub_B2/Chart1" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <parameter name="p2" path="top_A/sub_B3/Chart2" physicalPath="sf_locals/top_A/sub_B3/Chart2" origin="explicit_param" workspace="p2" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B3/Chart2" physicalPath="sf_locals/top_A/sub_B3/Chart2" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+        <usageContext path="top_A/sub_B4/Chart2" physicalPath="sf_locals/top_A/sub_B4/Chart2" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <parameter name="p3" path="top_A/sub_B5/Chart3" physicalPath="sf_locals/top_A/sub_B5/Chart3" origin="explicit_param" workspace="p3" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B5/Chart3" physicalPath="sf_locals/top_A/sub_B5/Chart3" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+        <usageContext path="top_A/sub_B6/Chart3" physicalPath="sf_locals/top_A/sub_B6/Chart3" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <parameter name="p4" path="top_A/sub_B7/Chart4" physicalPath="sf_locals/top_A/sub_B7/Chart4" origin="explicit_param" workspace="p4" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B7/Chart4" physicalPath="sf_locals/top_A/sub_B7/Chart4" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+        <usageContext path="top_A/sub_B8/Chart4" physicalPath="sf_locals/top_A/sub_B8/Chart4" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sf_locals/Out1" path="Out1" signalName="s-out1">
+        <int32/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="sf_locals/Out2" path="Out2" signalName="s-out2">
+        <array size="3" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="sf_locals/Out3" path="Out3" signalName="s-out3">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="sf_locals/Out4" path="Out4" signalName="s-out4">
+        <bus busType="non_virtual" busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <display physicalPath="sf_locals/top_A/In1" path="top_A/In1" name="In1" portNumber="1" signalName="s-in1">
+        <int32/>
+      </display>
+      <display physicalPath="sf_locals/top_A/In2" path="top_A/In2" name="In2" portNumber="1" signalName="s-in2">
+        <array size="3" startIndex="1">
+          <int32/>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/In3" path="top_A/In3" name="In3" portNumber="1" signalName="s-in3">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/In4" path="top_A/In4" name="In4" portNumber="1" signalName="s-in4">
+        <bus busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B1/Chart1" path="top_A/sub_B1/Chart1" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <int32/>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B2/Chart1" path="top_A/sub_B2/Chart1" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <int32/>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B3/Chart2" path="top_A/sub_B3/Chart2" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <array size="3" startIndex="0">
+          <int32/>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B4/Chart2" path="top_A/sub_B4/Chart2" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <array size="3" startIndex="0">
+          <int32/>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B5/Chart3" path="top_A/sub_B5/Chart3" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <array size="3" startIndex="0">
+          <array size="2" startIndex="0">
+            <int32/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B6/Chart3" path="top_A/sub_B6/Chart3" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <array size="3" startIndex="0">
+          <array size="2" startIndex="0">
+            <int32/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B7/Chart4" path="top_A/sub_B7/Chart4" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <bus busType="non_virtual" busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="0">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="0">
+              <array size="2" startIndex="0">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B8/Chart4" path="top_A/sub_B8/Chart4" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <bus busType="non_virtual" busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="0">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="0">
+              <array size="2" startIndex="0">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B1/Chart1" path="top_A/sub_B1/Chart1" name="x" stateflowVariable="x" signalName="x">
+        <int32/>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B2/Chart1" path="top_A/sub_B2/Chart1" name="x" stateflowVariable="x" signalName="x">
+        <int32/>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B3/Chart2" path="top_A/sub_B3/Chart2" name="x" stateflowVariable="x" signalName="x">
+        <array size="3" startIndex="0">
+          <int32/>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B4/Chart2" path="top_A/sub_B4/Chart2" name="x" stateflowVariable="x" signalName="x">
+        <array size="3" startIndex="0">
+          <int32/>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B5/Chart3" path="top_A/sub_B5/Chart3" name="x" stateflowVariable="x" signalName="x">
+        <array size="3" startIndex="0">
+          <array size="2" startIndex="0">
+            <int32/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B5/Chart3" path="top_A/sub_B5/Chart3" name="myToggle" stateflowVariable="myToggle" signalName="myToggle">
+        <boolean/>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B6/Chart3" path="top_A/sub_B6/Chart3" name="x" stateflowVariable="x" signalName="x">
+        <array size="3" startIndex="0">
+          <array size="2" startIndex="0">
+            <int32/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B6/Chart3" path="top_A/sub_B6/Chart3" name="myToggle" stateflowVariable="myToggle" signalName="myToggle">
+        <boolean/>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B7/Chart4" path="top_A/sub_B7/Chart4" name="myToggle" stateflowVariable="myToggle" signalName="myToggle">
+        <boolean/>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B8/Chart4" path="top_A/sub_B8/Chart4" name="myToggle" stateflowVariable="myToggle" signalName="myToggle">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="sf_locals/top_A" path="top_A" sampleTime="2" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sf_locals/top_A/In1" path="top_A/In1" signalName="s-in1">
+        <int32/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sf_locals/top_A/In2" path="top_A/In2" signalName="s-in2">
+        <array size="3" startIndex="1">
+          <int32/>
+        </array>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="sf_locals/top_A/In3" path="top_A/In3" signalName="s-in3">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="sf_locals/top_A/In4" path="top_A/In4" signalName="s-in4">
+        <bus busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <parameter name="p1" path="top_A/sub_B1/Chart1" physicalPath="sf_locals/top_A/sub_B1/Chart1" origin="explicit_param" workspace="p1" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B1/Chart1" physicalPath="sf_locals/top_A/sub_B1/Chart1" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+        <usageContext path="top_A/sub_B2/Chart1" physicalPath="sf_locals/top_A/sub_B2/Chart1" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <parameter name="p2" path="top_A/sub_B3/Chart2" physicalPath="sf_locals/top_A/sub_B3/Chart2" origin="explicit_param" workspace="p2" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B3/Chart2" physicalPath="sf_locals/top_A/sub_B3/Chart2" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+        <usageContext path="top_A/sub_B4/Chart2" physicalPath="sf_locals/top_A/sub_B4/Chart2" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <parameter name="p3" path="top_A/sub_B5/Chart3" physicalPath="sf_locals/top_A/sub_B5/Chart3" origin="explicit_param" workspace="p3" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B5/Chart3" physicalPath="sf_locals/top_A/sub_B5/Chart3" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+        <usageContext path="top_A/sub_B6/Chart3" physicalPath="sf_locals/top_A/sub_B6/Chart3" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <parameter name="p4" path="top_A/sub_B7/Chart4" physicalPath="sf_locals/top_A/sub_B7/Chart4" origin="explicit_param" workspace="p4" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B7/Chart4" physicalPath="sf_locals/top_A/sub_B7/Chart4" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+        <usageContext path="top_A/sub_B8/Chart4" physicalPath="sf_locals/top_A/sub_B8/Chart4" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sf_locals/top_A/Out1" path="top_A/Out1" signalName="s-out1">
+        <int32/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="sf_locals/top_A/Out2" path="top_A/Out2" signalName="s-out2">
+        <array size="3" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="sf_locals/top_A/Out3" path="top_A/Out3" signalName="s-out3">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="sf_locals/top_A/Out4" path="top_A/Out4" signalName="s-out4">
+        <bus busType="non_virtual" busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <display physicalPath="sf_locals/top_A/In1" path="top_A/In1" name="In1" portNumber="1" signalName="s-in1">
+        <int32/>
+      </display>
+      <display physicalPath="sf_locals/top_A/In2" path="top_A/In2" name="In2" portNumber="1" signalName="s-in2">
+        <array size="3" startIndex="1">
+          <int32/>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/In3" path="top_A/In3" name="In3" portNumber="1" signalName="s-in3">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/In4" path="top_A/In4" name="In4" portNumber="1" signalName="s-in4">
+        <bus busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B1/Chart1" path="top_A/sub_B1/Chart1" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <int32/>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B2/Chart1" path="top_A/sub_B2/Chart1" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <int32/>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B3/Chart2" path="top_A/sub_B3/Chart2" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <array size="3" startIndex="0">
+          <int32/>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B4/Chart2" path="top_A/sub_B4/Chart2" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <array size="3" startIndex="0">
+          <int32/>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B5/Chart3" path="top_A/sub_B5/Chart3" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <array size="3" startIndex="0">
+          <array size="2" startIndex="0">
+            <int32/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B6/Chart3" path="top_A/sub_B6/Chart3" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <array size="3" startIndex="0">
+          <array size="2" startIndex="0">
+            <int32/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B7/Chart4" path="top_A/sub_B7/Chart4" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <bus busType="non_virtual" busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="0">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="0">
+              <array size="2" startIndex="0">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B8/Chart4" path="top_A/sub_B8/Chart4" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <bus busType="non_virtual" busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="0">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="0">
+              <array size="2" startIndex="0">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B1/Chart1" path="top_A/sub_B1/Chart1" name="x" stateflowVariable="x" signalName="x">
+        <int32/>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B2/Chart1" path="top_A/sub_B2/Chart1" name="x" stateflowVariable="x" signalName="x">
+        <int32/>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B3/Chart2" path="top_A/sub_B3/Chart2" name="x" stateflowVariable="x" signalName="x">
+        <array size="3" startIndex="0">
+          <int32/>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B4/Chart2" path="top_A/sub_B4/Chart2" name="x" stateflowVariable="x" signalName="x">
+        <array size="3" startIndex="0">
+          <int32/>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B5/Chart3" path="top_A/sub_B5/Chart3" name="x" stateflowVariable="x" signalName="x">
+        <array size="3" startIndex="0">
+          <array size="2" startIndex="0">
+            <int32/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B5/Chart3" path="top_A/sub_B5/Chart3" name="myToggle" stateflowVariable="myToggle" signalName="myToggle">
+        <boolean/>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B6/Chart3" path="top_A/sub_B6/Chart3" name="x" stateflowVariable="x" signalName="x">
+        <array size="3" startIndex="0">
+          <array size="2" startIndex="0">
+            <int32/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B6/Chart3" path="top_A/sub_B6/Chart3" name="myToggle" stateflowVariable="myToggle" signalName="myToggle">
+        <boolean/>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B7/Chart4" path="top_A/sub_B7/Chart4" name="myToggle" stateflowVariable="myToggle" signalName="myToggle">
+        <boolean/>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B8/Chart4" path="top_A/sub_B8/Chart4" name="myToggle" stateflowVariable="myToggle" signalName="myToggle">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss9"/>
+      <subsystem refSubsysID="ss11"/>
+      <subsystem refSubsysID="ss13"/>
+      <subsystem refSubsysID="ss15"/>
+      <subsystem refSubsysID="ss17"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="sf_locals/top_A/sub_B1" path="top_A/sub_B1" sampleTime="2" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sf_locals/top_A/sub_B1/In1" path="top_A/sub_B1/In1" signalName="s-in1">
+        <int32/>
+      </inport>
+      <parameter name="p1" path="top_A/sub_B1/Chart1" physicalPath="sf_locals/top_A/sub_B1/Chart1" origin="explicit_param" workspace="p1" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B1/Chart1" physicalPath="sf_locals/top_A/sub_B1/Chart1" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sf_locals/top_A/sub_B1/Out1" path="top_A/sub_B1/Out1" signalName="s-out1">
+        <int32/>
+      </outport>
+      <display physicalPath="sf_locals/top_A/sub_B1/Chart1" path="top_A/sub_B1/Chart1" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <int32/>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B1/Chart1" path="top_A/sub_B1/Chart1" name="x" stateflowVariable="x" signalName="x">
+        <int32/>
+      </display>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="sf_locals/top_A/sub_B1/Chart1" path="top_A/sub_B1/Chart1" sampleTime="2" name="Chart1" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="u" physicalPath="sf_locals/top_A/sub_B1/Chart1/u" path="top_A/sub_B1/Chart1/u" signalName="s-in1">
+        <int32/>
+      </inport>
+      <parameter name="p1" path="top_A/sub_B1/Chart1" physicalPath="sf_locals/top_A/sub_B1/Chart1" origin="explicit_param" workspace="p1" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B1/Chart1" physicalPath="sf_locals/top_A/sub_B1/Chart1" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="y" physicalPath="sf_locals/top_A/sub_B1/Chart1/y" path="top_A/sub_B1/Chart1/y" signalName="y">
+        <int32/>
+      </outport>
+      <display physicalPath="sf_locals/top_A/sub_B1/Chart1" path="top_A/sub_B1/Chart1" name="x" stateflowVariable="x" signalName="x">
+        <int32/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="sf_locals/top_A/sub_B2" path="top_A/sub_B2" sampleTime="2" name="sub_B2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sf_locals/top_A/sub_B2/In1" path="top_A/sub_B2/In1" signalName="s-out1">
+        <int32/>
+      </inport>
+      <parameter name="p1" path="top_A/sub_B2/Chart1" physicalPath="sf_locals/top_A/sub_B2/Chart1" origin="explicit_param" workspace="p1" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B2/Chart1" physicalPath="sf_locals/top_A/sub_B2/Chart1" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sf_locals/top_A/sub_B2/Out1" path="top_A/sub_B2/Out1" signalName="s-out1">
+        <int32/>
+      </outport>
+      <display physicalPath="sf_locals/top_A/sub_B2/Chart1" path="top_A/sub_B2/Chart1" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <int32/>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B2/Chart1" path="top_A/sub_B2/Chart1" name="x" stateflowVariable="x" signalName="x">
+        <int32/>
+      </display>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="sf_locals/top_A/sub_B2/Chart1" path="top_A/sub_B2/Chart1" sampleTime="2" name="Chart1" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="u" physicalPath="sf_locals/top_A/sub_B2/Chart1/u" path="top_A/sub_B2/Chart1/u" signalName="s-out1">
+        <int32/>
+      </inport>
+      <parameter name="p1" path="top_A/sub_B2/Chart1" physicalPath="sf_locals/top_A/sub_B2/Chart1" origin="explicit_param" workspace="p1" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B2/Chart1" physicalPath="sf_locals/top_A/sub_B2/Chart1" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="y" physicalPath="sf_locals/top_A/sub_B2/Chart1/y" path="top_A/sub_B2/Chart1/y" signalName="y">
+        <int32/>
+      </outport>
+      <display physicalPath="sf_locals/top_A/sub_B2/Chart1" path="top_A/sub_B2/Chart1" name="x" stateflowVariable="x" signalName="x">
+        <int32/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="sf_locals/top_A/sub_B3" path="top_A/sub_B3" sampleTime="2" name="sub_B3" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sf_locals/top_A/sub_B3/In1" path="top_A/sub_B3/In1" signalName="s-in2">
+        <array size="3" startIndex="1">
+          <int32/>
+        </array>
+      </inport>
+      <parameter name="p2" path="top_A/sub_B3/Chart2" physicalPath="sf_locals/top_A/sub_B3/Chart2" origin="explicit_param" workspace="p2" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B3/Chart2" physicalPath="sf_locals/top_A/sub_B3/Chart2" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sf_locals/top_A/sub_B3/Out1" path="top_A/sub_B3/Out1" signalName="s-out2">
+        <array size="3" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <display physicalPath="sf_locals/top_A/sub_B3/Chart2" path="top_A/sub_B3/Chart2" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <array size="3" startIndex="0">
+          <int32/>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B3/Chart2" path="top_A/sub_B3/Chart2" name="x" stateflowVariable="x" signalName="x">
+        <array size="3" startIndex="0">
+          <int32/>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="sf_locals/top_A/sub_B3/Chart2" path="top_A/sub_B3/Chart2" sampleTime="2" name="Chart2" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="u" physicalPath="sf_locals/top_A/sub_B3/Chart2/u" path="top_A/sub_B3/Chart2/u" signalName="s-in2">
+        <array size="3" startIndex="1">
+          <int32/>
+        </array>
+      </inport>
+      <parameter name="p2" path="top_A/sub_B3/Chart2" physicalPath="sf_locals/top_A/sub_B3/Chart2" origin="explicit_param" workspace="p2" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B3/Chart2" physicalPath="sf_locals/top_A/sub_B3/Chart2" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="y" physicalPath="sf_locals/top_A/sub_B3/Chart2/y" path="top_A/sub_B3/Chart2/y" signalName="y">
+        <array size="3" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <display physicalPath="sf_locals/top_A/sub_B3/Chart2" path="top_A/sub_B3/Chart2" name="x" stateflowVariable="x" signalName="x">
+        <array size="3" startIndex="0">
+          <int32/>
+        </array>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="sf_locals/top_A/sub_B4" path="top_A/sub_B4" sampleTime="2" name="sub_B4" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sf_locals/top_A/sub_B4/In1" path="top_A/sub_B4/In1" signalName="s-out2">
+        <array size="3" startIndex="1">
+          <int32/>
+        </array>
+      </inport>
+      <parameter name="p2" path="top_A/sub_B4/Chart2" physicalPath="sf_locals/top_A/sub_B4/Chart2" origin="explicit_param" workspace="p2" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B4/Chart2" physicalPath="sf_locals/top_A/sub_B4/Chart2" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sf_locals/top_A/sub_B4/Out1" path="top_A/sub_B4/Out1" signalName="s-out2">
+        <array size="3" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <display physicalPath="sf_locals/top_A/sub_B4/Chart2" path="top_A/sub_B4/Chart2" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <array size="3" startIndex="0">
+          <int32/>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B4/Chart2" path="top_A/sub_B4/Chart2" name="x" stateflowVariable="x" signalName="x">
+        <array size="3" startIndex="0">
+          <int32/>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss10"/>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="sf_locals/top_A/sub_B4/Chart2" path="top_A/sub_B4/Chart2" sampleTime="2" name="Chart2" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="u" physicalPath="sf_locals/top_A/sub_B4/Chart2/u" path="top_A/sub_B4/Chart2/u" signalName="s-out2">
+        <array size="3" startIndex="1">
+          <int32/>
+        </array>
+      </inport>
+      <parameter name="p2" path="top_A/sub_B4/Chart2" physicalPath="sf_locals/top_A/sub_B4/Chart2" origin="explicit_param" workspace="p2" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B4/Chart2" physicalPath="sf_locals/top_A/sub_B4/Chart2" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="y" physicalPath="sf_locals/top_A/sub_B4/Chart2/y" path="top_A/sub_B4/Chart2/y" signalName="y">
+        <array size="3" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <display physicalPath="sf_locals/top_A/sub_B4/Chart2" path="top_A/sub_B4/Chart2" name="x" stateflowVariable="x" signalName="x">
+        <array size="3" startIndex="0">
+          <int32/>
+        </array>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss11" physicalPath="sf_locals/top_A/sub_B5" path="top_A/sub_B5" sampleTime="2" name="sub_B5" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sf_locals/top_A/sub_B5/In1" path="top_A/sub_B5/In1" signalName="s-in3">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </inport>
+      <parameter name="p3" path="top_A/sub_B5/Chart3" physicalPath="sf_locals/top_A/sub_B5/Chart3" origin="explicit_param" workspace="p3" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B5/Chart3" physicalPath="sf_locals/top_A/sub_B5/Chart3" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sf_locals/top_A/sub_B5/Out1" path="top_A/sub_B5/Out1" signalName="s-out3">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="sf_locals/top_A/sub_B5/Chart3" path="top_A/sub_B5/Chart3" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <array size="3" startIndex="0">
+          <array size="2" startIndex="0">
+            <int32/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B5/Chart3" path="top_A/sub_B5/Chart3" name="x" stateflowVariable="x" signalName="x">
+        <array size="3" startIndex="0">
+          <array size="2" startIndex="0">
+            <int32/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B5/Chart3" path="top_A/sub_B5/Chart3" name="myToggle" stateflowVariable="myToggle" signalName="myToggle">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss12"/>
+    </subsystem>
+    <subsystem subsysID="ss12" physicalPath="sf_locals/top_A/sub_B5/Chart3" path="top_A/sub_B5/Chart3" sampleTime="2" name="Chart3" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="u" physicalPath="sf_locals/top_A/sub_B5/Chart3/u" path="top_A/sub_B5/Chart3/u" signalName="s-in3">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </inport>
+      <parameter name="p3" path="top_A/sub_B5/Chart3" physicalPath="sf_locals/top_A/sub_B5/Chart3" origin="explicit_param" workspace="p3" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B5/Chart3" physicalPath="sf_locals/top_A/sub_B5/Chart3" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="y" physicalPath="sf_locals/top_A/sub_B5/Chart3/y" path="top_A/sub_B5/Chart3/y" signalName="y">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="sf_locals/top_A/sub_B5/Chart3" path="top_A/sub_B5/Chart3" name="x" stateflowVariable="x" signalName="x">
+        <array size="3" startIndex="0">
+          <array size="2" startIndex="0">
+            <int32/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B5/Chart3" path="top_A/sub_B5/Chart3" name="myToggle" stateflowVariable="myToggle" signalName="myToggle">
+        <boolean/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss13" physicalPath="sf_locals/top_A/sub_B6" path="top_A/sub_B6" sampleTime="2" name="sub_B6" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sf_locals/top_A/sub_B6/In1" path="top_A/sub_B6/In1" signalName="s-out3">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </inport>
+      <parameter name="p3" path="top_A/sub_B6/Chart3" physicalPath="sf_locals/top_A/sub_B6/Chart3" origin="explicit_param" workspace="p3" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B6/Chart3" physicalPath="sf_locals/top_A/sub_B6/Chart3" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sf_locals/top_A/sub_B6/Out1" path="top_A/sub_B6/Out1" signalName="s-out3">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="sf_locals/top_A/sub_B6/Chart3" path="top_A/sub_B6/Chart3" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <array size="3" startIndex="0">
+          <array size="2" startIndex="0">
+            <int32/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B6/Chart3" path="top_A/sub_B6/Chart3" name="x" stateflowVariable="x" signalName="x">
+        <array size="3" startIndex="0">
+          <array size="2" startIndex="0">
+            <int32/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B6/Chart3" path="top_A/sub_B6/Chart3" name="myToggle" stateflowVariable="myToggle" signalName="myToggle">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss14"/>
+    </subsystem>
+    <subsystem subsysID="ss14" physicalPath="sf_locals/top_A/sub_B6/Chart3" path="top_A/sub_B6/Chart3" sampleTime="2" name="Chart3" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="u" physicalPath="sf_locals/top_A/sub_B6/Chart3/u" path="top_A/sub_B6/Chart3/u" signalName="s-out3">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </inport>
+      <parameter name="p3" path="top_A/sub_B6/Chart3" physicalPath="sf_locals/top_A/sub_B6/Chart3" origin="explicit_param" workspace="p3" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B6/Chart3" physicalPath="sf_locals/top_A/sub_B6/Chart3" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="y" physicalPath="sf_locals/top_A/sub_B6/Chart3/y" path="top_A/sub_B6/Chart3/y" signalName="y">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="sf_locals/top_A/sub_B6/Chart3" path="top_A/sub_B6/Chart3" name="x" stateflowVariable="x" signalName="x">
+        <array size="3" startIndex="0">
+          <array size="2" startIndex="0">
+            <int32/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B6/Chart3" path="top_A/sub_B6/Chart3" name="myToggle" stateflowVariable="myToggle" signalName="myToggle">
+        <boolean/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss15" physicalPath="sf_locals/top_A/sub_B7" path="top_A/sub_B7" sampleTime="2" name="sub_B7" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sf_locals/top_A/sub_B7/In1" path="top_A/sub_B7/In1" signalName="s-in4">
+        <bus busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <parameter name="p4" path="top_A/sub_B7/Chart4" physicalPath="sf_locals/top_A/sub_B7/Chart4" origin="explicit_param" workspace="p4" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B7/Chart4" physicalPath="sf_locals/top_A/sub_B7/Chart4" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sf_locals/top_A/sub_B7/Out1" path="top_A/sub_B7/Out1" signalName="s-out4">
+        <bus busType="non_virtual" busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <display physicalPath="sf_locals/top_A/sub_B7/Chart4" path="top_A/sub_B7/Chart4" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <bus busType="non_virtual" busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="0">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="0">
+              <array size="2" startIndex="0">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B7/Chart4" path="top_A/sub_B7/Chart4" name="myToggle" stateflowVariable="myToggle" signalName="myToggle">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss16"/>
+    </subsystem>
+    <subsystem subsysID="ss16" physicalPath="sf_locals/top_A/sub_B7/Chart4" path="top_A/sub_B7/Chart4" sampleTime="2" name="Chart4" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="u" physicalPath="sf_locals/top_A/sub_B7/Chart4/u" path="top_A/sub_B7/Chart4/u" signalName="s-in4">
+        <bus busType="non_virtual" busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <parameter name="p4" path="top_A/sub_B7/Chart4" physicalPath="sf_locals/top_A/sub_B7/Chart4" origin="explicit_param" workspace="p4" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B7/Chart4" physicalPath="sf_locals/top_A/sub_B7/Chart4" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="y" physicalPath="sf_locals/top_A/sub_B7/Chart4/y" path="top_A/sub_B7/Chart4/y" signalName="y">
+        <bus busType="non_virtual" busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <display physicalPath="sf_locals/top_A/sub_B7/Chart4" path="top_A/sub_B7/Chart4" name="myToggle" stateflowVariable="myToggle" signalName="myToggle">
+        <boolean/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss17" physicalPath="sf_locals/top_A/sub_B8" path="top_A/sub_B8" sampleTime="2" name="sub_B8" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sf_locals/top_A/sub_B8/In1" path="top_A/sub_B8/In1" signalName="s-out4">
+        <bus busType="non_virtual" busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <parameter name="p4" path="top_A/sub_B8/Chart4" physicalPath="sf_locals/top_A/sub_B8/Chart4" origin="explicit_param" workspace="p4" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B8/Chart4" physicalPath="sf_locals/top_A/sub_B8/Chart4" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sf_locals/top_A/sub_B8/Out1" path="top_A/sub_B8/Out1" signalName="s-out4">
+        <bus busType="non_virtual" busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <display physicalPath="sf_locals/top_A/sub_B8/Chart4" path="top_A/sub_B8/Chart4" name="y" stateflowVariable="y" portNumber="1" signalName="y">
+        <bus busType="non_virtual" busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="0">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="0">
+              <array size="2" startIndex="0">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="sf_locals/top_A/sub_B8/Chart4" path="top_A/sub_B8/Chart4" name="myToggle" stateflowVariable="myToggle" signalName="myToggle">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss18"/>
+    </subsystem>
+    <subsystem subsysID="ss18" physicalPath="sf_locals/top_A/sub_B8/Chart4" path="top_A/sub_B8/Chart4" sampleTime="2" name="Chart4" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="u" physicalPath="sf_locals/top_A/sub_B8/Chart4/u" path="top_A/sub_B8/Chart4/u" signalName="s-out4">
+        <bus busType="non_virtual" busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <parameter name="p4" path="top_A/sub_B8/Chart4" physicalPath="sf_locals/top_A/sub_B8/Chart4" origin="explicit_param" workspace="p4" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/sub_B8/Chart4" physicalPath="sf_locals/top_A/sub_B8/Chart4" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+      </parameter>
+      <outport portNumber="1" name="y" physicalPath="sf_locals/top_A/sub_B8/Chart4/y" path="top_A/sub_B8/Chart4/y" signalName="y">
+        <bus busType="non_virtual" busObjectName="MyBus1">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <int32/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <int32/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <display physicalPath="sf_locals/top_A/sub_B8/Chart4" path="top_A/sub_B8/Chart4" name="myToggle" stateflowVariable="myToggle" signalName="myToggle">
+        <boolean/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="library" modelVersion="1.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_sf_locals_02\my_lib.mdl" creationDate="2019-03-21T18:20:32" modificationDate="2024-09-11T18:19:59" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_sf_locals_02\init_model.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

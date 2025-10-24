@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.426" modelPath="E:\EP2\Git\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_fuelsys_cal\fuelsys_sf6.mdl" modelCreationDate="1998-06-02T16:11:43" creator="nikita">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.426" modelPath="E:\EP2\Git\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_fuelsys_cal\fuelsys_sf6.mdl" creationDate="1998-06-02T16:11:43" modificationDate="2021-11-16T14:20:17">
+    <subsystem subsysID="ss1" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller" path="fuelratecontroller/Subsystem/fuelratecontroller" sampleTime="0.01" name="fuelratecontroller" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="throttle" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/throttle" path="fuelratecontroller/Subsystem/fuelratecontroller/throttle">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.9531250000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.2000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="speed" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/speed" path="fuelratecontroller/Subsystem/fuelratecontroller/speed">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.5625000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+03"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="EGO" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/EGO" path="fuelratecontroller/Subsystem/fuelratecontroller/EGO">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="6.1035156250000000e-05" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="press" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/press" path="fuelratecontroller/Subsystem/fuelratecontroller/press">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="3.0517578125000000e-05" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="fuel_rate" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/fuel_rate" path="fuelratecontroller/Subsystem/fuelratecontroller/fuel_rate">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="2.4414062500000000e-04" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="7.9000000000000004e+00"/>
+        </siltype>
+      </outport>
+      <display physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/EGO&#10;(estimated)" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/EGO&#10;(estimated)" name="EGO&#10;(estimated)" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="6.1035156250000000e-05" offset="0.0000000000000000e+00" min="-2.0000000000000000e+00" max="1.9999389648437500e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/MAP&#10;(estimated)" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/MAP&#10;(estimated)" name="MAP&#10;(estimated)" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="3.0517578125000000e-05" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/est_air_flow" path="fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/est_air_flow" name="est_air_flow" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="6.3999023437500000e+01"/>
+        </siltype>
+      </display>
+      <display physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/control logic" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic" name="fail_O2" stateflowVariable="fail_O2" portNumber="3">
+        <miltype initValue="0.0000000000000000e+00" signalName="fail_O2">
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="fail_O2">
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/feedback_correction" path="fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/feedback_correction" name="feedback_correction" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="6.1035156250000000e-05" offset="0.0000000000000000e+00" min="-2.0000000000000000e+00" max="1.9999389648437500e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/control logic" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic" name="fuel_mode" stateflowVariable="fuel_mode" portNumber="5">
+        <miltype initValue="1.0000000000000000e+00" signalName="fuel_mode">
+          <double min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" signalName="fuel_mode">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/speed&#10;(estimated)" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/speed&#10;(estimated)" name="speed&#10;(estimated)" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="2.5000000000000000e-01" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.6383750000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/throttle&#10;(estimated)" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/throttle&#10;(estimated)" name="throttle&#10;(estimated)" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.9531250000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.2799804687500000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/Switchable&#10;Compensation/mode&#10;select" path="fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/Switchable&#10;Compensation/mode&#10;select" name="mode&#10;select" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/fuel_rate" path="fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/fuel_rate" name="fuel_rate" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="2.4414062500000000e-04" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="7.9000000000000004e+00"/>
+        </siltype>
+      </display>
+      <display physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/control logic" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic" name="fail_PRESS" stateflowVariable="fail_PRESS" portNumber="4">
+        <miltype initValue="0.0000000000000000e+00" signalName="fail_PRESS">
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="fail_PRESS">
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/control logic" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic" name="fail_SPEED" stateflowVariable="fail_SPEED" portNumber="2">
+        <miltype initValue="0.0000000000000000e+00" signalName="fail_SPEED">
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="fail_SPEED">
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/control logic" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic" name="fail_THROT" stateflowVariable="fail_THROT" portNumber="1">
+        <miltype initValue="0.0000000000000000e+00" signalName="fail_THROT">
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="fail_THROT">
+          <Bool/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation" path="fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation" sampleTime="0.01" name="Airflow calculation" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="throttle (estimated)" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/throttle (estimated)" path="fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/throttle (estimated)">
+        <miltype signalName="throttle angle">
+          <double/>
+        </miltype>
+        <siltype signalName="throttle angle">
+          <fixedPoint baseType="UInt16" lsb="1.9531250000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.2799804687500000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="speed (estimated)" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/speed (estimated)" path="fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/speed (estimated)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="2.5000000000000000e-01" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.6383750000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="EGO (estimated)" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/EGO (estimated)" path="fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/EGO (estimated)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="6.1035156250000000e-05" offset="0.0000000000000000e+00" min="-2.0000000000000000e+00" max="1.9999389648437500e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="MAP (estimated)" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/MAP (estimated)" path="fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/MAP (estimated)">
+        <miltype signalName="manifold pressure, Pm">
+          <double/>
+        </miltype>
+        <siltype signalName="manifold pressure, Pm">
+          <fixedPoint baseType="UInt16" lsb="3.0517578125000000e-05" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="5" name="fail_O2" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/fail_O2" path="fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/fail_O2">
+        <miltype signalName="O2 fail&#10;(warmup)">
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="O2 fail&#10;(warmup)">
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="6" name="fuel_mode" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/fuel_mode" path="fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/fuel_mode">
+        <miltype signalName="fuel_mode">
+          <double min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" signalName="fuel_mode">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="est_air_flow" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/est_air_flow" path="fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/est_air_flow">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="6.3999023437500000e+01"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="feedback_correction" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/feedback_correction" path="fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/feedback_correction">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="6.1035156250000000e-05" offset="0.0000000000000000e+00" min="-2.0000000000000000e+00" max="1.9999389648437500e+00"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation" path="fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation" sampleTime="0.01" name="Fuel  Calculation" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="est_air_flow" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/est_air_flow" path="fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/est_air_flow">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="6.3999023437500000e+01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="feedback&#10;correction" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/feedback&#10;correction" path="fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/feedback&#10;correction">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="6.1035156250000000e-05" offset="0.0000000000000000e+00" min="-2.0000000000000000e+00" max="1.9999389648437500e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="fail_O2" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/fail_O2" path="fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/fail_O2">
+        <miltype signalName="fail_O2">
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="fail_O2">
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="fuel_mode" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/fuel_mode" path="fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/fuel_mode">
+        <miltype signalName="fuel_mode">
+          <double min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" signalName="fuel_mode">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="fuel_rate" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/fuel_rate" path="fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/fuel_rate">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="2.4414062500000000e-04" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="7.9000000000000004e+00"/>
+        </siltype>
+      </outport>
+      <display physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/Switchable&#10;Compensation/mode&#10;select" path="fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/Switchable&#10;Compensation/mode&#10;select" name="mode&#10;select" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy" sampleTime="0.01" name="Sensor correction and &#10;Fault Redundancy" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="throttle" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/throttle" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/throttle">
+        <miltype signalName="throttle">
+          <double/>
+        </miltype>
+        <siltype signalName="throttle">
+          <fixedPoint baseType="UInt16" lsb="1.9531250000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.2000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="speed" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/speed" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/speed">
+        <miltype signalName="speed">
+          <double/>
+        </miltype>
+        <siltype signalName="speed">
+          <fixedPoint baseType="UInt16" lsb="1.5625000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+03"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="EGO" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/EGO" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/EGO">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="6.1035156250000000e-05" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="press" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/press" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/press">
+        <miltype signalName="press">
+          <double/>
+        </miltype>
+        <siltype signalName="press">
+          <fixedPoint baseType="UInt16" lsb="3.0517578125000000e-05" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="5" name="fail_THROT" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/fail_THROT" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/fail_THROT">
+        <miltype signalName="fail_THROT">
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="fail_THROT">
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="6" name="fail_SPEED" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/fail_SPEED" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/fail_SPEED">
+        <miltype signalName="fail_SPEED">
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="fail_SPEED">
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="7" name="fail_O2" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/fail_O2" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/fail_O2">
+        <miltype signalName="fail_O2">
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="fail_O2">
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="8" name="fail_PRESS" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/fail_PRESS" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/fail_PRESS">
+        <miltype signalName="fail_PRESS">
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="fail_PRESS">
+          <Bool/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="throttle&#10;(estimated)" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/throttle&#10;(estimated)" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/throttle&#10;(estimated)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.9531250000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.2799804687500000e+02"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="speed&#10;(estimated)" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/speed&#10;(estimated)" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/speed&#10;(estimated)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="2.5000000000000000e-01" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.6383750000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="EGO&#10;(estimated)" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/EGO&#10;(estimated)" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/EGO&#10;(estimated)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="6.1035156250000000e-05" offset="0.0000000000000000e+00" min="-2.0000000000000000e+00" max="1.9999389648437500e+00"/>
+        </siltype>
+      </outport>
+      <outport portNumber="4" name="MAP&#10;(estimated)" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/MAP&#10;(estimated)" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/MAP&#10;(estimated)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="3.0517578125000000e-05" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/control logic" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic" sampleTime="0.01" name="control logic" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="throttle" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/control logic/throttle" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic/throttle">
+        <miltype>
+          <double min="0.0000000000000000e+00" max="1.2000000000000000e+02"/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.9531250000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.2000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="speed" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/control logic/speed" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic/speed">
+        <miltype>
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+03"/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.5625000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+03"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="EGO" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/control logic/EGO" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic/EGO">
+        <miltype>
+          <double min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="6.1035156250000000e-05" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="press" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/control logic/press" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic/press">
+        <miltype>
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="3.0517578125000000e-05" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+      </inport>
+      <inport portNumber="5" name="tSim" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/control logic/tSim" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic/tSim">
+        <miltype>
+          <double min="0.0000000000000000e+00"/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="6.5535000000000002e+02"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="fail_THROT" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/control logic/fail_THROT" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic/fail_THROT">
+        <miltype signalName="fail_THROT">
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="fail_THROT">
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="fail_SPEED" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/control logic/fail_SPEED" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic/fail_SPEED">
+        <miltype signalName="fail_SPEED">
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="fail_SPEED">
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="fail_O2" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/control logic/fail_O2" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic/fail_O2">
+        <miltype signalName="fail_O2">
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="fail_O2">
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="4" name="fail_PRESS" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/control logic/fail_PRESS" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic/fail_PRESS">
+        <miltype signalName="fail_PRESS">
+          <double min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="fail_PRESS">
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="5" name="fuel_mode" physicalPath="fuelsys_sf6/fuelratecontroller/Subsystem/fuelratecontroller/control logic/fuel_mode" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic/fuel_mode">
+        <miltype signalName="fuel_mode">
+          <double min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" signalName="fuel_mode">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="1.0000000000000000e+00" max="3.0000000000000000e+00"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

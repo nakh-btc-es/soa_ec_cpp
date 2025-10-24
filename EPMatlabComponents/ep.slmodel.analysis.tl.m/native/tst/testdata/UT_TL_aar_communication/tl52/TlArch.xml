@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="4.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230602T102425_13788\tmp_ut_aar_communication_with_64bit\aar_communication.slx" modelCreationDate="2021-08-20T14:14:32" creator="dSPACE GmbH">
+  <toolInfo name="Matlab" release="(R2021b)" version="9.11" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2021b)" version="10.4" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="5.2" patchLevel="p1"/>
+  <model modelID="model001" modelKind="model" modelVersion="4.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230602T102425_13788\tmp_ut_aar_communication_with_64bit\aar_communication.slx" creationDate="2021-08-20T14:14:32" modificationDate="2023-06-02T10:25:11">
+    <subsystem subsysID="ss1" physicalPath="aar_communication/S1/Subsystem/S1" path="S1/Subsystem/S1" sampleTime="0.1" name="S1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="RP_ServiceB&#10;EventB" physicalPath="aar_communication/S1/Subsystem/S1/RP_ServiceB&#10;EventB" path="S1/Subsystem/S1/RP_ServiceB&#10;EventB">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="RP_ServiceB&#10;FieldB" physicalPath="aar_communication/S1/Subsystem/S1/RP_ServiceB&#10;FieldB" path="S1/Subsystem/S1/RP_ServiceB&#10;FieldB">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="PP_ServiceA&#10;MethodA&#10;in" physicalPath="aar_communication/S1/Subsystem/S1/PP_ServiceA&#10;MethodA&#10;in" path="S1/Subsystem/S1/PP_ServiceA&#10;MethodA&#10;in">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </inport>
+      <inport portNumber="0" name="ReceiverComSpec" physicalPath="aar_communication/S1/Subsystem/S1/f_EventCommunication/ReceiverComSpec" path="S1/Subsystem/S1/f_EventCommunication/ReceiverComSpec">
+        <miltype>
+          <bus busType="non_virtual" busObjectName="tlARACoreErrorBus">
+            <signal signalName="RP_ServiceB_EventB_Err.errorCode">
+              <double/>
+            </signal>
+            <signal signalName="RP_ServiceB_EventB_Err.errorDomain">
+              <unsupportedTypeInformation baseType="uint64"/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus busType="non_virtual" busObjectName="tlARACoreErrorBus">
+            <signal signalName="RP_ServiceB_EventB_Err.errorCode">
+              <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+            </signal>
+            <signal signalName="RP_ServiceB_EventB_Err.errorDomain">
+              <fixedPoint baseType="UInt64" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.8446744073709552e+19"/>
+            </signal>
+          </bus>
+        </siltype>
+        <dataStoreMemory signalName="RP_ServiceB_EventB_Err"/>
+      </inport>
+      <outport portNumber="1" name="PP_ServiceA&#10;EventA" physicalPath="aar_communication/S1/Subsystem/S1/PP_ServiceA&#10;EventA" path="S1/Subsystem/S1/PP_ServiceA&#10;EventA">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="RP_ServiceB&#10;FieldB&#10;out" physicalPath="aar_communication/S1/Subsystem/S1/RP_ServiceB&#10;FieldB&#10;out" path="S1/Subsystem/S1/RP_ServiceB&#10;FieldB&#10;out">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="PP_ServiceA&#10;MethodA&#10;out" physicalPath="aar_communication/S1/Subsystem/S1/PP_ServiceA&#10;MethodA&#10;out" path="S1/Subsystem/S1/PP_ServiceA&#10;MethodA&#10;out">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </outport>
+      <outport portNumber="4" name="PP_ServiceA&#10;MethodA&#10;err" physicalPath="aar_communication/S1/Subsystem/S1/PP_ServiceA&#10;MethodA&#10;err" path="S1/Subsystem/S1/PP_ServiceA&#10;MethodA&#10;err">
+        <miltype>
+          <bus>
+            <signal signalName="errorCode.errorCode">
+              <double/>
+            </signal>
+            <signal signalName="errorCode.errorDomain">
+              <unsupportedTypeInformation baseType="uint64"/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="errorCode.errorCode">
+              <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+            </signal>
+            <signal signalName="errorCode.errorDomain">
+              <fixedPoint baseType="UInt64" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.8446744073709552e+19"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="aar_communication/S1/Subsystem/S1/f_EventCommunication" path="S1/Subsystem/S1/f_EventCommunication" sampleTime="0.1" name="f_EventCommunication" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="RP_ServiceB&#10;EventB" physicalPath="aar_communication/S1/Subsystem/S1/f_EventCommunication/RP_ServiceB&#10;EventB" path="S1/Subsystem/S1/f_EventCommunication/RP_ServiceB&#10;EventB">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </inport>
+      <inport portNumber="0" name="ReceiverComSpec" physicalPath="aar_communication/S1/Subsystem/S1/f_EventCommunication/ReceiverComSpec" path="S1/Subsystem/S1/f_EventCommunication/ReceiverComSpec">
+        <miltype>
+          <bus busType="non_virtual" busObjectName="tlARACoreErrorBus">
+            <signal signalName="RP_ServiceB_EventB_Err.errorCode">
+              <double/>
+            </signal>
+            <signal signalName="RP_ServiceB_EventB_Err.errorDomain">
+              <unsupportedTypeInformation baseType="uint64"/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus busType="non_virtual" busObjectName="tlARACoreErrorBus">
+            <signal signalName="RP_ServiceB_EventB_Err.errorCode">
+              <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+            </signal>
+            <signal signalName="RP_ServiceB_EventB_Err.errorDomain">
+              <fixedPoint baseType="UInt64" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.8446744073709552e+19"/>
+            </signal>
+          </bus>
+        </siltype>
+        <dataStoreMemory signalName="RP_ServiceB_EventB_Err"/>
+      </inport>
+      <outport portNumber="1" name="PP_ServiceA&#10;EventA" physicalPath="aar_communication/S1/Subsystem/S1/f_EventCommunication/PP_ServiceA&#10;EventA" path="S1/Subsystem/S1/f_EventCommunication/PP_ServiceA&#10;EventA">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="aar_communication/S1/Subsystem/S1/f_FieldCommunication" path="S1/Subsystem/S1/f_FieldCommunication" sampleTime="0.1" name="f_FieldCommunication" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="RP_ServiceB&#10;FieldB" physicalPath="aar_communication/S1/Subsystem/S1/f_FieldCommunication/RP_ServiceB&#10;FieldB" path="S1/Subsystem/S1/f_FieldCommunication/RP_ServiceB&#10;FieldB">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="RP_ServiceB&#10;FieldB&#10;out" physicalPath="aar_communication/S1/Subsystem/S1/f_FieldCommunication/RP_ServiceB&#10;FieldB&#10;out" path="S1/Subsystem/S1/f_FieldCommunication/RP_ServiceB&#10;FieldB&#10;out">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="aar_communication/S1/Subsystem/S1/f_MethodBehavior" path="S1/Subsystem/S1/f_MethodBehavior" sampleTime="0.1" name="f_MethodBehavior" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in" physicalPath="aar_communication/S1/Subsystem/S1/f_MethodBehavior/in" path="S1/Subsystem/S1/f_MethodBehavior/in">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="aar_communication/S1/Subsystem/S1/f_MethodBehavior/out" path="S1/Subsystem/S1/f_MethodBehavior/out">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="err" physicalPath="aar_communication/S1/Subsystem/S1/f_MethodBehavior/err" path="S1/Subsystem/S1/f_MethodBehavior/err">
+        <miltype>
+          <bus>
+            <signal signalName="errorCode.errorCode">
+              <double/>
+            </signal>
+            <signal signalName="errorCode.errorDomain">
+              <unsupportedTypeInformation baseType="uint64"/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="errorCode.errorCode">
+              <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+            </signal>
+            <signal signalName="errorCode.errorDomain">
+              <fixedPoint baseType="UInt64" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.8446744073709552e+19"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="aar_communication/S1/Subsystem/S1/f_MethodCall" path="S1/Subsystem/S1/f_MethodCall" sampleTime="0.1" name="f_MethodCall" scopeKind="SUT" kind="subsystem"/>
+    <subsystem subsysID="ss6" physicalPath="aar_communication/S1/Subsystem/S1/f_PersistantDataCommunication" path="S1/Subsystem/S1/f_PersistantDataCommunication" sampleTime="0.1" name="f_PersistantDataCommunication" scopeKind="SUT" kind="subsystem"/>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

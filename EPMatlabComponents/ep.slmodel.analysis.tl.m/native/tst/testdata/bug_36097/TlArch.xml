@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.72" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_36097\bug_36097.mdl" modelCreationDate="2015-09-10T10:24:28" creator="Alexander Hornstein">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.72" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_36097\bug_36097.mdl" creationDate="2015-09-10T10:24:28" modificationDate="2021-11-18T08:24:22">
+    <subsystem subsysID="ss1" physicalPath="bug_36097/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="0.02" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="InPort" physicalPath="bug_36097/top_A/Subsystem/top_A/InPort" path="top_A/Subsystem/top_A/InPort">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="7.8125000000000000e-03" offset="0.0000000000000000e+00" min="-2.5600000000000000e+02" max="2.5599218750000000e+02"/>
+        </siltype>
+      </inport>
+      <calibration name="a4" path="top_A/Subsystem/top_A/sub_B1/Constant" physicalPath="bug_36097/top_A/Subsystem/top_A/sub_B1/Constant" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/MyCals/a4">
+        <miltype initValue="2.0000000000000001e-01">
+          <double/>
+        </miltype>
+        <siltype initValue="2.0000000000000001e-01">
+          <fixedPoint baseType="Int16" lsb="3.1250000000000000e-02" offset="0.0000000000000000e+00" min="-2.0000000000000000e+00" max="4.0000000000000000e+00"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B1/Constant" targetLinkBlockKind="TL_Constant" physicalPath="bug_36097/top_A/Subsystem/top_A/sub_B1/Constant" simulinkBlockType="Constant" blockAttribute="output"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_B2/Constant" targetLinkBlockKind="TL_Constant" physicalPath="bug_36097/top_A/Subsystem/top_A/sub_B2/Constant" simulinkBlockType="Constant" blockAttribute="output"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_B4/Constant" targetLinkBlockKind="TL_Constant" physicalPath="bug_36097/top_A/Subsystem/top_A/sub_B4/Constant" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="a3" path="top_A/Subsystem/top_A/Constant2" physicalPath="bug_36097/top_A/Subsystem/top_A/Constant2" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/MyCals/a3" workspace="a3">
+        <miltype initValue="2.0000000000000001e-01">
+          <double/>
+        </miltype>
+        <siltype initValue="2.0000000000000001e-01">
+          <fixedPoint baseType="Int16" lsb="3.1250000000000000e-02" offset="0.0000000000000000e+00" min="-2.0000000000000000e+00" max="4.0000000000000000e+00"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Constant2" targetLinkBlockKind="TL_Constant" physicalPath="bug_36097/top_A/Subsystem/top_A/Constant2" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="a2" path="top_A/Subsystem/top_A/Constant1" physicalPath="bug_36097/top_A/Subsystem/top_A/Constant1" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/MyCals/a2" workspace="a2">
+        <miltype initValue="2.0000000000000001e-01">
+          <double/>
+        </miltype>
+        <siltype initValue="2.0000000000000001e-01">
+          <fixedPoint baseType="Int16" lsb="3.1250000000000000e-02" offset="0.0000000000000000e+00" min="-2.0000000000000000e+00" max="4.0000000000000000e+00"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Constant1" targetLinkBlockKind="TL_Constant" physicalPath="bug_36097/top_A/Subsystem/top_A/Constant1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="a1" path="top_A/Subsystem/top_A/Constant" physicalPath="bug_36097/top_A/Subsystem/top_A/Constant" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/MyCals/a1" workspace="a1">
+        <miltype initValue="2.0000000000000001e-01">
+          <double/>
+        </miltype>
+        <siltype initValue="2.0000000000000001e-01">
+          <fixedPoint baseType="Int16" lsb="3.1250000000000000e-02" offset="0.0000000000000000e+00" min="-2.0000000000000000e+00" max="4.0000000000000000e+00"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Constant" targetLinkBlockKind="TL_Constant" physicalPath="bug_36097/top_A/Subsystem/top_A/Constant" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="OutPort" physicalPath="bug_36097/top_A/Subsystem/top_A/OutPort" path="top_A/Subsystem/top_A/OutPort">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

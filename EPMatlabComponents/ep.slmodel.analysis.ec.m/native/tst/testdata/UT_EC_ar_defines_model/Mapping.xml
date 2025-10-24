@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Wrapper_defines_model"/>
+    <Architecture id="id1" name="Wrapper_defines_model [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Wrapper_defines_model.c:1:Wrapper_defines_model_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="RteStub_In_if_In_p1_In_el1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In2" refId="id0"/>
+        <Path path="RteStub_In_if_In_p2_In_el2" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="RteStub_Out_if_Out_p1_Out_el1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out2" refId="id0"/>
+        <Path path="RteStub_In_if_Out_p2_In_el2" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ParamX" refId="id0"/>
+        <Path path="param_x" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ParamY" refId="id0"/>
+        <Path path="ParamY" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="defines_model/defines_model/Runna1_sub" refId="id0"/>
+      <Path path="Wrapper_defines_model.c:1:Wrapper_defines_model_step/defines_model.c:1:Runna1" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="defines_model/defines_model/Runna1_sub/In1" refId="id0"/>
+        <Path path="RteStub_In_if_In_p1_In_el1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="defines_model/defines_model/Runna1_sub/Out1" refId="id0"/>
+        <Path path="RteStub_Out_if_Out_p1_Out_el1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ParamX" refId="id0"/>
+        <Path path="param_x" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="defines_model/defines_model/Runna2_sub" refId="id0"/>
+      <Path path="Wrapper_defines_model.c:1:Wrapper_defines_model_step/defines_model.c:1:Runna2" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="defines_model/defines_model/Runna2_sub/In1" refId="id0"/>
+        <Path path="RteStub_In_if_In_p2_In_el2" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="defines_model/defines_model/Runna2_sub/Out1" refId="id0"/>
+        <Path path="RteStub_In_if_Out_p2_In_el2" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ParamY" refId="id0"/>
+        <Path path="ParamY" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

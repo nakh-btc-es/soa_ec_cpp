@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" modelVersion="1.15" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_input_model_constraints\input_constraints.mdl" modelCreationDate="2017-11-21T09:08:18" creator="developer">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.15" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_input_model_constraints\input_constraints.mdl" creationDate="2017-11-21T09:08:18" modificationDate="2020-09-08T09:28:54">
+    <subsystem subsysID="ss1" physicalPath="input_constraints/top_A" path="top_A" sampleTime="0.2" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="input_constraints/top_A/In1" path="top_A/In1">
+        <int8 min="-10" max="10"/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="input_constraints/top_A/In2" path="top_A/In2">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="input_constraints/top_A/In3" path="top_A/In3">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="input_constraints/top_A/In4" path="top_A/In4">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="input_constraints/top_A/Out1" path="top_A/Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="input_constraints/top_A/Out2" path="top_A/Out2">
+        <uint32/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="input_constraints/top_A/Out3" path="top_A/Out3">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

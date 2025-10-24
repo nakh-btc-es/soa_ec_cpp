@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<EnumType name="boolean">
+			<EnumValue name="false" ordinal="0" />
+			<EnumValue name="true" ordinal="1" />
+		</EnumType>
+		<BusType name="myBusW" virtual="false">
+			<Comp name="Out3.w.c.a" type="int16" />
+			<Comp name="Out3.w.c.b" type="int32" width="2" />
+			<Comp name="Out3.w.z.x" type="single" />
+			<Comp name="Out3.w.z.y" type="double" width="2" />
+		</BusType>
+		<BusType name="myBusZ" virtual="false">
+			<Comp name="Out4.z.x" type="single" />
+			<Comp name="Out4.z.y" type="double" width="2" />
+		</BusType>
+	</Types>
+	<Inports>
+		<Inport portNr="1" width="2" type="boolean">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out1(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out1(2)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="2" width="2" type="boolean">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out2(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out2(2)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="3" width="1" type="myBusW">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out3.w.c.a</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.w.c.b(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.w.c.b(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.w.z.x</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.w.z.y(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.w.z.y(2)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="4" width="1" type="myBusZ">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out4.z.x</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.z.y(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.z.y(2)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+	</Inports>
+</SFunction>

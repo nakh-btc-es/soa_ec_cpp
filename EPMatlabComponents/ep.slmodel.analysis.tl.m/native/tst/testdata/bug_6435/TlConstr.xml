@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architectureConstraints>
+  <scope path="standartSubsystem/Subsystem/standartSubsystem">
+    <assumptions origin="tl_relay">
+      <signalSignal relation="leq" signal1="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay/Relay[relay_switch_off]" signal2="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay/Relay[relay_switch_on]"/>
+    </assumptions>
+    <assumptions origin="tl_saturate">
+      <signalSignal relation="leq" signal1="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation/Saturation[sat_lower]" signal2="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation/Saturation[sat_upper]"/>
+    </assumptions>
+  </scope>
+  <scope path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem">
+    <assumptions origin="tl_relay">
+      <signalSignal relation="leq" signal1="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay/Relay[relay_switch_off]" signal2="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay/Relay[relay_switch_on]"/>
+    </assumptions>
+  </scope>
+  <scope path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1">
+    <assumptions origin="tl_saturate">
+      <signalSignal relation="leq" signal1="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation/Saturation[sat_lower]" signal2="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation/Saturation[sat_upper]"/>
+    </assumptions>
+  </scope>
+  <scope path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2">
+    <assumptions origin="tl_saturate">
+      <signalSignal relation="leq" signal1="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation/Saturation[sat_lower]" signal2="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation/Saturation[sat_upper]"/>
+    </assumptions>
+  </scope>
+</architectureConstraints>

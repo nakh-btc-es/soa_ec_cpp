@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20231005T163942_9920\tmp_ar_multi_instance_epdev_75159\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20231005T163942_9920\tmp_ar_multi_instance_epdev_75159\init_Wrapper_ar_epdev_75159.m" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20231005T163942_9920\tmp_ar_multi_instance_epdev_75159\Wrapper_ar_epdev_75159.slx" modelCreationDate="2023-10-05T17:03:29" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20231005T163942_9920\tmp_ar_multi_instance_epdev_75159\Wrapper_ar_epdev_75159.slx" creationDate="2023-10-05T17:03:29" modificationDate="2023-10-05T17:03:31" initScript="C:\Users\developer\AppData\Local\Temp\ut20231005T163942_9920\tmp_ar_multi_instance_epdev_75159\init_Wrapper_ar_epdev_75159.m">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_ar_epdev_75159" path="" sampleTime="0.01" name="Wrapper_ar_epdev_75159" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="dsin_get_B_y" physicalPath="Wrapper_ar_epdev_75159/Mock_get_B/dsin_get_B_y" path="Mock_get_B/dsin_get_B_y" signalName="dsin_get_B_y">
+        <boolean/>
+        <dataStoreMemory signalName="dsin_get_B_y"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="Wrapper_ar_epdev_75159/Out1" path="Out1">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="ar_epdev_75159" path="ar_epdev_75159/ar_epdev_75159" sampleTime="0.01" name="ar_epdev_75159" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="0" name="dsin_get_B_y" physicalPath="Wrapper_ar_epdev_75159/Mock_get_B/dsin_get_B_y" path="Mock_get_B/dsin_get_B_y" signalName="dsin_get_B_y">
+        <boolean/>
+        <dataStoreMemory signalName="dsin_get_B_y"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ar_epdev_75159/Out1" path="ar_epdev_75159/ar_epdev_75159/Out1" modelRef="model002">
+        <boolean/>
+      </outport>
+      <slfunc_caller path="ar_epdev_75159/ar_epdev_75159/get_B_caller" pathCaller="ar_epdev_75159/get_B_caller" pathFunction="Wrapper_ar_epdev_75159/Mock_get_B"/>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.3" modelPath="C:\Users\developer\AppData\Local\Temp\ut20231005T163942_9920\tmp_ar_multi_instance_epdev_75159\ar_epdev_75159.slx" creationDate="2023-10-05T16:11:48" modificationDate="2023-10-05T16:39:48" initScript="C:\Users\developer\AppData\Local\Temp\ut20231005T163942_9920\tmp_ar_multi_instance_epdev_75159\init_Wrapper_ar_epdev_75159.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

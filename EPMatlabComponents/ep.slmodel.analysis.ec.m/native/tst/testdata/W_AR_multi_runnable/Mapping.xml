@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Wrapper_AR_multi_runnable"/>
+    <Architecture id="id1" name="Wrapper_AR_multi_runnable [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Wrapper_AR_multi_runnable.c:1:Wrapper_AR_multi_runnable_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="RPort_DE1" refId="id0"/>
+        <Path path="RteStub_Interface1_RPort_DE1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="RPort_DE1&#10;(ErrorStatus)" refId="id0"/>
+        <Path path="RteStub_Interface1_RPort_DE1_err" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="RPort_DE2" refId="id0"/>
+        <Path path="RteStub_Interface1_RPort_DE2" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="PPort_DE1" refId="id0"/>
+        <Path path="RteStub_Interface2_PPort_DE1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="PPort_DE3" refId="id0"/>
+        <Path path="RteStub_Interface2_PPort_DE3" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="PPort_DE4" refId="id0"/>
+        <Path path="RteStub_Interface2_PPort_DE4" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="PPort_DE2" refId="id0"/>
+        <Path path="RteStub_Interface2_PPort_DE2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable1_subsystem/EnabledSubsys(1)" refId="id0"/>
+        <Path path="loc_irv1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="K" refId="id0"/>
+        <Path path="Rte_CData_K_data" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="AR_multi_runnable/AR_multi_runnable/Runnable1_subsystem" refId="id0"/>
+      <Path path="Wrapper_AR_multi_runnable.c:1:Wrapper_AR_multi_runnable_step/AR_multi_runnable.c:1:Runnable1" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable1_subsystem/In1" refId="id0"/>
+        <Path path="RteStub_Interface1_RPort_DE1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable1_subsystem/ErrorStatus" refId="id0"/>
+        <Path path="RteStub_Interface1_RPort_DE1_err" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable1_subsystem/In2" refId="id0"/>
+        <Path path="RteStub_IRV3" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable1_subsystem/TicToc" refId="id0"/>
+        <Path path="RteStub_Interface2_PPort_DE1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable1_subsystem/Adder" refId="id0"/>
+        <Path path="RteStub_IRV1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable1_subsystem/EnabledSubsys(1)" refId="id0"/>
+        <Path path="loc_irv1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="K" refId="id0"/>
+        <Path path="Rte_CData_K_data" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="AR_multi_runnable/AR_multi_runnable/Runnable2_subsystem" refId="id0"/>
+      <Path path="Wrapper_AR_multi_runnable.c:1:Wrapper_AR_multi_runnable_step/AR_multi_runnable.c:1:Runnable2" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable2_subsystem/In1" refId="id0"/>
+        <Path path="RteStub_IRV1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable2_subsystem/In2" refId="id0"/>
+        <Path path="RteStub_IRV2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable2_subsystem/TicToc" refId="id0"/>
+        <Path path="RteStub_Interface2_PPort_DE3" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable2_subsystem/Subtracter" refId="id0"/>
+        <Path path="RteStub_Interface2_PPort_DE4" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable2_subsystem/Subtracter_irv" refId="id0"/>
+        <Path path="RteStub_IRV4" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="AR_multi_runnable/AR_multi_runnable/Runnable2_subsystem/SubstractSubsys" refId="id0"/>
+      <Path path="Wrapper_AR_multi_runnable.c:1:Wrapper_AR_multi_runnable_step/AR_multi_runnable.c:1:Runnable2/AR_multi_runnable.c:1:substract_subsys_fun" refId="id1"/>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable2_subsystem/SubstractSubsys/Out1" refId="id0"/>
+        <Path path="local2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="AR_multi_runnable/AR_multi_runnable/Runnable3_subsystem" refId="id0"/>
+      <Path path="Wrapper_AR_multi_runnable.c:1:Wrapper_AR_multi_runnable_step/AR_multi_runnable.c:1:Runnable3" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable3_subsystem/In1" refId="id0"/>
+        <Path path="RteStub_IRV4" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable3_subsystem/In2" refId="id0"/>
+        <Path path="RteStub_Interface1_RPort_DE2" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable3_subsystem/TicToc_irv" refId="id0"/>
+        <Path path="RteStub_IRV3" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable3_subsystem/TicToc" refId="id0"/>
+        <Path path="RteStub_Interface2_PPort_DE2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="AR_multi_runnable/AR_multi_runnable/Runnable3_subsystem/Multiplier" refId="id0"/>
+        <Path path="RteStub_IRV2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="constraints_lut.c" path="C:\Users\developer\AppData\Local\Temp\ut20201002T140258_21616\tmp_ut_constraintsLut\constraints_lut_ert_rtw"/>
+    <File annotate="yes" id="ID72" kind="source" name="constraints_lut_data.c" path="C:\Users\developer\AppData\Local\Temp\ut20201002T140258_21616\tmp_ut_constraintsLut\constraints_lut_ert_rtw"/>
+    <File annotate="yes" id="ID73" kind="source" name="params.c" path="C:\Users\developer\AppData\Local\Temp\ut20201002T140258_21616\tmp_ut_constraintsLut\constraints_lut_ert_rtw"/>
+    <File annotate="yes" id="ID74" kind="source" name="sigs.c" path="C:\Users\developer\AppData\Local\Temp\ut20201002T140258_21616\tmp_ut_constraintsLut\constraints_lut_ert_rtw"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20201002T140258_21616\tmp_ut_constraintsLut"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20201002T140258_21616\tmp_ut_constraintsLut\constraints_lut_ert_rtw"/>
+    <IncludePath path="C:\Matlab\R2017b\extern\include"/>
+    <IncludePath path="C:\Matlab\R2017b\simulink\include"/>
+    <IncludePath path="C:\Matlab\R2017b\rtw\c\src"/>
+    <IncludePath path="C:\Matlab\R2017b\rtw\c\src\ext_mode\common"/>
+    <IncludePath path="C:\Matlab\R2017b\rtw\c\ert"/>
+  </IncludePaths>
+  <Functions archName="constraints_lut [C-Code]">
+    <Function fileref="ID71" initFunc="constraints_lut_initialize" name="constraints_lut_step">
+      <Interface>
+        <InterfaceObj kind="in" var="a"/>
+        <InterfaceObj kind="in" var="c"/>
+        <InterfaceObj kind="in" var="e"/>
+        <InterfaceObj kind="out" var="b"/>
+        <InterfaceObj kind="out" var="d"/>
+        <InterfaceObj kind="out" var="g"/>
+        <InterfaceObj access="[0]" kind="cal" var="paramA"/>
+        <InterfaceObj access="[1]" kind="cal" var="paramA"/>
+        <InterfaceObj access="[2]" kind="cal" var="paramA"/>
+        <InterfaceObj access="[3]" kind="cal" var="paramA"/>
+        <InterfaceObj access="[4]" kind="cal" var="paramA"/>
+        <InterfaceObj access="[5]" kind="cal" var="paramA"/>
+        <InterfaceObj access="[0]" kind="cal" var="paramB_x"/>
+        <InterfaceObj access="[1]" kind="cal" var="paramB_x"/>
+        <InterfaceObj access="[2]" kind="cal" var="paramB_x"/>
+        <InterfaceObj access="[3]" kind="cal" var="paramB_x"/>
+        <InterfaceObj access="[4]" kind="cal" var="paramB_x"/>
+        <InterfaceObj access="[0]" kind="cal" var="paramB_y"/>
+        <InterfaceObj access="[1]" kind="cal" var="paramB_y"/>
+        <InterfaceObj access="[2]" kind="cal" var="paramB_y"/>
+        <InterfaceObj access="[3]" kind="cal" var="paramB_y"/>
+        <InterfaceObj access="[4]" kind="cal" var="paramB_y"/>
+        <InterfaceObj access="[0]" kind="cal" var="paramC_u1"/>
+        <InterfaceObj access="[1]" kind="cal" var="paramC_u1"/>
+        <InterfaceObj access="[0]" kind="cal" var="paramC_u2"/>
+        <InterfaceObj access="[1]" kind="cal" var="paramC_u2"/>
+        <InterfaceObj access="[0]" kind="cal" var="paramC_u3"/>
+        <InterfaceObj access="[1]" kind="cal" var="paramC_u3"/>
+        <InterfaceObj access="[0]" kind="cal" var="paramC_u4"/>
+        <InterfaceObj access="[1]" kind="cal" var="paramC_u4"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="constraints_lut_initialize" name="func_A">
+      <Interface>
+        <InterfaceObj kind="in" var="a"/>
+        <InterfaceObj kind="in" var="c"/>
+        <InterfaceObj kind="out" var="b"/>
+        <InterfaceObj kind="out" var="d"/>
+        <InterfaceObj access="[0]" kind="cal" var="paramA"/>
+        <InterfaceObj access="[1]" kind="cal" var="paramA"/>
+        <InterfaceObj access="[2]" kind="cal" var="paramA"/>
+        <InterfaceObj access="[3]" kind="cal" var="paramA"/>
+        <InterfaceObj access="[4]" kind="cal" var="paramA"/>
+        <InterfaceObj access="[5]" kind="cal" var="paramA"/>
+        <InterfaceObj access="[0]" kind="cal" var="paramB_x"/>
+        <InterfaceObj access="[1]" kind="cal" var="paramB_x"/>
+        <InterfaceObj access="[2]" kind="cal" var="paramB_x"/>
+        <InterfaceObj access="[3]" kind="cal" var="paramB_x"/>
+        <InterfaceObj access="[4]" kind="cal" var="paramB_x"/>
+        <InterfaceObj access="[0]" kind="cal" var="paramB_y"/>
+        <InterfaceObj access="[1]" kind="cal" var="paramB_y"/>
+        <InterfaceObj access="[2]" kind="cal" var="paramB_y"/>
+        <InterfaceObj access="[3]" kind="cal" var="paramB_y"/>
+        <InterfaceObj access="[4]" kind="cal" var="paramB_y"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="constraints_lut_initialize" name="func_B">
+      <Interface>
+        <InterfaceObj kind="in" var="d"/>
+        <InterfaceObj kind="in" var="c"/>
+        <InterfaceObj kind="in" var="e"/>
+        <InterfaceObj kind="out" var="g"/>
+        <InterfaceObj access="[0]" kind="cal" var="paramB_x"/>
+        <InterfaceObj access="[1]" kind="cal" var="paramB_x"/>
+        <InterfaceObj access="[2]" kind="cal" var="paramB_x"/>
+        <InterfaceObj access="[3]" kind="cal" var="paramB_x"/>
+        <InterfaceObj access="[4]" kind="cal" var="paramB_x"/>
+        <InterfaceObj access="[0]" kind="cal" var="paramB_y"/>
+        <InterfaceObj access="[1]" kind="cal" var="paramB_y"/>
+        <InterfaceObj access="[2]" kind="cal" var="paramB_y"/>
+        <InterfaceObj access="[3]" kind="cal" var="paramB_y"/>
+        <InterfaceObj access="[4]" kind="cal" var="paramB_y"/>
+        <InterfaceObj access="[0]" kind="cal" var="paramC_u1"/>
+        <InterfaceObj access="[1]" kind="cal" var="paramC_u1"/>
+        <InterfaceObj access="[0]" kind="cal" var="paramC_u2"/>
+        <InterfaceObj access="[1]" kind="cal" var="paramC_u2"/>
+        <InterfaceObj access="[0]" kind="cal" var="paramC_u3"/>
+        <InterfaceObj access="[1]" kind="cal" var="paramC_u3"/>
+        <InterfaceObj access="[0]" kind="cal" var="paramC_u4"/>
+        <InterfaceObj access="[1]" kind="cal" var="paramC_u4"/>
+      </Interface>
+    </Function>
+  </Functions>
+</CodeModel>

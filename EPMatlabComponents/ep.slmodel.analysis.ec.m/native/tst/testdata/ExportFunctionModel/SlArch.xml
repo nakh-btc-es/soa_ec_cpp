@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1806\ut_results\AddModelInfo.xml" modelVersion="1.45" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1806\main_model.slx" modelCreationDate="2019-11-14T10:37:36" creator="developer">
+  <toolInfo name="Matlab" release="(R2019b)" version="9.7" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2019b)" version="10.0" patchLevel=""/>
+  <model modelKind="model" modelID="model001" modelVersion="1.45" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1806\main_model.slx" creationDate="2019-11-14T10:37:36">
+    <subsystem subsysID="ss1" physicalPath="main_model" path="" sampleTime="2" name="main_model" scopeKind="DUMMY" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="main_model/In1" path="In1" signalName="in1">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="exp_A" physicalPath="main_model/exp_A" path="exp_A">
+        <unsupportedTypeInformation/>
+      </inport>
+      <inport portNumber="3" name="exp_B" physicalPath="main_model/exp_B" path="exp_B">
+        <unsupportedTypeInformation/>
+      </inport>
+      <inport portNumber="4" name="exp_C" physicalPath="main_model/exp_C" path="exp_C">
+        <unsupportedTypeInformation/>
+      </inport>
+      <inport portNumber="5" name="exp_D" physicalPath="main_model/exp_D" path="exp_D">
+        <unsupportedTypeInformation/>
+      </inport>
+      <inport portNumber="6" name="exp_F" physicalPath="main_model/exp_F" path="exp_F">
+        <unsupportedTypeInformation/>
+      </inport>
+      <inport portNumber="7" name="In2" physicalPath="main_model/In2" path="In2" signalName="in2">
+        <boolean/>
+      </inport>
+      <inport portNumber="8" name="exp_G1" physicalPath="main_model/exp_G1" path="exp_G1">
+        <unsupportedTypeInformation/>
+      </inport>
+      <inport portNumber="9" name="exp_G2" physicalPath="main_model/exp_G2" path="exp_G2">
+        <unsupportedTypeInformation/>
+      </inport>
+      <inport portNumber="10" name="exp_H1" physicalPath="main_model/exp_H1" path="exp_H1">
+        <unsupportedTypeInformation/>
+      </inport>
+      <inport portNumber="11" name="exp_H2" physicalPath="main_model/exp_H2" path="exp_H2">
+        <unsupportedTypeInformation/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="main_model/Out1" path="Out1" signalName="delay_and3_out">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="main_model/Out2" path="Out2" signalName="subB_out">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="main_model/Out3" path="Out3">
+        <boolean/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="main_model/Out4" path="Out4">
+        <boolean/>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="main_model/Out5" path="Out5" signalName="subF2_out">
+        <boolean/>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="main_model/Out6" path="Out6" signalName="subG1_out">
+        <boolean/>
+      </outport>
+      <outport portNumber="7" name="Out7" physicalPath="main_model/Out7" path="Out7" signalName="subG2_out">
+        <boolean/>
+      </outport>
+      <outport portNumber="8" name="Out8" physicalPath="main_model/Out8" path="Out8" signalName="subH1_out">
+        <boolean/>
+      </outport>
+      <outport portNumber="9" name="Out9" physicalPath="main_model/Out9" path="Out9" signalName="subH2_out">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss8"/>
+      <subsystem refSubsysID="ss10"/>
+      <subsystem refSubsysID="ss11"/>
+      <subsystem refSubsysID="ss12"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="main_model/sub_A" path="sub_A" sampleTime="2" name="sub_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="main_model/sub_A/In1" path="sub_A/In1" signalName="in1">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="main_model/sub_A/Out1" path="sub_A/Out1" signalName="delay_and3_out">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="main_model/sub_B" path="sub_B" sampleTime="2" name="sub_B" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="main_model/sub_B/In1" path="sub_B/In1" signalName="in1">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="main_model/sub_B/Out1" path="sub_B/Out1" signalName="subB_out">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="main_model/sub_B/sub_sub_B" path="sub_B/sub_sub_B" sampleTime="2" name="sub_sub_B" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="main_model/sub_B/sub_sub_B/In1" path="sub_B/sub_sub_B/In1" signalName="subB_in">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="main_model/sub_B/sub_sub_B/Out1" path="sub_B/sub_sub_B/Out1" signalName="subB_out">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="main_model/sub_H1" path="sub_H1" sampleTime="2" name="sub_H1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="main_model/sub_H1/In1" path="sub_H1/In1" signalName="in2">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="main_model/sub_H1/Out1" path="sub_H1/Out1" signalName="subH1_out">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="main_model/sub_H2" path="sub_H2" sampleTime="2" name="sub_H2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="main_model/sub_H2/In1" path="sub_H2/In1" signalName="in2">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="main_model/sub_H2/Out1" path="sub_H2/Out1" signalName="subH2_out">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss7"/>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="main_model/sub_H2/sub_sub_H2" path="sub_H2/sub_sub_H2" sampleTime="2" name="sub_sub_H2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="main_model/sub_H2/sub_sub_H2/In1" path="sub_H2/sub_sub_H2/In1" signalName="subH2_in">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="main_model/sub_H2/sub_sub_H2/Out1" path="sub_H2/sub_sub_H2/Out1" signalName="subH2_out">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="sub_model1/sub_C" path="sub_X/sub_C" sampleTime="2" name="sub_C" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="sub_model1/sub_C/In1" path="sub_X/sub_C/In1" modelRef="model002" signalName="in1">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sub_model1/sub_C/Out1" path="sub_X/sub_C/Out1" modelRef="model002" signalName="subC_out">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss9"/>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="sub_model1/sub_C/sub_sub_C" path="sub_X/sub_C/sub_sub_C" sampleTime="2" name="sub_sub_C" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="sub_model1/sub_C/sub_sub_C/In1" path="sub_X/sub_C/sub_sub_C/In1" modelRef="model002" signalName="subC_in">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sub_model1/sub_C/sub_sub_C/Out1" path="sub_X/sub_C/sub_sub_C/Out1" modelRef="model002" signalName="subC_out">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="sub_model1/sub_D" path="sub_X/sub_D" sampleTime="2" name="sub_D" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="sub_model1/sub_D/In1" path="sub_X/sub_D/In1" modelRef="model002" signalName="in1">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sub_model1/sub_D/Out1" path="sub_X/sub_D/Out1" modelRef="model002" signalName="subD_out">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss11" physicalPath="main_model/sub_Y/sub_G1" path="sub_Y/sub_G1" sampleTime="2" name="sub_G1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="main_model/sub_Y/sub_G1/In1" path="sub_Y/sub_G1/In1" signalName="in2">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="main_model/sub_Y/sub_G1/Out1" path="sub_Y/sub_G1/Out1" signalName="subG1_out">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss12" physicalPath="main_model/sub_Y/sub_G2" path="sub_Y/sub_G2" sampleTime="2" name="sub_G2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="main_model/sub_Y/sub_G2/In1" path="sub_Y/sub_G2/In1" signalName="in2">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="main_model/sub_Y/sub_G2/Out1" path="sub_Y/sub_G2/Out1" signalName="subG2_out">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss13"/>
+    </subsystem>
+    <subsystem subsysID="ss13" physicalPath="main_model/sub_Y/sub_G2/sub_sub_G2" path="sub_Y/sub_G2/sub_sub_G2" sampleTime="2" name="sub_sub_G2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="main_model/sub_Y/sub_G2/sub_sub_G2/In1" path="sub_Y/sub_G2/sub_sub_G2/In1" signalName="subG2_in">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="main_model/sub_Y/sub_G2/sub_sub_G2/Out1" path="sub_Y/sub_G2/sub_sub_G2/Out1" signalName="subG2_out">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelKind="model_ref" modelID="model002" modelVersion="1.20" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1806\sub_model1.slx" creationDate="2019-11-14T10:37:36"/>
+  <model modelKind="library" modelID="model003" modelVersion="1.9" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1806\my_lib.slx" creationDate="2019-11-14T10:40:57"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

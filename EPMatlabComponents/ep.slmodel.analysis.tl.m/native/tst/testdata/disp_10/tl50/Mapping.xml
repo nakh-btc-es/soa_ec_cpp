@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="disp_in_mdl_ref"/>
+    <Architecture id="id1" name="disp_in_mdl_ref [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="Subsystem/Subsystem/Subsystem"/>
+      <Path refId="id1" path="Subsystem.c:1:Subsystem"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort1"/>
+        <Path refId="id1" path="Sa1_InPort1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort"/>
+        <Path refId="id1" path="Sa1_OutPort"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="Subsystem/Subsystem/Subsystem/Model"/>
+      <Path refId="id1" path="Subsystem.c:1:Subsystem/refd_mdl.c:1:Srefd_mdl1_ref"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort"/>
+        <Path refId="id1" path="Srefd_mdl1_InPort"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort"/>
+        <Path refId="id1" path="disp_var"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

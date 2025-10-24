@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<BusType name="LowBus" virtual="false">
+			<Comp name="a" type="uint8" width="3" />
+			<Comp name="b" type="boolean" />
+		</BusType>
+	</Types>
+	<Inports debug="false">
+		<Inport portNr="1" type="LowBus" signalName="&lt;signal1&gt;">
+			<ScalarRefs>
+				<ScalarRef displayName="Out1.{&lt;signal1&gt;}.a(1)">OUTPUT:Out1.{&lt;signal1&gt;}.a(1)</ScalarRef>
+				<ScalarRef displayName="Out1.{&lt;signal1&gt;}.a(2)">OUTPUT:Out1.{&lt;signal1&gt;}.a(2)</ScalarRef>
+				<ScalarRef displayName="Out1.{&lt;signal1&gt;}.a(3)">OUTPUT:Out1.{&lt;signal1&gt;}.a(3)</ScalarRef>
+				<ScalarRef displayName="Out1.{&lt;signal1&gt;}.b">OUTPUT:Out1.{&lt;signal1&gt;}.b</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport kind="DataStoreWrite" type="LowBus" signalName="Sig1" portNr="2">
+			<ScalarRefs>
+				<ScalarRef displayName="ds_out@Sig1.Sig1.a(1)">OUTPUT:ds_out.Sig1.a(1)</ScalarRef>
+				<ScalarRef displayName="ds_out@Sig1.Sig1.a(2)">OUTPUT:ds_out.Sig1.a(2)</ScalarRef>
+				<ScalarRef displayName="ds_out@Sig1.Sig1.a(3)">OUTPUT:ds_out.Sig1.a(3)</ScalarRef>
+				<ScalarRef displayName="ds_out@Sig1.Sig1.b">OUTPUT:ds_out.Sig1.b</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+	</Inports>
+</SFunction>

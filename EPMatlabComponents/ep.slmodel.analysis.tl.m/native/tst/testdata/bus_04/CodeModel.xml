@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\bus_04\TLProj\top_A" name="top_A.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\bus_04\TLSim" name="top_A_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\bus_04\TLProj\top_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\bus_04\TLSim"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="bus_port3 [C-Code]">
+    <Function name="top_A" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_InPort2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_signal1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_c0" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_c1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_c2" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa2_sub_B1" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_InPort2" access="[1]" scaling="scID1"/>
+        <InterfaceObj kind="in" var="A_cal" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="B_cal" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa1_InPort2" access="[1]" scaling="scID1"/>
+        <InterfaceObj kind="out" var="A_cal" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="B_cal" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa1_InPort2" access="[1]" alias="Sa1_InPort2:2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="A_cal" alias="A_cal:2" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="A_cal2" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="A_cal3" scaling="scID1" initVal="5.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa4_sub_B5" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa4_bccc" access=".Sa4_signal1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa4_bccc" access=".Sa4_c0" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa4_bccc" access=".Sa4_c1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa4_bccc" access=".Sa4_c2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa4_bc" access=".Sa4_signal1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa4_bc" access=".Sa4_c0" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa4_c1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa4_c2" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa6_sub_C2" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="IF_Sa5_Out1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="IF_Sa5_Out1_a" scaling="scID1"/>
+        <InterfaceObj kind="in" var="IF_Sa5_Out1_b" scaling="scID1"/>
+        <InterfaceObj kind="in" var="IF_Sa5_Out1_c" scaling="scID1"/>
+        <InterfaceObj kind="out" var="IF_Sa6_Out1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="IF_Sa6_Out1_a" scaling="scID1"/>
+        <InterfaceObj kind="out" var="IF_Sa6_Out1_b" scaling="scID1"/>
+        <InterfaceObj kind="out" var="IF_Sa6_Out1_c" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa7_sub_D1" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Ca1_y" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="IF_Sa10_Out1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa10_sub_E" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Ca1_y" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="IF_Sa10_Out1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa8_sub_D2" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="IF_Sa6_Out1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="IF_Sa6_Out1_a" scaling="scID1"/>
+        <InterfaceObj kind="in" var="IF_Sa6_Out1_b" scaling="scID1"/>
+        <InterfaceObj kind="in" var="IF_Sa6_Out1_c" scaling="scID1"/>
+        <InterfaceObj kind="out" var="IF_Sa11_Out1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="IF_Sa11_Out1_a" scaling="scID1"/>
+        <InterfaceObj kind="out" var="IF_Sa11_Out1_b" scaling="scID1"/>
+        <InterfaceObj kind="out" var="IF_Sa11_Out1_c" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa11_sub_E" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="IF_Sa6_Out1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="IF_Sa6_Out1_a" scaling="scID1"/>
+        <InterfaceObj kind="in" var="IF_Sa6_Out1_b" scaling="scID1"/>
+        <InterfaceObj kind="in" var="IF_Sa6_Out1_c" scaling="scID1"/>
+        <InterfaceObj kind="out" var="IF_Sa11_Out1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="IF_Sa11_Out1_a" scaling="scID1"/>
+        <InterfaceObj kind="out" var="IF_Sa11_Out1_b" scaling="scID1"/>
+        <InterfaceObj kind="out" var="IF_Sa11_Out1_c" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Ca1_Chart1" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Ca1_u1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Ca1_u2" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Ca1_u3" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Ca1_y" scaling="scID1" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_many_bus\init_model.m" modelVersion="1.18" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_many_bus\many_bus.mdl" modelCreationDate="2017-12-06T08:51:38" creator="developer">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.18" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_many_bus\many_bus.mdl" creationDate="2017-12-06T08:51:38" modificationDate="2020-09-10T14:28:25" initScript="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_many_bus\init_model.m">
+    <subsystem subsysID="ss1" physicalPath="many_bus" path="" sampleTime="0.2" name="many_bus" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="many_bus/In1" path="In1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="MyNextBus">
+          <signal signalName="d">
+            <array size="2" startIndex="1">
+              <array size="3" startIndex="1">
+                <int8/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <bus busType="non_virtual" busObjectName="MyBus">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <single/>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="e">
+            <bus busType="non_virtual" busObjectName="MyOtherBus">
+              <signal signalName="x">
+                <bus busType="non_virtual" busObjectName="MyBus">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <single/>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <parameter name="paramB" path="top_A/sub_B1/sub_C1/Const2" physicalPath="many_bus/top_A/sub_B1/sub_C1/Const2" origin="explicit_param" workspace="paramB" initValue="1.0000000000000000e+00">
+        <boolean/>
+        <usageContext path="top_A/sub_B1/sub_C1/Const2" physicalPath="many_bus/top_A/sub_B1/sub_C1/Const2" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="paramC" path="top_A/sub_B1/sub_C1/Const3" physicalPath="many_bus/top_A/sub_B1/sub_C1/Const3" origin="explicit_param" workspace="paramC" initValue="1.2000000000000000e+00">
+        <single/>
+        <usageContext path="top_A/sub_B1/sub_C1/Const3" physicalPath="many_bus/top_A/sub_B1/sub_C1/Const3" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="many_bus/Out1" path="Out1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <single/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="many_bus/Out2" path="Out2">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="many_bus/Out3" path="Out3" signalName="d">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="many_bus/top_A" path="top_A" sampleTime="0.2" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="many_bus/top_A/In1" path="top_A/In1" signalName="nb">
+        <bus busObjectName="MyNextBus">
+          <signal signalName="d">
+            <array size="2" startIndex="1">
+              <array size="3" startIndex="1">
+                <int8/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <bus busType="non_virtual" busObjectName="MyBus">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <single/>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="e">
+            <bus busType="non_virtual" busObjectName="MyOtherBus">
+              <signal signalName="x">
+                <bus busType="non_virtual" busObjectName="MyBus">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <single/>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <parameter name="paramB" path="top_A/sub_B1/sub_C1/Const2" physicalPath="many_bus/top_A/sub_B1/sub_C1/Const2" origin="explicit_param" workspace="paramB" initValue="1.0000000000000000e+00">
+        <boolean/>
+        <usageContext path="top_A/sub_B1/sub_C1/Const2" physicalPath="many_bus/top_A/sub_B1/sub_C1/Const2" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="paramC" path="top_A/sub_B1/sub_C1/Const3" physicalPath="many_bus/top_A/sub_B1/sub_C1/Const3" origin="explicit_param" workspace="paramC" initValue="1.2000000000000000e+00">
+        <single/>
+        <usageContext path="top_A/sub_B1/sub_C1/Const3" physicalPath="many_bus/top_A/sub_B1/sub_C1/Const3" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="many_bus/top_A/Out1" path="top_A/Out1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <single/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="many_bus/top_A/Out2" path="top_A/Out2" signalName="h1">
+        <bus>
+          <signal signalName="g1">
+            <bus busObjectName="MyBus">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <single/>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="g2">
+            <bus>
+              <signal signalName="f1">
+                <boolean/>
+              </signal>
+              <signal signalName="f2">
+                <single/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="many_bus/top_A/Out3" path="top_A/Out3" signalName="x">
+        <bus>
+          <signal signalName="bb">
+            <bus>
+              <signal signalName="b1">
+                <boolean/>
+              </signal>
+              <signal signalName="b2">
+                <bus busObjectName="MyBus">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <single/>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="signal2">
+            <bus busObjectName="MyNextBus">
+              <signal signalName="d">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <int8/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <bus busType="non_virtual" busObjectName="MyBus">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <single/>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="e">
+                <bus busType="non_virtual" busObjectName="MyOtherBus">
+                  <signal signalName="x">
+                    <bus busType="non_virtual" busObjectName="MyBus">
+                      <signal signalName="a">
+                        <array size="2" startIndex="1">
+                          <single/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="many_bus/top_A/sub_B1" path="top_A/sub_B1" sampleTime="0.2" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <parameter name="paramB" path="top_A/sub_B1/sub_C1/Const2" physicalPath="many_bus/top_A/sub_B1/sub_C1/Const2" origin="explicit_param" workspace="paramB" initValue="1.0000000000000000e+00">
+        <boolean/>
+        <usageContext path="top_A/sub_B1/sub_C1/Const2" physicalPath="many_bus/top_A/sub_B1/sub_C1/Const2" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="paramC" path="top_A/sub_B1/sub_C1/Const3" physicalPath="many_bus/top_A/sub_B1/sub_C1/Const3" origin="explicit_param" workspace="paramC" initValue="1.2000000000000000e+00">
+        <single/>
+        <usageContext path="top_A/sub_B1/sub_C1/Const3" physicalPath="many_bus/top_A/sub_B1/sub_C1/Const3" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="many_bus/top_A/sub_B1/Out1" path="top_A/sub_B1/Out1" signalName="g1">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <single/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="many_bus/top_A/sub_B1/Out2" path="top_A/sub_B1/Out2" signalName="g2">
+        <bus>
+          <signal signalName="f1">
+            <boolean/>
+          </signal>
+          <signal signalName="f2">
+            <single/>
+          </signal>
+        </bus>
+      </outport>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="many_bus/top_A/sub_B1/sub_C1" path="top_A/sub_B1/sub_C1" sampleTime="0.2" name="sub_C1" scopeKind="SUT" kind="subsystem">
+      <parameter name="paramB" path="top_A/sub_B1/sub_C1/Const2" physicalPath="many_bus/top_A/sub_B1/sub_C1/Const2" origin="explicit_param" workspace="paramB" initValue="1.0000000000000000e+00">
+        <boolean/>
+        <usageContext path="top_A/sub_B1/sub_C1/Const2" physicalPath="many_bus/top_A/sub_B1/sub_C1/Const2" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="paramC" path="top_A/sub_B1/sub_C1/Const3" physicalPath="many_bus/top_A/sub_B1/sub_C1/Const3" origin="explicit_param" workspace="paramC" initValue="1.2000000000000000e+00">
+        <single/>
+        <usageContext path="top_A/sub_B1/sub_C1/Const3" physicalPath="many_bus/top_A/sub_B1/sub_C1/Const3" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="many_bus/top_A/sub_B1/sub_C1/Out1" path="top_A/sub_B1/sub_C1/Out1" signalName="g2">
+        <bus>
+          <signal signalName="f1">
+            <boolean/>
+          </signal>
+          <signal signalName="f2">
+            <single/>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="many_bus/top_A/sub_B2" path="top_A/sub_B2" sampleTime="0.2" name="sub_B2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="many_bus/top_A/sub_B2/In1" path="top_A/sub_B2/In1" signalName="g1">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <single/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="0" name="StoreBus" physicalPath="many_bus/top_A/sub_B2/StoreBus" path="top_A/sub_B2/StoreBus" signalName="Sig02">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <single/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="Sig02"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="many_bus/top_A/sub_B3" path="top_A/sub_B3" sampleTime="0.2" name="sub_B3" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="ReadBus" physicalPath="many_bus/top_A/sub_B3/ReadBus" path="top_A/sub_B3/ReadBus" signalName="Sig02">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <single/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="Sig02"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="many_bus/top_A/sub_B3/Out1" path="top_A/sub_B3/Out1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <single/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="many_bus/top_A/sub_B4" path="top_A/sub_B4" sampleTime="0.2" name="sub_B4" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="many_bus/top_A/sub_B4/In1" path="top_A/sub_B4/In1" signalName="g2">
+        <bus>
+          <signal signalName="f1">
+            <boolean/>
+          </signal>
+          <signal signalName="f2">
+            <single/>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="0" name="StoreBool" physicalPath="many_bus/top_A/sub_B4/StoreBool" path="top_A/sub_B4/StoreBool" signalName="Sig01">
+        <boolean/>
+        <dataStoreMemory signalName="Sig01"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="many_bus/top_A/sub_B5" path="top_A/sub_B5" sampleTime="0.2" name="sub_B5" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="ReadBool" physicalPath="many_bus/top_A/sub_B5/ReadBool" path="top_A/sub_B5/ReadBool" signalName="Sig01">
+        <boolean/>
+        <dataStoreMemory signalName="Sig01"/>
+      </inport>
+      <inport portNumber="0" name="ReadBus" physicalPath="many_bus/top_A/sub_B5/ReadBus" path="top_A/sub_B5/ReadBus" signalName="Sig02">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <single/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="Sig02"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="many_bus/top_A/sub_B5/Out1" path="top_A/sub_B5/Out1" signalName="bb">
+        <bus>
+          <signal signalName="b1">
+            <boolean/>
+          </signal>
+          <signal signalName="b2">
+            <bus busObjectName="MyBus">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <single/>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

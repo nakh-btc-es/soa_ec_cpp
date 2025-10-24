@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_stellantis_interior_lights\ut_results\AddModelInfo.xml" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_stellantis_interior_lights\Wrapper_modified_CourtLiApp.slx" modelCreationDate="2025-01-13T17:17:59" creator="developer">
+  <toolInfo name="Matlab" release="(R2023b)" version="23.2" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2023b)" version="23.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_stellantis_interior_lights\Wrapper_modified_CourtLiApp.slx" creationDate="2025-01-13T17:17:59" modificationDate="2025-01-13T17:18:04">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_modified_CourtLiApp" path="" sampleTime="0.01" name="Wrapper_modified_CourtLiApp" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="RKE_STATE" physicalPath="Wrapper_modified_CourtLiApp/RKE_STATE" path="RKE_STATE" isMessage="true">
+        <uint8/>
+      </inport>
+      <inport portNumber="2" name="DOOR_AJAR" physicalPath="Wrapper_modified_CourtLiApp/DOOR_AJAR" path="DOOR_AJAR" isMessage="true">
+        <uint8/>
+      </inport>
+      <outport portNumber="0" name="CS_ActuatorData_IntrLiPWM_TarTime_In" physicalPath="W_server_mock_modified_CourtLiApp/Mock_CS_ActuatorData_CS_ActuatorData_IntrLiPWM/CS_ActuatorData_IntrLiPWM_TarTime_In" path="W_server_mock_modified_CourtLiApp/Mock_CS_ActuatorData_CS_ActuatorData_IntrLiPWM/CS_ActuatorData_IntrLiPWM_TarTime_In" modelRef="model005" signalName="s_C5CBD">
+        <uint16/>
+        <dataStoreMemory signalName="s_C5CBD"/>
+      </outport>
+      <outport portNumber="0" name="CS_ActuatorData_IntrLiPWM_TarPWM_In" physicalPath="W_server_mock_modified_CourtLiApp/Mock_CS_ActuatorData_CS_ActuatorData_IntrLiPWM/CS_ActuatorData_IntrLiPWM_TarPWM_In" path="W_server_mock_modified_CourtLiApp/Mock_CS_ActuatorData_CS_ActuatorData_IntrLiPWM/CS_ActuatorData_IntrLiPWM_TarPWM_In" modelRef="model005" signalName="s_D93F5">
+        <uint8/>
+        <dataStoreMemory signalName="s_D93F5"/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_stellantis_interior_lights\W_server_modified_CourtLiApp.slx" creationDate="2025-01-13T17:18:01" modificationDate="2025-01-13T17:18:02"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="4.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_stellantis_interior_lights\modified_CourtLiApp.slx" creationDate="2023-02-23T14:54:27" modificationDate="2025-01-13T17:17:55"/>
+  <model modelID="model004" modelKind="model_ref" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_stellantis_interior_lights\W_integ_modified_CourtLiApp.slx" creationDate="2025-01-13T17:18:01" modificationDate="2025-01-13T17:18:02"/>
+  <model modelID="model005" modelKind="model_ref" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_stellantis_interior_lights\W_server_mock_modified_CourtLiApp.slx" creationDate="2025-01-13T17:18:00" modificationDate="2025-01-13T17:18:01"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

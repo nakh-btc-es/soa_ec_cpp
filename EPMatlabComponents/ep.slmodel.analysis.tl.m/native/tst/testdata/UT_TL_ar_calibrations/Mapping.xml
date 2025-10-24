@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="tl_calibration"/>
+    <Architecture id="id1" name="tl_calibration [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="Controller/Subsystem/Controller/Controller_Runnable"/>
+      <Path refId="id1" path="controller.c:1:controller_runnable"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="ref"/>
+        <Path refId="id1" path="Rte_Controller_ref_ref"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="pos"/>
+        <Path refId="id1" path="Rte_Irv_Controller_LinPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="upi"/>
+        <Path refId="id1" path="Rte_Controller_upi_upi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="Controller/Subsystem/Controller/Controller_Runnable/Kp/Kp"/>
+        <Path refId="id1" path="Rte_CalPrm_CalPrms_Kp"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="Controller/Subsystem/Controller/Controller_Runnable/Ki/Ki"/>
+        <Path refId="id1" path="Rte_CalPrm_CalPrms_Ki"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="Controller/Subsystem/Controller/Controller_Runnable/sPI1(1)"/>
+        <Path refId="id1" path="S12_sPI1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="Controller/Subsystem/Controller/Position_Linearization_Runnable"/>
+      <Path refId="id1" path="controller.c:1:linearization_runnable"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="(position)"/>
+        <Path refId="id1" path="Rte_Controller_pos_pos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="(lin.pos)"/>
+        <Path refId="id1" path="Rte_Irv_Controller_LinPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="Controller/Subsystem/Controller/Position_Linearization_Runnable/Look-Up&#10;Table/TabOut"/>
+        <Path refId="id1" path="Rte_SharedCal_Controller_TabOut"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="Controller/Subsystem/Controller/Position_Linearization_Runnable/Look-Up&#10;Table/TabIn"/>
+        <Path refId="id1" path="Rte_SharedCal_Controller_TabIn"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

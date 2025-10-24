@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="26t">
+	<Types />
+	<Scope uid="26t" name="sf_locals" path="sf_locals" sampleTime="2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="sf_locals">
+		<InPort name="In1" portNumber="1" compositeSig="none" type="int32">
+			<Variable varid="varif_382" signalType="int32" tlTypeName="int32" type="int32">
+				<ifName ifid="if_382" initValue="0" lsb="1.0" offset="0.0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<InPort name="Inport" portNumber="2" compositeSig="none" type="double">
+			<Variable varid="varif_384" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_384" initValue="0.0" lsb="1.0" offset="0.0" displayName="Inport" identifier="INPUT:Inport" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="3" compositeSig="none" type="int32">
+			<Variable varid="varif_386" signalType="int32" tlTypeName="int32" type="int32">
+				<ifName ifid="if_386" initValue="0" lsb="1.0" offset="0.0" displayName="In2" identifier="INPUT:In2" />
+			</Variable>
+		</InPort>
+		<InPort name="Inport1" portNumber="4" compositeSig="none" type="double">
+			<Variable varid="varif_388" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_388" initValue="0.0" lsb="1.0" offset="0.0" displayName="Inport1" identifier="INPUT:Inport1" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none" type="int32">
+			<Variable varid="varif_390" signalType="int32" tlTypeName="int32" type="int32">
+				<ifName ifid="if_390" initValue="0" lsb="1.0" offset="0.0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="none" signalName="myLocal" type="int32">
+			<Variable varid="varif_392" signalName="myLocal" signalType="int32" tlTypeName="int32" type="int32">
+				<ifName ifid="if_392" initValue="0" lsb="1.0" offset="0.0" displayName="Out2" identifier="OUTPUT:Out2" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out4" portNumber="3" compositeSig="none" signalName="myLocal" type="int32">
+			<Variable varid="varif_394" signalName="myLocal" signalType="int32" tlTypeName="int32" type="int32">
+				<ifName ifid="if_394" initValue="0" lsb="1.0" offset="0.0" displayName="Out4" identifier="OUTPUT:Out4" />
+			</Variable>
+		</OutPort>
+		<Display name="y1" path="sf_locals/top_A/Chart1" physicalPath="sf_locals/top_A/Chart1" portNumber="2" stateflowVariable="y1">
+			<Variable varid="varif_396" signalName="y1" signalType="int32" tlTypeName="int32">
+				<ifName ifid="if_396" initValue="0" lsb="1.0" offset="0.0" displayName="top_A/Chart1/y1" identifier="LOCAL:top_A/Chart1/y1:2" />
+			</Variable>
+		</Display>
+		<Display name="y1" path="sf_locals/top_A1/Chart1" physicalPath="sf_locals/top_A1/Chart1" portNumber="2" stateflowVariable="y1">
+			<Variable varid="varif_398" signalName="y1" signalType="int32" tlTypeName="int32">
+				<ifName ifid="if_398" initValue="0" lsb="1.0" offset="0.0" displayName="top_A1/Chart1/y1" identifier="LOCAL:top_A1/Chart1/y1:2" />
+			</Variable>
+		</Display>
+		<Calibration name="x" path="sf_locals/top_A/Chart1" physicalPath="sf_locals/top_A/Chart1" origin="explicit_param">
+			<CalibrationUsage path="sf_locals/top_A/Chart1" physicalPath="sf_locals/top_A/Chart1" blockAttribute="Parameter" />
+			<CalibrationUsage path="sf_locals/top_A1/Chart1" physicalPath="sf_locals/top_A1/Chart1" blockAttribute="Parameter" />
+			<Variable varid="varif_400" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_400" initValue="4.0" lsb="1.0" offset="0.0" displayName="x" identifier="PARAMETER:top_A/Chart1/x" />
+			</Variable>
+		</Calibration>
+		<Model name="sf_locals" modelPath="/E:/modelsdev/UT_MIL_SL/sf_mergeBlock/ml2018b/sf_locals.mdl" type="SimulinkModel" />
+		<Scope uid="26p" name="top_A" path="sf_locals/top_A" sampleTime="2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="sf_locals/top_A">
+			<InPort name="In1" portNumber="1" compositeSig="none" type="int32">
+				<Variable varid="varif_402" signalType="int32" tlTypeName="int32" type="int32">
+					<ifName ifid="if_402" initValue="0" lsb="1.0" offset="0.0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none" signalName="y" type="int32">
+				<Variable varid="varif_404" signalName="y" signalType="int32" tlTypeName="int32" type="int32">
+					<ifName ifid="if_404" initValue="0" lsb="1.0" offset="0.0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out2" portNumber="2" compositeSig="none" signalName="myLocal" type="int32">
+				<Variable varid="varif_406" signalName="myLocal" signalType="int32" tlTypeName="int32" type="int32">
+					<ifName ifid="if_406" initValue="0" lsb="1.0" offset="0.0" displayName="Out2" identifier="OUTPUT:Out2" />
+				</Variable>
+			</OutPort>
+			<Display name="y1" path="sf_locals/top_A/Chart1" physicalPath="sf_locals/top_A/Chart1" portNumber="2" stateflowVariable="y1">
+				<Variable varid="varif_408" signalName="y1" signalType="int32" tlTypeName="int32">
+					<ifName ifid="if_408" initValue="0" lsb="1.0" offset="0.0" displayName="y1" identifier="LOCAL:Chart1/y1:2" />
+				</Variable>
+			</Display>
+			<Calibration name="x" path="sf_locals/top_A/Chart1" physicalPath="sf_locals/top_A/Chart1" origin="explicit_param">
+				<CalibrationUsage path="sf_locals/top_A/Chart1" physicalPath="sf_locals/top_A/Chart1" blockAttribute="Parameter" />
+				<Variable varid="varif_410" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_410" initValue="4.0" lsb="1.0" offset="0.0" displayName="x" identifier="PARAMETER:Chart1/x" />
+				</Variable>
+			</Calibration>
+			<Model name="sf_locals" modelPath="/E:/modelsdev/UT_MIL_SL/sf_mergeBlock/ml2018b/sf_locals.mdl" type="SimulinkModel" />
+			<Scope uid="26r" name="Chart1" path="sf_locals/top_A/Chart1" sampleTime="2" scopeKind="SUT" type="SimulinkScope" kind="STATEFLOW" physicalPath="sf_locals/top_A/Chart1">
+				<InPort name="u" portNumber="1" compositeSig="none" type="int32">
+					<Variable varid="varif_412" signalType="int32" tlTypeName="int32" type="int32">
+						<ifName ifid="if_412" initValue="0" lsb="1.0" offset="0.0" displayName="u" identifier="INPUT:u" />
+					</Variable>
+				</InPort>
+				<OutPort name="y" portNumber="1" compositeSig="none" signalName="y" type="int32">
+					<Variable varid="varif_414" signalName="y" signalType="int32" tlTypeName="int32" type="int32">
+						<ifName ifid="if_414" initValue="0" lsb="1.0" offset="0.0" displayName="y" identifier="OUTPUT:y" />
+					</Variable>
+				</OutPort>
+				<OutPort name="y1" portNumber="2" compositeSig="none" signalName="y1" type="int32">
+					<Variable varid="varif_416" signalName="y1" signalType="int32" tlTypeName="int32" type="int32">
+						<ifName ifid="if_416" initValue="0" lsb="1.0" offset="0.0" displayName="y1" identifier="OUTPUT:y1" />
+					</Variable>
+				</OutPort>
+				<Calibration name="x" path="sf_locals/top_A/Chart1" physicalPath="sf_locals/top_A/Chart1" origin="explicit_param">
+					<CalibrationUsage path="sf_locals/top_A/Chart1" physicalPath="sf_locals/top_A/Chart1" blockAttribute="Parameter" />
+					<Variable varid="varif_418" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_418" initValue="4.0" lsb="1.0" offset="0.0" displayName="x" identifier="PARAMETER:x" />
+					</Variable>
+				</Calibration>
+				<Model name="sf_locals" modelPath="/E:/modelsdev/UT_MIL_SL/sf_mergeBlock/ml2018b/sf_locals.mdl" type="SimulinkModel" />
+			</Scope>
+		</Scope>
+		<Scope uid="26q" name="top_A1" path="sf_locals/top_A1" sampleTime="2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="sf_locals/top_A1">
+			<InPort name="In1" portNumber="1" compositeSig="none" type="int32">
+				<Variable varid="varif_420" signalType="int32" tlTypeName="int32" type="int32">
+					<ifName ifid="if_420" initValue="0" lsb="1.0" offset="0.0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none" signalName="y" type="int32">
+				<Variable varid="varif_422" signalName="y" signalType="int32" tlTypeName="int32" type="int32">
+					<ifName ifid="if_422" initValue="0" lsb="1.0" offset="0.0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out2" portNumber="2" compositeSig="none" signalName="myLocal" type="int32">
+				<Variable varid="varif_424" signalName="myLocal" signalType="int32" tlTypeName="int32" type="int32">
+					<ifName ifid="if_424" initValue="0" lsb="1.0" offset="0.0" displayName="Out2" identifier="OUTPUT:Out2" />
+				</Variable>
+			</OutPort>
+			<Display name="y1" path="sf_locals/top_A1/Chart1" physicalPath="sf_locals/top_A1/Chart1" portNumber="2" stateflowVariable="y1">
+				<Variable varid="varif_426" signalName="y1" signalType="int32" tlTypeName="int32">
+					<ifName ifid="if_426" initValue="0" lsb="1.0" offset="0.0" displayName="y1" identifier="LOCAL:Chart1/y1:2" />
+				</Variable>
+			</Display>
+			<Calibration name="x" path="sf_locals/top_A1/Chart1" physicalPath="sf_locals/top_A1/Chart1" origin="explicit_param">
+				<CalibrationUsage path="sf_locals/top_A1/Chart1" physicalPath="sf_locals/top_A1/Chart1" blockAttribute="Parameter" />
+				<Variable varid="varif_428" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_428" initValue="4.0" lsb="1.0" offset="0.0" displayName="x" identifier="PARAMETER:Chart1/x" />
+				</Variable>
+			</Calibration>
+			<Model name="sf_locals" modelPath="/E:/modelsdev/UT_MIL_SL/sf_mergeBlock/ml2018b/sf_locals.mdl" type="SimulinkModel" />
+			<Scope uid="26s" name="Chart1" path="sf_locals/top_A1/Chart1" sampleTime="2" scopeKind="SUT" type="SimulinkScope" kind="STATEFLOW" physicalPath="sf_locals/top_A1/Chart1">
+				<InPort name="u" portNumber="1" compositeSig="none" type="int32">
+					<Variable varid="varif_430" signalType="int32" tlTypeName="int32" type="int32">
+						<ifName ifid="if_430" initValue="0" lsb="1.0" offset="0.0" displayName="u" identifier="INPUT:u" />
+					</Variable>
+				</InPort>
+				<OutPort name="y" portNumber="1" compositeSig="none" signalName="y" type="int32">
+					<Variable varid="varif_432" signalName="y" signalType="int32" tlTypeName="int32" type="int32">
+						<ifName ifid="if_432" initValue="0" lsb="1.0" offset="0.0" displayName="y" identifier="OUTPUT:y" />
+					</Variable>
+				</OutPort>
+				<OutPort name="y1" portNumber="2" compositeSig="none" signalName="y1" type="int32">
+					<Variable varid="varif_434" signalName="y1" signalType="int32" tlTypeName="int32" type="int32">
+						<ifName ifid="if_434" initValue="0" lsb="1.0" offset="0.0" displayName="y1" identifier="OUTPUT:y1" />
+					</Variable>
+				</OutPort>
+				<Calibration name="x" path="sf_locals/top_A1/Chart1" physicalPath="sf_locals/top_A1/Chart1" origin="explicit_param">
+					<CalibrationUsage path="sf_locals/top_A1/Chart1" physicalPath="sf_locals/top_A1/Chart1" blockAttribute="Parameter" />
+					<Variable varid="varif_436" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_436" initValue="4.0" lsb="1.0" offset="0.0" displayName="x" identifier="PARAMETER:x" />
+					</Variable>
+				</Calibration>
+				<Model name="sf_locals" modelPath="/E:/modelsdev/UT_MIL_SL/sf_mergeBlock/ml2018b/sf_locals.mdl" type="SimulinkModel" />
+			</Scope>
+		</Scope>
+	</Scope>
+</ExtractionModel>

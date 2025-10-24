@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_6410\TLProj\my_top" name="my_top.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_6410\TLSim" name="my_top_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_6410\TLProj\my_top"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_6410\TLSim"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="bug_6410 [C-Code]">
+    <Function name="my_top" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Se1_In1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Se1_In2" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Se1_In3" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Se1_In4" scaling="scID1"/>
+        <InterfaceObj kind="cal" var="Ce7_test2darray" access="[0][0]" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ce7_test2darray" access="[1][0]" scaling="scID1" initVal="8.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ce7_test2darray" access="[0][1]" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ce7_test2darray" access="[1][1]" scaling="scID1" initVal="1.6000000000000000e+01"/>
+        <InterfaceObj kind="cal" var="Ce7_test2darray" access="[0][2]" scaling="scID1" initVal="4.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ce7_test2darray" access="[1][2]" scaling="scID1" initVal="3.2000000000000000e+01"/>
+        <InterfaceObj kind="cal" var="Ce3_test1darray" access="[0]" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ce3_test1darray" access="[1]" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ce3_test1darray" access="[2]" scaling="scID1" initVal="4.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ce3_test1darray" access="[3]" scaling="scID1" initVal="8.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ce3_test1darray" access="[4]" scaling="scID1" initVal="1.6000000000000000e+01"/>
+        <InterfaceObj kind="cal" var="Ce3_test1darray" access="[5]" scaling="scID1" initVal="3.2000000000000000e+01"/>
+        <InterfaceObj kind="out" var="Se1_Out1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Se1_Out2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Se1_Out3" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Se1_Out4" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Se2_Cal1DConst" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Se1_In4" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Ce1_output1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Se3_Cal1DLocal" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Se1_In1" scaling="scID1"/>
+        <InterfaceObj kind="cal" var="Ce3_test1darray" access="[0]" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ce3_test1darray" access="[1]" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ce3_test1darray" access="[2]" scaling="scID1" initVal="4.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ce3_test1darray" access="[3]" scaling="scID1" initVal="8.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ce3_test1darray" access="[4]" scaling="scID1" initVal="1.6000000000000000e+01"/>
+        <InterfaceObj kind="cal" var="Ce3_test1darray" access="[5]" scaling="scID1" initVal="3.2000000000000000e+01"/>
+        <InterfaceObj kind="out" var="Ce3_output1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Se4_Cal1DParam" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Se1_In3" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Ce5_output1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Se5_Cal2DLocal" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Se1_In2" scaling="scID1"/>
+        <InterfaceObj kind="cal" var="Ce7_test2darray" access="[0][0]" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ce7_test2darray" access="[1][0]" scaling="scID1" initVal="8.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ce7_test2darray" access="[0][1]" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ce7_test2darray" access="[1][1]" scaling="scID1" initVal="1.6000000000000000e+01"/>
+        <InterfaceObj kind="cal" var="Ce7_test2darray" access="[0][2]" scaling="scID1" initVal="4.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ce7_test2darray" access="[1][2]" scaling="scID1" initVal="3.2000000000000000e+01"/>
+        <InterfaceObj kind="out" var="Ce7_output1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

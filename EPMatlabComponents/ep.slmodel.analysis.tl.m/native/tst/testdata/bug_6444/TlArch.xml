@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.146" modelPath="E:\EP2\Git\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_6444\enablsys.mdl" modelCreationDate="1999-04-29T14:42:16" creator="alex">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.146" modelPath="E:\EP2\Git\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_6444\enablsys.mdl" creationDate="1999-04-29T14:42:16" modificationDate="2021-11-16T14:26:38">
+    <subsystem subsysID="ss1" physicalPath="enablsys/controller/Subsystem/controller" path="controller/Subsystem/controller" sampleTime="0.0001" name="controller" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="ref." physicalPath="enablsys/controller/Subsystem/controller/ref." path="controller/Subsystem/controller/ref.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="-3.2000000000000000e+01" max="3.1999023437500000e+01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="y." physicalPath="enablsys/controller/Subsystem/controller/y." path="controller/Subsystem/controller/y.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="-3.2000000000000000e+01" max="3.1999023437500000e+01"/>
+        </siltype>
+      </inport>
+      <calibration name="pos. level[const]" path="controller/Subsystem/controller/controller/select controller/pos. level" physicalPath="enablsys/controller/Subsystem/controller/controller/select controller/pos. level" origin="const" restricted="false">
+        <miltype initValue="5.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="-3.2000000000000000e+01" max="3.1999023437500000e+01"/>
+        </siltype>
+        <usageContext path="controller/Subsystem/controller/controller/select controller/pos. level" targetLinkBlockKind="TL_Constant" physicalPath="enablsys/controller/Subsystem/controller/controller/select controller/pos. level" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="u." physicalPath="enablsys/controller/Subsystem/controller/u." path="controller/Subsystem/controller/u.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="7.8125000000000000e-03" offset="0.0000000000000000e+00" min="-2.5600000000000000e+02" max="2.5599218750000000e+02"/>
+        </siltype>
+      </outport>
+      <display physicalPath="enablsys/controller/Subsystem/controller/controller/e" path="controller/Subsystem/controller/controller/e" name="e" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="-3.2000000000000000e+01" max="3.1999023437500000e+01"/>
+        </siltype>
+      </display>
+      <display physicalPath="enablsys/controller/Subsystem/controller/controller/select controller/select_low_gain" path="controller/Subsystem/controller/controller/select controller/select_low_gain" name="select_low_gain" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="enablsys/controller/Subsystem/controller/controller" path="controller/Subsystem/controller/controller" sampleTime="0.0001" name="controller" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="ref." physicalPath="enablsys/controller/Subsystem/controller/controller/ref." path="controller/Subsystem/controller/controller/ref.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="-3.2000000000000000e+01" max="3.1999023437500000e+01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="y." physicalPath="enablsys/controller/Subsystem/controller/controller/y." path="controller/Subsystem/controller/controller/y.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="-3.2000000000000000e+01" max="3.1999023437500000e+01"/>
+        </siltype>
+      </inport>
+      <calibration name="pos. level[const]" path="controller/Subsystem/controller/controller/select controller/pos. level" physicalPath="enablsys/controller/Subsystem/controller/controller/select controller/pos. level" origin="const" restricted="false">
+        <miltype initValue="5.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="-3.2000000000000000e+01" max="3.1999023437500000e+01"/>
+        </siltype>
+        <usageContext path="controller/Subsystem/controller/controller/select controller/pos. level" targetLinkBlockKind="TL_Constant" physicalPath="enablsys/controller/Subsystem/controller/controller/select controller/pos. level" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="u." physicalPath="enablsys/controller/Subsystem/controller/controller/u." path="controller/Subsystem/controller/controller/u.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="7.8125000000000000e-03" offset="0.0000000000000000e+00" min="-2.5600000000000000e+02" max="2.5599218750000000e+02"/>
+        </siltype>
+      </outport>
+      <display physicalPath="enablsys/controller/Subsystem/controller/controller/e" path="controller/Subsystem/controller/controller/e" name="e" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="-3.2000000000000000e+01" max="3.1999023437500000e+01"/>
+        </siltype>
+      </display>
+      <display physicalPath="enablsys/controller/Subsystem/controller/controller/select controller/select_low_gain" path="controller/Subsystem/controller/controller/select controller/select_low_gain" name="select_low_gain" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

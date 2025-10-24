@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="26Q">
+	<Types>
+		<EnumType name="MyNumber">
+			<EnumValue name="ZERO" ordinal="0" />
+			<EnumValue name="ONE" ordinal="1" />
+			<EnumValue name="SEVEN" ordinal="7" />
+		</EnumType>
+		<EnumType name="MyColor">
+			<EnumValue name="Red" ordinal="1" />
+			<EnumValue name="Green" ordinal="2" />
+			<EnumValue name="Blue" ordinal="4" />
+		</EnumType>
+		<EnumType name="MyState">
+			<EnumValue name="BAD" ordinal="0" />
+			<EnumValue name="bad" ordinal="0" />
+			<EnumValue name="GOOD" ordinal="1" />
+			<EnumValue name="good" ordinal="1" />
+			<EnumValue name="AWESOME" ordinal="2" />
+			<EnumValue name="awesome" ordinal="2" />
+		</EnumType>
+		<BusType name="MyBus" virtual="false">
+			<Comp name="a" type="MyNumber" />
+			<Comp name="b" type="MyState" />
+			<Comp name="c" type="int32" />
+		</BusType>
+	</Types>
+	<Scope uid="26Q" name="enum_bus_sldd_toplevel" path="enum_bus_sldd_toplevel" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="enum_bus_sldd_toplevel">
+		<InPort name="In1" portNumber="1" compositeSig="none" type="MyNumber">
+			<Variable varid="varif_360" signalType="MyNumber" isSignalTypeEnum="yes" tlTypeName="MyNumber" type="MyNumber">
+				<ifName ifid="if_360" initValue="0" lsb="1.0" offset="0.0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="none" width="2" type="MyColor">
+			<Variable varid="varif_364" width1="2" signalType="MyColor" isSignalTypeEnum="yes" signalDim="[1 2]" tlTypeName="MyColor" width="2" type="MyColor">
+				<ifName ifid="if_365" index1="1" initValue="1" lsb="1.0" offset="0.0" displayName="In2(1)" identifier="INPUT:In2(1)" />
+				<ifName ifid="if_366" index1="2" initValue="1" lsb="1.0" offset="0.0" displayName="In2(2)" identifier="INPUT:In2(2)" />
+			</Variable>
+		</InPort>
+		<InPort name="In3" portNumber="3" compositeSig="none" type="int32">
+			<Variable varid="varif_368" signalType="int32" tlTypeName="int32" type="int32">
+				<ifName ifid="if_368" initValue="0" lsb="1.0" offset="0.0" displayName="In3" identifier="INPUT:In3" />
+			</Variable>
+		</InPort>
+		<InPort name="In4" portNumber="4" compositeSig="none" type="MyColor">
+			<Variable varid="varif_370" signalType="MyColor" isSignalTypeEnum="yes" tlTypeName="MyColor" type="MyColor">
+				<ifName ifid="if_370" initValue="1" lsb="1.0" offset="0.0" displayName="In4" identifier="INPUT:In4" />
+			</Variable>
+		</InPort>
+		<InPort name="In5" portNumber="5" compositeSig="none" type="MyState">
+			<Variable varid="varif_373" signalType="MyState" isSignalTypeEnum="yes" tlTypeName="MyState" type="MyState">
+				<ifName ifid="if_373" initValue="0" lsb="1.0" offset="0.0" displayName="In5" identifier="INPUT:In5" />
+			</Variable>
+		</InPort>
+		<InPort name="In6" portNumber="6" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus" signalName="&lt;signal1&gt;" type="MyBus">
+			<Variable varid="varif_379" signalName="{&lt;signal1&gt;}.a" signalType="MyNumber" isSignalTypeEnum="yes" tlTypeName="MyNumber" type="MyNumber">
+				<ifName ifid="if_379" initValue="0" lsb="1.0" offset="0.0" displayName="In6.{&lt;signal1&gt;}.a" identifier="INPUT:In6.{&lt;signal1&gt;}.a" />
+			</Variable>
+			<Variable varid="varif_380" signalName="{&lt;signal1&gt;}.b" signalType="MyState" isSignalTypeEnum="yes" tlTypeName="MyState" type="MyState">
+				<ifName ifid="if_380" initValue="0" lsb="1.0" offset="0.0" displayName="In6.{&lt;signal1&gt;}.b" identifier="INPUT:In6.{&lt;signal1&gt;}.b" />
+			</Variable>
+			<Variable varid="varif_381" signalName="{&lt;signal1&gt;}.c" signalType="int32" tlTypeName="int32" type="int32">
+				<ifName ifid="if_381" initValue="0" lsb="1.0" offset="0.0" displayName="In6.{&lt;signal1&gt;}.c" identifier="INPUT:In6.{&lt;signal1&gt;}.c" />
+			</Variable>
+		</InPort>
+		<InPort name="In7" portNumber="7" compositeSig="none" type="MyColor">
+			<Variable varid="varif_383" signalType="MyColor" isSignalTypeEnum="yes" tlTypeName="MyColor" type="MyColor">
+				<ifName ifid="if_383" initValue="1" lsb="1.0" offset="0.0" displayName="In7" identifier="INPUT:In7" />
+			</Variable>
+		</InPort>
+		<InPort name="In8" portNumber="8" compositeSig="none" type="MyNumber">
+			<Variable varid="varif_385" signalType="MyNumber" isSignalTypeEnum="yes" tlTypeName="MyNumber" type="MyNumber">
+				<ifName ifid="if_385" initValue="0" lsb="1.0" offset="0.0" displayName="In8" identifier="INPUT:In8" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none" type="MyNumber">
+			<Variable varid="varif_387" signalType="MyNumber" isSignalTypeEnum="yes" tlTypeName="MyNumber" type="MyNumber">
+				<ifName ifid="if_387" initValue="0" lsb="1.0" offset="0.0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="none" width="2" type="MyColor">
+			<Variable varid="varif_389" width1="2" signalType="MyColor" isSignalTypeEnum="yes" signalDim="[1 2]" tlTypeName="MyColor" width="2" type="MyColor">
+				<ifName ifid="if_390" index1="1" initValue="1" lsb="1.0" offset="0.0" displayName="Out2(1)" identifier="OUTPUT:Out2(1)" />
+				<ifName ifid="if_391" index1="2" initValue="1" lsb="1.0" offset="0.0" displayName="Out2(2)" identifier="OUTPUT:Out2(2)" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out3" portNumber="3" compositeSig="none" type="int32">
+			<Variable varid="varif_393" signalType="int32" tlTypeName="int32" type="int32">
+				<ifName ifid="if_393" initValue="0" lsb="1.0" offset="0.0" displayName="Out3" identifier="OUTPUT:Out3" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out4" portNumber="4" compositeSig="none" type="MyColor">
+			<Variable varid="varif_395" signalType="MyColor" isSignalTypeEnum="yes" tlTypeName="MyColor" type="MyColor">
+				<ifName ifid="if_395" initValue="1" lsb="1.0" offset="0.0" displayName="Out4" identifier="OUTPUT:Out4" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out5" portNumber="5" compositeSig="none" type="MyState">
+			<Variable varid="varif_397" signalType="MyState" isSignalTypeEnum="yes" tlTypeName="MyState" type="MyState">
+				<ifName ifid="if_397" initValue="0" lsb="1.0" offset="0.0" displayName="Out5" identifier="OUTPUT:Out5" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out6" portNumber="6" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus" signalName="&lt;signal1&gt;" type="MyBus">
+			<Variable varid="varif_403" signalName="{&lt;signal1&gt;}.a" signalType="MyNumber" isSignalTypeEnum="yes" tlTypeName="MyNumber" type="MyNumber">
+				<ifName ifid="if_403" initValue="0" lsb="1.0" offset="0.0" displayName="Out6.{&lt;signal1&gt;}.a" identifier="OUTPUT:Out6.{&lt;signal1&gt;}.a" />
+			</Variable>
+			<Variable varid="varif_404" signalName="{&lt;signal1&gt;}.b" signalType="MyState" isSignalTypeEnum="yes" tlTypeName="MyState" type="MyState">
+				<ifName ifid="if_404" initValue="0" lsb="1.0" offset="0.0" displayName="Out6.{&lt;signal1&gt;}.b" identifier="OUTPUT:Out6.{&lt;signal1&gt;}.b" />
+			</Variable>
+			<Variable varid="varif_405" signalName="{&lt;signal1&gt;}.c" signalType="int32" tlTypeName="int32" type="int32">
+				<ifName ifid="if_405" initValue="0" lsb="1.0" offset="0.0" displayName="Out6.{&lt;signal1&gt;}.c" identifier="OUTPUT:Out6.{&lt;signal1&gt;}.c" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out7" portNumber="7" compositeSig="none" signalName="MyAliasColorSignalName" type="MyColor">
+			<Variable varid="varif_407" signalName="MyAliasColorSignalName" signalType="MyColor" isSignalTypeEnum="yes" tlTypeName="MyColor" type="MyColor">
+				<ifName ifid="if_407" initValue="1" lsb="1.0" offset="0.0" displayName="Out7" identifier="OUTPUT:Out7" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out8" portNumber="8" compositeSig="none" signalName="MyAliasNumberSignalName" type="MyNumber">
+			<Variable varid="varif_409" signalName="MyAliasNumberSignalName" signalType="MyNumber" isSignalTypeEnum="yes" tlTypeName="MyNumber" type="MyNumber">
+				<ifName ifid="if_409" initValue="0" lsb="1.0" offset="0.0" displayName="Out8" identifier="OUTPUT:Out8" />
+			</Variable>
+		</OutPort>
+		<Model name="enum_bus_sldd_toplevel" modelPath="/E:/ModelsDev/UT_SL/enum_bus_sldd_toplevel/ml2017b/enum_bus_sldd_toplevel.slx" type="SimulinkModel" />
+	</Scope>
+</ExtractionModel>

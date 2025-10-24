@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" modelVersion="14.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ut_model_arg_lut\mw_param.slx" modelCreationDate="2021-09-10T15:30:23" creator="developer">
+  <toolInfo name="Matlab" release="(R2022a)" version="9.12" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2022a)" version="10.5" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="14.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ut_model_arg_lut\mw_param.slx" creationDate="2021-09-10T15:30:23" modificationDate="2024-09-23T07:44:55">
+    <subsystem subsysID="ss1" physicalPath="mw_param" path="" sampleTime="0.2" name="mw_param" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="mw_param/In1" path="In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="mw_param/In2" path="In2">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="mw_param/In3" path="In3">
+        <double/>
+      </inport>
+      <parameter name="myBreakpoints" path="Model1/Subsystem/Model/Interpolation&#10;Using Prelookup" physicalPath="refA/Interpolation&#10;Using Prelookup" modelRef="model003" origin="explicit_param" workspace="myBreakpoints">
+        <nonUniformArray size="10">
+          <signal index="1" initValue="1.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="2.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="3.0">
+            <double/>
+          </signal>
+          <signal index="4" initValue="4.0">
+            <double/>
+          </signal>
+          <signal index="5" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="6" initValue="6.0">
+            <double/>
+          </signal>
+          <signal index="7" initValue="7.0">
+            <double/>
+          </signal>
+          <signal index="8" initValue="8.0">
+            <double/>
+          </signal>
+          <signal index="9" initValue="9.0">
+            <double/>
+          </signal>
+          <signal index="10" initValue="10.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Model1/Subsystem/Model/Interpolation&#10;Using Prelookup" physicalPath="refA/Interpolation&#10;Using Prelookup" simulinkBlockType="Interpolation_n-D" modelRef="model003"/>
+        <usageContext path="Model1/Subsystem/Model/Prelookup" physicalPath="refA/Prelookup" simulinkBlockType="PreLookup" blockAttribute="BreakpointObject" modelRef="model003"/>
+        <source kind="ModelWorkspace" file="refA"/>
+      </parameter>
+      <parameter name="myLut" path="Model1/Subsystem/Model/Interpolation&#10;Using Prelookup" physicalPath="refA/Interpolation&#10;Using Prelookup" modelRef="model003" origin="explicit_param" workspace="myLut">
+        <nonUniformArray size="10">
+          <signal index="1" initValue="0.7">
+            <double/>
+          </signal>
+          <signal index="2" initValue="1.2">
+            <double/>
+          </signal>
+          <signal index="3" initValue="2.6">
+            <double/>
+          </signal>
+          <signal index="4" initValue="5.6">
+            <double/>
+          </signal>
+          <signal index="5" initValue="7.8">
+            <double/>
+          </signal>
+          <signal index="6" initValue="10.2">
+            <double/>
+          </signal>
+          <signal index="7" initValue="12.0">
+            <double/>
+          </signal>
+          <signal index="8" initValue="14.0">
+            <double/>
+          </signal>
+          <signal index="9" initValue="17.0">
+            <double/>
+          </signal>
+          <signal index="10" initValue="20.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Model1/Subsystem/Model/Interpolation&#10;Using Prelookup" physicalPath="refA/Interpolation&#10;Using Prelookup" simulinkBlockType="Interpolation_n-D" blockAttribute="LookupTableObject" modelRef="model003"/>
+        <source kind="ModelWorkspace" file="refA"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="mw_param/Out1" path="Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="mw_param/Out2" path="Out2">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="mw_param/Out3" path="Out3">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="refB" path="Model1" sampleTime="0.2" name="Model1" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="In1" physicalPath="refB/In1" path="Model1/In1" modelRef="model004">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="refB/In2" path="Model1/In2" modelRef="model004">
+        <double/>
+      </inport>
+      <parameter name="myBreakpoints" path="Model1/Subsystem/Model/Interpolation&#10;Using Prelookup" physicalPath="refA/Interpolation&#10;Using Prelookup" modelRef="model003" origin="explicit_param" workspace="myBreakpoints">
+        <nonUniformArray size="10">
+          <signal index="1" initValue="1.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="2.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="3.0">
+            <double/>
+          </signal>
+          <signal index="4" initValue="4.0">
+            <double/>
+          </signal>
+          <signal index="5" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="6" initValue="6.0">
+            <double/>
+          </signal>
+          <signal index="7" initValue="7.0">
+            <double/>
+          </signal>
+          <signal index="8" initValue="8.0">
+            <double/>
+          </signal>
+          <signal index="9" initValue="9.0">
+            <double/>
+          </signal>
+          <signal index="10" initValue="10.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Model1/Subsystem/Model/Interpolation&#10;Using Prelookup" physicalPath="refA/Interpolation&#10;Using Prelookup" simulinkBlockType="Interpolation_n-D" modelRef="model003"/>
+        <usageContext path="Model1/Subsystem/Model/Prelookup" physicalPath="refA/Prelookup" simulinkBlockType="PreLookup" blockAttribute="BreakpointObject" modelRef="model003"/>
+        <source kind="ModelWorkspace" file="refA"/>
+      </parameter>
+      <parameter name="myLut" path="Model1/Subsystem/Model/Interpolation&#10;Using Prelookup" physicalPath="refA/Interpolation&#10;Using Prelookup" modelRef="model003" origin="explicit_param" workspace="myLut">
+        <nonUniformArray size="10">
+          <signal index="1" initValue="0.7">
+            <double/>
+          </signal>
+          <signal index="2" initValue="1.2">
+            <double/>
+          </signal>
+          <signal index="3" initValue="2.6">
+            <double/>
+          </signal>
+          <signal index="4" initValue="5.6">
+            <double/>
+          </signal>
+          <signal index="5" initValue="7.8">
+            <double/>
+          </signal>
+          <signal index="6" initValue="10.2">
+            <double/>
+          </signal>
+          <signal index="7" initValue="12.0">
+            <double/>
+          </signal>
+          <signal index="8" initValue="14.0">
+            <double/>
+          </signal>
+          <signal index="9" initValue="17.0">
+            <double/>
+          </signal>
+          <signal index="10" initValue="20.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Model1/Subsystem/Model/Interpolation&#10;Using Prelookup" physicalPath="refA/Interpolation&#10;Using Prelookup" simulinkBlockType="Interpolation_n-D" blockAttribute="LookupTableObject" modelRef="model003"/>
+        <source kind="ModelWorkspace" file="refA"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="refB/Out1" path="Model1/Out1" modelRef="model004">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="refB/Out2" path="Model1/Out2" modelRef="model004">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="refC" path="Model1/Model1" sampleTime="0.2" name="Model1" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="refC/In1" path="Model1/Model1/In1" modelRef="model002">
+        <double/>
+      </inport>
+      <parameter name="myBreakpoints" path="Model1/Model1/Interpolation&#10;Using Prelookup" physicalPath="refC/Interpolation&#10;Using Prelookup" modelRef="model002" origin="explicit_param" workspace="myBreakpoints">
+        <nonUniformArray size="10">
+          <signal index="1" initValue="1.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="2.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="3.0">
+            <double/>
+          </signal>
+          <signal index="4" initValue="4.0">
+            <double/>
+          </signal>
+          <signal index="5" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="6" initValue="6.0">
+            <double/>
+          </signal>
+          <signal index="7" initValue="7.0">
+            <double/>
+          </signal>
+          <signal index="8" initValue="8.0">
+            <double/>
+          </signal>
+          <signal index="9" initValue="9.0">
+            <double/>
+          </signal>
+          <signal index="10" initValue="10.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Model1/Model1/Interpolation&#10;Using Prelookup" physicalPath="refC/Interpolation&#10;Using Prelookup" simulinkBlockType="Interpolation_n-D" modelRef="model002"/>
+        <usageContext path="Model1/Model1/Prelookup" physicalPath="refC/Prelookup" simulinkBlockType="PreLookup" blockAttribute="BreakpointObject" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="refC"/>
+      </parameter>
+      <parameter name="myLut" path="Model1/Model1/Interpolation&#10;Using Prelookup" physicalPath="refC/Interpolation&#10;Using Prelookup" modelRef="model002" origin="explicit_param" workspace="myLut">
+        <nonUniformArray size="10">
+          <signal index="1" initValue="0.7">
+            <double/>
+          </signal>
+          <signal index="2" initValue="1.2">
+            <double/>
+          </signal>
+          <signal index="3" initValue="2.6">
+            <double/>
+          </signal>
+          <signal index="4" initValue="5.6">
+            <double/>
+          </signal>
+          <signal index="5" initValue="7.8">
+            <double/>
+          </signal>
+          <signal index="6" initValue="10.2">
+            <double/>
+          </signal>
+          <signal index="7" initValue="12.0">
+            <double/>
+          </signal>
+          <signal index="8" initValue="14.0">
+            <double/>
+          </signal>
+          <signal index="9" initValue="17.0">
+            <double/>
+          </signal>
+          <signal index="10" initValue="20.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Model1/Model1/Interpolation&#10;Using Prelookup" physicalPath="refC/Interpolation&#10;Using Prelookup" simulinkBlockType="Interpolation_n-D" blockAttribute="LookupTableObject" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="refC"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="refC/Out1" path="Model1/Model1/Out1" modelRef="model002">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="refB/Subsystem" path="Model1/Subsystem" sampleTime="0.2" name="Subsystem" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="In1" physicalPath="refB/Subsystem/In1" path="Model1/Subsystem/In1" modelRef="model004">
+        <double/>
+      </inport>
+      <parameter name="myBreakpoints" path="Model1/Subsystem/Model/Interpolation&#10;Using Prelookup" physicalPath="refA/Interpolation&#10;Using Prelookup" modelRef="model003" origin="explicit_param" workspace="myBreakpoints">
+        <nonUniformArray size="10">
+          <signal index="1" initValue="1.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="2.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="3.0">
+            <double/>
+          </signal>
+          <signal index="4" initValue="4.0">
+            <double/>
+          </signal>
+          <signal index="5" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="6" initValue="6.0">
+            <double/>
+          </signal>
+          <signal index="7" initValue="7.0">
+            <double/>
+          </signal>
+          <signal index="8" initValue="8.0">
+            <double/>
+          </signal>
+          <signal index="9" initValue="9.0">
+            <double/>
+          </signal>
+          <signal index="10" initValue="10.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Model1/Subsystem/Model/Interpolation&#10;Using Prelookup" physicalPath="refA/Interpolation&#10;Using Prelookup" simulinkBlockType="Interpolation_n-D" modelRef="model003"/>
+        <usageContext path="Model1/Subsystem/Model/Prelookup" physicalPath="refA/Prelookup" simulinkBlockType="PreLookup" blockAttribute="BreakpointObject" modelRef="model003"/>
+        <source kind="ModelWorkspace" file="refA"/>
+      </parameter>
+      <parameter name="myLut" path="Model1/Subsystem/Model/Interpolation&#10;Using Prelookup" physicalPath="refA/Interpolation&#10;Using Prelookup" modelRef="model003" origin="explicit_param" workspace="myLut">
+        <nonUniformArray size="10">
+          <signal index="1" initValue="0.7">
+            <double/>
+          </signal>
+          <signal index="2" initValue="1.2">
+            <double/>
+          </signal>
+          <signal index="3" initValue="2.6">
+            <double/>
+          </signal>
+          <signal index="4" initValue="5.6">
+            <double/>
+          </signal>
+          <signal index="5" initValue="7.8">
+            <double/>
+          </signal>
+          <signal index="6" initValue="10.2">
+            <double/>
+          </signal>
+          <signal index="7" initValue="12.0">
+            <double/>
+          </signal>
+          <signal index="8" initValue="14.0">
+            <double/>
+          </signal>
+          <signal index="9" initValue="17.0">
+            <double/>
+          </signal>
+          <signal index="10" initValue="20.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Model1/Subsystem/Model/Interpolation&#10;Using Prelookup" physicalPath="refA/Interpolation&#10;Using Prelookup" simulinkBlockType="Interpolation_n-D" blockAttribute="LookupTableObject" modelRef="model003"/>
+        <source kind="ModelWorkspace" file="refA"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="refB/Subsystem/Out1" path="Model1/Subsystem/Out1" modelRef="model004">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="refA" path="Model1/Subsystem/Model" sampleTime="0.2" name="Model" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="In1" physicalPath="refA/In1" path="Model1/Subsystem/Model/In1" modelRef="model003">
+        <double/>
+      </inport>
+      <parameter name="myBreakpoints" path="Model1/Subsystem/Model/Interpolation&#10;Using Prelookup" physicalPath="refA/Interpolation&#10;Using Prelookup" modelRef="model003" origin="explicit_param" workspace="myBreakpoints">
+        <nonUniformArray size="10">
+          <signal index="1" initValue="1.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="2.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="3.0">
+            <double/>
+          </signal>
+          <signal index="4" initValue="4.0">
+            <double/>
+          </signal>
+          <signal index="5" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="6" initValue="6.0">
+            <double/>
+          </signal>
+          <signal index="7" initValue="7.0">
+            <double/>
+          </signal>
+          <signal index="8" initValue="8.0">
+            <double/>
+          </signal>
+          <signal index="9" initValue="9.0">
+            <double/>
+          </signal>
+          <signal index="10" initValue="10.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Model1/Subsystem/Model/Interpolation&#10;Using Prelookup" physicalPath="refA/Interpolation&#10;Using Prelookup" simulinkBlockType="Interpolation_n-D" modelRef="model003"/>
+        <usageContext path="Model1/Subsystem/Model/Prelookup" physicalPath="refA/Prelookup" simulinkBlockType="PreLookup" blockAttribute="BreakpointObject" modelRef="model003"/>
+        <source kind="ModelWorkspace" file="refA"/>
+      </parameter>
+      <parameter name="myLut" path="Model1/Subsystem/Model/Interpolation&#10;Using Prelookup" physicalPath="refA/Interpolation&#10;Using Prelookup" modelRef="model003" origin="explicit_param" workspace="myLut">
+        <nonUniformArray size="10">
+          <signal index="1" initValue="0.7">
+            <double/>
+          </signal>
+          <signal index="2" initValue="1.2">
+            <double/>
+          </signal>
+          <signal index="3" initValue="2.6">
+            <double/>
+          </signal>
+          <signal index="4" initValue="5.6">
+            <double/>
+          </signal>
+          <signal index="5" initValue="7.8">
+            <double/>
+          </signal>
+          <signal index="6" initValue="10.2">
+            <double/>
+          </signal>
+          <signal index="7" initValue="12.0">
+            <double/>
+          </signal>
+          <signal index="8" initValue="14.0">
+            <double/>
+          </signal>
+          <signal index="9" initValue="17.0">
+            <double/>
+          </signal>
+          <signal index="10" initValue="20.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Model1/Subsystem/Model/Interpolation&#10;Using Prelookup" physicalPath="refA/Interpolation&#10;Using Prelookup" simulinkBlockType="Interpolation_n-D" blockAttribute="LookupTableObject" modelRef="model003"/>
+        <source kind="ModelWorkspace" file="refA"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="refA/Out1" path="Model1/Subsystem/Model/Out1" modelRef="model003">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="refC" path="Model2" sampleTime="0.2" name="Model2" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="refC/In1" path="Model2/In1" modelRef="model002">
+        <double/>
+      </inport>
+      <parameter name="myBreakpoints" path="Model2/Interpolation&#10;Using Prelookup" physicalPath="refC/Interpolation&#10;Using Prelookup" modelRef="model002" origin="explicit_param" workspace="myBreakpoints">
+        <nonUniformArray size="10">
+          <signal index="1" initValue="1.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="2.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="3.0">
+            <double/>
+          </signal>
+          <signal index="4" initValue="4.0">
+            <double/>
+          </signal>
+          <signal index="5" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="6" initValue="6.0">
+            <double/>
+          </signal>
+          <signal index="7" initValue="7.0">
+            <double/>
+          </signal>
+          <signal index="8" initValue="8.0">
+            <double/>
+          </signal>
+          <signal index="9" initValue="9.0">
+            <double/>
+          </signal>
+          <signal index="10" initValue="10.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Model2/Interpolation&#10;Using Prelookup" physicalPath="refC/Interpolation&#10;Using Prelookup" simulinkBlockType="Interpolation_n-D" modelRef="model002"/>
+        <usageContext path="Model2/Prelookup" physicalPath="refC/Prelookup" simulinkBlockType="PreLookup" blockAttribute="BreakpointObject" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="refC"/>
+      </parameter>
+      <parameter name="myLut" path="Model2/Interpolation&#10;Using Prelookup" physicalPath="refC/Interpolation&#10;Using Prelookup" modelRef="model002" origin="explicit_param" workspace="myLut">
+        <nonUniformArray size="10">
+          <signal index="1" initValue="0.7">
+            <double/>
+          </signal>
+          <signal index="2" initValue="1.2">
+            <double/>
+          </signal>
+          <signal index="3" initValue="2.6">
+            <double/>
+          </signal>
+          <signal index="4" initValue="5.6">
+            <double/>
+          </signal>
+          <signal index="5" initValue="7.8">
+            <double/>
+          </signal>
+          <signal index="6" initValue="10.2">
+            <double/>
+          </signal>
+          <signal index="7" initValue="12.0">
+            <double/>
+          </signal>
+          <signal index="8" initValue="14.0">
+            <double/>
+          </signal>
+          <signal index="9" initValue="17.0">
+            <double/>
+          </signal>
+          <signal index="10" initValue="20.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Model2/Interpolation&#10;Using Prelookup" physicalPath="refC/Interpolation&#10;Using Prelookup" simulinkBlockType="Interpolation_n-D" blockAttribute="LookupTableObject" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="refC"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="refC/Out1" path="Model2/Out1" modelRef="model002">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="14.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ut_model_arg_lut\refC.slx" creationDate="2022-03-04T14:15:50" modificationDate="2024-09-23T07:44:55"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="14.3" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ut_model_arg_lut\refA.slx" creationDate="2022-03-04T14:15:50" modificationDate="2024-09-23T07:44:55"/>
+  <model modelID="model004" modelKind="model_ref" modelVersion="14.3" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ut_model_arg_lut\refB.slx" creationDate="2022-03-04T14:15:50" modificationDate="2024-09-23T07:44:55"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

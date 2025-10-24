@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_AR_MultiInstanceClient\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_AR_MultiInstanceClient\init_Wrapper_ar_multi_instance_client.m" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_AR_MultiInstanceClient\Wrapper_ar_multi_instance_client.slx" modelCreationDate="2024-09-12T20:32:35" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_AR_MultiInstanceClient\Wrapper_ar_multi_instance_client.slx" creationDate="2024-09-12T20:32:35" modificationDate="2024-09-12T20:32:38" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_AR_MultiInstanceClient\init_Wrapper_ar_multi_instance_client.m">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_ar_multi_instance_client" path="" sampleTime="0.2" name="Wrapper_ar_multi_instance_client" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="Wrapper_ar_multi_instance_client/In1" path="In1">
+        <int8/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="Wrapper_ar_multi_instance_client/In2" path="In2">
+        <int8/>
+      </inport>
+      <inport portNumber="0" name="dsin_external_sum_y" physicalPath="Wrapper_ar_multi_instance_client/Mock_external_sum/dsin_external_sum_y" path="Mock_external_sum/dsin_external_sum_y" signalName="dsin_external_sum_y">
+        <int16/>
+        <dataStoreMemory signalName="dsin_external_sum_y"/>
+      </inport>
+      <parameter name="param2_a" path="ar_multi_instance_client/ar_multi_instance_client/Constant1" physicalPath="ar_multi_instance_client/Constant1" modelRef="model002" origin="explicit_param" workspace="param2_a" initValue="2.0">
+        <int8/>
+        <usageContext path="ar_multi_instance_client/ar_multi_instance_client/Constant1" physicalPath="ar_multi_instance_client/Constant1" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="ar_multi_instance_client"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="Wrapper_ar_multi_instance_client/Out1" path="Out1">
+        <int16/>
+      </outport>
+      <outport portNumber="0" name="dsout_external_sum_u1" physicalPath="Wrapper_ar_multi_instance_client/Mock_external_sum/dsout_external_sum_u1" path="Mock_external_sum/dsout_external_sum_u1" signalName="dsout_external_sum_u1">
+        <int8/>
+        <dataStoreMemory signalName="dsout_external_sum_u1"/>
+      </outport>
+      <outport portNumber="0" name="dsout_external_sum_u2" physicalPath="Wrapper_ar_multi_instance_client/Mock_external_sum/dsout_external_sum_u2" path="Mock_external_sum/dsout_external_sum_u2" signalName="dsout_external_sum_u2">
+        <int8/>
+        <dataStoreMemory signalName="dsout_external_sum_u2"/>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="ar_multi_instance_client" path="ar_multi_instance_client/ar_multi_instance_client" sampleTime="0.2" name="ar_multi_instance_client" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="ar_multi_instance_client/In1" path="ar_multi_instance_client/ar_multi_instance_client/In1" modelRef="model002">
+        <int8/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ar_multi_instance_client/In2" path="ar_multi_instance_client/ar_multi_instance_client/In2" modelRef="model002">
+        <int8/>
+      </inport>
+      <inport portNumber="0" name="dsin_external_sum_y" physicalPath="Wrapper_ar_multi_instance_client/Mock_external_sum/dsin_external_sum_y" path="Mock_external_sum/dsin_external_sum_y" signalName="dsin_external_sum_y">
+        <int16/>
+        <dataStoreMemory signalName="dsin_external_sum_y"/>
+      </inport>
+      <parameter name="param2_a" path="ar_multi_instance_client/ar_multi_instance_client/Constant1" physicalPath="ar_multi_instance_client/Constant1" modelRef="model002" origin="explicit_param" workspace="param2_a" initValue="2.0">
+        <int8/>
+        <usageContext path="ar_multi_instance_client/ar_multi_instance_client/Constant1" physicalPath="ar_multi_instance_client/Constant1" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="ar_multi_instance_client"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="ar_multi_instance_client/Out1" path="ar_multi_instance_client/ar_multi_instance_client/Out1" modelRef="model002">
+        <int16/>
+      </outport>
+      <outport portNumber="0" name="dsout_external_sum_u1" physicalPath="Wrapper_ar_multi_instance_client/Mock_external_sum/dsout_external_sum_u1" path="Mock_external_sum/dsout_external_sum_u1" signalName="dsout_external_sum_u1">
+        <int8/>
+        <dataStoreMemory signalName="dsout_external_sum_u1"/>
+      </outport>
+      <outport portNumber="0" name="dsout_external_sum_u2" physicalPath="Wrapper_ar_multi_instance_client/Mock_external_sum/dsout_external_sum_u2" path="Mock_external_sum/dsout_external_sum_u2" signalName="dsout_external_sum_u2">
+        <int8/>
+        <dataStoreMemory signalName="dsout_external_sum_u2"/>
+      </outport>
+      <slfunc_caller path="ar_multi_instance_client/ar_multi_instance_client/Function Caller" pathCaller="ar_multi_instance_client/Function Caller" pathFunction="Wrapper_ar_multi_instance_client/Mock_external_sum"/>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.10" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_AR_MultiInstanceClient\ar_multi_instance_client.slx" creationDate="2023-08-17T17:41:41" modificationDate="2024-09-12T20:32:33" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_AR_MultiInstanceClient\init_Wrapper_ar_multi_instance_client.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

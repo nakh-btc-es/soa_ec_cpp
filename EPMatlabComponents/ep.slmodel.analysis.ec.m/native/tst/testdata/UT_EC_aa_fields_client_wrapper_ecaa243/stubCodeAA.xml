@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aa-component name="mClient" aa_version="R21-11" model_name="mClient" matlab_version="R2023b">
+  <types>
+    <type typeId="t1" name="double" kind="fundamental"/>
+    <type typeId="t5" name="int16_t" kind="primitive"/>
+    <type typeId="t4" name="myBus" kind="non-primitive" category="structure"/>
+    <type typeId="t2" name="myFieldAlias" kind="non-primitive"/>
+    <type typeId="t3" name="secondBus" kind="non-primitive" category="structure"/>
+  </types>
+  <interfaces>
+    <interface name="client">
+      <events>
+        <event eventId="ev1" name="SecondPortIn" typeRef="t1"/>
+      </events>
+      <fields>
+        <field fieldId="f1" name="aField" typeRef="t2"/>
+        <field fieldId="f2" name="busIncomplete" typeRef="t3"/>
+        <field fieldId="f3" name="onlyMethodF" typeRef="t4"/>
+      </fields>
+    </interface>
+    <interface name="otherProxy">
+      <namespaces>
+        <namespace symbol="inNms">
+          <namespace symbol="secondInNms"/>
+        </namespace>
+      </namespaces>
+      <events>
+        <event eventId="ev2" name="SetterInMessage" typeRef="t2"/>
+        <event eventId="ev3" name="InPassMST" typeRef="t2"/>
+        <event eventId="ev4" name="busIncIn" typeRef="t5"/>
+        <event eventId="ev5" name="onlySubsysIn" typeRef="t4"/>
+      </events>
+      <fields>
+        <field fieldId="f4" name="onlyUpdateField" typeRef="t3"/>
+        <field fieldId="f5" name="nmsMethodField" typeRef="t5"/>
+      </fields>
+    </interface>
+    <interface name="clientOut">
+      <events>
+        <event eventId="ev6" name="SetterOutMessage" typeRef="t2"/>
+        <event eventId="ev7" name="GetterOutMessage" typeRef="t2"/>
+        <event eventId="ev8" name="SecondPortOut" typeRef="t5"/>
+      </events>
+      <methods>
+        <method methodId="met1" name="injectorFunc">
+          <in name="u" typeRef="t1"/>
+        </method>
+        <method methodId="met2" name="outputFunc">
+          <out name="y" typeRef="t1"/>
+        </method>
+      </methods>
+    </interface>
+    <interface name="otherSkeleton">
+      <namespaces>
+        <namespace symbol="otherProv"/>
+      </namespaces>
+      <events>
+        <event eventId="ev9" name="GetSetSumOut" typeRef="t1"/>
+        <event eventId="ev10" name="MSTValueOut" typeRef="t2"/>
+        <event eventId="ev11" name="PassTriggerSumOut" typeRef="t2"/>
+        <event eventId="ev12" name="busIncOut1" typeRef="t5"/>
+        <event eventId="ev13" name="busIncOut2" typeRef="t5"/>
+        <event eventId="ev14" name="onlyUpdOut1" typeRef="t5"/>
+        <event eventId="ev15" name="onlyUpdOut2" typeRef="t4"/>
+        <event eventId="ev16" name="onlyUpdOut3" typeRef="t4"/>
+      </events>
+    </interface>
+  </interfaces>
+  <ports>
+    <rport name="client" instanceKey="mClient/mClient_RootSwComponentPrototype/client">
+      <field-refs>
+        <field-ref fieldRef="f1" notifierVar="client_aField" getterFunc="client_client_aField_get" setterFunc="client_client_aField_set"/>
+        <field-ref fieldRef="f2" notifierVar="client_busIncomplete" getterFunc="client_client_busIncomplete_get"/>
+        <field-ref fieldRef="f3" setterFunc="client_client_onlyMethodF_set" getterFunc="client_client_onlyMethodF_get"/>
+      </field-refs>
+      <event-refs>
+        <event-ref eventRef="ev1" var="client_SecondPortIn"/>
+      </event-refs>
+    </rport>
+    <rport name="otherClient" instanceKey="mClient/mClient_RootSwComponentPrototype/otherClient">
+      <event-refs>
+        <event-ref eventRef="ev2" var="otherClient_SetterInMessage"/>
+        <event-ref eventRef="ev3" var="otherClient_InPassMST"/>
+        <event-ref eventRef="ev4" var="otherClient_busIncIn"/>
+        <event-ref eventRef="ev5" var="otherClient_onlySubsysIn"/>
+      </event-refs>
+      <field-refs>
+        <field-ref fieldRef="f4" notifierVar="otherClient_onlyUpdateField"/>
+        <field-ref fieldRef="f5" getterFunc="otherProxy_otherClient_nmsMethodField_get" setterFunc="otherProxy_otherClient_nmsMethodField_set"/>
+      </field-refs>
+    </rport>
+    <pport name="provPorts" instanceKey="mClient/mClient_RootSwComponentPrototype/provPorts">
+      <event-refs>
+        <event-ref eventRef="ev6" var="provPorts_SetterOutMessage"/>
+        <event-ref eventRef="ev7" var="provPorts_GetterOutMessage"/>
+        <event-ref eventRef="ev8" var="provPorts_SecondPortOut"/>
+      </event-refs>
+      <method-refs>
+        <method-ref methodRef="met1" func="sut_provPorts_injectorFunc"/>
+        <method-ref methodRef="met2" func="sut_provPorts_outputFunc"/>
+      </method-refs>
+    </pport>
+    <pport name="otherProv" instanceKey="mClient/mClient_RootSwComponentPrototype/otherProv">
+      <event-refs>
+        <event-ref eventRef="ev10" var="otherProv_MSTValueOut"/>
+        <event-ref eventRef="ev11" var="otherProv_PassTriggerSumOut"/>
+        <event-ref eventRef="ev9" var="otherProv_GetSetSumOut"/>
+        <event-ref eventRef="ev12" var="otherProv_busIncOut1"/>
+        <event-ref eventRef="ev13" var="otherProv_busIncOut2"/>
+        <event-ref eventRef="ev14" var="otherProv_onlyUpdOut1"/>
+        <event-ref eventRef="ev15" var="otherProv_onlyUpdOut2"/>
+        <event-ref eventRef="ev16" var="otherProv_onlyUpdOut3"/>
+      </event-refs>
+    </pport>
+  </ports>
+</aa-component>

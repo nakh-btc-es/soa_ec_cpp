@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="2QF">
+	<Scope uid="2QF" name="BusArray" path="arrayOfBuses/BusArray" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="arrayOfBuses/BusArray" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_687" signalName="a" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_687" initValue="0.0" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_689" signalName="b" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_689" initValue="0.0" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+			<Variable varid="varif_695" signalName="BusArray3" width1="3" signalDim="[1 3]" isFloat="yes">
+				<ifName ifid="if_699" index1="1" initValue="0.0" lsb="1" offset="0" displayName="Out1.BusArray3(1).a" identifier="OUTPUT:Out1.BusArray3(1).a" />
+				<ifName ifid="if_700" index1="1" initValue="0.0" lsb="1" offset="0" displayName="Out1.BusArray3(1).b" identifier="OUTPUT:Out1.BusArray3(1).b" />
+				<ifName ifid="if_701" index1="2" initValue="0.0" lsb="1" offset="0" displayName="Out1.BusArray3(2).a" identifier="OUTPUT:Out1.BusArray3(2).a" />
+				<ifName ifid="if_702" index1="2" initValue="0.0" lsb="1" offset="0" displayName="Out1.BusArray3(2).b" identifier="OUTPUT:Out1.BusArray3(2).b" />
+				<ifName ifid="if_703" index1="3" initValue="0.0" lsb="1" offset="0" displayName="Out1.BusArray3(3).a" identifier="OUTPUT:Out1.BusArray3(3).a" />
+				<ifName ifid="if_704" index1="3" initValue="0.0" lsb="1" offset="0" displayName="Out1.BusArray3(3).b" identifier="OUTPUT:Out1.BusArray3(3).b" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+			<Variable varid="varif_711" signalName="BusArray1x3" width1="1" width2="3" signalDim="[2 1 3]" isFloat="yes">
+				<ifName ifid="if_716" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="Out2.BusArray1x3(1)(1).a" identifier="OUTPUT:Out2.BusArray1x3(1)(1).a" />
+				<ifName ifid="if_717" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="Out2.BusArray1x3(1)(1).b" identifier="OUTPUT:Out2.BusArray1x3(1)(1).b" />
+				<ifName ifid="if_718" index1="1" index2="2" initValue="0.0" lsb="1" offset="0" displayName="Out2.BusArray1x3(1)(2).a" identifier="OUTPUT:Out2.BusArray1x3(1)(2).a" />
+				<ifName ifid="if_719" index1="1" index2="2" initValue="0.0" lsb="1" offset="0" displayName="Out2.BusArray1x3(1)(2).b" identifier="OUTPUT:Out2.BusArray1x3(1)(2).b" />
+				<ifName ifid="if_720" index1="1" index2="3" initValue="0.0" lsb="1" offset="0" displayName="Out2.BusArray1x3(1)(3).a" identifier="OUTPUT:Out2.BusArray1x3(1)(3).a" />
+				<ifName ifid="if_721" index1="1" index2="3" initValue="0.0" lsb="1" offset="0" displayName="Out2.BusArray1x3(1)(3).b" identifier="OUTPUT:Out2.BusArray1x3(1)(3).b" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out3" portNumber="3" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+			<Variable varid="varif_728" signalName="BusArray3x1" width1="3" width2="1" signalDim="[2 3 1]" isFloat="yes">
+				<ifName ifid="if_733" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="Out3.BusArray3x1(1)(1).a" identifier="OUTPUT:Out3.BusArray3x1(1)(1).a" />
+				<ifName ifid="if_734" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="Out3.BusArray3x1(1)(1).b" identifier="OUTPUT:Out3.BusArray3x1(1)(1).b" />
+				<ifName ifid="if_736" index1="2" index2="1" initValue="0.0" lsb="1" offset="0" displayName="Out3.BusArray3x1(2)(1).a" identifier="OUTPUT:Out3.BusArray3x1(2)(1).a" />
+				<ifName ifid="if_737" index1="2" index2="1" initValue="0.0" lsb="1" offset="0" displayName="Out3.BusArray3x1(2)(1).b" identifier="OUTPUT:Out3.BusArray3x1(2)(1).b" />
+				<ifName ifid="if_739" index1="3" index2="1" initValue="0.0" lsb="1" offset="0" displayName="Out3.BusArray3x1(3)(1).a" identifier="OUTPUT:Out3.BusArray3x1(3)(1).a" />
+				<ifName ifid="if_740" index1="3" index2="1" initValue="0.0" lsb="1" offset="0" displayName="Out3.BusArray3x1(3)(1).b" identifier="OUTPUT:Out3.BusArray3x1(3)(1).b" />
+			</Variable>
+		</OutPort>
+		<Model name="arrayOfBuses" modelPath="/E:/ModelsDev/SL/ArrayOfBuses/ml2015a/arrayOfBuses.slx" type="SimulinkModel" />
+		<Scope uid="2QI" name="Subsystem" path="arrayOfBuses/BusArray/Subsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="arrayOfBuses/BusArray/Subsystem" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+				<Variable varid="varif_746" signalName="BusArray3" width1="3" signalDim="[1 3]" isFloat="yes">
+					<ifName ifid="if_750" index1="1" initValue="0.0" lsb="1" offset="0" displayName="In1.BusArray3(1).a" identifier="INPUT:In1.BusArray3(1).a" />
+					<ifName ifid="if_751" index1="1" initValue="0.0" lsb="1" offset="0" displayName="In1.BusArray3(1).b" identifier="INPUT:In1.BusArray3(1).b" />
+					<ifName ifid="if_752" index1="2" initValue="0.0" lsb="1" offset="0" displayName="In1.BusArray3(2).a" identifier="INPUT:In1.BusArray3(2).a" />
+					<ifName ifid="if_753" index1="2" initValue="0.0" lsb="1" offset="0" displayName="In1.BusArray3(2).b" identifier="INPUT:In1.BusArray3(2).b" />
+					<ifName ifid="if_754" index1="3" initValue="0.0" lsb="1" offset="0" displayName="In1.BusArray3(3).a" identifier="INPUT:In1.BusArray3(3).a" />
+					<ifName ifid="if_755" index1="3" initValue="0.0" lsb="1" offset="0" displayName="In1.BusArray3(3).b" identifier="INPUT:In1.BusArray3(3).b" />
+				</Variable>
+			</InPort>
+			<InPort name="In2" portNumber="2" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+				<Variable varid="varif_762" signalName="BusArray1x3" width1="1" width2="3" signalDim="[2 1 3]" isFloat="yes">
+					<ifName ifid="if_767" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="In2.BusArray1x3(1)(1).a" identifier="INPUT:In2.BusArray1x3(1)(1).a" />
+					<ifName ifid="if_768" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="In2.BusArray1x3(1)(1).b" identifier="INPUT:In2.BusArray1x3(1)(1).b" />
+					<ifName ifid="if_769" index1="1" index2="2" initValue="0.0" lsb="1" offset="0" displayName="In2.BusArray1x3(1)(2).a" identifier="INPUT:In2.BusArray1x3(1)(2).a" />
+					<ifName ifid="if_770" index1="1" index2="2" initValue="0.0" lsb="1" offset="0" displayName="In2.BusArray1x3(1)(2).b" identifier="INPUT:In2.BusArray1x3(1)(2).b" />
+					<ifName ifid="if_771" index1="1" index2="3" initValue="0.0" lsb="1" offset="0" displayName="In2.BusArray1x3(1)(3).a" identifier="INPUT:In2.BusArray1x3(1)(3).a" />
+					<ifName ifid="if_772" index1="1" index2="3" initValue="0.0" lsb="1" offset="0" displayName="In2.BusArray1x3(1)(3).b" identifier="INPUT:In2.BusArray1x3(1)(3).b" />
+				</Variable>
+			</InPort>
+			<InPort name="In3" portNumber="3" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+				<Variable varid="varif_779" signalName="BusArray3x1" width1="3" width2="1" signalDim="[2 3 1]" isFloat="yes">
+					<ifName ifid="if_784" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="In3.BusArray3x1(1)(1).a" identifier="INPUT:In3.BusArray3x1(1)(1).a" />
+					<ifName ifid="if_785" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="In3.BusArray3x1(1)(1).b" identifier="INPUT:In3.BusArray3x1(1)(1).b" />
+					<ifName ifid="if_787" index1="2" index2="1" initValue="0.0" lsb="1" offset="0" displayName="In3.BusArray3x1(2)(1).a" identifier="INPUT:In3.BusArray3x1(2)(1).a" />
+					<ifName ifid="if_788" index1="2" index2="1" initValue="0.0" lsb="1" offset="0" displayName="In3.BusArray3x1(2)(1).b" identifier="INPUT:In3.BusArray3x1(2)(1).b" />
+					<ifName ifid="if_790" index1="3" index2="1" initValue="0.0" lsb="1" offset="0" displayName="In3.BusArray3x1(3)(1).a" identifier="INPUT:In3.BusArray3x1(3)(1).a" />
+					<ifName ifid="if_791" index1="3" index2="1" initValue="0.0" lsb="1" offset="0" displayName="In3.BusArray3x1(3)(1).b" identifier="INPUT:In3.BusArray3x1(3)(1).b" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+				<Variable varid="varif_797" signalName="BusArray3" width1="3" signalDim="[1 3]" isFloat="yes">
+					<ifName ifid="if_801" index1="1" initValue="0.0" lsb="1" offset="0" displayName="Out1.BusArray3(1).a" identifier="OUTPUT:Out1.BusArray3(1).a" />
+					<ifName ifid="if_802" index1="1" initValue="0.0" lsb="1" offset="0" displayName="Out1.BusArray3(1).b" identifier="OUTPUT:Out1.BusArray3(1).b" />
+					<ifName ifid="if_803" index1="2" initValue="0.0" lsb="1" offset="0" displayName="Out1.BusArray3(2).a" identifier="OUTPUT:Out1.BusArray3(2).a" />
+					<ifName ifid="if_804" index1="2" initValue="0.0" lsb="1" offset="0" displayName="Out1.BusArray3(2).b" identifier="OUTPUT:Out1.BusArray3(2).b" />
+					<ifName ifid="if_805" index1="3" initValue="0.0" lsb="1" offset="0" displayName="Out1.BusArray3(3).a" identifier="OUTPUT:Out1.BusArray3(3).a" />
+					<ifName ifid="if_806" index1="3" initValue="0.0" lsb="1" offset="0" displayName="Out1.BusArray3(3).b" identifier="OUTPUT:Out1.BusArray3(3).b" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out2" portNumber="2" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+				<Variable varid="varif_813" signalName="BusArray1x3" width1="1" width2="3" signalDim="[2 1 3]" isFloat="yes">
+					<ifName ifid="if_818" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="Out2.BusArray1x3(1)(1).a" identifier="OUTPUT:Out2.BusArray1x3(1)(1).a" />
+					<ifName ifid="if_819" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="Out2.BusArray1x3(1)(1).b" identifier="OUTPUT:Out2.BusArray1x3(1)(1).b" />
+					<ifName ifid="if_820" index1="1" index2="2" initValue="0.0" lsb="1" offset="0" displayName="Out2.BusArray1x3(1)(2).a" identifier="OUTPUT:Out2.BusArray1x3(1)(2).a" />
+					<ifName ifid="if_821" index1="1" index2="2" initValue="0.0" lsb="1" offset="0" displayName="Out2.BusArray1x3(1)(2).b" identifier="OUTPUT:Out2.BusArray1x3(1)(2).b" />
+					<ifName ifid="if_822" index1="1" index2="3" initValue="0.0" lsb="1" offset="0" displayName="Out2.BusArray1x3(1)(3).a" identifier="OUTPUT:Out2.BusArray1x3(1)(3).a" />
+					<ifName ifid="if_823" index1="1" index2="3" initValue="0.0" lsb="1" offset="0" displayName="Out2.BusArray1x3(1)(3).b" identifier="OUTPUT:Out2.BusArray1x3(1)(3).b" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out3" portNumber="3" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+				<Variable varid="varif_830" signalName="BusArray3x1" width1="3" width2="1" signalDim="[2 3 1]" isFloat="yes">
+					<ifName ifid="if_835" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="Out3.BusArray3x1(1)(1).a" identifier="OUTPUT:Out3.BusArray3x1(1)(1).a" />
+					<ifName ifid="if_836" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="Out3.BusArray3x1(1)(1).b" identifier="OUTPUT:Out3.BusArray3x1(1)(1).b" />
+					<ifName ifid="if_838" index1="2" index2="1" initValue="0.0" lsb="1" offset="0" displayName="Out3.BusArray3x1(2)(1).a" identifier="OUTPUT:Out3.BusArray3x1(2)(1).a" />
+					<ifName ifid="if_839" index1="2" index2="1" initValue="0.0" lsb="1" offset="0" displayName="Out3.BusArray3x1(2)(1).b" identifier="OUTPUT:Out3.BusArray3x1(2)(1).b" />
+					<ifName ifid="if_841" index1="3" index2="1" initValue="0.0" lsb="1" offset="0" displayName="Out3.BusArray3x1(3)(1).a" identifier="OUTPUT:Out3.BusArray3x1(3)(1).a" />
+					<ifName ifid="if_842" index1="3" index2="1" initValue="0.0" lsb="1" offset="0" displayName="Out3.BusArray3x1(3)(1).b" identifier="OUTPUT:Out3.BusArray3x1(3)(1).b" />
+				</Variable>
+			</OutPort>
+			<Model name="arrayOfBuses" modelPath="/E:/ModelsDev/SL/ArrayOfBuses/ml2015a/arrayOfBuses.slx" type="SimulinkModel" />
+			<Scope uid="2QJ" name="BusArray1x3" path="arrayOfBuses/BusArray/Subsystem/BusArray1x3" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="arrayOfBuses/BusArray/Subsystem/BusArray1x3" subsystemLogging="on">
+				<InPort name="InBusArray1x3" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+					<Variable varid="varif_849" signalName="BusArray1x3InSgName" width1="1" width2="3" signalDim="[2 1 3]" isFloat="yes">
+						<ifName ifid="if_854" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="InBusArray1x3.BusArray1x3InSgName(1)(1).a" identifier="INPUT:InBusArray1x3.BusArray1x3InSgName(1)(1).a" />
+						<ifName ifid="if_855" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="InBusArray1x3.BusArray1x3InSgName(1)(1).b" identifier="INPUT:InBusArray1x3.BusArray1x3InSgName(1)(1).b" />
+						<ifName ifid="if_856" index1="1" index2="2" initValue="0.0" lsb="1" offset="0" displayName="InBusArray1x3.BusArray1x3InSgName(1)(2).a" identifier="INPUT:InBusArray1x3.BusArray1x3InSgName(1)(2).a" />
+						<ifName ifid="if_857" index1="1" index2="2" initValue="0.0" lsb="1" offset="0" displayName="InBusArray1x3.BusArray1x3InSgName(1)(2).b" identifier="INPUT:InBusArray1x3.BusArray1x3InSgName(1)(2).b" />
+						<ifName ifid="if_858" index1="1" index2="3" initValue="0.0" lsb="1" offset="0" displayName="InBusArray1x3.BusArray1x3InSgName(1)(3).a" identifier="INPUT:InBusArray1x3.BusArray1x3InSgName(1)(3).a" />
+						<ifName ifid="if_859" index1="1" index2="3" initValue="0.0" lsb="1" offset="0" displayName="InBusArray1x3.BusArray1x3InSgName(1)(3).b" identifier="INPUT:InBusArray1x3.BusArray1x3InSgName(1)(3).b" />
+					</Variable>
+				</InPort>
+				<OutPort name="OutBusArray1x3" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+					<Variable varid="varif_866" signalName="BusArray1x3OutSgName" width1="1" width2="3" signalDim="[2 1 3]" isFloat="yes">
+						<ifName ifid="if_871" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="OutBusArray1x3.BusArray1x3OutSgName(1)(1).a" identifier="OUTPUT:OutBusArray1x3.BusArray1x3OutSgName(1)(1).a" />
+						<ifName ifid="if_872" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="OutBusArray1x3.BusArray1x3OutSgName(1)(1).b" identifier="OUTPUT:OutBusArray1x3.BusArray1x3OutSgName(1)(1).b" />
+						<ifName ifid="if_873" index1="1" index2="2" initValue="0.0" lsb="1" offset="0" displayName="OutBusArray1x3.BusArray1x3OutSgName(1)(2).a" identifier="OUTPUT:OutBusArray1x3.BusArray1x3OutSgName(1)(2).a" />
+						<ifName ifid="if_874" index1="1" index2="2" initValue="0.0" lsb="1" offset="0" displayName="OutBusArray1x3.BusArray1x3OutSgName(1)(2).b" identifier="OUTPUT:OutBusArray1x3.BusArray1x3OutSgName(1)(2).b" />
+						<ifName ifid="if_875" index1="1" index2="3" initValue="0.0" lsb="1" offset="0" displayName="OutBusArray1x3.BusArray1x3OutSgName(1)(3).a" identifier="OUTPUT:OutBusArray1x3.BusArray1x3OutSgName(1)(3).a" />
+						<ifName ifid="if_876" index1="1" index2="3" initValue="0.0" lsb="1" offset="0" displayName="OutBusArray1x3.BusArray1x3OutSgName(1)(3).b" identifier="OUTPUT:OutBusArray1x3.BusArray1x3OutSgName(1)(3).b" />
+					</Variable>
+				</OutPort>
+				<Model name="arrayOfBuses" modelPath="/E:/ModelsDev/SL/ArrayOfBuses/ml2015a/arrayOfBuses.slx" type="SimulinkModel" />
+				<Scope uid="2QM" name="DuplicateA" path="arrayOfBuses/BusArray/Subsystem/BusArray1x3/DuplicateA" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="arrayOfBuses/BusArray/Subsystem/BusArray1x3/DuplicateA" subsystemLogging="on">
+					<InPort name="In1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+						<Variable varid="varif_882" signalName="{&lt;signal1&gt;}.a" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_882" initValue="0.0" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.a" identifier="INPUT:In1.{&lt;signal1&gt;}.a" />
+						</Variable>
+						<Variable varid="varif_883" signalName="{&lt;signal1&gt;}.b" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_883" initValue="0.0" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.b" identifier="INPUT:In1.{&lt;signal1&gt;}.b" />
+						</Variable>
+					</InPort>
+					<OutPort name="Out1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+						<Variable varid="varif_889" signalName="{&lt;signal1&gt;}.a" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_889" initValue="0.0" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.a" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.a" />
+						</Variable>
+						<Variable varid="varif_890" signalName="{&lt;signal1&gt;}.b" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_890" initValue="0.0" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.b" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.b" />
+						</Variable>
+					</OutPort>
+					<Model name="arrayOfBuses" modelPath="/E:/ModelsDev/SL/ArrayOfBuses/ml2015a/arrayOfBuses.slx" type="SimulinkModel" />
+				</Scope>
+			</Scope>
+			<Scope uid="2QK" name="BusArray3" path="arrayOfBuses/BusArray/Subsystem/BusArray3" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="arrayOfBuses/BusArray/Subsystem/BusArray3" subsystemLogging="on">
+				<InPort name="InBusArrayDim3" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+					<Variable varid="varif_896" signalName="BusArray3InSgName" width1="3" signalDim="[1 3]" isFloat="yes">
+						<ifName ifid="if_900" index1="1" initValue="0.0" lsb="1" offset="0" displayName="InBusArrayDim3.BusArray3InSgName(1).a" identifier="INPUT:InBusArrayDim3.BusArray3InSgName(1).a" />
+						<ifName ifid="if_901" index1="1" initValue="0.0" lsb="1" offset="0" displayName="InBusArrayDim3.BusArray3InSgName(1).b" identifier="INPUT:InBusArrayDim3.BusArray3InSgName(1).b" />
+						<ifName ifid="if_902" index1="2" initValue="0.0" lsb="1" offset="0" displayName="InBusArrayDim3.BusArray3InSgName(2).a" identifier="INPUT:InBusArrayDim3.BusArray3InSgName(2).a" />
+						<ifName ifid="if_903" index1="2" initValue="0.0" lsb="1" offset="0" displayName="InBusArrayDim3.BusArray3InSgName(2).b" identifier="INPUT:InBusArrayDim3.BusArray3InSgName(2).b" />
+						<ifName ifid="if_904" index1="3" initValue="0.0" lsb="1" offset="0" displayName="InBusArrayDim3.BusArray3InSgName(3).a" identifier="INPUT:InBusArrayDim3.BusArray3InSgName(3).a" />
+						<ifName ifid="if_905" index1="3" initValue="0.0" lsb="1" offset="0" displayName="InBusArrayDim3.BusArray3InSgName(3).b" identifier="INPUT:InBusArrayDim3.BusArray3InSgName(3).b" />
+					</Variable>
+				</InPort>
+				<OutPort name="OutBusArrayDim3" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+					<Variable varid="varif_911" signalName="BusArray3OutSgName" width1="3" signalDim="[1 3]" isFloat="yes">
+						<ifName ifid="if_915" index1="1" initValue="0.0" lsb="1" offset="0" displayName="OutBusArrayDim3.BusArray3OutSgName(1).a" identifier="OUTPUT:OutBusArrayDim3.BusArray3OutSgName(1).a" />
+						<ifName ifid="if_916" index1="1" initValue="0.0" lsb="1" offset="0" displayName="OutBusArrayDim3.BusArray3OutSgName(1).b" identifier="OUTPUT:OutBusArrayDim3.BusArray3OutSgName(1).b" />
+						<ifName ifid="if_917" index1="2" initValue="0.0" lsb="1" offset="0" displayName="OutBusArrayDim3.BusArray3OutSgName(2).a" identifier="OUTPUT:OutBusArrayDim3.BusArray3OutSgName(2).a" />
+						<ifName ifid="if_918" index1="2" initValue="0.0" lsb="1" offset="0" displayName="OutBusArrayDim3.BusArray3OutSgName(2).b" identifier="OUTPUT:OutBusArrayDim3.BusArray3OutSgName(2).b" />
+						<ifName ifid="if_919" index1="3" initValue="0.0" lsb="1" offset="0" displayName="OutBusArrayDim3.BusArray3OutSgName(3).a" identifier="OUTPUT:OutBusArrayDim3.BusArray3OutSgName(3).a" />
+						<ifName ifid="if_920" index1="3" initValue="0.0" lsb="1" offset="0" displayName="OutBusArrayDim3.BusArray3OutSgName(3).b" identifier="OUTPUT:OutBusArrayDim3.BusArray3OutSgName(3).b" />
+					</Variable>
+				</OutPort>
+				<Model name="arrayOfBuses" modelPath="/E:/ModelsDev/SL/ArrayOfBuses/ml2015a/arrayOfBuses.slx" type="SimulinkModel" />
+				<Scope uid="2QN" name="DuplicateA" path="arrayOfBuses/BusArray/Subsystem/BusArray3/DuplicateA" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="arrayOfBuses/BusArray/Subsystem/BusArray3/DuplicateA" subsystemLogging="on">
+					<InPort name="In1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+						<Variable varid="varif_926" signalName="{&lt;signal1&gt;}.a" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_926" initValue="0.0" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.a" identifier="INPUT:In1.{&lt;signal1&gt;}.a" />
+						</Variable>
+						<Variable varid="varif_927" signalName="{&lt;signal1&gt;}.b" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_927" initValue="0.0" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.b" identifier="INPUT:In1.{&lt;signal1&gt;}.b" />
+						</Variable>
+					</InPort>
+					<OutPort name="Out1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+						<Variable varid="varif_933" signalName="{&lt;signal1&gt;}.a" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_933" initValue="0.0" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.a" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.a" />
+						</Variable>
+						<Variable varid="varif_934" signalName="{&lt;signal1&gt;}.b" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_934" initValue="0.0" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.b" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.b" />
+						</Variable>
+					</OutPort>
+					<Model name="arrayOfBuses" modelPath="/E:/ModelsDev/SL/ArrayOfBuses/ml2015a/arrayOfBuses.slx" type="SimulinkModel" />
+				</Scope>
+			</Scope>
+			<Scope uid="2QL" name="BusArray3x1" path="arrayOfBuses/BusArray/Subsystem/BusArray3x1" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="arrayOfBuses/BusArray/Subsystem/BusArray3x1" subsystemLogging="on">
+				<InPort name="InBusArray3x1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+					<Variable varid="varif_941" signalName="BusArray3x1InSgName" width1="3" width2="1" signalDim="[2 3 1]" isFloat="yes">
+						<ifName ifid="if_946" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="InBusArray3x1.BusArray3x1InSgName(1)(1).a" identifier="INPUT:InBusArray3x1.BusArray3x1InSgName(1)(1).a" />
+						<ifName ifid="if_947" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="InBusArray3x1.BusArray3x1InSgName(1)(1).b" identifier="INPUT:InBusArray3x1.BusArray3x1InSgName(1)(1).b" />
+						<ifName ifid="if_949" index1="2" index2="1" initValue="0.0" lsb="1" offset="0" displayName="InBusArray3x1.BusArray3x1InSgName(2)(1).a" identifier="INPUT:InBusArray3x1.BusArray3x1InSgName(2)(1).a" />
+						<ifName ifid="if_950" index1="2" index2="1" initValue="0.0" lsb="1" offset="0" displayName="InBusArray3x1.BusArray3x1InSgName(2)(1).b" identifier="INPUT:InBusArray3x1.BusArray3x1InSgName(2)(1).b" />
+						<ifName ifid="if_952" index1="3" index2="1" initValue="0.0" lsb="1" offset="0" displayName="InBusArray3x1.BusArray3x1InSgName(3)(1).a" identifier="INPUT:InBusArray3x1.BusArray3x1InSgName(3)(1).a" />
+						<ifName ifid="if_953" index1="3" index2="1" initValue="0.0" lsb="1" offset="0" displayName="InBusArray3x1.BusArray3x1InSgName(3)(1).b" identifier="INPUT:InBusArray3x1.BusArray3x1InSgName(3)(1).b" />
+					</Variable>
+				</InPort>
+				<OutPort name="OutBusArray3x1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+					<Variable varid="varif_960" signalName="BusArray3x1OutSgName" width1="3" width2="1" signalDim="[2 3 1]" isFloat="yes">
+						<ifName ifid="if_965" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="OutBusArray3x1.BusArray3x1OutSgName(1)(1).a" identifier="OUTPUT:OutBusArray3x1.BusArray3x1OutSgName(1)(1).a" />
+						<ifName ifid="if_966" index1="1" index2="1" initValue="0.0" lsb="1" offset="0" displayName="OutBusArray3x1.BusArray3x1OutSgName(1)(1).b" identifier="OUTPUT:OutBusArray3x1.BusArray3x1OutSgName(1)(1).b" />
+						<ifName ifid="if_968" index1="2" index2="1" initValue="0.0" lsb="1" offset="0" displayName="OutBusArray3x1.BusArray3x1OutSgName(2)(1).a" identifier="OUTPUT:OutBusArray3x1.BusArray3x1OutSgName(2)(1).a" />
+						<ifName ifid="if_969" index1="2" index2="1" initValue="0.0" lsb="1" offset="0" displayName="OutBusArray3x1.BusArray3x1OutSgName(2)(1).b" identifier="OUTPUT:OutBusArray3x1.BusArray3x1OutSgName(2)(1).b" />
+						<ifName ifid="if_971" index1="3" index2="1" initValue="0.0" lsb="1" offset="0" displayName="OutBusArray3x1.BusArray3x1OutSgName(3)(1).a" identifier="OUTPUT:OutBusArray3x1.BusArray3x1OutSgName(3)(1).a" />
+						<ifName ifid="if_972" index1="3" index2="1" initValue="0.0" lsb="1" offset="0" displayName="OutBusArray3x1.BusArray3x1OutSgName(3)(1).b" identifier="OUTPUT:OutBusArray3x1.BusArray3x1OutSgName(3)(1).b" />
+					</Variable>
+				</OutPort>
+				<Model name="arrayOfBuses" modelPath="/E:/ModelsDev/SL/ArrayOfBuses/ml2015a/arrayOfBuses.slx" type="SimulinkModel" />
+				<Scope uid="2QO" name="DuplicateA" path="arrayOfBuses/BusArray/Subsystem/BusArray3x1/DuplicateA" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="arrayOfBuses/BusArray/Subsystem/BusArray3x1/DuplicateA" subsystemLogging="on">
+					<InPort name="In1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+						<Variable varid="varif_978" signalName="{&lt;signal1&gt;}.a" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_978" initValue="0.0" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.a" identifier="INPUT:In1.{&lt;signal1&gt;}.a" />
+						</Variable>
+						<Variable varid="varif_979" signalName="{&lt;signal1&gt;}.b" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_979" initValue="0.0" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.b" identifier="INPUT:In1.{&lt;signal1&gt;}.b" />
+						</Variable>
+					</InPort>
+					<OutPort name="Out1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="MyBus2Scalars">
+						<Variable varid="varif_985" signalName="{&lt;signal1&gt;}.a" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_985" initValue="0.0" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.a" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.a" />
+						</Variable>
+						<Variable varid="varif_986" signalName="{&lt;signal1&gt;}.b" signalType="double" isFloat="yes" tlTypeName="double">
+							<ifName ifid="if_986" initValue="0.0" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.b" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.b" />
+						</Variable>
+					</OutPort>
+					<Model name="arrayOfBuses" modelPath="/E:/ModelsDev/SL/ArrayOfBuses/ml2015a/arrayOfBuses.slx" type="SimulinkModel" />
+				</Scope>
+			</Scope>
+		</Scope>
+	</Scope>
+</ExtractionModel>

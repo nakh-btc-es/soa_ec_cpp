@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="caltest"/>
+    <Architecture id="id1" name="caltest [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="Subsystem/Subsystem/Subsystem"/>
+      <Path refId="id1" path="Subsystem.c:1:Subsystem"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="in."/>
+        <Path refId="id1" path="Sa1_in_"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out."/>
+        <Path refId="id1" path="Sa1_out_"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="Subsystem/Subsystem/Subsystem/Constant/Constant[const]"/>
+        <Path refId="id1" path="Sa1_Constant"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="Subsystem/Subsystem/Subsystem/crash"/>
+      <Path refId="id1" path="Subsystem.c:1:Subsystem/crash.c:1:Sa2_crash"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_in_"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In2"/>
+        <Path refId="id1" path="Sa1_Constant"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa2_Sum"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

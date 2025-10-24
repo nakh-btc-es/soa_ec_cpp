@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36725\TLProj\SWC_M910" name="Dconf.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36725\TLProj\SWC_M910" name="PDM_SECSAV_blk.c" kind="source" annotate="yes" id="fID2"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36725\TLProj\SWC_M910" name="RUNA_GererModuleM910.c" kind="source" annotate="yes" id="fID3"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36725\TLProj\SWC_M910" name="RUNA_GererModuleM910_genere.c" kind="source" annotate="yes" id="fID4"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36725\TLProj\SWC_M910" name="RUNA_ProdEtatResetDAA.c" kind="source" annotate="yes" id="fID5"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36725\TLBuild\DAA1_7_TL\HostPC64_MSVC" name="RteIv.c" kind="source" annotate="no" id="fID6"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36725\TLBuild\DAA1_7_TL\HostPC64_MSVC" name="Rte_M910.c" kind="source" annotate="no" id="fID7"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36725\TLBuild\DAA1_7_TL\HostPC64_MSVC" name="Rte.c" kind="source" annotate="no" id="fID8"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36725\TLSim" name="SWC_M910_ARfrm.c" kind="source" annotate="no" id="fID9"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36725\TLSim" name="SWC_M910_fri.c" kind="source" annotate="no" id="fID10"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36725\TLProj\SWC_M910"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36725\TLBuild\DAA1_7_TL\HostPC64_MSVC"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36725\TLSim"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.0\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.0\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.0\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="__SIL__"/>
+    <Define name="BTC_EP_TL_VERSION" value="50"/>
+  </Defines>
+  <Functions archName="DAA1_7_TL [C-Code]">
+    <Function name="RUNA_GererModuleM910" initFunc="Rte_Start" proxyFunc="Task_RUNA_GererModuleM910_Wrapper" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Rte_M910_RP_VitesseVehicule_VitesseVehicule" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Rte_M910_RP_SEC_DAAActivationDeMenuPerso_SEC_DAAActivationDeMenuPerso" scaling="scID1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Rte_Irv_M910_DAA_RESET_DD" scaling="scID1" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Cpt_LongRideAlert_IHM_Clear" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Cpt_LongRideAlert_IHM_Set" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Cpt_POIPauseAlerte_IHM_Clear" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Cpt_POIPauseAlerte_IHM_Set" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="PS_RUNA_GererModuleM910" access="._Call_IHMDAA" scaling="scID1" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="PDM_StructRamSAVblkDefaut1" access="._PRIV_DrivingTimer" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="PDM_StructRamSAVblkDefaut1" access="._PRIV_FirstStepDone" scaling="scID1" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="RUNA_ProdEtatResetDAA" initFunc="Rte_Start" proxyFunc="Task_RUNA_ProdEtatResetDAA_Wrapper" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Rte_M910_RP_EtatPrincipalSEV_EtatPrincipalSEV" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Rte_M910_RP_CptTempVehicule_CptTempVehicule" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Rte_M910_RP_SAV_EtatOuvrants_SAV_EtatOuvrants" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Rte_M910_RP_EtatCeintureCond_EtatCeintureCond" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Rte_M910_RP_VitesseVehicule_VitesseVehicule" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Rte_M910_RP_DriverDetectChange_DriverDetectChange" scaling="scID1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Rte_M910_RP_DAA4_MngtStatus_DAA4_MngtStatus" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Rte_M910_PP_Etat_ResetDAA_Etat_ResetDAA" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_M910_PP_AffMenuPerso_DAAActivation_AffMenuPerso_DAAActivation" scaling="scID1" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_M910_PP_DAA_RESET_DD_DAA_RESET_DD" scaling="scID1" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_M910_PP_DetectDrvChangeEnable_DetectDrvChangeEnable" scaling="scID1" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_Irv_M910_DAA_RESET_DD" scaling="scID1" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.44" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_ep_1465\Sample.mdl" modelCreationDate="2019-03-04T11:32:30" creator="developer">
+  <toolInfo name="Matlab" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p7"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.44" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_ep_1465\Sample.mdl" creationDate="2019-03-04T11:32:30" modificationDate="2022-02-02T16:52:20">
+    <subsystem subsysID="ss1" physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature" path="signalmode_feature/Subsystem/signalmode_feature" sampleTime="0.2" name="signalmode_feature" scopeKind="DUMMY" kind="subsystem">
+      <inport portNumber="1" name="Voltage" physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature/Voltage" path="signalmode_feature/Subsystem/signalmode_feature/Voltage">
+        <miltype>
+          <single/>
+        </miltype>
+        <siltype missingTypeSinceNoCVar="true">
+          <unsupportedTypeInformation/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="trig_signalmode_2ms_task" physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature/trig_signalmode_2ms_task" path="signalmode_feature/Subsystem/signalmode_feature/trig_signalmode_2ms_task">
+        <miltype signalName="trig_signalmode_2ms_task">
+          <unsupportedTypeInformation/>
+        </miltype>
+        <siltype missingTypeSinceNoCVar="true" signalName="trig_signalmode_2ms_task">
+          <unsupportedTypeInformation/>
+        </siltype>
+      </inport>
+      <display physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" name="raw_value" stateflowVariable="raw_value" portNumber="1">
+        <miltype initValue="2.7808400000000000e+02" signalName="raw_value">
+          <single/>
+        </miltype>
+        <siltype initValue="2.7808400000000000e+02" signalName="raw_value">
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" name="pre_raw_value" stateflowVariable="pre_raw_value">
+        <miltype initValue="2.7808400000000000e+02" signalName="pre_raw_value">
+          <single/>
+        </miltype>
+        <siltype initValue="2.7808400000000000e+02" signalName="pre_raw_value">
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" name="pre_voltage_value" stateflowVariable="pre_voltage_value">
+        <miltype initValue="2.7808400000000000e+02" signalName="pre_voltage_value">
+          <single/>
+        </miltype>
+        <siltype initValue="2.7808400000000000e+02" signalName="pre_voltage_value">
+          <Float32/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec" sampleTime="0.2" name="signalmode_2ms_exec" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="Voltage" physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/Voltage" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/Voltage">
+        <miltype>
+          <single/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="raw_value" physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/raw_value" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/raw_value">
+        <miltype signalName="raw_value">
+          <single/>
+        </miltype>
+        <siltype initValue="2.7808400000000000e+02" signalName="raw_value">
+          <Float32/>
+        </siltype>
+      </outport>
+      <display physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" name="raw_value" stateflowVariable="raw_value" portNumber="1">
+        <miltype initValue="2.7808400000000000e+02" signalName="raw_value">
+          <single/>
+        </miltype>
+        <siltype initValue="2.7808400000000000e+02" signalName="raw_value">
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" name="pre_raw_value" stateflowVariable="pre_raw_value">
+        <miltype initValue="2.7808400000000000e+02" signalName="pre_raw_value">
+          <single/>
+        </miltype>
+        <siltype initValue="2.7808400000000000e+02" signalName="pre_raw_value">
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" name="pre_voltage_value" stateflowVariable="pre_voltage_value">
+        <miltype initValue="2.7808400000000000e+02" signalName="pre_voltage_value">
+          <single/>
+        </miltype>
+        <siltype initValue="2.7808400000000000e+02" signalName="pre_voltage_value">
+          <Float32/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc" sampleTime="0.2" name="signalmode_2ms_pv_proc" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="Voltage" physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/Voltage" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/Voltage">
+        <miltype>
+          <single/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="raw_value" physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/raw_value" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/raw_value">
+        <miltype signalName="raw_value">
+          <single/>
+        </miltype>
+        <siltype initValue="2.7808400000000000e+02" signalName="raw_value">
+          <Float32/>
+        </siltype>
+      </outport>
+      <display physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" name="raw_value" stateflowVariable="raw_value" portNumber="1">
+        <miltype initValue="2.7808400000000000e+02" signalName="raw_value">
+          <single/>
+        </miltype>
+        <siltype initValue="2.7808400000000000e+02" signalName="raw_value">
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" name="pre_raw_value" stateflowVariable="pre_raw_value">
+        <miltype initValue="2.7808400000000000e+02" signalName="pre_raw_value">
+          <single/>
+        </miltype>
+        <siltype initValue="2.7808400000000000e+02" signalName="pre_raw_value">
+          <Float32/>
+        </siltype>
+      </display>
+      <display physicalPath="Sample/signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv" name="pre_voltage_value" stateflowVariable="pre_voltage_value">
+        <miltype initValue="2.7808400000000000e+02" signalName="pre_voltage_value">
+          <single/>
+        </miltype>
+        <siltype initValue="2.7808400000000000e+02" signalName="pre_voltage_value">
+          <Float32/>
+        </siltype>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

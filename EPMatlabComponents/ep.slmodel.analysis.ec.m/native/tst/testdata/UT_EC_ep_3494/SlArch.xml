@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240807T145829_19296\tmp_ep_3494\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240807T145829_19296\tmp_ep_3494\start.m" modelVersion="9.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240807T145829_19296\tmp_ep_3494\main.slx" modelCreationDate="2024-07-18T10:26:27" creator="Administrator">
+  <toolInfo name="Matlab" release="(R2022b)" version="9.13" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2022b)" version="10.6" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="9.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240807T145829_19296\tmp_ep_3494\main.slx" creationDate="2024-07-18T10:26:27" modificationDate="2024-08-07T15:05:00" initScript="C:\Users\developer\AppData\Local\Temp\ut20240807T145829_19296\tmp_ep_3494\start.m">
+    <subsystem subsysID="ss1" physicalPath="main" path="" sampleTime="0.2" name="main" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="Input" physicalPath="main/Input" path="Input">
+        <uint8/>
+      </inport>
+      <outport portNumber="1" name="Output" physicalPath="main/Output" path="Output">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="main/B" path="B" sampleTime="0.2" name="B" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="Input" physicalPath="main/B/Input" path="B/Input">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Output" physicalPath="main/B/Output" path="B/Output">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

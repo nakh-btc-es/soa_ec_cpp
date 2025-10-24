@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="26f">
+	<Scope uid="26f" name="enabsubs" path="enabsubs" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="enabsubs" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_374" signalType="double" isFloat="yes">
+				<ifName ifid="if_374" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_375" signalType="double" isFloat="yes">
+				<ifName ifid="if_375" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_376" width1="4" signalType="double" signalDim="[1 4]" isFloat="yes">
+				<ifName ifid="if_377" index1="1" lsb="1" offset="0" displayName="Out1(1)" identifier="OUTPUT:Out1(1)" />
+				<ifName ifid="if_378" index1="2" lsb="1" offset="0" displayName="Out1(2)" identifier="OUTPUT:Out1(2)" />
+				<ifName ifid="if_379" index1="3" lsb="1" offset="0" displayName="Out1(3)" identifier="OUTPUT:Out1(3)" />
+				<ifName ifid="if_380" index1="4" lsb="1" offset="0" displayName="Out1(4)" identifier="OUTPUT:Out1(4)" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_381" width1="4" signalType="double" signalDim="[1 4]" isFloat="yes">
+				<ifName ifid="if_382" index1="1" lsb="1" offset="0" displayName="Out2(1)" identifier="OUTPUT:Out2(1)" />
+				<ifName ifid="if_383" index1="2" lsb="1" offset="0" displayName="Out2(2)" identifier="OUTPUT:Out2(2)" />
+				<ifName ifid="if_384" index1="3" lsb="1" offset="0" displayName="Out2(3)" identifier="OUTPUT:Out2(3)" />
+				<ifName ifid="if_385" index1="4" lsb="1" offset="0" displayName="Out2(4)" identifier="OUTPUT:Out2(4)" />
+			</Variable>
+		</OutPort>
+		<Model name="enabsubs" modelPath="/E:/ModelsDev/UT_MIL_SL/EnabledSubs/ml2015asp1/enabsubs.slx" type="SimulinkModel" />
+		<Scope uid="26Y" name="More Info2" path="enabsubs/More Info2" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="enabsubs/More Info2" subsystemLogging="on">
+			<Model name="enabsubs" modelPath="/E:/ModelsDev/UT_MIL_SL/EnabledSubs/ml2015asp1/enabsubs.slx" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="26Z" name="Enabled Subsystem With Discrete Reset States" path="enabsubs/Enabled Subsystem With Discrete Reset States" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="enabsubs/Enabled Subsystem With Discrete Reset States" subsystemLogging="on">
+			<OutPort name="Held&#xA;Discrete&#xA;Output" portNumber="1" compositeSig="none">
+				<Variable varid="varif_388" signalType="double" isFloat="yes">
+					<ifName ifid="if_388" lsb="1" offset="0" displayName="{Held\nDiscrete\nOutput}" identifier="OUTPUT:Held&#xA;Discrete&#xA;Output" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Zeroed&#xA;Discrete&#xA;Output" portNumber="2" compositeSig="none">
+				<Variable varid="varif_389" signalType="double" isFloat="yes">
+					<ifName ifid="if_389" lsb="1" offset="0" displayName="{Zeroed\nDiscrete\nOutput}" identifier="OUTPUT:Zeroed&#xA;Discrete&#xA;Output" />
+				</Variable>
+			</OutPort>
+			<Model name="enabsubs" modelPath="/E:/ModelsDev/UT_MIL_SL/EnabledSubs/ml2015asp1/enabsubs.slx" type="SimulinkModel" />
+			<Scope uid="26b" name="Discrete-Time Integrator1" path="enabsubs/Enabled Subsystem With Discrete Reset States/Discrete-Time&#xA;Integrator1" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="enabsubs/Enabled Subsystem With Discrete Reset States/Discrete-Time&#xA;Integrator1" subsystemLogging="on">
+				<InPort name="in_1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_392" signalType="double" isFloat="yes">
+						<ifName ifid="if_392" lsb="1" offset="0" displayName="in_1" identifier="INPUT:in_1" />
+					</Variable>
+				</InPort>
+				<OutPort name="out_1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_393" signalType="double" isFloat="yes">
+						<ifName ifid="if_393" lsb="1" offset="0" displayName="out_1" identifier="OUTPUT:out_1" />
+					</Variable>
+				</OutPort>
+				<Model name="enabsubs" modelPath="/E:/ModelsDev/UT_MIL_SL/EnabledSubs/ml2015asp1/enabsubs.slx" type="SimulinkModel" />
+			</Scope>
+			<Scope uid="26c" name="Discrete-Time Integrator2" path="enabsubs/Enabled Subsystem With Discrete Reset States/Discrete-Time&#xA;Integrator2" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="enabsubs/Enabled Subsystem With Discrete Reset States/Discrete-Time&#xA;Integrator2" subsystemLogging="on">
+				<InPort name="in_1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_396" signalType="double" isFloat="yes">
+						<ifName ifid="if_396" lsb="1" offset="0" displayName="in_1" identifier="INPUT:in_1" />
+					</Variable>
+				</InPort>
+				<OutPort name="out_1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_397" signalType="double" isFloat="yes">
+						<ifName ifid="if_397" lsb="1" offset="0" displayName="out_1" identifier="OUTPUT:out_1" />
+					</Variable>
+				</OutPort>
+				<Model name="enabsubs" modelPath="/E:/ModelsDev/UT_MIL_SL/EnabledSubs/ml2015asp1/enabsubs.slx" type="SimulinkModel" />
+			</Scope>
+		</Scope>
+		<Scope uid="26^" name="Enabled Subsystem With Continuous Reset States" path="enabsubs/Enabled Subsystem With Continuous Reset States" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="enabsubs/Enabled Subsystem With Continuous Reset States" subsystemLogging="on">
+			<OutPort name="Held&#xA;Cont.&#xA;Output" portNumber="1" compositeSig="none">
+				<Variable varid="varif_400" signalType="double" isFloat="yes">
+					<ifName ifid="if_400" lsb="1" offset="0" displayName="{Held\nCont.\nOutput}" identifier="OUTPUT:Held&#xA;Cont.&#xA;Output" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Zeroed&#xA;Cont.&#xA;Output" portNumber="2" compositeSig="none">
+				<Variable varid="varif_401" signalType="double" isFloat="yes">
+					<ifName ifid="if_401" lsb="1" offset="0" displayName="{Zeroed\nCont.\nOutput}" identifier="OUTPUT:Zeroed&#xA;Cont.&#xA;Output" />
+				</Variable>
+			</OutPort>
+			<Model name="enabsubs" modelPath="/E:/ModelsDev/UT_MIL_SL/EnabledSubs/ml2015asp1/enabsubs.slx" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="26_" name="Enabled Subsystem With Discrete Held States" path="enabsubs/Enabled Subsystem With Discrete Held States" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="enabsubs/Enabled Subsystem With Discrete Held States" subsystemLogging="on">
+			<OutPort name="Held&#xA;Discrete&#xA;Output" portNumber="1" compositeSig="none">
+				<Variable varid="varif_404" signalType="double" isFloat="yes">
+					<ifName ifid="if_404" lsb="1" offset="0" displayName="{Held\nDiscrete\nOutput}" identifier="OUTPUT:Held&#xA;Discrete&#xA;Output" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Zeroed&#xA;Discrete&#xA;Output" portNumber="2" compositeSig="none">
+				<Variable varid="varif_405" signalType="double" isFloat="yes">
+					<ifName ifid="if_405" lsb="1" offset="0" displayName="{Zeroed\nDiscrete\nOutput}" identifier="OUTPUT:Zeroed&#xA;Discrete&#xA;Output" />
+				</Variable>
+			</OutPort>
+			<Model name="enabsubs" modelPath="/E:/ModelsDev/UT_MIL_SL/EnabledSubs/ml2015asp1/enabsubs.slx" type="SimulinkModel" />
+			<Scope uid="26d" name="Discrete-Time Integrator1" path="enabsubs/Enabled Subsystem With Discrete Held States/Discrete-Time&#xA;Integrator1" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="enabsubs/Enabled Subsystem With Discrete Held States/Discrete-Time&#xA;Integrator1" subsystemLogging="on">
+				<InPort name="in_1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_408" signalType="double" isFloat="yes">
+						<ifName ifid="if_408" lsb="1" offset="0" displayName="in_1" identifier="INPUT:in_1" />
+					</Variable>
+				</InPort>
+				<OutPort name="out_1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_409" signalType="double" isFloat="yes">
+						<ifName ifid="if_409" lsb="1" offset="0" displayName="out_1" identifier="OUTPUT:out_1" />
+					</Variable>
+				</OutPort>
+				<Model name="enabsubs" modelPath="/E:/ModelsDev/UT_MIL_SL/EnabledSubs/ml2015asp1/enabsubs.slx" type="SimulinkModel" />
+			</Scope>
+			<Scope uid="26e" name="Discrete-Time Integrator2" path="enabsubs/Enabled Subsystem With Discrete Held States/Discrete-Time&#xA;Integrator2" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="enabsubs/Enabled Subsystem With Discrete Held States/Discrete-Time&#xA;Integrator2" subsystemLogging="on">
+				<InPort name="in_1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_412" signalType="double" isFloat="yes">
+						<ifName ifid="if_412" lsb="1" offset="0" displayName="in_1" identifier="INPUT:in_1" />
+					</Variable>
+				</InPort>
+				<OutPort name="out_1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_413" signalType="double" isFloat="yes">
+						<ifName ifid="if_413" lsb="1" offset="0" displayName="out_1" identifier="OUTPUT:out_1" />
+					</Variable>
+				</OutPort>
+				<Model name="enabsubs" modelPath="/E:/ModelsDev/UT_MIL_SL/EnabledSubs/ml2015asp1/enabsubs.slx" type="SimulinkModel" />
+			</Scope>
+		</Scope>
+		<Scope uid="26a" name="Enabled Subsystem With Continuous Held States" path="enabsubs/Enabled Subsystem With Continuous Held States" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="enabsubs/Enabled Subsystem With Continuous Held States" subsystemLogging="on">
+			<OutPort name="Held&#xA;Cont.&#xA;Output" portNumber="1" compositeSig="none">
+				<Variable varid="varif_416" signalType="double" isFloat="yes">
+					<ifName ifid="if_416" lsb="1" offset="0" displayName="{Held\nCont.\nOutput}" identifier="OUTPUT:Held&#xA;Cont.&#xA;Output" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Zeroed&#xA;Cont.&#xA;Output" portNumber="2" compositeSig="none">
+				<Variable varid="varif_417" signalType="double" isFloat="yes">
+					<ifName ifid="if_417" lsb="1" offset="0" displayName="{Zeroed\nCont.\nOutput}" identifier="OUTPUT:Zeroed&#xA;Cont.&#xA;Output" />
+				</Variable>
+			</OutPort>
+			<Model name="enabsubs" modelPath="/E:/ModelsDev/UT_MIL_SL/EnabledSubs/ml2015asp1/enabsubs.slx" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

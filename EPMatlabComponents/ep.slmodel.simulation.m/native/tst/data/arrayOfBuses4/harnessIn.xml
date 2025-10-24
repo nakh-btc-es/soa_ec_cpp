@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<BusType name="MyBus2Scalars" virtual="false">
+			<Comp name="a" type="double" />
+			<Comp name="b" type="double" />
+		</BusType>
+	</Types>
+	<Outports sampleTime="0.2">
+		<Outport portNr="1" width="3" type="MyBus2Scalars" signalName="BusArray3">
+			<ScalarRefs>
+				<ScalarRef displayName="InBusArray3.BusArray3(1).a">INPUT:InBusArray3.BusArray3(1).a</ScalarRef>
+				<ScalarRef displayName="InBusArray3.BusArray3(1).b">INPUT:InBusArray3.BusArray3(1).b</ScalarRef>
+				<ScalarRef displayName="InBusArray3.BusArray3(2).a">INPUT:InBusArray3.BusArray3(2).a</ScalarRef>
+				<ScalarRef displayName="InBusArray3.BusArray3(2).b">INPUT:InBusArray3.BusArray3(2).b</ScalarRef>
+				<ScalarRef displayName="InBusArray3.BusArray3(3).a">INPUT:InBusArray3.BusArray3(3).a</ScalarRef>
+				<ScalarRef displayName="InBusArray3.BusArray3(3).b">INPUT:InBusArray3.BusArray3(3).b</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="2" dim1="1" dim2="3" type="MyBus2Scalars" signalName="BusArray1x3">
+			<ScalarRefs>
+				<ScalarRef displayName="InBusArray1x3.BusArray1x3(1)(1).a">INPUT:InBusArray1x3.BusArray1x3(1)(1).a</ScalarRef>
+				<ScalarRef displayName="InBusArray1x3.BusArray1x3(1)(1).b">INPUT:InBusArray1x3.BusArray1x3(1)(1).b</ScalarRef>
+				<ScalarRef displayName="InBusArray1x3.BusArray1x3(1)(2).a">INPUT:InBusArray1x3.BusArray1x3(1)(2).a</ScalarRef>
+				<ScalarRef displayName="InBusArray1x3.BusArray1x3(1)(2).b">INPUT:InBusArray1x3.BusArray1x3(1)(2).b</ScalarRef>
+				<ScalarRef displayName="InBusArray1x3.BusArray1x3(1)(3).a">INPUT:InBusArray1x3.BusArray1x3(1)(3).a</ScalarRef>
+				<ScalarRef displayName="InBusArray1x3.BusArray1x3(1)(3).b">INPUT:InBusArray1x3.BusArray1x3(1)(3).b</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="3" dim1="3" dim2="1" type="MyBus2Scalars" signalName="BusArray3x1">
+			<ScalarRefs>
+				<ScalarRef displayName="InBusArray3x1.BusArray3x1(1)(1).a">INPUT:InBusArray3x1.BusArray3x1(1)(1).a</ScalarRef>
+				<ScalarRef displayName="InBusArray3x1.BusArray3x1(1)(1).b">INPUT:InBusArray3x1.BusArray3x1(1)(1).b</ScalarRef>
+				<ScalarRef displayName="InBusArray3x1.BusArray3x1(2)(1).a">INPUT:InBusArray3x1.BusArray3x1(2)(1).a</ScalarRef>
+				<ScalarRef displayName="InBusArray3x1.BusArray3x1(2)(1).b">INPUT:InBusArray3x1.BusArray3x1(2)(1).b</ScalarRef>
+				<ScalarRef displayName="InBusArray3x1.BusArray3x1(3)(1).a">INPUT:InBusArray3x1.BusArray3x1(3)(1).a</ScalarRef>
+				<ScalarRef displayName="InBusArray3x1.BusArray3x1(3)(1).b">INPUT:InBusArray3x1.BusArray3x1(3)(1).b</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="4" type="double" signalName="scalar">
+			<ScalarRefs>
+				<ScalarRef displayName="InScalar">INPUT:InScalar</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+	</Outports>
+</SFunction>

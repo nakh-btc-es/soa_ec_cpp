@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<BusType name="myBus" virtual="false">
+			<Comp name="InBusA.InBusA.FlptSig1" type="single" />
+			<Comp name="InBusA.InBusA.FlptSig2" type="single" />
+		</BusType>
+		<BusType name="myBusOfBuses" virtual="false">
+			<Comp name="InD.InBusOfBuses.BusSig1.FlptSig1" type="single" />
+			<Comp name="InD.InBusOfBuses.BusSig1.FlptSig2" type="single" />
+			<Comp name="InD.InBusOfBuses.BusSig2.FxptSig1" type="fixdt(1,16,0.03125,0)" />
+			<Comp name="InD.InBusOfBuses.BusSig2.FxptSig2" type="fixdt(1,16,0.03125,0)" />
+		</BusType>
+		<BusType name="myBusOfSignalAndBus" virtual="false">
+			<Comp name="InF.InBusOfSignalAndBus.DoubleFlptSig" type="double" />
+			<Comp name="InF.InBusOfSignalAndBus.BusSig1.FlptSig1" type="single" />
+			<Comp name="InF.InBusOfSignalAndBus.BusSig1.FlptSig2" type="single" />
+		</BusType>
+	</Types>
+	<Outports sampleTime="0.01">
+		<Outport portNr="1" width="1" type="myBus">
+			<ScalarRefs>
+				<ScalarRef>INPUT:InBusA.InBusA.FlptSig1</ScalarRef>
+				<ScalarRef>INPUT:InBusA.InBusA.FlptSig2</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="2" type="single">
+			<ScalarRefs>
+				<ScalarRef>INPUT:InB</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="3" type="single">
+			<ScalarRefs>
+				<ScalarRef>INPUT:InC</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="4" width="1" type="myBusOfBuses">
+			<ScalarRefs>
+				<ScalarRef>INPUT:InD.InBusOfBuses.BusSig1.FlptSig1</ScalarRef>
+				<ScalarRef>INPUT:InD.InBusOfBuses.BusSig1.FlptSig2</ScalarRef>
+				<ScalarRef>INPUT:InD.InBusOfBuses.BusSig2.FxptSig1</ScalarRef>
+				<ScalarRef>INPUT:InD.InBusOfBuses.BusSig2.FxptSig2</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="5" type="single">
+			<ScalarRefs>
+				<ScalarRef>INPUT:InE</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="6" width="1" type="myBusOfSignalAndBus">
+			<ScalarRefs>
+				<ScalarRef>INPUT:InF.InBusOfSignalAndBus.DoubleFlptSig</ScalarRef>
+				<ScalarRef>INPUT:InF.InBusOfSignalAndBus.BusSig1.FlptSig1</ScalarRef>
+				<ScalarRef>INPUT:InF.InBusOfSignalAndBus.BusSig1.FlptSig2</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+	</Outports>
+</SFunction>

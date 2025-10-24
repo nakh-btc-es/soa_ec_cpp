@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl40_02\TLProj\Subsystem" name="Subsystem.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl40_02\TLSim" name="RteIv.c" kind="source" annotate="no" id="fID2"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl40_02\TLSim" name="Rte.c" kind="source" annotate="no" id="fID3"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl40_02\TLSim" name="Subsystem_ARfrm.c" kind="source" annotate="no" id="fID4"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl40_02\TLSim" name="Subsystem_fri.c" kind="source" annotate="no" id="fID5"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl40_02\TLProj\Subsystem"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1be4c956\tl40_02\TLSim"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="CalibrationSupport [C-Code]">
+    <Function name="Run_Subsystem" initFunc="Rte_Start" proxyFunc="Task_Run_Subsystem_Wrapper" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="in" var="Rte_CalibrationSupport_AR_RP_input_input" scaling="scID1" min="-1.0000000000000000e+01" max="1.0000000000000000e+01"/>
+        <InterfaceObj kind="in" var="Rte_CalibrationSupport_AR_RP_In1_In1" scaling="scID1" min="-1.0000000000000000e+01" max="1.0000000000000000e+01"/>
+        <InterfaceObj kind="cal" var="Ca29_pv" access="[0]" fileref="fID1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ca29_pv" access="[1]" fileref="fID1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ca29_pv" access="[2]" fileref="fID1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ca29_cv" access="[0]" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ca29_cv" access="[1]" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ca10_p1" fileref="fID1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ca10_c1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa7_C2_lower" scaling="scID1" min="-1.5000000000000000e+01" max="1.5000000000000000e+01" initVal="-4.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa7_C2_upper" scaling="scID1" min="-1.5000000000000000e+01" max="1.5000000000000000e+01" initVal="4.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa6_P1_offswitch" fileref="fID1" scaling="scID1" initVal="-1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa6_P1_onswitch" fileref="fID1" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa6_C1_offswitch" scaling="scID1" initVal="-1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa6_C1_onswitch" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa5_P1_offoutput" fileref="fID1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa5_P1_onoutput" fileref="fID1" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa5_C1_offoutput" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa5_C1_onoutput" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa3_P1_threshold" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa3_Const1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa2_Gain_facto__CAL__int8__gain" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r1out_r1out" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r2out_r2out" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r3out_r3out" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r1out1_r1out1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r2out1_r2out1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r3out1_r3out1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r1out2_r1out2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r2out2_r2out2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r3out2_r3out2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r1out3_r1out3" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r2out3_r2out3" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r3out3_r3out3" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r1out4_r1out4" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r2out4_r2out4" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r3out4_r3out4" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r1out5_r1out5" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r2out5_r2out5" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r3out5_r3out5" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r1out6_r1out6" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r2out6_r2out6" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Rte_CalibrationSupport_AR_PP_r3out6_r3out6" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa2_EP2_F178_TSC_1" fileref="fID1" initFunc="Rte_Start" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="cal" var="Sa2_Gain_facto__CAL__int8__gain" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa2_r1out" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa2_r2out" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa2_r3out" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa3_SC1002" initFunc="Rte_Start" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa3_input" scaling="scID1" min="-1.0000000000000000e+02" max="1.0000000000000000e+02"/>
+        <InterfaceObj kind="cal" var="Sa3_P1_threshold" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa3_Const1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa3_r1out" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa3_r2out" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa3_r1out1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa4_SC1003" fileref="fID1" initFunc="Rte_Start" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="cal" var="Ca10_p1" fileref="fID1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ca10_c1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa4_r1out" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa4_r2out" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa4_r1out1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa5_SC1004" fileref="fID1" initFunc="Rte_Start" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="cal" var="Sa5_P1_offoutput" fileref="fID1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa5_P1_onoutput" fileref="fID1" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa5_C1_offoutput" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa5_C1_onoutput" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa5_r1out2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa5_r2out1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa5_r1out3" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa6_SC1005" fileref="fID1" initFunc="Rte_Start" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="cal" var="Sa6_P1_offswitch" fileref="fID1" scaling="scID1" initVal="-1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa6_P1_onswitch" fileref="fID1" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa6_C1_offswitch" scaling="scID1" initVal="-1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa6_C1_onswitch" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa6_r1out" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa6_r2out" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa6_r1out1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa7_SC1006" fileref="fID1" initFunc="Rte_Start" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa7_In1" scaling="scID1" min="-1.0000000000000000e+01" max="1.0000000000000000e+01"/>
+        <InterfaceObj kind="cal" var="Sa7_C2_lower" scaling="scID1" min="-1.5000000000000000e+01" max="1.5000000000000000e+01" initVal="-4.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa7_C2_upper" scaling="scID1" min="-1.5000000000000000e+01" max="1.5000000000000000e+01" initVal="4.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa7_r1out" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa7_r2out" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa7_r1out1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa8_SC1007" fileref="fID1" initFunc="Rte_Start" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="cal" var="Ca29_pv" access="[0]" fileref="fID1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ca29_pv" access="[1]" fileref="fID1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ca29_pv" access="[2]" fileref="fID1" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ca29_cv" access="[0]" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Ca29_cv" access="[1]" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa8_r1out" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa8_r2out" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa8_r1out1" scaling="scID1"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_single_top_dummy_ec\init.m" modelVersion="1.72" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_single_top_dummy_ec\single_top.mdl" modelCreationDate="2019-07-15T13:51:36" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.72" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_single_top_dummy_ec\single_top.mdl" creationDate="2019-07-15T13:51:36" modificationDate="2024-09-11T18:15:04" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_single_top_dummy_ec\init.m">
+    <subsystem subsysID="ss1" physicalPath="single_top/top_A" path="top_A" sampleTime="2" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="single_top/top_A/In1" path="top_A/In1" signalName="sig_in1">
+        <boolean/>
+      </inport>
+      <parameter name="paramA" path="top_A/Constant" physicalPath="single_top/top_A/Constant" origin="explicit_param" workspace="paramA" initValue="1">
+        <boolean/>
+        <usageContext path="top_A/Constant" physicalPath="single_top/top_A/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="single_top/top_A/Out1" path="top_A/Out1" signalName="sig_A">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

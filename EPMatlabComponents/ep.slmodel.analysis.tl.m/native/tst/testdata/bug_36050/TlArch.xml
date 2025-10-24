@@ -1,0 +1,2075 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="12.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240913T143450_13820\tmp_ut_bug_36050\TOxiCatUs_VD.slx" modelCreationDate="2014-04-14T14:36:56" creator="k578561">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="5.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="12.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240913T143450_13820\tmp_ut_bug_36050\TOxiCatUs_VD.slx" creationDate="2014-04-14T14:36:56" modificationDate="2024-09-13T16:47:02">
+    <subsystem subsysID="ss1" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD" sampleTime="0.02" name="TOxiCatUs_VD" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="Air_tAFS" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Air_tAFS" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Air_tAFS">
+        <miltype signalName="Air_tAFS [°C]">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" unitName="deg C" signalName="Air_tAFS [°C]">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="CoEng_st" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/CoEng_st" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/CoEng_st">
+        <miltype signalName="CoEng_st [-]">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="CoEng_st [-]">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="CoEng_stLoIdlDet" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/CoEng_stLoIdlDet" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/CoEng_stLoIdlDet">
+        <miltype signalName="CoEng_stLoIdlDet [-]">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" unitName="-" signalName="CoEng_stLoIdlDet [-]">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="EngDa_tEng" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/EngDa_tEng" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/EngDa_tEng">
+        <miltype signalName="EngDa_tEng [°C]">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" unitName="deg C" signalName="EngDa_tEng [°C]">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+        </siltype>
+      </inport>
+      <inport portNumber="5" name="EnvT_t" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/EnvT_t" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/EnvT_t">
+        <miltype signalName="EnvT_t [°C]">
+          <double/>
+        </miltype>
+        <siltype unitName="deg C" signalName="EnvT_t [°C]">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+        </siltype>
+      </inport>
+      <inport portNumber="6" name="Epm_nEng" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Epm_nEng" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Epm_nEng">
+        <miltype signalName="Epm_nEng [rpm]">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" unitName="rpm" signalName="Epm_nEng [rpm]">
+          <fixedPoint baseType="Int16" lsb="5.0000000000000000e-01" offset="0.0000000000000000e+00" min="-1.6384000000000000e+04" max="1.6383500000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="7" name="Exh_tOxiCatDs" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Exh_tOxiCatDs" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Exh_tOxiCatDs">
+        <miltype signalName="Exh_tOxiCatDs [°C]">
+          <double/>
+        </miltype>
+        <siltype unitName="deg C" signalName="Exh_tOxiCatDs [°C]">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+        </siltype>
+      </inport>
+      <inport portNumber="8" name="Exh_tSensTOxiCatUs" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Exh_tSensTOxiCatUs" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Exh_tSensTOxiCatUs">
+        <miltype signalName="Exh_tSensTOxiCatUs [°C]">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" unitName="deg C" signalName="Exh_tSensTOxiCatUs [°C]">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+        </siltype>
+      </inport>
+      <inport portNumber="9" name="FId_TOxiCatUsDiaInhib" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/FId_TOxiCatUsDiaInhib" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/FId_TOxiCatUsDiaInhib">
+        <miltype signalName="FId_TOxiCatUsDiaInhib [-]">
+          <single/>
+        </miltype>
+        <siltype unitName="-" signalName="FId_TOxiCatUsDiaInhib [-]">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="10" name="FId_TOxiCatUsFrzVal" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/FId_TOxiCatUsFrzVal" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/FId_TOxiCatUsFrzVal">
+        <miltype signalName="FId_TOxiCatUsFrzVal [-]">
+          <double/>
+        </miltype>
+        <siltype missingTypeSinceNoCVar="true" signalName="FId_TOxiCatUsFrzVal [-]">
+          <unsupportedTypeInformation/>
+        </siltype>
+      </inport>
+      <inport portNumber="11" name="FId_TOxiCatUsRplVal" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/FId_TOxiCatUsRplVal" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/FId_TOxiCatUsRplVal">
+        <miltype signalName="FId_TOxiCatUsRplVal [-]">
+          <double/>
+        </miltype>
+        <siltype unitName="-" signalName="FId_TOxiCatUsRplVal [-]">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="12" name="FId_TOxiCatUsSwtRpl2Dfl" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/FId_TOxiCatUsSwtRpl2Dfl" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/FId_TOxiCatUsSwtRpl2Dfl">
+        <miltype signalName="FId_TOxiCatUsSwtRpl2Dfl [-]">
+          <double/>
+        </miltype>
+        <siltype missingTypeSinceNoCVar="true" signalName="FId_TOxiCatUsSwtRpl2Dfl [-]">
+          <unsupportedTypeInformation/>
+        </siltype>
+      </inport>
+      <inport portNumber="13" name="InjCtl_qSetUnBal" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/InjCtl_qSetUnBal" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/InjCtl_qSetUnBal">
+        <miltype signalName="InjCtl_qSetUnBal [mg/str]">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" unitName="mg/hub" signalName="InjCtl_qSetUnBal [mg/str]">
+          <fixedPoint baseType="Int16" lsb="2.0000000000000000e-02" offset="-0.0000000000000000e+00" min="-6.5536000000000001e+02" max="6.5534000000000003e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="14" name="PFltRgn_stModeActv" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/PFltRgn_stModeActv" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/PFltRgn_stModeActv">
+        <miltype signalName="PFltRgn_stModeActv [-]">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" unitName="-" signalName="PFltRgn_stModeActv [-]">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="15" name="SCR_tAdapUCatUsT" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/SCR_tAdapUCatUsT" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/SCR_tAdapUCatUsT">
+        <miltype signalName="SCR_tAdapUCatUsT [°C]">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" unitName="deg C" signalName="SCR_tAdapUCatUsT [°C]">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+        </siltype>
+      </inport>
+      <inport portNumber="16" name="StSys_stValidReq" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/StSys_stValidReq" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/StSys_stValidReq">
+        <miltype signalName="StSys_stValidReq [-]">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" unitName="-" signalName="StSys_stValidReq [-]">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </inport>
+      <inport portNumber="17" name="SCR_stWrmUpLstDrvCyc" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/SCR_stWrmUpLstDrvCyc" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/SCR_stWrmUpLstDrvCyc">
+        <miltype signalName="SCR_stWrmUpLstDrvCyc [-]">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" unitName="-" signalName="SCR_stWrmUpLstDrvCyc [-]">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </inport>
+      <calibration name="TOxiCatUs_TransStgDfl_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Replace value/TOxiCatUs_TransStgDfl_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Replace value/TOxiCatUs_TransStgDfl_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_TransStgDfl_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Replace value/TOxiCatUs_TransStgDfl_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Replace value/TOxiCatUs_TransStgDfl_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tiStdStActvDel_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiStdStActvDel_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiStdStActvDel_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tiStdStActvDel_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiStdStActvDel_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiStdStActvDel_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tiEngRunDel_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiEngRunDel_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiEngRunDel_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tiEngRunDel_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiEngRunDel_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiEngRunDel_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tiEngRunDelOff_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiEngRunDelOff_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiEngRunDelOff_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tiEngRunDelOff_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiEngRunDelOff_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiEngRunDelOff_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tThresEnvEng_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tThresEnvEng_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tThresEnvEng_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tThresEnvEng_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tThresEnvEng_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tThresEnvEng_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tThresEngUCat_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tThresEngUCat_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tThresEngUCat_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tThresEngUCat_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tThresEngUCat_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tThresEngUCat_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tUsEnvOffs_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/TOxiCatUs_tUsEnvOffs_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/TOxiCatUs_tUsEnvOffs_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tUsEnvOffs_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/TOxiCatUs_tUsEnvOffs_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/TOxiCatUs_tUsEnvOffs_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tThresOxiCatUsDs_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/TOxiCatUs_tThresOxiCatUsDs_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/TOxiCatUs_tThresOxiCatUsDs_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tThresOxiCatUsDs_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/TOxiCatUs_tThresOxiCatUsDs_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/TOxiCatUs_tThresOxiCatUsDs_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tWrnThresHi_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tWrnThresHi_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tWrnThresHi_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tWrnThresHi_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tWrnThresHi_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tWrnThresHi_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tWrnThresHiRgn_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tWrnThresHiRgn_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tWrnThresHiRgn_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tWrnThresHiRgn_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tWrnThresHiRgn_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tWrnThresHiRgn_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tShOffThresHi_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tShOffThresHi_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tShOffThresHi_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tShOffThresHi_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tShOffThresHi_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tShOffThresHi_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tShOffThresHiRgn_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tShOffThresHiRgn_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tShOffThresHiRgn_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tShOffThresHiRgn_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tShOffThresHiRgn_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tShOffThresHiRgn_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tHealThresHi_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tHealThresHi_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tHealThresHi_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tHealThresHi_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tHealThresHi_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tHealThresHi_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tiPT1_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter/TOxiCatUs_tiPT1_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter/TOxiCatUs_tiPT1_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tiPT1_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="s">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="0.0000000000000000e+00" min="-3.2768000000000002e+03" max="3.2767000000000003e+03"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter/TOxiCatUs_tiPT1_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter/TOxiCatUs_tiPT1_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="Exh_tOxiCatUs" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Exh_tOxiCatUs" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Exh_tOxiCatUs">
+        <miltype signalName="Exh_tOxiCatUs">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" unitName="deg C" signalName="Exh_tOxiCatUs">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="Exh_tAdapTOxiCatUs" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Exh_tAdapTOxiCatUs" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Exh_tAdapTOxiCatUs">
+        <miltype signalName="Exh_tOxiCatUs">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" unitName="deg C" signalName="Exh_tOxiCatUs">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+        </siltype>
+      </outport>
+      <display physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter/TOxiCatUs_tFlt_mp/TOxiCatUs_tFlt_mp" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter/TOxiCatUs_tFlt_mp/TOxiCatUs_tFlt_mp" name="TOxiCatUs_tFlt_mp" portNumber="1">
+        <miltype signalName="TOxiCatUs_tFlt_mp">
+          <double/>
+        </miltype>
+        <siltype unitName="deg C" signalName="TOxiCatUs_tFlt_mp">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+        </siltype>
+      </display>
+      <display physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_stNplDynChkEna_mp/TOxiCatUs_stNplDynChkEna_mp" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_stNplDynChkEna_mp/TOxiCatUs_stNplDynChkEna_mp" name="TOxiCatUs_stNplDynChkEna_mp" portNumber="1">
+        <miltype signalName="TOxiCatUs_stNplDynChkEna_mp">
+          <fixedPoint wordLength="8" simulinkTypeName="fixdt(0,8,7)" isSigned="0" slope="7.8125000000000000e-03" bias="0.0000000000000000e+00" min="0.0" max="1.9921875"/>
+        </miltype>
+        <siltype unitName="-" signalName="TOxiCatUs_stNplDynChkEna_mp">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_stNplStatChkEna_mp/TOxiCatUs_stNplStatChkEna_mp" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_stNplStatChkEna_mp/TOxiCatUs_stNplStatChkEna_mp" name="TOxiCatUs_stNplStatChkEna_mp" portNumber="1">
+        <miltype signalName="TOxiCatUs_stNplStatChkEna_mp">
+          <fixedPoint wordLength="8" simulinkTypeName="fixdt(0,8,7)" isSigned="0" slope="7.8125000000000000e-03" bias="0.0000000000000000e+00" min="0.0" max="1.9921875"/>
+        </miltype>
+        <siltype unitName="-" signalName="TOxiCatUs_stNplStatChkEna_mp">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_stStdStActvDel_mp/TOxiCatUs_stStdStActvDel_mp" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_stStdStActvDel_mp/TOxiCatUs_stStdStActvDel_mp" name="TOxiCatUs_stStdStActvDel_mp" portNumber="1">
+        <miltype signalName="TOxiCatUs_stStdStActvDel_mp">
+          <fixedPoint wordLength="8" simulinkTypeName="fixdt(0,8,7)" isSigned="0" slope="7.8125000000000000e-03" bias="0.0000000000000000e+00" min="0.0" max="1.9921875"/>
+        </miltype>
+        <siltype unitName="-" signalName="TOxiCatUs_stStdStActvDel_mp">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/InitHandling" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/InitHandling" sampleTime="0.02" name="InitHandling" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="cBus" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/InitHandling/cBus" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/InitHandling/cBus">
+        <miltype>
+          <bus>
+            <signal signalName="cBus.SigIn.Air_tAFS [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.CoEng_st [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.CoEng_stLoIdlDet [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.EngDa_tEng [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.EnvT_t [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Epm_nEng [rpm]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Exh_tOxiCatDs [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Exh_tSensTOxiCatUs [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsDiaInhib [-]">
+              <single/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsFrzVal [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsRplVal [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsSwtRpl2Dfl [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.InjCtl_qSetUnBal [mg/str]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.PFltRgn_stModeActv [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.SCR_tAdapUCatUsT [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.StSys_stValidReq [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.SCR_stWrmUpLstDrvCyc [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiWarn">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiShOff">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsNpl">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.RepVal.Exh_tOxiCatUs">
+              <double/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiWarn">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiShOff">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiHeal">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplStatChk">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplDynChk">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.InitHdl.TOxiCatDs_stGlbIni">
+              <double/>
+            </signal>
+            <signal signalName="cBus.PreProc.InptFlt.TOxiCatUs_tFlt">
+              <double/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stEngRun">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplStatChkEna">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplDynChkEna">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stStdStActvDel">
+              <boolean/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.Air_tAFS [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" signalName="cBus.SigIn.CoEng_st [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.CoEng_stLoIdlDet [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.EngDa_tEng [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal unitName="deg C" signalName="cBus.SigIn.EnvT_t [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="rpm" signalName="cBus.SigIn.Epm_nEng [rpm]">
+              <fixedPoint baseType="Int16" lsb="5.0000000000000000e-01" offset="0.0000000000000000e+00" min="-1.6384000000000000e+04" max="1.6383500000000000e+04"/>
+            </signal>
+            <signal unitName="deg C" signalName="cBus.SigIn.Exh_tOxiCatDs [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.Exh_tSensTOxiCatUs [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal unitName="-" signalName="cBus.SigIn.FId_TOxiCatUsDiaInhib [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.SigIn.FId_TOxiCatUsFrzVal [-]">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal unitName="-" signalName="cBus.SigIn.FId_TOxiCatUsRplVal [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.SigIn.FId_TOxiCatUsSwtRpl2Dfl [-]">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="mg/hub" signalName="cBus.SigIn.InjCtl_qSetUnBal [mg/str]">
+              <fixedPoint baseType="Int16" lsb="2.0000000000000000e-02" offset="-0.0000000000000000e+00" min="-6.5536000000000001e+02" max="6.5534000000000003e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.PFltRgn_stModeActv [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.SCR_tAdapUCatUsT [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.StSys_stValidReq [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.SCR_stWrmUpLstDrvCyc [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiWarn">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiShOff">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsNpl">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.OutAdj.RepVal.Exh_tOxiCatUs">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiWarn">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiShOff">
+              <Bool/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiHeal">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplStatChk">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplDynChk">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.InitHdl.TOxiCatDs_stGlbIni">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="cBus.PreProc.InptFlt.TOxiCatUs_tFlt">
+              <Float32/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.PreProc.RlsCond.TOxiCatUs_stEngRun">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplStatChkEna">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplDynChkEna">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stStdStActvDel">
+              <Bool/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="InitHdl" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/InitHandling/InitHdl" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/InitHandling/InitHdl">
+        <miltype>
+          <bus>
+            <signal signalName="InitHdl.TOxiCatDs_stGlbIni">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="InitHdl.TOxiCatDs_stGlbIni">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter" sampleTime="0.02" name="Input Filter" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="cBus" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter/cBus" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter/cBus">
+        <miltype>
+          <bus>
+            <signal signalName="cBus.SigIn.Air_tAFS [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.CoEng_st [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.CoEng_stLoIdlDet [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.EngDa_tEng [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.EnvT_t [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Epm_nEng [rpm]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Exh_tOxiCatDs [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Exh_tSensTOxiCatUs [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsDiaInhib [-]">
+              <single/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsFrzVal [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsRplVal [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsSwtRpl2Dfl [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.InjCtl_qSetUnBal [mg/str]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.PFltRgn_stModeActv [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.SCR_tAdapUCatUsT [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.StSys_stValidReq [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.SCR_stWrmUpLstDrvCyc [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiWarn">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiShOff">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsNpl">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.RepVal.Exh_tOxiCatUs">
+              <double/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiWarn">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiShOff">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiHeal">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplStatChk">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplDynChk">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.InitHdl.TOxiCatDs_stGlbIni">
+              <double/>
+            </signal>
+            <signal signalName="cBus.PreProc.InptFlt.TOxiCatUs_tFlt">
+              <double/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stEngRun">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplStatChkEna">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplDynChkEna">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stStdStActvDel">
+              <boolean/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.Air_tAFS [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" signalName="cBus.SigIn.CoEng_st [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.CoEng_stLoIdlDet [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.EngDa_tEng [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal unitName="deg C" signalName="cBus.SigIn.EnvT_t [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="rpm" signalName="cBus.SigIn.Epm_nEng [rpm]">
+              <fixedPoint baseType="Int16" lsb="5.0000000000000000e-01" offset="0.0000000000000000e+00" min="-1.6384000000000000e+04" max="1.6383500000000000e+04"/>
+            </signal>
+            <signal unitName="deg C" signalName="cBus.SigIn.Exh_tOxiCatDs [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.Exh_tSensTOxiCatUs [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal unitName="-" signalName="cBus.SigIn.FId_TOxiCatUsDiaInhib [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.SigIn.FId_TOxiCatUsFrzVal [-]">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal unitName="-" signalName="cBus.SigIn.FId_TOxiCatUsRplVal [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.SigIn.FId_TOxiCatUsSwtRpl2Dfl [-]">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="mg/hub" signalName="cBus.SigIn.InjCtl_qSetUnBal [mg/str]">
+              <fixedPoint baseType="Int16" lsb="2.0000000000000000e-02" offset="-0.0000000000000000e+00" min="-6.5536000000000001e+02" max="6.5534000000000003e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.PFltRgn_stModeActv [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.SCR_tAdapUCatUsT [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.StSys_stValidReq [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.SCR_stWrmUpLstDrvCyc [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiWarn">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiShOff">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsNpl">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.OutAdj.RepVal.Exh_tOxiCatUs">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiWarn">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiShOff">
+              <Bool/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiHeal">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplStatChk">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplDynChk">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.InitHdl.TOxiCatDs_stGlbIni">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="cBus.PreProc.InptFlt.TOxiCatUs_tFlt">
+              <Float32/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.PreProc.RlsCond.TOxiCatUs_stEngRun">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplStatChkEna">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplDynChkEna">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stStdStActvDel">
+              <Bool/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <calibration name="TOxiCatUs_tiPT1_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter/TOxiCatUs_tiPT1_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter/TOxiCatUs_tiPT1_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tiPT1_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="s">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="0.0000000000000000e+00" min="-3.2768000000000002e+03" max="3.2767000000000003e+03"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter/TOxiCatUs_tiPT1_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter/TOxiCatUs_tiPT1_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="InptFlt" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter/InptFlt" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter/InptFlt">
+        <miltype>
+          <bus>
+            <signal signalName="InptFlt.TOxiCatUs_tFlt">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="InptFlt.TOxiCatUs_tFlt">
+              <Float32/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+      <display physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter/TOxiCatUs_tFlt_mp/TOxiCatUs_tFlt_mp" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Input Filter/TOxiCatUs_tFlt_mp/TOxiCatUs_tFlt_mp" name="TOxiCatUs_tFlt_mp" portNumber="1">
+        <miltype signalName="TOxiCatUs_tFlt_mp">
+          <double/>
+        </miltype>
+        <siltype unitName="deg C" signalName="TOxiCatUs_tFlt_mp">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check" sampleTime="0.02" name="Physical range check" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="cBus" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/cBus" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/cBus">
+        <miltype>
+          <bus>
+            <signal signalName="cBus.SigIn.Air_tAFS [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.CoEng_st [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.CoEng_stLoIdlDet [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.EngDa_tEng [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.EnvT_t [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Epm_nEng [rpm]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Exh_tOxiCatDs [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Exh_tSensTOxiCatUs [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsDiaInhib [-]">
+              <single/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsFrzVal [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsRplVal [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsSwtRpl2Dfl [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.InjCtl_qSetUnBal [mg/str]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.PFltRgn_stModeActv [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.SCR_tAdapUCatUsT [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.StSys_stValidReq [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.SCR_stWrmUpLstDrvCyc [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiWarn">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiShOff">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsNpl">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.RepVal.Exh_tOxiCatUs">
+              <double/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiWarn">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiShOff">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiHeal">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplStatChk">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplDynChk">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.InitHdl.TOxiCatDs_stGlbIni">
+              <double/>
+            </signal>
+            <signal signalName="cBus.PreProc.InptFlt.TOxiCatUs_tFlt">
+              <double/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stEngRun">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplStatChkEna">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplDynChkEna">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stStdStActvDel">
+              <boolean/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.Air_tAFS [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" signalName="cBus.SigIn.CoEng_st [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.CoEng_stLoIdlDet [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.EngDa_tEng [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal unitName="deg C" signalName="cBus.SigIn.EnvT_t [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="rpm" signalName="cBus.SigIn.Epm_nEng [rpm]">
+              <fixedPoint baseType="Int16" lsb="5.0000000000000000e-01" offset="0.0000000000000000e+00" min="-1.6384000000000000e+04" max="1.6383500000000000e+04"/>
+            </signal>
+            <signal unitName="deg C" signalName="cBus.SigIn.Exh_tOxiCatDs [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.Exh_tSensTOxiCatUs [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal unitName="-" signalName="cBus.SigIn.FId_TOxiCatUsDiaInhib [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.SigIn.FId_TOxiCatUsFrzVal [-]">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal unitName="-" signalName="cBus.SigIn.FId_TOxiCatUsRplVal [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.SigIn.FId_TOxiCatUsSwtRpl2Dfl [-]">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="mg/hub" signalName="cBus.SigIn.InjCtl_qSetUnBal [mg/str]">
+              <fixedPoint baseType="Int16" lsb="2.0000000000000000e-02" offset="-0.0000000000000000e+00" min="-6.5536000000000001e+02" max="6.5534000000000003e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.PFltRgn_stModeActv [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.SCR_tAdapUCatUsT [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.StSys_stValidReq [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.SCR_stWrmUpLstDrvCyc [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiWarn">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiShOff">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsNpl">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.OutAdj.RepVal.Exh_tOxiCatUs">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiWarn">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiShOff">
+              <Bool/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiHeal">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplStatChk">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplDynChk">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.InitHdl.TOxiCatDs_stGlbIni">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="cBus.PreProc.InptFlt.TOxiCatUs_tFlt">
+              <Float32/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.PreProc.RlsCond.TOxiCatUs_stEngRun">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplStatChkEna">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplDynChkEna">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stStdStActvDel">
+              <Bool/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <calibration name="TOxiCatUs_tWrnThresHi_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tWrnThresHi_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tWrnThresHi_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tWrnThresHi_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tWrnThresHi_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tWrnThresHi_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tWrnThresHiRgn_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tWrnThresHiRgn_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tWrnThresHiRgn_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tWrnThresHiRgn_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tWrnThresHiRgn_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tWrnThresHiRgn_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tShOffThresHi_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tShOffThresHi_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tShOffThresHi_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tShOffThresHi_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tShOffThresHi_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tShOffThresHi_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tShOffThresHiRgn_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tShOffThresHiRgn_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tShOffThresHiRgn_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tShOffThresHiRgn_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tShOffThresHiRgn_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tShOffThresHiRgn_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tHealThresHi_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tHealThresHi_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tHealThresHi_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tHealThresHi_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tHealThresHi_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/TOxiCatUs_tHealThresHi_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="PhysRng" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/PhysRng" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Physical range check/PhysRng">
+        <miltype>
+          <bus>
+            <signal signalName="PhysRng.TOxiCatUs_stPhysRngHiWarn">
+              <boolean/>
+            </signal>
+            <signal signalName="PhysRng.TOxiCatUs_stPhysRngHiShOff">
+              <boolean/>
+            </signal>
+            <signal signalName="PhysRng.TOxiCatUs_stPhysRngHiHeal">
+              <boolean/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="PhysRng.TOxiCatUs_stPhysRngHiWarn">
+              <Bool/>
+            </signal>
+            <signal signalName="PhysRng.TOxiCatUs_stPhysRngHiShOff">
+              <Bool/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="PhysRng.TOxiCatUs_stPhysRngHiHeal">
+              <unsupportedTypeInformation/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check" sampleTime="0.02" name="Plausibility check" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="cBus" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/cBus" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/cBus">
+        <miltype>
+          <bus>
+            <signal signalName="cBus.SigIn.Air_tAFS [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.CoEng_st [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.CoEng_stLoIdlDet [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.EngDa_tEng [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.EnvT_t [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Epm_nEng [rpm]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Exh_tOxiCatDs [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Exh_tSensTOxiCatUs [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsDiaInhib [-]">
+              <single/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsFrzVal [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsRplVal [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsSwtRpl2Dfl [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.InjCtl_qSetUnBal [mg/str]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.PFltRgn_stModeActv [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.SCR_tAdapUCatUsT [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.StSys_stValidReq [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.SCR_stWrmUpLstDrvCyc [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiWarn">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiShOff">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsNpl">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.RepVal.Exh_tOxiCatUs">
+              <double/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiWarn">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiShOff">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiHeal">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplStatChk">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplDynChk">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.InitHdl.TOxiCatDs_stGlbIni">
+              <double/>
+            </signal>
+            <signal signalName="cBus.PreProc.InptFlt.TOxiCatUs_tFlt">
+              <double/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stEngRun">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplStatChkEna">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplDynChkEna">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stStdStActvDel">
+              <boolean/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.Air_tAFS [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" signalName="cBus.SigIn.CoEng_st [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.CoEng_stLoIdlDet [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.EngDa_tEng [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal unitName="deg C" signalName="cBus.SigIn.EnvT_t [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="rpm" signalName="cBus.SigIn.Epm_nEng [rpm]">
+              <fixedPoint baseType="Int16" lsb="5.0000000000000000e-01" offset="0.0000000000000000e+00" min="-1.6384000000000000e+04" max="1.6383500000000000e+04"/>
+            </signal>
+            <signal unitName="deg C" signalName="cBus.SigIn.Exh_tOxiCatDs [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.Exh_tSensTOxiCatUs [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal unitName="-" signalName="cBus.SigIn.FId_TOxiCatUsDiaInhib [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.SigIn.FId_TOxiCatUsFrzVal [-]">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal unitName="-" signalName="cBus.SigIn.FId_TOxiCatUsRplVal [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.SigIn.FId_TOxiCatUsSwtRpl2Dfl [-]">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="mg/hub" signalName="cBus.SigIn.InjCtl_qSetUnBal [mg/str]">
+              <fixedPoint baseType="Int16" lsb="2.0000000000000000e-02" offset="-0.0000000000000000e+00" min="-6.5536000000000001e+02" max="6.5534000000000003e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.PFltRgn_stModeActv [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.SCR_tAdapUCatUsT [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.StSys_stValidReq [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.SCR_stWrmUpLstDrvCyc [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiWarn">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiShOff">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsNpl">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.OutAdj.RepVal.Exh_tOxiCatUs">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiWarn">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiShOff">
+              <Bool/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiHeal">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplStatChk">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplDynChk">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.InitHdl.TOxiCatDs_stGlbIni">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="cBus.PreProc.InptFlt.TOxiCatUs_tFlt">
+              <Float32/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.PreProc.RlsCond.TOxiCatUs_stEngRun">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplStatChkEna">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplDynChkEna">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stStdStActvDel">
+              <Bool/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <calibration name="TOxiCatUs_tUsEnvOffs_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/TOxiCatUs_tUsEnvOffs_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/TOxiCatUs_tUsEnvOffs_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tUsEnvOffs_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/TOxiCatUs_tUsEnvOffs_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/TOxiCatUs_tUsEnvOffs_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tThresOxiCatUsDs_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/TOxiCatUs_tThresOxiCatUsDs_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/TOxiCatUs_tThresOxiCatUsDs_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tThresOxiCatUsDs_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/TOxiCatUs_tThresOxiCatUsDs_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/TOxiCatUs_tThresOxiCatUsDs_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="Plaus" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/Plaus" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Plausibility check/Plaus">
+        <miltype>
+          <bus>
+            <signal signalName="Plaus.TOxiCatUs_stNplStatChk">
+              <boolean/>
+            </signal>
+            <signal signalName="Plaus.TOxiCatUs_stNplDynChk">
+              <boolean/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="Plaus.TOxiCatUs_stNplStatChk">
+              <Bool/>
+            </signal>
+            <signal signalName="Plaus.TOxiCatUs_stNplDynChk">
+              <Bool/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions" sampleTime="0.02" name="Release Conditions" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="cBus" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/cBus" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/cBus">
+        <miltype>
+          <bus>
+            <signal signalName="cBus.SigIn.Air_tAFS [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.CoEng_st [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.CoEng_stLoIdlDet [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.EngDa_tEng [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.EnvT_t [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Epm_nEng [rpm]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Exh_tOxiCatDs [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Exh_tSensTOxiCatUs [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsDiaInhib [-]">
+              <single/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsFrzVal [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsRplVal [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsSwtRpl2Dfl [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.InjCtl_qSetUnBal [mg/str]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.PFltRgn_stModeActv [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.SCR_tAdapUCatUsT [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.StSys_stValidReq [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.SCR_stWrmUpLstDrvCyc [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiWarn">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiShOff">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsNpl">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.RepVal.Exh_tOxiCatUs">
+              <double/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiWarn">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiShOff">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiHeal">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplStatChk">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplDynChk">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.InitHdl.TOxiCatDs_stGlbIni">
+              <double/>
+            </signal>
+            <signal signalName="cBus.PreProc.InptFlt.TOxiCatUs_tFlt">
+              <double/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stEngRun">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplStatChkEna">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplDynChkEna">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stStdStActvDel">
+              <boolean/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.Air_tAFS [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" signalName="cBus.SigIn.CoEng_st [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.CoEng_stLoIdlDet [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.EngDa_tEng [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal unitName="deg C" signalName="cBus.SigIn.EnvT_t [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="rpm" signalName="cBus.SigIn.Epm_nEng [rpm]">
+              <fixedPoint baseType="Int16" lsb="5.0000000000000000e-01" offset="0.0000000000000000e+00" min="-1.6384000000000000e+04" max="1.6383500000000000e+04"/>
+            </signal>
+            <signal unitName="deg C" signalName="cBus.SigIn.Exh_tOxiCatDs [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.Exh_tSensTOxiCatUs [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal unitName="-" signalName="cBus.SigIn.FId_TOxiCatUsDiaInhib [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.SigIn.FId_TOxiCatUsFrzVal [-]">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal unitName="-" signalName="cBus.SigIn.FId_TOxiCatUsRplVal [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.SigIn.FId_TOxiCatUsSwtRpl2Dfl [-]">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="mg/hub" signalName="cBus.SigIn.InjCtl_qSetUnBal [mg/str]">
+              <fixedPoint baseType="Int16" lsb="2.0000000000000000e-02" offset="-0.0000000000000000e+00" min="-6.5536000000000001e+02" max="6.5534000000000003e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.PFltRgn_stModeActv [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.SCR_tAdapUCatUsT [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.StSys_stValidReq [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.SCR_stWrmUpLstDrvCyc [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiWarn">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiShOff">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsNpl">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.OutAdj.RepVal.Exh_tOxiCatUs">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiWarn">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiShOff">
+              <Bool/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiHeal">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplStatChk">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplDynChk">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.InitHdl.TOxiCatDs_stGlbIni">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="cBus.PreProc.InptFlt.TOxiCatUs_tFlt">
+              <Float32/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.PreProc.RlsCond.TOxiCatUs_stEngRun">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplStatChkEna">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplDynChkEna">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stStdStActvDel">
+              <Bool/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <calibration name="TOxiCatUs_tiStdStActvDel_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiStdStActvDel_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiStdStActvDel_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tiStdStActvDel_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiStdStActvDel_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiStdStActvDel_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tiEngRunDel_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiEngRunDel_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiEngRunDel_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tiEngRunDel_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiEngRunDel_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiEngRunDel_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tiEngRunDelOff_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiEngRunDelOff_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiEngRunDelOff_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tiEngRunDelOff_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiEngRunDelOff_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tiEngRunDelOff_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tThresEnvEng_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tThresEnvEng_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tThresEnvEng_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tThresEnvEng_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tThresEnvEng_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tThresEnvEng_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="TOxiCatUs_tThresEngUCat_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tThresEngUCat_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tThresEngUCat_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_tThresEngUCat_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tThresEngUCat_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_tThresEngUCat_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="RlsCond" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/RlsCond" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/RlsCond">
+        <miltype>
+          <bus>
+            <signal signalName="RlsCond.TOxiCatUs_stEngRun">
+              <boolean/>
+            </signal>
+            <signal signalName="RlsCond.TOxiCatUs_stNplStatChkEna">
+              <boolean/>
+            </signal>
+            <signal signalName="RlsCond.TOxiCatUs_stNplDynChkEna">
+              <boolean/>
+            </signal>
+            <signal signalName="RlsCond.TOxiCatUs_stStdStActvDel">
+              <boolean/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal missingTypeSinceNoCVar="true" signalName="RlsCond.TOxiCatUs_stEngRun">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="RlsCond.TOxiCatUs_stNplStatChkEna">
+              <Bool/>
+            </signal>
+            <signal signalName="RlsCond.TOxiCatUs_stNplDynChkEna">
+              <Bool/>
+            </signal>
+            <signal signalName="RlsCond.TOxiCatUs_stStdStActvDel">
+              <Bool/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+      <display physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_stNplDynChkEna_mp/TOxiCatUs_stNplDynChkEna_mp" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_stNplDynChkEna_mp/TOxiCatUs_stNplDynChkEna_mp" name="TOxiCatUs_stNplDynChkEna_mp" portNumber="1">
+        <miltype signalName="TOxiCatUs_stNplDynChkEna_mp">
+          <fixedPoint wordLength="8" simulinkTypeName="fixdt(0,8,7)" isSigned="0" slope="7.8125000000000000e-03" bias="0.0000000000000000e+00" min="0.0" max="1.9921875"/>
+        </miltype>
+        <siltype unitName="-" signalName="TOxiCatUs_stNplDynChkEna_mp">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_stNplStatChkEna_mp/TOxiCatUs_stNplStatChkEna_mp" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_stNplStatChkEna_mp/TOxiCatUs_stNplStatChkEna_mp" name="TOxiCatUs_stNplStatChkEna_mp" portNumber="1">
+        <miltype signalName="TOxiCatUs_stNplStatChkEna_mp">
+          <fixedPoint wordLength="8" simulinkTypeName="fixdt(0,8,7)" isSigned="0" slope="7.8125000000000000e-03" bias="0.0000000000000000e+00" min="0.0" max="1.9921875"/>
+        </miltype>
+        <siltype unitName="-" signalName="TOxiCatUs_stNplStatChkEna_mp">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </display>
+      <display physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_stStdStActvDel_mp/TOxiCatUs_stStdStActvDel_mp" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Release Conditions/TOxiCatUs_stStdStActvDel_mp/TOxiCatUs_stStdStActvDel_mp" name="TOxiCatUs_stStdStActvDel_mp" portNumber="1">
+        <miltype signalName="TOxiCatUs_stStdStActvDel_mp">
+          <fixedPoint wordLength="8" simulinkTypeName="fixdt(0,8,7)" isSigned="0" slope="7.8125000000000000e-03" bias="0.0000000000000000e+00" min="0.0" max="1.9921875"/>
+        </miltype>
+        <siltype unitName="-" signalName="TOxiCatUs_stStdStActvDel_mp">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Replace value" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Replace value" sampleTime="0.02" name="Replace value" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="cBus" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Replace value/cBus" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Replace value/cBus">
+        <miltype>
+          <bus>
+            <signal signalName="cBus.SigIn.Air_tAFS [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.CoEng_st [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.CoEng_stLoIdlDet [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.EngDa_tEng [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.EnvT_t [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Epm_nEng [rpm]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Exh_tOxiCatDs [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Exh_tSensTOxiCatUs [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsDiaInhib [-]">
+              <single/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsFrzVal [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsRplVal [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsSwtRpl2Dfl [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.InjCtl_qSetUnBal [mg/str]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.PFltRgn_stModeActv [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.SCR_tAdapUCatUsT [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.StSys_stValidReq [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.SCR_stWrmUpLstDrvCyc [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiWarn">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiShOff">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsNpl">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.RepVal.Exh_tOxiCatUs">
+              <double/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiWarn">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiShOff">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiHeal">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplStatChk">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplDynChk">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.InitHdl.TOxiCatDs_stGlbIni">
+              <double/>
+            </signal>
+            <signal signalName="cBus.PreProc.InptFlt.TOxiCatUs_tFlt">
+              <double/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stEngRun">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplStatChkEna">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplDynChkEna">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stStdStActvDel">
+              <boolean/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.Air_tAFS [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" signalName="cBus.SigIn.CoEng_st [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.CoEng_stLoIdlDet [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.EngDa_tEng [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal unitName="deg C" signalName="cBus.SigIn.EnvT_t [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="rpm" signalName="cBus.SigIn.Epm_nEng [rpm]">
+              <fixedPoint baseType="Int16" lsb="5.0000000000000000e-01" offset="0.0000000000000000e+00" min="-1.6384000000000000e+04" max="1.6383500000000000e+04"/>
+            </signal>
+            <signal unitName="deg C" signalName="cBus.SigIn.Exh_tOxiCatDs [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.Exh_tSensTOxiCatUs [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal unitName="-" signalName="cBus.SigIn.FId_TOxiCatUsDiaInhib [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.SigIn.FId_TOxiCatUsFrzVal [-]">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal unitName="-" signalName="cBus.SigIn.FId_TOxiCatUsRplVal [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.SigIn.FId_TOxiCatUsSwtRpl2Dfl [-]">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="mg/hub" signalName="cBus.SigIn.InjCtl_qSetUnBal [mg/str]">
+              <fixedPoint baseType="Int16" lsb="2.0000000000000000e-02" offset="-0.0000000000000000e+00" min="-6.5536000000000001e+02" max="6.5534000000000003e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.PFltRgn_stModeActv [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.SCR_tAdapUCatUsT [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.StSys_stValidReq [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.SCR_stWrmUpLstDrvCyc [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiWarn">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiShOff">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsNpl">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.OutAdj.RepVal.Exh_tOxiCatUs">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiWarn">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiShOff">
+              <Bool/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiHeal">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplStatChk">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplDynChk">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.InitHdl.TOxiCatDs_stGlbIni">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="cBus.PreProc.InptFlt.TOxiCatUs_tFlt">
+              <Float32/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.PreProc.RlsCond.TOxiCatUs_stEngRun">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplStatChkEna">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplDynChkEna">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stStdStActvDel">
+              <Bool/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <calibration name="TOxiCatUs_TransStgDfl_C" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Replace value/TOxiCatUs_TransStgDfl_C" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Replace value/TOxiCatUs_TransStgDfl_C" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/TOxiCatUs_VD/CONSTANT/TOxiCatUs_TransStgDfl_C">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="-">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Replace value/TOxiCatUs_TransStgDfl_C" targetLinkBlockKind="TL_Constant" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Replace value/TOxiCatUs_TransStgDfl_C" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="RepVal" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Replace value/RepVal" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/Replace value/RepVal">
+        <miltype>
+          <bus>
+            <signal signalName="RepVal.Exh_tOxiCatUs">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="RepVal.Exh_tOxiCatUs">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/System reactions" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/System reactions" sampleTime="0.02" name="System reactions" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="cBus" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/System reactions/cBus" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/System reactions/cBus">
+        <miltype>
+          <bus>
+            <signal signalName="cBus.SigIn.Air_tAFS [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.CoEng_st [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.CoEng_stLoIdlDet [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.EngDa_tEng [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.EnvT_t [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Epm_nEng [rpm]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Exh_tOxiCatDs [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.Exh_tSensTOxiCatUs [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsDiaInhib [-]">
+              <single/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsFrzVal [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsRplVal [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.FId_TOxiCatUsSwtRpl2Dfl [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.InjCtl_qSetUnBal [mg/str]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.PFltRgn_stModeActv [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.SCR_tAdapUCatUsT [°C]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.StSys_stValidReq [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.SigIn.SCR_stWrmUpLstDrvCyc [-]">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiWarn">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiShOff">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsNpl">
+              <double/>
+            </signal>
+            <signal signalName="cBus.OutAdj.RepVal.Exh_tOxiCatUs">
+              <double/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiWarn">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiShOff">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiHeal">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplStatChk">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplDynChk">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.InitHdl.TOxiCatDs_stGlbIni">
+              <double/>
+            </signal>
+            <signal signalName="cBus.PreProc.InptFlt.TOxiCatUs_tFlt">
+              <double/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stEngRun">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplStatChkEna">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplDynChkEna">
+              <boolean/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stStdStActvDel">
+              <boolean/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.Air_tAFS [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" signalName="cBus.SigIn.CoEng_st [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.CoEng_stLoIdlDet [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.EngDa_tEng [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal unitName="deg C" signalName="cBus.SigIn.EnvT_t [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="rpm" signalName="cBus.SigIn.Epm_nEng [rpm]">
+              <fixedPoint baseType="Int16" lsb="5.0000000000000000e-01" offset="0.0000000000000000e+00" min="-1.6384000000000000e+04" max="1.6383500000000000e+04"/>
+            </signal>
+            <signal unitName="deg C" signalName="cBus.SigIn.Exh_tOxiCatDs [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.Exh_tSensTOxiCatUs [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal unitName="-" signalName="cBus.SigIn.FId_TOxiCatUsDiaInhib [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.SigIn.FId_TOxiCatUsFrzVal [-]">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal unitName="-" signalName="cBus.SigIn.FId_TOxiCatUsRplVal [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.SigIn.FId_TOxiCatUsSwtRpl2Dfl [-]">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="mg/hub" signalName="cBus.SigIn.InjCtl_qSetUnBal [mg/str]">
+              <fixedPoint baseType="Int16" lsb="2.0000000000000000e-02" offset="-0.0000000000000000e+00" min="-6.5536000000000001e+02" max="6.5534000000000003e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.PFltRgn_stModeActv [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="deg C" signalName="cBus.SigIn.SCR_tAdapUCatUsT [°C]">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000001e-01" offset="-2.7313999999999999e+02" min="-3.5499400000000001e+03" max="3.0035600000000004e+03"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.StSys_stValidReq [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="-0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" unitName="-" signalName="cBus.SigIn.SCR_stWrmUpLstDrvCyc [-]">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiWarn">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsPhysRngHiShOff">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.OutAdj.SysReac.DFC_TOxiCatUsNpl">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.OutAdj.RepVal.Exh_tOxiCatUs">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiWarn">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiShOff">
+              <Bool/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.FunCore.PhysRng.TOxiCatUs_stPhysRngHiHeal">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplStatChk">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.FunCore.Plaus.TOxiCatUs_stNplDynChk">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.InitHdl.TOxiCatDs_stGlbIni">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="cBus.PreProc.InptFlt.TOxiCatUs_tFlt">
+              <Float32/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="cBus.PreProc.RlsCond.TOxiCatUs_stEngRun">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplStatChkEna">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stNplDynChkEna">
+              <Bool/>
+            </signal>
+            <signal signalName="cBus.PreProc.RlsCond.TOxiCatUs_stStdStActvDel">
+              <Bool/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="SysReac" physicalPath="TOxiCatUs_VD/TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/System reactions/SysReac" path="TOxiCatUs_VD/Subsystem/TOxiCatUs_VD/System reactions/SysReac">
+        <miltype>
+          <bus>
+            <signal signalName="SysReac.DFC_TOxiCatUsPhysRngHiWarn">
+              <double/>
+            </signal>
+            <signal signalName="SysReac.DFC_TOxiCatUsPhysRngHiShOff">
+              <double/>
+            </signal>
+            <signal signalName="SysReac.DFC_TOxiCatUsNpl">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal missingTypeSinceNoCVar="true" signalName="SysReac.DFC_TOxiCatUsPhysRngHiWarn">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="SysReac.DFC_TOxiCatUsPhysRngHiShOff">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="SysReac.DFC_TOxiCatUsNpl">
+              <unsupportedTypeInformation/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

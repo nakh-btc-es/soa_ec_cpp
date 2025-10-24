@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.29" modelPath="E:\EP2\Git\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_em_1047\em_1047.mdl" modelCreationDate="2016-02-26T10:33:44" creator="developer">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.29" modelPath="E:\EP2\Git\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_em_1047\em_1047.mdl" creationDate="2016-02-26T10:33:44" modificationDate="2021-11-18T13:00:12">
+    <subsystem subsysID="ss1" physicalPath="em_1047/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="0.01" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in" physicalPath="em_1047/top_A/Subsystem/top_A/in" path="top_A/Subsystem/top_A/in">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="iN" physicalPath="em_1047/top_A/Subsystem/top_A/iN" path="top_A/Subsystem/top_A/iN">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="In" physicalPath="em_1047/top_A/Subsystem/top_A/In" path="top_A/Subsystem/top_A/In">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="b" path="top_A/Subsystem/top_A/sub_B/b" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/b" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/b">
+        <miltype initValue="-2.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="-2.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B/b" targetLinkBlockKind="TL_Constant" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/b" simulinkBlockType="Constant" blockAttribute="output"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_b/b" targetLinkBlockKind="TL_Constant" physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/b" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="B" path="top_A/Subsystem/top_A/sub_B/B" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/B" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/B">
+        <miltype initValue="2.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="2.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B/B" targetLinkBlockKind="TL_Constant" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/B" simulinkBlockType="Constant" blockAttribute="output"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_b/B" targetLinkBlockKind="TL_Constant" physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/B" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="a" path="top_A/Subsystem/top_A/a" physicalPath="em_1047/top_A/Subsystem/top_A/a" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/a">
+        <miltype initValue="-2.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="-2.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/a" targetLinkBlockKind="TL_Constant" physicalPath="em_1047/top_A/Subsystem/top_A/a" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="A" path="top_A/Subsystem/top_A/A" physicalPath="em_1047/top_A/Subsystem/top_A/A" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/A">
+        <miltype initValue="2.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="2.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/A" targetLinkBlockKind="TL_Constant" physicalPath="em_1047/top_A/Subsystem/top_A/A" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="out" physicalPath="em_1047/top_A/Subsystem/top_A/out" path="top_A/Subsystem/top_A/out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="ouT" physicalPath="em_1047/top_A/Subsystem/top_A/ouT" path="top_A/Subsystem/top_A/ouT">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="OuT" physicalPath="em_1047/top_A/Subsystem/top_A/OuT" path="top_A/Subsystem/top_A/OuT">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/Logic" path="top_A/Subsystem/top_A/Logic" name="Logic" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/UNITDELAY" path="top_A/Subsystem/top_A/UNITDELAY" name="UNITDELAY" portNumber="1">
+        <miltype>
+          <bus>
+            <signal signalName="xX.a!%[].a?">
+              <double/>
+            </signal>
+            <signal signalName="xX.A!%[].A?">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="xX.a!%[].a?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.0000000000000000e+00" max="2.0000000000000000e+00"/>
+            </signal>
+            <signal signalName="xX.A!%[].A?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.0000000000000000e+00" max="2.0000000000000000e+00"/>
+            </signal>
+          </bus>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/UnitDelay" path="top_A/Subsystem/top_A/UnitDelay" name="UnitDelay" portNumber="1">
+        <miltype>
+          <bus>
+            <signal signalName="XX.a!%[].a?">
+              <double/>
+            </signal>
+            <signal signalName="XX.A!%[].A?">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="XX.a!%[].a?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.0000000000000000e+00" max="2.0000000000000000e+00"/>
+            </signal>
+            <signal signalName="XX.A!%[].A?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.0000000000000000e+00" max="2.0000000000000000e+00"/>
+            </signal>
+          </bus>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/lOgIC" path="top_A/Subsystem/top_A/lOgIC" name="lOgIC" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/lOgIc" path="top_A/Subsystem/top_A/lOgIc" name="lOgIc" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/AbC" path="top_A/Subsystem/top_A/sub_B/AbC" name="AbC" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/In" path="top_A/Subsystem/top_A/sub_B/In" name="In" portNumber="1">
+        <miltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <int16/>
+            </signal>
+            <signal index="2">
+              <int16/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/OUT" path="top_A/Subsystem/top_A/sub_B/OUT" name="OUT" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/OuT" path="top_A/Subsystem/top_A/sub_B/OuT" name="OuT" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/aBc" path="top_A/Subsystem/top_A/sub_B/aBc" name="aBc" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/abc" path="top_A/Subsystem/top_A/sub_B/abc" name="abc" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/iN" path="top_A/Subsystem/top_A/sub_B/iN" name="iN" portNumber="1">
+        <miltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <int16/>
+            </signal>
+            <signal index="2">
+              <int16/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/AbC" path="top_A/Subsystem/top_A/sub_b/AbC" name="AbC" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/In" path="top_A/Subsystem/top_A/sub_b/In" name="In" portNumber="1">
+        <miltype>
+          <bus>
+            <signal signalName="XX.a!%[].a?">
+              <double/>
+            </signal>
+            <signal signalName="XX.A!%[].A?">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="XX.a!%[].a?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="XX.A!%[].A?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/OUT" path="top_A/Subsystem/top_A/sub_b/OUT" name="OUT" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/OuT" path="top_A/Subsystem/top_A/sub_b/OuT" name="OuT" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/aBc" path="top_A/Subsystem/top_A/sub_b/aBc" name="aBc" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/abc" path="top_A/Subsystem/top_A/sub_b/abc" name="abc" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/iN" path="top_A/Subsystem/top_A/sub_b/iN" name="iN" portNumber="1">
+        <miltype>
+          <bus>
+            <signal signalName="xX.a!%[].a?">
+              <double/>
+            </signal>
+            <signal signalName="xX.A!%[].A?">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="xX.a!%[].a?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="xX.A!%[].A?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B" path="top_A/Subsystem/top_A/sub_B" sampleTime="0.01" name="sub_B" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/In" path="top_A/Subsystem/top_A/sub_B/In">
+        <miltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <int16/>
+            </signal>
+            <signal index="2">
+              <int16/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="iN" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/iN" path="top_A/Subsystem/top_A/sub_B/iN">
+        <miltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <int16/>
+            </signal>
+            <signal index="2">
+              <int16/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </inport>
+      <calibration name="b" path="top_A/Subsystem/top_A/sub_B/b" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/b" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/b">
+        <miltype initValue="-2.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="-2.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B/b" targetLinkBlockKind="TL_Constant" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/b" simulinkBlockType="Constant" blockAttribute="output"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_b/b" targetLinkBlockKind="TL_Constant" physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/b" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="B" path="top_A/Subsystem/top_A/sub_B/B" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/B" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/B">
+        <miltype initValue="2.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="2.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B/B" targetLinkBlockKind="TL_Constant" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/B" simulinkBlockType="Constant" blockAttribute="output"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_b/B" targetLinkBlockKind="TL_Constant" physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/B" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="Out" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/Out" path="top_A/Subsystem/top_A/sub_B/Out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="OUT" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/OUT" path="top_A/Subsystem/top_A/sub_B/OUT">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="OuT" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/OuT" path="top_A/Subsystem/top_A/sub_B/OuT">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/AbC" path="top_A/Subsystem/top_A/sub_B/AbC" name="AbC" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/In" path="top_A/Subsystem/top_A/sub_B/In" name="In" portNumber="1">
+        <miltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <int16/>
+            </signal>
+            <signal index="2">
+              <int16/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/aBc" path="top_A/Subsystem/top_A/sub_B/aBc" name="aBc" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/abc" path="top_A/Subsystem/top_A/sub_B/abc" name="abc" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/iN" path="top_A/Subsystem/top_A/sub_B/iN" name="iN" portNumber="1">
+        <miltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <int16/>
+            </signal>
+            <signal index="2">
+              <int16/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/AbC" path="top_A/Subsystem/top_A/sub_b/AbC" name="AbC" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/In" path="top_A/Subsystem/top_A/sub_b/In" name="In" portNumber="1">
+        <miltype>
+          <bus>
+            <signal signalName="XX.a!%[].a?">
+              <double/>
+            </signal>
+            <signal signalName="XX.A!%[].A?">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="XX.a!%[].a?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="XX.A!%[].A?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/aBc" path="top_A/Subsystem/top_A/sub_b/aBc" name="aBc" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/abc" path="top_A/Subsystem/top_A/sub_b/abc" name="abc" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/iN" path="top_A/Subsystem/top_A/sub_b/iN" name="iN" portNumber="1">
+        <miltype>
+          <bus>
+            <signal signalName="xX.a!%[].a?">
+              <double/>
+            </signal>
+            <signal signalName="xX.A!%[].A?">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="xX.a!%[].a?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="xX.A!%[].A?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="em_1047/top_A/Subsystem/top_A/sub_b" path="top_A/Subsystem/top_A/sub_b" sampleTime="0.01" name="sub_b" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In" physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/In" path="top_A/Subsystem/top_A/sub_b/In">
+        <miltype>
+          <bus>
+            <signal signalName="XX.a!%[].a?">
+              <double/>
+            </signal>
+            <signal signalName="XX.A!%[].A?">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="XX.a!%[].a?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="XX.A!%[].A?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="iN" physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/iN" path="top_A/Subsystem/top_A/sub_b/iN">
+        <miltype>
+          <bus>
+            <signal signalName="xX.a!%[].a?">
+              <double/>
+            </signal>
+            <signal signalName="xX.A!%[].A?">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="xX.a!%[].a?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="xX.A!%[].A?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <calibration name="b" path="top_A/Subsystem/top_A/sub_B/b" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/b" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/b">
+        <miltype initValue="-2.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="-2.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B/b" targetLinkBlockKind="TL_Constant" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/b" simulinkBlockType="Constant" blockAttribute="output"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_b/b" targetLinkBlockKind="TL_Constant" physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/b" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="B" path="top_A/Subsystem/top_A/sub_B/B" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/B" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/B">
+        <miltype initValue="2.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="2.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.0000000000000000e+00" max="2.0000000000000000e+00"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B/B" targetLinkBlockKind="TL_Constant" physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/B" simulinkBlockType="Constant" blockAttribute="output"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_b/B" targetLinkBlockKind="TL_Constant" physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/B" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="Out" physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/Out" path="top_A/Subsystem/top_A/sub_b/Out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="OUT" physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/OUT" path="top_A/Subsystem/top_A/sub_b/OUT">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="OuT" physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/OuT" path="top_A/Subsystem/top_A/sub_b/OuT">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/AbC" path="top_A/Subsystem/top_A/sub_B/AbC" name="AbC" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/In" path="top_A/Subsystem/top_A/sub_B/In" name="In" portNumber="1">
+        <miltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <int16/>
+            </signal>
+            <signal index="2">
+              <int16/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/aBc" path="top_A/Subsystem/top_A/sub_B/aBc" name="aBc" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/abc" path="top_A/Subsystem/top_A/sub_B/abc" name="abc" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_B/iN" path="top_A/Subsystem/top_A/sub_B/iN" name="iN" portNumber="1">
+        <miltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <int16/>
+            </signal>
+            <signal index="2">
+              <int16/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/AbC" path="top_A/Subsystem/top_A/sub_b/AbC" name="AbC" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/In" path="top_A/Subsystem/top_A/sub_b/In" name="In" portNumber="1">
+        <miltype>
+          <bus>
+            <signal signalName="XX.a!%[].a?">
+              <double/>
+            </signal>
+            <signal signalName="XX.A!%[].A?">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="XX.a!%[].a?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="XX.A!%[].A?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/aBc" path="top_A/Subsystem/top_A/sub_b/aBc" name="aBc" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/abc" path="top_A/Subsystem/top_A/sub_b/abc" name="abc" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="em_1047/top_A/Subsystem/top_A/sub_b/iN" path="top_A/Subsystem/top_A/sub_b/iN" name="iN" portNumber="1">
+        <miltype>
+          <bus>
+            <signal signalName="xX.a!%[].a?">
+              <double/>
+            </signal>
+            <signal signalName="xX.A!%[].A?">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="xX.a!%[].a?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="xX.A!%[].A?">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

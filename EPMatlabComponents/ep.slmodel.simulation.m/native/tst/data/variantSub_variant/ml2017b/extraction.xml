@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="277">
+	<Scope uid="277" name="Variants" path="variant_subsystems_enum/Toplevel/Subsystem/Variants" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_438" signalType="double" isFloat="yes">
+				<ifName ifid="if_438" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_439" signalType="double" isFloat="yes">
+				<ifName ifid="if_439" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_440" signalType="double" isFloat="yes">
+				<ifName ifid="if_440" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_441" signalType="double" isFloat="yes">
+				<ifName ifid="if_441" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+			</Variable>
+		</OutPort>
+		<Calibration name="VSSE_CURRENT_BUILD" path="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter2" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter2" origin="explicit_param">
+			<CalibrationUsage path="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter2" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter2" blockAttribute="undefined" />
+			<Variable varid="varif_442" signalType="sldemo_vss_BUILD_TYPE" isSignalTypeEnum="yes" isFloat="yes">
+				<ifName ifid="if_442" initValue="1" lsb="1" offset="0" displayName="VSSE_CURRENT_BUILD" identifier="PARAMETER:Filter2/VSSE_CURRENT_BUILD" />
+			</Variable>
+		</Calibration>
+		<Calibration name="VSSE_CURRENT_BUILD1" path="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter1" origin="explicit_param">
+			<CalibrationUsage path="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter1" blockAttribute="undefined" />
+			<Variable varid="varif_443" signalType="sldemo_vss_BUILD_TYPE" isSignalTypeEnum="yes" isFloat="yes">
+				<ifName ifid="if_443" initValue="1" lsb="1" offset="0" displayName="VSSE_CURRENT_BUILD1" identifier="PARAMETER:Filter1/VSSE_CURRENT_BUILD1" />
+			</Variable>
+		</Calibration>
+		<Model name="variant_subsystems_enum" modelPath="/E:/ModelsDev/SL/SimulinkVariantSubsystems/ml2015aSP1/variant_subsystems_enum.slx" type="SimulinkModel" />
+		<Scope uid="278" name="Prototype" path="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter1/Prototype" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter1/Prototype" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_446" signalType="double" isFloat="yes">
+					<ifName ifid="if_446" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_447" signalType="double" isFloat="yes">
+					<ifName ifid="if_447" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<Model name="variant_subsystems_enum" modelPath="/E:/ModelsDev/SL/SimulinkVariantSubsystems/ml2015aSP1/variant_subsystems_enum.slx" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="279" name="Prototype" path="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter2/Prototype" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter2/Prototype" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_450" signalType="double" isFloat="yes">
+					<ifName ifid="if_450" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_451" signalType="double" isFloat="yes">
+					<ifName ifid="if_451" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<Model name="variant_subsystems_enum" modelPath="/E:/ModelsDev/SL/SimulinkVariantSubsystems/ml2015aSP1/variant_subsystems_enum.slx" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

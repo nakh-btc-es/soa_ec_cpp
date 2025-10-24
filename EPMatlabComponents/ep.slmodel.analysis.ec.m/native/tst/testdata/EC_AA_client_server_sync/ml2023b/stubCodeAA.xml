@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aa-component name="comp_cs_sync" aa_version="R21-11" model_name="cs_sync" matlab_version="R2023b">
+  <types>
+    <type typeId="t2" name="bool" kind="fundamental"/>
+    <type typeId="t1" name="int32_t" kind="primitive"/>
+  </types>
+  <interfaces>
+    <interface name="r_if">
+      <events>
+        <event eventId="ev1" name="ev1" typeRef="t1"/>
+        <event eventId="ev2" name="ev_2" typeRef="t1"/>
+        <event eventId="ev3" name="ev_i3" typeRef="t1"/>
+        <event eventId="ev4" name="In4" typeRef="t1"/>
+      </events>
+    </interface>
+    <interface name="c_if">
+      <methods>
+        <method methodId="met1" name="func1">
+          <in name="u" typeRef="t1"/>
+          <out name="y" typeRef="t1"/>
+        </method>
+      </methods>
+    </interface>
+    <interface name="c2_intf">
+      <methods>
+        <method methodId="met2" name="func2">
+          <in name="u" typeRef="t1"/>
+          <out name="y" typeRef="t2"/>
+        </method>
+      </methods>
+    </interface>
+    <interface name="p_if">
+      <events>
+        <event eventId="ev5" name="ev1" typeRef="t2"/>
+        <event eventId="ev6" name="ev2" typeRef="t1"/>
+        <event eventId="ev7" name="ev_o3" typeRef="t1"/>
+        <event eventId="ev8" name="ev_4" typeRef="t2"/>
+      </events>
+    </interface>
+    <interface name="s_if">
+      <methods>
+        <method methodId="met3" name="method_x">
+          <in name="u" typeRef="t1"/>
+          <out name="y" typeRef="t1"/>
+        </method>
+      </methods>
+    </interface>
+    <interface name="s2_interface">
+      <methods>
+        <method methodId="met4" name="method_y">
+          <in name="u" typeRef="t1"/>
+          <out name="y" typeRef="t1"/>
+        </method>
+      </methods>
+    </interface>
+  </interfaces>
+  <ports>
+    <rport name="r_port" instanceKey="1">
+      <event-refs>
+        <event-ref eventRef="ev1" var="r_port_ev1"/>
+        <event-ref eventRef="ev2" var="r_port_ev_2"/>
+        <event-ref eventRef="ev3" var="r_port_ev_i3"/>
+        <event-ref eventRef="ev4" var="r_port_In4"/>
+      </event-refs>
+    </rport>
+    <rport name="c_port" instanceKey="2">
+      <method-refs>
+        <method-ref methodRef="met1" func="c_if_c_port_func1"/>
+      </method-refs>
+    </rport>
+    <rport name="c2_port" instanceKey="3">
+      <method-refs>
+        <method-ref methodRef="met2" func="c2_intf_c2_port_func2"/>
+      </method-refs>
+    </rport>
+    <pport name="p_port" instanceKey="4">
+      <event-refs>
+        <event-ref eventRef="ev5" var="p_port_ev1"/>
+        <event-ref eventRef="ev6" var="p_port_ev2"/>
+        <event-ref eventRef="ev7" var="p_port_ev_o3"/>
+        <event-ref eventRef="ev8" var="p_port_ev_4"/>
+      </event-refs>
+    </pport>
+    <pport name="s_port" instanceKey="5">
+      <method-refs>
+        <method-ref methodRef="met3" func="sut_s_port_method_x"/>
+      </method-refs>
+    </pport>
+    <pport name="s2_port" instanceKey="6">
+      <method-refs>
+        <method-ref methodRef="met4" func="sut_s2_port_method_y"/>
+      </method-refs>
+    </pport>
+  </ports>
+</aa-component>

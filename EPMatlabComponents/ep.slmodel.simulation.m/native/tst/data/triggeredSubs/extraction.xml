@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="225">
+	<Scope uid="225" name="triggeredsub" path="triggeredsub" sampleTime="0.16" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="triggeredsub"  >
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_109" signalType="double" isFloat="yes">
+				<ifName ifid="if_109" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_110" signalType="double" isFloat="yes">
+				<ifName ifid="if_110" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_111" signalName="Source &amp; Trigger" width1="3" signalType="double" signalDim="[1 3]" isFloat="yes">
+				<ifName ifid="if_112" index1="1" lsb="1" offset="0" displayName="Out1(1)" identifier="OUTPUT:Out1(1)" />
+				<ifName ifid="if_113" index1="2" lsb="1" offset="0" displayName="Out1(2)" identifier="OUTPUT:Out1(2)" />
+				<ifName ifid="if_114" index1="3" lsb="1" offset="0" displayName="Out1(3)" identifier="OUTPUT:Out1(3)" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_115" signalName="Rising" signalType="double" isFloat="yes">
+				<ifName ifid="if_115" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out3" portNumber="3" compositeSig="none">
+			<Variable varid="varif_116" signalName="Falling" signalType="double" isFloat="yes">
+				<ifName ifid="if_116" lsb="1" offset="0" displayName="Out3" identifier="OUTPUT:Out3" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out4" portNumber="4" compositeSig="none">
+			<Variable varid="varif_117" signalName="Either" signalType="double" isFloat="yes">
+				<ifName ifid="if_117" lsb="1" offset="0" displayName="Out4" identifier="OUTPUT:Out4" />
+			</Variable>
+		</OutPort>
+		<Model name="triggeredsub" modelPath="/E:/ModelsDev/UT_MIL_SL/TriggeredSubs/ml2015asp1/triggeredsub.slx" type="SimulinkModel" />
+		<Scope uid="222" name="Either" path="triggeredsub/Either" sampleTime="0.16" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="triggeredsub/Either"  >
+			<InPort name="In" portNumber="1" compositeSig="none">
+				<Variable varid="varif_120" signalType="double" isFloat="yes">
+					<ifName ifid="if_120" lsb="1" offset="0" displayName="In" identifier="INPUT:In" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out" portNumber="1" compositeSig="none">
+				<Variable varid="varif_121" signalType="double" isFloat="yes">
+					<ifName ifid="if_121" lsb="1" offset="0" displayName="Out" identifier="OUTPUT:Out" />
+				</Variable>
+			</OutPort>
+			<Model name="triggeredsub" modelPath="/E:/ModelsDev/UT_MIL_SL/TriggeredSubs/ml2015asp1/triggeredsub.slx" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="223" name="Falling" path="triggeredsub/Falling" sampleTime="0.16" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="triggeredsub/Falling"  >
+			<InPort name="In" portNumber="1" compositeSig="none">
+				<Variable varid="varif_124" signalType="double" isFloat="yes">
+					<ifName ifid="if_124" lsb="1" offset="0" displayName="In" identifier="INPUT:In" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out" portNumber="1" compositeSig="none">
+				<Variable varid="varif_125" signalType="double" isFloat="yes">
+					<ifName ifid="if_125" lsb="1" offset="0" displayName="Out" identifier="OUTPUT:Out" />
+				</Variable>
+			</OutPort>
+			<Model name="triggeredsub" modelPath="/E:/ModelsDev/UT_MIL_SL/TriggeredSubs/ml2015asp1/triggeredsub.slx" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="224" name="Rising" path="triggeredsub/Rising" sampleTime="0.16" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="triggeredsub/Rising"  >
+			<InPort name="In" portNumber="1" compositeSig="none">
+				<Variable varid="varif_128" signalType="double" isFloat="yes">
+					<ifName ifid="if_128" lsb="1" offset="0" displayName="In" identifier="INPUT:In" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out" portNumber="1" compositeSig="none">
+				<Variable varid="varif_129" signalType="double" isFloat="yes">
+					<ifName ifid="if_129" lsb="1" offset="0" displayName="Out" identifier="OUTPUT:Out" />
+				</Variable>
+			</OutPort>
+			<Model name="triggeredsub" modelPath="/E:/ModelsDev/UT_MIL_SL/TriggeredSubs/ml2015asp1/triggeredsub.slx" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

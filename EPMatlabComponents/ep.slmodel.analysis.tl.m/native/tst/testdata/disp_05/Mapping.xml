@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="disp_model"/>
+    <Architecture id="id1" name="disp_model [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A"/>
+      <Path refId="id1" path="top_A.c:1:top_A"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In2"/>
+        <Path refId="id1" path="Sa1_In2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa1_q_bus_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.q"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa1_a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa1_o_bus_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.o"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Chart1/y3"/>
+        <Path refId="id1" path="Ca1_y3_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Custom Code Block(2)"/>
+        <Path refId="id1" path="Sa1_Custom_Code_Block_y2_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/D Latch(2)"/>
+        <Path refId="id1" path="Sa1_D_Latch_NQ_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/LogOp4(1)"/>
+        <Path refId="id1" path="Sa1_LogOp4_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Chart1/x1"/>
+        <Path refId="id1" path="Ca1_x1_valid"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/Chart1"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Ca1_Chart1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="u1"/>
+        <Path refId="id1" path="Ca1_u1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="u2"/>
+        <Path refId="id1" path="Ca1_u2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="u3"/>
+        <Path refId="id1" path="Ca1_u3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="y1"/>
+        <Path refId="id1" path="Ca1_y1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="y2"/>
+        <Path refId="id1" path="Ca1_y2_invalid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="y3"/>
+        <Path refId="id1" path="Ca1_y3_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Chart1/x1"/>
+        <Path refId="id1" path="Ca1_x1_valid"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

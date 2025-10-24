@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="fanspeedcontrol.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_30\simplebc_EC_ert_rtw"/>
+    <File annotate="yes" id="ID72" kind="source" name="input_verification.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_30\simplebc_EC_ert_rtw"/>
+    <File annotate="yes" id="ID73" kind="source" name="lockcontroller.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_30\simplebc_EC_ert_rtw"/>
+    <File annotate="yes" id="ID74" kind="source" name="maincontroller.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_30\simplebc_EC_ert_rtw"/>
+    <File annotate="yes" id="ID75" kind="source" name="output_verification.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_30\simplebc_EC_ert_rtw"/>
+    <File annotate="yes" id="ID76" kind="source" name="simplebc_EC.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_30\simplebc_EC_ert_rtw"/>
+    <File annotate="yes" id="ID77" kind="source" name="simplebc_EC_data.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_30\simplebc_EC_ert_rtw"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_30"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_30\simplebc_EC_ert_rtw"/>
+    <IncludePath path="C:\Matlab\R2019b\extern\include"/>
+    <IncludePath path="C:\Matlab\R2019b\simulink\include"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\src"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\src\ext_mode\common"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\ert"/>
+    <IncludePath path="C:\Matlab\R2017b\simulink\include"/>
+  </IncludePaths>
+  <Functions archName="simplebc_EC [C-Code]">
+    <Function fileref="ID76" initFunc="simplebc_EC_initialize" name="simplebc_EC_step">
+      <Interface>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_pwron"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_tr"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_clk"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_gp"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_ap"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_flame"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_fs_m1"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_fs_y1"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_fs_ignition"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_lockout_reset"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_reg_ratio"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_In1"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_In2"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_m1"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_y1"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_ignition"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_statusdisp"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_errordisp"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_fanspeed"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_gp_test"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_ap_test"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_flame_test"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_unlock"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID73" initFunc="simplebc_EC_initialize" name="lockcontroller">
+      <Interface>
+        <InterfaceObj kind="in" var="mainctrlock"/>
+        <InterfaceObj kind="in" var="srinplock"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_lockout_reset"/>
+        <InterfaceObj kind="in" var="sroutplock"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_errordisp"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_unlock"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID74" initFunc="simplebc_EC_initialize" name="maincontroller">
+      <Interface>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_clk"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_In1"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_In2"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_pwron"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_tr"/>
+        <InterfaceObj kind="in" var="gp_on"/>
+        <InterfaceObj kind="in" var="ap_on"/>
+        <InterfaceObj kind="in" var="flame_on"/>
+        <InterfaceObj kind="out" var="m1_on"/>
+        <InterfaceObj kind="out" var="y1_on"/>
+        <InterfaceObj kind="out" var="ignition_on"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_statusdisp"/>
+        <InterfaceObj kind="out" var="mainctrlock"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="simplebc_EC_initialize" name="fanspeedcontrol">
+      <Interface>
+        <InterfaceObj kind="in" var="BTCAnnotatedOutport_statusdisp"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_reg_ratio"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_fanspeed"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID72" initFunc="simplebc_EC_initialize" name="input_verification">
+      <Interface>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_gp"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_ap"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_flame"/>
+        <InterfaceObj kind="out" var="gp_on"/>
+        <InterfaceObj kind="out" var="ap_on"/>
+        <InterfaceObj kind="out" var="flame_on"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_gp_test"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_ap_test"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_flame_test"/>
+        <InterfaceObj kind="out" var="srinplock"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID75" initFunc="simplebc_EC_initialize" name="output_verification">
+      <Interface>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_fs_m1"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_fs_y1"/>
+        <InterfaceObj kind="in" var="BTCAnnotatedInport_fs_ignition"/>
+        <InterfaceObj kind="in" var="m1_on"/>
+        <InterfaceObj kind="in" var="y1_on"/>
+        <InterfaceObj kind="in" var="ignition_on"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_m1"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_y1"/>
+        <InterfaceObj kind="out" var="BTCAnnotatedOutport_ignition"/>
+        <InterfaceObj kind="out" var="sroutplock"/>
+      </Interface>
+    </Function>
+  </Functions>
+</CodeModel>

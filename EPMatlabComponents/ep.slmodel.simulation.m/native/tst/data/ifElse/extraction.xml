@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="26B">
+	<Scope uid="26B" name="sldemo_ifsub" path="sldemo_ifsub" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="sldemo_ifsub" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_377" signalName="Sin Wave" signalType="double" isFloat="yes">
+				<ifName ifid="if_377" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_378" signalName="Input Signal" signalType="double" isFloat="yes">
+				<ifName ifid="if_378" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_379" signalName="Output Reset" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes">
+				<ifName ifid="if_380" index1="1" lsb="1" offset="0" displayName="Out1(1)" identifier="OUTPUT:Out1(1)" />
+				<ifName ifid="if_381" index1="2" lsb="1" offset="0" displayName="Out1(2)" identifier="OUTPUT:Out1(2)" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_382" signalName="Output Held" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes">
+				<ifName ifid="if_383" index1="1" lsb="1" offset="0" displayName="Out2(1)" identifier="OUTPUT:Out2(1)" />
+				<ifName ifid="if_384" index1="2" lsb="1" offset="0" displayName="Out2(2)" identifier="OUTPUT:Out2(2)" />
+			</Variable>
+		</OutPort>
+		<Model name="sldemo_ifsub" modelPath="/E:/ModelsDev/UT_MIL_SL/IfElseSub/ml2015asp1/sldemo_ifsub.slx" type="SimulinkModel" />
+		<Scope uid="269" name="Abs Output Reset" path="sldemo_ifsub/Abs&#xA;Output Reset" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="sldemo_ifsub/Abs&#xA;Output Reset" subsystemLogging="on">
+			<InPort name="In" portNumber="1" compositeSig="none">
+				<Variable varid="varif_387" signalName="Sin Wave" signalType="double" isFloat="yes">
+					<ifName ifid="if_387" lsb="1" offset="0" displayName="In" identifier="INPUT:In" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out" portNumber="1" compositeSig="none">
+				<Variable varid="varif_388" signalType="double" isFloat="yes">
+					<ifName ifid="if_388" lsb="1" offset="0" displayName="Out" identifier="OUTPUT:Out" />
+				</Variable>
+			</OutPort>
+			<Model name="sldemo_ifsub" modelPath="/E:/ModelsDev/UT_MIL_SL/IfElseSub/ml2015asp1/sldemo_ifsub.slx" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="26A" name="Saturation between -0.75 and 0.75 Output held" path="sldemo_ifsub/Saturation between -0.75 and 0.75&#xA;Output held" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="sldemo_ifsub/Saturation between -0.75 and 0.75&#xA;Output held" subsystemLogging="on">
+			<InPort name="In" portNumber="1" compositeSig="none">
+				<Variable varid="varif_391" signalName="Sin Wave" signalType="double" isFloat="yes">
+					<ifName ifid="if_391" lsb="1" offset="0" displayName="In" identifier="INPUT:In" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out" portNumber="1" compositeSig="none">
+				<Variable varid="varif_392" signalType="double" isFloat="yes">
+					<ifName ifid="if_392" lsb="1" offset="0" displayName="Out" identifier="OUTPUT:Out" />
+				</Variable>
+			</OutPort>
+			<Model name="sldemo_ifsub" modelPath="/E:/ModelsDev/UT_MIL_SL/IfElseSub/ml2015asp1/sldemo_ifsub.slx" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

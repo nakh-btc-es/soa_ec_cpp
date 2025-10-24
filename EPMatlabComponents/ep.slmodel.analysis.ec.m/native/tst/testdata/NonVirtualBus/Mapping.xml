@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="nonvirtual_bus_ec"/>
+    <Architecture id="id1" name="nonvirtual_bus_ec [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="nonvirtual_bus_ec.c:1:nonvirtual_bus_ec_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="a" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In2" refId="id0"/>
+        <Path path="b" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In3" refId="id0"/>
+        <Path path="x" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In4" refId="id0"/>
+        <Path path="y" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_top_A_Out1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out2" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_top_A_Out2" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out3" refId="id0"/>
+        <Path path="BTCAnnotatedOutportBus_Out3" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.c.a" refId="id0"/>
+          <Path path=".c.a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out3" refId="id0"/>
+        <Path path="BTCAnnotatedOutportBus_Out3" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.c.b(1)" refId="id0"/>
+          <Path path=".c.b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.c.b(2)" refId="id0"/>
+          <Path path=".c.b[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out3" refId="id0"/>
+        <Path path="BTCAnnotatedOutportBus_Out3" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.z.x" refId="id0"/>
+          <Path path=".z.x" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out3" refId="id0"/>
+        <Path path="BTCAnnotatedOutportBus_Out3" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.z.y(1)" refId="id0"/>
+          <Path path=".z.y[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.z.y(2)" refId="id0"/>
+          <Path path=".z.y[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="top_A" refId="id0"/>
+      <Path path="nonvirtual_bus_ec.c:1:nonvirtual_bus_ec_step/nonvirtual_bus_ec.c:1:top_A_func" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/In1" refId="id0"/>
+        <Path path="a" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/In2" refId="id0"/>
+        <Path path="b" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/In3" refId="id0"/>
+        <Path path="z" refId="id1"/>
+        <SignalMapping>
+          <Path path=".z.x" refId="id0"/>
+          <Path path=".x" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/In3" refId="id0"/>
+        <Path path="z" refId="id1"/>
+        <SignalMapping>
+          <Path path=".z.y(1)" refId="id0"/>
+          <Path path=".y[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".z.y(2)" refId="id0"/>
+          <Path path=".y[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_top_A_Out1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/Out2" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_top_A_Out2" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/Out3" refId="id0"/>
+        <Path path="BTCAnnotatedOutportBus_Out3" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.c.a" refId="id0"/>
+          <Path path=".c.a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/Out3" refId="id0"/>
+        <Path path="BTCAnnotatedOutportBus_Out3" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.c.b(1)" refId="id0"/>
+          <Path path=".c.b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.c.b(2)" refId="id0"/>
+          <Path path=".c.b[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/Out3" refId="id0"/>
+        <Path path="BTCAnnotatedOutportBus_Out3" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.z.x" refId="id0"/>
+          <Path path=".z.x" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/Out3" refId="id0"/>
+        <Path path="BTCAnnotatedOutportBus_Out3" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.z.y(1)" refId="id0"/>
+          <Path path=".z.y[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.z.y(2)" refId="id0"/>
+          <Path path=".z.y[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="top_A/sub_B1" refId="id0"/>
+      <Path path="nonvirtual_bus_ec.c:1:nonvirtual_bus_ec_step/nonvirtual_bus_ec.c:1:top_A_func/sub_B1.c:1:sub_B1" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/sub_B1/In1" refId="id0"/>
+        <Path path="c" refId="id1"/>
+        <SignalMapping>
+          <Path path=".c.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/sub_B1/In1" refId="id0"/>
+        <Path path="c" refId="id1"/>
+        <SignalMapping>
+          <Path path=".c.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".c.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/sub_B1/Out1" refId="id0"/>
+        <Path path="b1_out" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/sub_B1/Out2" refId="id0"/>
+        <Path path="b1_out2" refId="id1"/>
+        <SignalMapping>
+          <Path path=".b1_out2.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/sub_B1/Out2" refId="id0"/>
+        <Path path="b1_out2" refId="id1"/>
+        <SignalMapping>
+          <Path path=".b1_out2.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".b1_out2.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="top_A/sub_B2" refId="id0"/>
+      <Path path="nonvirtual_bus_ec.c:1:nonvirtual_bus_ec_step/nonvirtual_bus_ec.c:1:top_A_func/nonvirtual_bus_ec.c:1:func_B2" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/sub_B2/In1" refId="id0"/>
+        <Path path="w" refId="id1"/>
+        <SignalMapping>
+          <Path path=".w.c.a" refId="id0"/>
+          <Path path=".c.a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/sub_B2/In1" refId="id0"/>
+        <Path path="w" refId="id1"/>
+        <SignalMapping>
+          <Path path=".w.c.b(1)" refId="id0"/>
+          <Path path=".c.b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".w.c.b(2)" refId="id0"/>
+          <Path path=".c.b[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/sub_B2/In1" refId="id0"/>
+        <Path path="w" refId="id1"/>
+        <SignalMapping>
+          <Path path=".w.z.x" refId="id0"/>
+          <Path path=".z.x" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/sub_B2/In1" refId="id0"/>
+        <Path path="w" refId="id1"/>
+        <SignalMapping>
+          <Path path=".w.z.y(1)" refId="id0"/>
+          <Path path=".z.y[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".w.z.y(2)" refId="id0"/>
+          <Path path=".z.y[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/sub_B2/Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_top_A_Out2" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/sub_B2/Out2" refId="id0"/>
+        <Path path="BTCAnnotatedOutportBus_Out3" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.c.a" refId="id0"/>
+          <Path path=".c.a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/sub_B2/Out2" refId="id0"/>
+        <Path path="BTCAnnotatedOutportBus_Out3" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.c.b(1)" refId="id0"/>
+          <Path path=".c.b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.c.b(2)" refId="id0"/>
+          <Path path=".c.b[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/sub_B2/Out2" refId="id0"/>
+        <Path path="BTCAnnotatedOutportBus_Out3" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.z.x" refId="id0"/>
+          <Path path=".z.x" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/sub_B2/Out2" refId="id0"/>
+        <Path path="BTCAnnotatedOutportBus_Out3" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.z.y(1)" refId="id0"/>
+          <Path path=".z.y[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".BTCAnnotatedOutportBus_Out3.z.y(2)" refId="id0"/>
+          <Path path=".z.y[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

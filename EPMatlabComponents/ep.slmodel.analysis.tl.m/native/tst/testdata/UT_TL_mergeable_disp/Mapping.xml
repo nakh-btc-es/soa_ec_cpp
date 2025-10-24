@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="mergeable_disp"/>
+    <Architecture id="id1" name="mergeable_disp [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="Subsystem/Subsystem/Subsystem"/>
+      <Path refId="id1" path="Subsystem.c:1:Subsystem"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="in."/>
+        <Path refId="id1" path="Sa1_in_"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out."/>
+        <Path refId="id1" path="merged_var"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out.1"/>
+        <Path refId="id1" path="merged_var:2"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

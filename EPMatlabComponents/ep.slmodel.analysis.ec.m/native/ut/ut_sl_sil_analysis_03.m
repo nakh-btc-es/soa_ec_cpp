@@ -1,0 +1,38 @@
+function ut_sl_sil_analysis_03
+% Simple generic check for EC.
+%
+
+
+%% prepare test
+sltu_cleanup();
+
+sPwd = pwd;
+sTestRoot = fullfile(sPwd, ['tmp_', mfilename()]);
+[xOnCleanupDoCleanupEnv, xEnv, sResultDir, stTestData] = sltu_prepare_ats_env('powerwindow_explicit_slsil', 'EC', sTestRoot);
+sModelFile  = stTestData.sSlModelFile;
+sInitScript = stTestData.sSlInitScriptFile;
+
+
+%% arrange
+xOnCleanupCloseModel = sltu_load_models(xEnv, sModelFile, sInitScript, false);
+xOrderedCleanup = onCleanup(@() cellfun(@delete, {xOnCleanupCloseModel, xOnCleanupDoCleanupEnv}));
+
+
+%% act
+stResult = ut_ec_model_analyse_sl_sil(xEnv, sModelFile, sInitScript, sResultDir);
+
+
+%% assert
+sTestDataDir = fullfile(ut_get_testdata_dir(), 'powerwindow_slsil');
+
+sExpectedSlArch = fullfile(sTestDataDir, 'SlArch.xml');
+SLTU_ASSERT_VALID_SL_ARCH(stResult.sSlArch);
+SLTU_ASSERT_EQUAL_SL_ARCH(sExpectedSlArch, stResult.sSlArch);
+
+sExpectedConstantsFile = fullfile(sTestDataDir, 'ecConstants.xml');
+SLTU_ASSERT_VALID_CONSTANTS(stResult.sConstantsFile);
+SLTU_ASSERT_EQUAL_CONSTANTS_FILE(sExpectedConstantsFile, stResult.sConstantsFile);
+
+ut_ec_assert_valid_message_file(stResult.sMessages, {'EP:SLC:INFO', 'EP:SLC:WARNING'});
+end
+

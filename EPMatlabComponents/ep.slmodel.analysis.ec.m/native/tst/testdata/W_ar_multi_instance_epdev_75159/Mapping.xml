@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Wrapper_ar_epdev_75159"/>
+    <Architecture id="id1" name="Wrapper_ar_epdev_75159 [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Wrapper_ar_epdev_75159.c:1:Wrapper_ar_epdev_75159_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Mock_get_B/dsin_get_B_y" refId="id0"/>
+        <Path path="dsin_get_B_y" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="RteStub_out_IF_o_port_DataElement1" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="ar_epdev_75159/ar_epdev_75159" refId="id0"/>
+      <Path path="Wrapper_ar_epdev_75159.c:1:Wrapper_ar_epdev_75159_step/ep_autosar_multi_instance_adapter.c:1:Runnable_Step_adapter" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Mock_get_B/dsin_get_B_y" refId="id0"/>
+        <Path path="dsin_get_B_y" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="ar_epdev_75159/ar_epdev_75159/Out1" refId="id0"/>
+        <Path path="RteStub_out_IF_o_port_DataElement1" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

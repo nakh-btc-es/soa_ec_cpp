@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architectureConstraints>
+  <scope path="top_A/Subsystem/top_A">
+    <assumptions origin="tl_relay:offswitch">
+      <signalValue signal="top_A/Subsystem/top_A/Relay1/b" relation="leq" value="4.2049999999999997e+01"/>
+    </assumptions>
+    <assumptions origin="tl_relay:onswitch">
+      <signalValue signal="top_A/Subsystem/top_A/Relay2/d" relation="geq" value="-5.2000000000000002e+00"/>
+    </assumptions>
+    <assumptions origin="tl_saturate">
+      <signalSignal relation="leq" signal1="top_A/Subsystem/top_A/Sat1/a" signal2="top_A/Subsystem/top_A/Sat1/a"/>
+    </assumptions>
+    <assumptions origin="tl_saturate:lowerlimit">
+      <signalValue signal="top_A/Subsystem/top_A/Sat1/a" relation="leq" value="4.2500000000000000e+00"/>
+    </assumptions>
+    <assumptions origin="tl_saturate">
+      <signalSignal relation="leq" signal1="top_A/Subsystem/top_A/Sat3/g1" signal2="top_A/Subsystem/top_A/Sat3/g2"/>
+    </assumptions>
+  </scope>
+</architectureConstraints>

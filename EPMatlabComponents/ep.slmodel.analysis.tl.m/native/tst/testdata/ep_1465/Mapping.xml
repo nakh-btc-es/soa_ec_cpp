@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Sample"/>
+    <Architecture id="id1" name="Sample [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec"/>
+      <Path refId="id1" path="signalmode_2ms_exec.c:1:signalmode_2ms_task"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Voltage"/>
+        <Path refId="id1" path="Sa1_Voltage"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="raw_value"/>
+        <Path refId="id1" path="raw_value"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv/raw_value"/>
+        <Path refId="id1" path="raw_value"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv/pre_raw_value"/>
+        <Path refId="id1" path="pre_raw_value"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv/pre_voltage_value"/>
+        <Path refId="id1" path="pre_voltage_value"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc"/>
+      <Path refId="id1" path="signalmode_2ms_exec.c:1:signalmode_2ms_task/signalmode_2ms_exec.c:1:signalmode_2ms_pv_proc"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Voltage"/>
+        <Path refId="id1" path="Sa1_Voltage"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="raw_value"/>
+        <Path refId="id1" path="raw_value"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv/raw_value"/>
+        <Path refId="id1" path="raw_value"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv/pre_raw_value"/>
+        <Path refId="id1" path="pre_raw_value"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="signalmode_feature/Subsystem/signalmode_feature/signalmode_2ms_exec/signalmode_2ms_pv_proc/signalmode_2ms_pv/pre_voltage_value"/>
+        <Path refId="id1" path="pre_voltage_value"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

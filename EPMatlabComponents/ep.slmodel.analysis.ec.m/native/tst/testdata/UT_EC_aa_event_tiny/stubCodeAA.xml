@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aa-component name="aa_event_tiny" aa_version="R22-11" model_name="aa_event_tiny" matlab_version="R2024b">
+  <types>
+    <type typeId="t2" name="int16_t" kind="primitive"/>
+    <type typeId="t1" name="int8_t" kind="primitive"/>
+  </types>
+  <interfaces>
+    <interface name="r_IF">
+      <namespaces>
+        <namespace symbol="IN"/>
+      </namespaces>
+      <events>
+        <event eventId="ev1" name="In1_ev" typeRef="t1"/>
+        <event eventId="ev2" name="In2_ev" typeRef="t1"/>
+      </events>
+    </interface>
+    <interface name="r2_IF">
+      <events>
+        <event eventId="ev3" name="u1" typeRef="t1"/>
+        <event eventId="ev4" name="u2" typeRef="t1"/>
+      </events>
+    </interface>
+    <interface name="p_IF">
+      <namespaces>
+        <namespace symbol="out"/>
+      </namespaces>
+      <events>
+        <event eventId="ev5" name="Out1_ev" typeRef="t2"/>
+      </events>
+    </interface>
+    <interface name="p2_IF">
+      <events>
+        <event eventId="ev6" name="y" typeRef="t2"/>
+      </events>
+    </interface>
+  </interfaces>
+  <ports>
+    <rport name="r_port" instanceKey="aa_event_tiny/aa_event_tiny_RootSwComponentPrototype/r_port">
+      <event-refs>
+        <event-ref eventRef="ev1" var="r_port_In1_ev"/>
+        <event-ref eventRef="ev2" var="r_port_In2_ev"/>
+      </event-refs>
+    </rport>
+    <rport name="r2_port" instanceKey="aa_event_tiny/aa_event_tiny_RootSwComponentPrototype/r2_port">
+      <event-refs>
+        <event-ref eventRef="ev3" var="r2_port_u1"/>
+        <event-ref eventRef="ev4" var="r2_port_u2"/>
+      </event-refs>
+    </rport>
+    <pport name="p_port" instanceKey="aa_event_tiny/aa_event_tiny_RootSwComponentPrototype/p_port">
+      <event-refs>
+        <event-ref eventRef="ev5" var="p_port_Out1_ev"/>
+      </event-refs>
+    </pport>
+    <pport name="p2_port" instanceKey="aa_event_tiny/aa_event_tiny_RootSwComponentPrototype/p2_port">
+      <event-refs>
+        <event-ref eventRef="ev6" var="p2_port_y"/>
+      </event-refs>
+    </pport>
+  </ports>
+</aa-component>

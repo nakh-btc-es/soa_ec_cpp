@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="port_variant"/>
+    <Architecture id="id1" name="port_variant [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B"/>
+      <Path refId="id1" path="top_A.c:1:Sa2_sub_B"/>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort1"/>
+        <Path refId="id1" path="Sa2_OutPort1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B/const1/var1"/>
+        <Path refId="id1" path="Vca_sub_dv1[1].var1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B/const3/var3"/>
+        <Path refId="id1" path="Vca_sub_dv1[1].var3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B/const4/var4"/>
+        <Path refId="id1" path="Vca_sub_dv2_osc_vi8.var4"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B/const5/var5"/>
+        <Path refId="id1" path="Vca_sub_dv2_osc_vi8.var5"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B/sub_B1"/>
+      <Path refId="id1" path="top_A.c:1:Sa2_sub_B/top_A.c:1:Sa3_sub_B1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Vca_sub_dv1[1].var1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In3"/>
+        <Path refId="id1" path="Vca_sub_dv1[1].var3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In4"/>
+        <Path refId="id1" path="Vca_sub_dv2_osc_vi8.var4"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In5"/>
+        <Path refId="id1" path="Vca_sub_dv2_osc_vi8.var5"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa3_Sum1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B/sub_B2"/>
+      <Path refId="id1" path="top_A.c:1:Sa2_sub_B/top_A.c:1:Sa4_sub_B2"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Vca_sub_dv1[1].var1"/>
+        <SignalMapping>
+          <Path refId="id0" path="(1)"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Vca_sub_dv1[1].var3"/>
+        <SignalMapping>
+          <Path refId="id0" path="(3)"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Vca_sub_dv2_osc_vi8.var4"/>
+        <SignalMapping>
+          <Path refId="id0" path="(4)"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Vca_sub_dv2_osc_vi8.var5"/>
+        <SignalMapping>
+          <Path refId="id0" path="(5)"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa4_Sum1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B/sub_B3"/>
+      <Path refId="id1" path="top_A.c:1:Sa2_sub_B/top_A.c:1:Sa5_sub_B3"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Vca_sub_dv2_osc_vi8.var5"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.aa.e"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Vca_sub_dv2_osc_vi8.var4"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.aa.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Vca_sub_dv1[1].var3"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.c"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Vca_sub_dv1[1].var1"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.bb.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Bus Inport"/>
+        <Path refId="id1" path="Sa5_e"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.aa.e"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Bus Inport"/>
+        <Path refId="id1" path="Sa5_d"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.aa.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Bus Inport"/>
+        <Path refId="id1" path="Sa5_c"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.c"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Bus Inport"/>
+        <Path refId="id1" path="Sa5_b"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.bb.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Bus Inport"/>
+        <Path refId="id1" path="Sa5_a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.bb.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa5_Sum3"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B/sub_B4"/>
+      <Path refId="id1" path="top_A.c:1:Sa2_sub_B/top_A.c:1:Sa6_sub_B4"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort1"/>
+        <Path refId="id1" path="Sa6_InPort1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort2"/>
+        <Path refId="id1" path="Sa6_InPort2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort3"/>
+        <Path refId="id1" path="Sa6_InPort3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort4"/>
+        <Path refId="id1" path="Sa6_InPort4"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort5"/>
+        <Path refId="id1" path="Sa6_InPort5"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa6_Sum1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_enum_01\enum_model_init.m" modelVersion="1.30" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_enum_01\enum_model_01.mdl" modelCreationDate="2017-09-13T11:31:09" creator="developer">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.30" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_enum_01\enum_model_01.mdl" creationDate="2017-09-13T11:31:09" modificationDate="2020-09-10T14:58:04" initScript="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_enum_01\enum_model_init.m">
+    <subsystem subsysID="ss1" physicalPath="enum_model_01/top_A" path="top_A" sampleTime="0.2" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="enum_model_01/top_A/In1" path="top_A/In1" signalName="a">
+        <enumType name="MyNumber">
+          <enumElement name="ZERO" value="0"/>
+          <enumElement name="ONE" value="1"/>
+          <enumElement name="SEVEN" value="7"/>
+        </enumType>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="enum_model_01/top_A/In2" path="top_A/In2" signalName="b">
+        <array size="1" startIndex="1">
+          <array size="2" startIndex="1">
+            <enumType name="MyColor">
+              <enumElement name="Red" value="1"/>
+              <enumElement name="Green" value="2"/>
+              <enumElement name="Blue" value="4"/>
+            </enumType>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="enum_model_01/top_A/In3" path="top_A/In3">
+        <int32/>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="enum_model_01/top_A/In4" path="top_A/In4">
+        <enumType name="MyColor">
+          <enumElement name="Red" value="1"/>
+          <enumElement name="Green" value="2"/>
+          <enumElement name="Blue" value="4"/>
+        </enumType>
+      </inport>
+      <inport portNumber="5" name="In5" physicalPath="enum_model_01/top_A/In5" path="top_A/In5">
+        <enumType name="MyState">
+          <enumElement name="BAD" value="0"/>
+          <enumElement name="GOOD" value="1"/>
+          <enumElement name="AWESOME" value="2"/>
+          <enumElement name="bad" value="0"/>
+          <enumElement name="good" value="1"/>
+          <enumElement name="awesome" value="2"/>
+        </enumType>
+      </inport>
+      <inport portNumber="6" name="In6" physicalPath="enum_model_01/top_A/In6" path="top_A/In6" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <enumType name="MyNumber">
+              <enumElement name="ZERO" value="0"/>
+              <enumElement name="ONE" value="1"/>
+              <enumElement name="SEVEN" value="7"/>
+            </enumType>
+          </signal>
+          <signal signalName="b">
+            <enumType name="MyState">
+              <enumElement name="BAD" value="0"/>
+              <enumElement name="GOOD" value="1"/>
+              <enumElement name="AWESOME" value="2"/>
+              <enumElement name="bad" value="0"/>
+              <enumElement name="good" value="1"/>
+              <enumElement name="awesome" value="2"/>
+            </enumType>
+          </signal>
+          <signal signalName="c">
+            <int32/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="7" name="In7" physicalPath="enum_model_01/top_A/In7" path="top_A/In7" signalName="MyBusSig">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <enumType name="MyNumber">
+              <enumElement name="ZERO" value="0"/>
+              <enumElement name="ONE" value="1"/>
+              <enumElement name="SEVEN" value="7"/>
+            </enumType>
+          </signal>
+          <signal signalName="b">
+            <enumType name="MyState">
+              <enumElement name="BAD" value="0"/>
+              <enumElement name="GOOD" value="1"/>
+              <enumElement name="AWESOME" value="2"/>
+              <enumElement name="bad" value="0"/>
+              <enumElement name="good" value="1"/>
+              <enumElement name="awesome" value="2"/>
+            </enumType>
+          </signal>
+          <signal signalName="c">
+            <int32/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="8" name="In8" physicalPath="enum_model_01/top_A/In8" path="top_A/In8" signalName="MyColorSig">
+        <enumType name="MyColor">
+          <enumElement name="Red" value="1"/>
+          <enumElement name="Green" value="2"/>
+          <enumElement name="Blue" value="4"/>
+        </enumType>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="enum_model_01/top_A/Out1" path="top_A/Out1" signalName="a">
+        <enumType name="MyNumber">
+          <enumElement name="ZERO" value="0"/>
+          <enumElement name="ONE" value="1"/>
+          <enumElement name="SEVEN" value="7"/>
+        </enumType>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="enum_model_01/top_A/Out2" path="top_A/Out2" signalName="b">
+        <array size="1" startIndex="1">
+          <array size="2" startIndex="1">
+            <enumType name="MyColor">
+              <enumElement name="Red" value="1"/>
+              <enumElement name="Green" value="2"/>
+              <enumElement name="Blue" value="4"/>
+            </enumType>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="enum_model_01/top_A/Out3" path="top_A/Out3">
+        <int32/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="enum_model_01/top_A/Out4" path="top_A/Out4">
+        <enumType name="MyColor">
+          <enumElement name="Red" value="1"/>
+          <enumElement name="Green" value="2"/>
+          <enumElement name="Blue" value="4"/>
+        </enumType>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="enum_model_01/top_A/Out5" path="top_A/Out5">
+        <enumType name="MyState">
+          <enumElement name="BAD" value="0"/>
+          <enumElement name="GOOD" value="1"/>
+          <enumElement name="AWESOME" value="2"/>
+          <enumElement name="bad" value="0"/>
+          <enumElement name="good" value="1"/>
+          <enumElement name="awesome" value="2"/>
+        </enumType>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="enum_model_01/top_A/Out6" path="top_A/Out6" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <enumType name="MyNumber">
+              <enumElement name="ZERO" value="0"/>
+              <enumElement name="ONE" value="1"/>
+              <enumElement name="SEVEN" value="7"/>
+            </enumType>
+          </signal>
+          <signal signalName="b">
+            <enumType name="MyState">
+              <enumElement name="BAD" value="0"/>
+              <enumElement name="GOOD" value="1"/>
+              <enumElement name="AWESOME" value="2"/>
+              <enumElement name="bad" value="0"/>
+              <enumElement name="good" value="1"/>
+              <enumElement name="awesome" value="2"/>
+            </enumType>
+          </signal>
+          <signal signalName="c">
+            <int32/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="7" name="Out7" physicalPath="enum_model_01/top_A/Out7" path="top_A/Out7" signalName="MyBusSig">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <enumType name="MyNumber">
+              <enumElement name="ZERO" value="0"/>
+              <enumElement name="ONE" value="1"/>
+              <enumElement name="SEVEN" value="7"/>
+            </enumType>
+          </signal>
+          <signal signalName="b">
+            <enumType name="MyState">
+              <enumElement name="BAD" value="0"/>
+              <enumElement name="GOOD" value="1"/>
+              <enumElement name="AWESOME" value="2"/>
+              <enumElement name="bad" value="0"/>
+              <enumElement name="good" value="1"/>
+              <enumElement name="awesome" value="2"/>
+            </enumType>
+          </signal>
+          <signal signalName="c">
+            <int32/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="8" name="Out8" physicalPath="enum_model_01/top_A/Out8" path="top_A/Out8" signalName="MyColorSig">
+        <enumType name="MyColor">
+          <enumElement name="Red" value="1"/>
+          <enumElement name="Green" value="2"/>
+          <enumElement name="Blue" value="4"/>
+        </enumType>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

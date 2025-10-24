@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="25m">
+	<Scope uid="25m" name="top_A" path="nonvirtual_bus_sl/top_A" sampleTime="0.02" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="nonvirtual_bus_sl/top_A" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_299" signalName="a" signalType="int16" isFloat="yes">
+				<ifName ifid="if_299" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_300" signalName="b" width1="2" signalType="int32" signalDim="[1 2]" isFloat="yes">
+				<ifName ifid="if_301" index1="1" lsb="1" offset="0" displayName="In2(1)" identifier="INPUT:In2(1)" />
+				<ifName ifid="if_302" index1="2" lsb="1" offset="0" displayName="In2(2)" identifier="INPUT:In2(2)" />
+			</Variable>
+		</InPort>
+		<InPort name="In3" portNumber="3" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusZ">
+			<Variable varid="varif_304" signalName="z.x" signalType="single" isFloat="yes">
+				<ifName ifid="if_304" lsb="1" offset="0" displayName="In3.z.x" identifier="INPUT:In3.z.x" />
+			</Variable>
+			<Variable varid="varif_305" signalName="z.y" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes">
+				<ifName ifid="if_306" index1="1" lsb="1" offset="0" displayName="In3.z.y(1)" identifier="INPUT:In3.z.y(1)" />
+				<ifName ifid="if_307" index1="2" lsb="1" offset="0" displayName="In3.z.y(2)" identifier="INPUT:In3.z.y(2)" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_308" width1="2" signalType="boolean" signalDim="[1 2]" isFloat="yes">
+				<ifName ifid="if_309" index1="1" lsb="1" offset="0" displayName="Out1(1)" identifier="OUTPUT:Out1(1)" />
+				<ifName ifid="if_310" index1="2" lsb="1" offset="0" displayName="Out1(2)" identifier="OUTPUT:Out1(2)" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_311" width1="2" signalType="boolean" signalDim="[1 2]" isFloat="yes">
+				<ifName ifid="if_312" index1="1" lsb="1" offset="0" displayName="Out2(1)" identifier="OUTPUT:Out2(1)" />
+				<ifName ifid="if_313" index1="2" lsb="1" offset="0" displayName="Out2(2)" identifier="OUTPUT:Out2(2)" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out3" portNumber="3" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusW">
+			<Variable varid="varif_315" signalName="w.c.a" signalType="int16" isFloat="yes">
+				<ifName ifid="if_315" lsb="1" offset="0" displayName="Out3.w.c.a" identifier="OUTPUT:Out3.w.c.a" />
+			</Variable>
+			<Variable varid="varif_316" signalName="w.c.b" width1="2" signalType="int32" signalDim="[1 2]" isFloat="yes">
+				<ifName ifid="if_319" index1="1" lsb="1" offset="0" displayName="Out3.w.c.b(1)" identifier="OUTPUT:Out3.w.c.b(1)" />
+				<ifName ifid="if_320" index1="2" lsb="1" offset="0" displayName="Out3.w.c.b(2)" identifier="OUTPUT:Out3.w.c.b(2)" />
+			</Variable>
+			<Variable varid="varif_317" signalName="w.z.x" signalType="single" isFloat="yes">
+				<ifName ifid="if_317" lsb="1" offset="0" displayName="Out3.w.z.x" identifier="OUTPUT:Out3.w.z.x" />
+			</Variable>
+			<Variable varid="varif_318" signalName="w.z.y" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes">
+				<ifName ifid="if_321" index1="1" lsb="1" offset="0" displayName="Out3.w.z.y(1)" identifier="OUTPUT:Out3.w.z.y(1)" />
+				<ifName ifid="if_322" index1="2" lsb="1" offset="0" displayName="Out3.w.z.y(2)" identifier="OUTPUT:Out3.w.z.y(2)" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out4" portNumber="4" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusZ">
+			<Variable varid="varif_324" signalName="z.x" signalType="single" isFloat="yes">
+				<ifName ifid="if_324" lsb="1" offset="0" displayName="Out4.z.x" identifier="OUTPUT:Out4.z.x" />
+			</Variable>
+			<Variable varid="varif_325" signalName="z.y" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes">
+				<ifName ifid="if_326" index1="1" lsb="1" offset="0" displayName="Out4.z.y(1)" identifier="OUTPUT:Out4.z.y(1)" />
+				<ifName ifid="if_327" index1="2" lsb="1" offset="0" displayName="Out4.z.y(2)" identifier="OUTPUT:Out4.z.y(2)" />
+			</Variable>
+		</OutPort>
+		<Model name="nonvirtual_bus_sl" modelPath="/E:/ModelsDev/UT_MIL_SL/nonvirtualBus/ml2015asp1/nonvirtual_bus_sl.mdl" type="SimulinkModel" />
+		<Scope uid="25k" name="sub_B1" path="nonvirtual_bus_sl/top_A/sub_B1" sampleTime="0.02" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="nonvirtual_bus_sl/top_A/sub_B1" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusC">
+				<Variable varid="varif_332" signalName="c.a" signalType="int16" isFloat="yes">
+					<ifName ifid="if_332" lsb="1" offset="0" displayName="In1.c.a" identifier="INPUT:In1.c.a" />
+				</Variable>
+				<Variable varid="varif_333" signalName="c.b" width1="2" signalType="int32" signalDim="[1 2]" isFloat="yes">
+					<ifName ifid="if_334" index1="1" lsb="1" offset="0" displayName="In1.c.b(1)" identifier="INPUT:In1.c.b(1)" />
+					<ifName ifid="if_335" index1="2" lsb="1" offset="0" displayName="In1.c.b(2)" identifier="INPUT:In1.c.b(2)" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_336" width1="2" signalType="boolean" signalDim="[1 2]" isFloat="yes">
+					<ifName ifid="if_337" index1="1" lsb="1" offset="0" displayName="Out1(1)" identifier="OUTPUT:Out1(1)" />
+					<ifName ifid="if_338" index1="2" lsb="1" offset="0" displayName="Out1(2)" identifier="OUTPUT:Out1(2)" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out2" portNumber="2" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusC">
+				<Variable varid="varif_340" signalName="c.a" signalType="int16" isFloat="yes">
+					<ifName ifid="if_340" lsb="1" offset="0" displayName="Out2.c.a" identifier="OUTPUT:Out2.c.a" />
+				</Variable>
+				<Variable varid="varif_341" signalName="c.b" width1="2" signalType="int32" signalDim="[1 2]" isFloat="yes">
+					<ifName ifid="if_342" index1="1" lsb="1" offset="0" displayName="Out2.c.b(1)" identifier="OUTPUT:Out2.c.b(1)" />
+					<ifName ifid="if_343" index1="2" lsb="1" offset="0" displayName="Out2.c.b(2)" identifier="OUTPUT:Out2.c.b(2)" />
+				</Variable>
+			</OutPort>
+			<Model name="nonvirtual_bus_sl" modelPath="/E:/ModelsDev/UT_MIL_SL/nonvirtualBus/ml2015asp1/nonvirtual_bus_sl.mdl" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="25l" name="sub_B2" path="nonvirtual_bus_sl/top_A/sub_B2" sampleTime="0.02" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="nonvirtual_bus_sl/top_A/sub_B2" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusW">
+				<Variable varid="varif_348" signalName="w.c.a" signalType="int16" isFloat="yes">
+					<ifName ifid="if_348" lsb="1" offset="0" displayName="In1.w.c.a" identifier="INPUT:In1.w.c.a" />
+				</Variable>
+				<Variable varid="varif_349" signalName="w.c.b" width1="2" signalType="int32" signalDim="[1 2]" isFloat="yes">
+					<ifName ifid="if_352" index1="1" lsb="1" offset="0" displayName="In1.w.c.b(1)" identifier="INPUT:In1.w.c.b(1)" />
+					<ifName ifid="if_353" index1="2" lsb="1" offset="0" displayName="In1.w.c.b(2)" identifier="INPUT:In1.w.c.b(2)" />
+				</Variable>
+				<Variable varid="varif_350" signalName="w.z.x" signalType="single" isFloat="yes">
+					<ifName ifid="if_350" lsb="1" offset="0" displayName="In1.w.z.x" identifier="INPUT:In1.w.z.x" />
+				</Variable>
+				<Variable varid="varif_351" signalName="w.z.y" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes">
+					<ifName ifid="if_354" index1="1" lsb="1" offset="0" displayName="In1.w.z.y(1)" identifier="INPUT:In1.w.z.y(1)" />
+					<ifName ifid="if_355" index1="2" lsb="1" offset="0" displayName="In1.w.z.y(2)" identifier="INPUT:In1.w.z.y(2)" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_356" width1="2" signalType="boolean" signalDim="[1 2]" isFloat="yes">
+					<ifName ifid="if_357" index1="1" lsb="1" offset="0" displayName="Out1(1)" identifier="OUTPUT:Out1(1)" />
+					<ifName ifid="if_358" index1="2" lsb="1" offset="0" displayName="Out1(2)" identifier="OUTPUT:Out1(2)" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out2" portNumber="2" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusW">
+				<Variable varid="varif_360" signalName="w.c.a" signalType="int16" isFloat="yes">
+					<ifName ifid="if_360" lsb="1" offset="0" displayName="Out2.w.c.a" identifier="OUTPUT:Out2.w.c.a" />
+				</Variable>
+				<Variable varid="varif_361" signalName="w.c.b" width1="2" signalType="int32" signalDim="[1 2]" isFloat="yes">
+					<ifName ifid="if_364" index1="1" lsb="1" offset="0" displayName="Out2.w.c.b(1)" identifier="OUTPUT:Out2.w.c.b(1)" />
+					<ifName ifid="if_365" index1="2" lsb="1" offset="0" displayName="Out2.w.c.b(2)" identifier="OUTPUT:Out2.w.c.b(2)" />
+				</Variable>
+				<Variable varid="varif_362" signalName="w.z.x" signalType="single" isFloat="yes">
+					<ifName ifid="if_362" lsb="1" offset="0" displayName="Out2.w.z.x" identifier="OUTPUT:Out2.w.z.x" />
+				</Variable>
+				<Variable varid="varif_363" signalName="w.z.y" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes">
+					<ifName ifid="if_366" index1="1" lsb="1" offset="0" displayName="Out2.w.z.y(1)" identifier="OUTPUT:Out2.w.z.y(1)" />
+					<ifName ifid="if_367" index1="2" lsb="1" offset="0" displayName="Out2.w.z.y(2)" identifier="OUTPUT:Out2.w.z.y(2)" />
+				</Variable>
+			</OutPort>
+			<Model name="nonvirtual_bus_sl" modelPath="/E:/ModelsDev/UT_MIL_SL/nonvirtualBus/ml2015asp1/nonvirtual_bus_sl.mdl" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

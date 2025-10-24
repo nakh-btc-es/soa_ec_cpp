@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="main"/>
+    <Architecture id="id1" name="main [C-Code]"/>
+    <ScopeMapping>
+      <Path path="sub_A" refId="id0"/>
+      <Path path="main.c:1:Runa_A" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_A/ref" refId="id0"/>
+        <Path path="RteStub_ref1_ref1_ref1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_A/y" refId="id0"/>
+        <Path path="RteStub_y1_y1_y1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_A/u" refId="id0"/>
+        <Path path="RteStub_u1_u1_u1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="main:A" refId="id0"/>
+        <Path path="Rte_CData_A_data" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="main:E" refId="id0"/>
+        <Path path="Rte_CData_E_data" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_B" refId="id0"/>
+      <Path path="main.c:1:Runa_B" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_B/ref" refId="id0"/>
+        <Path path="RteStub_ref2_ref2_ref2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_B/y" refId="id0"/>
+        <Path path="RteStub_y2_y2_y2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_B/u" refId="id0"/>
+        <Path path="RteStub_u2_u2_u2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="main:C" refId="id0"/>
+        <Path path="Rte_CData_C_data" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="main:D" refId="id0"/>
+        <Path path="Rte_Prm_D_p_D_el_data" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

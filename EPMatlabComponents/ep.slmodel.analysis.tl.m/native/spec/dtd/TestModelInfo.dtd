@@ -1,0 +1,130 @@
+<!-- DTD description for test models.                                     -->
+<!--                                                                      -->
+<!-- author: hornstein@btc-es.de                                          -->
+<!--                                                                      -->
+<!-- (c) 2014 BTC Embedded Systems AG, Germany.                           -->
+
+
+<!-- TestModelInfo: root node for Document                                -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      Scope*      Scopes in TestModel                                 -->
+<!--      Parameter*  Parameters in TestModel                             -->
+<!--      Local*      Locals in TestModel                                 -->
+<!--                                                                      -->
+<!ELEMENT TestModelInfo (Architecture, Coverage)>
+
+
+<!-- Architecture                                                         -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      Scope*      Scopes in TestModel                                 -->
+<!--      Parameter*  Parameters in TestModel                             -->
+<!--      Local*      Locals in TestModel                                 -->
+<!--                                                                      -->
+<!ELEMENT Architecture (Scope|Parameter|Local)*>
+
+
+<!-- Coverage                                                             -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      File*       Scopes in TestModel                                 -->
+<!--                                                                      -->
+<!ELEMENT Coverage (File*)>
+
+
+<!-- File                                                                 -->
+<!--                                                                      -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      name        name of the File                                    -->
+<!--                                                                      -->
+<!ELEMENT File EMPTY>
+<!ATTLIST File 
+                name        CDATA   #REQUIRED>
+
+
+<!-- Scope                                                                -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      Location    Location info                                       -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      id          ID of the Scope (needed for Parent relation)        -->
+<!--      name        name of the Scope                                   -->
+<!--      cname       name of the Function in C-Code                      -->
+<!--                  (only set if there is a C-Function)                 -->
+<!--      parentId    ID of the parent Scope (might be empty)             -->
+<!--                                                                      -->
+<!ELEMENT Scope (Location)>
+<!ATTLIST Scope 
+                id          ID      #REQUIRED 
+                name        CDATA   #REQUIRED 
+                cname       CDATA   #IMPLIED 
+                parentId    IDREF   #IMPLIED>
+
+
+<!-- Parameter                                                            -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      Location+    Location info                                      -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      name        name of the Parameter                               -->
+<!--      cname       name of the Parameter as used in C-Code             -->
+<!--      size1       if C-Variable is an array/matrix, the length of the -->
+<!--                  first dimension (otherwise not set)                 -->
+<!--      size2       if C-Variable is a matrix, the length of the        -->
+<!--                  second dimension (otherwise not set)                -->
+<!--                                                                      -->
+<!ELEMENT Parameter (Type, Location+)>
+<!ATTLIST Parameter 
+                name        CDATA   #REQUIRED
+                cname       CDATA   #IMPLIED
+                size1       CDATA   #IMPLIED
+                size2       CDATA   #IMPLIED>
+
+
+<!-- Local                                                                -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      Location    Location info                                       -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      size1       if C-Variable is an array/matrix, the length of the -->
+<!--                  first dimension (otherwise not set)                 -->
+<!--      size2       if C-Variable is a matrix, the length of the        -->
+<!--                  second dimension (otherwise not set)                -->
+<!--                                                                      -->
+<!ELEMENT Local (Type, Location)>
+<!ATTLIST Local 
+                size1       CDATA   #IMPLIED
+                size2       CDATA   #IMPLIED>
+
+
+<!-- Location                                                             -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      path        path info in TestModel                              -->
+<!--      blockType   Simulink BlockType                                  -->
+<!--      blockUsage  usage inside the Simulink block                     -->
+<!--                                                                      -->
+<!ELEMENT Location EMPTY>
+<!ATTLIST Location
+               path         CDATA   #REQUIRED
+               blockType    CDATA   #IMPLIED
+               blockUsage   CDATA   #IMPLIED>
+
+               
+<!-- Type                                                                 -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      name        name of the Parameter                               -->
+<!--      isStruct    is Type structured (default = "no")                 -->
+<!--                                                                      -->
+<!ELEMENT Type EMPTY>
+<!ATTLIST Type
+               name         CDATA     #REQUIRED
+               isStruct     (yes|no)  #IMPLIED>
+
+

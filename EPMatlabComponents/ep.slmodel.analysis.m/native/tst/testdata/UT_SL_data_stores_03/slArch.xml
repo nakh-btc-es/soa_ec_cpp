@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_03\init_data_stores_03.m" modelVersion="1.94" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_03\data_stores_03.mdl" modelCreationDate="2018-03-01T09:07:54" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.94" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_03\data_stores_03.mdl" creationDate="2018-03-01T09:07:54" modificationDate="2024-09-11T18:27:10" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_03\init_data_stores_03.m">
+    <subsystem subsysID="ss1" physicalPath="data_stores_03/top_A" path="top_A" sampleTime="0.2" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_stores_03/top_A/In1" path="top_A/In1">
+        <array size="3" startIndex="1">
+          <int16/>
+        </array>
+      </inport>
+      <parameter name="myValA" path="top_A/sub_B1/DS_in1" physicalPath="data_stores_03/top_A/sub_B1/DS_in1" origin="explicit_param" workspace="myValA">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="22.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="66.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="33.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B1/DS_in1" physicalPath="data_stores_03/top_A/sub_B1/DS_in1" simulinkBlockType="DataStoreRead"/>
+        <usageContext path="top_A/sub_B2/myFunc1" physicalPath="data_stores_03/top_A/sub_B2/myFunc1" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+        <usageContext path="top_A/sub_B2/sub_C1/DS_out1" physicalPath="data_stores_03/top_A/sub_B2/sub_C1/DS_out1" simulinkBlockType="DataStoreWrite"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_03/top_A/Out1" path="top_A/Out1">
+        <array size="3" startIndex="1">
+          <int16/>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="data_stores_03/top_A/Out2" path="top_A/Out2" signalName="y">
+        <array size="3" startIndex="1">
+          <int16/>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="data_stores_03/top_A/Out3" path="top_A/Out3">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="data_stores_03/top_A/sub_B1" path="top_A/sub_B1" sampleTime="0.2" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="DS_in1" physicalPath="data_stores_03/top_A/sub_B1/DS_in1" path="top_A/sub_B1/DS_in1" signalName="Sig01">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="22.0">
+            <int16 min="-33" max="77"/>
+          </signal>
+          <signal index="2" initValue="66.0">
+            <int16 min="-33" max="77"/>
+          </signal>
+          <signal index="3" initValue="33.0">
+            <int16 min="-33" max="77"/>
+          </signal>
+        </nonUniformArray>
+        <dataStoreMemory signalName="Sig01"/>
+      </inport>
+      <parameter name="myValA" path="top_A/sub_B1/DS_in1" physicalPath="data_stores_03/top_A/sub_B1/DS_in1" origin="explicit_param" workspace="myValA">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="22.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="66.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="33.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B1/DS_in1" physicalPath="data_stores_03/top_A/sub_B1/DS_in1" simulinkBlockType="DataStoreRead"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_03/top_A/sub_B1/Out1" path="top_A/sub_B1/Out1">
+        <array size="3" startIndex="1">
+          <int16/>
+        </array>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="data_stores_03/top_A/sub_B2" path="top_A/sub_B2" sampleTime="0.2" name="sub_B2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_stores_03/top_A/sub_B2/In1" path="top_A/sub_B2/In1">
+        <array size="3" startIndex="1">
+          <int16/>
+        </array>
+      </inport>
+      <parameter name="myValA" path="top_A/sub_B2/myFunc1" physicalPath="data_stores_03/top_A/sub_B2/myFunc1" origin="explicit_param" workspace="myValA">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="22.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="66.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="33.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B2/myFunc1" physicalPath="data_stores_03/top_A/sub_B2/myFunc1" simulinkBlockType="SubSystem" blockAttribute="Constant"/>
+        <usageContext path="top_A/sub_B2/sub_C1/DS_out1" physicalPath="data_stores_03/top_A/sub_B2/sub_C1/DS_out1" simulinkBlockType="DataStoreWrite"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_03/top_A/sub_B2/Out1" path="top_A/sub_B2/Out1" signalName="y">
+        <array size="3" startIndex="1">
+          <int16/>
+        </array>
+      </outport>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="data_stores_03/top_A/sub_B2/sub_C1" path="top_A/sub_B2/sub_C1" sampleTime="0.2" name="sub_C1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_stores_03/top_A/sub_B2/sub_C1/In1" path="top_A/sub_B2/sub_C1/In1">
+        <array size="3" startIndex="1">
+          <int16/>
+        </array>
+      </inport>
+      <parameter name="myValA" path="top_A/sub_B2/sub_C1/DS_out1" physicalPath="data_stores_03/top_A/sub_B2/sub_C1/DS_out1" origin="explicit_param" workspace="myValA">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="22.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="66.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="33.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B2/sub_C1/DS_out1" physicalPath="data_stores_03/top_A/sub_B2/sub_C1/DS_out1" simulinkBlockType="DataStoreWrite"/>
+      </parameter>
+      <outport portNumber="0" name="DS_out1" physicalPath="data_stores_03/top_A/sub_B2/sub_C1/DS_out1" path="top_A/sub_B2/sub_C1/DS_out1" signalName="Sig01">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="22.0">
+            <int16 min="-33" max="77"/>
+          </signal>
+          <signal index="2" initValue="66.0">
+            <int16 min="-33" max="77"/>
+          </signal>
+          <signal index="3" initValue="33.0">
+            <int16 min="-33" max="77"/>
+          </signal>
+        </nonUniformArray>
+        <dataStoreMemory signalName="Sig01"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="data_stores_03/top_A/sub_B3" path="top_A/sub_B3" sampleTime="0.2" name="sub_B3" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_stores_03/top_A/sub_B3/In1" path="top_A/sub_B3/In1">
+        <array size="3" startIndex="1">
+          <int16/>
+        </array>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_03/top_A/sub_B3/Out1" path="top_A/sub_B3/Out1">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="data_stores_03/top_A/sub_B3/sub_C2" path="top_A/sub_B3/sub_C2" sampleTime="0.2" name="sub_C2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="DS_in1" physicalPath="data_stores_03/top_A/sub_B3/sub_C2/DS_in1" path="top_A/sub_B3/sub_C2/DS_in1" signalName="A" initValue="0.0">
+        <int16 min="-2"/>
+        <dataStoreMemory signalName="A" physicalPath="data_stores_03/top_A/Data Store&#10;Memory"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_stores_03/top_A/sub_B3/sub_C2/Out1" path="top_A/sub_B3/sub_C2/Out1">
+        <int16/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

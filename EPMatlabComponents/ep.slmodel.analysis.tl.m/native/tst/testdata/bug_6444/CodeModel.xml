@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_6444\TLProj\controller" name="controller.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_6444\TLSim" name="controller_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_6444\TLProj\controller"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_6444\TLSim"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="enablsys [C-Code]">
+    <Function name="controller" sampleTime="1.0E-4">
+      <Interface>
+        <InterfaceObj kind="in" var="ref_" scaling="scID1"/>
+        <InterfaceObj kind="in" var="y_" scaling="scID1"/>
+        <InterfaceObj kind="cal" var="Sa8_pos__level" fileref="fID1" scaling="scID1" initVal="5.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="u" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa2_e" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa8_select_low_gain" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa2_controller" fileref="fID1" sampleTime="1.0E-4">
+      <Interface>
+        <InterfaceObj kind="in" var="ref_" scaling="scID1"/>
+        <InterfaceObj kind="in" var="y_" scaling="scID1"/>
+        <InterfaceObj kind="cal" var="Sa8_pos__level" fileref="fID1" scaling="scID1" initVal="5.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="u" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa2_e" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa8_select_low_gain" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00"/>
+    <Scaling id="scID2" lsb="7.8125000000000000e-03" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

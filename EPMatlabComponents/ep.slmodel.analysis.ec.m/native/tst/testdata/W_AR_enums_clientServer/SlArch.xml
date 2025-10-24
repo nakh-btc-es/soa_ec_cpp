@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_AR_enums_clientServer\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_AR_enums_clientServer\init_Wrapper_enums_cs.m" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_AR_enums_clientServer\Wrapper_enums_cs.slx" modelCreationDate="2024-09-12T20:11:39" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_AR_enums_clientServer\Wrapper_enums_cs.slx" creationDate="2024-09-12T20:11:39" modificationDate="2024-09-12T20:11:46" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_AR_enums_clientServer\init_Wrapper_enums_cs.m">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_enums_cs" path="" sampleTime="0.005" name="Wrapper_enums_cs" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In_a" physicalPath="Wrapper_enums_cs/In_a" path="In_a">
+        <enumType name="MyColor">
+          <enumElement name="RED" value="2"/>
+          <enumElement name="GREEN" value="5"/>
+          <enumElement name="BLUE" value="9"/>
+        </enumType>
+      </inport>
+      <inport portNumber="2" name="In_EnumDyn" physicalPath="Wrapper_enums_cs/In_EnumDyn" path="In_EnumDyn">
+        <enumType name="i_DynEnumType">
+          <enumElement name="RED" value="0"/>
+          <enumElement name="GREEN" value="1"/>
+          <enumElement name="BLUE" value="2"/>
+          <enumElement name="GRAU" value="3"/>
+        </enumType>
+      </inport>
+      <inport portNumber="0" name="dsin_get_color_c1_color" physicalPath="Wrapper_enums_cs/Mock_get_color_c1/dsin_get_color_c1_color" path="Mock_get_color_c1/dsin_get_color_c1_color" signalName="dsin_get_color_c1_color">
+        <nonUniformArray size="1">
+          <signal index="1">
+            <nonUniformArray size="2">
+              <signal index="1" initValue="2">
+                <enumType name="MyColor">
+                  <enumElement name="RED" value="2"/>
+                  <enumElement name="GREEN" value="5"/>
+                  <enumElement name="BLUE" value="9"/>
+                </enumType>
+              </signal>
+              <signal index="2" initValue="2">
+                <enumType name="MyColor">
+                  <enumElement name="RED" value="2"/>
+                  <enumElement name="GREEN" value="5"/>
+                  <enumElement name="BLUE" value="9"/>
+                </enumType>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <dataStoreMemory signalName="dsin_get_color_c1_color"/>
+      </inport>
+      <inport portNumber="0" name="dsin_get_color_c2_st_color" physicalPath="Wrapper_enums_cs/Mock_get_color_c2/dsin_get_color_c2_st_color" path="Mock_get_color_c2/dsin_get_color_c2_st_color" signalName="dsin_get_color_c2_st_color">
+        <bus busType="non_virtual" busObjectName="BSig2">
+          <signal signalName="err">
+            <boolean/>
+          </signal>
+          <signal signalName="bsig">
+            <bus busType="non_virtual" busObjectName="BSig">
+              <signal signalName="f">
+                <fixedPoint simulinkTypeName="fixdt(1,16,5)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="0.0" max="600.0"/>
+              </signal>
+              <signal signalName="a">
+                <enumType name="MyColor">
+                  <enumElement name="RED" value="2"/>
+                  <enumElement name="GREEN" value="5"/>
+                  <enumElement name="BLUE" value="9"/>
+                </enumType>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+              <signal signalName="e">
+                <enumType name="MyStatus">
+                  <enumElement name="OK" value="0"/>
+                  <enumElement name="ERROR" value="1"/>
+                </enumType>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="dsin_get_color_c2_st_color"/>
+      </inport>
+      <inport portNumber="0" name="dsin_get_color_color" physicalPath="Wrapper_enums_cs/Mock_get_color/dsin_get_color_color" path="Mock_get_color/dsin_get_color_color" signalName="dsin_get_color_color" initValue="2">
+        <enumType name="MyColor">
+          <enumElement name="RED" value="2"/>
+          <enumElement name="GREEN" value="5"/>
+          <enumElement name="BLUE" value="9"/>
+        </enumType>
+        <dataStoreMemory signalName="dsin_get_color_color"/>
+      </inport>
+      <inport portNumber="0" name="dsin_get_color_e" physicalPath="Wrapper_enums_cs/Mock_get_color/dsin_get_color_e" path="Mock_get_color/dsin_get_color_e" signalName="dsin_get_color_e" initValue="0">
+        <enumType name="MyStatus">
+          <enumElement name="OK" value="0"/>
+          <enumElement name="ERROR" value="1"/>
+        </enumType>
+        <dataStoreMemory signalName="dsin_get_color_e"/>
+      </inport>
+      <inport portNumber="0" name="dsin_get_dynEnum_color_dynColor" physicalPath="Wrapper_enums_cs/Mock_get_dynEnum_color/dsin_get_dynEnum_color_dynColor" path="Mock_get_dynEnum_color/dsin_get_dynEnum_color_dynColor" signalName="dsin_get_dynEnum_color_dynColor" initValue="3">
+        <enumType name="i_DynEnumType">
+          <enumElement name="RED" value="0"/>
+          <enumElement name="GREEN" value="1"/>
+          <enumElement name="BLUE" value="2"/>
+          <enumElement name="GRAU" value="3"/>
+        </enumType>
+        <dataStoreMemory signalName="dsin_get_dynEnum_color_dynColor"/>
+      </inport>
+      <inport portNumber="0" name="dsin_split_color_err" physicalPath="Wrapper_enums_cs/Mock_split_color/dsin_split_color_err" path="Mock_split_color/dsin_split_color_err" signalName="dsin_split_color_err">
+        <boolean/>
+        <dataStoreMemory signalName="dsin_split_color_err"/>
+      </inport>
+      <inport portNumber="0" name="dsin_split_color_st_color_out" physicalPath="Wrapper_enums_cs/Mock_split_color/dsin_split_color_st_color_out" path="Mock_split_color/dsin_split_color_st_color_out" signalName="dsin_split_color_st_color_out">
+        <bus busType="non_virtual" busObjectName="BSig">
+          <signal signalName="f">
+            <fixedPoint simulinkTypeName="fixdt(1,16,5)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="0.0" max="600.0"/>
+          </signal>
+          <signal signalName="a">
+            <enumType name="MyColor">
+              <enumElement name="RED" value="2"/>
+              <enumElement name="GREEN" value="5"/>
+              <enumElement name="BLUE" value="9"/>
+            </enumType>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+          <signal signalName="e">
+            <enumType name="MyStatus">
+              <enumElement name="OK" value="0"/>
+              <enumElement name="ERROR" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="dsin_split_color_st_color_out"/>
+      </inport>
+      <outport portNumber="1" name="Out_b" physicalPath="Wrapper_enums_cs/Out_b" path="Out_b">
+        <enumType name="MyColor">
+          <enumElement name="RED" value="2"/>
+          <enumElement name="GREEN" value="5"/>
+          <enumElement name="BLUE" value="9"/>
+        </enumType>
+      </outport>
+      <outport portNumber="2" name="Out_EnumDyn" physicalPath="Wrapper_enums_cs/Out_EnumDyn" path="Out_EnumDyn">
+        <enumType name="i_DynEnumType">
+          <enumElement name="RED" value="0"/>
+          <enumElement name="GREEN" value="1"/>
+          <enumElement name="BLUE" value="2"/>
+          <enumElement name="GRAU" value="3"/>
+        </enumType>
+      </outport>
+      <outport portNumber="3" name="out_func_set_c1_color" physicalPath="Wrapper_enums_cs/out_func_set_c1_color" path="out_func_set_c1_color" signalName="out_func_set_c1_color">
+        <array size="1" startIndex="1">
+          <array size="2" startIndex="1">
+            <enumType name="MyColor">
+              <enumElement name="RED" value="2"/>
+              <enumElement name="GREEN" value="5"/>
+              <enumElement name="BLUE" value="9"/>
+            </enumType>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="0" name="dsout_get_color_in" physicalPath="Wrapper_enums_cs/Mock_get_color/dsout_get_color_in" path="Mock_get_color/dsout_get_color_in" signalName="dsout_get_color_in">
+        <fixedPoint simulinkTypeName="fixdt(1,16,5)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-1024.0" max="1023.96875"/>
+        <dataStoreMemory signalName="dsout_get_color_in"/>
+      </outport>
+      <outport portNumber="0" name="dsout_get_dynEnum_color_in" physicalPath="Wrapper_enums_cs/Mock_get_dynEnum_color/dsout_get_dynEnum_color_in" path="Mock_get_dynEnum_color/dsout_get_dynEnum_color_in" signalName="dsout_get_dynEnum_color_in" initValue="3">
+        <enumType name="i_DynEnumType">
+          <enumElement name="RED" value="0"/>
+          <enumElement name="GREEN" value="1"/>
+          <enumElement name="BLUE" value="2"/>
+          <enumElement name="GRAU" value="3"/>
+        </enumType>
+        <dataStoreMemory signalName="dsout_get_dynEnum_color_in"/>
+      </outport>
+      <outport portNumber="0" name="dsout_set_split_color_color" physicalPath="Wrapper_enums_cs/Mock_set_split_color/dsout_set_split_color_color" path="Mock_set_split_color/dsout_set_split_color_color" signalName="dsout_set_split_color_color">
+        <bus busType="non_virtual" busObjectName="BSig">
+          <signal signalName="f">
+            <fixedPoint simulinkTypeName="fixdt(1,16,5)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="0.0" max="600.0"/>
+          </signal>
+          <signal signalName="a">
+            <enumType name="MyColor">
+              <enumElement name="RED" value="2"/>
+              <enumElement name="GREEN" value="5"/>
+              <enumElement name="BLUE" value="9"/>
+            </enumType>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+          <signal signalName="e">
+            <enumType name="MyStatus">
+              <enumElement name="OK" value="0"/>
+              <enumElement name="ERROR" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="dsout_set_split_color_color"/>
+      </outport>
+      <outport portNumber="0" name="dsout_set_split_err_err" physicalPath="Wrapper_enums_cs/Mock_set_split_err/dsout_set_split_err_err" path="Mock_set_split_err/dsout_set_split_err_err" signalName="dsout_set_split_err_err">
+        <boolean/>
+        <dataStoreMemory signalName="dsout_set_split_err_err"/>
+      </outport>
+      <outport portNumber="0" name="dsout_split_color_st_color_in" physicalPath="Wrapper_enums_cs/Mock_split_color/dsout_split_color_st_color_in" path="Mock_split_color/dsout_split_color_st_color_in" signalName="dsout_split_color_st_color_in">
+        <bus busType="non_virtual" busObjectName="BSig2">
+          <signal signalName="err">
+            <boolean/>
+          </signal>
+          <signal signalName="bsig">
+            <bus busType="non_virtual" busObjectName="BSig">
+              <signal signalName="f">
+                <fixedPoint simulinkTypeName="fixdt(1,16,5)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="0.0" max="600.0"/>
+              </signal>
+              <signal signalName="a">
+                <enumType name="MyColor">
+                  <enumElement name="RED" value="2"/>
+                  <enumElement name="GREEN" value="5"/>
+                  <enumElement name="BLUE" value="9"/>
+                </enumType>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+              <signal signalName="e">
+                <enumType name="MyStatus">
+                  <enumElement name="OK" value="0"/>
+                  <enumElement name="ERROR" value="1"/>
+                </enumType>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="dsout_split_color_st_color_in"/>
+      </outport>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss8"/>
+      <subsystem refSubsysID="ss9"/>
+      <subsystem refSubsysID="ss10"/>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="enums_cs/get_color_r1" path="enums_cs/enums_cs/get_color_r1" sampleTime="0.02" name="get_color_r1" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="0" name="dsin_get_color_c1_color" physicalPath="Wrapper_enums_cs/Mock_get_color_c1/dsin_get_color_c1_color" path="Mock_get_color_c1/dsin_get_color_c1_color" signalName="dsin_get_color_c1_color">
+        <nonUniformArray size="1">
+          <signal index="1">
+            <nonUniformArray size="2">
+              <signal index="1" initValue="2">
+                <enumType name="MyColor">
+                  <enumElement name="RED" value="2"/>
+                  <enumElement name="GREEN" value="5"/>
+                  <enumElement name="BLUE" value="9"/>
+                </enumType>
+              </signal>
+              <signal index="2" initValue="2">
+                <enumType name="MyColor">
+                  <enumElement name="RED" value="2"/>
+                  <enumElement name="GREEN" value="5"/>
+                  <enumElement name="BLUE" value="9"/>
+                </enumType>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <dataStoreMemory signalName="dsin_get_color_c1_color"/>
+      </inport>
+      <outport portNumber="1" name="c1" physicalPath="enums_cs/get_color_r1/c1" path="enums_cs/enums_cs/get_color_r1/c1" modelRef="model002">
+        <array size="1" startIndex="1">
+          <array size="2" startIndex="1">
+            <enumType name="MyColor">
+              <enumElement name="RED" value="2"/>
+              <enumElement name="GREEN" value="5"/>
+              <enumElement name="BLUE" value="9"/>
+            </enumType>
+          </array>
+        </array>
+      </outport>
+      <slfunc_caller path="enums_cs/enums_cs/get_color_r1/Function Caller" pathCaller="enums_cs/get_color_r1/Function Caller" pathFunction="Wrapper_enums_cs/Mock_get_color_c1"/>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="enums_cs/get_color_r2" path="enums_cs/enums_cs/get_color_r2" sampleTime="0.01" name="get_color_r2" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="0" name="dsin_get_color_c2_st_color" physicalPath="Wrapper_enums_cs/Mock_get_color_c2/dsin_get_color_c2_st_color" path="Mock_get_color_c2/dsin_get_color_c2_st_color" signalName="dsin_get_color_c2_st_color">
+        <bus busType="non_virtual" busObjectName="BSig2">
+          <signal signalName="err">
+            <boolean/>
+          </signal>
+          <signal signalName="bsig">
+            <bus busType="non_virtual" busObjectName="BSig">
+              <signal signalName="f">
+                <fixedPoint simulinkTypeName="fixdt(1,16,5)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="0.0" max="600.0"/>
+              </signal>
+              <signal signalName="a">
+                <enumType name="MyColor">
+                  <enumElement name="RED" value="2"/>
+                  <enumElement name="GREEN" value="5"/>
+                  <enumElement name="BLUE" value="9"/>
+                </enumType>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+              <signal signalName="e">
+                <enumType name="MyStatus">
+                  <enumElement name="OK" value="0"/>
+                  <enumElement name="ERROR" value="1"/>
+                </enumType>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="dsin_get_color_c2_st_color"/>
+      </inport>
+      <inport portNumber="0" name="dsin_split_color_err" physicalPath="Wrapper_enums_cs/Mock_split_color/dsin_split_color_err" path="Mock_split_color/dsin_split_color_err" signalName="dsin_split_color_err">
+        <boolean/>
+        <dataStoreMemory signalName="dsin_split_color_err"/>
+      </inport>
+      <inport portNumber="0" name="dsin_split_color_st_color_out" physicalPath="Wrapper_enums_cs/Mock_split_color/dsin_split_color_st_color_out" path="Mock_split_color/dsin_split_color_st_color_out" signalName="dsin_split_color_st_color_out">
+        <bus busType="non_virtual" busObjectName="BSig">
+          <signal signalName="f">
+            <fixedPoint simulinkTypeName="fixdt(1,16,5)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="0.0" max="600.0"/>
+          </signal>
+          <signal signalName="a">
+            <enumType name="MyColor">
+              <enumElement name="RED" value="2"/>
+              <enumElement name="GREEN" value="5"/>
+              <enumElement name="BLUE" value="9"/>
+            </enumType>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+          <signal signalName="e">
+            <enumType name="MyStatus">
+              <enumElement name="OK" value="0"/>
+              <enumElement name="ERROR" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="dsin_split_color_st_color_out"/>
+      </inport>
+      <outport portNumber="0" name="dsout_set_split_color_color" physicalPath="Wrapper_enums_cs/Mock_set_split_color/dsout_set_split_color_color" path="Mock_set_split_color/dsout_set_split_color_color" signalName="dsout_set_split_color_color">
+        <bus busType="non_virtual" busObjectName="BSig">
+          <signal signalName="f">
+            <fixedPoint simulinkTypeName="fixdt(1,16,5)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="0.0" max="600.0"/>
+          </signal>
+          <signal signalName="a">
+            <enumType name="MyColor">
+              <enumElement name="RED" value="2"/>
+              <enumElement name="GREEN" value="5"/>
+              <enumElement name="BLUE" value="9"/>
+            </enumType>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+          <signal signalName="e">
+            <enumType name="MyStatus">
+              <enumElement name="OK" value="0"/>
+              <enumElement name="ERROR" value="1"/>
+            </enumType>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="dsout_set_split_color_color"/>
+      </outport>
+      <outport portNumber="0" name="dsout_set_split_err_err" physicalPath="Wrapper_enums_cs/Mock_set_split_err/dsout_set_split_err_err" path="Mock_set_split_err/dsout_set_split_err_err" signalName="dsout_set_split_err_err">
+        <boolean/>
+        <dataStoreMemory signalName="dsout_set_split_err_err"/>
+      </outport>
+      <outport portNumber="0" name="dsout_split_color_st_color_in" physicalPath="Wrapper_enums_cs/Mock_split_color/dsout_split_color_st_color_in" path="Mock_split_color/dsout_split_color_st_color_in" signalName="dsout_split_color_st_color_in">
+        <bus busType="non_virtual" busObjectName="BSig2">
+          <signal signalName="err">
+            <boolean/>
+          </signal>
+          <signal signalName="bsig">
+            <bus busType="non_virtual" busObjectName="BSig">
+              <signal signalName="f">
+                <fixedPoint simulinkTypeName="fixdt(1,16,5)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="0.0" max="600.0"/>
+              </signal>
+              <signal signalName="a">
+                <enumType name="MyColor">
+                  <enumElement name="RED" value="2"/>
+                  <enumElement name="GREEN" value="5"/>
+                  <enumElement name="BLUE" value="9"/>
+                </enumType>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+              <signal signalName="e">
+                <enumType name="MyStatus">
+                  <enumElement name="OK" value="0"/>
+                  <enumElement name="ERROR" value="1"/>
+                </enumType>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="dsout_split_color_st_color_in"/>
+      </outport>
+      <slfunc_caller path="enums_cs/enums_cs/get_color_r2/client_call1" pathCaller="enums_cs/get_color_r2/client_call1" pathFunction="Wrapper_enums_cs/Mock_get_color_c2"/>
+      <slfunc_caller path="enums_cs/enums_cs/get_color_r2/client_call3" pathCaller="enums_cs/get_color_r2/client_call3" pathFunction="Wrapper_enums_cs/Mock_set_split_color"/>
+      <slfunc_caller path="enums_cs/enums_cs/get_color_r2/client_call4" pathCaller="enums_cs/get_color_r2/client_call4" pathFunction="Wrapper_enums_cs/Mock_set_split_err"/>
+      <slfunc_caller path="enums_cs/enums_cs/get_color_r2/client_call2" pathCaller="enums_cs/get_color_r2/client_call2" pathFunction="Wrapper_enums_cs/Mock_split_color"/>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="enums_cs/process_EnumDyn_color_runnable" path="enums_cs/enums_cs/process_EnumDyn_color_runnable" sampleTime="0.005" name="process_EnumDyn_color_runnable" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="enums_cs/process_EnumDyn_color_runnable/In1" path="enums_cs/enums_cs/process_EnumDyn_color_runnable/In1" modelRef="model002">
+        <enumType name="i_DynEnumType">
+          <enumElement name="RED" value="0"/>
+          <enumElement name="GREEN" value="1"/>
+          <enumElement name="BLUE" value="2"/>
+          <enumElement name="GRAU" value="3"/>
+        </enumType>
+      </inport>
+      <inport portNumber="0" name="dsin_get_dynEnum_color_dynColor" physicalPath="Wrapper_enums_cs/Mock_get_dynEnum_color/dsin_get_dynEnum_color_dynColor" path="Mock_get_dynEnum_color/dsin_get_dynEnum_color_dynColor" signalName="dsin_get_dynEnum_color_dynColor" initValue="3">
+        <enumType name="i_DynEnumType">
+          <enumElement name="RED" value="0"/>
+          <enumElement name="GREEN" value="1"/>
+          <enumElement name="BLUE" value="2"/>
+          <enumElement name="GRAU" value="3"/>
+        </enumType>
+        <dataStoreMemory signalName="dsin_get_dynEnum_color_dynColor"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="enums_cs/process_EnumDyn_color_runnable/Out1" path="enums_cs/enums_cs/process_EnumDyn_color_runnable/Out1" modelRef="model002">
+        <enumType name="i_DynEnumType">
+          <enumElement name="RED" value="0"/>
+          <enumElement name="GREEN" value="1"/>
+          <enumElement name="BLUE" value="2"/>
+          <enumElement name="GRAU" value="3"/>
+        </enumType>
+      </outport>
+      <outport portNumber="0" name="dsout_get_dynEnum_color_in" physicalPath="Wrapper_enums_cs/Mock_get_dynEnum_color/dsout_get_dynEnum_color_in" path="Mock_get_dynEnum_color/dsout_get_dynEnum_color_in" signalName="dsout_get_dynEnum_color_in" initValue="3">
+        <enumType name="i_DynEnumType">
+          <enumElement name="RED" value="0"/>
+          <enumElement name="GREEN" value="1"/>
+          <enumElement name="BLUE" value="2"/>
+          <enumElement name="GRAU" value="3"/>
+        </enumType>
+        <dataStoreMemory signalName="dsout_get_dynEnum_color_in"/>
+      </outport>
+      <slfunc_caller path="enums_cs/enums_cs/process_EnumDyn_color_runnable/Function Caller" pathCaller="enums_cs/process_EnumDyn_color_runnable/Function Caller" pathFunction="Wrapper_enums_cs/Mock_get_dynEnum_color"/>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="enums_cs/process_color_runnable" path="enums_cs/enums_cs/process_color_runnable" sampleTime="0.005" name="process_color_runnable" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="enums_cs/process_color_runnable/In1" path="enums_cs/enums_cs/process_color_runnable/In1" modelRef="model002">
+        <enumType name="MyColor">
+          <enumElement name="RED" value="2"/>
+          <enumElement name="GREEN" value="5"/>
+          <enumElement name="BLUE" value="9"/>
+        </enumType>
+      </inport>
+      <inport portNumber="0" name="dsin_get_color_color" physicalPath="Wrapper_enums_cs/Mock_get_color/dsin_get_color_color" path="Mock_get_color/dsin_get_color_color" signalName="dsin_get_color_color" initValue="2">
+        <enumType name="MyColor">
+          <enumElement name="RED" value="2"/>
+          <enumElement name="GREEN" value="5"/>
+          <enumElement name="BLUE" value="9"/>
+        </enumType>
+        <dataStoreMemory signalName="dsin_get_color_color"/>
+      </inport>
+      <inport portNumber="0" name="dsin_get_color_e" physicalPath="Wrapper_enums_cs/Mock_get_color/dsin_get_color_e" path="Mock_get_color/dsin_get_color_e" signalName="dsin_get_color_e" initValue="0">
+        <enumType name="MyStatus">
+          <enumElement name="OK" value="0"/>
+          <enumElement name="ERROR" value="1"/>
+        </enumType>
+        <dataStoreMemory signalName="dsin_get_color_e"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="enums_cs/process_color_runnable/Out1" path="enums_cs/enums_cs/process_color_runnable/Out1" modelRef="model002">
+        <enumType name="MyColor">
+          <enumElement name="RED" value="2"/>
+          <enumElement name="GREEN" value="5"/>
+          <enumElement name="BLUE" value="9"/>
+        </enumType>
+      </outport>
+      <outport portNumber="0" name="dsout_get_color_in" physicalPath="Wrapper_enums_cs/Mock_get_color/dsout_get_color_in" path="Mock_get_color/dsout_get_color_in" signalName="dsout_get_color_in">
+        <fixedPoint simulinkTypeName="fixdt(1,16,5)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-1024.0" max="1023.96875"/>
+        <dataStoreMemory signalName="dsout_get_color_in"/>
+      </outport>
+      <slfunc_caller path="enums_cs/enums_cs/process_color_runnable/Function Caller" pathCaller="enums_cs/process_color_runnable/Function Caller" pathFunction="Wrapper_enums_cs/Mock_get_color"/>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.10" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_AR_enums_clientServer\enums_cs.slx" creationDate="2020-06-15T08:20:06" modificationDate="2024-09-12T20:11:36" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_AR_enums_clientServer\init_Wrapper_enums_cs.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

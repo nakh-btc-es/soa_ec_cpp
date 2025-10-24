@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aa-component name="DefrostApp" aa_version="R21-11" model_name="defrost_client_mod" matlab_version="R2023b">
+  <types>
+    <type typeId="t9" name="CDSF_RearDefrost_Req_t" kind="non-primitive">
+      <namespaces>
+        <namespace symbol="DefrostFeature"/>
+      </namespaces>
+    </type>
+    <type typeId="t11" name="EBL_Stat_Info_t" kind="non-primitive">
+      <namespaces>
+        <namespace symbol="DefrostFeature"/>
+      </namespaces>
+    </type>
+    <type typeId="t10" name="PowertrainPrplsnActv_Info_t" kind="non-primitive">
+      <namespaces>
+        <namespace symbol="DefrostFeature"/>
+      </namespaces>
+    </type>
+    <type typeId="t1" name="defrost_req_cmd_t" kind="non-primitive">
+      <namespaces>
+        <namespace symbol="DefrostFeature"/>
+      </namespaces>
+    </type>
+    <type typeId="t4" name="defrost_req_prio_t" kind="non-primitive">
+      <namespaces>
+        <namespace symbol="DefrostFeature"/>
+      </namespaces>
+    </type>
+    <type typeId="t6" name="defrost_req_sts_t" kind="non-primitive">
+      <namespaces>
+        <namespace symbol="DefrostFeature"/>
+      </namespaces>
+    </type>
+    <type typeId="t3" name="defrost_sts_t" kind="non-primitive">
+      <namespaces>
+        <namespace symbol="DefrostFeature"/>
+      </namespaces>
+    </type>
+    <type typeId="t8" name="defrsot_req_data_t" kind="non-primitive" category="structure">
+      <namespaces>
+        <namespace symbol="DefrostFeature"/>
+      </namespaces>
+    </type>
+    <type typeId="t5" name="defrsot_req_dur_t" kind="non-primitive">
+      <namespaces>
+        <namespace symbol="NamespaceA">
+          <namespace symbol="NamespaceB"/>
+        </namespace>
+      </namespaces>
+    </type>
+    <type typeId="t7" name="float" kind="fundamental"/>
+    <type typeId="t2" name="uint16_t" kind="primitive"/>
+  </types>
+  <interfaces>
+    <interface name="SI_Defrost_Req">
+      <namespaces>
+        <namespace symbol="defrostfeature"/>
+      </namespaces>
+      <methods>
+        <method methodId="met1" name="mh_get_defrost_dur_time">
+          <in name="req" typeRef="t1"/>
+          <out name="dur_time" typeRef="t2"/>
+        </method>
+        <method methodId="met2" name="mh_get_defrost_sts">
+          <out name="sts" typeRef="t3"/>
+        </method>
+        <method methodId="met3" name="mh_set_defrost_cmd">
+          <in name="req_cmd" typeRef="t1"/>
+          <in name="req_prio" typeRef="t4"/>
+          <in name="req_dur" typeRef="t5"/>
+          <in name="req_sts" typeRef="t6"/>
+        </method>
+        <method methodId="met4" name="mh_set_ext_temp">
+          <out name="ext_temp" typeRef="t7"/>
+        </method>
+      </methods>
+    </interface>
+    <interface name="RequiredInterface">
+      <events>
+        <event eventId="ev1" name="AdaptivePort_AppEvt_evt_defrost_cmd" typeRef="t8"/>
+        <event eventId="ev2" name="AdaptivePort_Defrost_Input_evt_CDSF_RearDefrost_Req" typeRef="t9"/>
+        <event eventId="ev3" name="AdaptivePort_Defrost_Input_evt_MaxDefrostSts_Info" typeRef="t6"/>
+        <event eventId="ev4" name="AdaptivePort_Defrost_Input_evt_PowertrainPrplsnActv_Info" typeRef="t10"/>
+      </events>
+    </interface>
+    <interface name="ProvidedInterface">
+      <events>
+        <event eventId="ev5" name="AdaptivePort_Defrost_EBL_Stat_Info_evt_EBL_Stat_Info" typeRef="t11"/>
+      </events>
+    </interface>
+  </interfaces>
+  <ports>
+    <rport name="AdaptivePort_DefrostReq" instanceKey="1">
+      <method-refs>
+        <method-ref methodRef="met3" func="SI_Defrost_Req_AdaptivePort_DefrostReq_mh_set_defrost_cmd"/>
+        <method-ref methodRef="met1" func="SI_Defrost_Req_AdaptivePort_DefrostReq_mh_get_defrost_dur_time"/>
+        <method-ref methodRef="met4" func="SI_Defrost_Req_AdaptivePort_DefrostReq_mh_set_ext_temp"/>
+        <method-ref methodRef="met2" func="SI_Defrost_Req_AdaptivePort_DefrostReq_mh_get_defrost_sts"/>
+      </method-refs>
+    </rport>
+    <rport name="RequiredPort" instanceKey="2">
+      <event-refs>
+        <event-ref eventRef="ev1" var="RequiredPort_AdaptivePort_AppEvt_evt_defrost_cmd"/>
+        <event-ref eventRef="ev2" var="RequiredPort_AdaptivePort_Defrost_Input_evt_CDSF_RearDefrost_Req"/>
+        <event-ref eventRef="ev3" var="RequiredPort_AdaptivePort_Defrost_Input_evt_MaxDefrostSts_Info"/>
+        <event-ref eventRef="ev4" var="RequiredPort_AdaptivePort_Defrost_Input_evt_PowertrainPrplsnActv_Info"/>
+      </event-refs>
+    </rport>
+    <pport name="ProvidedPort" instanceKey="3">
+      <event-refs>
+        <event-ref eventRef="ev5" var="ProvidedPort_AdaptivePort_Defrost_EBL_Stat_Info_evt_EBL_Stat_Info"/>
+      </event-refs>
+    </pport>
+  </ports>
+</aa-component>

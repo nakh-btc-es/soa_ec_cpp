@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.427" modelPath="E:\EP2\Git\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_6435\StandardModel_tl.mdl" modelCreationDate="2006-03-10T11:47:00" creator="alex">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.427" modelPath="E:\EP2\Git\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_6435\StandardModel_tl.mdl" creationDate="2006-03-10T11:47:00" modificationDate="2021-11-16T14:25:34">
+    <subsystem subsysID="ss1" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem" path="standartSubsystem/Subsystem/standartSubsystem" sampleTime="0.01" name="standartSubsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/In1" path="standartSubsystem/Subsystem/standartSubsystem/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/In2" path="standartSubsystem/Subsystem/standartSubsystem/In2">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="2.5000000000000000e-01" offset="-4.0000000000000000e+00" min="-8.0000000000000000e+02" max="3.0000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <calibration name="Calvariable" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart" origin="sf_const" restricted="false" stateflowVariable="Calvariable">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="bar (absolute)">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart" targetLinkBlockKind="Stateflow" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart" simulinkBlockType="SubSystem" blockAttribute="sf_parameter" stateflowVariable="Calvariable"/>
+      </calibration>
+      <calibration name="Saturation[sat_lower]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" origin="sat_lower" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" targetLinkBlockKind="TL_Saturate" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" simulinkBlockType="Saturate" blockAttribute="lowerlimit" restriction="tl_saturate:lowerlimit"/>
+      </calibration>
+      <calibration name="Saturation[sat_upper]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" origin="sat_upper" restricted="false">
+        <miltype initValue="2.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="2.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" targetLinkBlockKind="TL_Saturate" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" simulinkBlockType="Saturate" blockAttribute="upperlimit" restriction="tl_saturate:upperlimit"/>
+      </calibration>
+      <calibration name="Constant1[const]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Constant1" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Constant1" origin="const" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Constant1" targetLinkBlockKind="TL_Constant" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Constant1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="Switch2[switch_threshold]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch2" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch2" origin="switch_threshold" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch2" targetLinkBlockKind="TL_Switch" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch2" simulinkBlockType="Switch" blockAttribute="threshold"/>
+      </calibration>
+      <calibration name="Switch1[switch_threshold]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch1" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch1" origin="switch_threshold" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch1" targetLinkBlockKind="TL_Switch" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch1" simulinkBlockType="Switch" blockAttribute="threshold"/>
+      </calibration>
+      <calibration name="Relay[relay_out_off]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" origin="relay_out_off" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" targetLinkBlockKind="TL_Relay" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" simulinkBlockType="Relay" blockAttribute="offoutput"/>
+      </calibration>
+      <calibration name="Relay[relay_out_on]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" origin="relay_out_on" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" targetLinkBlockKind="TL_Relay" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" simulinkBlockType="Relay" blockAttribute="onoutput"/>
+      </calibration>
+      <calibration name="Relay[relay_switch_off]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" origin="relay_switch_off" restricted="false">
+        <miltype initValue="-1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="-1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" targetLinkBlockKind="TL_Relay" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" simulinkBlockType="Relay" blockAttribute="offswitch" restriction="tl_relay:offswitch"/>
+      </calibration>
+      <calibration name="Relay[relay_switch_on]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" origin="relay_switch_on" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" targetLinkBlockKind="TL_Relay" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" simulinkBlockType="Relay" blockAttribute="onswitch" restriction="tl_relay:onswitch"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/Out1" path="standartSubsystem/Subsystem/standartSubsystem/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="5.0000000000000000e-01" offset="-3.0000000000000000e+00" min="-1.6387000000000000e+04" max="1.6380500000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/Out2" path="standartSubsystem/Subsystem/standartSubsystem/Out2">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/Out3" path="standartSubsystem/Subsystem/standartSubsystem/Out3">
+        <miltype signalName="fail_O2">
+          <int32 min="0" max="1"/>
+        </miltype>
+        <siltype signalName="fail_O2">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </outport>
+      <display physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart" name="fail_O2" stateflowVariable="fail_O2" portNumber="1">
+        <miltype initValue="0.0000000000000000e+00" signalName="fail_O2">
+          <int32 min="0" max="1"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="fail_O2">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem" sampleTime="0.01" name="AtomicSubsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/In" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/In">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="maxRate" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/maxRate" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/maxRate">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="Switch2[switch_threshold]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch2" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch2" origin="switch_threshold" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch2" targetLinkBlockKind="TL_Switch" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch2" simulinkBlockType="Switch" blockAttribute="threshold"/>
+      </calibration>
+      <calibration name="Switch1[switch_threshold]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch1" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch1" origin="switch_threshold" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch1" targetLinkBlockKind="TL_Switch" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch1" simulinkBlockType="Switch" blockAttribute="threshold"/>
+      </calibration>
+      <calibration name="Relay[relay_out_off]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" origin="relay_out_off" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" targetLinkBlockKind="TL_Relay" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" simulinkBlockType="Relay" blockAttribute="offoutput"/>
+      </calibration>
+      <calibration name="Relay[relay_out_on]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" origin="relay_out_on" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" targetLinkBlockKind="TL_Relay" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" simulinkBlockType="Relay" blockAttribute="onoutput"/>
+      </calibration>
+      <calibration name="Relay[relay_switch_off]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" origin="relay_switch_off" restricted="false">
+        <miltype initValue="-1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="-1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" targetLinkBlockKind="TL_Relay" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" simulinkBlockType="Relay" blockAttribute="offswitch" restriction="tl_relay:offswitch"/>
+      </calibration>
+      <calibration name="Relay[relay_switch_on]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" origin="relay_switch_on" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" targetLinkBlockKind="TL_Relay" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay" simulinkBlockType="Relay" blockAttribute="onswitch" restriction="tl_relay:onswitch"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Out1" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1" sampleTime="0.01" name="AtomicSubsystem1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/In1" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="Calvariable" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart" origin="sf_const" restricted="false" stateflowVariable="Calvariable">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00" unitName="bar (absolute)">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart" targetLinkBlockKind="Stateflow" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart" simulinkBlockType="SubSystem" blockAttribute="sf_parameter" stateflowVariable="Calvariable"/>
+      </calibration>
+      <calibration name="Saturation[sat_lower]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" origin="sat_lower" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" targetLinkBlockKind="TL_Saturate" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" simulinkBlockType="Saturate" blockAttribute="lowerlimit" restriction="tl_saturate:lowerlimit"/>
+      </calibration>
+      <calibration name="Saturation[sat_upper]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" origin="sat_upper" restricted="false">
+        <miltype initValue="2.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="2.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" targetLinkBlockKind="TL_Saturate" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" simulinkBlockType="Saturate" blockAttribute="upperlimit" restriction="tl_saturate:upperlimit"/>
+      </calibration>
+      <calibration name="Constant1[const]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Constant1" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Constant1" origin="const" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Constant1" targetLinkBlockKind="TL_Constant" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Constant1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Out1" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Out2" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Out2">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Out3" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Out3">
+        <miltype signalName="fail_O2">
+          <int32 min="0" max="1"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="fail_O2">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+      </outport>
+      <display physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart" name="fail_O2" stateflowVariable="fail_O2" portNumber="1">
+        <miltype initValue="0.0000000000000000e+00" signalName="fail_O2">
+          <int32 min="0" max="1"/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="fail_O2">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2" sampleTime="0.01" name="Subsystem2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/In1" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="Saturation[sat_lower]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" origin="sat_lower" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" targetLinkBlockKind="TL_Saturate" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" simulinkBlockType="Saturate" blockAttribute="lowerlimit" restriction="tl_saturate:lowerlimit"/>
+      </calibration>
+      <calibration name="Saturation[sat_upper]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" origin="sat_upper" restricted="false">
+        <miltype initValue="2.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="2.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" targetLinkBlockKind="TL_Saturate" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation" simulinkBlockType="Saturate" blockAttribute="upperlimit" restriction="tl_saturate:upperlimit"/>
+      </calibration>
+      <calibration name="Constant1[const]" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Constant1" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Constant1" origin="const" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Constant1" targetLinkBlockKind="TL_Constant" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Constant1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Out1" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="StandardModel_tl/standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Out2" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Out2">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

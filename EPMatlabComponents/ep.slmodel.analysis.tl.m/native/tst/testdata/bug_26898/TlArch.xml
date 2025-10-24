@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.12" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_26898\bug_26898.mdl" modelCreationDate="2012-04-30T09:17:19" creator="alex">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.12" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_26898\bug_26898.mdl" creationDate="2012-04-30T09:17:19" modificationDate="2021-11-17T11:18:27">
+    <subsystem subsysID="ss1" physicalPath="bug_26898/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in." physicalPath="bug_26898/top_A/Subsystem/top_A/in." path="top_A/Subsystem/top_A/in.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype unitName="AH">
+          <fixedPoint baseType="Int16" lsb="2.5000000000000000e-01" offset="0.0000000000000000e+00" min="-8.1920000000000000e+03" max="8.1917500000000000e+03"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="out." physicalPath="bug_26898/top_A/Subsystem/top_A/out." path="top_A/Subsystem/top_A/out.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype unitName="AH">
+          <fixedPoint baseType="Int16" lsb="2.5000000000000000e-01" offset="0.0000000000000000e+00" min="-8.1920000000000000e+03" max="8.1917500000000000e+03"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

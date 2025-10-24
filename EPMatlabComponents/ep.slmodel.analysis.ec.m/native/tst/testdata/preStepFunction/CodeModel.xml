@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeModel>
+   <Files>
+      <File annotate="yes" id="ID71" kind="source" name="TopLevel_func.c" path="E:/EP2/Dev_branch2/EPSimulinkModel/com.btc.ep.slmodel.analysis.ec.m/native/tst/tmpdir/tmp_preStepFunction/preStepFunction_ert_rtw"/>
+      <File annotate="yes" id="ID72" kind="source" name="preStepFunction.c" path="E:/EP2/Dev_branch2/EPSimulinkModel/com.btc.ep.slmodel.analysis.ec.m/native/tst/tmpdir/tmp_preStepFunction/preStepFunction_ert_rtw"/>
+      <File annotate="yes" id="ID73" kind="source" name="getSimTimeCodeBlock_wrapper.c" path="E:/EP2/Dev_branch2/EPSimulinkModel/com.btc.ep.slmodel.analysis.ec.m/native/tst/tmpdir/tmp_preStepFunction"/>
+      <File annotate="yes" id="ID74" kind="source" name="getSimulationTime.c" path="E:/EP2/Dev_branch2/EPSimulinkModel/com.btc.ep.slmodel.analysis.ec.m/native/tst/tmpdir/tmp_preStepFunction"/>
+   </Files>
+   <IncludePaths>
+      <IncludePath path="E:\EP2\Dev_branch2\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\src\includes"/>
+      <IncludePath path="E:\EP2\Dev_branch2\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\tst\tmpdir\tmp_preStepFunction\preStepFunction_ert_rtw"/>
+      <IncludePath path="E:\EP2\Dev_branch2\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\tst\tmpdir\tmp_preStepFunction"/>
+   </IncludePaths>
+   <Functions archName="preStepFunction [C-Code]" sampleTime="0.01">
+      <Function fileref="ID72" initFunc="preStepFunction_initialize" name="preStepFunction_step" preStepFunc="externalStepFunction">
+         <Interface>
+            <InterfaceObj kind="in" max="100" min="0" scaling="ID2001" var="in"/>
+            <InterfaceObj kind="out" max="100" min="0" scaling="ID2001" var="out"/>
+         </Interface>
+      </Function>
+      <Function fileref="ID71" initFunc="preStepFunction_initialize" name="TopLevel_func" preStepFunc="externalStepFunction">
+         <Interface>
+            <InterfaceObj kind="in" max="100" min="0" scaling="ID2001" var="in"/>
+            <InterfaceObj kind="out" max="100" min="0" scaling="ID2001" var="out"/>
+         </Interface>
+      </Function>
+   </Functions>
+   <Scalings>
+      <Scaling id="ID2001" lsb="1" offset="0"/>
+   </Scalings>
+</CodeModel>

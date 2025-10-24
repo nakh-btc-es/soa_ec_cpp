@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_SubsystemReference\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_SubsystemReference\start.m" modelVersion="1.48" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_SubsystemReference\Main.slx" modelCreationDate="2020-01-06T12:57:09" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.48" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_SubsystemReference\Main.slx" creationDate="2020-01-06T12:57:09" modificationDate="2024-09-16T10:11:23" initScript="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_SubsystemReference\start.m">
+    <subsystem subsysID="ss1" physicalPath="Main" path="" sampleTime="0.2" name="Main" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="Main/In1" path="In1" signalName="In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="Main/In2" path="In2" signalName="In2">
+        <double/>
+      </inport>
+      <parameter name="param_SubsystemRef" path="SubsystemReference/Subsystem1/Constant" physicalPath="Main/SubsystemReference/Subsystem1/Constant" origin="explicit_param" workspace="param_SubsystemRef" initValue="2.0">
+        <double/>
+        <usageContext path="SubsystemReference/Subsystem1/Constant" physicalPath="Main/SubsystemReference/Subsystem1/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="param_add" path="SubsystemReference/Sub_SubRef/Subsystem Reference/Constant" physicalPath="Main/SubsystemReference/Sub_SubRef/Subsystem Reference/Constant" origin="explicit_param" workspace="param_add" initValue="33.0">
+        <double/>
+        <usageContext path="SubsystemReference/Sub_SubRef/Subsystem Reference/Constant" physicalPath="Main/SubsystemReference/Sub_SubRef/Subsystem Reference/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <usageContext path="ModelRefWithSubRef/SubRef_ModelRef/Constant" physicalPath="ModelRefWithSubRef/SubRef_ModelRef/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="param_topLevelSubsystemRef" path="SubsystemReference/Constant" physicalPath="Main/SubsystemReference/Constant" origin="explicit_param" workspace="param_topLevelSubsystemRef" initValue="2.0">
+        <double/>
+        <usageContext path="SubsystemReference/Constant" physicalPath="Main/SubsystemReference/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="Main/Out1" path="Out1" signalName="Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="Main/Out2" path="Out2" signalName="Out2">
+        <double/>
+      </outport>
+      <display physicalPath="Main/SubsystemReference/Subsystem1" path="SubsystemReference/Subsystem1" name="Subsystem1" portNumber="2" signalName="Out2_Sub1">
+        <double/>
+      </display>
+      <display physicalPath="Main/SubsystemReference/Subsystem1/Sum" path="SubsystemReference/Subsystem1/Sum" name="Sum" portNumber="1" signalName="In1_Model">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="ModelRefWithSubRef" path="ModelRefWithSubRef" sampleTime="0.2" name="ModelRefWithSubRef" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="ModelRefWithSubRef/In1" path="ModelRefWithSubRef/In1" modelRef="model002" signalName="In1">
+        <double/>
+      </inport>
+      <parameter name="param_add" path="ModelRefWithSubRef/SubRef_ModelRef/Constant" physicalPath="ModelRefWithSubRef/SubRef_ModelRef/Constant" modelRef="model002" origin="explicit_param" workspace="param_add" initValue="33.0">
+        <double/>
+        <usageContext path="ModelRefWithSubRef/SubRef_ModelRef/Constant" physicalPath="ModelRefWithSubRef/SubRef_ModelRef/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="ModelRefWithSubRef/Out1" path="ModelRefWithSubRef/Out1" modelRef="model002" signalName="Out2">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="ModelRefWithSubRef/SubRef_ModelRef" path="ModelRefWithSubRef/SubRef_ModelRef" sampleTime="0.2" name="SubRef_ModelRef" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="ModelRefWithSubRef/SubRef_ModelRef/In1" path="ModelRefWithSubRef/SubRef_ModelRef/In1" modelRef="model002" signalName="In1">
+        <double/>
+      </inport>
+      <parameter name="param_add" path="ModelRefWithSubRef/SubRef_ModelRef/Constant" physicalPath="ModelRefWithSubRef/SubRef_ModelRef/Constant" modelRef="model002" origin="explicit_param" workspace="param_add" initValue="33.0">
+        <double/>
+        <usageContext path="ModelRefWithSubRef/SubRef_ModelRef/Constant" physicalPath="ModelRefWithSubRef/SubRef_ModelRef/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="ModelRefWithSubRef/SubRef_ModelRef/Out1" path="ModelRefWithSubRef/SubRef_ModelRef/Out1" modelRef="model002">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="Main/SubsystemReference" path="SubsystemReference" sampleTime="0.2" name="SubsystemReference" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="Main/SubsystemReference/In1" path="SubsystemReference/In1" signalName="In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="Main/SubsystemReference/In2" path="SubsystemReference/In2" signalName="In2">
+        <double/>
+      </inport>
+      <parameter name="param_SubsystemRef" path="SubsystemReference/Subsystem1/Constant" physicalPath="Main/SubsystemReference/Subsystem1/Constant" origin="explicit_param" workspace="param_SubsystemRef" initValue="2.0">
+        <double/>
+        <usageContext path="SubsystemReference/Subsystem1/Constant" physicalPath="Main/SubsystemReference/Subsystem1/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="param_add" path="SubsystemReference/Sub_SubRef/Subsystem Reference/Constant" physicalPath="Main/SubsystemReference/Sub_SubRef/Subsystem Reference/Constant" origin="explicit_param" workspace="param_add" initValue="33.0">
+        <double/>
+        <usageContext path="SubsystemReference/Sub_SubRef/Subsystem Reference/Constant" physicalPath="Main/SubsystemReference/Sub_SubRef/Subsystem Reference/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="param_topLevelSubsystemRef" path="SubsystemReference/Constant" physicalPath="Main/SubsystemReference/Constant" origin="explicit_param" workspace="param_topLevelSubsystemRef" initValue="2.0">
+        <double/>
+        <usageContext path="SubsystemReference/Constant" physicalPath="Main/SubsystemReference/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="Main/SubsystemReference/Out1" path="SubsystemReference/Out1" signalName="Out1">
+        <double/>
+      </outport>
+      <display physicalPath="Main/SubsystemReference/Subsystem1" path="SubsystemReference/Subsystem1" name="Subsystem1" portNumber="2" signalName="Out2_Sub1">
+        <double/>
+      </display>
+      <display physicalPath="Main/SubsystemReference/Subsystem1/Sum" path="SubsystemReference/Subsystem1/Sum" name="Sum" portNumber="1" signalName="In1_Model">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss7"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="Main/SubsystemReference/Sub_SubRef" path="SubsystemReference/Sub_SubRef" sampleTime="0.2" name="Sub_SubRef" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="Main/SubsystemReference/Sub_SubRef/In1" path="SubsystemReference/Sub_SubRef/In1" signalName="In1_Sub_SubRef">
+        <double/>
+      </inport>
+      <parameter name="param_add" path="SubsystemReference/Sub_SubRef/Subsystem Reference/Constant" physicalPath="Main/SubsystemReference/Sub_SubRef/Subsystem Reference/Constant" origin="explicit_param" workspace="param_add" initValue="33.0">
+        <double/>
+        <usageContext path="SubsystemReference/Sub_SubRef/Subsystem Reference/Constant" physicalPath="Main/SubsystemReference/Sub_SubRef/Subsystem Reference/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="Main/SubsystemReference/Sub_SubRef/Out1" path="SubsystemReference/Sub_SubRef/Out1" signalName="Out1_Add_Ref">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="Main/SubsystemReference/Subsystem1" path="SubsystemReference/Subsystem1" sampleTime="0.2" name="Subsystem1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="Main/SubsystemReference/Subsystem1/In1" path="SubsystemReference/Subsystem1/In1" signalName="In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="Main/SubsystemReference/Subsystem1/In2" path="SubsystemReference/Subsystem1/In2" signalName="In2">
+        <double/>
+      </inport>
+      <parameter name="param_SubsystemRef" path="SubsystemReference/Subsystem1/Constant" physicalPath="Main/SubsystemReference/Subsystem1/Constant" origin="explicit_param" workspace="param_SubsystemRef" initValue="2.0">
+        <double/>
+        <usageContext path="SubsystemReference/Subsystem1/Constant" physicalPath="Main/SubsystemReference/Subsystem1/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="Main/SubsystemReference/Subsystem1/Out1" path="SubsystemReference/Subsystem1/Out1" signalName="Out1_Sub1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="Main/SubsystemReference/Subsystem1/Out2" path="SubsystemReference/Subsystem1/Out2">
+        <double/>
+      </outport>
+      <display physicalPath="Main/SubsystemReference/Subsystem1/Sum" path="SubsystemReference/Subsystem1/Sum" name="Sum" portNumber="1" signalName="In1_Model">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="ModelSimple" path="SubsystemReference/Subsystem1/Model" sampleTime="0.2" name="Model" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="In1" physicalPath="ModelSimple/In1" path="SubsystemReference/Subsystem1/Model/In1" modelRef="model003" signalName="In1_Model">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ModelSimple/Out1" path="SubsystemReference/Subsystem1/Model/Out1" modelRef="model003" signalName="Out1_Sub1">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss9"/>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="ModelSimple/Model_Sub" path="SubsystemReference/Subsystem1/Model/Model_Sub" sampleTime="0.2" name="Model_Sub" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="In1" physicalPath="ModelSimple/Model_Sub/In1" path="SubsystemReference/Subsystem1/Model/Model_Sub/In1" modelRef="model003" signalName="In1_Model">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ModelSimple/Model_Sub/In2" path="SubsystemReference/Subsystem1/Model/Model_Sub/In2" modelRef="model003" signalName="In2_ModelSub">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ModelSimple/Model_Sub/Out1" path="SubsystemReference/Subsystem1/Model/Model_Sub/Out1" modelRef="model003">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.10" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_SubsystemReference\ModelRefWithSubRef.slx" creationDate="2020-02-25T16:05:37" modificationDate="2024-09-16T10:11:23" initScript="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_SubsystemReference\start.m"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="1.12" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_SubsystemReference\ModelSimple.slx" creationDate="2020-02-21T10:36:36" modificationDate="2024-09-16T10:11:23" initScript="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_SubsystemReference\start.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

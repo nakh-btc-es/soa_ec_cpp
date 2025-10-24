@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" modelVersion="1.11" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1961\Model.slx" modelCreationDate="2020-02-12T10:48:02" creator="developer">
+  <toolInfo name="Matlab" release="(R2019b)" version="9.7" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2019b)" version="10.0" patchLevel=""/>
+  <model modelKind="model" modelID="model001" modelVersion="1.11" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1961\Model.slx" creationDate="2020-02-12T10:48:02">
+    <subsystem subsysID="ss1" physicalPath="Model" path="" sampleTime="0.2" name="Model" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="Model/In1" path="In1" signalName="In_Main">
+        <double/>
+      </inport>
+      <parameter name="paramMain" path="TopLevel_Main/Gain" physicalPath="Model/TopLevel_Main/Gain" initValue="2.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="paramMain">
+        <double/>
+        <usageContext path="TopLevel_Main/Gain" physicalPath="Model/TopLevel_Main/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="paramSub" path="TopLevel_Main/InnerSubsystemNoFctFound/Gain" physicalPath="Model/TopLevel_Main/InnerSubsystemNoFctFound/Gain" initValue="2.2000000000000000e+01" origin="explicit_param" restricted="false" workspace="paramSub">
+        <double/>
+        <usageContext path="TopLevel_Main/InnerSubsystemNoFctFound/Gain" physicalPath="Model/TopLevel_Main/InnerSubsystemNoFctFound/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+        <usageContext path="TopLevel_Main/InnerSubsystemNoFctFound/InnerSubsystemFctFound/Gain" physicalPath="Model/TopLevel_Main/InnerSubsystemNoFctFound/InnerSubsystemFctFound/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="Model/Out1" path="Out1" signalName="Out_Main">
+        <double/>
+      </outport>
+      <display physicalPath="Model/TopLevel_Main/InnerSubsystemNoFctFound/Gain" path="TopLevel_Main/InnerSubsystemNoFctFound/Gain" name="Gain" portNumber="1" signalName="In_InnerSubsystemFctFound">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="Model/TopLevel_Main/InnerSubsystemNoFctFound" path="TopLevel_Main/InnerSubsystemNoFctFound" sampleTime="0.2" name="InnerSubsystemNoFctFound" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="Model/TopLevel_Main/InnerSubsystemNoFctFound/In1" path="TopLevel_Main/InnerSubsystemNoFctFound/In1" signalName="In_InnerSubsystemNoFctFound">
+        <double/>
+      </inport>
+      <parameter name="paramSub" path="TopLevel_Main/InnerSubsystemNoFctFound/Gain" physicalPath="Model/TopLevel_Main/InnerSubsystemNoFctFound/Gain" initValue="2.2000000000000000e+01" origin="explicit_param" restricted="false" workspace="paramSub">
+        <double/>
+        <usageContext path="TopLevel_Main/InnerSubsystemNoFctFound/Gain" physicalPath="Model/TopLevel_Main/InnerSubsystemNoFctFound/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+        <usageContext path="TopLevel_Main/InnerSubsystemNoFctFound/InnerSubsystemFctFound/Gain" physicalPath="Model/TopLevel_Main/InnerSubsystemNoFctFound/InnerSubsystemFctFound/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="Model/TopLevel_Main/InnerSubsystemNoFctFound/Out1" path="TopLevel_Main/InnerSubsystemNoFctFound/Out1">
+        <double/>
+      </outport>
+      <display physicalPath="Model/TopLevel_Main/InnerSubsystemNoFctFound/Gain" path="TopLevel_Main/InnerSubsystemNoFctFound/Gain" name="Gain" portNumber="1" signalName="In_InnerSubsystemFctFound">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="Model/TopLevel_Main/InnerSubsystemNoFctFound/InnerSubsystemFctFound" path="TopLevel_Main/InnerSubsystemNoFctFound/InnerSubsystemFctFound" sampleTime="0.2" name="InnerSubsystemFctFound" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="Model/TopLevel_Main/InnerSubsystemNoFctFound/InnerSubsystemFctFound/In1" path="TopLevel_Main/InnerSubsystemNoFctFound/InnerSubsystemFctFound/In1" signalName="In_InnerSubsystemFctFound">
+        <double/>
+      </inport>
+      <parameter name="paramSub" path="TopLevel_Main/InnerSubsystemNoFctFound/InnerSubsystemFctFound/Gain" physicalPath="Model/TopLevel_Main/InnerSubsystemNoFctFound/InnerSubsystemFctFound/Gain" initValue="2.2000000000000000e+01" origin="explicit_param" restricted="false" workspace="paramSub">
+        <double/>
+        <usageContext path="TopLevel_Main/InnerSubsystemNoFctFound/InnerSubsystemFctFound/Gain" physicalPath="Model/TopLevel_Main/InnerSubsystemNoFctFound/InnerSubsystemFctFound/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="Model/TopLevel_Main/InnerSubsystemNoFctFound/InnerSubsystemFctFound/Out1" path="TopLevel_Main/InnerSubsystemNoFctFound/InnerSubsystemFctFound/Out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

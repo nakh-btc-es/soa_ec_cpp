@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<EnumType name="boolean">
+			<EnumValue name="false" ordinal="0" />
+			<EnumValue name="true" ordinal="1" />
+		</EnumType>
+		<EnumType name="MyMood">
+			<EnumValue name="bad" ordinal="0" />
+			<EnumValue name="good" ordinal="3" />
+		</EnumType>
+	</Types>
+	<Outports sampleTime="0.1">
+		<Outport portNr="1" type="boolean" signalName="sig_b">
+			<ScalarRefs>
+				<ScalarRef displayName="In1">INPUT:In1</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="2" type="MyMood" signalName="sig_e">
+			<ScalarRefs>
+				<ScalarRef displayName="In2">INPUT:In2</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="3" type="single" signalName="sig_s">
+			<ScalarRefs>
+				<ScalarRef displayName="In3">INPUT:In3</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="4" type="fixdt(1,16,0.0009765625,0.5)" signalName="sig_fxp1">
+			<ScalarRefs>
+				<ScalarRef displayName="In4">INPUT:In4</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="5" type="fixdt(1,32,14)" signalName="sig_fxp2">
+			<ScalarRefs>
+				<ScalarRef displayName="In5">INPUT:In5</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+	</Outports>
+</SFunction>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_ep_828\AddModelInfo.xml" modelVersion="1.71" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_ep_828\model_ref_sl.mdl" modelCreationDate="2009-03-06T13:09:02" creator="alex">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.71" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_ep_828\model_ref_sl.mdl" creationDate="2009-03-06T13:09:02" modificationDate="2020-09-08T09:33:55">
+    <subsystem subsysID="ss1" physicalPath="model_ref_sl/top_A" path="top_A" sampleTime="1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="InPort1" physicalPath="model_ref_sl/top_A/InPort1" path="top_A/InPort1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="InPort2" physicalPath="model_ref_sl/top_A/InPort2" path="top_A/InPort2">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="InPort3" physicalPath="model_ref_sl/top_A/InPort3" path="top_A/InPort3">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="OutPort1" physicalPath="model_ref_sl/top_A/OutPort1" path="top_A/OutPort1">
+        <double/>
+      </outport>
+      <display physicalPath="sub4_sl/Gain1" path="top_A/sub_x2/sub_X/sub_Y/Model4/Gain1" name="Gain1" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+      <display physicalPath="model_ref_sl/top_A/sub1/sub_X/sub_B1/Sum1" path="top_A/sub1/sub_X/sub_B1/Sum1" name="Sum1" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="sub2_sl/Out2" path="top_A/sub_x2/Out2" name="Out2" portNumber="1" modelRef="model004">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss10"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="model_ref_sl/top_A/sub1" path="top_A/sub1" sampleTime="1" name="sub1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="model_ref_sl/top_A/sub1/In1" path="top_A/sub1/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="model_ref_sl/top_A/sub1/Out1" path="top_A/sub1/Out1">
+        <double/>
+      </outport>
+      <display physicalPath="model_ref_sl/top_A/sub1/sub_X/sub_B1/Sum1" path="top_A/sub1/sub_X/sub_B1/Sum1" name="Sum1" portNumber="1">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="model_ref_sl/top_A/sub1/sub_X" path="top_A/sub1/sub_X" sampleTime="1" name="sub_X" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="model_ref_sl/top_A/sub1/sub_X/In1" path="top_A/sub1/sub_X/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="model_ref_sl/top_A/sub1/sub_X/Out1" path="top_A/sub1/sub_X/Out1">
+        <double/>
+      </outport>
+      <display physicalPath="model_ref_sl/top_A/sub1/sub_X/sub_B1/Sum1" path="top_A/sub1/sub_X/sub_B1/Sum1" name="Sum1" portNumber="1">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="model_ref_sl/top_A/sub1/sub_X/sub_B1" path="top_A/sub1/sub_X/sub_B1" sampleTime="1" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="model_ref_sl/top_A/sub1/sub_X/sub_B1/In1" path="top_A/sub1/sub_X/sub_B1/In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="model_ref_sl/top_A/sub1/sub_X/sub_B1/In2" path="top_A/sub1/sub_X/sub_B1/In2">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="model_ref_sl/top_A/sub1/sub_X/sub_B1/Out1" path="top_A/sub1/sub_X/sub_B1/Out1">
+        <double/>
+      </outport>
+      <display physicalPath="model_ref_sl/top_A/sub1/sub_X/sub_B1/Sum1" path="top_A/sub1/sub_X/sub_B1/Sum1" name="Sum1" portNumber="1">
+        <double/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="model_ref_sl/top_A/sub_X" path="top_A/sub_X" sampleTime="1" name="sub_X" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="model_ref_sl/top_A/sub_X/In1" path="top_A/sub_X/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="model_ref_sl/top_A/sub_X/Out1" path="top_A/sub_X/Out1">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="sub3_sl" path="top_A/sub_X/sub3" sampleTime="1" name="sub3" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="sub3_sl/In1" path="top_A/sub_X/sub3/In1" modelRef="model002">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sub3_sl/Out1" path="top_A/sub_X/sub3/Out1" modelRef="model002">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="model_ref_sl/top_A/sub_X/sub5" path="top_A/sub_X/sub5" sampleTime="1" name="sub5" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="model_ref_sl/top_A/sub_X/sub5/In1" path="top_A/sub_X/sub5/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="model_ref_sl/top_A/sub_X/sub5/Out1" path="top_A/sub_X/sub5/Out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="model_ref_sl/top_A/sub_X/sub6" path="top_A/sub_X/sub6" sampleTime="1" name="sub6" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="model_ref_sl/top_A/sub_X/sub6/In1" path="top_A/sub_X/sub6/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="model_ref_sl/top_A/sub_X/sub6/Out1" path="top_A/sub_X/sub6/Out1">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss9"/>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="model_ref_sl/top_A/sub_X/sub6/sub7" path="top_A/sub_X/sub6/sub7" sampleTime="1" name="sub7" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="model_ref_sl/top_A/sub_X/sub6/sub7/In1" path="top_A/sub_X/sub6/sub7/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="model_ref_sl/top_A/sub_X/sub6/sub7/Out1" path="top_A/sub_X/sub6/sub7/Out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="sub2_sl" path="top_A/sub_x2" sampleTime="1" name="sub_x2" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="In1" physicalPath="sub2_sl/In1" path="top_A/sub_x2/In1" modelRef="model004">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sub2_sl/In2" path="top_A/sub_x2/In2" modelRef="model004">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="sub2_sl/In3" path="top_A/sub_x2/In3" modelRef="model004">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sub2_sl/Out1" path="top_A/sub_x2/Out1" modelRef="model004">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="sub2_sl/Out2" path="top_A/sub_x2/Out2" modelRef="model004">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+      <display physicalPath="sub4_sl/Gain1" path="top_A/sub_x2/sub_X/sub_Y/Model4/Gain1" name="Gain1" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+      <display physicalPath="sub2_sl/Out2" path="top_A/sub_x2/Out2" name="Out2" portNumber="1" modelRef="model004">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss11"/>
+    </subsystem>
+    <subsystem subsysID="ss11" physicalPath="sub2_sl/sub_X" path="top_A/sub_x2/sub_X" sampleTime="1" name="sub_X" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="In1" physicalPath="sub2_sl/sub_X/In1" path="top_A/sub_x2/sub_X/In1" modelRef="model004">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sub2_sl/sub_X/In2" path="top_A/sub_x2/sub_X/In2" modelRef="model004">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sub2_sl/sub_X/Out1" path="top_A/sub_x2/sub_X/Out1" modelRef="model004">
+        <double/>
+      </outport>
+      <display physicalPath="sub4_sl/Gain1" path="top_A/sub_x2/sub_X/sub_Y/Model4/Gain1" name="Gain1" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss12"/>
+    </subsystem>
+    <subsystem subsysID="ss12" physicalPath="sub2_sl/sub_X/sub_Y" path="top_A/sub_x2/sub_X/sub_Y" sampleTime="1" name="sub_Y" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="In1" physicalPath="sub2_sl/sub_X/sub_Y/In1" path="top_A/sub_x2/sub_X/sub_Y/In1" modelRef="model004">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sub2_sl/sub_X/sub_Y/Out1" path="top_A/sub_x2/sub_X/sub_Y/Out1" modelRef="model004">
+        <double/>
+      </outport>
+      <display physicalPath="sub4_sl/Gain1" path="top_A/sub_x2/sub_X/sub_Y/Model4/Gain1" name="Gain1" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss13"/>
+    </subsystem>
+    <subsystem subsysID="ss13" physicalPath="sub4_sl" path="top_A/sub_x2/sub_X/sub_Y/Model4" sampleTime="1" name="Model4" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="In1" physicalPath="sub4_sl/In1" path="top_A/sub_x2/sub_X/sub_Y/Model4/In1" modelRef="model003">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sub4_sl/Out1" path="top_A/sub_x2/sub_X/sub_Y/Model4/Out1" modelRef="model003">
+        <double/>
+      </outport>
+      <display physicalPath="sub4_sl/Gain1" path="top_A/sub_x2/sub_X/sub_Y/Model4/Gain1" name="Gain1" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.17" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_ep_828\sub3_sl.mdl" creationDate="2009-03-06T13:11:23" modificationDate="2020-09-08T09:33:55"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="1.24" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_ep_828\sub4_sl.mdl" creationDate="2009-03-06T13:11:23" modificationDate="2020-09-08T09:33:55"/>
+  <model modelID="model004" modelKind="model_ref" modelVersion="1.30" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_ep_828\sub2_sl.mdl" creationDate="2009-03-06T13:11:23" modificationDate="2020-09-08T09:33:55"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" modelVersion="1.20" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_ultimate_bus\ultimate_bus.slx" modelCreationDate="2020-10-29T07:45:13" creator="developer">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.20" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_ultimate_bus\ultimate_bus.slx" creationDate="2020-10-29T07:45:13" modificationDate="2020-11-04T11:13:01">
+    <subsystem subsysID="ss1" physicalPath="ultimate_bus" path="" sampleTime="0.2" name="ultimate_bus" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ultimate_bus/In1" path="In1" signalName="in1">
+        <bus busType="non_virtual" busObjectName="BusOne">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ultimate_bus/In2" path="In2" signalName="in2">
+        <bus busType="non_virtual" busObjectName="BusAnotherOne">
+          <signal signalName="ax">
+            <array size="2" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="ultimate_bus/In3" path="In3" signalName="in3">
+        <bus busType="non_virtual" busObjectName="BusTwo">
+          <signal signalName="a">
+            <boolean/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="ultimate_bus/In4" path="In4" signalName="in4">
+        <bus busType="non_virtual" busObjectName="BusTwo">
+          <signal signalName="a">
+            <boolean/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="5" name="In5" physicalPath="ultimate_bus/In5" path="In5" signalName="in5">
+        <bus busType="non_virtual" busObjectName="BusThree">
+          <signal signalName="b">
+            <int8/>
+          </signal>
+          <signal signalName="c">
+            <double/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="6" name="In6" physicalPath="ultimate_bus/In6" path="In6" signalName="in6">
+        <bus busType="non_virtual" busObjectName="BusThree">
+          <signal signalName="b">
+            <int8/>
+          </signal>
+          <signal signalName="c">
+            <double/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="7" name="In7" physicalPath="ultimate_bus/In7" path="In7" signalName="in7">
+        <bus busType="non_virtual" busObjectName="BusFive">
+          <signal signalName="elem">
+            <bus busType="non_virtual" busObjectName="BusFour">
+              <signal signalName="sig1">
+                <bus busType="non_virtual" busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="sig2">
+                <bus busType="non_virtual" busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ultimate_bus/Out1" path="Out1" signalName="z1">
+        <bus busObjectName="BusAnotherOne">
+          <signal signalName="ax">
+            <array size="2" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="ultimate_bus/Out2" path="Out2" signalName="z2">
+        <bus>
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+          <signal signalName="ax">
+            <array size="2" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="ultimate_bus/Out3" path="Out3" signalName="z3">
+        <bus>
+          <signal signalName="y2">
+            <bus>
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+              <signal signalName="ax">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="x3">
+            <bus>
+              <signal signalName="x1">
+                <bus>
+                  <signal signalName="in1">
+                    <bus busObjectName="BusOne">
+                      <signal signalName="a">
+                        <array size="2" startIndex="1">
+                          <boolean/>
+                        </array>
+                      </signal>
+                    </bus>
+                  </signal>
+                  <signal signalName="in2">
+                    <bus busObjectName="BusAnotherOne">
+                      <signal signalName="ax">
+                        <array size="2" startIndex="1">
+                          <boolean/>
+                        </array>
+                      </signal>
+                    </bus>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="x2">
+                <bus>
+                  <signal signalName="in1">
+                    <bus busObjectName="BusOne">
+                      <signal signalName="a">
+                        <array size="2" startIndex="1">
+                          <boolean/>
+                        </array>
+                      </signal>
+                    </bus>
+                  </signal>
+                  <signal signalName="in2">
+                    <bus busObjectName="BusAnotherOne">
+                      <signal signalName="ax">
+                        <array size="2" startIndex="1">
+                          <boolean/>
+                        </array>
+                      </signal>
+                    </bus>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="ultimate_bus/Out4" path="Out4" signalName="zz5">
+        <bus>
+          <signal signalName="in1">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="in2">
+            <bus busObjectName="BusAnotherOne">
+              <signal signalName="ax">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="ultimate_bus/Out5" path="Out5" signalName="z5">
+        <bus>
+          <signal signalName="a">
+            <boolean/>
+          </signal>
+          <signal signalName="in4">
+            <bus busObjectName="BusTwo">
+              <signal signalName="a">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="ultimate_bus/Out6" path="Out6" signalName="x6">
+        <bus busObjectName="BusFour">
+          <signal signalName="sig1">
+            <bus busType="non_virtual" busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="sig2">
+            <bus busType="non_virtual" busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="7" name="Out7" physicalPath="ultimate_bus/Out7" path="Out7" signalName="z7">
+        <bus busObjectName="BusOne">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="8" name="Out8" physicalPath="ultimate_bus/Out8" path="Out8" signalName="z8">
+        <bus>
+          <signal signalName="sig2">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="sig1">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="9" name="Out9" physicalPath="ultimate_bus/Out9" path="Out9" signalName="z9">
+        <bus busObjectName="BusOne">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="10" name="Out10" physicalPath="ultimate_bus/Out10" path="Out10" signalName="zz10">
+        <bus>
+          <signal signalName="x6">
+            <bus busObjectName="BusFour">
+              <signal signalName="sig1">
+                <bus busType="non_virtual" busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="sig2">
+                <bus busType="non_virtual" busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="z7">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="z8">
+            <bus>
+              <signal signalName="sig2">
+                <bus busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="sig1">
+                <bus busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="z9">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="11" name="Out11" physicalPath="ultimate_bus/Out11" path="Out11" signalName="zz11">
+        <bus>
+          <signal signalName="elem">
+            <bus busObjectName="BusFour">
+              <signal signalName="sig1">
+                <bus busType="non_virtual" busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="sig2">
+                <bus busType="non_virtual" busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="y7">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="y8">
+            <bus>
+              <signal signalName="sig2">
+                <bus busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="sig1">
+                <bus busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="sig1">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss8"/>
+      <subsystem refSubsysID="ss9"/>
+      <subsystem refSubsysID="ss10"/>
+      <subsystem refSubsysID="ss11"/>
+      <subsystem refSubsysID="ss12"/>
+      <subsystem refSubsysID="ss13"/>
+      <subsystem refSubsysID="ss14"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="ultimate_bus/sub_A1" path="sub_A1" sampleTime="0.2" name="sub_A1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ultimate_bus/sub_A1/In1" path="sub_A1/In1" signalName="x1">
+        <bus>
+          <signal signalName="in1">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="in2">
+            <bus busObjectName="BusAnotherOne">
+              <signal signalName="ax">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ultimate_bus/sub_A1/Out1" path="sub_A1/Out1" signalName="z1">
+        <bus busObjectName="BusAnotherOne">
+          <signal signalName="ax">
+            <array size="2" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="ultimate_bus/sub_A2" path="sub_A2" sampleTime="0.2" name="sub_A2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="y2" physicalPath="ultimate_bus/sub_A2/y2" path="sub_A2/y2" signalName="y2">
+        <bus>
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+          <signal signalName="ax">
+            <array size="2" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="z2" physicalPath="ultimate_bus/sub_A2/z2" path="sub_A2/z2" signalName="z2">
+        <bus>
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+          <signal signalName="ax">
+            <array size="2" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="ultimate_bus/sub_B" path="sub_B" sampleTime="0.2" name="sub_B" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="ultimate_bus/sub_B/in1" path="sub_B/in1" signalName="y3">
+        <bus>
+          <signal signalName="y2">
+            <bus>
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+              <signal signalName="ax">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="x3">
+            <bus>
+              <signal signalName="x1">
+                <bus>
+                  <signal signalName="in1">
+                    <bus busObjectName="BusOne">
+                      <signal signalName="a">
+                        <array size="2" startIndex="1">
+                          <boolean/>
+                        </array>
+                      </signal>
+                    </bus>
+                  </signal>
+                  <signal signalName="in2">
+                    <bus busObjectName="BusAnotherOne">
+                      <signal signalName="ax">
+                        <array size="2" startIndex="1">
+                          <boolean/>
+                        </array>
+                      </signal>
+                    </bus>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="x2">
+                <bus>
+                  <signal signalName="in1">
+                    <bus busObjectName="BusOne">
+                      <signal signalName="a">
+                        <array size="2" startIndex="1">
+                          <boolean/>
+                        </array>
+                      </signal>
+                    </bus>
+                  </signal>
+                  <signal signalName="in2">
+                    <bus busObjectName="BusAnotherOne">
+                      <signal signalName="ax">
+                        <array size="2" startIndex="1">
+                          <boolean/>
+                        </array>
+                      </signal>
+                    </bus>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="ultimate_bus/sub_B/out1" path="sub_B/out1" signalName="z3">
+        <bus>
+          <signal signalName="y2">
+            <bus>
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+              <signal signalName="ax">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="x3">
+            <bus>
+              <signal signalName="x1">
+                <bus>
+                  <signal signalName="in1">
+                    <bus busObjectName="BusOne">
+                      <signal signalName="a">
+                        <array size="2" startIndex="1">
+                          <boolean/>
+                        </array>
+                      </signal>
+                    </bus>
+                  </signal>
+                  <signal signalName="in2">
+                    <bus busObjectName="BusAnotherOne">
+                      <signal signalName="ax">
+                        <array size="2" startIndex="1">
+                          <boolean/>
+                        </array>
+                      </signal>
+                    </bus>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="x2">
+                <bus>
+                  <signal signalName="in1">
+                    <bus busObjectName="BusOne">
+                      <signal signalName="a">
+                        <array size="2" startIndex="1">
+                          <boolean/>
+                        </array>
+                      </signal>
+                    </bus>
+                  </signal>
+                  <signal signalName="in2">
+                    <bus busObjectName="BusAnotherOne">
+                      <signal signalName="ax">
+                        <array size="2" startIndex="1">
+                          <boolean/>
+                        </array>
+                      </signal>
+                    </bus>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="ultimate_bus/sub_C1" path="sub_C1" sampleTime="0.2" name="sub_C1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="ultimate_bus/sub_C1/in1" path="sub_C1/in1" signalName="x4">
+        <bus>
+          <signal signalName="in1">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="in_a234">
+            <bus>
+              <signal signalName="in2">
+                <bus busObjectName="BusAnotherOne">
+                  <signal signalName="ax">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="in3">
+                <bus busObjectName="BusTwo">
+                  <signal signalName="a">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="in4">
+                <bus busObjectName="BusTwo">
+                  <signal signalName="a">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="ultimate_bus/sub_C1/out1" path="sub_C1/out1" signalName="y4">
+        <bus>
+          <signal signalName="in1">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="in_a234">
+            <bus>
+              <signal signalName="in2">
+                <bus busObjectName="BusAnotherOne">
+                  <signal signalName="ax">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="in3">
+                <bus busObjectName="BusTwo">
+                  <signal signalName="a">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="in4">
+                <bus busObjectName="BusTwo">
+                  <signal signalName="a">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="ultimate_bus/sub_C2" path="sub_C2" sampleTime="0.2" name="sub_C2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="ultimate_bus/sub_C2/in1" path="sub_C2/in1" signalName="z5">
+        <bus>
+          <signal signalName="in1">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="in2">
+            <bus busObjectName="BusAnotherOne">
+              <signal signalName="ax">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="ultimate_bus/sub_C2/out1" path="sub_C2/out1" signalName="zz5">
+        <bus>
+          <signal signalName="in1">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="in2">
+            <bus busObjectName="BusAnotherOne">
+              <signal signalName="ax">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="ultimate_bus/sub_D" path="sub_D" sampleTime="0.2" name="sub_D" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="ultimate_bus/sub_D/in1" path="sub_D/in1" signalName="x5">
+        <bus>
+          <signal signalName="in4">
+            <bus busObjectName="BusTwo">
+              <signal signalName="a">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="in5">
+            <bus busObjectName="BusThree">
+              <signal signalName="b">
+                <int8/>
+              </signal>
+              <signal signalName="c">
+                <double/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="in6">
+            <bus busObjectName="BusThree">
+              <signal signalName="b">
+                <int8/>
+              </signal>
+              <signal signalName="c">
+                <double/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="ultimate_bus/sub_D/out1" path="sub_D/out1" signalName="y5">
+        <bus busType="non_virtual" busObjectName="BusOut5">
+          <signal signalName="in4">
+            <bus busType="non_virtual" busObjectName="BusTwo">
+              <signal signalName="a">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="in5">
+            <bus busType="non_virtual" busObjectName="BusThree">
+              <signal signalName="b">
+                <int8/>
+              </signal>
+              <signal signalName="c">
+                <double/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="in6">
+            <bus busType="non_virtual" busObjectName="BusThree">
+              <signal signalName="b">
+                <int8/>
+              </signal>
+              <signal signalName="c">
+                <double/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="ultimate_bus/sub_E" path="sub_E" sampleTime="0.2" name="sub_E" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="ultimate_bus/sub_E/in1" path="sub_E/in1" signalName="y5">
+        <bus>
+          <signal signalName="a">
+            <boolean/>
+          </signal>
+          <signal signalName="in4">
+            <bus busObjectName="BusTwo">
+              <signal signalName="a">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="ultimate_bus/sub_E/out1" path="sub_E/out1" signalName="z5">
+        <bus>
+          <signal signalName="a">
+            <boolean/>
+          </signal>
+          <signal signalName="in4">
+            <bus busObjectName="BusTwo">
+              <signal signalName="a">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="ultimate_bus/sub_F1" path="sub_F1" sampleTime="0.2" name="sub_F1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="ultimate_bus/sub_F1/in1" path="sub_F1/in1" signalName="elem">
+        <bus busObjectName="BusFour">
+          <signal signalName="sig1">
+            <bus busType="non_virtual" busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="sig2">
+            <bus busType="non_virtual" busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="ultimate_bus/sub_F1/out1" path="sub_F1/out1" signalName="x6">
+        <bus busObjectName="BusFour">
+          <signal signalName="sig1">
+            <bus busType="non_virtual" busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="sig2">
+            <bus busType="non_virtual" busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="ultimate_bus/sub_F2" path="sub_F2" sampleTime="0.2" name="sub_F2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="ultimate_bus/sub_F2/in1" path="sub_F2/in1" signalName="y7">
+        <bus busObjectName="BusOne">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="ultimate_bus/sub_F2/out1" path="sub_F2/out1" signalName="z7">
+        <bus busObjectName="BusOne">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss11" physicalPath="ultimate_bus/sub_F3" path="sub_F3" sampleTime="0.2" name="sub_F3" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="ultimate_bus/sub_F3/in1" path="sub_F3/in1" signalName="y8">
+        <bus>
+          <signal signalName="sig2">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="sig1">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="ultimate_bus/sub_F3/out1" path="sub_F3/out1" signalName="z8">
+        <bus>
+          <signal signalName="sig2">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="sig1">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss12" physicalPath="ultimate_bus/sub_F4" path="sub_F4" sampleTime="0.2" name="sub_F4" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="ultimate_bus/sub_F4/in1" path="sub_F4/in1" signalName="sig1">
+        <bus busObjectName="BusOne">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="ultimate_bus/sub_F4/out1" path="sub_F4/out1" signalName="z9">
+        <bus busObjectName="BusOne">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <boolean/>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss13" physicalPath="ultimate_bus/sub_G1" path="sub_G1" sampleTime="0.2" name="sub_G1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="ultimate_bus/sub_G1/in1" path="sub_G1/in1" signalName="z10">
+        <bus>
+          <signal signalName="x6">
+            <bus busObjectName="BusFour">
+              <signal signalName="sig1">
+                <bus busType="non_virtual" busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="sig2">
+                <bus busType="non_virtual" busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="z7">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="z8">
+            <bus>
+              <signal signalName="sig2">
+                <bus busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="sig1">
+                <bus busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="z9">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="ultimate_bus/sub_G1/out1" path="sub_G1/out1" signalName="zz10">
+        <bus>
+          <signal signalName="x6">
+            <bus busObjectName="BusFour">
+              <signal signalName="sig1">
+                <bus busType="non_virtual" busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="sig2">
+                <bus busType="non_virtual" busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="z7">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="z8">
+            <bus>
+              <signal signalName="sig2">
+                <bus busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="sig1">
+                <bus busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="z9">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss14" physicalPath="ultimate_bus/sub_G2" path="sub_G2" sampleTime="0.2" name="sub_G2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="ultimate_bus/sub_G2/in1" path="sub_G2/in1" signalName="z11">
+        <bus>
+          <signal signalName="elem">
+            <bus busObjectName="BusFour">
+              <signal signalName="sig1">
+                <bus busType="non_virtual" busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="sig2">
+                <bus busType="non_virtual" busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="y7">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="y8">
+            <bus>
+              <signal signalName="sig2">
+                <bus busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="sig1">
+                <bus busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="sig1">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="ultimate_bus/sub_G2/out1" path="sub_G2/out1" signalName="zz11">
+        <bus>
+          <signal signalName="elem">
+            <bus busObjectName="BusFour">
+              <signal signalName="sig1">
+                <bus busType="non_virtual" busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="sig2">
+                <bus busType="non_virtual" busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="y7">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="y8">
+            <bus>
+              <signal signalName="sig2">
+                <bus busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+              <signal signalName="sig1">
+                <bus busObjectName="BusOne">
+                  <signal signalName="a">
+                    <array size="2" startIndex="1">
+                      <boolean/>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="sig1">
+            <bus busObjectName="BusOne">
+              <signal signalName="a">
+                <array size="2" startIndex="1">
+                  <boolean/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

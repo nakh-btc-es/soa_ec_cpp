@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="ep_2661"/>
+    <Architecture id="id1" name="ep_2661 [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A"/>
+      <Path refId="id1" path="top_A.c:1:top_A"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="bit1"/>
+        <Path refId="id1" path="Sa1_bit1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="in1"/>
+        <Path refId="id1" path="Sa1_in1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out1"/>
+        <Path refId="id1" path="Sa1_out1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out2"/>
+        <Path refId="id1" path="Sa1_out2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Atomic/Merge(1)"/>
+        <Path refId="id1" path="Sa2_Merge"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Atomic/pwron/Relational&#10;Operator(1)"/>
+        <Path refId="id1" path="Sa5_Relational_Operator"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Atomic/pwron/rescaler1(1)"/>
+        <Path refId="id1" path="Sa5_rescaler1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Atomic/pwron/rescaler2(1)"/>
+        <Path refId="id1" path="Sa5_rescaler2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Atomic/rescaler_B(1)"/>
+        <Path refId="id1" path="Sa2_rescaler_B"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/NonAtomic/pwron/Relational&#10;Operator(1)"/>
+        <Path refId="id1" path="Sa7_Relational_Operator"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/NonAtomic/pwron/rescaler1(1)"/>
+        <Path refId="id1" path="Sa7_rescaler1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/NonAtomic/pwron/rescaler2(1)"/>
+        <Path refId="id1" path="Sa7_rescaler2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/NonAtomic/rescaler_A(1)"/>
+        <Path refId="id1" path="Sa3_rescaler_A"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/Atomic"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Sa2_Atomic"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_bit1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="in1"/>
+        <Path refId="id1" path="Sa1_in1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out1"/>
+        <Path refId="id1" path="Sa2_Merge"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Atomic/Merge(1)"/>
+        <Path refId="id1" path="Sa2_Merge"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Atomic/pwron/Relational&#10;Operator(1)"/>
+        <Path refId="id1" path="Sa5_Relational_Operator"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Atomic/pwron/rescaler1(1)"/>
+        <Path refId="id1" path="Sa5_rescaler1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Atomic/pwron/rescaler2(1)"/>
+        <Path refId="id1" path="Sa5_rescaler2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Atomic/rescaler_B(1)"/>
+        <Path refId="id1" path="Sa2_rescaler_B"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/NonAtomic"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Sa3_NonAtomic"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_bit1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="in1"/>
+        <Path refId="id1" path="Sa1_in1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out1"/>
+        <Path refId="id1" path="Sa3_Merge"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/NonAtomic/pwron/Relational&#10;Operator(1)"/>
+        <Path refId="id1" path="Sa7_Relational_Operator"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/NonAtomic/pwron/rescaler1(1)"/>
+        <Path refId="id1" path="Sa7_rescaler1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/NonAtomic/pwron/rescaler2(1)"/>
+        <Path refId="id1" path="Sa7_rescaler2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/NonAtomic/rescaler_A(1)"/>
+        <Path refId="id1" path="Sa3_rescaler_A"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

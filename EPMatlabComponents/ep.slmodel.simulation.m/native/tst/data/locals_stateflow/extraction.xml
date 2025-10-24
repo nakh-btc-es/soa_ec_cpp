@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="2Ni">
+	<Scope uid="2Ni" name="SubsystemStateflow" path="ManyLocals/LocalCases/SubsystemStateflow" sampleTime="2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ManyLocals/LocalCases/SubsystemStateflow">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_1376" signalType="double" isFloat="yes">
+				<ifName ifid="if_1376" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_1377" signalName="Out1" signalType="double" isFloat="yes">
+				<ifName ifid="if_1377" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<Display name="localSimple" path="ManyLocals/LocalCases/SubsystemStateflow/ChartActive" physicalPath="ManyLocals/LocalCases/SubsystemStateflow/ChartActive" stateflowVariable="localSimple">
+			<Variable varid="varif_1378" signalName="localSimple" signalType="double" isFloat="yes">
+				<ifName ifid="if_1378" lsb="1" offset="0" displayName="localSimple" identifier="LOCAL:ChartActive/localSimple" />
+			</Variable>
+		</Display>
+		<Display name="oSfSignal" path="ManyLocals/LocalCases/SubsystemStateflow/ChartActive" physicalPath="ManyLocals/LocalCases/SubsystemStateflow/ChartActive" stateflowVariable="oSfSignal" startIdx="0">
+			<Variable varid="varif_1379" signalName="oSfSignal" width1="2" width2="2" signalType="int32" signalDim="[2 2 2]" isFloat="yes">
+				<ifName ifid="if_1382" index1="0" index2="0" lsb="1" offset="0" displayName="oSfSignal(0)(0)" identifier="LOCAL:ChartActive/oSfSignal(0)(0)" />
+				<ifName ifid="if_1384" index1="1" index2="0" lsb="1" offset="0" displayName="oSfSignal(1)(0)" identifier="LOCAL:ChartActive/oSfSignal(1)(0)" />
+				<ifName ifid="if_1383" index1="0" index2="1" lsb="1" offset="0" displayName="oSfSignal(0)(1)" identifier="LOCAL:ChartActive/oSfSignal(0)(1)" />
+				<ifName ifid="if_1385" index1="1" index2="1" lsb="1" offset="0" displayName="oSfSignal(1)(1)" identifier="LOCAL:ChartActive/oSfSignal(1)(1)" />
+			</Variable>
+		</Display>
+		<Model name="ManyLocals" modelPath="/E:/ModelsDev/SL/ManyLocals/ml2015asp1/ManyLocals.slx" type="SimulinkModel" />
+		<Scope uid="2Np" name="ChartActive" path="ManyLocals/LocalCases/SubsystemStateflow/ChartActive" sampleTime="2" scopeKind="SUT" type="SimulinkScope" kind="STATEFLOW" physicalPath="ManyLocals/LocalCases/SubsystemStateflow/ChartActive" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_1390" signalType="double" isFloat="yes">
+					<ifName ifid="if_1390" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_1391" signalName="Out1" signalType="double" isFloat="yes">
+					<ifName ifid="if_1391" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<Display name="localSimple" path="ManyLocals/LocalCases/SubsystemStateflow/ChartActive" physicalPath="ManyLocals/LocalCases/SubsystemStateflow/ChartActive" stateflowVariable="localSimple">
+				<Variable varid="varif_1392" signalName="localSimple" signalType="double" isFloat="yes">
+					<ifName ifid="if_1392" lsb="1" offset="0" displayName="localSimple" identifier="LOCAL:localSimple" />
+				</Variable>
+			</Display>
+			<Display name="oSfSignal" path="ManyLocals/LocalCases/SubsystemStateflow/ChartActive" physicalPath="ManyLocals/LocalCases/SubsystemStateflow/ChartActive" stateflowVariable="oSfSignal" startIdx="0">
+				<Variable varid="varif_1393" signalName="oSfSignal" width1="2" width2="2" signalType="int32" signalDim="[2 2 2]" isFloat="yes">
+					<ifName ifid="if_1396" index1="0" index2="0" lsb="1" offset="0" displayName="oSfSignal(0)(0)" identifier="LOCAL:oSfSignal(0)(0)" />
+					<ifName ifid="if_1398" index1="1" index2="0" lsb="1" offset="0" displayName="oSfSignal(1)(0)" identifier="LOCAL:oSfSignal(1)(0)" />
+					<ifName ifid="if_1397" index1="0" index2="1" lsb="1" offset="0" displayName="oSfSignal(0)(1)" identifier="LOCAL:oSfSignal(0)(1)" />
+					<ifName ifid="if_1399" index1="1" index2="1" lsb="1" offset="0" displayName="oSfSignal(1)(1)" identifier="LOCAL:oSfSignal(1)(1)" />
+				</Variable>
+			</Display>
+			<Model name="ManyLocals" modelPath="/E:/ModelsDev/SL/ManyLocals/ml2015asp1/ManyLocals.slx" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

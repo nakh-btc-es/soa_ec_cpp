@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="2QR">
+	<Scope uid="2QR" name="EnumsLocals" path="ManyLocals/LocalCases/EnumsLocals" sampleTime="2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ManyLocals/LocalCases/EnumsLocals" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_1615" width1="2" width2="2" signalType="LocalsEnumCars" isSignalTypeEnum="yes" signalDim="[2 2 2]" isFloat="yes">
+				<ifName ifid="if_1618" index1="1" index2="1" lsb="1" offset="0" displayName="In1(1)(1)" identifier="INPUT:In1(1)(1)" />
+				<ifName ifid="if_1620" index1="2" index2="1" lsb="1" offset="0" displayName="In1(2)(1)" identifier="INPUT:In1(2)(1)" />
+				<ifName ifid="if_1619" index1="1" index2="2" lsb="1" offset="0" displayName="In1(1)(2)" identifier="INPUT:In1(1)(2)" />
+				<ifName ifid="if_1621" index1="2" index2="2" lsb="1" offset="0" displayName="In1(2)(2)" identifier="INPUT:In1(2)(2)" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_1622" width1="1" width2="4" signalType="LocalsEnumCars" isSignalTypeEnum="yes" signalDim="[2 1 4]" isFloat="yes">
+				<ifName ifid="if_1624" index1="1" index2="1" lsb="1" offset="0" displayName="Out1(1)(1)" identifier="OUTPUT:Out1(1)(1)" />
+				<ifName ifid="if_1625" index1="1" index2="2" lsb="1" offset="0" displayName="Out1(1)(2)" identifier="OUTPUT:Out1(1)(2)" />
+				<ifName ifid="if_1626" index1="1" index2="3" lsb="1" offset="0" displayName="Out1(1)(3)" identifier="OUTPUT:Out1(1)(3)" />
+				<ifName ifid="if_1627" index1="1" index2="4" lsb="1" offset="0" displayName="Out1(1)(4)" identifier="OUTPUT:Out1(1)(4)" />
+			</Variable>
+		</OutPort>
+		<Display name="Reshape" path="ManyLocals/LocalCases/EnumsLocals/EnumLocalsActive/Reshape" physicalPath="ManyLocalsEnumRef/Reshape" portNumber="1" startIdx="1">
+			<Variable varid="varif_1628" width1="1" width2="4" signalType="LocalsEnumCars" isSignalTypeEnum="yes" signalDim="[2 1 4]" isFloat="yes">
+				<ifName ifid="if_1630" index1="1" index2="1" lsb="1" offset="0" displayName="Reshape(1)(1)" identifier="LOCAL:EnumLocalsActive/Reshape(1)(1)" />
+				<ifName ifid="if_1631" index1="1" index2="2" lsb="1" offset="0" displayName="Reshape(1)(2)" identifier="LOCAL:EnumLocalsActive/Reshape(1)(2)" />
+				<ifName ifid="if_1632" index1="1" index2="3" lsb="1" offset="0" displayName="Reshape(1)(3)" identifier="LOCAL:EnumLocalsActive/Reshape(1)(3)" />
+				<ifName ifid="if_1633" index1="1" index2="4" lsb="1" offset="0" displayName="Reshape(1)(4)" identifier="LOCAL:EnumLocalsActive/Reshape(1)(4)" />
+			</Variable>
+		</Display>
+		<Display name="In1" path="ManyLocals/LocalCases/EnumsLocals/EnumLocalsActive/In1" physicalPath="ManyLocalsEnumRef/In1" portNumber="1" startIdx="1">
+			<Variable varid="varif_1634" width1="2" width2="2" signalType="LocalsEnumCars" isSignalTypeEnum="yes" signalDim="[2 2 2]" isFloat="yes">
+				<ifName ifid="if_1637" index1="1" index2="1" lsb="1" offset="0" displayName="EnumLocalsActive/In1(1)(1)" identifier="LOCAL:EnumLocalsActive/In1(1)(1)" />
+				<ifName ifid="if_1639" index1="2" index2="1" lsb="1" offset="0" displayName="EnumLocalsActive/In1(2)(1)" identifier="LOCAL:EnumLocalsActive/In1(2)(1)" />
+				<ifName ifid="if_1638" index1="1" index2="2" lsb="1" offset="0" displayName="EnumLocalsActive/In1(1)(2)" identifier="LOCAL:EnumLocalsActive/In1(1)(2)" />
+				<ifName ifid="if_1640" index1="2" index2="2" lsb="1" offset="0" displayName="EnumLocalsActive/In1(2)(2)" identifier="LOCAL:EnumLocalsActive/In1(2)(2)" />
+			</Variable>
+		</Display>
+		<Model name="ManyLocals" modelPath="/E:/ModelsDev/SL/ManyLocals/ml2015asp1/ManyLocals.slx" type="SimulinkModel" />
+		<Scope uid="2QW" name="EnumLocalsActive" path="ManyLocals/LocalCases/EnumsLocals/EnumLocalsActive" sampleTime="2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ManyLocalsEnumRef" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_1661" width1="2" width2="2" signalType="LocalsEnumCars" isSignalTypeEnum="yes" signalDim="[2 2 2]" isFloat="yes">
+					<ifName ifid="if_1664" index1="1" index2="1" lsb="1" offset="0" displayName="In1(1)(1)" identifier="INPUT:In1(1)(1)" />
+					<ifName ifid="if_1666" index1="2" index2="1" lsb="1" offset="0" displayName="In1(2)(1)" identifier="INPUT:In1(2)(1)" />
+					<ifName ifid="if_1665" index1="1" index2="2" lsb="1" offset="0" displayName="In1(1)(2)" identifier="INPUT:In1(1)(2)" />
+					<ifName ifid="if_1667" index1="2" index2="2" lsb="1" offset="0" displayName="In1(2)(2)" identifier="INPUT:In1(2)(2)" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_1668" width1="1" width2="4" signalType="LocalsEnumCars" isSignalTypeEnum="yes" signalDim="[2 1 4]" isFloat="yes">
+					<ifName ifid="if_1670" index1="1" index2="1" lsb="1" offset="0" displayName="Out1(1)(1)" identifier="OUTPUT:Out1(1)(1)" />
+					<ifName ifid="if_1671" index1="1" index2="2" lsb="1" offset="0" displayName="Out1(1)(2)" identifier="OUTPUT:Out1(1)(2)" />
+					<ifName ifid="if_1672" index1="1" index2="3" lsb="1" offset="0" displayName="Out1(1)(3)" identifier="OUTPUT:Out1(1)(3)" />
+					<ifName ifid="if_1673" index1="1" index2="4" lsb="1" offset="0" displayName="Out1(1)(4)" identifier="OUTPUT:Out1(1)(4)" />
+				</Variable>
+			</OutPort>
+			<Display name="Reshape" path="ManyLocals/LocalCases/EnumsLocals/EnumLocalsActive/Reshape" physicalPath="ManyLocalsEnumRef/Reshape" portNumber="1" startIdx="1">
+				<Variable varid="varif_1674" width1="1" width2="4" signalType="LocalsEnumCars" isSignalTypeEnum="yes" signalDim="[2 1 4]" isFloat="yes">
+					<ifName ifid="if_1676" index1="1" index2="1" lsb="1" offset="0" displayName="Reshape(1)(1)" identifier="LOCAL:Reshape(1)(1)" />
+					<ifName ifid="if_1677" index1="1" index2="2" lsb="1" offset="0" displayName="Reshape(1)(2)" identifier="LOCAL:Reshape(1)(2)" />
+					<ifName ifid="if_1678" index1="1" index2="3" lsb="1" offset="0" displayName="Reshape(1)(3)" identifier="LOCAL:Reshape(1)(3)" />
+					<ifName ifid="if_1679" index1="1" index2="4" lsb="1" offset="0" displayName="Reshape(1)(4)" identifier="LOCAL:Reshape(1)(4)" />
+				</Variable>
+			</Display>
+			<Display name="In1" path="ManyLocals/LocalCases/EnumsLocals/EnumLocalsActive/In1" physicalPath="ManyLocalsEnumRef/In1" portNumber="1" startIdx="1">
+				<Variable varid="varif_1680" width1="2" width2="2" signalType="LocalsEnumCars" isSignalTypeEnum="yes" signalDim="[2 2 2]" isFloat="yes">
+					<ifName ifid="if_1683" index1="1" index2="1" lsb="1" offset="0" displayName="In1:local(1)(1)" identifier="LOCAL:In1(1)(1)" />
+					<ifName ifid="if_1685" index1="2" index2="1" lsb="1" offset="0" displayName="In1:local(2)(1)" identifier="LOCAL:In1(2)(1)" />
+					<ifName ifid="if_1684" index1="1" index2="2" lsb="1" offset="0" displayName="In1:local(1)(2)" identifier="LOCAL:In1(1)(2)" />
+					<ifName ifid="if_1686" index1="2" index2="2" lsb="1" offset="0" displayName="In1:local(2)(2)" identifier="LOCAL:In1(2)(2)" />
+				</Variable>
+			</Display>
+			<Model name="ManyLocalsEnumRef" modelPath="/E:/ModelsDev/SL/ManyLocals/ml2015asp1/ManyLocalsEnumRef.slx" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

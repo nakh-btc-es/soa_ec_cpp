@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.45" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_closed_loop_03\powerwindow_closed_loop.mdl" modelCreationDate="2014-06-06T10:58:46" creator="Administrator">
+  <toolInfo name="Matlab" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.45" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_closed_loop_03\powerwindow_closed_loop.mdl" creationDate="2014-06-06T10:58:46" modificationDate="2021-11-15T17:42:47">
+    <subsystem subsysID="ss1" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame" path="ClosedLoop_Frame" sampleTime="0.01" name="ClosedLoop_Frame" scopeKind="VIRTUAL" kind="subsystem">
+      <subsystem refSubsysID="env_1"/>
+      <subsystem refSubsysID="env_2"/>
+      <subsystem refSubsysID="env_3"/>
+      <inport portNumber="1" name="driver_up" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/driver_up" path="ClosedLoop_Frame/driver_up">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype missingTypeSinceNoCVar="true">
+          <unsupportedTypeInformation/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="driver_down" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/driver_down" path="ClosedLoop_Frame/driver_down">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype missingTypeSinceNoCVar="true">
+          <unsupportedTypeInformation/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="passenger_up" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/passenger_up" path="ClosedLoop_Frame/passenger_up">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype missingTypeSinceNoCVar="true">
+          <unsupportedTypeInformation/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="passenger_down" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/passenger_down" path="ClosedLoop_Frame/passenger_down">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype missingTypeSinceNoCVar="true">
+          <unsupportedTypeInformation/>
+        </siltype>
+      </inport>
+      <inport portNumber="5" name="obstacle_position" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/obstacle_position" path="ClosedLoop_Frame/obstacle_position">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype missingTypeSinceNoCVar="true">
+          <unsupportedTypeInformation/>
+        </siltype>
+      </inport>
+      <calibration name="position_endstop_top" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/detect_obstacle_endstop/detect_endstop/Constant1" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/detect_obstacle_endstop/detect_endstop/Constant1" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/Parameter/position_endstop_top" workspace="position_endstop_top">
+        <miltype initValue="4.0000000000000002e-01">
+          <double/>
+        </miltype>
+        <siltype initValue="4.0000000000000002e-01">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-03" offset="0.0000000000000000e+00" min="3.4999999999999998e-01" max="4.5000000000000001e-01"/>
+        </siltype>
+        <usageContext path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/detect_obstacle_endstop/detect_endstop/Constant1" targetLinkBlockKind="TL_Constant" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/detect_obstacle_endstop/detect_endstop/Constant1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="auto_up_time" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant3" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant3" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/Parameter/auto_up_time" workspace="auto_up_time">
+        <miltype initValue="1.0000000000000000e+02">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+02">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="5.0000000000000000e+02"/>
+        </siltype>
+        <usageContext path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant3" targetLinkBlockKind="TL_Constant" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant3" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="emergency_down_time" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant2" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant2" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/Parameter/emergency_down_time" workspace="emergency_down_time">
+        <miltype initValue="1.0000000000000000e+02">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+02">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="5.0000000000000000e+02"/>
+        </siltype>
+        <usageContext path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant2" targetLinkBlockKind="TL_Constant" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant2" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="auto_down_time" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant1" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant1" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/Parameter/auto_down_time" workspace="auto_down_time">
+        <miltype initValue="1.0000000000000000e+02">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+02">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="5.0000000000000000e+02"/>
+        </siltype>
+        <usageContext path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant1" targetLinkBlockKind="TL_Constant" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="obstacle_detection" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/obstacle_detection" path="ClosedLoop_Frame/obstacle_detection">
+        <miltype signalName="obstacle_detection">
+          <boolean/>
+        </miltype>
+        <siltype missingTypeSinceNoCVar="true" signalName="obstacle_detection">
+          <unsupportedTypeInformation/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="position" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/position" path="ClosedLoop_Frame/position">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype missingTypeSinceNoCVar="true">
+          <unsupportedTypeInformation/>
+        </siltype>
+      </outport>
+      <display physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/obstacle_position" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/obstacle_position" name="obstacle_position" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="4.5000000000000001e-01"/>
+        </siltype>
+      </display>
+      <display physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/window_position" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/window_position" name="window_position" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="4.5000000000000001e-01"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="env_1" scopeKind="ENV" kind="subsystem" name="driver_switch" path="ClosedLoop_Frame/driver_switch" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/driver_switch" sampleTime="0.01"/>
+    <subsystem subsysID="env_2" scopeKind="ENV" kind="subsystem" name="passenger_switch" path="ClosedLoop_Frame/passenger_switch" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/passenger_switch" sampleTime="0.01"/>
+    <subsystem subsysID="env_3" scopeKind="ENV" kind="subsystem" name="window_system" path="ClosedLoop_Frame/window_system" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/window_system" sampleTime="0.01"/>
+    <subsystem subsysID="ss2" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control" sampleTime="0.01" name="power_window_control" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="driver_neutral" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/driver_neutral" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/driver_neutral">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="driver_up" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/driver_up" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/driver_up">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="driver_down" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/driver_down" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/driver_down">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="Ipassenger_neutral" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Ipassenger_neutral" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Ipassenger_neutral">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="5" name="passenger_up" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/passenger_up" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/passenger_up">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="6" name="passenger_down" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/passenger_down" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/passenger_down">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="7" name="obstacle_position" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/obstacle_position" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/obstacle_position">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="4.5000000000000001e-01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="8" name="window_position" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/window_position" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/window_position">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="4.5000000000000001e-01"/>
+        </siltype>
+      </inport>
+      <calibration name="position_endstop_top" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/detect_obstacle_endstop/detect_endstop/Constant1" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/detect_obstacle_endstop/detect_endstop/Constant1" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/Parameter/position_endstop_top" workspace="position_endstop_top">
+        <miltype initValue="4.0000000000000002e-01">
+          <double/>
+        </miltype>
+        <siltype initValue="4.0000000000000002e-01">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-03" offset="0.0000000000000000e+00" min="3.4999999999999998e-01" max="4.5000000000000001e-01"/>
+        </siltype>
+        <usageContext path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/detect_obstacle_endstop/detect_endstop/Constant1" targetLinkBlockKind="TL_Constant" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/detect_obstacle_endstop/detect_endstop/Constant1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="auto_up_time" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant3" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant3" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/Parameter/auto_up_time" workspace="auto_up_time">
+        <miltype initValue="1.0000000000000000e+02">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+02">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="5.0000000000000000e+02"/>
+        </siltype>
+        <usageContext path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant3" targetLinkBlockKind="TL_Constant" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant3" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="emergency_down_time" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant2" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant2" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/Parameter/emergency_down_time" workspace="emergency_down_time">
+        <miltype initValue="1.0000000000000000e+02">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+02">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="5.0000000000000000e+02"/>
+        </siltype>
+        <usageContext path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant2" targetLinkBlockKind="TL_Constant" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant2" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="auto_down_time" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant1" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant1" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/Parameter/auto_down_time" workspace="auto_down_time">
+        <miltype initValue="1.0000000000000000e+02">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+02">
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="5.0000000000000000e+02"/>
+        </siltype>
+        <usageContext path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant1" targetLinkBlockKind="TL_Constant" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/Constant1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="obctacle_detection" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/obctacle_detection" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/obctacle_detection">
+        <miltype signalName="obstacle_detection">
+          <boolean/>
+        </miltype>
+        <siltype signalName="obstacle_detection">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="move_up" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/move_up" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/move_up">
+        <miltype signalName="moveUp">
+          <boolean/>
+        </miltype>
+        <siltype signalName="moveUp">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="move_down" physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/move_down" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/move_down">
+        <miltype signalName="moveDown">
+          <boolean/>
+        </miltype>
+        <siltype signalName="moveDown">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/obstacle_position" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/obstacle_position" name="obstacle_position" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="4.5000000000000001e-01"/>
+        </siltype>
+      </display>
+      <display physicalPath="powerwindow_closed_loop/ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/window_position" path="ClosedLoop_Frame/power_window_control/Subsystem/power_window_control/window_position" name="window_position" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="4.5000000000000001e-01"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

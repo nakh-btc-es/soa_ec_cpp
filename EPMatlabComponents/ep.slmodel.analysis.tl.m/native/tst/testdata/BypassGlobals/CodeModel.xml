@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.5p0\tmp\8a0_167dfm32t\cl70105689\models\BypassGlobals\ml2015asp1_tl42\TLProj\top_A" name="top_A.c" kind="source" annotate="yes" id="fID2"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.5p0\tmp\8a0_167dfm32t\cl70105689\models\BypassGlobals\ml2015asp1_tl42\TLSim" name="top_A_fri.c" kind="source" annotate="no" id="fID3"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.5p0\tmp\8a0_167dfm32t\cl70105689\models\BypassGlobals\ml2015asp1_tl42\TLProj\top_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.5p0\tmp\8a0_167dfm32t\cl70105689\models\BypassGlobals\ml2015asp1_tl42\TLSim"/>
+    <IncludePath path="C:\dspace\TL42\Matlab\Tl\ApplicationBuilder\generic"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="LOG_VARS"/>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+  </Defines>
+  <Functions archName="bypass_globals [C-Code]">
+    <Function name="top_A" sampleTime="2.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_InPort" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="p3" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="p2" fileref="fID2" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="p1" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="bp3" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="bp2" fileref="fID2" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="bp1" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa1_bp_disp" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa1_bp_static_disp" fileref="fID2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa1_disp" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa1_static_disp" fileref="fID2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

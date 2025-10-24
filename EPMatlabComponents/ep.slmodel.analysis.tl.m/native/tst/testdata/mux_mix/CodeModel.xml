@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\26a0111c7\mux_mix\TLProj\top_A" name="top_A.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\26a0111c7\mux_mix\TLSim" name="top_A_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\26a0111c7\mux_mix\TLProj\top_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\26a0111c7\mux_mix\TLSim"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="mux_mix [C-Code]">
+    <Function name="top_A" sampleTime="0.02">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_InPort" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa2_sub_B1" fileref="fID1" sampleTime="0.02">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_InPort" access="[1]" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_InPort" access="[2]" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa2_Relational_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa3_sub_B2" fileref="fID1" sampleTime="0.02">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_InPort" access="[3]" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_InPort" access="[1]" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa3_Relational_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa5_sub_B4" fileref="fID1" sampleTime="0.02">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_InPort" access="[2]" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_InPort" access="[3]" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa5_Relational_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

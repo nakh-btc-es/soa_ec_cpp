@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_bts_36382\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_bts_36382\start.m" modelVersion="1.77" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_bts_36382\poscontrol.mdl" modelCreationDate="1999-04-29T14:43:10" creator="dSPACE GmbH">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.77" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_bts_36382\poscontrol.mdl" creationDate="1999-04-29T14:43:10" modificationDate="2024-09-11T18:43:05" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_bts_36382\start.m">
+    <subsystem subsysID="ss1" physicalPath="poscontrol/controller" path="controller" sampleTime="0.001" name="controller" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="REF" physicalPath="poscontrol/controller/REF" path="controller/REF">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="POS" physicalPath="poscontrol/controller/POS" path="controller/POS">
+        <double/>
+      </inport>
+      <parameter name="Ki" path="controller/Ki" physicalPath="poscontrol/controller/Ki" origin="explicit_param" workspace="Ki" initValue="0.2">
+        <double/>
+        <usageContext path="controller/Ki" physicalPath="poscontrol/controller/Ki" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="Kp" path="controller/Kp" physicalPath="poscontrol/controller/Kp" origin="explicit_param" workspace="Kp" initValue="2.0">
+        <double/>
+        <usageContext path="controller/Kp" physicalPath="poscontrol/controller/Kp" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="level" path="controller/Linearization/pos. level" physicalPath="Linearization/pos. level" modelRef="model002" origin="explicit_param" workspace="level" initValue="3.0">
+        <double/>
+        <usageContext path="controller/Linearization/pos. level" physicalPath="Linearization/pos. level" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="tab_in" path="controller/Linearization/Look-Up&#10;Table" physicalPath="Linearization/Look-Up&#10;Table" modelRef="model002" origin="explicit_param" workspace="tab_in">
+        <nonUniformArray size="25">
+          <signal index="1" initValue="-12.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="-11.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="-10.0">
+            <double/>
+          </signal>
+          <signal index="4" initValue="-9.0">
+            <double/>
+          </signal>
+          <signal index="5" initValue="-8.0">
+            <double/>
+          </signal>
+          <signal index="6" initValue="-7.0">
+            <double/>
+          </signal>
+          <signal index="7" initValue="-6.0">
+            <double/>
+          </signal>
+          <signal index="8" initValue="-5.0">
+            <double/>
+          </signal>
+          <signal index="9" initValue="-4.0">
+            <double/>
+          </signal>
+          <signal index="10" initValue="-3.0">
+            <double/>
+          </signal>
+          <signal index="11" initValue="-2.0">
+            <double/>
+          </signal>
+          <signal index="12" initValue="-1.0">
+            <double/>
+          </signal>
+          <signal index="13" initValue="0.0">
+            <double/>
+          </signal>
+          <signal index="14" initValue="1.0">
+            <double/>
+          </signal>
+          <signal index="15" initValue="2.0">
+            <double/>
+          </signal>
+          <signal index="16" initValue="3.0">
+            <double/>
+          </signal>
+          <signal index="17" initValue="4.0">
+            <double/>
+          </signal>
+          <signal index="18" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="19" initValue="6.0">
+            <double/>
+          </signal>
+          <signal index="20" initValue="7.0">
+            <double/>
+          </signal>
+          <signal index="21" initValue="8.0">
+            <double/>
+          </signal>
+          <signal index="22" initValue="9.0">
+            <double/>
+          </signal>
+          <signal index="23" initValue="10.0">
+            <double/>
+          </signal>
+          <signal index="24" initValue="11.0">
+            <double/>
+          </signal>
+          <signal index="25" initValue="12.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="controller/Linearization/Look-Up&#10;Table" physicalPath="Linearization/Look-Up&#10;Table" simulinkBlockType="Lookup_n-D" blockAttribute="BreakpointsForDimension1" modelRef="model002"/>
+      </parameter>
+      <parameter name="tab_out" path="controller/Linearization/Look-Up&#10;Table" physicalPath="Linearization/Look-Up&#10;Table" modelRef="model002" origin="explicit_param" workspace="tab_out">
+        <nonUniformArray size="25">
+          <signal index="1" initValue="-12.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="-11.80027653507409">
+            <double/>
+          </signal>
+          <signal index="3" initValue="-11.416413701523005">
+            <double/>
+          </signal>
+          <signal index="4" initValue="-10.85440155047806">
+            <double/>
+          </signal>
+          <signal index="5" initValue="-10.123010093586483">
+            <double/>
+          </signal>
+          <signal index="6" initValue="-9.233652449912864">
+            <double/>
+          </signal>
+          <signal index="7" initValue="-8.200206748033356">
+            <double/>
+          </signal>
+          <signal index="8" initValue="-7.038799562480937">
+            <double/>
+          </signal>
+          <signal index="9" initValue="-5.767554263943457">
+            <double/>
+          </signal>
+          <signal index="10" initValue="-4.406308210125601">
+            <double/>
+          </signal>
+          <signal index="11" initValue="-2.9763031904166644">
+            <double/>
+          </signal>
+          <signal index="12" initValue="-1.4998539548716476">
+            <double/>
+          </signal>
+          <signal index="13" initValue="0.0">
+            <double/>
+          </signal>
+          <signal index="14" initValue="1.4998539548716476">
+            <double/>
+          </signal>
+          <signal index="15" initValue="2.9763031904166644">
+            <double/>
+          </signal>
+          <signal index="16" initValue="4.406308210125601">
+            <double/>
+          </signal>
+          <signal index="17" initValue="5.767554263943457">
+            <double/>
+          </signal>
+          <signal index="18" initValue="7.038799562480937">
+            <double/>
+          </signal>
+          <signal index="19" initValue="8.200206748033356">
+            <double/>
+          </signal>
+          <signal index="20" initValue="9.233652449912864">
+            <double/>
+          </signal>
+          <signal index="21" initValue="10.123010093586483">
+            <double/>
+          </signal>
+          <signal index="22" initValue="10.85440155047806">
+            <double/>
+          </signal>
+          <signal index="23" initValue="11.416413701523005">
+            <double/>
+          </signal>
+          <signal index="24" initValue="11.80027653507409">
+            <double/>
+          </signal>
+          <signal index="25" initValue="12.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="controller/Linearization/Look-Up&#10;Table" physicalPath="Linearization/Look-Up&#10;Table" simulinkBlockType="Lookup_n-D" blockAttribute="Table" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="UPI" physicalPath="poscontrol/controller/UPI" path="controller/UPI">
+        <double/>
+      </outport>
+      <display physicalPath="Linearization/Look-Up&#10;Table" path="controller/Linearization/Look-Up&#10;Table" name="Look-Up&#10;Table" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="Linearization/pos_GT_max" path="controller/Linearization/pos_GT_max" name="pos_GT_max" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.78" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_bts_36382\Linearization.mdl" creationDate="1999-04-29T14:43:10" modificationDate="2024-09-11T18:43:05" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_bts_36382\start.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

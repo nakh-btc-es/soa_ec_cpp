@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20230914T114119_10756\tmp_ut_ep_2969_matchGraphItf\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20230914T114119_10756\tmp_ut_ep_2969_matchGraphItf\sample4_ROM.m" modelVersion="4.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230914T114119_10756\tmp_ut_ep_2969_matchGraphItf\sample4.slx" modelCreationDate="2020-12-03T01:30:28" creator="70011740">
+  <toolInfo name="Matlab" release="(R2021a)" version="9.10" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2021a)" version="10.3" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="4.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230914T114119_10756\tmp_ut_ep_2969_matchGraphItf\sample4.slx" creationDate="2020-12-03T01:30:28" modificationDate="2023-09-14T13:58:27" initScript="C:\Users\developer\AppData\Local\Temp\ut20230914T114119_10756\tmp_ut_ep_2969_matchGraphItf\sample4_ROM.m">
+    <subsystem subsysID="ss1" physicalPath="sample4/userfcn" path="userfcn" sampleTime="0.01" name="userfcn" scopeKind="DUMMY" kind="subsystem">
+      <inport portNumber="1" name="IN1" physicalPath="sample4/userfcn/IN1" path="userfcn/IN1" signalName="IN1">
+        <single/>
+      </inport>
+      <inport portNumber="2" name="IN2" physicalPath="sample4/userfcn/IN2" path="userfcn/IN2" signalName="IN2">
+        <single/>
+      </inport>
+      <inport portNumber="3" name="IN3" physicalPath="sample4/userfcn/IN3" path="userfcn/IN3" signalName="IN3">
+        <single/>
+      </inport>
+      <inport portNumber="4" name="userfcn_10ms" physicalPath="sample4/userfcn/userfcn_10ms" path="userfcn/userfcn_10ms">
+        <unsupportedTypeInformation/>
+      </inport>
+      <outport portNumber="1" name="B1" physicalPath="sample4/userfcn/B1" path="userfcn/B1" signalName="B1">
+        <single/>
+      </outport>
+      <outport portNumber="2" name="B2" physicalPath="sample4/userfcn/B2" path="userfcn/B2" signalName="B2">
+        <single/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="sample4/userfcn/A_unit" path="userfcn/A_unit" sampleTime="0.01" name="A_unit" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="IN1" physicalPath="sample4/userfcn/A_unit/IN1" path="userfcn/A_unit/IN1" signalName="IN1">
+        <single/>
+      </inport>
+      <inport portNumber="2" name="IN2" physicalPath="sample4/userfcn/A_unit/IN2" path="userfcn/A_unit/IN2" signalName="IN2">
+        <single/>
+      </inport>
+      <inport portNumber="3" name="IN3" physicalPath="sample4/userfcn/A_unit/IN3" path="userfcn/A_unit/IN3" signalName="IN3">
+        <single/>
+      </inport>
+      <outport portNumber="1" name="A1" physicalPath="sample4/userfcn/A_unit/A1" path="userfcn/A_unit/A1">
+        <single/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="sample4/userfcn/B_unit" path="userfcn/B_unit" sampleTime="0.01" name="B_unit" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="IN1" physicalPath="sample4/userfcn/B_unit/IN1" path="userfcn/B_unit/IN1" signalName="IN1">
+        <single/>
+      </inport>
+      <inport portNumber="2" name="A1" physicalPath="sample4/userfcn/B_unit/A1" path="userfcn/B_unit/A1" signalName="A1">
+        <single/>
+      </inport>
+      <inport portNumber="3" name="B2_old" physicalPath="sample4/userfcn/B_unit/B2_old" path="userfcn/B_unit/B2_old" signalName="B2">
+        <single/>
+      </inport>
+      <outport portNumber="1" name="B1" physicalPath="sample4/userfcn/B_unit/B1" path="userfcn/B_unit/B1">
+        <single/>
+      </outport>
+      <outport portNumber="2" name="B2" physicalPath="sample4/userfcn/B_unit/B2" path="userfcn/B_unit/B2">
+        <single/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

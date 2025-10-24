@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Main"/>
+    <Architecture id="id1" name="Main [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Main.c:1:Main_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In2" refId="id0"/>
+        <Path path="In2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out2" refId="id0"/>
+        <Path path="Out2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="SubsystemReference/Subsystem1/Sum(1)" refId="id0"/>
+        <Path path="In1_Model" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="SubsystemReference/Subsystem1(2)" refId="id0"/>
+        <Path path="Out2_Sub1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="param_SubsystemRef" refId="id0"/>
+        <Path path="param_SubsystemRef" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="param_add" refId="id0"/>
+        <Path path="param_add" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="param_topLevelSubsystemRef" refId="id0"/>
+        <Path path="param_topLevelSubsystemRef" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SubsystemReference" refId="id0"/>
+      <Path path="Main.c:1:Main_step/SubsystemReference.c:1:SubsystemReference" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SubsystemReference/In1" refId="id0"/>
+        <Path path="In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SubsystemReference/In2" refId="id0"/>
+        <Path path="In2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SubsystemReference/Out1" refId="id0"/>
+        <Path path="Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="SubsystemReference/Subsystem1/Sum(1)" refId="id0"/>
+        <Path path="In1_Model" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="SubsystemReference/Subsystem1(2)" refId="id0"/>
+        <Path path="Out2_Sub1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="param_SubsystemRef" refId="id0"/>
+        <Path path="param_SubsystemRef" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="param_add" refId="id0"/>
+        <Path path="param_add" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="param_topLevelSubsystemRef" refId="id0"/>
+        <Path path="param_topLevelSubsystemRef" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SubsystemReference/Sub_SubRef" refId="id0"/>
+      <Path path="Main.c:1:Main_step/SubsystemReference.c:1:SubsystemReference/Sub_SubRef.c:1:Sub_SubRef" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SubsystemReference/Sub_SubRef/In1" refId="id0"/>
+        <Path path="In1_Sub_SubRef" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SubsystemReference/Sub_SubRef/Out1" refId="id0"/>
+        <Path path="Out1_Sub_SubRef" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="param_add" refId="id0"/>
+        <Path path="param_add" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SubsystemReference/Subsystem1" refId="id0"/>
+      <Path path="Main.c:1:Main_step/SubsystemReference.c:1:SubsystemReference/Subsystem1.c:1:Subsystem1" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SubsystemReference/Subsystem1/In1" refId="id0"/>
+        <Path path="In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SubsystemReference/Subsystem1/In2" refId="id0"/>
+        <Path path="In2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SubsystemReference/Subsystem1/Out1" refId="id0"/>
+        <Path path="Out1_Sub1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SubsystemReference/Subsystem1/Out2" refId="id0"/>
+        <Path path="Out2_Sub1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="SubsystemReference/Subsystem1/Sum(1)" refId="id0"/>
+        <Path path="In1_Model" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="param_SubsystemRef" refId="id0"/>
+        <Path path="param_SubsystemRef" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SubsystemReference/Subsystem1/Model" refId="id0"/>
+      <Path path="Main.c:1:Main_step/SubsystemReference.c:1:SubsystemReference/Subsystem1.c:1:Subsystem1/ModelSimple.c:1:ModelSimple" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SubsystemReference/Subsystem1/Model/In1" refId="id0"/>
+        <Path path="In1_Model" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SubsystemReference/Subsystem1/Model/Out1" refId="id0"/>
+        <Path path="Out1_Sub1" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SubsystemReference/Subsystem1/Model/Model_Sub" refId="id0"/>
+      <Path path="Main.c:1:Main_step/SubsystemReference.c:1:SubsystemReference/Subsystem1.c:1:Subsystem1/ModelSimple.c:1:ModelSimple/Model_Sub.c:1:Model_Sub" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SubsystemReference/Subsystem1/Model/Model_Sub/In1" refId="id0"/>
+        <Path path="In1_Model" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SubsystemReference/Subsystem1/Model/Model_Sub/In2" refId="id0"/>
+        <Path path="In2_ModelSub" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SubsystemReference/Subsystem1/Model/Model_Sub/Out1" refId="id0"/>
+        <Path path="Out1_Sub1" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="ModelRefWithSubRef" refId="id0"/>
+      <Path path="Main.c:1:Main_step/ModelRefWithSubRef.c:1:ModelRefWithSubRef" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="ModelRefWithSubRef/In1" refId="id0"/>
+        <Path path="In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="ModelRefWithSubRef/Out1" refId="id0"/>
+        <Path path="Out2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="param_add" refId="id0"/>
+        <Path path="param_add" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="ModelRefWithSubRef/SubRef_ModelRef" refId="id0"/>
+      <Path path="Main.c:1:Main_step/ModelRefWithSubRef.c:1:ModelRefWithSubRef/SubRef_ModelRef.c:1:SubRef_ModelRef" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="ModelRefWithSubRef/SubRef_ModelRef/In1" refId="id0"/>
+        <Path path="In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="param_add" refId="id0"/>
+        <Path path="param_add" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_30\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_30\startEC.m" modelVersion="1.273" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_30\simplebc_EC.slx" modelCreationDate="2005-02-15T12:34:57" creator="alexh">
+  <toolInfo name="Matlab" release="(R2019b)" version="9.7" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2019b)" version="10.0" patchLevel=""/>
+  <model modelKind="model" modelID="model001" modelVersion="1.273" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_30\simplebc_EC.slx" creationDate="2005-02-15T12:34:57" initScript="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_30\startEC.m">
+    <subsystem subsysID="ss1" physicalPath="simplebc_EC" path="" sampleTime="0.1" name="simplebc_EC" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="simplebc_EC/In1" path="In1" signalName="BTCAnnotatedInport_pwron">
+        <uint8/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="simplebc_EC/In2" path="In2" signalName="BTCAnnotatedInport_tr">
+        <boolean/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="simplebc_EC/In3" path="In3" signalName="BTCAnnotatedInport_clk">
+        <boolean/>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="simplebc_EC/In4" path="In4" signalName="BTCAnnotatedInport_gp">
+        <boolean/>
+      </inport>
+      <inport portNumber="5" name="In5" physicalPath="simplebc_EC/In5" path="In5" signalName="BTCAnnotatedInport_ap">
+        <boolean/>
+      </inport>
+      <inport portNumber="6" name="In6" physicalPath="simplebc_EC/In6" path="In6" signalName="BTCAnnotatedInport_flame">
+        <boolean/>
+      </inport>
+      <inport portNumber="7" name="In7" physicalPath="simplebc_EC/In7" path="In7" signalName="BTCAnnotatedInport_fs_m1">
+        <boolean/>
+      </inport>
+      <inport portNumber="8" name="In8" physicalPath="simplebc_EC/In8" path="In8" signalName="BTCAnnotatedInport_fs_y1">
+        <boolean/>
+      </inport>
+      <inport portNumber="9" name="In9" physicalPath="simplebc_EC/In9" path="In9" signalName="BTCAnnotatedInport_fs_ignition">
+        <boolean/>
+      </inport>
+      <inport portNumber="10" name="In10" physicalPath="simplebc_EC/In10" path="In10" signalName="BTCAnnotatedInport_lockout_reset">
+        <boolean/>
+      </inport>
+      <inport portNumber="11" name="In11" physicalPath="simplebc_EC/In11" path="In11" signalName="BTCAnnotatedInport_reg_ratio">
+        <double/>
+      </inport>
+      <inport portNumber="12" name="In12" physicalPath="simplebc_EC/In12" path="In12" signalName="BTCAnnotatedInport_In1">
+        <boolean/>
+      </inport>
+      <inport portNumber="13" name="In13" physicalPath="simplebc_EC/In13" path="In13" signalName="BTCAnnotatedInport_In2">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="simplebc_EC/Out1" path="Out1" signalName="BTCAnnotatedOutport_m1">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="simplebc_EC/Out2" path="Out2" signalName="BTCAnnotatedOutport_y1">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="simplebc_EC/Out3" path="Out3" signalName="BTCAnnotatedOutport_ignition">
+        <boolean/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="simplebc_EC/Out4" path="Out4" signalName="BTCAnnotatedOutport_statusdisp">
+        <uint8/>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="simplebc_EC/Out5" path="Out5" signalName="BTCAnnotatedOutport_errordisp">
+        <boolean/>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="simplebc_EC/Out6" path="Out6" signalName="BTCAnnotatedOutport_fanspeed">
+        <double/>
+      </outport>
+      <outport portNumber="7" name="Out7" physicalPath="simplebc_EC/Out7" path="Out7" signalName="BTCAnnotatedOutport_gp_test">
+        <boolean/>
+      </outport>
+      <outport portNumber="8" name="Out8" physicalPath="simplebc_EC/Out8" path="Out8" signalName="BTCAnnotatedOutport_ap_test">
+        <boolean/>
+      </outport>
+      <outport portNumber="9" name="Out9" physicalPath="simplebc_EC/Out9" path="Out9" signalName="BTCAnnotatedOutport_flame_test">
+        <boolean/>
+      </outport>
+      <outport portNumber="10" name="Out10" physicalPath="simplebc_EC/Out10" path="Out10" signalName="BTCAnnotatedOutport_unlock">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="simplebc_EC/burnercontroller/fanspeedcontrol" path="burnercontroller/fanspeedcontrol" sampleTime="0.1" name="fanspeedcontrol" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="stateno" physicalPath="simplebc_EC/burnercontroller/fanspeedcontrol/stateno" path="burnercontroller/fanspeedcontrol/stateno" signalName="stateno">
+        <uint8/>
+      </inport>
+      <inport portNumber="2" name="reg_ratio" physicalPath="simplebc_EC/burnercontroller/fanspeedcontrol/reg_ratio" path="burnercontroller/fanspeedcontrol/reg_ratio" signalName="BTCAnnotatedInport_reg_ratio">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="fanspeed" physicalPath="simplebc_EC/burnercontroller/fanspeedcontrol/fanspeed" path="burnercontroller/fanspeedcontrol/fanspeed">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="simplebc_EC/burnercontroller/input_verification" path="burnercontroller/input_verification" sampleTime="0.1" name="input_verification" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="simplebc_EC/burnercontroller/input_verification/In1" path="burnercontroller/input_verification/In1" signalName="BTCAnnotatedInport_gp">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="simplebc_EC/burnercontroller/input_verification/In2" path="burnercontroller/input_verification/In2" signalName="BTCAnnotatedInport_ap">
+        <boolean/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="simplebc_EC/burnercontroller/input_verification/In3" path="burnercontroller/input_verification/In3" signalName="BTCAnnotatedInport_flame">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="simplebc_EC/burnercontroller/input_verification/Out1" path="burnercontroller/input_verification/Out1" signalName="gp_on">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="simplebc_EC/burnercontroller/input_verification/Out2" path="burnercontroller/input_verification/Out2" signalName="ap_on">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="simplebc_EC/burnercontroller/input_verification/Out3" path="burnercontroller/input_verification/Out3" signalName="flame_on">
+        <boolean/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="simplebc_EC/burnercontroller/input_verification/Out4" path="burnercontroller/input_verification/Out4" signalName="gp_test">
+        <boolean/>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="simplebc_EC/burnercontroller/input_verification/Out5" path="burnercontroller/input_verification/Out5" signalName="ap_test">
+        <boolean/>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="simplebc_EC/burnercontroller/input_verification/Out6" path="burnercontroller/input_verification/Out6" signalName="flame_test">
+        <boolean/>
+      </outport>
+      <outport portNumber="7" name="Out7" physicalPath="simplebc_EC/burnercontroller/input_verification/Out7" path="burnercontroller/input_verification/Out7" signalName="srinplock">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="simplebc_EC/burnercontroller/lockcontroller" path="burnercontroller/lockcontroller" sampleTime="0.1" name="lockcontroller" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="mainctrlock" physicalPath="simplebc_EC/burnercontroller/lockcontroller/mainctrlock" path="burnercontroller/lockcontroller/mainctrlock" signalName="mainctrlock">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="srinplock" physicalPath="simplebc_EC/burnercontroller/lockcontroller/srinplock" path="burnercontroller/lockcontroller/srinplock" signalName="srinplock">
+        <boolean/>
+      </inport>
+      <inport portNumber="3" name="reset_in" physicalPath="simplebc_EC/burnercontroller/lockcontroller/reset_in" path="burnercontroller/lockcontroller/reset_in" signalName="BTCAnnotatedInport_lockout_reset">
+        <boolean/>
+      </inport>
+      <inport portNumber="4" name="sroutplock" physicalPath="simplebc_EC/burnercontroller/lockcontroller/sroutplock" path="burnercontroller/lockcontroller/sroutplock" signalName="sroutplock">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="lock" physicalPath="simplebc_EC/burnercontroller/lockcontroller/lock" path="burnercontroller/lockcontroller/lock">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="unlock" physicalPath="simplebc_EC/burnercontroller/lockcontroller/unlock" path="burnercontroller/lockcontroller/unlock">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="simplebc_EC/burnercontroller/maincontroller" path="burnercontroller/maincontroller" sampleTime="0.1" name="maincontroller" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="clk" physicalPath="simplebc_EC/burnercontroller/maincontroller/clk" path="burnercontroller/maincontroller/clk" signalName="BTCAnnotatedInport_clk">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="unlock" physicalPath="simplebc_EC/burnercontroller/maincontroller/unlock" path="burnercontroller/maincontroller/unlock" signalName="BTCAnnotatedInport_In1">
+        <boolean/>
+      </inport>
+      <inport portNumber="3" name="lock" physicalPath="simplebc_EC/burnercontroller/maincontroller/lock" path="burnercontroller/maincontroller/lock" signalName="BTCAnnotatedInport_In2">
+        <boolean/>
+      </inport>
+      <inport portNumber="4" name="pwron_in" physicalPath="simplebc_EC/burnercontroller/maincontroller/pwron_in" path="burnercontroller/maincontroller/pwron_in" signalName="BTCAnnotatedInport_pwron">
+        <uint8/>
+      </inport>
+      <inport portNumber="5" name="tr_in" physicalPath="simplebc_EC/burnercontroller/maincontroller/tr_in" path="burnercontroller/maincontroller/tr_in" signalName="BTCAnnotatedInport_tr">
+        <boolean/>
+      </inport>
+      <inport portNumber="6" name="gp_on" physicalPath="simplebc_EC/burnercontroller/maincontroller/gp_on" path="burnercontroller/maincontroller/gp_on" signalName="gp_on">
+        <boolean/>
+      </inport>
+      <inport portNumber="7" name="ap_on" physicalPath="simplebc_EC/burnercontroller/maincontroller/ap_on" path="burnercontroller/maincontroller/ap_on" signalName="ap_on">
+        <boolean/>
+      </inport>
+      <inport portNumber="8" name="flame_on" physicalPath="simplebc_EC/burnercontroller/maincontroller/flame_on" path="burnercontroller/maincontroller/flame_on" signalName="flame_on">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="m1_on" physicalPath="simplebc_EC/burnercontroller/maincontroller/m1_on" path="burnercontroller/maincontroller/m1_on" signalName="m1_on">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="y1_on" physicalPath="simplebc_EC/burnercontroller/maincontroller/y1_on" path="burnercontroller/maincontroller/y1_on" signalName="y1_on">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="ignition_on" physicalPath="simplebc_EC/burnercontroller/maincontroller/ignition_on" path="burnercontroller/maincontroller/ignition_on" signalName="ignition_on">
+        <boolean/>
+      </outport>
+      <outport portNumber="4" name="stateno" physicalPath="simplebc_EC/burnercontroller/maincontroller/stateno" path="burnercontroller/maincontroller/stateno" signalName="stateno">
+        <uint8/>
+      </outport>
+      <outport portNumber="5" name="mainctrllock" physicalPath="simplebc_EC/burnercontroller/maincontroller/mainctrllock" path="burnercontroller/maincontroller/mainctrllock" signalName="mainctrlock">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="simplebc_EC/burnercontroller/output_verification" path="burnercontroller/output_verification" sampleTime="0.1" name="output_verification" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="simplebc_EC/burnercontroller/output_verification/In1" path="burnercontroller/output_verification/In1" signalName="BTCAnnotatedInport_fs_m1">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="simplebc_EC/burnercontroller/output_verification/In2" path="burnercontroller/output_verification/In2" signalName="BTCAnnotatedInport_fs_y1">
+        <boolean/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="simplebc_EC/burnercontroller/output_verification/In3" path="burnercontroller/output_verification/In3" signalName="BTCAnnotatedInport_fs_ignition">
+        <boolean/>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="simplebc_EC/burnercontroller/output_verification/In4" path="burnercontroller/output_verification/In4" signalName="m1_on">
+        <boolean/>
+      </inport>
+      <inport portNumber="5" name="In5" physicalPath="simplebc_EC/burnercontroller/output_verification/In5" path="burnercontroller/output_verification/In5" signalName="y1_on">
+        <boolean/>
+      </inport>
+      <inport portNumber="6" name="In6" physicalPath="simplebc_EC/burnercontroller/output_verification/In6" path="burnercontroller/output_verification/In6" signalName="ignition_on">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="simplebc_EC/burnercontroller/output_verification/Out1" path="burnercontroller/output_verification/Out1" signalName="m1_out">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="simplebc_EC/burnercontroller/output_verification/Out2" path="burnercontroller/output_verification/Out2" signalName="y1_out">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="simplebc_EC/burnercontroller/output_verification/Out3" path="burnercontroller/output_verification/Out3" signalName="ignition_out">
+        <boolean/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="simplebc_EC/burnercontroller/output_verification/Out4" path="burnercontroller/output_verification/Out4" signalName="sroutplock">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.401" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_tl_40_02\CalibrationSupport.mdl" modelCreationDate="2007-03-16T12:20:21" creator="qa_user">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.401" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_tl_40_02\CalibrationSupport.mdl" creationDate="2007-03-16T12:20:21" modificationDate="2021-11-22T08:29:35">
+    <subsystem subsysID="ss1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem" path="Subsystem/Subsystem/Subsystem" sampleTime="0.01" name="Subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="input" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/input" path="Subsystem/Subsystem/Subsystem/input">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.0000000000000000e+01" max="1.0000000000000000e+01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="In1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/In1" path="Subsystem/Subsystem/Subsystem/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.0000000000000000e+01" max="1.0000000000000000e+01"/>
+        </siltype>
+      </inport>
+      <calibration name="pv" path="Subsystem/Subsystem/Subsystem/SC1007/Chart" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1007/Chart" origin="sf_const" restricted="false" stateflowVariable="pv">
+        <miltype>
+          <nonUniformArray size="3" startIndex="0">
+            <signal initValue="0.0000000000000000e+00" index="0">
+              <double/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="1">
+              <double/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="2">
+              <double/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="3">
+            <signal initValue="0.0000000000000000e+00" index="0">
+              <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="1">
+              <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="2">
+              <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1007/Chart" targetLinkBlockKind="Stateflow" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1007/Chart" simulinkBlockType="SubSystem" blockAttribute="sf_parameter" stateflowVariable="pv"/>
+      </calibration>
+      <calibration name="cv" path="Subsystem/Subsystem/Subsystem/SC1007/Chart" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1007/Chart" origin="sf_const" restricted="false" stateflowVariable="cv">
+        <miltype>
+          <nonUniformArray size="2" startIndex="0">
+            <signal initValue="0.0000000000000000e+00" index="0">
+              <double/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="1">
+              <double/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="2">
+            <signal initValue="0.0000000000000000e+00" index="0">
+              <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="1">
+              <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1007/Chart" targetLinkBlockKind="Stateflow" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1007/Chart" simulinkBlockType="SubSystem" blockAttribute="sf_constant" stateflowVariable="cv"/>
+      </calibration>
+      <calibration name="p1" path="Subsystem/Subsystem/Subsystem/SC1003/Chart" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1003/Chart" origin="sf_const" restricted="false" stateflowVariable="p1">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1003/Chart" targetLinkBlockKind="Stateflow" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1003/Chart" simulinkBlockType="SubSystem" blockAttribute="sf_parameter" stateflowVariable="p1"/>
+      </calibration>
+      <calibration name="c1" path="Subsystem/Subsystem/Subsystem/SC1003/Chart" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1003/Chart" origin="sf_const" restricted="false" stateflowVariable="c1">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1003/Chart" targetLinkBlockKind="Stateflow" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1003/Chart" simulinkBlockType="SubSystem" blockAttribute="sf_constant" stateflowVariable="c1"/>
+      </calibration>
+      <calibration name="C2[sat_lower]" path="Subsystem/Subsystem/Subsystem/SC1006/C2" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1006/C2" origin="sat_lower" restricted="false">
+        <miltype initValue="-4.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="-4.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.5000000000000000e+01" max="1.5000000000000000e+01"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1006/C2" targetLinkBlockKind="TL_Saturate" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1006/C2" simulinkBlockType="Saturate" blockAttribute="lowerlimit" restriction="tl_saturate:lowerlimit"/>
+      </calibration>
+      <calibration name="C2[sat_upper]" path="Subsystem/Subsystem/Subsystem/SC1006/C2" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1006/C2" origin="sat_upper" restricted="false">
+        <miltype initValue="4.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="4.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.5000000000000000e+01" max="1.5000000000000000e+01"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1006/C2" targetLinkBlockKind="TL_Saturate" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1006/C2" simulinkBlockType="Saturate" blockAttribute="upperlimit" restriction="tl_saturate:upperlimit"/>
+      </calibration>
+      <calibration name="P1[relay_switch_off]" path="Subsystem/Subsystem/Subsystem/SC1005/P1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/P1" origin="relay_switch_off" restricted="false">
+        <miltype initValue="-1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="-1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1005/P1" targetLinkBlockKind="TL_Relay" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/P1" simulinkBlockType="Relay" blockAttribute="offswitch" restriction="tl_relay:offswitch"/>
+      </calibration>
+      <calibration name="P1[relay_switch_on]" path="Subsystem/Subsystem/Subsystem/SC1005/P1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/P1" origin="relay_switch_on" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1005/P1" targetLinkBlockKind="TL_Relay" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/P1" simulinkBlockType="Relay" blockAttribute="onswitch" restriction="tl_relay:onswitch"/>
+      </calibration>
+      <calibration name="C1[relay_switch_off]" path="Subsystem/Subsystem/Subsystem/SC1005/C1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/C1" origin="relay_switch_off" restricted="false">
+        <miltype initValue="-1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="-1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1005/C1" targetLinkBlockKind="TL_Relay" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/C1" simulinkBlockType="Relay" blockAttribute="offswitch" restriction="tl_relay:offswitch"/>
+      </calibration>
+      <calibration name="C1[relay_switch_on]" path="Subsystem/Subsystem/Subsystem/SC1005/C1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/C1" origin="relay_switch_on" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1005/C1" targetLinkBlockKind="TL_Relay" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/C1" simulinkBlockType="Relay" blockAttribute="onswitch" restriction="tl_relay:onswitch"/>
+      </calibration>
+      <calibration name="P1[relay_out_off]" path="Subsystem/Subsystem/Subsystem/SC1004/P1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/P1" origin="relay_out_off" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1004/P1" targetLinkBlockKind="TL_Relay" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/P1" simulinkBlockType="Relay" blockAttribute="offoutput"/>
+      </calibration>
+      <calibration name="P1[relay_out_on]" path="Subsystem/Subsystem/Subsystem/SC1004/P1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/P1" origin="relay_out_on" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1004/P1" targetLinkBlockKind="TL_Relay" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/P1" simulinkBlockType="Relay" blockAttribute="onoutput"/>
+      </calibration>
+      <calibration name="C1[relay_out_off]" path="Subsystem/Subsystem/Subsystem/SC1004/C1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/C1" origin="relay_out_off" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1004/C1" targetLinkBlockKind="TL_Relay" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/C1" simulinkBlockType="Relay" blockAttribute="offoutput"/>
+      </calibration>
+      <calibration name="C1[relay_out_on]" path="Subsystem/Subsystem/Subsystem/SC1004/C1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/C1" origin="relay_out_on" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1004/C1" targetLinkBlockKind="TL_Relay" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/C1" simulinkBlockType="Relay" blockAttribute="onoutput"/>
+      </calibration>
+      <calibration name="P1[switch_threshold]" path="Subsystem/Subsystem/Subsystem/SC1002/P1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1002/P1" origin="switch_threshold" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1002/P1" targetLinkBlockKind="TL_Switch" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1002/P1" simulinkBlockType="Switch" blockAttribute="threshold"/>
+      </calibration>
+      <calibration name="Const1[const]" path="Subsystem/Subsystem/Subsystem/SC1002/Const1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1002/Const1" origin="const" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1002/Const1" targetLinkBlockKind="TL_Constant" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1002/Const1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="Gain-factor is CAL (int8)[gain]" path="Subsystem/Subsystem/Subsystem/EP2_F178_TSC_1/Gain-factor is CAL (int8)" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/EP2_F178_TSC_1/Gain-factor is CAL (int8)" origin="gain" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/EP2_F178_TSC_1/Gain-factor is CAL (int8)" targetLinkBlockKind="TL_Gain" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/EP2_F178_TSC_1/Gain-factor is CAL (int8)" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <outport portNumber="1" name="r1out" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r1out" path="Subsystem/Subsystem/Subsystem/r1out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="r2out" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r2out" path="Subsystem/Subsystem/Subsystem/r2out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="r3out" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r3out" path="Subsystem/Subsystem/Subsystem/r3out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="4" name="r1out1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r1out1" path="Subsystem/Subsystem/Subsystem/r1out1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="5" name="r2out1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r2out1" path="Subsystem/Subsystem/Subsystem/r2out1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="6" name="r3out1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r3out1" path="Subsystem/Subsystem/Subsystem/r3out1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="7" name="r1out2" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r1out2" path="Subsystem/Subsystem/Subsystem/r1out2">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="8" name="r2out2" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r2out2" path="Subsystem/Subsystem/Subsystem/r2out2">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="9" name="r3out2" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r3out2" path="Subsystem/Subsystem/Subsystem/r3out2">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="10" name="r1out3" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r1out3" path="Subsystem/Subsystem/Subsystem/r1out3">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="11" name="r2out3" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r2out3" path="Subsystem/Subsystem/Subsystem/r2out3">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="12" name="r3out3" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r3out3" path="Subsystem/Subsystem/Subsystem/r3out3">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="13" name="r1out4" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r1out4" path="Subsystem/Subsystem/Subsystem/r1out4">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="14" name="r2out4" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r2out4" path="Subsystem/Subsystem/Subsystem/r2out4">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="15" name="r3out4" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r3out4" path="Subsystem/Subsystem/Subsystem/r3out4">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="16" name="r1out5" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r1out5" path="Subsystem/Subsystem/Subsystem/r1out5">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="17" name="r2out5" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r2out5" path="Subsystem/Subsystem/Subsystem/r2out5">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="18" name="r3out5" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r3out5" path="Subsystem/Subsystem/Subsystem/r3out5">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="19" name="r1out6" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r1out6" path="Subsystem/Subsystem/Subsystem/r1out6">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="20" name="r2out6" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r2out6" path="Subsystem/Subsystem/Subsystem/r2out6">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <outport portNumber="21" name="r3out6" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/r3out6" path="Subsystem/Subsystem/Subsystem/r3out6">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/EP2_F178_TSC_1" path="Subsystem/Subsystem/Subsystem/EP2_F178_TSC_1" sampleTime="0.01" name="EP2_F178_TSC_1" scopeKind="SUT" kind="subsystem">
+      <calibration name="Gain-factor is CAL (int8)[gain]" path="Subsystem/Subsystem/Subsystem/EP2_F178_TSC_1/Gain-factor is CAL (int8)" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/EP2_F178_TSC_1/Gain-factor is CAL (int8)" origin="gain" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/EP2_F178_TSC_1/Gain-factor is CAL (int8)" targetLinkBlockKind="TL_Gain" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/EP2_F178_TSC_1/Gain-factor is CAL (int8)" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <outport portNumber="1" name="r1out" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/EP2_F178_TSC_1/r1out" path="Subsystem/Subsystem/Subsystem/EP2_F178_TSC_1/r1out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="r2out" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/EP2_F178_TSC_1/r2out" path="Subsystem/Subsystem/Subsystem/EP2_F178_TSC_1/r2out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="r3out" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/EP2_F178_TSC_1/r3out" path="Subsystem/Subsystem/Subsystem/EP2_F178_TSC_1/r3out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1002" path="Subsystem/Subsystem/Subsystem/SC1002" sampleTime="0.01" name="SC1002" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="input" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1002/input" path="Subsystem/Subsystem/Subsystem/SC1002/input">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.0000000000000000e+02" max="1.0000000000000000e+02"/>
+        </siltype>
+      </inport>
+      <calibration name="P1[switch_threshold]" path="Subsystem/Subsystem/Subsystem/SC1002/P1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1002/P1" origin="switch_threshold" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1002/P1" targetLinkBlockKind="TL_Switch" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1002/P1" simulinkBlockType="Switch" blockAttribute="threshold"/>
+      </calibration>
+      <calibration name="Const1[const]" path="Subsystem/Subsystem/Subsystem/SC1002/Const1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1002/Const1" origin="const" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1002/Const1" targetLinkBlockKind="TL_Constant" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1002/Const1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="r1out" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1002/r1out" path="Subsystem/Subsystem/Subsystem/SC1002/r1out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="r2out" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1002/r2out" path="Subsystem/Subsystem/Subsystem/SC1002/r2out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="r1out1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1002/r1out1" path="Subsystem/Subsystem/Subsystem/SC1002/r1out1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1003" path="Subsystem/Subsystem/Subsystem/SC1003" sampleTime="0.01" name="SC1003" scopeKind="SUT" kind="subsystem">
+      <calibration name="p1" path="Subsystem/Subsystem/Subsystem/SC1003/Chart" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1003/Chart" origin="sf_const" restricted="false" stateflowVariable="p1">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1003/Chart" targetLinkBlockKind="Stateflow" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1003/Chart" simulinkBlockType="SubSystem" blockAttribute="sf_parameter" stateflowVariable="p1"/>
+      </calibration>
+      <calibration name="c1" path="Subsystem/Subsystem/Subsystem/SC1003/Chart" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1003/Chart" origin="sf_const" restricted="false" stateflowVariable="c1">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1003/Chart" targetLinkBlockKind="Stateflow" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1003/Chart" simulinkBlockType="SubSystem" blockAttribute="sf_constant" stateflowVariable="c1"/>
+      </calibration>
+      <outport portNumber="1" name="r1out" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1003/r1out" path="Subsystem/Subsystem/Subsystem/SC1003/r1out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="r2out" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1003/r2out" path="Subsystem/Subsystem/Subsystem/SC1003/r2out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="r1out1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1003/r1out1" path="Subsystem/Subsystem/Subsystem/SC1003/r1out1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004" path="Subsystem/Subsystem/Subsystem/SC1004" sampleTime="0.01" name="SC1004" scopeKind="SUT" kind="subsystem">
+      <calibration name="P1[relay_out_off]" path="Subsystem/Subsystem/Subsystem/SC1004/P1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/P1" origin="relay_out_off" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1004/P1" targetLinkBlockKind="TL_Relay" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/P1" simulinkBlockType="Relay" blockAttribute="offoutput"/>
+      </calibration>
+      <calibration name="P1[relay_out_on]" path="Subsystem/Subsystem/Subsystem/SC1004/P1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/P1" origin="relay_out_on" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1004/P1" targetLinkBlockKind="TL_Relay" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/P1" simulinkBlockType="Relay" blockAttribute="onoutput"/>
+      </calibration>
+      <calibration name="C1[relay_out_off]" path="Subsystem/Subsystem/Subsystem/SC1004/C1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/C1" origin="relay_out_off" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1004/C1" targetLinkBlockKind="TL_Relay" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/C1" simulinkBlockType="Relay" blockAttribute="offoutput"/>
+      </calibration>
+      <calibration name="C1[relay_out_on]" path="Subsystem/Subsystem/Subsystem/SC1004/C1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/C1" origin="relay_out_on" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1004/C1" targetLinkBlockKind="TL_Relay" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/C1" simulinkBlockType="Relay" blockAttribute="onoutput"/>
+      </calibration>
+      <outport portNumber="1" name="r1out2" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/r1out2" path="Subsystem/Subsystem/Subsystem/SC1004/r1out2">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="r2out1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/r2out1" path="Subsystem/Subsystem/Subsystem/SC1004/r2out1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="r1out3" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1004/r1out3" path="Subsystem/Subsystem/Subsystem/SC1004/r1out3">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005" path="Subsystem/Subsystem/Subsystem/SC1005" sampleTime="0.01" name="SC1005" scopeKind="SUT" kind="subsystem">
+      <calibration name="P1[relay_switch_off]" path="Subsystem/Subsystem/Subsystem/SC1005/P1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/P1" origin="relay_switch_off" restricted="false">
+        <miltype initValue="-1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="-1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1005/P1" targetLinkBlockKind="TL_Relay" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/P1" simulinkBlockType="Relay" blockAttribute="offswitch" restriction="tl_relay:offswitch"/>
+      </calibration>
+      <calibration name="P1[relay_switch_on]" path="Subsystem/Subsystem/Subsystem/SC1005/P1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/P1" origin="relay_switch_on" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1005/P1" targetLinkBlockKind="TL_Relay" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/P1" simulinkBlockType="Relay" blockAttribute="onswitch" restriction="tl_relay:onswitch"/>
+      </calibration>
+      <calibration name="C1[relay_switch_off]" path="Subsystem/Subsystem/Subsystem/SC1005/C1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/C1" origin="relay_switch_off" restricted="false">
+        <miltype initValue="-1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="-1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1005/C1" targetLinkBlockKind="TL_Relay" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/C1" simulinkBlockType="Relay" blockAttribute="offswitch" restriction="tl_relay:offswitch"/>
+      </calibration>
+      <calibration name="C1[relay_switch_on]" path="Subsystem/Subsystem/Subsystem/SC1005/C1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/C1" origin="relay_switch_on" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1005/C1" targetLinkBlockKind="TL_Relay" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/C1" simulinkBlockType="Relay" blockAttribute="onswitch" restriction="tl_relay:onswitch"/>
+      </calibration>
+      <outport portNumber="1" name="r1out" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/r1out" path="Subsystem/Subsystem/Subsystem/SC1005/r1out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="r2out" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/r2out" path="Subsystem/Subsystem/Subsystem/SC1005/r2out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="r1out1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1005/r1out1" path="Subsystem/Subsystem/Subsystem/SC1005/r1out1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1006" path="Subsystem/Subsystem/Subsystem/SC1006" sampleTime="0.01" name="SC1006" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1006/In1" path="Subsystem/Subsystem/Subsystem/SC1006/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.0000000000000000e+01" max="1.0000000000000000e+01"/>
+        </siltype>
+      </inport>
+      <calibration name="C2[sat_lower]" path="Subsystem/Subsystem/Subsystem/SC1006/C2" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1006/C2" origin="sat_lower" restricted="false">
+        <miltype initValue="-4.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="-4.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.5000000000000000e+01" max="1.5000000000000000e+01"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1006/C2" targetLinkBlockKind="TL_Saturate" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1006/C2" simulinkBlockType="Saturate" blockAttribute="lowerlimit" restriction="tl_saturate:lowerlimit"/>
+      </calibration>
+      <calibration name="C2[sat_upper]" path="Subsystem/Subsystem/Subsystem/SC1006/C2" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1006/C2" origin="sat_upper" restricted="false">
+        <miltype initValue="4.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="4.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.5000000000000000e+01" max="1.5000000000000000e+01"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1006/C2" targetLinkBlockKind="TL_Saturate" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1006/C2" simulinkBlockType="Saturate" blockAttribute="upperlimit" restriction="tl_saturate:upperlimit"/>
+      </calibration>
+      <outport portNumber="1" name="r1out" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1006/r1out" path="Subsystem/Subsystem/Subsystem/SC1006/r1out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="r2out" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1006/r2out" path="Subsystem/Subsystem/Subsystem/SC1006/r2out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="r1out1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1006/r1out1" path="Subsystem/Subsystem/Subsystem/SC1006/r1out1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1007" path="Subsystem/Subsystem/Subsystem/SC1007" sampleTime="0.01" name="SC1007" scopeKind="SUT" kind="subsystem">
+      <calibration name="pv" path="Subsystem/Subsystem/Subsystem/SC1007/Chart" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1007/Chart" origin="sf_const" restricted="false" stateflowVariable="pv">
+        <miltype>
+          <nonUniformArray size="3" startIndex="0">
+            <signal initValue="0.0000000000000000e+00" index="0">
+              <double/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="1">
+              <double/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="2">
+              <double/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="3">
+            <signal initValue="0.0000000000000000e+00" index="0">
+              <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="1">
+              <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="2">
+              <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1007/Chart" targetLinkBlockKind="Stateflow" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1007/Chart" simulinkBlockType="SubSystem" blockAttribute="sf_parameter" stateflowVariable="pv"/>
+      </calibration>
+      <calibration name="cv" path="Subsystem/Subsystem/Subsystem/SC1007/Chart" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1007/Chart" origin="sf_const" restricted="false" stateflowVariable="cv">
+        <miltype>
+          <nonUniformArray size="2" startIndex="0">
+            <signal initValue="0.0000000000000000e+00" index="0">
+              <double/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="1">
+              <double/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="2">
+            <signal initValue="0.0000000000000000e+00" index="0">
+              <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="1">
+              <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/SC1007/Chart" targetLinkBlockKind="Stateflow" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1007/Chart" simulinkBlockType="SubSystem" blockAttribute="sf_constant" stateflowVariable="cv"/>
+      </calibration>
+      <outport portNumber="1" name="r1out" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1007/r1out" path="Subsystem/Subsystem/Subsystem/SC1007/r1out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="r2out" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1007/r2out" path="Subsystem/Subsystem/Subsystem/SC1007/r2out">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="r1out1" physicalPath="CalibrationSupport/Subsystem/Subsystem/Subsystem/SC1007/r1out1" path="Subsystem/Subsystem/Subsystem/SC1007/r1out1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

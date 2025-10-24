@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="2CF">
+	<Scope uid="2CF" name="TopLevel_RefSub" path="Main/SubsystemFromLibrary/TopLevel_RefSub" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="Main/SubsystemFromLibrary/TopLevel_RefSub" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_723" signalType="double" isFloat="yes">
+				<ifName ifid="if_723" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_724" signalType="double" isFloat="yes">
+				<ifName ifid="if_724" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_725" signalType="double" isFloat="yes">
+				<ifName ifid="if_725" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_726" signalType="double" isFloat="yes">
+				<ifName ifid="if_726" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+			</Variable>
+		</OutPort>
+		<Calibration name="param_SubsystemRef" path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" origin="explicit_param">
+			<CalibrationUsage path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" blockAttribute="Value" />
+			<Variable varid="varif_727" signalType="double" isFloat="yes">
+				<ifName ifid="if_727" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:TopLevel_ModelRef/ReferencedSubsystem/Constant/param_SubsystemRef" />
+			</Variable>
+		</Calibration>
+		<Model name="Main" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/Main.slx" type="SimulinkModel" />
+		<Scope uid="2CJ" name="TopLevel_ModelRef" path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ModelReference" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_733" signalType="double" isFloat="yes">
+					<ifName ifid="if_733" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<InPort name="In2" portNumber="2" compositeSig="none">
+				<Variable varid="varif_734" signalType="double" isFloat="yes">
+					<ifName ifid="if_734" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_735" signalType="double" isFloat="yes">
+					<ifName ifid="if_735" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out2" portNumber="2" compositeSig="none">
+				<Variable varid="varif_736" signalType="double" isFloat="yes">
+					<ifName ifid="if_736" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+				</Variable>
+			</OutPort>
+			<Calibration name="param_SubsystemRef" path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" origin="explicit_param">
+				<CalibrationUsage path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" blockAttribute="Value" />
+				<Variable varid="varif_737" signalType="double" isFloat="yes">
+					<ifName ifid="if_737" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:ReferencedSubsystem/Constant/param_SubsystemRef" />
+				</Variable>
+			</Calibration>
+			<Model name="ModelReference" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/ModelReference.slx" type="SimulinkModel" />
+			<Scope uid="2CK" name="ReferencedSubsystem" path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ModelReference/ReferencedSubsystem" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_743" signalType="double" isFloat="yes">
+						<ifName ifid="if_743" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+					</Variable>
+				</InPort>
+				<InPort name="In2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_744" signalType="double" isFloat="yes">
+						<ifName ifid="if_744" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_745" signalType="double" isFloat="yes">
+						<ifName ifid="if_745" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+					</Variable>
+				</OutPort>
+				<OutPort name="Out2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_746" signalType="double" isFloat="yes">
+						<ifName ifid="if_746" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+					</Variable>
+				</OutPort>
+				<Calibration name="param_SubsystemRef" path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" origin="explicit_param">
+					<CalibrationUsage path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem/Constant" physicalPath="ModelReference/ReferencedSubsystem/Constant" blockAttribute="Value" />
+					<Variable varid="varif_747" signalType="double" isFloat="yes">
+						<ifName ifid="if_747" initValue="2.0" lsb="1" offset="0" displayName="param_SubsystemRef" identifier="PARAMETER:Constant/param_SubsystemRef" />
+					</Variable>
+				</Calibration>
+				<Model name="ModelReference" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/ModelReference.slx" type="SimulinkModel" />
+				<Scope uid="2CL" name="Model" path="Main/SubsystemFromLibrary/TopLevel_RefSub/TopLevel_ModelRef/ReferencedSubsystem/Model" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="ModelSimple" subsystemLogging="on">
+					<InPort name="In1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_750" signalType="double" isFloat="yes">
+							<ifName ifid="if_750" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+						</Variable>
+					</InPort>
+					<OutPort name="Out1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_751" signalType="double" isFloat="yes">
+							<ifName ifid="if_751" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+						</Variable>
+					</OutPort>
+					<Model name="ModelSimple" modelPath="/E:/ModelsDev/SL/SubsystemReference/ml2019b/ModelSimple.slx" type="SimulinkModel" />
+				</Scope>
+			</Scope>
+		</Scope>
+	</Scope>
+</ExtractionModel>

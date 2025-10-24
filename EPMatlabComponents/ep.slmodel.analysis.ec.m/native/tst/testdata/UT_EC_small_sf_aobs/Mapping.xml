@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="sf_aob"/>
+    <Architecture id="id1" name="sf_aob [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="sf_aob.c:1:sf_aob_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_bus_sf" refId="id0"/>
+        <Path path="in_bus_signal" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_bus_signal(1).inputsignal.input" refId="id0"/>
+          <Path path="[0].inputsignal.input" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".in_bus_signal(2).inputsignal.input" refId="id0"/>
+          <Path path="[1].inputsignal.input" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_bus_sf" refId="id0"/>
+        <Path path="in_bus_signal" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_bus_signal(1).limits.upper_saturation_limit" refId="id0"/>
+          <Path path="[0].limits.upper_saturation_limit" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".in_bus_signal(2).limits.upper_saturation_limit" refId="id0"/>
+          <Path path="[1].limits.upper_saturation_limit" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_bus_sf" refId="id0"/>
+        <Path path="in_bus_signal" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_bus_signal(1).limits.lower_saturation_limit" refId="id0"/>
+          <Path path="[0].limits.lower_saturation_limit" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".in_bus_signal(2).limits.lower_saturation_limit" refId="id0"/>
+          <Path path="[1].limits.lower_saturation_limit" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="out_bus_sf" refId="id0"/>
+        <Path path="out_bus_out" refId="id1"/>
+        <SignalMapping>
+          <Path path=".out_bus_out(1).inputsignal.input" refId="id0"/>
+          <Path path="[0].inputsignal.input" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".out_bus_out(2).inputsignal.input" refId="id0"/>
+          <Path path="[1].inputsignal.input" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="out_bus_sf" refId="id0"/>
+        <Path path="out_bus_out" refId="id1"/>
+        <SignalMapping>
+          <Path path=".out_bus_out(1).limits.upper_saturation_limit" refId="id0"/>
+          <Path path="[0].limits.upper_saturation_limit" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".out_bus_out(2).limits.upper_saturation_limit" refId="id0"/>
+          <Path path="[1].limits.upper_saturation_limit" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="out_bus_sf" refId="id0"/>
+        <Path path="out_bus_out" refId="id1"/>
+        <SignalMapping>
+          <Path path=".out_bus_out(1).limits.lower_saturation_limit" refId="id0"/>
+          <Path path="[0].limits.lower_saturation_limit" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".out_bus_out(2).limits.lower_saturation_limit" refId="id0"/>
+          <Path path="[1].limits.lower_saturation_limit" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="Chart" refId="id0"/>
+      <Path path="sf_aob.c:1:sf_aob_step/Chart.c:1:sf_aob_Chart" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Chart/inbus" refId="id0"/>
+        <Path path="in_bus_signal" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_bus_signal(1).inputsignal.input" refId="id0"/>
+          <Path path="[0].inputsignal.input" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".in_bus_signal(2).inputsignal.input" refId="id0"/>
+          <Path path="[1].inputsignal.input" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Chart/inbus" refId="id0"/>
+        <Path path="in_bus_signal" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_bus_signal(1).limits.upper_saturation_limit" refId="id0"/>
+          <Path path="[0].limits.upper_saturation_limit" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".in_bus_signal(2).limits.upper_saturation_limit" refId="id0"/>
+          <Path path="[1].limits.upper_saturation_limit" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Chart/inbus" refId="id0"/>
+        <Path path="in_bus_signal" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_bus_signal(1).limits.lower_saturation_limit" refId="id0"/>
+          <Path path="[0].limits.lower_saturation_limit" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".in_bus_signal(2).limits.lower_saturation_limit" refId="id0"/>
+          <Path path="[1].limits.lower_saturation_limit" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Chart/outbus" refId="id0"/>
+        <Path path="out_bus_out" refId="id1"/>
+        <SignalMapping>
+          <Path path=".outbus(1).inputsignal.input" refId="id0"/>
+          <Path path="[0].inputsignal.input" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".outbus(2).inputsignal.input" refId="id0"/>
+          <Path path="[1].inputsignal.input" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Chart/outbus" refId="id0"/>
+        <Path path="out_bus_out" refId="id1"/>
+        <SignalMapping>
+          <Path path=".outbus(1).limits.upper_saturation_limit" refId="id0"/>
+          <Path path="[0].limits.upper_saturation_limit" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".outbus(2).limits.upper_saturation_limit" refId="id0"/>
+          <Path path="[1].limits.upper_saturation_limit" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Chart/outbus" refId="id0"/>
+        <Path path="out_bus_out" refId="id1"/>
+        <SignalMapping>
+          <Path path=".outbus(1).limits.lower_saturation_limit" refId="id0"/>
+          <Path path="[0].limits.lower_saturation_limit" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".outbus(2).limits.lower_saturation_limit" refId="id0"/>
+          <Path path="[1].limits.lower_saturation_limit" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

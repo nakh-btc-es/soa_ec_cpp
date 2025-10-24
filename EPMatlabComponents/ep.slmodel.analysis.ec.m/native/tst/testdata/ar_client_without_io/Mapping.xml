@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Wrapper_ar_client_without_io"/>
+    <Architecture id="id1" name="Wrapper_ar_client_without_io [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Wrapper_ar_client_without_io.c:1:Wrapper_ar_client_without_io_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="ref1" refId="id0"/>
+        <Path path="RteStub_sr_Interface_r_Port_DataElement1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="u1" refId="id0"/>
+        <Path path="RteStub_sr_Interface_s_Port_DataElement2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="ar_client_without_io/ar_client_without_io/sub_A" refId="id0"/>
+      <Path path="Wrapper_ar_client_without_io.c:1:Wrapper_ar_client_without_io_step/ar_client_without_io.c:1:Runna_1" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="ar_client_without_io/ar_client_without_io/sub_A/ref" refId="id0"/>
+        <Path path="RteStub_sr_Interface_r_Port_DataElement1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="ar_client_without_io/ar_client_without_io/sub_A/u" refId="id0"/>
+        <Path path="RteStub_sr_Interface_s_Port_DataElement2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

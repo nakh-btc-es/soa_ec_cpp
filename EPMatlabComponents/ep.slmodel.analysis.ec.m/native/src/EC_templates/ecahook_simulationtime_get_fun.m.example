@@ -1,0 +1,55 @@
+function stConfig = ecahook_simulationtime_get_fun(stConfig, stAdditionalInfo)
+% stConfig
+%   .funcname    (String): name of the function to be stubbed
+%   .filename    (String): name of the stub file
+%   .includefile (String): name of one include file (e.g. datatypes definition)
+%   .returntype  (String): datatype of the return time variable
+%   .usfactor    (String): unit of time
+%                             1         -> time in microsecond (us)
+%                             10^-3     -> time in millisecond (ms)
+%                             10^-6     -> time in second (s)
+%
+%  Hint: the unit of time should be precized enough
+%  to represent the sample time (e.g. if sampletime
+%  == 0.001s, the factor should be greater than 10^-3
+%  otherwize a time value 0 will be returned.
+%%
+% ------------------------EXAMPLE---------------------------------
+% stConfig.funcname         = 'getSimulationTime';
+% stConfig.filename         = 'getSimulationTime.c';
+% stConfig.includefile      = 'rtwtypes.h';
+% stConfig.returntype       = 'uint32_T';
+% stConfig.usfactor         = 1; %get time in microsecond
+%------------------------------------------------------------------
+%
+% -----------------------------------------------------------------------------
+% 
+% Additional Infos
+% 
+% -----------------------------------------------------------------------------
+%
+%   stAdditionalInfo           (struct)    struct containing the following fields
+%      .sModelName             (string)       the model's name
+%      .sModelPath             (string)       the model's path 
+%      .sInitFilePath          (string)       the init file's path
+%      .sInitFileName          (string)       the init file's name
+%      .sStubCodeFolder        (string)       the stub Code Folder
+%      .casReferencedModels    (cell)         all models referenced by the main model
+%      .bIsWrapperMode         (boolean)      special mode that is active in the Wrapper workflow
+%      .sWrappedAutosarModel   (string)       the wrapped AUTOSAR model in the Wrapper wofklow
+%
+
+%%
+% -----------------------------------------------------------------------------
+% 
+% DEFAULT VALUES
+% 
+% -----------------------------------------------------------------------------
+% stConfig = struct (...
+%     'funcname',          '', ...
+%     'filename',          '', ...
+%     'includefile',       '', ...
+%     'returntype',        '', ...
+%     'usfactor',          []);
+%
+end

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="enablsys"/>
+    <Architecture id="id1" name="enablsys [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="controller/Subsystem/controller"/>
+      <Path refId="id1" path="controller.c:1:controller"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="ref."/>
+        <Path refId="id1" path="ref_"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="y."/>
+        <Path refId="id1" path="y_"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="u."/>
+        <Path refId="id1" path="u"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="controller/Subsystem/controller/controller/select controller/pos. level/pos. level[const]"/>
+        <Path refId="id1" path="Sa8_pos__level">
+          <Property name="module" value="controller.c"/>
+        </Path>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/controller/e(1)"/>
+        <Path refId="id1" path="Sa2_e"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/controller/select controller/select_low_gain(1)"/>
+        <Path refId="id1" path="Sa8_select_low_gain"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="controller/Subsystem/controller/controller"/>
+      <Path refId="id1" path="controller.c:1:controller/controller.c:1:Sa2_controller"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="ref."/>
+        <Path refId="id1" path="ref_"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="y."/>
+        <Path refId="id1" path="y_"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="u."/>
+        <Path refId="id1" path="u"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="controller/Subsystem/controller/controller/select controller/pos. level/pos. level[const]"/>
+        <Path refId="id1" path="Sa8_pos__level">
+          <Property name="module" value="controller.c"/>
+        </Path>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/controller/e(1)"/>
+        <Path refId="id1" path="Sa2_e"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/controller/select controller/select_low_gain(1)"/>
+        <Path refId="id1" path="Sa8_select_low_gain"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

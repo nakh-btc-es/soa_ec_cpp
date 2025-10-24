@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+    <xs:element name="TestVector">
+        <xs:complexType>   
+            <xs:sequence>        
+                <xs:element name="Inputs" type="Inputs" minOccurs="1" maxOccurs="1"> </xs:element>        
+                <xs:element name="Outputs" type="Outputs" minOccurs="0" maxOccurs="1"></xs:element>
+            </xs:sequence>
+            <xs:attribute name="length" type="xs:positiveInteger" use="required"></xs:attribute>
+            <xs:attribute name="name" type="xs:string" use="required"> </xs:attribute>
+            <xs:attribute name="sampleTime" type="xs:string" use="required"> </xs:attribute>
+            <!-- the content of the debugMatFileName should be valid -->
+            <!-- https://support.microsoft.com/en-us/help/177506/error-message-filename-is-invalid-or-cannot-contain-any-of-the-following-characters -->
+            <!-- make a check that the string is valid -->
+            <xs:attribute name="debugMatFileName" type="xs:string"> </xs:attribute>
+            <xs:attribute name="exportDir" type="xs:string"> </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:complexType name="Inputs">
+        <xs:sequence>
+            <xs:element name="Inport" minOccurs="0" maxOccurs="unbounded"></xs:element>
+            <xs:element name="Calibration"  minOccurs="0" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>          
+    </xs:complexType>
+    
+    <xs:complexType name="Outputs">
+        <xs:sequence>
+            <xs:element name="Outport"  minOccurs="0" maxOccurs="unbounded"></xs:element>
+        </xs:sequence>    
+    </xs:complexType>
+    
+    <xs:complexType name="Outport">     
+        <xs:attribute name="ifid" type="xs:string" use="required"></xs:attribute>
+        <xs:attribute name="matFile" type="xs:string" use="required"></xs:attribute>
+    </xs:complexType>
+    
+    <xs:complexType name="Inport">    
+        <xs:attribute name="ifid" type="xs:string" use="required"></xs:attribute>
+        <xs:attribute name="matFile" type="xs:string" use="required"></xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="Calibration">
+        <xs:attribute name="initValue" type="xs:string" use="required"></xs:attribute>
+        <xs:attribute name="ifid" type="xs:string" use="required"></xs:attribute>
+    </xs:complexType>
+</xs:schema>

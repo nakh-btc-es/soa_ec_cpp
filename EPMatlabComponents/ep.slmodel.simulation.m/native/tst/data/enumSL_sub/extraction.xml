@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="29q">
+	<Scope uid="29q" name="myInputIsAnArrayEnum" path="enum_model_sl/Subsystem1/myEnumUsage/myInputIsAnArrayEnum" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="enum_model_sl/Subsystem1/myEnumUsage/myInputIsAnArrayEnum" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_579" width1="2" signalType="myMode" isSignalTypeEnum="yes" signalDim="[1 2]" isFloat="yes">
+				<ifName ifid="if_580" index1="1" lsb="1" offset="0" displayName="In1(1)" identifier="INPUT:In1(1)" />
+				<ifName ifid="if_581" index1="2" lsb="1" offset="0" displayName="In1(2)" identifier="INPUT:In1(2)" />
+			</Variable>
+		</InPort>
+		<OutPort name="normalSLBus" portNumber="1" compositeSig="bus" busType="VIRTUAL">
+			<Variable varid="varif_583" signalName="&lt;signal1&gt;.myMode_ON" signalType="myMode" isSignalTypeEnum="yes" isFloat="yes">
+				<ifName ifid="if_583" lsb="1" offset="0" displayName="normalSLBus.{&lt;signal1&gt;}.myMode_ON" identifier="OUTPUT:normalSLBus.{&lt;signal1&gt;}.myMode_ON" />
+			</Variable>
+			<Variable varid="varif_584" signalName="&lt;signal1&gt;.myMode_OFF" signalType="myMode" isSignalTypeEnum="yes" isFloat="yes">
+				<ifName ifid="if_584" lsb="1" offset="0" displayName="normalSLBus.{&lt;signal1&gt;}.myMode_OFF" identifier="OUTPUT:normalSLBus.{&lt;signal1&gt;}.myMode_OFF" />
+			</Variable>
+		</OutPort>
+		<OutPort name="myEnumBus" portNumber="2" compositeSig="bus" busType="VIRTUAL">
+			<Variable varid="varif_586" signalName="myEnumBus.myMode_OFF" signalType="myMode" isSignalTypeEnum="yes" isFloat="yes">
+				<ifName ifid="if_586" lsb="1" offset="0" displayName="myEnumBus.myEnumBus.myMode_OFF" identifier="OUTPUT:myEnumBus.myEnumBus.myMode_OFF" />
+			</Variable>
+			<Variable varid="varif_587" signalName="myEnumBus.myMode_ON" signalType="myMode" isSignalTypeEnum="yes" isFloat="yes">
+				<ifName ifid="if_587" lsb="1" offset="0" displayName="myEnumBus.myEnumBus.myMode_ON" identifier="OUTPUT:myEnumBus.myEnumBus.myMode_ON" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out1" portNumber="3" compositeSig="none">
+			<Variable varid="varif_588" signalType="myLED" isSignalTypeEnum="yes" isFloat="yes">
+				<ifName ifid="if_588" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<Display name="Switch" path="enum_model_sl/Subsystem1/myEnumUsage/myInputIsAnArrayEnum/Switch" physicalPath="enum_model_sl/Subsystem1/myEnumUsage/myInputIsAnArrayEnum/Switch" portNumber="1">
+			<Variable varid="varif_589" signalType="myLED" isSignalTypeEnum="yes" isFloat="yes">
+				<ifName ifid="if_589" lsb="1" offset="0" displayName="Switch" identifier="LOCAL:Switch" />
+			</Variable>
+		</Display>
+		<Calibration name="GREEN" path="enum_model_sl/Subsystem1/myEnumUsage/myInputIsAnArrayEnum/GREEN" physicalPath="enum_model_sl/Subsystem1/myEnumUsage/myInputIsAnArrayEnum/GREEN" origin="explicit_param">
+			<CalibrationUsage path="enum_model_sl/Subsystem1/myEnumUsage/myInputIsAnArrayEnum/GREEN" physicalPath="enum_model_sl/Subsystem1/myEnumUsage/myInputIsAnArrayEnum/GREEN" blockAttribute="Value" />
+			<Variable varid="varif_590" signalType="myLED" isSignalTypeEnum="yes" isFloat="yes">
+				<ifName ifid="if_590" initValue="1" lsb="1" offset="0" displayName="GREEN" identifier="PARAMETER:GREEN" />
+			</Variable>
+		</Calibration>
+		<Model name="enum_model_sl" modelPath="/E:/ModelsDev/UT_MIL_SL/EnumSL/ml2015asp1/enum_model_sl.slx" type="SimulinkModel" />
+	</Scope>
+</ExtractionModel>

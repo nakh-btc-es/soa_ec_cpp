@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="26D">
+	<Scope uid="26D" name="Atomic Subsystem" path="dsm/Subsystem/Atomic Subsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="dsm/Subsystem/Atomic Subsystem" subsystemLogging="on">
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_391" signalType="int32" isFloat="yes">
+				<ifName ifid="if_391" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<Model name="dsm" modelPath="/E:/ModelsDev/SL/DSM_EPDEV_37155/ml2015asp1/dsm.slx" type="SimulinkModel" />
+		<Scope uid="26E" name="Atomic Subsystem" path="dsm/Subsystem/Atomic Subsystem/Atomic Subsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="dsm/Subsystem/Atomic Subsystem/Atomic Subsystem" subsystemLogging="on">
+			<DataStoreRead name="Data Store&#xA;Read" path="dsm/Subsystem/Atomic Subsystem/Atomic Subsystem/Data Store&#xA;Read" physicalPath="dsm/Subsystem/Atomic Subsystem/Atomic Subsystem/Data Store&#xA;Read" portNumber="0" signal="A" compositeSig="none">
+				<Variable varid="varif_394" signalType="int32" isFloat="yes">
+					<ifName ifid="if_394" lsb="1" offset="0" displayName="{Data Store\nRead@A}" identifier="INPUT:Data Store&#xA;Read" />
+				</Variable>
+			</DataStoreRead>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_395" signalType="int32" isFloat="yes">
+					<ifName ifid="if_395" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<Model name="dsm" modelPath="/E:/ModelsDev/SL/DSM_EPDEV_37155/ml2015asp1/dsm.slx" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

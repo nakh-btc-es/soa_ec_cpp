@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_nested_type_namespace\ut_results\AddModelInfo.xml" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_nested_type_namespace\Wrapper_defrost_client_mod.slx" modelCreationDate="2025-01-13T17:23:00" creator="developer">
+  <toolInfo name="Matlab" release="(R2023b)" version="23.2" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2023b)" version="23.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_nested_type_namespace\Wrapper_defrost_client_mod.slx" creationDate="2025-01-13T17:23:00" modificationDate="2025-01-13T17:23:07">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_defrost_client_mod" path="" sampleTime="0.2" name="Wrapper_defrost_client_mod" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="AdaptivePort_AppEvt_evt_defrost_cmd" physicalPath="Wrapper_defrost_client_mod/AdaptivePort_AppEvt_evt_defrost_cmd" path="AdaptivePort_AppEvt_evt_defrost_cmd" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="defrsot_req_data_t">
+          <signal signalName="req_cmd">
+            <enumType name="defrost_req_cmd_t">
+              <enumElement name="rear_window" value="0"/>
+              <enumElement name="side_left_mirrors" value="1"/>
+              <enumElement name="side_right_mirrors" value="2"/>
+              <enumElement name="front_wiper_nozzle" value="3"/>
+              <enumElement name="side_view_mirrors" value="4"/>
+              <enumElement name="all_cmd" value="5"/>
+            </enumType>
+          </signal>
+          <signal signalName="req_sts">
+            <enumType name="defrost_req_sts_t">
+              <enumElement name="on" value="1"/>
+              <enumElement name="off" value="0"/>
+            </enumType>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="2" name="AdaptivePort_Defrost_Input_evt_CDSF_RearDefrost_Req" physicalPath="Wrapper_defrost_client_mod/AdaptivePort_Defrost_Input_evt_CDSF_RearDefrost_Req" path="AdaptivePort_Defrost_Input_evt_CDSF_RearDefrost_Req" isMessage="true">
+        <enumType name="CDSF_RearDefrost_Req_t">
+          <enumElement name="not_pressed" value="0"/>
+          <enumElement name="pressed" value="1"/>
+        </enumType>
+      </inport>
+      <inport portNumber="3" name="AdaptivePort_Defrost_Input_evt_MaxDefrostSts_Info" physicalPath="Wrapper_defrost_client_mod/AdaptivePort_Defrost_Input_evt_MaxDefrostSts_Info" path="AdaptivePort_Defrost_Input_evt_MaxDefrostSts_Info" isMessage="true">
+        <enumType name="defrost_req_sts_t">
+          <enumElement name="on" value="1"/>
+          <enumElement name="off" value="0"/>
+        </enumType>
+      </inport>
+      <inport portNumber="4" name="AdaptivePort_Defrost_Input_evt_PowertrainPrplsnActv_Info" physicalPath="Wrapper_defrost_client_mod/AdaptivePort_Defrost_Input_evt_PowertrainPrplsnActv_Info" path="AdaptivePort_Defrost_Input_evt_PowertrainPrplsnActv_Info" isMessage="true">
+        <enumType name="PowertrainPrplsnActv_Info_t">
+          <enumElement name="off" value="0"/>
+          <enumElement name="active" value="1"/>
+        </enumType>
+      </inport>
+      <inport portNumber="0" name="AdaptivePort_DefrostReq_mh_get_defrost_dur_time_dur_time_Out" physicalPath="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_get_defrost_dur_time/AdaptivePort_DefrostReq_mh_get_defrost_dur_time_dur_time_Out" path="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_get_defrost_dur_time/AdaptivePort_DefrostReq_mh_get_defrost_dur_time_dur_time_Out" modelRef="model005" signalName="s_50DB9">
+        <uint16/>
+        <dataStoreMemory signalName="s_50DB9"/>
+      </inport>
+      <inport portNumber="0" name="AdaptivePort_DefrostReq_mh_get_defrost_sts_sts_Out" physicalPath="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_get_defrost_sts/AdaptivePort_DefrostReq_mh_get_defrost_sts_sts_Out" path="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_get_defrost_sts/AdaptivePort_DefrostReq_mh_get_defrost_sts_sts_Out" modelRef="model005" signalName="s_C075F" initValue="0">
+        <enumType name="defrost_sts_t">
+          <enumElement name="left_mirror_on" value="0"/>
+          <enumElement name="right_mirror_on" value="1"/>
+          <enumElement name="both_mirror_on" value="2"/>
+          <enumElement name="rear_window_on" value="3"/>
+          <enumElement name="nozzle_on" value="4"/>
+          <enumElement name="all_on" value="5"/>
+          <enumElement name="all_off" value="6"/>
+          <enumElement name="left_mirror_off" value="7"/>
+          <enumElement name="right_mirror_off" value="8"/>
+          <enumElement name="both_mirror_off" value="9"/>
+          <enumElement name="rear_window_off" value="10"/>
+          <enumElement name="nozzle_off" value="11"/>
+        </enumType>
+        <dataStoreMemory signalName="s_C075F"/>
+      </inport>
+      <inport portNumber="0" name="AdaptivePort_DefrostReq_mh_set_ext_temp_ext_temp_Out" physicalPath="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_set_ext_temp/AdaptivePort_DefrostReq_mh_set_ext_temp_ext_temp_Out" path="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_set_ext_temp/AdaptivePort_DefrostReq_mh_set_ext_temp_ext_temp_Out" modelRef="model005" signalName="s_DCA37">
+        <single/>
+        <dataStoreMemory signalName="s_DCA37"/>
+      </inport>
+      <outport portNumber="1" name="AdaptivePort_Defrost_EBL_Stat_Info_evt_EBL_Stat_Info" physicalPath="Wrapper_defrost_client_mod/AdaptivePort_Defrost_EBL_Stat_Info_evt_EBL_Stat_Info" path="AdaptivePort_Defrost_EBL_Stat_Info_evt_EBL_Stat_Info" isMessage="true">
+        <enumType name="EBL_Stat_Info_t">
+          <enumElement name="off" value="0"/>
+          <enumElement name="on" value="1"/>
+          <enumElement name="blink" value="2"/>
+          <enumElement name="sna" value="3"/>
+        </enumType>
+      </outport>
+      <outport portNumber="0" name="AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_dur_In" physicalPath="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_set_defrost_cmd/AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_dur_In" path="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_set_defrost_cmd/AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_dur_In" modelRef="model005" signalName="s_29465">
+        <uint16/>
+        <dataStoreMemory signalName="s_29465"/>
+      </outport>
+      <outport portNumber="0" name="AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_sts_In" physicalPath="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_set_defrost_cmd/AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_sts_In" path="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_set_defrost_cmd/AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_sts_In" modelRef="model005" signalName="s_3A256" initValue="1">
+        <enumType name="defrost_req_sts_t">
+          <enumElement name="on" value="1"/>
+          <enumElement name="off" value="0"/>
+        </enumType>
+        <dataStoreMemory signalName="s_3A256"/>
+      </outport>
+      <outport portNumber="0" name="AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_cmd_In" physicalPath="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_set_defrost_cmd/AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_cmd_In" path="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_set_defrost_cmd/AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_cmd_In" modelRef="model005" signalName="s_9FD9B" initValue="0">
+        <enumType name="defrost_req_cmd_t">
+          <enumElement name="rear_window" value="0"/>
+          <enumElement name="side_left_mirrors" value="1"/>
+          <enumElement name="side_right_mirrors" value="2"/>
+          <enumElement name="front_wiper_nozzle" value="3"/>
+          <enumElement name="side_view_mirrors" value="4"/>
+          <enumElement name="all_cmd" value="5"/>
+        </enumType>
+        <dataStoreMemory signalName="s_9FD9B"/>
+      </outport>
+      <outport portNumber="0" name="AdaptivePort_DefrostReq_mh_get_defrost_dur_time_req_In" physicalPath="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_get_defrost_dur_time/AdaptivePort_DefrostReq_mh_get_defrost_dur_time_req_In" path="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_get_defrost_dur_time/AdaptivePort_DefrostReq_mh_get_defrost_dur_time_req_In" modelRef="model005" signalName="s_C7144" initValue="0">
+        <enumType name="defrost_req_cmd_t">
+          <enumElement name="rear_window" value="0"/>
+          <enumElement name="side_left_mirrors" value="1"/>
+          <enumElement name="side_right_mirrors" value="2"/>
+          <enumElement name="front_wiper_nozzle" value="3"/>
+          <enumElement name="side_view_mirrors" value="4"/>
+          <enumElement name="all_cmd" value="5"/>
+        </enumType>
+        <dataStoreMemory signalName="s_C7144"/>
+      </outport>
+      <outport portNumber="0" name="AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_prio_In" physicalPath="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_set_defrost_cmd/AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_prio_In" path="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_set_defrost_cmd/AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_prio_In" modelRef="model005" signalName="s_EF7EF" initValue="0">
+        <enumType name="defrost_req_prio_t">
+          <enumElement name="built_in" value="0"/>
+          <enumElement name="gen_appl" value="1"/>
+        </enumType>
+        <dataStoreMemory signalName="s_EF7EF"/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_nested_type_namespace\W_server_defrost_client_mod.slx" creationDate="2025-01-13T17:23:04" modificationDate="2025-01-13T17:23:05"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="1.3" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_nested_type_namespace\defrost_client_mod.slx" creationDate="2023-12-14T08:21:03" modificationDate="2025-01-13T17:22:54"/>
+  <model modelID="model004" modelKind="model_ref" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_nested_type_namespace\W_integ_defrost_client_mod.slx" creationDate="2025-01-13T17:23:04" modificationDate="2025-01-13T17:23:05"/>
+  <model modelID="model005" modelKind="model_ref" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_nested_type_namespace\W_server_mock_defrost_client_mod.slx" creationDate="2025-01-13T17:23:01" modificationDate="2025-01-13T17:23:04"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

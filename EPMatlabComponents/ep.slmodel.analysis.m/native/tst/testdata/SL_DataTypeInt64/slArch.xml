@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_data_type_int64\init.m" modelVersion="1.55" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_data_type_int64\dataTypeInt64.slx" modelCreationDate="2020-01-29T11:03:25" creator="developer">
+  <toolInfo name="Matlab" release="(R2019b)" version="9.7" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2019b)" version="10.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.55" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_data_type_int64\dataTypeInt64.slx" creationDate="2020-01-29T11:03:25" modificationDate="2020-10-26T11:22:27" initScript="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_data_type_int64\init.m">
+    <subsystem subsysID="ss1" physicalPath="dataTypeInt64" path="" sampleTime="0.2" name="dataTypeInt64" scopeKind="DUMMY" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="dataTypeInt64/In1" path="In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="dataTypeInt64/In2" path="In2">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <fixedPoint simulinkTypeName="fixdt(1,64,0)" wordLength="64" isSigned="1" slope="1.0000000000000000e+00" bias="0.0000000000000000e+00" min="-9.2233720368547758e+18" max="9.2233720368547758e+18"/>
+          </array>
+        </array>
+      </inport>
+      <parameter name="paramDouble" path="topLevel/subWithParamerter(u)Int64/Constant1" physicalPath="dataTypeInt64/topLevel/subWithParamerter(u)Int64/Constant1" origin="explicit_param" workspace="paramDouble" initValue="1.0000000000000000e+00">
+        <double/>
+        <usageContext path="topLevel/subWithParamerter(u)Int64/Constant1" physicalPath="dataTypeInt64/topLevel/subWithParamerter(u)Int64/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="dataTypeInt64/Out1" path="Out1">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="dataTypeInt64/Out2" path="Out2">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="dataTypeInt64/topLevel/subWithLocals(u)Int64/Constant1" path="topLevel/subWithLocals(u)Int64/Constant1" name="Constant1" portNumber="1">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss9"/>
+      <subsystem refSubsysID="ss10"/>
+      <subsystem refSubsysID="ss11"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="dataTypeInt64/topLevel/subWithCharts" path="topLevel/subWithCharts" sampleTime="0.2" name="subWithCharts" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="dataTypeInt64/topLevel/subWithCharts/In1" path="topLevel/subWithCharts/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="dataTypeInt64/topLevel/subWithCharts/Out1" path="topLevel/subWithCharts/Out1">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss7"/>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="dataTypeInt64/topLevel/subWithCharts/chartWithParamAndLocal(U)Int64" path="topLevel/subWithCharts/chartWithParamAndLocal(U)Int64" sampleTime="0.2" name="chartWithParamAndLocal(U)Int64" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="in" physicalPath="dataTypeInt64/topLevel/subWithCharts/chartWithParamAndLocal(U)Int64/in" path="topLevel/subWithCharts/chartWithParamAndLocal(U)Int64/in">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="dataTypeInt64/topLevel/subWithCharts/chartWithParamAndLocal(U)Int64/out" path="topLevel/subWithCharts/chartWithParamAndLocal(U)Int64/out" signalName="out">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="dataTypeInt64/topLevel/subWithDSMs" path="topLevel/subWithDSMs" sampleTime="0.2" name="subWithDSMs" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="dataTypeInt64/topLevel/subWithDSMs/In1" path="topLevel/subWithDSMs/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="dataTypeInt64/topLevel/subWithDSMs/Out1" path="topLevel/subWithDSMs/Out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="dataTypeInt64/topLevel/subWithLocals(u)Int64" path="topLevel/subWithLocals(u)Int64" sampleTime="0.2" name="subWithLocals(u)Int64" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="dataTypeInt64/topLevel/subWithLocals(u)Int64/In1" path="topLevel/subWithLocals(u)Int64/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="dataTypeInt64/topLevel/subWithLocals(u)Int64/Out1" path="topLevel/subWithLocals(u)Int64/Out1">
+        <double/>
+      </outport>
+      <display physicalPath="dataTypeInt64/topLevel/subWithLocals(u)Int64/Constant1" path="topLevel/subWithLocals(u)Int64/Constant1" name="Constant1" portNumber="1">
+        <double/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss11" physicalPath="dataTypeInt64/topLevel/subWithParamerter(u)Int64" path="topLevel/subWithParamerter(u)Int64" sampleTime="0.2" name="subWithParamerter(u)Int64" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="dataTypeInt64/topLevel/subWithParamerter(u)Int64/In1" path="topLevel/subWithParamerter(u)Int64/In1">
+        <double/>
+      </inport>
+      <parameter name="paramDouble" path="topLevel/subWithParamerter(u)Int64/Constant1" physicalPath="dataTypeInt64/topLevel/subWithParamerter(u)Int64/Constant1" origin="explicit_param" workspace="paramDouble" initValue="1.0000000000000000e+00">
+        <double/>
+        <usageContext path="topLevel/subWithParamerter(u)Int64/Constant1" physicalPath="dataTypeInt64/topLevel/subWithParamerter(u)Int64/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="dataTypeInt64/topLevel/subWithParamerter(u)Int64/Out1" path="topLevel/subWithParamerter(u)Int64/Out1">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

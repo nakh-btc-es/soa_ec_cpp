@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Wrapper_defrost_client_mod"/>
+    <Architecture id="id1" name="Wrapper_defrost_client_mod [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Wrapper_defrost_client_mod.cpp:1:Wrapper_defrost_client_mod_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="AdaptivePort_AppEvt_evt_defrost_cmd" refId="id0"/>
+        <Path path="RequiredPort_AdaptivePort_AppEvt_evt_defrost_cmd" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.req_cmd" refId="id0"/>
+          <Path path=".req_cmd" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="AdaptivePort_AppEvt_evt_defrost_cmd" refId="id0"/>
+        <Path path="RequiredPort_AdaptivePort_AppEvt_evt_defrost_cmd" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.req_sts" refId="id0"/>
+          <Path path=".req_sts" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="AdaptivePort_Defrost_Input_evt_CDSF_RearDefrost_Req" refId="id0"/>
+        <Path path="RequiredPort_AdaptivePort_Defrost_Input_evt_CDSF_RearDefrost_Req" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="AdaptivePort_Defrost_Input_evt_MaxDefrostSts_Info" refId="id0"/>
+        <Path path="RequiredPort_AdaptivePort_Defrost_Input_evt_MaxDefrostSts_Info" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="AdaptivePort_Defrost_Input_evt_PowertrainPrplsnActv_Info" refId="id0"/>
+        <Path path="RequiredPort_AdaptivePort_Defrost_Input_evt_PowertrainPrplsnActv_Info" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_get_defrost_dur_time/AdaptivePort_DefrostReq_mh_get_defrost_dur_time_dur_time_Out" refId="id0"/>
+        <Path path="AdaptivePort_DefrostReq_mh_get_defrost_dur_time_dur_time_Out" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_get_defrost_sts/AdaptivePort_DefrostReq_mh_get_defrost_sts_sts_Out" refId="id0"/>
+        <Path path="AdaptivePort_DefrostReq_mh_get_defrost_sts_sts_Out" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_set_ext_temp/AdaptivePort_DefrostReq_mh_set_ext_temp_ext_temp_Out" refId="id0"/>
+        <Path path="AdaptivePort_DefrostReq_mh_set_ext_temp_ext_temp_Out" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="AdaptivePort_Defrost_EBL_Stat_Info_evt_EBL_Stat_Info" refId="id0"/>
+        <Path path="ProvidedPort_AdaptivePort_Defrost_EBL_Stat_Info_evt_EBL_Stat_Info" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_set_defrost_cmd/AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_dur_In" refId="id0"/>
+        <Path path="AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_dur_In" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_set_defrost_cmd/AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_sts_In" refId="id0"/>
+        <Path path="AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_sts_In" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_set_defrost_cmd/AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_cmd_In" refId="id0"/>
+        <Path path="AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_cmd_In" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_get_defrost_dur_time/AdaptivePort_DefrostReq_mh_get_defrost_dur_time_req_In" refId="id0"/>
+        <Path path="AdaptivePort_DefrostReq_mh_get_defrost_dur_time_req_In" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="W_server_mock_defrost_client_mod/Mock_SI_Defrost_Req_AdaptivePort_DefrostReq_mh_set_defrost_cmd/AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_prio_In" refId="id0"/>
+        <Path path="AdaptivePort_DefrostReq_mh_set_defrost_cmd_req_prio_In" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

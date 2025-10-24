@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_small_ar_cs_aobs\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_small_ar_cs_aobs\init_Wrapper_ar_cs_aob.m" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_small_ar_cs_aobs\Wrapper_ar_cs_aob.slx" modelCreationDate="2023-05-26T11:55:31" creator="developer">
+  <toolInfo name="Matlab" release="(R2022b)" version="9.13" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2022b)" version="10.6" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_small_ar_cs_aobs\Wrapper_ar_cs_aob.slx" creationDate="2023-05-26T11:55:31" modificationDate="2023-05-26T11:55:37" initScript="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_small_ar_cs_aobs\init_Wrapper_ar_cs_aob.m">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_ar_cs_aob" path="" sampleTime="0.1" name="Wrapper_ar_cs_aob" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In_aob" physicalPath="Wrapper_ar_cs_aob/In_aob" path="In_aob" signalName="&lt;signal1&gt;">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HighBus">
+            <signal signalName="x">
+              <array size="3" startIndex="1">
+                <bus busType="non_virtual" busObjectName="LowBus">
+                  <signal signalName="a">
+                    <array size="3" startIndex="1">
+                      <uint8 max="10"/>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="y">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </array>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <inport portNumber="2" name="In_aob1" physicalPath="Wrapper_ar_cs_aob/In_aob1" path="In_aob1" signalName="&lt;signal1&gt;">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HighBus">
+            <signal signalName="x">
+              <array size="3" startIndex="1">
+                <bus busType="non_virtual" busObjectName="LowBus">
+                  <signal signalName="a">
+                    <array size="3" startIndex="1">
+                      <uint8 max="10"/>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="y">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </array>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <inport portNumber="3" name="In_aob_low" physicalPath="Wrapper_ar_cs_aob/In_aob_low" path="In_aob_low" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="LowBus">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <uint8 max="10"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="4" name="In_aob_scalar" physicalPath="Wrapper_ar_cs_aob/In_aob_scalar" path="In_aob_scalar" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="HighBusScalar">
+          <signal signalName="x">
+            <array size="3" startIndex="1">
+              <bus busType="non_virtual" busObjectName="LowBus">
+                <signal signalName="a">
+                  <array size="3" startIndex="1">
+                    <uint8 max="10"/>
+                  </array>
+                </signal>
+                <signal signalName="b">
+                  <boolean/>
+                </signal>
+              </bus>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="0" name="dsin_f_d_out" physicalPath="Wrapper_ar_cs_aob/Mock_f/dsin_f_d_out" path="Mock_f/dsin_f_d_out" signalName="dsin_f_d_out">
+        <int8/>
+        <dataStoreMemory signalName="dsin_f_d_out"/>
+      </inport>
+      <outport portNumber="1" name="Out_aob" physicalPath="Wrapper_ar_cs_aob/Out_aob" path="Out_aob" signalName="&lt;signal1&gt;">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HighBus">
+            <signal signalName="x">
+              <array size="3" startIndex="1">
+                <bus busType="non_virtual" busObjectName="LowBus">
+                  <signal signalName="a">
+                    <array size="3" startIndex="1">
+                      <uint8 max="10"/>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="y">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </array>
+            </signal>
+          </bus>
+        </array>
+      </outport>
+      <outport portNumber="2" name="out_serverDelayer_delayer" physicalPath="Wrapper_ar_cs_aob/out_serverDelayer_delayer" path="out_serverDelayer_delayer" signalName="out_serverDelayer_delayer">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HighBus">
+            <signal signalName="x">
+              <array size="3" startIndex="1">
+                <bus busType="non_virtual" busObjectName="LowBus">
+                  <signal signalName="a">
+                    <array size="3" startIndex="1">
+                      <uint8 max="10"/>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="y">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </array>
+            </signal>
+          </bus>
+        </array>
+      </outport>
+      <outport portNumber="3" name="out_serverDelayerLow_delayer_low" physicalPath="Wrapper_ar_cs_aob/out_serverDelayerLow_delayer_low" path="out_serverDelayerLow_delayer_low" signalName="out_serverDelayerLow_delayer_low">
+        <bus busType="non_virtual" busObjectName="LowBus">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <uint8 max="10"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="4" name="out_serverDelayerScalar_delayer_scalar" physicalPath="Wrapper_ar_cs_aob/out_serverDelayerScalar_delayer_scalar" path="out_serverDelayerScalar_delayer_scalar" signalName="out_serverDelayerScalar_delayer_scalar">
+        <bus busType="non_virtual" busObjectName="HighBusScalar">
+          <signal signalName="x">
+            <array size="3" startIndex="1">
+              <bus busType="non_virtual" busObjectName="LowBus">
+                <signal signalName="a">
+                  <array size="3" startIndex="1">
+                    <uint8 max="10"/>
+                  </array>
+                </signal>
+                <signal signalName="b">
+                  <boolean/>
+                </signal>
+              </bus>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="0" name="dsout_f_d_in" physicalPath="Wrapper_ar_cs_aob/Mock_f/dsout_f_d_in" path="Mock_f/dsout_f_d_in" signalName="dsout_f_d_in">
+        <double/>
+        <dataStoreMemory signalName="dsout_f_d_in"/>
+      </outport>
+      <subsystem refSubsysID="ss9"/>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="ar_cs_aob/Runnable1" path="ar_cs_aob/ar_cs_aob/Runnable1" sampleTime="0.1" name="Runnable1" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="ar_cs_aob/Runnable1/In1" path="ar_cs_aob/ar_cs_aob/Runnable1/In1" modelRef="model002" signalName="&lt;signal1&gt;">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HighBus">
+            <signal signalName="x">
+              <array size="3" startIndex="1">
+                <bus busType="non_virtual" busObjectName="LowBus">
+                  <signal signalName="a">
+                    <array size="3" startIndex="1">
+                      <uint8 max="10"/>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="y">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </array>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <inport portNumber="0" name="dsin_f_d_out" physicalPath="Wrapper_ar_cs_aob/Mock_f/dsin_f_d_out" path="Mock_f/dsin_f_d_out" signalName="dsin_f_d_out">
+        <int8/>
+        <dataStoreMemory signalName="dsin_f_d_out"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ar_cs_aob/Runnable1/Out1" path="ar_cs_aob/ar_cs_aob/Runnable1/Out1" modelRef="model002" signalName="&lt;signal1&gt;">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HighBus">
+            <signal signalName="x">
+              <array size="3" startIndex="1">
+                <bus busType="non_virtual" busObjectName="LowBus">
+                  <signal signalName="a">
+                    <array size="3" startIndex="1">
+                      <uint8 max="10"/>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="y">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </array>
+            </signal>
+          </bus>
+        </array>
+      </outport>
+      <outport portNumber="0" name="dsout_f_d_in" physicalPath="Wrapper_ar_cs_aob/Mock_f/dsout_f_d_in" path="Mock_f/dsout_f_d_in" signalName="dsout_f_d_in">
+        <double/>
+        <dataStoreMemory signalName="dsout_f_d_in"/>
+      </outport>
+      <slfunc_caller path="ar_cs_aob/ar_cs_aob/Runnable1/Function Caller" pathCaller="ar_cs_aob/Runnable1/Function Caller" pathFunction="Wrapper_ar_cs_aob/Mock_f"/>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="11.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_small_ar_cs_aobs\ar_cs_aob.slx" creationDate="2020-09-21T14:36:38" modificationDate="2023-05-26T11:55:30" initScript="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_small_ar_cs_aobs\init_Wrapper_ar_cs_aob.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="variant_source"/>
+    <Architecture id="id1" name="variant_source [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="variant_source.c:1:variant_source_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="inTop1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="out" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="Subsystem" refId="id0"/>
+      <Path path="variant_source.c:1:variant_source_step/variant_source.c:1:topFunc" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/In1" refId="id0"/>
+        <Path path="inTop1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Subsystem/Out" refId="id0"/>
+        <Path path="out" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="Subsystem/LowerSUT" refId="id0"/>
+      <Path path="variant_source.c:1:variant_source_step/variant_source.c:1:topFunc/variant_source.c:1:LowerSut" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/LowerSUT/In1" refId="id0"/>
+        <Path path="in1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Subsystem/LowerSUT/Out1" refId="id0"/>
+        <Path path="out" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

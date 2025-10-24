@@ -1,0 +1,2244 @@
+Model {
+  Name			  "log_map_tl"
+  Version		  6.4
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.112"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "ibm-5348_P100-1997"
+  PreLoadFcn		  "if exist('tl_preloadfcn','file'), tl_preloadfcn(gcs"
+",95); end"
+  PostLoadFcn		  "if exist('tl_postloadfcn','file'), tl_postloadfcn(g"
+"cs,95); end"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  on
+  PreSaveFcn		  "if exist('tl_presavefcn','file'), tl_presavefcn(gcs"
+"); end"
+  InitFcn		  "if exist('tlds_start','file'), tlds_start(gcs); end"
+  Created		  "Mon May 22 15:03:07 2006"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "alexh"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Apr 20 17:08:52 2007"
+  ModelVersionFormat	  "1.%<AutoIncrement:112>"
+  ConfigurationManager	  "None"
+  UserBdParams		  "DS_PROJECTFILE;TL_MAIN_DATA;TL_MODEL_COMMENT;"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ProdHWDeviceType	  "32-bit Generic"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.2.0"
+      Array {
+	Type			"Handle"
+	Dimension		7
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.2.0"
+	  StartTime		  "0.0"
+	  StopTime		  "50.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.1"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "FixedStepDiscrete"
+	  SolverName		  "FixedStepDiscrete"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  RateTranMode		  "Deterministic"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.2.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveFormat		  "Array"
+	  SaveOutput		  off
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.2.0"
+	  BlockReduction	  on
+	  BooleanDataType	  off
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  ParameterPooling	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.2.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  CheckSSInitialOutputMsg on
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskCondExecSysMsg "none"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  ModelReferenceSimTargetVerbose off
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StrictBusMsg		  "None"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.2.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  on
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.2.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  8
+	  Version		  "1.2.0"
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      9
+	      Version		      "1.2.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      PrefixModelToSubsysFcnNames on
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      10
+	      Version		      "1.2.0"
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant off
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      IncludeERTFirstTime     on
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      off
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      SimulationMode	      "normal"
+      CurrentDlgPage	      "Data Import//Export"
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  DS_PROJECTFILE	  "log_map_tl.dd"
+  TL_MAIN_DATA		  "struct('maxnumsimulations',10,'codeopt',struct('inl"
+"iningthreshold',6,'target',['Generic ANSI-C'],'assembler',0,'optlevel',2,'lin"
+"ebreaklimit',100,'stateactcodinglimit',5,'functionsfor64bitops',1,'sections',"
+"1,'sfbitfields',1,'globalbitfields',0,'sharefunctions',0,'noinitstozero',0,'l"
+"imidentlength',1,'decimals',1,'separatesearch',0,'cleancode',0,'optimizedbool"
+"type',1,'keepsaturation',0,'extvarsharing',0,'outputstylefile','cconfig.xml',"
+"'rootstylesheet','TL_CSourceCodeSS.xsl','addchecksum',0,'modelsaving',2,'brow"
+"secodegen',0),'frameopt',struct('exectime',1,'stacksize',1,'simconfig',['defa"
+"ult EVM'],'targettimeout',1,'mexargs','','tcargs',''),'logopt',struct('plotin"
+"terval',0.1,'globalloggingmode',1),'export',struct('directory','.\\export','s"
+"ysfiles',1,'docfiles',0,'tools',0),'asapscript','asap2_all_in_one','docscript"
+"','tldoc_default','date',733152.55044912035,'codecoveragelevel',0,'rtos',stru"
+"ct('enablemultirate',0,'currentrtos',['generic RTOS'],'autopriority',0,'autoi"
+"nitalarm',1,'alarminitwithrestart',1,'alarmactivationkind',1,'alarmstartoffse"
+"t',0))"
+  TL_MODEL_COMMENT	  "Type in your documentation HERE"
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      OutDataTypeMode	      "Inherit via back propagation"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      ConvertRealWorld	      "Real World Value (RWV)"
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      RandomNumber
+      Mean		      "0"
+      Variance		      "1"
+      Seed		      "0"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimit	      "0.5"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+    Block {
+      BlockType		      SignalSpecification
+      Dimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+      FixptAsFi		      off
+    }
+    Block {
+      BlockType		      UnitDelay
+      X0		      "0"
+      SampleTime	      "1"
+      StateMustResolveToSignalObject off
+      RTWStateStorageClass    "Auto"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "log_map_tl"
+    Location		    [416, 208, 1237, 454]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    212
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      "TargetLink Main Dialog"
+      Ports		      []
+      Position		      [75, 25, 165, 55]
+      BackgroundColor	      "green"
+      DropShadow	      on
+      SourceBlock	      "tllib/TargetLink Main Dialog"
+      SourceType	      "TL_MainDialog"
+      ShowPortLabels	      off
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      flp_block		      "none"
+    }
+    Block {
+      BlockType		      Saturate
+      Name		      "cut_noise"
+      Position		      [185, 125, 215, 155]
+      UpperLimit	      "1"
+      LowerLimit	      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "log_map_synchro"
+      Tag		      "TargetLink Simulation Frame"
+      Ports		      [1, 2]
+      Position		      [280, 100, 475, 175]
+      CopyFcn		      "if exist('tl_copyfcn','file'), tl_copyfcn(gcbh)"
+"; end"
+      NameChangeFcn	      "if exist('tl_framenamechangefcn','file'), tl_fr"
+"amenamechangefcn(gcbh); end"
+      OpenFcn		      "if exist('open_tlsubsystem','file'), open_tlsub"
+"system(gcbh); end"
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      MaskHideContents	      off
+      MaskType		      "TL_SimFrame"
+      MaskDisplay	      "disp('TargetLink\\nModel-\\nin-the-loop\\nmode'"
+")"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"log_map_synchro"
+	Location		[233, 117, 756, 495]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "u_in"
+	  Position		  [10, 77, 35, 93]
+	  NameChangeFcn		  "tl_check_ports(gcbh);"
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "1"
+	  SampleTime		  "0.1"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Subsystem"
+	  Tag			  "struct('sfcnName','log_map_synchro_sf','sub"
+"Function','','srcSubsystem','')"
+	  Ports			  [1, 2]
+	  Position		  [115, 62, 195, 133]
+	  OpenFcn		  "warndlg(get_param(gcb,'MaskHelp'),'Serious "
+"Warning');"
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  MaskHideContents	  off
+	  MaskType		  "TL_Enable"
+	  MaskHelp		  "This subsystem keeps the TargetLink subsyst"
+"em (subsystem with TargetLink blocks for production code generation), and is "
+"needed for the TargetLink simulation frame to work properly. DO NOT DELETE OR"
+" MODIFY IT!"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "Subsystem"
+	    Location		    [434, 421, 731, 692]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "u_in"
+	      Position		      [10, 77, 35, 93]
+	      NameChangeFcn	      "tl_check_ports(gcbh);"
+	      IconDisplay	      "Port number"
+	      PortDimensions	      "1"
+	      SampleTime	      "0.1"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "SFLogMain"
+	      Ports		      []
+	      Position		      [238, 15, 424, 57]
+	      ShowName		      off
+	      MinAlgLoopOccurrences   off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      MaskHideContents	      off
+	      MaskType		      "TL_StateflowLoggingMain"
+	      MaskDisplay	      "plot([0 0 1 1 0 0 1 1 0],[0 1 1 0 0 0.0"
+"5 0.05 0.95 0.95]);\ndisp('Stateflow Logging Main\\nDO NOT DELETE')"
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "normalized"
+	      System {
+		Name			"SFLogMain"
+		Location		[804, 450, 929, 544]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	"[0.500000, 0.500000, 0.500000, 0.5000"
+"00]"
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Reference
+		  Name			  "Stateflow\nLogger"
+		  Ports			  []
+		  Position		  [15, 13, 115, 57]
+		  SourceBlock		  "tllib/Extras/Stateflow\nLogger"
+		  SourceType		  "TL_StateflowLogger"
+		  data			  "struct('date',730486)"
+		  sflogparam		  "struct('charts',[],'sfblocks',[],'m"
+"achines',[],'globallogopt',1,'modelname','log_map_tl','debugmodeactive',0)"
+		  flp_block		  "tldummylib/Stateflow\nLogger"
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "log_map_synchro"
+	      Tag		      "MIL Subsystem"
+	      Description	      "b"
+	      Ports		      [1, 2]
+	      Position		      [115, 62, 195, 133]
+	      CopyFcn		      "if exist('tl_copyfcn','file'), tl_copyf"
+"cn(gcbh); end"
+	      NameChangeFcn	      "if exist('tl_namechangefcn','file'), tl"
+"_namechangefcn(gcbh); end"
+	      DestroyFcn	      "if exist('update_tl_main_dlg','file'), "
+"update_tl_main_dlg('TL_subs_display'); end"
+	      MinAlgLoopOccurrences   off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      MaskHideContents	      off
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      System {
+		Name			"log_map_synchro"
+		Location		[67, 293, 941, 604]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	"[0.500000, 0.500000, 0.500000, 0.5000"
+"00]"
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "u_in"
+		  Position		  [30, 103, 60, 117]
+		  CopyFcn		  "if exist('tl_check_ports','file'), "
+"tl_check_ports(gcbh); end"
+		  NameChangeFcn		  "if exist('tl_check_ports','file'), "
+"tl_check_ports(gcbh); end"
+		  IconDisplay		  "Port number"
+		  PortDimensions	  "1"
+		  SampleTime		  "0.1"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "In1_"
+		  Ports			  [1, 1]
+		  Position		  [105, 103, 135, 117]
+		  ShowName		  off
+		  SourceBlock		  "tllib/InPort"
+		  SourceType		  "TL_Inport"
+		  ShowPortLabels	  on
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  data			  "struct('logdata',struct('maxnumvals"
+"',inf,'plotchannels',[],'loggingmode',3,'channels',1),'output',struct('width'"
+",1,'name','$S_$B','unit','','type','UInt16','offset',0,'max',1,'min',0,'freez"
+"e',1,'lsb',2^-15,'arb',0,'class','default','address','','description','','aut"
+"oscalingmode',1,'lowerheadroom',1,'upperheadroom',1,'headroomunit','bit','sho"
+"w',0,'variable','','scaling','','keepdatatype',1,'castoutput',0),'date',73301"
+"2.597276273,'message',struct('name','','component','','accessor',''),'virtual"
+"',1,'scalingvalid',0)"
+		  flp_block		  "none"
+		  help			  "InPort block of dSPACE TargetLink."
+"\n\nInput signal is read from an external variable and scaled:\n\n        y ="
+" lsb * u + offset"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Out1_"
+		  Ports			  [1, 1]
+		  Position		  [745, 103, 775, 117]
+		  ShowName		  off
+		  SourceBlock		  "tllib/OutPort"
+		  SourceType		  "TL_Outport"
+		  ShowPortLabels	  on
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  data			  "struct('comment',struct('text','','"
+"placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingmod"
+"e',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type',"
+"'UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class','d"
+"efault','address','','description','','autoscalingmode',1,'lowerheadroom',1,'"
+"upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,'var"
+"iable','','scaling','','keepdatatype',1,'castoutput',0),'date',733012.5972766"
+"32,'message',struct('name','','component',''),'virtual',1,'scalingvalid',0)"
+		  flp_block		  "none"
+		  help			  "OutPort block of dSPACE TargetLink."
+"\n\nInput signal is scaled:\n\n        y = lsb * u + offset"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "Out1_1"
+		  Ports			  [1, 1]
+		  Position		  [750, 213, 780, 227]
+		  ShowName		  off
+		  SourceBlock		  "tllib/OutPort"
+		  SourceType		  "TL_Outport"
+		  ShowPortLabels	  on
+		  SystemSampleTime	  "-1"
+		  FunctionWithSeparateData off
+		  RTWMemSecFuncInitTerm	  "Inherit from model"
+		  RTWMemSecFuncExecute	  "Inherit from model"
+		  RTWMemSecDataConstants  "Inherit from model"
+		  RTWMemSecDataInternal	  "Inherit from model"
+		  RTWMemSecDataParameters "Inherit from model"
+		  data			  "struct('comment',struct('text','','"
+"placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingmod"
+"e',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type',"
+"'UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class','d"
+"efault','address','','description','','autoscalingmode',1,'lowerheadroom',1,'"
+"upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,'var"
+"iable','','scaling','','keepdatatype',1,'castoutput',0),'date',733012.5972769"
+"91,'message',struct('name','','component',''),'virtual',1,'scalingvalid',0)"
+		  flp_block		  "none"
+		  help			  "OutPort block of dSPACE TargetLink."
+"\n\nInput signal is scaled:\n\n        y = lsb * u + offset"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "log_map_master"
+		  Ports			  [1, 1]
+		  Position		  [265, 79, 380, 141]
+		  TreatAsAtomicUnit	  on
+		  MinAlgLoopOccurrences	  off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  MaskHideContents	  off
+		  System {
+		    Name		    "log_map_master"
+		    Location		    [273, 502, 1211, 867]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    212
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    "[0.500000, 0.500000, 0.500000, 0."
+"500000]"
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "u_in"
+		    Position		    [25, 33, 55, 47]
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Function"
+		    Ports		    []
+		    Position		    [765, 20, 845, 45]
+		    BackgroundColor	    "green"
+		    DropShadow		    on
+		    SourceBlock		    "tllib/Function"
+		    SourceType		    "TL_Function"
+		    ShowPortLabels	    on
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData off
+		    RTWMemSecFuncInitTerm   "Inherit from model"
+		    RTWMemSecFuncExecute    "Inherit from model"
+		    RTWMemSecDataConstants  "Inherit from model"
+		    RTWMemSecDataInternal   "Inherit from model"
+		    RTWMemSecDataParameters "Inherit from model"
+		    data		    "struct('revisionNumber',9,'descri"
+"ption','','stepfunctionname','$S_$B','stepfunctionclass','default','restartfu"
+"nctionname','RESTART_$S_$B','restartfunctionclass','default','forcerestartfun"
+"ction',0,'initfunctionname','INIT_$S_$B','initfunctionclass','default','force"
+"initfunction',0,'termfunctionname','TERM_$S_$B','termfunctionclass','default'"
+",'forcetermfunction',0,'subsystemid','default','forcereuse',0,'codefile','','"
+"linkfile',0,'functionarglist',{{}},'unscaledarguments',0,'scalingpropagation'"
+",{{}},'incrcodegen',0,'ownedmodules',{{}},'simmode',1,'addtestframe',0,'desti"
+"nation','','codecoveragelevel',0,'codecomment','')"
+		    flp_block		    "none"
+		    help		    "Function block of dSPACE TargetLi"
+"nk.\n\nCopy this block into a subsystem if you want separate code to be gener"
+"ated for it."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Sum"
+		    Ports		    [2, 1]
+		    Position		    [640, 134, 685, 181]
+		    ShowName		    off
+		    SourceBlock		    "tllib/Sum"
+		    SourceType		    "TL_Sum"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class',"
+"'default','address','','description','','autoscalingmode',1,'lowerheadroom',1"
+",'upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,'v"
+"ariable','','scaling','','keepdatatype',1,'castoutput',0),'inputs','++','date"
+"',733012.597277361,'scalingvalid',0)"
+		    lower_limit		    "1"
+		    upper_limit		    "-1"
+		    flp_block		    "built-in/Sum"
+		    help		    "Sum block of dSPACE TargetLink.\n"
+"\nOutput signal is equal to the sum of the input signals.\nThe list of signs "
+"is specified according to conventions for Simulink Sum blocks."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Sum1"
+		    Ports		    [2, 1]
+		    Position		    [230, 140, 265, 180]
+		    SourceBlock		    "tllib/Sum"
+		    SourceType		    "TL_Sum"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',NaN,'freeze',1,'lsb',2^-15,'arb',0,'class"
+"','default','address','','description','','autoscalingmode',1,'lowerheadroom'"
+",1,'upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,"
+"'variable','','scaling','','keepdatatype',1,'castoutput',0),'inputs','-+','da"
+"te',733012.59727772,'scalingvalid',0)"
+		    lower_limit		    "1"
+		    upper_limit		    "-1"
+		    flp_block		    "built-in/Sum"
+		    help		    "Sum block of dSPACE TargetLink.\n"
+"\nOutput signal is equal to the sum of the input signals.\nThe list of signs "
+"is specified according to conventions for Simulink Sum blocks."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Unit Delay"
+		    Ports		    [1, 1]
+		    Position		    [655, 280, 690, 320]
+		    Orientation		    "left"
+		    SourceBlock		    "tllib/Unit Delay"
+		    SourceType		    "TL_UnitDelay"
+		    ShowPortLabels	    on
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData off
+		    RTWMemSecFuncInitTerm   "Inherit from model"
+		    RTWMemSecFuncExecute    "Inherit from model"
+		    RTWMemSecDataConstants  "Inherit from model"
+		    RTWMemSecDataInternal   "Inherit from model"
+		    RTWMemSecDataParameters "Inherit from model"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class',"
+"'default','address','','description','','autoscalingmode',1,'lowerheadroom',1"
+",'upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,'v"
+"ariable','','scaling','','keepdatatype',1,'castoutput',0),'state',struct('ini"
+"tial','y1_0','width',1,'variable','','description','','name','X_$S_$B','addre"
+"ss','','max',1,'min',0,'class','default','type','UInt16','scaling','','lsb',2"
+"^-15,'offset',0,'arb',0,'freeze',1,'unit',''),'dt','-1','date',733012.5972780"
+"79,'scalingvalid',0)"
+		    dt			    "-1"
+		    X0			    "y1_0"
+		    flp_block		    "built-in/UnitDelay"
+		    help		    "Unit Delay block of dSPACE Target"
+"Link.\n\nOutput signal is equal to the input signal of the last sample step:"
+"\n\n        y(k) = u(k-1).\n\nIn the 1st sampling step, the output signal is "
+"initialized with 'initial condition':\n\n        y(0) = initial condition"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "alpha_coupl"
+		    Ports		    [0, 1]
+		    Position		    [30, 133, 80, 167]
+		    SourceBlock		    "tllib/Constant"
+		    SourceType		    "TL_Constant"
+		    Value		    "constant"
+		    VectorParams1D	    on
+		    OutDataTypeMode	    "Inherit from 'Constant value'"
+		    OutDataType		    "sfix(16)"
+		    ConRadixGroup	    "Use specified scaling"
+		    OutScaling		    "2^0"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'output',struct('width',1,'name','$S_$B','unit','','type','UI"
+"nt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class','CAL'"
+",'address','','description','','value','alpha','tolerance',1,'show',0,'variab"
+"le','','scaling','','keepdatatype',1),'date',733012.597278437,'dt','inf','sca"
+"lingvalid',0)"
+		    constant		    "alpha"
+		    dt			    "inf"
+		    flp_block		    "built-in/Constant"
+		    help		    "Constant block of dSPACE TargetLi"
+"nk.\n\nOutput signal keeps the given constant value."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "alpha_gain"
+		    Ports		    [2, 1]
+		    Position		    [435, 30, 470, 70]
+		    SourceBlock		    "tllib/Product"
+		    SourceType		    "TL_Product"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class',"
+"'default','address','','description','','autoscalingmode',1,'lowerheadroom',1"
+",'upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,'v"
+"ariable','','scaling','','keepdatatype',1,'castoutput',0),'inputs','**','exce"
+"ptionhandling',1,'date',733012.597278808,'scalingvalid',0)"
+		    lower_limit		    "1"
+		    upper_limit		    "-1"
+		    flp_block		    "built-in/Product"
+		    help		    "Product block of dSPACE TargetLin"
+"k.\n\nOutput signal is equal to the product of the input signals. The input p"
+"orts are specified according to conventions for Simulink Product blocks."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "cut_input"
+		    Ports		    [1, 1]
+		    Position		    [90, 25, 120, 55]
+		    SourceBlock		    "tllib/Saturation"
+		    SourceType		    "TL_Saturate"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class',"
+"'default','address','','description','','autoscalingmode',1,'lowerheadroom',1"
+",'upperheadroom',1,'headroomunit','bit','show',0,'variable','','scaling','','"
+"keepdatatype',1,'castoutput',0),'lowerlimit',struct('width',1,'name','$S_$B_l"
+"ower','unit','','type','UInt16','offset',0,'max',NaN,'min',NaN,'freeze',1,'ls"
+"b',2^-15,'arb',0,'class','GLOBAL','address','','description','','value','0','"
+"scalar',0,'variable','','scaling','','keepdatatype',1),'upperlimit',struct('w"
+"idth',1,'name','$S_$B_upper','unit','','type','UInt16','offset',0,'max',NaN,'"
+"min',NaN,'freeze',1,'lsb',2^-15,'arb',0,'class','GLOBAL','address','','descri"
+"ption','','value','1','scalar',0,'variable','','scaling','','keepdatatype',1)"
+",'date',733012.59727934,'scalingvalid',0)"
+		    lower_limit		    "0"
+		    upper_limit		    "1"
+		    flp_block		    "built-in/Saturate"
+		    help		    "Saturation block of dSPACE Target"
+"Link.\n\nThe Saturation block saturates its input to the given upper and lowe"
+"r limit."
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "log_map"
+		    Ports		    [1, 1]
+		    Position		    [480, 269, 580, 331]
+		    Orientation		    "left"
+		    TreatAsAtomicUnit	    on
+		    MinAlgLoopOccurrences   off
+		    RTWSystemCode	    "Auto"
+		    FunctionWithSeparateData off
+		    MaskHideContents	    off
+		    System {
+		    Name		    "log_map"
+		    Location		    [210, 330, 973, 539]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    "[0.500000, 0.500000, 0.500000, 0."
+"500000]"
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "y_in"
+		    Position		    [625, 38, 655, 52]
+		    Orientation		    "left"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Constant"
+		    Ports		    [0, 1]
+		    Position		    [530, 105, 560, 135]
+		    Orientation		    "left"
+		    SourceBlock		    "tllib/Constant"
+		    SourceType		    "TL_Constant"
+		    Value		    "constant"
+		    VectorParams1D	    on
+		    OutDataTypeMode	    "Inherit from 'Constant value'"
+		    OutDataType		    "sfix(16)"
+		    ConRadixGroup	    "Use specified scaling"
+		    OutScaling		    "2^0"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'output',struct('width',1,'name','$S_$B','unit','','type','UI"
+"nt16','offset',0,'max',NaN,'min',NaN,'freeze',1,'lsb',2^-15,'arb',0,'class','"
+"CONST','address','','description','','value','1','tolerance',1,'show',0,'vari"
+"able','','scaling','','keepdatatype',1),'date',733012.597279525,'dt','inf','s"
+"calingvalid',0)"
+		    constant		    "1"
+		    dt			    "inf"
+		    flp_block		    "built-in/Constant"
+		    help		    "Constant block of dSPACE TargetLi"
+"nk.\n\nOutput signal keeps the given constant value."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Function"
+		    Ports		    []
+		    Position		    [15, 15, 95, 40]
+		    BackgroundColor	    "green"
+		    DropShadow		    on
+		    SourceBlock		    "tllib/Function"
+		    SourceType		    "TL_Function"
+		    ShowPortLabels	    on
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData off
+		    RTWMemSecFuncInitTerm   "Inherit from model"
+		    RTWMemSecFuncExecute    "Inherit from model"
+		    RTWMemSecDataConstants  "Inherit from model"
+		    RTWMemSecDataInternal   "Inherit from model"
+		    RTWMemSecDataParameters "Inherit from model"
+		    data		    "struct('revisionNumber',9,'descri"
+"ption','','stepfunctionname','$S_$B','stepfunctionclass','default','restartfu"
+"nctionname','RESTART_$S_$B','restartfunctionclass','default','forcerestartfun"
+"ction',0,'initfunctionname','INIT_$S_$B','initfunctionclass','default','force"
+"initfunction',0,'termfunctionname','TERM_$S_$B','termfunctionclass','default'"
+",'forcetermfunction',0,'subsystemid','default','forcereuse',0,'codefile','','"
+"linkfile',0,'functionarglist',{{}},'unscaledarguments',0,'scalingpropagation'"
+",{{}},'incrcodegen',0,'ownedmodules',{{}},'simmode',1,'addtestframe',0,'desti"
+"nation','','codecoveragelevel',0,'codecomment','')"
+		    flp_block		    "none"
+		    help		    "Function block of dSPACE TargetLi"
+"nk.\n\nCopy this block into a subsystem if you want separate code to be gener"
+"ated for it."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Product"
+		    Ports		    [2, 1]
+		    Position		    [280, 74, 325, 121]
+		    Orientation		    "left"
+		    SourceBlock		    "tllib/Product"
+		    SourceType		    "TL_Product"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class',"
+"'default','address','','description','','autoscalingmode',1,'lowerheadroom',1"
+",'upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,'v"
+"ariable','','scaling','','keepdatatype',1,'castoutput',0),'inputs','2','excep"
+"tionhandling',1,'date',733012.597279884,'scalingvalid',0)"
+		    lower_limit		    "1"
+		    upper_limit		    "-1"
+		    flp_block		    "built-in/Product"
+		    help		    "Product block of dSPACE TargetLin"
+"k.\n\nOutput signal is equal to the product of the input signals. The input p"
+"orts are specified according to conventions for Simulink Product blocks."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Sum1"
+		    Ports		    [2, 1]
+		    Position		    [390, 82, 430, 133]
+		    Orientation		    "left"
+		    ShowName		    off
+		    SourceBlock		    "tllib/Sum"
+		    SourceType		    "TL_Sum"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class',"
+"'default','address','','description','','autoscalingmode',1,'lowerheadroom',1"
+",'upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,'v"
+"ariable','','scaling','','keepdatatype',1,'castoutput',0),'inputs','-+','date"
+"',733012.597280243,'scalingvalid',0)"
+		    lower_limit		    "1"
+		    upper_limit		    "-1"
+		    flp_block		    "built-in/Sum"
+		    help		    "Sum block of dSPACE TargetLink.\n"
+"\nOutput signal is equal to the sum of the input signals.\nThe list of signs "
+"is specified according to conventions for Simulink Sum blocks."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "lambda_gain"
+		    Ports		    [1, 1]
+		    Position		    [140, 77, 185, 123]
+		    Orientation		    "left"
+		    SourceBlock		    "tllib/Gain"
+		    SourceType		    "TL_Gain"
+		    ShowPortLabels	    on
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData off
+		    RTWMemSecFuncInitTerm   "Inherit from model"
+		    RTWMemSecFuncExecute    "Inherit from model"
+		    RTWMemSecDataConstants  "Inherit from model"
+		    RTWMemSecDataInternal   "Inherit from model"
+		    RTWMemSecDataParameters "Inherit from model"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class',"
+"'default','address','','description','','autoscalingmode',1,'lowerheadroom',1"
+",'upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,'v"
+"ariable','','scaling','','keepdatatype',1,'castoutput',0),'gain',struct('widt"
+"h',1,'name','$S_$B_gain','unit','','type','Int16','offset',0,'max',4,'min',0,"
+"'freeze',1,'lsb',2^-12,'arb',0,'class','CAL','address','','description','','v"
+"alue','lambda','scalar',0,'tolerance',1,'variable','','scaling','','keepdatat"
+"ype',1),'date',733012.597280613,'scalingvalid',0)"
+		    gain		    "lambda"
+		    flp_block		    "built-in/Gain"
+		    help		    "Gain block of dSPACE TargetLink."
+"\n\nOutput signal is equal to the product of the input signal and the gain va"
+"lue:\n        y = G u"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "x_out"
+		    Position		    [15, 93, 45, 107]
+		    Orientation		    "left"
+		    IconDisplay		    "Port number"
+		    BusOutputAsStruct	    off
+		    }
+		    Line {
+		    SrcBlock		    "Constant"
+		    SrcPort		    1
+		    DstBlock		    "Sum1"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Sum1"
+		    SrcPort		    1
+		    DstBlock		    "Product"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "y_in"
+		    SrcPort		    1
+		    Points		    [-30, 0; -120, 0]
+		    Branch {
+		    Points		    [0, 50]
+		    DstBlock		    "Sum1"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [-120, 0; 0, 40]
+		    DstBlock		    "Product"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Product"
+		    SrcPort		    1
+		    DstBlock		    "lambda_gain"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "lambda_gain"
+		    SrcPort		    1
+		    DstBlock		    "x_out"
+		    DstPort		    1
+		    }
+		    }
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "m_alpha_gain"
+		    Ports		    [2, 1]
+		    Position		    [435, 150, 470, 190]
+		    SourceBlock		    "tllib/Product"
+		    SourceType		    "TL_Product"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class',"
+"'default','address','','description','','autoscalingmode',1,'lowerheadroom',1"
+",'upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,'v"
+"ariable','','scaling','','keepdatatype',1,'castoutput',0),'inputs','**','exce"
+"ptionhandling',1,'date',733012.597280972,'scalingvalid',0)"
+		    lower_limit		    "1"
+		    upper_limit		    "-1"
+		    flp_block		    "built-in/Product"
+		    help		    "Product block of dSPACE TargetLin"
+"k.\n\nOutput signal is equal to the product of the input signals. The input p"
+"orts are specified according to conventions for Simulink Product blocks."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "one"
+		    Ports		    [0, 1]
+		    Position		    [145, 231, 170, 259]
+		    SourceBlock		    "tllib/Constant"
+		    SourceType		    "TL_Constant"
+		    Value		    "constant"
+		    VectorParams1D	    on
+		    OutDataTypeMode	    "Inherit from 'Constant value'"
+		    OutDataType		    "sfix(16)"
+		    ConRadixGroup	    "Use specified scaling"
+		    OutScaling		    "2^0"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'output',struct('width',1,'name','$S_$B','unit','','type','UI"
+"nt16','offset',0,'max',NaN,'min',NaN,'freeze',1,'lsb',2^-15,'arb',0,'class','"
+"CONST','address','','description','','value','1','tolerance',0.001,'show',0,'"
+"variable','','scaling','','keepdatatype',1),'date',733012.597281331,'dt','inf"
+"','scalingvalid',0)"
+		    constant		    "1"
+		    dt			    "inf"
+		    flp_block		    "built-in/Constant"
+		    help		    "Constant block of dSPACE TargetLi"
+"nk.\n\nOutput signal keeps the given constant value."
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "y_out"
+		    Position		    [885, 153, 915, 167]
+		    IconDisplay		    "Port number"
+		    BusOutputAsStruct	    off
+		    }
+		    Line {
+		    SrcBlock		    "cut_input"
+		    SrcPort		    1
+		    DstBlock		    "alpha_gain"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "m_alpha_gain"
+		    SrcPort		    1
+		    DstBlock		    "Sum"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "alpha_gain"
+		    SrcPort		    1
+		    Points		    [75, 0; 0, 95]
+		    DstBlock		    "Sum"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "log_map"
+		    SrcPort		    1
+		    Points		    [-110, 0; 0, -120]
+		    DstBlock		    "m_alpha_gain"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Sum"
+		    SrcPort		    1
+		    Points		    [0, 0; 50, 0]
+		    Branch {
+		    DstBlock		    "y_out"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 140]
+		    DstBlock		    "Unit Delay"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    Labels		    [0, 0]
+		    SrcBlock		    "u_in"
+		    SrcPort		    1
+		    Points		    [235, 0]
+		    DstBlock		    "cut_input"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Unit Delay"
+		    SrcPort		    1
+		    DstBlock		    "log_map"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "one"
+		    SrcPort		    1
+		    Points		    [40, 0]
+		    DstBlock		    "Sum1"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Sum1"
+		    SrcPort		    1
+		    DstBlock		    "m_alpha_gain"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "alpha_coupl"
+		    SrcPort		    1
+		    Points		    [90, 0]
+		    Branch {
+		    DstBlock		    "Sum1"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, -90]
+		    DstBlock		    "alpha_gain"
+		    DstPort		    2
+		    }
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "log_map_slave"
+		  Ports			  [1, 1]
+		  Position		  [510, 189, 625, 251]
+		  TreatAsAtomicUnit	  on
+		  MinAlgLoopOccurrences	  off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  MaskHideContents	  off
+		  System {
+		    Name		    "log_map_slave"
+		    Location		    [273, 502, 1210, 887]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    "[0.500000, 0.500000, 0.500000, 0."
+"500000]"
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "u_in"
+		    Position		    [25, 33, 55, 47]
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Function"
+		    Ports		    []
+		    Position		    [765, 20, 845, 45]
+		    BackgroundColor	    "green"
+		    DropShadow		    on
+		    SourceBlock		    "tllib/Function"
+		    SourceType		    "TL_Function"
+		    ShowPortLabels	    on
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData off
+		    RTWMemSecFuncInitTerm   "Inherit from model"
+		    RTWMemSecFuncExecute    "Inherit from model"
+		    RTWMemSecDataConstants  "Inherit from model"
+		    RTWMemSecDataInternal   "Inherit from model"
+		    RTWMemSecDataParameters "Inherit from model"
+		    data		    "struct('revisionNumber',9,'descri"
+"ption','','stepfunctionname','$S_$B','stepfunctionclass','default','restartfu"
+"nctionname','RESTART_$S_$B','restartfunctionclass','default','forcerestartfun"
+"ction',0,'initfunctionname','INIT_$S_$B','initfunctionclass','default','force"
+"initfunction',0,'termfunctionname','TERM_$S_$B','termfunctionclass','default'"
+",'forcetermfunction',0,'subsystemid','default','forcereuse',0,'codefile','','"
+"linkfile',0,'functionarglist',{{}},'unscaledarguments',0,'scalingpropagation'"
+",{{}},'incrcodegen',0,'ownedmodules',{{}},'simmode',1,'addtestframe',0,'desti"
+"nation','','codecoveragelevel',0,'codecomment','')"
+		    flp_block		    "none"
+		    help		    "Function block of dSPACE TargetLi"
+"nk.\n\nCopy this block into a subsystem if you want separate code to be gener"
+"ated for it."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Sum"
+		    Ports		    [2, 1]
+		    Position		    [640, 134, 685, 181]
+		    ShowName		    off
+		    SourceBlock		    "tllib/Sum"
+		    SourceType		    "TL_Sum"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class',"
+"'default','address','','description','','autoscalingmode',1,'lowerheadroom',1"
+",'upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,'v"
+"ariable','','scaling','','keepdatatype',1,'castoutput',0),'inputs','++','date"
+"',733012.597281516,'scalingvalid',0)"
+		    lower_limit		    "1"
+		    upper_limit		    "-1"
+		    flp_block		    "built-in/Sum"
+		    help		    "Sum block of dSPACE TargetLink.\n"
+"\nOutput signal is equal to the sum of the input signals.\nThe list of signs "
+"is specified according to conventions for Simulink Sum blocks."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Sum1"
+		    Ports		    [2, 1]
+		    Position		    [265, 140, 300, 180]
+		    SourceBlock		    "tllib/Sum"
+		    SourceType		    "TL_Sum"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',NaN,'freeze',1,'lsb',2^-15,'arb',0,'class"
+"','default','address','','description','','autoscalingmode',1,'lowerheadroom'"
+",1,'upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,"
+"'variable','','scaling','','keepdatatype',1,'castoutput',0),'inputs','-+','da"
+"te',733012.597281875,'scalingvalid',0)"
+		    lower_limit		    "1"
+		    upper_limit		    "-1"
+		    flp_block		    "built-in/Sum"
+		    help		    "Sum block of dSPACE TargetLink.\n"
+"\nOutput signal is equal to the sum of the input signals.\nThe list of signs "
+"is specified according to conventions for Simulink Sum blocks."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Unit Delay"
+		    Ports		    [1, 1]
+		    Position		    [655, 280, 690, 320]
+		    Orientation		    "left"
+		    SourceBlock		    "tllib/Unit Delay"
+		    SourceType		    "TL_UnitDelay"
+		    ShowPortLabels	    on
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData off
+		    RTWMemSecFuncInitTerm   "Inherit from model"
+		    RTWMemSecFuncExecute    "Inherit from model"
+		    RTWMemSecDataConstants  "Inherit from model"
+		    RTWMemSecDataInternal   "Inherit from model"
+		    RTWMemSecDataParameters "Inherit from model"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class',"
+"'default','address','','description','','autoscalingmode',1,'lowerheadroom',1"
+",'upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,'v"
+"ariable','','scaling','','keepdatatype',1,'castoutput',0),'state',struct('ini"
+"tial','y2_0','width',1,'variable','','description','','name','X_$S_$B','addre"
+"ss','','max',1,'min',0,'class','default','type','UInt16','scaling','','lsb',2"
+"^-15,'offset',0,'arb',0,'freeze',1,'unit',''),'dt','-1','date',733012.5972824"
+"19,'scalingvalid',0)"
+		    dt			    "-1"
+		    X0			    "y2_0"
+		    flp_block		    "built-in/UnitDelay"
+		    help		    "Unit Delay block of dSPACE Target"
+"Link.\n\nOutput signal is equal to the input signal of the last sample step:"
+"\n\n        y(k) = u(k-1).\n\nIn the 1st sampling step, the output signal is "
+"initialized with 'initial condition':\n\n        y(0) = initial condition"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "beta_coupl"
+		    Ports		    [0, 1]
+		    Position		    [30, 133, 80, 167]
+		    SourceBlock		    "tllib/Constant"
+		    SourceType		    "TL_Constant"
+		    Value		    "constant"
+		    VectorParams1D	    on
+		    OutDataTypeMode	    "Inherit from 'Constant value'"
+		    OutDataType		    "sfix(16)"
+		    ConRadixGroup	    "Use specified scaling"
+		    OutScaling		    "2^0"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'output',struct('width',1,'name','$S_$B','unit','','type','UI"
+"nt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class','CAL'"
+",'address','','description','','value','beta','tolerance',1,'show',0,'variabl"
+"e','','scaling','','keepdatatype',1),'date',733012.597282778,'dt','inf','scal"
+"ingvalid',0)"
+		    constant		    "beta"
+		    dt			    "inf"
+		    flp_block		    "built-in/Constant"
+		    help		    "Constant block of dSPACE TargetLi"
+"nk.\n\nOutput signal keeps the given constant value."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "beta_gain"
+		    Ports		    [2, 1]
+		    Position		    [435, 30, 470, 70]
+		    SourceBlock		    "tllib/Product"
+		    SourceType		    "TL_Product"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class',"
+"'default','address','','description','','autoscalingmode',1,'lowerheadroom',1"
+",'upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,'v"
+"ariable','','scaling','','keepdatatype',1,'castoutput',0),'inputs','**','exce"
+"ptionhandling',1,'date',733012.597282963,'scalingvalid',0)"
+		    lower_limit		    "1"
+		    upper_limit		    "-1"
+		    flp_block		    "built-in/Product"
+		    help		    "Product block of dSPACE TargetLin"
+"k.\n\nOutput signal is equal to the product of the input signals. The input p"
+"orts are specified according to conventions for Simulink Product blocks."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "cut_input"
+		    Ports		    [1, 1]
+		    Position		    [90, 25, 120, 55]
+		    SourceBlock		    "tllib/Saturation"
+		    SourceType		    "TL_Saturate"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class',"
+"'default','address','','description','','autoscalingmode',1,'lowerheadroom',1"
+",'upperheadroom',1,'headroomunit','bit','show',0,'variable','','scaling','','"
+"keepdatatype',1,'castoutput',0),'lowerlimit',struct('width',1,'name','$S_$B_l"
+"ower','unit','','type','UInt16','offset',0,'max',NaN,'min',NaN,'freeze',1,'ls"
+"b',2^-15,'arb',0,'class','GLOBAL','address','','description','','value','0','"
+"scalar',0,'variable','','scaling','','keepdatatype',1),'upperlimit',struct('w"
+"idth',1,'name','$S_$B_upper','unit','','type','UInt16','offset',0,'max',NaN,'"
+"min',NaN,'freeze',1,'lsb',2^-15,'arb',0,'class','GLOBAL','address','','descri"
+"ption','','value','1','scalar',0,'variable','','scaling','','keepdatatype',1)"
+",'date',733012.597283681,'scalingvalid',0)"
+		    lower_limit		    "0"
+		    upper_limit		    "1"
+		    flp_block		    "built-in/Saturate"
+		    help		    "Saturation block of dSPACE Target"
+"Link.\n\nThe Saturation block saturates its input to the given upper and lowe"
+"r limit."
+		    }
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "log_map"
+		    Ports		    [1, 1]
+		    Position		    [480, 269, 580, 331]
+		    Orientation		    "left"
+		    TreatAsAtomicUnit	    on
+		    MinAlgLoopOccurrences   off
+		    RTWSystemCode	    "Auto"
+		    FunctionWithSeparateData off
+		    MaskHideContents	    off
+		    System {
+		    Name		    "log_map"
+		    Location		    [312, 481, 1270, 963]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    "[0.500000, 0.500000, 0.500000, 0."
+"500000]"
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "y_in"
+		    Position		    [625, 38, 655, 52]
+		    Orientation		    "left"
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Constant"
+		    Ports		    [0, 1]
+		    Position		    [530, 105, 560, 135]
+		    Orientation		    "left"
+		    SourceBlock		    "tllib/Constant"
+		    SourceType		    "TL_Constant"
+		    Value		    "constant"
+		    VectorParams1D	    on
+		    OutDataTypeMode	    "Inherit from 'Constant value'"
+		    OutDataType		    "sfix(16)"
+		    ConRadixGroup	    "Use specified scaling"
+		    OutScaling		    "2^0"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'output',struct('width',1,'name','$S_$B','unit','','type','UI"
+"nt16','offset',0,'max',NaN,'min',NaN,'freeze',1,'lsb',2^-15,'arb',0,'class','"
+"CONST','address','','description','','value','1','tolerance',1,'show',0,'vari"
+"able','','scaling','','keepdatatype',1),'date',733012.597283866,'dt','inf','s"
+"calingvalid',0)"
+		    constant		    "1"
+		    dt			    "inf"
+		    flp_block		    "built-in/Constant"
+		    help		    "Constant block of dSPACE TargetLi"
+"nk.\n\nOutput signal keeps the given constant value."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Function"
+		    Ports		    []
+		    Position		    [15, 15, 95, 40]
+		    BackgroundColor	    "green"
+		    DropShadow		    on
+		    SourceBlock		    "tllib/Function"
+		    SourceType		    "TL_Function"
+		    ShowPortLabels	    on
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData off
+		    RTWMemSecFuncInitTerm   "Inherit from model"
+		    RTWMemSecFuncExecute    "Inherit from model"
+		    RTWMemSecDataConstants  "Inherit from model"
+		    RTWMemSecDataInternal   "Inherit from model"
+		    RTWMemSecDataParameters "Inherit from model"
+		    data		    "struct('revisionNumber',9,'descri"
+"ption','','stepfunctionname','$S_$B','stepfunctionclass','default','restartfu"
+"nctionname','RESTART_$S_$B','restartfunctionclass','default','forcerestartfun"
+"ction',0,'initfunctionname','INIT_$S_$B','initfunctionclass','default','force"
+"initfunction',0,'termfunctionname','TERM_$S_$B','termfunctionclass','default'"
+",'forcetermfunction',0,'subsystemid','default','forcereuse',0,'codefile','','"
+"linkfile',0,'functionarglist',{{}},'unscaledarguments',0,'scalingpropagation'"
+",{{}},'incrcodegen',0,'ownedmodules',{{}},'simmode',1,'addtestframe',0,'desti"
+"nation','','codecoveragelevel',0,'codecomment','')"
+		    flp_block		    "none"
+		    help		    "Function block of dSPACE TargetLi"
+"nk.\n\nCopy this block into a subsystem if you want separate code to be gener"
+"ated for it."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Product"
+		    Ports		    [2, 1]
+		    Position		    [280, 74, 325, 121]
+		    Orientation		    "left"
+		    SourceBlock		    "tllib/Product"
+		    SourceType		    "TL_Product"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class',"
+"'default','address','','description','','autoscalingmode',1,'lowerheadroom',1"
+",'upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,'v"
+"ariable','','scaling','','keepdatatype',1,'castoutput',0),'inputs','2','excep"
+"tionhandling',1,'date',733012.597284225,'scalingvalid',0)"
+		    lower_limit		    "1"
+		    upper_limit		    "-1"
+		    flp_block		    "built-in/Product"
+		    help		    "Product block of dSPACE TargetLin"
+"k.\n\nOutput signal is equal to the product of the input signals. The input p"
+"orts are specified according to conventions for Simulink Product blocks."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Sum1"
+		    Ports		    [2, 1]
+		    Position		    [390, 82, 430, 133]
+		    Orientation		    "left"
+		    ShowName		    off
+		    SourceBlock		    "tllib/Sum"
+		    SourceType		    "TL_Sum"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class',"
+"'default','address','','description','','autoscalingmode',1,'lowerheadroom',1"
+",'upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,'v"
+"ariable','','scaling','','keepdatatype',1,'castoutput',0),'inputs','-+','date"
+"',733012.597284583,'scalingvalid',0)"
+		    lower_limit		    "1"
+		    upper_limit		    "-1"
+		    flp_block		    "built-in/Sum"
+		    help		    "Sum block of dSPACE TargetLink.\n"
+"\nOutput signal is equal to the sum of the input signals.\nThe list of signs "
+"is specified according to conventions for Simulink Sum blocks."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "lambda_gain"
+		    Ports		    [1, 1]
+		    Position		    [140, 77, 185, 123]
+		    Orientation		    "left"
+		    SourceBlock		    "tllib/Gain"
+		    SourceType		    "TL_Gain"
+		    ShowPortLabels	    on
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData off
+		    RTWMemSecFuncInitTerm   "Inherit from model"
+		    RTWMemSecFuncExecute    "Inherit from model"
+		    RTWMemSecDataConstants  "Inherit from model"
+		    RTWMemSecDataInternal   "Inherit from model"
+		    RTWMemSecDataParameters "Inherit from model"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class',"
+"'default','address','','description','','autoscalingmode',1,'lowerheadroom',1"
+",'upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,'v"
+"ariable','','scaling','','keepdatatype',1,'castoutput',0),'gain',struct('widt"
+"h',1,'name','$S_$B_gain','unit','','type','Int16','offset',0,'max',4,'min',0,"
+"'freeze',1,'lsb',2^-12,'arb',0,'class','CAL','address','','description','','v"
+"alue','lambda','scalar',0,'tolerance',1,'variable','','scaling','','keepdatat"
+"ype',1),'date',733012.597284954,'scalingvalid',0)"
+		    gain		    "lambda"
+		    flp_block		    "built-in/Gain"
+		    help		    "Gain block of dSPACE TargetLink."
+"\n\nOutput signal is equal to the product of the input signal and the gain va"
+"lue:\n        y = G u"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "x_out"
+		    Position		    [15, 93, 45, 107]
+		    Orientation		    "left"
+		    IconDisplay		    "Port number"
+		    BusOutputAsStruct	    off
+		    }
+		    Line {
+		    SrcBlock		    "lambda_gain"
+		    SrcPort		    1
+		    DstBlock		    "x_out"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Product"
+		    SrcPort		    1
+		    DstBlock		    "lambda_gain"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "y_in"
+		    SrcPort		    1
+		    Points		    [-30, 0; -120, 0]
+		    Branch {
+		    Points		    [-120, 0; 0, 40]
+		    DstBlock		    "Product"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, 50]
+		    DstBlock		    "Sum1"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "Sum1"
+		    SrcPort		    1
+		    DstBlock		    "Product"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "Constant"
+		    SrcPort		    1
+		    DstBlock		    "Sum1"
+		    DstPort		    2
+		    }
+		    }
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "m_beta_gain"
+		    Ports		    [2, 1]
+		    Position		    [435, 150, 470, 190]
+		    SourceBlock		    "tllib/Product"
+		    SourceType		    "TL_Product"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingm"
+"ode',3,'channels',1),'output',struct('width',1,'name','$S_$B','unit','','type"
+"','UInt16','offset',0,'max',1,'min',0,'freeze',1,'lsb',2^-15,'arb',0,'class',"
+"'default','address','','description','','autoscalingmode',1,'lowerheadroom',1"
+",'upperheadroom',1,'headroomunit','bit','checkmin',0,'checkmax',0,'show',0,'v"
+"ariable','','scaling','','keepdatatype',1,'castoutput',0),'inputs','**','exce"
+"ptionhandling',1,'date',733012.597285312,'scalingvalid',0)"
+		    lower_limit		    "1"
+		    upper_limit		    "-1"
+		    flp_block		    "built-in/Product"
+		    help		    "Product block of dSPACE TargetLin"
+"k.\n\nOutput signal is equal to the product of the input signals. The input p"
+"orts are specified according to conventions for Simulink Product blocks."
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "one"
+		    Ports		    [0, 1]
+		    Position		    [140, 211, 165, 239]
+		    SourceBlock		    "tllib/Constant"
+		    SourceType		    "TL_Constant"
+		    Value		    "constant"
+		    VectorParams1D	    on
+		    OutDataTypeMode	    "Inherit from 'Constant value'"
+		    OutDataType		    "sfix(16)"
+		    ConRadixGroup	    "Use specified scaling"
+		    OutScaling		    "2^0"
+		    data		    "struct('comment',struct('text',''"
+",'placement',1),'output',struct('width',1,'name','$S_$B','unit','','type','UI"
+"nt16','offset',0,'max',NaN,'min',NaN,'freeze',1,'lsb',2^-15,'arb',0,'class','"
+"CONST','address','','description','','value','1','tolerance',0.001,'show',0,'"
+"variable','','scaling','','keepdatatype',1),'date',733012.597285486,'dt','inf"
+"','scalingvalid',0)"
+		    constant		    "1"
+		    dt			    "inf"
+		    flp_block		    "built-in/Constant"
+		    help		    "Constant block of dSPACE TargetLi"
+"nk.\n\nOutput signal keeps the given constant value."
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "y_out"
+		    Position		    [885, 153, 915, 167]
+		    IconDisplay		    "Port number"
+		    BusOutputAsStruct	    off
+		    }
+		    Line {
+		    SrcBlock		    "Unit Delay"
+		    SrcPort		    1
+		    DstBlock		    "log_map"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "u_in"
+		    SrcPort		    1
+		    DstBlock		    "cut_input"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Sum"
+		    SrcPort		    1
+		    Points		    [0, 0; 50, 0]
+		    Branch {
+		    Points		    [0, 140]
+		    DstBlock		    "Unit Delay"
+		    DstPort		    1
+		    }
+		    Branch {
+		    DstBlock		    "y_out"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "log_map"
+		    SrcPort		    1
+		    Points		    [-110, 0; 0, -120]
+		    DstBlock		    "m_beta_gain"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "beta_gain"
+		    SrcPort		    1
+		    Points		    [75, 0; 0, 95]
+		    DstBlock		    "Sum"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "m_beta_gain"
+		    SrcPort		    1
+		    DstBlock		    "Sum"
+		    DstPort		    2
+		    }
+		    Line {
+		    SrcBlock		    "cut_input"
+		    SrcPort		    1
+		    DstBlock		    "beta_gain"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "Sum1"
+		    SrcPort		    1
+		    DstBlock		    "m_beta_gain"
+		    DstPort		    1
+		    }
+		    Line {
+		    SrcBlock		    "beta_coupl"
+		    SrcPort		    1
+		    Points		    [90, 0]
+		    Branch {
+		    DstBlock		    "Sum1"
+		    DstPort		    1
+		    }
+		    Branch {
+		    Points		    [0, -90]
+		    DstBlock		    "beta_gain"
+		    DstPort		    2
+		    }
+		    }
+		    Line {
+		    SrcBlock		    "one"
+		    SrcPort		    1
+		    Points		    [35, 0; 0, -55]
+		    DstBlock		    "Sum1"
+		    DstPort		    2
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "y1_out"
+		  Position		  [800, 103, 830, 117]
+		  CopyFcn		  "if exist('tl_check_ports','file'), "
+"tl_check_ports(gcbh); end"
+		  NameChangeFcn		  "if exist('tl_check_ports','file'), "
+"tl_check_ports(gcbh); end"
+		  IconDisplay		  "Port number"
+		  BusOutputAsStruct	  off
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "y2_out"
+		  Position		  [800, 213, 830, 227]
+		  CopyFcn		  "if exist('tl_check_ports','file'), "
+"tl_check_ports(gcbh); end"
+		  NameChangeFcn		  "if exist('tl_check_ports','file'), "
+"tl_check_ports(gcbh); end"
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  BusOutputAsStruct	  off
+		}
+		Line {
+		  SrcBlock		  "log_map_master"
+		  SrcPort		  1
+		  Points		  [25, 0; 40, 0]
+		  Branch {
+		    DstBlock		    "Out1_"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 110]
+		    DstBlock		    "log_map_slave"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "u_in"
+		  SrcPort		  1
+		  DstBlock		  "In1_"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "In1_"
+		  SrcPort		  1
+		  DstBlock		  "log_map_master"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "Out1_"
+		  SrcPort		  1
+		  DstBlock		  "y1_out"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "Out1_1"
+		  SrcPort		  1
+		  DstBlock		  "y2_out"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "log_map_slave"
+		  SrcPort		  1
+		  DstBlock		  "Out1_1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "y1_out"
+	      Position		      [275, 62, 300, 78]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "y2_out"
+	      Position		      [275, 97, 300, 113]
+	      NameChangeFcn	      "tl_check_ports(gcbh);"
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "u_in"
+	      SrcPort		      1
+	      DstBlock		      "log_map_synchro"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "log_map_synchro"
+	      SrcPort		      1
+	      DstBlock		      "y1_out"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "log_map_synchro"
+	      SrcPort		      2
+	      DstBlock		      "y2_out"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "y1_out"
+	  Position		  [275, 62, 300, 78]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "y2_out"
+	  Position		  [275, 97, 300, 113]
+	  NameChangeFcn		  "tl_check_ports(gcbh);"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "u_in"
+	  SrcPort		  1
+	  DstBlock		  "Subsystem"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Subsystem"
+	  SrcPort		  1
+	  DstBlock		  "y1_out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Subsystem"
+	  SrcPort		  2
+	  DstBlock		  "y2_out"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      RandomNumber
+      Name		      "noise"
+      Position		      [75, 125, 105, 155]
+      Mean		      "0.5"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "y_master"
+      Position		      [695, 105, 755, 135]
+      VariableName	      "y1_tl"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "y_slave"
+      Position		      [615, 140, 675, 170]
+      VariableName	      "y2_tl"
+      MaxDataPoints	      "inf"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Line {
+      SrcBlock		      "noise"
+      SrcPort		      1
+      DstBlock		      "cut_noise"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "log_map_synchro"
+      SrcPort		      1
+      Points		      [0, 0]
+      DstBlock		      "y_master"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "cut_noise"
+      SrcPort		      1
+      Points		      [0, 0]
+      DstBlock		      "log_map_synchro"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "log_map_synchro"
+      SrcPort		      2
+      Points		      [0, 0]
+      DstBlock		      "y_slave"
+      DstPort		      1
+    }
+  }
+}

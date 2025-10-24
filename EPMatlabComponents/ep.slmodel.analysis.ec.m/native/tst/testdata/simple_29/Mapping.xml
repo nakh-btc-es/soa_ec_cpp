@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="simple_buses"/>
+    <Architecture id="id1" name="simple_buses [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="simple_buses.c:1:simple_buses_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="InBusA" refId="id0"/>
+        <Path path="InBusA" refId="id1"/>
+        <SignalMapping>
+          <Path path=".InBusA.FlptSig1" refId="id0"/>
+          <Path path=".FlptSig1" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="InBusA" refId="id0"/>
+        <Path path="InBusA" refId="id1"/>
+        <SignalMapping>
+          <Path path=".InBusA.FlptSig2" refId="id0"/>
+          <Path path=".FlptSig2" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="OutBusA" refId="id0"/>
+        <Path path="OutBusA" refId="id1"/>
+        <SignalMapping>
+          <Path path=".OutBusA.FlptSig1" refId="id0"/>
+          <Path path=".FlptSig1" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="OutBusA" refId="id0"/>
+        <Path path="OutBusA" refId="id1"/>
+        <SignalMapping>
+          <Path path=".OutBusA.FlptSig2" refId="id0"/>
+          <Path path=".FlptSig2" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="Top/subsys1" refId="id0"/>
+      <Path path="simple_buses.c:1:simple_buses_step/subfct1.c:1:subfct1" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Top/subsys1/In1" refId="id0"/>
+        <Path path="InBusA" refId="id1"/>
+        <SignalMapping>
+          <Path path=".blabla.FlptSig1" refId="id0"/>
+          <Path path=".FlptSig1" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Top/subsys1/In1" refId="id0"/>
+        <Path path="InBusA" refId="id1"/>
+        <SignalMapping>
+          <Path path=".blabla.FlptSig2" refId="id0"/>
+          <Path path=".FlptSig2" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Top/subsys1/Out1" refId="id0"/>
+        <Path path="OutBusA" refId="id1"/>
+        <SignalMapping>
+          <Path path=".aa.FlptSig1" refId="id0"/>
+          <Path path=".FlptSig1" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Top/subsys1/Out1" refId="id0"/>
+        <Path path="OutBusA" refId="id1"/>
+        <SignalMapping>
+          <Path path=".aa.FlptSig2" refId="id0"/>
+          <Path path=".FlptSig2" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

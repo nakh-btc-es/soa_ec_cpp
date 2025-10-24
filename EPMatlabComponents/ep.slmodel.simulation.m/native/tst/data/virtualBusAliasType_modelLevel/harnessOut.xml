@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<BusType name="slBus1" virtual="false">
+			<Comp name="Out2.signal2.a" type="double" dim1="1" dim2="3" />
+			<Comp name="Out2.signal2.Alias1DD" type="double" />
+			<Comp name="Out2.signal2.Alias1WS" type="double" />
+		</BusType>
+	</Types>
+	<Inports>
+		<Inport portNr="1" width="1" type="slBus1">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out2.signal2.a(1)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out2.signal2.a(1)(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out2.signal2.a(1)(3)</ScalarRef>
+				<ScalarRef>OUTPUT:Out2.signal2.Alias1DD</ScalarRef>
+				<ScalarRef>OUTPUT:Out2.signal2.Alias1WS</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="2" width="1" type="" kind="VirtualBus">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out4.VirtualBusAliasDD.MyAliasDD1x3(1)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.VirtualBusAliasDD.MyAliasDD1x3(1)(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.VirtualBusAliasDD.MyAliasDD1x3(1)(3)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.VirtualBusAliasDD.MyAliasDD</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.VirtualBusAliasDD.signal3</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.VirtualBusAliasDD.Alias2DD</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="3" width="1" type="" kind="VirtualBus">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out3.{&lt;signal1&gt;}.signal1.Alias1WS</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.{&lt;signal1&gt;}.signal1.signal2</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.{&lt;signal1&gt;}.signal1.MyAliasWS</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.{&lt;signal1&gt;}.signal2</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+	</Inports>
+</SFunction>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.16" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_8748\bug_8748.slx" modelCreationDate="2008-02-15T14:25:40" creator="alex">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.16" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_8748\bug_8748.slx" creationDate="2008-02-15T14:25:40" modificationDate="2021-11-16T11:26:40">
+    <subsystem subsysID="ss1" physicalPath="bug_8748/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in." physicalPath="bug_8748/top_A/Subsystem/top_A/in." path="top_A/Subsystem/top_A/in.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="c_values" path="top_A/Subsystem/top_A/Look-Up&#10;Table" physicalPath="bug_8748/top_A/Subsystem/top_A/Look-Up&#10;Table" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/c_values" workspace="c_values">
+        <miltype>
+          <nonUniformArray size="5">
+            <signal initValue="1.2000000000000000e+00" index="1">
+              <double/>
+            </signal>
+            <signal initValue="-7.7000000000000002e-01" index="2">
+              <double/>
+            </signal>
+            <signal initValue="2.0199999999999999e+01" index="3">
+              <double/>
+            </signal>
+            <signal initValue="2.0199999999999999e+01" index="4">
+              <double/>
+            </signal>
+            <signal initValue="8.9000000000000004e+00" index="5">
+              <double/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="5">
+            <signal initValue="1.2000000000000000e+00" index="1">
+              <fixedPoint baseType="Int16" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2799609375000000e+02"/>
+            </signal>
+            <signal initValue="-7.7000000000000002e-01" index="2">
+              <fixedPoint baseType="Int16" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2799609375000000e+02"/>
+            </signal>
+            <signal initValue="2.0199999999999999e+01" index="3">
+              <fixedPoint baseType="Int16" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2799609375000000e+02"/>
+            </signal>
+            <signal initValue="2.0199999999999999e+01" index="4">
+              <fixedPoint baseType="Int16" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2799609375000000e+02"/>
+            </signal>
+            <signal initValue="8.9000000000000004e+00" index="5">
+              <fixedPoint baseType="Int16" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2799609375000000e+02"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Look-Up&#10;Table" targetLinkBlockKind="TL_Lookup1D" physicalPath="bug_8748/top_A/Subsystem/top_A/Look-Up&#10;Table" simulinkBlockType="Lookup_n-D" blockAttribute="table"/>
+      </calibration>
+      <calibration name="c_x_axis" path="top_A/Subsystem/top_A/Look-Up&#10;Table" physicalPath="bug_8748/top_A/Subsystem/top_A/Look-Up&#10;Table" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/c_x_axis" workspace="c_x_axis">
+        <miltype>
+          <nonUniformArray size="5">
+            <signal initValue="-1.0100000000000000e+00" index="1">
+              <double/>
+            </signal>
+            <signal initValue="-6.9999999999999996e-01" index="2">
+              <double/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="3">
+              <double/>
+            </signal>
+            <signal initValue="1.1000000000000001e+00" index="4">
+              <double/>
+            </signal>
+            <signal initValue="2.8999999999999999e+00" index="5">
+              <double/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="5">
+            <signal initValue="-1.0100000000000000e+00" index="1">
+              <fixedPoint baseType="Int16" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00" min="-2.0000000000000000e+00" max="2.9500000000000002e+00"/>
+            </signal>
+            <signal initValue="-6.9999999999999996e-01" index="2">
+              <fixedPoint baseType="Int16" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00" min="-2.0000000000000000e+00" max="2.9500000000000002e+00"/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="3">
+              <fixedPoint baseType="Int16" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00" min="-2.0000000000000000e+00" max="2.9500000000000002e+00"/>
+            </signal>
+            <signal initValue="1.1000000000000001e+00" index="4">
+              <fixedPoint baseType="Int16" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00" min="-2.0000000000000000e+00" max="2.9500000000000002e+00"/>
+            </signal>
+            <signal initValue="2.8999999999999999e+00" index="5">
+              <fixedPoint baseType="Int16" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00" min="-2.0000000000000000e+00" max="2.9500000000000002e+00"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Look-Up&#10;Table" targetLinkBlockKind="TL_Lookup1D" physicalPath="bug_8748/top_A/Subsystem/top_A/Look-Up&#10;Table" simulinkBlockType="Lookup_n-D" blockAttribute="input" restriction="tl_lookup1d:input"/>
+      </calibration>
+      <outport portNumber="1" name="out." physicalPath="bug_8748/top_A/Subsystem/top_A/out." path="top_A/Subsystem/top_A/out.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

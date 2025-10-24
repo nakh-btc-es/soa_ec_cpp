@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    elementFormDefault="qualified" 
+    attributeFormDefault="unqualified">
+  <xs:element name="SFunction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Types" minOccurs="1">
+          <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+              <xs:element name="BusType" maxOccurs="unbounded" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>The following native types can directly referrenced by name:  boolean, int8, int16, int32, int64, uint8, uint16, uint32, uint64, float, double</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Comp" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="name" use="required"/>
+                            <xs:attribute type="xs:string" name="type" use="optional"/>
+                            <xs:attribute type="xs:integer" name="width" use="optional"/>
+                            <xs:attribute type="xs:integer" name="dim1" use="optional"/>
+                            <xs:attribute type="xs:integer" name="dim2" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="name" use="optional"/>
+                  <xs:attribute type="xs:string" name="virtual" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="EnumType" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="EnumValue" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="name" use="required"/>
+                            <xs:attribute type="xs:integer" name="ordinal" use="required"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="name" use="required"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AliasType" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="name"/>
+                      <xs:attribute type="xs:string" name="type"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Inports" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Inport" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ScalarRefs">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ScalarRef" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="displayName" use="optional" type="xs:string"/>
+                                </xs:extension>                                        
+                              </xs:simpleContent>                                    
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:integer" name="portNr" use="required"/>
+                  <xs:attribute type="xs:string" name="type" use="required"/>
+                  <xs:attribute type="xs:integer" name="width" use="optional"/>
+                  <xs:attribute type="xs:integer" name="dim1" use="optional"/>
+                  <xs:attribute type="xs:integer" name="dim2" use="optional"/>
+                  <xs:attribute type="xs:string" name="signalName" use="optional"/>
+                  <xs:attribute type="xs:boolean" name="isMessage" use="optional"/>
+                  <xs:attribute name="kind" use="optional">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="DataStoreRead|DataStoreWrite|VirtualBus"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                 </xs:attribute> 
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="debug" use="optional">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:pattern value="true|false"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>             
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Outports" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Outport" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ScalarRefs">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ScalarRef" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="displayName" use="optional" type="xs:string"/>
+                                </xs:extension>                                        
+                              </xs:simpleContent>                                    
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:integer" name="portNr" use="required"/>
+                  <xs:attribute type="xs:string" name="type" use="required"/>
+                  <xs:attribute type="xs:integer" name="width" use="optional"/>
+                  <xs:attribute type="xs:integer" name="dim1" use="optional"/>
+                  <xs:attribute type="xs:integer" name="dim2" use="optional"/>
+                  <xs:attribute type="xs:string" name="signalName" use="optional"/>
+                  <xs:attribute type="xs:boolean" name="isMessage" use="optional"/>
+                  <xs:attribute name="kind" use="optional">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="DataStoreRead|DataStoreWrite|VirtualBus"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                 </xs:attribute>		 
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="sampleTime" type="xs:string" use="required"/>
+          </xs:complexType>      
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="mdfDialect" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

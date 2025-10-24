@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.112" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_02\sldemo_mdlref_depgraph_tl.mdl" modelCreationDate="1998-09-10T09:44:42" creator="The MathWorks Inc.">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.112" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_02\sldemo_mdlref_depgraph_tl.mdl" creationDate="1998-09-10T09:44:42" modificationDate="2021-11-19T15:31:17">
+    <subsystem subsysID="ss1" physicalPath="sldemo_mdlref_depgraph_tl/TopSubsystem/Subsystem/TopSubsystem" path="TopSubsystem/Subsystem/TopSubsystem" sampleTime="60" name="TopSubsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="InPort" physicalPath="sldemo_mdlref_depgraph_tl/TopSubsystem/Subsystem/TopSubsystem/InPort" path="TopSubsystem/Subsystem/TopSubsystem/InPort">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sldemo_mdlref_depgraph_tl/TopSubsystem/Subsystem/TopSubsystem/Out1" path="TopSubsystem/Subsystem/TopSubsystem/Out1">
+        <miltype signalName="Heat Cost ($)">
+          <double/>
+        </miltype>
+        <siltype signalName="Heat Cost ($)">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="sldemo_mdlref_depgraph_tl/TopSubsystem/Subsystem/TopSubsystem/Out2" path="TopSubsystem/Subsystem/TopSubsystem/Out2">
+        <miltype signalName="Indoor Temp">
+          <double/>
+        </miltype>
+        <siltype signalName="Indoor Temp">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="sldemo_mdlref_heat2cost_tl" path="TopSubsystem/Subsystem/TopSubsystem/heat2cost" sampleTime="60" name="heat2cost" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="Heat" physicalPath="sldemo_mdlref_heat2cost_tl/Heat" path="TopSubsystem/Subsystem/TopSubsystem/heat2cost/Heat" modelRef="model002">
+        <miltype signalName="heater">
+          <double/>
+        </miltype>
+        <siltype signalName="heater">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Cost" physicalPath="sldemo_mdlref_heat2cost_tl/Cost" path="TopSubsystem/Subsystem/TopSubsystem/heat2cost/Cost" modelRef="model002">
+        <miltype signalName="Heat Cost ($)">
+          <double/>
+        </miltype>
+        <siltype signalName="Heat Cost ($)">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="sldemo_mdlref_house_tl" path="TopSubsystem/Subsystem/TopSubsystem/house" sampleTime="60" name="house" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="Heat" physicalPath="sldemo_mdlref_house_tl/Heat" path="TopSubsystem/Subsystem/TopSubsystem/house/Heat" modelRef="model003">
+        <miltype signalName="heater">
+          <double/>
+        </miltype>
+        <siltype signalName="heater">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="Tout" physicalPath="sldemo_mdlref_house_tl/Tout" path="TopSubsystem/Subsystem/TopSubsystem/house/Tout" modelRef="model003">
+        <miltype signalName="Tout">
+          <double/>
+        </miltype>
+        <siltype signalName="Tout">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Tin" physicalPath="sldemo_mdlref_house_tl/Tin" path="TopSubsystem/Subsystem/TopSubsystem/house/Tin" modelRef="model003">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="sldemo_mdlref_outdoor_temp_tl" path="TopSubsystem/Subsystem/TopSubsystem/outdoor temp" sampleTime="60" name="outdoor temp" scopeKind="SUT" kind="subsystem" modelRef="model005">
+      <inport portNumber="1" name="InPort" physicalPath="sldemo_mdlref_outdoor_temp_tl/InPort" path="TopSubsystem/Subsystem/TopSubsystem/outdoor temp/InPort" modelRef="model005">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Tout" physicalPath="sldemo_mdlref_outdoor_temp_tl/Tout" path="TopSubsystem/Subsystem/TopSubsystem/outdoor temp/Tout" modelRef="model005">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="sldemo_mdlref_F2C_tl2" path="TopSubsystem/Subsystem/TopSubsystem/outdoor temp/Fahrenheit to Celsius" sampleTime="60" name="Fahrenheit to Celsius" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="F" physicalPath="sldemo_mdlref_F2C_tl2/F" path="TopSubsystem/Subsystem/TopSubsystem/outdoor temp/Fahrenheit to Celsius/F" modelRef="model004">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float64/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="C" physicalPath="sldemo_mdlref_F2C_tl2/C" path="TopSubsystem/Subsystem/TopSubsystem/outdoor temp/Fahrenheit to Celsius/C" modelRef="model004">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="sldemo_mdlref_heater_tl" path="TopSubsystem/Subsystem/TopSubsystem/thermostat" sampleTime="60" name="thermostat" scopeKind="SUT" kind="subsystem" modelRef="model008">
+      <inport portNumber="1" name="Tin" physicalPath="sldemo_mdlref_heater_tl/Tin" path="TopSubsystem/Subsystem/TopSubsystem/thermostat/Tin" modelRef="model008">
+        <miltype signalName="Tin">
+          <double/>
+        </miltype>
+        <siltype signalName="Tin">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Heat" physicalPath="sldemo_mdlref_heater_tl/Heat" path="TopSubsystem/Subsystem/TopSubsystem/thermostat/Heat" modelRef="model008">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="sldemo_mdlref_F2C_tl1" path="TopSubsystem/Subsystem/TopSubsystem/thermostat/Fahrenheit to Celsius" sampleTime="60" name="Fahrenheit to Celsius" scopeKind="SUT" kind="subsystem" modelRef="model006">
+      <inport portNumber="1" name="F" physicalPath="sldemo_mdlref_F2C_tl1/F" path="TopSubsystem/Subsystem/TopSubsystem/thermostat/Fahrenheit to Celsius/F" modelRef="model006">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float64/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="C" physicalPath="sldemo_mdlref_F2C_tl1/C" path="TopSubsystem/Subsystem/TopSubsystem/thermostat/Fahrenheit to Celsius/C" modelRef="model006">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="sldemo_mdlref_thermostat_tl" path="TopSubsystem/Subsystem/TopSubsystem/thermostat/Thermostat" sampleTime="60" name="Thermostat" scopeKind="SUT" kind="subsystem" modelRef="model007">
+      <inport portNumber="1" name="Terr" physicalPath="sldemo_mdlref_thermostat_tl/Terr" path="TopSubsystem/Subsystem/TopSubsystem/thermostat/Thermostat/Terr" modelRef="model007">
+        <miltype signalName="Terr">
+          <double/>
+        </miltype>
+        <siltype signalName="Terr">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Blower&#10;switch" physicalPath="sldemo_mdlref_thermostat_tl/Blower&#10;switch" path="TopSubsystem/Subsystem/TopSubsystem/thermostat/Thermostat/Blower&#10;switch" modelRef="model007">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.28" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_02\sldemo_mdlref_heat2cost_tl.mdl" creationDate="2004-03-23T09:18:09" modificationDate="2021-11-19T15:31:17"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="1.29" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_02\sldemo_mdlref_house_tl.mdl" creationDate="2004-03-23T09:18:09" modificationDate="2021-11-19T15:31:17"/>
+  <model modelID="model004" modelKind="model_ref" modelVersion="1.25" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_02\sldemo_mdlref_F2C_tl2.mdl" creationDate="2004-03-23T09:18:08" modificationDate="2021-11-19T15:31:17"/>
+  <model modelID="model005" modelKind="model_ref" modelVersion="1.35" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_02\sldemo_mdlref_outdoor_temp_tl.mdl" creationDate="2004-03-23T09:18:09" modificationDate="2021-11-19T15:31:17"/>
+  <model modelID="model006" modelKind="model_ref" modelVersion="1.25" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_02\sldemo_mdlref_F2C_tl1.mdl" creationDate="2004-03-23T09:18:08" modificationDate="2021-11-19T15:31:17"/>
+  <model modelID="model007" modelKind="model_ref" modelVersion="1.27" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_02\sldemo_mdlref_thermostat_tl.mdl" creationDate="2004-03-23T09:18:08" modificationDate="2021-11-19T15:31:17"/>
+  <model modelID="model008" modelKind="model_ref" modelVersion="1.41" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_02\sldemo_mdlref_heater_tl.mdl" creationDate="2004-03-23T09:18:09" modificationDate="2021-11-19T15:31:17"/>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

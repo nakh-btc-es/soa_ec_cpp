@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20201113T110525_10756\tmp_ar_irv_01\ut_results\AddModelInfo.xml" modelVersion="1.19" modelPath="C:\Users\developer\AppData\Local\Temp\ut20201113T110525_10756\tmp_ar_irv_01\ar_irv.slx" modelCreationDate="2020-11-11T12:06:20" creator="developer">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.19" modelPath="C:\Users\developer\AppData\Local\Temp\ut20201113T110525_10756\tmp_ar_irv_01\ar_irv.slx" creationDate="2020-11-11T12:06:20" modificationDate="2020-11-13T09:12:41">
+    <subsystem subsysID="ss1" physicalPath="ar_irv" path="" sampleTime="0.1" name="ar_irv" scopeKind="DUMMY" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ar_irv/In1" path="In1">
+        <int8/>
+      </inport>
+      <inport portNumber="2" name="Runa1" physicalPath="ar_irv/Runa1" path="Runa1">
+        <unsupportedTypeInformation/>
+      </inport>
+      <inport portNumber="3" name="Runa2" physicalPath="ar_irv/Runa2" path="Runa2">
+        <unsupportedTypeInformation/>
+      </inport>
+      <inport portNumber="4" name="Runa3" physicalPath="ar_irv/Runa3" path="Runa3">
+        <unsupportedTypeInformation/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ar_irv/Out1" path="Out1">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="ar_irv/sub_A" path="sub_A" sampleTime="0.1" name="sub_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ar_irv/sub_A/In1" path="sub_A/In1">
+        <int8/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ar_irv/sub_A/Out1" path="sub_A/Out1">
+        <int8/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="ar_irv/sub_A/Out2" path="sub_A/Out2">
+        <int8/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="ar_irv/sub_A/Out3" path="sub_A/Out3">
+        <int8/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="ar_irv/sub_B" path="sub_B" sampleTime="0.1" name="sub_B" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ar_irv/sub_B/In1" path="sub_B/In1" signalName="a1">
+        <int8/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ar_irv/sub_B/Out1" path="sub_B/Out1">
+        <int8/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="ar_irv/sub_B/Out2" path="sub_B/Out2" signalName="a1">
+        <int8/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="ar_irv/sub_B/Out3" path="sub_B/Out3">
+        <int8/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="ar_irv/sub_C" path="sub_C" sampleTime="0.1" name="sub_C" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ar_irv/sub_C/In1" path="sub_C/In1" signalName="b1">
+        <int8/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ar_irv/sub_C/In2" path="sub_C/In2" signalName="b2">
+        <int8/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="ar_irv/sub_C/In3" path="sub_C/In3" signalName="b3">
+        <int8/>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="ar_irv/sub_C/In4" path="sub_C/In4" signalName="a2">
+        <int8/>
+      </inport>
+      <inport portNumber="5" name="In5" physicalPath="ar_irv/sub_C/In5" path="sub_C/In5" signalName="a3">
+        <int8/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ar_irv/sub_C/Out1" path="sub_C/Out1">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

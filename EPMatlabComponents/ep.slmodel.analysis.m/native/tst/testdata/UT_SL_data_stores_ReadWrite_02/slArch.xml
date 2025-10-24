@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_ReadWrite_02\init_datastore_examples.m" modelVersion="7.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_ReadWrite_02\datastore_examples.mdl" modelCreationDate="2018-02-15T16:17:11" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="7.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_ReadWrite_02\datastore_examples.mdl" creationDate="2018-02-15T16:17:11" modificationDate="2024-09-11T18:30:15" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_ReadWrite_02\init_datastore_examples.m">
+    <subsystem subsysID="ss1" physicalPath="datastore_examples" path="" sampleTime="0.2" name="datastore_examples" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="datastore_examples/In1" path="In1">
+        <boolean/>
+      </inport>
+      <parameter name="P_01" path="my_frame/top_A/Gain" physicalPath="datastore_examples/my_frame/top_A/Gain" origin="explicit_param" workspace="P_01" initValue="2.0">
+        <single/>
+        <usageContext path="my_frame/top_A/Gain" physicalPath="datastore_examples/my_frame/top_A/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="P_02" path="my_frame/top_A/sub_SF2/check_SF2" physicalPath="datastore_examples/my_frame/top_A/sub_SF2/check_SF2" origin="explicit_param" workspace="P_02" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_SF2/check_SF2" physicalPath="datastore_examples/my_frame/top_A/sub_SF2/check_SF2" simulinkBlockType="SubSystem" blockAttribute="Parameter"/>
+      </parameter>
+      <parameter name="P_03" path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" modelRef="model004" origin="explicit_param" workspace="P_03" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" simulinkBlockType="SubSystem" blockAttribute="Parameter" modelRef="model004"/>
+      </parameter>
+      <parameter name="P_04" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/Constant" physicalPath="sub_model_03/Constant" modelRef="model002" origin="explicit_param" workspace="P_04" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/Constant" physicalPath="sub_model_03/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/from/Constant" physicalPath="sub_model_02/sub_XX/from/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/to/deep/Constant" physicalPath="sub_model_02/sub_XX/to/deep/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+      </parameter>
+      <parameter name="P_05" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" modelRef="model002" origin="explicit_param" workspace="P_05" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/from/Constant1" physicalPath="sub_model_02/sub_XX/from/Constant1" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+      </parameter>
+      <parameter name="P_06" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" modelRef="model002" origin="explicit_param" workspace="P_06" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="datastore_examples/Out1" path="Out1">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="datastore_examples/Out2" path="Out2">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="0" name="Out1" physicalPath="datastore_examples/my_frame/top_A/sub_B1/Out1" path="my_frame/top_A/sub_B1/Out1" signalName="DS_01">
+        <boolean/>
+        <dataStoreMemory signalName="DS_01"/>
+      </outport>
+      <outport portNumber="0" name="Out1" physicalPath="datastore_examples/my_frame/top_A/sub_B4/Out1" path="my_frame/top_A/sub_B4/Out1" signalName="DS_02">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_02"/>
+      </outport>
+      <outport portNumber="0" name="Out2" physicalPath="sub_model_02/Out2" path="my_frame/top_A/sub_D1/Out2" modelRef="model004" signalName="DS_03">
+        <boolean/>
+        <dataStoreMemory signalName="DS_03"/>
+      </outport>
+      <outport portNumber="0" name="Out2" physicalPath="datastore_examples/my_frame/top_A/sub_B3/sub_C1/Out2" path="my_frame/top_A/sub_B3/sub_C1/Out2" signalName="DS_04">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_04"/>
+      </outport>
+      <outport portNumber="0" name="Out1" physicalPath="datastore_examples/my_frame/outside_sub_02/Out1" path="my_frame/outside_sub_02/Out1" signalName="DS_07">
+        <boolean/>
+        <dataStoreMemory signalName="DS_07"/>
+      </outport>
+      <display physicalPath="datastore_examples/my_frame/outside_sub_01/In1" path="my_frame/outside_sub_01/In1" name="In1" portNumber="1">
+        <boolean/>
+      </display>
+      <display physicalPath="datastore_examples/my_frame/top_A/In1" path="my_frame/top_A/In1" name="In1" portNumber="1" signalName="SIG_02">
+        <boolean/>
+      </display>
+      <display physicalPath="datastore_examples/In1" path="In1" name="In1" portNumber="1">
+        <boolean/>
+      </display>
+      <display physicalPath="datastore_examples/my_frame/outside_sub_02/In1" path="my_frame/outside_sub_02/In1" name="In1" portNumber="1">
+        <boolean/>
+      </display>
+      <display physicalPath="datastore_examples/my_frame/top_A" path="my_frame/top_A" name="top_A" portNumber="1">
+        <boolean/>
+      </display>
+      <display physicalPath="datastore_examples/my_frame/top_A/sub_B3" path="my_frame/top_A/sub_B3" name="sub_B3" portNumber="1">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_01/sub_Y/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/In2" name="In2" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_01/sub_Y/outside" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside" name="outside" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_03/inside/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/inside/In2" name="In2" portNumber="1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_02/In3" path="my_frame/top_A/sub_D1/In3" name="In3" portNumber="1" modelRef="model004">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_02/sub_XX/from" path="my_frame/top_A/sub_D1/sub_XX/from" name="from" portNumber="1" modelRef="model004">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="datastore_examples/my_frame" path="my_frame" sampleTime="0.2" name="my_frame" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="datastore_examples/my_frame/In1" path="my_frame/In1">
+        <boolean/>
+      </inport>
+      <parameter name="P_01" path="my_frame/top_A/Gain" physicalPath="datastore_examples/my_frame/top_A/Gain" origin="explicit_param" workspace="P_01" initValue="2.0">
+        <single/>
+        <usageContext path="my_frame/top_A/Gain" physicalPath="datastore_examples/my_frame/top_A/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="P_02" path="my_frame/top_A/sub_SF2/check_SF2" physicalPath="datastore_examples/my_frame/top_A/sub_SF2/check_SF2" origin="explicit_param" workspace="P_02" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_SF2/check_SF2" physicalPath="datastore_examples/my_frame/top_A/sub_SF2/check_SF2" simulinkBlockType="SubSystem" blockAttribute="Parameter"/>
+      </parameter>
+      <parameter name="P_03" path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" modelRef="model004" origin="explicit_param" workspace="P_03" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" simulinkBlockType="SubSystem" blockAttribute="Parameter" modelRef="model004"/>
+      </parameter>
+      <parameter name="P_04" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/Constant" physicalPath="sub_model_03/Constant" modelRef="model002" origin="explicit_param" workspace="P_04" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/Constant" physicalPath="sub_model_03/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/from/Constant" physicalPath="sub_model_02/sub_XX/from/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/to/deep/Constant" physicalPath="sub_model_02/sub_XX/to/deep/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+      </parameter>
+      <parameter name="P_05" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" modelRef="model002" origin="explicit_param" workspace="P_05" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/from/Constant1" physicalPath="sub_model_02/sub_XX/from/Constant1" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+      </parameter>
+      <parameter name="P_06" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" modelRef="model002" origin="explicit_param" workspace="P_06" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="datastore_examples/my_frame/Out1" path="my_frame/Out1">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="datastore_examples/my_frame/Out2" path="my_frame/Out2">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="0" name="Out1" physicalPath="datastore_examples/my_frame/top_A/sub_B1/Out1" path="my_frame/top_A/sub_B1/Out1" signalName="DS_01">
+        <boolean/>
+        <dataStoreMemory signalName="DS_01"/>
+      </outport>
+      <outport portNumber="0" name="Out1" physicalPath="datastore_examples/my_frame/top_A/sub_B4/Out1" path="my_frame/top_A/sub_B4/Out1" signalName="DS_02">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_02"/>
+      </outport>
+      <outport portNumber="0" name="Out2" physicalPath="sub_model_02/Out2" path="my_frame/top_A/sub_D1/Out2" modelRef="model004" signalName="DS_03">
+        <boolean/>
+        <dataStoreMemory signalName="DS_03"/>
+      </outport>
+      <outport portNumber="0" name="Out2" physicalPath="datastore_examples/my_frame/top_A/sub_B3/sub_C1/Out2" path="my_frame/top_A/sub_B3/sub_C1/Out2" signalName="DS_04">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_04"/>
+      </outport>
+      <outport portNumber="0" name="Out1" physicalPath="datastore_examples/my_frame/outside_sub_02/Out1" path="my_frame/outside_sub_02/Out1" signalName="DS_07">
+        <boolean/>
+        <dataStoreMemory signalName="DS_07"/>
+      </outport>
+      <display physicalPath="datastore_examples/my_frame/outside_sub_01/In1" path="my_frame/outside_sub_01/In1" name="In1" portNumber="1">
+        <boolean/>
+      </display>
+      <display physicalPath="datastore_examples/my_frame/top_A/In1" path="my_frame/top_A/In1" name="In1" portNumber="1" signalName="SIG_02">
+        <boolean/>
+      </display>
+      <display physicalPath="datastore_examples/my_frame/outside_sub_02/In1" path="my_frame/outside_sub_02/In1" name="In1" portNumber="1">
+        <boolean/>
+      </display>
+      <display physicalPath="datastore_examples/my_frame/top_A" path="my_frame/top_A" name="top_A" portNumber="1">
+        <boolean/>
+      </display>
+      <display physicalPath="datastore_examples/my_frame/top_A/sub_B3" path="my_frame/top_A/sub_B3" name="sub_B3" portNumber="1">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_01/sub_Y/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/In2" name="In2" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_01/sub_Y/outside" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside" name="outside" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_03/inside/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/inside/In2" name="In2" portNumber="1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_02/In3" path="my_frame/top_A/sub_D1/In3" name="In3" portNumber="1" modelRef="model004">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_02/sub_XX/from" path="my_frame/top_A/sub_D1/sub_XX/from" name="from" portNumber="1" modelRef="model004">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="datastore_examples/my_frame/outside_sub_01" path="my_frame/outside_sub_01" sampleTime="0.2" name="outside_sub_01" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="In2" physicalPath="datastore_examples/my_frame/outside_sub_01/In2" path="my_frame/outside_sub_01/In2" signalName="local_DS_07" initValue="0.0">
+        <boolean/>
+        <dataStoreMemory signalName="local_DS_07" physicalPath="datastore_examples/my_frame/l_DS_07"/>
+      </inport>
+      <inport portNumber="0" name="In1" physicalPath="datastore_examples/my_frame/outside_sub_01/In1" path="my_frame/outside_sub_01/In1" signalName="DS_07">
+        <boolean/>
+        <dataStoreMemory signalName="DS_07"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="datastore_examples/my_frame/outside_sub_01/Out1" path="my_frame/outside_sub_01/Out1">
+        <boolean/>
+      </outport>
+      <display physicalPath="datastore_examples/my_frame/outside_sub_01/In1" path="my_frame/outside_sub_01/In1" name="In1" portNumber="1">
+        <boolean/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="datastore_examples/my_frame/outside_sub_02" path="my_frame/outside_sub_02" sampleTime="0.2" name="outside_sub_02" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="datastore_examples/my_frame/outside_sub_02/In1" path="my_frame/outside_sub_02/In1">
+        <boolean/>
+      </inport>
+      <outport portNumber="0" name="Out2" physicalPath="datastore_examples/my_frame/outside_sub_02/Out2" path="my_frame/outside_sub_02/Out2" signalName="local_DS_07" initValue="0.0">
+        <boolean/>
+        <dataStoreMemory signalName="local_DS_07" physicalPath="datastore_examples/my_frame/l_DS_07"/>
+      </outport>
+      <outport portNumber="0" name="Out1" physicalPath="datastore_examples/my_frame/outside_sub_02/Out1" path="my_frame/outside_sub_02/Out1" signalName="DS_07">
+        <boolean/>
+        <dataStoreMemory signalName="DS_07"/>
+      </outport>
+      <display physicalPath="datastore_examples/my_frame/outside_sub_02/In1" path="my_frame/outside_sub_02/In1" name="In1" portNumber="1">
+        <boolean/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="datastore_examples/my_frame/top_A" path="my_frame/top_A" sampleTime="0.2" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="datastore_examples/my_frame/top_A/In1" path="my_frame/top_A/In1" signalName="SIG_02">
+        <boolean/>
+      </inport>
+      <parameter name="P_01" path="my_frame/top_A/Gain" physicalPath="datastore_examples/my_frame/top_A/Gain" origin="explicit_param" workspace="P_01" initValue="2.0">
+        <single/>
+        <usageContext path="my_frame/top_A/Gain" physicalPath="datastore_examples/my_frame/top_A/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="P_02" path="my_frame/top_A/sub_SF2/check_SF2" physicalPath="datastore_examples/my_frame/top_A/sub_SF2/check_SF2" origin="explicit_param" workspace="P_02" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_SF2/check_SF2" physicalPath="datastore_examples/my_frame/top_A/sub_SF2/check_SF2" simulinkBlockType="SubSystem" blockAttribute="Parameter"/>
+      </parameter>
+      <parameter name="P_03" path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" modelRef="model004" origin="explicit_param" workspace="P_03" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" simulinkBlockType="SubSystem" blockAttribute="Parameter" modelRef="model004"/>
+      </parameter>
+      <parameter name="P_04" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/Constant" physicalPath="sub_model_03/Constant" modelRef="model002" origin="explicit_param" workspace="P_04" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/Constant" physicalPath="sub_model_03/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/from/Constant" physicalPath="sub_model_02/sub_XX/from/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/to/deep/Constant" physicalPath="sub_model_02/sub_XX/to/deep/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+      </parameter>
+      <parameter name="P_05" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" modelRef="model002" origin="explicit_param" workspace="P_05" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/from/Constant1" physicalPath="sub_model_02/sub_XX/from/Constant1" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+      </parameter>
+      <parameter name="P_06" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" modelRef="model002" origin="explicit_param" workspace="P_06" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="datastore_examples/my_frame/top_A/Out1" path="my_frame/top_A/Out1">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="datastore_examples/my_frame/top_A/Out2" path="my_frame/top_A/Out2">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="0" name="Out1" physicalPath="datastore_examples/my_frame/top_A/sub_B1/Out1" path="my_frame/top_A/sub_B1/Out1" signalName="DS_01">
+        <boolean/>
+        <dataStoreMemory signalName="DS_01"/>
+      </outport>
+      <outport portNumber="0" name="Out1" physicalPath="datastore_examples/my_frame/top_A/sub_B4/Out1" path="my_frame/top_A/sub_B4/Out1" signalName="DS_02">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_02"/>
+      </outport>
+      <outport portNumber="0" name="Out2" physicalPath="sub_model_02/Out2" path="my_frame/top_A/sub_D1/Out2" modelRef="model004" signalName="DS_03">
+        <boolean/>
+        <dataStoreMemory signalName="DS_03"/>
+      </outport>
+      <outport portNumber="0" name="Out2" physicalPath="datastore_examples/my_frame/top_A/sub_B3/sub_C1/Out2" path="my_frame/top_A/sub_B3/sub_C1/Out2" signalName="DS_04">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_04"/>
+      </outport>
+      <display physicalPath="datastore_examples/my_frame/top_A/In1" path="my_frame/top_A/In1" name="In1" portNumber="1" signalName="SIG_02">
+        <boolean/>
+      </display>
+      <display physicalPath="datastore_examples/my_frame/top_A/sub_B3" path="my_frame/top_A/sub_B3" name="sub_B3" portNumber="1">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_01/sub_Y/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/In2" name="In2" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_01/sub_Y/outside" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside" name="outside" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_03/inside/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/inside/In2" name="In2" portNumber="1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_02/In3" path="my_frame/top_A/sub_D1/In3" name="In3" portNumber="1" modelRef="model004">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_02/sub_XX/from" path="my_frame/top_A/sub_D1/sub_XX/from" name="from" portNumber="1" modelRef="model004">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss8"/>
+      <subsystem refSubsysID="ss19"/>
+      <subsystem refSubsysID="ss20"/>
+      <subsystem refSubsysID="ss26"/>
+      <subsystem refSubsysID="ss28"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="datastore_examples/my_frame/top_A/sub_B1" path="my_frame/top_A/sub_B1" sampleTime="0.2" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="datastore_examples/my_frame/top_A/sub_B1/In1" path="my_frame/top_A/sub_B1/In1" signalName="SIG_02">
+        <boolean/>
+      </inport>
+      <outport portNumber="0" name="Out2" physicalPath="datastore_examples/my_frame/top_A/sub_B1/Out2" path="my_frame/top_A/sub_B1/Out2" signalName="local_DS_01" initValue="0.0">
+        <boolean/>
+        <dataStoreMemory signalName="local_DS_01" physicalPath="datastore_examples/my_frame/top_A/l_DS_01"/>
+      </outport>
+      <outport portNumber="0" name="Out1" physicalPath="datastore_examples/my_frame/top_A/sub_B1/Out1" path="my_frame/top_A/sub_B1/Out1" signalName="DS_01">
+        <boolean/>
+        <dataStoreMemory signalName="DS_01"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="datastore_examples/my_frame/top_A/sub_B2" path="my_frame/top_A/sub_B2" sampleTime="0.2" name="sub_B2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="In2" physicalPath="datastore_examples/my_frame/top_A/sub_B2/In2" path="my_frame/top_A/sub_B2/In2" signalName="local_DS_01" initValue="0.0">
+        <boolean/>
+        <dataStoreMemory signalName="local_DS_01" physicalPath="datastore_examples/my_frame/top_A/l_DS_01"/>
+      </inport>
+      <inport portNumber="0" name="In1" physicalPath="datastore_examples/my_frame/top_A/sub_B2/In1" path="my_frame/top_A/sub_B2/In1" signalName="DS_01">
+        <boolean/>
+        <dataStoreMemory signalName="DS_01"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="datastore_examples/my_frame/top_A/sub_B2/Out1" path="my_frame/top_A/sub_B2/Out1">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="datastore_examples/my_frame/top_A/sub_B3" path="my_frame/top_A/sub_B3" sampleTime="0.2" name="sub_B3" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="In1" physicalPath="datastore_examples/my_frame/top_A/sub_B3/sub_C1/In1" path="my_frame/top_A/sub_B3/sub_C1/In1" signalName="DS_02">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_02"/>
+      </inport>
+      <inport portNumber="0" name="In1" physicalPath="sub_model_01/In1" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/In1" modelRef="model003" signalName="DS_03">
+        <boolean/>
+        <dataStoreMemory signalName="DS_03"/>
+      </inport>
+      <parameter name="P_04" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/Constant" physicalPath="sub_model_03/Constant" modelRef="model002" origin="explicit_param" workspace="P_04" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/Constant" physicalPath="sub_model_03/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="P_05" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" modelRef="model002" origin="explicit_param" workspace="P_05" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="P_06" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" modelRef="model002" origin="explicit_param" workspace="P_06" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="datastore_examples/my_frame/top_A/sub_B3/Out1" path="my_frame/top_A/sub_B3/Out1">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="datastore_examples/my_frame/top_A/sub_B3/Out2" path="my_frame/top_A/sub_B3/Out2">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="datastore_examples/my_frame/top_A/sub_B3/Out3" path="my_frame/top_A/sub_B3/Out3">
+        <boolean/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="datastore_examples/my_frame/top_A/sub_B3/Out4" path="my_frame/top_A/sub_B3/Out4">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="datastore_examples/my_frame/top_A/sub_B3/Out5" path="my_frame/top_A/sub_B3/Out5">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="0" name="Out2" physicalPath="datastore_examples/my_frame/top_A/sub_B3/sub_C1/Out2" path="my_frame/top_A/sub_B3/sub_C1/Out2" signalName="DS_04">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_04"/>
+      </outport>
+      <display physicalPath="sub_model_01/sub_Y/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/In2" name="In2" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_01/sub_Y/outside" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside" name="outside" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_03/inside/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/inside/In2" name="In2" portNumber="1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss9"/>
+      <subsystem refSubsysID="ss10"/>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="datastore_examples/my_frame/top_A/sub_B3/sub_C1" path="my_frame/top_A/sub_B3/sub_C1" sampleTime="0.2" name="sub_C1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="In1" physicalPath="datastore_examples/my_frame/top_A/sub_B3/sub_C1/In1" path="my_frame/top_A/sub_B3/sub_C1/In1" signalName="DS_02">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_02"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="datastore_examples/my_frame/top_A/sub_B3/sub_C1/Out1" path="my_frame/top_A/sub_B3/sub_C1/Out1">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="0" name="Out2" physicalPath="datastore_examples/my_frame/top_A/sub_B3/sub_C1/Out2" path="my_frame/top_A/sub_B3/sub_C1/Out2" signalName="DS_04">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_04"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="datastore_examples/my_frame/top_A/sub_B3/sub_C2" path="my_frame/top_A/sub_B3/sub_C2" sampleTime="0.2" name="sub_C2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="In1" physicalPath="datastore_examples/my_frame/top_A/sub_B3/sub_C2/In1" path="my_frame/top_A/sub_B3/sub_C2/In1" signalName="DS_02">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_02"/>
+      </inport>
+      <inport portNumber="0" name="In1" physicalPath="sub_model_01/In1" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/In1" modelRef="model003" signalName="DS_03">
+        <boolean/>
+        <dataStoreMemory signalName="DS_03"/>
+      </inport>
+      <inport portNumber="0" name="In2" physicalPath="sub_model_01/sub_Y/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/In2" modelRef="model003" signalName="DS_04">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_04"/>
+      </inport>
+      <parameter name="P_04" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/Constant" physicalPath="sub_model_03/Constant" modelRef="model002" origin="explicit_param" workspace="P_04" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/Constant" physicalPath="sub_model_03/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="P_05" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" modelRef="model002" origin="explicit_param" workspace="P_05" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="P_06" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" modelRef="model002" origin="explicit_param" workspace="P_06" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="datastore_examples/my_frame/top_A/sub_B3/sub_C2/Out1" path="my_frame/top_A/sub_B3/sub_C2/Out1">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="datastore_examples/my_frame/top_A/sub_B3/sub_C2/Out2" path="my_frame/top_A/sub_B3/sub_C2/Out2">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="datastore_examples/my_frame/top_A/sub_B3/sub_C2/Out3" path="my_frame/top_A/sub_B3/sub_C2/Out3">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="datastore_examples/my_frame/top_A/sub_B3/sub_C2/Out4" path="my_frame/top_A/sub_B3/sub_C2/Out4">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="sub_model_01/sub_Y/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/In2" name="In2" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_01/sub_Y/outside" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside" name="outside" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_03/inside/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/inside/In2" name="In2" portNumber="1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss11"/>
+    </subsystem>
+    <subsystem subsysID="ss11" physicalPath="sub_model_01" path="my_frame/top_A/sub_B3/sub_C2/sub_D1" sampleTime="0.2" name="sub_D1" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="0" name="In1" physicalPath="sub_model_01/In1" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/In1" modelRef="model003" signalName="DS_03">
+        <boolean/>
+        <dataStoreMemory signalName="DS_03"/>
+      </inport>
+      <inport portNumber="0" name="In2" physicalPath="sub_model_01/sub_Y/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/In2" modelRef="model003" signalName="DS_04">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_04"/>
+      </inport>
+      <parameter name="P_04" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/Constant" physicalPath="sub_model_03/Constant" modelRef="model002" origin="explicit_param" workspace="P_04" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/Constant" physicalPath="sub_model_03/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="P_05" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" modelRef="model002" origin="explicit_param" workspace="P_05" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="P_06" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" modelRef="model002" origin="explicit_param" workspace="P_06" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sub_model_01/Out1" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/Out1" modelRef="model003">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="sub_model_01/Out2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/Out2" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="sub_model_01/Out3" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/Out3" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="sub_model_01/sub_Y/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/In2" name="In2" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_01/sub_Y/outside" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside" name="outside" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_03/inside/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/inside/In2" name="In2" portNumber="1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss12"/>
+    </subsystem>
+    <subsystem subsysID="ss12" physicalPath="sub_model_01/sub_Y" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y" sampleTime="0.2" name="sub_Y" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="0" name="In2" physicalPath="sub_model_01/sub_Y/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/In2" modelRef="model003" signalName="DS_04">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_04"/>
+      </inport>
+      <parameter name="P_04" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/Constant" physicalPath="sub_model_03/Constant" modelRef="model002" origin="explicit_param" workspace="P_04" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/Constant" physicalPath="sub_model_03/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="P_05" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" modelRef="model002" origin="explicit_param" workspace="P_05" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="P_06" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" modelRef="model002" origin="explicit_param" workspace="P_06" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sub_model_01/sub_Y/Out1" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/Out1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="sub_model_01/sub_Y/Out2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/Out2" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="sub_model_01/sub_Y/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/In2" name="In2" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_01/sub_Y/outside" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside" name="outside" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_03/inside/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/inside/In2" name="In2" portNumber="1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss13"/>
+    </subsystem>
+    <subsystem subsysID="ss13" physicalPath="sub_model_03" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside" sampleTime="0.2" name="outside" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="0" name="In2" physicalPath="sub_model_03/inside/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/inside/In2" modelRef="model002" signalName="DS_04">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_04"/>
+      </inport>
+      <parameter name="P_04" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/Constant" physicalPath="sub_model_03/Constant" modelRef="model002" origin="explicit_param" workspace="P_04" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/Constant" physicalPath="sub_model_03/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="P_05" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" modelRef="model002" origin="explicit_param" workspace="P_05" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="P_06" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" modelRef="model002" origin="explicit_param" workspace="P_06" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sub_model_03/Out1" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/Out1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="sub_model_03/inside/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/inside/In2" name="In2" portNumber="1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss14"/>
+      <subsystem refSubsysID="ss15"/>
+      <subsystem refSubsysID="ss16"/>
+    </subsystem>
+    <subsystem subsysID="ss14" physicalPath="sub_model_03/from" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from" sampleTime="0.2" name="from" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="0" name="In1" physicalPath="sub_model_03/from/In1" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/In1" modelRef="model002" signalName="local_DS_01" initValue="0.0">
+        <boolean/>
+        <dataStoreMemory signalName="local_DS_01" physicalPath="sub_model_03/l_DS_01"/>
+      </inport>
+      <parameter name="P_06" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" modelRef="model002" origin="explicit_param" workspace="P_06" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Constant" physicalPath="sub_model_03/from/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sub_model_03/from/Out1" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/from/Out1" modelRef="model002">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss15" physicalPath="sub_model_03/inside" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/inside" sampleTime="0.2" name="inside" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="0" name="In2" physicalPath="sub_model_03/inside/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/inside/In2" modelRef="model002" signalName="DS_04">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_04"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sub_model_03/inside/Out1" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/inside/Out1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="sub_model_03/inside/In2" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/inside/In2" name="In2" portNumber="1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss16" physicalPath="sub_model_03/to" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to" sampleTime="0.2" name="to" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="sub_model_03/to/In1" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/In1" modelRef="model002">
+        <boolean/>
+      </inport>
+      <parameter name="P_05" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" modelRef="model002" origin="explicit_param" workspace="P_05" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="0" name="check_SF3" physicalPath="sub_model_03/to/deep/check_SF3" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/check_SF3/local_DS_01" modelRef="model002" signalName="local_DS_01" initValue="0.0">
+        <boolean/>
+        <dataStoreMemory signalName="local_DS_01" physicalPath="sub_model_03/l_DS_01"/>
+      </outport>
+      <subsystem refSubsysID="ss17"/>
+    </subsystem>
+    <subsystem subsysID="ss17" physicalPath="sub_model_03/to/deep" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep" sampleTime="0.2" name="deep" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="sub_model_03/to/deep/In1" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/In1" modelRef="model002">
+        <boolean/>
+      </inport>
+      <parameter name="P_05" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" modelRef="model002" origin="explicit_param" workspace="P_05" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/Constant" physicalPath="sub_model_03/to/deep/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="0" name="check_SF3" physicalPath="sub_model_03/to/deep/check_SF3" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/check_SF3/local_DS_01" modelRef="model002" signalName="local_DS_01" initValue="0.0">
+        <boolean/>
+        <dataStoreMemory signalName="local_DS_01" physicalPath="sub_model_03/l_DS_01"/>
+      </outport>
+      <subsystem refSubsysID="ss18"/>
+    </subsystem>
+    <subsystem subsysID="ss18" physicalPath="sub_model_03/to/deep/check_SF3" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/check_SF3" sampleTime="0.2" name="check_SF3" scopeKind="SUT" kind="stateflow" modelRef="model002">
+      <inport portNumber="1" name="u" physicalPath="sub_model_03/to/deep/check_SF3/u" path="my_frame/top_A/sub_B3/sub_C2/sub_D1/sub_Y/outside/to/deep/check_SF3/u" modelRef="model002">
+        <boolean/>
+      </inport>
+    </subsystem>
+    <subsystem subsysID="ss19" physicalPath="datastore_examples/my_frame/top_A/sub_B4" path="my_frame/top_A/sub_B4" sampleTime="0.2" name="sub_B4" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="datastore_examples/my_frame/top_A/sub_B4/In1" path="my_frame/top_A/sub_B4/In1">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+      </inport>
+      <outport portNumber="0" name="Out1" physicalPath="datastore_examples/my_frame/top_A/sub_B4/Out1" path="my_frame/top_A/sub_B4/Out1" signalName="DS_02">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_02"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss20" physicalPath="sub_model_02" path="my_frame/top_A/sub_D1" sampleTime="0.2" name="sub_D1" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="In1" physicalPath="sub_model_02/In1" path="my_frame/top_A/sub_D1/In1" modelRef="model004">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="2" name="In3" physicalPath="sub_model_02/In3" path="my_frame/top_A/sub_D1/In3" modelRef="model004">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="3" name="In2" physicalPath="sub_model_02/In2" path="my_frame/top_A/sub_D1/In2" modelRef="model004">
+        <boolean/>
+      </inport>
+      <parameter name="P_03" path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" modelRef="model004" origin="explicit_param" workspace="P_03" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" simulinkBlockType="SubSystem" blockAttribute="Parameter" modelRef="model004"/>
+      </parameter>
+      <parameter name="P_04" path="my_frame/top_A/sub_D1/sub_XX/from/Constant" physicalPath="sub_model_02/sub_XX/from/Constant" modelRef="model004" origin="explicit_param" workspace="P_04" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/from/Constant" physicalPath="sub_model_02/sub_XX/from/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/to/deep/Constant" physicalPath="sub_model_02/sub_XX/to/deep/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+      </parameter>
+      <parameter name="P_05" path="my_frame/top_A/sub_D1/sub_XX/from/Constant1" physicalPath="sub_model_02/sub_XX/from/Constant1" modelRef="model004" origin="explicit_param" workspace="P_05" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/from/Constant1" physicalPath="sub_model_02/sub_XX/from/Constant1" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+      </parameter>
+      <outport portNumber="0" name="Out1" physicalPath="sub_model_02/Out1" path="my_frame/top_A/sub_D1/Out1" modelRef="model004" signalName="DS_02">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_02"/>
+      </outport>
+      <outport portNumber="0" name="Out2" physicalPath="sub_model_02/Out2" path="my_frame/top_A/sub_D1/Out2" modelRef="model004" signalName="DS_03">
+        <boolean/>
+        <dataStoreMemory signalName="DS_03"/>
+      </outport>
+      <outport portNumber="0" name="Out3" physicalPath="sub_model_02/Out3" path="my_frame/top_A/sub_D1/Out3" modelRef="model004" signalName="DS_04">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_04"/>
+      </outport>
+      <display physicalPath="sub_model_02/In3" path="my_frame/top_A/sub_D1/In3" name="In3" portNumber="1" modelRef="model004">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="sub_model_02/sub_XX/from" path="my_frame/top_A/sub_D1/sub_XX/from" name="from" portNumber="1" modelRef="model004">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss21"/>
+    </subsystem>
+    <subsystem subsysID="ss21" physicalPath="sub_model_02/sub_XX" path="my_frame/top_A/sub_D1/sub_XX" sampleTime="0.2" name="sub_XX" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <parameter name="P_03" path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" modelRef="model004" origin="explicit_param" workspace="P_03" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" simulinkBlockType="SubSystem" blockAttribute="Parameter" modelRef="model004"/>
+      </parameter>
+      <parameter name="P_04" path="my_frame/top_A/sub_D1/sub_XX/from/Constant" physicalPath="sub_model_02/sub_XX/from/Constant" modelRef="model004" origin="explicit_param" workspace="P_04" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/from/Constant" physicalPath="sub_model_02/sub_XX/from/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/to/deep/Constant" physicalPath="sub_model_02/sub_XX/to/deep/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+      </parameter>
+      <parameter name="P_05" path="my_frame/top_A/sub_D1/sub_XX/from/Constant1" physicalPath="sub_model_02/sub_XX/from/Constant1" modelRef="model004" origin="explicit_param" workspace="P_05" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/from/Constant1" physicalPath="sub_model_02/sub_XX/from/Constant1" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+      </parameter>
+      <outport portNumber="0" name="Out2" physicalPath="sub_model_02/sub_XX/Out2" path="my_frame/top_A/sub_D1/sub_XX/Out2" modelRef="model004" signalName="DS_04">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <boolean/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="DS_04"/>
+      </outport>
+      <display physicalPath="sub_model_02/sub_XX/from" path="my_frame/top_A/sub_D1/sub_XX/from" name="from" portNumber="1" modelRef="model004">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss22"/>
+      <subsystem refSubsysID="ss23"/>
+    </subsystem>
+    <subsystem subsysID="ss22" physicalPath="sub_model_02/sub_XX/from" path="my_frame/top_A/sub_D1/sub_XX/from" sampleTime="0.2" name="from" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="0" name="In1" physicalPath="sub_model_02/sub_XX/from/In1" path="my_frame/top_A/sub_D1/sub_XX/from/In1" modelRef="model004" signalName="local_DS_02" initValue="0.0">
+        <boolean/>
+        <dataStoreMemory signalName="local_DS_02" physicalPath="sub_model_02/sub_XX/l_DS_02"/>
+      </inport>
+      <inport portNumber="0" name="In2" physicalPath="sub_model_02/sub_XX/from/In2" path="my_frame/top_A/sub_D1/sub_XX/from/In2" modelRef="model004" signalName="DS_08" initValue="0.0">
+        <boolean/>
+        <dataStoreMemory signalName="DS_08" physicalPath="sub_model_02/sub_XX/l_DS_08"/>
+      </inport>
+      <parameter name="P_04" path="my_frame/top_A/sub_D1/sub_XX/from/Constant" physicalPath="sub_model_02/sub_XX/from/Constant" modelRef="model004" origin="explicit_param" workspace="P_04" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/from/Constant" physicalPath="sub_model_02/sub_XX/from/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+      </parameter>
+      <parameter name="P_05" path="my_frame/top_A/sub_D1/sub_XX/from/Constant1" physicalPath="sub_model_02/sub_XX/from/Constant1" modelRef="model004" origin="explicit_param" workspace="P_05" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/from/Constant1" physicalPath="sub_model_02/sub_XX/from/Constant1" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sub_model_02/sub_XX/from/Out1" path="my_frame/top_A/sub_D1/sub_XX/from/Out1" modelRef="model004">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="sub_model_02/sub_XX/from/Out2" path="my_frame/top_A/sub_D1/sub_XX/from/Out2" modelRef="model004">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss23" physicalPath="sub_model_02/sub_XX/to" path="my_frame/top_A/sub_D1/sub_XX/to" sampleTime="0.2" name="to" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="In1" physicalPath="sub_model_02/sub_XX/to/In1" path="my_frame/top_A/sub_D1/sub_XX/to/In1" modelRef="model004">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sub_model_02/sub_XX/to/In2" path="my_frame/top_A/sub_D1/sub_XX/to/In2" modelRef="model004">
+        <boolean/>
+      </inport>
+      <parameter name="P_03" path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" modelRef="model004" origin="explicit_param" workspace="P_03" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" simulinkBlockType="SubSystem" blockAttribute="Parameter" modelRef="model004"/>
+      </parameter>
+      <parameter name="P_04" path="my_frame/top_A/sub_D1/sub_XX/to/deep/Constant" physicalPath="sub_model_02/sub_XX/to/deep/Constant" modelRef="model004" origin="explicit_param" workspace="P_04" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/to/deep/Constant" physicalPath="sub_model_02/sub_XX/to/deep/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+      </parameter>
+      <outport portNumber="0" name="check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3/local_DS_02" modelRef="model004" signalName="local_DS_02" initValue="0.0">
+        <boolean/>
+        <dataStoreMemory signalName="local_DS_02" physicalPath="sub_model_02/sub_XX/l_DS_02"/>
+      </outport>
+      <outport portNumber="0" name="Out2" physicalPath="sub_model_02/sub_XX/to/deep/Out2" path="my_frame/top_A/sub_D1/sub_XX/to/deep/Out2" modelRef="model004" signalName="DS_08" initValue="0.0">
+        <boolean/>
+        <dataStoreMemory signalName="DS_08" physicalPath="sub_model_02/sub_XX/l_DS_08"/>
+      </outport>
+      <subsystem refSubsysID="ss24"/>
+    </subsystem>
+    <subsystem subsysID="ss24" physicalPath="sub_model_02/sub_XX/to/deep" path="my_frame/top_A/sub_D1/sub_XX/to/deep" sampleTime="0.2" name="deep" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="In1" physicalPath="sub_model_02/sub_XX/to/deep/In1" path="my_frame/top_A/sub_D1/sub_XX/to/deep/In1" modelRef="model004">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sub_model_02/sub_XX/to/deep/In2" path="my_frame/top_A/sub_D1/sub_XX/to/deep/In2" modelRef="model004">
+        <boolean/>
+      </inport>
+      <parameter name="P_03" path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" modelRef="model004" origin="explicit_param" workspace="P_03" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" simulinkBlockType="SubSystem" blockAttribute="Parameter" modelRef="model004"/>
+      </parameter>
+      <parameter name="P_04" path="my_frame/top_A/sub_D1/sub_XX/to/deep/Constant" physicalPath="sub_model_02/sub_XX/to/deep/Constant" modelRef="model004" origin="explicit_param" workspace="P_04" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/to/deep/Constant" physicalPath="sub_model_02/sub_XX/to/deep/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model004"/>
+      </parameter>
+      <outport portNumber="0" name="check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3/local_DS_02" modelRef="model004" signalName="local_DS_02" initValue="0.0">
+        <boolean/>
+        <dataStoreMemory signalName="local_DS_02" physicalPath="sub_model_02/sub_XX/l_DS_02"/>
+      </outport>
+      <outport portNumber="0" name="Out2" physicalPath="sub_model_02/sub_XX/to/deep/Out2" path="my_frame/top_A/sub_D1/sub_XX/to/deep/Out2" modelRef="model004" signalName="DS_08" initValue="0.0">
+        <boolean/>
+        <dataStoreMemory signalName="DS_08" physicalPath="sub_model_02/sub_XX/l_DS_08"/>
+      </outport>
+      <subsystem refSubsysID="ss25"/>
+    </subsystem>
+    <subsystem subsysID="ss25" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" sampleTime="0.2" name="check_SF3" scopeKind="SUT" kind="stateflow" modelRef="model004">
+      <inport portNumber="1" name="u" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3/u" path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3/u" modelRef="model004">
+        <boolean/>
+      </inport>
+      <parameter name="P_03" path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" modelRef="model004" origin="explicit_param" workspace="P_03" initValue="0">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" simulinkBlockType="SubSystem" blockAttribute="Parameter" modelRef="model004"/>
+      </parameter>
+    </subsystem>
+    <subsystem subsysID="ss26" physicalPath="datastore_examples/my_frame/top_A/sub_SF1" path="my_frame/top_A/sub_SF1" sampleTime="0.2" name="sub_SF1" scopeKind="SUT" kind="subsystem">
+      <outport portNumber="1" name="Out1" physicalPath="datastore_examples/my_frame/top_A/sub_SF1/Out1" path="my_frame/top_A/sub_SF1/Out1" signalName="y">
+        <boolean/>
+      </outport>
+      <outport portNumber="0" name="check_SF1" physicalPath="datastore_examples/my_frame/top_A/sub_SF1/check_SF1" path="my_frame/top_A/sub_SF1/check_SF1/DS_01" signalName="DS_01">
+        <boolean/>
+        <dataStoreMemory signalName="DS_01"/>
+      </outport>
+      <subsystem refSubsysID="ss27"/>
+    </subsystem>
+    <subsystem subsysID="ss27" physicalPath="datastore_examples/my_frame/top_A/sub_SF1/check_SF1" path="my_frame/top_A/sub_SF1/check_SF1" sampleTime="0.2" name="check_SF1" scopeKind="SUT" kind="stateflow">
+      <outport portNumber="1" name="y" physicalPath="datastore_examples/my_frame/top_A/sub_SF1/check_SF1/y" path="my_frame/top_A/sub_SF1/check_SF1/y" signalName="y">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss28" physicalPath="datastore_examples/my_frame/top_A/sub_SF2" path="my_frame/top_A/sub_SF2" sampleTime="0.2" name="sub_SF2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="datastore_examples/my_frame/top_A/sub_SF2/In1" path="my_frame/top_A/sub_SF2/In1" signalName="y">
+        <boolean/>
+      </inport>
+      <parameter name="P_02" path="my_frame/top_A/sub_SF2/check_SF2" physicalPath="datastore_examples/my_frame/top_A/sub_SF2/check_SF2" origin="explicit_param" workspace="P_02" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_SF2/check_SF2" physicalPath="datastore_examples/my_frame/top_A/sub_SF2/check_SF2" simulinkBlockType="SubSystem" blockAttribute="Parameter"/>
+      </parameter>
+      <outport portNumber="0" name="check_SF2" physicalPath="datastore_examples/my_frame/top_A/sub_SF2/check_SF2" path="my_frame/top_A/sub_SF2/check_SF2/local_DS_01" signalName="local_DS_01" initValue="0.0">
+        <boolean/>
+        <dataStoreMemory signalName="local_DS_01" physicalPath="datastore_examples/my_frame/top_A/l_DS_01"/>
+      </outport>
+      <subsystem refSubsysID="ss29"/>
+    </subsystem>
+    <subsystem subsysID="ss29" physicalPath="datastore_examples/my_frame/top_A/sub_SF2/check_SF2" path="my_frame/top_A/sub_SF2/check_SF2" sampleTime="0.2" name="check_SF2" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="u" physicalPath="datastore_examples/my_frame/top_A/sub_SF2/check_SF2/u" path="my_frame/top_A/sub_SF2/check_SF2/u" signalName="y">
+        <boolean/>
+      </inport>
+      <parameter name="P_02" path="my_frame/top_A/sub_SF2/check_SF2" physicalPath="datastore_examples/my_frame/top_A/sub_SF2/check_SF2" origin="explicit_param" workspace="P_02" initValue="1">
+        <boolean/>
+        <usageContext path="my_frame/top_A/sub_SF2/check_SF2" physicalPath="datastore_examples/my_frame/top_A/sub_SF2/check_SF2" simulinkBlockType="SubSystem" blockAttribute="Parameter"/>
+      </parameter>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="7.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_ReadWrite_02\sub_model_03.mdl" creationDate="2018-02-16T14:19:49" modificationDate="2024-09-11T18:30:15" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_ReadWrite_02\init_datastore_examples.m"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="7.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_ReadWrite_02\sub_model_01.mdl" creationDate="2018-02-15T16:17:11" modificationDate="2024-09-11T18:30:15" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_ReadWrite_02\init_datastore_examples.m"/>
+  <model modelID="model004" modelKind="model_ref" modelVersion="7.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_ReadWrite_02\sub_model_02.mdl" creationDate="2018-02-15T16:17:11" modificationDate="2024-09-11T18:30:15" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_data_stores_ReadWrite_02\init_datastore_examples.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

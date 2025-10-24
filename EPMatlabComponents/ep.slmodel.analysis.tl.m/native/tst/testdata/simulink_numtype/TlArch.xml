@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="12.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240913T143450_13820\tmp_ut_simulink_numtype\numeric_type_tl.mdl" modelCreationDate="2013-01-07T14:14:38" creator="Administrator">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="5.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="12.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240913T143450_13820\tmp_ut_simulink_numtype\numeric_type_tl.mdl" creationDate="2013-01-07T14:14:38" modificationDate="2024-09-13T16:55:46">
+    <subsystem subsysID="ss1" physicalPath="numeric_type_tl/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="0.1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/in1" path="top_A/Subsystem/top_A/in1">
+        <miltype>
+          <single/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="in2" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/in2" path="top_A/Subsystem/top_A/in2">
+        <miltype>
+          <single/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="in3" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/in3" path="top_A/Subsystem/top_A/in3">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float64/>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="in4" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/in4" path="top_A/Subsystem/top_A/in4">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="5" name="in5" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/in5" path="top_A/Subsystem/top_A/in5">
+        <miltype>
+          <fixedPoint wordLength="32" simulinkTypeName="fixdt(1,32,0.1,10)" isSigned="1" slope="1.0000000000000001e-01" bias="1.0000000000000000e+01" min="-2.147483548E8" max="2.147483747E8"/>
+        </miltype>
+        <siltype>
+          <Float64/>
+        </siltype>
+      </inport>
+      <inport portNumber="6" name="in6" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/in6" path="top_A/Subsystem/top_A/in6">
+        <miltype>
+          <fixedPoint wordLength="8" simulinkTypeName="fixdt(1,8,0)" isSigned="1" slope="1.0000000000000000e+00" bias="0.0000000000000000e+00" min="-128.0" max="127.0"/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="7" name="in7" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/in7" path="top_A/Subsystem/top_A/in7">
+        <miltype>
+          <uint16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="6.5535000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="cal_gain6" path="top_A/Subsystem/top_A/Gain6" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/Gain6" origin="explicit_param" restricted="false" workspace="cal_gain6">
+        <miltype initValue="-3.0019999999999998e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="-3.0019999999999998e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Gain6" targetLinkBlockKind="TL_Gain" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/Gain6" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <calibration name="cal_gain5" path="top_A/Subsystem/top_A/Gain5" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/Gain5" origin="explicit_param" restricted="false" workspace="cal_gain5">
+        <miltype initValue="-2.0999999046325684e+00">
+          <single/>
+        </miltype>
+        <siltype initValue="-2.0999999046325684e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Gain5" targetLinkBlockKind="TL_Gain" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/Gain5" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <calibration name="cal_gain4" path="top_A/Subsystem/top_A/Gain4" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/Gain4" origin="explicit_param" restricted="false" workspace="cal_gain4">
+        <miltype initValue="0.0000000000000000e+00">
+          <boolean/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Gain4" targetLinkBlockKind="TL_Gain" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/Gain4" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <calibration name="cal_gain3" path="top_A/Subsystem/top_A/Gain3" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/Gain3" origin="explicit_param" restricted="false" workspace="cal_gain3">
+        <miltype initValue="3.2000000476837158e+00">
+          <single/>
+        </miltype>
+        <siltype initValue="3.2000000476837158e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Gain3" targetLinkBlockKind="TL_Gain" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/Gain3" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <calibration name="cal_gain2" path="top_A/Subsystem/top_A/Gain2" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/Gain2" origin="explicit_param" restricted="false" workspace="cal_gain2">
+        <miltype initValue="9.0000000000000000e+00">
+          <fixedPoint wordLength="8" simulinkTypeName="fixdt(1,8,0)" isSigned="1" slope="1.0000000000000000e+00" bias="0.0000000000000000e+00" min="-128.0" max="127.0"/>
+        </miltype>
+        <siltype initValue="9.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Gain2" targetLinkBlockKind="TL_Gain" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/Gain2" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <calibration name="cal_gain1" path="top_A/Subsystem/top_A/Gain1" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/Gain1" origin="explicit_param" restricted="false" workspace="cal_gain1">
+        <miltype initValue="-2.0000000000000000e+00">
+          <fixedPoint wordLength="8" simulinkTypeName="fixdt(1,8,0)" isSigned="1" slope="1.0000000000000000e+00" bias="0.0000000000000000e+00" min="-128.0" max="127.0"/>
+        </miltype>
+        <siltype initValue="-2.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Gain1" targetLinkBlockKind="TL_Gain" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/Gain1" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <calibration name="cal_gain" path="top_A/Subsystem/top_A/Gain" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/Gain" origin="explicit_param" restricted="false" workspace="cal_gain">
+        <miltype initValue="3.0000000000000000e+00">
+          <fixedPoint wordLength="8" simulinkTypeName="fixdt(0,8,0)" isSigned="0" slope="1.0000000000000000e+00" bias="0.0000000000000000e+00" min="0.0" max="255.0"/>
+        </miltype>
+        <siltype initValue="3.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Gain" targetLinkBlockKind="TL_Gain" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/Gain" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <outport portNumber="1" name="out1" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/out1" path="top_A/Subsystem/top_A/out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="out2" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/out2" path="top_A/Subsystem/top_A/out2">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="out3" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/out3" path="top_A/Subsystem/top_A/out3">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="4" name="out4" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/out4" path="top_A/Subsystem/top_A/out4">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="5" name="out5" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/out5" path="top_A/Subsystem/top_A/out5">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="6" name="out6" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/out6" path="top_A/Subsystem/top_A/out6">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="7" name="out7" physicalPath="numeric_type_tl/top_A/Subsystem/top_A/out7" path="top_A/Subsystem/top_A/out7">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

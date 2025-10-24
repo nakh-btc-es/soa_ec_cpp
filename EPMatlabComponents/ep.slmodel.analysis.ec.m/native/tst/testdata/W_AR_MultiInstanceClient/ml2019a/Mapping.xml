@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Wrapper_ar_multi_instance_client"/>
+    <Architecture id="id1" name="Wrapper_ar_multi_instance_client [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Wrapper_ar_multi_instance_client.c:1:Wrapper_ar_multi_instance_client_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="RteStub_r_IF_rport_in1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In2" refId="id0"/>
+        <Path path="RteStub_r_IF_rport_in2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Mock_external_sum/dsin_external_sum_y" refId="id0"/>
+        <Path path="dsin_external_sum_y" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="RteStub_s_IF_sport_out" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_external_sum/dsout_external_sum_u1" refId="id0"/>
+        <Path path="dsout_external_sum_u1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_external_sum/dsout_external_sum_u2" refId="id0"/>
+        <Path path="dsout_external_sum_u2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ar_multi_instance_client:param2_a" refId="id0"/>
+        <Path path="Rte_CData_param2_a_data" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="Wrapper_ar_multi_instance_client:param2_b" refId="id0"/>
+        <Path path="Rte_CData_param2_b_data" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="ar_multi_instance_client/ar_multi_instance_client" refId="id0"/>
+      <Path path="Wrapper_ar_multi_instance_client.c:1:Wrapper_ar_multi_instance_client_step/ep_autosar_multi_instance_adapter.c:1:my_runa1_adapter" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="ar_multi_instance_client/ar_multi_instance_client/In1" refId="id0"/>
+        <Path path="RteStub_r_IF_rport_in1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="ar_multi_instance_client/ar_multi_instance_client/In2" refId="id0"/>
+        <Path path="RteStub_r_IF_rport_in2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Mock_external_sum/dsin_external_sum_y" refId="id0"/>
+        <Path path="dsin_external_sum_y" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="ar_multi_instance_client/ar_multi_instance_client/Out1" refId="id0"/>
+        <Path path="RteStub_s_IF_sport_out" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_external_sum/dsout_external_sum_u1" refId="id0"/>
+        <Path path="dsout_external_sum_u1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_external_sum/dsout_external_sum_u2" refId="id0"/>
+        <Path path="dsout_external_sum_u2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ar_multi_instance_client:param2_a" refId="id0"/>
+        <Path path="Rte_CData_param2_a_data" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ar_multi_instance_client:param2_b" refId="id0"/>
+        <Path path="Rte_CData_param2_b_data" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

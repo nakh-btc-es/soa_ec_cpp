@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="main_model"/>
+    <Architecture id="id1" name="main_model [C-Code]"/>
+    <ScopeMapping>
+      <Path path="sub_A" refId="id0"/>
+      <Path path="main_model.c:1:exp_A" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_A/In1" refId="id0"/>
+        <Path path="in1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_A/Out1" refId="id0"/>
+        <Path path="delay_and3_out" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_B" refId="id0"/>
+      <Path path="main_model.c:1:exp_B" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_B/In1" refId="id0"/>
+        <Path path="in1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_B/Out1" refId="id0"/>
+        <Path path="subB_out" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_B/sub_sub_B" refId="id0"/>
+      <Path path="main_model.c:1:exp_B/main_model.c:1:func_func_B" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_B/sub_sub_B/In1" refId="id0"/>
+        <Path path="subB_in" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_B/sub_sub_B/Out1" refId="id0"/>
+        <Path path="subB_out" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_H1" refId="id0"/>
+      <Path path="main_model.c:1:exp_H1" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_H1/In1" refId="id0"/>
+        <Path path="in2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_H1/Out1" refId="id0"/>
+        <Path path="subH1_out" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_H2" refId="id0"/>
+      <Path path="main_model.c:1:exp_H2" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_H2/In1" refId="id0"/>
+        <Path path="in2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_H2/Out1" refId="id0"/>
+        <Path path="subH2_out" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_H2/sub_sub_H2" refId="id0"/>
+      <Path path="main_model.c:1:exp_H2/main_model.c:1:sub_sub_h2" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_H2/sub_sub_H2/In1" refId="id0"/>
+        <Path path="subH2_in" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_H2/sub_sub_H2/Out1" refId="id0"/>
+        <Path path="subH2_out" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_Y/sub_G1" refId="id0"/>
+      <Path path="main_model.c:1:exp_G1" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_Y/sub_G1/In1" refId="id0"/>
+        <Path path="in2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_Y/sub_G1/Out1" refId="id0"/>
+        <Path path="subG1_out" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_Y/sub_G2" refId="id0"/>
+      <Path path="main_model.c:1:exp_G2" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_Y/sub_G2/In1" refId="id0"/>
+        <Path path="in2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_Y/sub_G2/Out1" refId="id0"/>
+        <Path path="subG2_out" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_Y/sub_G2/sub_sub_G2" refId="id0"/>
+      <Path path="main_model.c:1:exp_G2/main_model.c:1:sub_sub_g2" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_Y/sub_G2/sub_sub_G2/In1" refId="id0"/>
+        <Path path="subG2_in" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_Y/sub_G2/sub_sub_G2/Out1" refId="id0"/>
+        <Path path="subG2_out" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_X/sub_C" refId="id0"/>
+      <Path path="sub_model1.c:1:sub_model1_exp_C" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_X/sub_C/In1" refId="id0"/>
+        <Path path="in1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_X/sub_C/Out1" refId="id0"/>
+        <Path path="subC_out" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_X/sub_C/sub_sub_C" refId="id0"/>
+      <Path path="sub_model1.c:1:sub_model1_exp_C/sub_model1.c:1:func_func_c" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_X/sub_C/sub_sub_C/In1" refId="id0"/>
+        <Path path="subC_in" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_X/sub_C/sub_sub_C/Out1" refId="id0"/>
+        <Path path="subC_out" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_X/sub_D" refId="id0"/>
+      <Path path="sub_model1.c:1:sub_model1_exp_D" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_X/sub_D/In1" refId="id0"/>
+        <Path path="in1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_X/sub_D/Out1" refId="id0"/>
+        <Path path="subD_out" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

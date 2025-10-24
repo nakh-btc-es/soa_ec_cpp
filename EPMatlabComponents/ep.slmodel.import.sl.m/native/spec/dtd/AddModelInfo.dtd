@@ -1,0 +1,130 @@
+<!-- DTD Description for additional model information                       -->
+<!--                                                                        -->
+<!-- author: steffen.kollmann@btc-es.de                                     -->
+<!--                                                                        -->
+<!-- (c) BTC - Embedded Systems AG, Germany.                                -->
+
+
+<!-- AdditionalModelInformation:                                            -->
+<!--                                                                        -->
+<!--   Subnodes:                                                            -->
+<!--        Subsystems    List of all subsystems which have                 -->
+<!--                      to be considered during the model analysis.       -->
+<!--        Parameters    List of all parameters used for                   -->
+<!--                      the model calibration.                            -->
+<!--        Locals        List of all locals which                          -->
+<!--                      have to be displayed.                             -->
+<!--                                                                        -->
+<!ELEMENT AdditionalModelInformation (Subsystems, Parameters?, Locals?)>
+
+
+<!-- Subsystems: list of all Subsystems                                     -->
+<!--                                                                        -->
+<!--   Subnodes:                                                            -->
+<!--        Subsystem+  selected Subsystem in SUT hierarchy                 -->
+<!--                                                                        -->
+<!--   Attributes:                                                          -->
+<!--      usage             (whitelist|blacklist|none)                      -->
+<!--                            The option 'whitelist' specifies that the   -->
+<!--                            list should be used as white list.          -->
+<!--                            In this case only the elements that are     -->
+<!--                            explicitly listed are considered.           -->
+<!--                            The option 'blacklist' specifies that the   -->
+<!--                            elements of the list should NOT be used.    -->
+<!--                            The option 'none' means that all listed     -->
+<!--                            elements and all subelemens are considered. -->
+<!--                            Default is 'none'.                          -->
+<!--                                                                        -->
+<!ELEMENT Subsystems (Subsystem+)>
+<!ATTLIST Subsystems     
+                usage    (whitelist|blacklist|none)   #IMPLIED>
+
+
+<!-- Subsystem:   selected Subsystem in SUT hierarchy                       -->
+<!--                                                                        -->
+<!--   Attributes:                                                          -->
+<!--    modelPath       Path to the subsystem. The real model path is       -->
+<!--                    needed and not the virtual path.                    -->
+<!--    isTopLevel      Specifies if the subsystem is the top level         -->
+<!--                    subsystem. False is default. Note, only             -->     
+<!--                    one subsystem can be top level.                     -->
+<!--                                                                        -->
+<!ELEMENT Subsystem EMPTY>
+<!ATTLIST Subsystem  
+               modelPath          CDATA        #REQUIRED
+               isTopLevel         (true|false) #IMPLIED>
+
+
+<!-- Parameters: List of all parameters for the model calibration.          -->
+<!--                                                                        -->
+<!--   Subnodes:                                                            -->
+<!--      GlobalParameter*        Parameter as defined in the workspace     -->
+<!--                                                                        -->
+<!--      Attributes:                                                       -->
+<!--          usage             (whitelist|blacklist)                       -->
+<!--                            The option 'whitelist' specifies if the     -->
+<!--                            list should be used as white list.          -->
+<!--                            In this case only the elements that are     -->
+<!--                            explicitly listed are considered.           -->
+<!--                            The option 'blacklist' specifies if the     -->
+<!--                            elements inside the list should NOT be      -->
+<!--                            used.                                       -->
+<!--                            Default is 'whitelist'.                     -->
+<!--                                                                        -->
+<!--   Note: If node 'Parameters' is specified and no child nodes           -->
+<!--   are provided, it means that no GlobalParameters will be selected.    -->
+<!--   If this node is not provided at all, it means that the               -->
+<!--   selection is not restricted. Then all potential Parameters found in  -->
+<!--   model are selected.                                                  -->
+<!--                                                                        -->
+<!ELEMENT Parameters (GlobalParameter*)>
+<!ATTLIST Parameters     
+                usage    (whitelist|blacklist)   #IMPLIED>
+
+<!-- GlobalParameter:    parameter as specified in the workspace            -->
+<!--                                                                        -->
+<!--   Attributes:                                                          -->
+<!--           name            Name of the global parameter                 -->
+<!--                                                                        -->
+<!ELEMENT GlobalParameter EMPTY>
+<!ATTLIST GlobalParameter  
+             name     CDATA        #REQUIRED>
+
+
+<!-- Locals:      list of locals                                            -->
+<!--                                                                        -->
+<!--   Subnodes:                                                            -->
+<!--    Local*     A Local that has to be displayed.                        -->
+<!--                                                                        -->
+<!--   Note: if node 'Locals' is specified but no elements 'Local'          -->
+<!--   are provided, it means that no Locals will be selected.              -->
+<!--   If this node is not provided at all, it means that the               -->
+<!--   selection is not restricted. Then all potential Locals found in      -->
+<!--   model are selected.                                                  -->
+<!--                                                                        -->
+<!ELEMENT Locals (Local*)>
+
+
+<!-- Local:   local which has to be displayed                               -->
+<!--                                                                        -->
+<!--   Subnodes:                                                            -->
+<!--        Port    List of ports which have to be displayed.               -->
+<!--                                                                        -->
+<!--   Attributes:                                                          -->
+<!--    modelPath       Path to the block. The real model path is needed    -->
+<!--                    and not the virtual path.                           -->
+<!--                                                                        -->
+<!ELEMENT Local (Port+)>
+<!ATTLIST Local  
+             modelPath     CDATA        #REQUIRED>
+
+
+<!-- Port:           port which has to be displayed                         -->
+<!--                                                                        -->
+<!--   Attributes:                                                          -->
+<!--    number       Number of the port                                     -->
+<!--                                                                        -->
+<!ELEMENT Port EMPTY>
+<!ATTLIST Port  
+            number     CDATA        #REQUIRED>
+

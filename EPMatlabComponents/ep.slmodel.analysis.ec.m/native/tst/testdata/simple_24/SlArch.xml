@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_24\init.m" modelVersion="1.24" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_24\test.slx" modelCreationDate="2018-04-18T18:54:12" creator="jmcadmin">
+  <toolInfo name="Matlab" release="(R2019b)" version="9.7" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2019b)" version="10.0" patchLevel=""/>
+  <model modelKind="model" modelID="model001" modelVersion="1.24" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_24\test.slx" creationDate="2018-04-18T18:54:12" initScript="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_24\init.m">
+    <subsystem subsysID="ss1" physicalPath="test" path="" sampleTime="0.01" name="test" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In_BMS_flgDcChgLine_Close" physicalPath="test/In_BMS_flgDcChgLine_Close" path="In_BMS_flgDcChgLine_Close" signalName="MIL_BMS_flgDcChgLine_Close">
+        <enumType name="ENUM_Flag">
+          <enumElement name="Flag_False" value="0"/>
+          <enumElement name="Flag_True" value="1"/>
+        </enumType>
+      </inport>
+      <parameter name="ParDt_VMM03LMC_tiLvInitAwakeHold_s_sfix16sp01" path="Pre flgChgLine_Close/Data_" physicalPath="test/Pre flgChgLine_Close/Data_" initValue="8.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="ParDt_VMM03LMC_tiLvInitAwakeHold_s_sfix16sp01">
+        <fixedPoint wordLength="16" simulinkTypeName="fixdt(1,16,0.01,0)" isSigned="1" slope="1.0000000000000000e-02" bias="0.0000000000000000e+00" min="1.0000000000000000e-02" max="1.0000000000000000e+01"/>
+        <usageContext path="Pre flgChgLine_Close/Data_" physicalPath="test/Pre flgChgLine_Close/Data_" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out_flgChgLine_Close" physicalPath="test/Out_flgChgLine_Close" path="Out_flgChgLine_Close" signalName="MIL_Out_flgChgLine_Close">
+        <enumType name="ENUM_Flag">
+          <enumElement name="Flag_False" value="0"/>
+          <enumElement name="Flag_True" value="1"/>
+        </enumType>
+      </outport>
+      <display physicalPath="test/Pre flgChgLine_Close" path="Pre flgChgLine_Close" name="Pre flgChgLine_Close" portNumber="1" signalName="MIL_Out_flgChgLine_Close">
+        <enumType name="ENUM_Flag">
+          <enumElement name="Flag_False" value="0"/>
+          <enumElement name="Flag_True" value="1"/>
+        </enumType>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

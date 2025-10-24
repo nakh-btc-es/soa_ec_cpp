@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="Main.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_SubsystemReference\Main_ert_rtw"/>
+    <File annotate="yes" id="ID72" kind="source" name="Sub_SubRef.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_SubsystemReference\Main_ert_rtw"/>
+    <File annotate="yes" id="ID73" kind="source" name="Subsystem1.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_SubsystemReference\Main_ert_rtw"/>
+    <File annotate="yes" id="ID74" kind="source" name="SubsystemReference.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_SubsystemReference\Main_ert_rtw"/>
+    <File annotate="yes" id="ID75" kind="source" name="ModelRefWithSubRef.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_SubsystemReference\slprj\ert\ModelRefWithSubRef"/>
+    <File annotate="yes" id="ID76" kind="source" name="SubRef_ModelRef.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_SubsystemReference\slprj\ert\ModelRefWithSubRef"/>
+    <File annotate="yes" id="ID77" kind="source" name="ModelSimple.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_SubsystemReference\slprj\ert\ModelSimple"/>
+    <File annotate="yes" id="ID78" kind="source" name="Model_Sub.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_SubsystemReference\slprj\ert\ModelSimple"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_SubsystemReference\slprj\ert\ModelSimple"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_SubsystemReference\slprj\ert\ModelRefWithSubRef"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_SubsystemReference"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_SubsystemReference\Main_ert_rtw"/>
+    <IncludePath path="C:\Matlab\R2019b\extern\include"/>
+    <IncludePath path="C:\Matlab\R2019b\simulink\include"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\src"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\src\ext_mode\common"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\ert"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_SubsystemReference\slprj\ert\_sharedutils"/>
+  </IncludePaths>
+  <Functions archName="Main [C-Code]">
+    <Function fileref="ID71" initFunc="Main_initialize" name="Main_step">
+      <Interface>
+        <InterfaceObj kind="in" var="In1"/>
+        <InterfaceObj kind="in" var="In2"/>
+        <InterfaceObj kind="out" var="Out1"/>
+        <InterfaceObj kind="out" var="Out2"/>
+        <InterfaceObj kind="cal" var="param_SubsystemRef"/>
+        <InterfaceObj kind="cal" var="param_add"/>
+        <InterfaceObj kind="cal" var="param_topLevelSubsystemRef"/>
+        <InterfaceObj kind="disp" var="In1_Model"/>
+        <InterfaceObj kind="disp" var="Out2_Sub1"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID74" initFunc="Main_initialize" name="SubsystemReference">
+      <Interface>
+        <InterfaceObj kind="in" var="In1"/>
+        <InterfaceObj kind="in" var="In2"/>
+        <InterfaceObj kind="out" var="Out1"/>
+        <InterfaceObj kind="cal" var="param_SubsystemRef"/>
+        <InterfaceObj kind="cal" var="param_add"/>
+        <InterfaceObj kind="cal" var="param_topLevelSubsystemRef"/>
+        <InterfaceObj kind="disp" var="In1_Model"/>
+        <InterfaceObj kind="disp" var="Out2_Sub1"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID72" initFunc="Main_initialize" name="Sub_SubRef">
+      <Interface>
+        <InterfaceObj kind="in" var="In1_Sub_SubRef"/>
+        <InterfaceObj kind="out" var="Out1_Sub_SubRef"/>
+        <InterfaceObj kind="cal" var="param_add"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID73" initFunc="Main_initialize" name="Subsystem1">
+      <Interface>
+        <InterfaceObj kind="in" var="In1"/>
+        <InterfaceObj kind="in" var="In2"/>
+        <InterfaceObj kind="out" var="Out1_Sub1"/>
+        <InterfaceObj kind="out" var="Out2_Sub1"/>
+        <InterfaceObj kind="cal" var="param_SubsystemRef"/>
+        <InterfaceObj kind="disp" var="In1_Model"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID77" initFunc="Main_initialize" name="ModelSimple">
+      <Interface>
+        <InterfaceObj kind="in" var="In1_Model"/>
+        <InterfaceObj kind="out" var="Out1_Sub1"/>
+      </Interface>
+    </Function>
+    <Function initFunc="Main_initialize" name="Model_Sub">
+      <Interface>
+        <InterfaceObj kind="in" var="In1_Model"/>
+        <InterfaceObj kind="in" var="In2_ModelSub"/>
+        <InterfaceObj kind="out" var="Out1_Sub1"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID75" initFunc="Main_initialize" name="ModelRefWithSubRef">
+      <Interface>
+        <InterfaceObj kind="in" var="In1"/>
+        <InterfaceObj kind="out" var="Out2"/>
+        <InterfaceObj kind="cal" var="param_add"/>
+      </Interface>
+    </Function>
+    <Function initFunc="Main_initialize" name="SubRef_ModelRef">
+      <Interface>
+        <InterfaceObj kind="in" var="In1"/>
+        <InterfaceObj kind="cal" var="param_add"/>
+      </Interface>
+    </Function>
+  </Functions>
+</CodeModel>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="fuelsys_sf6"/>
+    <Architecture id="id1" name="fuelsys_sf6 [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller"/>
+      <Path refId="id1" path="fuelratecontroller.c:1:fuelratecontroller"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="throttle"/>
+        <Path refId="id1" path="throttle"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="speed"/>
+        <Path refId="id1" path="speed"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="EGO"/>
+        <Path refId="id1" path="EGO"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="press"/>
+        <Path refId="id1" path="press"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="fuel_rate"/>
+        <Path refId="id1" path="fuel_rate"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/EGO&#10;(estimated)(1)"/>
+        <Path refId="id1" path="EGO_est"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/MAP&#10;(estimated)(1)"/>
+        <Path refId="id1" path="MAP_est"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/est_air_flow(1)"/>
+        <Path refId="id1" path="est_air_flow"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic/fail_O2"/>
+        <Path refId="id1" path="fail_O2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation/feedback_correction(1)"/>
+        <Path refId="id1" path="feedback_correction"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic/fuel_mode"/>
+        <Path refId="id1" path="fuel_mode"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/speed&#10;(estimated)(1)"/>
+        <Path refId="id1" path="speed_est"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy/throttle&#10;(estimated)(1)"/>
+        <Path refId="id1" path="throttle_est"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/Switchable&#10;Compensation/mode&#10;select(1)"/>
+        <Path refId="id1" path="Sa6_mode_select"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/fuel_rate(1)"/>
+        <Path refId="id1" path="fuel_rate"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic/fail_PRESS"/>
+        <Path refId="id1" path="fail_PRESS"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic/fail_SPEED"/>
+        <Path refId="id1" path="fail_SPEED"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic/fail_THROT"/>
+        <Path refId="id1" path="fail_THROT"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/Airflow calculation"/>
+      <Path refId="id1" path="fuelratecontroller.c:1:fuelratecontroller/fuelratecontroller.c:1:IntakeAirflowEstimation"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="throttle (estimated)"/>
+        <Path refId="id1" path="throttle_est"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="speed (estimated)"/>
+        <Path refId="id1" path="speed_est"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="EGO (estimated)"/>
+        <Path refId="id1" path="EGO_est"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="MAP (estimated)"/>
+        <Path refId="id1" path="MAP_est"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="fail_O2"/>
+        <Path refId="id1" path="fail_O2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="fuel_mode"/>
+        <Path refId="id1" path="fuel_mode"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="est_air_flow"/>
+        <Path refId="id1" path="est_air_flow"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="feedback_correction"/>
+        <Path refId="id1" path="feedback_correction"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation"/>
+      <Path refId="id1" path="fuelratecontroller.c:1:fuelratecontroller/fuelratecontroller.c:1:FuelRateCalculation"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="est_air_flow"/>
+        <Path refId="id1" path="est_air_flow"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="feedback&#10;correction"/>
+        <Path refId="id1" path="feedback_correction"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="fail_O2"/>
+        <Path refId="id1" path="fail_O2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="fuel_mode"/>
+        <Path refId="id1" path="fuel_mode"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="fuel_rate"/>
+        <Path refId="id1" path="fuel_rate"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/Fuel  Calculation/Switchable&#10;Compensation/mode&#10;select(1)"/>
+        <Path refId="id1" path="Sa6_mode_select"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/Sensor correction and &#10;Fault Redundancy"/>
+      <Path refId="id1" path="fuelratecontroller.c:1:fuelratecontroller/fuelratecontroller.c:1:SensorCorrection"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="throttle"/>
+        <Path refId="id1" path="throttle"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="speed"/>
+        <Path refId="id1" path="speed"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="EGO"/>
+        <Path refId="id1" path="EGO"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="press"/>
+        <Path refId="id1" path="press"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="fail_THROT"/>
+        <Path refId="id1" path="fail_THROT"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="fail_SPEED"/>
+        <Path refId="id1" path="fail_SPEED"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="fail_O2"/>
+        <Path refId="id1" path="fail_O2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="fail_PRESS"/>
+        <Path refId="id1" path="fail_PRESS"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="throttle&#10;(estimated)"/>
+        <Path refId="id1" path="throttle_est"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="speed&#10;(estimated)"/>
+        <Path refId="id1" path="speed_est"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="EGO&#10;(estimated)"/>
+        <Path refId="id1" path="EGO_est"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="MAP&#10;(estimated)"/>
+        <Path refId="id1" path="MAP_est"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="fuelratecontroller/Subsystem/fuelratecontroller/control logic"/>
+      <Path refId="id1" path="fuelratecontroller.c:1:fuelratecontroller/fuelratecontroller.c:1:hilger"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="throttle"/>
+        <Path refId="id1" path="throttle"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="speed"/>
+        <Path refId="id1" path="speed"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="EGO"/>
+        <Path refId="id1" path="EGO"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="press"/>
+        <Path refId="id1" path="press"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="tSim"/>
+        <Path refId="id1" path="tSim"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="fail_THROT"/>
+        <Path refId="id1" path="fail_THROT"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="fail_SPEED"/>
+        <Path refId="id1" path="fail_SPEED"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="fail_O2"/>
+        <Path refId="id1" path="fail_O2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="fail_PRESS"/>
+        <Path refId="id1" path="fail_PRESS"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="fuel_mode"/>
+        <Path refId="id1" path="fuel_mode"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

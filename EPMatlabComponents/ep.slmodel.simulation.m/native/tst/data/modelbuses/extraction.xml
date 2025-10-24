@@ -1,0 +1,846 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="2BE">
+	<Scope uid="2BE" name="modelbuses" path="modelbuses" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="modelbuses" subsystemLogging="on">
+		<InPort name="InBusA" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBus">
+			<Variable varid="varif_396" signalName="InBusA.FlptSig1" signalType="single" isFloat="yes">
+				<ifName ifid="if_396" lsb="1" offset="0" displayName="InBusA.InBusA.FlptSig1" identifier="INPUT:InBusA.InBusA.FlptSig1" />
+			</Variable>
+			<Variable varid="varif_397" signalName="InBusA.FlptSig2" signalType="single" isFloat="yes">
+				<ifName ifid="if_397" lsb="1" offset="0" displayName="InBusA.InBusA.FlptSig2" identifier="INPUT:InBusA.InBusA.FlptSig2" />
+			</Variable>
+		</InPort>
+		<InPort name="InB" portNumber="2" compositeSig="none">
+			<Variable varid="varif_398" signalName="InB" signalType="single" isFloat="yes">
+				<ifName ifid="if_398" lsb="1" offset="0" displayName="InB" identifier="INPUT:InB" />
+			</Variable>
+		</InPort>
+		<InPort name="InC" portNumber="3" compositeSig="none">
+			<Variable varid="varif_399" signalName="InC" signalType="single" isFloat="yes">
+				<ifName ifid="if_399" lsb="1" offset="0" displayName="InC" identifier="INPUT:InC" />
+			</Variable>
+		</InPort>
+		<InPort name="InD" portNumber="4" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusOfBuses">
+			<Variable varid="varif_401" signalName="InBusOfBuses.BusSig1.FlptSig1" signalType="single" isFloat="yes">
+				<ifName ifid="if_401" lsb="1" offset="0" displayName="InD.InBusOfBuses.BusSig1.FlptSig1" identifier="INPUT:InD.InBusOfBuses.BusSig1.FlptSig1" />
+			</Variable>
+			<Variable varid="varif_402" signalName="InBusOfBuses.BusSig1.FlptSig2" signalType="single" isFloat="yes">
+				<ifName ifid="if_402" lsb="1" offset="0" displayName="InD.InBusOfBuses.BusSig1.FlptSig2" identifier="INPUT:InD.InBusOfBuses.BusSig1.FlptSig2" />
+			</Variable>
+			<Variable varid="varif_403" signalName="InBusOfBuses.BusSig2.FxptSig1" signalType="fixdt(1,16,0.03125,0)" isFloat="yes">
+				<ifName ifid="if_403" lsb="0.03125" offset="0.0" displayName="InD.InBusOfBuses.BusSig2.FxptSig1" identifier="INPUT:InD.InBusOfBuses.BusSig2.FxptSig1" />
+			</Variable>
+			<Variable varid="varif_404" signalName="InBusOfBuses.BusSig2.FxptSig2" signalType="fixdt(1,16,0.03125,0)" isFloat="yes">
+				<ifName ifid="if_404" lsb="0.03125" offset="0.0" displayName="InD.InBusOfBuses.BusSig2.FxptSig2" identifier="INPUT:InD.InBusOfBuses.BusSig2.FxptSig2" />
+			</Variable>
+		</InPort>
+		<InPort name="InE" portNumber="5" compositeSig="none">
+			<Variable varid="varif_405" signalName="InD" signalType="single" isFloat="yes">
+				<ifName ifid="if_405" lsb="1" offset="0" displayName="InE" identifier="INPUT:InE" />
+			</Variable>
+		</InPort>
+		<InPort name="InF" portNumber="6" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusOfSignalAndBus">
+			<Variable varid="varif_407" signalName="InBusOfSignalAndBus.DoubleFlptSig" signalType="double" isFloat="yes">
+				<ifName ifid="if_407" lsb="1" offset="0" displayName="InF.InBusOfSignalAndBus.DoubleFlptSig" identifier="INPUT:InF.InBusOfSignalAndBus.DoubleFlptSig" />
+			</Variable>
+			<Variable varid="varif_408" signalName="InBusOfSignalAndBus.BusSig1.FlptSig1" signalType="single" isFloat="yes">
+				<ifName ifid="if_408" lsb="1" offset="0" displayName="InF.InBusOfSignalAndBus.BusSig1.FlptSig1" identifier="INPUT:InF.InBusOfSignalAndBus.BusSig1.FlptSig1" />
+			</Variable>
+			<Variable varid="varif_409" signalName="InBusOfSignalAndBus.BusSig1.FlptSig2" signalType="single" isFloat="yes">
+				<ifName ifid="if_409" lsb="1" offset="0" displayName="InF.InBusOfSignalAndBus.BusSig1.FlptSig2" identifier="INPUT:InF.InBusOfSignalAndBus.BusSig1.FlptSig2" />
+			</Variable>
+		</InPort>
+		<OutPort name="OutBusA" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBus">
+			<Variable varid="varif_411" signalName="OutBusA.FlptSig1" signalType="single" isFloat="yes">
+				<ifName ifid="if_411" lsb="1" offset="0" displayName="OutBusA.OutBusA.FlptSig1" identifier="OUTPUT:OutBusA.OutBusA.FlptSig1" />
+			</Variable>
+			<Variable varid="varif_412" signalName="OutBusA.FlptSig2" signalType="single" isFloat="yes">
+				<ifName ifid="if_412" lsb="1" offset="0" displayName="OutBusA.OutBusA.FlptSig2" identifier="OUTPUT:OutBusA.OutBusA.FlptSig2" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutB" portNumber="2" compositeSig="none">
+			<Variable varid="varif_413" signalName="OutB" signalType="single" isFloat="yes">
+				<ifName ifid="if_413" lsb="1" offset="0" displayName="OutB" identifier="OUTPUT:OutB" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutC" portNumber="3" compositeSig="none">
+			<Variable varid="varif_414" signalName="OutC" signalType="single" isFloat="yes">
+				<ifName ifid="if_414" lsb="1" offset="0" displayName="OutC" identifier="OUTPUT:OutC" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutD" portNumber="4" compositeSig="none">
+			<Variable varid="varif_415" signalName="OutD" signalType="single" isFloat="yes">
+				<ifName ifid="if_415" lsb="1" offset="0" displayName="OutD" identifier="OUTPUT:OutD" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutE" portNumber="5" compositeSig="none">
+			<Variable varid="varif_416" signalName="OutE" signalType="single" isFloat="yes">
+				<ifName ifid="if_416" lsb="1" offset="0" displayName="OutE" identifier="OUTPUT:OutE" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutF" portNumber="6" compositeSig="none">
+			<Variable varid="varif_417" signalName="OutF" signalType="single" isFloat="yes">
+				<ifName ifid="if_417" lsb="1" offset="0" displayName="OutF" identifier="OUTPUT:OutF" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutG" portNumber="7" compositeSig="none">
+			<Variable varid="varif_418" signalName="OutG" signalType="single" isFloat="yes">
+				<ifName ifid="if_418" lsb="1" offset="0" displayName="OutG" identifier="OUTPUT:OutG" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutH" portNumber="8" compositeSig="none">
+			<Variable varid="varif_419" signalName="OutH" signalType="single" isFloat="yes">
+				<ifName ifid="if_419" lsb="1" offset="0" displayName="OutH" identifier="OUTPUT:OutH" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutI" portNumber="9" compositeSig="none">
+			<Variable varid="varif_420" signalName="OutI" signalType="single" isFloat="yes">
+				<ifName ifid="if_420" lsb="1" offset="0" displayName="OutI" identifier="OUTPUT:OutI" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutJ" portNumber="10" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBus">
+			<Variable varid="varif_422" signalName="localObj_OutJ.FlptSig1" signalType="single" isFloat="yes">
+				<ifName ifid="if_422" lsb="1" offset="0" displayName="OutJ.localObj_OutJ.FlptSig1" identifier="OUTPUT:OutJ.localObj_OutJ.FlptSig1" />
+			</Variable>
+			<Variable varid="varif_423" signalName="localObj_OutJ.FlptSig2" signalType="single" isFloat="yes">
+				<ifName ifid="if_423" lsb="1" offset="0" displayName="OutJ.localObj_OutJ.FlptSig2" identifier="OUTPUT:OutJ.localObj_OutJ.FlptSig2" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutK" portNumber="11" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBus">
+			<Variable varid="varif_425" signalName="localObj_OutK.FlptSig1" signalType="single" isFloat="yes">
+				<ifName ifid="if_425" lsb="1" offset="0" displayName="OutK.localObj_OutK.FlptSig1" identifier="OUTPUT:OutK.localObj_OutK.FlptSig1" />
+			</Variable>
+			<Variable varid="varif_426" signalName="localObj_OutK.FlptSig2" signalType="single" isFloat="yes">
+				<ifName ifid="if_426" lsb="1" offset="0" displayName="OutK.localObj_OutK.FlptSig2" identifier="OUTPUT:OutK.localObj_OutK.FlptSig2" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutL" portNumber="12" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBus">
+			<Variable varid="varif_428" signalName="localObj_OutL.FlptSig1" signalType="single" isFloat="yes">
+				<ifName ifid="if_428" lsb="1" offset="0" displayName="OutL.localObj_OutL.FlptSig1" identifier="OUTPUT:OutL.localObj_OutL.FlptSig1" />
+			</Variable>
+			<Variable varid="varif_429" signalName="localObj_OutL.FlptSig2" signalType="single" isFloat="yes">
+				<ifName ifid="if_429" lsb="1" offset="0" displayName="OutL.localObj_OutL.FlptSig2" identifier="OUTPUT:OutL.localObj_OutL.FlptSig2" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutM" portNumber="13" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusOfBuses">
+			<Variable varid="varif_431" signalName="localObj_OutM.BusSig1.FlptSig1" signalType="single" isFloat="yes">
+				<ifName ifid="if_431" lsb="1" offset="0" displayName="OutM.localObj_OutM.BusSig1.FlptSig1" identifier="OUTPUT:OutM.localObj_OutM.BusSig1.FlptSig1" />
+			</Variable>
+			<Variable varid="varif_432" signalName="localObj_OutM.BusSig1.FlptSig2" signalType="single" isFloat="yes">
+				<ifName ifid="if_432" lsb="1" offset="0" displayName="OutM.localObj_OutM.BusSig1.FlptSig2" identifier="OUTPUT:OutM.localObj_OutM.BusSig1.FlptSig2" />
+			</Variable>
+			<Variable varid="varif_433" signalName="localObj_OutM.BusSig2.FxptSig1" signalType="fixdt(1,16,0.03125,0)" isFloat="yes">
+				<ifName ifid="if_433" lsb="0.03125" offset="0.0" displayName="OutM.localObj_OutM.BusSig2.FxptSig1" identifier="OUTPUT:OutM.localObj_OutM.BusSig2.FxptSig1" />
+			</Variable>
+			<Variable varid="varif_434" signalName="localObj_OutM.BusSig2.FxptSig2" signalType="fixdt(1,16,0.03125,0)" isFloat="yes">
+				<ifName ifid="if_434" lsb="0.03125" offset="0.0" displayName="OutM.localObj_OutM.BusSig2.FxptSig2" identifier="OUTPUT:OutM.localObj_OutM.BusSig2.FxptSig2" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutN" portNumber="14" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBus">
+			<Variable varid="varif_436" signalName="localObj_OutN.FlptSig1" signalType="single" isFloat="yes">
+				<ifName ifid="if_436" lsb="1" offset="0" displayName="OutN.localObj_OutN.FlptSig1" identifier="OUTPUT:OutN.localObj_OutN.FlptSig1" />
+			</Variable>
+			<Variable varid="varif_437" signalName="localObj_OutN.FlptSig2" signalType="single" isFloat="yes">
+				<ifName ifid="if_437" lsb="1" offset="0" displayName="OutN.localObj_OutN.FlptSig2" identifier="OUTPUT:OutN.localObj_OutN.FlptSig2" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutO" portNumber="15" compositeSig="none">
+			<Variable varid="varif_438" signalName="localObj_OutO" signalType="single" isFloat="yes">
+				<ifName ifid="if_438" lsb="1" offset="0" displayName="OutO" identifier="OUTPUT:OutO" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutP" portNumber="16" compositeSig="none">
+			<Variable varid="varif_439" signalName="localObj_OutP" signalType="single" isFloat="yes">
+				<ifName ifid="if_439" lsb="1" offset="0" displayName="OutP" identifier="OUTPUT:OutP" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutQ" portNumber="17" compositeSig="bus" busType="VIRTUAL">
+			<Variable varid="varif_441" signalName="signal2.InB" signalType="single" isFloat="yes">
+				<ifName ifid="if_441" lsb="1" offset="0" displayName="OutQ.signal2.InB" identifier="OUTPUT:OutQ.signal2.InB" />
+			</Variable>
+			<Variable varid="varif_442" signalName="signal2.InC" signalType="single" isFloat="yes">
+				<ifName ifid="if_442" lsb="1" offset="0" displayName="OutQ.signal2.InC" identifier="OUTPUT:OutQ.signal2.InC" />
+			</Variable>
+			<Variable varid="varif_443" signalName="signal2.NotMappable_K" signalType="single" isFloat="yes">
+				<ifName ifid="if_443" lsb="1" offset="0" displayName="OutQ.signal2.NotMappable_K" identifier="OUTPUT:OutQ.signal2.NotMappable_K" />
+			</Variable>
+			<Variable varid="varif_444" signalName="signal2.NotMappable" signalType="single" isFloat="yes">
+				<ifName ifid="if_444" lsb="1" offset="0" displayName="OutQ.signal2.NotMappable" identifier="OUTPUT:OutQ.signal2.NotMappable" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutR" portNumber="18" compositeSig="none">
+			<Variable varid="varif_445" signalName="localObj_OutR" signalType="single" isFloat="yes">
+				<ifName ifid="if_445" lsb="1" offset="0" displayName="OutR" identifier="OUTPUT:OutR" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutIS" portNumber="19" compositeSig="none">
+			<Variable varid="varif_446" signalName="localObj_OutS" signalType="single" isFloat="yes">
+				<ifName ifid="if_446" lsb="1" offset="0" displayName="OutIS" identifier="OUTPUT:OutIS" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutIT" portNumber="20" compositeSig="none">
+			<Variable varid="varif_447" signalName="localObj_OutT" signalType="single" isFloat="yes">
+				<ifName ifid="if_447" lsb="1" offset="0" displayName="OutIT" identifier="OUTPUT:OutIT" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutIU" portNumber="21" compositeSig="none">
+			<Variable varid="varif_448" signalName="localObj_OutU" signalType="single" isFloat="yes">
+				<ifName ifid="if_448" lsb="1" offset="0" displayName="OutIU" identifier="OUTPUT:OutIU" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutV" portNumber="22" compositeSig="none">
+			<Variable varid="varif_449" signalName="localObj_OutV" signalType="single" isFloat="yes">
+				<ifName ifid="if_449" lsb="1" offset="0" displayName="OutV" identifier="OUTPUT:OutV" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutW" portNumber="23" compositeSig="none">
+			<Variable varid="varif_450" signalName="localObj_OutW" signalType="single" isFloat="yes">
+				<ifName ifid="if_450" lsb="1" offset="0" displayName="OutW" identifier="OUTPUT:OutW" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutX" portNumber="24" compositeSig="none">
+			<Variable varid="varif_451" signalName="localObj_OutX" signalType="single" isFloat="yes">
+				<ifName ifid="if_451" lsb="1" offset="0" displayName="OutX" identifier="OUTPUT:OutX" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutY" portNumber="25" compositeSig="bus" busType="VIRTUAL">
+			<Variable varid="varif_453" signalName="myVirualBus.InB" signalType="single" isFloat="yes">
+				<ifName ifid="if_453" lsb="1" offset="0" displayName="OutY.myVirualBus.InB" identifier="OUTPUT:OutY.myVirualBus.InB" />
+			</Variable>
+			<Variable varid="varif_454" signalName="myVirualBus.InC" signalType="single" isFloat="yes">
+				<ifName ifid="if_454" lsb="1" offset="0" displayName="OutY.myVirualBus.InC" identifier="OUTPUT:OutY.myVirualBus.InC" />
+			</Variable>
+			<Variable varid="varif_455" signalName="myVirualBus.NotMappable_K" signalType="single" isFloat="yes">
+				<ifName ifid="if_455" lsb="1" offset="0" displayName="OutY.myVirualBus.NotMappable_K" identifier="OUTPUT:OutY.myVirualBus.NotMappable_K" />
+			</Variable>
+			<Variable varid="varif_456" signalName="myVirualBus.NotMappable" signalType="single" isFloat="yes">
+				<ifName ifid="if_456" lsb="1" offset="0" displayName="OutY.myVirualBus.NotMappable" identifier="OUTPUT:OutY.myVirualBus.NotMappable" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutZ" portNumber="26" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusOfBuses">
+			<Variable varid="varif_458" signalName="localObj_OutZ.BusSig1.FlptSig1" signalType="single" isFloat="yes">
+				<ifName ifid="if_458" lsb="1" offset="0" displayName="OutZ.localObj_OutZ.BusSig1.FlptSig1" identifier="OUTPUT:OutZ.localObj_OutZ.BusSig1.FlptSig1" />
+			</Variable>
+			<Variable varid="varif_459" signalName="localObj_OutZ.BusSig1.FlptSig2" signalType="single" isFloat="yes">
+				<ifName ifid="if_459" lsb="1" offset="0" displayName="OutZ.localObj_OutZ.BusSig1.FlptSig2" identifier="OUTPUT:OutZ.localObj_OutZ.BusSig1.FlptSig2" />
+			</Variable>
+			<Variable varid="varif_460" signalName="localObj_OutZ.BusSig2.FxptSig1" signalType="fixdt(1,16,0.03125,0)" isFloat="yes">
+				<ifName ifid="if_460" lsb="0.03125" offset="0.0" displayName="OutZ.localObj_OutZ.BusSig2.FxptSig1" identifier="OUTPUT:OutZ.localObj_OutZ.BusSig2.FxptSig1" />
+			</Variable>
+			<Variable varid="varif_461" signalName="localObj_OutZ.BusSig2.FxptSig2" signalType="fixdt(1,16,0.03125,0)" isFloat="yes">
+				<ifName ifid="if_461" lsb="0.03125" offset="0.0" displayName="OutZ.localObj_OutZ.BusSig2.FxptSig2" identifier="OUTPUT:OutZ.localObj_OutZ.BusSig2.FxptSig2" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutAA" portNumber="27" compositeSig="none">
+			<Variable varid="varif_462" signalName="localObj_OutAA" signalType="single" isFloat="yes">
+				<ifName ifid="if_462" lsb="1" offset="0" displayName="OutAA" identifier="OUTPUT:OutAA" />
+			</Variable>
+		</OutPort>
+		<OutPort name="OutIAB" portNumber="28" compositeSig="none">
+			<Variable varid="varif_463" signalName="localObj_OutAB" signalType="single" isFloat="yes">
+				<ifName ifid="if_463" lsb="1" offset="0" displayName="OutIAB" identifier="OUTPUT:OutIAB" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out28" portNumber="29" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusOfSignalAndBus">
+			<Variable varid="varif_465" signalName="localObj_OutAC.DoubleFlptSig" signalType="double" isFloat="yes">
+				<ifName ifid="if_465" lsb="1" offset="0" displayName="Out28.localObj_OutAC.DoubleFlptSig" identifier="OUTPUT:Out28.localObj_OutAC.DoubleFlptSig" />
+			</Variable>
+			<Variable varid="varif_466" signalName="localObj_OutAC.BusSig1.FlptSig1" signalType="single" isFloat="yes">
+				<ifName ifid="if_466" lsb="1" offset="0" displayName="Out28.localObj_OutAC.BusSig1.FlptSig1" identifier="OUTPUT:Out28.localObj_OutAC.BusSig1.FlptSig1" />
+			</Variable>
+			<Variable varid="varif_467" signalName="localObj_OutAC.BusSig1.FlptSig2" signalType="single" isFloat="yes">
+				<ifName ifid="if_467" lsb="1" offset="0" displayName="Out28.localObj_OutAC.BusSig1.FlptSig2" identifier="OUTPUT:Out28.localObj_OutAC.BusSig1.FlptSig2" />
+			</Variable>
+		</OutPort>
+		<Model name="modelbuses" modelPath="/E:/ModelsDev/EC/modelbuses/ml2016b/modelbuses.slx" type="SimulinkModel" />
+		<Scope uid="2B4" name="Top" path="modelbuses/Top" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="modelbuses/Top" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBus">
+				<Variable varid="varif_504" signalName="InBusA.FlptSig1" signalType="single" isFloat="yes">
+					<ifName ifid="if_504" lsb="1" offset="0" displayName="In1.InBusA.FlptSig1" identifier="INPUT:In1.InBusA.FlptSig1" />
+				</Variable>
+				<Variable varid="varif_505" signalName="InBusA.FlptSig2" signalType="single" isFloat="yes">
+					<ifName ifid="if_505" lsb="1" offset="0" displayName="In1.InBusA.FlptSig2" identifier="INPUT:In1.InBusA.FlptSig2" />
+				</Variable>
+			</InPort>
+			<InPort name="In2" portNumber="2" compositeSig="none">
+				<Variable varid="varif_506" signalName="InB" signalType="single" isFloat="yes">
+					<ifName ifid="if_506" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+				</Variable>
+			</InPort>
+			<InPort name="In3" portNumber="3" compositeSig="none">
+				<Variable varid="varif_507" signalName="InC" signalType="single" isFloat="yes">
+					<ifName ifid="if_507" lsb="1" offset="0" displayName="In3" identifier="INPUT:In3" />
+				</Variable>
+			</InPort>
+			<InPort name="In4" portNumber="4" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusOfBuses">
+				<Variable varid="varif_509" signalName="InBusOfBuses.BusSig1.FlptSig1" signalType="single" isFloat="yes">
+					<ifName ifid="if_509" lsb="1" offset="0" displayName="In4.InBusOfBuses.BusSig1.FlptSig1" identifier="INPUT:In4.InBusOfBuses.BusSig1.FlptSig1" />
+				</Variable>
+				<Variable varid="varif_510" signalName="InBusOfBuses.BusSig1.FlptSig2" signalType="single" isFloat="yes">
+					<ifName ifid="if_510" lsb="1" offset="0" displayName="In4.InBusOfBuses.BusSig1.FlptSig2" identifier="INPUT:In4.InBusOfBuses.BusSig1.FlptSig2" />
+				</Variable>
+				<Variable varid="varif_511" signalName="InBusOfBuses.BusSig2.FxptSig1" signalType="fixdt(1,16,0.03125,0)" isFloat="yes">
+					<ifName ifid="if_511" lsb="0.03125" offset="0.0" displayName="In4.InBusOfBuses.BusSig2.FxptSig1" identifier="INPUT:In4.InBusOfBuses.BusSig2.FxptSig1" />
+				</Variable>
+				<Variable varid="varif_512" signalName="InBusOfBuses.BusSig2.FxptSig2" signalType="fixdt(1,16,0.03125,0)" isFloat="yes">
+					<ifName ifid="if_512" lsb="0.03125" offset="0.0" displayName="In4.InBusOfBuses.BusSig2.FxptSig2" identifier="INPUT:In4.InBusOfBuses.BusSig2.FxptSig2" />
+				</Variable>
+			</InPort>
+			<InPort name="In5" portNumber="5" compositeSig="none">
+				<Variable varid="varif_513" signalName="InD" signalType="single" isFloat="yes">
+					<ifName ifid="if_513" lsb="1" offset="0" displayName="In5" identifier="INPUT:In5" />
+				</Variable>
+			</InPort>
+			<InPort name="In6" portNumber="6" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusOfSignalAndBus">
+				<Variable varid="varif_515" signalName="InBusOfSignalAndBus.DoubleFlptSig" signalType="double" isFloat="yes">
+					<ifName ifid="if_515" lsb="1" offset="0" displayName="In6.InBusOfSignalAndBus.DoubleFlptSig" identifier="INPUT:In6.InBusOfSignalAndBus.DoubleFlptSig" />
+				</Variable>
+				<Variable varid="varif_516" signalName="InBusOfSignalAndBus.BusSig1.FlptSig1" signalType="single" isFloat="yes">
+					<ifName ifid="if_516" lsb="1" offset="0" displayName="In6.InBusOfSignalAndBus.BusSig1.FlptSig1" identifier="INPUT:In6.InBusOfSignalAndBus.BusSig1.FlptSig1" />
+				</Variable>
+				<Variable varid="varif_517" signalName="InBusOfSignalAndBus.BusSig1.FlptSig2" signalType="single" isFloat="yes">
+					<ifName ifid="if_517" lsb="1" offset="0" displayName="In6.InBusOfSignalAndBus.BusSig1.FlptSig2" identifier="INPUT:In6.InBusOfSignalAndBus.BusSig1.FlptSig2" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBus">
+				<Variable varid="varif_519" signalName="&lt;signal1&gt;.FlptSig1" signalType="single" isFloat="yes">
+					<ifName ifid="if_519" lsb="1" offset="0" displayName="Out.{&lt;signal1&gt;}.FlptSig1" identifier="OUTPUT:Out.{&lt;signal1&gt;}.FlptSig1" />
+				</Variable>
+				<Variable varid="varif_520" signalName="&lt;signal1&gt;.FlptSig2" signalType="single" isFloat="yes">
+					<ifName ifid="if_520" lsb="1" offset="0" displayName="Out.{&lt;signal1&gt;}.FlptSig2" identifier="OUTPUT:Out.{&lt;signal1&gt;}.FlptSig2" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out2" portNumber="2" compositeSig="none">
+				<Variable varid="varif_521" signalName="FlptSig1" signalType="single" isFloat="yes">
+					<ifName ifid="if_521" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out3" portNumber="3" compositeSig="none">
+				<Variable varid="varif_522" signalName="FlptSig2" signalType="single" isFloat="yes">
+					<ifName ifid="if_522" lsb="1" offset="0" displayName="Out3" identifier="OUTPUT:Out3" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out4" portNumber="4" compositeSig="none">
+				<Variable varid="varif_523" signalType="single" isFloat="yes">
+					<ifName ifid="if_523" lsb="1" offset="0" displayName="Out4" identifier="OUTPUT:Out4" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out5" portNumber="5" compositeSig="none">
+				<Variable varid="varif_524" signalType="single" isFloat="yes">
+					<ifName ifid="if_524" lsb="1" offset="0" displayName="Out5" identifier="OUTPUT:Out5" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out6" portNumber="6" compositeSig="none">
+				<Variable varid="varif_525" signalName="OutF" signalType="single" isFloat="yes">
+					<ifName ifid="if_525" lsb="1" offset="0" displayName="Out6" identifier="OUTPUT:Out6" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out7" portNumber="7" compositeSig="none">
+				<Variable varid="varif_526" signalType="single" isFloat="yes">
+					<ifName ifid="if_526" lsb="1" offset="0" displayName="Out7" identifier="OUTPUT:Out7" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out8" portNumber="8" compositeSig="none">
+				<Variable varid="varif_527" signalType="single" isFloat="yes">
+					<ifName ifid="if_527" lsb="1" offset="0" displayName="Out8" identifier="OUTPUT:Out8" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out9" portNumber="9" compositeSig="none">
+				<Variable varid="varif_528" signalType="single" isFloat="yes">
+					<ifName ifid="if_528" lsb="1" offset="0" displayName="Out9" identifier="OUTPUT:Out9" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out10" portNumber="10" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBus">
+				<Variable varid="varif_530" signalName="&lt;signal1&gt;.FlptSig1" signalType="single" isFloat="yes">
+					<ifName ifid="if_530" lsb="1" offset="0" displayName="Out10.{&lt;signal1&gt;}.FlptSig1" identifier="OUTPUT:Out10.{&lt;signal1&gt;}.FlptSig1" />
+				</Variable>
+				<Variable varid="varif_531" signalName="&lt;signal1&gt;.FlptSig2" signalType="single" isFloat="yes">
+					<ifName ifid="if_531" lsb="1" offset="0" displayName="Out10.{&lt;signal1&gt;}.FlptSig2" identifier="OUTPUT:Out10.{&lt;signal1&gt;}.FlptSig2" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out1" portNumber="11" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBus">
+				<Variable varid="varif_533" signalName="&lt;signal1&gt;.FlptSig1" signalType="single" isFloat="yes">
+					<ifName ifid="if_533" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.FlptSig1" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.FlptSig1" />
+				</Variable>
+				<Variable varid="varif_534" signalName="&lt;signal1&gt;.FlptSig2" signalType="single" isFloat="yes">
+					<ifName ifid="if_534" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.FlptSig2" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.FlptSig2" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out11" portNumber="12" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBus">
+				<Variable varid="varif_536" signalName="&lt;signal1&gt;.FlptSig1" signalType="single" isFloat="yes">
+					<ifName ifid="if_536" lsb="1" offset="0" displayName="Out11.{&lt;signal1&gt;}.FlptSig1" identifier="OUTPUT:Out11.{&lt;signal1&gt;}.FlptSig1" />
+				</Variable>
+				<Variable varid="varif_537" signalName="&lt;signal1&gt;.FlptSig2" signalType="single" isFloat="yes">
+					<ifName ifid="if_537" lsb="1" offset="0" displayName="Out11.{&lt;signal1&gt;}.FlptSig2" identifier="OUTPUT:Out11.{&lt;signal1&gt;}.FlptSig2" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out12" portNumber="13" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusOfBuses">
+				<Variable varid="varif_539" signalName="&lt;signal1&gt;.BusSig1.FlptSig1" signalType="single" isFloat="yes">
+					<ifName ifid="if_539" lsb="1" offset="0" displayName="Out12.{&lt;signal1&gt;}.BusSig1.FlptSig1" identifier="OUTPUT:Out12.{&lt;signal1&gt;}.BusSig1.FlptSig1" />
+				</Variable>
+				<Variable varid="varif_540" signalName="&lt;signal1&gt;.BusSig1.FlptSig2" signalType="single" isFloat="yes">
+					<ifName ifid="if_540" lsb="1" offset="0" displayName="Out12.{&lt;signal1&gt;}.BusSig1.FlptSig2" identifier="OUTPUT:Out12.{&lt;signal1&gt;}.BusSig1.FlptSig2" />
+				</Variable>
+				<Variable varid="varif_541" signalName="&lt;signal1&gt;.BusSig2.FxptSig1" signalType="fixdt(1,16,0.03125,0)" isFloat="yes">
+					<ifName ifid="if_541" lsb="0.03125" offset="0.0" displayName="Out12.{&lt;signal1&gt;}.BusSig2.FxptSig1" identifier="OUTPUT:Out12.{&lt;signal1&gt;}.BusSig2.FxptSig1" />
+				</Variable>
+				<Variable varid="varif_542" signalName="&lt;signal1&gt;.BusSig2.FxptSig2" signalType="fixdt(1,16,0.03125,0)" isFloat="yes">
+					<ifName ifid="if_542" lsb="0.03125" offset="0.0" displayName="Out12.{&lt;signal1&gt;}.BusSig2.FxptSig2" identifier="OUTPUT:Out12.{&lt;signal1&gt;}.BusSig2.FxptSig2" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out13" portNumber="14" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBus">
+				<Variable varid="varif_544" signalName="&lt;signal1&gt;.FlptSig1" signalType="single" isFloat="yes">
+					<ifName ifid="if_544" lsb="1" offset="0" displayName="Out13.{&lt;signal1&gt;}.FlptSig1" identifier="OUTPUT:Out13.{&lt;signal1&gt;}.FlptSig1" />
+				</Variable>
+				<Variable varid="varif_545" signalName="&lt;signal1&gt;.FlptSig2" signalType="single" isFloat="yes">
+					<ifName ifid="if_545" lsb="1" offset="0" displayName="Out13.{&lt;signal1&gt;}.FlptSig2" identifier="OUTPUT:Out13.{&lt;signal1&gt;}.FlptSig2" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out14" portNumber="15" compositeSig="none">
+				<Variable varid="varif_546" signalName="InB" signalType="single" isFloat="yes">
+					<ifName ifid="if_546" lsb="1" offset="0" displayName="Out14" identifier="OUTPUT:Out14" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out15" portNumber="16" compositeSig="none">
+				<Variable varid="varif_547" signalName="InB" signalType="single" isFloat="yes">
+					<ifName ifid="if_547" lsb="1" offset="0" displayName="Out15" identifier="OUTPUT:Out15" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out16" portNumber="17" compositeSig="bus" busType="VIRTUAL">
+				<Variable varid="varif_549" signalName="signal2.InB" signalType="single" isFloat="yes">
+					<ifName ifid="if_549" lsb="1" offset="0" displayName="Out16.signal2.InB" identifier="OUTPUT:Out16.signal2.InB" />
+				</Variable>
+				<Variable varid="varif_550" signalName="signal2.InC" signalType="single" isFloat="yes">
+					<ifName ifid="if_550" lsb="1" offset="0" displayName="Out16.signal2.InC" identifier="OUTPUT:Out16.signal2.InC" />
+				</Variable>
+				<Variable varid="varif_551" signalName="signal2.NotMappable_K" signalType="single" isFloat="yes">
+					<ifName ifid="if_551" lsb="1" offset="0" displayName="Out16.signal2.NotMappable_K" identifier="OUTPUT:Out16.signal2.NotMappable_K" />
+				</Variable>
+				<Variable varid="varif_552" signalName="signal2.NotMappable" signalType="single" isFloat="yes">
+					<ifName ifid="if_552" lsb="1" offset="0" displayName="Out16.signal2.NotMappable" identifier="OUTPUT:Out16.signal2.NotMappable" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out17" portNumber="18" compositeSig="none">
+				<Variable varid="varif_553" signalName="InC" signalType="single" isFloat="yes">
+					<ifName ifid="if_553" lsb="1" offset="0" displayName="Out17" identifier="OUTPUT:Out17" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out18" portNumber="19" compositeSig="none">
+				<Variable varid="varif_554" signalName="NotMappable_K" signalType="single" isFloat="yes">
+					<ifName ifid="if_554" lsb="1" offset="0" displayName="Out18" identifier="OUTPUT:Out18" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out19" portNumber="20" compositeSig="none">
+				<Variable varid="varif_555" signalName="NotMappable" signalType="single" isFloat="yes">
+					<ifName ifid="if_555" lsb="1" offset="0" displayName="Out19" identifier="OUTPUT:Out19" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out20" portNumber="21" compositeSig="none">
+				<Variable varid="varif_556" signalName="InB" signalType="single" isFloat="yes">
+					<ifName ifid="if_556" lsb="1" offset="0" displayName="Out20" identifier="OUTPUT:Out20" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out21" portNumber="22" compositeSig="none">
+				<Variable varid="varif_557" signalName="InC" signalType="single" isFloat="yes">
+					<ifName ifid="if_557" lsb="1" offset="0" displayName="Out21" identifier="OUTPUT:Out21" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out22" portNumber="23" compositeSig="none">
+				<Variable varid="varif_558" signalName="NotMappable_K" signalType="single" isFloat="yes">
+					<ifName ifid="if_558" lsb="1" offset="0" displayName="Out22" identifier="OUTPUT:Out22" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out23" portNumber="24" compositeSig="none">
+				<Variable varid="varif_559" signalName="NotMappable" signalType="single" isFloat="yes">
+					<ifName ifid="if_559" lsb="1" offset="0" displayName="Out23" identifier="OUTPUT:Out23" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out24" portNumber="25" compositeSig="bus" busType="VIRTUAL">
+				<Variable varid="varif_561" signalName="myVirualBus.InB" signalType="single" isFloat="yes">
+					<ifName ifid="if_561" lsb="1" offset="0" displayName="Out24.myVirualBus.InB" identifier="OUTPUT:Out24.myVirualBus.InB" />
+				</Variable>
+				<Variable varid="varif_562" signalName="myVirualBus.InC" signalType="single" isFloat="yes">
+					<ifName ifid="if_562" lsb="1" offset="0" displayName="Out24.myVirualBus.InC" identifier="OUTPUT:Out24.myVirualBus.InC" />
+				</Variable>
+				<Variable varid="varif_563" signalName="myVirualBus.NotMappable_K" signalType="single" isFloat="yes">
+					<ifName ifid="if_563" lsb="1" offset="0" displayName="Out24.myVirualBus.NotMappable_K" identifier="OUTPUT:Out24.myVirualBus.NotMappable_K" />
+				</Variable>
+				<Variable varid="varif_564" signalName="myVirualBus.NotMappable" signalType="single" isFloat="yes">
+					<ifName ifid="if_564" lsb="1" offset="0" displayName="Out24.myVirualBus.NotMappable" identifier="OUTPUT:Out24.myVirualBus.NotMappable" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out25" portNumber="26" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusOfBuses">
+				<Variable varid="varif_566" signalName="&lt;signal1&gt;.BusSig1.FlptSig1" signalType="single" isFloat="yes">
+					<ifName ifid="if_566" lsb="1" offset="0" displayName="Out25.{&lt;signal1&gt;}.BusSig1.FlptSig1" identifier="OUTPUT:Out25.{&lt;signal1&gt;}.BusSig1.FlptSig1" />
+				</Variable>
+				<Variable varid="varif_567" signalName="&lt;signal1&gt;.BusSig1.FlptSig2" signalType="single" isFloat="yes">
+					<ifName ifid="if_567" lsb="1" offset="0" displayName="Out25.{&lt;signal1&gt;}.BusSig1.FlptSig2" identifier="OUTPUT:Out25.{&lt;signal1&gt;}.BusSig1.FlptSig2" />
+				</Variable>
+				<Variable varid="varif_568" signalName="&lt;signal1&gt;.BusSig2.FxptSig1" signalType="fixdt(1,16,0.03125,0)" isFloat="yes">
+					<ifName ifid="if_568" lsb="0.03125" offset="0.0" displayName="Out25.{&lt;signal1&gt;}.BusSig2.FxptSig1" identifier="OUTPUT:Out25.{&lt;signal1&gt;}.BusSig2.FxptSig1" />
+				</Variable>
+				<Variable varid="varif_569" signalName="&lt;signal1&gt;.BusSig2.FxptSig2" signalType="fixdt(1,16,0.03125,0)" isFloat="yes">
+					<ifName ifid="if_569" lsb="0.03125" offset="0.0" displayName="Out25.{&lt;signal1&gt;}.BusSig2.FxptSig2" identifier="OUTPUT:Out25.{&lt;signal1&gt;}.BusSig2.FxptSig2" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out26" portNumber="27" compositeSig="none">
+				<Variable varid="varif_570" signalType="single" isFloat="yes">
+					<ifName ifid="if_570" lsb="1" offset="0" displayName="Out26" identifier="OUTPUT:Out26" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out27" portNumber="28" compositeSig="none">
+				<Variable varid="varif_571" signalType="single" isFloat="yes">
+					<ifName ifid="if_571" lsb="1" offset="0" displayName="Out27" identifier="OUTPUT:Out27" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out28" portNumber="29" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusOfSignalAndBus">
+				<Variable varid="varif_573" signalName="&lt;signal1&gt;.DoubleFlptSig" signalType="double" isFloat="yes">
+					<ifName ifid="if_573" lsb="1" offset="0" displayName="Out28.{&lt;signal1&gt;}.DoubleFlptSig" identifier="OUTPUT:Out28.{&lt;signal1&gt;}.DoubleFlptSig" />
+				</Variable>
+				<Variable varid="varif_574" signalName="&lt;signal1&gt;.BusSig1.FlptSig1" signalType="single" isFloat="yes">
+					<ifName ifid="if_574" lsb="1" offset="0" displayName="Out28.{&lt;signal1&gt;}.BusSig1.FlptSig1" identifier="OUTPUT:Out28.{&lt;signal1&gt;}.BusSig1.FlptSig1" />
+				</Variable>
+				<Variable varid="varif_575" signalName="&lt;signal1&gt;.BusSig1.FlptSig2" signalType="single" isFloat="yes">
+					<ifName ifid="if_575" lsb="1" offset="0" displayName="Out28.{&lt;signal1&gt;}.BusSig1.FlptSig2" identifier="OUTPUT:Out28.{&lt;signal1&gt;}.BusSig1.FlptSig2" />
+				</Variable>
+			</OutPort>
+			<Model name="modelbuses" modelPath="/E:/ModelsDev/EC/modelbuses/ml2016b/modelbuses.slx" type="SimulinkModel" />
+			<Scope uid="2B5" name="subfct2" path="modelbuses/Top/subfct2" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="modelbuses/Top/subfct2" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBus">
+					<Variable varid="varif_580" signalName="&lt;signal1&gt;.FlptSig1" signalType="single" isFloat="yes">
+						<ifName ifid="if_580" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.FlptSig1" identifier="INPUT:In1.{&lt;signal1&gt;}.FlptSig1" />
+					</Variable>
+					<Variable varid="varif_581" signalName="&lt;signal1&gt;.FlptSig2" signalType="single" isFloat="yes">
+						<ifName ifid="if_581" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.FlptSig2" identifier="INPUT:In1.{&lt;signal1&gt;}.FlptSig2" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_582" signalName="FlptSig1" signalType="single" isFloat="yes">
+						<ifName ifid="if_582" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+					</Variable>
+				</OutPort>
+				<OutPort name="Out2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_583" signalName="FlptSig2" signalType="single" isFloat="yes">
+						<ifName ifid="if_583" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+					</Variable>
+				</OutPort>
+				<Model name="modelbuses" modelPath="/E:/ModelsDev/EC/modelbuses/ml2016b/modelbuses.slx" type="SimulinkModel" />
+			</Scope>
+			<Scope uid="2B6" name="subfct2bis" path="modelbuses/Top/subfct2bis" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="modelbuses/Top/subfct2bis" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_588" signalName="FlptSig1" signalType="single" isFloat="yes">
+						<ifName ifid="if_588" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+					</Variable>
+				</InPort>
+				<InPort name="In2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_589" signalName="FlptSig2" signalType="single" isFloat="yes">
+						<ifName ifid="if_589" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_590" signalType="single" isFloat="yes">
+						<ifName ifid="if_590" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+					</Variable>
+				</OutPort>
+				<OutPort name="Out2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_591" signalType="single" isFloat="yes">
+						<ifName ifid="if_591" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+					</Variable>
+				</OutPort>
+				<Model name="modelbuses" modelPath="/E:/ModelsDev/EC/modelbuses/ml2016b/modelbuses.slx" type="SimulinkModel" />
+			</Scope>
+			<Scope uid="2B7" name="subfct3" path="modelbuses/Top/subfct3" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="modelbuses/Top/subfct3" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="bus" busType="VIRTUAL">
+					<Variable varid="varif_596" signalName="myVirualBus.InB" signalType="single" isFloat="yes">
+						<ifName ifid="if_596" lsb="1" offset="0" displayName="In1.myVirualBus.InB" identifier="INPUT:In1.myVirualBus.InB" />
+					</Variable>
+					<Variable varid="varif_597" signalName="myVirualBus.InC" signalType="single" isFloat="yes">
+						<ifName ifid="if_597" lsb="1" offset="0" displayName="In1.myVirualBus.InC" identifier="INPUT:In1.myVirualBus.InC" />
+					</Variable>
+					<Variable varid="varif_598" signalName="myVirualBus.NotMappable_K" signalType="single" isFloat="yes">
+						<ifName ifid="if_598" lsb="1" offset="0" displayName="In1.myVirualBus.NotMappable_K" identifier="INPUT:In1.myVirualBus.NotMappable_K" />
+					</Variable>
+					<Variable varid="varif_599" signalName="myVirualBus.NotMappable" signalType="single" isFloat="yes">
+						<ifName ifid="if_599" lsb="1" offset="0" displayName="In1.myVirualBus.NotMappable" identifier="INPUT:In1.myVirualBus.NotMappable" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_600" signalName="OutF" signalType="single" isFloat="yes">
+						<ifName ifid="if_600" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+					</Variable>
+				</OutPort>
+				<OutPort name="Out2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_601" signalType="single" isFloat="yes">
+						<ifName ifid="if_601" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+					</Variable>
+				</OutPort>
+				<Model name="modelbuses" modelPath="/E:/ModelsDev/EC/modelbuses/ml2016b/modelbuses.slx" type="SimulinkModel" />
+			</Scope>
+			<Scope uid="2B8" name="subfct3bis" path="modelbuses/Top/subfct3bis" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="modelbuses/Top/subfct3bis" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="bus" busType="VIRTUAL">
+					<Variable varid="varif_606" signalName="&lt;signal1&gt;.InB" signalType="single" isFloat="yes">
+						<ifName ifid="if_606" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.InB" identifier="INPUT:In1.{&lt;signal1&gt;}.InB" />
+					</Variable>
+					<Variable varid="varif_607" signalName="&lt;signal1&gt;.InC" signalType="single" isFloat="yes">
+						<ifName ifid="if_607" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.InC" identifier="INPUT:In1.{&lt;signal1&gt;}.InC" />
+					</Variable>
+					<Variable varid="varif_608" signalName="&lt;signal1&gt;.NotMappable_K" signalType="single" isFloat="yes">
+						<ifName ifid="if_608" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.NotMappable_K" identifier="INPUT:In1.{&lt;signal1&gt;}.NotMappable_K" />
+					</Variable>
+					<Variable varid="varif_609" signalName="&lt;signal1&gt;.NotMappable" signalType="single" isFloat="yes">
+						<ifName ifid="if_609" lsb="1" offset="0" displayName="In1.{&lt;signal1&gt;}.NotMappable" identifier="INPUT:In1.{&lt;signal1&gt;}.NotMappable" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_610" signalType="single" isFloat="yes">
+						<ifName ifid="if_610" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+					</Variable>
+				</OutPort>
+				<OutPort name="Out2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_611" signalType="single" isFloat="yes">
+						<ifName ifid="if_611" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+					</Variable>
+				</OutPort>
+				<Model name="modelbuses" modelPath="/E:/ModelsDev/EC/modelbuses/ml2016b/modelbuses.slx" type="SimulinkModel" />
+			</Scope>
+			<Scope uid="2B9" name="subfct4" path="modelbuses/Top/subfct4" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="modelbuses/Top/subfct4" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="bus" busType="VIRTUAL">
+					<Variable varid="varif_621" signalName="Nest2NonVirtual.signal1.FlptSig1" signalType="single" isFloat="yes">
+						<ifName ifid="if_621" lsb="1" offset="0" displayName="In1.Nest2NonVirtual.signal1.FlptSig1" identifier="INPUT:In1.Nest2NonVirtual.signal1.FlptSig1" />
+					</Variable>
+					<Variable varid="varif_622" signalName="Nest2NonVirtual.signal1.FlptSig2" signalType="single" isFloat="yes">
+						<ifName ifid="if_622" lsb="1" offset="0" displayName="In1.Nest2NonVirtual.signal1.FlptSig2" identifier="INPUT:In1.Nest2NonVirtual.signal1.FlptSig2" />
+					</Variable>
+					<Variable varid="varif_623" signalName="Nest2NonVirtual.InBusB.FlptSig1" signalType="single" isFloat="yes">
+						<ifName ifid="if_623" lsb="1" offset="0" displayName="In1.Nest2NonVirtual.InBusB.FlptSig1" identifier="INPUT:In1.Nest2NonVirtual.InBusB.FlptSig1" />
+					</Variable>
+					<Variable varid="varif_624" signalName="Nest2NonVirtual.InBusB.FlptSig2" signalType="single" isFloat="yes">
+						<ifName ifid="if_624" lsb="1" offset="0" displayName="In1.Nest2NonVirtual.InBusB.FlptSig2" identifier="INPUT:In1.Nest2NonVirtual.InBusB.FlptSig2" />
+					</Variable>
+				</InPort>
+				<InPort name="In2" portNumber="2" compositeSig="bus" busType="VIRTUAL">
+					<Variable varid="varif_626" signalName="Nest1Virtual1NonVirtual.LocalBusSig1.FlptSig1" signalType="single" isFloat="yes">
+						<ifName ifid="if_626" lsb="1" offset="0" displayName="In2.Nest1Virtual1NonVirtual.LocalBusSig1.FlptSig1" identifier="INPUT:In2.Nest1Virtual1NonVirtual.LocalBusSig1.FlptSig1" />
+					</Variable>
+					<Variable varid="varif_627" signalName="Nest1Virtual1NonVirtual.LocalBusSig1.FlptSig2" signalType="single" isFloat="yes">
+						<ifName ifid="if_627" lsb="1" offset="0" displayName="In2.Nest1Virtual1NonVirtual.LocalBusSig1.FlptSig2" identifier="INPUT:In2.Nest1Virtual1NonVirtual.LocalBusSig1.FlptSig2" />
+					</Variable>
+					<Variable varid="varif_628" signalName="Nest1Virtual1NonVirtual.myVirualBus.InB" signalType="single" isFloat="yes">
+						<ifName ifid="if_628" lsb="1" offset="0" displayName="In2.Nest1Virtual1NonVirtual.myVirualBus.InB" identifier="INPUT:In2.Nest1Virtual1NonVirtual.myVirualBus.InB" />
+					</Variable>
+					<Variable varid="varif_629" signalName="Nest1Virtual1NonVirtual.myVirualBus.InC" signalType="single" isFloat="yes">
+						<ifName ifid="if_629" lsb="1" offset="0" displayName="In2.Nest1Virtual1NonVirtual.myVirualBus.InC" identifier="INPUT:In2.Nest1Virtual1NonVirtual.myVirualBus.InC" />
+					</Variable>
+					<Variable varid="varif_630" signalName="Nest1Virtual1NonVirtual.myVirualBus.NotMappable_K" signalType="single" isFloat="yes">
+						<ifName ifid="if_630" lsb="1" offset="0" displayName="In2.Nest1Virtual1NonVirtual.myVirualBus.NotMappable_K" identifier="INPUT:In2.Nest1Virtual1NonVirtual.myVirualBus.NotMappable_K" />
+					</Variable>
+					<Variable varid="varif_631" signalName="Nest1Virtual1NonVirtual.myVirualBus.NotMappable" signalType="single" isFloat="yes">
+						<ifName ifid="if_631" lsb="1" offset="0" displayName="In2.Nest1Virtual1NonVirtual.myVirualBus.NotMappable" identifier="INPUT:In2.Nest1Virtual1NonVirtual.myVirualBus.NotMappable" />
+					</Variable>
+				</InPort>
+				<InPort name="In3" portNumber="3" compositeSig="bus" busType="VIRTUAL">
+					<Variable varid="varif_633" signalName="Nest1Signal1NonVirtual.InB" signalType="single" isFloat="yes">
+						<ifName ifid="if_633" lsb="1" offset="0" displayName="In3.Nest1Signal1NonVirtual.InB" identifier="INPUT:In3.Nest1Signal1NonVirtual.InB" />
+					</Variable>
+					<Variable varid="varif_634" signalName="Nest1Signal1NonVirtual.LocalBusSig1.FlptSig1" signalType="single" isFloat="yes">
+						<ifName ifid="if_634" lsb="1" offset="0" displayName="In3.Nest1Signal1NonVirtual.LocalBusSig1.FlptSig1" identifier="INPUT:In3.Nest1Signal1NonVirtual.LocalBusSig1.FlptSig1" />
+					</Variable>
+					<Variable varid="varif_635" signalName="Nest1Signal1NonVirtual.LocalBusSig1.FlptSig2" signalType="single" isFloat="yes">
+						<ifName ifid="if_635" lsb="1" offset="0" displayName="In3.Nest1Signal1NonVirtual.LocalBusSig1.FlptSig2" identifier="INPUT:In3.Nest1Signal1NonVirtual.LocalBusSig1.FlptSig2" />
+					</Variable>
+				</InPort>
+				<InPort name="In4" portNumber="4" compositeSig="bus" busType="VIRTUAL">
+					<Variable varid="varif_637" signalName="Nest2Virtuals.myVirualBus.InB" signalType="single" isFloat="yes">
+						<ifName ifid="if_637" lsb="1" offset="0" displayName="In4.Nest2Virtuals.myVirualBus.InB" identifier="INPUT:In4.Nest2Virtuals.myVirualBus.InB" />
+					</Variable>
+					<Variable varid="varif_638" signalName="Nest2Virtuals.myVirualBus.InC" signalType="single" isFloat="yes">
+						<ifName ifid="if_638" lsb="1" offset="0" displayName="In4.Nest2Virtuals.myVirualBus.InC" identifier="INPUT:In4.Nest2Virtuals.myVirualBus.InC" />
+					</Variable>
+					<Variable varid="varif_639" signalName="Nest2Virtuals.myVirualBus.NotMappable_K" signalType="single" isFloat="yes">
+						<ifName ifid="if_639" lsb="1" offset="0" displayName="In4.Nest2Virtuals.myVirualBus.NotMappable_K" identifier="INPUT:In4.Nest2Virtuals.myVirualBus.NotMappable_K" />
+					</Variable>
+					<Variable varid="varif_640" signalName="Nest2Virtuals.myVirualBus.NotMappable" signalType="single" isFloat="yes">
+						<ifName ifid="if_640" lsb="1" offset="0" displayName="In4.Nest2Virtuals.myVirualBus.NotMappable" identifier="INPUT:In4.Nest2Virtuals.myVirualBus.NotMappable" />
+					</Variable>
+					<Variable varid="varif_641" signalName="Nest2Virtuals.signal2.InB" signalType="single" isFloat="yes">
+						<ifName ifid="if_641" lsb="1" offset="0" displayName="In4.Nest2Virtuals.signal2.InB" identifier="INPUT:In4.Nest2Virtuals.signal2.InB" />
+					</Variable>
+					<Variable varid="varif_642" signalName="Nest2Virtuals.signal2.InC" signalType="single" isFloat="yes">
+						<ifName ifid="if_642" lsb="1" offset="0" displayName="In4.Nest2Virtuals.signal2.InC" identifier="INPUT:In4.Nest2Virtuals.signal2.InC" />
+					</Variable>
+					<Variable varid="varif_643" signalName="Nest2Virtuals.signal2.NotMappable_K" signalType="single" isFloat="yes">
+						<ifName ifid="if_643" lsb="1" offset="0" displayName="In4.Nest2Virtuals.signal2.NotMappable_K" identifier="INPUT:In4.Nest2Virtuals.signal2.NotMappable_K" />
+					</Variable>
+					<Variable varid="varif_644" signalName="Nest2Virtuals.signal2.NotMappable" signalType="single" isFloat="yes">
+						<ifName ifid="if_644" lsb="1" offset="0" displayName="In4.Nest2Virtuals.signal2.NotMappable" identifier="INPUT:In4.Nest2Virtuals.signal2.NotMappable" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out1" portNumber="1" compositeSig="bus" busType="VIRTUAL">
+					<Variable varid="varif_646" signalName="&lt;signal1&gt;.signal1.FlptSig1" signalType="single" isFloat="yes">
+						<ifName ifid="if_646" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.signal1.FlptSig1" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.signal1.FlptSig1" />
+					</Variable>
+					<Variable varid="varif_647" signalName="&lt;signal1&gt;.signal1.FlptSig2" signalType="single" isFloat="yes">
+						<ifName ifid="if_647" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.signal1.FlptSig2" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.signal1.FlptSig2" />
+					</Variable>
+					<Variable varid="varif_648" signalName="&lt;signal1&gt;.InBusB.FlptSig1" signalType="single" isFloat="yes">
+						<ifName ifid="if_648" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.InBusB.FlptSig1" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.InBusB.FlptSig1" />
+					</Variable>
+					<Variable varid="varif_649" signalName="&lt;signal1&gt;.InBusB.FlptSig2" signalType="single" isFloat="yes">
+						<ifName ifid="if_649" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.InBusB.FlptSig2" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.InBusB.FlptSig2" />
+					</Variable>
+				</OutPort>
+				<OutPort name="Out2" portNumber="2" compositeSig="bus" busType="VIRTUAL">
+					<Variable varid="varif_651" signalName="&lt;signal1&gt;.LocalBusSig1.FlptSig1" signalType="single" isFloat="yes">
+						<ifName ifid="if_651" lsb="1" offset="0" displayName="Out2.{&lt;signal1&gt;}.LocalBusSig1.FlptSig1" identifier="OUTPUT:Out2.{&lt;signal1&gt;}.LocalBusSig1.FlptSig1" />
+					</Variable>
+					<Variable varid="varif_652" signalName="&lt;signal1&gt;.LocalBusSig1.FlptSig2" signalType="single" isFloat="yes">
+						<ifName ifid="if_652" lsb="1" offset="0" displayName="Out2.{&lt;signal1&gt;}.LocalBusSig1.FlptSig2" identifier="OUTPUT:Out2.{&lt;signal1&gt;}.LocalBusSig1.FlptSig2" />
+					</Variable>
+					<Variable varid="varif_653" signalName="&lt;signal1&gt;.myVirualBus.InB" signalType="single" isFloat="yes">
+						<ifName ifid="if_653" lsb="1" offset="0" displayName="Out2.{&lt;signal1&gt;}.myVirualBus.InB" identifier="OUTPUT:Out2.{&lt;signal1&gt;}.myVirualBus.InB" />
+					</Variable>
+					<Variable varid="varif_654" signalName="&lt;signal1&gt;.myVirualBus.InC" signalType="single" isFloat="yes">
+						<ifName ifid="if_654" lsb="1" offset="0" displayName="Out2.{&lt;signal1&gt;}.myVirualBus.InC" identifier="OUTPUT:Out2.{&lt;signal1&gt;}.myVirualBus.InC" />
+					</Variable>
+					<Variable varid="varif_655" signalName="&lt;signal1&gt;.myVirualBus.NotMappable_K" signalType="single" isFloat="yes">
+						<ifName ifid="if_655" lsb="1" offset="0" displayName="Out2.{&lt;signal1&gt;}.myVirualBus.NotMappable_K" identifier="OUTPUT:Out2.{&lt;signal1&gt;}.myVirualBus.NotMappable_K" />
+					</Variable>
+					<Variable varid="varif_656" signalName="&lt;signal1&gt;.myVirualBus.NotMappable" signalType="single" isFloat="yes">
+						<ifName ifid="if_656" lsb="1" offset="0" displayName="Out2.{&lt;signal1&gt;}.myVirualBus.NotMappable" identifier="OUTPUT:Out2.{&lt;signal1&gt;}.myVirualBus.NotMappable" />
+					</Variable>
+				</OutPort>
+				<OutPort name="Out3" portNumber="3" compositeSig="bus" busType="VIRTUAL">
+					<Variable varid="varif_658" signalName="&lt;signal1&gt;.InB" signalType="single" isFloat="yes">
+						<ifName ifid="if_658" lsb="1" offset="0" displayName="Out3.{&lt;signal1&gt;}.InB" identifier="OUTPUT:Out3.{&lt;signal1&gt;}.InB" />
+					</Variable>
+					<Variable varid="varif_659" signalName="&lt;signal1&gt;.LocalBusSig1.FlptSig1" signalType="single" isFloat="yes">
+						<ifName ifid="if_659" lsb="1" offset="0" displayName="Out3.{&lt;signal1&gt;}.LocalBusSig1.FlptSig1" identifier="OUTPUT:Out3.{&lt;signal1&gt;}.LocalBusSig1.FlptSig1" />
+					</Variable>
+					<Variable varid="varif_660" signalName="&lt;signal1&gt;.LocalBusSig1.FlptSig2" signalType="single" isFloat="yes">
+						<ifName ifid="if_660" lsb="1" offset="0" displayName="Out3.{&lt;signal1&gt;}.LocalBusSig1.FlptSig2" identifier="OUTPUT:Out3.{&lt;signal1&gt;}.LocalBusSig1.FlptSig2" />
+					</Variable>
+				</OutPort>
+				<OutPort name="Out4" portNumber="4" compositeSig="bus" busType="VIRTUAL">
+					<Variable varid="varif_662" signalName="&lt;signal1&gt;.myVirualBus.InB" signalType="single" isFloat="yes">
+						<ifName ifid="if_662" lsb="1" offset="0" displayName="Out4.{&lt;signal1&gt;}.myVirualBus.InB" identifier="OUTPUT:Out4.{&lt;signal1&gt;}.myVirualBus.InB" />
+					</Variable>
+					<Variable varid="varif_663" signalName="&lt;signal1&gt;.myVirualBus.InC" signalType="single" isFloat="yes">
+						<ifName ifid="if_663" lsb="1" offset="0" displayName="Out4.{&lt;signal1&gt;}.myVirualBus.InC" identifier="OUTPUT:Out4.{&lt;signal1&gt;}.myVirualBus.InC" />
+					</Variable>
+					<Variable varid="varif_664" signalName="&lt;signal1&gt;.myVirualBus.NotMappable_K" signalType="single" isFloat="yes">
+						<ifName ifid="if_664" lsb="1" offset="0" displayName="Out4.{&lt;signal1&gt;}.myVirualBus.NotMappable_K" identifier="OUTPUT:Out4.{&lt;signal1&gt;}.myVirualBus.NotMappable_K" />
+					</Variable>
+					<Variable varid="varif_665" signalName="&lt;signal1&gt;.myVirualBus.NotMappable" signalType="single" isFloat="yes">
+						<ifName ifid="if_665" lsb="1" offset="0" displayName="Out4.{&lt;signal1&gt;}.myVirualBus.NotMappable" identifier="OUTPUT:Out4.{&lt;signal1&gt;}.myVirualBus.NotMappable" />
+					</Variable>
+					<Variable varid="varif_666" signalName="&lt;signal1&gt;.signal2.InB" signalType="single" isFloat="yes">
+						<ifName ifid="if_666" lsb="1" offset="0" displayName="Out4.{&lt;signal1&gt;}.signal2.InB" identifier="OUTPUT:Out4.{&lt;signal1&gt;}.signal2.InB" />
+					</Variable>
+					<Variable varid="varif_667" signalName="&lt;signal1&gt;.signal2.InC" signalType="single" isFloat="yes">
+						<ifName ifid="if_667" lsb="1" offset="0" displayName="Out4.{&lt;signal1&gt;}.signal2.InC" identifier="OUTPUT:Out4.{&lt;signal1&gt;}.signal2.InC" />
+					</Variable>
+					<Variable varid="varif_668" signalName="&lt;signal1&gt;.signal2.NotMappable_K" signalType="single" isFloat="yes">
+						<ifName ifid="if_668" lsb="1" offset="0" displayName="Out4.{&lt;signal1&gt;}.signal2.NotMappable_K" identifier="OUTPUT:Out4.{&lt;signal1&gt;}.signal2.NotMappable_K" />
+					</Variable>
+					<Variable varid="varif_669" signalName="&lt;signal1&gt;.signal2.NotMappable" signalType="single" isFloat="yes">
+						<ifName ifid="if_669" lsb="1" offset="0" displayName="Out4.{&lt;signal1&gt;}.signal2.NotMappable" identifier="OUTPUT:Out4.{&lt;signal1&gt;}.signal2.NotMappable" />
+					</Variable>
+				</OutPort>
+				<Model name="modelbuses" modelPath="/E:/ModelsDev/EC/modelbuses/ml2016b/modelbuses.slx" type="SimulinkModel" />
+			</Scope>
+			<Scope uid="2BA" name="subfct5" path="modelbuses/Top/subfct5" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="modelbuses/Top/subfct5" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusOfBuses">
+					<Variable varid="varif_673" signalName="InBusOfBuses.BusSig1.FlptSig1" signalType="single" isFloat="yes">
+						<ifName ifid="if_673" lsb="1" offset="0" displayName="In1.InBusOfBuses.BusSig1.FlptSig1" identifier="INPUT:In1.InBusOfBuses.BusSig1.FlptSig1" />
+					</Variable>
+					<Variable varid="varif_674" signalName="InBusOfBuses.BusSig1.FlptSig2" signalType="single" isFloat="yes">
+						<ifName ifid="if_674" lsb="1" offset="0" displayName="In1.InBusOfBuses.BusSig1.FlptSig2" identifier="INPUT:In1.InBusOfBuses.BusSig1.FlptSig2" />
+					</Variable>
+					<Variable varid="varif_675" signalName="InBusOfBuses.BusSig2.FxptSig1" signalType="fixdt(1,16,0.03125,0)" isFloat="yes">
+						<ifName ifid="if_675" lsb="0.03125" offset="0.0" displayName="In1.InBusOfBuses.BusSig2.FxptSig1" identifier="INPUT:In1.InBusOfBuses.BusSig2.FxptSig1" />
+					</Variable>
+					<Variable varid="varif_676" signalName="InBusOfBuses.BusSig2.FxptSig2" signalType="fixdt(1,16,0.03125,0)" isFloat="yes">
+						<ifName ifid="if_676" lsb="0.03125" offset="0.0" displayName="In1.InBusOfBuses.BusSig2.FxptSig2" identifier="INPUT:In1.InBusOfBuses.BusSig2.FxptSig2" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out2" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusOfBuses">
+					<Variable varid="varif_678" signalName="&lt;signal1&gt;.BusSig1.FlptSig1" signalType="single" isFloat="yes">
+						<ifName ifid="if_678" lsb="1" offset="0" displayName="Out2.{&lt;signal1&gt;}.BusSig1.FlptSig1" identifier="OUTPUT:Out2.{&lt;signal1&gt;}.BusSig1.FlptSig1" />
+					</Variable>
+					<Variable varid="varif_679" signalName="&lt;signal1&gt;.BusSig1.FlptSig2" signalType="single" isFloat="yes">
+						<ifName ifid="if_679" lsb="1" offset="0" displayName="Out2.{&lt;signal1&gt;}.BusSig1.FlptSig2" identifier="OUTPUT:Out2.{&lt;signal1&gt;}.BusSig1.FlptSig2" />
+					</Variable>
+					<Variable varid="varif_680" signalName="&lt;signal1&gt;.BusSig2.FxptSig1" signalType="fixdt(1,16,0.03125,0)" isFloat="yes">
+						<ifName ifid="if_680" lsb="0.03125" offset="0.0" displayName="Out2.{&lt;signal1&gt;}.BusSig2.FxptSig1" identifier="OUTPUT:Out2.{&lt;signal1&gt;}.BusSig2.FxptSig1" />
+					</Variable>
+					<Variable varid="varif_681" signalName="&lt;signal1&gt;.BusSig2.FxptSig2" signalType="fixdt(1,16,0.03125,0)" isFloat="yes">
+						<ifName ifid="if_681" lsb="0.03125" offset="0.0" displayName="Out2.{&lt;signal1&gt;}.BusSig2.FxptSig2" identifier="OUTPUT:Out2.{&lt;signal1&gt;}.BusSig2.FxptSig2" />
+					</Variable>
+				</OutPort>
+				<Model name="modelbuses" modelPath="/E:/ModelsDev/EC/modelbuses/ml2016b/modelbuses.slx" type="SimulinkModel" />
+			</Scope>
+			<Scope uid="2BB" name="subfct6" path="modelbuses/Top/subfct6" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="modelbuses/Top/subfct6" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="bus" busType="VIRTUAL">
+					<Variable varid="varif_685" signalName="NameVritualBus.InB" signalType="single" isFloat="yes">
+						<ifName ifid="if_685" lsb="1" offset="0" displayName="In1.NameVritualBus.InB" identifier="INPUT:In1.NameVritualBus.InB" />
+					</Variable>
+					<Variable varid="varif_686" signalName="NameVritualBus.InD" signalType="single" isFloat="yes">
+						<ifName ifid="if_686" lsb="1" offset="0" displayName="In1.NameVritualBus.InD" identifier="INPUT:In1.NameVritualBus.InD" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out2" portNumber="1" compositeSig="bus" busType="VIRTUAL">
+					<Variable varid="varif_688" signalName="NameVritualBus.InB" signalType="single" isFloat="yes">
+						<ifName ifid="if_688" lsb="1" offset="0" displayName="Out2.NameVritualBus.InB" identifier="OUTPUT:Out2.NameVritualBus.InB" />
+					</Variable>
+					<Variable varid="varif_689" signalName="NameVritualBus.InD" signalType="single" isFloat="yes">
+						<ifName ifid="if_689" lsb="1" offset="0" displayName="Out2.NameVritualBus.InD" identifier="OUTPUT:Out2.NameVritualBus.InD" />
+					</Variable>
+				</OutPort>
+				<Model name="modelbuses" modelPath="/E:/ModelsDev/EC/modelbuses/ml2016b/modelbuses.slx" type="SimulinkModel" />
+			</Scope>
+			<Scope uid="2BC" name="subfct7" path="modelbuses/Top/subfct7" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="modelbuses/Top/subfct7" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusOfSignalAndBus">
+					<Variable varid="varif_693" signalName="InBusOfSignalAndBus.DoubleFlptSig" signalType="double" isFloat="yes">
+						<ifName ifid="if_693" lsb="1" offset="0" displayName="In1.InBusOfSignalAndBus.DoubleFlptSig" identifier="INPUT:In1.InBusOfSignalAndBus.DoubleFlptSig" />
+					</Variable>
+					<Variable varid="varif_694" signalName="InBusOfSignalAndBus.BusSig1.FlptSig1" signalType="single" isFloat="yes">
+						<ifName ifid="if_694" lsb="1" offset="0" displayName="In1.InBusOfSignalAndBus.BusSig1.FlptSig1" identifier="INPUT:In1.InBusOfSignalAndBus.BusSig1.FlptSig1" />
+					</Variable>
+					<Variable varid="varif_695" signalName="InBusOfSignalAndBus.BusSig1.FlptSig2" signalType="single" isFloat="yes">
+						<ifName ifid="if_695" lsb="1" offset="0" displayName="In1.InBusOfSignalAndBus.BusSig1.FlptSig2" identifier="INPUT:In1.InBusOfSignalAndBus.BusSig1.FlptSig2" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out2" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBusOfSignalAndBus">
+					<Variable varid="varif_697" signalName="&lt;signal1&gt;.DoubleFlptSig" signalType="double" isFloat="yes">
+						<ifName ifid="if_697" lsb="1" offset="0" displayName="Out2.{&lt;signal1&gt;}.DoubleFlptSig" identifier="OUTPUT:Out2.{&lt;signal1&gt;}.DoubleFlptSig" />
+					</Variable>
+					<Variable varid="varif_698" signalName="&lt;signal1&gt;.BusSig1.FlptSig1" signalType="single" isFloat="yes">
+						<ifName ifid="if_698" lsb="1" offset="0" displayName="Out2.{&lt;signal1&gt;}.BusSig1.FlptSig1" identifier="OUTPUT:Out2.{&lt;signal1&gt;}.BusSig1.FlptSig1" />
+					</Variable>
+					<Variable varid="varif_699" signalName="&lt;signal1&gt;.BusSig1.FlptSig2" signalType="single" isFloat="yes">
+						<ifName ifid="if_699" lsb="1" offset="0" displayName="Out2.{&lt;signal1&gt;}.BusSig1.FlptSig2" identifier="OUTPUT:Out2.{&lt;signal1&gt;}.BusSig1.FlptSig2" />
+					</Variable>
+				</OutPort>
+				<Model name="modelbuses" modelPath="/E:/ModelsDev/EC/modelbuses/ml2016b/modelbuses.slx" type="SimulinkModel" />
+			</Scope>
+			<Scope uid="2BD" name="subsys1" path="modelbuses/Top/subsys1" sampleTime="0.01" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="modelbuses/Top/subsys1" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBus">
+					<Variable varid="varif_703" signalName="InBusA.FlptSig1" signalType="single" isFloat="yes">
+						<ifName ifid="if_703" lsb="1" offset="0" displayName="In1.InBusA.FlptSig1" identifier="INPUT:In1.InBusA.FlptSig1" />
+					</Variable>
+					<Variable varid="varif_704" signalName="InBusA.FlptSig2" signalType="single" isFloat="yes">
+						<ifName ifid="if_704" lsb="1" offset="0" displayName="In1.InBusA.FlptSig2" identifier="INPUT:In1.InBusA.FlptSig2" />
+					</Variable>
+				</InPort>
+				<OutPort name="Out1" portNumber="1" compositeSig="bus" busType="NON_VIRTUAL" busObj="myBus">
+					<Variable varid="varif_706" signalName="&lt;signal1&gt;.FlptSig1" signalType="single" isFloat="yes">
+						<ifName ifid="if_706" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.FlptSig1" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.FlptSig1" />
+					</Variable>
+					<Variable varid="varif_707" signalName="&lt;signal1&gt;.FlptSig2" signalType="single" isFloat="yes">
+						<ifName ifid="if_707" lsb="1" offset="0" displayName="Out1.{&lt;signal1&gt;}.FlptSig2" identifier="OUTPUT:Out1.{&lt;signal1&gt;}.FlptSig2" />
+					</Variable>
+				</OutPort>
+				<Model name="modelbuses" modelPath="/E:/ModelsDev/EC/modelbuses/ml2016b/modelbuses.slx" type="SimulinkModel" />
+			</Scope>
+		</Scope>
+	</Scope>
+</ExtractionModel>

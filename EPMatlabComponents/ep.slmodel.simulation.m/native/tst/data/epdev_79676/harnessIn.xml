@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction mdfDialect="EP2.9">
+	<Types>
+		<BusType name="LittleBus" virtual="false">
+			<Comp name="a1" type="MyEnum" />
+			<Comp name="a2" type="MyEnum" />
+			<Comp name="a3" type="fixdt(1,16,0.03125,0)" />
+			<Comp name="a4" type="fixdt(1,16,0.03125,0)" />
+			<Comp name="a5" type="fixdt(0,6,2)" />
+			<Comp name="a6" type="fixdt(0,6,2)" />
+		</BusType>
+		<BusType name="MegaBus" virtual="false">
+			<Comp name="c1" type="boolean" />
+			<Comp name="c2" type="BigBus" />
+			<Comp name="c3" type="LittleBus" />
+			<Comp name="c4" type="fixdt(0,8,0.25,0.5)" />
+		</BusType>
+		<BusType name="BigBus" virtual="false">
+			<Comp name="b1" type="LittleBus" />
+			<Comp name="b2" type="fixdt(0,6,2)" />
+		</BusType>
+		<BusType name="SomeBus" virtual="false">
+			<Comp name="x" type="fixdt(1,16,0.03125,0)" />
+			<Comp name="y" type="fixdt(0,6,2)" />
+			<Comp name="z" type="int32" />
+		</BusType>
+	</Types>
+	<Outports sampleTime="0.2">
+		<Outport portNr="1" type="fixdt(0,6,2)">
+			<ScalarRefs>
+				<ScalarRef displayName="In1">INPUT:In1</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="2" type="LittleBus" signalName="&lt;signal1&gt;">
+			<ScalarRefs>
+				<ScalarRef displayName="In2.{&lt;signal1&gt;}.a1">INPUT:In2.{&lt;signal1&gt;}.a1</ScalarRef>
+				<ScalarRef displayName="In2.{&lt;signal1&gt;}.a2">INPUT:In2.{&lt;signal1&gt;}.a2</ScalarRef>
+				<ScalarRef displayName="In2.{&lt;signal1&gt;}.a3">INPUT:In2.{&lt;signal1&gt;}.a3</ScalarRef>
+				<ScalarRef displayName="In2.{&lt;signal1&gt;}.a4">INPUT:In2.{&lt;signal1&gt;}.a4</ScalarRef>
+				<ScalarRef displayName="In2.{&lt;signal1&gt;}.a5">INPUT:In2.{&lt;signal1&gt;}.a5</ScalarRef>
+				<ScalarRef displayName="In2.{&lt;signal1&gt;}.a6">INPUT:In2.{&lt;signal1&gt;}.a6</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="3" type="MegaBus" signalName="&lt;signal1&gt;">
+			<ScalarRefs>
+				<ScalarRef displayName="In3.{&lt;signal1&gt;}.c1">INPUT:In3.{&lt;signal1&gt;}.c1</ScalarRef>
+				<ScalarRef displayName="In3.{&lt;signal1&gt;}.c2.b1.a1">INPUT:In3.{&lt;signal1&gt;}.c2.b1.a1</ScalarRef>
+				<ScalarRef displayName="In3.{&lt;signal1&gt;}.c2.b1.a2">INPUT:In3.{&lt;signal1&gt;}.c2.b1.a2</ScalarRef>
+				<ScalarRef displayName="In3.{&lt;signal1&gt;}.c2.b1.a3">INPUT:In3.{&lt;signal1&gt;}.c2.b1.a3</ScalarRef>
+				<ScalarRef displayName="In3.{&lt;signal1&gt;}.c2.b1.a4">INPUT:In3.{&lt;signal1&gt;}.c2.b1.a4</ScalarRef>
+				<ScalarRef displayName="In3.{&lt;signal1&gt;}.c2.b1.a5">INPUT:In3.{&lt;signal1&gt;}.c2.b1.a5</ScalarRef>
+				<ScalarRef displayName="In3.{&lt;signal1&gt;}.c2.b1.a6">INPUT:In3.{&lt;signal1&gt;}.c2.b1.a6</ScalarRef>
+				<ScalarRef displayName="In3.{&lt;signal1&gt;}.c2.b2">INPUT:In3.{&lt;signal1&gt;}.c2.b2</ScalarRef>
+				<ScalarRef displayName="In3.{&lt;signal1&gt;}.c3.a1">INPUT:In3.{&lt;signal1&gt;}.c3.a1</ScalarRef>
+				<ScalarRef displayName="In3.{&lt;signal1&gt;}.c3.a2">INPUT:In3.{&lt;signal1&gt;}.c3.a2</ScalarRef>
+				<ScalarRef displayName="In3.{&lt;signal1&gt;}.c3.a3">INPUT:In3.{&lt;signal1&gt;}.c3.a3</ScalarRef>
+				<ScalarRef displayName="In3.{&lt;signal1&gt;}.c3.a4">INPUT:In3.{&lt;signal1&gt;}.c3.a4</ScalarRef>
+				<ScalarRef displayName="In3.{&lt;signal1&gt;}.c3.a5">INPUT:In3.{&lt;signal1&gt;}.c3.a5</ScalarRef>
+				<ScalarRef displayName="In3.{&lt;signal1&gt;}.c3.a6">INPUT:In3.{&lt;signal1&gt;}.c3.a6</ScalarRef>
+				<ScalarRef displayName="In3.{&lt;signal1&gt;}.c4">INPUT:In3.{&lt;signal1&gt;}.c4</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport kind="DataStoreRead" type="fixdt(0,6,2)" signalName="ds1" portNr="4">
+			<ScalarRefs>
+				<ScalarRef displayName="{Data Store\nRead@ds1}">INPUT:Data Store
+Read</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport kind="DataStoreRead" type="SomeBus" signalName="ds2" portNr="5">
+			<ScalarRefs>
+				<ScalarRef displayName="{Data Store\nRead1@ds2}.ds2.x">INPUT:Data Store
+Read1.ds2.x</ScalarRef>
+				<ScalarRef displayName="{Data Store\nRead1@ds2}.ds2.y">INPUT:Data Store
+Read1.ds2.y</ScalarRef>
+				<ScalarRef displayName="{Data Store\nRead1@ds2}.ds2.z">INPUT:Data Store
+Read1.ds2.z</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+	</Outports>
+</SFunction>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.38" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_36876\bug_36876.slx" modelCreationDate="2017-04-21T10:45:02" creator="developer">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="5.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.38" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_36876\bug_36876.slx" creationDate="2017-04-21T10:45:02" modificationDate="2022-02-04T12:59:28">
+    <subsystem subsysID="ss1" physicalPath="bug_36876/myFrame/Subsystem/myFrame" path="myFrame/Subsystem/myFrame" sampleTime="0.01" name="myFrame" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="bug_36876/myFrame/Subsystem/myFrame/In1" path="myFrame/Subsystem/myFrame/In1">
+        <miltype>
+          <bus>
+            <signal signalName="c.a">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <double/>
+                </signal>
+                <signal index="2">
+                  <double/>
+                </signal>
+                <signal index="3">
+                  <double/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="c.b">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="c.a">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <Float64 min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+                </signal>
+                <signal index="2">
+                  <Float64 min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+                </signal>
+                <signal index="3">
+                  <Float64 min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="c.b">
+              <Float64 min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="bug_36876/myFrame/Subsystem/myFrame/Out1" path="myFrame/Subsystem/myFrame/Out1">
+        <miltype>
+          <bus>
+            <signal signalName="d.a">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <double/>
+                </signal>
+                <signal index="2">
+                  <double/>
+                </signal>
+                <signal index="3">
+                  <double/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="d.b">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="d.a">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <Float64 min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+                </signal>
+                <signal index="2">
+                  <Float64 min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+                </signal>
+                <signal index="3">
+                  <Float64 min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="d.b">
+              <Float64 min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="bug_36876/myFrame/Subsystem/myFrame/mySub" path="myFrame/Subsystem/myFrame/mySub" sampleTime="0.01" name="mySub" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="bug_36876/myFrame/Subsystem/myFrame/mySub/In1" path="myFrame/Subsystem/myFrame/mySub/In1">
+        <miltype>
+          <bus>
+            <signal signalName="c.a">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <double/>
+                </signal>
+                <signal index="2">
+                  <double/>
+                </signal>
+                <signal index="3">
+                  <double/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="c.b">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="c.a">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <Float64 min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+                </signal>
+                <signal index="2">
+                  <Float64 min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+                </signal>
+                <signal index="3">
+                  <Float64 min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="c.b">
+              <Float64 min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="bug_36876/myFrame/Subsystem/myFrame/mySub/Out1" path="myFrame/Subsystem/myFrame/mySub/Out1">
+        <miltype>
+          <bus>
+            <signal signalName="d.a">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <double/>
+                </signal>
+                <signal index="2">
+                  <double/>
+                </signal>
+                <signal index="3">
+                  <double/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="d.b">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="d.a">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <Float64 min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+                </signal>
+                <signal index="2">
+                  <Float64 min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+                </signal>
+                <signal index="3">
+                  <Float64 min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="d.b">
+              <Float64 min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

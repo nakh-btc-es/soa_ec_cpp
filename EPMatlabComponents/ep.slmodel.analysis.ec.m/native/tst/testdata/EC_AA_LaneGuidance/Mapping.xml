@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="autosar_LaneGuidance"/>
+    <Architecture id="id1" name="autosar_LaneGuidance [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="autosar_LaneGuidance_adapter.cpp:1:sut_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="leftLaneDistance" refId="id0"/>
+        <Path path="RequiredPort_LeftLaneDistance" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="leftTurnIndicator" refId="id0"/>
+        <Path path="RequiredPort_LeftTurnIndicator" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="rightLaneDistance" refId="id0"/>
+        <Path path="RequiredPort_RightLaneDistance" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="rightTurnIndicator" refId="id0"/>
+        <Path path="RequiredPort_RightTurnIndicator" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="leftCarInBlindSpot" refId="id0"/>
+        <Path path="RequiredPort_LeftCarInBlindSpot" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="rightCarInBlindSpot" refId="id0"/>
+        <Path path="RequiredPort_RightCarInBlindSpot" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="leftHazardIndicator" refId="id0"/>
+        <Path path="ProvidedPort_LeftHazardIndicator" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="rightHazardIndicator" refId="id0"/>
+        <Path path="ProvidedPort_RightHazardIndicator" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

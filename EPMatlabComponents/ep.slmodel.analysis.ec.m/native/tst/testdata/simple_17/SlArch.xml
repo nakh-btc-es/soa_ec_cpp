@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20200911T072354_1920\tmp_ut_simple_17\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20200911T072354_1920\tmp_ut_simple_17\startEC.m" modelVersion="1.250" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200911T072354_1920\tmp_ut_simple_17\slexBusesMATLABSystem_EC.slx" modelCreationDate="2004-05-28T17:59:49" creator="The MathWorks, Inc.">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.250" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200911T072354_1920\tmp_ut_simple_17\slexBusesMATLABSystem_EC.slx" creationDate="2004-05-28T17:59:49" modificationDate="2020-09-10T15:27:07" initScript="C:\Users\developer\AppData\Local\Temp\ut20200911T072354_1920\tmp_ut_simple_17\startEC.m">
+    <subsystem subsysID="ss1" physicalPath="slexBusesMATLABSystem_EC" path="" sampleTime="1" name="slexBusesMATLABSystem_EC" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="slexBusesMATLABSystem_EC/In1" path="In1" signalName="a">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="slexBusesMATLABSystem_EC/In2" path="In2" signalName="b">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out3" physicalPath="slexBusesMATLABSystem_EC/Out3" path="Out3" signalName="a">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out4" physicalPath="slexBusesMATLABSystem_EC/Out4" path="Out4" signalName="b">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Out5" physicalPath="slexBusesMATLABSystem_EC/Out5" path="Out5" signalName="sum">
+        <double/>
+      </outport>
+      <outport portNumber="4" name="Out6" physicalPath="slexBusesMATLABSystem_EC/Out6" path="Out6" signalName="prod">
+        <double/>
+      </outport>
+      <outport portNumber="5" name="Out7" physicalPath="slexBusesMATLABSystem_EC/Out7" path="Out7" signalName="diff">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="slexBusesMATLABSystem_EC/TopLevel" path="TopLevel" sampleTime="1" name="TopLevel" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="slexBusesMATLABSystem_EC/TopLevel/In1" path="TopLevel/In1" signalName="BTCAnnotatedInBusSignal_TopLevel_In11">
+        <bus busType="non_virtual" busObjectName="mybus">
+          <signal signalName="a">
+            <double/>
+          </signal>
+          <signal signalName="b">
+            <double/>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="slexBusesMATLABSystem_EC/TopLevel/Out1" path="TopLevel/Out1" signalName="BTCAnnotatedOutportBus_Out11">
+        <bus busType="non_virtual" busObjectName="mybus">
+          <signal signalName="a">
+            <double/>
+          </signal>
+          <signal signalName="b">
+            <double/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="slexBusesMATLABSystem_EC/TopLevel/Out2" path="TopLevel/Out2" signalName="BTCAnnotatedOutportBus_Out21">
+        <bus busType="non_virtual" busObjectName="myOutBus">
+          <signal signalName="sum">
+            <double/>
+          </signal>
+          <signal signalName="prod">
+            <double/>
+          </signal>
+          <signal signalName="diff">
+            <double/>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_6441\TLProj\PI_StructPointers" name="PI_StructPointers.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_6441\TLSim" name="PI_StructPointers_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_6441\TLProj\PI_StructPointers"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_6441\TLSim"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="Struct_Interfaces [C-Code]">
+    <Function name="PI_StructPointers" sampleTime="1.0E-4">
+      <Args>
+        <Arg name="StructPointer_Interface">
+          <Variable name="Arg_In_Out_f_"/>
+        </Arg>
+      </Args>
+      <Interface>
+        <InterfaceObj kind="in" var="StructPointer_Interface" access="-&gt;Ref_Input"/>
+        <InterfaceObj kind="in" var="StructPointer_Interface" access="-&gt;Input"/>
+        <InterfaceObj kind="out" var="StructPointer_Interface" access="-&gt;Output"/>
+      </Interface>
+    </Function>
+    <Function name="PI_Legacy_Code" sampleTime="1.0E-4">
+      <Args>
+        <Arg name="StructPointer_Interface">
+          <Variable name="Arg_In_Out_f_"/>
+        </Arg>
+        <Arg name="p_PI_LegacyCode_Instance_Spec">
+          <Variable name="Instance"/>
+        </Arg>
+      </Args>
+      <Interface>
+        <InterfaceObj kind="in" var="StructPointer_Interface" access="-&gt;Ref_Input"/>
+        <InterfaceObj kind="in" var="StructPointer_Interface" access="-&gt;Input"/>
+        <InterfaceObj kind="out" var=""/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings/>
+</CodeModel>

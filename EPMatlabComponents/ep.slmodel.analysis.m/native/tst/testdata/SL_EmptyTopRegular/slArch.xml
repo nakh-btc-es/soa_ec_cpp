@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_empty_top_regular\init.m" modelVersion="12.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_empty_top_regular\empty_top.mdl" modelCreationDate="2019-07-16T15:35:31" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="12.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_empty_top_regular\empty_top.mdl" creationDate="2019-07-16T15:35:31" modificationDate="2024-09-11T18:14:28" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_empty_top_regular\init.m">
+    <subsystem subsysID="ss1" physicalPath="empty_top" path="" sampleTime="2" name="empty_top" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="empty_top/In1" path="In1" signalName="sig_in1">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="empty_top/In2" path="In2" signalName="sig_in2">
+        <boolean/>
+      </inport>
+      <parameter name="paramA" path="Constant" physicalPath="empty_top/Constant" origin="explicit_param" workspace="paramA" initValue="1">
+        <boolean/>
+        <usageContext path="Constant" physicalPath="empty_top/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="empty_top/Out1" path="Out1" signalName="sig_out1">
+        <boolean/>
+      </outport>
+      <display physicalPath="empty_top/LogOp1" path="LogOp1" name="LogOp1" portNumber="1" signalName="sig_log_op1">
+        <boolean/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

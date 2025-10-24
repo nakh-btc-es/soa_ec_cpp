@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_methods_busses\ut_results\AddModelInfo.xml" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_methods_busses\Wrapper_aa_methods_busses.slx" modelCreationDate="2025-01-13T17:00:38" creator="developer">
+  <toolInfo name="Matlab" release="(R2023b)" version="23.2" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2023b)" version="23.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_methods_busses\Wrapper_aa_methods_busses.slx" creationDate="2025-01-13T17:00:38" modificationDate="2025-01-13T17:00:51">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_aa_methods_busses" path="" sampleTime="0.2" name="Wrapper_aa_methods_busses" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="Input1" physicalPath="Wrapper_aa_methods_busses/Input1" path="Input1" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus1">
+          <signal signalName="a">
+            <boolean/>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="c">
+            <array size="1" startIndex="1">
+              <array size="3" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="2" name="Input2" physicalPath="Wrapper_aa_methods_busses/Input2" path="Input2" isMessage="true" signalName="&lt;signal1&gt;">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="myBus2">
+            <signal signalName="BusId">
+              <int32/>
+            </signal>
+            <signal signalName="SubBus1">
+              <bus busType="non_virtual" busObjectName="myBus1">
+                <signal signalName="a">
+                  <boolean/>
+                </signal>
+                <signal signalName="b">
+                  <array size="3" startIndex="1">
+                    <array size="1" startIndex="1">
+                      <double/>
+                    </array>
+                  </array>
+                </signal>
+                <signal signalName="c">
+                  <array size="1" startIndex="1">
+                    <array size="3" startIndex="1">
+                      <double/>
+                    </array>
+                  </array>
+                </signal>
+              </bus>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <inport portNumber="3" name="Input3" physicalPath="Wrapper_aa_methods_busses/Input3" path="Input3" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus1">
+          <signal signalName="a">
+            <boolean/>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="c">
+            <array size="1" startIndex="1">
+              <array size="3" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="4" name="Input4" physicalPath="Wrapper_aa_methods_busses/Input4" path="Input4" isMessage="true" signalName="&lt;signal1&gt;">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="myBus2">
+            <signal signalName="BusId">
+              <int32/>
+            </signal>
+            <signal signalName="SubBus1">
+              <bus busType="non_virtual" busObjectName="myBus1">
+                <signal signalName="a">
+                  <boolean/>
+                </signal>
+                <signal signalName="b">
+                  <array size="3" startIndex="1">
+                    <array size="1" startIndex="1">
+                      <double/>
+                    </array>
+                  </array>
+                </signal>
+                <signal signalName="c">
+                  <array size="1" startIndex="1">
+                    <array size="3" startIndex="1">
+                      <double/>
+                    </array>
+                  </array>
+                </signal>
+              </bus>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <inport portNumber="0" name="s_myFirstFunction_u_In" physicalPath="Wrapper_aa_methods_busses/Client Function Mocks/call_s_myFirstFunction/s_myFirstFunction_u_In" path="Client Function Mocks/call_s_myFirstFunction/s_myFirstFunction_u_In" signalName="c_22C9A">
+        <bus busType="non_virtual" busObjectName="myBus1">
+          <signal signalName="a">
+            <boolean/>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="c">
+            <array size="1" startIndex="1">
+              <array size="3" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="c_22C9A"/>
+      </inport>
+      <inport portNumber="0" name="s_mySecondFunction_u_In" physicalPath="Wrapper_aa_methods_busses/Client Function Mocks/call_s_mySecondFunction/s_mySecondFunction_u_In" path="Client Function Mocks/call_s_mySecondFunction/s_mySecondFunction_u_In" signalName="c_8A050">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="BusId">
+                <int32/>
+              </signal>
+              <signal signalName="SubBus1">
+                <bus busType="non_virtual" busObjectName="myBus1">
+                  <signal signalName="a">
+                    <boolean/>
+                  </signal>
+                  <signal signalName="b">
+                    <array size="3" startIndex="1">
+                      <array size="1" startIndex="1">
+                        <double/>
+                      </array>
+                    </array>
+                  </signal>
+                  <signal signalName="c">
+                    <array size="1" startIndex="1">
+                      <array size="3" startIndex="1">
+                        <double/>
+                      </array>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </array>
+        </array>
+        <dataStoreMemory signalName="c_8A050"/>
+      </inport>
+      <inport portNumber="0" name="c_mySecondCall_y_Out" physicalPath="W_server_mock_aa_methods_busses/Mock_c_c_mySecondCall/c_mySecondCall_y_Out" path="W_server_mock_aa_methods_busses/Mock_c_c_mySecondCall/c_mySecondCall_y_Out" modelRef="model006" signalName="s_1ECE3">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="BusId">
+                <int32/>
+              </signal>
+              <signal signalName="SubBus1">
+                <bus busType="non_virtual" busObjectName="myBus1">
+                  <signal signalName="a">
+                    <boolean/>
+                  </signal>
+                  <signal signalName="b">
+                    <array size="3" startIndex="1">
+                      <array size="1" startIndex="1">
+                        <double/>
+                      </array>
+                    </array>
+                  </signal>
+                  <signal signalName="c">
+                    <array size="1" startIndex="1">
+                      <array size="3" startIndex="1">
+                        <double/>
+                      </array>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </array>
+        </array>
+        <dataStoreMemory signalName="s_1ECE3"/>
+      </inport>
+      <inport portNumber="0" name="c_myFirstCall_y_Out" physicalPath="W_server_mock_aa_methods_busses/Mock_c_c_myFirstCall/c_myFirstCall_y_Out" path="W_server_mock_aa_methods_busses/Mock_c_c_myFirstCall/c_myFirstCall_y_Out" modelRef="model006" signalName="s_F6DD9">
+        <bus busType="non_virtual" busObjectName="myBus1">
+          <signal signalName="a">
+            <boolean/>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="c">
+            <array size="1" startIndex="1">
+              <array size="3" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="s_F6DD9"/>
+      </inport>
+      <outport portNumber="1" name="Output1" physicalPath="Wrapper_aa_methods_busses/Output1" path="Output1" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus1">
+          <signal signalName="a">
+            <boolean/>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="c">
+            <array size="1" startIndex="1">
+              <array size="3" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="2" name="Output2" physicalPath="Wrapper_aa_methods_busses/Output2" path="Output2" isMessage="true" signalName="&lt;signal1&gt;">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="BusId">
+                <int32/>
+              </signal>
+              <signal signalName="SubBus1">
+                <bus busType="non_virtual" busObjectName="myBus1">
+                  <signal signalName="a">
+                    <boolean/>
+                  </signal>
+                  <signal signalName="b">
+                    <array size="3" startIndex="1">
+                      <array size="1" startIndex="1">
+                        <double/>
+                      </array>
+                    </array>
+                  </signal>
+                  <signal signalName="c">
+                    <array size="1" startIndex="1">
+                      <array size="3" startIndex="1">
+                        <double/>
+                      </array>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Output3" physicalPath="Wrapper_aa_methods_busses/Output3" path="Output3" isMessage="true" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus1">
+          <signal signalName="a">
+            <boolean/>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="c">
+            <array size="1" startIndex="1">
+              <array size="3" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="4" name="Output4" physicalPath="Wrapper_aa_methods_busses/Output4" path="Output4" isMessage="true" signalName="&lt;signal1&gt;">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="BusId">
+                <int32/>
+              </signal>
+              <signal signalName="SubBus1">
+                <bus busType="non_virtual" busObjectName="myBus1">
+                  <signal signalName="a">
+                    <boolean/>
+                  </signal>
+                  <signal signalName="b">
+                    <array size="3" startIndex="1">
+                      <array size="1" startIndex="1">
+                        <double/>
+                      </array>
+                    </array>
+                  </signal>
+                  <signal signalName="c">
+                    <array size="1" startIndex="1">
+                      <array size="3" startIndex="1">
+                        <double/>
+                      </array>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="0" name="s_mySecondFunction_y_Out" physicalPath="Wrapper_aa_methods_busses/Client Function Mocks/call_s_mySecondFunction/s_mySecondFunction_y_Out" path="Client Function Mocks/call_s_mySecondFunction/s_mySecondFunction_y_Out" signalName="c_7A5D5">
+        <array size="3" startIndex="1">
+          <array size="1" startIndex="1">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="BusId">
+                <int32/>
+              </signal>
+              <signal signalName="SubBus1">
+                <bus busType="non_virtual" busObjectName="myBus1">
+                  <signal signalName="a">
+                    <boolean/>
+                  </signal>
+                  <signal signalName="b">
+                    <array size="3" startIndex="1">
+                      <array size="1" startIndex="1">
+                        <double/>
+                      </array>
+                    </array>
+                  </signal>
+                  <signal signalName="c">
+                    <array size="1" startIndex="1">
+                      <array size="3" startIndex="1">
+                        <double/>
+                      </array>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </array>
+        </array>
+        <dataStoreMemory signalName="c_7A5D5"/>
+      </outport>
+      <outport portNumber="0" name="s_myFirstFunction_y_Out" physicalPath="Wrapper_aa_methods_busses/Client Function Mocks/call_s_myFirstFunction/s_myFirstFunction_y_Out" path="Client Function Mocks/call_s_myFirstFunction/s_myFirstFunction_y_Out" signalName="c_918C5">
+        <bus busType="non_virtual" busObjectName="myBus1">
+          <signal signalName="a">
+            <boolean/>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="c">
+            <array size="1" startIndex="1">
+              <array size="3" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="c_918C5"/>
+      </outport>
+      <outport portNumber="0" name="c_myFirstCall_u_In" physicalPath="W_server_mock_aa_methods_busses/Mock_c_c_myFirstCall/c_myFirstCall_u_In" path="W_server_mock_aa_methods_busses/Mock_c_c_myFirstCall/c_myFirstCall_u_In" modelRef="model006" signalName="s_BFF36">
+        <bus busType="non_virtual" busObjectName="myBus1">
+          <signal signalName="a">
+            <boolean/>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="c">
+            <array size="1" startIndex="1">
+              <array size="3" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="s_BFF36"/>
+      </outport>
+      <outport portNumber="0" name="c_mySecondCall_u_In" physicalPath="W_server_mock_aa_methods_busses/Mock_c_c_mySecondCall/c_mySecondCall_u_In" path="W_server_mock_aa_methods_busses/Mock_c_c_mySecondCall/c_mySecondCall_u_In" modelRef="model006" signalName="s_D55F4">
+        <array size="1" startIndex="1">
+          <array size="2" startIndex="1">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="BusId">
+                <int32/>
+              </signal>
+              <signal signalName="SubBus1">
+                <bus busType="non_virtual" busObjectName="myBus1">
+                  <signal signalName="a">
+                    <boolean/>
+                  </signal>
+                  <signal signalName="b">
+                    <array size="3" startIndex="1">
+                      <array size="1" startIndex="1">
+                        <double/>
+                      </array>
+                    </array>
+                  </signal>
+                  <signal signalName="c">
+                    <array size="1" startIndex="1">
+                      <array size="3" startIndex="1">
+                        <double/>
+                      </array>
+                    </array>
+                  </signal>
+                </bus>
+              </signal>
+            </bus>
+          </array>
+        </array>
+        <dataStoreMemory signalName="s_D55F4"/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_methods_busses\W_client_aa_methods_busses.slx" creationDate="2025-01-13T17:00:44" modificationDate="2025-01-13T17:00:45"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_methods_busses\W_server_aa_methods_busses.slx" creationDate="2025-01-13T17:00:42" modificationDate="2025-01-13T17:00:44"/>
+  <model modelID="model004" modelKind="model_ref" modelVersion="4.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_methods_busses\aa_methods_busses.slx" creationDate="2023-03-23T14:42:30" modificationDate="2025-01-13T17:00:34"/>
+  <model modelID="model005" modelKind="model_ref" modelVersion="1.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_methods_busses\W_integ_aa_methods_busses.slx" creationDate="2025-01-13T17:00:42" modificationDate="2025-01-13T17:00:48"/>
+  <model modelID="model006" modelKind="model_ref" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20250113T165128_20752\tmp_aa_methods_busses\W_server_mock_aa_methods_busses.slx" creationDate="2025-01-13T17:00:39" modificationDate="2025-01-13T17:00:41"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

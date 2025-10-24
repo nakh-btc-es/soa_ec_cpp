@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_client_server_example\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_client_server_example\init_Wrapper_SWC.m" modelVersion="11.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_client_server_example\Wrapper_SWC.slx" modelCreationDate="2019-10-30T10:57:32" creator="nabilekhoury">
+  <toolInfo name="Matlab" release="(R2022b)" version="9.13" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2022b)" version="10.6" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="11.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_client_server_example\Wrapper_SWC.slx" creationDate="2019-10-30T10:57:32" modificationDate="2023-05-26T10:50:47" initScript="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_client_server_example\init_Wrapper_SWC.m">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_SWC" path="" sampleTime="0.01" name="Wrapper_SWC" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="RP_B" physicalPath="Wrapper_SWC/RP_B" path="RP_B" signalName="root_in1">
+        <uint16/>
+      </inport>
+      <inport portNumber="2" name="RP_D" physicalPath="Wrapper_SWC/RP_D" path="RP_D" signalName="root_in2">
+        <uint16/>
+      </inport>
+      <inport portNumber="3" name="in_Runa2_fct_C" physicalPath="Wrapper_SWC/in_Runa2_fct_C" path="in_Runa2_fct_C" signalName="root_in3">
+        <uint16/>
+      </inport>
+      <inport portNumber="0" name="dsin_GetA_Out" physicalPath="Wrapper_SWC/Mock_GetA/dsin_GetA_Out" path="Mock_GetA/dsin_GetA_Out" signalName="dsin_GetA_Out">
+        <uint16/>
+        <dataStoreMemory signalName="dsin_GetA_Out"/>
+      </inport>
+      <inport portNumber="0" name="dsin_Sum_ERR" physicalPath="Wrapper_SWC/Mock_Sum/dsin_Sum_ERR" path="Mock_Sum/dsin_Sum_ERR" signalName="dsin_Sum_ERR">
+        <uint8/>
+        <dataStoreMemory signalName="dsin_Sum_ERR"/>
+      </inport>
+      <inport portNumber="0" name="dsin_Sum_Out" physicalPath="Wrapper_SWC/Mock_Sum/dsin_Sum_Out" path="Mock_Sum/dsin_Sum_Out" signalName="dsin_Sum_Out">
+        <uint16/>
+        <dataStoreMemory signalName="dsin_Sum_Out"/>
+      </inport>
+      <outport portNumber="1" name="PP_A_plus_B" physicalPath="Wrapper_SWC/PP_A_plus_B" path="PP_A_plus_B" signalName="root_out1">
+        <uint16/>
+      </outport>
+      <outport portNumber="2" name="PP_A_plus_B_plus_C" physicalPath="Wrapper_SWC/PP_A_plus_B_plus_C" path="PP_A_plus_B_plus_C" signalName="root_out2">
+        <uint16/>
+      </outport>
+      <outport portNumber="3" name="PP_A_plus_2B_plus_C" physicalPath="Wrapper_SWC/PP_A_plus_2B_plus_C" path="PP_A_plus_2B_plus_C" signalName="root_out3">
+        <uint16/>
+      </outport>
+      <outport portNumber="4" name="PP_A_plus_2B_plus_C_plus_D" physicalPath="Wrapper_SWC/PP_A_plus_2B_plus_C_plus_D" path="PP_A_plus_2B_plus_C_plus_D" signalName="root_out4">
+        <uint16/>
+      </outport>
+      <outport portNumber="5" name="PP_A_plus_2B_plus_C_plus_D_Accu" physicalPath="Wrapper_SWC/PP_A_plus_2B_plus_C_plus_D_Accu" path="PP_A_plus_2B_plus_C_plus_D_Accu" signalName="root_out5">
+        <uint16/>
+      </outport>
+      <outport portNumber="6" name="out_Runa2_fct_A_plus_B_plus_C" physicalPath="Wrapper_SWC/out_Runa2_fct_A_plus_B_plus_C" path="out_Runa2_fct_A_plus_B_plus_C" signalName="root_out6">
+        <uint16/>
+      </outport>
+      <outport portNumber="7" name="out_Runa3_fct_A_plus_2B_plus_C" physicalPath="Wrapper_SWC/out_Runa3_fct_A_plus_2B_plus_C" path="out_Runa3_fct_A_plus_2B_plus_C" signalName="root_out7">
+        <uint16/>
+      </outport>
+      <outport portNumber="8" name="out_Runa3_fct_ERR" physicalPath="Wrapper_SWC/out_Runa3_fct_ERR" path="out_Runa3_fct_ERR" signalName="root_out8">
+        <uint8/>
+      </outport>
+      <outport portNumber="0" name="dsout_SetResult_In" physicalPath="Wrapper_SWC/Mock_SetResult/dsout_SetResult_In" path="Mock_SetResult/dsout_SetResult_In" signalName="dsout_SetResult_In">
+        <uint16/>
+        <dataStoreMemory signalName="dsout_SetResult_In"/>
+      </outport>
+      <outport portNumber="0" name="dsout_Sum_In1" physicalPath="Wrapper_SWC/Mock_Sum/dsout_Sum_In1" path="Mock_Sum/dsout_Sum_In1" signalName="dsout_Sum_In1">
+        <uint16/>
+        <dataStoreMemory signalName="dsout_Sum_In1"/>
+      </outport>
+      <outport portNumber="0" name="dsout_Sum_In2" physicalPath="Wrapper_SWC/Mock_Sum/dsout_Sum_In2" path="Mock_Sum/dsout_Sum_In2" signalName="dsout_Sum_In2">
+        <uint16/>
+        <dataStoreMemory signalName="dsout_Sum_In2"/>
+      </outport>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss7"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="SWC/Sys_Runa1" path="SWC/SWC/Sys_Runa1" sampleTime="0.01" name="Sys_Runa1" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="RP_B" physicalPath="SWC/Sys_Runa1/RP_B" path="SWC/SWC/Sys_Runa1/RP_B" modelRef="model002">
+        <uint16/>
+      </inport>
+      <inport portNumber="0" name="dsin_GetA_Out" physicalPath="Wrapper_SWC/Mock_GetA/dsin_GetA_Out" path="Mock_GetA/dsin_GetA_Out" signalName="dsin_GetA_Out">
+        <uint16/>
+        <dataStoreMemory signalName="dsin_GetA_Out"/>
+      </inport>
+      <inport portNumber="0" name="dsin_Sum_ERR" physicalPath="Wrapper_SWC/Mock_Sum/dsin_Sum_ERR" path="Mock_Sum/dsin_Sum_ERR" signalName="dsin_Sum_ERR">
+        <uint8/>
+        <dataStoreMemory signalName="dsin_Sum_ERR"/>
+      </inport>
+      <inport portNumber="0" name="dsin_Sum_Out" physicalPath="Wrapper_SWC/Mock_Sum/dsin_Sum_Out" path="Mock_Sum/dsin_Sum_Out" signalName="dsin_Sum_Out">
+        <uint16/>
+        <dataStoreMemory signalName="dsin_Sum_Out"/>
+      </inport>
+      <outport portNumber="1" name="PP_A_plus_B" physicalPath="SWC/Sys_Runa1/PP_A_plus_B" path="SWC/SWC/Sys_Runa1/PP_A_plus_B" modelRef="model002">
+        <uint16/>
+      </outport>
+      <outport portNumber="2" name="IRV_A_plus_B" physicalPath="SWC/Sys_Runa1/IRV_A_plus_B" path="SWC/SWC/Sys_Runa1/IRV_A_plus_B" modelRef="model002">
+        <uint16/>
+      </outport>
+      <outport portNumber="0" name="dsout_Sum_In1" physicalPath="Wrapper_SWC/Mock_Sum/dsout_Sum_In1" path="Mock_Sum/dsout_Sum_In1" signalName="dsout_Sum_In1">
+        <uint16/>
+        <dataStoreMemory signalName="dsout_Sum_In1"/>
+      </outport>
+      <outport portNumber="0" name="dsout_Sum_In2" physicalPath="Wrapper_SWC/Mock_Sum/dsout_Sum_In2" path="Mock_Sum/dsout_Sum_In2" signalName="dsout_Sum_In2">
+        <uint16/>
+        <dataStoreMemory signalName="dsout_Sum_In2"/>
+      </outport>
+      <slfunc_caller path="SWC/SWC/Sys_Runa1/Call_GetA" pathCaller="SWC/Sys_Runa1/Call_GetA" pathFunction="Wrapper_SWC/Mock_GetA"/>
+      <slfunc_caller path="SWC/SWC/Sys_Runa1/Call_Sum" pathCaller="SWC/Sys_Runa1/Call_Sum" pathFunction="Wrapper_SWC/Mock_Sum"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="SWC/Sys_Runa4" path="SWC/SWC/Sys_Runa4" sampleTime="0.01" name="Sys_Runa4" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="IRV_A_plus_2B_plus_C" physicalPath="SWC/Sys_Runa4/IRV_A_plus_2B_plus_C" path="SWC/SWC/Sys_Runa4/IRV_A_plus_2B_plus_C" modelRef="model002" signalName="IRV_A_plus_2B_plus_C">
+        <uint16/>
+      </inport>
+      <inport portNumber="2" name="RP_D" physicalPath="SWC/Sys_Runa4/RP_D" path="SWC/SWC/Sys_Runa4/RP_D" modelRef="model002">
+        <uint16/>
+      </inport>
+      <inport portNumber="0" name="dsin_Sum_ERR" physicalPath="Wrapper_SWC/Mock_Sum/dsin_Sum_ERR" path="Mock_Sum/dsin_Sum_ERR" signalName="dsin_Sum_ERR">
+        <uint8/>
+        <dataStoreMemory signalName="dsin_Sum_ERR"/>
+      </inport>
+      <inport portNumber="0" name="dsin_Sum_Out" physicalPath="Wrapper_SWC/Mock_Sum/dsin_Sum_Out" path="Mock_Sum/dsin_Sum_Out" signalName="dsin_Sum_Out">
+        <uint16/>
+        <dataStoreMemory signalName="dsin_Sum_Out"/>
+      </inport>
+      <outport portNumber="1" name="PP_A_plus_2B_plus_C_plus_D" physicalPath="SWC/Sys_Runa4/PP_A_plus_2B_plus_C_plus_D" path="SWC/SWC/Sys_Runa4/PP_A_plus_2B_plus_C_plus_D" modelRef="model002">
+        <uint16/>
+      </outport>
+      <outport portNumber="2" name="IRV_A_plus_2B_plus_C_plus_D" physicalPath="SWC/Sys_Runa4/IRV_A_plus_2B_plus_C_plus_D" path="SWC/SWC/Sys_Runa4/IRV_A_plus_2B_plus_C_plus_D" modelRef="model002">
+        <uint16/>
+      </outport>
+      <outport portNumber="0" name="dsout_Sum_In1" physicalPath="Wrapper_SWC/Mock_Sum/dsout_Sum_In1" path="Mock_Sum/dsout_Sum_In1" signalName="dsout_Sum_In1">
+        <uint16/>
+        <dataStoreMemory signalName="dsout_Sum_In1"/>
+      </outport>
+      <outport portNumber="0" name="dsout_Sum_In2" physicalPath="Wrapper_SWC/Mock_Sum/dsout_Sum_In2" path="Mock_Sum/dsout_Sum_In2" signalName="dsout_Sum_In2">
+        <uint16/>
+        <dataStoreMemory signalName="dsout_Sum_In2"/>
+      </outport>
+      <slfunc_caller path="SWC/SWC/Sys_Runa4/Call_Sum1" pathCaller="SWC/Sys_Runa4/Call_Sum1" pathFunction="Wrapper_SWC/Mock_Sum"/>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="SWC/Sys_Runa5" path="SWC/SWC/Sys_Runa5" sampleTime="0.02" name="Sys_Runa5" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="IRV_A_plus_2B_plus_C_plus_D" physicalPath="SWC/Sys_Runa5/IRV_A_plus_2B_plus_C_plus_D" path="SWC/SWC/Sys_Runa5/IRV_A_plus_2B_plus_C_plus_D" modelRef="model002" signalName="IRV_A_plus_2B_plus_C_plus_D">
+        <uint16/>
+      </inport>
+      <inport portNumber="0" name="dsin_Sum_ERR" physicalPath="Wrapper_SWC/Mock_Sum/dsin_Sum_ERR" path="Mock_Sum/dsin_Sum_ERR" signalName="dsin_Sum_ERR">
+        <uint8/>
+        <dataStoreMemory signalName="dsin_Sum_ERR"/>
+      </inport>
+      <inport portNumber="0" name="dsin_Sum_Out" physicalPath="Wrapper_SWC/Mock_Sum/dsin_Sum_Out" path="Mock_Sum/dsin_Sum_Out" signalName="dsin_Sum_Out">
+        <uint16/>
+        <dataStoreMemory signalName="dsin_Sum_Out"/>
+      </inport>
+      <outport portNumber="1" name="PP_A_plus_2B_plus_C_plus_D" physicalPath="SWC/Sys_Runa5/PP_A_plus_2B_plus_C_plus_D" path="SWC/SWC/Sys_Runa5/PP_A_plus_2B_plus_C_plus_D" modelRef="model002">
+        <uint16/>
+      </outport>
+      <outport portNumber="0" name="dsout_SetResult_In" physicalPath="Wrapper_SWC/Mock_SetResult/dsout_SetResult_In" path="Mock_SetResult/dsout_SetResult_In" signalName="dsout_SetResult_In">
+        <uint16/>
+        <dataStoreMemory signalName="dsout_SetResult_In"/>
+      </outport>
+      <outport portNumber="0" name="dsout_Sum_In1" physicalPath="Wrapper_SWC/Mock_Sum/dsout_Sum_In1" path="Mock_Sum/dsout_Sum_In1" signalName="dsout_Sum_In1">
+        <uint16/>
+        <dataStoreMemory signalName="dsout_Sum_In1"/>
+      </outport>
+      <outport portNumber="0" name="dsout_Sum_In2" physicalPath="Wrapper_SWC/Mock_Sum/dsout_Sum_In2" path="Mock_Sum/dsout_Sum_In2" signalName="dsout_Sum_In2">
+        <uint16/>
+        <dataStoreMemory signalName="dsout_Sum_In2"/>
+      </outport>
+      <slfunc_caller path="SWC/SWC/Sys_Runa5/Call_SetResult" pathCaller="SWC/Sys_Runa5/Call_SetResult" pathFunction="Wrapper_SWC/Mock_SetResult"/>
+      <slfunc_caller path="SWC/SWC/Sys_Runa5/Call_Sum1" pathCaller="SWC/Sys_Runa5/Call_Sum1" pathFunction="Wrapper_SWC/Mock_Sum"/>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="11.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_client_server_example\SWC.slx" creationDate="2019-10-02T12:31:08" modificationDate="2023-05-26T10:50:47" initScript="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_client_server_example\init_Wrapper_SWC.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

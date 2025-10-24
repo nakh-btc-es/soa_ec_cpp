@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.27" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_em_968\te_Calcn.mdl" modelCreationDate="2015-12-22T19:13:54" creator="sankaranara">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="5.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.27" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_em_968\te_Calcn.mdl" creationDate="2015-12-22T19:13:54" modificationDate="2022-02-04T15:26:10">
+    <subsystem subsysID="ss1" physicalPath="te_Calcn/sim_Calcn/Subsystem/sim_Calcn" path="sim_Calcn/Subsystem/sim_Calcn" sampleTime="0.001" name="sim_Calcn" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="trqAA" physicalPath="te_Calcn/sim_Calcn/Subsystem/sim_Calcn/trqAA" path="sim_Calcn/Subsystem/sim_Calcn/trqAA">
+        <miltype>
+          <bus>
+            <signal signalName="trqAA.FloatAryAxles">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <double/>
+                </signal>
+                <signal index="2">
+                  <double/>
+                </signal>
+                <signal index="3">
+                  <double/>
+                </signal>
+                <signal index="4">
+                  <double/>
+                </signal>
+                <signal index="5">
+                  <double/>
+                </signal>
+                <signal index="6">
+                  <double/>
+                </signal>
+                <signal index="7">
+                  <double/>
+                </signal>
+                <signal index="8">
+                  <double/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="trqAA.QlyAryAxles">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <uint8/>
+                </signal>
+                <signal index="2">
+                  <uint8/>
+                </signal>
+                <signal index="3">
+                  <uint8/>
+                </signal>
+                <signal index="4">
+                  <uint8/>
+                </signal>
+                <signal index="5">
+                  <uint8/>
+                </signal>
+                <signal index="6">
+                  <uint8/>
+                </signal>
+                <signal index="7">
+                  <uint8/>
+                </signal>
+                <signal index="8">
+                  <uint8/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="trqAA.FloatAryAxles">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <Float32/>
+                </signal>
+                <signal index="2">
+                  <Float32/>
+                </signal>
+                <signal index="3">
+                  <Float32/>
+                </signal>
+                <signal index="4">
+                  <Float32/>
+                </signal>
+                <signal index="5">
+                  <Float32/>
+                </signal>
+                <signal index="6">
+                  <Float32/>
+                </signal>
+                <signal index="7">
+                  <Float32/>
+                </signal>
+                <signal index="8">
+                  <Float32/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="trqAA.QlyAryAxles">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="3">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="4">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="5">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="6">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="7">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="8">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="vA" physicalPath="te_Calcn/sim_Calcn/Subsystem/sim_Calcn/vA" path="sim_Calcn/Subsystem/sim_Calcn/vA">
+        <miltype>
+          <bus>
+            <signal signalName="vA.FloatAry8">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <double/>
+                </signal>
+                <signal index="2">
+                  <double/>
+                </signal>
+                <signal index="3">
+                  <double/>
+                </signal>
+                <signal index="4">
+                  <double/>
+                </signal>
+                <signal index="5">
+                  <double/>
+                </signal>
+                <signal index="6">
+                  <double/>
+                </signal>
+                <signal index="7">
+                  <double/>
+                </signal>
+                <signal index="8">
+                  <double/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="vA.QlyAry8">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <uint8/>
+                </signal>
+                <signal index="2">
+                  <uint8/>
+                </signal>
+                <signal index="3">
+                  <uint8/>
+                </signal>
+                <signal index="4">
+                  <uint8/>
+                </signal>
+                <signal index="5">
+                  <uint8/>
+                </signal>
+                <signal index="6">
+                  <uint8/>
+                </signal>
+                <signal index="7">
+                  <uint8/>
+                </signal>
+                <signal index="8">
+                  <uint8/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="vA.FloatAry8">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <Float32/>
+                </signal>
+                <signal index="2">
+                  <Float32/>
+                </signal>
+                <signal index="3">
+                  <Float32/>
+                </signal>
+                <signal index="4">
+                  <Float32/>
+                </signal>
+                <signal index="5">
+                  <Float32/>
+                </signal>
+                <signal index="6">
+                  <Float32/>
+                </signal>
+                <signal index="7">
+                  <Float32/>
+                </signal>
+                <signal index="8">
+                  <Float32/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="vA.QlyAry8">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="3">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="4">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="5">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="6">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="7">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="8">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="lTR" physicalPath="te_Calcn/sim_Calcn/Subsystem/sim_Calcn/lTR" path="sim_Calcn/Subsystem/sim_Calcn/lTR">
+        <miltype>
+          <bus>
+            <signal signalName="lTireRd.FloatAry8">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <double/>
+                </signal>
+                <signal index="2">
+                  <double/>
+                </signal>
+                <signal index="3">
+                  <double/>
+                </signal>
+                <signal index="4">
+                  <double/>
+                </signal>
+                <signal index="5">
+                  <double/>
+                </signal>
+                <signal index="6">
+                  <double/>
+                </signal>
+                <signal index="7">
+                  <double/>
+                </signal>
+                <signal index="8">
+                  <double/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="lTireRd.QlyAry8">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <uint8/>
+                </signal>
+                <signal index="2">
+                  <uint8/>
+                </signal>
+                <signal index="3">
+                  <uint8/>
+                </signal>
+                <signal index="4">
+                  <uint8/>
+                </signal>
+                <signal index="5">
+                  <uint8/>
+                </signal>
+                <signal index="6">
+                  <uint8/>
+                </signal>
+                <signal index="7">
+                  <uint8/>
+                </signal>
+                <signal index="8">
+                  <uint8/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="lTireRd.FloatAry8">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <Float32/>
+                </signal>
+                <signal index="2">
+                  <Float32/>
+                </signal>
+                <signal index="3">
+                  <Float32/>
+                </signal>
+                <signal index="4">
+                  <Float32/>
+                </signal>
+                <signal index="5">
+                  <Float32/>
+                </signal>
+                <signal index="6">
+                  <Float32/>
+                </signal>
+                <signal index="7">
+                  <Float32/>
+                </signal>
+                <signal index="8">
+                  <Float32/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="lTireRd.QlyAry8">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="3">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="4">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="5">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="6">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="7">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="8">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="stAD" physicalPath="te_Calcn/sim_Calcn/Subsystem/sim_Calcn/stAD" path="sim_Calcn/Subsystem/sim_Calcn/stAD">
+        <miltype signalName="stAD">
+          <nonUniformArray size="8">
+            <signal index="1">
+              <boolean/>
+            </signal>
+            <signal index="2">
+              <boolean/>
+            </signal>
+            <signal index="3">
+              <boolean/>
+            </signal>
+            <signal index="4">
+              <boolean/>
+            </signal>
+            <signal index="5">
+              <boolean/>
+            </signal>
+            <signal index="6">
+              <boolean/>
+            </signal>
+            <signal index="7">
+              <boolean/>
+            </signal>
+            <signal index="8">
+              <boolean/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype signalName="stAD">
+          <nonUniformArray size="8">
+            <signal index="1">
+              <Bool/>
+            </signal>
+            <signal index="2">
+              <Bool/>
+            </signal>
+            <signal index="3">
+              <Bool/>
+            </signal>
+            <signal index="4">
+              <Bool/>
+            </signal>
+            <signal index="5">
+              <Bool/>
+            </signal>
+            <signal index="6">
+              <Bool/>
+            </signal>
+            <signal index="7">
+              <Bool/>
+            </signal>
+            <signal index="8">
+              <Bool/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out" physicalPath="te_Calcn/sim_Calcn/Subsystem/sim_Calcn/Out" path="sim_Calcn/Subsystem/sim_Calcn/Out">
+        <miltype>
+          <bus>
+            <signal signalName="Out.Float">
+              <double/>
+            </signal>
+            <signal signalName="Out.Qly">
+              <uint8/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="Out.Float">
+              <Float32/>
+            </signal>
+            <signal signalName="Out.Qly">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="te_Calcn/sim_Calcn/Subsystem/sim_Calcn/Calcn" path="sim_Calcn/Subsystem/sim_Calcn/Calcn" sampleTime="0.001" name="Calcn" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="trqAA" physicalPath="te_Calcn/sim_Calcn/Subsystem/sim_Calcn/Calcn/trqAA" path="sim_Calcn/Subsystem/sim_Calcn/Calcn/trqAA">
+        <miltype>
+          <bus>
+            <signal signalName="trqAA.FloatAryAxles">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <double/>
+                </signal>
+                <signal index="2">
+                  <double/>
+                </signal>
+                <signal index="3">
+                  <double/>
+                </signal>
+                <signal index="4">
+                  <double/>
+                </signal>
+                <signal index="5">
+                  <double/>
+                </signal>
+                <signal index="6">
+                  <double/>
+                </signal>
+                <signal index="7">
+                  <double/>
+                </signal>
+                <signal index="8">
+                  <double/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="trqAA.QlyAryAxles">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <uint8/>
+                </signal>
+                <signal index="2">
+                  <uint8/>
+                </signal>
+                <signal index="3">
+                  <uint8/>
+                </signal>
+                <signal index="4">
+                  <uint8/>
+                </signal>
+                <signal index="5">
+                  <uint8/>
+                </signal>
+                <signal index="6">
+                  <uint8/>
+                </signal>
+                <signal index="7">
+                  <uint8/>
+                </signal>
+                <signal index="8">
+                  <uint8/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="trqAA.FloatAryAxles">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <Float32/>
+                </signal>
+                <signal index="2">
+                  <Float32/>
+                </signal>
+                <signal index="3">
+                  <Float32/>
+                </signal>
+                <signal index="4">
+                  <Float32/>
+                </signal>
+                <signal index="5">
+                  <Float32/>
+                </signal>
+                <signal index="6">
+                  <Float32/>
+                </signal>
+                <signal index="7">
+                  <Float32/>
+                </signal>
+                <signal index="8">
+                  <Float32/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="trqAA.QlyAryAxles">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="3">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="4">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="5">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="6">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="7">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="8">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="vA" physicalPath="te_Calcn/sim_Calcn/Subsystem/sim_Calcn/Calcn/vA" path="sim_Calcn/Subsystem/sim_Calcn/Calcn/vA">
+        <miltype>
+          <bus>
+            <signal signalName="vA.FloatAry8">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <double/>
+                </signal>
+                <signal index="2">
+                  <double/>
+                </signal>
+                <signal index="3">
+                  <double/>
+                </signal>
+                <signal index="4">
+                  <double/>
+                </signal>
+                <signal index="5">
+                  <double/>
+                </signal>
+                <signal index="6">
+                  <double/>
+                </signal>
+                <signal index="7">
+                  <double/>
+                </signal>
+                <signal index="8">
+                  <double/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="vA.QlyAry8">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <uint8/>
+                </signal>
+                <signal index="2">
+                  <uint8/>
+                </signal>
+                <signal index="3">
+                  <uint8/>
+                </signal>
+                <signal index="4">
+                  <uint8/>
+                </signal>
+                <signal index="5">
+                  <uint8/>
+                </signal>
+                <signal index="6">
+                  <uint8/>
+                </signal>
+                <signal index="7">
+                  <uint8/>
+                </signal>
+                <signal index="8">
+                  <uint8/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="vA.FloatAry8">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <Float32/>
+                </signal>
+                <signal index="2">
+                  <Float32/>
+                </signal>
+                <signal index="3">
+                  <Float32/>
+                </signal>
+                <signal index="4">
+                  <Float32/>
+                </signal>
+                <signal index="5">
+                  <Float32/>
+                </signal>
+                <signal index="6">
+                  <Float32/>
+                </signal>
+                <signal index="7">
+                  <Float32/>
+                </signal>
+                <signal index="8">
+                  <Float32/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="vA.QlyAry8">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="3">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="4">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="5">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="6">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="7">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="8">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="lTR" physicalPath="te_Calcn/sim_Calcn/Subsystem/sim_Calcn/Calcn/lTR" path="sim_Calcn/Subsystem/sim_Calcn/Calcn/lTR">
+        <miltype>
+          <bus>
+            <signal signalName="lTireRd.FloatAry8">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <double/>
+                </signal>
+                <signal index="2">
+                  <double/>
+                </signal>
+                <signal index="3">
+                  <double/>
+                </signal>
+                <signal index="4">
+                  <double/>
+                </signal>
+                <signal index="5">
+                  <double/>
+                </signal>
+                <signal index="6">
+                  <double/>
+                </signal>
+                <signal index="7">
+                  <double/>
+                </signal>
+                <signal index="8">
+                  <double/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="lTireRd.QlyAry8">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <uint8/>
+                </signal>
+                <signal index="2">
+                  <uint8/>
+                </signal>
+                <signal index="3">
+                  <uint8/>
+                </signal>
+                <signal index="4">
+                  <uint8/>
+                </signal>
+                <signal index="5">
+                  <uint8/>
+                </signal>
+                <signal index="6">
+                  <uint8/>
+                </signal>
+                <signal index="7">
+                  <uint8/>
+                </signal>
+                <signal index="8">
+                  <uint8/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="lTireRd.FloatAry8">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <Float32/>
+                </signal>
+                <signal index="2">
+                  <Float32/>
+                </signal>
+                <signal index="3">
+                  <Float32/>
+                </signal>
+                <signal index="4">
+                  <Float32/>
+                </signal>
+                <signal index="5">
+                  <Float32/>
+                </signal>
+                <signal index="6">
+                  <Float32/>
+                </signal>
+                <signal index="7">
+                  <Float32/>
+                </signal>
+                <signal index="8">
+                  <Float32/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="lTireRd.QlyAry8">
+              <nonUniformArray size="8">
+                <signal index="1">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="3">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="4">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="5">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="6">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="7">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+                <signal index="8">
+                  <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <inport portNumber="4" name="stAD" physicalPath="te_Calcn/sim_Calcn/Subsystem/sim_Calcn/Calcn/stAD" path="sim_Calcn/Subsystem/sim_Calcn/Calcn/stAD">
+        <miltype signalName="stAD">
+          <nonUniformArray size="8">
+            <signal index="1">
+              <boolean/>
+            </signal>
+            <signal index="2">
+              <boolean/>
+            </signal>
+            <signal index="3">
+              <boolean/>
+            </signal>
+            <signal index="4">
+              <boolean/>
+            </signal>
+            <signal index="5">
+              <boolean/>
+            </signal>
+            <signal index="6">
+              <boolean/>
+            </signal>
+            <signal index="7">
+              <boolean/>
+            </signal>
+            <signal index="8">
+              <boolean/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype signalName="stAD">
+          <nonUniformArray size="8">
+            <signal index="1">
+              <Bool/>
+            </signal>
+            <signal index="2">
+              <Bool/>
+            </signal>
+            <signal index="3">
+              <Bool/>
+            </signal>
+            <signal index="4">
+              <Bool/>
+            </signal>
+            <signal index="5">
+              <Bool/>
+            </signal>
+            <signal index="6">
+              <Bool/>
+            </signal>
+            <signal index="7">
+              <Bool/>
+            </signal>
+            <signal index="8">
+              <Bool/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out" physicalPath="te_Calcn/sim_Calcn/Subsystem/sim_Calcn/Calcn/Out" path="sim_Calcn/Subsystem/sim_Calcn/Calcn/Out">
+        <miltype>
+          <bus>
+            <signal signalName="Out.Float">
+              <double/>
+            </signal>
+            <signal signalName="Out.Qly">
+              <uint8/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="Out.Float">
+              <Float32/>
+            </signal>
+            <signal signalName="Out.Qly">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

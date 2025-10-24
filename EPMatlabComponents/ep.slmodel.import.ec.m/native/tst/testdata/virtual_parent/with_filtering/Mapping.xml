@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="virtual_parent"/>
+    <Architecture id="id1" name="virtual_parent [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="virtual_parent.c:1:virtual_parent_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="in1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In2" refId="id0"/>
+        <Path path="in2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="param_A" refId="id0"/>
+        <Path path="param_A" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="param_B" refId="id0"/>
+        <Path path="param_B" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="parentFrame/top_A" refId="id0"/>
+      <Path path="virtual_parent.c:1:virtual_parent_step/virtual_parent.c:1:func_A" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="parentFrame/top_A/In1" refId="id0"/>
+        <Path path="in1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="parentFrame/top_A/Out1" refId="id0"/>
+        <Path path="out_A" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="param_A" refId="id0"/>
+        <Path path="param_A" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="parentFrame/top_B" refId="id0"/>
+      <Path path="virtual_parent.c:1:virtual_parent_step/virtual_parent.c:1:func_B" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="parentFrame/top_B/In1" refId="id0"/>
+        <Path path="in2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="parentFrame/top_B/Out1" refId="id0"/>
+        <Path path="out_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="param_B" refId="id0"/>
+        <Path path="param_B" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

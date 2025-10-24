@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_13\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_13\init.m" modelVersion="1.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_13\Wrapper_PowerWindowAutosar.slx" modelCreationDate="2019-05-20T15:59:27" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_13\Wrapper_PowerWindowAutosar.slx" creationDate="2019-05-20T15:59:27" modificationDate="2024-09-12T19:25:15" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_13\init.m">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_PowerWindowAutosar/Wrapper_PowerWindowAutosar" path="Wrapper_PowerWindowAutosar" sampleTime="0.01" name="Wrapper_PowerWindowAutosar" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="R_driver_down_value" physicalPath="Wrapper_PowerWindowAutosar/Wrapper_PowerWindowAutosar/R_driver_down_value" path="Wrapper_PowerWindowAutosar/R_driver_down_value">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="R_driver_up_value" physicalPath="Wrapper_PowerWindowAutosar/Wrapper_PowerWindowAutosar/R_driver_up_value" path="Wrapper_PowerWindowAutosar/R_driver_up_value">
+        <boolean/>
+      </inport>
+      <inport portNumber="3" name="R_passenger_down_value" physicalPath="Wrapper_PowerWindowAutosar/Wrapper_PowerWindowAutosar/R_passenger_down_value" path="Wrapper_PowerWindowAutosar/R_passenger_down_value">
+        <boolean/>
+      </inport>
+      <inport portNumber="4" name="R_passenger_up_value" physicalPath="Wrapper_PowerWindowAutosar/Wrapper_PowerWindowAutosar/R_passenger_up_value" path="Wrapper_PowerWindowAutosar/R_passenger_up_value">
+        <boolean/>
+      </inport>
+      <inport portNumber="5" name="R_window_position_value" physicalPath="Wrapper_PowerWindowAutosar/Wrapper_PowerWindowAutosar/R_window_position_value" path="Wrapper_PowerWindowAutosar/R_window_position_value">
+        <uint16/>
+      </inport>
+      <inport portNumber="6" name="R_obstacle_position_value" physicalPath="Wrapper_PowerWindowAutosar/Wrapper_PowerWindowAutosar/R_obstacle_position_value" path="Wrapper_PowerWindowAutosar/R_obstacle_position_value">
+        <uint16/>
+      </inport>
+      <parameter name="R_auto_down_time_auto_down_time" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/CPA_R_auto_down_time_value" physicalPath="PowerWindowAutosar/Runnable_sys/CPA_R_auto_down_time_value" modelRef="model003" origin="explicit_param" workspace="R_auto_down_time_auto_down_time" initValue="100.0">
+        <uint8/>
+        <usageContext path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/CPA_R_auto_down_time_value" physicalPath="PowerWindowAutosar/Runnable_sys/CPA_R_auto_down_time_value" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model003"/>
+      </parameter>
+      <parameter name="R_auto_up_time_auto_up_time" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/CPA_R_auto_up_time_value" physicalPath="PowerWindowAutosar/Runnable_sys/CPA_R_auto_up_time_value" modelRef="model003" origin="explicit_param" workspace="R_auto_up_time_auto_up_time" initValue="100.0">
+        <uint8/>
+        <usageContext path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/CPA_R_auto_up_time_value" physicalPath="PowerWindowAutosar/Runnable_sys/CPA_R_auto_up_time_value" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model003"/>
+      </parameter>
+      <parameter name="R_emergency_down_time_emergency_down_time" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/CPA_R_emergency_down_time_value" physicalPath="PowerWindowAutosar/Runnable_sys/CPA_R_emergency_down_time_value" modelRef="model003" origin="explicit_param" workspace="R_emergency_down_time_emergency_down_time" initValue="100.0">
+        <uint8/>
+        <usageContext path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/CPA_R_emergency_down_time_value" physicalPath="PowerWindowAutosar/Runnable_sys/CPA_R_emergency_down_time_value" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model003"/>
+      </parameter>
+      <parameter name="R_position_endstop_top_position_endstop_top" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/detect_endstop/CPA_R_position_endstop_top_value" physicalPath="PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/detect_endstop/CPA_R_position_endstop_top_value" modelRef="model003" origin="explicit_param" workspace="R_position_endstop_top_position_endstop_top" initValue="400.0">
+        <uint16/>
+        <usageContext path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/detect_endstop/CPA_R_position_endstop_top_value" physicalPath="PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/detect_endstop/CPA_R_position_endstop_top_value" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="P_move_down_value" physicalPath="Wrapper_PowerWindowAutosar/Wrapper_PowerWindowAutosar/P_move_down_value" path="Wrapper_PowerWindowAutosar/P_move_down_value">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="P_move_up_value" physicalPath="Wrapper_PowerWindowAutosar/Wrapper_PowerWindowAutosar/P_move_up_value" path="Wrapper_PowerWindowAutosar/P_move_up_value">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="P_obstacle_detection_value" physicalPath="Wrapper_PowerWindowAutosar/Wrapper_PowerWindowAutosar/P_obstacle_detection_value" path="Wrapper_PowerWindowAutosar/P_obstacle_detection_value">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="PowerWindowAutosar/Runnable_sys" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys" sampleTime="0.01" name="Runnable_sys" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="R_driver_down_value_read" physicalPath="PowerWindowAutosar/Runnable_sys/R_driver_down_value_read" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/R_driver_down_value_read" modelRef="model003" signalName="driver_down">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="R_driver_up_value_read" physicalPath="PowerWindowAutosar/Runnable_sys/R_driver_up_value_read" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/R_driver_up_value_read" modelRef="model003" signalName="driver_up">
+        <boolean/>
+      </inport>
+      <inport portNumber="3" name="R_passenger_down_value_read" physicalPath="PowerWindowAutosar/Runnable_sys/R_passenger_down_value_read" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/R_passenger_down_value_read" modelRef="model003" signalName="passenger_down">
+        <boolean/>
+      </inport>
+      <inport portNumber="4" name="R_passenger_up_value_read" physicalPath="PowerWindowAutosar/Runnable_sys/R_passenger_up_value_read" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/R_passenger_up_value_read" modelRef="model003" signalName="passenger_up">
+        <boolean/>
+      </inport>
+      <inport portNumber="5" name="R_window_position_value_read" physicalPath="PowerWindowAutosar/Runnable_sys/R_window_position_value_read" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/R_window_position_value_read" modelRef="model003" signalName="window_position">
+        <uint16/>
+      </inport>
+      <inport portNumber="6" name="R_obstacle_position_value_read" physicalPath="PowerWindowAutosar/Runnable_sys/R_obstacle_position_value_read" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/R_obstacle_position_value_read" modelRef="model003" signalName="obstacle_position">
+        <uint16/>
+      </inport>
+      <parameter name="R_auto_down_time_auto_down_time" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/CPA_R_auto_down_time_value" physicalPath="PowerWindowAutosar/Runnable_sys/CPA_R_auto_down_time_value" modelRef="model003" origin="explicit_param" workspace="R_auto_down_time_auto_down_time" initValue="100.0">
+        <uint8/>
+        <usageContext path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/CPA_R_auto_down_time_value" physicalPath="PowerWindowAutosar/Runnable_sys/CPA_R_auto_down_time_value" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model003"/>
+      </parameter>
+      <parameter name="R_auto_up_time_auto_up_time" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/CPA_R_auto_up_time_value" physicalPath="PowerWindowAutosar/Runnable_sys/CPA_R_auto_up_time_value" modelRef="model003" origin="explicit_param" workspace="R_auto_up_time_auto_up_time" initValue="100.0">
+        <uint8/>
+        <usageContext path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/CPA_R_auto_up_time_value" physicalPath="PowerWindowAutosar/Runnable_sys/CPA_R_auto_up_time_value" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model003"/>
+      </parameter>
+      <parameter name="R_emergency_down_time_emergency_down_time" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/CPA_R_emergency_down_time_value" physicalPath="PowerWindowAutosar/Runnable_sys/CPA_R_emergency_down_time_value" modelRef="model003" origin="explicit_param" workspace="R_emergency_down_time_emergency_down_time" initValue="100.0">
+        <uint8/>
+        <usageContext path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/CPA_R_emergency_down_time_value" physicalPath="PowerWindowAutosar/Runnable_sys/CPA_R_emergency_down_time_value" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model003"/>
+      </parameter>
+      <parameter name="R_position_endstop_top_position_endstop_top" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/detect_endstop/CPA_R_position_endstop_top_value" physicalPath="PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/detect_endstop/CPA_R_position_endstop_top_value" modelRef="model003" origin="explicit_param" workspace="R_position_endstop_top_position_endstop_top" initValue="400.0">
+        <uint16/>
+        <usageContext path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/detect_endstop/CPA_R_position_endstop_top_value" physicalPath="PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/detect_endstop/CPA_R_position_endstop_top_value" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="P_move_down_value_write" physicalPath="PowerWindowAutosar/Runnable_sys/P_move_down_value_write" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/P_move_down_value_write" modelRef="model003" signalName="moveDown">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="P_move_up_value_write" physicalPath="PowerWindowAutosar/Runnable_sys/P_move_up_value_write" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/P_move_up_value_write" modelRef="model003" signalName="moveUp">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="P_obstacle_detection_value_write" physicalPath="PowerWindowAutosar/Runnable_sys/P_obstacle_detection_value_write" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/P_obstacle_detection_value_write" modelRef="model003">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss10"/>
+      <subsystem refSubsysID="ss15"/>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop" sampleTime="0.01" name="detect_obstacle_endstop" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="obstacle_position" physicalPath="PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/obstacle_position" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/obstacle_position" modelRef="model003" signalName="obstacle_position">
+        <uint16/>
+      </inport>
+      <inport portNumber="2" name="window_position" physicalPath="PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/window_position" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/window_position" modelRef="model003" signalName="window_position">
+        <uint16/>
+      </inport>
+      <inport portNumber="3" name="move_up" physicalPath="PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/move_up" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/move_up" modelRef="model003" signalName="move_up_prev">
+        <boolean/>
+      </inport>
+      <parameter name="R_position_endstop_top_position_endstop_top" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/detect_endstop/CPA_R_position_endstop_top_value" physicalPath="PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/detect_endstop/CPA_R_position_endstop_top_value" modelRef="model003" origin="explicit_param" workspace="R_position_endstop_top_position_endstop_top" initValue="400.0">
+        <uint16/>
+        <usageContext path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/detect_endstop/CPA_R_position_endstop_top_value" physicalPath="PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/detect_endstop/CPA_R_position_endstop_top_value" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="obstacle" physicalPath="PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/obstacle" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/obstacle" modelRef="model003">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="endstop_top" physicalPath="PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/endstop_top" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/endstop_top" modelRef="model003" signalName="endstop_top">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="endstop_bottom" physicalPath="PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/endstop_bottom" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/detect_obstacle_endstop/endstop_bottom" modelRef="model003" signalName="endstop_bottom">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="PowerWindowAutosar/Runnable_sys/validate_driver" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/validate_driver" sampleTime="0.01" name="validate_driver" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="up" physicalPath="PowerWindowAutosar/Runnable_sys/validate_driver/up" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/validate_driver/up" modelRef="model003" signalName="driver_up">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="down" physicalPath="PowerWindowAutosar/Runnable_sys/validate_driver/down" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/validate_driver/down" modelRef="model003" signalName="driver_down">
+        <boolean/>
+      </inport>
+      <inport portNumber="3" name="endstop_top" physicalPath="PowerWindowAutosar/Runnable_sys/validate_driver/endstop_top" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/validate_driver/endstop_top" modelRef="model003" signalName="endstop_top">
+        <boolean/>
+      </inport>
+      <inport portNumber="4" name="endstop_bottom" physicalPath="PowerWindowAutosar/Runnable_sys/validate_driver/endstop_bottom" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/validate_driver/endstop_bottom" modelRef="model003" signalName="endstop_bottom">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="validated_neutral" physicalPath="PowerWindowAutosar/Runnable_sys/validate_driver/validated_neutral" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/validate_driver/validated_neutral" modelRef="model003">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="validated_up" physicalPath="PowerWindowAutosar/Runnable_sys/validate_driver/validated_up" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/validate_driver/validated_up" modelRef="model003">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="validated_down" physicalPath="PowerWindowAutosar/Runnable_sys/validate_driver/validated_down" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/validate_driver/validated_down" modelRef="model003">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss15" physicalPath="PowerWindowAutosar/Runnable_sys/validate_passenger" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/validate_passenger" sampleTime="0.01" name="validate_passenger" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="up" physicalPath="PowerWindowAutosar/Runnable_sys/validate_passenger/up" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/validate_passenger/up" modelRef="model003" signalName="passenger_up">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="down" physicalPath="PowerWindowAutosar/Runnable_sys/validate_passenger/down" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/validate_passenger/down" modelRef="model003" signalName="passenger_down">
+        <boolean/>
+      </inport>
+      <inport portNumber="3" name="endstop_top" physicalPath="PowerWindowAutosar/Runnable_sys/validate_passenger/endstop_top" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/validate_passenger/endstop_top" modelRef="model003" signalName="endstop_top">
+        <boolean/>
+      </inport>
+      <inport portNumber="4" name="endstop_bottom" physicalPath="PowerWindowAutosar/Runnable_sys/validate_passenger/endstop_bottom" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/validate_passenger/endstop_bottom" modelRef="model003" signalName="endstop_bottom">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="validated_neutral" physicalPath="PowerWindowAutosar/Runnable_sys/validate_passenger/validated_neutral" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/validate_passenger/validated_neutral" modelRef="model003">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="validated_up" physicalPath="PowerWindowAutosar/Runnable_sys/validate_passenger/validated_up" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/validate_passenger/validated_up" modelRef="model003">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="validated_down" physicalPath="PowerWindowAutosar/Runnable_sys/validate_passenger/validated_down" path="Wrapper_PowerWindowAutosar/PowerWindowAutosar/Runnable_sys/validate_passenger/validated_down" modelRef="model003" signalName="checked_action">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_13\test.slx" creationDate="2019-05-20T16:02:00" modificationDate="2024-09-12T19:25:15" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_13\init.m"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="1.24" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_13\PowerWindowAutosar.slx" creationDate="2018-04-19T15:58:15" modificationDate="2024-09-12T19:25:15" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_13\init.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="matrix_model_tl"/>
+    <Architecture id="id1" name="matrix_model_tl [C-Code]"/>
+    <Architecture id="id2" name="matrix_model_sl"/>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A"/>
+      <Path refId="id1" path="top_A.c:1:top_A"/>
+      <Path refId="id2" path="top_A"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id2" path="In1"/>
+        <Path refId="id1" path="Sa1_In1"/>
+        <SignalMapping>
+          <Path refId="id0" path="(1)(1)"/>
+          <Path refId="id2" path="(1)(1)"/>
+          <Path refId="id1" path="[0][0]"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id2" path="In1"/>
+        <Path refId="id1" path="Sa1_In1"/>
+        <SignalMapping>
+          <Path refId="id0" path="(2)(1)"/>
+          <Path refId="id2" path="(2)(1)"/>
+          <Path refId="id1" path="[1][0]"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id2" path="In1"/>
+        <Path refId="id1" path="Sa1_In1"/>
+        <SignalMapping>
+          <Path refId="id0" path="(1)(2)"/>
+          <Path refId="id2" path="(1)(2)"/>
+          <Path refId="id1" path="[0][1]"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id2" path="In1"/>
+        <Path refId="id1" path="Sa1_In1"/>
+        <SignalMapping>
+          <Path refId="id0" path="(2)(2)"/>
+          <Path refId="id2" path="(2)(2)"/>
+          <Path refId="id1" path="[1][1]"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id2" path="In1"/>
+        <Path refId="id1" path="Sa1_In1"/>
+        <SignalMapping>
+          <Path refId="id0" path="(1)(3)"/>
+          <Path refId="id2" path="(1)(3)"/>
+          <Path refId="id1" path="[0][2]"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id2" path="In1"/>
+        <Path refId="id1" path="Sa1_In1"/>
+        <SignalMapping>
+          <Path refId="id0" path="(2)(3)"/>
+          <Path refId="id2" path="(2)(3)"/>
+          <Path refId="id1" path="[1][2]"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id2" path="Out1"/>
+        <Path refId="id1" path="Sa1_Out1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Sa2_sub_B"/>
+      <Path refId="id2" path="top_A/sub_B"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id2" path="In1"/>
+        <Path refId="id1" path="Sa2_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id2" path="Out1"/>
+        <Path refId="id1" path="Sa2_Out1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

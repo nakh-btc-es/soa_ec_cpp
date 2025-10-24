@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_ep_1949\init_model.m" modelVersion="1.22" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_ep_1949\data_store_sf.slx" modelCreationDate="2020-01-31T12:09:51" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.22" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_ep_1949\data_store_sf.slx" creationDate="2020-01-31T12:09:51" modificationDate="2024-09-11T18:38:09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_ep_1949\init_model.m">
+    <subsystem subsysID="ss1" physicalPath="data_store_sf" path="" sampleTime="0.1" name="data_store_sf" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_store_sf/In1" path="In1" signalName="inSig">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_store_sf/Out1" path="Out1" signalName="sigOut">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="data_store_sf/sub_A" path="sub_A" sampleTime="0.1" name="sub_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_store_sf/sub_A/In1" path="sub_A/In1" signalName="inSig">
+        <double/>
+      </inport>
+      <outport portNumber="0" name="Data Store&#10;Write" physicalPath="data_store_sf/sub_A/Data Store&#10;Write" path="sub_A/Data Store&#10;Write" signalName="sigC" initValue="0.0">
+        <double/>
+        <dataStoreMemory signalName="sigC"/>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="data_store_sf/sub_A/ChartA" path="sub_A/ChartA" sampleTime="0.1" name="ChartA" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="x" physicalPath="data_store_sf/sub_A/ChartA/x" path="sub_A/ChartA/x" signalName="inSig">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="sigB" physicalPath="data_store_sf/sub_A/ChartA/sigB" path="sub_A/ChartA/sigB" signalName="sigB">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="data_store_sf/sub_B" path="sub_B" sampleTime="0.1" name="sub_B" scopeKind="SUT" kind="subsystem">
+      <outport portNumber="1" name="Out1" physicalPath="data_store_sf/sub_B/Out1" path="sub_B/Out1" signalName="sigOut">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="data_store_sf/sub_B/ChartB" path="sub_B/ChartB" sampleTime="0.1" name="ChartB" scopeKind="SUT" kind="stateflow">
+      <outport portNumber="1" name="y" physicalPath="data_store_sf/sub_B/ChartB/y" path="sub_B/ChartB/y" signalName="y">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

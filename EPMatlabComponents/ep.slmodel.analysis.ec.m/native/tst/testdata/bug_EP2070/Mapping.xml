@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="sample_model_"/>
+    <Architecture id="id1" name="sample_model_ [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="sample_model_.c:1:sample_model__step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In2" refId="id0"/>
+        <Path path="In2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In3" refId="id0"/>
+        <Path path="In3" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In4" refId="id0"/>
+        <Path path="In4" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/Triggered&#10;Subsystem/temp/SI_Variant1Out1" refId="id0"/>
+        <Path path="SI_Variant1Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/Triggered&#10;Subsystem/temp/SI_Variant1Out2" refId="id0"/>
+        <Path path="SI_Variant1Out2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Output" refId="id0"/>
+        <Path path="Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="DataStoreWrite_temp2" refId="id0"/>
+        <Path path="SI_Variant2Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="DataStoreWrite_temp1" refId="id0"/>
+        <Path path="SI_Variant2Out2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="Subsystem/Triggered&#10;Subsystem/temp/Disp_Variant1In1(1)" refId="id0"/>
+        <Path path="Disp_Variant1In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="Subsystem/Triggered&#10;Subsystem/temp/Disp_Variant1In2(1)" refId="id0"/>
+        <Path path="Disp_Variant1In2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="Subsystem" refId="id0"/>
+      <Path path="sample_model_.c:1:sample_model__step/sample_model_.c:1:Subsystem" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/In1" refId="id0"/>
+        <Path path="In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/In2" refId="id0"/>
+        <Path path="In2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/In3" refId="id0"/>
+        <Path path="In3" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/In4" refId="id0"/>
+        <Path path="In4" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/Triggered&#10;Subsystem/temp/SI_Variant1Out1" refId="id0"/>
+        <Path path="SI_Variant1Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/Triggered&#10;Subsystem/temp/SI_Variant1Out2" refId="id0"/>
+        <Path path="SI_Variant1Out2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Subsystem/Out1" refId="id0"/>
+        <Path path="Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="Subsystem/Triggered&#10;Subsystem/temp/Disp_Variant1In1(1)" refId="id0"/>
+        <Path path="Disp_Variant1In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="Subsystem/Triggered&#10;Subsystem/temp/Disp_Variant1In2(1)" refId="id0"/>
+        <Path path="Disp_Variant1In2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="Subsystem/Triggered&#10;Subsystem" refId="id0"/>
+      <Path path="sample_model_.c:1:sample_model__step/sample_model_.c:1:Subsystem/sample_model_.c:1:TriSubsystem1" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/Triggered&#10;Subsystem/Data Store&#10;Read" refId="id0"/>
+        <Path path="A" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/Triggered&#10;Subsystem/Data Store&#10;Read2" refId="id0"/>
+        <Path path="C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/Triggered&#10;Subsystem/temp/SI_Variant1Out1" refId="id0"/>
+        <Path path="SI_Variant1Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/Triggered&#10;Subsystem/temp/SI_Variant1Out2" refId="id0"/>
+        <Path path="SI_Variant1Out2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Subsystem/Triggered&#10;Subsystem/Data Store&#10;Write" refId="id0"/>
+        <Path path="E" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Subsystem/Triggered&#10;Subsystem/Data Store&#10;Write1" refId="id0"/>
+        <Path path="F" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="Subsystem/Triggered&#10;Subsystem/temp/Disp_Variant1In1(1)" refId="id0"/>
+        <Path path="Disp_Variant1In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="Subsystem/Triggered&#10;Subsystem/temp/Disp_Variant1In2(1)" refId="id0"/>
+        <Path path="Disp_Variant1In2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xs:element name="LoggingAnalysis">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Subsystem" type="Subsystem" minOccurs="1" maxOccurs="unbounded">
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="length" type="xs:positiveInteger" use="required"/>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="kind" type="xs:string"/>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:complexType name="Subsystem">
+
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:choice/>
+                <xs:element name="StateLogger" type="StateLogger" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="Logging" type="Logging" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="Subsystem" type="Subsystem" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="Mapping" type="Mapping" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:choice/>
+        </xs:sequence>
+        
+
+        <xs:attribute name="id" type="xs:string" use="required"> </xs:attribute>
+        <xs:attribute name="sampleTime" type="xs:string"> </xs:attribute>
+
+
+    </xs:complexType>
+
+    <xs:complexType name="StateLogger">
+        <xs:attribute name="evaluate" type="xs:string"> </xs:attribute>
+        <xs:attribute name="path" type="xs:string"> </xs:attribute>
+        <xs:attribute name="virtualPath" type="xs:string"> </xs:attribute>
+        <xs:attribute name="port" type="xs:string"> </xs:attribute>
+        <xs:attribute name="displayName" type="xs:string"> </xs:attribute>
+        <xs:attribute name="identifier" type="xs:string"> </xs:attribute>
+        <xs:attribute name="signalType" type="xs:string"> </xs:attribute>
+        <xs:attribute name="name" type="xs:string"> </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="Logging">
+        <xs:sequence>
+            <xs:element name="Access" type="Access" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+
+        <xs:attribute name="kind" type="xs:string" use="required"> </xs:attribute>
+        <xs:attribute name="blockUsage" type="xs:string"> </xs:attribute>
+        <xs:attribute name="block" type="xs:string"> </xs:attribute>
+        <xs:attribute name="ddPath" type="xs:string"> </xs:attribute>
+        <xs:attribute name="ddVarPath" type="xs:string"> </xs:attribute>
+        <xs:attribute name="signalName" type="xs:string"> </xs:attribute>
+        <xs:attribute name="module" type="xs:string"> </xs:attribute>
+        <xs:attribute name="stateflowVariable" type="xs:string"> </xs:attribute>
+        <xs:attribute name="chart" type="xs:string"> </xs:attribute>
+        <xs:attribute name="name" type="xs:string"> </xs:attribute>
+        <xs:attribute name="id" type="xs:string"> </xs:attribute>
+        <xs:attribute name="path" type="xs:string"> </xs:attribute>
+        <xs:attribute name="virtualPath" type="xs:string"> </xs:attribute>
+        <xs:attribute name="port" type="xs:string"> </xs:attribute>
+        <xs:attribute name="startIdx" type="xs:string"> </xs:attribute>
+        <xs:attribute name="visit" type="xs:string"> </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="Access">
+
+        <xs:attribute name="ifid" type="xs:string" use="required"> </xs:attribute>
+        <xs:attribute name="displayName" type="xs:string" use="required"> </xs:attribute>
+        <xs:attribute name="identifier" type="xs:string"> </xs:attribute>
+        <xs:attribute name="signalType" type="xs:string"> </xs:attribute>
+        <xs:attribute name="matFile" type="xs:string"> </xs:attribute>
+        <xs:attribute name="index1" type="xs:string"> </xs:attribute>
+        <xs:attribute name="index2" type="xs:string"> </xs:attribute>
+        <xs:attribute name="signalName" type="xs:string"> </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="Mapping">
+        <xs:attribute name="ifid" type="xs:string" use="required"> </xs:attribute>
+        <xs:attribute name="refid" type="xs:string" use="required"> </xs:attribute>
+        <xs:attribute name="identifier" type="xs:string"> </xs:attribute>
+        <xs:attribute name="signalType" type="xs:string"> </xs:attribute>
+        <xs:attribute name="name" type="xs:string" use="required"> </xs:attribute>
+    </xs:complexType>
+</xs:schema>

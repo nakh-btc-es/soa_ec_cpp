@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_epdev_47622\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_epdev_47622\startEC.m" modelVersion="1.83" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_epdev_47622\mainSub.slx" modelCreationDate="2019-05-07T12:37:05" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.83" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_epdev_47622\mainSub.slx" creationDate="2019-05-07T12:37:05" modificationDate="2024-09-12T18:43:42" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_epdev_47622\startEC.m">
+    <subsystem subsysID="ss1" physicalPath="mainSub" path="" sampleTime="0.2" name="mainSub" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="mainSub/In1" path="In1" signalName="BTCAnnotatedInport_MainSub_In1">
+        <double/>
+      </inport>
+      <parameter name="ParamIn" path="TopLevel/A/Model/CounterTopLevel/Constant" physicalPath="counter/CounterTopLevel/Constant" modelRef="model002" origin="explicit_param" workspace="ParamIn" initValue="10.0">
+        <double/>
+        <usageContext path="TopLevel/A/Model/CounterTopLevel/Constant" physicalPath="counter/CounterTopLevel/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="ParamOut" path="TopLevel/A/Constant" physicalPath="mainSub/TopLevel/A/Constant" origin="explicit_param" workspace="ParamOut" initValue="5.0">
+        <double/>
+        <usageContext path="TopLevel/A/Constant" physicalPath="mainSub/TopLevel/A/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <usageContext path="TopLevel/B/Constant" physicalPath="mainSub/TopLevel/B/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="mainSub/Out1" path="Out1" signalName="BTCAnnotatedOutport_MainSub_Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="mainSub/Out2" path="Out2" signalName="out">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="mainSub/TopLevel/A" path="TopLevel/A" sampleTime="0.2" name="A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="mainSub/TopLevel/A/In1" path="TopLevel/A/In1" signalName="BTCAnnotatedInport_MainSub_In1">
+        <double/>
+      </inport>
+      <parameter name="ParamIn" path="TopLevel/A/Model/CounterTopLevel/Constant" physicalPath="counter/CounterTopLevel/Constant" modelRef="model002" origin="explicit_param" workspace="ParamIn" initValue="10.0">
+        <double/>
+        <usageContext path="TopLevel/A/Model/CounterTopLevel/Constant" physicalPath="counter/CounterTopLevel/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="ParamOut" path="TopLevel/A/Constant" physicalPath="mainSub/TopLevel/A/Constant" origin="explicit_param" workspace="ParamOut" initValue="5.0">
+        <double/>
+        <usageContext path="TopLevel/A/Constant" physicalPath="mainSub/TopLevel/A/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="mainSub/TopLevel/A/Out1" path="TopLevel/A/Out1">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="counter" path="TopLevel/A/Model" sampleTime="0.2" name="Model" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="counter/In1" path="TopLevel/A/Model/In1" modelRef="model002" signalName="BTCAnnotatedInport_MainSub_In1">
+        <double/>
+      </inport>
+      <parameter name="ParamIn" path="TopLevel/A/Model/CounterTopLevel/Constant" physicalPath="counter/CounterTopLevel/Constant" modelRef="model002" origin="explicit_param" workspace="ParamIn" initValue="10.0">
+        <double/>
+        <usageContext path="TopLevel/A/Model/CounterTopLevel/Constant" physicalPath="counter/CounterTopLevel/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="counter/Out1" path="TopLevel/A/Model/Out1" modelRef="model002" signalName="BTCAnnotatedOutport_Counter_Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="counter/Out2" path="TopLevel/A/Model/Out2" modelRef="model002" signalName="out1">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="counter/CounterTopLevel" path="TopLevel/A/Model/CounterTopLevel" sampleTime="0.2" name="CounterTopLevel" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="counter/CounterTopLevel/In1" path="TopLevel/A/Model/CounterTopLevel/In1" modelRef="model002" signalName="BTCAnnotatedInport_MainSub_In1">
+        <double/>
+      </inport>
+      <parameter name="ParamIn" path="TopLevel/A/Model/CounterTopLevel/Constant" physicalPath="counter/CounterTopLevel/Constant" modelRef="model002" origin="explicit_param" workspace="ParamIn" initValue="10.0">
+        <double/>
+        <usageContext path="TopLevel/A/Model/CounterTopLevel/Constant" physicalPath="counter/CounterTopLevel/Constant" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="counter/CounterTopLevel/Out1" path="TopLevel/A/Model/CounterTopLevel/Out1" modelRef="model002">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="counter/CounterTopLevel/Out2" path="TopLevel/A/Model/CounterTopLevel/Out2" modelRef="model002">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss7"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="counter/CounterTopLevel/CounterSubsystem" path="TopLevel/A/Model/CounterTopLevel/CounterSubsystem" sampleTime="0.2" name="CounterSubsystem" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="counter/CounterTopLevel/CounterSubsystem/In1" path="TopLevel/A/Model/CounterTopLevel/CounterSubsystem/In1" modelRef="model002" signalName="BTCAnnotatedInport_Counter_In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="counter/CounterTopLevel/CounterSubsystem/Out1" path="TopLevel/A/Model/CounterTopLevel/CounterSubsystem/Out1" modelRef="model002">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="counter/CounterTopLevel/CounterSubsystem1" path="TopLevel/A/Model/CounterTopLevel/CounterSubsystem1" sampleTime="0.2" name="CounterSubsystem1" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="counter/CounterTopLevel/CounterSubsystem1/In1" path="TopLevel/A/Model/CounterTopLevel/CounterSubsystem1/In1" modelRef="model002" signalName="BTCAnnotatedInport_Counter_In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="counter/CounterTopLevel/CounterSubsystem1/Out1" path="TopLevel/A/Model/CounterTopLevel/CounterSubsystem1/Out1" modelRef="model002">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="mainSub/TopLevel/B" path="TopLevel/B" sampleTime="0.2" name="B" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="mainSub/TopLevel/B/In1" path="TopLevel/B/In1" signalName="BTCAnnotatedInport_MainSub_In1">
+        <double/>
+      </inport>
+      <parameter name="ParamOut" path="TopLevel/B/Constant" physicalPath="mainSub/TopLevel/B/Constant" origin="explicit_param" workspace="ParamOut" initValue="5.0">
+        <double/>
+        <usageContext path="TopLevel/B/Constant" physicalPath="mainSub/TopLevel/B/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="mainSub/TopLevel/B/Out1" path="TopLevel/B/Out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.53" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_epdev_47622\counter.slx" creationDate="2019-05-07T12:38:04" modificationDate="2024-09-12T18:43:42" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_epdev_47622\startEC.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

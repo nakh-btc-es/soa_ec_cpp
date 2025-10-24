@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_matrix_sig_08\init_matrix_model.m" modelVersion="1.26" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_matrix_sig_08\matrix_model_sl.mdl" modelCreationDate="2015-02-02T09:23:30" creator="alex">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.26" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_matrix_sig_08\matrix_model_sl.mdl" creationDate="2015-02-02T09:23:30" modificationDate="2024-09-11T18:23:34" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_matrix_sig_08\init_matrix_model.m">
+    <subsystem subsysID="ss1" physicalPath="matrix_model_sl/top_A" path="top_A" sampleTime="0.1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="matrix_model_sl/top_A/In1" path="top_A/In1">
+        <double/>
+      </inport>
+      <parameter name="colCal" path="top_A/sub_B2/Constant1" physicalPath="matrix_model_sl/top_A/sub_B2/Constant1" origin="explicit_param" workspace="colCal">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="1.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="2.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="3.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B2/Constant1" physicalPath="matrix_model_sl/top_A/sub_B2/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="matCal" path="top_A/sub_B1/Constant2" physicalPath="matrix_model_sl/top_A/sub_B1/Constant2" origin="explicit_param" workspace="matCal">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="2.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="3.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="4.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="5.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="6.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B1/Constant2" physicalPath="matrix_model_sl/top_A/sub_B1/Constant2" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="rowCal" path="top_A/Constant" physicalPath="matrix_model_sl/top_A/Constant" origin="explicit_param" workspace="rowCal">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="1.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="2.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="3.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/Constant" physicalPath="matrix_model_sl/top_A/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="matrix_model_sl/top_A/Out1" path="top_A/Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="matrix_model_sl/top_A/Out2" path="top_A/Out2">
+        <double/>
+      </outport>
+      <display physicalPath="matrix_model_sl/top_A/Gain" path="top_A/Gain" name="Gain" portNumber="1">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B1/Gain" path="top_A/sub_B1/Gain" name="Gain" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B1/Gain1" path="top_A/sub_B1/Gain1" name="Gain1" portNumber="1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B1/Sum" path="top_A/sub_B1/Sum" name="Sum" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B2/Gain1" path="top_A/sub_B2/Gain1" name="Gain1" portNumber="1">
+        <array size="3" startIndex="1">
+          <array size="1" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B2/Sum" path="top_A/sub_B2/Sum" name="Sum" portNumber="1">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B2/Sum1" path="top_A/sub_B2/Sum1" name="Sum1" portNumber="1">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="matrix_model_sl/top_A/sub_B1" path="top_A/sub_B1" sampleTime="0.1" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="matrix_model_sl/top_A/sub_B1/In1" path="top_A/sub_B1/In1">
+        <double/>
+      </inport>
+      <parameter name="matCal" path="top_A/sub_B1/Constant2" physicalPath="matrix_model_sl/top_A/sub_B1/Constant2" origin="explicit_param" workspace="matCal">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="2.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="3.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="4.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="5.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="6.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B1/Constant2" physicalPath="matrix_model_sl/top_A/sub_B1/Constant2" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="matrix_model_sl/top_A/sub_B1/Out1" path="top_A/sub_B1/Out1">
+        <double/>
+      </outport>
+      <display physicalPath="matrix_model_sl/top_A/sub_B1/Gain" path="top_A/sub_B1/Gain" name="Gain" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B1/Gain1" path="top_A/sub_B1/Gain1" name="Gain1" portNumber="1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B1/Sum" path="top_A/sub_B1/Sum" name="Sum" portNumber="1">
+        <double/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="matrix_model_sl/top_A/sub_B2" path="top_A/sub_B2" sampleTime="0.1" name="sub_B2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="matrix_model_sl/top_A/sub_B2/In1" path="top_A/sub_B2/In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="matrix_model_sl/top_A/sub_B2/In2" path="top_A/sub_B2/In2">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <parameter name="colCal" path="top_A/sub_B2/Constant1" physicalPath="matrix_model_sl/top_A/sub_B2/Constant1" origin="explicit_param" workspace="colCal">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="1.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="2.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="3.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B2/Constant1" physicalPath="matrix_model_sl/top_A/sub_B2/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="matrix_model_sl/top_A/sub_B2/Out1" path="top_A/sub_B2/Out1">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="matrix_model_sl/top_A/sub_B2/Gain1" path="top_A/sub_B2/Gain1" name="Gain1" portNumber="1">
+        <array size="3" startIndex="1">
+          <array size="1" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B2/Sum" path="top_A/sub_B2/Sum" name="Sum" portNumber="1">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B2/Sum1" path="top_A/sub_B2/Sum1" name="Sum1" portNumber="1">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

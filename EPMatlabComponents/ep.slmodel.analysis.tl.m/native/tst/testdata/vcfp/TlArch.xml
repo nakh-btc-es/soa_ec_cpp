@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.87" modelPath="E:\EP2\Git\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_vcfp\vcfp.mdl" modelCreationDate="1999-04-29T14:48:43" creator="alex">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.87" modelPath="E:\EP2\Git\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_vcfp\vcfp.mdl" creationDate="1999-04-29T14:48:43" modificationDate="2021-11-16T14:22:50">
+    <subsystem subsysID="ss1" physicalPath="vcfp/pidcontroller/Subsystem/pidcontroller" path="pidcontroller/Subsystem/pidcontroller" sampleTime="0.0001" name="pidcontroller" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="ref" physicalPath="vcfp/pidcontroller/Subsystem/pidcontroller/ref" path="pidcontroller/Subsystem/pidcontroller/ref">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="4.8828125000000000e-04" offset="0.0000000000000000e+00" min="-1.0000000000000000e+01" max="1.0000000000000000e+01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="u_X" physicalPath="vcfp/pidcontroller/Subsystem/pidcontroller/u_X" path="pidcontroller/Subsystem/pidcontroller/u_X">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="4.8828125000000000e-04" offset="0.0000000000000000e+00" min="-1.0000000000000000e+01" max="1.0000000000000000e+01"/>
+        </siltype>
+      </inport>
+      <calibration name="ad[gain]" path="pidcontroller/Subsystem/pidcontroller/ad" physicalPath="vcfp/pidcontroller/Subsystem/pidcontroller/ad" origin="gain" restricted="false">
+        <miltype initValue="1.2200000000000000e-01">
+          <double/>
+        </miltype>
+        <siltype initValue="1.2200000000000000e-01">
+          <fixedPoint baseType="UInt8" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="9.9609375000000000e-01"/>
+        </siltype>
+        <usageContext path="pidcontroller/Subsystem/pidcontroller/ad" targetLinkBlockKind="TL_Gain" physicalPath="vcfp/pidcontroller/Subsystem/pidcontroller/ad" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <calibration name="Kd1[const]" path="pidcontroller/Subsystem/pidcontroller/Kd1" physicalPath="vcfp/pidcontroller/Subsystem/pidcontroller/Kd1" origin="const" restricted="false">
+        <miltype initValue="7.9600000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="7.9600000000000000e+00">
+          <fixedPoint baseType="UInt8" lsb="3.1250000000000000e-02" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="7.9687500000000000e+00"/>
+        </siltype>
+        <usageContext path="pidcontroller/Subsystem/pidcontroller/Kd1" targetLinkBlockKind="TL_Constant" physicalPath="vcfp/pidcontroller/Subsystem/pidcontroller/Kd1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="Ki[gain]" path="pidcontroller/Subsystem/pidcontroller/Ki" physicalPath="vcfp/pidcontroller/Subsystem/pidcontroller/Ki" origin="gain" restricted="false">
+        <miltype initValue="8.0000000000000002e-02">
+          <double/>
+        </miltype>
+        <siltype initValue="8.0000000000000002e-02">
+          <fixedPoint baseType="UInt8" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.4902343750000000e-01"/>
+        </siltype>
+        <usageContext path="pidcontroller/Subsystem/pidcontroller/Ki" targetLinkBlockKind="TL_Gain" physicalPath="vcfp/pidcontroller/Subsystem/pidcontroller/Ki" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <calibration name="Kp[gain]" path="pidcontroller/Subsystem/pidcontroller/Kp" physicalPath="vcfp/pidcontroller/Subsystem/pidcontroller/Kp" origin="gain" restricted="false">
+        <miltype initValue="1.2000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.2000000000000000e+00">
+          <fixedPoint baseType="UInt8" lsb="7.8125000000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.9921875000000000e+00"/>
+        </siltype>
+        <usageContext path="pidcontroller/Subsystem/pidcontroller/Kp" targetLinkBlockKind="TL_Gain" physicalPath="vcfp/pidcontroller/Subsystem/pidcontroller/Kp" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <outport portNumber="1" name="u_M" physicalPath="vcfp/pidcontroller/Subsystem/pidcontroller/u_M" path="pidcontroller/Subsystem/pidcontroller/u_M">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="3.0517578125000000e-05" offset="-1.0000000000000000e+00" min="-1.0000000000000000e+00" max="9.9996948242187500e-01"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

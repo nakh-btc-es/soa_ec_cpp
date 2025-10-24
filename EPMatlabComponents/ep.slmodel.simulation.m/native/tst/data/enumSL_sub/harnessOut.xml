@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<EnumType name="myLED">
+			<EnumValue name="GREEN" ordinal="1" />
+			<EnumValue name="BLUE" ordinal="8" />
+		</EnumType>
+	</Types>
+	<Inports>
+		<Inport portNr="1" width="1" type="" kind="VirtualBus">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:normalSLBus.{&lt;signal1&gt;}.myMode_ON</ScalarRef>
+				<ScalarRef>OUTPUT:normalSLBus.{&lt;signal1&gt;}.myMode_OFF</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="2" width="1" type="" kind="VirtualBus">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:myEnumBus.myEnumBus.myMode_OFF</ScalarRef>
+				<ScalarRef>OUTPUT:myEnumBus.myEnumBus.myMode_ON</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="3" type="myLED">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out1</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+	</Inports>
+</SFunction>

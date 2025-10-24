@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ep_2574\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ep_2574\init_ar_objects.m" modelVersion="1.6" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ep_2574\powerwindow_ar.slx" modelCreationDate="2017-06-07T15:03:53" creator="nabilekhoury">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.6" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ep_2574\powerwindow_ar.slx" creationDate="2017-06-07T15:03:53" modificationDate="2024-09-12T19:37:39" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ep_2574\init_ar_objects.m">
+    <subsystem subsysID="ss1" physicalPath="powerwindow_ar" path="" sampleTime="0.01" name="powerwindow_ar" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="R_driver_down_value" physicalPath="powerwindow_ar/R_driver_down_value" path="R_driver_down_value">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="R_driver_up_value" physicalPath="powerwindow_ar/R_driver_up_value" path="R_driver_up_value">
+        <boolean/>
+      </inport>
+      <inport portNumber="3" name="R_passenger_down_value" physicalPath="powerwindow_ar/R_passenger_down_value" path="R_passenger_down_value">
+        <boolean/>
+      </inport>
+      <inport portNumber="4" name="R_passenger_up_value" physicalPath="powerwindow_ar/R_passenger_up_value" path="R_passenger_up_value">
+        <boolean/>
+      </inport>
+      <inport portNumber="5" name="R_window_position_value" physicalPath="powerwindow_ar/R_window_position_value" path="R_window_position_value">
+        <fixedPoint simulinkTypeName="fixdt(0,1,0)" wordLength="8" isSigned="0" slope="1.0" bias="0.0" min="0.0" max="1.0"/>
+      </inport>
+      <inport portNumber="6" name="R_obstacle_position_value" physicalPath="powerwindow_ar/R_obstacle_position_value" path="R_obstacle_position_value">
+        <fixedPoint simulinkTypeName="fixdt(0,1,0)" wordLength="8" isSigned="0" slope="1.0" bias="0.0" min="0.0" max="1.0"/>
+      </inport>
+      <parameter name="R_auto_down_time_auto_down_time" path="Runnable/CPA_R_auto_down_time_value" physicalPath="powerwindow_ar/Runnable/CPA_R_auto_down_time_value" origin="explicit_param" workspace="R_auto_down_time_auto_down_time" initValue="100.0">
+        <uint8/>
+        <usageContext path="Runnable/CPA_R_auto_down_time_value" physicalPath="powerwindow_ar/Runnable/CPA_R_auto_down_time_value" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="R_auto_up_time_auto_up_time" path="Runnable/CPA_R_auto_up_time_value" physicalPath="powerwindow_ar/Runnable/CPA_R_auto_up_time_value" origin="explicit_param" workspace="R_auto_up_time_auto_up_time" initValue="100.0">
+        <uint8/>
+        <usageContext path="Runnable/CPA_R_auto_up_time_value" physicalPath="powerwindow_ar/Runnable/CPA_R_auto_up_time_value" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="R_emergency_down_time_emergency_down_time" path="Runnable/CPA_R_emergency_down_time_value" physicalPath="powerwindow_ar/Runnable/CPA_R_emergency_down_time_value" origin="explicit_param" workspace="R_emergency_down_time_emergency_down_time" initValue="100.0">
+        <uint8/>
+        <usageContext path="Runnable/CPA_R_emergency_down_time_value" physicalPath="powerwindow_ar/Runnable/CPA_R_emergency_down_time_value" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="R_position_endstop_top_position_endstop_top" path="Runnable/detect_obstacle_endstop/detect_endstop/CPA_R_position_endstop_top_value" physicalPath="powerwindow_ar/Runnable/detect_obstacle_endstop/detect_endstop/CPA_R_position_endstop_top_value" origin="explicit_param" workspace="R_position_endstop_top_position_endstop_top" initValue="0.4">
+        <fixedPoint simulinkTypeName="fixdt(0,1,0)" wordLength="8" isSigned="0" slope="1.0" bias="0.0" min="0.0" max="1.0"/>
+        <usageContext path="Runnable/detect_obstacle_endstop/detect_endstop/CPA_R_position_endstop_top_value" physicalPath="powerwindow_ar/Runnable/detect_obstacle_endstop/detect_endstop/CPA_R_position_endstop_top_value" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="P_move_down_value" physicalPath="powerwindow_ar/P_move_down_value" path="P_move_down_value" signalName="moveDown">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="P_move_up_value" physicalPath="powerwindow_ar/P_move_up_value" path="P_move_up_value" signalName="moveUp">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="P_obstacle_detection_value" physicalPath="powerwindow_ar/P_obstacle_detection_value" path="P_obstacle_detection_value">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

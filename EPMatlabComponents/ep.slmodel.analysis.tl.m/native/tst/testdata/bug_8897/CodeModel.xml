@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2388ecc468\bug_8897\TLProj\obsVlvDelay" name="obsVlvDelay.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2388ecc468\bug_8897\TLProj\obsVlvDelay" name="gaObserver.c" kind="source" annotate="yes" id="fID2"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2388ecc468\bug_8897\TLSim" name="obsVlvDelay_fri.c" kind="source" annotate="no" id="fID3"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2388ecc468\bug_8897\TLProj\obsVlvDelay"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2388ecc468\bug_8897\TLSim"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="osc_obsVlvDelay [C-Code]">
+    <Function name="obsVlvDelay" sampleTime="0.005">
+      <Interface>
+        <InterfaceObj kind="in" var="Sc1_stVlvIn_bool" scaling="scID1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sc1_dylVlvOff_s" scaling="scID2" min="0.0000000000000000e+00" max="1.0000000000000001e-01"/>
+        <InterfaceObj kind="in" var="Sc1_dlyVlvOn_s" scaling="scID2" min="0.0000000000000000e+00" max="1.0000000000000001e-01"/>
+        <InterfaceObj kind="in" var="Sc1_tsmpl_s" scaling="scID3"/>
+        <InterfaceObj kind="out" var="DISP_Sc1_stVlvOut" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="ISV_Sdly1_vlvDlyHiGea_0" access=".DISP_Sdly1_stVlvOut" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="valveDelay" sampleTime="0.005">
+      <Args>
+        <Arg name="pISV">
+          <Variable name="tagISV_Sdly1_vlvDlyHiGea"/>
+        </Arg>
+      </Args>
+      <Interface>
+        <InterfaceObj kind="in" var="Sdly1_stVlvIn_bool" scaling="scID1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Sdly1_dlyVlvOn_s" scaling="scID2" min="0.0000000000000000e+00" max="1.0000000000000001e-01"/>
+        <InterfaceObj kind="in" var="Sdly1_dylVlvOff_s" scaling="scID2" min="0.0000000000000000e+00" max="1.0000000000000001e-01"/>
+        <InterfaceObj kind="in" var="Sdly1_tsmpl_s" scaling="scID3"/>
+        <InterfaceObj kind="out" var="ISV_Sdly1_vlvDlyHiGea_0" access=".DISP_Sdly1_stVlvOut" scaling="scID1"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+    <Scaling id="scID2" lsb="1.0000000000000000e-03" offset="0.0000000000000000e+00"/>
+    <Scaling id="scID3" lsb="1.0000000000000000e-04" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

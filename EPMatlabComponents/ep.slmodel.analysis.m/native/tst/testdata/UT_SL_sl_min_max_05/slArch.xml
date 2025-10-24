@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_min_max_05\min_max_init.m" modelVersion="1.31" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_min_max_05\min_max_sl.mdl" modelCreationDate="2015-10-01T13:08:23" creator="Alexander Hornstein">
+  <toolInfo name="Matlab" release="(R2020a)" version="9.8" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020a)" version="10.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.31" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_min_max_05\min_max_sl.mdl" creationDate="2015-10-01T13:08:23" modificationDate="2024-10-30T13:47:29" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_min_max_05\min_max_init.m">
+    <subsystem subsysID="ss1" physicalPath="min_max_sl" path="" sampleTime="0.02" name="min_max_sl" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="min_max_sl/In1" path="In1">
+        <int16 max="554"/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="min_max_sl/In2" path="In2">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.03125,-119.5)" wordLength="16" isSigned="0" slope="0.03125" bias="-119.5" min="-66.3" max="78.2"/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="min_max_sl/In3" path="In3">
+        <fixedPoint simulinkTypeName="fixdt(1,16,-2)" wordLength="16" isSigned="1" slope="4.0" bias="0.0" min="-8.0" max="36.0"/>
+      </inport>
+      <inport portNumber="0" name="Data Store&#10;Read" physicalPath="min_max_sl/Data Store&#10;Read" path="Data Store&#10;Read" signalName="DS_01" initValue="2.0">
+        <fixedPoint simulinkTypeName="fixdt(1,16,0)" wordLength="16" isSigned="1" slope="1.0" bias="0.0" min="-33.0" max="32767.0"/>
+        <dataStoreMemory signalName="DS_01"/>
+      </inport>
+      <parameter name="myCal2" path="Saturation" physicalPath="min_max_sl/Saturation" origin="explicit_param" workspace="myCal2" initValue="-3.75">
+        <double min="-6.15" max="-0.25"/>
+        <usageContext path="Saturation" physicalPath="min_max_sl/Saturation" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+      </parameter>
+      <parameter name="myCal3" path="Saturation" physicalPath="min_max_sl/Saturation" origin="explicit_param" workspace="myCal3" initValue="20.0">
+        <double min="2.0" max="66.0"/>
+        <usageContext path="Saturation" physicalPath="min_max_sl/Saturation" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+      </parameter>
+      <parameter name="myCal4" path="Constant" physicalPath="min_max_sl/Constant" origin="explicit_param" workspace="myCal4" initValue="1.0">
+        <double min="0.0" max="22.0"/>
+        <usageContext path="Constant" physicalPath="min_max_sl/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="min_max_sl/Out1" path="Out1">
+        <fixedPoint simulinkTypeName="fixdt(1,32,1,55)" wordLength="32" isSigned="1" slope="1.0" bias="55.0" min="-3.2" max="2.147483702E9"/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="min_max_sl/Out2" path="Out2">
+        <fixedPoint simulinkTypeName="fixdt(1,32,9.5367431640625e-7,-119.5)" wordLength="32" isSigned="1" slope="9.5367431640625E-7" bias="-119.5" min="-15.0" max="19.23"/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="min_max_sl/Out3" path="Out3">
+        <fixedPoint simulinkTypeName="fixdt(1,16,-2)" wordLength="16" isSigned="1" slope="4.0" bias="0.0" min="-8.0" max="36.0"/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="min_max_sl/Out4" path="Out4">
+        <int16 max="26"/>
+      </outport>
+      <display physicalPath="min_max_sl/In2" path="In2" name="In2" portNumber="1">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.03125,-119.5)" wordLength="16" isSigned="0" slope="0.03125" bias="-119.5" min="-66.3" max="78.2"/>
+      </display>
+      <display physicalPath="min_max_sl/Add" path="Add" name="Add" portNumber="1">
+        <fixedPoint simulinkTypeName="fixdt(1,32,9.5367431640625e-7,-119.5)" wordLength="32" isSigned="1" slope="9.5367431640625E-7" bias="-119.5" min="-15.0" max="19.23"/>
+      </display>
+      <display physicalPath="min_max_sl/Unit Delay" path="Unit Delay" name="Unit Delay" portNumber="1">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.03125,-119.5)" wordLength="16" isSigned="0" slope="0.03125" bias="-119.5" min="-119.5" max="1928.46875"/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="2AA">
+	<Scope uid="2AA" name="burnercontroller" path="simplebc_sl/burnercontroller" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="simplebc_sl/burnercontroller" subsystemLogging="on">
+		<InPort name="pwron" portNumber="1" compositeSig="none">
+			<Variable varid="varif_372" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_372" initValue="0.0" lsb="1" offset="0" displayName="pwron" identifier="INPUT:pwron" />
+			</Variable>
+		</InPort>
+		<InPort name="tr" portNumber="2" compositeSig="none">
+			<Variable varid="varif_374" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_374" initValue="0.0" lsb="1" offset="0" displayName="tr" identifier="INPUT:tr" />
+			</Variable>
+		</InPort>
+		<InPort name="clk" portNumber="3" compositeSig="none">
+			<Variable varid="varif_376" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_376" initValue="0.0" lsb="1" offset="0" displayName="clk" identifier="INPUT:clk" />
+			</Variable>
+		</InPort>
+		<InPort name="gp" portNumber="4" compositeSig="none">
+			<Variable varid="varif_378" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_378" initValue="0.0" lsb="1" offset="0" displayName="gp" identifier="INPUT:gp" />
+			</Variable>
+		</InPort>
+		<InPort name="ap" portNumber="5" compositeSig="none">
+			<Variable varid="varif_380" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_380" initValue="0.0" lsb="1" offset="0" displayName="ap" identifier="INPUT:ap" />
+			</Variable>
+		</InPort>
+		<InPort name="flame" portNumber="6" compositeSig="none">
+			<Variable varid="varif_382" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_382" initValue="0.0" lsb="1" offset="0" displayName="flame" identifier="INPUT:flame" />
+			</Variable>
+		</InPort>
+		<InPort name="fs_m1" portNumber="7" compositeSig="none">
+			<Variable varid="varif_384" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_384" initValue="0.0" lsb="1" offset="0" displayName="fs_m1" identifier="INPUT:fs_m1" />
+			</Variable>
+		</InPort>
+		<InPort name="fs_y1" portNumber="8" compositeSig="none">
+			<Variable varid="varif_386" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_386" initValue="0.0" lsb="1" offset="0" displayName="fs_y1" identifier="INPUT:fs_y1" />
+			</Variable>
+		</InPort>
+		<InPort name="fs_ignition" portNumber="9" compositeSig="none">
+			<Variable varid="varif_388" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_388" initValue="0.0" lsb="1" offset="0" displayName="fs_ignition" identifier="INPUT:fs_ignition" />
+			</Variable>
+		</InPort>
+		<InPort name="lockout_reset" portNumber="10" compositeSig="none">
+			<Variable varid="varif_390" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_390" initValue="0.0" lsb="1" offset="0" displayName="lockout_reset" identifier="INPUT:lockout_reset" />
+			</Variable>
+		</InPort>
+		<InPort name="reg_ratio" portNumber="11" compositeSig="none">
+			<Variable varid="varif_392" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_392" initValue="0.0" lsb="1" offset="0" displayName="reg_ratio" identifier="INPUT:reg_ratio" />
+			</Variable>
+		</InPort>
+		<OutPort name="m1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_394" signalName="m1_out" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_394" initValue="0.0" lsb="1" offset="0" displayName="m1" identifier="OUTPUT:m1" />
+			</Variable>
+		</OutPort>
+		<OutPort name="y1" portNumber="2" compositeSig="none">
+			<Variable varid="varif_396" signalName="y1_out" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_396" initValue="0.0" lsb="1" offset="0" displayName="y1" identifier="OUTPUT:y1" />
+			</Variable>
+		</OutPort>
+		<OutPort name="ignition" portNumber="3" compositeSig="none">
+			<Variable varid="varif_398" signalName="ignition_out" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_398" initValue="0.0" lsb="1" offset="0" displayName="ignition" identifier="OUTPUT:ignition" />
+			</Variable>
+		</OutPort>
+		<OutPort name="statusdisp" portNumber="4" compositeSig="none">
+			<Variable varid="varif_400" signalName="stateno" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_400" initValue="0.0" lsb="1" offset="0" displayName="statusdisp" identifier="OUTPUT:statusdisp" />
+			</Variable>
+		</OutPort>
+		<OutPort name="errordisp" portNumber="5" compositeSig="none">
+			<Variable varid="varif_402" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_402" initValue="0.0" lsb="1" offset="0" displayName="errordisp" identifier="OUTPUT:errordisp" />
+			</Variable>
+		</OutPort>
+		<OutPort name="fanspeed" portNumber="6" compositeSig="none">
+			<Variable varid="varif_404" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_404" initValue="0.0" lsb="1" offset="0" displayName="fanspeed" identifier="OUTPUT:fanspeed" />
+			</Variable>
+		</OutPort>
+		<OutPort name="gp_test" portNumber="7" compositeSig="none">
+			<Variable varid="varif_406" signalName="gp_test" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_406" initValue="0.0" lsb="1" offset="0" displayName="gp_test" identifier="OUTPUT:gp_test" />
+			</Variable>
+		</OutPort>
+		<OutPort name="ap_test" portNumber="8" compositeSig="none">
+			<Variable varid="varif_408" signalName="ap_test" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_408" initValue="0.0" lsb="1" offset="0" displayName="ap_test" identifier="OUTPUT:ap_test" />
+			</Variable>
+		</OutPort>
+		<OutPort name="flame_test" portNumber="9" compositeSig="none">
+			<Variable varid="varif_410" signalName="flame_test" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_410" initValue="0.0" lsb="1" offset="0" displayName="flame_test" identifier="OUTPUT:flame_test" />
+			</Variable>
+		</OutPort>
+		<Calibration name="fs_max" path="simplebc_sl/burnercontroller/fanspeedcontrol/fs_max" physicalPath="simplebc_sl/burnercontroller/fanspeedcontrol/fs_max" origin="explicit_param">
+			<CalibrationUsage path="simplebc_sl/burnercontroller/fanspeedcontrol/fs_max" physicalPath="simplebc_sl/burnercontroller/fanspeedcontrol/fs_max" blockAttribute="Value" />
+			<Variable varid="varif_412" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_412" initValue="0.0" lsb="1" offset="0" displayName="fs_max" identifier="PARAMETER:fanspeedcontrol/fs_max" />
+			</Variable>
+		</Calibration>
+		<Calibration name="fs_min" path="simplebc_sl/burnercontroller/fanspeedcontrol/fs_min" physicalPath="simplebc_sl/burnercontroller/fanspeedcontrol/fs_min" origin="explicit_param">
+			<CalibrationUsage path="simplebc_sl/burnercontroller/fanspeedcontrol/fs_min" physicalPath="simplebc_sl/burnercontroller/fanspeedcontrol/fs_min" blockAttribute="Value" />
+			<Variable varid="varif_414" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_414" initValue="0.0" lsb="1" offset="0" displayName="fs_min" identifier="PARAMETER:fanspeedcontrol/fs_min" />
+			</Variable>
+		</Calibration>
+		<Calibration name="maxcnt_heating" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+			<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+			<Variable varid="varif_416" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_416" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_heating" identifier="PARAMETER:maincontroller/maincontroller/maxcnt_heating" />
+			</Variable>
+		</Calibration>
+		<Calibration name="maxcnt_ign" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+			<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+			<Variable varid="varif_418" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_418" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_ign" identifier="PARAMETER:maincontroller/maincontroller/maxcnt_ign" />
+			</Variable>
+		</Calibration>
+		<Calibration name="maxcnt_preign" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+			<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+			<Variable varid="varif_420" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_420" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_preign" identifier="PARAMETER:maincontroller/maincontroller/maxcnt_preign" />
+			</Variable>
+		</Calibration>
+		<Calibration name="maxcnt_prev1" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+			<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+			<Variable varid="varif_422" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_422" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_prev1" identifier="PARAMETER:maincontroller/maincontroller/maxcnt_prev1" />
+			</Variable>
+		</Calibration>
+		<Calibration name="maxcnt_prev2" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+			<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+			<Variable varid="varif_424" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_424" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_prev2" identifier="PARAMETER:maincontroller/maincontroller/maxcnt_prev2" />
+			</Variable>
+		</Calibration>
+		<Calibration name="maxcnt_standby" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+			<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+			<Variable varid="varif_426" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_426" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_standby" identifier="PARAMETER:maincontroller/maincontroller/maxcnt_standby" />
+			</Variable>
+		</Calibration>
+		<Calibration name="srinp_resptime" path="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" physicalPath="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" origin="explicit_param">
+			<CalibrationUsage path="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" physicalPath="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" blockAttribute="Parameter" />
+			<Variable varid="varif_428" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_428" initValue="0.0" lsb="1" offset="0" displayName="srinp_resptime" identifier="PARAMETER:input_verification/sr_input_verificaton/srinp_resptime" />
+			</Variable>
+		</Calibration>
+		<Calibration name="srinp_testcycletime" path="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" physicalPath="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" origin="explicit_param">
+			<CalibrationUsage path="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" physicalPath="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" blockAttribute="Parameter" />
+			<Variable varid="varif_430" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_430" initValue="0.0" lsb="1" offset="0" displayName="srinp_testcycletime" identifier="PARAMETER:input_verification/sr_input_verificaton/srinp_testcycletime" />
+			</Variable>
+		</Calibration>
+		<Calibration name="sroutp_resptime" path="simplebc_sl/burnercontroller/output_verification/sr_output_verification" physicalPath="simplebc_sl/burnercontroller/output_verification/sr_output_verification" origin="explicit_param">
+			<CalibrationUsage path="simplebc_sl/burnercontroller/output_verification/sr_output_verification" physicalPath="simplebc_sl/burnercontroller/output_verification/sr_output_verification" blockAttribute="Parameter" />
+			<Variable varid="varif_432" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_432" initValue="0.0" lsb="1" offset="0" displayName="sroutp_resptime" identifier="PARAMETER:output_verification/sr_output_verification/sroutp_resptime" />
+			</Variable>
+		</Calibration>
+		<Calibration name="sroutp_testcycletime" path="simplebc_sl/burnercontroller/output_verification/sr_output_verification" physicalPath="simplebc_sl/burnercontroller/output_verification/sr_output_verification" origin="explicit_param">
+			<CalibrationUsage path="simplebc_sl/burnercontroller/output_verification/sr_output_verification" physicalPath="simplebc_sl/burnercontroller/output_verification/sr_output_verification" blockAttribute="Parameter" />
+			<Variable varid="varif_434" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_434" initValue="0.0" lsb="1" offset="0" displayName="sroutp_testcycletime" identifier="PARAMETER:output_verification/sr_output_verification/sroutp_testcycletime" />
+			</Variable>
+		</Calibration>
+		<Calibration name="tsample" path="simplebc_sl/burnercontroller/fs_ignition" physicalPath="simplebc_sl/burnercontroller/fs_ignition" origin="explicit_param">
+			<CalibrationUsage path="simplebc_sl/burnercontroller/fs_ignition" physicalPath="simplebc_sl/burnercontroller/fs_ignition" blockAttribute="SampleTime" />
+			<CalibrationUsage path="simplebc_sl/burnercontroller/fs_m1" physicalPath="simplebc_sl/burnercontroller/fs_m1" blockAttribute="SampleTime" />
+			<CalibrationUsage path="simplebc_sl/burnercontroller/fs_y1" physicalPath="simplebc_sl/burnercontroller/fs_y1" blockAttribute="SampleTime" />
+			<Variable varid="varif_436" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_436" initValue="0.0" lsb="1" offset="0" displayName="tsample" identifier="PARAMETER:fs_ignition/tsample" />
+			</Variable>
+		</Calibration>
+		<Model name="simplebc_sl" modelPath="/E:/ModelsDev/SL/SimpleBurner/ml2015a/simplebc_sl.mdl" type="SimulinkModel" />
+		<Scope uid="2A1" name="fanspeedcontrol" path="simplebc_sl/burnercontroller/fanspeedcontrol" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="simplebc_sl/burnercontroller/fanspeedcontrol" subsystemLogging="on">
+			<InPort name="stateno" portNumber="1" compositeSig="none">
+				<Variable varid="varif_438" signalName="stateno" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_438" initValue="0.0" lsb="1" offset="0" displayName="stateno" identifier="INPUT:stateno" />
+				</Variable>
+			</InPort>
+			<InPort name="reg_ratio" portNumber="2" compositeSig="none">
+				<Variable varid="varif_440" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_440" initValue="0.0" lsb="1" offset="0" displayName="reg_ratio" identifier="INPUT:reg_ratio" />
+				</Variable>
+			</InPort>
+			<OutPort name="fanspeed" portNumber="1" compositeSig="none">
+				<Variable varid="varif_442" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_442" initValue="0.0" lsb="1" offset="0" displayName="fanspeed" identifier="OUTPUT:fanspeed" />
+				</Variable>
+			</OutPort>
+			<Calibration name="fs_max" path="simplebc_sl/burnercontroller/fanspeedcontrol/fs_max" physicalPath="simplebc_sl/burnercontroller/fanspeedcontrol/fs_max" origin="explicit_param">
+				<CalibrationUsage path="simplebc_sl/burnercontroller/fanspeedcontrol/fs_max" physicalPath="simplebc_sl/burnercontroller/fanspeedcontrol/fs_max" blockAttribute="Value" />
+				<Variable varid="varif_444" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_444" initValue="0.0" lsb="1" offset="0" displayName="fs_max" identifier="PARAMETER:fs_max" />
+				</Variable>
+			</Calibration>
+			<Calibration name="fs_min" path="simplebc_sl/burnercontroller/fanspeedcontrol/fs_min" physicalPath="simplebc_sl/burnercontroller/fanspeedcontrol/fs_min" origin="explicit_param">
+				<CalibrationUsage path="simplebc_sl/burnercontroller/fanspeedcontrol/fs_min" physicalPath="simplebc_sl/burnercontroller/fanspeedcontrol/fs_min" blockAttribute="Value" />
+				<Variable varid="varif_446" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_446" initValue="0.0" lsb="1" offset="0" displayName="fs_min" identifier="PARAMETER:fs_min" />
+				</Variable>
+			</Calibration>
+			<Model name="simplebc_sl" modelPath="/E:/ModelsDev/SL/SimpleBurner/ml2015a/simplebc_sl.mdl" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="2A2" name="input_verification" path="simplebc_sl/burnercontroller/input_verification" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="simplebc_sl/burnercontroller/input_verification" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_448" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_448" initValue="0.0" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<InPort name="In2" portNumber="2" compositeSig="none">
+				<Variable varid="varif_450" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_450" initValue="0.0" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+				</Variable>
+			</InPort>
+			<InPort name="In3" portNumber="3" compositeSig="none">
+				<Variable varid="varif_452" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_452" initValue="0.0" lsb="1" offset="0" displayName="In3" identifier="INPUT:In3" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_454" signalName="gp_on" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_454" initValue="0.0" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out2" portNumber="2" compositeSig="none">
+				<Variable varid="varif_456" signalName="ap_on" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_456" initValue="0.0" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out3" portNumber="3" compositeSig="none">
+				<Variable varid="varif_458" signalName="flame_on" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_458" initValue="0.0" lsb="1" offset="0" displayName="Out3" identifier="OUTPUT:Out3" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out4" portNumber="4" compositeSig="none">
+				<Variable varid="varif_460" signalName="gp_test" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_460" initValue="0.0" lsb="1" offset="0" displayName="Out4" identifier="OUTPUT:Out4" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out5" portNumber="5" compositeSig="none">
+				<Variable varid="varif_462" signalName="ap_test" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_462" initValue="0.0" lsb="1" offset="0" displayName="Out5" identifier="OUTPUT:Out5" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out6" portNumber="6" compositeSig="none">
+				<Variable varid="varif_464" signalName="flame_test" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_464" initValue="0.0" lsb="1" offset="0" displayName="Out6" identifier="OUTPUT:Out6" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out7" portNumber="7" compositeSig="none">
+				<Variable varid="varif_466" signalName="srinplock" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_466" initValue="0.0" lsb="1" offset="0" displayName="Out7" identifier="OUTPUT:Out7" />
+				</Variable>
+			</OutPort>
+			<Calibration name="srinp_resptime" path="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" physicalPath="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" origin="explicit_param">
+				<CalibrationUsage path="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" physicalPath="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" blockAttribute="Parameter" />
+				<Variable varid="varif_468" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_468" initValue="0.0" lsb="1" offset="0" displayName="srinp_resptime" identifier="PARAMETER:sr_input_verificaton/srinp_resptime" />
+				</Variable>
+			</Calibration>
+			<Calibration name="srinp_testcycletime" path="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" physicalPath="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" origin="explicit_param">
+				<CalibrationUsage path="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" physicalPath="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" blockAttribute="Parameter" />
+				<Variable varid="varif_470" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_470" initValue="0.0" lsb="1" offset="0" displayName="srinp_testcycletime" identifier="PARAMETER:sr_input_verificaton/srinp_testcycletime" />
+				</Variable>
+			</Calibration>
+			<Model name="simplebc_sl" modelPath="/E:/ModelsDev/SL/SimpleBurner/ml2015a/simplebc_sl.mdl" type="SimulinkModel" />
+			<Scope uid="2A6" name="sr_input_verificaton" path="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="STATEFLOW" physicalPath="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" subsystemLogging="on">
+				<InPort name="gp_in" portNumber="1" compositeSig="none">
+					<Variable varid="varif_472" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_472" initValue="0.0" lsb="1" offset="0" displayName="gp_in" identifier="INPUT:gp_in" />
+					</Variable>
+				</InPort>
+				<InPort name="ap_in" portNumber="2" compositeSig="none">
+					<Variable varid="varif_474" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_474" initValue="0.0" lsb="1" offset="0" displayName="ap_in" identifier="INPUT:ap_in" />
+					</Variable>
+				</InPort>
+				<InPort name="flame_in" portNumber="3" compositeSig="none">
+					<Variable varid="varif_476" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_476" initValue="0.0" lsb="1" offset="0" displayName="flame_in" identifier="INPUT:flame_in" />
+					</Variable>
+				</InPort>
+				<OutPort name="gp_on" portNumber="1" compositeSig="none">
+					<Variable varid="varif_478" signalName="gp_on" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_478" initValue="0.0" lsb="1" offset="0" displayName="gp_on" identifier="OUTPUT:gp_on" />
+					</Variable>
+				</OutPort>
+				<OutPort name="ap_on" portNumber="2" compositeSig="none">
+					<Variable varid="varif_480" signalName="ap_on" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_480" initValue="0.0" lsb="1" offset="0" displayName="ap_on" identifier="OUTPUT:ap_on" />
+					</Variable>
+				</OutPort>
+				<OutPort name="flame_on" portNumber="3" compositeSig="none">
+					<Variable varid="varif_482" signalName="flame_on" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_482" initValue="0.0" lsb="1" offset="0" displayName="flame_on" identifier="OUTPUT:flame_on" />
+					</Variable>
+				</OutPort>
+				<OutPort name="gp_test" portNumber="4" compositeSig="none">
+					<Variable varid="varif_484" signalName="gp_test" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_484" initValue="0.0" lsb="1" offset="0" displayName="gp_test" identifier="OUTPUT:gp_test" />
+					</Variable>
+				</OutPort>
+				<OutPort name="ap_test" portNumber="5" compositeSig="none">
+					<Variable varid="varif_486" signalName="ap_test" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_486" initValue="0.0" lsb="1" offset="0" displayName="ap_test" identifier="OUTPUT:ap_test" />
+					</Variable>
+				</OutPort>
+				<OutPort name="flame_test" portNumber="6" compositeSig="none">
+					<Variable varid="varif_488" signalName="flame_test" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_488" initValue="0.0" lsb="1" offset="0" displayName="flame_test" identifier="OUTPUT:flame_test" />
+					</Variable>
+				</OutPort>
+				<OutPort name="srinplock" portNumber="7" compositeSig="none">
+					<Variable varid="varif_490" signalName="srinplock" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_490" initValue="0.0" lsb="1" offset="0" displayName="srinplock" identifier="OUTPUT:srinplock" />
+					</Variable>
+				</OutPort>
+				<Calibration name="srinp_resptime" path="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" physicalPath="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" origin="explicit_param">
+					<CalibrationUsage path="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" physicalPath="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" blockAttribute="Parameter" />
+					<Variable varid="varif_492" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_492" initValue="0.0" lsb="1" offset="0" displayName="srinp_resptime" identifier="PARAMETER:srinp_resptime" />
+					</Variable>
+				</Calibration>
+				<Calibration name="srinp_testcycletime" path="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" physicalPath="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" origin="explicit_param">
+					<CalibrationUsage path="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" physicalPath="simplebc_sl/burnercontroller/input_verification/sr_input_verificaton" blockAttribute="Parameter" />
+					<Variable varid="varif_494" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_494" initValue="0.0" lsb="1" offset="0" displayName="srinp_testcycletime" identifier="PARAMETER:srinp_testcycletime" />
+					</Variable>
+				</Calibration>
+				<Model name="simplebc_sl" modelPath="/E:/ModelsDev/SL/SimpleBurner/ml2015a/simplebc_sl.mdl" type="SimulinkModel" />
+			</Scope>
+		</Scope>
+		<Scope uid="2A3" name="lockcontroller" path="simplebc_sl/burnercontroller/lockcontroller" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="simplebc_sl/burnercontroller/lockcontroller" subsystemLogging="on">
+			<InPort name="mainctrlock" portNumber="1" compositeSig="none">
+				<Variable varid="varif_496" signalName="mainctrlock" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_496" initValue="0.0" lsb="1" offset="0" displayName="mainctrlock" identifier="INPUT:mainctrlock" />
+				</Variable>
+			</InPort>
+			<InPort name="srinplock" portNumber="2" compositeSig="none">
+				<Variable varid="varif_498" signalName="srinplock" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_498" initValue="0.0" lsb="1" offset="0" displayName="srinplock" identifier="INPUT:srinplock" />
+				</Variable>
+			</InPort>
+			<InPort name="reset_in" portNumber="3" compositeSig="none">
+				<Variable varid="varif_500" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_500" initValue="0.0" lsb="1" offset="0" displayName="reset_in" identifier="INPUT:reset_in" />
+				</Variable>
+			</InPort>
+			<InPort name="sroutplock" portNumber="4" compositeSig="none">
+				<Variable varid="varif_502" signalName="sroutplock" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_502" initValue="0.0" lsb="1" offset="0" displayName="sroutplock" identifier="INPUT:sroutplock" />
+				</Variable>
+			</InPort>
+			<OutPort name="lock" portNumber="1" compositeSig="none">
+				<Variable varid="varif_504" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_504" initValue="0.0" lsb="1" offset="0" displayName="lock" identifier="OUTPUT:lock" />
+				</Variable>
+			</OutPort>
+			<OutPort name="unlock" portNumber="2" compositeSig="none">
+				<Variable varid="varif_506" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_506" initValue="0.0" lsb="1" offset="0" displayName="unlock" identifier="OUTPUT:unlock" />
+				</Variable>
+			</OutPort>
+			<Model name="simplebc_sl" modelPath="/E:/ModelsDev/SL/SimpleBurner/ml2015a/simplebc_sl.mdl" type="SimulinkModel" />
+			<Scope uid="2A7" name="lockctrl" path="simplebc_sl/burnercontroller/lockcontroller/lockctrl" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="STATEFLOW" physicalPath="simplebc_sl/burnercontroller/lockcontroller/lockctrl" subsystemLogging="on">
+				<InPort name="reset_in" portNumber="1" compositeSig="none">
+					<Variable varid="varif_508" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_508" initValue="0.0" lsb="1" offset="0" displayName="reset_in" identifier="INPUT:reset_in" />
+					</Variable>
+				</InPort>
+				<InPort name="inplock" portNumber="2" compositeSig="none">
+					<Variable varid="varif_510" signalName="srinplock" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_510" initValue="0.0" lsb="1" offset="0" displayName="inplock" identifier="INPUT:inplock" />
+					</Variable>
+				</InPort>
+				<InPort name="mainctrlock" portNumber="3" compositeSig="none">
+					<Variable varid="varif_512" signalName="mainctrlock" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_512" initValue="0.0" lsb="1" offset="0" displayName="mainctrlock" identifier="INPUT:mainctrlock" />
+					</Variable>
+				</InPort>
+				<InPort name="outplock" portNumber="4" compositeSig="none">
+					<Variable varid="varif_514" signalName="sroutplock" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_514" initValue="0.0" lsb="1" offset="0" displayName="outplock" identifier="INPUT:outplock" />
+					</Variable>
+				</InPort>
+				<OutPort name="lock_out" portNumber="1" compositeSig="none">
+					<Variable varid="varif_516" signalName="lock_out" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_516" initValue="0.0" lsb="1" offset="0" displayName="lock_out" identifier="OUTPUT:lock_out" />
+					</Variable>
+				</OutPort>
+				<OutPort name="unlock_out" portNumber="2" compositeSig="none">
+					<Variable varid="varif_518" signalName="unlock_out" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_518" initValue="0.0" lsb="1" offset="0" displayName="unlock_out" identifier="OUTPUT:unlock_out" />
+					</Variable>
+				</OutPort>
+				<Model name="simplebc_sl" modelPath="/E:/ModelsDev/SL/SimpleBurner/ml2015a/simplebc_sl.mdl" type="SimulinkModel" />
+			</Scope>
+		</Scope>
+		<Scope uid="2A4" name="maincontroller" path="simplebc_sl/burnercontroller/maincontroller" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="simplebc_sl/burnercontroller/maincontroller" subsystemLogging="on">
+			<InPort name="clk" portNumber="1" compositeSig="none">
+				<Variable varid="varif_520" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_520" initValue="0.0" lsb="1" offset="0" displayName="clk" identifier="INPUT:clk" />
+				</Variable>
+			</InPort>
+			<InPort name="unlock" portNumber="2" compositeSig="none">
+				<Variable varid="varif_522" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_522" initValue="0.0" lsb="1" offset="0" displayName="unlock" identifier="INPUT:unlock" />
+				</Variable>
+			</InPort>
+			<InPort name="lock" portNumber="3" compositeSig="none">
+				<Variable varid="varif_524" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_524" initValue="0.0" lsb="1" offset="0" displayName="lock" identifier="INPUT:lock" />
+				</Variable>
+			</InPort>
+			<InPort name="pwron_in" portNumber="4" compositeSig="none">
+				<Variable varid="varif_526" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_526" initValue="0.0" lsb="1" offset="0" displayName="pwron_in" identifier="INPUT:pwron_in" />
+				</Variable>
+			</InPort>
+			<InPort name="tr_in" portNumber="5" compositeSig="none">
+				<Variable varid="varif_528" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_528" initValue="0.0" lsb="1" offset="0" displayName="tr_in" identifier="INPUT:tr_in" />
+				</Variable>
+			</InPort>
+			<InPort name="gp_on" portNumber="6" compositeSig="none">
+				<Variable varid="varif_530" signalName="gp_on" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_530" initValue="0.0" lsb="1" offset="0" displayName="gp_on" identifier="INPUT:gp_on" />
+				</Variable>
+			</InPort>
+			<InPort name="ap_on" portNumber="7" compositeSig="none">
+				<Variable varid="varif_532" signalName="ap_on" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_532" initValue="0.0" lsb="1" offset="0" displayName="ap_on" identifier="INPUT:ap_on" />
+				</Variable>
+			</InPort>
+			<InPort name="flame_on" portNumber="8" compositeSig="none">
+				<Variable varid="varif_534" signalName="flame_on" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_534" initValue="0.0" lsb="1" offset="0" displayName="flame_on" identifier="INPUT:flame_on" />
+				</Variable>
+			</InPort>
+			<OutPort name="m1_on" portNumber="1" compositeSig="none">
+				<Variable varid="varif_536" signalName="m1_on" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_536" initValue="0.0" lsb="1" offset="0" displayName="m1_on" identifier="OUTPUT:m1_on" />
+				</Variable>
+			</OutPort>
+			<OutPort name="y1_on" portNumber="2" compositeSig="none">
+				<Variable varid="varif_538" signalName="y1_on" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_538" initValue="0.0" lsb="1" offset="0" displayName="y1_on" identifier="OUTPUT:y1_on" />
+				</Variable>
+			</OutPort>
+			<OutPort name="ignition_on" portNumber="3" compositeSig="none">
+				<Variable varid="varif_540" signalName="ignition_on" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_540" initValue="0.0" lsb="1" offset="0" displayName="ignition_on" identifier="OUTPUT:ignition_on" />
+				</Variable>
+			</OutPort>
+			<OutPort name="stateno" portNumber="4" compositeSig="none">
+				<Variable varid="varif_542" signalName="stateno" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_542" initValue="0.0" lsb="1" offset="0" displayName="stateno" identifier="OUTPUT:stateno" />
+				</Variable>
+			</OutPort>
+			<OutPort name="mainctrllock" portNumber="5" compositeSig="none">
+				<Variable varid="varif_544" signalName="mainctrlock" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_544" initValue="0.0" lsb="1" offset="0" displayName="mainctrllock" identifier="OUTPUT:mainctrllock" />
+				</Variable>
+			</OutPort>
+			<Calibration name="maxcnt_heating" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+				<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+				<Variable varid="varif_546" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_546" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_heating" identifier="PARAMETER:maincontroller/maxcnt_heating" />
+				</Variable>
+			</Calibration>
+			<Calibration name="maxcnt_ign" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+				<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+				<Variable varid="varif_548" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_548" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_ign" identifier="PARAMETER:maincontroller/maxcnt_ign" />
+				</Variable>
+			</Calibration>
+			<Calibration name="maxcnt_preign" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+				<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+				<Variable varid="varif_550" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_550" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_preign" identifier="PARAMETER:maincontroller/maxcnt_preign" />
+				</Variable>
+			</Calibration>
+			<Calibration name="maxcnt_prev1" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+				<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+				<Variable varid="varif_552" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_552" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_prev1" identifier="PARAMETER:maincontroller/maxcnt_prev1" />
+				</Variable>
+			</Calibration>
+			<Calibration name="maxcnt_prev2" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+				<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+				<Variable varid="varif_554" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_554" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_prev2" identifier="PARAMETER:maincontroller/maxcnt_prev2" />
+				</Variable>
+			</Calibration>
+			<Calibration name="maxcnt_standby" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+				<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+				<Variable varid="varif_556" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_556" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_standby" identifier="PARAMETER:maincontroller/maxcnt_standby" />
+				</Variable>
+			</Calibration>
+			<Model name="simplebc_sl" modelPath="/E:/ModelsDev/SL/SimpleBurner/ml2015a/simplebc_sl.mdl" type="SimulinkModel" />
+			<Scope uid="2A8" name="maincontroller" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="STATEFLOW" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" subsystemLogging="on">
+				<InPort name="lock" portNumber="1" compositeSig="none">
+					<Variable varid="varif_558" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_558" initValue="0.0" lsb="1" offset="0" displayName="lock" identifier="INPUT:lock" />
+					</Variable>
+				</InPort>
+				<InPort name="unlock" portNumber="2" compositeSig="none">
+					<Variable varid="varif_560" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_560" initValue="0.0" lsb="1" offset="0" displayName="unlock" identifier="INPUT:unlock" />
+					</Variable>
+				</InPort>
+				<InPort name="pwron_in" portNumber="3" compositeSig="none">
+					<Variable varid="varif_562" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_562" initValue="0.0" lsb="1" offset="0" displayName="pwron_in" identifier="INPUT:pwron_in" />
+					</Variable>
+				</InPort>
+				<InPort name="tr_in" portNumber="4" compositeSig="none">
+					<Variable varid="varif_564" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_564" initValue="0.0" lsb="1" offset="0" displayName="tr_in" identifier="INPUT:tr_in" />
+					</Variable>
+				</InPort>
+				<InPort name="gp_on" portNumber="5" compositeSig="none">
+					<Variable varid="varif_566" signalName="gp_on" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_566" initValue="0.0" lsb="1" offset="0" displayName="gp_on" identifier="INPUT:gp_on" />
+					</Variable>
+				</InPort>
+				<InPort name="ap_on" portNumber="6" compositeSig="none">
+					<Variable varid="varif_568" signalName="ap_on" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_568" initValue="0.0" lsb="1" offset="0" displayName="ap_on" identifier="INPUT:ap_on" />
+					</Variable>
+				</InPort>
+				<InPort name="flame_on" portNumber="7" compositeSig="none">
+					<Variable varid="varif_570" signalName="flame_on" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_570" initValue="0.0" lsb="1" offset="0" displayName="flame_on" identifier="INPUT:flame_on" />
+					</Variable>
+				</InPort>
+				<OutPort name="m1_on" portNumber="1" compositeSig="none">
+					<Variable varid="varif_572" signalName="m1_on" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_572" initValue="0.0" lsb="1" offset="0" displayName="m1_on" identifier="OUTPUT:m1_on" />
+					</Variable>
+				</OutPort>
+				<OutPort name="y1_on" portNumber="2" compositeSig="none">
+					<Variable varid="varif_574" signalName="y1_on" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_574" initValue="0.0" lsb="1" offset="0" displayName="y1_on" identifier="OUTPUT:y1_on" />
+					</Variable>
+				</OutPort>
+				<OutPort name="ignition_on" portNumber="3" compositeSig="none">
+					<Variable varid="varif_576" signalName="ignition_on" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_576" initValue="0.0" lsb="1" offset="0" displayName="ignition_on" identifier="OUTPUT:ignition_on" />
+					</Variable>
+				</OutPort>
+				<OutPort name="stateno" portNumber="4" compositeSig="none">
+					<Variable varid="varif_578" signalName="stateno" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_578" initValue="0.0" lsb="1" offset="0" displayName="stateno" identifier="OUTPUT:stateno" />
+					</Variable>
+				</OutPort>
+				<OutPort name="mainctrlock" portNumber="5" compositeSig="none">
+					<Variable varid="varif_580" signalName="mainctrlock" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_580" initValue="0.0" lsb="1" offset="0" displayName="mainctrlock" identifier="OUTPUT:mainctrlock" />
+					</Variable>
+				</OutPort>
+				<Calibration name="maxcnt_heating" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+					<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+					<Variable varid="varif_582" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_582" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_heating" identifier="PARAMETER:maxcnt_heating" />
+					</Variable>
+				</Calibration>
+				<Calibration name="maxcnt_ign" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+					<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+					<Variable varid="varif_584" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_584" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_ign" identifier="PARAMETER:maxcnt_ign" />
+					</Variable>
+				</Calibration>
+				<Calibration name="maxcnt_preign" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+					<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+					<Variable varid="varif_586" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_586" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_preign" identifier="PARAMETER:maxcnt_preign" />
+					</Variable>
+				</Calibration>
+				<Calibration name="maxcnt_prev1" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+					<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+					<Variable varid="varif_588" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_588" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_prev1" identifier="PARAMETER:maxcnt_prev1" />
+					</Variable>
+				</Calibration>
+				<Calibration name="maxcnt_prev2" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+					<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+					<Variable varid="varif_590" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_590" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_prev2" identifier="PARAMETER:maxcnt_prev2" />
+					</Variable>
+				</Calibration>
+				<Calibration name="maxcnt_standby" path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" origin="explicit_param">
+					<CalibrationUsage path="simplebc_sl/burnercontroller/maincontroller/maincontroller" physicalPath="simplebc_sl/burnercontroller/maincontroller/maincontroller" blockAttribute="Parameter" />
+					<Variable varid="varif_592" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_592" initValue="0.0" lsb="1" offset="0" displayName="maxcnt_standby" identifier="PARAMETER:maxcnt_standby" />
+					</Variable>
+				</Calibration>
+				<Model name="simplebc_sl" modelPath="/E:/ModelsDev/SL/SimpleBurner/ml2015a/simplebc_sl.mdl" type="SimulinkModel" />
+			</Scope>
+		</Scope>
+		<Scope uid="2A5" name="output_verification" path="simplebc_sl/burnercontroller/output_verification" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="simplebc_sl/burnercontroller/output_verification" subsystemLogging="on">
+			<InPort name="In1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_594" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_594" initValue="0.0" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<InPort name="In2" portNumber="2" compositeSig="none">
+				<Variable varid="varif_596" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_596" initValue="0.0" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+				</Variable>
+			</InPort>
+			<InPort name="In3" portNumber="3" compositeSig="none">
+				<Variable varid="varif_598" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_598" initValue="0.0" lsb="1" offset="0" displayName="In3" identifier="INPUT:In3" />
+				</Variable>
+			</InPort>
+			<InPort name="In4" portNumber="4" compositeSig="none">
+				<Variable varid="varif_600" signalName="m1_on" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_600" initValue="0.0" lsb="1" offset="0" displayName="In4" identifier="INPUT:In4" />
+				</Variable>
+			</InPort>
+			<InPort name="In5" portNumber="5" compositeSig="none">
+				<Variable varid="varif_602" signalName="y1_on" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_602" initValue="0.0" lsb="1" offset="0" displayName="In5" identifier="INPUT:In5" />
+				</Variable>
+			</InPort>
+			<InPort name="In6" portNumber="6" compositeSig="none">
+				<Variable varid="varif_604" signalName="ignition_on" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_604" initValue="0.0" lsb="1" offset="0" displayName="In6" identifier="INPUT:In6" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none">
+				<Variable varid="varif_606" signalName="m1_out" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_606" initValue="0.0" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out2" portNumber="2" compositeSig="none">
+				<Variable varid="varif_608" signalName="y1_out" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_608" initValue="0.0" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out3" portNumber="3" compositeSig="none">
+				<Variable varid="varif_610" signalName="ignition_out" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_610" initValue="0.0" lsb="1" offset="0" displayName="Out3" identifier="OUTPUT:Out3" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out4" portNumber="4" compositeSig="none">
+				<Variable varid="varif_612" signalName="sroutplock" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_612" initValue="0.0" lsb="1" offset="0" displayName="Out4" identifier="OUTPUT:Out4" />
+				</Variable>
+			</OutPort>
+			<Calibration name="sroutp_resptime" path="simplebc_sl/burnercontroller/output_verification/sr_output_verification" physicalPath="simplebc_sl/burnercontroller/output_verification/sr_output_verification" origin="explicit_param">
+				<CalibrationUsage path="simplebc_sl/burnercontroller/output_verification/sr_output_verification" physicalPath="simplebc_sl/burnercontroller/output_verification/sr_output_verification" blockAttribute="Parameter" />
+				<Variable varid="varif_614" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_614" initValue="0.0" lsb="1" offset="0" displayName="sroutp_resptime" identifier="PARAMETER:sr_output_verification/sroutp_resptime" />
+				</Variable>
+			</Calibration>
+			<Calibration name="sroutp_testcycletime" path="simplebc_sl/burnercontroller/output_verification/sr_output_verification" physicalPath="simplebc_sl/burnercontroller/output_verification/sr_output_verification" origin="explicit_param">
+				<CalibrationUsage path="simplebc_sl/burnercontroller/output_verification/sr_output_verification" physicalPath="simplebc_sl/burnercontroller/output_verification/sr_output_verification" blockAttribute="Parameter" />
+				<Variable varid="varif_616" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_616" initValue="0.0" lsb="1" offset="0" displayName="sroutp_testcycletime" identifier="PARAMETER:sr_output_verification/sroutp_testcycletime" />
+				</Variable>
+			</Calibration>
+			<Model name="simplebc_sl" modelPath="/E:/ModelsDev/SL/SimpleBurner/ml2015a/simplebc_sl.mdl" type="SimulinkModel" />
+			<Scope uid="2A9" name="sr_output_verification" path="simplebc_sl/burnercontroller/output_verification/sr_output_verification" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="STATEFLOW" physicalPath="simplebc_sl/burnercontroller/output_verification/sr_output_verification" subsystemLogging="on">
+				<InPort name="fs_m1_in" portNumber="1" compositeSig="none">
+					<Variable varid="varif_618" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_618" initValue="0.0" lsb="1" offset="0" displayName="fs_m1_in" identifier="INPUT:fs_m1_in" />
+					</Variable>
+				</InPort>
+				<InPort name="fs_y1_in" portNumber="2" compositeSig="none">
+					<Variable varid="varif_620" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_620" initValue="0.0" lsb="1" offset="0" displayName="fs_y1_in" identifier="INPUT:fs_y1_in" />
+					</Variable>
+				</InPort>
+				<InPort name="fs_ignition_in" portNumber="3" compositeSig="none">
+					<Variable varid="varif_622" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_622" initValue="0.0" lsb="1" offset="0" displayName="fs_ignition_in" identifier="INPUT:fs_ignition_in" />
+					</Variable>
+				</InPort>
+				<InPort name="m1_on" portNumber="4" compositeSig="none">
+					<Variable varid="varif_624" signalName="m1_on" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_624" initValue="0.0" lsb="1" offset="0" displayName="m1_on" identifier="INPUT:m1_on" />
+					</Variable>
+				</InPort>
+				<InPort name="y1_on" portNumber="5" compositeSig="none">
+					<Variable varid="varif_626" signalName="y1_on" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_626" initValue="0.0" lsb="1" offset="0" displayName="y1_on" identifier="INPUT:y1_on" />
+					</Variable>
+				</InPort>
+				<InPort name="ignition_on" portNumber="6" compositeSig="none">
+					<Variable varid="varif_628" signalName="ignition_on" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_628" initValue="0.0" lsb="1" offset="0" displayName="ignition_on" identifier="INPUT:ignition_on" />
+					</Variable>
+				</InPort>
+				<OutPort name="m1_out" portNumber="1" compositeSig="none">
+					<Variable varid="varif_630" signalName="m1_out" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_630" initValue="0.0" lsb="1" offset="0" displayName="m1_out" identifier="OUTPUT:m1_out" />
+					</Variable>
+				</OutPort>
+				<OutPort name="y1_out" portNumber="2" compositeSig="none">
+					<Variable varid="varif_632" signalName="y1_out" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_632" initValue="0.0" lsb="1" offset="0" displayName="y1_out" identifier="OUTPUT:y1_out" />
+					</Variable>
+				</OutPort>
+				<OutPort name="ignition_out" portNumber="3" compositeSig="none">
+					<Variable varid="varif_634" signalName="ignition_out" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_634" initValue="0.0" lsb="1" offset="0" displayName="ignition_out" identifier="OUTPUT:ignition_out" />
+					</Variable>
+				</OutPort>
+				<OutPort name="sroutplock" portNumber="4" compositeSig="none">
+					<Variable varid="varif_636" signalName="sroutplock" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_636" initValue="0.0" lsb="1" offset="0" displayName="sroutplock" identifier="OUTPUT:sroutplock" />
+					</Variable>
+				</OutPort>
+				<Calibration name="sroutp_resptime" path="simplebc_sl/burnercontroller/output_verification/sr_output_verification" physicalPath="simplebc_sl/burnercontroller/output_verification/sr_output_verification" origin="explicit_param">
+					<CalibrationUsage path="simplebc_sl/burnercontroller/output_verification/sr_output_verification" physicalPath="simplebc_sl/burnercontroller/output_verification/sr_output_verification" blockAttribute="Parameter" />
+					<Variable varid="varif_638" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_638" initValue="0.0" lsb="1" offset="0" displayName="sroutp_resptime" identifier="PARAMETER:sroutp_resptime" />
+					</Variable>
+				</Calibration>
+				<Calibration name="sroutp_testcycletime" path="simplebc_sl/burnercontroller/output_verification/sr_output_verification" physicalPath="simplebc_sl/burnercontroller/output_verification/sr_output_verification" origin="explicit_param">
+					<CalibrationUsage path="simplebc_sl/burnercontroller/output_verification/sr_output_verification" physicalPath="simplebc_sl/burnercontroller/output_verification/sr_output_verification" blockAttribute="Parameter" />
+					<Variable varid="varif_640" signalType="double" isFloat="yes" tlTypeName="double">
+						<ifName ifid="if_640" initValue="0.0" lsb="1" offset="0" displayName="sroutp_testcycletime" identifier="PARAMETER:sroutp_testcycletime" />
+					</Variable>
+				</Calibration>
+				<Model name="simplebc_sl" modelPath="/E:/ModelsDev/SL/SimpleBurner/ml2015a/simplebc_sl.mdl" type="SimulinkModel" />
+			</Scope>
+		</Scope>
+	</Scope>
+</ExtractionModel>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="SWC_CruiseControlMain_Test_Embedded_2"/>
+    <Architecture id="id1" name="SWC_CruiseControlMain_Test_Embedded_2 [C-Code]"/>
+    <ScopeMapping>
+      <Path path="SWC_CruiseControlMain_OnOff_sys" refId="id0"/>
+      <Path path="SWC_CruiseControlMain_Test_Embedded_2.c:1:SWC_CruiseControlMain_OnOff" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SWC_CruiseControlMain_OnOff_sys/Rp_CC_TurnCruiseControlOnOff_DE_CruiseOnOffReq_read" refId="id0"/>
+        <Path path="RteStub_SRIf_TurnCruiseControlOnOff_Rp_CC_TurnCruiseControlOnOff_DE_CruiseOnOffReq" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SWC_CruiseControlMain_OnOff_sys/Rp_CC_VehIgnStatus_DE_VehIgnStatus_read" refId="id0"/>
+        <Path path="RteStub_SRIf_VehIgnStatus_Rp_CC_VehIgnStatus_DE_VehIgnStatus" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SWC_CruiseControlMain_OnOff_sys/Pp_CC_SetCruiseControlOnOff_DE_CruiseOnOffSet_write" refId="id0"/>
+        <Path path="RteStub_SRIf_SetCruiseControlOnOff_Pp_CC_SetCruiseControlOnOff_DE_CruiseOnOffSet" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SWC_CruiseControlMain_OnOff_sys/Subsystem1" refId="id0"/>
+      <Path path="SWC_CruiseControlMain_Test_Embedded_2.c:1:SWC_CruiseControlMain_OnOff/Subsystem1_fnc.c:1:Subsystem1_fnc" refId="id1"/>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/Chart1" refId="id0"/>
+      <Path path="SWC_CruiseControlMain_Test_Embedded_2.c:1:SWC_CruiseControlMain_OnOff/Subsystem1_fnc.c:1:Subsystem1_fnc/chart1_fnc.c:1:chart1_fnc" refId="id1"/>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SWC_CruiseControlMain_OnOff_sys/Subsystem1/Enabled&#10;Subsystem/Subsystem" refId="id0"/>
+      <Path path="SWC_CruiseControlMain_Test_Embedded_2.c:1:SWC_CruiseControlMain_OnOff/Subsystem1_fnc.c:1:Subsystem1_fnc/EnabledSubsystem_fnc.c:1:EnabledSubsystem_fnc/Subsystem_fnc.c:1:Subsystem_fnc" refId="id1"/>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

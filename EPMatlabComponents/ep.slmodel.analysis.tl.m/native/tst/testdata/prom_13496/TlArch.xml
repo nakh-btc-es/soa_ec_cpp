@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.56" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_prom_13496\prom_13496.mdl" modelCreationDate="2017-03-16T11:15:26" creator="Alexander Hornstein">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.56" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_prom_13496\prom_13496.mdl" creationDate="2017-03-16T11:15:26" modificationDate="2021-11-23T13:26:51">
+    <subsystem subsysID="ss1" physicalPath="prom_13496/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="0.02" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="prom_13496/top_A/Subsystem/top_A/in1" path="top_A/Subsystem/top_A/in1">
+        <miltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <boolean/>
+            </signal>
+            <signal index="2">
+              <boolean/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <Bool/>
+            </signal>
+            <signal index="2">
+              <Bool/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="in2" physicalPath="prom_13496/top_A/Subsystem/top_A/in2" path="top_A/Subsystem/top_A/in2">
+        <miltype>
+          <bus>
+            <signal signalName="e.a">
+              <boolean/>
+            </signal>
+            <signal signalName="e.d.b">
+              <boolean/>
+            </signal>
+            <signal signalName="e.d.c">
+              <nonUniformArray size="2">
+                <signal index="1">
+                  <boolean/>
+                </signal>
+                <signal index="2">
+                  <boolean/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="e.a">
+              <Bool/>
+            </signal>
+            <signal signalName="e.d.b">
+              <Bool/>
+            </signal>
+            <signal signalName="e.d.c">
+              <nonUniformArray size="2">
+                <signal index="1">
+                  <Bool/>
+                </signal>
+                <signal index="2">
+                  <Bool/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="prom_13496/top_A/Subsystem/top_A/out1" path="top_A/Subsystem/top_A/out1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub1" path="top_A/Subsystem/top_A/goodSub1" sampleTime="0.02" name="goodSub1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub1/In1" path="top_A/Subsystem/top_A/goodSub1/In1">
+        <miltype signalName="a">
+          <boolean/>
+        </miltype>
+        <siltype signalName="a">
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub1/In2" path="top_A/Subsystem/top_A/goodSub1/In2">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub1/Out1" path="top_A/Subsystem/top_A/goodSub1/Out1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub2" path="top_A/Subsystem/top_A/goodSub2" sampleTime="0.02" name="goodSub2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub2/In1" path="top_A/Subsystem/top_A/goodSub2/In1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub2/In2" path="top_A/Subsystem/top_A/goodSub2/In2">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub2/Out1" path="top_A/Subsystem/top_A/goodSub2/Out1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub3" path="top_A/Subsystem/top_A/goodSub3" sampleTime="0.02" name="goodSub3" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub3/In1" path="top_A/Subsystem/top_A/goodSub3/In1">
+        <miltype signalName="a">
+          <boolean/>
+        </miltype>
+        <siltype signalName="a">
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub3/In2" path="top_A/Subsystem/top_A/goodSub3/In2">
+        <miltype signalName="b">
+          <boolean/>
+        </miltype>
+        <siltype signalName="b">
+          <Bool/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub3/Out1" path="top_A/Subsystem/top_A/goodSub3/Out1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub4" path="top_A/Subsystem/top_A/goodSub4" sampleTime="0.02" name="goodSub4" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub4/In1" path="top_A/Subsystem/top_A/goodSub4/In1">
+        <miltype signalName="c">
+          <nonUniformArray size="2">
+            <signal index="1">
+              <boolean/>
+            </signal>
+            <signal index="2">
+              <boolean/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype signalName="c">
+          <nonUniformArray size="2">
+            <signal index="1">
+              <Bool/>
+            </signal>
+            <signal index="2">
+              <Bool/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub4/In2" path="top_A/Subsystem/top_A/goodSub4/In2">
+        <miltype signalName="b">
+          <boolean/>
+        </miltype>
+        <siltype signalName="b">
+          <Bool/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub4/Out1" path="top_A/Subsystem/top_A/goodSub4/Out1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub5" path="top_A/Subsystem/top_A/goodSub5" sampleTime="0.02" name="goodSub5" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub5/In1" path="top_A/Subsystem/top_A/goodSub5/In1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub5/In2" path="top_A/Subsystem/top_A/goodSub5/In2">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="prom_13496/top_A/Subsystem/top_A/goodSub5/Out1" path="top_A/Subsystem/top_A/goodSub5/Out1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

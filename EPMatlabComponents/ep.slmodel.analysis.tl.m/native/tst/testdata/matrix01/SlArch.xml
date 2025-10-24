@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" modelVersion="1.7" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_matrix_01\matrix_model_sl.slx" modelCreationDate="2015-02-02T10:23:30" creator="alex">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.7" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_matrix_01\matrix_model_sl.slx" creationDate="2015-02-02T10:23:30" modificationDate="2021-11-19T10:08:12">
+    <subsystem subsysID="ss1" physicalPath="matrix_model_sl/top_A" path="top_A" sampleTime="0.1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="matrix_model_sl/top_A/In1" path="top_A/In1">
+        <nonUniformArray size="1">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1">
+                <double/>
+              </signal>
+              <signal index="2">
+                <double/>
+              </signal>
+              <signal index="3">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="matrix_model_sl/top_A/Out1" path="top_A/Out1">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="matrix_model_sl/top_A/sub_B" path="top_A/sub_B" sampleTime="0.1" name="sub_B" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="matrix_model_sl/top_A/sub_B/In1" path="top_A/sub_B/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="matrix_model_sl/top_A/sub_B/Out1" path="top_A/sub_B/Out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

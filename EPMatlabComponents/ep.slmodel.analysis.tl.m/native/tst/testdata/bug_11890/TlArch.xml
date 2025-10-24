@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.18" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_11890\bug_11890.mdl" modelCreationDate="2009-01-27T17:33:02" creator="alex">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.18" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_11890\bug_11890.mdl" creationDate="2009-01-27T17:33:02" modificationDate="2021-11-22T11:19:03">
+    <subsystem subsysID="ss1" physicalPath="bug_11890/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="bug_11890/top_A/Subsystem/top_A/In1" path="top_A/Subsystem/top_A/In1">
+        <miltype>
+          <bus>
+            <signal signalName="b.a">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="b.a">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="bug_11890/top_A/Subsystem/top_A/Out1" path="top_A/Subsystem/top_A/Out1">
+        <miltype>
+          <bus>
+            <signal signalName="b.a">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="b.a">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="bug_11890/top_A/Subsystem/top_A/Out2" path="top_A/Subsystem/top_A/Out2">
+        <miltype>
+          <bus>
+            <signal signalName="d.c">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="d.c">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="bug_11890/top_A/Subsystem/top_A/sub_B1" path="top_A/Subsystem/top_A/sub_B1" sampleTime="1" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="bug_11890/top_A/Subsystem/top_A/sub_B1/In1" path="top_A/Subsystem/top_A/sub_B1/In1">
+        <miltype>
+          <bus>
+            <signal signalName="d.c">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal initValue="6.0000000000000000e+00" signalName="d.c">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="bug_11890/top_A/Subsystem/top_A/sub_B1/Out1" path="top_A/Subsystem/top_A/sub_B1/Out1">
+        <miltype>
+          <bus>
+            <signal signalName="d.c">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="d.c">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

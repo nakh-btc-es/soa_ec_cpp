@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="vcfp"/>
+    <Architecture id="id1" name="vcfp [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="pidcontroller/Subsystem/pidcontroller"/>
+      <Path refId="id1" path="pidcontroller.c:1:Run_pidcontroller"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="REF"/>
+        <Path refId="id1" path="Rte_simulink_RP_REF_OP_REF_REF"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="U_X"/>
+        <Path refId="id1" path="Rte_simulink_RP_U_X_U_X"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="U_M"/>
+        <Path refId="id1" path="Rte_simulink_PP_U_M_U_M"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="pidcontroller/Subsystem/pidcontroller/ad/Ad"/>
+        <Path refId="id1" path="Vca_DV_slow.P_Ad"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="pidcontroller/Subsystem/pidcontroller/Kd/Kd"/>
+        <Path refId="id1" path="Vca_DV_slow.P_Kd"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="pidcontroller/Subsystem/pidcontroller/Ki/Ki"/>
+        <Path refId="id1" path="Vca_DV_slow.P_Ki"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="pidcontroller/Subsystem/pidcontroller/Kp/Kp"/>
+        <Path refId="id1" path="Vca_DV_slow.P_Kp"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

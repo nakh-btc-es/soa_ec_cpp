@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.77" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_01\model_ref.mdl" modelCreationDate="2009-03-06T13:09:02" creator="alex">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.77" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_01\model_ref.mdl" creationDate="2009-03-06T13:09:02" modificationDate="2021-11-19T15:25:41">
+    <subsystem subsysID="ss1" physicalPath="model_ref/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="InPort1" physicalPath="model_ref/top_A/Subsystem/top_A/InPort1" path="top_A/Subsystem/top_A/InPort1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="InPort2" physicalPath="model_ref/top_A/Subsystem/top_A/InPort2" path="top_A/Subsystem/top_A/InPort2">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="InPort3" physicalPath="model_ref/top_A/Subsystem/top_A/InPort3" path="top_A/Subsystem/top_A/InPort3">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="c" path="top_A/Subsystem/top_A/sub_x2/sub_X/sub_Y/Model4/Gain1" physicalPath="sub4/Gain1" modelRef="model003" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/ExplicitParams/c">
+        <miltype initValue="5.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_x2/sub_X/sub_Y/Model4/Gain1" targetLinkBlockKind="TL_Gain" physicalPath="sub4/Gain1" simulinkBlockType="Gain" blockAttribute="gain" modelRef="model003"/>
+      </calibration>
+      <calibration name="b" path="top_A/Subsystem/top_A/sub1/sub_X/sub_B1/Const1" physicalPath="sub1/sub_X/sub_B1/Const1" modelRef="model002" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/ExplicitParams/b">
+        <miltype initValue="5.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub1/sub_X/sub_B1/Const1" targetLinkBlockKind="TL_Constant" physicalPath="sub1/sub_X/sub_B1/Const1" simulinkBlockType="Constant" blockAttribute="output" modelRef="model002"/>
+      </calibration>
+      <calibration name="a" path="top_A/Subsystem/top_A/sub1/sub_X/Const1" physicalPath="sub1/sub_X/Const1" modelRef="model002" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/ExplicitParams/a">
+        <miltype initValue="5.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub1/sub_X/Const1" targetLinkBlockKind="TL_Constant" physicalPath="sub1/sub_X/Const1" simulinkBlockType="Constant" blockAttribute="output" modelRef="model002"/>
+      </calibration>
+      <outport portNumber="1" name="OutPort1" physicalPath="model_ref/top_A/Subsystem/top_A/OutPort1" path="top_A/Subsystem/top_A/OutPort1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="sub1/sub_X/sub_B1/Sum1" path="top_A/Subsystem/top_A/sub1/sub_X/sub_B1/Sum1" name="Sum1" portNumber="1" modelRef="model002">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="sub2/Out2" path="top_A/Subsystem/top_A/sub_x2/Out2" name="Out2" portNumber="1" modelRef="model004">
+        <miltype>
+          <nonUniformArray size="3">
+            <signal index="1">
+              <double/>
+            </signal>
+            <signal index="2">
+              <double/>
+            </signal>
+            <signal index="3">
+              <double/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="3">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="3">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </display>
+      <display physicalPath="sub4/Gain1" path="top_A/Subsystem/top_A/sub_x2/sub_X/sub_Y/Model4/Gain1" name="Gain1" portNumber="1" modelRef="model003">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="model_ref/top_A/Subsystem/top_A/sub_X/sub6" path="top_A/Subsystem/top_A/sub_X/sub6" sampleTime="1" name="sub6" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="model_ref/top_A/Subsystem/top_A/sub_X/sub6/In1" path="top_A/Subsystem/top_A/sub_X/sub6/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="model_ref/top_A/Subsystem/top_A/sub_X/sub6/Out1" path="top_A/Subsystem/top_A/sub_X/sub6/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss9"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="sub1" path="top_A/Subsystem/top_A/sub1" sampleTime="1" name="sub1" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="sub1/In1" path="top_A/Subsystem/top_A/sub1/In1" modelRef="model002">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="b" path="top_A/Subsystem/top_A/sub1/sub_X/sub_B1/Const1" physicalPath="sub1/sub_X/sub_B1/Const1" modelRef="model002" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/ExplicitParams/b">
+        <miltype initValue="5.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub1/sub_X/sub_B1/Const1" targetLinkBlockKind="TL_Constant" physicalPath="sub1/sub_X/sub_B1/Const1" simulinkBlockType="Constant" blockAttribute="output" modelRef="model002"/>
+      </calibration>
+      <calibration name="a" path="top_A/Subsystem/top_A/sub1/sub_X/Const1" physicalPath="sub1/sub_X/Const1" modelRef="model002" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/ExplicitParams/a">
+        <miltype initValue="5.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub1/sub_X/Const1" targetLinkBlockKind="TL_Constant" physicalPath="sub1/sub_X/Const1" simulinkBlockType="Constant" blockAttribute="output" modelRef="model002"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="sub1/Out1" path="top_A/Subsystem/top_A/sub1/Out1" modelRef="model002">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="sub1/sub_X/sub_B1/Sum1" path="top_A/Subsystem/top_A/sub1/sub_X/sub_B1/Sum1" name="Sum1" portNumber="1" modelRef="model002">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="sub1/sub_X/sub_B1" path="top_A/Subsystem/top_A/sub1/sub_X/sub_B1" sampleTime="1" name="sub_B1" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="sub1/sub_X/sub_B1/In1" path="top_A/Subsystem/top_A/sub1/sub_X/sub_B1/In1" modelRef="model002">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sub1/sub_X/sub_B1/In2" path="top_A/Subsystem/top_A/sub1/sub_X/sub_B1/In2" modelRef="model002">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="b" path="top_A/Subsystem/top_A/sub1/sub_X/sub_B1/Const1" physicalPath="sub1/sub_X/sub_B1/Const1" modelRef="model002" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/ExplicitParams/b">
+        <miltype initValue="5.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub1/sub_X/sub_B1/Const1" targetLinkBlockKind="TL_Constant" physicalPath="sub1/sub_X/sub_B1/Const1" simulinkBlockType="Constant" blockAttribute="output" modelRef="model002"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="sub1/sub_X/sub_B1/Out1" path="top_A/Subsystem/top_A/sub1/sub_X/sub_B1/Out1" modelRef="model002">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="sub1/sub_X/sub_B1/Sum1" path="top_A/Subsystem/top_A/sub1/sub_X/sub_B1/Sum1" name="Sum1" portNumber="1" modelRef="model002">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="sub2" path="top_A/Subsystem/top_A/sub_x2" sampleTime="1" name="sub_x2" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="In1" physicalPath="sub2/In1" path="top_A/Subsystem/top_A/sub_x2/In1" modelRef="model004">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sub2/In2" path="top_A/Subsystem/top_A/sub_x2/In2" modelRef="model004">
+        <miltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <double/>
+            </signal>
+            <signal index="2">
+              <double/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="sub2/In3" path="top_A/Subsystem/top_A/sub_x2/In3" modelRef="model004">
+        <miltype>
+          <nonUniformArray size="3">
+            <signal index="1">
+              <double/>
+            </signal>
+            <signal index="2">
+              <double/>
+            </signal>
+            <signal index="3">
+              <double/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="3">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="3">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </inport>
+      <calibration name="c" path="top_A/Subsystem/top_A/sub_x2/sub_X/sub_Y/Model4/Gain1" physicalPath="sub4/Gain1" modelRef="model003" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/ExplicitParams/c">
+        <miltype initValue="5.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_x2/sub_X/sub_Y/Model4/Gain1" targetLinkBlockKind="TL_Gain" physicalPath="sub4/Gain1" simulinkBlockType="Gain" blockAttribute="gain" modelRef="model003"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="sub2/Out1" path="top_A/Subsystem/top_A/sub_x2/Out1" modelRef="model004">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="sub2/Out2" path="top_A/Subsystem/top_A/sub_x2/Out2" modelRef="model004">
+        <miltype>
+          <nonUniformArray size="3">
+            <signal index="1">
+              <double/>
+            </signal>
+            <signal index="2">
+              <double/>
+            </signal>
+            <signal index="3">
+              <double/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="3">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="3">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </outport>
+      <display physicalPath="sub4/Gain1" path="top_A/Subsystem/top_A/sub_x2/sub_X/sub_Y/Model4/Gain1" name="Gain1" portNumber="1" modelRef="model003">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="sub4" path="top_A/Subsystem/top_A/sub_x2/sub_X/sub_Y/Model4" sampleTime="1" name="Model4" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="In1" physicalPath="sub4/In1" path="top_A/Subsystem/top_A/sub_x2/sub_X/sub_Y/Model4/In1" modelRef="model003">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="c" path="top_A/Subsystem/top_A/sub_x2/sub_X/sub_Y/Model4/Gain1" physicalPath="sub4/Gain1" modelRef="model003" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/ExplicitParams/c">
+        <miltype initValue="5.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="5.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_x2/sub_X/sub_Y/Model4/Gain1" targetLinkBlockKind="TL_Gain" physicalPath="sub4/Gain1" simulinkBlockType="Gain" blockAttribute="gain" modelRef="model003"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="sub4/Out1" path="top_A/Subsystem/top_A/sub_x2/sub_X/sub_Y/Model4/Out1" modelRef="model003">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="sub4/Gain1" path="top_A/Subsystem/top_A/sub_x2/sub_X/sub_Y/Model4/Gain1" name="Gain1" portNumber="1" modelRef="model003">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="model_ref/top_A/Subsystem/top_A/sub_X/sub3" path="top_A/Subsystem/top_A/sub_X/sub3" sampleTime="1" name="sub3" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="model_ref/top_A/Subsystem/top_A/sub_X/sub3/In1" path="top_A/Subsystem/top_A/sub_X/sub3/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="model_ref/top_A/Subsystem/top_A/sub_X/sub3/Out1" path="top_A/Subsystem/top_A/sub_X/sub3/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="model_ref/top_A/Subsystem/top_A/sub_X/sub5_extra" path="top_A/Subsystem/top_A/sub_X/sub5_extra" sampleTime="1" name="sub5_extra" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="model_ref/top_A/Subsystem/top_A/sub_X/sub5_extra/In1" path="top_A/Subsystem/top_A/sub_X/sub5_extra/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="model_ref/top_A/Subsystem/top_A/sub_X/sub5_extra/Out1" path="top_A/Subsystem/top_A/sub_X/sub5_extra/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="model_ref/top_A/Subsystem/top_A/sub_X/sub6/sub7" path="top_A/Subsystem/top_A/sub_X/sub6/sub7" sampleTime="1" name="sub7" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="model_ref/top_A/Subsystem/top_A/sub_X/sub6/sub7/In1" path="top_A/Subsystem/top_A/sub_X/sub6/sub7/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="model_ref/top_A/Subsystem/top_A/sub_X/sub6/sub7/Out1" path="top_A/Subsystem/top_A/sub_X/sub6/sub7/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.39" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_01\sub1.mdl" creationDate="2009-03-06T13:11:23" modificationDate="2021-11-19T15:25:41"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="1.26" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_01\sub4.mdl" creationDate="2009-03-06T13:11:23" modificationDate="2021-11-19T15:25:41"/>
+  <model modelID="model004" modelKind="model_ref" modelVersion="1.35" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_01\sub2.mdl" creationDate="2009-03-06T13:11:23" modificationDate="2021-11-19T15:25:41"/>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

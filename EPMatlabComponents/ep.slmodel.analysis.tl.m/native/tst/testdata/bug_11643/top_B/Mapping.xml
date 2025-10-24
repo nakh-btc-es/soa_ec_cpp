@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="bug_11643"/>
+    <Architecture id="id1" name="bug_11643 [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="top_B/Subsystem/top_B"/>
+      <Path refId="id1" path="top_B.c:1:top_B"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sb1_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sb1_Out1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="top_B/Subsystem/top_B/sub_B1/Const1/b"/>
+        <Path refId="id1" path="b"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="top_B/Subsystem/top_B/Const1/a"/>
+        <Path refId="id1" path="a"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_B/Subsystem/top_B/In1(1)"/>
+        <Path refId="id1" path="Sb1_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_B/Subsystem/top_B/Merge1(1)"/>
+        <Path refId="id1" path="Sb1_Merge1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_B/Subsystem/top_B/sub_B1"/>
+      <Path refId="id1" path="top_B.c:1:top_B/top_B.c:1:Sb2_sub_B1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sb1_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sb1_Merge1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="top_B/Subsystem/top_B/sub_B1/Const1/b"/>
+        <Path refId="id1" path="b"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

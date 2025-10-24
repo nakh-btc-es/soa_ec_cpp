@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.28" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_closed_loop_02\closed_loop.mdl" modelCreationDate="2015-01-09T11:26:02" creator="alex">
+  <toolInfo name="Matlab" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.28" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_closed_loop_02\closed_loop.mdl" creationDate="2015-01-09T11:26:02" modificationDate="2021-11-15T17:42:31">
+    <subsystem subsysID="ss1" physicalPath="closed_loop/cl_Frame" path="cl_Frame" sampleTime="1" name="cl_Frame" scopeKind="VIRTUAL" kind="subsystem">
+      <subsystem refSubsysID="env_1"/>
+      <inport portNumber="1" name="In1" physicalPath="closed_loop/cl_Frame/In1" path="cl_Frame/In1">
+        <miltype signalName="a">
+          <nonUniformArray size="2">
+            <signal index="1">
+              <int32/>
+            </signal>
+            <signal index="2">
+              <int32/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype missingTypeSinceNoCVar="true" signalName="a">
+          <nonUniformArray size="2">
+            <signal index="1">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal index="2">
+              <unsupportedTypeInformation/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="closed_loop/cl_Frame/In2" path="cl_Frame/In2">
+        <miltype>
+          <bus>
+            <signal signalName="c.a2">
+              <nonUniformArray size="2">
+                <signal index="1">
+                  <double/>
+                </signal>
+                <signal index="2">
+                  <double/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="c.b">
+              <single/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal missingTypeSinceNoCVar="true" signalName="c.a2">
+              <nonUniformArray size="2">
+                <signal index="1">
+                  <unsupportedTypeInformation/>
+                </signal>
+                <signal index="2">
+                  <unsupportedTypeInformation/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal missingTypeSinceNoCVar="true" signalName="c.b">
+              <unsupportedTypeInformation/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <calibration name="a" path="cl_Frame/top_A/Subsystem/top_A/Gain" physicalPath="closed_loop/cl_Frame/top_A/Subsystem/top_A/Gain" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/a">
+        <miltype initValue="6.9999999999999996e-01">
+          <double/>
+        </miltype>
+        <siltype initValue="6.9999999999999996e-01">
+          <fixedPoint baseType="Int16" lsb="3.1250000000000000e-02" offset="0.0000000000000000e+00" min="-1.0240000000000000e+03" max="1.0239687500000000e+03"/>
+        </siltype>
+        <usageContext path="cl_Frame/top_A/Subsystem/top_A/Gain" targetLinkBlockKind="TL_Gain" physicalPath="closed_loop/cl_Frame/top_A/Subsystem/top_A/Gain" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="closed_loop/cl_Frame/Out1" path="cl_Frame/Out1">
+        <miltype>
+          <int32/>
+        </miltype>
+        <siltype missingTypeSinceNoCVar="true">
+          <unsupportedTypeInformation/>
+        </siltype>
+      </outport>
+      <display physicalPath="closed_loop/cl_Frame/top_A/Subsystem/top_A/sub_B/Sum" path="cl_Frame/top_A/Subsystem/top_A/sub_B/Sum" name="Sum" portNumber="1">
+        <miltype>
+          <int32/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="env_1" scopeKind="ENV" kind="subsystem" name="env_sub" path="cl_Frame/env_sub" physicalPath="closed_loop/cl_Frame/env_sub" sampleTime="1"/>
+    <subsystem subsysID="ss2" physicalPath="closed_loop/cl_Frame/top_A/Subsystem/top_A" path="cl_Frame/top_A/Subsystem/top_A" sampleTime="1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="InPort" physicalPath="closed_loop/cl_Frame/top_A/Subsystem/top_A/InPort" path="cl_Frame/top_A/Subsystem/top_A/InPort">
+        <miltype signalName="a">
+          <nonUniformArray size="2">
+            <signal index="1">
+              <int32/>
+            </signal>
+            <signal index="2">
+              <int32/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype signalName="a">
+          <nonUniformArray size="2">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="InPort1" physicalPath="closed_loop/cl_Frame/top_A/Subsystem/top_A/InPort1" path="cl_Frame/top_A/Subsystem/top_A/InPort1">
+        <miltype>
+          <single/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="a" path="cl_Frame/top_A/Subsystem/top_A/Gain" physicalPath="closed_loop/cl_Frame/top_A/Subsystem/top_A/Gain" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/a">
+        <miltype initValue="6.9999999999999996e-01">
+          <double/>
+        </miltype>
+        <siltype initValue="6.9999999999999996e-01">
+          <fixedPoint baseType="Int16" lsb="3.1250000000000000e-02" offset="0.0000000000000000e+00" min="-1.0240000000000000e+03" max="1.0239687500000000e+03"/>
+        </siltype>
+        <usageContext path="cl_Frame/top_A/Subsystem/top_A/Gain" targetLinkBlockKind="TL_Gain" physicalPath="closed_loop/cl_Frame/top_A/Subsystem/top_A/Gain" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <outport portNumber="1" name="OutPort" physicalPath="closed_loop/cl_Frame/top_A/Subsystem/top_A/OutPort" path="cl_Frame/top_A/Subsystem/top_A/OutPort">
+        <miltype>
+          <int32/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="closed_loop/cl_Frame/top_A/Subsystem/top_A/sub_B/Sum" path="cl_Frame/top_A/Subsystem/top_A/sub_B/Sum" name="Sum" portNumber="1">
+        <miltype>
+          <int32/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="closed_loop/cl_Frame/top_A/Subsystem/top_A/sub_B" path="cl_Frame/top_A/Subsystem/top_A/sub_B" sampleTime="1" name="sub_B" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="closed_loop/cl_Frame/top_A/Subsystem/top_A/sub_B/In1" path="cl_Frame/top_A/Subsystem/top_A/sub_B/In1">
+        <miltype signalName="a">
+          <nonUniformArray size="2">
+            <signal index="1">
+              <int32/>
+            </signal>
+            <signal index="2">
+              <int32/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype signalName="a">
+          <nonUniformArray size="2">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="closed_loop/cl_Frame/top_A/Subsystem/top_A/sub_B/In2" path="cl_Frame/top_A/Subsystem/top_A/sub_B/In2">
+        <miltype>
+          <int32/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="closed_loop/cl_Frame/top_A/Subsystem/top_A/sub_B/Out1" path="cl_Frame/top_A/Subsystem/top_A/sub_B/Out1">
+        <miltype>
+          <int32/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="closed_loop/cl_Frame/top_A/Subsystem/top_A/sub_B/Sum" path="cl_Frame/top_A/Subsystem/top_A/sub_B/Sum" name="Sum" portNumber="1">
+        <miltype>
+          <int32/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

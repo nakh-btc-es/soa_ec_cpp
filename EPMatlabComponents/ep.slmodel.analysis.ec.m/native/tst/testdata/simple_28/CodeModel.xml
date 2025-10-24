@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="PowerWindowAutosar.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_28\PowerWindowAutosar_autosar_rtw"/>
+    <File annotate="no" id="ID72" kind="library" name="Rte_PowerWindow.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_28\PowerWindowAutosar_autosar_rtw\stub"/>
+    <File annotate="no" id="ID73" kind="library" name="PowerWindowAutosar_ep_rte_stub.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_28\PowerWindowAutosar_ep_stubs"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_28"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_28\PowerWindowAutosar_autosar_rtw"/>
+    <IncludePath path="C:\Matlab\R2019b\toolbox\coder\autosar\rte"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_28\PowerWindowAutosar_autosar_rtw\stub"/>
+    <IncludePath path="C:\Matlab\R2019b\extern\include"/>
+    <IncludePath path="C:\Matlab\R2019b\simulink\include"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\src"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\src\ext_mode\common"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\ert"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_simple_28\PowerWindowAutosar_ep_stubs"/>
+  </IncludePaths>
+  <Functions archName="PowerWindowAutosar [C-Code]">
+    <Function fileref="ID71" initFunc="PowerWindow_Init" name="PowerWindow_Runnable">
+      <Interface>
+        <InterfaceObj kind="in" var="RteStub_driver_down_R_driver_down_value"/>
+        <InterfaceObj kind="in" var="RteStub_driver_up_R_driver_up_value"/>
+        <InterfaceObj kind="in" var="RteStub_passenger_down_R_passenger_down_value"/>
+        <InterfaceObj kind="in" var="RteStub_passenger_up_R_passenger_up_value"/>
+        <InterfaceObj kind="in" var="RteStub_window_position_R_window_position_value"/>
+        <InterfaceObj kind="in" var="RteStub_obstacle_position_R_obstacle_position_value"/>
+        <InterfaceObj kind="out" var="RteStub_move_down_P_move_down_value"/>
+        <InterfaceObj kind="out" var="RteStub_move_up_P_move_up_value"/>
+        <InterfaceObj kind="out" var="RteStub_obstacle_detection_P_obstacle_detection_value"/>
+        <InterfaceObj kind="cal" var="Rte_Prm_R_auto_down_time_auto_down_time_data"/>
+        <InterfaceObj kind="cal" var="Rte_Prm_R_auto_up_time_auto_up_time_data"/>
+        <InterfaceObj kind="cal" var="Rte_Prm_R_emergency_down_time_emergency_down_time_data"/>
+        <InterfaceObj kind="cal" var="Rte_Prm_R_position_endstop_top_position_endstop_top_data"/>
+      </Interface>
+    </Function>
+    <Function initFunc="PowerWindow_Init" name="detect_obstacle_endstop">
+      <Interface>
+        <InterfaceObj kind="in" var="move_up_prev"/>
+        <InterfaceObj kind="out" var="endstop_top"/>
+        <InterfaceObj kind="out" var="endstop_bottom"/>
+        <InterfaceObj kind="cal" var="Rte_Prm_R_position_endstop_top_position_endstop_top_data"/>
+      </Interface>
+    </Function>
+  </Functions>
+</CodeModel>

@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xs:element name="ExtractionModel">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Types" minOccurs="0" maxOccurs="1"/> <!-- TODO change minOccurs to "1" adaption of SL-Simulation -->
+                <xs:element name="Scope" type="Scope" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="CodeSettings" type="CodeSettings" minOccurs="0"  maxOccurs="1"/>
+                <xs:element name="ReplacedModelRef" type="ReplacedModelRef" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            
+            <xs:attribute name="type" type="xs:string" use="required"/>
+            <xs:attribute name="ref" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="Types">
+        <xs:choice maxOccurs="unbounded">
+            <xs:element name="BusType" maxOccurs="unbounded" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>The following native types can directly referrenced by name:  boolean, int8, int16, int32, int64, uint8, uint16, uint32, uint64, float, double</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                    <xs:element name="Comp" maxOccurs="unbounded" minOccurs="0">
+                        <xs:complexType>
+                            <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                    <xs:attribute type="xs:string" name="name" use="required"/>
+                                    <xs:attribute type="xs:string" name="type" use="optional"/>
+                                    <xs:attribute type="xs:integer" name="width" use="optional"/>
+                                    <xs:attribute type="xs:integer" name="dim1" use="optional"/>
+                                    <xs:attribute type="xs:integer" name="dim2" use="optional"/>
+                                </xs:extension>
+                            </xs:simpleContent>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+                <xs:attribute type="xs:string" name="name" use="optional"/>
+                <xs:attribute type="xs:string" name="virtual" use="required"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="EnumType" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="EnumValue" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:string" name="name" use="required"/>
+                                        <xs:attribute type="xs:integer" name="ordinal" use="required"/>
+                                    </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute type="xs:string" name="name" use="required"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="AliasType" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="name"/>
+                            <xs:attribute type="xs:string" name="type"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+
+    <xs:complexType name="Scope">
+        <xs:sequence>
+            <xs:element name="InPort" type="InPort" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="DataStoreRead" type="DataStoreRead" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="OutPort" type="OutPort" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="DataStoreWrite" type="DataStoreWrite" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="Display" type="Display" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="Calibration" type="Calibration" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="Model" type="Model" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="SLFunctionCaller" type="SLFunctionCaller" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="Scope" type="Scope" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        
+        <xs:attribute name="name" type="xs:string"/>  <!-- should be required -->
+        <xs:attribute name="type" type="xs:string" use="required"/>
+        <xs:attribute name="path" type="xs:string" use="required"/>
+        <xs:attribute name="uid" type="xs:string" use="required"/>
+        <xs:attribute name="sampleTime" type="xs:string" use="required"/>
+        <xs:attribute name="kind" type="subsysKindType" use="required"/>
+        <xs:attribute name="scopeKind" type="scopeKindType" use="required"/>
+        <xs:attribute name="physicalPath" type="xs:string" use="required"/>
+        <xs:attribute name="onlyInModel" type="xs:string"/>
+        <xs:attribute name="subsystemLogging" type="xs:string"/>
+        <xs:attribute name="mappingPath" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:simpleType name="subsysKindType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="SUBSYSTEM"/>
+            <xs:enumeration value="STATEFLOW"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="scopeKindType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="SUT"/>
+            <xs:enumeration value="ENVIRONMENT"/>
+            <xs:enumeration value="VIRTUAL"/>
+            <xs:enumeration value="DUMMY"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="Calibration">
+        <xs:sequence>
+            <xs:element name="Source" type="ParameterSource" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="CalibrationUsage" type="CalibrationUsage" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="Variable" type="Variable" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="path" type="xs:string"/>
+        <xs:attribute name="physicalPath" type="xs:string"/>
+        <xs:attribute name="portNumber" type="xs:integer"/>
+        <xs:attribute name="ddPath" type="xs:string"/>
+        <xs:attribute name="origin" type="xs:string"/>
+        <xs:attribute name="stateflowVariable" type="xs:string"/>
+        <xs:attribute name="startIdx" type="xs:string"/>
+        <xs:attribute name="globalName" type="xs:string"/> <!-- TODO should be removed -->
+    </xs:complexType>
+
+	<xs:complexType name="ParameterSource">
+		<xs:annotation>
+			<xs:documentation>The source of the parameter, i.e. the location where it is defined. Example: Base workspace, SL-DD, TL-DD, ...</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="kind" type="SourceKindType" use="required">
+			<xs:annotation>
+				<xs:documentation>Kind of source: base workspace, SL-DD, TL-DD, ...</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="file" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>Optional file location for source based on files.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="access" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>Optional access information for retrieving the parameter from the source.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>	
+	</xs:complexType>
+
+	<xs:simpleType name="SourceKindType">
+		<xs:annotation>
+			<xs:documentation>The kind of source for parameters.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="BaseWorkspace">
+				<xs:annotation>
+					<xs:documentation>Parameter is defined inside the base workspace.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+            <xs:enumeration value="ModelWorkspace">
+				<xs:annotation>
+					<xs:documentation>Parameter is defined inside the model workspace.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="SL-DataDictionary">
+				<xs:annotation>
+					<xs:documentation>Parameter is defined inside a SL DataDictionary.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="TL-DataDictionary">
+				<xs:annotation>
+					<xs:documentation>Parameter is defined inside a TL DataDictionary.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+
+    <xs:complexType name="Display">
+        <xs:sequence>
+            <xs:element name="Variable" type="Variable" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="path" type="xs:string"/>
+        <xs:attribute name="physicalPath" type="xs:string"/>
+        <xs:attribute name="portNumber" type="xs:integer"/>
+        <xs:attribute name="isMessage" type="xs:boolean" use="optional"/>
+        <xs:attribute name="stateflowVariable" type="xs:string"/>
+        <xs:attribute name="startIdx" type="xs:string"/>
+        <xs:attribute name="busType" type="xs:string"/>
+        <xs:attribute name="busObj" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="InPort">
+        <xs:sequence>
+            <xs:element name="Variable" type="Variable" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="portNumber" type="xs:integer"/>
+        <xs:attribute name="compositeSig" type="xs:string"/>
+        <xs:attribute name="isMessage" type="xs:boolean" use="optional"/>
+        <xs:attribute name="busType" type="xs:string"/>
+        <xs:attribute name="busObj" type="xs:string"/>
+
+        <xs:attribute name="signalName" type="xs:string"/>
+        <xs:attribute name="type" type="xs:string"/>
+        <xs:attribute name="kind" type="xs:string"/>
+        <xs:attribute name="width" type="xs:integer"/>
+        <xs:attribute name="dim1" type="xs:integer"/>
+        <xs:attribute name="dim2" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="DataStoreRead">
+        <xs:sequence>
+            <xs:element name="Variable" type="Variable" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="path" type="xs:string"/>
+        <xs:attribute name="physicalPath" type="xs:string"/>
+        <xs:attribute name="portNumber" type="xs:integer"/>
+        <xs:attribute name="compositeSig" type="xs:string"/>
+        <xs:attribute name="signal" type="xs:string" use="required"/>
+        <xs:attribute name="busType" type="xs:string"/>
+        <xs:attribute name="busObj" type="xs:string"/>
+
+        <xs:attribute name="signalName" type="xs:string"/>
+        <xs:attribute name="type" type="xs:string"/>
+        <xs:attribute name="kind" type="xs:string"/>
+        <xs:attribute name="width" type="xs:integer"/>
+        <xs:attribute name="dim1" type="xs:integer"/>
+        <xs:attribute name="dim2" type="xs:integer"/>        
+    </xs:complexType>
+
+    <xs:complexType name="OutPort">
+        <xs:sequence>
+            <xs:element name="Variable" type="Variable" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:string"/>
+        <xs:attribute name="portNumber" type="xs:integer"/>
+        <xs:attribute name="compositeSig" type="xs:string"/>
+        <xs:attribute name="isMessage" type="xs:boolean" use="optional"/>
+        <xs:attribute name="busType" type="xs:string"/>
+        <xs:attribute name="busObj" type="xs:string"/>
+        
+        <xs:attribute name="signalName" type="xs:string"/>
+        <xs:attribute name="type" type="xs:string"/>
+        <xs:attribute name="kind" type="xs:string"/>
+        <xs:attribute name="width" type="xs:integer"/>
+        <xs:attribute name="dim1" type="xs:integer"/>
+        <xs:attribute name="dim2" type="xs:integer"/>        
+    </xs:complexType>
+
+    <xs:complexType name="DataStoreWrite">
+        <xs:sequence>
+            <xs:element name="Variable" type="Variable" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="path" type="xs:string"/>
+        <xs:attribute name="physicalPath" type="xs:string"/>
+        <xs:attribute name="portNumber" type="xs:integer"/>
+        <xs:attribute name="compositeSig" type="xs:string"/>
+        <xs:attribute name="signal" type="xs:string" use="required"/>
+        <xs:attribute name="busType" type="xs:string"/>
+        <xs:attribute name="busObj" type="xs:string"/>
+
+        <xs:attribute name="signalName" type="xs:string"/>
+        <xs:attribute name="type" type="xs:string"/>
+        <xs:attribute name="kind" type="xs:string"/>
+        <xs:attribute name="width" type="xs:integer"/>
+        <xs:attribute name="dim1" type="xs:integer"/>
+        <xs:attribute name="dim2" type="xs:integer"/>        
+    </xs:complexType>
+
+	<xs:complexType name="SLFunctionCaller">
+		<xs:annotation>
+			<xs:documentation>A function caller referencing an external SL Function.</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="pathCaller" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation>Full model path to SL Function Caller block.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="pathFunction" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation>Full model path to corresponding SL Function block.</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+
+    <xs:complexType name="Model">
+        <xs:attribute name="type" type="xs:string" use="required"/>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="modelPath" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="CalibrationUsage">
+        <xs:attribute name="path" type="xs:string" use="required"/>
+        <xs:attribute name="physicalPath" type="xs:string"/>
+        <xs:attribute name="blockAttribute" type="xs:string" use="required"/>
+        <xs:attribute name="stateflowVariable" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="DataStoreMemory">
+        <xs:attribute name="signalName" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="Variable">
+        <xs:sequence>
+            <xs:element name="ifName" type="ifName" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        
+        <xs:attribute name="varid" type="xs:string"/>
+        <xs:attribute name="globalName" type="xs:string"/>
+        <xs:attribute name="signalType" type="xs:string"/>
+        <xs:attribute name="tlTypeName" type="xs:string"/>
+        <xs:attribute name="isFloat" type="xs:string"/>
+        <xs:attribute name="signalDim" type="xs:string"/>
+        <xs:attribute name="signalName" type="xs:string"/>
+        <xs:attribute name="width1" type="xs:string"/>
+        <xs:attribute name="width2" type="xs:string"/>
+        <xs:attribute name="isSignalTypeEnum" type="xs:string"/>
+        
+        <xs:attribute name="type" type="xs:string"/>
+		<xs:attribute name="baseType" type="xs:string" use="optional"/>
+        <xs:attribute name="width" type="xs:integer"/>
+        <xs:attribute name="dim1" type="xs:integer"/>
+        <xs:attribute name="dim2" type="xs:integer"/>
+    </xs:complexType>
+
+    <xs:complexType name="ifName">
+        <xs:attribute name="ifid" type="xs:string"/>
+        <xs:attribute name="lsb" type="xs:string"/>
+        <xs:attribute name="offset" type="xs:string"/>
+        <xs:attribute name="displayName" type="xs:string"/>
+        <xs:attribute name="identifier" type="xs:string"/>
+        <xs:attribute name="initValue" type="xs:string"/>
+        <xs:attribute name="index1" type="xs:string"/>
+        <xs:attribute name="index2" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="ReplacedModelRef">
+        <xs:attribute name="replacementSub" type="xs:string" use="required"/>
+        <xs:attribute name="refModel" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="CodeSettings">
+        <xs:sequence>
+            <xs:element name="CodeFile" type="FilePath" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="IncludePath" type="FilePath" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="PreprocMacro" type="PreprocMacro" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="InitFunc" type="InitFunc" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="FilePath">
+        <xs:attribute name="path" type="xs:string" use="required"/>
+    </xs:complexType>
+    
+    <xs:complexType name="PreprocMacro">
+        <xs:attribute name="context" type="codeContext" use="required"/>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="value" type="xs:string"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="codeContext">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="SIL"/>
+            <xs:enumeration value="PIL"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="InitFunc">
+        <xs:attribute name="name" type="xs:string" use="required"/>
+    </xs:complexType>
+</xs:schema>

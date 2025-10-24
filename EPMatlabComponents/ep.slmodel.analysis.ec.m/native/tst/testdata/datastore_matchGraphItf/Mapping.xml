@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="datastore"/>
+    <Architecture id="id1" name="datastore [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In_WriteB" refId="id0"/>
+        <Path path="In_WriteB" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In_ReadWriteA_ReadWriteB" refId="id0"/>
+        <Path path="In_ReadWriteA_ReadWriteB" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In_ReadD_ChartD" refId="id0"/>
+        <Path path="In_ReadD_ChartD" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In_ChartE_WriteE" refId="id0"/>
+        <Path path="In_ChartE_WriteE" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out_ReadA" refId="id0"/>
+        <Path path="Out_ReadA" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out_ReadWriteA_ReadWriteB" refId="id0"/>
+        <Path path="Out_ReadWriteA_ReadWriteB" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out_ReadD_ChartD" refId="id0"/>
+        <Path path="Out_ReadD_ChartD" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="O_ReadD_ChartD" refId="id0"/>
+        <Path path="O_ReadD_ChartD" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="O_ReadO" refId="id0"/>
+        <Path path="O_ReadO" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/ReadA" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/datastore_ReadA.c:1:ReadA" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/ReadA/Read A" refId="id0"/>
+        <Path path="A" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/ReadA/Out" refId="id0"/>
+        <Path path="rty_Out" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/ReadL" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/datastore.c:1:ReadL" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/ReadL/Read L" refId="id0"/>
+        <Path path="L" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/ReadL/Out" refId="id0"/>
+        <Path path="rty_Out" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/ReadD_ChartD" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/datastore.c:1:ReadD_ChartD" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/ReadD_ChartD/I" refId="id0"/>
+        <Path path="rtu_I" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/ReadD_ChartD/Out" refId="id0"/>
+        <Path path="rty_Out" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/ReadD_ChartD/O" refId="id0"/>
+        <Path path="rty_O" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/ChartE_WriteE" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/datastore.c:1:ChartE_WriteE" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/ChartE_WriteE/In" refId="id0"/>
+        <Path path="rtu_In" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/ReadWriteA_ReadWriteB" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/datastore_ReadWriteA_ReadWriteB.c:1:ReadWriteA_ReadWriteB" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/ReadWriteA_ReadWriteB/In" refId="id0"/>
+        <Path path="rtu_In" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/ReadWriteA_ReadWriteB/Out" refId="id0"/>
+        <Path path="rty_Out" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/RefModel" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/dataStoreModelToReference.c:1:dataStoreModelToReference" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/RefModel/In_WriteB" refId="id0"/>
+        <Path path="In_WriteB" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/RefModel/WriteO/Read A" refId="id0"/>
+        <Path path="A" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/RefModel/Out_ReadO" refId="id0"/>
+        <Path path="Out_ReadO" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/RefModel/WriteB/Write B" refId="id0"/>
+        <Path path="B" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/RefModel/WriteB" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/dataStoreModelToReference.c:1:dataStoreModelToReference/WriteB.c:1:WriteB" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/RefModel/WriteB/In" refId="id0"/>
+        <Path path="rtu_In" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/RefModel/WriteB/Write B" refId="id0"/>
+        <Path path="B" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/RefModel/WriteM" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/dataStoreModelToReference.c:1:dataStoreModelToReference/dataStoreModelToReference.c:1:WriteM" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/RefModel/WriteM/In" refId="id0"/>
+        <Path path="rtu_In" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/RefModel/WriteM/Write M" refId="id0"/>
+        <Path path="M" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SUT/RefModel/WriteO" refId="id0"/>
+      <Path path="datastore.c:1:datastore_step/dataStoreModelToReference.c:1:dataStoreModelToReference/WriteO.c:1:WriteO" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/RefModel/WriteO/In_WriteB" refId="id0"/>
+        <Path path="rtu_In_WriteB" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SUT/RefModel/WriteO/Read A" refId="id0"/>
+        <Path path="A" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SUT/RefModel/WriteO/Out_ReadO" refId="id0"/>
+        <Path path="rty_Out_ReadO" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

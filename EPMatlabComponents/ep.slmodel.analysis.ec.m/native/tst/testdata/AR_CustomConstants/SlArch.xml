@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_custom_constants_ar\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_custom_constants_ar\autosar_init.m" modelVersion="1.650" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_custom_constants_ar\sum_multiply_autosar.slx" modelCreationDate="2015-01-28T14:40:34" creator="Wolfgang Meincke">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.650" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_custom_constants_ar\sum_multiply_autosar.slx" creationDate="2015-01-28T14:40:34" modificationDate="2024-09-12T19:21:00" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_custom_constants_ar\autosar_init.m">
+    <subsystem subsysID="ss1" physicalPath="sum_multiply_autosar" path="" sampleTime="0.01" name="sum_multiply_autosar" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sum_multiply_autosar/In1" path="In1" signalName="sign_in1">
+        <fixedPoint simulinkTypeName="fixdt(1,16,0.5,0)" wordLength="16" isSigned="1" slope="0.5" bias="0.0" min="-16384.0" max="16383.5"/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sum_multiply_autosar/In2" path="In2" signalName="sign_in2">
+        <fixedPoint simulinkTypeName="fixdt(1,16,0.5,0)" wordLength="16" isSigned="1" slope="0.5" bias="0.0" min="-16384.0" max="16383.5"/>
+      </inport>
+      <parameter name="K" path="Subsystem/mutilply_by_K/Constant2" physicalPath="sum_multiply_autosar/Subsystem/mutilply_by_K/Constant2" origin="explicit_param" workspace="K" initValue="2.0">
+        <double/>
+        <usageContext path="Subsystem/mutilply_by_K/Constant2" physicalPath="sum_multiply_autosar/Subsystem/mutilply_by_K/Constant2" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sum_multiply_autosar/Out1" path="Out1" signalName="sign_out">
+        <fixedPoint simulinkTypeName="fixdt(1,16,1)" wordLength="16" isSigned="1" slope="0.5" bias="0.0" min="-16384.0" max="16383.5"/>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="sum_multiply_autosar/Subsystem/mutilply_by_K" path="Subsystem/mutilply_by_K" sampleTime="0.01" name="mutilply_by_K" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="disp_var" physicalPath="sum_multiply_autosar/Subsystem/mutilply_by_K/disp_var" path="Subsystem/mutilply_by_K/disp_var" signalName="disp_var">
+        <fixedPoint simulinkTypeName="fixdt(1,16,1)" wordLength="16" isSigned="1" slope="0.5" bias="0.0" min="-16384.0" max="16383.5"/>
+      </inport>
+      <parameter name="K" path="Subsystem/mutilply_by_K/Constant2" physicalPath="sum_multiply_autosar/Subsystem/mutilply_by_K/Constant2" origin="explicit_param" workspace="K" initValue="2.0">
+        <double/>
+        <usageContext path="Subsystem/mutilply_by_K/Constant2" physicalPath="sum_multiply_autosar/Subsystem/mutilply_by_K/Constant2" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="sign_out" physicalPath="sum_multiply_autosar/Subsystem/mutilply_by_K/sign_out" path="Subsystem/mutilply_by_K/sign_out" signalName="sign_out">
+        <fixedPoint simulinkTypeName="fixdt(1,16,1)" wordLength="16" isSigned="1" slope="0.5" bias="0.0" min="-16384.0" max="16383.5"/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

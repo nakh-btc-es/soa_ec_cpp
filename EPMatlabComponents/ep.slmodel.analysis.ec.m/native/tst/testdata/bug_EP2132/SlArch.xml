@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_EP-2132_ParamAR\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_EP-2132_ParamAR\init_model.m" modelVersion="1.14" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_EP-2132_ParamAR\IPttest_bk.slx" modelCreationDate="2020-08-14T08:40:06" creator="yjhdl">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.14" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_EP-2132_ParamAR\IPttest_bk.slx" creationDate="2020-08-14T08:40:06" modificationDate="2024-09-12T18:50:46" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_EP-2132_ParamAR\init_model.m">
+    <subsystem subsysID="ss1" physicalPath="IPttest_bk" path="" sampleTime="0.01" name="IPttest_bk" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="RTEd_float32_KL30" physicalPath="IPttest_bk/RTEd_float32_KL30" path="RTEd_float32_KL30">
+        <single/>
+      </inport>
+      <inport portNumber="2" name="RTEd_float32_KL15" physicalPath="IPttest_bk/RTEd_float32_KL15" path="RTEd_float32_KL15">
+        <single min="0.0" max="60.0"/>
+      </inport>
+      <inport portNumber="3" name="RTEd_float32_CANWake" physicalPath="IPttest_bk/RTEd_float32_CANWake" path="RTEd_float32_CANWake">
+        <single min="0.0" max="60.0"/>
+      </inport>
+      <inport portNumber="4" name="RTEd_float32_RTCWake" physicalPath="IPttest_bk/RTEd_float32_RTCWake" path="RTEd_float32_RTCWake">
+        <single min="0.0" max="60.0"/>
+      </inport>
+      <inport portNumber="5" name="RTEd_float32_AWake" physicalPath="IPttest_bk/RTEd_float32_AWake" path="RTEd_float32_AWake">
+        <single min="0.0" max="60.0"/>
+      </inport>
+      <inport portNumber="6" name="RTEd_float32_HallSnrCurLow" physicalPath="IPttest_bk/RTEd_float32_HallSnrCurLow" path="RTEd_float32_HallSnrCurLow">
+        <single/>
+      </inport>
+      <inport portNumber="7" name="RTEd_float32_HallSnrCurHigh" physicalPath="IPttest_bk/RTEd_float32_HallSnrCurHigh" path="RTEd_float32_HallSnrCurHigh">
+        <single/>
+      </inport>
+      <inport portNumber="8" name="SOCd_float32_PackDispSoc" physicalPath="IPttest_bk/SOCd_float32_PackDispSoc" path="SOCd_float32_PackDispSoc">
+        <single/>
+      </inport>
+      <inport portNumber="9" name="RTEd_float32_BatMSDFrontVolt" physicalPath="IPttest_bk/RTEd_float32_BatMSDFrontVolt" path="RTEd_float32_BatMSDFrontVolt">
+        <single/>
+      </inport>
+      <parameter name="IPTc_float32_CurHighRangeOn" path="IPT/IPTRun/IptAdc/HallCurSnr/Relay" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/HallCurSnr/Relay" origin="explicit_param" workspace="IPTc_float32_CurHighRangeOn" initValue="75.0">
+        <single/>
+        <usageContext path="IPT/IPTRun/IptAdc/HallCurSnr/Relay" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/HallCurSnr/Relay" simulinkBlockType="Relay" blockAttribute="OnSwitchValue"/>
+      </parameter>
+      <parameter name="IPTc_float32_CurLowRangeOn" path="IPT/IPTRun/IptAdc/HallCurSnr/Relay" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/HallCurSnr/Relay" origin="explicit_param" workspace="IPTc_float32_CurLowRangeOn" initValue="70.0">
+        <single/>
+        <usageContext path="IPT/IPTRun/IptAdc/HallCurSnr/Relay" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/HallCurSnr/Relay" simulinkBlockType="Relay" blockAttribute="OffSwitchValue"/>
+      </parameter>
+      <parameter name="IPTc_float32_PACKAccumDifWarn" path="IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant3" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant3" origin="explicit_param" workspace="IPTc_float32_PACKAccumDifWarn" initValue="20.0">
+        <single/>
+        <usageContext path="IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant3" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant3" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="IPTc_iflt_LEMSenrFault" path="IPT/IPTRun/IptAdc/HallCurSnr/Constant4" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/HallCurSnr/Constant4" origin="explicit_param" workspace="IPTc_iflt_LEMSenrFault" initValue="500.0">
+        <single/>
+        <usageContext path="IPT/IPTRun/IptAdc/HallCurSnr/Constant4" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/HallCurSnr/Constant4" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="IPTc_iflt_PackOverSOCChaFault" path="IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant5" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant5" origin="explicit_param" workspace="IPTc_iflt_PackOverSOCChaFault" initValue="110.0">
+        <single/>
+        <usageContext path="IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant5" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant5" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="IPTc_iflt_PackOverVoltChaFault" path="IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant1" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant1" origin="explicit_param" workspace="IPTc_iflt_PackOverVoltChaFault" initValue="800.0">
+        <single/>
+        <usageContext path="IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant1" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="IPTc_iflt_PackUnMatchVoltDown" path="IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant8" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant8" origin="explicit_param" workspace="IPTc_iflt_PackUnMatchVoltDown" initValue="400.0">
+        <single/>
+        <usageContext path="IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant8" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant8" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="IPTc_iflt_PackUnmatchVoltUp" path="IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant9" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant9" origin="explicit_param" workspace="IPTc_iflt_PackUnmatchVoltUp" initValue="800.0">
+        <single/>
+        <usageContext path="IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant9" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant9" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="IPTc_iflt_PackVoltValid" path="IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant2" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant2" origin="explicit_param" workspace="IPTc_iflt_PackVoltValid" initValue="800.0">
+        <single/>
+        <usageContext path="IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant2" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/BatMSDFrontVolt/Constant2" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="IPTc_ilft_KL30VoltLowEEPReq" path="IPT/IPTRun/IptAdc/KL30/Constant2" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/KL30/Constant2" origin="explicit_param" workspace="IPTc_ilft_KL30VoltLowEEPReq" initValue="20.0">
+        <single/>
+        <usageContext path="IPT/IPTRun/IptAdc/KL30/Constant2" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/KL30/Constant2" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="IPTc_ilft_KL30VoltLowWarn" path="IPT/IPTRun/IptAdc/KL30/Constant1" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/KL30/Constant1" origin="explicit_param" workspace="IPTc_ilft_KL30VoltLowWarn" initValue="18.0">
+        <single/>
+        <usageContext path="IPT/IPTRun/IptAdc/KL30/Constant1" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/KL30/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="IPTc_ilft_KL30VoltOverWarn" path="IPT/IPTRun/IptAdc/KL30/Constant" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/KL30/Constant" origin="explicit_param" workspace="IPTc_ilft_KL30VoltOverWarn" initValue="36.0">
+        <single/>
+        <usageContext path="IPT/IPTRun/IptAdc/KL30/Constant" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/KL30/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="IPTc_single_Awakeoff" path="IPT/IPTRun/IptAdc/WakeUpSignal/Relay" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/WakeUpSignal/Relay" origin="explicit_param" workspace="IPTc_single_Awakeoff" initValue="9.0">
+        <single/>
+        <usageContext path="IPT/IPTRun/IptAdc/WakeUpSignal/Relay" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/WakeUpSignal/Relay" simulinkBlockType="Relay" blockAttribute="OffSwitchValue"/>
+        <usageContext path="IPT/IPTRun/IptAdc/WakeUpSignal/Relay1" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/WakeUpSignal/Relay1" simulinkBlockType="Relay" blockAttribute="OffSwitchValue"/>
+        <usageContext path="IPT/IPTRun/IptAdc/WakeUpSignal/Relay2" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/WakeUpSignal/Relay2" simulinkBlockType="Relay" blockAttribute="OffSwitchValue"/>
+        <usageContext path="IPT/IPTRun/IptAdc/WakeUpSignal/Relay3" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/WakeUpSignal/Relay3" simulinkBlockType="Relay" blockAttribute="OffSwitchValue"/>
+      </parameter>
+      <parameter name="IPTc_single_Awakeon" path="IPT/IPTRun/IptAdc/WakeUpSignal/Relay" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/WakeUpSignal/Relay" origin="explicit_param" workspace="IPTc_single_Awakeon" initValue="10.0">
+        <single/>
+        <usageContext path="IPT/IPTRun/IptAdc/WakeUpSignal/Relay" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/WakeUpSignal/Relay" simulinkBlockType="Relay" blockAttribute="OnSwitchValue"/>
+        <usageContext path="IPT/IPTRun/IptAdc/WakeUpSignal/Relay1" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/WakeUpSignal/Relay1" simulinkBlockType="Relay" blockAttribute="OnSwitchValue"/>
+        <usageContext path="IPT/IPTRun/IptAdc/WakeUpSignal/Relay2" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/WakeUpSignal/Relay2" simulinkBlockType="Relay" blockAttribute="OnSwitchValue"/>
+        <usageContext path="IPT/IPTRun/IptAdc/WakeUpSignal/Relay3" physicalPath="IPttest_bk/IPT/IPTRun/IptAdc/WakeUpSignal/Relay3" simulinkBlockType="Relay" blockAttribute="OnSwitchValue"/>
+      </parameter>
+      <outport portNumber="1" name="IPTd_float32_KL30" physicalPath="IPttest_bk/IPTd_float32_KL30" path="IPTd_float32_KL30">
+        <single min="1.0" max="500.0"/>
+      </outport>
+      <outport portNumber="2" name="IPTd_bool_KL15" physicalPath="IPttest_bk/IPTd_bool_KL15" path="IPTd_bool_KL15">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="IPTd_bool_CANWake" physicalPath="IPttest_bk/IPTd_bool_CANWake" path="IPTd_bool_CANWake">
+        <boolean/>
+      </outport>
+      <outport portNumber="4" name="IPTd_bool_RTCWake" physicalPath="IPttest_bk/IPTd_bool_RTCWake" path="IPTd_bool_RTCWake">
+        <boolean/>
+      </outport>
+      <outport portNumber="5" name="IPTd_bool_AWake" physicalPath="IPttest_bk/IPTd_bool_AWake" path="IPTd_bool_AWake">
+        <boolean/>
+      </outport>
+      <outport portNumber="6" name="IPTd_iflt_KL30OverVoltWarn" physicalPath="IPttest_bk/IPTd_iflt_KL30OverVoltWarn" path="IPTd_iflt_KL30OverVoltWarn">
+        <enumType name="Dem_EventStatusType">
+          <enumElement name="DEM_EVENT_STATUS_PASSED" value="0"/>
+          <enumElement name="DEM_EVENT_STATUS_FAILED" value="1"/>
+          <enumElement name="DEM_EVENT_STATUS_PREPASSED" value="2"/>
+          <enumElement name="DEM_EVENT_STATUS_PREFAILED" value="3"/>
+          <enumElement name="DEM_EVENT_STATUS_FDC_THRESHOLD_REACHED" value="4"/>
+        </enumType>
+      </outport>
+      <outport portNumber="7" name="IPTd_iflt_KL30LowVoltWarn" physicalPath="IPttest_bk/IPTd_iflt_KL30LowVoltWarn" path="IPTd_iflt_KL30LowVoltWarn">
+        <enumType name="Dem_EventStatusType">
+          <enumElement name="DEM_EVENT_STATUS_PASSED" value="0"/>
+          <enumElement name="DEM_EVENT_STATUS_FAILED" value="1"/>
+          <enumElement name="DEM_EVENT_STATUS_PREPASSED" value="2"/>
+          <enumElement name="DEM_EVENT_STATUS_PREFAILED" value="3"/>
+          <enumElement name="DEM_EVENT_STATUS_FDC_THRESHOLD_REACHED" value="4"/>
+        </enumType>
+      </outport>
+      <outport portNumber="8" name="IPTd_iflt_KL30VoltLowEEPReq" physicalPath="IPttest_bk/IPTd_iflt_KL30VoltLowEEPReq" path="IPTd_iflt_KL30VoltLowEEPReq">
+        <enumType name="Dem_EventStatusType">
+          <enumElement name="DEM_EVENT_STATUS_PASSED" value="0"/>
+          <enumElement name="DEM_EVENT_STATUS_FAILED" value="1"/>
+          <enumElement name="DEM_EVENT_STATUS_PREPASSED" value="2"/>
+          <enumElement name="DEM_EVENT_STATUS_PREFAILED" value="3"/>
+          <enumElement name="DEM_EVENT_STATUS_FDC_THRESHOLD_REACHED" value="4"/>
+        </enumType>
+      </outport>
+      <outport portNumber="9" name="IPTd_float32_LEMPackCur" physicalPath="IPttest_bk/IPTd_float32_LEMPackCur" path="IPTd_float32_LEMPackCur">
+        <single min="-500.0" max="500.0"/>
+      </outport>
+      <outport portNumber="10" name="IPTd_iflt_LEMSenrFault" physicalPath="IPttest_bk/IPTd_iflt_LEMSenrFault" path="IPTd_iflt_LEMSenrFault">
+        <enumType name="Dem_EventStatusType">
+          <enumElement name="DEM_EVENT_STATUS_PASSED" value="0"/>
+          <enumElement name="DEM_EVENT_STATUS_FAILED" value="1"/>
+          <enumElement name="DEM_EVENT_STATUS_PREPASSED" value="2"/>
+          <enumElement name="DEM_EVENT_STATUS_PREFAILED" value="3"/>
+          <enumElement name="DEM_EVENT_STATUS_FDC_THRESHOLD_REACHED" value="4"/>
+        </enumType>
+      </outport>
+      <outport portNumber="11" name="IPTd_float32_BatMSDFrontVolt" physicalPath="IPttest_bk/IPTd_float32_BatMSDFrontVolt" path="IPTd_float32_BatMSDFrontVolt">
+        <single min="0.0" max="1000.0"/>
+      </outport>
+      <outport portNumber="12" name="IPTd_iflt_BatMSDFroVoltValid" physicalPath="IPttest_bk/IPTd_iflt_BatMSDFroVoltValid" path="IPTd_iflt_BatMSDFroVoltValid">
+        <enumType name="Dem_EventStatusType">
+          <enumElement name="DEM_EVENT_STATUS_PASSED" value="0"/>
+          <enumElement name="DEM_EVENT_STATUS_FAILED" value="1"/>
+          <enumElement name="DEM_EVENT_STATUS_PREPASSED" value="2"/>
+          <enumElement name="DEM_EVENT_STATUS_PREFAILED" value="3"/>
+          <enumElement name="DEM_EVENT_STATUS_FDC_THRESHOLD_REACHED" value="4"/>
+        </enumType>
+      </outport>
+      <outport portNumber="13" name="IPTd_iflt_PackVoltOverFault" physicalPath="IPttest_bk/IPTd_iflt_PackVoltOverFault" path="IPTd_iflt_PackVoltOverFault">
+        <enumType name="Dem_EventStatusType">
+          <enumElement name="DEM_EVENT_STATUS_PASSED" value="0"/>
+          <enumElement name="DEM_EVENT_STATUS_FAILED" value="1"/>
+          <enumElement name="DEM_EVENT_STATUS_PREPASSED" value="2"/>
+          <enumElement name="DEM_EVENT_STATUS_PREFAILED" value="3"/>
+          <enumElement name="DEM_EVENT_STATUS_FDC_THRESHOLD_REACHED" value="4"/>
+        </enumType>
+      </outport>
+      <outport portNumber="14" name="IPTd_iflt_PackVoltOverFatal" physicalPath="IPttest_bk/IPTd_iflt_PackVoltOverFatal" path="IPTd_iflt_PackVoltOverFatal">
+        <enumType name="Dem_EventStatusType">
+          <enumElement name="DEM_EVENT_STATUS_PASSED" value="0"/>
+          <enumElement name="DEM_EVENT_STATUS_FAILED" value="1"/>
+          <enumElement name="DEM_EVENT_STATUS_PREPASSED" value="2"/>
+          <enumElement name="DEM_EVENT_STATUS_PREFAILED" value="3"/>
+          <enumElement name="DEM_EVENT_STATUS_FDC_THRESHOLD_REACHED" value="4"/>
+        </enumType>
+      </outport>
+      <outport portNumber="15" name="IPTd_iflt_PackVoltLowFault" physicalPath="IPttest_bk/IPTd_iflt_PackVoltLowFault" path="IPTd_iflt_PackVoltLowFault">
+        <enumType name="Dem_EventStatusType">
+          <enumElement name="DEM_EVENT_STATUS_PASSED" value="0"/>
+          <enumElement name="DEM_EVENT_STATUS_FAILED" value="1"/>
+          <enumElement name="DEM_EVENT_STATUS_PREPASSED" value="2"/>
+          <enumElement name="DEM_EVENT_STATUS_PREFAILED" value="3"/>
+          <enumElement name="DEM_EVENT_STATUS_FDC_THRESHOLD_REACHED" value="4"/>
+        </enumType>
+      </outport>
+      <outport portNumber="16" name="IPTd_iflt_PackVoltLowFatal" physicalPath="IPttest_bk/IPTd_iflt_PackVoltLowFatal" path="IPTd_iflt_PackVoltLowFatal">
+        <enumType name="Dem_EventStatusType">
+          <enumElement name="DEM_EVENT_STATUS_PASSED" value="0"/>
+          <enumElement name="DEM_EVENT_STATUS_FAILED" value="1"/>
+          <enumElement name="DEM_EVENT_STATUS_PREPASSED" value="2"/>
+          <enumElement name="DEM_EVENT_STATUS_PREFAILED" value="3"/>
+          <enumElement name="DEM_EVENT_STATUS_FDC_THRESHOLD_REACHED" value="4"/>
+        </enumType>
+      </outport>
+      <outport portNumber="17" name="IPTd_iflt_PackOverChaFatal" physicalPath="IPttest_bk/IPTd_iflt_PackOverChaFatal" path="IPTd_iflt_PackOverChaFatal">
+        <enumType name="Dem_EventStatusType">
+          <enumElement name="DEM_EVENT_STATUS_PASSED" value="0"/>
+          <enumElement name="DEM_EVENT_STATUS_FAILED" value="1"/>
+          <enumElement name="DEM_EVENT_STATUS_PREPASSED" value="2"/>
+          <enumElement name="DEM_EVENT_STATUS_PREFAILED" value="3"/>
+          <enumElement name="DEM_EVENT_STATUS_FDC_THRESHOLD_REACHED" value="4"/>
+        </enumType>
+      </outport>
+      <outport portNumber="18" name="IPTd_iflt_PackUnmatchFatal" physicalPath="IPttest_bk/IPTd_iflt_PackUnmatchFatal" path="IPTd_iflt_PackUnmatchFatal">
+        <enumType name="Dem_EventStatusType">
+          <enumElement name="DEM_EVENT_STATUS_PASSED" value="0"/>
+          <enumElement name="DEM_EVENT_STATUS_FAILED" value="1"/>
+          <enumElement name="DEM_EVENT_STATUS_PREPASSED" value="2"/>
+          <enumElement name="DEM_EVENT_STATUS_PREFAILED" value="3"/>
+          <enumElement name="DEM_EVENT_STATUS_FDC_THRESHOLD_REACHED" value="4"/>
+        </enumType>
+      </outport>
+      <outport portNumber="19" name="IPTd_iflt_PACKAccumDifWarn" physicalPath="IPttest_bk/IPTd_iflt_PACKAccumDifWarn" path="IPTd_iflt_PACKAccumDifWarn">
+        <enumType name="Dem_EventStatusType">
+          <enumElement name="DEM_EVENT_STATUS_PASSED" value="0"/>
+          <enumElement name="DEM_EVENT_STATUS_FAILED" value="1"/>
+          <enumElement name="DEM_EVENT_STATUS_PREPASSED" value="2"/>
+          <enumElement name="DEM_EVENT_STATUS_PREFAILED" value="3"/>
+          <enumElement name="DEM_EVENT_STATUS_FDC_THRESHOLD_REACHED" value="4"/>
+        </enumType>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

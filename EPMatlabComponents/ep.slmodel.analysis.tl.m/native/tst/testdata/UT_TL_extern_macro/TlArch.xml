@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.22" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_extern_macro\extern_macro.mdl" modelCreationDate="2012-04-30T15:23:23" creator="alex">
+  <toolInfo name="Matlab" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.22" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_extern_macro\extern_macro.mdl" creationDate="2012-04-30T15:23:23" modificationDate="2021-11-18T11:53:12">
+    <subsystem subsysID="ss1" physicalPath="extern_macro/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in." physicalPath="extern_macro/top_A/Subsystem/top_A/in." path="top_A/Subsystem/top_A/in.">
+        <miltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <double/>
+            </signal>
+            <signal index="2">
+              <double/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="2">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="2.5000000000000000e-01" offset="0.0000000000000000e+00" min="-8.1920000000000000e+03" max="8.1917500000000000e+03"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="2.5000000000000000e-01" offset="0.0000000000000000e+00" min="-8.1920000000000000e+03" max="8.1917500000000000e+03"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </inport>
+      <calibration name="MACRO_C" path="top_A/Subsystem/top_A/Constant" physicalPath="extern_macro/top_A/Subsystem/top_A/Constant" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/MACRO_C">
+        <miltype initValue="8.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="8.0000000000000000e+00" unitName="km/h">
+          <fixedPoint baseType="Int8" lsb="5.0000000000000000e-01" offset="0.0000000000000000e+00" min="-1.0000000000000000e+01" max="2.0000000000000000e+01"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Constant" targetLinkBlockKind="TL_Constant" physicalPath="extern_macro/top_A/Subsystem/top_A/Constant" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="out." physicalPath="extern_macro/top_A/Subsystem/top_A/out." path="top_A/Subsystem/top_A/out.">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <display physicalPath="extern_macro/top_A/Subsystem/top_A/Relational&#10;Operator" path="top_A/Subsystem/top_A/Relational&#10;Operator" name="Relational&#10;Operator" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

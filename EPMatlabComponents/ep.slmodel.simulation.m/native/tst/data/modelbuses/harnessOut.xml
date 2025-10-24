@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction mdfDialect="EP2.9">
+	<Types>
+		<BusType name="myBus" virtual="false">
+			<Comp name="OutBusA.OutBusA.FlptSig1" type="single" />
+			<Comp name="OutBusA.OutBusA.FlptSig2" type="single" />
+		</BusType>
+		<BusType name="myBusOfBuses" virtual="false">
+			<Comp name="OutM.localObj_OutM.BusSig1.FlptSig1" type="single" />
+			<Comp name="OutM.localObj_OutM.BusSig1.FlptSig2" type="single" />
+			<Comp name="OutM.localObj_OutM.BusSig2.FxptSig1" type="fixdt(1,16,0.03125,0)" />
+			<Comp name="OutM.localObj_OutM.BusSig2.FxptSig2" type="fixdt(1,16,0.03125,0)" />
+		</BusType>
+		<BusType name="myBusOfSignalAndBus" virtual="false">
+			<Comp name="Out28.localObj_OutAC.DoubleFlptSig" type="double" />
+			<Comp name="Out28.localObj_OutAC.BusSig1.FlptSig1" type="single" />
+			<Comp name="Out28.localObj_OutAC.BusSig1.FlptSig2" type="single" />
+		</BusType>
+	</Types>
+	<Inports>
+		<Inport portNr="1" width="1" type="myBus">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutBusA.OutBusA.FlptSig1</ScalarRef>
+				<ScalarRef>OUTPUT:OutBusA.OutBusA.FlptSig2</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="2" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutB</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="3" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutC</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="4" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutD</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="5" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutE</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="6" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutF</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="7" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutG</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="8" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutH</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="9" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutI</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="10" width="1" type="myBus">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutJ.localObj_OutJ.FlptSig1</ScalarRef>
+				<ScalarRef>OUTPUT:OutJ.localObj_OutJ.FlptSig2</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="11" width="1" type="myBus">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutK.localObj_OutK.FlptSig1</ScalarRef>
+				<ScalarRef>OUTPUT:OutK.localObj_OutK.FlptSig2</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="12" width="1" type="myBus">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutL.localObj_OutL.FlptSig1</ScalarRef>
+				<ScalarRef>OUTPUT:OutL.localObj_OutL.FlptSig2</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="13" width="1" type="myBusOfBuses">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutM.localObj_OutM.BusSig1.FlptSig1</ScalarRef>
+				<ScalarRef>OUTPUT:OutM.localObj_OutM.BusSig1.FlptSig2</ScalarRef>
+				<ScalarRef>OUTPUT:OutM.localObj_OutM.BusSig2.FxptSig1</ScalarRef>
+				<ScalarRef>OUTPUT:OutM.localObj_OutM.BusSig2.FxptSig2</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="14" width="1" type="myBus">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutN.localObj_OutN.FlptSig1</ScalarRef>
+				<ScalarRef>OUTPUT:OutN.localObj_OutN.FlptSig2</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="15" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutO</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="16" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutP</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="17" width="1" type="" kind="VirtualBus">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutQ.signal2.InB</ScalarRef>
+				<ScalarRef>OUTPUT:OutQ.signal2.InC</ScalarRef>
+				<ScalarRef>OUTPUT:OutQ.signal2.NotMappable_K</ScalarRef>
+				<ScalarRef>OUTPUT:OutQ.signal2.NotMappable</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="18" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutR</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="19" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutIS</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="20" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutIT</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="21" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutIU</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="22" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutV</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="23" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutW</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="24" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutX</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="25" width="1" type="" kind="VirtualBus">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutY.myVirualBus.InB</ScalarRef>
+				<ScalarRef>OUTPUT:OutY.myVirualBus.InC</ScalarRef>
+				<ScalarRef>OUTPUT:OutY.myVirualBus.NotMappable_K</ScalarRef>
+				<ScalarRef>OUTPUT:OutY.myVirualBus.NotMappable</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="26" width="1" type="myBusOfBuses">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutZ.localObj_OutZ.BusSig1.FlptSig1</ScalarRef>
+				<ScalarRef>OUTPUT:OutZ.localObj_OutZ.BusSig1.FlptSig2</ScalarRef>
+				<ScalarRef>OUTPUT:OutZ.localObj_OutZ.BusSig2.FxptSig1</ScalarRef>
+				<ScalarRef>OUTPUT:OutZ.localObj_OutZ.BusSig2.FxptSig2</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="27" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutAA</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="28" type="single">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:OutIAB</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="29" width="1" type="myBusOfSignalAndBus">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out28.localObj_OutAC.DoubleFlptSig</ScalarRef>
+				<ScalarRef>OUTPUT:Out28.localObj_OutAC.BusSig1.FlptSig1</ScalarRef>
+				<ScalarRef>OUTPUT:Out28.localObj_OutAC.BusSig1.FlptSig2</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+	</Inports>
+</SFunction>

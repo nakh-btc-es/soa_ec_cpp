@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Wrapper_modified_CourtLiApp"/>
+    <Architecture id="id1" name="Wrapper_modified_CourtLiApp [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Wrapper_modified_CourtLiApp.cpp:1:Wrapper_modified_CourtLiApp_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="RKE_STATE" refId="id0"/>
+        <Path path="InData_Rport_RKE_STATE" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="DOOR_AJAR" refId="id0"/>
+        <Path path="InData_Rport_DOOR_AJAR" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="W_server_mock_modified_CourtLiApp/Mock_CS_ActuatorData_CS_ActuatorData_IntrLiPWM/CS_ActuatorData_IntrLiPWM_TarTime_In" refId="id0"/>
+        <Path path="CS_ActuatorData_IntrLiPWM_TarTime_In" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="W_server_mock_modified_CourtLiApp/Mock_CS_ActuatorData_CS_ActuatorData_IntrLiPWM/CS_ActuatorData_IntrLiPWM_TarPWM_In" refId="id0"/>
+        <Path path="CS_ActuatorData_IntrLiPWM_TarPWM_In" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

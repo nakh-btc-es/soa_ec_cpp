@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="main_model"/>
+    <Architecture id="id1" name="main_model [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="main_model.c:1:main_model_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="ou1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="sub_model:A" refId="id0"/>
+        <Path path="A" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_X" refId="id0"/>
+      <Path path="main_model.c:1:main_model_step/sub_model.c:1:sub_model" refId="id1"/>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_X/Out1" refId="id0"/>
+        <Path path="out_a" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="sub_model:A" refId="id0"/>
+        <Path path="A" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

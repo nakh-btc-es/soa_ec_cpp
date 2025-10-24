@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="variant_cals"/>
+    <Architecture id="id1" name="variant_cals [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="myFrame/top_A/Subsystem/top_A"/>
+      <Path refId="id1" path="top_A.c:1:top_A"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort0"/>
+        <Path refId="id1" path="Sa1_InPort0"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort0"/>
+        <Path refId="id1" path="Sa1_OutPort0"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort1"/>
+        <Path refId="id1" path="Sa1_OutPort1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort2"/>
+        <Path refId="id1" path="Sa1_OutPort2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort3"/>
+        <Path refId="id1" path="Sa1_OutPort3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort4"/>
+        <Path refId="id1" path="Sa1_OutPort4"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort5"/>
+        <Path refId="id1" path="Sa1_OutPort5"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="myFrame/top_A/Subsystem/top_A/Constant1/p"/>
+        <Path refId="id1" path="p"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="myFrame/top_A/Subsystem/top_A/Constant2/p_a"/>
+        <Path refId="id1" path="Vca_a_incomplete_a_vi3.p_a"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="myFrame/top_A/Subsystem/top_A/Constant3/p_ai"/>
+        <Path refId="id1" path="Vca_a_incomplete_a_vi3.p_ai"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="myFrame/top_A/Subsystem/top_A/Constant4/p_b_d"/>
+        <Path refId="id1" path="Vca_b_b_vi2.p_b_d"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="myFrame/top_A/Subsystem/top_A/Constant5/p_c"/>
+        <Path refId="id1" path="Vca_c_c_vi1.p_c"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="myFrame/top_A/Subsystem/top_A/sub_B"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Sa2_sub_B"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_InPort0"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In2"/>
+        <Path refId="id1" path="p"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In3"/>
+        <Path refId="id1" path="Vca_a_incomplete_a_vi3.p_a"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa2_Logical_Operator"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

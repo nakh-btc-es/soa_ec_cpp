@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_custom_constants_ec\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_custom_constants_ec\init_model.m" modelVersion="1.18" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_custom_constants_ec\CustomConstants.slx" modelCreationDate="2019-08-28T11:41:52" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.18" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_custom_constants_ec\CustomConstants.slx" creationDate="2019-08-28T11:41:52" modificationDate="2024-09-12T19:20:18" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_custom_constants_ec\init_model.m">
+    <subsystem subsysID="ss1" physicalPath="CustomConstants" path="" sampleTime="2" name="CustomConstants" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="CustomConstants/In1" path="In1" signalName="in1">
+        <int16/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="CustomConstants/In2" path="In2" signalName="in2">
+        <int16/>
+      </inport>
+      <parameter name="p1" path="Constant1" physicalPath="CustomConstants/Constant1" origin="explicit_param" workspace="p1" initValue="2.0">
+        <int16/>
+        <usageContext path="Constant1" physicalPath="CustomConstants/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="p3" path="Constant3" physicalPath="CustomConstants/Constant3" origin="explicit_param" workspace="p3" initValue="24.0">
+        <int16/>
+        <usageContext path="Constant3" physicalPath="CustomConstants/Constant3" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="p4" path="Constant4" physicalPath="CustomConstants/Constant4" origin="explicit_param" workspace="p4">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="4.0">
+            <int16/>
+          </signal>
+          <signal index="2" initValue="6.0">
+            <int16/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Constant4" physicalPath="CustomConstants/Constant4" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="w_p3" path="Constant9" physicalPath="CustomConstants/Constant9" origin="explicit_param" workspace="w_p3" initValue="3.25">
+        <fixedPoint simulinkTypeName="fixdt(1,16,0.25,0)" wordLength="16" isSigned="1" slope="0.25" bias="0.0" min="-8192.0" max="8191.75"/>
+        <usageContext path="Constant9" physicalPath="CustomConstants/Constant9" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <source kind="ModelWorkspace" file="CustomConstants"/>
+      </parameter>
+      <parameter name="w_p4" path="Constant10" physicalPath="CustomConstants/Constant10" origin="explicit_param" workspace="w_p4" initValue="44.0">
+        <uint8/>
+        <usageContext path="Constant10" physicalPath="CustomConstants/Constant10" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <source kind="ModelWorkspace" file="CustomConstants"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="CustomConstants/Out1" path="Out1" signalName="out1">
+        <int32/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="CustomConstants/Out2" path="Out2" signalName="out2">
+        <int32/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="CustomConstants/Out3" path="Out3" signalName="out3">
+        <boolean/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="CustomConstants/Out4" path="Out4" signalName="out4">
+        <int32/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

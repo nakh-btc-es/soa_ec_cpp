@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36876\TLProj\myFrame" name="myFrame.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36876\TLProj\mySub" name="mySub.c" kind="source" annotate="yes" id="fID2"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36876\TLSim" name="myFrame_fri.c" kind="source" annotate="no" id="fID3"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36876\TLSim" name="mySub_fri.c" kind="source" annotate="no" id="fID4"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36876\TLProj\myFrame"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36876\TLProj\mySub"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\2de82b9ab\bug_36876\TLSim"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.0\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.0\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.0\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="__SIL__"/>
+    <Define name="BTC_EP_TL_VERSION" value="50"/>
+  </Defines>
+  <Functions archName="bug_36876 [C-Code]">
+    <Function name="myFrame" sampleTime="0.01">
+      <Args>
+        <Arg name="Sa1_Out1">
+          <Variable name="Arg_In_Out_a_"/>
+        </Arg>
+      </Args>
+      <Interface>
+        <InterfaceObj kind="in" var="IF_Sa1_In1" min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+        <InterfaceObj kind="in" var="IF_Sa1_In1_a" min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+        <InterfaceObj kind="out" var="Sa1_Out1" access="-&gt;a" min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+        <InterfaceObj kind="out" var="Sa1_Out1" access="-&gt;b" min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+      </Interface>
+    </Function>
+    <Function name="STEP_subA" sampleTime="0.01">
+      <Args>
+        <Arg name="SsubA1_c">
+          <Variable name="Arg_In_Out_subA__a"/>
+        </Arg>
+        <Arg name="SsubA1_d">
+          <Variable name="Arg_In_Out_subA_"/>
+        </Arg>
+      </Args>
+      <Interface>
+        <InterfaceObj kind="in" var="SsubA1_c" access="-&gt;a" min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+        <InterfaceObj kind="in" var="SsubA1_c" access="-&gt;b" min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+        <InterfaceObj kind="out" var="SsubA1_d" access="-&gt;a" min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+        <InterfaceObj kind="out" var="SsubA1_d" access="-&gt;b" min="-1.0000000000000000e+10" max="1.0000000000000000e+10"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings/>
+</CodeModel>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_35\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_35\init_complete.m" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_35\Wrapper_ar_multir_spltdln_gtfrm.slx" modelCreationDate="2019-08-19T11:50:18" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_35\Wrapper_ar_multir_spltdln_gtfrm.slx" creationDate="2019-08-19T11:50:18" modificationDate="2024-09-12T19:31:20" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_35\init_complete.m">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_ar_multir_spltdln_gtfrm/Wrapper_ar_multir_spltdln_gtfrm" path="Wrapper_ar_multir_spltdln_gtfrm" sampleTime="1" name="Wrapper_ar_multir_spltdln_gtfrm" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="RPort_DE1" physicalPath="Wrapper_ar_multir_spltdln_gtfrm/Wrapper_ar_multir_spltdln_gtfrm/RPort_DE1" path="Wrapper_ar_multir_spltdln_gtfrm/RPort_DE1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="RPort_DE1&#10;(ErrorStatus)" physicalPath="Wrapper_ar_multir_spltdln_gtfrm/Wrapper_ar_multir_spltdln_gtfrm/RPort_DE1&#10;(ErrorStatus)" path="Wrapper_ar_multir_spltdln_gtfrm/RPort_DE1&#10;(ErrorStatus)">
+        <uint8/>
+      </inport>
+      <inport portNumber="3" name="RPort_DE2" physicalPath="Wrapper_ar_multir_spltdln_gtfrm/Wrapper_ar_multir_spltdln_gtfrm/RPort_DE2" path="Wrapper_ar_multir_spltdln_gtfrm/RPort_DE2">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <parameter name="K" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable1_subsystem/Gain" physicalPath="ar_multir_spltdln_gtfrm/Runnable1_subsystem/Gain" modelRef="model002" origin="explicit_param" workspace="K" initValue="-1.0">
+        <double/>
+        <usageContext path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable1_subsystem/Gain" physicalPath="ar_multir_spltdln_gtfrm/Runnable1_subsystem/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="PPort_DE1" physicalPath="Wrapper_ar_multir_spltdln_gtfrm/Wrapper_ar_multir_spltdln_gtfrm/PPort_DE1" path="Wrapper_ar_multir_spltdln_gtfrm/PPort_DE1">
+        <int8/>
+      </outport>
+      <outport portNumber="2" name="PPort_DE2" physicalPath="Wrapper_ar_multir_spltdln_gtfrm/Wrapper_ar_multir_spltdln_gtfrm/PPort_DE2" path="Wrapper_ar_multir_spltdln_gtfrm/PPort_DE2">
+        <int8/>
+      </outport>
+      <outport portNumber="3" name="PPort_DE3" physicalPath="Wrapper_ar_multir_spltdln_gtfrm/Wrapper_ar_multir_spltdln_gtfrm/PPort_DE3" path="Wrapper_ar_multir_spltdln_gtfrm/PPort_DE3">
+        <int8/>
+      </outport>
+      <outport portNumber="4" name="PPort_DE4" physicalPath="Wrapper_ar_multir_spltdln_gtfrm/Wrapper_ar_multir_spltdln_gtfrm/PPort_DE4" path="Wrapper_ar_multir_spltdln_gtfrm/PPort_DE4">
+        <double/>
+      </outport>
+      <display physicalPath="ar_multir_spltdln_gtfrm/Runnable1_subsystem/FuncA" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable1_subsystem/FuncA" name="FuncA" portNumber="1" modelRef="model002" signalName="loc_irv1">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss10"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="ar_multir_spltdln_gtfrm/Runnable1_subsystem" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable1_subsystem" sampleTime="1" name="Runnable1_subsystem" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="ar_multir_spltdln_gtfrm/Runnable1_subsystem/In1" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable1_subsystem/In1" modelRef="model002">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="ErrorStatus" physicalPath="ar_multir_spltdln_gtfrm/Runnable1_subsystem/ErrorStatus" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable1_subsystem/ErrorStatus" modelRef="model002">
+        <uint8/>
+      </inport>
+      <inport portNumber="3" name="In2" physicalPath="ar_multir_spltdln_gtfrm/Runnable1_subsystem/In2" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable1_subsystem/In2" modelRef="model002" signalName="irv3">
+        <int8/>
+      </inport>
+      <parameter name="K" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable1_subsystem/Gain" physicalPath="ar_multir_spltdln_gtfrm/Runnable1_subsystem/Gain" modelRef="model002" origin="explicit_param" workspace="K" initValue="-1.0">
+        <double/>
+        <usageContext path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable1_subsystem/Gain" physicalPath="ar_multir_spltdln_gtfrm/Runnable1_subsystem/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="TicToc" physicalPath="ar_multir_spltdln_gtfrm/Runnable1_subsystem/TicToc" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable1_subsystem/TicToc" modelRef="model002">
+        <int8/>
+      </outport>
+      <outport portNumber="2" name="Adder" physicalPath="ar_multir_spltdln_gtfrm/Runnable1_subsystem/Adder" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable1_subsystem/Adder" modelRef="model002">
+        <double/>
+      </outport>
+      <display physicalPath="ar_multir_spltdln_gtfrm/Runnable1_subsystem/FuncA" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable1_subsystem/FuncA" name="FuncA" portNumber="1" modelRef="model002" signalName="loc_irv1">
+        <double/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="ar_multir_spltdln_gtfrm/Runnable2_subsystem" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable2_subsystem" sampleTime="1" name="Runnable2_subsystem" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="ar_multir_spltdln_gtfrm/Runnable2_subsystem/In1" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable2_subsystem/In1" modelRef="model002" signalName="irv1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ar_multir_spltdln_gtfrm/Runnable2_subsystem/In2" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable2_subsystem/In2" modelRef="model002" signalName="irv2">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="ar_multir_spltdln_gtfrm/Runnable2_subsystem/In3" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable2_subsystem/In3" modelRef="model002">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <outport portNumber="1" name="TicToc" physicalPath="ar_multir_spltdln_gtfrm/Runnable2_subsystem/TicToc" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable2_subsystem/TicToc" modelRef="model002">
+        <int8/>
+      </outport>
+      <outport portNumber="2" name="Subtracter" physicalPath="ar_multir_spltdln_gtfrm/Runnable2_subsystem/Subtracter" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable2_subsystem/Subtracter" modelRef="model002">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Subtracter_irv" physicalPath="ar_multir_spltdln_gtfrm/Runnable2_subsystem/Subtracter_irv" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable2_subsystem/Subtracter_irv" modelRef="model002">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss8"/>
+      <subsystem refSubsysID="ss9"/>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="ar_multir_spltdln_gtfrm/Runnable2_subsystem/FuncC" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable2_subsystem/FuncC" sampleTime="1" name="FuncC" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="ar_multir_spltdln_gtfrm/Runnable2_subsystem/FuncC/In1" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable2_subsystem/FuncC/In1" modelRef="model002" signalName="irv1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ar_multir_spltdln_gtfrm/Runnable2_subsystem/FuncC/In2" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable2_subsystem/FuncC/In2" modelRef="model002" signalName="irv2">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="ar_multir_spltdln_gtfrm/Runnable2_subsystem/FuncC/In3" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable2_subsystem/FuncC/In3" modelRef="model002">
+        <int8/>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="ar_multir_spltdln_gtfrm/Runnable2_subsystem/FuncC/In4" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable2_subsystem/FuncC/In4" modelRef="model002">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ar_multir_spltdln_gtfrm/Runnable2_subsystem/FuncC/Out1" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable2_subsystem/FuncC/Out1" modelRef="model002">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="ar_multir_spltdln_gtfrm/Runnable2_subsystem/TicTocFunc&#10;" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable2_subsystem/TicTocFunc&#10;" sampleTime="1" name="TicTocFunc&#10;" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <outport portNumber="1" name="Out1" physicalPath="ar_multir_spltdln_gtfrm/Runnable2_subsystem/TicTocFunc&#10;/Out1" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable2_subsystem/TicTocFunc&#10;/Out1" modelRef="model002">
+        <int8/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="ar_multir_spltdln_gtfrm/Runnable3_subsystem" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable3_subsystem" sampleTime="1" name="Runnable3_subsystem" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="ar_multir_spltdln_gtfrm/Runnable3_subsystem/In1" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable3_subsystem/In1" modelRef="model002" signalName="irv4">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ar_multir_spltdln_gtfrm/Runnable3_subsystem/In2" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable3_subsystem/In2" modelRef="model002">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="ar_multir_spltdln_gtfrm/Runnable3_subsystem/In3" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable3_subsystem/In3" modelRef="model002">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="TicToc_irv" physicalPath="ar_multir_spltdln_gtfrm/Runnable3_subsystem/TicToc_irv" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable3_subsystem/TicToc_irv" modelRef="model002">
+        <int8/>
+      </outport>
+      <outport portNumber="2" name="TicToc" physicalPath="ar_multir_spltdln_gtfrm/Runnable3_subsystem/TicToc" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable3_subsystem/TicToc" modelRef="model002">
+        <int8/>
+      </outport>
+      <outport portNumber="3" name="Multiplier" physicalPath="ar_multir_spltdln_gtfrm/Runnable3_subsystem/Multiplier" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable3_subsystem/Multiplier" modelRef="model002">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss11"/>
+    </subsystem>
+    <subsystem subsysID="ss11" physicalPath="ar_multir_spltdln_gtfrm/Runnable3_subsystem/FuncB" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable3_subsystem/FuncB" sampleTime="1" name="FuncB" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="ar_multir_spltdln_gtfrm/Runnable3_subsystem/FuncB/In1" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable3_subsystem/FuncB/In1" modelRef="model002" signalName="irv4">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ar_multir_spltdln_gtfrm/Runnable3_subsystem/FuncB/In2" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable3_subsystem/FuncB/In2" modelRef="model002" signalName="temp">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="ar_multir_spltdln_gtfrm/Runnable3_subsystem/FuncB/In3" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable3_subsystem/FuncB/In3" modelRef="model002">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ar_multir_spltdln_gtfrm/Runnable3_subsystem/FuncB/Out1" path="Wrapper_ar_multir_spltdln_gtfrm/ar_multir_spltdln_gtfrm/Runnable3_subsystem/FuncB/Out1" modelRef="model002">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.417" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_35\ar_multir_spltdln_gtfrm.slx" creationDate="2004-08-13T15:50:23" modificationDate="2024-09-12T19:31:20" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_simple_35\init_complete.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

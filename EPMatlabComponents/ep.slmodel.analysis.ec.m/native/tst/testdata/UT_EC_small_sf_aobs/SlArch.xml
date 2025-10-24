@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20201002T172952_10432\tmp_small_sf_aobs\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20201002T172952_10432\tmp_small_sf_aobs\init_sf_aob.m" modelVersion="1.63" modelPath="C:\Users\developer\AppData\Local\Temp\ut20201002T172952_10432\tmp_small_sf_aobs\sf_aob.slx" modelCreationDate="2020-09-21T14:36:38" creator="developer">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.63" modelPath="C:\Users\developer\AppData\Local\Temp\ut20201002T172952_10432\tmp_small_sf_aobs\sf_aob.slx" creationDate="2020-09-21T14:36:38" modificationDate="2020-10-02T17:28:42" initScript="C:\Users\developer\AppData\Local\Temp\ut20201002T172952_10432\tmp_small_sf_aobs\init_sf_aob.m">
+    <subsystem subsysID="ss1" physicalPath="sf_aob" path="" sampleTime="0.1" name="sf_aob" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in_bus_sf" physicalPath="sf_aob/in_bus_sf" path="in_bus_sf" signalName="in_bus_signal">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="COUNTERBUS">
+            <signal signalName="inputsignal">
+              <bus busType="non_virtual" busObjectName="SIGNALBUS">
+                <signal signalName="input">
+                  <int32/>
+                </signal>
+              </bus>
+            </signal>
+            <signal signalName="limits">
+              <bus busType="non_virtual" busObjectName="LIMITBUS">
+                <signal signalName="upper_saturation_limit">
+                  <int32/>
+                </signal>
+                <signal signalName="lower_saturation_limit">
+                  <int32/>
+                </signal>
+              </bus>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <outport portNumber="1" name="out_bus_sf" physicalPath="sf_aob/out_bus_sf" path="out_bus_sf" signalName="out_bus_out">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="COUNTERBUS">
+            <signal signalName="inputsignal">
+              <bus busType="non_virtual" busObjectName="SIGNALBUS">
+                <signal signalName="input">
+                  <int32/>
+                </signal>
+              </bus>
+            </signal>
+            <signal signalName="limits">
+              <bus busType="non_virtual" busObjectName="LIMITBUS">
+                <signal signalName="upper_saturation_limit">
+                  <int32/>
+                </signal>
+                <signal signalName="lower_saturation_limit">
+                  <int32/>
+                </signal>
+              </bus>
+            </signal>
+          </bus>
+        </array>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="sf_aob/Chart" path="Chart" sampleTime="0.1" name="Chart" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="inbus" physicalPath="sf_aob/Chart/inbus" path="Chart/inbus" signalName="in_bus_signal">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="COUNTERBUS">
+            <signal signalName="inputsignal">
+              <bus busType="non_virtual" busObjectName="SIGNALBUS">
+                <signal signalName="input">
+                  <int32/>
+                </signal>
+              </bus>
+            </signal>
+            <signal signalName="limits">
+              <bus busType="non_virtual" busObjectName="LIMITBUS">
+                <signal signalName="upper_saturation_limit">
+                  <int32/>
+                </signal>
+                <signal signalName="lower_saturation_limit">
+                  <int32/>
+                </signal>
+              </bus>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <outport portNumber="1" name="outbus" physicalPath="sf_aob/Chart/outbus" path="Chart/outbus" signalName="outbus">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="COUNTERBUS">
+            <signal signalName="inputsignal">
+              <bus busType="non_virtual" busObjectName="SIGNALBUS">
+                <signal signalName="input">
+                  <int32/>
+                </signal>
+              </bus>
+            </signal>
+            <signal signalName="limits">
+              <bus busType="non_virtual" busObjectName="LIMITBUS">
+                <signal signalName="upper_saturation_limit">
+                  <int32/>
+                </signal>
+                <signal signalName="lower_saturation_limit">
+                  <int32/>
+                </signal>
+              </bus>
+            </signal>
+          </bus>
+        </array>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

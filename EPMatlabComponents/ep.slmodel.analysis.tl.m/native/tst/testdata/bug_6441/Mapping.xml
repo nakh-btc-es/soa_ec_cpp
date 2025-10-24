@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Struct_Interfaces"/>
+    <Architecture id="id1" name="Struct_Interfaces [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="PI_StructPointers/Subsystem/PI_StructPointers"/>
+      <Path refId="id1" path="PI_StructPointers.c:1:PI_StructPointers"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="ref."/>
+        <Path refId="id1" path="StructPointer_Interface-&gt;Ref_Input"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="y."/>
+        <Path refId="id1" path="StructPointer_Interface-&gt;Input"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="u."/>
+        <Path refId="id1" path="StructPointer_Interface-&gt;Output"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="PI_StructPointers/Subsystem/PI_StructPointers/PI_Legacy_Code"/>
+      <Path refId="id1" path="PI_StructPointers.c:1:PI_StructPointers/:1:PI_Legacy_Code"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="ref"/>
+        <Path refId="id1" path="StructPointer_Interface-&gt;Ref_Input"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="y"/>
+        <Path refId="id1" path="StructPointer_Interface-&gt;Input"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="u."/>
+        <Path refId="id1" path="PI_Legacy_Code:return"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

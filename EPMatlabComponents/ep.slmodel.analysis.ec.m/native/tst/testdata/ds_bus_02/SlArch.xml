@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_ds_bus_02\ut_results\AddModelInfo.xml" modelVersion="1.34" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_ds_bus_02\data_store_bus.slx" modelCreationDate="2021-12-06T14:45:47" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.34" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_ds_bus_02\data_store_bus.slx" creationDate="2021-12-06T14:45:47" modificationDate="2024-09-12T19:19:02">
+    <subsystem subsysID="ss1" physicalPath="data_store_bus" path="" sampleTime="1" name="data_store_bus" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_store_bus/In1" path="In1" signalName="in_a">
+        <bus busType="non_virtual" busObjectName="SimpleBus">
+          <signal signalName="a">
+            <boolean/>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <int32/>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="data_store_bus/In2" path="In2" signalName="in_x1">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HigherBus">
+            <signal signalName="sig1">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <int16/>
+                </array>
+              </array>
+            </signal>
+            <signal signalName="sig2">
+              <array size="2" startIndex="1">
+                <bus busType="non_virtual" busObjectName="SimpleBus">
+                  <signal signalName="a">
+                    <boolean/>
+                  </signal>
+                  <signal signalName="b">
+                    <array size="3" startIndex="1">
+                      <int32/>
+                    </array>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="sig3">
+              <fixedPoint simulinkTypeName="fixdt(1,16,0.125,0.5)" wordLength="16" isSigned="1" slope="0.125" bias="0.5" min="-4095.5" max="4096.375"/>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_store_bus/Out1" path="Out1" signalName="out_c">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="SimpleBus">
+            <signal signalName="a">
+              <boolean/>
+            </signal>
+            <signal signalName="b">
+              <array size="3" startIndex="1">
+                <int32/>
+              </array>
+            </signal>
+          </bus>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="data_store_bus/Out2" path="Out2" signalName="out1_x2">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HigherBus">
+            <signal signalName="sig1">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <int16/>
+                </array>
+              </array>
+            </signal>
+            <signal signalName="sig2">
+              <array size="2" startIndex="1">
+                <bus busType="non_virtual" busObjectName="SimpleBus">
+                  <signal signalName="a">
+                    <boolean/>
+                  </signal>
+                  <signal signalName="b">
+                    <array size="3" startIndex="1">
+                      <int32/>
+                    </array>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="sig3">
+              <fixedPoint simulinkTypeName="fixdt(1,16,0.125,0.5)" wordLength="16" isSigned="1" slope="0.125" bias="0.5" min="-4095.5" max="4096.375"/>
+            </signal>
+          </bus>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="data_store_bus/Out3" path="Out3" signalName="out2_x2">
+        <boolean/>
+      </outport>
+      <outport portNumber="0" name="Data Store&#10;Write" physicalPath="data_store_bus/sub_X1/Data Store&#10;Write" path="sub_X1/Data Store&#10;Write" signalName="StoreSig_X1">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HigherBus">
+            <signal signalName="sig1">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <int16/>
+                </array>
+              </array>
+            </signal>
+            <signal signalName="sig2">
+              <array size="2" startIndex="1">
+                <bus busType="non_virtual" busObjectName="SimpleBus">
+                  <signal signalName="a">
+                    <boolean/>
+                  </signal>
+                  <signal signalName="b">
+                    <array size="3" startIndex="1">
+                      <int32/>
+                    </array>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="sig3">
+              <fixedPoint simulinkTypeName="fixdt(1,16,0.125,0.5)" wordLength="16" isSigned="1" slope="0.125" bias="0.5" min="-4095.5" max="4096.375"/>
+            </signal>
+          </bus>
+        </array>
+        <dataStoreMemory signalName="StoreSig_X1"/>
+      </outport>
+      <outport portNumber="0" name="Data Store&#10;Write1" physicalPath="data_store_bus/sub_X1/Data Store&#10;Write1" path="sub_X1/Data Store&#10;Write1" signalName="StoreSig_X2">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="SimpleBus">
+              <signal signalName="a">
+                <boolean/>
+              </signal>
+              <signal signalName="b">
+                <array size="3" startIndex="1">
+                  <int32/>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+        <dataStoreMemory signalName="StoreSig_X2"/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="data_store_bus/sub_A" path="sub_A" sampleTime="1" name="sub_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_store_bus/sub_A/In1" path="sub_A/In1" signalName="in_a">
+        <bus busType="non_virtual" busObjectName="SimpleBus">
+          <signal signalName="a">
+            <boolean/>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <int32/>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="0" name="read_A2" physicalPath="data_store_bus/sub_A/read_A2" path="sub_A/read_A2" signalName="BusStore1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="SimpleBus">
+              <signal signalName="a">
+                <boolean/>
+              </signal>
+              <signal signalName="b">
+                <array size="3" startIndex="1">
+                  <int32/>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+        <dataStoreMemory signalName="BusStore1" physicalPath="data_store_bus/Data Store&#10;Memory"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="data_store_bus/sub_B" path="sub_B" sampleTime="1" name="sub_B" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="Data Store&#10;Read" physicalPath="data_store_bus/sub_B/Data Store&#10;Read" path="sub_B/Data Store&#10;Read" signalName="BusStore1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="SimpleBus">
+              <signal signalName="a">
+                <boolean/>
+              </signal>
+              <signal signalName="b">
+                <array size="3" startIndex="1">
+                  <int32/>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+        <dataStoreMemory signalName="BusStore1" physicalPath="data_store_bus/Data Store&#10;Memory"/>
+      </inport>
+      <outport portNumber="0" name="Data Store&#10;Write" physicalPath="data_store_bus/sub_B/Data Store&#10;Write" path="sub_B/Data Store&#10;Write" signalName="BusStore2">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="SimpleBus">
+            <signal signalName="a">
+              <boolean/>
+            </signal>
+            <signal signalName="b">
+              <array size="3" startIndex="1">
+                <int32/>
+              </array>
+            </signal>
+          </bus>
+        </array>
+        <dataStoreMemory signalName="BusStore2" physicalPath="data_store_bus/Data Store&#10;Memory1"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="data_store_bus/sub_C" path="sub_C" sampleTime="1" name="sub_C" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="Data Store&#10;Read" physicalPath="data_store_bus/sub_C/Data Store&#10;Read" path="sub_C/Data Store&#10;Read" signalName="BusStore2">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="SimpleBus">
+            <signal signalName="a">
+              <boolean/>
+            </signal>
+            <signal signalName="b">
+              <array size="3" startIndex="1">
+                <int32/>
+              </array>
+            </signal>
+          </bus>
+        </array>
+        <dataStoreMemory signalName="BusStore2" physicalPath="data_store_bus/Data Store&#10;Memory1"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_store_bus/sub_C/Out1" path="sub_C/Out1" signalName="out_c">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="SimpleBus">
+            <signal signalName="a">
+              <boolean/>
+            </signal>
+            <signal signalName="b">
+              <array size="3" startIndex="1">
+                <int32/>
+              </array>
+            </signal>
+          </bus>
+        </array>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="data_store_bus/sub_X1" path="sub_X1" sampleTime="1" name="sub_X1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="data_store_bus/sub_X1/In1" path="sub_X1/In1" signalName="in_x1">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HigherBus">
+            <signal signalName="sig1">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <int16/>
+                </array>
+              </array>
+            </signal>
+            <signal signalName="sig2">
+              <array size="2" startIndex="1">
+                <bus busType="non_virtual" busObjectName="SimpleBus">
+                  <signal signalName="a">
+                    <boolean/>
+                  </signal>
+                  <signal signalName="b">
+                    <array size="3" startIndex="1">
+                      <int32/>
+                    </array>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="sig3">
+              <fixedPoint simulinkTypeName="fixdt(1,16,0.125,0.5)" wordLength="16" isSigned="1" slope="0.125" bias="0.5" min="-4095.5" max="4096.375"/>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <outport portNumber="0" name="Data Store&#10;Write" physicalPath="data_store_bus/sub_X1/Data Store&#10;Write" path="sub_X1/Data Store&#10;Write" signalName="StoreSig_X1">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HigherBus">
+            <signal signalName="sig1">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <int16/>
+                </array>
+              </array>
+            </signal>
+            <signal signalName="sig2">
+              <array size="2" startIndex="1">
+                <bus busType="non_virtual" busObjectName="SimpleBus">
+                  <signal signalName="a">
+                    <boolean/>
+                  </signal>
+                  <signal signalName="b">
+                    <array size="3" startIndex="1">
+                      <int32/>
+                    </array>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="sig3">
+              <fixedPoint simulinkTypeName="fixdt(1,16,0.125,0.5)" wordLength="16" isSigned="1" slope="0.125" bias="0.5" min="-4095.5" max="4096.375"/>
+            </signal>
+          </bus>
+        </array>
+        <dataStoreMemory signalName="StoreSig_X1"/>
+      </outport>
+      <outport portNumber="0" name="Data Store&#10;Write1" physicalPath="data_store_bus/sub_X1/Data Store&#10;Write1" path="sub_X1/Data Store&#10;Write1" signalName="StoreSig_X2">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="SimpleBus">
+              <signal signalName="a">
+                <boolean/>
+              </signal>
+              <signal signalName="b">
+                <array size="3" startIndex="1">
+                  <int32/>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+        <dataStoreMemory signalName="StoreSig_X2"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="data_store_bus/sub_X2" path="sub_X2" sampleTime="1" name="sub_X2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="Data Store&#10;Read" physicalPath="data_store_bus/sub_X2/Data Store&#10;Read" path="sub_X2/Data Store&#10;Read" signalName="StoreSig_X1">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HigherBus">
+            <signal signalName="sig1">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <int16/>
+                </array>
+              </array>
+            </signal>
+            <signal signalName="sig2">
+              <array size="2" startIndex="1">
+                <bus busType="non_virtual" busObjectName="SimpleBus">
+                  <signal signalName="a">
+                    <boolean/>
+                  </signal>
+                  <signal signalName="b">
+                    <array size="3" startIndex="1">
+                      <int32/>
+                    </array>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="sig3">
+              <fixedPoint simulinkTypeName="fixdt(1,16,0.125,0.5)" wordLength="16" isSigned="1" slope="0.125" bias="0.5" min="-4095.5" max="4096.375"/>
+            </signal>
+          </bus>
+        </array>
+        <dataStoreMemory signalName="StoreSig_X1"/>
+      </inport>
+      <inport portNumber="0" name="Data Store&#10;Read1" physicalPath="data_store_bus/sub_X2/Data Store&#10;Read1" path="sub_X2/Data Store&#10;Read1" signalName="StoreSig_X2">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="SimpleBus">
+              <signal signalName="a">
+                <boolean/>
+              </signal>
+              <signal signalName="b">
+                <array size="3" startIndex="1">
+                  <int32/>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+        <dataStoreMemory signalName="StoreSig_X2"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="data_store_bus/sub_X2/Out1" path="sub_X2/Out1" signalName="out1_x2">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HigherBus">
+            <signal signalName="sig1">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <int16/>
+                </array>
+              </array>
+            </signal>
+            <signal signalName="sig2">
+              <array size="2" startIndex="1">
+                <bus busType="non_virtual" busObjectName="SimpleBus">
+                  <signal signalName="a">
+                    <boolean/>
+                  </signal>
+                  <signal signalName="b">
+                    <array size="3" startIndex="1">
+                      <int32/>
+                    </array>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="sig3">
+              <fixedPoint simulinkTypeName="fixdt(1,16,0.125,0.5)" wordLength="16" isSigned="1" slope="0.125" bias="0.5" min="-4095.5" max="4096.375"/>
+            </signal>
+          </bus>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="data_store_bus/sub_X2/Out2" path="sub_X2/Out2" signalName="out2_x2">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

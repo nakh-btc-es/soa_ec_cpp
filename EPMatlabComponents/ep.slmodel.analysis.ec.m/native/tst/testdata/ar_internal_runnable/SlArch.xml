@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ar_internal_runnable\ut_results\AddModelInfo.xml" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ar_internal_runnable\Wrapper_SWC_SumMultiply.slx" modelCreationDate="2024-09-23T12:37:55" creator="developer">
+  <toolInfo name="Matlab" release="(R2022a)" version="9.12" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2022a)" version="10.5" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ar_internal_runnable\Wrapper_SWC_SumMultiply.slx" creationDate="2024-09-23T12:37:55" modificationDate="2024-09-23T12:38:01">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_SWC_SumMultiply" path="" sampleTime="0.01" name="Wrapper_SWC_SumMultiply" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="RP_A_A" physicalPath="Wrapper_SWC_SumMultiply/RP_A_A" path="RP_A_A">
+        <uint16/>
+      </inport>
+      <inport portNumber="2" name="RP_B_B" physicalPath="Wrapper_SWC_SumMultiply/RP_B_B" path="RP_B_B">
+        <uint16/>
+      </inport>
+      <inport portNumber="0" name="dsin_CP_Multiply_Out" physicalPath="Wrapper_SWC_SumMultiply/Mock_CP_Multiply/dsin_CP_Multiply_Out" path="Mock_CP_Multiply/dsin_CP_Multiply_Out" signalName="dsin_CP_Multiply_Out">
+        <uint16/>
+        <dataStoreMemory signalName="dsin_CP_Multiply_Out"/>
+      </inport>
+      <parameter name="RP_K_K" path="SWC_SumMultiply" physicalPath="Wrapper_SWC_SumMultiply/SWC_SumMultiply" origin="explicit_param" workspace="RP_K_K" initValue="0.0">
+        <uint16/>
+        <usageContext path="SWC_SumMultiply" physicalPath="Wrapper_SWC_SumMultiply/SWC_SumMultiply" simulinkBlockType="SubSystem"/>
+        <source kind="ModelWorkspace" file="Wrapper_SWC_SumMultiply"/>
+      </parameter>
+      <outport portNumber="1" name="PP_D_D" physicalPath="Wrapper_SWC_SumMultiply/PP_D_D" path="PP_D_D">
+        <uint16/>
+      </outport>
+      <outport portNumber="0" name="dsout_CP_Multiply_In1" physicalPath="Wrapper_SWC_SumMultiply/Mock_CP_Multiply/dsout_CP_Multiply_In1" path="Mock_CP_Multiply/dsout_CP_Multiply_In1" signalName="dsout_CP_Multiply_In1">
+        <uint16/>
+        <dataStoreMemory signalName="dsout_CP_Multiply_In1"/>
+      </outport>
+      <outport portNumber="0" name="dsout_CP_Multiply_In2" physicalPath="Wrapper_SWC_SumMultiply/Mock_CP_Multiply/dsout_CP_Multiply_In2" path="Mock_CP_Multiply/dsout_CP_Multiply_In2" signalName="dsout_CP_Multiply_In2">
+        <uint16/>
+        <dataStoreMemory signalName="dsout_CP_Multiply_In2"/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.3" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ar_internal_runnable\SWC_SumMultiply.slx" creationDate="2023-01-23T12:06:00" modificationDate="2024-09-23T12:37:53"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

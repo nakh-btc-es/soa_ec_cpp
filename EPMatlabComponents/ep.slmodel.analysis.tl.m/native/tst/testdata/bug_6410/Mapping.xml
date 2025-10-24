@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="bug_6410"/>
+    <Architecture id="id1" name="bug_6410 [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="my_top/Subsystem/my_top"/>
+      <Path refId="id1" path="my_top.c:1:my_top"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Se1_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In2"/>
+        <Path refId="id1" path="Se1_In2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In3"/>
+        <Path refId="id1" path="Se1_In3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In4"/>
+        <Path refId="id1" path="Se1_In4"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Se1_Out1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out2"/>
+        <Path refId="id1" path="Se1_Out2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out3"/>
+        <Path refId="id1" path="Se1_Out3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out4"/>
+        <Path refId="id1" path="Se1_Out4"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="my_top/Subsystem/my_top/Cal2DLocal/Chart/test2darray"/>
+        <Path refId="id1" path="Ce7_test2darray"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="my_top/Subsystem/my_top/Cal1DLocal/Chart/test1darray"/>
+        <Path refId="id1" path="Ce3_test1darray"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="my_top/Subsystem/my_top/Cal1DConst"/>
+      <Path refId="id1" path="my_top.c:1:my_top/my_top.c:1:Se2_Cal1DConst"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Se1_In4"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Ce1_output1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="my_top/Subsystem/my_top/Cal1DLocal"/>
+      <Path refId="id1" path="my_top.c:1:my_top/my_top.c:1:Se3_Cal1DLocal"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Se1_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Ce3_output1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="my_top/Subsystem/my_top/Cal1DLocal/Chart/test1darray"/>
+        <Path refId="id1" path="Ce3_test1darray"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="my_top/Subsystem/my_top/Cal1DParam"/>
+      <Path refId="id1" path="my_top.c:1:my_top/my_top.c:1:Se4_Cal1DParam"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Se1_In3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Ce5_output1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="my_top/Subsystem/my_top/Cal2DLocal"/>
+      <Path refId="id1" path="my_top.c:1:my_top/my_top.c:1:Se5_Cal2DLocal"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Se1_In2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Ce7_output1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="my_top/Subsystem/my_top/Cal2DLocal/Chart/test2darray"/>
+        <Path refId="id1" path="Ce7_test2darray"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

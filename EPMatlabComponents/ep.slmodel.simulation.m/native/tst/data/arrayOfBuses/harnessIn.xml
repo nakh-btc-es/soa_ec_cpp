@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<BusType name="HighBus" virtual="false">
+			<Comp name="y" type="LowBus" dim1="1" dim2="2" />
+			<Comp name="x" type="LowBus" width="2" />
+			<Comp name="n" type="single" width="2" />
+			<Comp name="m" type="int8" />
+		</BusType>
+		<BusType name="LowBus" virtual="false">
+			<Comp name="b" type="boolean" />
+			<Comp name="a" type="uint8" width="2" />
+		</BusType>
+	</Types>
+	<Outports sampleTime="0.01">
+		<Outport portNr="1" dim1="2" dim2="1" type="HighBus">
+			<ScalarRefs>
+				<ScalarRef displayName="In1.s1(1)(1).y(1)(1).b">INPUT:In1.s1(1)(1).y(1)(1).b</ScalarRef>
+				<ScalarRef displayName="In1.s1(1)(1).y(1)(1).a(1)">INPUT:In1.s1(1)(1).y(1)(1).a(1)</ScalarRef>
+				<ScalarRef displayName="In1.s1(1)(1).y(1)(1).a(2)">INPUT:In1.s1(1)(1).y(1)(1).a(2)</ScalarRef>
+				<ScalarRef displayName="In1.s1(1)(1).y(1)(2).b">INPUT:In1.s1(1)(1).y(1)(2).b</ScalarRef>
+				<ScalarRef displayName="In1.s1(1)(1).y(1)(2).a(1)">INPUT:In1.s1(1)(1).y(1)(2).a(1)</ScalarRef>
+				<ScalarRef displayName="In1.s1(1)(1).y(1)(2).a(2)">INPUT:In1.s1(1)(1).y(1)(2).a(2)</ScalarRef>
+				<ScalarRef displayName="In1.s1(1)(1).x(1).b">INPUT:In1.s1(1)(1).x(1).b</ScalarRef>
+				<ScalarRef displayName="In1.s1(1)(1).x(1).a(1)">INPUT:In1.s1(1)(1).x(1).a(1)</ScalarRef>
+				<ScalarRef displayName="In1.s1(1)(1).x(1).a(2)">INPUT:In1.s1(1)(1).x(1).a(2)</ScalarRef>
+				<ScalarRef displayName="In1.s1(1)(1).x(2).b">INPUT:In1.s1(1)(1).x(2).b</ScalarRef>
+				<ScalarRef displayName="In1.s1(1)(1).x(2).a(1)">INPUT:In1.s1(1)(1).x(2).a(1)</ScalarRef>
+				<ScalarRef displayName="In1.s1(1)(1).x(2).a(2)">INPUT:In1.s1(1)(1).x(2).a(2)</ScalarRef>
+				<ScalarRef displayName="In1.s1(1)(1).n(1)">INPUT:In1.s1(1)(1).n(1)</ScalarRef>
+				<ScalarRef displayName="In1.s1(1)(1).n(2)">INPUT:In1.s1(1)(1).n(2)</ScalarRef>
+				<ScalarRef displayName="In1.s1(1)(1).m">INPUT:In1.s1(1)(1).m</ScalarRef>
+				<ScalarRef displayName="In1.s1(2)(1).y(1)(1).b">INPUT:In1.s1(2)(1).y(1)(1).b</ScalarRef>
+				<ScalarRef displayName="In1.s1(2)(1).y(1)(1).a(1)">INPUT:In1.s1(2)(1).y(1)(1).a(1)</ScalarRef>
+				<ScalarRef displayName="In1.s1(2)(1).y(1)(1).a(2)">INPUT:In1.s1(2)(1).y(1)(1).a(2)</ScalarRef>
+				<ScalarRef displayName="In1.s1(2)(1).y(1)(2).b">INPUT:In1.s1(2)(1).y(1)(2).b</ScalarRef>
+				<ScalarRef displayName="In1.s1(2)(1).y(1)(2).a(1)">INPUT:In1.s1(2)(1).y(1)(2).a(1)</ScalarRef>
+				<ScalarRef displayName="In1.s1(2)(1).y(1)(2).a(2)">INPUT:In1.s1(2)(1).y(1)(2).a(2)</ScalarRef>
+				<ScalarRef displayName="In1.s1(2)(1).x(1).b">INPUT:In1.s1(2)(1).x(1).b</ScalarRef>
+				<ScalarRef displayName="In1.s1(2)(1).x(1).a(1)">INPUT:In1.s1(2)(1).x(1).a(1)</ScalarRef>
+				<ScalarRef displayName="In1.s1(2)(1).x(1).a(2)">INPUT:In1.s1(2)(1).x(1).a(2)</ScalarRef>
+				<ScalarRef displayName="In1.s1(2)(1).x(2).b">INPUT:In1.s1(2)(1).x(2).b</ScalarRef>
+				<ScalarRef displayName="In1.s1(2)(1).x(2).a(1)">INPUT:In1.s1(2)(1).x(2).a(1)</ScalarRef>
+				<ScalarRef displayName="In1.s1(2)(1).x(2).a(2)">INPUT:In1.s1(2)(1).x(2).a(2)</ScalarRef>
+				<ScalarRef displayName="In1.s1(2)(1).n(1)">INPUT:In1.s1(2)(1).n(1)</ScalarRef>
+				<ScalarRef displayName="In1.s1(2)(1).n(2)">INPUT:In1.s1(2)(1).n(2)</ScalarRef>
+				<ScalarRef displayName="In1.s1(2)(1).m">INPUT:In1.s1(2)(1).m</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="2" type="LowBus">
+			<ScalarRefs>
+				<ScalarRef displayName="In3.a1.b">INPUT:In3.a1.b</ScalarRef>
+				<ScalarRef displayName="In3.a1.a(1)">INPUT:In3.a1.a(1)</ScalarRef>
+				<ScalarRef displayName="In3.a1.a(2)">INPUT:In3.a1.a(2)</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="3" type="LowBus">
+			<ScalarRefs>
+				<ScalarRef displayName="In4.a2.b">INPUT:In4.a2.b</ScalarRef>
+				<ScalarRef displayName="In4.a2.a(1)">INPUT:In4.a2.a(1)</ScalarRef>
+				<ScalarRef displayName="In4.a2.a(2)">INPUT:In4.a2.a(2)</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+	</Outports>
+</SFunction>

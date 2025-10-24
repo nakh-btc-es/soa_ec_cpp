@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\a601cc244\disp_06\TLProj\top_A" name="top_A.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\a601cc244\disp_06\TLSim" name="top_A_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\a601cc244\disp_06\TLProj\top_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\a601cc244\disp_06\TLSim"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="__SIL__"/>
+    <Define name="BTC_EP_TL_VERSION" value="51"/>
+  </Defines>
+  <Functions archName="if_find [C-Code]">
+    <Function name="top_A" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_In1_A" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_In2_A" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_Out1_A" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_Out2_A" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_Out3_A" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa2_In1_B1" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa2_LogOp_B1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa2_Out2_B1" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa3_In1_B2" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa3_LogOp_B2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa6_In1_C" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa6_LogOp_C" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa4_In1_B3" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa4_LogOp_B3" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa4_Out1_B3" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca1_x" scaling="scID1" initVal="1.2000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa2_sub_B1" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa2_In1_B1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa2_In2_B1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa2_Out1_B1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa2_Out2_B1" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa2_In1_B1" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa2_LogOp_B1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa3_sub_B2" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa3_In1_B2" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa3_In2_B2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa3_Out1_B1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa3_In1_B2" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa3_LogOp_B2" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa6_In1_C" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa6_LogOp_C" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa6_sub_C" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa6_In1_C" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa6_In2_C" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa6_Out1_C" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa6_In1_C" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa6_LogOp_C" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa4_sub_B3" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa4_In1_B3" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa4_In2_B3" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa4_Out1_B3" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa4_In1_B3" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa4_LogOp_B3" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa5_sub_B4" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_In2_A" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Ca1_y" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca1_x" scaling="scID1" initVal="1.2000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Ca1_chart_P" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Ca1_u" scaling="scID2"/>
+        <InterfaceObj kind="out" var="Ca1_y" scaling="scID2" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Ca1_x" scaling="scID1" initVal="1.2000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+    <Scaling id="scID2" lsb="6.2500000000000000e-02" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

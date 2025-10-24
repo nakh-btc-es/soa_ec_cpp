@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" modelVersion="1.15" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_dv_dd_path\simple_dd_path_sl.mdl" modelCreationDate="2008-07-02T15:42:57" creator="alex">
+  <toolInfo name="Matlab" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015b)" version="8.6" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.15" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_dv_dd_path\simple_dd_path_sl.mdl" creationDate="2008-07-02T15:42:57" modificationDate="2021-11-17T16:42:02">
+    <subsystem subsysID="ss1" physicalPath="simple_dd_path_sl/top_A" path="top_A" sampleTime="2" name="top_A" scopeKind="SUT" kind="subsystem">
+      <parameter name="c" path="top_A/Sat1" physicalPath="simple_dd_path_sl/top_A/Sat1" initValue="4.0000000000000000e+00" origin="explicit_param" restricted="false">
+        <double/>
+        <usageContext path="top_A/Sat1" physicalPath="simple_dd_path_sl/top_A/Sat1" simulinkBlockType="Saturate" blockAttribute="upperlimit" restriction="tl_saturate:upperlimit"/>
+      </parameter>
+      <parameter name="a" path="top_A/Const1" physicalPath="simple_dd_path_sl/top_A/Const1" initValue="1.5000000000000000e+00" origin="explicit_param" restricted="false">
+        <double/>
+        <usageContext path="top_A/Const1" physicalPath="simple_dd_path_sl/top_A/Const1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </parameter>
+      <parameter name="b" path="top_A/Sat1" physicalPath="simple_dd_path_sl/top_A/Sat1" initValue="-6.0000000000000000e+00" origin="explicit_param" restricted="false">
+        <double/>
+        <usageContext path="top_A/Sat1" physicalPath="simple_dd_path_sl/top_A/Sat1" simulinkBlockType="Saturate" blockAttribute="lowerlimit" restriction="tl_saturate:lowerlimit"/>
+      </parameter>
+      <outport portNumber="1" name="out1" physicalPath="simple_dd_path_sl/top_A/out1" path="top_A/out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

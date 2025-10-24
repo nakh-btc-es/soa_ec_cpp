@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" modelVersion="1.22" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_sl_dd_01\variant_subs.mdl" modelCreationDate="2017-08-09T08:16:10" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.22" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_sl_dd_01\variant_subs.mdl" creationDate="2017-08-09T08:16:10" modificationDate="2024-09-11T18:46:17">
+    <subsystem subsysID="ss1" physicalPath="variant_subs/top_A" path="top_A" sampleTime="0.2" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="variant_subs/top_A/In1" path="top_A/In1" signalName="sigA">
+        <int8 min="-77" max="88"/>
+      </inport>
+      <parameter name="bUseAdd" path="top_A/doubleMe" physicalPath="variant_subs/top_A/doubleMe" origin="explicit_param" workspace="bUseAdd" initValue="0">
+        <boolean/>
+        <usageContext path="top_A/doubleMe" physicalPath="variant_subs/top_A/doubleMe" simulinkBlockType="SubSystem"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="variant_subs/top_A/Out1" path="top_A/Out1">
+        <int8/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="variant_subs/top_A/doubleMe/multiplyMe" path="top_A/doubleMe/multiplyMe" sampleTime="0.2" name="multiplyMe" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="variant_subs/top_A/doubleMe/multiplyMe/In1" path="top_A/doubleMe/multiplyMe/In1" signalName="sigA">
+        <int8 min="-77" max="88"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="variant_subs/top_A/doubleMe/multiplyMe/Out1" path="top_A/doubleMe/multiplyMe/Out1">
+        <int8/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\c50d39f\ar_calibrations\TLProj\Controller" name="controller.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\c50d39f\ar_calibrations\TLSim" name="RteIv.c" kind="source" annotate="no" id="fID2"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\c50d39f\ar_calibrations\TLSim" name="Rte_Controller.c" kind="source" annotate="no" id="fID3"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\c50d39f\ar_calibrations\TLSim" name="Rte.c" kind="source" annotate="no" id="fID4"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\c50d39f\ar_calibrations\TLSim" name="Controller_ARfrm.c" kind="source" annotate="no" id="fID5"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\c50d39f\ar_calibrations\TLSim" name="Controller_fri.c" kind="source" annotate="no" id="fID6"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\c50d39f\ar_calibrations\TLProj\Controller"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\c50d39f\ar_calibrations\TLSim"/>
+    <IncludePath path="C:\dspace\TL42\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dspace\TL42\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dspace\TL42\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="42"/>
+  </Defines>
+  <Functions archName="tl_calibration [C-Code]">
+    <Function name="controller_runnable" initFunc="Rte_Start" proxyFunc="Task_controller_runnable_Wrapper" sampleTime="0.001">
+      <Interface>
+        <InterfaceObj kind="in" var="Rte_Controller_ref_ref"/>
+        <InterfaceObj kind="in" var="Rte_Irv_Controller_LinPos" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_CalPrm_CalPrms_Kp" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_CalPrm_CalPrms_Ki" initVal="2.0000000000000001e-01"/>
+        <InterfaceObj kind="out" var="Rte_Controller_upi_upi" initVal="-1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="S12_sPI1"/>
+      </Interface>
+    </Function>
+    <Function name="linearization_runnable" initFunc="Rte_Start" proxyFunc="Task_linearization_runnable_Wrapper" sampleTime="0.001">
+      <Interface>
+        <InterfaceObj kind="in" var="Rte_Controller_pos_pos"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[0]" initVal="-1.2000000000000000e+01"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[1]" initVal="-1.1800300000000000e+01"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[2]" initVal="-1.1416399999999999e+01"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[3]" initVal="-1.0854400000000000e+01"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[4]" initVal="-1.0122999999999999e+01"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[5]" initVal="-9.2337000000000007e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[6]" initVal="-8.2002000000000006e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[7]" initVal="-7.0388000000000002e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[8]" initVal="-5.7675999999999998e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[9]" initVal="-4.4062999999999999e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[10]" initVal="-2.9763000000000002e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[11]" initVal="-1.4999000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[12]" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[13]" initVal="1.4999000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[14]" initVal="2.9763000000000002e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[15]" initVal="4.4062999999999999e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[16]" initVal="5.7675999999999998e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[17]" initVal="7.0388000000000002e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[18]" initVal="8.2002000000000006e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[19]" initVal="9.2337000000000007e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[20]" initVal="1.0122999999999999e+01"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[21]" initVal="1.0854400000000000e+01"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[22]" initVal="1.1416399999999999e+01"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[23]" initVal="1.1800300000000000e+01"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabOut" access="[24]" initVal="1.2000000000000000e+01"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[0]" initVal="-1.2000000000000000e+01"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[1]" initVal="-1.1000000000000000e+01"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[2]" initVal="-1.0000000000000000e+01"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[3]" initVal="-9.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[4]" initVal="-8.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[5]" initVal="-7.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[6]" initVal="-6.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[7]" initVal="-5.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[8]" initVal="-4.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[9]" initVal="-3.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[10]" initVal="-2.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[11]" initVal="-1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[12]" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[13]" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[14]" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[15]" initVal="3.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[16]" initVal="4.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[17]" initVal="5.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[18]" initVal="6.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[19]" initVal="7.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[20]" initVal="8.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[21]" initVal="9.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[22]" initVal="1.0000000000000000e+01"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[23]" initVal="1.1000000000000000e+01"/>
+        <InterfaceObj kind="cal" var="Rte_SharedCal_Controller_TabIn" access="[24]" initVal="1.2000000000000000e+01"/>
+        <InterfaceObj kind="out" var="Rte_Irv_Controller_LinPos" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings/>
+</CodeModel>

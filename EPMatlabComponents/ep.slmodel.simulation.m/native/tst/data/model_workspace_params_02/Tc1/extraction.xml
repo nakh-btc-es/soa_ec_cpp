@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="26t">
+	<Types />
+	<Scope uid="26t" name="mw_param" path="mw_param" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="mw_param">
+		<InPort name="In1" portNumber="1" compositeSig="none" type="double">
+			<Variable varid="varif_379" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_379" initValue="0.0" lsb="1.0" offset="0.0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="none" type="double">
+			<Variable varid="varif_381" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_381" initValue="0.0" lsb="1.0" offset="0.0" displayName="In2" identifier="INPUT:In2" />
+			</Variable>
+		</InPort>
+		<InPort name="In3" portNumber="3" compositeSig="none" type="double">
+			<Variable varid="varif_383" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_383" initValue="0.0" lsb="1.0" offset="0.0" displayName="In3" identifier="INPUT:In3" />
+			</Variable>
+		</InPort>
+		<InPort name="In4" portNumber="4" compositeSig="none" type="double">
+			<Variable varid="varif_385" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_385" initValue="0.0" lsb="1.0" offset="0.0" displayName="In4" identifier="INPUT:In4" />
+			</Variable>
+		</InPort>
+		<InPort name="In5" portNumber="5" compositeSig="none" type="double">
+			<Variable varid="varif_387" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_387" initValue="0.0" lsb="1.0" offset="0.0" displayName="In5" identifier="INPUT:In5" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none" type="double">
+			<Variable varid="varif_389" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_389" initValue="0.0" lsb="1.0" offset="0.0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="none" type="double">
+			<Variable varid="varif_391" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_391" initValue="0.0" lsb="1.0" offset="0.0" displayName="Out2" identifier="OUTPUT:Out2" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out3" portNumber="3" compositeSig="none" type="double">
+			<Variable varid="varif_393" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_393" initValue="0.0" lsb="1.0" offset="0.0" displayName="Out3" identifier="OUTPUT:Out3" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out4" portNumber="4" compositeSig="none" type="double">
+			<Variable varid="varif_395" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_395" initValue="0.0" lsb="1.0" offset="0.0" displayName="Out4" identifier="OUTPUT:Out4" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out5" portNumber="5" compositeSig="none" type="double">
+			<Variable varid="varif_397" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_397" initValue="0.0" lsb="1.0" offset="0.0" displayName="Out5" identifier="OUTPUT:Out5" />
+			</Variable>
+		</OutPort>
+		<Calibration name="myBaseParam" path="mw_param/Model/Gain2" physicalPath="refA/Gain2" origin="explicit_param">
+			<CalibrationUsage path="mw_param/Model/Gain2" physicalPath="refA/Gain2" blockAttribute="Gain" />
+			<Variable varid="varif_399" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_399" initValue="42.0" lsb="1.0" offset="0.0" displayName="myBaseParam" identifier="PARAMETER:Model/Gain2/myBaseParam" />
+			</Variable>
+		</Calibration>
+		<Calibration name="myParam1" path="mw_param/Model/Gain" physicalPath="refA/Gain" origin="explicit_param">
+			<Source kind="ModelWorkspace" file="refA" />
+			<CalibrationUsage path="mw_param/Model/Gain" physicalPath="refA/Gain" blockAttribute="Gain" />
+			<Variable varid="varif_401" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_401" initValue="2.0" lsb="1.0" offset="0.0" displayName="{refA:myParam1}" identifier="PARAMETER:Model/Gain/myParam1" />
+			</Variable>
+		</Calibration>
+		<Calibration name="myParam1" path="mw_param/Model1/Gain" physicalPath="refB/Gain" origin="explicit_param">
+			<Source kind="ModelWorkspace" file="refB" />
+			<CalibrationUsage path="mw_param/Model1/Gain" physicalPath="refB/Gain" blockAttribute="Gain" />
+			<Variable varid="varif_403" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_403" initValue="2.0" lsb="1.0" offset="0.0" displayName="{refB:myParam1}" identifier="PARAMETER:Model1/Gain/myParam1" />
+			</Variable>
+		</Calibration>
+		<Calibration name="myParam1" path="mw_param/Model2/Gain" physicalPath="refC/Gain" origin="explicit_param">
+			<Source kind="ModelWorkspace" file="refC" />
+			<CalibrationUsage path="mw_param/Model2/Gain" physicalPath="refC/Gain" blockAttribute="Gain" />
+			<Variable varid="varif_405" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_405" initValue="2.0" lsb="1.0" offset="0.0" displayName="{refC:myParam1}" identifier="PARAMETER:Model2/Gain/myParam1" />
+			</Variable>
+		</Calibration>
+		<Calibration name="myVar1" path="mw_param/Model/Gain1" physicalPath="refA/Gain1" origin="explicit_param">
+			<Source kind="ModelWorkspace" file="refA" />
+			<CalibrationUsage path="mw_param/Model/Gain1" physicalPath="refA/Gain1" blockAttribute="Gain" />
+			<Variable varid="varif_407" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_407" initValue="5.0" lsb="1.0" offset="0.0" displayName="{refA:myVar1}" identifier="PARAMETER:Model/Gain1/myVar1" />
+			</Variable>
+		</Calibration>
+		<Model name="mw_param" modelPath="/E:/ModelsDev/UT_SL/model_workspace_params_02/ml2015b/mw_param.slx" type="SimulinkModel" />
+		<Scope uid="26q" name="Model" path="mw_param/Model" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="refA">
+			<InPort name="In1" portNumber="1" compositeSig="none" type="double">
+				<Variable varid="varif_409" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+					<ifName ifid="if_409" initValue="0.0" lsb="1.0" offset="0.0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<InPort name="In2" portNumber="2" compositeSig="none" type="double">
+				<Variable varid="varif_411" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+					<ifName ifid="if_411" initValue="0.0" lsb="1.0" offset="0.0" displayName="In2" identifier="INPUT:In2" />
+				</Variable>
+			</InPort>
+			<InPort name="In3" portNumber="3" compositeSig="none" type="double">
+				<Variable varid="varif_413" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+					<ifName ifid="if_413" initValue="0.0" lsb="1.0" offset="0.0" displayName="In3" identifier="INPUT:In3" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none" type="double">
+				<Variable varid="varif_415" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+					<ifName ifid="if_415" initValue="0.0" lsb="1.0" offset="0.0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out2" portNumber="2" compositeSig="none" type="double">
+				<Variable varid="varif_417" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+					<ifName ifid="if_417" initValue="0.0" lsb="1.0" offset="0.0" displayName="Out2" identifier="OUTPUT:Out2" />
+				</Variable>
+			</OutPort>
+			<OutPort name="Out3" portNumber="3" compositeSig="none" type="double">
+				<Variable varid="varif_419" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+					<ifName ifid="if_419" initValue="0.0" lsb="1.0" offset="0.0" displayName="Out3" identifier="OUTPUT:Out3" />
+				</Variable>
+			</OutPort>
+			<Calibration name="myBaseParam" path="mw_param/Model/Gain2" physicalPath="refA/Gain2" origin="explicit_param">
+				<CalibrationUsage path="mw_param/Model/Gain2" physicalPath="refA/Gain2" blockAttribute="Gain" />
+				<Variable varid="varif_421" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_421" initValue="42.0" lsb="1.0" offset="0.0" displayName="myBaseParam" identifier="PARAMETER:Gain2/myBaseParam" />
+				</Variable>
+			</Calibration>
+			<Calibration name="myParam1" path="mw_param/Model/Gain" physicalPath="refA/Gain" origin="explicit_param">
+				<Source kind="ModelWorkspace" file="refA" />
+				<CalibrationUsage path="mw_param/Model/Gain" physicalPath="refA/Gain" blockAttribute="Gain" />
+				<Variable varid="varif_423" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_423" initValue="2.0" lsb="1.0" offset="0.0" displayName="{refA:myParam1}" identifier="PARAMETER:Gain/myParam1" />
+				</Variable>
+			</Calibration>
+			<Calibration name="myVar1" path="mw_param/Model/Gain1" physicalPath="refA/Gain1" origin="explicit_param">
+				<Source kind="ModelWorkspace" file="refA" />
+				<CalibrationUsage path="mw_param/Model/Gain1" physicalPath="refA/Gain1" blockAttribute="Gain" />
+				<Variable varid="varif_425" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_425" initValue="5.0" lsb="1.0" offset="0.0" displayName="{refA:myVar1}" identifier="PARAMETER:Gain1/myVar1" />
+				</Variable>
+			</Calibration>
+			<Model name="refA" modelPath="/E:/ModelsDev/UT_SL/model_workspace_params_02/ml2015b/refA.slx" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="26r" name="Model1" path="mw_param/Model1" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="refB">
+			<InPort name="In1" portNumber="1" compositeSig="none" type="double">
+				<Variable varid="varif_427" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+					<ifName ifid="if_427" initValue="0.0" lsb="1.0" offset="0.0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none" type="double">
+				<Variable varid="varif_429" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+					<ifName ifid="if_429" initValue="0.0" lsb="1.0" offset="0.0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<Calibration name="myParam1" path="mw_param/Model1/Gain" physicalPath="refB/Gain" origin="explicit_param">
+				<Source kind="ModelWorkspace" file="refB" />
+				<CalibrationUsage path="mw_param/Model1/Gain" physicalPath="refB/Gain" blockAttribute="Gain" />
+				<Variable varid="varif_431" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_431" initValue="2.0" lsb="1.0" offset="0.0" displayName="{refB:myParam1}" identifier="PARAMETER:Gain/myParam1" />
+				</Variable>
+			</Calibration>
+			<Model name="refB" modelPath="/E:/ModelsDev/UT_SL/model_workspace_params_02/ml2015b/refB.slx" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="26s" name="Model2" path="mw_param/Model2" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="refC">
+			<InPort name="In1" portNumber="1" compositeSig="none" type="double">
+				<Variable varid="varif_433" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+					<ifName ifid="if_433" initValue="0.0" lsb="1.0" offset="0.0" displayName="In1" identifier="INPUT:In1" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out1" portNumber="1" compositeSig="none" type="double">
+				<Variable varid="varif_435" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+					<ifName ifid="if_435" initValue="0.0" lsb="1.0" offset="0.0" displayName="Out1" identifier="OUTPUT:Out1" />
+				</Variable>
+			</OutPort>
+			<Calibration name="myParam1" path="mw_param/Model2/Gain" physicalPath="refC/Gain" origin="explicit_param">
+				<Source kind="ModelWorkspace" file="refC" />
+				<CalibrationUsage path="mw_param/Model2/Gain" physicalPath="refC/Gain" blockAttribute="Gain" />
+				<Variable varid="varif_437" signalType="double" isFloat="yes" tlTypeName="double">
+					<ifName ifid="if_437" initValue="2.0" lsb="1.0" offset="0.0" displayName="{refC:myParam1}" identifier="PARAMETER:Gain/myParam1" />
+				</Variable>
+			</Calibration>
+			<Model name="refC" modelPath="/E:/ModelsDev/UT_SL/model_workspace_params_02/ml2015b/refC.slx" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>btc_es</groupId>
+    <artifactId>ep.slmodel.simulation.m</artifactId>
+    <name>ep.slmodel.simulation.m</name>
+    <packaging>nar</packaging>
+
+    <parent>
+        <groupId>btc_es</groupId>
+        <artifactId>ep.matlabcomponents.matlab.parent</artifactId>
+        <version>243.0.6-SNAPSHOT</version>
+        <relativePath>../../releng/ep.matlabcomponents.matlab.parent</relativePath>
+    </parent>
+
+    <properties>
+        <matlab.private>privat</matlab.private>
+        <!-- Subdirectory of src where private scripts are stored (not belonging to modules interface).-->
+        <test.timeout>180m</test.timeout>
+        <!-- Default value for test timeout: 15 minutes. (Possible units: h (hours) m (minutes) s (seconds) -->
+        <test.source.directory>${project.basedir}/ut</test.source.directory>
+        <!-- this path is automatically added to Matlab path when executing tests. -->
+        <test.exec.directory>${project.basedir}/tst</test.exec.directory>
+
+        <export.resource>spec/dtd/*.xsd</export.resource>
+        <export.keepStructure>true</export.keepStructure>
+    </properties>
+    <dependencies>
+        <!-- Compile Dependencies -->       
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.slmodel.m</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+            <type>nar</type>
+        </dependency>        
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.slmodel.openclose.m</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+            <type>nar</type>
+        </dependency>
+        <!-- NOTE: cucrrently the config file slsilcfg_analysis_btc is shared by analysis and simulation -->
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.slmodel.analysis.ec.m</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+            <type>nar</type>
+        </dependency>
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.core.utils.m</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+            <type>nar</type>
+        </dependency>
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.core.ipc.matlab</artifactId>
+            <version>${ep.core.version}</version>
+            <scope>compile</scope>
+            <type>jar</type>
+        </dependency>
+        <!-- Test dependencies -->  
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.ats.models.m</artifactId>
+            <version>${ep.ats.version}</version>
+            <scope>test</scope>
+            <type>nar</type>
+        </dependency>
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.architecture.spec</artifactId>
+            <version>${ep.architecture.version}</version>
+            <scope>test</scope>
+            <type>jar</type>
+        </dependency>         
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.ats.models.dev.ec</artifactId>
+            <version>${ep.ats.version}</version>
+            <scope>test</scope>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.ats.models.dev.tl</artifactId>
+            <version>${ep.ats.version}</version>
+            <scope>test</scope>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.ats.models.dev.sl</artifactId>
+            <version>${ep.ats.version}</version>
+            <scope>test</scope>
+            <type>jar</type>
+        </dependency>        
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.test.utils.m</artifactId>
+            <version>${project.version}</version>
+            <scope>test</scope>
+            <type>nar</type>
+        </dependency>
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.slmodel.test.utils.m</artifactId>
+            <version>${project.version}</version>
+            <scope>test</scope>
+            <type>nar</type>
+        </dependency>
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>cct.sfunction.c</artifactId>
+            <version>${ccoretech.version}</version>
+            <scope>test</scope>
+            <type>nar</type>
+        </dependency>
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>cct.sfctcast.c</artifactId>
+            <version>${ccoretech.version}</version>
+            <scope>test</scope>
+            <type>nar</type>
+        </dependency>
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>cct.mdf.accessor.mex.c</artifactId>
+            <version>${ccoretech.version}</version>
+            <scope>test</scope>
+            <type>nar</type>
+        </dependency>
+    </dependencies>
+</project>

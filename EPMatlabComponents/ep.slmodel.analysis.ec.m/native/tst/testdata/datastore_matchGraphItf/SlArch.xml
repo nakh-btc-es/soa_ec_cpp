@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ut_datastore_matchGraphItf\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ut_datastore_matchGraphItf\init.m" modelVersion="12.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ut_datastore_matchGraphItf\datastore.slx" modelCreationDate="2017-11-08T17:51:20" creator="nabilekhoury">
+  <toolInfo name="Matlab" release="(R2022a)" version="9.12" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2022a)" version="10.5" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="12.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ut_datastore_matchGraphItf\datastore.slx" creationDate="2017-11-08T17:51:20" modificationDate="2024-09-23T12:39:25" initScript="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ut_datastore_matchGraphItf\init.m">
+    <subsystem subsysID="ss1" physicalPath="datastore" path="" sampleTime="0.1" name="datastore" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In_WriteB" physicalPath="datastore/In_WriteB" path="In_WriteB" signalName="In_WriteB">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In_ReadWriteA_ReadWriteB" physicalPath="datastore/In_ReadWriteA_ReadWriteB" path="In_ReadWriteA_ReadWriteB" signalName="In_ReadWriteA_ReadWriteB">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="In_ReadD_ChartD" physicalPath="datastore/In_ReadD_ChartD" path="In_ReadD_ChartD" signalName="In_ReadD_ChartD">
+        <double/>
+      </inport>
+      <inport portNumber="4" name="In_ChartE_WriteE" physicalPath="datastore/In_ChartE_WriteE" path="In_ChartE_WriteE" signalName="In_ChartE_WriteE">
+        <single/>
+      </inport>
+      <outport portNumber="1" name="Out_ReadA" physicalPath="datastore/Out_ReadA" path="Out_ReadA" signalName="Out_ReadA">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out_ReadWriteA_ReadWriteB" physicalPath="datastore/Out_ReadWriteA_ReadWriteB" path="Out_ReadWriteA_ReadWriteB" signalName="Out_ReadWriteA_ReadWriteB">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Out_ReadD_ChartD" physicalPath="datastore/Out_ReadD_ChartD" path="Out_ReadD_ChartD" signalName="Out_ReadD_ChartD">
+        <double/>
+      </outport>
+      <outport portNumber="4" name="O_ReadD_ChartD" physicalPath="datastore/O_ReadD_ChartD" path="O_ReadD_ChartD" signalName="O_ReadD_ChartD">
+        <double/>
+      </outport>
+      <outport portNumber="5" name="O_ReadO" physicalPath="datastore/O_ReadO" path="O_ReadO" signalName="O_ReadO">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss8"/>
+      <subsystem refSubsysID="ss9"/>
+      <subsystem refSubsysID="ss10"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="datastore/SUT/ChartE_WriteE" path="SUT/ChartE_WriteE" sampleTime="0.1" name="ChartE_WriteE" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In" physicalPath="datastore/SUT/ChartE_WriteE/In" path="SUT/ChartE_WriteE/In" signalName="In_ChartE_WriteE">
+        <single/>
+      </inport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="datastore/SUT/ReadA" path="SUT/ReadA" sampleTime="0.1" name="ReadA" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="Read A" physicalPath="datastore/SUT/ReadA/Read A" path="SUT/ReadA/Read A" signalName="A">
+        <double/>
+        <dataStoreMemory signalName="A"/>
+      </inport>
+      <outport portNumber="1" name="Out" physicalPath="datastore/SUT/ReadA/Out" path="SUT/ReadA/Out" signalName="OutA">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="datastore/SUT/ReadD_ChartD" path="SUT/ReadD_ChartD" sampleTime="0.1" name="ReadD_ChartD" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="I" physicalPath="datastore/SUT/ReadD_ChartD/I" path="SUT/ReadD_ChartD/I" signalName="In_ReadD_ChartD">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out" physicalPath="datastore/SUT/ReadD_ChartD/Out" path="SUT/ReadD_ChartD/Out">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="O" physicalPath="datastore/SUT/ReadD_ChartD/O" path="SUT/ReadD_ChartD/O" signalName="O">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="datastore/SUT/ReadL" path="SUT/ReadL" sampleTime="0.1" name="ReadL" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="Read L" physicalPath="datastore/SUT/ReadL/Read L" path="SUT/ReadL/Read L" signalName="L" initValue="0.0">
+        <double min="-30.0" max="30.0"/>
+        <dataStoreMemory signalName="L" physicalPath="datastore/MemoryL"/>
+      </inport>
+      <outport portNumber="1" name="Out" physicalPath="datastore/SUT/ReadL/Out" path="SUT/ReadL/Out" signalName="outL">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="datastore/SUT/ReadWriteA_ReadWriteB" path="SUT/ReadWriteA_ReadWriteB" sampleTime="0.1" name="ReadWriteA_ReadWriteB" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In" physicalPath="datastore/SUT/ReadWriteA_ReadWriteB/In" path="SUT/ReadWriteA_ReadWriteB/In" signalName="In_ReadWriteA_ReadWriteB">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out" physicalPath="datastore/SUT/ReadWriteA_ReadWriteB/Out" path="SUT/ReadWriteA_ReadWriteB/Out">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="dataStoreModelToReference" path="SUT/RefModel" sampleTime="0.1" name="RefModel" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In_WriteB" physicalPath="dataStoreModelToReference/In_WriteB" path="SUT/RefModel/In_WriteB" modelRef="model002" signalName="In_WriteB">
+        <double/>
+      </inport>
+      <inport portNumber="0" name="Read A" physicalPath="dataStoreModelToReference/WriteO/Read A" path="SUT/RefModel/WriteO/Read A" modelRef="model002" signalName="A">
+        <double/>
+        <dataStoreMemory signalName="A"/>
+      </inport>
+      <outport portNumber="1" name="Out_ReadO" physicalPath="dataStoreModelToReference/Out_ReadO" path="SUT/RefModel/Out_ReadO" modelRef="model002" signalName="Out_ReadO">
+        <double/>
+      </outport>
+      <outport portNumber="0" name="Write B" physicalPath="dataStoreModelToReference/WriteB/Write B" path="SUT/RefModel/WriteB/Write B" modelRef="model002" signalName="B">
+        <double/>
+        <dataStoreMemory signalName="B"/>
+      </outport>
+      <subsystem refSubsysID="ss11"/>
+      <subsystem refSubsysID="ss12"/>
+      <subsystem refSubsysID="ss13"/>
+    </subsystem>
+    <subsystem subsysID="ss11" physicalPath="dataStoreModelToReference/WriteB" path="SUT/RefModel/WriteB" sampleTime="0.1" name="WriteB" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In" physicalPath="dataStoreModelToReference/WriteB/In" path="SUT/RefModel/WriteB/In" modelRef="model002" signalName="In_WriteB">
+        <double/>
+      </inport>
+      <outport portNumber="0" name="Write B" physicalPath="dataStoreModelToReference/WriteB/Write B" path="SUT/RefModel/WriteB/Write B" modelRef="model002" signalName="B">
+        <double/>
+        <dataStoreMemory signalName="B"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss12" physicalPath="dataStoreModelToReference/WriteM" path="SUT/RefModel/WriteM" sampleTime="0.1" name="WriteM" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In" physicalPath="dataStoreModelToReference/WriteM/In" path="SUT/RefModel/WriteM/In" modelRef="model002" signalName="In_WriteB">
+        <double/>
+      </inport>
+      <outport portNumber="0" name="Write M" physicalPath="dataStoreModelToReference/WriteM/Write M" path="SUT/RefModel/WriteM/Write M" modelRef="model002" signalName="M" initValue="0.0">
+        <double min="-40.0" max="40.0"/>
+        <dataStoreMemory signalName="M" physicalPath="dataStoreModelToReference/MemoryM"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss13" physicalPath="dataStoreModelToReference/WriteO" path="SUT/RefModel/WriteO" sampleTime="0.1" name="WriteO" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In_WriteB" physicalPath="dataStoreModelToReference/WriteO/In_WriteB" path="SUT/RefModel/WriteO/In_WriteB" modelRef="model002" signalName="In_WriteB">
+        <double/>
+      </inport>
+      <inport portNumber="0" name="Read A" physicalPath="dataStoreModelToReference/WriteO/Read A" path="SUT/RefModel/WriteO/Read A" modelRef="model002" signalName="A">
+        <double/>
+        <dataStoreMemory signalName="A"/>
+      </inport>
+      <outport portNumber="1" name="Out_ReadO" physicalPath="dataStoreModelToReference/WriteO/Out_ReadO" path="SUT/RefModel/WriteO/Out_ReadO" modelRef="model002">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="12.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ut_datastore_matchGraphItf\dataStoreModelToReference.slx" creationDate="2017-11-08T17:51:20" modificationDate="2024-09-23T12:39:25" initScript="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ut_datastore_matchGraphItf\init.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

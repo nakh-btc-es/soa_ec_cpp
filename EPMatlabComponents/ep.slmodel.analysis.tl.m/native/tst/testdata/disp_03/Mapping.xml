@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="bus_disp2"/>
+    <Architecture id="id1" name="bus_disp2 [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A"/>
+      <Path refId="id1" path="top_A.c:1:top_A"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_In1_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa1_Out1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Const2(1)"/>
+        <Path refId="id1" path="Sa1_Const2_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/Const3(1)"/>
+        <Path refId="id1" path="Sa1_Const3_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/In1(1)"/>
+        <Path refId="id1" path="Sa1_In1_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B1/In1(1)"/>
+        <Path refId="id1" path="Sa2_In1_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B1/Out1(1)"/>
+        <Path refId="id1" path="Sa2_Out1_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B2/UnitDelay2(1)"/>
+        <Path refId="id1" path="Sa3_UnitDelay2_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.c.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B2/UnitDelay2(1)"/>
+        <Path refId="id1" path="Sa3_UnitDelay2_valid_a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.c.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B2/UnitDelay2(1)"/>
+        <Path refId="id1" path="Sa3_UnitDelay2_valid_b"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B3/In1(1)"/>
+        <Path refId="id1" path="Sa4_d_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".f.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B3/Out1(1)"/>
+        <Path refId="id1" path="Sa4_Out1.Sa4_c.Sa4_a_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.c.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B3/Out1(1)"/>
+        <Path refId="id1" path="Sa4_Out1.Sa4_c.Sa4_b_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.c.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B3/UnitDelay2(1)"/>
+        <Path refId="id1" path="Sa4_UnitDelay2_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.c.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B3/UnitDelay2(1)"/>
+        <Path refId="id1" path="Sa4_UnitDelay2_valid_a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.c.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B3/UnitDelay2(1)"/>
+        <Path refId="id1" path="Sa4_UnitDelay2_valid_b"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B1"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Sa2_sub_B1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa2_In1_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa2_Out1_valid"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B1/In1(1)"/>
+        <Path refId="id1" path="Sa2_In1_valid"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B2"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Sa3_sub_B2"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_Const3_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.c.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_Const4"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.c.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_In1_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".e.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa3_UnitDelay2_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.c.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa3_UnitDelay2_valid_a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.c.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa3_UnitDelay2_valid_b"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B2/UnitDelay2(1)"/>
+        <Path refId="id1" path="Sa3_UnitDelay2_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.c.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B2/UnitDelay2(1)"/>
+        <Path refId="id1" path="Sa3_UnitDelay2_valid_a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.c.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B2/UnitDelay2(1)"/>
+        <Path refId="id1" path="Sa3_UnitDelay2_valid_b"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B3"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Sa4_sub_B3"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa4_a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".f.c.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa4_b"/>
+        <SignalMapping>
+          <Path refId="id0" path=".f.c.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa4_d_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".f.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa4_Out1.Sa4_c.Sa4_a_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.c.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa4_Out1.Sa4_c.Sa4_b_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.c.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa4_Out1.Sa4_d"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B3/In1(1)"/>
+        <Path refId="id1" path="Sa4_d_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".f.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B3/UnitDelay2(1)"/>
+        <Path refId="id1" path="Sa4_UnitDelay2_valid"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.c.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B3/UnitDelay2(1)"/>
+        <Path refId="id1" path="Sa4_UnitDelay2_valid_a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.c.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B3/UnitDelay2(1)"/>
+        <Path refId="id1" path="Sa4_UnitDelay2_valid_b"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.d"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

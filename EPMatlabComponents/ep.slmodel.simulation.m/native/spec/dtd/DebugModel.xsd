@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+    <xs:element name="DebugModel">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Outputs" type="SignalGroupType" minOccurs="0" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>The vector input signals group</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="sampleTime" type="xs:string" use="required"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:complexType name="SignalGroupType">
+        <xs:choice maxOccurs="unbounded">
+            <xs:element name="Outport" type="OutportType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>The vector interface objects</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:choice>
+
+    </xs:complexType>
+    
+    <xs:complexType name="OutportType">
+     
+        <xs:attribute name="ifid" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>Unique object ID (corresponding IDs in MIL/SIL).This ID
+                    establishes the relation between the simulated objects from MIL and SIL. General
+                    rule: objects with the same ID are related. </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="displayName" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>The display name of the outport object.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    
+
+</xs:schema>

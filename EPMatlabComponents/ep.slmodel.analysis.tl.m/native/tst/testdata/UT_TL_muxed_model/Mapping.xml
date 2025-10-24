@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="muxed_model"/>
+    <Architecture id="id1" name="muxed_model [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A"/>
+      <Path refId="id1" path="top_A.c:1:Sa1_top_A"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="in_A"/>
+        <Path refId="id1" path="Sa1_in_A"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out1_A"/>
+        <Path refId="id1" path="Sa1_out1_A"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out2_A"/>
+        <Path refId="id1" path="Sa1_out2_A"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out3_A"/>
+        <Path refId="id1" path="Sa1_out3_A"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out4_A"/>
+        <Path refId="id1" path="Sa1_out4_A"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out5_A"/>
+        <Path refId="id1" path="Sa1_out5_A"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out6_A"/>
+        <Path refId="id1" path="Sa1_out6_A"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out7_A"/>
+        <Path refId="id1" path="Sa1_out7_A"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B0"/>
+      <Path refId="id1" path="top_A.c:1:Sa1_top_A/top_A.c:1:Sa2_sub_B0"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In_B0"/>
+        <Path refId="id1" path="Sa1_in_A"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out_B0"/>
+        <Path refId="id1" path="Sa2_MinMax_B0"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B1"/>
+      <Path refId="id1" path="top_A.c:1:Sa1_top_A/top_A.c:1:Sa3_sub_B1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In_B1"/>
+        <Path refId="id1" path="Sa1_Gain1_A"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out_B1"/>
+        <Path refId="id1" path="Sa3_MinMax_B1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B2"/>
+      <Path refId="id1" path="top_A.c:1:Sa1_top_A/top_A.c:1:Sa4_sub_B2"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In_B2"/>
+        <Path refId="id1" path="Sa1_Gain1_A"/>
+        <SignalMapping>
+          <Path refId="id0" path="(1)"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In_B2"/>
+        <Path refId="id1" path="Sa1_Gain2_A"/>
+        <SignalMapping>
+          <Path refId="id0" path="(2)"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out_B2"/>
+        <Path refId="id1" path="Sa4_MinMax_B2"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B4"/>
+      <Path refId="id1" path="top_A.c:1:Sa1_top_A/top_A.c:1:Sa6_sub_B4"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In_B4"/>
+        <Path refId="id1" path="Sa1_in_A"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="[4]"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out_B4"/>
+        <Path refId="id1" path="Sa6_MinMax1_B4"/>
+        <SignalMapping>
+          <Path refId="id0" path="(1)"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out_B4"/>
+        <Path refId="id1" path="Sa6_MinMax2_B4"/>
+        <SignalMapping>
+          <Path refId="id0" path="(2)"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B5"/>
+      <Path refId="id1" path="top_A.c:1:Sa1_top_A/top_A.c:1:Sa7_sub_B5"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In_B5"/>
+        <Path refId="id1" path="Sa1_in_A"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="[2]"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out_B5"/>
+        <Path refId="id1" path="Sa7_MinMax_B5"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B6"/>
+      <Path refId="id1" path="top_A.c:1:Sa1_top_A/top_A.c:1:Sa8_sub_B6"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In_B6"/>
+        <Path refId="id1" path="Sa1_in_A"/>
+        <SignalMapping>
+          <Path refId="id0" path="(1)"/>
+          <Path refId="id1" path="[0]"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In_B6"/>
+        <Path refId="id1" path="Sa1_in_A"/>
+        <SignalMapping>
+          <Path refId="id0" path="(2)"/>
+          <Path refId="id1" path="[3]"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out_B6"/>
+        <Path refId="id1" path="Sa8_MinMax_B6"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

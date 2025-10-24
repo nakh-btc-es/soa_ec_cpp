@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20200427T091915\tmp_ut_ar_server_as_sl_function\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20200427T091915\tmp_ut_ar_server_as_sl_function\Init.m" modelVersion="1.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200427T091915\tmp_ut_ar_server_as_sl_function\Wrapper_SWC.mdl" modelCreationDate="2019-10-18T13:49:25" creator="nabilekhoury">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.2" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200427T091915\tmp_ut_ar_server_as_sl_function\Wrapper_SWC.mdl" creationDate="2019-10-18T13:49:25" modificationDate="2020-04-27T09:18:16" initScript="C:\Users\developer\AppData\Local\Temp\ut20200427T091915\tmp_ut_ar_server_as_sl_function\Init.m">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_SWC/Wrapper_SWC" path="Wrapper_SWC" sampleTime="0.01" name="Wrapper_SWC" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="RP_B" physicalPath="Wrapper_SWC/Wrapper_SWC/RP_B" path="Wrapper_SWC/RP_B">
+        <uint16/>
+      </inport>
+      <inport portNumber="2" name="RP_D" physicalPath="Wrapper_SWC/Wrapper_SWC/RP_D" path="Wrapper_SWC/RP_D">
+        <uint16/>
+      </inport>
+      <outport portNumber="1" name="PP_A_plus_B" physicalPath="Wrapper_SWC/Wrapper_SWC/PP_A_plus_B" path="Wrapper_SWC/PP_A_plus_B">
+        <uint16/>
+      </outport>
+      <outport portNumber="2" name="PP_A_plus_B_plus_C" physicalPath="Wrapper_SWC/Wrapper_SWC/PP_A_plus_B_plus_C" path="Wrapper_SWC/PP_A_plus_B_plus_C">
+        <uint16/>
+      </outport>
+      <outport portNumber="3" name="PP_A_plus_2B_plus_C" physicalPath="Wrapper_SWC/Wrapper_SWC/PP_A_plus_2B_plus_C" path="Wrapper_SWC/PP_A_plus_2B_plus_C">
+        <uint16/>
+      </outport>
+      <outport portNumber="4" name="PP_A_plus_2B_plus_C_plus_D" physicalPath="Wrapper_SWC/Wrapper_SWC/PP_A_plus_2B_plus_C_plus_D" path="Wrapper_SWC/PP_A_plus_2B_plus_C_plus_D">
+        <uint16/>
+      </outport>
+      <outport portNumber="5" name="PP_A_plus_2B_plus_C_plus_D_Accu" physicalPath="Wrapper_SWC/Wrapper_SWC/PP_A_plus_2B_plus_C_plus_D_Accu" path="Wrapper_SWC/PP_A_plus_2B_plus_C_plus_D_Accu">
+        <uint16/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="SWC/Sys_Runa1" path="Wrapper_SWC/SWC/Sys_Runa1" sampleTime="0.01" name="Sys_Runa1" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="RP_B" physicalPath="SWC/Sys_Runa1/RP_B" path="Wrapper_SWC/SWC/Sys_Runa1/RP_B" modelRef="model002">
+        <uint16/>
+      </inport>
+      <outport portNumber="1" name="PP_A_plus_B" physicalPath="SWC/Sys_Runa1/PP_A_plus_B" path="Wrapper_SWC/SWC/Sys_Runa1/PP_A_plus_B" modelRef="model002">
+        <uint16/>
+      </outport>
+      <outport portNumber="2" name="IRV_A_plus_B" physicalPath="SWC/Sys_Runa1/IRV_A_plus_B" path="Wrapper_SWC/SWC/Sys_Runa1/IRV_A_plus_B" modelRef="model002">
+        <uint16/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="SWC/Sys_Runa4" path="Wrapper_SWC/SWC/Sys_Runa4" sampleTime="0.01" name="Sys_Runa4" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="IRV_A_plus_2B_plus_C" physicalPath="SWC/Sys_Runa4/IRV_A_plus_2B_plus_C" path="Wrapper_SWC/SWC/Sys_Runa4/IRV_A_plus_2B_plus_C" modelRef="model002" signalName="IRV_A_plus_2B_plus_C">
+        <uint16/>
+      </inport>
+      <inport portNumber="2" name="RP_D" physicalPath="SWC/Sys_Runa4/RP_D" path="Wrapper_SWC/SWC/Sys_Runa4/RP_D" modelRef="model002">
+        <uint16/>
+      </inport>
+      <outport portNumber="1" name="PP_A_plus_2B_plus_C_plus_D" physicalPath="SWC/Sys_Runa4/PP_A_plus_2B_plus_C_plus_D" path="Wrapper_SWC/SWC/Sys_Runa4/PP_A_plus_2B_plus_C_plus_D" modelRef="model002">
+        <uint16/>
+      </outport>
+      <outport portNumber="2" name="IRV_A_plus_2B_plus_C_plus_D" physicalPath="SWC/Sys_Runa4/IRV_A_plus_2B_plus_C_plus_D" path="Wrapper_SWC/SWC/Sys_Runa4/IRV_A_plus_2B_plus_C_plus_D" modelRef="model002">
+        <uint16/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="SWC/Sys_Runa5" path="Wrapper_SWC/SWC/Sys_Runa5" sampleTime="0.01" name="Sys_Runa5" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="IRV_A_plus_2B_plus_C_plus_D" physicalPath="SWC/Sys_Runa5/IRV_A_plus_2B_plus_C_plus_D" path="Wrapper_SWC/SWC/Sys_Runa5/IRV_A_plus_2B_plus_C_plus_D" modelRef="model002" signalName="IRV_A_plus_2B_plus_C_plus_D">
+        <uint16/>
+      </inport>
+      <outport portNumber="1" name="PP_A_plus_2B_plus_C_plus_D" physicalPath="SWC/Sys_Runa5/PP_A_plus_2B_plus_C_plus_D" path="Wrapper_SWC/SWC/Sys_Runa5/PP_A_plus_2B_plus_C_plus_D" modelRef="model002">
+        <uint16/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.57" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200427T091915\tmp_ut_ar_server_as_sl_function\SWC.slx" creationDate="2019-10-02T12:31:08" modificationDate="2020-04-27T09:18:16" initScript="C:\Users\developer\AppData\Local\Temp\ut20200427T091915\tmp_ut_ar_server_as_sl_function\Init.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20220222T115036_10860\tmp_ar_activated_runnables_02\ut_results\AddModelInfo.xml" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20220222T115036_10860\tmp_ar_activated_runnables_02\Wrapper_activated_runnables.slx" modelCreationDate="2022-02-22T11:50:38" creator="developer">
+  <toolInfo name="Matlab" release="(R2021a)" version="9.10" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2021a)" version="10.3" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20220222T115036_10860\tmp_ar_activated_runnables_02\Wrapper_activated_runnables.slx" creationDate="2022-02-22T11:50:38" modificationDate="2022-02-22T11:50:43">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_activated_runnables" path="" sampleTime="0.01" name="Wrapper_activated_runnables" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="Wrapper_activated_runnables/in1" path="in1">
+        <int32/>
+      </inport>
+      <inport portNumber="2" name="in2" physicalPath="Wrapper_activated_runnables/in2" path="in2">
+        <int32/>
+      </inport>
+      <inport portNumber="3" name="in3" physicalPath="Wrapper_activated_runnables/in3" path="in3">
+        <int32/>
+      </inport>
+      <inport portNumber="0" name="dsin_op_X_y" physicalPath="Wrapper_activated_runnables/Mock_op_X/dsin_op_X_y" path="Mock_op_X/dsin_op_X_y" signalName="dsin_op_X_y">
+        <int32/>
+        <dataStoreMemory signalName="dsin_op_X_y"/>
+      </inport>
+      <inport portNumber="0" name="dsin_op_Z_y" physicalPath="Wrapper_activated_runnables/Mock_op_Z/dsin_op_Z_y" path="Mock_op_Z/dsin_op_Z_y" signalName="dsin_op_Z_y">
+        <int32/>
+        <dataStoreMemory signalName="dsin_op_Z_y"/>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="Wrapper_activated_runnables/out1" path="out1">
+        <int32/>
+      </outport>
+      <outport portNumber="2" name="out2" physicalPath="Wrapper_activated_runnables/out2" path="out2">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="out3" physicalPath="Wrapper_activated_runnables/out3" path="out3">
+        <int32/>
+      </outport>
+      <outport portNumber="0" name="dsout_op_X_u" physicalPath="Wrapper_activated_runnables/Mock_op_X/dsout_op_X_u" path="Mock_op_X/dsout_op_X_u" signalName="dsout_op_X_u">
+        <int32/>
+        <dataStoreMemory signalName="dsout_op_X_u"/>
+      </outport>
+      <outport portNumber="0" name="dsout_op_Z_u" physicalPath="Wrapper_activated_runnables/Mock_op_Z/dsout_op_Z_u" path="Mock_op_Z/dsout_op_Z_u" signalName="dsout_op_Z_u">
+        <int32/>
+        <dataStoreMemory signalName="dsout_op_Z_u"/>
+      </outport>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="activated_runnables/sub_A" path="activated_runnables/activated_runnables/sub_A" sampleTime="0.01" name="sub_A" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="activated_runnables/sub_A/in" path="activated_runnables/activated_runnables/sub_A/in" modelRef="model002">
+        <int32/>
+      </inport>
+      <inport portNumber="0" name="dsin_op_X_y" physicalPath="Wrapper_activated_runnables/Mock_op_X/dsin_op_X_y" path="Mock_op_X/dsin_op_X_y" signalName="dsin_op_X_y">
+        <int32/>
+        <dataStoreMemory signalName="dsin_op_X_y"/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="activated_runnables/sub_A/out" path="activated_runnables/activated_runnables/sub_A/out" modelRef="model002">
+        <int32/>
+      </outport>
+      <outport portNumber="0" name="dsout_op_X_u" physicalPath="Wrapper_activated_runnables/Mock_op_X/dsout_op_X_u" path="Mock_op_X/dsout_op_X_u" signalName="dsout_op_X_u">
+        <int32/>
+        <dataStoreMemory signalName="dsout_op_X_u"/>
+      </outport>
+      <slfunc_caller path="activated_runnables/activated_runnables/sub_A/Function Caller" pathCaller="activated_runnables/sub_A/Function Caller" pathFunction="Wrapper_activated_runnables/Mock_op_X"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="activated_runnables/sub_C" path="activated_runnables/activated_runnables/sub_C" sampleTime="0.01" name="sub_C" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in" physicalPath="activated_runnables/sub_C/in" path="activated_runnables/activated_runnables/sub_C/in" modelRef="model002">
+        <int32/>
+      </inport>
+      <inport portNumber="0" name="dsin_op_Z_y" physicalPath="Wrapper_activated_runnables/Mock_op_Z/dsin_op_Z_y" path="Mock_op_Z/dsin_op_Z_y" signalName="dsin_op_Z_y">
+        <int32/>
+        <dataStoreMemory signalName="dsin_op_Z_y"/>
+      </inport>
+      <outport portNumber="1" name="out" physicalPath="activated_runnables/sub_C/out" path="activated_runnables/activated_runnables/sub_C/out" modelRef="model002">
+        <int32/>
+      </outport>
+      <outport portNumber="0" name="dsout_op_Z_u" physicalPath="Wrapper_activated_runnables/Mock_op_Z/dsout_op_Z_u" path="Mock_op_Z/dsout_op_Z_u" signalName="dsout_op_Z_u">
+        <int32/>
+        <dataStoreMemory signalName="dsout_op_Z_u"/>
+      </outport>
+      <slfunc_caller path="activated_runnables/activated_runnables/sub_C/Function Caller" pathCaller="activated_runnables/sub_C/Function Caller" pathFunction="Wrapper_activated_runnables/Mock_op_Z"/>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="5.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20220222T115036_10860\tmp_ar_activated_runnables_02\activated_runnables.slx" creationDate="2022-01-21T16:14:15" modificationDate="2022-02-22T11:26:56"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="226">
+	<Scope uid="226" name="top_A" path="sf_inherit_param_sl/top_A" sampleTime="1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="sf_inherit_param_sl/top_A" subsystemLogging="on">
+		<OutPort name="out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_100" signalName="y" signalType="double" isFloat="yes">
+				<ifName ifid="if_100" lsb="1" offset="0" displayName="out1" identifier="OUTPUT:out1" />
+			</Variable>
+		</OutPort>
+		<Calibration name="c1" path="sf_inherit_param_sl/top_A/Chart1" physicalPath="sf_inherit_param_sl/top_A/Chart1" origin="explicit_param" startIdx="1">
+			<CalibrationUsage path="sf_inherit_param_sl/top_A/Chart1" physicalPath="sf_inherit_param_sl/top_A/Chart1" blockAttribute="Parameter" />
+			<Variable varid="varif_101" width1="3" signalType="double" signalDim="[1 3]" isFloat="yes">
+				<ifName ifid="if_102" index1="1" initValue="3.0" lsb="1" offset="0" displayName="c1(1)" identifier="PARAMETER:Chart1/c1(1)" />
+				<ifName ifid="if_103" index1="2" initValue="4.0" lsb="1" offset="0" displayName="c1(2)" identifier="PARAMETER:Chart1/c1(2)" />
+				<ifName ifid="if_104" index1="3" initValue="5.0" lsb="1" offset="0" displayName="c1(3)" identifier="PARAMETER:Chart1/c1(3)" />
+			</Variable>
+		</Calibration>
+		<Calibration name="c2" path="sf_inherit_param_sl/top_A/Chart1" physicalPath="sf_inherit_param_sl/top_A/Chart1" origin="explicit_param" startIdx="1">
+			<CalibrationUsage path="sf_inherit_param_sl/top_A/Chart1" physicalPath="sf_inherit_param_sl/top_A/Chart1" blockAttribute="Parameter" />
+			<Variable varid="varif_105" width1="3" width2="2" signalType="double" signalDim="[2 3 2]" isFloat="yes">
+				<ifName ifid="if_109" index1="1" index2="1" initValue="2.0" lsb="1" offset="0" displayName="c2(1)(1)" identifier="PARAMETER:Chart1/c2(1)(1)" />
+				<ifName ifid="if_111" index1="2" index2="1" initValue="2.0" lsb="1" offset="0" displayName="c2(2)(1)" identifier="PARAMETER:Chart1/c2(2)(1)" />
+				<ifName ifid="if_113" index1="3" index2="1" initValue="2.0" lsb="1" offset="0" displayName="c2(3)(1)" identifier="PARAMETER:Chart1/c2(3)(1)" />
+				<ifName ifid="if_110" index1="1" index2="2" initValue="4.0" lsb="1" offset="0" displayName="c2(1)(2)" identifier="PARAMETER:Chart1/c2(1)(2)" />
+				<ifName ifid="if_112" index1="2" index2="2" initValue="5.0" lsb="1" offset="0" displayName="c2(2)(2)" identifier="PARAMETER:Chart1/c2(2)(2)" />
+				<ifName ifid="if_114" index1="3" index2="2" initValue="6.0" lsb="1" offset="0" displayName="c2(3)(2)" identifier="PARAMETER:Chart1/c2(3)(2)" />
+			</Variable>
+		</Calibration>
+		<Model name="sf_inherit_param_sl" modelPath="/E:/ModelsDev/SL/SFInheritParam/ml2015asp1/sf_inherit_param_sl.mdl" type="SimulinkModel" />
+		<Scope uid="225" name="Chart1" path="sf_inherit_param_sl/top_A/Chart1" sampleTime="1" scopeKind="SUT" type="SimulinkScope" kind="STATEFLOW" physicalPath="sf_inherit_param_sl/top_A/Chart1" subsystemLogging="on">
+			<OutPort name="y" portNumber="1" compositeSig="none">
+				<Variable varid="varif_118" signalName="y" signalType="double" isFloat="yes">
+					<ifName ifid="if_118" lsb="1" offset="0" displayName="y" identifier="OUTPUT:y" />
+				</Variable>
+			</OutPort>
+			<Calibration name="c1" path="sf_inherit_param_sl/top_A/Chart1" physicalPath="sf_inherit_param_sl/top_A/Chart1" origin="explicit_param" startIdx="1">
+				<CalibrationUsage path="sf_inherit_param_sl/top_A/Chart1" physicalPath="sf_inherit_param_sl/top_A/Chart1" blockAttribute="Parameter" />
+				<Variable varid="varif_119" width1="3" signalType="double" signalDim="[1 3]" isFloat="yes">
+					<ifName ifid="if_120" index1="1" initValue="3.0" lsb="1" offset="0" displayName="c1(1)" identifier="PARAMETER:c1(1)" />
+					<ifName ifid="if_121" index1="2" initValue="4.0" lsb="1" offset="0" displayName="c1(2)" identifier="PARAMETER:c1(2)" />
+					<ifName ifid="if_122" index1="3" initValue="5.0" lsb="1" offset="0" displayName="c1(3)" identifier="PARAMETER:c1(3)" />
+				</Variable>
+			</Calibration>
+			<Calibration name="c2" path="sf_inherit_param_sl/top_A/Chart1" physicalPath="sf_inherit_param_sl/top_A/Chart1" origin="explicit_param" startIdx="1">
+				<CalibrationUsage path="sf_inherit_param_sl/top_A/Chart1" physicalPath="sf_inherit_param_sl/top_A/Chart1" blockAttribute="Parameter" />
+				<Variable varid="varif_123" width1="3" width2="2" signalType="double" signalDim="[2 3 2]" isFloat="yes">
+					<ifName ifid="if_127" index1="1" index2="1" initValue="2.0" lsb="1" offset="0" displayName="c2(1)(1)" identifier="PARAMETER:c2(1)(1)" />
+					<ifName ifid="if_129" index1="2" index2="1" initValue="2.0" lsb="1" offset="0" displayName="c2(2)(1)" identifier="PARAMETER:c2(2)(1)" />
+					<ifName ifid="if_131" index1="3" index2="1" initValue="2.0" lsb="1" offset="0" displayName="c2(3)(1)" identifier="PARAMETER:c2(3)(1)" />
+					<ifName ifid="if_128" index1="1" index2="2" initValue="4.0" lsb="1" offset="0" displayName="c2(1)(2)" identifier="PARAMETER:c2(1)(2)" />
+					<ifName ifid="if_130" index1="2" index2="2" initValue="5.0" lsb="1" offset="0" displayName="c2(2)(2)" identifier="PARAMETER:c2(2)(2)" />
+					<ifName ifid="if_132" index1="3" index2="2" initValue="6.0" lsb="1" offset="0" displayName="c2(3)(2)" identifier="PARAMETER:c2(3)(2)" />
+				</Variable>
+			</Calibration>
+			<Model name="sf_inherit_param_sl" modelPath="/E:/ModelsDev/SL/SFInheritParam/ml2015asp1/sf_inherit_param_sl.mdl" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

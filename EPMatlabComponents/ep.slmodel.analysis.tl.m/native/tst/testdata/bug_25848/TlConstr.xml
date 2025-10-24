@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architectureConstraints>
+  <scope path="top_A/Subsystem/top_A">
+    <assumptions origin="tl_indexsearch:input">
+      <signalSignal signal1="top_A/Subsystem/top_A/valid_Prelookup/ax1(1)" relation="les" signal2="top_A/Subsystem/top_A/valid_Prelookup/ax1(2)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/valid_Prelookup/ax1(2)" relation="les" signal2="top_A/Subsystem/top_A/valid_Prelookup/ax1(3)"/>
+    </assumptions>
+    <assumptions origin="tl_lookup1d:input">
+      <signalSignal signal1="top_A/Subsystem/top_A/valid_LUT/x1(1)" relation="les" signal2="top_A/Subsystem/top_A/valid_LUT/x1(2)"/>
+      <signalSignal signal1="top_A/Subsystem/top_A/valid_LUT/x1(2)" relation="les" signal2="top_A/Subsystem/top_A/valid_LUT/x1(3)"/>
+    </assumptions>
+  </scope>
+</architectureConstraints>

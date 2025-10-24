@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_05\ut_results\AddModelInfo.xml"  initScript="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_05\init_model.m" modelVersion="1.52" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_05\funcs_with_subsystem_names.slx" modelCreationDate="2019-05-17T09:00:46" creator="developer">
+  <toolInfo name="Matlab" release="(R2019b)" version="9.7" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2019b)" version="10.0" patchLevel=""/>
+  <model modelKind="model" modelID="model001" modelVersion="1.52" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_05\funcs_with_subsystem_names.slx" creationDate="2019-05-17T09:00:46" initScript="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_05\init_model.m">
+    <subsystem subsysID="ss1" physicalPath="funcs_with_subsystem_names" path="" sampleTime="2" name="funcs_with_subsystem_names" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="funcs_with_subsystem_names/In1" path="In1" signalName="SigA">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="funcs_with_subsystem_names/Out1" path="Out1" signalName="SigB">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="funcs_with_subsystem_names/top_A/sub_X" path="top_A/sub_X" sampleTime="2" name="sub_X" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="funcs_with_subsystem_names/top_A/sub_X/In1" path="top_A/sub_X/In1" signalName="SigA">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="funcs_with_subsystem_names/top_A/sub_X/Out1" path="top_A/sub_X/Out1" signalName="SigF">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="funcs_with_subsystem_names/top_A/sub_X/sub_C" path="top_A/sub_X/sub_C" sampleTime="2" name="sub_C" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="funcs_with_subsystem_names/top_A/sub_X/sub_C/In1" path="top_A/sub_X/sub_C/In1" signalName="SigA">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="funcs_with_subsystem_names/top_A/sub_X/sub_C/Out1" path="top_A/sub_X/sub_C/Out1" signalName="SigE">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="funcs_with_subsystem_names/top_A/sub_Y" path="top_A/sub_Y" sampleTime="2" name="sub_Y" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="funcs_with_subsystem_names/top_A/sub_Y/In1" path="top_A/sub_Y/In1" signalName="SigA">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="funcs_with_subsystem_names/top_A/sub_Y/Out1" path="top_A/sub_Y/Out1" signalName="SigJ">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="funcs_with_subsystem_names/top_A/sub_Y/sub_C" path="top_A/sub_Y/sub_C" sampleTime="2" name="sub_C" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="funcs_with_subsystem_names/top_A/sub_Y/sub_C/In1" path="top_A/sub_Y/sub_C/In1" signalName="SigA">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="funcs_with_subsystem_names/top_A/sub_Y/sub_C/Out1" path="top_A/sub_Y/sub_C/Out1" signalName="SigI">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

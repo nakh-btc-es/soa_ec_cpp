@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="Model.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1961\Model_ert_rtw"/>
+    <File annotate="yes" id="ID72" kind="source" name="Model_InnerSubsystemNoFctFound.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1961\Model_ert_rtw"/>
+    <File annotate="yes" id="ID73" kind="source" name="sub.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1961\Model_ert_rtw"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1961"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_ep_1961\Model_ert_rtw"/>
+    <IncludePath path="C:\Matlab\R2019b\extern\include"/>
+    <IncludePath path="C:\Matlab\R2019b\simulink\include"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\src"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\src\ext_mode\common"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\ert"/>
+  </IncludePaths>
+  <Functions archName="Model [C-Code]">
+    <Function fileref="ID71" initFunc="Model_initialize" name="Model_step">
+      <Interface>
+        <InterfaceObj kind="in" var="In_Main"/>
+        <InterfaceObj kind="out" var="Out_Main"/>
+        <InterfaceObj kind="cal" var="paramMain"/>
+        <InterfaceObj kind="cal" var="paramSub"/>
+        <InterfaceObj kind="disp" var="In_InnerSubsystemFctFound"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID72" initFunc="Model_initialize" name="Model_InnerSubsystemNoFctFound">
+      <Interface>
+        <InterfaceObj kind="in" var="In_InnerSubsystemNoFctFound"/>
+        <InterfaceObj kind="out" var="Out_InnerSubsystemNoFctFound"/>
+        <InterfaceObj kind="cal" var="paramSub"/>
+        <InterfaceObj kind="disp" var="In_InnerSubsystemFctFound"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID73" initFunc="Model_initialize" name="sub">
+      <Interface>
+        <InterfaceObj kind="in" var="In_InnerSubsystemFctFound"/>
+        <InterfaceObj kind="out" var="Out_InnerSubsystemFctFound"/>
+        <InterfaceObj kind="cal" var="paramSub"/>
+      </Interface>
+    </Function>
+  </Functions>
+</CodeModel>

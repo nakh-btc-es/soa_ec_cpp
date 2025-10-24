@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_defines_model\ut_results\AddModelInfo.xml" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_defines_model\Wrapper_defines_model.slx" modelCreationDate="2024-09-12T20:31:16" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_defines_model\Wrapper_defines_model.slx" creationDate="2024-09-12T20:31:16" modificationDate="2024-09-12T20:31:19">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_defines_model" path="" sampleTime="0.2" name="Wrapper_defines_model" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="Wrapper_defines_model/In1" path="In1">
+        <int16/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="Wrapper_defines_model/In2" path="In2">
+        <array size="2" startIndex="1">
+          <int16/>
+        </array>
+      </inport>
+      <parameter name="ParamX" path="defines_model/defines_model/Runna1_sub/Constant4" physicalPath="defines_model/Runna1_sub/Constant4" modelRef="model002" origin="explicit_param" workspace="ParamX" initValue="-2.0">
+        <int16/>
+        <usageContext path="defines_model/defines_model/Runna1_sub/Constant4" physicalPath="defines_model/Runna1_sub/Constant4" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <parameter name="ParamY" path="defines_model/defines_model/Runna2_sub/Constant4" physicalPath="defines_model/Runna2_sub/Constant4" modelRef="model002" origin="explicit_param" workspace="ParamY">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-1.0">
+            <int16/>
+          </signal>
+          <signal index="2" initValue="1.0">
+            <int16/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="defines_model/defines_model/Runna2_sub/Constant4" physicalPath="defines_model/Runna2_sub/Constant4" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="Wrapper_defines_model/Out1" path="Out1">
+        <int16/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="Wrapper_defines_model/Out2" path="Out2">
+        <array size="2" startIndex="1">
+          <int16/>
+        </array>
+      </outport>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss7"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="defines_model/Runna1_sub" path="defines_model/defines_model/Runna1_sub" sampleTime="0.2" name="Runna1_sub" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="defines_model/Runna1_sub/In1" path="defines_model/defines_model/Runna1_sub/In1" modelRef="model002">
+        <int16/>
+      </inport>
+      <parameter name="ParamX" path="defines_model/defines_model/Runna1_sub/Constant4" physicalPath="defines_model/Runna1_sub/Constant4" modelRef="model002" origin="explicit_param" workspace="ParamX" initValue="-2.0">
+        <int16/>
+        <usageContext path="defines_model/defines_model/Runna1_sub/Constant4" physicalPath="defines_model/Runna1_sub/Constant4" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="defines_model/Runna1_sub/Out1" path="defines_model/defines_model/Runna1_sub/Out1" modelRef="model002">
+        <int16/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="defines_model/Runna2_sub" path="defines_model/defines_model/Runna2_sub" sampleTime="0.2" name="Runna2_sub" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="defines_model/Runna2_sub/In1" path="defines_model/defines_model/Runna2_sub/In1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <int16/>
+        </array>
+      </inport>
+      <parameter name="ParamY" path="defines_model/defines_model/Runna2_sub/Constant4" physicalPath="defines_model/Runna2_sub/Constant4" modelRef="model002" origin="explicit_param" workspace="ParamY">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-1.0">
+            <int16/>
+          </signal>
+          <signal index="2" initValue="1.0">
+            <int16/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="defines_model/defines_model/Runna2_sub/Constant4" physicalPath="defines_model/Runna2_sub/Constant4" simulinkBlockType="Constant" blockAttribute="Value" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="defines_model/Runna2_sub/Out1" path="defines_model/defines_model/Runna2_sub/Out1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <int16/>
+        </array>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.6" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_defines_model\defines_model.slx" creationDate="2023-04-25T14:01:45" modificationDate="2024-09-12T20:31:14"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

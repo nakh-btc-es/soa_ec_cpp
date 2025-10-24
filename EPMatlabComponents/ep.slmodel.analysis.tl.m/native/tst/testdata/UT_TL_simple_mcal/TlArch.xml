@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.44" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_simple_mcal\simple_mcal.mdl" modelCreationDate="2008-07-08T15:32:28" creator="alex">
+  <toolInfo name="Matlab" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.44" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_simple_mcal\simple_mcal.mdl" creationDate="2008-07-08T15:32:28" modificationDate="2021-11-18T10:03:10">
+    <subsystem subsysID="ss1" physicalPath="simple_mcal/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="5" name="top_A" scopeKind="SUT" kind="subsystem">
+      <calibration name="var_dd_b.b" path="top_A/Subsystem/top_A/sub_B2/Relay1" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Relay1" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/osc_vars1/var_dd_b/Components/b">
+        <miltype initValue="-2.0000000000000000e-02">
+          <double/>
+        </miltype>
+        <siltype initValue="-2.0000000000000000e-02">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e-08" offset="0.0000000000000000e+00" min="-2.1474836480000000e+01" max="2.1474836470000000e+01"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B2/Relay1" targetLinkBlockKind="TL_Relay" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Relay1" simulinkBlockType="Relay" blockAttribute="offoutput"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_B3/Relay1" targetLinkBlockKind="TL_Relay" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B3/Relay1" simulinkBlockType="Relay" blockAttribute="offoutput"/>
+      </calibration>
+      <calibration name="var_dd_b.a" path="top_A/Subsystem/top_A/sub_B2/Relay1" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Relay1" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/osc_vars1/var_dd_b/Components/a">
+        <miltype initValue="2.0000000000000000e-02">
+          <double/>
+        </miltype>
+        <siltype initValue="2.0000000000000000e-02">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e-08" offset="0.0000000000000000e+00" min="-2.1474836480000000e+01" max="2.1474836470000000e+01"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B2/Relay1" targetLinkBlockKind="TL_Relay" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Relay1" simulinkBlockType="Relay" blockAttribute="onoutput"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_B3/Relay1" targetLinkBlockKind="TL_Relay" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B3/Relay1" simulinkBlockType="Relay" blockAttribute="onoutput"/>
+      </calibration>
+      <calibration name="var_b" path="top_A/Subsystem/top_A/sub_B2/Relay1" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Relay1" origin="explicit_param" restricted="false" workspace="var_b">
+        <miltype initValue="1.0000000000000000e-02">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e-02">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e-08" offset="0.0000000000000000e+00" min="-2.1474836480000000e+01" max="2.1474836470000000e+01"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B2/Relay1" targetLinkBlockKind="TL_Relay" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Relay1" simulinkBlockType="Relay" blockAttribute="onswitch" restriction="tl_relay:onswitch"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_B2/Relay1" targetLinkBlockKind="TL_Relay" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Relay1" simulinkBlockType="Relay" blockAttribute="offswitch" restriction="tl_relay:offswitch"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_B3/Relay1" targetLinkBlockKind="TL_Relay" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B3/Relay1" simulinkBlockType="Relay" blockAttribute="onswitch" restriction="tl_relay:onswitch"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_B3/Relay1" targetLinkBlockKind="TL_Relay" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B3/Relay1" simulinkBlockType="Relay" blockAttribute="offswitch" restriction="tl_relay:offswitch"/>
+      </calibration>
+      <calibration name="var_dd_a" path="top_A/Subsystem/top_A/Const2" physicalPath="simple_mcal/top_A/Subsystem/top_A/Const2" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/osc_vars1/var_dd_a">
+        <miltype initValue="2.0400000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="2.0400000000000000e+00">
+          <Float32/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Const2" targetLinkBlockKind="TL_Constant" physicalPath="simple_mcal/top_A/Subsystem/top_A/Const2" simulinkBlockType="Constant" blockAttribute="output"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_B1/Const2" targetLinkBlockKind="TL_Constant" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B1/Const2" simulinkBlockType="Constant" blockAttribute="output"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_B2/Const1" targetLinkBlockKind="TL_Constant" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Const1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="var_a" path="top_A/Subsystem/top_A/Const1" physicalPath="simple_mcal/top_A/Subsystem/top_A/Const1" origin="explicit_param" restricted="false" workspace="var_a">
+        <miltype initValue="8.9000000000000004e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="8.9000000000000004e+00">
+          <fixedPoint baseType="Int16" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2799609375000000e+02"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Const1" targetLinkBlockKind="TL_Constant" physicalPath="simple_mcal/top_A/Subsystem/top_A/Const1" simulinkBlockType="Constant" blockAttribute="output"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_B1/Const1" targetLinkBlockKind="TL_Constant" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B1/Const1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="simple_mcal/top_A/Subsystem/top_A/Out1" path="top_A/Subsystem/top_A/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e-08" offset="0.0000000000000000e+00" min="-3.2768000000000001e-04" max="3.2767000000000001e-04"/>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B1" path="top_A/Subsystem/top_A/sub_B1" sampleTime="5" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <calibration name="var_dd_a" path="top_A/Subsystem/top_A/sub_B1/Const2" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B1/Const2" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/osc_vars1/var_dd_a">
+        <miltype initValue="2.0400000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="2.0400000000000000e+00">
+          <Float32/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B1/Const2" targetLinkBlockKind="TL_Constant" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B1/Const2" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <calibration name="var_a" path="top_A/Subsystem/top_A/sub_B1/Const1" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B1/Const1" origin="explicit_param" restricted="false" workspace="var_a">
+        <miltype initValue="8.9000000000000004e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="8.9000000000000004e+00">
+          <fixedPoint baseType="Int16" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2799609375000000e+02"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B1/Const1" targetLinkBlockKind="TL_Constant" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B1/Const1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B1/Out1" path="top_A/Subsystem/top_A/sub_B1/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e-08" offset="0.0000000000000000e+00" min="-3.2768000000000001e-04" max="3.2767000000000001e-04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2" path="top_A/Subsystem/top_A/sub_B2" sampleTime="5" name="sub_B2" scopeKind="SUT" kind="subsystem">
+      <calibration name="var_dd_b.b" path="top_A/Subsystem/top_A/sub_B2/Relay1" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Relay1" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/osc_vars1/var_dd_b/Components/b">
+        <miltype initValue="-2.0000000000000000e-02">
+          <double/>
+        </miltype>
+        <siltype initValue="-2.0000000000000000e-02">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e-08" offset="0.0000000000000000e+00" min="-2.1474836480000000e+01" max="2.1474836470000000e+01"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B2/Relay1" targetLinkBlockKind="TL_Relay" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Relay1" simulinkBlockType="Relay" blockAttribute="offoutput"/>
+      </calibration>
+      <calibration name="var_dd_b.a" path="top_A/Subsystem/top_A/sub_B2/Relay1" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Relay1" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/osc_vars1/var_dd_b/Components/a">
+        <miltype initValue="2.0000000000000000e-02">
+          <double/>
+        </miltype>
+        <siltype initValue="2.0000000000000000e-02">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e-08" offset="0.0000000000000000e+00" min="-2.1474836480000000e+01" max="2.1474836470000000e+01"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B2/Relay1" targetLinkBlockKind="TL_Relay" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Relay1" simulinkBlockType="Relay" blockAttribute="onoutput"/>
+      </calibration>
+      <calibration name="var_b" path="top_A/Subsystem/top_A/sub_B2/Relay1" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Relay1" origin="explicit_param" restricted="false" workspace="var_b">
+        <miltype initValue="1.0000000000000000e-02">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e-02">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e-08" offset="0.0000000000000000e+00" min="-2.1474836480000000e+01" max="2.1474836470000000e+01"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B2/Relay1" targetLinkBlockKind="TL_Relay" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Relay1" simulinkBlockType="Relay" blockAttribute="onswitch" restriction="tl_relay:onswitch"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_B2/Relay1" targetLinkBlockKind="TL_Relay" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Relay1" simulinkBlockType="Relay" blockAttribute="offswitch" restriction="tl_relay:offswitch"/>
+      </calibration>
+      <calibration name="var_dd_a" path="top_A/Subsystem/top_A/sub_B2/Const1" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Const1" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/osc_vars1/var_dd_a">
+        <miltype initValue="2.0400000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="2.0400000000000000e+00">
+          <Float32/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B2/Const1" targetLinkBlockKind="TL_Constant" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Const1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B2/Out1" path="top_A/Subsystem/top_A/sub_B2/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e-08" offset="0.0000000000000000e+00" min="-2.1474836480000000e+01" max="2.1474836470000000e+01"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B3" path="top_A/Subsystem/top_A/sub_B3" sampleTime="5" name="sub_B3" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B3/In1" path="top_A/Subsystem/top_A/sub_B3/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype initValue="2.0400000000000000e+00">
+          <Float32/>
+        </siltype>
+      </inport>
+      <calibration name="var_dd_b.b" path="top_A/Subsystem/top_A/sub_B3/Relay1" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B3/Relay1" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/osc_vars1/var_dd_b/Components/b">
+        <miltype initValue="-2.0000000000000000e-02">
+          <double/>
+        </miltype>
+        <siltype initValue="-2.0000000000000000e-02">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e-08" offset="0.0000000000000000e+00" min="-2.1474836480000000e+01" max="2.1474836470000000e+01"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B3/Relay1" targetLinkBlockKind="TL_Relay" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B3/Relay1" simulinkBlockType="Relay" blockAttribute="offoutput"/>
+      </calibration>
+      <calibration name="var_dd_b.a" path="top_A/Subsystem/top_A/sub_B3/Relay1" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B3/Relay1" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/osc_vars1/var_dd_b/Components/a">
+        <miltype initValue="2.0000000000000000e-02">
+          <double/>
+        </miltype>
+        <siltype initValue="2.0000000000000000e-02">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e-08" offset="0.0000000000000000e+00" min="-2.1474836480000000e+01" max="2.1474836470000000e+01"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B3/Relay1" targetLinkBlockKind="TL_Relay" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B3/Relay1" simulinkBlockType="Relay" blockAttribute="onoutput"/>
+      </calibration>
+      <calibration name="var_b" path="top_A/Subsystem/top_A/sub_B3/Relay1" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B3/Relay1" origin="explicit_param" restricted="false" workspace="var_b">
+        <miltype initValue="1.0000000000000000e-02">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e-02">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e-08" offset="0.0000000000000000e+00" min="-2.1474836480000000e+01" max="2.1474836470000000e+01"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B3/Relay1" targetLinkBlockKind="TL_Relay" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B3/Relay1" simulinkBlockType="Relay" blockAttribute="onswitch" restriction="tl_relay:onswitch"/>
+        <usageContext path="top_A/Subsystem/top_A/sub_B3/Relay1" targetLinkBlockKind="TL_Relay" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B3/Relay1" simulinkBlockType="Relay" blockAttribute="offswitch" restriction="tl_relay:offswitch"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="simple_mcal/top_A/Subsystem/top_A/sub_B3/Out1" path="top_A/Subsystem/top_A/sub_B3/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e-08" offset="0.0000000000000000e+00" min="-2.1474836480000000e+01" max="2.1474836470000000e+01"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

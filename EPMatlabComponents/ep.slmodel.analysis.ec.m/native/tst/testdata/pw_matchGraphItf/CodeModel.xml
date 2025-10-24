@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="detect_obstacle_endstop.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T154029_12748\tmp_ut_pw_matchGraphItf\powerwindow_ec_ert_rtw"/>
+    <File annotate="yes" id="ID72" kind="source" name="powerwindow_controller.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T154029_12748\tmp_ut_pw_matchGraphItf\powerwindow_ec_ert_rtw"/>
+    <File annotate="yes" id="ID73" kind="source" name="powerwindow_ec.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T154029_12748\tmp_ut_pw_matchGraphItf\powerwindow_ec_ert_rtw"/>
+    <File annotate="yes" id="ID74" kind="source" name="validate_driver.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T154029_12748\tmp_ut_pw_matchGraphItf\powerwindow_ec_ert_rtw"/>
+    <File annotate="yes" id="ID75" kind="source" name="validate_passenger.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T154029_12748\tmp_ut_pw_matchGraphItf\powerwindow_ec_ert_rtw"/>
+    <File annotate="no" id="ID76" kind="source" name="getSimulationTime.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T154029_12748\tmp_ut_pw_matchGraphItf\powerwindow_ec_ep_stubs"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20230912T154029_12748\tmp_ut_pw_matchGraphItf"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20230912T154029_12748\tmp_ut_pw_matchGraphItf\powerwindow_ec_ert_rtw"/>
+    <IncludePath path="C:\Matlab\R2021a\extern\include"/>
+    <IncludePath path="C:\Matlab\R2021a\simulink\include"/>
+    <IncludePath path="C:\Matlab\R2021a\rtw\c\src"/>
+    <IncludePath path="C:\Matlab\R2021a\rtw\c\src\ext_mode\common"/>
+    <IncludePath path="C:\Matlab\R2021a\rtw\c\ert"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="PORTABLE_WORDSIZES" value="1"/>
+  </Defines>
+  <Functions archName="powerwindow_ec [C-Code]">
+    <Function fileref="ID73" initFunc="powerwindow_ec_initialize" name="powerwindow_ec_step" preStepFunc="btcStepCounter">
+      <Interface>
+        <InterfaceObj kind="in" var="driver_up"/>
+        <InterfaceObj kind="in" var="driver_down"/>
+        <InterfaceObj kind="in" var="passenger_up"/>
+        <InterfaceObj kind="in" var="passenger_down"/>
+        <InterfaceObj kind="in" var="obstacle_position"/>
+        <InterfaceObj kind="in" var="window_position"/>
+        <InterfaceObj kind="out" var="obstacle_detection"/>
+        <InterfaceObj kind="out" var="move_up"/>
+        <InterfaceObj kind="out" var="move_down"/>
+        <InterfaceObj kind="cal" var="auto_down_time"/>
+        <InterfaceObj kind="cal" var="auto_up_time"/>
+        <InterfaceObj kind="cal" var="emergency_down_time"/>
+        <InterfaceObj kind="cal" var="position_endstop_top"/>
+        <InterfaceObj kind="disp" var="endstop_bottom"/>
+        <InterfaceObj kind="disp" var="endstop_top"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID72" initFunc="powerwindow_ec_initialize" name="powerwindow_controller" preStepFunc="btcStepCounter">
+      <Interface>
+        <InterfaceObj kind="in" var="rtu_driver_up"/>
+        <InterfaceObj kind="in" var="rtu_driver_down"/>
+        <InterfaceObj kind="in" var="rtu_passenger_up"/>
+        <InterfaceObj kind="in" var="rtu_passenger_down"/>
+        <InterfaceObj kind="in" var="rtu_obstacle_position"/>
+        <InterfaceObj kind="in" var="rtu_window_position"/>
+        <InterfaceObj kind="out" var="rty_obstacle_detection"/>
+        <InterfaceObj kind="out" var="rty_move_up"/>
+        <InterfaceObj kind="out" var="rty_move_down"/>
+        <InterfaceObj kind="cal" var="auto_down_time"/>
+        <InterfaceObj kind="cal" var="auto_up_time"/>
+        <InterfaceObj kind="cal" var="emergency_down_time"/>
+        <InterfaceObj kind="cal" var="position_endstop_top"/>
+        <InterfaceObj kind="disp" var="endstop_bottom"/>
+        <InterfaceObj kind="disp" var="endstop_top"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID74" initFunc="powerwindow_ec_initialize" name="validate_driver" preStepFunc="btcStepCounter">
+      <Interface>
+        <InterfaceObj kind="in" var="rtu_up"/>
+        <InterfaceObj kind="in" var="rtu_down"/>
+        <InterfaceObj kind="in" var="rtu_endstop_top"/>
+        <InterfaceObj kind="in" var="rtu_endstop_bottom"/>
+        <InterfaceObj kind="out" var="rty_validated_neutral"/>
+        <InterfaceObj kind="out" var="rty_validated_up"/>
+        <InterfaceObj kind="out" var="rty_validated_down"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID75" initFunc="powerwindow_ec_initialize" name="validate_passenger" preStepFunc="btcStepCounter">
+      <Interface>
+        <InterfaceObj kind="in" var="rtu_up"/>
+        <InterfaceObj kind="in" var="rtu_down"/>
+        <InterfaceObj kind="in" var="rtu_endstop_top"/>
+        <InterfaceObj kind="in" var="rtu_endstop_bottom"/>
+        <InterfaceObj kind="out" var="rty_validated_neutral"/>
+        <InterfaceObj kind="out" var="rty_validated_up"/>
+        <InterfaceObj kind="out" var="rty_validated_down"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="powerwindow_ec_initialize" name="detect_obstacle_endstop" preStepFunc="btcStepCounter">
+      <Interface>
+        <InterfaceObj kind="in" var="rtu_obstacle_position"/>
+        <InterfaceObj kind="in" var="rtu_window_position"/>
+        <InterfaceObj kind="in" var="rtu_move_up"/>
+        <InterfaceObj kind="out" var="rty_obstacle"/>
+        <InterfaceObj kind="out" var="rty_endstop_top"/>
+        <InterfaceObj kind="out" var="rty_endstop_bottom"/>
+        <InterfaceObj kind="cal" var="position_endstop_top"/>
+        <InterfaceObj kind="disp" var="endstop_bottom"/>
+        <InterfaceObj kind="disp" var="endstop_top"/>
+      </Interface>
+    </Function>
+  </Functions>
+</CodeModel>

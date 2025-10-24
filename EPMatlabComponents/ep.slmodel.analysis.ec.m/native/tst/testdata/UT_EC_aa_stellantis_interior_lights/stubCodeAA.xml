@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aa-component name="CourtLiApp" aa_version="R22-11" model_name="modified_CourtLiApp" matlab_version="R2024b">
+  <types>
+    <type typeId="t2" name="uint16_t" kind="primitive"/>
+    <type typeId="t1" name="uint8_t" kind="primitive"/>
+  </types>
+  <interfaces>
+    <interface name="InData_Rport">
+      <events>
+        <event eventId="ev1" name="DOOR_AJAR" typeRef="t1"/>
+        <event eventId="ev2" name="RKE_STATE" typeRef="t1"/>
+      </events>
+    </interface>
+    <interface name="CS_ActuatorData">
+      <methods>
+        <method methodId="met1" name="IntrLiPWM">
+          <in name="TarPWM" typeRef="t1"/>
+          <in name="TarTime" typeRef="t2"/>
+        </method>
+      </methods>
+    </interface>
+  </interfaces>
+  <ports>
+    <rport name="InData_Rport" instanceKey="CourtLiApp/CourtLiApp_RootSwComponentPrototype/InData_Rport">
+      <event-refs>
+        <event-ref eventRef="ev2" var="InData_Rport_RKE_STATE"/>
+        <event-ref eventRef="ev1" var="InData_Rport_DOOR_AJAR"/>
+      </event-refs>
+    </rport>
+    <rport name="CS_ActuatorData" instanceKey="CourtLiApp/CourtLiApp_RootSwComponentPrototype/CS_ActuatorData">
+      <method-refs>
+        <method-ref methodRef="met1" func="CS_ActuatorData_CS_ActuatorData_IntrLiPWM"/>
+      </method-refs>
+    </rport>
+  </ports>
+</aa-component>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="data_store_bus"/>
+    <Architecture id="id1" name="data_store_bus [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="data_store_bus.c:1:data_store_bus_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="in_a" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_a.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="in_a" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_a.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".in_a.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".in_a.b(3)" refId="id0"/>
+          <Path path=".b[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In2" refId="id0"/>
+        <Path path="in_d1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_d1.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In2" refId="id0"/>
+        <Path path="in_d1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_d1.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".in_d1.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".in_d1.b(3)" refId="id0"/>
+          <Path path=".b[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="out_c" refId="id1"/>
+        <SignalMapping>
+          <Path path=".out_c.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="out_c" refId="id1"/>
+        <SignalMapping>
+          <Path path=".out_c.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".out_c.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".out_c.b(3)" refId="id0"/>
+          <Path path=".b[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out2" refId="id0"/>
+        <Path path="out_d3" refId="id1"/>
+        <SignalMapping>
+          <Path path=".out_d3.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out2" refId="id0"/>
+        <Path path="out_d3" refId="id1"/>
+        <SignalMapping>
+          <Path path=".out_d3.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".out_d3.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".out_d3.b(3)" refId="id0"/>
+          <Path path=".b[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_A" refId="id0"/>
+      <Path path="data_store_bus.c:1:data_store_bus_step/data_store_bus.c:1:sub_A" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_A/In1" refId="id0"/>
+        <Path path="rtu_In1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_a.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_A/In1" refId="id0"/>
+        <Path path="rtu_In1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_a.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".in_a.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".in_a.b(3)" refId="id0"/>
+          <Path path=".b[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_A/Data Store&#10;Write" refId="id0"/>
+        <Path path="bla_A" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BusStore1.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_A/Data Store&#10;Write" refId="id0"/>
+        <Path path="bla_A" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BusStore1.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".BusStore1.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".BusStore1.b(3)" refId="id0"/>
+          <Path path=".b[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_B" refId="id0"/>
+      <Path path="data_store_bus.c:1:data_store_bus_step/data_store_bus.c:1:sub_B" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_B/Data Store&#10;Read" refId="id0"/>
+        <Path path="bla_A" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BusStore1.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_B/Data Store&#10;Read" refId="id0"/>
+        <Path path="bla_A" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BusStore1.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".BusStore1.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".BusStore1.b(3)" refId="id0"/>
+          <Path path=".b[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_B/Data Store&#10;Write" refId="id0"/>
+        <Path path="BusStore2" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BusStore2.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_B/Data Store&#10;Write" refId="id0"/>
+        <Path path="BusStore2" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BusStore2.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".BusStore2.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".BusStore2.b(3)" refId="id0"/>
+          <Path path=".b[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_C" refId="id0"/>
+      <Path path="data_store_bus.c:1:data_store_bus_step/data_store_bus.c:1:sub_C" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_C/Data Store&#10;Read" refId="id0"/>
+        <Path path="BusStore2" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BusStore2.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_C/Data Store&#10;Read" refId="id0"/>
+        <Path path="BusStore2" refId="id1"/>
+        <SignalMapping>
+          <Path path=".BusStore2.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".BusStore2.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".BusStore2.b(3)" refId="id0"/>
+          <Path path=".b[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_C/Out1" refId="id0"/>
+        <Path path="rty_Out1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".out_c.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_C/Out1" refId="id0"/>
+        <Path path="rty_Out1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".out_c.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".out_c.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".out_c.b(3)" refId="id0"/>
+          <Path path=".b[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_D3" refId="id0"/>
+      <Path path="data_store_bus.c:1:data_store_bus_step/data_store_bus.c:1:sub_D3" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_D3/Data Store&#10;Read" refId="id0"/>
+        <Path path="StoreSig_X2" refId="id1"/>
+        <SignalMapping>
+          <Path path=".StoreSig_X2.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_D3/Data Store&#10;Read" refId="id0"/>
+        <Path path="StoreSig_X2" refId="id1"/>
+        <SignalMapping>
+          <Path path=".StoreSig_X2.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".StoreSig_X2.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".StoreSig_X2.b(3)" refId="id0"/>
+          <Path path=".b[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_D3/Out1" refId="id0"/>
+        <Path path="out_d3" refId="id1"/>
+        <SignalMapping>
+          <Path path=".out_d3.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_D3/Out1" refId="id0"/>
+        <Path path="out_d3" refId="id1"/>
+        <SignalMapping>
+          <Path path=".out_d3.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".out_d3.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".out_d3.b(3)" refId="id0"/>
+          <Path path=".b[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_D1" refId="id0"/>
+      <Path path="data_store_bus.c:1:data_store_bus_step/model_sub_D1.c:1:model_sub_D1" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_D1/In1" refId="id0"/>
+        <Path path="in_d1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_d1.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_D1/In1" refId="id0"/>
+        <Path path="in_d1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_d1.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".in_d1.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".in_d1.b(3)" refId="id0"/>
+          <Path path=".b[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_D1/Data Store&#10;Write" refId="id0"/>
+        <Path path="alias_x1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".StoreSig_X1.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_D1/Data Store&#10;Write" refId="id0"/>
+        <Path path="alias_x1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".StoreSig_X1.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".StoreSig_X1.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".StoreSig_X1.b(3)" refId="id0"/>
+          <Path path=".b[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="sub_D2" refId="id0"/>
+      <Path path="data_store_bus.c:1:data_store_bus_step/model_sub_D2.c:1:model_sub_D2" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_D2/Data Store&#10;Read" refId="id0"/>
+        <Path path="alias_x1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".StoreSig_X1.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="sub_D2/Data Store&#10;Read" refId="id0"/>
+        <Path path="alias_x1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".StoreSig_X1.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".StoreSig_X1.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".StoreSig_X1.b(3)" refId="id0"/>
+          <Path path=".b[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_D2/Data Store&#10;Write" refId="id0"/>
+        <Path path="StoreSig_X2" refId="id1"/>
+        <SignalMapping>
+          <Path path=".StoreSig_X2.a" refId="id0"/>
+          <Path path=".a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="sub_D2/Data Store&#10;Write" refId="id0"/>
+        <Path path="StoreSig_X2" refId="id1"/>
+        <SignalMapping>
+          <Path path=".StoreSig_X2.b(1)" refId="id0"/>
+          <Path path=".b[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".StoreSig_X2.b(2)" refId="id0"/>
+          <Path path=".b[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".StoreSig_X2.b(3)" refId="id0"/>
+          <Path path=".b[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

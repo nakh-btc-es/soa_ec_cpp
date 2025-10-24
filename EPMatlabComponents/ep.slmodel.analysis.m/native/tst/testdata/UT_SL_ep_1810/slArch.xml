@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_ep_1810\init.m" modelVersion="1.670" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_ep_1810\sample_fidxt.slx" modelCreationDate="2015-01-28T14:40:34" creator="Wolfgang Meincke">
+  <toolInfo name="Matlab" release="(R2020a)" version="9.8" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020a)" version="10.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.670" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_ep_1810\sample_fidxt.slx" creationDate="2015-01-28T14:40:34" modificationDate="2024-10-30T14:00:59" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ut_ep_1810\init.m">
+    <subsystem subsysID="ss1" physicalPath="sample_fidxt" path="" sampleTime="0.01" name="sample_fidxt" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="driver_up" physicalPath="sample_fidxt/driver_up" path="driver_up" signalName="in">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.01,0)" wordLength="16" isSigned="0" slope="0.01" bias="0.0" min="0.0" max="1.0"/>
+      </inport>
+      <parameter name="K" path="Subsystem/Gain" physicalPath="sample_fidxt/Subsystem/Gain" origin="explicit_param" workspace="K" initValue="100.0">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.01,0)" wordLength="16" isSigned="0" slope="0.01" bias="0.0" min="0.0" max="255.0"/>
+        <usageContext path="Subsystem/Gain" physicalPath="sample_fidxt/Subsystem/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="slope" path="Subsystem/Gain" physicalPath="sample_fidxt/Subsystem/Gain" origin="explicit_param" workspace="slope" initValue="0.01">
+        <double/>
+        <usageContext path="Subsystem/Gain" physicalPath="sample_fidxt/Subsystem/Gain" simulinkBlockType="Gain"/>
+        <usageContext path="driver_up" physicalPath="sample_fidxt/driver_up" simulinkBlockType="Inport"/>
+      </parameter>
+      <outport portNumber="1" name="move_down" physicalPath="sample_fidxt/move_down" path="move_down" signalName="out">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.01,0)" wordLength="16" isSigned="0" slope="0.01" bias="0.0" min="0.0" max="1.0"/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="sample_fidxt/Subsystem" path="Subsystem" sampleTime="0.01" name="Subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="driver_up" physicalPath="sample_fidxt/Subsystem/driver_up" path="Subsystem/driver_up" signalName="in">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.01,0)" wordLength="16" isSigned="0" slope="0.01" bias="0.0" min="0.0" max="1.0"/>
+      </inport>
+      <parameter name="K" path="Subsystem/Gain" physicalPath="sample_fidxt/Subsystem/Gain" origin="explicit_param" workspace="K" initValue="100.0">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.01,0)" wordLength="16" isSigned="0" slope="0.01" bias="0.0" min="0.0" max="255.0"/>
+        <usageContext path="Subsystem/Gain" physicalPath="sample_fidxt/Subsystem/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="slope" path="Subsystem/Gain" physicalPath="sample_fidxt/Subsystem/Gain" origin="explicit_param" workspace="slope" initValue="0.01">
+        <double/>
+        <usageContext path="Subsystem/Gain" physicalPath="sample_fidxt/Subsystem/Gain" simulinkBlockType="Gain"/>
+      </parameter>
+      <outport portNumber="1" name="move_down" physicalPath="sample_fidxt/Subsystem/move_down" path="Subsystem/move_down" signalName="out">
+        <fixedPoint simulinkTypeName="fixdt(0,16,0.01,0)" wordLength="16" isSigned="0" slope="0.01" bias="0.0" min="0.0" max="1.0"/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

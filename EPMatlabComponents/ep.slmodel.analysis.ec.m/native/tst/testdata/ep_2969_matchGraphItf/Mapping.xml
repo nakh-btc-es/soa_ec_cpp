@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="sample4"/>
+    <Architecture id="id1" name="sample4 [C-Code]"/>
+    <ScopeMapping>
+      <Path path="userfcn/A_unit" refId="id0"/>
+      <Path path="A_unit.c:1:A_unit" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="userfcn/A_unit/IN1" refId="id0"/>
+        <Path path="l_IN1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="userfcn/A_unit/IN2" refId="id0"/>
+        <Path path="l_IN2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="userfcn/A_unit/IN3" refId="id0"/>
+        <Path path="l_IN3" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="userfcn/A_unit/A1" refId="id0"/>
+        <Path path="l_A1" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="userfcn/B_unit" refId="id0"/>
+      <Path path="B_unit.c:1:B_unit" refId="id1"/>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="userfcn/B_unit/B1" refId="id0"/>
+        <Path path="l_B1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="userfcn/B_unit/B2" refId="id0"/>
+        <Path path="l_B2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

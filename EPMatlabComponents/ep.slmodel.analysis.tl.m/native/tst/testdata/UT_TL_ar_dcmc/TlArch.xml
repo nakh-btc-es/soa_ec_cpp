@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.1291" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_ar_dcmc\dcmc.mdl" modelCreationDate="1999-04-29T14:43:10" creator="KlausG">
+  <toolInfo name="Matlab" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1291" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_ar_dcmc\dcmc.mdl" creationDate="1999-04-29T14:43:10" modificationDate="2021-11-15T15:45:31">
+    <subsystem subsysID="ss1" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController" path="TL_VelocityController/Subsystem/TL_VelocityController" sampleTime="0.001" name="TL_VelocityController" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="ECU signal&#10;reference&#10;velocity" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/ECU signal&#10;reference&#10;velocity" path="TL_VelocityController/Subsystem/TL_VelocityController/ECU signal&#10;reference&#10;velocity">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="4.8828125000000000e-04" offset="0.0000000000000000e+00" min="-1.6000000000000000e+01" max="1.5999511718750000e+01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="ECU signal &#10;velocity" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/ECU signal &#10;velocity" path="TL_VelocityController/Subsystem/TL_VelocityController/ECU signal &#10;velocity">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="4.8828125000000000e-04" offset="0.0000000000000000e+00" min="-1.6000000000000000e+01" max="1.5999511718750000e+01"/>
+        </siltype>
+      </inport>
+      <calibration name="Kp" path="TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/Kp" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/Kp" origin="explicit_param" restricted="false" workspace="Kp">
+        <miltype initValue="1.5000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.5000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="2.5000000000000000e-01" offset="0.0000000000000000e+00" min="-8.1920000000000000e+03" max="8.1917500000000000e+03"/>
+        </siltype>
+        <usageContext path="TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/Kp" targetLinkBlockKind="TL_Gain" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/Kp" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <outport portNumber="1" name="ECU UPi&#10;voltage" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/ECU UPi&#10;voltage" path="TL_VelocityController/Subsystem/TL_VelocityController/ECU UPi&#10;voltage">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.9531250000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.2799804687500000e+02"/>
+        </siltype>
+      </outport>
+      <display physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/sPI" path="TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/sPI" name="sPI" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="6.2500000000000000e-02" offset="0.0000000000000000e+00" min="-2.0480000000000000e+03" max="2.0479375000000000e+03"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/Force&#10;Actuator" path="TL_VelocityController/Subsystem/TL_VelocityController/Force&#10;Actuator" sampleTime="0.001" name="Force&#10;Actuator" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="(UPi)" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/Force&#10;Actuator/(UPi)" path="TL_VelocityController/Subsystem/TL_VelocityController/Force&#10;Actuator/(UPi)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="4.8828125000000000e-04" offset="0.0000000000000000e+00" min="-1.6000000000000000e+01" max="1.5999511718750000e+01"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="(EcuUPi)" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/Force&#10;Actuator/(EcuUPi)" path="TL_VelocityController/Subsystem/TL_VelocityController/Force&#10;Actuator/(EcuUPi)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="1.9531250000000000e-03" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.2799804687500000e+02"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller" path="TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller" sampleTime="0.001" name="PI_Controller" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="(RefVelocity)" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/(RefVelocity)" path="TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/(RefVelocity)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="2.5000000000000000e-01" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.6383750000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="(Velocity)" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/(Velocity)" path="TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/(Velocity)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="2.5000000000000000e-01" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.6383750000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="Kp" path="TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/Kp" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/Kp" origin="explicit_param" restricted="false" workspace="Kp">
+        <miltype initValue="1.5000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.5000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="2.5000000000000000e-01" offset="0.0000000000000000e+00" min="-8.1920000000000000e+03" max="8.1917500000000000e+03"/>
+        </siltype>
+        <usageContext path="TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/Kp" targetLinkBlockKind="TL_Gain" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/Kp" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <outport portNumber="1" name="(UPi)" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/(UPi)" path="TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/(UPi)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="4.8828125000000000e-04" offset="0.0000000000000000e+00" min="-1.6000000000000000e+01" max="1.5999511718750000e+01"/>
+        </siltype>
+      </outport>
+      <display physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/sPI" path="TL_VelocityController/Subsystem/TL_VelocityController/PI_Controller/sPI" name="sPI" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="6.2500000000000000e-02" offset="0.0000000000000000e+00" min="-2.0480000000000000e+03" max="2.0479375000000000e+03"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/Reference&#10;Velocity" path="TL_VelocityController/Subsystem/TL_VelocityController/Reference&#10;Velocity" sampleTime="0.001" name="Reference&#10;Velocity" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="(EcuRefVelocity)" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/Reference&#10;Velocity/(EcuRefVelocity)" path="TL_VelocityController/Subsystem/TL_VelocityController/Reference&#10;Velocity/(EcuRefVelocity)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="4.8828125000000000e-04" offset="0.0000000000000000e+00" min="-1.6000000000000000e+01" max="1.5999511718750000e+01"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="(RefVelocity)" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/Reference&#10;Velocity/(RefVelocity)" path="TL_VelocityController/Subsystem/TL_VelocityController/Reference&#10;Velocity/(RefVelocity)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="2.5000000000000000e-01" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.6383750000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/Velocity&#10;Sensor" path="TL_VelocityController/Subsystem/TL_VelocityController/Velocity&#10;Sensor" sampleTime="0.001" name="Velocity&#10;Sensor" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="(EcuVelocity)" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/Velocity&#10;Sensor/(EcuVelocity)" path="TL_VelocityController/Subsystem/TL_VelocityController/Velocity&#10;Sensor/(EcuVelocity)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="4.8828125000000000e-04" offset="0.0000000000000000e+00" min="-1.6000000000000000e+01" max="1.5999511718750000e+01"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="(Velocity)" physicalPath="dcmc/TL_VelocityController/Subsystem/TL_VelocityController/Velocity&#10;Sensor/(Velocity)" path="TL_VelocityController/Subsystem/TL_VelocityController/Velocity&#10;Sensor/(Velocity)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="UInt16" lsb="2.5000000000000000e-01" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="1.6383750000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

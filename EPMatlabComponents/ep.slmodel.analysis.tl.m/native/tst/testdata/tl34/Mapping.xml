@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="ReplaceableDataItems"/>
+    <Architecture id="id1" name="ReplaceableDataItems [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="controller/Subsystem/controller"/>
+      <Path refId="id1" path="ControllerMain.c:1:ControllerMain"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="throttle"/>
+        <Path refId="id1" path="throttle"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="speed"/>
+        <Path refId="id1" path="speed"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="EGO"/>
+        <Path refId="id1" path="EGO"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="press"/>
+        <Path refId="id1" path="pressure"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="fuel_rate"/>
+        <Path refId="id1" path="fuel_rate"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/AirflowCalculation/Discrete-Time&#10;Integrator(1)"/>
+        <Path refId="id1" path="SAirCalc1_Disc__Time_Integrator"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/AirflowCalculation/EGO GT Threshold(1)"/>
+        <Path refId="id1" path="SAirCalc1_EGO_GT_Threshold"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/AirflowCalculation/MAP x PC x speed(1)"/>
+        <Path refId="id1" path="SAirCalc1_MAP_x_PC_x_speed"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/AirflowCalculation/Saturation(1)"/>
+        <Path refId="id1" path="SAirCalc1_Saturation"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/AirflowCalculation/e0(1)"/>
+        <Path refId="id1" path="SAirCalc1_e0"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/AirflowCalculation/hold&#10;integrator(1)"/>
+        <Path refId="id1" path="SAirCalc1_hold_integrator"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/AirflowCalculation/not normal&#10;operation(1)"/>
+        <Path refId="id1" path="SAirCalc1_not_normal_operation"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/ControlLogic/Logical&#10;Operator(1)"/>
+        <Path refId="id1" path="SCntrl1_Logical_Operator"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/ControlLogic/Relational&#10;Operator(1)"/>
+        <Path refId="id1" path="SCntrl1_Relational_Operator"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/ControlLogic/Relational&#10;Operator1(1)"/>
+        <Path refId="id1" path="SCntrl1_Relational_Operator1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/ControlLogic/Relational&#10;Operator2(1)"/>
+        <Path refId="id1" path="SCntrl1_Relational_Operator2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/ControlLogic/Sum(1)"/>
+        <Path refId="id1" path="SCntrl1_Sum"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/FuelCalculation/F//A(1)"/>
+        <Path refId="id1" path="SFuelCalc1_F_A"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Logical&#10;Operator(1)"/>
+        <Path refId="id1" path="SFuelCalc2_Logical_Operator"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Relational&#10;Operator1(1)"/>
+        <Path refId="id1" path="SFuelCalc2_Relational_Operator1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Relational&#10;Operator2(1)"/>
+        <Path refId="id1" path="SFuelCalc2_Relational_Operator2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Sum2(1)"/>
+        <Path refId="id1" path="SFuelCalc2_Sum2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/mode&#10;select(1)"/>
+        <Path refId="id1" path="SFuelCalc2_mode_select"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/FuelCalculation/feedforward&#10;fuel rate(1)"/>
+        <Path refId="id1" path="SFuelCalc1_fee__rward_fuel_rate"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="controller/Subsystem/controller/AirflowCalculation"/>
+      <Path refId="id1" path="ControllerMain.c:1:ControllerMain/AirflowCalculation.c:1:AirflowCalculation"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="throttle (estimated)"/>
+        <Path refId="id1" path="throttle_est_InputsAirCalc_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="speed_est"/>
+        <Path refId="id1" path="speed_est_InputsAirCalc_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="EGO_est"/>
+        <Path refId="id1" path="EGO_est_InputsAirCalc_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="MAP_est"/>
+        <Path refId="id1" path="Map_est_InputsAirCalc_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="fail_O2"/>
+        <Path refId="id1" path="fail_O2_InputsAirCalc_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="fuel_mode"/>
+        <Path refId="id1" path="fuel_mode_InputsAirCalc_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="est_air_flow"/>
+        <Path refId="id1" path="est_air_flow_OutputsAirCalc_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="feedback_correction"/>
+        <Path refId="id1" path="feedb_corr_OutputsAirCalc_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/AirflowCalculation/Discrete-Time&#10;Integrator(1)"/>
+        <Path refId="id1" path="SAirCalc1_Disc__Time_Integrator"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/AirflowCalculation/EGO GT Threshold(1)"/>
+        <Path refId="id1" path="SAirCalc1_EGO_GT_Threshold"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/AirflowCalculation/MAP x PC x speed(1)"/>
+        <Path refId="id1" path="SAirCalc1_MAP_x_PC_x_speed"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/AirflowCalculation/Saturation(1)"/>
+        <Path refId="id1" path="SAirCalc1_Saturation"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/AirflowCalculation/e0(1)"/>
+        <Path refId="id1" path="SAirCalc1_e0"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/AirflowCalculation/hold&#10;integrator(1)"/>
+        <Path refId="id1" path="SAirCalc1_hold_integrator"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/AirflowCalculation/not normal&#10;operation(1)"/>
+        <Path refId="id1" path="SAirCalc1_not_normal_operation"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="controller/Subsystem/controller/ControlLogic"/>
+      <Path refId="id1" path="ControllerMain.c:1:ControllerMain/ControlLogic.c:1:ControlLogic"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="throttle"/>
+        <Path refId="id1" path="throttle_InputsCntrl_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Speed"/>
+        <Path refId="id1" path="Speed_InputsCntrl_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="EGO"/>
+        <Path refId="id1" path="EGO_InputsCntrl_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="press"/>
+        <Path refId="id1" path="pressure_InputsCntrl_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="fail_throt"/>
+        <Path refId="id1" path="fail_throttle_OutputsCntrl_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="fail_speed"/>
+        <Path refId="id1" path="fail_speed_OutputsCntrl_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="fail_02"/>
+        <Path refId="id1" path="fail_o2_OutputsCntrl_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="fail_Press"/>
+        <Path refId="id1" path="fail_press_OutputsCntrl_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="fuel_mode"/>
+        <Path refId="id1" path="fuel_mode_OutputsCntrl_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/ControlLogic/Logical&#10;Operator(1)"/>
+        <Path refId="id1" path="SCntrl1_Logical_Operator"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/ControlLogic/Relational&#10;Operator(1)"/>
+        <Path refId="id1" path="SCntrl1_Relational_Operator"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/ControlLogic/Relational&#10;Operator1(1)"/>
+        <Path refId="id1" path="SCntrl1_Relational_Operator1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/ControlLogic/Relational&#10;Operator2(1)"/>
+        <Path refId="id1" path="SCntrl1_Relational_Operator2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/ControlLogic/Sum(1)"/>
+        <Path refId="id1" path="SCntrl1_Sum"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="controller/Subsystem/controller/FuelCalculation"/>
+      <Path refId="id1" path="ControllerMain.c:1:ControllerMain/FuelCalculation.c:1:FuelRateCalculation"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="est_air_flow"/>
+        <Path refId="id1" path="est_air_flow_InputsFuelCalc_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="feedback&#10;correction"/>
+        <Path refId="id1" path="fback_corr_InputsFuelCalc_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="fail_O2"/>
+        <Path refId="id1" path="fail_o2_InputsFuelCalc_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="fuel_mode"/>
+        <Path refId="id1" path="fuel_mode_InputsFuelCalc_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="fuel_rate"/>
+        <Path refId="id1" path="fuel_rate_OutputsFuelCalc_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/FuelCalculation/F//A(1)"/>
+        <Path refId="id1" path="SFuelCalc1_F_A"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Logical&#10;Operator(1)"/>
+        <Path refId="id1" path="SFuelCalc2_Logical_Operator"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Relational&#10;Operator1(1)"/>
+        <Path refId="id1" path="SFuelCalc2_Relational_Operator1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Relational&#10;Operator2(1)"/>
+        <Path refId="id1" path="SFuelCalc2_Relational_Operator2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/Sum2(1)"/>
+        <Path refId="id1" path="SFuelCalc2_Sum2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/FuelCalculation/Switchable&#10;Compensation/mode&#10;select(1)"/>
+        <Path refId="id1" path="SFuelCalc2_mode_select"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="controller/Subsystem/controller/FuelCalculation/feedforward&#10;fuel rate(1)"/>
+        <Path refId="id1" path="SFuelCalc1_fee__rward_fuel_rate"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="controller/Subsystem/controller/SensorCorrectionAndFaultRedundancy"/>
+      <Path refId="id1" path="ControllerMain.c:1:ControllerMain/SensorCorrectionAndFaultRedundancy.c:1:SensorCorrection"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="throttle"/>
+        <Path refId="id1" path="throttle_InputsSensCorr_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="speed"/>
+        <Path refId="id1" path="speed_InputsSensCorr_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="EGO"/>
+        <Path refId="id1" path="EGO_InputsSensCorr_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="press"/>
+        <Path refId="id1" path="press_InputsSensCorr_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="fail_THROT"/>
+        <Path refId="id1" path="fail_THROT_InputsSensCorr_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="fail_SPEED"/>
+        <Path refId="id1" path="fail_SPEED_InputsSensCorr_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="fail_O2"/>
+        <Path refId="id1" path="fail_O2_InputsSensCorr_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="fail_PRESS"/>
+        <Path refId="id1" path="fail_PRESS_InputsSensCorr_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="throttle&#10;(estimated)"/>
+        <Path refId="id1" path="throt_est_OutputsSensCorr_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="speed&#10;(estimated)"/>
+        <Path refId="id1" path="speed_est_OutputsSensCorr_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="EGO&#10;(estimated)"/>
+        <Path refId="id1" path="EGO_est_OutputsSensCorr_rdi"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="MAP&#10;(estimated)"/>
+        <Path refId="id1" path="MAP_est_OutputsSensCorr_rdi"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_mw_params_01\ut_results\AddModelInfo.xml" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_mw_params_01\Wrapper_main.slx" modelCreationDate="2024-09-12T20:26:06" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_mw_params_01\Wrapper_main.slx" creationDate="2024-09-12T20:26:06" modificationDate="2024-09-12T20:26:09">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_main" path="" sampleTime="0.01" name="Wrapper_main" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="ref1" physicalPath="Wrapper_main/ref1" path="ref1">
+        <int32/>
+      </inport>
+      <inport portNumber="2" name="y1" physicalPath="Wrapper_main/y1" path="y1">
+        <int32/>
+      </inport>
+      <inport portNumber="3" name="ref2" physicalPath="Wrapper_main/ref2" path="ref2">
+        <int32/>
+      </inport>
+      <inport portNumber="4" name="y2" physicalPath="Wrapper_main/y2" path="y2">
+        <int32/>
+      </inport>
+      <parameter name="A" path="main/main/sub_A/Kp" physicalPath="main/sub_A/Kp" modelRef="model002" origin="explicit_param" workspace="A" initValue="9.0">
+        <int32/>
+        <usageContext path="main/main/sub_A/Kp" physicalPath="main/sub_A/Kp" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="main"/>
+      </parameter>
+      <parameter name="C" path="main/main/sub_B/Kp" physicalPath="main/sub_B/Kp" modelRef="model002" origin="explicit_param" workspace="C" initValue="8.0">
+        <int32/>
+        <usageContext path="main/main/sub_B/Kp" physicalPath="main/sub_B/Kp" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="main"/>
+      </parameter>
+      <outport portNumber="1" name="u1" physicalPath="Wrapper_main/u1" path="u1">
+        <int32/>
+      </outport>
+      <outport portNumber="2" name="u2" physicalPath="Wrapper_main/u2" path="u2">
+        <int32/>
+      </outport>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss7"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="main/sub_A" path="main/main/sub_A" sampleTime="0.01" name="sub_A" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="ref" physicalPath="main/sub_A/ref" path="main/main/sub_A/ref" modelRef="model002">
+        <int32/>
+      </inport>
+      <inport portNumber="2" name="y" physicalPath="main/sub_A/y" path="main/main/sub_A/y" modelRef="model002">
+        <int32/>
+      </inport>
+      <parameter name="A" path="main/main/sub_A/Kp" physicalPath="main/sub_A/Kp" modelRef="model002" origin="explicit_param" workspace="A" initValue="9.0">
+        <int32/>
+        <usageContext path="main/main/sub_A/Kp" physicalPath="main/sub_A/Kp" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="main"/>
+      </parameter>
+      <outport portNumber="1" name="u" physicalPath="main/sub_A/u" path="main/main/sub_A/u" modelRef="model002">
+        <int32/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="main/sub_B" path="main/main/sub_B" sampleTime="0.02" name="sub_B" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="ref" physicalPath="main/sub_B/ref" path="main/main/sub_B/ref" modelRef="model002">
+        <int32/>
+      </inport>
+      <inport portNumber="2" name="y" physicalPath="main/sub_B/y" path="main/main/sub_B/y" modelRef="model002">
+        <int32/>
+      </inport>
+      <parameter name="C" path="main/main/sub_B/Kp" physicalPath="main/sub_B/Kp" modelRef="model002" origin="explicit_param" workspace="C" initValue="8.0">
+        <int32/>
+        <usageContext path="main/main/sub_B/Kp" physicalPath="main/sub_B/Kp" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="main"/>
+      </parameter>
+      <outport portNumber="1" name="u" physicalPath="main/sub_B/u" path="main/main/sub_B/u" modelRef="model002">
+        <int32/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ar_mw_params_01\main.slx" creationDate="2022-03-08T14:35:10" modificationDate="2024-09-12T19:46:28"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

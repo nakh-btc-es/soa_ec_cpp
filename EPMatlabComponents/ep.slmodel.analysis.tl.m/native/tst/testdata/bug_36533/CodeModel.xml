@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\3ec189742\bug_36533\TLProj\top_A" name="top_A.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\3ec189742\bug_36533\TLSim" name="top_A_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\3ec189742\bug_36533\TLProj\top_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\3ec189742\bug_36533\TLSim"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="bug_36533 [C-Code]">
+    <Function name="top_A" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="cal" var="a3" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="a2" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="a1" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort2" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa2_sub_B1" fileref="fID1" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa2_InPort" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa2_OutPort" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa3_sub_B2" fileref="fID1" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="in" var="a2" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa3_OutPort" scaling="scID1"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

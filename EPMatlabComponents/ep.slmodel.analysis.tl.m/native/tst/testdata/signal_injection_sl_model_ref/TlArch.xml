@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="16.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_signal_injection_sl_mdl_ref\simple_signal_injection.mdl" modelCreationDate="2014-08-27T15:39:27" creator="Administrator">
+  <toolInfo name="Matlab" release="(R2022b)" version="9.13" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2022b)" version="10.6" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="22.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="16.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_signal_injection_sl_mdl_ref\simple_signal_injection.mdl" creationDate="2014-08-27T15:39:27" modificationDate="2023-05-26T09:17:24">
+    <subsystem subsysID="ss1" physicalPath="simple_signal_injection/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="DataStoreReadWithCustomCodeMask" physicalPath="mySub/DataStoreReadWithCustomCodeMask" path="top_A/Subsystem/top_A/Subsystem/DataStoreReadWithCustomCodeMask" modelRef="model002">
+        <miltype signalName="StatusSignal">
+          <nonUniformArray size="2">
+            <signal index="1">
+              <int32/>
+            </signal>
+            <signal index="2">
+              <int32/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype signalName="StatusSignal">
+          <nonUniformArray size="2">
+            <signal index="1">
+              <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+        <dataStoreMemory signalName="StatusSignal"/>
+      </inport>
+      <calibration name="myCal" path="top_A/Subsystem/top_A/Subsystem/Constant" physicalPath="mySub/Constant" modelRef="model002" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/myCal">
+        <miltype initValue="3.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="3.0000000000000000e+00">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Subsystem/Constant" targetLinkBlockKind="TL_Constant" physicalPath="mySub/Constant" simulinkBlockType="Constant" blockAttribute="output" modelRef="model002"/>
+      </calibration>
+      <outport portNumber="0" name="out1" physicalPath="mySub/out1" path="top_A/Subsystem/top_A/Subsystem/out1" modelRef="model002">
+        <miltype signalName="SystemState">
+          <nonUniformArray size="3">
+            <signal index="1">
+              <boolean/>
+            </signal>
+            <signal index="2">
+              <boolean/>
+            </signal>
+            <signal index="3">
+              <boolean/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype signalName="SystemState">
+          <nonUniformArray size="3">
+            <signal initValue="0.0000000000000000e+00" index="1">
+              <Bool/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="2">
+              <Bool/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="3">
+              <Bool/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+        <dataStoreMemory signalName="SystemState"/>
+      </outport>
+      <display physicalPath="mySub/Logical&#10;Operator" path="top_A/Subsystem/top_A/Subsystem/Logical&#10;Operator" name="Logical&#10;Operator" portNumber="1" modelRef="model002">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="mySub/Relational&#10;Operator" path="top_A/Subsystem/top_A/Subsystem/Relational&#10;Operator" name="Relational&#10;Operator" portNumber="1" modelRef="model002">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="mySub/Relational&#10;Operator1" path="top_A/Subsystem/top_A/Subsystem/Relational&#10;Operator1" name="Relational&#10;Operator1" portNumber="1" modelRef="model002">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="mySub" path="top_A/Subsystem/top_A/Subsystem" sampleTime="1" name="Subsystem" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="0" name="DataStoreReadWithCustomCodeMask" physicalPath="mySub/DataStoreReadWithCustomCodeMask" path="top_A/Subsystem/top_A/Subsystem/DataStoreReadWithCustomCodeMask" modelRef="model002">
+        <miltype signalName="StatusSignal">
+          <nonUniformArray size="2">
+            <signal index="1">
+              <int32/>
+            </signal>
+            <signal index="2">
+              <int32/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype signalName="StatusSignal">
+          <nonUniformArray size="2">
+            <signal index="1">
+              <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+        <dataStoreMemory signalName="StatusSignal"/>
+      </inport>
+      <calibration name="myCal" path="top_A/Subsystem/top_A/Subsystem/Constant" physicalPath="mySub/Constant" modelRef="model002" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/myCal">
+        <miltype initValue="3.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="3.0000000000000000e+00">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/Subsystem/Constant" targetLinkBlockKind="TL_Constant" physicalPath="mySub/Constant" simulinkBlockType="Constant" blockAttribute="output" modelRef="model002"/>
+      </calibration>
+      <outport portNumber="0" name="out1" physicalPath="mySub/out1" path="top_A/Subsystem/top_A/Subsystem/out1" modelRef="model002">
+        <miltype signalName="SystemState">
+          <nonUniformArray size="3">
+            <signal index="1">
+              <boolean/>
+            </signal>
+            <signal index="2">
+              <boolean/>
+            </signal>
+            <signal index="3">
+              <boolean/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype signalName="SystemState">
+          <nonUniformArray size="3">
+            <signal initValue="0.0000000000000000e+00" index="1">
+              <Bool/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="2">
+              <Bool/>
+            </signal>
+            <signal initValue="0.0000000000000000e+00" index="3">
+              <Bool/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+        <dataStoreMemory signalName="SystemState"/>
+      </outport>
+      <display physicalPath="mySub/Logical&#10;Operator" path="top_A/Subsystem/top_A/Subsystem/Logical&#10;Operator" name="Logical&#10;Operator" portNumber="1" modelRef="model002">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="mySub/Relational&#10;Operator" path="top_A/Subsystem/top_A/Subsystem/Relational&#10;Operator" name="Relational&#10;Operator" portNumber="1" modelRef="model002">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="mySub/Relational&#10;Operator1" path="top_A/Subsystem/top_A/Subsystem/Relational&#10;Operator1" name="Relational&#10;Operator1" portNumber="1" modelRef="model002">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="16.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_signal_injection_sl_mdl_ref\mySub.mdl" creationDate="2014-08-27T15:39:27" modificationDate="2023-05-26T09:17:24"/>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

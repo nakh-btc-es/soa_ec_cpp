@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" modelVersion="1.405" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_tl_40_02\CalibrationSupport_sl.mdl" modelCreationDate="2007-03-16T12:20:21" creator="qa_user">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.405" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_tl_40_02\CalibrationSupport_sl.mdl" creationDate="2007-03-16T12:20:21" modificationDate="2021-11-22T08:29:01">
+    <subsystem subsysID="ss1" physicalPath="CalibrationSupport_sl/Subsystem" path="Subsystem" sampleTime="0.01" name="Subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="input" physicalPath="CalibrationSupport_sl/Subsystem/input" path="Subsystem/input">
+        <double min="-1.0000000000000000e+02" max="1.0000000000000000e+02"/>
+      </inport>
+      <inport portNumber="2" name="In1" physicalPath="CalibrationSupport_sl/Subsystem/In1" path="Subsystem/In1">
+        <double min="-1.0000000000000000e+01" max="1.0000000000000000e+01"/>
+      </inport>
+      <parameter name="pv" path="Subsystem/SC1007/Chart" physicalPath="CalibrationSupport_sl/Subsystem/SC1007/Chart" origin="sf_const" restricted="false" stateflowVariable="pv">
+        <nonUniformArray size="3" startIndex="0">
+          <signal initValue="0.0000000000000000e+00" index="0">
+            <double/>
+          </signal>
+          <signal initValue="0.0000000000000000e+00" index="1">
+            <double/>
+          </signal>
+          <signal initValue="0.0000000000000000e+00" index="2">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Subsystem/SC1007/Chart" physicalPath="CalibrationSupport_sl/Subsystem/SC1007/Chart" simulinkBlockType="SubSystem" blockAttribute="sf_parameter" stateflowVariable="pv"/>
+      </parameter>
+      <parameter name="cv" path="Subsystem/SC1007/Chart" physicalPath="CalibrationSupport_sl/Subsystem/SC1007/Chart" origin="sf_const" restricted="false" stateflowVariable="cv">
+        <nonUniformArray size="2" startIndex="0">
+          <signal initValue="0.0000000000000000e+00" index="0">
+            <double/>
+          </signal>
+          <signal initValue="0.0000000000000000e+00" index="1">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Subsystem/SC1007/Chart" physicalPath="CalibrationSupport_sl/Subsystem/SC1007/Chart" simulinkBlockType="SubSystem" blockAttribute="sf_constant" stateflowVariable="cv"/>
+      </parameter>
+      <parameter name="p1" path="Subsystem/SC1003/Chart" physicalPath="CalibrationSupport_sl/Subsystem/SC1003/Chart" initValue="0.0000000000000000e+00" origin="sf_const" restricted="false" stateflowVariable="p1">
+        <double/>
+        <usageContext path="Subsystem/SC1003/Chart" physicalPath="CalibrationSupport_sl/Subsystem/SC1003/Chart" simulinkBlockType="SubSystem" blockAttribute="sf_parameter" stateflowVariable="p1"/>
+      </parameter>
+      <parameter name="c1" path="Subsystem/SC1003/Chart" physicalPath="CalibrationSupport_sl/Subsystem/SC1003/Chart" initValue="0.0000000000000000e+00" origin="sf_const" restricted="false" stateflowVariable="c1">
+        <double/>
+        <usageContext path="Subsystem/SC1003/Chart" physicalPath="CalibrationSupport_sl/Subsystem/SC1003/Chart" simulinkBlockType="SubSystem" blockAttribute="sf_constant" stateflowVariable="c1"/>
+      </parameter>
+      <parameter name="C2[sat_lower]" path="Subsystem/SC1006/C2" physicalPath="CalibrationSupport_sl/Subsystem/SC1006/C2" initValue="-4.0000000000000000e+00" origin="sat_lower" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1006/C2" physicalPath="CalibrationSupport_sl/Subsystem/SC1006/C2" simulinkBlockType="Saturate" blockAttribute="lowerlimit" restriction="tl_saturate:lowerlimit"/>
+      </parameter>
+      <parameter name="C2[sat_upper]" path="Subsystem/SC1006/C2" physicalPath="CalibrationSupport_sl/Subsystem/SC1006/C2" initValue="4.0000000000000000e+00" origin="sat_upper" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1006/C2" physicalPath="CalibrationSupport_sl/Subsystem/SC1006/C2" simulinkBlockType="Saturate" blockAttribute="upperlimit" restriction="tl_saturate:upperlimit"/>
+      </parameter>
+      <parameter name="P1[relay_switch_off]" path="Subsystem/SC1005/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/P1" initValue="-1.0000000000000000e+00" origin="relay_switch_off" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1005/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/P1" simulinkBlockType="Relay" blockAttribute="offswitch" restriction="tl_relay:offswitch"/>
+      </parameter>
+      <parameter name="P1[relay_switch_on]" path="Subsystem/SC1005/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/P1" initValue="1.0000000000000000e+00" origin="relay_switch_on" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1005/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/P1" simulinkBlockType="Relay" blockAttribute="onswitch" restriction="tl_relay:onswitch"/>
+      </parameter>
+      <parameter name="C1[relay_switch_off]" path="Subsystem/SC1005/C1" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/C1" initValue="-1.0000000000000000e+00" origin="relay_switch_off" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1005/C1" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/C1" simulinkBlockType="Relay" blockAttribute="offswitch" restriction="tl_relay:offswitch"/>
+      </parameter>
+      <parameter name="C1[relay_switch_on]" path="Subsystem/SC1005/C1" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/C1" initValue="1.0000000000000000e+00" origin="relay_switch_on" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1005/C1" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/C1" simulinkBlockType="Relay" blockAttribute="onswitch" restriction="tl_relay:onswitch"/>
+      </parameter>
+      <parameter name="P1[relay_out_off]" path="Subsystem/SC1004/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/P1" initValue="0.0000000000000000e+00" origin="relay_out_off" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1004/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/P1" simulinkBlockType="Relay" blockAttribute="offoutput"/>
+      </parameter>
+      <parameter name="P1[relay_out_on]" path="Subsystem/SC1004/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/P1" initValue="1.0000000000000000e+00" origin="relay_out_on" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1004/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/P1" simulinkBlockType="Relay" blockAttribute="onoutput"/>
+      </parameter>
+      <parameter name="C1[relay_out_off]" path="Subsystem/SC1004/C1" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/C1" initValue="0.0000000000000000e+00" origin="relay_out_off" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1004/C1" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/C1" simulinkBlockType="Relay" blockAttribute="offoutput"/>
+      </parameter>
+      <parameter name="C1[relay_out_on]" path="Subsystem/SC1004/C1" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/C1" initValue="1.0000000000000000e+00" origin="relay_out_on" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1004/C1" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/C1" simulinkBlockType="Relay" blockAttribute="onoutput"/>
+      </parameter>
+      <parameter name="P1[switch_threshold]" path="Subsystem/SC1002/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1002/P1" initValue="0.0000000000000000e+00" origin="switch_threshold" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1002/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1002/P1" simulinkBlockType="Switch" blockAttribute="threshold"/>
+      </parameter>
+      <parameter name="Const1[const]" path="Subsystem/SC1002/Const1" physicalPath="CalibrationSupport_sl/Subsystem/SC1002/Const1" initValue="0.0000000000000000e+00" origin="const" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1002/Const1" physicalPath="CalibrationSupport_sl/Subsystem/SC1002/Const1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </parameter>
+      <parameter name="Gain-factor is CAL (int8)[gain]" path="Subsystem/EP2_F178_TSC_1/Gain-factor is CAL (int8)" physicalPath="CalibrationSupport_sl/Subsystem/EP2_F178_TSC_1/Gain-factor is CAL (int8)" initValue="1.0000000000000000e+00" origin="gain" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/EP2_F178_TSC_1/Gain-factor is CAL (int8)" physicalPath="CalibrationSupport_sl/Subsystem/EP2_F178_TSC_1/Gain-factor is CAL (int8)" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </parameter>
+      <outport portNumber="1" name="r1out" physicalPath="CalibrationSupport_sl/Subsystem/r1out" path="Subsystem/r1out">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="r2out" physicalPath="CalibrationSupport_sl/Subsystem/r2out" path="Subsystem/r2out">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="r3out" physicalPath="CalibrationSupport_sl/Subsystem/r3out" path="Subsystem/r3out">
+        <boolean/>
+      </outport>
+      <outport portNumber="4" name="r1out1" physicalPath="CalibrationSupport_sl/Subsystem/r1out1" path="Subsystem/r1out1">
+        <boolean/>
+      </outport>
+      <outport portNumber="5" name="r2out1" physicalPath="CalibrationSupport_sl/Subsystem/r2out1" path="Subsystem/r2out1">
+        <boolean/>
+      </outport>
+      <outport portNumber="6" name="r3out1" physicalPath="CalibrationSupport_sl/Subsystem/r3out1" path="Subsystem/r3out1">
+        <boolean/>
+      </outport>
+      <outport portNumber="7" name="r1out2" physicalPath="CalibrationSupport_sl/Subsystem/r1out2" path="Subsystem/r1out2">
+        <boolean/>
+      </outport>
+      <outport portNumber="8" name="r2out2" physicalPath="CalibrationSupport_sl/Subsystem/r2out2" path="Subsystem/r2out2">
+        <boolean/>
+      </outport>
+      <outport portNumber="9" name="r3out2" physicalPath="CalibrationSupport_sl/Subsystem/r3out2" path="Subsystem/r3out2">
+        <boolean/>
+      </outport>
+      <outport portNumber="10" name="r1out3" physicalPath="CalibrationSupport_sl/Subsystem/r1out3" path="Subsystem/r1out3">
+        <boolean/>
+      </outport>
+      <outport portNumber="11" name="r2out3" physicalPath="CalibrationSupport_sl/Subsystem/r2out3" path="Subsystem/r2out3">
+        <boolean/>
+      </outport>
+      <outport portNumber="12" name="r3out3" physicalPath="CalibrationSupport_sl/Subsystem/r3out3" path="Subsystem/r3out3">
+        <boolean/>
+      </outport>
+      <outport portNumber="13" name="r1out4" physicalPath="CalibrationSupport_sl/Subsystem/r1out4" path="Subsystem/r1out4">
+        <boolean/>
+      </outport>
+      <outport portNumber="14" name="r2out4" physicalPath="CalibrationSupport_sl/Subsystem/r2out4" path="Subsystem/r2out4">
+        <boolean/>
+      </outport>
+      <outport portNumber="15" name="r3out4" physicalPath="CalibrationSupport_sl/Subsystem/r3out4" path="Subsystem/r3out4">
+        <boolean/>
+      </outport>
+      <outport portNumber="16" name="r1out5" physicalPath="CalibrationSupport_sl/Subsystem/r1out5" path="Subsystem/r1out5">
+        <boolean/>
+      </outport>
+      <outport portNumber="17" name="r2out5" physicalPath="CalibrationSupport_sl/Subsystem/r2out5" path="Subsystem/r2out5">
+        <boolean/>
+      </outport>
+      <outport portNumber="18" name="r3out5" physicalPath="CalibrationSupport_sl/Subsystem/r3out5" path="Subsystem/r3out5">
+        <boolean/>
+      </outport>
+      <outport portNumber="19" name="r1out6" physicalPath="CalibrationSupport_sl/Subsystem/r1out6" path="Subsystem/r1out6">
+        <boolean/>
+      </outport>
+      <outport portNumber="20" name="r2out6" physicalPath="CalibrationSupport_sl/Subsystem/r2out6" path="Subsystem/r2out6">
+        <boolean/>
+      </outport>
+      <outport portNumber="21" name="r3out6" physicalPath="CalibrationSupport_sl/Subsystem/r3out6" path="Subsystem/r3out6">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="CalibrationSupport_sl/Subsystem/EP2_F178_TSC_1" path="Subsystem/EP2_F178_TSC_1" sampleTime="0.01" name="EP2_F178_TSC_1" scopeKind="SUT" kind="subsystem">
+      <parameter name="Gain-factor is CAL (int8)[gain]" path="Subsystem/EP2_F178_TSC_1/Gain-factor is CAL (int8)" physicalPath="CalibrationSupport_sl/Subsystem/EP2_F178_TSC_1/Gain-factor is CAL (int8)" initValue="1.0000000000000000e+00" origin="gain" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/EP2_F178_TSC_1/Gain-factor is CAL (int8)" physicalPath="CalibrationSupport_sl/Subsystem/EP2_F178_TSC_1/Gain-factor is CAL (int8)" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </parameter>
+      <outport portNumber="1" name="r1out" physicalPath="CalibrationSupport_sl/Subsystem/EP2_F178_TSC_1/r1out" path="Subsystem/EP2_F178_TSC_1/r1out">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="r2out" physicalPath="CalibrationSupport_sl/Subsystem/EP2_F178_TSC_1/r2out" path="Subsystem/EP2_F178_TSC_1/r2out">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="r3out" physicalPath="CalibrationSupport_sl/Subsystem/EP2_F178_TSC_1/r3out" path="Subsystem/EP2_F178_TSC_1/r3out">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="CalibrationSupport_sl/Subsystem/SC1002" path="Subsystem/SC1002" sampleTime="0.01" name="SC1002" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="input" physicalPath="CalibrationSupport_sl/Subsystem/SC1002/input" path="Subsystem/SC1002/input">
+        <double min="-1.0000000000000000e+02" max="1.0000000000000000e+02"/>
+      </inport>
+      <parameter name="P1[switch_threshold]" path="Subsystem/SC1002/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1002/P1" initValue="0.0000000000000000e+00" origin="switch_threshold" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1002/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1002/P1" simulinkBlockType="Switch" blockAttribute="threshold"/>
+      </parameter>
+      <parameter name="Const1[const]" path="Subsystem/SC1002/Const1" physicalPath="CalibrationSupport_sl/Subsystem/SC1002/Const1" initValue="0.0000000000000000e+00" origin="const" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1002/Const1" physicalPath="CalibrationSupport_sl/Subsystem/SC1002/Const1" simulinkBlockType="Constant" blockAttribute="output"/>
+      </parameter>
+      <outport portNumber="1" name="r1out" physicalPath="CalibrationSupport_sl/Subsystem/SC1002/r1out" path="Subsystem/SC1002/r1out">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="r2out" physicalPath="CalibrationSupport_sl/Subsystem/SC1002/r2out" path="Subsystem/SC1002/r2out">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="r1out1" physicalPath="CalibrationSupport_sl/Subsystem/SC1002/r1out1" path="Subsystem/SC1002/r1out1">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="CalibrationSupport_sl/Subsystem/SC1003" path="Subsystem/SC1003" sampleTime="0.01" name="SC1003" scopeKind="SUT" kind="subsystem">
+      <parameter name="p1" path="Subsystem/SC1003/Chart" physicalPath="CalibrationSupport_sl/Subsystem/SC1003/Chart" initValue="0.0000000000000000e+00" origin="sf_const" restricted="false" stateflowVariable="p1">
+        <double/>
+        <usageContext path="Subsystem/SC1003/Chart" physicalPath="CalibrationSupport_sl/Subsystem/SC1003/Chart" simulinkBlockType="SubSystem" blockAttribute="sf_parameter" stateflowVariable="p1"/>
+      </parameter>
+      <parameter name="c1" path="Subsystem/SC1003/Chart" physicalPath="CalibrationSupport_sl/Subsystem/SC1003/Chart" initValue="0.0000000000000000e+00" origin="sf_const" restricted="false" stateflowVariable="c1">
+        <double/>
+        <usageContext path="Subsystem/SC1003/Chart" physicalPath="CalibrationSupport_sl/Subsystem/SC1003/Chart" simulinkBlockType="SubSystem" blockAttribute="sf_constant" stateflowVariable="c1"/>
+      </parameter>
+      <outport portNumber="1" name="r1out" physicalPath="CalibrationSupport_sl/Subsystem/SC1003/r1out" path="Subsystem/SC1003/r1out">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="r2out" physicalPath="CalibrationSupport_sl/Subsystem/SC1003/r2out" path="Subsystem/SC1003/r2out">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="r1out1" physicalPath="CalibrationSupport_sl/Subsystem/SC1003/r1out1" path="Subsystem/SC1003/r1out1">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="CalibrationSupport_sl/Subsystem/SC1004" path="Subsystem/SC1004" sampleTime="0.01" name="SC1004" scopeKind="SUT" kind="subsystem">
+      <parameter name="P1[relay_out_off]" path="Subsystem/SC1004/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/P1" initValue="0.0000000000000000e+00" origin="relay_out_off" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1004/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/P1" simulinkBlockType="Relay" blockAttribute="offoutput"/>
+      </parameter>
+      <parameter name="P1[relay_out_on]" path="Subsystem/SC1004/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/P1" initValue="1.0000000000000000e+00" origin="relay_out_on" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1004/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/P1" simulinkBlockType="Relay" blockAttribute="onoutput"/>
+      </parameter>
+      <parameter name="C1[relay_out_off]" path="Subsystem/SC1004/C1" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/C1" initValue="0.0000000000000000e+00" origin="relay_out_off" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1004/C1" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/C1" simulinkBlockType="Relay" blockAttribute="offoutput"/>
+      </parameter>
+      <parameter name="C1[relay_out_on]" path="Subsystem/SC1004/C1" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/C1" initValue="1.0000000000000000e+00" origin="relay_out_on" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1004/C1" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/C1" simulinkBlockType="Relay" blockAttribute="onoutput"/>
+      </parameter>
+      <outport portNumber="1" name="r1out2" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/r1out2" path="Subsystem/SC1004/r1out2">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="r2out1" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/r2out1" path="Subsystem/SC1004/r2out1">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="r1out3" physicalPath="CalibrationSupport_sl/Subsystem/SC1004/r1out3" path="Subsystem/SC1004/r1out3">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="CalibrationSupport_sl/Subsystem/SC1005" path="Subsystem/SC1005" sampleTime="0.01" name="SC1005" scopeKind="SUT" kind="subsystem">
+      <parameter name="P1[relay_switch_off]" path="Subsystem/SC1005/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/P1" initValue="-1.0000000000000000e+00" origin="relay_switch_off" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1005/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/P1" simulinkBlockType="Relay" blockAttribute="offswitch" restriction="tl_relay:offswitch"/>
+      </parameter>
+      <parameter name="P1[relay_switch_on]" path="Subsystem/SC1005/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/P1" initValue="1.0000000000000000e+00" origin="relay_switch_on" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1005/P1" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/P1" simulinkBlockType="Relay" blockAttribute="onswitch" restriction="tl_relay:onswitch"/>
+      </parameter>
+      <parameter name="C1[relay_switch_off]" path="Subsystem/SC1005/C1" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/C1" initValue="-1.0000000000000000e+00" origin="relay_switch_off" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1005/C1" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/C1" simulinkBlockType="Relay" blockAttribute="offswitch" restriction="tl_relay:offswitch"/>
+      </parameter>
+      <parameter name="C1[relay_switch_on]" path="Subsystem/SC1005/C1" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/C1" initValue="1.0000000000000000e+00" origin="relay_switch_on" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1005/C1" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/C1" simulinkBlockType="Relay" blockAttribute="onswitch" restriction="tl_relay:onswitch"/>
+      </parameter>
+      <outport portNumber="1" name="r1out" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/r1out" path="Subsystem/SC1005/r1out">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="r2out" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/r2out" path="Subsystem/SC1005/r2out">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="r1out1" physicalPath="CalibrationSupport_sl/Subsystem/SC1005/r1out1" path="Subsystem/SC1005/r1out1">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="CalibrationSupport_sl/Subsystem/SC1006" path="Subsystem/SC1006" sampleTime="0.01" name="SC1006" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="CalibrationSupport_sl/Subsystem/SC1006/In1" path="Subsystem/SC1006/In1">
+        <double min="-1.0000000000000000e+01" max="1.0000000000000000e+01"/>
+      </inport>
+      <parameter name="C2[sat_lower]" path="Subsystem/SC1006/C2" physicalPath="CalibrationSupport_sl/Subsystem/SC1006/C2" initValue="-4.0000000000000000e+00" origin="sat_lower" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1006/C2" physicalPath="CalibrationSupport_sl/Subsystem/SC1006/C2" simulinkBlockType="Saturate" blockAttribute="lowerlimit" restriction="tl_saturate:lowerlimit"/>
+      </parameter>
+      <parameter name="C2[sat_upper]" path="Subsystem/SC1006/C2" physicalPath="CalibrationSupport_sl/Subsystem/SC1006/C2" initValue="4.0000000000000000e+00" origin="sat_upper" restricted="false">
+        <double/>
+        <usageContext path="Subsystem/SC1006/C2" physicalPath="CalibrationSupport_sl/Subsystem/SC1006/C2" simulinkBlockType="Saturate" blockAttribute="upperlimit" restriction="tl_saturate:upperlimit"/>
+      </parameter>
+      <outport portNumber="1" name="r1out" physicalPath="CalibrationSupport_sl/Subsystem/SC1006/r1out" path="Subsystem/SC1006/r1out">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="r2out" physicalPath="CalibrationSupport_sl/Subsystem/SC1006/r2out" path="Subsystem/SC1006/r2out">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="r1out1" physicalPath="CalibrationSupport_sl/Subsystem/SC1006/r1out1" path="Subsystem/SC1006/r1out1">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="CalibrationSupport_sl/Subsystem/SC1007" path="Subsystem/SC1007" sampleTime="0.01" name="SC1007" scopeKind="SUT" kind="subsystem">
+      <parameter name="pv" path="Subsystem/SC1007/Chart" physicalPath="CalibrationSupport_sl/Subsystem/SC1007/Chart" origin="sf_const" restricted="false" stateflowVariable="pv">
+        <nonUniformArray size="3" startIndex="0">
+          <signal initValue="0.0000000000000000e+00" index="0">
+            <double/>
+          </signal>
+          <signal initValue="0.0000000000000000e+00" index="1">
+            <double/>
+          </signal>
+          <signal initValue="0.0000000000000000e+00" index="2">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Subsystem/SC1007/Chart" physicalPath="CalibrationSupport_sl/Subsystem/SC1007/Chart" simulinkBlockType="SubSystem" blockAttribute="sf_parameter" stateflowVariable="pv"/>
+      </parameter>
+      <parameter name="cv" path="Subsystem/SC1007/Chart" physicalPath="CalibrationSupport_sl/Subsystem/SC1007/Chart" origin="sf_const" restricted="false" stateflowVariable="cv">
+        <nonUniformArray size="2" startIndex="0">
+          <signal initValue="0.0000000000000000e+00" index="0">
+            <double/>
+          </signal>
+          <signal initValue="0.0000000000000000e+00" index="1">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Subsystem/SC1007/Chart" physicalPath="CalibrationSupport_sl/Subsystem/SC1007/Chart" simulinkBlockType="SubSystem" blockAttribute="sf_constant" stateflowVariable="cv"/>
+      </parameter>
+      <outport portNumber="1" name="r1out" physicalPath="CalibrationSupport_sl/Subsystem/SC1007/r1out" path="Subsystem/SC1007/r1out">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="r2out" physicalPath="CalibrationSupport_sl/Subsystem/SC1007/r2out" path="Subsystem/SC1007/r2out">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="r1out1" physicalPath="CalibrationSupport_sl/Subsystem/SC1007/r1out1" path="Subsystem/SC1007/r1out1">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

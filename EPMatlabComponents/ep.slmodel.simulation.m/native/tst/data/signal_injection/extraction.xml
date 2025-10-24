@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="26P">
+	<Scope uid="26P" name="controller" path="signal_injection_sl/controller" sampleTime="0.001" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="signal_injection_sl/controller" subsystemLogging="on">
+		<InPort name="REF" portNumber="1" compositeSig="none">
+			<Variable varid="varif_387" signalType="double" isFloat="yes">
+				<ifName ifid="if_387" lsb="1" offset="0" displayName="REF" identifier="INPUT:REF" />
+			</Variable>
+		</InPort>
+		<InPort name="POS" portNumber="2" compositeSig="none">
+			<Variable varid="varif_388" signalType="double" isFloat="yes">
+				<ifName ifid="if_388" lsb="1" offset="0" displayName="POS" identifier="INPUT:POS" />
+			</Variable>
+		</InPort>
+		<DataStoreRead name="DataStoreReadWithCustomCodeMask" path="signal_injection_sl/controller/SignalValidationFcnStub/DataStoreReadWithCustomCodeMask" physicalPath="signal_injection_sl/controller/SignalValidationFcnStub/DataStoreReadWithCustomCodeMask" portNumber="0" signal="StatusSignal" compositeSig="none">
+			<Variable varid="varif_389" signalType="double" isFloat="yes">
+				<ifName ifid="if_389" lsb="1" offset="0" displayName="DataStoreReadWithCustomCodeMask@StatusSignal" identifier="INPUT:SignalValidationFcnStub/DataStoreReadWithCustomCodeMask" />
+			</Variable>
+		</DataStoreRead>
+		<OutPort name="UPI" portNumber="1" compositeSig="none">
+			<Variable varid="varif_390" signalType="double" isFloat="yes">
+				<ifName ifid="if_390" lsb="1" offset="0" displayName="UPI" identifier="OUTPUT:UPI" />
+			</Variable>
+		</OutPort>
+		<DataStoreWrite name="DataStoreWrite_withCustomCodeMask" path="signal_injection_sl/controller/Algorithm/DataStoreWrite_withCustomCodeMask" physicalPath="signal_injection_sl/controller/Algorithm/DataStoreWrite_withCustomCodeMask" portNumber="0" signal="SystemState" compositeSig="none">
+			<Variable varid="varif_391" signalType="double" isFloat="yes">
+				<ifName ifid="if_391" lsb="1" offset="0" displayName="DataStoreWrite_withCustomCodeMask@SystemState" identifier="OUTPUT:Algorithm/DataStoreWrite_withCustomCodeMask" />
+			</Variable>
+		</DataStoreWrite>
+		<Model name="signal_injection_sl" modelPath="/E:/ModelsDev/SL/SignalInjection/ml2015asp1/signal_injection_sl.mdl" type="SimulinkModel" />
+		<Scope uid="26Q" name="Algorithm" path="signal_injection_sl/controller/Algorithm" sampleTime="0.001" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="signal_injection_sl/controller/Algorithm" subsystemLogging="on">
+			<InPort name="Ref" portNumber="1" compositeSig="none">
+				<Variable varid="varif_396" signalType="double" isFloat="yes">
+					<ifName ifid="if_396" lsb="1" offset="0" displayName="Ref" identifier="INPUT:Ref" />
+				</Variable>
+			</InPort>
+			<InPort name="Pos" portNumber="2" compositeSig="none">
+				<Variable varid="varif_397" signalType="double" isFloat="yes">
+					<ifName ifid="if_397" lsb="1" offset="0" displayName="Pos" identifier="INPUT:Pos" />
+				</Variable>
+			</InPort>
+			<OutPort name="Upi_Alg" portNumber="1" compositeSig="none">
+				<Variable varid="varif_398" signalType="double" isFloat="yes">
+					<ifName ifid="if_398" lsb="1" offset="0" displayName="Upi_Alg" identifier="OUTPUT:Upi_Alg" />
+				</Variable>
+			</OutPort>
+			<DataStoreWrite name="DataStoreWrite_withCustomCodeMask" path="signal_injection_sl/controller/Algorithm/DataStoreWrite_withCustomCodeMask" physicalPath="signal_injection_sl/controller/Algorithm/DataStoreWrite_withCustomCodeMask" portNumber="0" signal="SystemState" compositeSig="none">
+				<Variable varid="varif_399" signalType="double" isFloat="yes">
+					<ifName ifid="if_399" lsb="1" offset="0" displayName="DataStoreWrite_withCustomCodeMask@SystemState" identifier="OUTPUT:DataStoreWrite_withCustomCodeMask" />
+				</Variable>
+			</DataStoreWrite>
+			<Model name="signal_injection_sl" modelPath="/E:/ModelsDev/SL/SignalInjection/ml2015asp1/signal_injection_sl.mdl" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="26R" name="SignalValidationFcnStub" path="signal_injection_sl/controller/SignalValidationFcnStub" sampleTime="0.001" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="signal_injection_sl/controller/SignalValidationFcnStub" subsystemLogging="on">
+			<InPort name="Ref" portNumber="1" compositeSig="none">
+				<Variable varid="varif_404" signalType="double" isFloat="yes">
+					<ifName ifid="if_404" lsb="1" offset="0" displayName="Ref" identifier="INPUT:Ref" />
+				</Variable>
+			</InPort>
+			<InPort name="Pos" portNumber="2" compositeSig="none">
+				<Variable varid="varif_405" signalType="double" isFloat="yes">
+					<ifName ifid="if_405" lsb="1" offset="0" displayName="Pos" identifier="INPUT:Pos" />
+				</Variable>
+			</InPort>
+			<DataStoreRead name="DataStoreReadWithCustomCodeMask" path="signal_injection_sl/controller/SignalValidationFcnStub/DataStoreReadWithCustomCodeMask" physicalPath="signal_injection_sl/controller/SignalValidationFcnStub/DataStoreReadWithCustomCodeMask" portNumber="0" signal="StatusSignal" compositeSig="none">
+				<Variable varid="varif_406" signalType="double" isFloat="yes">
+					<ifName ifid="if_406" lsb="1" offset="0" displayName="DataStoreReadWithCustomCodeMask@StatusSignal" identifier="INPUT:DataStoreReadWithCustomCodeMask" />
+				</Variable>
+			</DataStoreRead>
+			<OutPort name="Status_Output" portNumber="1" compositeSig="none">
+				<Variable varid="varif_407" signalType="double" isFloat="yes">
+					<ifName ifid="if_407" lsb="1" offset="0" displayName="Status_Output" identifier="OUTPUT:Status_Output" />
+				</Variable>
+			</OutPort>
+			<Model name="signal_injection_sl" modelPath="/E:/ModelsDev/SL/SignalInjection/ml2015asp1/signal_injection_sl.mdl" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

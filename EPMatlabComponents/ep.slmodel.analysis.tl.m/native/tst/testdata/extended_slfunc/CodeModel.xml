@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.9p0\tmp\46o_16qno7jsi\DevTL\SlFunctions\TLProj\top_A" name="top_A.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.9p0\tmp\46o_16qno7jsi\DevTL\SlFunctions\TLProj\sub_mref1" name="sub_mref1.c" kind="source" annotate="yes" id="fID2"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.9p0\tmp\46o_16qno7jsi\DevTL\SlFunctions\TLProj\sub_mref2" name="sub_mref2.c" kind="source" annotate="yes" id="fID3"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.9p0\tmp\46o_16qno7jsi\DevTL\SlFunctions\TLSim" name="top_A_fri.c" kind="source" annotate="no" id="fID4"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.9p0\tmp\46o_16qno7jsi\DevTL\SlFunctions\TLSim" name="sub_mref1_fri.c" kind="source" annotate="no" id="fID5"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.9p0\tmp\46o_16qno7jsi\DevTL\SlFunctions\TLSim" name="sub_mref2_fri.c" kind="source" annotate="no" id="fID6"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.9p0\tmp\46o_16qno7jsi\DevTL\SlFunctions\TLProj\top_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.9p0\tmp\46o_16qno7jsi\DevTL\SlFunctions\TLProj\sub_mref1"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.9p0\tmp\46o_16qno7jsi\DevTL\SlFunctions\TLProj\sub_mref2"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.9p0\tmp\46o_16qno7jsi\DevTL\SlFunctions\TLSim"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="51"/>
+  </Defines>
+  <Functions archName="slfunc_model [C-Code]">
+    <Function name="top_A" sampleTime="0.1">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_InPort1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_InPort2" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_InPort3" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_InPort4" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort3" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort4" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa3_Sum1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa8_sub_C2" fileref="fID1" sampleTime="0.1">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa5_my_func2_caller1_y" scaling="scID1"/>
+        <InterfaceObj kind="out" var="IF_Sa8_Out1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa6_sub_B3" fileref="fID1" sampleTime="0.1">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_InPort3" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Smref11_mref1" sampleTime="0.1">
+      <Interface>
+        <InterfaceObj kind="in" var="Smref11_In1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Smref11_Out1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Smref21_mref2" sampleTime="0.1">
+      <Interface>
+        <InterfaceObj kind="in" var="Smref21_In1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Smref21_Out1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Smref25_sub_E1" fileref="fID3" sampleTime="0.1">
+      <Interface>
+        <InterfaceObj kind="in" var="Smref23_Function_Caller_y" scaling="scID1"/>
+        <InterfaceObj kind="out" var="IF_Smref25_Out1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Smref24_sub_D2" fileref="fID3" sampleTime="0.1">
+      <Interface>
+        <InterfaceObj kind="in" var="IF_Smref25_Out1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="IF_Smref24_Out1" scaling="scID1"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

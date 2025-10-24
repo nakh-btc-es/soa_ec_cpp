@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20241008T145957_12824\tmp_ut_preStepFunction\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20241008T145957_12824\tmp_ut_preStepFunction\start.m" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241008T145957_12824\tmp_ut_preStepFunction\preStepFunction.mdl" modelCreationDate="2015-01-28T14:40:34" creator="Wolfgang Meincke">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241008T145957_12824\tmp_ut_preStepFunction\preStepFunction.mdl" creationDate="2015-01-28T14:40:34" modificationDate="2024-10-08T15:15:18" initScript="C:\Users\developer\AppData\Local\Temp\ut20241008T145957_12824\tmp_ut_preStepFunction\start.m">
+    <subsystem subsysID="ss1" physicalPath="preStepFunction" path="" sampleTime="0.01" name="preStepFunction" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="preStepFunction/In1" path="In1" signalName="in">
+        <int8 min="0" max="100"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="preStepFunction/Out1" path="Out1" signalName="out">
+        <int8 min="0" max="100"/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="preStepFunction/TopLevel" path="TopLevel" sampleTime="0.01" name="TopLevel" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="preStepFunction/TopLevel/In1" path="TopLevel/In1" signalName="in">
+        <int8 min="0" max="100"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="preStepFunction/TopLevel/Out1" path="TopLevel/Out1">
+        <int8 min="0" max="100"/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="point_transition"/>
+    <Architecture id="id1" name="point_transition [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="point_transition_adapter.cpp:1:sut_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="ReceivePointA" refId="id0"/>
+        <Path path="RequiredPort_PointX" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.x" refId="id0"/>
+          <Path path=".x" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="ReceivePointA" refId="id0"/>
+        <Path path="RequiredPort_PointX" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.y" refId="id0"/>
+          <Path path=".y" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="ReceivePointA" refId="id0"/>
+        <Path path="RequiredPort_PointX" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.z" refId="id0"/>
+          <Path path=".z" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SendPointB" refId="id0"/>
+        <Path path="ProvidedPort_PointY" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.x" refId="id0"/>
+          <Path path=".x" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SendPointB" refId="id0"/>
+        <Path path="ProvidedPort_PointY" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.y" refId="id0"/>
+          <Path path=".y" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SendPointB" refId="id0"/>
+        <Path path="ProvidedPort_PointY" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.z" refId="id0"/>
+          <Path path=".z" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="ECdemo_preprocessor_subsys"/>
+    <Architecture id="id1" name="ECdemo_preprocessor_subsys [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="ECdemo_preprocessor_subsys.c:1:ECdemo_preprocessor_subsys_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_Subsystem_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In2" refId="id0"/>
+        <Path path="BTCAnnotatedInport_Subsystem_In2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_Subsystem_Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out2" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_Subsystem_Out2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="Subsystem" refId="id0"/>
+      <Path path="ECdemo_preprocessor_subsys.c:1:ECdemo_preprocessor_subsys_step/TopLevel.c:1:TopLevel" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_Subsystem_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/In3" refId="id0"/>
+        <Path path="BTCAnnotatedInport_Subsystem_In2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Subsystem/Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_Subsystem_Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Subsystem/Out2" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_Subsystem_Out2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="Subsystem/LeftController/Nonlinear" refId="id0"/>
+      <Path path="ECdemo_preprocessor_subsys.c:1:ECdemo_preprocessor_subsys_step/TopLevel.c:1:TopLevel/Nonlinear.c:1:Nonlinear" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/LeftController/Nonlinear/In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_Subsystem_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Subsystem/LeftController/Nonlinear/Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_Subsystem_Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="Subsystem/RightController/Nonlinear" refId="id0"/>
+      <Path path="ECdemo_preprocessor_subsys.c:1:ECdemo_preprocessor_subsys_step/TopLevel.c:1:TopLevel/NonLinearRight.c:1:NonLinearRight" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/RightController/Nonlinear/In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_Subsystem_In2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Subsystem/RightController/Nonlinear/Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_Subsystem_Out2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

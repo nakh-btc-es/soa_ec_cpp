@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<EnumType name="MyNumber">
+			<EnumValue name="ZERO" ordinal="0" />
+			<EnumValue name="ONE" ordinal="1" />
+			<EnumValue name="SEVEN" ordinal="7" />
+		</EnumType>
+		<EnumType name="MyColor">
+			<EnumValue name="Red" ordinal="1" />
+			<EnumValue name="Green" ordinal="2" />
+			<EnumValue name="Blue" ordinal="4" />
+		</EnumType>
+		<EnumType name="MyState">
+			<EnumValue name="BAD" ordinal="0" />
+			<EnumValue name="bad" ordinal="0" />
+			<EnumValue name="GOOD" ordinal="1" />
+			<EnumValue name="good" ordinal="1" />
+			<EnumValue name="AWESOME" ordinal="2" />
+			<EnumValue name="awesome" ordinal="2" />
+		</EnumType>
+		<BusType name="MyBus" virtual="false">
+			<Comp name="a" type="MyNumber" />
+			<Comp name="b" type="MyState" />
+			<Comp name="c" type="int32" />
+		</BusType>
+	</Types>
+	<Outports sampleTime="0.2">
+		<Outport portNr="1" type="MyNumber">
+			<ScalarRefs>
+				<ScalarRef displayName="In1">INPUT:In1</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="2" width="2" type="MyColor">
+			<ScalarRefs>
+				<ScalarRef displayName="In2(1)">INPUT:In2(1)</ScalarRef>
+				<ScalarRef displayName="In2(2)">INPUT:In2(2)</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="3" type="int32">
+			<ScalarRefs>
+				<ScalarRef displayName="In3">INPUT:In3</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="4" type="MyColor">
+			<ScalarRefs>
+				<ScalarRef displayName="In4">INPUT:In4</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="5" type="MyState">
+			<ScalarRefs>
+				<ScalarRef displayName="In5">INPUT:In5</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="6" type="MyBus" signalName="&lt;signal1&gt;">
+			<ScalarRefs>
+				<ScalarRef displayName="In6.{&lt;signal1&gt;}.a">INPUT:In6.{&lt;signal1&gt;}.a</ScalarRef>
+				<ScalarRef displayName="In6.{&lt;signal1&gt;}.b">INPUT:In6.{&lt;signal1&gt;}.b</ScalarRef>
+				<ScalarRef displayName="In6.{&lt;signal1&gt;}.c">INPUT:In6.{&lt;signal1&gt;}.c</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="7" type="MyColor">
+			<ScalarRefs>
+				<ScalarRef displayName="In7">INPUT:In7</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="8" type="MyNumber">
+			<ScalarRefs>
+				<ScalarRef displayName="In8">INPUT:In8</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+	</Outports>
+</SFunction>

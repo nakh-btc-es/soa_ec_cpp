@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" modelVersion="15.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ut_min_max_03\min_max_sl.mdl" modelCreationDate="2015-11-12T10:18:35" creator="Alexander Hornstein">
+  <toolInfo name="Matlab" release="(R2022a)" version="9.12" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2022a)" version="10.5" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="15.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240923T064305_12128\tmp_ut_min_max_03\min_max_sl.mdl" creationDate="2015-11-12T10:18:35" modificationDate="2024-09-23T07:34:59">
+    <subsystem subsysID="ss1" physicalPath="min_max_sl/top_A" path="top_A" sampleTime="0.4" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="Inport" physicalPath="min_max_sl/top_A/Inport" path="top_A/Inport" signalName="b1">
+        <array size="3" startIndex="1">
+          <double min="-100.2" max="123.78"/>
+        </array>
+      </inport>
+      <inport portNumber="2" name="Inport Bus" physicalPath="min_max_sl/top_A/Inport Bus" path="top_A/Inport Bus" signalName="a">
+        <bus>
+          <signal signalName="b1">
+            <array size="3" startIndex="1">
+              <double min="-100.2" max="123.78"/>
+            </array>
+          </signal>
+          <signal signalName="b2">
+            <bus>
+              <signal signalName="c1">
+                <array size="2" startIndex="1">
+                  <double/>
+                </array>
+              </signal>
+              <signal signalName="c2">
+                <double/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="min_max_sl/top_A/Out1" path="top_A/Out1">
+        <double min="-1.0E-10" max="1.323E113"/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="min_max_sl/top_A/Out2" path="top_A/Out2">
+        <double max="99.44"/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="min_max_sl/top_A/Out3" path="top_A/Out3" signalName="&lt;signal1&gt;">
+        <bus>
+          <signal signalName="b1">
+            <array size="3" startIndex="1">
+              <double/>
+            </array>
+          </signal>
+          <signal signalName="b2">
+            <bus>
+              <signal signalName="c1">
+                <array size="2" startIndex="1">
+                  <double/>
+                </array>
+              </signal>
+              <signal signalName="c2">
+                <double/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="min_max_sl/top_A/Out4" path="top_A/Out4">
+        <double max="499.2"/>
+      </outport>
+      <display physicalPath="min_max_sl/top_A/Inport" path="top_A/Inport" name="Inport" portNumber="1" signalName="b1">
+        <array size="3" startIndex="1">
+          <double min="-100.2" max="123.78"/>
+        </array>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Inport Bus" path="top_A/Inport Bus" name="Inport Bus" portNumber="1" signalName="a">
+        <bus>
+          <signal signalName="b1">
+            <array size="3" startIndex="1">
+              <double min="-100.2" max="123.78"/>
+            </array>
+          </signal>
+          <signal signalName="b2">
+            <bus>
+              <signal signalName="c1">
+                <array size="2" startIndex="1">
+                  <double/>
+                </array>
+              </signal>
+              <signal signalName="c2">
+                <double/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Abs" path="top_A/Abs" name="Abs" portNumber="1">
+        <array size="3" startIndex="1">
+          <double min="-11.2"/>
+        </array>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Constant" path="top_A/Constant" name="Constant" portNumber="1">
+        <double min="0.2" max="3.2"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Data Store Read" path="top_A/Data Store Read" name="Data Store Read" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Data Type Conversion" path="top_A/Data Type Conversion" name="Data Type Conversion" portNumber="1">
+        <int32 min="-1222" max="233"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Difference" path="top_A/Difference" name="Difference" portNumber="1">
+        <int32 min="-666" max="663"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Discrete Derivative" path="top_A/Discrete Derivative" name="Discrete Derivative" portNumber="1">
+        <single min="-645.8"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Gain" path="top_A/Gain" name="Gain" portNumber="1">
+        <array size="3" startIndex="1">
+          <double min="-8.23" max="9.994"/>
+        </array>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Math Function" path="top_A/Math Function" name="Math Function" portNumber="1">
+        <double min="-1.0E10"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/MinMax" path="top_A/MinMax" name="MinMax" portNumber="1">
+        <double max="99.44"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Product" path="top_A/Product" name="Product" portNumber="1">
+        <double min="-3.6E100" max="4.2E10"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Saturation" path="top_A/Saturation" name="Saturation" portNumber="1">
+        <array size="3" startIndex="1">
+          <double min="-0.45" max="0.67"/>
+        </array>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Signal Specification" path="top_A/Signal Specification" name="Signal Specification" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus>
+          <signal signalName="b1">
+            <array size="3" startIndex="1">
+              <double/>
+            </array>
+          </signal>
+          <signal signalName="b2">
+            <bus>
+              <signal signalName="c1">
+                <array size="2" startIndex="1">
+                  <double/>
+                </array>
+              </signal>
+              <signal signalName="c2">
+                <double/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Sum" path="top_A/Sum" name="Sum" portNumber="1">
+        <double min="-1.0E-10" max="1.323E113"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Switch" path="top_A/Switch" name="Switch" portNumber="1">
+        <double max="499.2"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/sub_B" path="top_A/sub_B" name="sub_B" portNumber="2">
+        <array size="3" startIndex="1">
+          <double min="-100.99" max="177.23"/>
+        </array>
+      </display>
+      <display physicalPath="min_max_sl/top_A/sub_B" path="top_A/sub_B" name="sub_B" portNumber="3" signalName="a">
+        <bus>
+          <signal signalName="b1">
+            <array size="3" startIndex="1">
+              <double/>
+            </array>
+          </signal>
+          <signal signalName="b2">
+            <bus>
+              <signal signalName="c1">
+                <array size="2" startIndex="1">
+                  <double/>
+                </array>
+              </signal>
+              <signal signalName="c2">
+                <double/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="min_max_sl/top_A/sub_B/Interpolation Using Prelookup" path="top_A/sub_B/Interpolation Using Prelookup" name="Interpolation Using Prelookup" portNumber="1">
+        <double max="7.8E19"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/sub_B/Lookup Table" path="top_A/sub_B/Lookup Table" name="Lookup Table" portNumber="1">
+        <double min="-4.0E100"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/sub_B/Lookup Table 2D" path="top_A/sub_B/Lookup Table 2D" name="Lookup Table 2D" portNumber="1">
+        <double min="-10.23234" max="99123.2323"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/sub_B/Multiport Switch" path="top_A/sub_B/Multiport Switch" name="Multiport Switch" portNumber="1">
+        <double min="-333.0" max="22.0"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/sub_B/Prelookup" path="top_A/sub_B/Prelookup" name="Prelookup" portNumber="1">
+        <uint32/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/sub_B/Relay" path="top_A/sub_B/Relay" name="Relay" portNumber="1">
+        <double min="-88.234"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/sub_B/Saturation Dynamic" path="top_A/sub_B/Saturation Dynamic" name="Saturation Dynamic" portNumber="1">
+        <double max="17.0676"/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="min_max_sl/top_A/sub_B" path="top_A/sub_B" sampleTime="0.4" name="sub_B" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="min_max_sl/top_A/sub_B/In1" path="top_A/sub_B/In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="min_max_sl/top_A/sub_B/In2" path="top_A/sub_B/In2">
+        <array size="3" startIndex="1">
+          <double min="-11.2"/>
+        </array>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="min_max_sl/top_A/sub_B/In3" path="top_A/sub_B/In3" signalName="a">
+        <bus>
+          <signal signalName="b1">
+            <array size="3" startIndex="1">
+              <double min="-100.2" max="123.78"/>
+            </array>
+          </signal>
+          <signal signalName="b2">
+            <bus>
+              <signal signalName="c1">
+                <array size="2" startIndex="1">
+                  <double/>
+                </array>
+              </signal>
+              <signal signalName="c2">
+                <double/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="min_max_sl/top_A/sub_B/Out1" path="top_A/sub_B/Out1">
+        <double min="-333.0" max="22.0"/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="min_max_sl/top_A/sub_B/Out2" path="top_A/sub_B/Out2">
+        <array size="3" startIndex="1">
+          <double min="-11.2"/>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="min_max_sl/top_A/sub_B/Out3" path="top_A/sub_B/Out3" signalName="a">
+        <bus>
+          <signal signalName="b1">
+            <array size="3" startIndex="1">
+              <double min="-100.2" max="123.78"/>
+            </array>
+          </signal>
+          <signal signalName="b2">
+            <bus>
+              <signal signalName="c1">
+                <array size="2" startIndex="1">
+                  <double/>
+                </array>
+              </signal>
+              <signal signalName="c2">
+                <double/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <display physicalPath="min_max_sl/top_A/sub_B/Interpolation Using Prelookup" path="top_A/sub_B/Interpolation Using Prelookup" name="Interpolation Using Prelookup" portNumber="1">
+        <double max="7.8E19"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/sub_B/Lookup Table" path="top_A/sub_B/Lookup Table" name="Lookup Table" portNumber="1">
+        <double min="-4.0E100"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/sub_B/Lookup Table 2D" path="top_A/sub_B/Lookup Table 2D" name="Lookup Table 2D" portNumber="1">
+        <double min="-10.23234" max="99123.2323"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/sub_B/Multiport Switch" path="top_A/sub_B/Multiport Switch" name="Multiport Switch" portNumber="1">
+        <double min="-333.0" max="22.0"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/sub_B/Prelookup" path="top_A/sub_B/Prelookup" name="Prelookup" portNumber="1">
+        <uint32/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/sub_B/Relay" path="top_A/sub_B/Relay" name="Relay" portNumber="1">
+        <double min="-88.234"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/sub_B/Saturation Dynamic" path="top_A/sub_B/Saturation Dynamic" name="Saturation Dynamic" portNumber="1">
+        <double max="17.0676"/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

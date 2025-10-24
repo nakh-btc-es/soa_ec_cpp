@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architectureConstraints>
+  <scope path="Subsystem/Subsystem/Subsystem">
+    <assumptions origin="tl_relay">
+      <signalSignal relation="leq" signal1="Subsystem/Subsystem/Subsystem/SC1005/C1/C1[relay_switch_off]" signal2="Subsystem/Subsystem/Subsystem/SC1005/C1/C1[relay_switch_on]"/>
+    </assumptions>
+    <assumptions origin="tl_relay">
+      <signalSignal relation="leq" signal1="Subsystem/Subsystem/Subsystem/SC1005/P1/P1[relay_switch_off]" signal2="Subsystem/Subsystem/Subsystem/SC1005/P1/P1[relay_switch_on]"/>
+    </assumptions>
+    <assumptions origin="tl_saturate">
+      <signalSignal relation="leq" signal1="Subsystem/Subsystem/Subsystem/SC1006/C2/C2[sat_lower]" signal2="Subsystem/Subsystem/Subsystem/SC1006/C2/C2[sat_upper]"/>
+    </assumptions>
+  </scope>
+  <scope path="Subsystem/Subsystem/Subsystem/SC1005">
+    <assumptions origin="tl_relay">
+      <signalSignal relation="leq" signal1="Subsystem/Subsystem/Subsystem/SC1005/C1/C1[relay_switch_off]" signal2="Subsystem/Subsystem/Subsystem/SC1005/C1/C1[relay_switch_on]"/>
+    </assumptions>
+    <assumptions origin="tl_relay">
+      <signalSignal relation="leq" signal1="Subsystem/Subsystem/Subsystem/SC1005/P1/P1[relay_switch_off]" signal2="Subsystem/Subsystem/Subsystem/SC1005/P1/P1[relay_switch_on]"/>
+    </assumptions>
+  </scope>
+  <scope path="Subsystem/Subsystem/Subsystem/SC1006">
+    <assumptions origin="tl_saturate">
+      <signalSignal relation="leq" signal1="Subsystem/Subsystem/Subsystem/SC1006/C2/C2[sat_lower]" signal2="Subsystem/Subsystem/Subsystem/SC1006/C2/C2[sat_upper]"/>
+    </assumptions>
+  </scope>
+</architectureConstraints>

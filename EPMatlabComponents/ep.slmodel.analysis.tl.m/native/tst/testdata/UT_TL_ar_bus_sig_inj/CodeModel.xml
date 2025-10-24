@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="E:\ModelsDev\UT_TL\ar_bus_sig_inj\ml2017b_tl43\results_tl_analysis\TLProj\Subsystem" name="myModel.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="E:\ModelsDev\UT_TL\ar_bus_sig_inj\ml2017b_tl43\results_tl_analysis\TLSim" name="RteIv.c" kind="source" annotate="no" id="fID2"/>
+    <File path="E:\ModelsDev\UT_TL\ar_bus_sig_inj\ml2017b_tl43\results_tl_analysis\TLSim" name="Rte_mySWC.c" kind="source" annotate="no" id="fID3"/>
+    <File path="E:\ModelsDev\UT_TL\ar_bus_sig_inj\ml2017b_tl43\results_tl_analysis\TLSim" name="Rte.c" kind="source" annotate="no" id="fID4"/>
+    <File path="E:\ModelsDev\UT_TL\ar_bus_sig_inj\ml2017b_tl43\results_tl_analysis\TLSim" name="Subsystem_ARfrm.c" kind="source" annotate="no" id="fID5"/>
+    <File path="E:\ModelsDev\UT_TL\ar_bus_sig_inj\ml2017b_tl43\results_tl_analysis\TLSim" name="Subsystem_fri.c" kind="source" annotate="no" id="fID6"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="E:\ModelsDev\UT_TL\ar_bus_sig_inj\ml2017b_tl43\results_tl_analysis\TLProj\Subsystem"/>
+    <IncludePath path="E:\ModelsDev\UT_TL\ar_bus_sig_inj\ml2017b_tl43\results_tl_analysis\TLSim"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 4.3\dSPACE TargetLink 4.3\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 4.3\dSPACE TargetLink 4.3\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 4.3\dSPACE TargetLink 4.3\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+    <IncludePath path="E:\ModelsDev\UT_TL\ar_bus_sig_inj\ml2017b_tl43"/>
+    <IncludePath path="E:\ModelsDev\UT_TL\ar_bus_sig_inj\ml2017b_tl43\results_tl_analysis"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="43"/>
+  </Defines>
+  <Functions archName="ar_bus_sig_inj [C-Code]">
+    <Function name="myRun" initFunc="Rte_Start" proxyFunc="Task_myRun_Wrapper" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Rte_mySWC_inPort_in" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Rte_mySWC_outPort_out" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Rte_mySWC_feedbackPort_feedback" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Rte_mySWC_checkPort_check" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Rte_mySWC_inPort_in_status" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Rte_mySWC_inPort_in_transformerError" access=".errorCode" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Rte_mySWC_inPort_in_transformerError" access=".transformerClass" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Rte_mySWC_outPort_out_status" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Rte_mySWC_outPort_out_feedback" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Rte_mySWC_outPort_out_transformerError" access=".errorCode" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Rte_mySWC_outPort_out_transformerError" access=".transformerClass" scaling="scID1"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20200908T160815_10532\tmp_ut_simple_06\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20200908T160815_10532\tmp_ut_simple_06\startEC.m" modelVersion="1.109" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200908T160815_10532\tmp_ut_simple_06\model_ref_EC.slx" modelCreationDate="2009-03-06T13:09:02" creator="alex">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.109" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200908T160815_10532\tmp_ut_simple_06\model_ref_EC.slx" creationDate="2009-03-06T13:09:02" modificationDate="2020-09-08T14:21:23" initScript="C:\Users\developer\AppData\Local\Temp\ut20200908T160815_10532\tmp_ut_simple_06\startEC.m">
+    <subsystem subsysID="ss1" physicalPath="model_ref_EC" path="" sampleTime="1" name="model_ref_EC" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="model_ref_EC/In1" path="In1" signalName="BTCAnnotatedInport_InPort1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="model_ref_EC/In2" path="In2" signalName="BTCAnnotatedInport_InPort2">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="model_ref_EC/In3" path="In3" signalName="BTCAnnotatedInport_InPort3">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="model_ref_EC/Out1" path="Out1" signalName="BTCAnnotatedOutport_OutPort1">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss9"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="sub3_EC" path="top_A/sub_X/sub3" sampleTime="1" name="sub3" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="sub3_EC/In1" path="top_A/sub_X/sub3/In1" modelRef="model002">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sub3_EC/Out1" path="top_A/sub_X/sub3/Out1" modelRef="model002" signalName="BTCAnnotatedOutport_sub3_Out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="sub2_EC" path="top_A/sub_x2" sampleTime="1" name="sub_x2" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="In1" physicalPath="sub2_EC/In1" path="top_A/sub_x2/In1" modelRef="model004" signalName="BTCAnnotatedInport_InPort1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sub2_EC/In2" path="top_A/sub_x2/In2" modelRef="model004" signalName="BTCAnnotatedInport_sub2_In2">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="sub2_EC/In3" path="top_A/sub_x2/In3" modelRef="model004" signalName="BTCAnnotatedInport_sub2_In3">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sub2_EC/Out1" path="top_A/sub_x2/Out1" modelRef="model004" signalName="BTCAnnotatedOutport_sub2_Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="sub2_EC/Out2" path="top_A/sub_x2/Out2" modelRef="model004" signalName="BTCAnnotatedOutport_sub2_Out2">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+      <subsystem refSubsysID="ss13"/>
+    </subsystem>
+    <subsystem subsysID="ss13" physicalPath="sub4_EC" path="top_A/sub_x2/sub2/sub_X/sub_Y/Model4" sampleTime="1" name="Model4" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="In1" physicalPath="sub4_EC/In1" path="top_A/sub_x2/sub2/sub_X/sub_Y/Model4/In1" modelRef="model003" signalName="BTCAnnotatedInport_sub4_In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sub4_EC/Out1" path="top_A/sub_x2/sub2/sub_X/sub_Y/Model4/Out1" modelRef="model003" signalName="BTCAnnotatedOutport_sub4_Out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.21" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200908T160815_10532\tmp_ut_simple_06\sub3_EC.slx" creationDate="2009-03-06T13:11:23" modificationDate="2020-09-08T14:21:22" initScript="C:\Users\developer\AppData\Local\Temp\ut20200908T160815_10532\tmp_ut_simple_06\startEC.m"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="1.29" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200908T160815_10532\tmp_ut_simple_06\sub4_EC.slx" creationDate="2009-03-06T13:11:23" modificationDate="2020-09-08T14:21:23" initScript="C:\Users\developer\AppData\Local\Temp\ut20200908T160815_10532\tmp_ut_simple_06\startEC.m"/>
+  <model modelID="model004" modelKind="model_ref" modelVersion="1.40" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200908T160815_10532\tmp_ut_simple_06\sub2_EC.slx" creationDate="2009-03-06T13:11:23" modificationDate="2020-09-08T14:21:23" initScript="C:\Users\developer\AppData\Local\Temp\ut20200908T160815_10532\tmp_ut_simple_06\startEC.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

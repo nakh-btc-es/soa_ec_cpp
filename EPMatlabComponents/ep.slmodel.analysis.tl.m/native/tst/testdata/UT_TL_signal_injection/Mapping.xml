@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="signal_injection"/>
+    <Architecture id="id1" name="signal_injection [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="controller/Subsystem/controller"/>
+      <Path refId="id1" path="controller.c:1:controller"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="REF"/>
+        <Path refId="id1" path="SCont1_REF"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="POS"/>
+        <Path refId="id1" path="SCont1_POS"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="UPI"/>
+        <Path refId="id1" path="SCont1_UPI"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="controller/Subsystem/controller/SignalValidationFcnStub/DataStoreReadWithCustomCodeMask"/>
+        <Path refId="id1" path="StatusSignal"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="controller/Subsystem/controller/Algorithm/DataStoreWrite_withCustomCodeMask"/>
+        <Path refId="id1" path="SystemState"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

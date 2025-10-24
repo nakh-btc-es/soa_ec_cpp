@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="bug_36876"/>
+    <Architecture id="id1" name="bug_36876 [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="myFrame/Subsystem/myFrame"/>
+      <Path refId="id1" path="myFrame.c:1:myFrame"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="IF_Sa1_c"/>
+        <SignalMapping>
+          <Path refId="id0" path=".c.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="IF_Sa1_c_a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".c.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="SsubA1_d_a.a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".d.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="SsubA1_d_a.b"/>
+        <SignalMapping>
+          <Path refId="id0" path=".d.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="myFrame/Subsystem/myFrame/mySub"/>
+      <Path refId="id1" path="myFrame.c:1:myFrame/mySub.c:1:STEP_subA"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="SsubA1_c-&gt;a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".c.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="SsubA1_c-&gt;b"/>
+        <SignalMapping>
+          <Path refId="id0" path=".c.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="SsubA1_d-&gt;a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".d.a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="SsubA1_d-&gt;b"/>
+        <SignalMapping>
+          <Path refId="id0" path=".d.b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

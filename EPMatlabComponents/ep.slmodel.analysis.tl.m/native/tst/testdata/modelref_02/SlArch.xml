@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" modelVersion="1.83" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_02\sldemo_mdlref_depgraph.mdl" modelCreationDate="1998-09-10T09:44:42" creator="The MathWorks Inc.">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.83" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_02\sldemo_mdlref_depgraph.mdl" creationDate="1998-09-10T09:44:42" modificationDate="2021-11-19T15:26:45">
+    <subsystem subsysID="ss1" physicalPath="sldemo_mdlref_depgraph/TopSubsystem" path="TopSubsystem" sampleTime="60" name="TopSubsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="InPort" physicalPath="sldemo_mdlref_depgraph/TopSubsystem/InPort" path="TopSubsystem/InPort">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sldemo_mdlref_depgraph/TopSubsystem/Out1" path="TopSubsystem/Out1" signalName="Heat Cost ($)">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="sldemo_mdlref_depgraph/TopSubsystem/Out2" path="TopSubsystem/Out2" signalName="Indoor Temp">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="sldemo_mdlref_heat2cost" path="TopSubsystem/heat2cost" sampleTime="60" name="heat2cost" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="Heat" physicalPath="sldemo_mdlref_heat2cost/Heat" path="TopSubsystem/heat2cost/Heat" modelRef="model002" signalName="heater">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Cost" physicalPath="sldemo_mdlref_heat2cost/Cost" path="TopSubsystem/heat2cost/Cost" modelRef="model002" signalName="Heat Cost ($)">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="sldemo_mdlref_house" path="TopSubsystem/house" sampleTime="60" name="house" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="Heat" physicalPath="sldemo_mdlref_house/Heat" path="TopSubsystem/house/Heat" modelRef="model003" signalName="heater">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="Tout" physicalPath="sldemo_mdlref_house/Tout" path="TopSubsystem/house/Tout" modelRef="model003" signalName="Tout">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Tin" physicalPath="sldemo_mdlref_house/Tin" path="TopSubsystem/house/Tin" modelRef="model003">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="sldemo_mdlref_outdoor_temp" path="TopSubsystem/outdoor temp" sampleTime="60" name="outdoor temp" scopeKind="SUT" kind="subsystem" modelRef="model005">
+      <inport portNumber="1" name="InPort" physicalPath="sldemo_mdlref_outdoor_temp/InPort" path="TopSubsystem/outdoor temp/InPort" modelRef="model005">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Tout" physicalPath="sldemo_mdlref_outdoor_temp/Tout" path="TopSubsystem/outdoor temp/Tout" modelRef="model005">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="sldemo_mdlref_F2C" path="TopSubsystem/outdoor temp/Fahrenheit to Celsius" sampleTime="60" name="Fahrenheit to Celsius" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="F" physicalPath="sldemo_mdlref_F2C/F" path="TopSubsystem/outdoor temp/Fahrenheit to Celsius/F" modelRef="model004">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="C" physicalPath="sldemo_mdlref_F2C/C" path="TopSubsystem/outdoor temp/Fahrenheit to Celsius/C" modelRef="model004">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="sldemo_mdlref_heater" path="TopSubsystem/thermostat" sampleTime="60" name="thermostat" scopeKind="SUT" kind="subsystem" modelRef="model007">
+      <inport portNumber="1" name="Tin" physicalPath="sldemo_mdlref_heater/Tin" path="TopSubsystem/thermostat/Tin" modelRef="model007" signalName="Tin">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Heat" physicalPath="sldemo_mdlref_heater/Heat" path="TopSubsystem/thermostat/Heat" modelRef="model007">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="sldemo_mdlref_F2C" path="TopSubsystem/thermostat/Fahrenheit to Celsius" sampleTime="60" name="Fahrenheit to Celsius" scopeKind="SUT" kind="subsystem" modelRef="model004">
+      <inport portNumber="1" name="F" physicalPath="sldemo_mdlref_F2C/F" path="TopSubsystem/thermostat/Fahrenheit to Celsius/F" modelRef="model004">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="C" physicalPath="sldemo_mdlref_F2C/C" path="TopSubsystem/thermostat/Fahrenheit to Celsius/C" modelRef="model004">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="sldemo_mdlref_thermostat" path="TopSubsystem/thermostat/Thermostat" sampleTime="60" name="Thermostat" scopeKind="SUT" kind="subsystem" modelRef="model006">
+      <inport portNumber="1" name="Terr" physicalPath="sldemo_mdlref_thermostat/Terr" path="TopSubsystem/thermostat/Thermostat/Terr" modelRef="model006" signalName="Terr">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Blower&#10;switch" physicalPath="sldemo_mdlref_thermostat/Blower&#10;switch" path="TopSubsystem/thermostat/Thermostat/Blower&#10;switch" modelRef="model006">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.14" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_02\sldemo_mdlref_heat2cost.mdl" creationDate="2004-03-23T09:18:09" modificationDate="2021-11-19T15:26:45"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="1.16" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_02\sldemo_mdlref_house.mdl" creationDate="2004-03-23T09:18:09" modificationDate="2021-11-19T15:26:45"/>
+  <model modelID="model004" modelKind="model_ref" modelVersion="1.14" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_02\sldemo_mdlref_F2C.mdl" creationDate="2004-03-23T09:18:08" modificationDate="2021-11-19T15:26:45"/>
+  <model modelID="model005" modelKind="model_ref" modelVersion="1.23" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_02\sldemo_mdlref_outdoor_temp.mdl" creationDate="2004-03-23T09:18:09" modificationDate="2021-11-19T15:26:45"/>
+  <model modelID="model006" modelKind="model_ref" modelVersion="1.14" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_02\sldemo_mdlref_thermostat.mdl" creationDate="2004-03-23T09:18:08" modificationDate="2021-11-19T15:26:45"/>
+  <model modelID="model007" modelKind="model_ref" modelVersion="1.27" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_modelref_02\sldemo_mdlref_heater.mdl" creationDate="2004-03-23T09:18:09" modificationDate="2021-11-19T15:26:45"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1f5494c394\ep_2661\TLProj\top_A" name="top_A.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1f5494c394\ep_2661\TLSim" name="top_A_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1f5494c394\ep_2661\TLProj\top_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\1f5494c394\ep_2661\TLSim"/>
+    <IncludePath path="C:\dspace\TL42\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dspace\TL42\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dspace\TL42\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="42"/>
+  </Defines>
+  <Functions archName="ep_2661 [C-Code]">
+    <Function name="top_A" sampleTime="0.2">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_bit1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_in1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_out1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_out2" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa2_Merge" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa5_Relational_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa5_rescaler1" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa5_rescaler2" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa2_rescaler_B" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa7_Relational_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa7_rescaler1" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa7_rescaler2" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa3_rescaler_A" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa2_Atomic" fileref="fID1" sampleTime="0.2">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_bit1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_in1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa2_Merge" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa2_Merge" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa5_Relational_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa5_rescaler1" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa5_rescaler2" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa2_rescaler_B" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa3_NonAtomic" fileref="fID1" sampleTime="0.2">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_bit1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_in1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa3_Merge" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa7_Relational_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa7_rescaler1" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa7_rescaler2" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sa3_rescaler_A" scaling="scID1"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

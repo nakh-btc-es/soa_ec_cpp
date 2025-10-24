@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction mdfDialect="EP2.9">
+	<Types>
+		<BusType name="LittleBus" virtual="false">
+			<Comp name="a1" type="MyEnum" />
+			<Comp name="a2" type="MyEnum" />
+			<Comp name="a3" type="fixdt(1,16,0.03125,0)" />
+			<Comp name="a4" type="fixdt(1,16,0.03125,0)" />
+			<Comp name="a5" type="fixdt(0,6,2)" />
+			<Comp name="a6" type="fixdt(0,6,2)" />
+		</BusType>
+		<BusType name="MegaBus" virtual="false">
+			<Comp name="c1" type="boolean" />
+			<Comp name="c2" type="BigBus" />
+			<Comp name="c3" type="LittleBus" />
+			<Comp name="c4" type="fixdt(0,8,0.25,0.5)" />
+		</BusType>
+		<BusType name="BigBus" virtual="false">
+			<Comp name="b1" type="LittleBus" />
+			<Comp name="b2" type="fixdt(0,6,2)" />
+		</BusType>
+		<BusType name="SomeBus" virtual="false">
+			<Comp name="x" type="fixdt(1,16,0.03125,0)" />
+			<Comp name="y" type="fixdt(0,6,2)" />
+			<Comp name="z" type="int32" />
+		</BusType>
+	</Types>
+	<Inports debug="false">
+		<Inport portNr="1" type="fixdt(0,6,2)">
+			<ScalarRefs>
+				<ScalarRef displayName="Out1">OUTPUT:Out1</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="2" type="LittleBus" signalName="&lt;signal1&gt;">
+			<ScalarRefs>
+				<ScalarRef displayName="Out2.{&lt;signal1&gt;}.a1">OUTPUT:Out2.{&lt;signal1&gt;}.a1</ScalarRef>
+				<ScalarRef displayName="Out2.{&lt;signal1&gt;}.a2">OUTPUT:Out2.{&lt;signal1&gt;}.a2</ScalarRef>
+				<ScalarRef displayName="Out2.{&lt;signal1&gt;}.a3">OUTPUT:Out2.{&lt;signal1&gt;}.a3</ScalarRef>
+				<ScalarRef displayName="Out2.{&lt;signal1&gt;}.a4">OUTPUT:Out2.{&lt;signal1&gt;}.a4</ScalarRef>
+				<ScalarRef displayName="Out2.{&lt;signal1&gt;}.a5">OUTPUT:Out2.{&lt;signal1&gt;}.a5</ScalarRef>
+				<ScalarRef displayName="Out2.{&lt;signal1&gt;}.a6">OUTPUT:Out2.{&lt;signal1&gt;}.a6</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="3" type="MegaBus" signalName="&lt;signal1&gt;">
+			<ScalarRefs>
+				<ScalarRef displayName="Out3.{&lt;signal1&gt;}.c1">OUTPUT:Out3.{&lt;signal1&gt;}.c1</ScalarRef>
+				<ScalarRef displayName="Out3.{&lt;signal1&gt;}.c2.b1.a1">OUTPUT:Out3.{&lt;signal1&gt;}.c2.b1.a1</ScalarRef>
+				<ScalarRef displayName="Out3.{&lt;signal1&gt;}.c2.b1.a2">OUTPUT:Out3.{&lt;signal1&gt;}.c2.b1.a2</ScalarRef>
+				<ScalarRef displayName="Out3.{&lt;signal1&gt;}.c2.b1.a3">OUTPUT:Out3.{&lt;signal1&gt;}.c2.b1.a3</ScalarRef>
+				<ScalarRef displayName="Out3.{&lt;signal1&gt;}.c2.b1.a4">OUTPUT:Out3.{&lt;signal1&gt;}.c2.b1.a4</ScalarRef>
+				<ScalarRef displayName="Out3.{&lt;signal1&gt;}.c2.b1.a5">OUTPUT:Out3.{&lt;signal1&gt;}.c2.b1.a5</ScalarRef>
+				<ScalarRef displayName="Out3.{&lt;signal1&gt;}.c2.b1.a6">OUTPUT:Out3.{&lt;signal1&gt;}.c2.b1.a6</ScalarRef>
+				<ScalarRef displayName="Out3.{&lt;signal1&gt;}.c2.b2">OUTPUT:Out3.{&lt;signal1&gt;}.c2.b2</ScalarRef>
+				<ScalarRef displayName="Out3.{&lt;signal1&gt;}.c3.a1">OUTPUT:Out3.{&lt;signal1&gt;}.c3.a1</ScalarRef>
+				<ScalarRef displayName="Out3.{&lt;signal1&gt;}.c3.a2">OUTPUT:Out3.{&lt;signal1&gt;}.c3.a2</ScalarRef>
+				<ScalarRef displayName="Out3.{&lt;signal1&gt;}.c3.a3">OUTPUT:Out3.{&lt;signal1&gt;}.c3.a3</ScalarRef>
+				<ScalarRef displayName="Out3.{&lt;signal1&gt;}.c3.a4">OUTPUT:Out3.{&lt;signal1&gt;}.c3.a4</ScalarRef>
+				<ScalarRef displayName="Out3.{&lt;signal1&gt;}.c3.a5">OUTPUT:Out3.{&lt;signal1&gt;}.c3.a5</ScalarRef>
+				<ScalarRef displayName="Out3.{&lt;signal1&gt;}.c3.a6">OUTPUT:Out3.{&lt;signal1&gt;}.c3.a6</ScalarRef>
+				<ScalarRef displayName="Out3.{&lt;signal1&gt;}.c4">OUTPUT:Out3.{&lt;signal1&gt;}.c4</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="4" type="SomeBus" signalName="&lt;signal1&gt;">
+			<ScalarRefs>
+				<ScalarRef displayName="Out4.{&lt;signal1&gt;}.x">OUTPUT:Out4.{&lt;signal1&gt;}.x</ScalarRef>
+				<ScalarRef displayName="Out4.{&lt;signal1&gt;}.y">OUTPUT:Out4.{&lt;signal1&gt;}.y</ScalarRef>
+				<ScalarRef displayName="Out4.{&lt;signal1&gt;}.z">OUTPUT:Out4.{&lt;signal1&gt;}.z</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="5" type="fixdt(1,16,0.03125,0)">
+			<ScalarRefs>
+				<ScalarRef displayName="Out5">OUTPUT:Out5</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="6" type="fixdt(0,6,2)">
+			<ScalarRefs>
+				<ScalarRef displayName="Out6">OUTPUT:Out6</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport kind="DataStoreWrite" type="SomeBus" signalName="ds3" portNr="7">
+			<ScalarRefs>
+				<ScalarRef displayName="{Data Store\nWrite@ds3}.ds3.x">OUTPUT:Data Store
+Write.ds3.x</ScalarRef>
+				<ScalarRef displayName="{Data Store\nWrite@ds3}.ds3.y">OUTPUT:Data Store
+Write.ds3.y</ScalarRef>
+				<ScalarRef displayName="{Data Store\nWrite@ds3}.ds3.z">OUTPUT:Data Store
+Write.ds3.z</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+	</Inports>
+</SFunction>

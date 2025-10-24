@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_param_saturation_relay\ut_results\AddModelInfo.xml" modelVersion="1.13" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_param_saturation_relay\param_saturation_relay.slx" modelCreationDate="2023-10-24T12:50:21" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.13" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_param_saturation_relay\param_saturation_relay.slx" creationDate="2023-10-24T12:50:21" modificationDate="2024-09-12T19:14:06">
+    <subsystem subsysID="ss1" physicalPath="param_saturation_relay" path="" sampleTime="0.1" name="param_saturation_relay" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="param_saturation_relay/In1" path="In1" signalName="in1">
+        <int32/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="param_saturation_relay/In2" path="In2" signalName="in2">
+        <int32/>
+      </inport>
+      <parameter name="bp_obj" path="Prelookup" physicalPath="param_saturation_relay/Prelookup" origin="explicit_param" workspace="bp_obj">
+        <nonUniformArray size="5">
+          <signal index="1" initValue="-12.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="-1.0">
+            <int32/>
+          </signal>
+          <signal index="3" initValue="0.0">
+            <int32/>
+          </signal>
+          <signal index="4" initValue="1.0">
+            <int32/>
+          </signal>
+          <signal index="5" initValue="13.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Prelookup" physicalPath="param_saturation_relay/Prelookup" simulinkBlockType="PreLookup" blockAttribute="BreakpointObject"/>
+      </parameter>
+      <parameter name="const_p" path="Constant" physicalPath="param_saturation_relay/Constant" origin="explicit_param" workspace="const_p" initValue="33.0">
+        <int32/>
+        <usageContext path="Constant" physicalPath="param_saturation_relay/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="lower_p" path="Saturation" physicalPath="param_saturation_relay/Saturation" origin="explicit_param" workspace="lower_p" initValue="-233.0">
+        <int32/>
+        <usageContext path="Saturation" physicalPath="param_saturation_relay/Saturation" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+      </parameter>
+      <parameter name="off_p" path="Relay" physicalPath="param_saturation_relay/Relay" origin="explicit_param" workspace="off_p" initValue="-6.0">
+        <int32/>
+        <usageContext path="Relay" physicalPath="param_saturation_relay/Relay" simulinkBlockType="Relay" blockAttribute="OffSwitchValue"/>
+      </parameter>
+      <parameter name="off_val" path="Relay" physicalPath="param_saturation_relay/Relay" origin="explicit_param" workspace="off_val" initValue="-300.0">
+        <int32/>
+        <usageContext path="Relay" physicalPath="param_saturation_relay/Relay" simulinkBlockType="Relay" blockAttribute="OffOutputValue"/>
+      </parameter>
+      <parameter name="on_p" path="Relay" physicalPath="param_saturation_relay/Relay" origin="explicit_param" workspace="on_p" initValue="3.0">
+        <int32/>
+        <usageContext path="Relay" physicalPath="param_saturation_relay/Relay" simulinkBlockType="Relay" blockAttribute="OnSwitchValue"/>
+      </parameter>
+      <parameter name="on_val" path="Relay" physicalPath="param_saturation_relay/Relay" origin="explicit_param" workspace="on_val" initValue="100.0">
+        <int32/>
+        <usageContext path="Relay" physicalPath="param_saturation_relay/Relay" simulinkBlockType="Relay" blockAttribute="OnOutputValue"/>
+      </parameter>
+      <parameter name="upper_p" path="Saturation" physicalPath="param_saturation_relay/Saturation" origin="explicit_param" workspace="upper_p" initValue="1311.0">
+        <int32/>
+        <usageContext path="Saturation" physicalPath="param_saturation_relay/Saturation" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="param_saturation_relay/Out1" path="Out1" signalName="out1">
+        <int32/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="param_saturation_relay/Out2" path="Out2" signalName="out2">
+        <int32/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="param_saturation_relay/Out3" path="Out3" signalName="out3">
+        <int32/>
+      </outport>
+      <display physicalPath="param_saturation_relay/Constant" path="Constant" name="Constant" portNumber="1" signalName="local2">
+        <int32/>
+      </display>
+      <display physicalPath="param_saturation_relay/Prelookup" path="Prelookup" name="Prelookup" portNumber="1" signalName="local1">
+        <uint32/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

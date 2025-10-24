@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="E:\EP2\Dev_branch2\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\tst\tmpdir\simple_22\start.m" modelVersion="1.582" modelPath="E:\EP2\Dev_branch2\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\tst\tmpdir\simple_22\funcall_gen.slx" modelCreationDate="2015-01-28T14:40:34" creator="Wolfgang Meincke">
+  <toolInfo name="Matlab" release="(R2016b)" version="9.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2016b)" version="8.8" patchLevel=""/>
+  <model modelKind="model" modelID="model001" modelVersion="1.582" modelPath="E:\EP2\Dev_branch2\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\tst\tmpdir\simple_22\funcall_gen.slx" creationDate="2015-01-28T14:40:34" initScript="E:\EP2\Dev_branch2\EPSimulinkModel\com.btc.ep.slmodel.analysis.ec.m\native\tst\tmpdir\simple_22\start.m">
+    <subsystem subsysID="ss1" physicalPath="funcall_gen" path="" sampleTime="0.01" name="funcall_gen" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in" physicalPath="funcall_gen/in" path="in">
+        <uint8 min="0" max="10"/>
+      </inport>
+      <parameter name="K" path="sut/Gain" physicalPath="funcall_gen/sut/Gain" initValue="2.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="K">
+        <uint8 min="0" max="255"/>
+        <usageContext path="sut/Gain" physicalPath="funcall_gen/sut/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="funcall_gen/out" path="out" signalName="out">
+        <uint8 min="0" max="10"/>
+      </outport>
+      <display physicalPath="funcall_gen/sut/Data Type Conversion" path="sut/Data Type Conversion" name="Data Type Conversion" portNumber="1" signalName="out">
+        <uint8 min="0" max="10"/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="funcall_gen/sut" path="sut" sampleTime="1" name="sut" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in" physicalPath="funcall_gen/sut/in" path="sut/in" signalName="in">
+        <uint8 min="0" max="10"/>
+      </inport>
+      <parameter name="K" path="sut/Gain" physicalPath="funcall_gen/sut/Gain" initValue="2.0000000000000000e+00" origin="explicit_param" restricted="false" workspace="K">
+        <uint8 min="0" max="255"/>
+        <usageContext path="sut/Gain" physicalPath="funcall_gen/sut/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="funcall_gen/sut/out" path="sut/out" signalName="out">
+        <uint8 min="0" max="10"/>
+      </outport>
+      <display physicalPath="funcall_gen/sut/Data Type Conversion" path="sut/Data Type Conversion" name="Data Type Conversion" portNumber="1" signalName="out">
+        <uint8 min="0" max="10"/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

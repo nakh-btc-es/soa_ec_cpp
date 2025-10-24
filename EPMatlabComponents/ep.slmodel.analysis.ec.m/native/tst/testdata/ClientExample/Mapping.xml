@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Wrapper_SWC"/>
+    <Architecture id="id1" name="Wrapper_SWC [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Wrapper_SWC.c:1:Wrapper_SWC_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="B" refId="id0"/>
+        <Path path="RteStub_SRItf2_RPP_Port_elem_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="last_A_and_B" refId="id0"/>
+        <Path path="RteStub_my_SRItf_PP_last_A_and_B_elem_last_A_and_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="new_B" refId="id0"/>
+        <Path path="RteStub_SRItf2_RPP_Port_elem_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="B_or_D" refId="id0"/>
+        <Path path="RteStub_SRItf2_RPP_Port_elem_B_or_D" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="SWC/SWC/R1/Logical&#10;Operator(1)" refId="id0"/>
+        <Path path="a_and_b" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="SWC/SWC/R2/Unit Delay(1)" refId="id0"/>
+        <Path path="last_b" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="C" refId="id0"/>
+        <Path path="C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="D" refId="id0"/>
+        <Path path="D" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="Param_A" refId="id0"/>
+        <Path path="Param_A" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="Param_ERR" refId="id0"/>
+        <Path path="Param_ERR" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SWC/SWC/R1" refId="id0"/>
+      <Path path="Wrapper_SWC.c:1:Wrapper_SWC_step/SWC.c:1:Runa_fct" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SWC/SWC/R1/B" refId="id0"/>
+        <Path path="RteStub_SRItf2_RPP_Port_elem_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SWC/SWC/R1/last_A_and_B" refId="id0"/>
+        <Path path="RteStub_my_SRItf_PP_last_A_and_B_elem_last_A_and_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SWC/SWC/R1/new_B" refId="id0"/>
+        <Path path="RteStub_SRItf2_RPP_Port_elem_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="SWC/SWC/R1/Logical&#10;Operator(1)" refId="id0"/>
+        <Path path="a_and_b" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="C" refId="id0"/>
+        <Path path="C" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SWC/SWC/R2" refId="id0"/>
+      <Path path="Wrapper_SWC.c:1:Wrapper_SWC_step/SWC.c:1:other_fct" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SWC/SWC/R2/B" refId="id0"/>
+        <Path path="RteStub_SRItf2_RPP_Port_elem_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SWC/SWC/R2/B_or_D" refId="id0"/>
+        <Path path="RteStub_SRItf2_RPP_Port_elem_B_or_D" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="SWC/SWC/R2/Unit Delay(1)" refId="id0"/>
+        <Path path="last_b" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="D" refId="id0"/>
+        <Path path="D" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

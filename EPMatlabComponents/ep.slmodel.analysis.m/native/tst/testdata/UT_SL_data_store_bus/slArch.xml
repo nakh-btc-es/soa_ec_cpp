@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_data_stores_bus_01\init_model.m" modelVersion="16.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_data_stores_bus_01\ds_with_buses.slx" modelCreationDate="2020-09-30T11:42:51" creator="developer">
+  <toolInfo name="Matlab" release="(R2022b)" version="9.13" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2022b)" version="10.6" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="16.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_data_stores_bus_01\ds_with_buses.slx" creationDate="2020-09-30T11:42:51" modificationDate="2023-05-26T10:07:54" initScript="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_data_stores_bus_01\init_model.m">
+    <subsystem subsysID="ss1" physicalPath="ds_with_buses" path="" sampleTime="0.01" name="ds_with_buses" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ds_with_buses/In1" path="In1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="LowBus">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <uint8 max="10"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="0" name="ds_in" physicalPath="ds_with_buses/ds_in" path="ds_in" signalName="Sig2">
+        <bus busType="non_virtual" busObjectName="LowBus">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <uint8 max="10"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="Sig2"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ds_with_buses/Out1" path="Out1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="LowBus">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <uint8 max="10"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="0" name="ds_out" physicalPath="ds_with_buses/ds_out" path="ds_out" signalName="Sig1">
+        <bus busType="non_virtual" busObjectName="LowBus">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <uint8 max="10"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="Sig1"/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

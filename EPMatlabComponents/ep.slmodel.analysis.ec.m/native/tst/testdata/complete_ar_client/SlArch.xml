@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_complete_ar_client\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_complete_ar_client\init_Wrapper_mControllerWithInterface_client.m" modelVersion="11.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_complete_ar_client\Wrapper_mControllerWithInterface_client.slx" modelCreationDate="2020-04-27T13:08:44" creator="developer">
+  <toolInfo name="Matlab" release="(R2022b)" version="9.13" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2022b)" version="10.6" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="11.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_complete_ar_client\Wrapper_mControllerWithInterface_client.slx" creationDate="2020-04-27T13:08:44" modificationDate="2023-05-26T10:51:25" initScript="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_complete_ar_client\init_Wrapper_mControllerWithInterface_client.m">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_mControllerWithInterface_client" path="" sampleTime="1" name="Wrapper_mControllerWithInterface_client" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="RPort_DE1" physicalPath="Wrapper_mControllerWithInterface_client/RPort_DE1" path="RPort_DE1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="RPort_DE1&#10;(ErrorStatus)" physicalPath="Wrapper_mControllerWithInterface_client/RPort_DE1&#10;(ErrorStatus)" path="RPort_DE1&#10;(ErrorStatus)">
+        <uint8/>
+      </inport>
+      <inport portNumber="3" name="RPort_DE2" physicalPath="Wrapper_mControllerWithInterface_client/RPort_DE2" path="RPort_DE2">
+        <double/>
+      </inport>
+      <inport portNumber="0" name="dsin_ReadData_Data" physicalPath="Wrapper_mControllerWithInterface_client/Mock_readData/dsin_ReadData_Data" path="Mock_readData/dsin_ReadData_Data" signalName="dsin_ReadData_Data">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <double/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="dsin_ReadData_Data"/>
+      </inport>
+      <inport portNumber="0" name="dsin_ReadData_ERR" physicalPath="Wrapper_mControllerWithInterface_client/Mock_readData/dsin_ReadData_ERR" path="Mock_readData/dsin_ReadData_ERR" signalName="dsin_ReadData_ERR">
+        <uint8/>
+        <dataStoreMemory signalName="dsin_ReadData_ERR"/>
+      </inport>
+      <inport portNumber="0" name="dsin_ReadData_NegCode" physicalPath="Wrapper_mControllerWithInterface_client/Mock_readData/dsin_ReadData_NegCode" path="Mock_readData/dsin_ReadData_NegCode" signalName="dsin_ReadData_NegCode">
+        <double/>
+        <dataStoreMemory signalName="dsin_ReadData_NegCode"/>
+      </inport>
+      <outport portNumber="1" name="PPort_DE1" physicalPath="Wrapper_mControllerWithInterface_client/PPort_DE1" path="PPort_DE1">
+        <int8/>
+      </outport>
+      <outport portNumber="2" name="PPort_DE2" physicalPath="Wrapper_mControllerWithInterface_client/PPort_DE2" path="PPort_DE2">
+        <int8/>
+      </outport>
+      <outport portNumber="3" name="PPort_DE3" physicalPath="Wrapper_mControllerWithInterface_client/PPort_DE3" path="PPort_DE3">
+        <int8/>
+      </outport>
+      <outport portNumber="4" name="PPort_DE4" physicalPath="Wrapper_mControllerWithInterface_client/PPort_DE4" path="PPort_DE4">
+        <double/>
+      </outport>
+      <outport portNumber="5" name="Err" physicalPath="Wrapper_mControllerWithInterface_client/Err" path="Err">
+        <uint8/>
+      </outport>
+      <outport portNumber="6" name="NegCode" physicalPath="Wrapper_mControllerWithInterface_client/NegCode" path="NegCode">
+        <double/>
+      </outport>
+      <outport portNumber="0" name="dsout_ReadData_Op" physicalPath="Wrapper_mControllerWithInterface_client/Mock_readData/dsout_ReadData_Op" path="Mock_readData/dsout_ReadData_Op" signalName="dsout_ReadData_Op">
+        <double/>
+        <dataStoreMemory signalName="dsout_ReadData_Op"/>
+      </outport>
+      <subsystem refSubsysID="ss10"/>
+      <subsystem refSubsysID="ss12"/>
+      <subsystem refSubsysID="ss13"/>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="mControllerWithInterface_client/Runnable1_subsystem" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable1_subsystem" sampleTime="1" name="Runnable1_subsystem" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="mControllerWithInterface_client/Runnable1_subsystem/In1" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable1_subsystem/In1" modelRef="model002">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="ErrorStatus" physicalPath="mControllerWithInterface_client/Runnable1_subsystem/ErrorStatus" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable1_subsystem/ErrorStatus" modelRef="model002">
+        <uint8/>
+      </inport>
+      <inport portNumber="3" name="In2" physicalPath="mControllerWithInterface_client/Runnable1_subsystem/In2" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable1_subsystem/In2" modelRef="model002" signalName="irv3">
+        <int8/>
+      </inport>
+      <outport portNumber="1" name="TicToc" physicalPath="mControllerWithInterface_client/Runnable1_subsystem/TicToc" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable1_subsystem/TicToc" modelRef="model002">
+        <int8/>
+      </outport>
+      <outport portNumber="2" name="Adder" physicalPath="mControllerWithInterface_client/Runnable1_subsystem/Adder" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable1_subsystem/Adder" modelRef="model002">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss12" physicalPath="mControllerWithInterface_client/Runnable2_subsystem" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable2_subsystem" sampleTime="1" name="Runnable2_subsystem" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="mControllerWithInterface_client/Runnable2_subsystem/In1" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable2_subsystem/In1" modelRef="model002" signalName="irv1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="mControllerWithInterface_client/Runnable2_subsystem/In2" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable2_subsystem/In2" modelRef="model002" signalName="irv2">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="TicToc" physicalPath="mControllerWithInterface_client/Runnable2_subsystem/TicToc" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable2_subsystem/TicToc" modelRef="model002">
+        <int8/>
+      </outport>
+      <outport portNumber="2" name="Subtracter" physicalPath="mControllerWithInterface_client/Runnable2_subsystem/Subtracter" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable2_subsystem/Subtracter" modelRef="model002">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Subtracter_irv" physicalPath="mControllerWithInterface_client/Runnable2_subsystem/Subtracter_irv" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable2_subsystem/Subtracter_irv" modelRef="model002">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss13" physicalPath="mControllerWithInterface_client/Runnable3_subsystem" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable3_subsystem" sampleTime="10" name="Runnable3_subsystem" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="mControllerWithInterface_client/Runnable3_subsystem/In1" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable3_subsystem/In1" modelRef="model002" signalName="irv4">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="mControllerWithInterface_client/Runnable3_subsystem/In2" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable3_subsystem/In2" modelRef="model002">
+        <double/>
+      </inport>
+      <inport portNumber="0" name="dsin_ReadData_Data" physicalPath="Wrapper_mControllerWithInterface_client/Mock_readData/dsin_ReadData_Data" path="Mock_readData/dsin_ReadData_Data" signalName="dsin_ReadData_Data">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <double/>
+          </array>
+        </array>
+        <dataStoreMemory signalName="dsin_ReadData_Data"/>
+      </inport>
+      <inport portNumber="0" name="dsin_ReadData_ERR" physicalPath="Wrapper_mControllerWithInterface_client/Mock_readData/dsin_ReadData_ERR" path="Mock_readData/dsin_ReadData_ERR" signalName="dsin_ReadData_ERR">
+        <uint8/>
+        <dataStoreMemory signalName="dsin_ReadData_ERR"/>
+      </inport>
+      <inport portNumber="0" name="dsin_ReadData_NegCode" physicalPath="Wrapper_mControllerWithInterface_client/Mock_readData/dsin_ReadData_NegCode" path="Mock_readData/dsin_ReadData_NegCode" signalName="dsin_ReadData_NegCode">
+        <double/>
+        <dataStoreMemory signalName="dsin_ReadData_NegCode"/>
+      </inport>
+      <outport portNumber="1" name="TicToc_irv" physicalPath="mControllerWithInterface_client/Runnable3_subsystem/TicToc_irv" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable3_subsystem/TicToc_irv" modelRef="model002">
+        <int8/>
+      </outport>
+      <outport portNumber="2" name="TicToc" physicalPath="mControllerWithInterface_client/Runnable3_subsystem/TicToc" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable3_subsystem/TicToc" modelRef="model002">
+        <int8/>
+      </outport>
+      <outport portNumber="3" name="Data" physicalPath="mControllerWithInterface_client/Runnable3_subsystem/Data" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable3_subsystem/Data" modelRef="model002">
+        <double/>
+      </outport>
+      <outport portNumber="4" name="Err" physicalPath="mControllerWithInterface_client/Runnable3_subsystem/Err" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable3_subsystem/Err" modelRef="model002">
+        <uint8/>
+      </outport>
+      <outport portNumber="5" name="NegCode" physicalPath="mControllerWithInterface_client/Runnable3_subsystem/NegCode" path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable3_subsystem/NegCode" modelRef="model002">
+        <double/>
+      </outport>
+      <outport portNumber="0" name="dsout_ReadData_Op" physicalPath="Wrapper_mControllerWithInterface_client/Mock_readData/dsout_ReadData_Op" path="Mock_readData/dsout_ReadData_Op" signalName="dsout_ReadData_Op">
+        <double/>
+        <dataStoreMemory signalName="dsout_ReadData_Op"/>
+      </outport>
+      <slfunc_caller path="mControllerWithInterface_client/mControllerWithInterface_client/Runnable3_subsystem/readData" pathCaller="mControllerWithInterface_client/Runnable3_subsystem/readData" pathFunction="Wrapper_mControllerWithInterface_client/Mock_readData"/>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="11.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_complete_ar_client\mControllerWithInterface_client.slx" creationDate="2004-08-13T15:50:23" modificationDate="2023-05-26T10:51:25" initScript="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_complete_ar_client\init_Wrapper_mControllerWithInterface_client.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

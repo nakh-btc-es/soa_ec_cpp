@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\simple_interface\TLProj\Subsystem1" name="Subsystem1.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\simple_interface\TLSim" name="Subsystem1_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\simple_interface\TLProj\Subsystem1"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\simple_interface\TLSim"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="simple_interface [C-Code]">
+    <Function name="Subsystem1" sampleTime="0.01">
+      <Args>
+        <Arg name="Output_Variable_str2">
+          <Variable name="Arg_In_Out_a__c"/>
+        </Arg>
+        <Arg name="new_Variable">
+          <Variable name="Arg_In_Out_a__d"/>
+        </Arg>
+        <Arg name="Sa1_in2">
+          <ArrayRef size="2"/>
+        </Arg>
+      </Args>
+      <Interface>
+        <InterfaceObj kind="in" var="DD_Sa1_In1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="new_Variable" access="-&gt;Comp_1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="new_Variable_2" access=".Expli_comp2" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_in2" scaling="scID1"/>
+        <InterfaceObj kind="in" var="new_Variable" access="-&gt;Comp_2" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Input_Variable_str2" access=".new_Component.sub_Com2" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Input_Variable_str2" access=".new_Component_3" scaling="scID2"/>
+        <InterfaceObj kind="out" var="Output_variable" access=".Expli_comp3" scaling="scID3"/>
+        <InterfaceObj kind="out" var="Output_variable" access=".Expli_comp1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="new_Variable_2" access=".Expli_comp2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Output_Variable_str2" access="-&gt;new_Component.sub_Com2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="DD_Sa1_Out2" scaling="scID3"/>
+        <InterfaceObj kind="disp" var="Sa1_Relational_Operator1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa1_Relational_Operator3" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa1_Relational_Operator4" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sa1_Relational_Operator5" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+    <Scaling id="scID2" lsb="3.1250000000000000e-02" offset="0.0000000000000000e+00"/>
+    <Scaling id="scID3" lsb="2.5000000000000000e-01" offset="-3.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

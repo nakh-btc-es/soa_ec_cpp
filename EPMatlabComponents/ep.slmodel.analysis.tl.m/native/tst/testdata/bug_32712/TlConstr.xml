@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architectureConstraints>
+  <scope path="top_A/Subsystem/top_A">
+    <assumptions origin="tl_saturate:upperlimit">
+      <signalValue signal="top_A/Subsystem/top_A/Model_B/Model_C/Saturation/c" relation="geq" value="-1.0000000000000000e+01"/>
+    </assumptions>
+    <assumptions origin="tl_saturate:upperlimit">
+      <signalValue signal="top_A/Subsystem/top_A/Model_B/Saturation/b" relation="geq" value="-1.0000000000000000e+01"/>
+    </assumptions>
+    <assumptions origin="tl_saturate:upperlimit">
+      <signalValue signal="top_A/Subsystem/top_A/Saturation/a" relation="geq" value="-2.0000000000000000e+01"/>
+    </assumptions>
+  </scope>
+  <scope path="top_A/Subsystem/top_A/Model_B">
+    <assumptions origin="tl_saturate:upperlimit">
+      <signalValue signal="top_A/Subsystem/top_A/Model_B/Model_C/Saturation/c" relation="geq" value="-1.0000000000000000e+01"/>
+    </assumptions>
+    <assumptions origin="tl_saturate:upperlimit">
+      <signalValue signal="top_A/Subsystem/top_A/Model_B/Saturation/b" relation="geq" value="-1.0000000000000000e+01"/>
+    </assumptions>
+  </scope>
+  <scope path="top_A/Subsystem/top_A/Model_B/Model_C">
+    <assumptions origin="tl_saturate:upperlimit">
+      <signalValue signal="top_A/Subsystem/top_A/Model_B/Model_C/Saturation/c" relation="geq" value="-1.0000000000000000e+01"/>
+    </assumptions>
+  </scope>
+</architectureConstraints>

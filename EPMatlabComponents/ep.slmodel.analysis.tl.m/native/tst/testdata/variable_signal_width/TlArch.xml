@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.13" modelPath="E:\EP2\Git\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_variable_signal_width\variable_width.mdl" modelCreationDate="2010-01-22T15:40:50" creator="hsteenblock">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.13" modelPath="E:\EP2\Git\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_variable_signal_width\variable_width.mdl" creationDate="2010-01-22T15:40:50" modificationDate="2021-11-16T14:24:29">
+    <subsystem subsysID="ss1" physicalPath="variable_width/Subsystem/Subsystem/Subsystem" path="Subsystem/Subsystem/Subsystem" sampleTime="0.01" name="Subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="InPort" physicalPath="variable_width/Subsystem/Subsystem/Subsystem/InPort" path="Subsystem/Subsystem/Subsystem/InPort">
+        <miltype>
+          <nonUniformArray size="5">
+            <signal index="1">
+              <double/>
+            </signal>
+            <signal index="2">
+              <double/>
+            </signal>
+            <signal index="3">
+              <double/>
+            </signal>
+            <signal index="4">
+              <double/>
+            </signal>
+            <signal index="5">
+              <double/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="5">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="5.0000000000000000e-01" offset="0.0000000000000000e+00" min="-1.6384000000000000e+04" max="1.6383500000000000e+04"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="5.0000000000000000e-01" offset="0.0000000000000000e+00" min="-1.6384000000000000e+04" max="1.6383500000000000e+04"/>
+            </signal>
+            <signal index="3">
+              <fixedPoint baseType="Int16" lsb="5.0000000000000000e-01" offset="0.0000000000000000e+00" min="-1.6384000000000000e+04" max="1.6383500000000000e+04"/>
+            </signal>
+            <signal index="4">
+              <fixedPoint baseType="Int16" lsb="5.0000000000000000e-01" offset="0.0000000000000000e+00" min="-1.6384000000000000e+04" max="1.6383500000000000e+04"/>
+            </signal>
+            <signal index="5">
+              <fixedPoint baseType="Int16" lsb="5.0000000000000000e-01" offset="0.0000000000000000e+00" min="-1.6384000000000000e+04" max="1.6383500000000000e+04"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </inport>
+      <calibration name="Constant[const]" path="Subsystem/Subsystem/Subsystem/Constant" physicalPath="variable_width/Subsystem/Subsystem/Subsystem/Constant" origin="const" restricted="false">
+        <miltype>
+          <nonUniformArray size="5">
+            <signal initValue="1.0000000000000000e+00" index="1">
+              <double/>
+            </signal>
+            <signal initValue="2.0000000000000000e+00" index="2">
+              <double/>
+            </signal>
+            <signal initValue="3.0000000000000000e+00" index="3">
+              <double/>
+            </signal>
+            <signal initValue="4.0000000000000000e+00" index="4">
+              <double/>
+            </signal>
+            <signal initValue="5.0000000000000000e+00" index="5">
+              <double/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="5">
+            <signal initValue="1.0000000000000000e+00" index="1">
+              <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="1.0000000000000000e+00" max="1.0000000000000000e+02"/>
+            </signal>
+            <signal initValue="2.0000000000000000e+00" index="2">
+              <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="1.0000000000000000e+00" max="1.0000000000000000e+02"/>
+            </signal>
+            <signal initValue="3.0000000000000000e+00" index="3">
+              <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="1.0000000000000000e+00" max="1.0000000000000000e+02"/>
+            </signal>
+            <signal initValue="4.0000000000000000e+00" index="4">
+              <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="1.0000000000000000e+00" max="1.0000000000000000e+02"/>
+            </signal>
+            <signal initValue="5.0000000000000000e+00" index="5">
+              <fixedPoint baseType="UInt16" lsb="1.0000000000000000e-02" offset="0.0000000000000000e+00" min="1.0000000000000000e+00" max="1.0000000000000000e+02"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/Constant" targetLinkBlockKind="TL_Constant" physicalPath="variable_width/Subsystem/Subsystem/Subsystem/Constant" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="OutPort" physicalPath="variable_width/Subsystem/Subsystem/Subsystem/OutPort" path="Subsystem/Subsystem/Subsystem/OutPort">
+        <miltype>
+          <nonUniformArray size="5">
+            <signal index="1">
+              <double/>
+            </signal>
+            <signal index="2">
+              <double/>
+            </signal>
+            <signal index="3">
+              <double/>
+            </signal>
+            <signal index="4">
+              <double/>
+            </signal>
+            <signal index="5">
+              <double/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype>
+          <nonUniformArray size="5">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="6.2500000000000000e-02" offset="0.0000000000000000e+00" min="-2.0480000000000000e+03" max="2.0479375000000000e+03"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="6.2500000000000000e-02" offset="0.0000000000000000e+00" min="-2.0480000000000000e+03" max="2.0479375000000000e+03"/>
+            </signal>
+            <signal index="3">
+              <fixedPoint baseType="Int16" lsb="6.2500000000000000e-02" offset="0.0000000000000000e+00" min="-2.0480000000000000e+03" max="2.0479375000000000e+03"/>
+            </signal>
+            <signal index="4">
+              <fixedPoint baseType="Int16" lsb="6.2500000000000000e-02" offset="0.0000000000000000e+00" min="-2.0480000000000000e+03" max="2.0479375000000000e+03"/>
+            </signal>
+            <signal index="5">
+              <fixedPoint baseType="Int16" lsb="6.2500000000000000e-02" offset="0.0000000000000000e+00" min="-2.0480000000000000e+03" max="2.0479375000000000e+03"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

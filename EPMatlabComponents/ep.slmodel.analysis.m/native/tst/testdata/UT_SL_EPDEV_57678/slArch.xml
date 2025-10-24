@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" modelVersion="1.34" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_epdev_57678\variableSize.slx" modelCreationDate="2021-04-23T12:53:01" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.34" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_epdev_57678\variableSize.slx" creationDate="2021-04-23T12:53:01" modificationDate="2024-09-12T15:08:52">
+    <subsystem subsysID="ss1" physicalPath="variableSize" path="" sampleTime="0.2" name="variableSize" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="Inport" physicalPath="variableSize/Inport" path="Inport">
+        <double min="1.0" max="4.0"/>
+      </inport>
+      <inport portNumber="2" name="Inport1" physicalPath="variableSize/Inport1" path="Inport1">
+        <array size="3" startIndex="1">
+          <array size="4" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="3" name="Inport2" physicalPath="variableSize/Inport2" path="Inport2">
+        <double/>
+      </inport>
+      <inport portNumber="4" name="Inport3" physicalPath="variableSize/Inport3" path="Inport3">
+        <array size="1" startIndex="1">
+          <array size="4" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="5" name="Inport4" physicalPath="variableSize/Inport4" path="Inport4">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="variableSize/Out1" path="Out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

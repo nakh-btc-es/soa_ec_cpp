@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T151013_13948\tmp_ut_min_max\min_max_init.m" modelVersion="17.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T151013_13948\tmp_ut_min_max\min_max_sl.mdl" modelCreationDate="2015-10-01T13:08:23" creator="Alexander Hornstein">
+  <toolInfo name="Matlab" release="(R2023a)" version="9.14" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2023a)" version="10.7" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="17.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T151013_13948\tmp_ut_min_max\min_max_sl.mdl" creationDate="2015-10-01T13:08:23" modificationDate="2024-10-30T15:17:43" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T151013_13948\tmp_ut_min_max\min_max_init.m">
+    <subsystem subsysID="ss1" physicalPath="min_max_sl/top_A" path="top_A" sampleTime="0.02" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="min_max_sl/top_A/In1" path="top_A/In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="min_max_sl/top_A/In2" path="top_A/In2">
+        <single min="-66.3" max="78.2"/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="min_max_sl/top_A/In3" path="top_A/In3">
+        <single min="-2.3"/>
+      </inport>
+      <parameter name="myCal1" path="top_A/Gain" physicalPath="min_max_sl/top_A/Gain" origin="explicit_param" workspace="myCal1" initValue="3.2">
+        <double min="-66.223" max="456.98"/>
+        <usageContext path="top_A/Gain" physicalPath="min_max_sl/top_A/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="myCal2" path="top_A/Saturation" physicalPath="min_max_sl/top_A/Saturation" origin="explicit_param" workspace="myCal2" initValue="-3.22">
+        <double min="-6.223" max="-0.98"/>
+        <usageContext path="top_A/Saturation" physicalPath="min_max_sl/top_A/Saturation" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+      </parameter>
+      <parameter name="myCal3" path="top_A/Saturation" physicalPath="min_max_sl/top_A/Saturation" origin="explicit_param" workspace="myCal3" initValue="13.22">
+        <double min="6.223" max="27.8"/>
+        <usageContext path="top_A/Saturation" physicalPath="min_max_sl/top_A/Saturation" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+      </parameter>
+      <parameter name="myCal4" path="top_A/Constant" physicalPath="min_max_sl/top_A/Constant" origin="explicit_param" workspace="myCal4" initValue="1.22">
+        <double min="0.223" max="2.1"/>
+        <usageContext path="top_A/Constant" physicalPath="min_max_sl/top_A/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="min_max_sl/top_A/Out1" path="top_A/Out1">
+        <double min="-68023.233" max="7777.88"/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="min_max_sl/top_A/Out2" path="top_A/Out2">
+        <double min="-15.0" max="19.23"/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="min_max_sl/top_A/Out3" path="top_A/Out3">
+        <single min="-2.3"/>
+      </outport>
+      <display physicalPath="min_max_sl/top_A/In2" path="top_A/In2" name="In2" portNumber="1">
+        <single min="-66.3" max="78.2"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Add" path="top_A/Add" name="Add" portNumber="1">
+        <double min="-15.0" max="19.23"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Gain" path="top_A/Gain" name="Gain" portNumber="1">
+        <double min="-68023.233" max="7777.88"/>
+      </display>
+      <display physicalPath="min_max_sl/top_A/Unit Delay" path="top_A/Unit Delay" name="Unit Delay" portNumber="1">
+        <single/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

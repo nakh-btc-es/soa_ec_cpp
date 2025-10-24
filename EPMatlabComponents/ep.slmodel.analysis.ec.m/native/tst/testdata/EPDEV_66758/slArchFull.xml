@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="E:\modelsdev\UT_EC\ar_array_interfaces\ml2018b\results_ec_analysis\AddModelInfo.xml" modelVersion="1.1" modelPath="E:\modelsdev\UT_EC\ar_array_interfaces\ml2018b\Wrapper_ar_array_interfaces.slx" modelCreationDate="2022-09-02T13:40:14" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="E:\modelsdev\UT_EC\ar_array_interfaces\ml2018b\Wrapper_ar_array_interfaces.slx" creationDate="2022-09-02T13:40:14" modificationDate="2022-09-02T13:40:16">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_ar_array_interfaces" path="" sampleTime="0.01" name="Wrapper_ar_array_interfaces" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="Wrapper_ar_array_interfaces/in1" path="in1">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <inport portNumber="2" name="in2" physicalPath="Wrapper_ar_array_interfaces/in2" path="in2">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <outport portNumber="1" name="u1" physicalPath="Wrapper_ar_array_interfaces/u1" path="u1">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+      <display physicalPath="ar_array_interfaces/Runa_a_sub/internal_sub/Add" path="ar_array_interfaces/ar_array_interfaces/Runa_a_sub/internal_sub/Add" name="Add" portNumber="1" modelRef="model002" signalName="intern_disp">
+        <array size="1" startIndex="1">
+          <array size="2" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="ar_array_interfaces/Runa_a_sub" path="ar_array_interfaces/ar_array_interfaces/Runa_a_sub" sampleTime="0.01" name="Runa_a_sub" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="in1_in" physicalPath="ar_array_interfaces/Runa_a_sub/in1_in" path="ar_array_interfaces/ar_array_interfaces/Runa_a_sub/in1_in" modelRef="model002">
+        <array size="1" startIndex="1">
+          <array size="2" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="2" name="in2_in" physicalPath="ar_array_interfaces/Runa_a_sub/in2_in" path="ar_array_interfaces/ar_array_interfaces/Runa_a_sub/in2_in" modelRef="model002">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <outport portNumber="1" name="u1_in" physicalPath="ar_array_interfaces/Runa_a_sub/u1_in" path="ar_array_interfaces/ar_array_interfaces/Runa_a_sub/u1_in" modelRef="model002">
+        <array size="1" startIndex="1">
+          <array size="2" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="ar_array_interfaces/Runa_a_sub/internal_sub/Add" path="ar_array_interfaces/ar_array_interfaces/Runa_a_sub/internal_sub/Add" name="Add" portNumber="1" modelRef="model002" signalName="intern_disp">
+        <array size="1" startIndex="1">
+          <array size="2" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="ar_array_interfaces/Runa_a_sub/internal_sub" path="ar_array_interfaces/ar_array_interfaces/Runa_a_sub/internal_sub" sampleTime="0.01" name="internal_sub" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="ar_array_interfaces/Runa_a_sub/internal_sub/In1" path="ar_array_interfaces/ar_array_interfaces/Runa_a_sub/internal_sub/In1" modelRef="model002">
+        <array size="1" startIndex="1">
+          <array size="2" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ar_array_interfaces/Runa_a_sub/internal_sub/In2" path="ar_array_interfaces/ar_array_interfaces/Runa_a_sub/internal_sub/In2" modelRef="model002">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ar_array_interfaces/Runa_a_sub/internal_sub/Out1" path="ar_array_interfaces/ar_array_interfaces/Runa_a_sub/internal_sub/Out1" modelRef="model002">
+        <array size="1" startIndex="1">
+          <array size="2" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="ar_array_interfaces/Runa_a_sub/internal_sub/Add" path="ar_array_interfaces/ar_array_interfaces/Runa_a_sub/internal_sub/Add" name="Add" portNumber="1" modelRef="model002" signalName="intern_disp">
+        <array size="1" startIndex="1">
+          <array size="2" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.10" modelPath="E:\modelsdev\UT_EC\ar_array_interfaces\ml2018b\ar_array_interfaces.slx" creationDate="2022-09-02T10:08:35" modificationDate="2022-09-02T10:51:43"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

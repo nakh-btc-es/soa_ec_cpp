@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aa-component name="aa_fields_simple" aa_version="R21-11" model_name="aa_fields_simple" matlab_version="R2023b">
+  <types>
+    <type typeId="t2" name="bool" kind="fundamental"/>
+    <type typeId="t3" name="int16_t" kind="primitive"/>
+    <type typeId="t1" name="int32_t" kind="primitive"/>
+    <type typeId="t4" name="uint8_t" kind="primitive"/>
+  </types>
+  <interfaces>
+    <interface name="myOtherIf">
+      <events>
+        <event eventId="ev1" name="In1_ev" typeRef="t1"/>
+      </events>
+      <methods>
+        <method methodId="met1" name="setSomeValue">
+          <in name="u" typeRef="t2"/>
+        </method>
+      </methods>
+    </interface>
+    <interface name="myIf">
+      <events>
+        <event eventId="ev2" name="Out1_ev" typeRef="t1"/>
+        <event eventId="ev3" name="Out2_ev" typeRef="t3"/>
+      </events>
+      <methods>
+        <method methodId="met2" name="getSumAB">
+          <out name="y" typeRef="t3"/>
+        </method>
+      </methods>
+      <fields>
+        <field fieldId="f1" name="f_a" typeRef="t4"/>
+        <field fieldId="f2" name="f_b" typeRef="t3"/>
+      </fields>
+    </interface>
+    <interface name="lastIf">
+      <fields>
+        <field fieldId="f3" name="f_c" typeRef="t3"/>
+        <field fieldId="f4" name="f_d" typeRef="t2"/>
+      </fields>
+    </interface>
+  </interfaces>
+  <ports>
+    <rport name="thisP" instanceKey="1">
+      <event-refs>
+        <event-ref eventRef="ev1" var="thisP_In1_ev"/>
+      </event-refs>
+      <method-refs>
+        <method-ref methodRef="met1" func="myOtherIf_thisP_setSomeValue"/>
+      </method-refs>
+    </rport>
+    <pport name="thatP" instanceKey="2">
+      <event-refs>
+        <event-ref eventRef="ev2" var="thatP_Out1_ev"/>
+      </event-refs>
+      <field-refs>
+        <field-ref fieldRef="f2" notifierVar="thatP_f_b" setterFunc="sut_thatP_f_b_set"/>
+        <field-ref fieldRef="f1" getterFunc="sut_thatP_f_a_get"/>
+      </field-refs>
+      <method-refs>
+        <method-ref methodRef="met2" func="sut_thatP_getSumAB"/>
+      </method-refs>
+    </pport>
+    <pport name="lastPort" instanceKey="3">
+      <field-refs>
+        <field-ref fieldRef="f4" notifierVar="lastPort_f_d" getterFunc="sut_lastPort_f_d_get" setterFunc="sut_lastPort_f_d_set"/>
+        <field-ref fieldRef="f3" notifierVar="lastPort_f_c" setterFunc="sut_lastPort_f_c_set" getterFunc="sut_lastPort_f_c_get"/>
+      </field-refs>
+    </pport>
+  </ports>
+</aa-component>

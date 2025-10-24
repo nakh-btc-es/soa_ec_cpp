@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="bug_9375"/>
+    <Architecture id="id1" name="bug_9375 [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A"/>
+      <Path refId="id1" path="top_A.c:1:top_A"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="in."/>
+        <Path refId="id1" path="Sa1_in_"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="in.1"/>
+        <Path refId="id1" path="Sa1_in_1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="out."/>
+        <Path refId="id1" path="Sa1_out_"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B/In1(1)"/>
+        <Path refId="id1" path="Sa2_sig_a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.sig_a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B/In1(1)"/>
+        <Path refId="id1" path="Sa2_sig_b"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.sig_b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B/Out2(1)"/>
+        <Path refId="id1" path="Sa2_sig_a_a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.sig_a"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B/Out2(1)"/>
+        <Path refId="id1" path="Sa2_sig_b_a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".&lt;signal1&gt;.sig_b"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_A/Subsystem/top_A/sub_B/Saturation(1)"/>
+        <Path refId="id1" path="Sa2_Saturation"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

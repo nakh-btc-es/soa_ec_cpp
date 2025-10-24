@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="te_Calcn"/>
+    <Architecture id="id1" name="te_Calcn [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="sim_Calcn/Subsystem/sim_Calcn"/>
+      <Path refId="id1" path="sim_Calcn.c:1:sim_Calcn"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="trqAA"/>
+        <Path refId="id1" path="IF_Sa1_trqAA"/>
+        <SignalMapping>
+          <Path refId="id0" path=".trqAA.FloatAryAxles"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="trqAA"/>
+        <Path refId="id1" path="IF_Sa1_trqAA_a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".trqAA.QlyAryAxles"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="vA"/>
+        <Path refId="id1" path="IF_Sa1_vA"/>
+        <SignalMapping>
+          <Path refId="id0" path=".vA.FloatAry8"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="vA"/>
+        <Path refId="id1" path="IF_Sa1_vA_a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".vA.QlyAry8"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="lTR"/>
+        <Path refId="id1" path="IF_Sa1_lTR"/>
+        <SignalMapping>
+          <Path refId="id0" path=".lTireRd.FloatAry8"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="lTR"/>
+        <Path refId="id1" path="IF_Sa1_lTR_a"/>
+        <SignalMapping>
+          <Path refId="id0" path=".lTireRd.QlyAry8"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="stAD"/>
+        <Path refId="id1" path="IF_Sa1_stAD"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out"/>
+        <Path refId="id1" path="Sa1_Out-&gt;Float"/>
+        <SignalMapping>
+          <Path refId="id0" path=".Out.Float"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out"/>
+        <Path refId="id1" path="Sa1_Out-&gt;Qly"/>
+        <SignalMapping>
+          <Path refId="id0" path=".Out.Qly"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="sim_Calcn/Subsystem/sim_Calcn/Calcn"/>
+      <Path refId="id1" path="sim_Calcn.c:1:sim_Calcn/Calcn.c:1:Calcn"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="trqAA"/>
+        <Path refId="id1" path="SCaln1_trqAA-&gt;FloatAryAxles"/>
+        <SignalMapping>
+          <Path refId="id0" path=".trqAA.FloatAryAxles"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="trqAA"/>
+        <Path refId="id1" path="SCaln1_trqAA-&gt;QlyAryAxles"/>
+        <SignalMapping>
+          <Path refId="id0" path=".trqAA.QlyAryAxles"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="vA"/>
+        <Path refId="id1" path="SCaln1_vA-&gt;FloatAry8"/>
+        <SignalMapping>
+          <Path refId="id0" path=".vA.FloatAry8"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="vA"/>
+        <Path refId="id1" path="SCaln1_vA-&gt;QlyAry8"/>
+        <SignalMapping>
+          <Path refId="id0" path=".vA.QlyAry8"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="lTR"/>
+        <Path refId="id1" path="SCaln1_lTR-&gt;FloatAry8"/>
+        <SignalMapping>
+          <Path refId="id0" path=".lTireRd.FloatAry8"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="lTR"/>
+        <Path refId="id1" path="SCaln1_lTR-&gt;QlyAry8"/>
+        <SignalMapping>
+          <Path refId="id0" path=".lTireRd.QlyAry8"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="stAD"/>
+        <Path refId="id1" path="stAD"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out"/>
+        <Path refId="id1" path="SCaln1_Out-&gt;Float"/>
+        <SignalMapping>
+          <Path refId="id0" path=".Out.Float"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out"/>
+        <Path refId="id1" path="SCaln1_Out-&gt;Qly"/>
+        <SignalMapping>
+          <Path refId="id0" path=".Out.Qly"/>
+          <Path refId="id1" path=""/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

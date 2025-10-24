@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_min_max_01\min_max_init.m" modelVersion="1.28" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_min_max_01\min_max_sl.mdl" modelCreationDate="2015-11-04T13:27:48" creator="Alexander Hornstein">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.28" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_min_max_01\min_max_sl.mdl" creationDate="2015-11-04T13:27:48" modificationDate="2024-09-12T14:51:50" initScript="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_min_max_01\min_max_init.m">
+    <subsystem subsysID="ss1" physicalPath="min_max_sl/top_A" path="top_A" sampleTime="0.02" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="ArrayIn" physicalPath="min_max_sl/top_A/ArrayIn" path="top_A/ArrayIn" signalName="b">
+        <array size="2" startIndex="1">
+          <double min="-1.0" max="5.4"/>
+        </array>
+      </inport>
+      <inport portNumber="2" name="BusIn1" physicalPath="min_max_sl/top_A/BusIn1" path="top_A/BusIn1" signalName="c">
+        <bus>
+          <signal signalName="b">
+            <array size="2" startIndex="1">
+              <double/>
+            </array>
+          </signal>
+          <signal signalName="a">
+            <double min="-3.33"/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="3" name="BusIn2" physicalPath="min_max_sl/top_A/BusIn2" path="top_A/BusIn2" signalName="&lt;signal1&gt;">
+        <bus busObjectName="myBus">
+          <signal signalName="a">
+            <double min="-3.33"/>
+          </signal>
+          <signal signalName="f">
+            <array size="2" startIndex="1">
+              <double min="-4.44" max="5.55"/>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="ArrayOut" physicalPath="min_max_sl/top_A/ArrayOut" path="top_A/ArrayOut" signalName="b">
+        <array size="2" startIndex="1">
+          <double min="-1.0" max="5.4"/>
+        </array>
+      </outport>
+      <outport portNumber="2" name="BusOut1" physicalPath="min_max_sl/top_A/BusOut1" path="top_A/BusOut1" signalName="c">
+        <bus>
+          <signal signalName="b">
+            <array size="2" startIndex="1">
+              <double/>
+            </array>
+          </signal>
+          <signal signalName="a">
+            <double min="-3.33"/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="3" name="BusOut2" physicalPath="min_max_sl/top_A/BusOut2" path="top_A/BusOut2" signalName="&lt;signal1&gt;">
+        <bus>
+          <signal signalName="a">
+            <double min="-3.33"/>
+          </signal>
+          <signal signalName="f">
+            <array size="2" startIndex="1">
+              <double min="-4.44" max="5.55"/>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

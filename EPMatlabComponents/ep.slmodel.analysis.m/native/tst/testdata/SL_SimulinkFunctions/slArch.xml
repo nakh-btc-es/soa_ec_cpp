@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" modelVersion="1.21" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_test_sl_functions\slFunctions.slx" modelCreationDate="2021-08-11T14:11:14" creator="developer">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.21" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_test_sl_functions\slFunctions.slx" creationDate="2021-08-11T14:11:14" modificationDate="2021-08-26T16:08:18">
+    <subsystem subsysID="ss1" physicalPath="slFunctions" path="" sampleTime="0.2" name="slFunctions" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="slFunctions/In1" path="In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="slFunctions/In2" path="In2">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="slFunctions/In3" path="In3">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="slFunctions/Out1" path="Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="slFunctions/Out2" path="Out2">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="slFunctions/Out3" path="Out3">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="slFunctions/InnerSystem/HiddenBelow" path="InnerSystem/HiddenBelow" sampleTime="0.2" name="HiddenBelow" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="slFunctions/InnerSystem/HiddenBelow/In1" path="InnerSystem/HiddenBelow/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="slFunctions/InnerSystem/HiddenBelow/Out1" path="InnerSystem/HiddenBelow/Out1">
+        <double/>
+      </outport>
+      <slfunc_caller path="InnerSystem/HiddenBelow/Function Caller1" pathCaller="slFunctions/InnerSystem/HiddenBelow/Function Caller1" pathFunction="slFunctions/FirstFunction"/>
+      <slfunc_caller path="InnerSystem/HiddenBelow/Function Caller2" pathCaller="slFunctions/InnerSystem/HiddenBelow/Function Caller2" pathFunction="slFunctions/FirstFunction"/>
+      <slfunc_caller path="InnerSystem/HiddenBelow/UnderHidden/Function Caller1" pathCaller="slFunctions/InnerSystem/HiddenBelow/UnderHidden/Function Caller1" pathFunction="slFunctions/FirstFunction"/>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="slFunctions/InnerSystem/HiddenBelow/UnderHidden" path="InnerSystem/HiddenBelow/UnderHidden" sampleTime="0.2" name="UnderHidden" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="slFunctions/InnerSystem/HiddenBelow/UnderHidden/In1" path="InnerSystem/HiddenBelow/UnderHidden/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="slFunctions/InnerSystem/HiddenBelow/UnderHidden/Out1" path="InnerSystem/HiddenBelow/UnderHidden/Out1">
+        <double/>
+      </outport>
+      <slfunc_caller path="InnerSystem/HiddenBelow/UnderHidden/Function Caller1" pathCaller="slFunctions/InnerSystem/HiddenBelow/UnderHidden/Function Caller1" pathFunction="slFunctions/FirstFunction"/>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

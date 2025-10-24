@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="26K">
+	<Types />
+	<Scope uid="26K" name="sub_A" path="parent_sf_data/sub_X/sub_A" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="sf_data/sub_A">
+		<InPort name="In1" portNumber="1" compositeSig="none" type="int32">
+			<Variable varid="varif_394" signalType="int32" tlTypeName="int32" type="int32">
+				<ifName ifid="if_394" initValue="0" lsb="1.0" offset="0.0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none" signalName="y" type="int32">
+			<Variable varid="varif_396" signalName="y" signalType="int32" tlTypeName="int32" type="int32">
+				<ifName ifid="if_396" initValue="0" lsb="1.0" offset="0.0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<Model name="sf_data" modelPath="/E:/ModelsDev/UT_MIL_SL/sf_data/ml2015b/sf_data.slx" type="SimulinkModel" />
+		<Scope uid="26L" name="Chart_A" path="parent_sf_data/sub_X/sub_A/Chart_A" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="STATEFLOW" physicalPath="sf_data/sub_A/Chart_A">
+			<InPort name="u" portNumber="1" compositeSig="none" type="int32">
+				<Variable varid="varif_398" signalType="int32" tlTypeName="int32" type="int32">
+					<ifName ifid="if_398" initValue="0" lsb="1.0" offset="0.0" displayName="u" identifier="INPUT:u" />
+				</Variable>
+			</InPort>
+			<OutPort name="y" portNumber="1" compositeSig="none" signalName="y" type="int32">
+				<Variable varid="varif_400" signalName="y" signalType="int32" tlTypeName="int32" type="int32">
+					<ifName ifid="if_400" initValue="0" lsb="1.0" offset="0.0" displayName="y" identifier="OUTPUT:y" />
+				</Variable>
+			</OutPort>
+			<Model name="sf_data" modelPath="/E:/ModelsDev/UT_MIL_SL/sf_data/ml2015b/sf_data.slx" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

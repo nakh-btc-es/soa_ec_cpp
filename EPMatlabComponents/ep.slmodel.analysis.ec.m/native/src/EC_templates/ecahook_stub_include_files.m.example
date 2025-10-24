@@ -1,0 +1,42 @@
+function stConfig = ecahook_stub_include_files(stConfig, stAdditionalInfo)
+% Includes files needed for the stub generation
+%
+% stConfig (Struct)
+%   .casFileNames    (Cell-Array-String)       The needed paths that have to be included
+%
+%
+%%
+%-------------------------------- Examples --------------------------------
+%
+% stConfig.casFileNames = {'rtwtypes.h'};
+%
+%---------------------------------------------------------------------------
+%
+% -----------------------------------------------------------------------------
+% 
+% Additional Infos
+% 
+% -----------------------------------------------------------------------------
+%
+%   stAdditionalInfo           (struct)    struct containing the following fields
+%      .sModelName             (string)       the model's name
+%      .sModelPath             (string)       the model's path 
+%      .sInitFilePath          (string)       the init file's path
+%      .sInitFileName          (string)       the init file's name
+%      .sStubCodeFolder        (string)       the stub Code Folder
+%      .casReferencedModels    (cell)         all models referenced by the main model
+%      .bIsWrapperMode         (boolean)      special mode that is active in the Wrapper workflow
+%      .sWrappedAutosarModel   (string)       the wrapped AUTOSAR model in the Wrapper wofklow
+%
+%
+
+%%
+% -----------------------------------------------------------------------------
+% 
+% DEFAULT VALUES
+% 
+% -----------------------------------------------------------------------------
+%
+% stConfig = struct( ...
+%     'casFileNames', {{'rtwtypes.h'}});
+end

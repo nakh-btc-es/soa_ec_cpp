@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.19" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_32939\increm_subs.mdl" modelCreationDate="2013-11-26T13:10:39" creator="Administrator">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.19" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_32939\increm_subs.mdl" creationDate="2013-11-26T13:10:39" modificationDate="2021-11-17T11:20:22">
+    <subsystem subsysID="ss1" physicalPath="increm_subs/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="increm_subs/top_A/Subsystem/top_A/in1" path="top_A/Subsystem/top_A/in1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="a" path="top_A/Subsystem/top_A/sub_B/Gain_a" physicalPath="increm_subs/top_A/Subsystem/top_A/sub_B/Gain_a" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/a">
+        <miltype initValue="7.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="7.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B/Gain_a" targetLinkBlockKind="TL_Gain" physicalPath="increm_subs/top_A/Subsystem/top_A/sub_B/Gain_a" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <outport portNumber="1" name="out1" physicalPath="increm_subs/top_A/Subsystem/top_A/out1" path="top_A/Subsystem/top_A/out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="increm_subs/top_A/Subsystem/top_A/sub_B/Gain_a" path="top_A/Subsystem/top_A/sub_B/Gain_a" name="Gain_a" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="increm_subs/top_A/Subsystem/top_A/sub_B" path="top_A/Subsystem/top_A/sub_B" sampleTime="1" name="sub_B" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="increm_subs/top_A/Subsystem/top_A/sub_B/In1" path="top_A/Subsystem/top_A/sub_B/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="a" path="top_A/Subsystem/top_A/sub_B/Gain_a" physicalPath="increm_subs/top_A/Subsystem/top_A/sub_B/Gain_a" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/a">
+        <miltype initValue="7.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="7.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/sub_B/Gain_a" targetLinkBlockKind="TL_Gain" physicalPath="increm_subs/top_A/Subsystem/top_A/sub_B/Gain_a" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="increm_subs/top_A/Subsystem/top_A/sub_B/Out1" path="top_A/Subsystem/top_A/sub_B/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="increm_subs/top_A/Subsystem/top_A/sub_B/Gain_a" path="top_A/Subsystem/top_A/sub_B/Gain_a" name="Gain_a" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

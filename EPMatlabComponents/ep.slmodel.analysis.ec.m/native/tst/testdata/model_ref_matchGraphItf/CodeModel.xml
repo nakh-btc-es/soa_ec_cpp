@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="disp1.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_model_ref_02_matchGraphicalInterface\main_model_ert_rtw"/>
+    <File annotate="yes" id="ID72" kind="source" name="main_model.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_model_ref_02_matchGraphicalInterface\main_model_ert_rtw"/>
+    <File annotate="yes" id="ID73" kind="source" name="top_A.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_model_ref_02_matchGraphicalInterface\main_model_ert_rtw"/>
+    <File annotate="yes" id="ID74" kind="source" name="disp2.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_model_ref_02_matchGraphicalInterface\slprj\ert\sub_model_A"/>
+    <File annotate="yes" id="ID75" kind="source" name="sub_model_A.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_model_ref_02_matchGraphicalInterface\slprj\ert\sub_model_A"/>
+    <File annotate="yes" id="ID76" kind="source" name="disp3.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_model_ref_02_matchGraphicalInterface\slprj\ert\sub_model_B"/>
+    <File annotate="yes" id="ID77" kind="source" name="sub_model_B.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_model_ref_02_matchGraphicalInterface\slprj\ert\sub_model_B"/>
+    <File annotate="yes" id="ID78" kind="source" name="sub_model_B_sub_B.c" path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_model_ref_02_matchGraphicalInterface\slprj\ert\sub_model_B"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_model_ref_02_matchGraphicalInterface\slprj\ert\sub_model_B"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_model_ref_02_matchGraphicalInterface\slprj\ert\sub_model_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_model_ref_02_matchGraphicalInterface"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_model_ref_02_matchGraphicalInterface\main_model_ert_rtw"/>
+    <IncludePath path="C:\Matlab\R2021a\extern\include"/>
+    <IncludePath path="C:\Matlab\R2021a\simulink\include"/>
+    <IncludePath path="C:\Matlab\R2021a\rtw\c\src"/>
+    <IncludePath path="C:\Matlab\R2021a\rtw\c\src\ext_mode\common"/>
+    <IncludePath path="C:\Matlab\R2021a\rtw\c\ert"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20230912T160648_6120\tmp_ut_model_ref_02_matchGraphicalInterface\slprj\ert\_sharedutils"/>
+  </IncludePaths>
+  <Defines/>
+  <Functions archName="main_model [C-Code]">
+    <Function fileref="ID72" initFunc="main_model_initialize" name="main_model_step">
+      <Interface>
+        <InterfaceObj kind="in" var="a"/>
+        <InterfaceObj kind="out" var="c"/>
+        <InterfaceObj kind="out" var="x"/>
+        <InterfaceObj kind="disp" var="disp_b"/>
+        <InterfaceObj kind="disp" var="disp_c2"/>
+        <InterfaceObj kind="disp" var="disp_c"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID73" initFunc="main_model_initialize" name="func_A">
+      <Interface>
+        <InterfaceObj kind="in" var="rtu_In1"/>
+        <InterfaceObj kind="out" var="rty_Out1"/>
+        <InterfaceObj kind="disp" var="disp_b"/>
+        <InterfaceObj kind="disp" var="disp_c"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="main_model_initialize" name="disp1">
+      <Interface>
+        <InterfaceObj kind="in" var="rtu_disp_sig"/>
+        <InterfaceObj kind="disp" var="disp_b"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID75" initFunc="main_model_initialize" name="sub_model_A">
+      <Interface>
+        <InterfaceObj kind="in" var="b"/>
+        <InterfaceObj kind="out" var="c"/>
+        <InterfaceObj kind="disp" var="disp_c"/>
+      </Interface>
+    </Function>
+    <Function initFunc="main_model_initialize" name="disp2">
+      <Interface>
+        <InterfaceObj kind="in" var="rtu_disp_sig"/>
+        <InterfaceObj kind="disp" var="disp_c"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID77" initFunc="main_model_initialize" name="sub_model_B">
+      <Interface>
+        <InterfaceObj kind="in" var="a"/>
+        <InterfaceObj kind="out" var="x"/>
+        <InterfaceObj kind="disp" var="disp_c2"/>
+      </Interface>
+    </Function>
+    <Function initFunc="main_model_initialize" name="sub_model_B_sub_B">
+      <Interface>
+        <InterfaceObj kind="in" var="rtu_In1"/>
+        <InterfaceObj kind="out" var="rty_Out1"/>
+        <InterfaceObj kind="disp" var="disp_c2"/>
+      </Interface>
+    </Function>
+    <Function initFunc="main_model_initialize" name="disp3">
+      <Interface>
+        <InterfaceObj kind="in" var="rtu_disp_sig"/>
+        <InterfaceObj kind="disp" var="disp_c2"/>
+      </Interface>
+    </Function>
+  </Functions>
+</CodeModel>

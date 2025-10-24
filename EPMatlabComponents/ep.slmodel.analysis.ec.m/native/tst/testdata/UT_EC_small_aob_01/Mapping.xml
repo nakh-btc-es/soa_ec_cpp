@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="small_aob"/>
+    <Architecture id="id1" name="small_aob [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="small_aob.c:1:small_aob_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="sig_in" refId="id1"/>
+        <SignalMapping>
+          <Path path=".sig_in(1).a" refId="id0"/>
+          <Path path="[0].a" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".sig_in(2).a" refId="id0"/>
+          <Path path="[1].a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="sig_in" refId="id1"/>
+        <SignalMapping>
+          <Path path=".sig_in(1).b" refId="id0"/>
+          <Path path="[0].b" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".sig_in(2).b" refId="id0"/>
+          <Path path="[1].b" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="sig_out" refId="id1"/>
+        <SignalMapping>
+          <Path path=".sig_out(1).a" refId="id0"/>
+          <Path path="[0].a" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".sig_out(2).a" refId="id0"/>
+          <Path path="[1].a" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="sig_out" refId="id1"/>
+        <SignalMapping>
+          <Path path=".sig_out(1).b" refId="id0"/>
+          <Path path="[0].b" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path=".sig_out(2).b" refId="id0"/>
+          <Path path="[1].b" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

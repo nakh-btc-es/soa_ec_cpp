@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Wrapper_SWC"/>
+    <Architecture id="id1" name="Wrapper_SWC [C-Code]"/>
+    <ScopeMapping>
+      <Path path="Wrapper_SWC" refId="id0"/>
+      <Path path="SWC_ep_scheduler_stub.c:1:swc_wrapper_scheduler_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Wrapper_SWC/RP_B" refId="id0"/>
+        <Path path="RteStub_SRItf_RR_B_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Wrapper_SWC/RP_D" refId="id0"/>
+        <Path path="RteStub_SRItf_RR_B_D" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Wrapper_SWC/PP_A_plus_B" refId="id0"/>
+        <Path path="RteStub_SRItf_PP_B_plus_A_A_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Wrapper_SWC/PP_A_plus_B_plus_C" refId="id0"/>
+        <Path path="RteStub_SRItf_PP_A_plus_B_plus_C_A_B_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Wrapper_SWC/PP_A_plus_2B_plus_C" refId="id0"/>
+        <Path path="RteStub_SRItf_PP_A_plus_2B_plus_C_A_2B_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Wrapper_SWC/PP_A_plus_2B_plus_C_plus_D" refId="id0"/>
+        <Path path="RteStub_SRItf_PP_A_plus_2B_plus_C_plus_D_A_2B_C_D" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Wrapper_SWC/PP_A_plus_2B_plus_C_plus_D_Accu" refId="id0"/>
+        <Path path="RteStub_SRItf_PP_A_plus_2B_plus_C_plus_D_Accu_A_2B_C_D_Accu" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="Wrapper_SWC/SWC/Sys_Runa1" refId="id0"/>
+      <Path path="SWC_ep_scheduler_stub.c:1:swc_wrapper_scheduler_step/SWC.c:1:Runa1_fct" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Wrapper_SWC/SWC/Sys_Runa1/RP_B" refId="id0"/>
+        <Path path="RteStub_SRItf_RR_B_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Wrapper_SWC/SWC/Sys_Runa1/PP_A_plus_B" refId="id0"/>
+        <Path path="RteStub_SRItf_PP_B_plus_A_A_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Wrapper_SWC/SWC/Sys_Runa1/IRV_A_plus_B" refId="id0"/>
+        <Path path="RteStub_IRV_A_plus_B" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="Wrapper_SWC/SWC/Sys_Runa4" refId="id0"/>
+      <Path path="SWC_ep_scheduler_stub.c:1:swc_wrapper_scheduler_step/SWC.c:1:Runa4_fct" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Wrapper_SWC/SWC/Sys_Runa4/IRV_A_plus_2B_plus_C" refId="id0"/>
+        <Path path="RteStub_IRV_A_plus_2B_plus_C" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Wrapper_SWC/SWC/Sys_Runa4/RP_D" refId="id0"/>
+        <Path path="RteStub_SRItf_RR_B_D" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Wrapper_SWC/SWC/Sys_Runa4/PP_A_plus_2B_plus_C_plus_D" refId="id0"/>
+        <Path path="RteStub_SRItf_PP_A_plus_2B_plus_C_plus_D_A_2B_C_D" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Wrapper_SWC/SWC/Sys_Runa4/IRV_A_plus_2B_plus_C_plus_D" refId="id0"/>
+        <Path path="RteStub_IRV_A_plus_2B_plus_C_plus_D" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="Wrapper_SWC/SWC/Sys_Runa5" refId="id0"/>
+      <Path path="SWC_ep_scheduler_stub.c:1:swc_wrapper_scheduler_step/SWC.c:1:Runa5_fct" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Wrapper_SWC/SWC/Sys_Runa5/IRV_A_plus_2B_plus_C_plus_D" refId="id0"/>
+        <Path path="RteStub_IRV_A_plus_2B_plus_C_plus_D" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Wrapper_SWC/SWC/Sys_Runa5/PP_A_plus_2B_plus_C_plus_D" refId="id0"/>
+        <Path path="RteStub_SRItf_PP_A_plus_2B_plus_C_plus_D_Accu_A_2B_C_D_Accu" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

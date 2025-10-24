@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aa-component name="point_transition" aa_version="R21-11" model_name="point_transition" matlab_version="R2023b">
+  <types>
+    <type typeId="t1" name="PointType" kind="non-primitive" category="structure"/>
+  </types>
+  <interfaces>
+    <interface name="RequiredInterface">
+      <namespaces>
+        <namespace symbol="my">
+          <namespace symbol="ns_a"/>
+        </namespace>
+      </namespaces>
+      <events>
+        <event eventId="ev1" name="PointX" typeRef="t1"/>
+      </events>
+    </interface>
+    <interface name="ProvidedInterface">
+      <namespaces>
+        <namespace symbol="my">
+          <namespace symbol="ns_b"/>
+        </namespace>
+      </namespaces>
+      <events>
+        <event eventId="ev2" name="PointY" typeRef="t1"/>
+      </events>
+    </interface>
+  </interfaces>
+  <ports>
+    <rport name="RequiredPort" instanceKey="1">
+      <event-refs>
+        <event-ref eventRef="ev1" var="RequiredPort_PointX"/>
+      </event-refs>
+    </rport>
+    <pport name="ProvidedPort" instanceKey="2">
+      <event-refs>
+        <event-ref eventRef="ev2" var="ProvidedPort_PointY"/>
+      </event-refs>
+    </pport>
+  </ports>
+</aa-component>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="25p">
+	<Scope uid="25p" name="Subsystem" path="sldd_param/Subsystem" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="sldd_param/Subsystem" subsystemLogging="on">
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_371" signalType="double" isFloat="yes">
+				<ifName ifid="if_371" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<Calibration name="Param" path="sldd_param/Subsystem/Constant" physicalPath="sldd_param/Subsystem/Constant" origin="explicit_param">
+			<CalibrationUsage path="sldd_param/Subsystem/Constant" physicalPath="sldd_param/Subsystem/Constant" blockAttribute="Value" />
+			<Variable varid="varif_372" signalType="double" isFloat="yes">
+				<ifName ifid="if_372" initValue="1.0" lsb="1" offset="0" displayName="Param" identifier="PARAMETER:Constant/Param" />
+			</Variable>
+		</Calibration>
+		<Model name="sldd_param" modelPath="/E:/ModelsDev/UT_MIL_SL/sldd_param/ml2015asp1/sldd_param.slx" type="SimulinkModel" />
+	</Scope>
+</ExtractionModel>

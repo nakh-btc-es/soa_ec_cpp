@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<EnumType name="MyNumber">
+			<EnumValue name="ZERO" ordinal="0" />
+			<EnumValue name="ONE" ordinal="1" />
+			<EnumValue name="SEVEN" ordinal="7" />
+		</EnumType>
+		<EnumType name="MyColor">
+			<EnumValue name="Red" ordinal="1" />
+			<EnumValue name="Green" ordinal="2" />
+			<EnumValue name="Blue" ordinal="4" />
+		</EnumType>
+		<EnumType name="MyState">
+			<EnumValue name="BAD" ordinal="0" />
+			<EnumValue name="bad" ordinal="0" />
+			<EnumValue name="GOOD" ordinal="1" />
+			<EnumValue name="good" ordinal="1" />
+			<EnumValue name="AWESOME" ordinal="2" />
+			<EnumValue name="awesome" ordinal="2" />
+		</EnumType>
+		<BusType name="MyBus" virtual="false">
+			<Comp name="a" type="MyNumber" />
+			<Comp name="b" type="MyState" />
+			<Comp name="c" type="int32" />
+		</BusType>
+		<BusType name="MyBusWS" virtual="false">
+			<Comp name="a" type="int8" />
+			<Comp name="b" type="uint16" />
+			<Comp name="c" type="uint32" />
+		</BusType>
+	</Types>
+	<Inports debug="false">
+		<Inport portNr="1" type="MyNumber">
+			<ScalarRefs>
+				<ScalarRef displayName="Out1">OUTPUT:Out1</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="2" width="2" type="MyColor">
+			<ScalarRefs>
+				<ScalarRef displayName="Out2(1)">OUTPUT:Out2(1)</ScalarRef>
+				<ScalarRef displayName="Out2(2)">OUTPUT:Out2(2)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="3" type="int32">
+			<ScalarRefs>
+				<ScalarRef displayName="Out3">OUTPUT:Out3</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="4" type="MyColor">
+			<ScalarRefs>
+				<ScalarRef displayName="Out4">OUTPUT:Out4</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="5" type="MyState">
+			<ScalarRefs>
+				<ScalarRef displayName="Out5">OUTPUT:Out5</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="6" type="MyBus" signalName="&lt;signal1&gt;">
+			<ScalarRefs>
+				<ScalarRef displayName="Out6.{&lt;signal1&gt;}.a">OUTPUT:Out6.{&lt;signal1&gt;}.a</ScalarRef>
+				<ScalarRef displayName="Out6.{&lt;signal1&gt;}.b">OUTPUT:Out6.{&lt;signal1&gt;}.b</ScalarRef>
+				<ScalarRef displayName="Out6.{&lt;signal1&gt;}.c">OUTPUT:Out6.{&lt;signal1&gt;}.c</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="7" type="MyColor" signalName="MyAliasColorSignalName">
+			<ScalarRefs>
+				<ScalarRef displayName="Out7">OUTPUT:Out7</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="8" type="MyNumber" signalName="MyAliasNumberSignalName">
+			<ScalarRefs>
+				<ScalarRef displayName="Out8">OUTPUT:Out8</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="9" type="MyBusWS" signalName="&lt;signal1&gt;">
+			<ScalarRefs>
+				<ScalarRef displayName="Out9.{&lt;signal1&gt;}.a">OUTPUT:Out9.{&lt;signal1&gt;}.a</ScalarRef>
+				<ScalarRef displayName="Out9.{&lt;signal1&gt;}.b">OUTPUT:Out9.{&lt;signal1&gt;}.b</ScalarRef>
+				<ScalarRef displayName="Out9.{&lt;signal1&gt;}.c">OUTPUT:Out9.{&lt;signal1&gt;}.c</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+	</Inports>
+</SFunction>

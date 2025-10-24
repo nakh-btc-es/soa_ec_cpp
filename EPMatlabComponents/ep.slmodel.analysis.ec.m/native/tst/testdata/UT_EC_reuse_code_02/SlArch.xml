@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_reuse_code_02\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_reuse_code_02\start.m" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_reuse_code_02\reuse_code_02.mdl" modelCreationDate="2015-01-28T14:40:34" creator="Wolfgang Meincke">
+  <toolInfo name="Matlab" release="(R2020a)" version="9.8" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020a)" version="10.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_reuse_code_02\reuse_code_02.mdl" creationDate="2015-01-28T14:40:34" modificationDate="2024-10-30T15:33:57" initScript="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_reuse_code_02\start.m">
+    <subsystem subsysID="ss1" physicalPath="reuse_code_02" path="" sampleTime="0.01" name="reuse_code_02" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in" physicalPath="reuse_code_02/in" path="in">
+        <uint8 min="0" max="10"/>
+      </inport>
+      <parameter name="K" path="sut/Gain" physicalPath="reuse_code_02/sut/Gain" origin="explicit_param" workspace="K" initValue="2.0">
+        <uint8 min="0.0" max="255.0"/>
+        <usageContext path="sut/Gain" physicalPath="reuse_code_02/sut/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <outport portNumber="1" name="out" physicalPath="reuse_code_02/out" path="out" signalName="out">
+        <uint8 min="0" max="10"/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

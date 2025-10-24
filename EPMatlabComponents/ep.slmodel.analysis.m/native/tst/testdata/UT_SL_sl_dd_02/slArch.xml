@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" modelVersion="1.37" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_sl_dd_02\global_ds.slx" modelCreationDate="2018-03-07T14:14:40" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.37" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_sl_dd_02\global_ds.slx" creationDate="2018-03-07T14:14:40" modificationDate="2024-09-11T18:46:32">
+    <subsystem subsysID="ss1" physicalPath="global_ds/top_A" path="top_A" sampleTime="0.5" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="global_ds/top_A/In1" path="top_A/In1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="global_ds/top_A/In2" path="top_A/In2">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <single/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="global_ds/top_A/In3" path="top_A/In3">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <single/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="global_ds/top_A/In4" path="top_A/In4" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <double min="-55.0" max="98.0"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <double min="-45.0" max="18.0"/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="c">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <single min="-5.0" max="68.0"/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="5" name="In5" physicalPath="global_ds/top_A/In5" path="top_A/In5">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <parameter name="Init0_r2_c3" path="top_A/dsm1" physicalPath="global_ds/top_A/dsm1" origin="explicit_param" workspace="Init0_r2_c3">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="0.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="0.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="0.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="0.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="0.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="0.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/dsm1" physicalPath="global_ds/top_A/dsm1" simulinkBlockType="DataStoreMemory" blockAttribute="InitialValue"/>
+      </parameter>
+      <parameter name="Init_r2_c3" path="top_A/dsm2" physicalPath="global_ds/top_A/dsm2" origin="explicit_param" workspace="Init_r2_c3">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="0.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="2.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="3.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="4.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="5.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/dsm2" physicalPath="global_ds/top_A/dsm2" simulinkBlockType="DataStoreMemory" blockAttribute="InitialValue"/>
+        <usageContext path="top_A/sub_B1/ds_Out1" physicalPath="global_ds/top_A/sub_B1/ds_Out1" simulinkBlockType="DataStoreWrite"/>
+        <usageContext path="top_A/sub_B2/ds_In1" physicalPath="global_ds/top_A/sub_B2/ds_In1" simulinkBlockType="DataStoreRead"/>
+      </parameter>
+      <parameter name="MyMax" path="top_A/dsm2" physicalPath="global_ds/top_A/dsm2" origin="explicit_param" workspace="MyMax" initValue="27.0">
+        <double/>
+        <usageContext path="top_A/dsm2" physicalPath="global_ds/top_A/dsm2" simulinkBlockType="DataStoreMemory" blockAttribute="OutMax"/>
+        <usageContext path="top_A/dsm3" physicalPath="global_ds/top_A/dsm3" simulinkBlockType="DataStoreMemory" blockAttribute="OutMax"/>
+      </parameter>
+      <parameter name="MyMin" path="top_A/dsm2" physicalPath="global_ds/top_A/dsm2" origin="explicit_param" workspace="MyMin" initValue="-13.0">
+        <double/>
+        <usageContext path="top_A/dsm2" physicalPath="global_ds/top_A/dsm2" simulinkBlockType="DataStoreMemory" blockAttribute="OutMin"/>
+        <usageContext path="top_A/dsm3" physicalPath="global_ds/top_A/dsm3" simulinkBlockType="DataStoreMemory" blockAttribute="OutMin"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="global_ds/top_A/Out1" path="top_A/Out1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="global_ds/top_A/Out2" path="top_A/Out2">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <single/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="global_ds/top_A/Out3" path="top_A/Out3">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <single/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="global_ds/top_A/Out4" path="top_A/Out4" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <double min="-55.0" max="98.0"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <double min="-45.0" max="18.0"/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="c">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <single min="-5.0" max="68.0"/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="global_ds/top_A/Out5" path="top_A/Out5">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss8"/>
+      <subsystem refSubsysID="ss9"/>
+      <subsystem refSubsysID="ss10"/>
+      <subsystem refSubsysID="ss11"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="global_ds/top_A/sub_B1" path="top_A/sub_B1" sampleTime="0.5" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="global_ds/top_A/sub_B1/In1" path="top_A/sub_B1/In1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <parameter name="Init_r2_c3" path="top_A/sub_B1/ds_Out1" physicalPath="global_ds/top_A/sub_B1/ds_Out1" origin="explicit_param" workspace="Init_r2_c3">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="0.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="2.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="3.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="4.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="5.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B1/ds_Out1" physicalPath="global_ds/top_A/sub_B1/ds_Out1" simulinkBlockType="DataStoreWrite"/>
+      </parameter>
+      <outport portNumber="0" name="ds_Out1" physicalPath="global_ds/top_A/sub_B1/ds_Out1" path="top_A/sub_B1/ds_Out1" signalName="Sig01">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="0.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="2.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="3.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="4.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="5.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <dataStoreMemory signalName="Sig01"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="global_ds/top_A/sub_B2" path="top_A/sub_B2" sampleTime="0.5" name="sub_B2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="ds_In1" physicalPath="global_ds/top_A/sub_B2/ds_In1" path="top_A/sub_B2/ds_In1" signalName="Sig01">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="0.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="2.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="3.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="4.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="5.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <dataStoreMemory signalName="Sig01"/>
+      </inport>
+      <parameter name="Init_r2_c3" path="top_A/sub_B2/ds_In1" physicalPath="global_ds/top_A/sub_B2/ds_In1" origin="explicit_param" workspace="Init_r2_c3">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="0.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="2.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="3.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="4.0">
+                <double/>
+              </signal>
+              <signal index="3" initValue="5.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B2/ds_In1" physicalPath="global_ds/top_A/sub_B2/ds_In1" simulinkBlockType="DataStoreRead"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="global_ds/top_A/sub_B2/Out1" path="top_A/sub_B2/Out1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="global_ds/top_A/sub_C1" path="top_A/sub_C1" sampleTime="0.5" name="sub_C1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="global_ds/top_A/sub_C1/In1" path="top_A/sub_C1/In1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <single/>
+          </array>
+        </array>
+      </inport>
+      <outport portNumber="0" name="ds_Out1" physicalPath="global_ds/top_A/sub_C1/ds_Out1" path="top_A/sub_C1/ds_Out1" signalName="Sig02">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="0.0">
+                <single/>
+              </signal>
+              <signal index="2" initValue="0.0">
+                <single/>
+              </signal>
+              <signal index="3" initValue="0.0">
+                <single/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="0.0">
+                <single/>
+              </signal>
+              <signal index="2" initValue="0.0">
+                <single/>
+              </signal>
+              <signal index="3" initValue="0.0">
+                <single/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <dataStoreMemory signalName="Sig02" physicalPath="global_ds/top_A/dsm1"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="global_ds/top_A/sub_C2" path="top_A/sub_C2" sampleTime="0.5" name="sub_C2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="ds_In1" physicalPath="global_ds/top_A/sub_C2/ds_In1" path="top_A/sub_C2/ds_In1" signalName="Sig02">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="0.0">
+                <single/>
+              </signal>
+              <signal index="2" initValue="0.0">
+                <single/>
+              </signal>
+              <signal index="3" initValue="0.0">
+                <single/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="0.0">
+                <single/>
+              </signal>
+              <signal index="2" initValue="0.0">
+                <single/>
+              </signal>
+              <signal index="3" initValue="0.0">
+                <single/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <dataStoreMemory signalName="Sig02" physicalPath="global_ds/top_A/dsm1"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="global_ds/top_A/sub_C2/Out1" path="top_A/sub_C2/Out1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <single/>
+          </array>
+        </array>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="global_ds/top_A/sub_D1" path="top_A/sub_D1" sampleTime="0.5" name="sub_D1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="global_ds/top_A/sub_D1/In1" path="top_A/sub_D1/In1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <single/>
+          </array>
+        </array>
+      </inport>
+      <outport portNumber="0" name="ds_Out1" physicalPath="global_ds/top_A/sub_D1/ds_Out1" path="top_A/sub_D1/ds_Out1" signalName="A">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="0.0">
+                <single min="-13.0" max="27.0"/>
+              </signal>
+              <signal index="2" initValue="1.0">
+                <single min="-13.0" max="27.0"/>
+              </signal>
+              <signal index="3" initValue="2.0">
+                <single min="-13.0" max="27.0"/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="3.0">
+                <single min="-13.0" max="27.0"/>
+              </signal>
+              <signal index="2" initValue="4.0">
+                <single min="-13.0" max="27.0"/>
+              </signal>
+              <signal index="3" initValue="5.0">
+                <single min="-13.0" max="27.0"/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <dataStoreMemory signalName="A" physicalPath="global_ds/top_A/dsm2"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="global_ds/top_A/sub_D2" path="top_A/sub_D2" sampleTime="0.5" name="sub_D2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="ds_In1" physicalPath="global_ds/top_A/sub_D2/ds_In1" path="top_A/sub_D2/ds_In1" signalName="A">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="0.0">
+                <single min="-13.0" max="27.0"/>
+              </signal>
+              <signal index="2" initValue="1.0">
+                <single min="-13.0" max="27.0"/>
+              </signal>
+              <signal index="3" initValue="2.0">
+                <single min="-13.0" max="27.0"/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="3.0">
+                <single min="-13.0" max="27.0"/>
+              </signal>
+              <signal index="2" initValue="4.0">
+                <single min="-13.0" max="27.0"/>
+              </signal>
+              <signal index="3" initValue="5.0">
+                <single min="-13.0" max="27.0"/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <dataStoreMemory signalName="A" physicalPath="global_ds/top_A/dsm2"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="global_ds/top_A/sub_D2/Out1" path="top_A/sub_D2/Out1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <single/>
+          </array>
+        </array>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="global_ds/top_A/sub_E1" path="top_A/sub_E1" sampleTime="0.5" name="sub_E1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="global_ds/top_A/sub_E1/In1" path="top_A/sub_E1/In1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <double min="-55.0" max="98.0"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <double min="-45.0" max="18.0"/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="c">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <single min="-5.0" max="68.0"/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="0" name="ds_Out1" physicalPath="global_ds/top_A/sub_E1/ds_Out1" path="top_A/sub_E1/ds_Out1" signalName="Sig03">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <double min="-55.0" max="98.0"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <double min="-45.0" max="18.0"/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="c">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <single min="-5.0" max="68.0"/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="Sig03" physicalPath="global_ds/dsm_bus"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="global_ds/top_A/sub_E2" path="top_A/sub_E2" sampleTime="0.5" name="sub_E2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="ds_In1" physicalPath="global_ds/top_A/sub_E2/ds_In1" path="top_A/sub_E2/ds_In1" signalName="Sig03">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <double min="-55.0" max="98.0"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <double min="-45.0" max="18.0"/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="c">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <single min="-5.0" max="68.0"/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+        <dataStoreMemory signalName="Sig03" physicalPath="global_ds/dsm_bus"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="global_ds/top_A/sub_E2/Out1" path="top_A/sub_E2/Out1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="MyBus">
+          <signal signalName="a">
+            <array size="2" startIndex="1">
+              <double min="-55.0" max="98.0"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <double min="-45.0" max="18.0"/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="c">
+            <array size="3" startIndex="1">
+              <array size="2" startIndex="1">
+                <single min="-5.0" max="68.0"/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="global_ds/top_A/sub_F1" path="top_A/sub_F1" sampleTime="0.5" name="sub_F1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="global_ds/top_A/sub_F1/In1" path="top_A/sub_F1/In1">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <outport portNumber="0" name="ds_Out1" physicalPath="global_ds/top_A/sub_F1/ds_Out1" path="top_A/sub_F1/ds_Out1" signalName="B">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="1.0">
+            <double min="-13.0" max="27.0"/>
+          </signal>
+          <signal index="2" initValue="2.0">
+            <double min="-13.0" max="27.0"/>
+          </signal>
+          <signal index="3" initValue="3.0">
+            <double min="-13.0" max="27.0"/>
+          </signal>
+        </nonUniformArray>
+        <dataStoreMemory signalName="B" physicalPath="global_ds/top_A/dsm3"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss11" physicalPath="global_ds/top_A/sub_F2" path="top_A/sub_F2" sampleTime="0.5" name="sub_F2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="ds_In1" physicalPath="global_ds/top_A/sub_F2/ds_In1" path="top_A/sub_F2/ds_In1" signalName="B">
+        <nonUniformArray size="3">
+          <signal index="1" initValue="1.0">
+            <double min="-13.0" max="27.0"/>
+          </signal>
+          <signal index="2" initValue="2.0">
+            <double min="-13.0" max="27.0"/>
+          </signal>
+          <signal index="3" initValue="3.0">
+            <double min="-13.0" max="27.0"/>
+          </signal>
+        </nonUniformArray>
+        <dataStoreMemory signalName="B" physicalPath="global_ds/top_A/dsm3"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="global_ds/top_A/sub_F2/Out1" path="top_A/sub_F2/Out1">
+        <array size="3" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction mdfDialect="EP2.9">
+  <Types>
+    <BusType name="A" virtual="false">
+      <Comp name="a" type="A18" width="1"/>
+      <Comp name="a1" type="A30" width="1"/>
+      <Comp name="a2" type="A16" width="1"/>
+      <Comp name="a3" type="A30" width="1"/>
+      <Comp name="a4" type="A16" width="1"/>
+      <Comp name="a5" type="A31" width="1"/>
+      <Comp name="a6" type="uint8" width="1"/>
+    </BusType>
+    <AliasType name="A18" type="fixdt(1,18,0.001,0)"/>
+    <AliasType name="A30" type="fixdt(1,30,2.7777776718139649e-7,0)"/>
+    <AliasType name="A16" type="fixdt(0,16,0.1,-100)"/>
+    <AliasType name="A31" type="fixdt(1,31,2.7777776718139649e-7,0)"/>
+  </Types>
+  <Outports sampleTime="0.2">
+    <Outport portNr="1" type="A" signalName="&lt;signal1&gt;">
+      <ScalarRefs>
+        <ScalarRef displayName="Input.{&lt;signal1&gt;}.a">INPUT:Input.{&lt;signal1&gt;}.a</ScalarRef>
+        <ScalarRef displayName="Input.{&lt;signal1&gt;}.a1">INPUT:Input.{&lt;signal1&gt;}.a1</ScalarRef>
+        <ScalarRef displayName="Input.{&lt;signal1&gt;}.a2">INPUT:Input.{&lt;signal1&gt;}.a2</ScalarRef>
+        <ScalarRef displayName="Input.{&lt;signal1&gt;}.a3">INPUT:Input.{&lt;signal1&gt;}.a3</ScalarRef>
+        <ScalarRef displayName="Input.{&lt;signal1&gt;}.a4">INPUT:Input.{&lt;signal1&gt;}.a4</ScalarRef>
+        <ScalarRef displayName="Input.{&lt;signal1&gt;}.a5">INPUT:Input.{&lt;signal1&gt;}.a5</ScalarRef>
+        <ScalarRef displayName="Input.{&lt;signal1&gt;}.a6">INPUT:Input.{&lt;signal1&gt;}.a6</ScalarRef>
+      </ScalarRefs>
+    </Outport>
+  </Outports>
+</SFunction>

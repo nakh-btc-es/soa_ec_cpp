@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_nonvirtual_bus_02\nonvirtual_bus_init.m" modelVersion="1.27" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_nonvirtual_bus_02\nonvirtual_bus_sl.mdl" modelCreationDate="2016-09-13T10:28:02" creator="Alexander Hornstein">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.27" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_nonvirtual_bus_02\nonvirtual_bus_sl.mdl" creationDate="2016-09-13T10:28:02" modificationDate="2020-09-10T14:28:23" initScript="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_nonvirtual_bus_02\nonvirtual_bus_init.m">
+    <subsystem subsysID="ss1" physicalPath="nonvirtual_bus_sl/top_A" path="top_A" sampleTime="0.02" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="nonvirtual_bus_sl/top_A/In1" path="top_A/In1" signalName="a">
+        <int16/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="nonvirtual_bus_sl/top_A/In2" path="top_A/In2" signalName="b">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="nonvirtual_bus_sl/top_A/In3" path="top_A/In3" signalName="z">
+        <bus busType="non_virtual" busObjectName="myBusZ">
+          <signal signalName="x">
+            <single/>
+          </signal>
+          <signal signalName="y">
+            <array size="2" startIndex="1">
+              <double/>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="nonvirtual_bus_sl/top_A/In4" path="top_A/In4" signalName="zz">
+        <bus busObjectName="myBusZ">
+          <signal signalName="x">
+            <single/>
+          </signal>
+          <signal signalName="y">
+            <array size="2" startIndex="1">
+              <double/>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="nonvirtual_bus_sl/top_A/Out1" path="top_A/Out1">
+        <array size="2" startIndex="1">
+          <boolean/>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="nonvirtual_bus_sl/top_A/Out2" path="top_A/Out2">
+        <array size="2" startIndex="1">
+          <boolean/>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="nonvirtual_bus_sl/top_A/Out3" path="top_A/Out3" signalName="w">
+        <bus busType="non_virtual" busObjectName="myBusW">
+          <signal signalName="c">
+            <bus busType="non_virtual" busObjectName="myBusC">
+              <signal signalName="a">
+                <int16/>
+              </signal>
+              <signal signalName="b">
+                <array size="2" startIndex="1">
+                  <int32/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="z">
+            <bus busType="non_virtual" busObjectName="myBusZ">
+              <signal signalName="x">
+                <single/>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <double/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="nonvirtual_bus_sl/top_A/Out4" path="top_A/Out4">
+        <array size="2" startIndex="1">
+          <boolean/>
+        </array>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="nonvirtual_bus_sl/top_A/sub_B1" path="top_A/sub_B1" sampleTime="0.02" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="nonvirtual_bus_sl/top_A/sub_B1/In1" path="top_A/sub_B1/In1" signalName="c">
+        <bus busType="non_virtual" busObjectName="myBusC">
+          <signal signalName="a">
+            <int16/>
+          </signal>
+          <signal signalName="b">
+            <array size="2" startIndex="1">
+              <int32/>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="nonvirtual_bus_sl/top_A/sub_B1/Out1" path="top_A/sub_B1/Out1">
+        <array size="2" startIndex="1">
+          <boolean/>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="nonvirtual_bus_sl/top_A/sub_B1/Out2" path="top_A/sub_B1/Out2" signalName="c">
+        <bus busType="non_virtual" busObjectName="myBusC">
+          <signal signalName="a">
+            <int16/>
+          </signal>
+          <signal signalName="b">
+            <array size="2" startIndex="1">
+              <int32/>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="nonvirtual_bus_sl/top_A/sub_B2" path="top_A/sub_B2" sampleTime="0.02" name="sub_B2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="nonvirtual_bus_sl/top_A/sub_B2/In1" path="top_A/sub_B2/In1" signalName="w">
+        <bus busType="non_virtual" busObjectName="myBusW">
+          <signal signalName="c">
+            <bus busType="non_virtual" busObjectName="myBusC">
+              <signal signalName="a">
+                <int16/>
+              </signal>
+              <signal signalName="b">
+                <array size="2" startIndex="1">
+                  <int32/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="z">
+            <bus busType="non_virtual" busObjectName="myBusZ">
+              <signal signalName="x">
+                <single/>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <double/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="nonvirtual_bus_sl/top_A/sub_B2/Out1" path="top_A/sub_B2/Out1">
+        <array size="2" startIndex="1">
+          <boolean/>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="nonvirtual_bus_sl/top_A/sub_B2/Out2" path="top_A/sub_B2/Out2" signalName="w">
+        <bus busType="non_virtual" busObjectName="myBusW">
+          <signal signalName="c">
+            <bus busType="non_virtual" busObjectName="myBusC">
+              <signal signalName="a">
+                <int16/>
+              </signal>
+              <signal signalName="b">
+                <array size="2" startIndex="1">
+                  <int32/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="z">
+            <bus busType="non_virtual" busObjectName="myBusZ">
+              <signal signalName="x">
+                <single/>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <double/>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

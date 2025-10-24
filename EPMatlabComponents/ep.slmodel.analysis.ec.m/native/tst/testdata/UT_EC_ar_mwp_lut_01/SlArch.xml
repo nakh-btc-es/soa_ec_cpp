@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ar_mwp_lut_01\ut_results\AddModelInfo.xml" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ar_mwp_lut_01\simple_lut.slx" modelCreationDate="2022-05-04T11:19:36" creator="developer">
+  <toolInfo name="Matlab" release="(R2020a)" version="9.8" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020a)" version="10.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241030T130930_13576\tmp_ar_mwp_lut_01\simple_lut.slx" creationDate="2022-05-04T11:19:36" modificationDate="2024-10-30T16:25:57">
+    <subsystem subsysID="ss1" physicalPath="simple_lut/Runnable_Step_sys" path="Runnable_Step_sys" sampleTime="2" name="Runnable_Step_sys" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="sr_in1_in_read" physicalPath="simple_lut/Runnable_Step_sys/sr_in1_in_read" path="Runnable_Step_sys/sr_in1_in_read" signalName="sig_in1">
+        <double/>
+      </inport>
+      <parameter name="bp1" path="Runnable_Step_sys/Prelookup1" physicalPath="simple_lut/Runnable_Step_sys/Prelookup1" origin="explicit_param" workspace="bp1">
+        <nonUniformArray size="5">
+          <signal index="1" initValue="5.0">
+            <double min="0.0" max="77.0"/>
+          </signal>
+          <signal index="2" initValue="6.0">
+            <double min="0.0" max="77.0"/>
+          </signal>
+          <signal index="3" initValue="7.0">
+            <double min="0.0" max="77.0"/>
+          </signal>
+          <signal index="4" initValue="8.0">
+            <double min="0.0" max="77.0"/>
+          </signal>
+          <signal index="5" initValue="9.0">
+            <double min="0.0" max="77.0"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Runnable_Step_sys/Prelookup1" physicalPath="simple_lut/Runnable_Step_sys/Prelookup1" simulinkBlockType="PreLookup" blockAttribute="BreakpointObject"/>
+        <usageContext path="Runnable_Step_sys/RefLut1" physicalPath="simple_lut/Runnable_Step_sys/RefLut1" simulinkBlockType="Interpolation_n-D"/>
+        <source kind="ModelWorkspace" file="simple_lut"/>
+      </parameter>
+      <parameter name="bp2" path="Runnable_Step_sys/Prelookup2" physicalPath="simple_lut/Runnable_Step_sys/Prelookup2" origin="explicit_param" workspace="bp2">
+        <nonUniformArray size="5">
+          <signal index="1" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="6.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="7.0">
+            <double/>
+          </signal>
+          <signal index="4" initValue="8.0">
+            <double/>
+          </signal>
+          <signal index="5" initValue="9.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Runnable_Step_sys/Prelookup2" physicalPath="simple_lut/Runnable_Step_sys/Prelookup2" simulinkBlockType="PreLookup" blockAttribute="BreakpointObject"/>
+        <source kind="ModelWorkspace" file="simple_lut"/>
+      </parameter>
+      <parameter name="lut1" path="Runnable_Step_sys/RefLut1" physicalPath="simple_lut/Runnable_Step_sys/RefLut1" origin="explicit_param" workspace="lut1">
+        <nonUniformArray size="5">
+          <signal index="1" initValue="2.5">
+            <double/>
+          </signal>
+          <signal index="2" initValue="3.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="3.5">
+            <double/>
+          </signal>
+          <signal index="4" initValue="4.0">
+            <double/>
+          </signal>
+          <signal index="5" initValue="4.5">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Runnable_Step_sys/RefLut1" physicalPath="simple_lut/Runnable_Step_sys/RefLut1" simulinkBlockType="Interpolation_n-D" blockAttribute="LookupTableObject"/>
+        <source kind="ModelWorkspace" file="simple_lut"/>
+      </parameter>
+      <parameter name="lut2" path="Runnable_Step_sys/ExplicitLut2" physicalPath="simple_lut/Runnable_Step_sys/ExplicitLut2" origin="explicit_param" workspace="lut2">
+        <nonUniformArray size="10">
+          <signal index="1" initValue="0.7">
+            <double max="120.2"/>
+          </signal>
+          <signal index="2" initValue="1.4">
+            <double max="120.2"/>
+          </signal>
+          <signal index="3" initValue="2.0999999999999996">
+            <double max="120.2"/>
+          </signal>
+          <signal index="4" initValue="2.8">
+            <double max="120.2"/>
+          </signal>
+          <signal index="5" initValue="3.5">
+            <double max="120.2"/>
+          </signal>
+          <signal index="6" initValue="4.199999999999999">
+            <double max="120.2"/>
+          </signal>
+          <signal index="7" initValue="4.8999999999999995">
+            <double max="120.2"/>
+          </signal>
+          <signal index="8" initValue="5.6">
+            <double max="120.2"/>
+          </signal>
+          <signal index="9" initValue="6.3">
+            <double max="120.2"/>
+          </signal>
+          <signal index="10" initValue="7.0">
+            <double max="120.2"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Runnable_Step_sys/ExplicitLut2" physicalPath="simple_lut/Runnable_Step_sys/ExplicitLut2" simulinkBlockType="Lookup_n-D" blockAttribute="LookupTableObject"/>
+        <source kind="ModelWorkspace" file="simple_lut"/>
+      </parameter>
+      <parameter name="lut4" path="Runnable_Step_sys/ExplicitLut4" physicalPath="simple_lut/Runnable_Step_sys/ExplicitLut4" origin="explicit_param" workspace="lut4">
+        <nonUniformArray size="10">
+          <signal index="1" initValue="-1.5">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="2" initValue="-3.0">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="3" initValue="-4.5">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="4" initValue="-6.0">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="5" initValue="-7.5">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="6" initValue="-9.0">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="7" initValue="-10.5">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="8" initValue="-12.0">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="9" initValue="-13.5">
+            <double min="-15.5"/>
+          </signal>
+          <signal index="10" initValue="-15.0">
+            <double min="-15.5"/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Runnable_Step_sys/ExplicitLut4" physicalPath="simple_lut/Runnable_Step_sys/ExplicitLut4" simulinkBlockType="Lookup_n-D" blockAttribute="LookupTableObject"/>
+        <source kind="ModelWorkspace" file="simple_lut"/>
+      </parameter>
+      <parameter name="p" path="Runnable_Step_sys/Constant" physicalPath="simple_lut/Runnable_Step_sys/Constant" origin="explicit_param" workspace="p" initValue="7.1">
+        <double/>
+        <usageContext path="Runnable_Step_sys/Constant" physicalPath="simple_lut/Runnable_Step_sys/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <source kind="ModelWorkspace" file="simple_lut"/>
+      </parameter>
+      <outport portNumber="1" name="sr_out2_out2_write" physicalPath="simple_lut/Runnable_Step_sys/sr_out2_out2_write" path="Runnable_Step_sys/sr_out2_out2_write" signalName="sig_out2">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="sr_out3_out3_write" physicalPath="simple_lut/Runnable_Step_sys/sr_out3_out3_write" path="Runnable_Step_sys/sr_out3_out3_write" signalName="sig_out3">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="sr_out1_out_write" physicalPath="simple_lut/Runnable_Step_sys/sr_out1_out_write" path="Runnable_Step_sys/sr_out1_out_write" signalName="sig_out1">
+        <double/>
+      </outport>
+      <outport portNumber="4" name="sr_out4_out4_write" physicalPath="simple_lut/Runnable_Step_sys/sr_out4_out4_write" path="Runnable_Step_sys/sr_out4_out4_write" signalName="sig_out4">
+        <uint32/>
+      </outport>
+      <outport portNumber="5" name="sr_out5_out5_write" physicalPath="simple_lut/Runnable_Step_sys/sr_out5_out5_write" path="Runnable_Step_sys/sr_out5_out5_write" signalName="sig_out5">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

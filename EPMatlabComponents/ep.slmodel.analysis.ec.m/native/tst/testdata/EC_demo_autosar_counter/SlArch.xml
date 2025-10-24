@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_ec_demo_autosar_counter\ut_results\AddModelInfo.xml" modelVersion="1.259" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_ec_demo_autosar_counter\ec_autosar_counter.slx" modelCreationDate="1998-09-22T15:29:52" creator="The MathWorks, Inc.">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.259" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_ec_demo_autosar_counter\ec_autosar_counter.slx" creationDate="1998-09-22T15:29:52" modificationDate="2024-09-12T19:34:00">
+    <subsystem subsysID="ss1" physicalPath="ec_autosar_counter" path="" sampleTime="0.1" name="ec_autosar_counter" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="Input" physicalPath="ec_autosar_counter/Input" path="Input">
+        <int32/>
+      </inport>
+      <parameter name="INC" path="INC" physicalPath="ec_autosar_counter/INC" origin="explicit_param" workspace="INC" initValue="1.0">
+        <uint8/>
+        <usageContext path="INC" physicalPath="ec_autosar_counter/INC" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="K" path="Amplifier/Gain" physicalPath="ec_autosar_counter/Amplifier/Gain" origin="explicit_param" workspace="K" initValue="2.0">
+        <uint8/>
+        <usageContext path="Amplifier/Gain" physicalPath="ec_autosar_counter/Amplifier/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="LIMIT" path="LIMIT" physicalPath="ec_autosar_counter/LIMIT" origin="explicit_param" workspace="LIMIT" initValue="16.0">
+        <uint8/>
+        <usageContext path="LIMIT" physicalPath="ec_autosar_counter/LIMIT" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="RESET" path="RESET" physicalPath="ec_autosar_counter/RESET" origin="explicit_param" workspace="RESET" initValue="0.0">
+        <uint8/>
+        <usageContext path="RESET" physicalPath="ec_autosar_counter/RESET" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Output" physicalPath="ec_autosar_counter/Output" path="Output">
+        <int32/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\262438384\simple_mcal\TLProj\top_A" name="top_A.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\262438384\simple_mcal\TLSim" name="top_A_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\262438384\simple_mcal\TLProj\top_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\262438384\simple_mcal\TLSim"/>
+    <IncludePath path="C:\dspace\TL42\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dspace\TL42\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dspace\TL42\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="42"/>
+  </Defines>
+  <Functions archName="simple_mcal [C-Code]">
+    <Function name="top_A" sampleTime="5.0">
+      <Interface>
+        <InterfaceObj kind="cal" var="var_dd_b" access=".b" scaling="scID1" initVal="-2.0000000000000000e-02"/>
+        <InterfaceObj kind="cal" var="var_dd_b" access=".a" scaling="scID1" initVal="2.0000000000000000e-02"/>
+        <InterfaceObj kind="cal" var="var_b" scaling="scID1" initVal="1.0000000000000000e-02"/>
+        <InterfaceObj kind="cal" var="var_dd_a" initVal="2.0400000000000000e+00"/>
+        <InterfaceObj kind="cal" var="var_a" scaling="scID2" initVal="8.9000000000000004e+00"/>
+        <InterfaceObj kind="out" var="Sa1_Out1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa2_sub_B1" fileref="fID1" sampleTime="5.0">
+      <Interface>
+        <InterfaceObj kind="cal" var="var_dd_a" initVal="2.0400000000000000e+00"/>
+        <InterfaceObj kind="cal" var="var_a" scaling="scID2" initVal="8.9000000000000004e+00"/>
+        <InterfaceObj kind="out" var="Sa2_MinMax1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa3_sub_B2" fileref="fID1" sampleTime="5.0">
+      <Interface>
+        <InterfaceObj kind="cal" var="var_dd_b" access=".b" scaling="scID1" initVal="-2.0000000000000000e-02"/>
+        <InterfaceObj kind="cal" var="var_dd_b" access=".a" scaling="scID1" initVal="2.0000000000000000e-02"/>
+        <InterfaceObj kind="cal" var="var_b" scaling="scID1" initVal="1.0000000000000000e-02"/>
+        <InterfaceObj kind="cal" var="var_dd_a" initVal="2.0400000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa3_Relay1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa4_sub_B3" fileref="fID1" sampleTime="5.0">
+      <Interface>
+        <InterfaceObj kind="in" var="var_dd_a" initVal="2.0400000000000000e+00"/>
+        <InterfaceObj kind="cal" var="var_dd_b" access=".b" scaling="scID1" initVal="-2.0000000000000000e-02"/>
+        <InterfaceObj kind="cal" var="var_dd_b" access=".a" scaling="scID1" initVal="2.0000000000000000e-02"/>
+        <InterfaceObj kind="cal" var="var_b" scaling="scID1" initVal="1.0000000000000000e-02"/>
+        <InterfaceObj kind="out" var="Sa4_Relay1" scaling="scID1"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e-08" offset="0.0000000000000000e+00"/>
+    <Scaling id="scID2" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

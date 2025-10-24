@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="mainSub"/>
+    <Architecture id="id1" name="mainSub [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="mainSub.c:1:mainSub_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_MainSub_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_MainSub_Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ParamIn" refId="id0"/>
+        <Path path="ParamIn" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ParamOut" refId="id0"/>
+        <Path path="ParamOut" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="MainSub/Model" refId="id0"/>
+      <Path path="mainSub.c:1:mainSub_step/counter.c:1:counter" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="MainSub/Model/In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_MainSub_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="MainSub/Model/Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_Counter_Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ParamIn" refId="id0"/>
+        <Path path="ParamIn" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="MainSub/Model/CounterTopLevel/CounterSubsystem" refId="id0"/>
+      <Path path="mainSub.c:1:mainSub_step/counter.c:1:counter/CounterSubsystem.c:1:CounterSubsystem" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="MainSub/Model/CounterTopLevel/CounterSubsystem/In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_Counter_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="MainSub/Model/CounterTopLevel/CounterSubsystem/Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_Counter_Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

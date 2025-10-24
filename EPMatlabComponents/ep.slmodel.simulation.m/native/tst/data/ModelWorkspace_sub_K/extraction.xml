@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="26h">
+	<Types />
+	<Scope uid="26h" name="sub_K" path="main/sub_M/sub_B/Model/sub_K" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="sub_sub_model/sub_K">
+		<InPort name="In1" portNumber="1" compositeSig="none" type="single">
+			<Variable varid="varif_416" signalType="single" isFloat="yes" tlTypeName="single" type="single">
+				<ifName ifid="if_416" initValue="0.0" lsb="1.0" offset="0.0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none" type="single">
+			<Variable varid="varif_418" signalType="single" isFloat="yes" tlTypeName="single" type="single">
+				<ifName ifid="if_418" initValue="0.0" lsb="1.0" offset="0.0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="none" type="double">
+			<Variable varid="varif_420" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_420" initValue="0.0" lsb="1.0" offset="0.0" displayName="Out2" identifier="OUTPUT:Out2" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out3" portNumber="3" compositeSig="none" type="int8">
+			<Variable varid="varif_422" signalType="int8" tlTypeName="int8" type="int8">
+				<ifName ifid="if_422" initValue="0" lsb="1.0" offset="0.0" displayName="Out3" identifier="OUTPUT:Out3" />
+			</Variable>
+		</OutPort>
+		<Calibration name="C" path="main/sub_M/sub_B/Model/sub_K/Gain" physicalPath="sub_sub_model/sub_K/Gain" origin="explicit_param">
+			<CalibrationUsage path="main/sub_M/sub_B/Model/sub_K/Gain" physicalPath="sub_sub_model/sub_K/Gain" blockAttribute="Gain" />
+			<Variable varid="varif_424" signalType="int8" tlTypeName="int8">
+				<ifName ifid="if_424" initValue="2" lsb="1.0" offset="0.0" displayName="C" identifier="PARAMETER:Gain/C" />
+			</Variable>
+		</Calibration>
+		<Model name="sub_sub_model" modelPath="/E:/ModelsDev/UT_SL/ModelWorkspaceBig/ml2015asp1/sub_sub_model.slx" type="SimulinkModel" />
+	</Scope>
+</ExtractionModel>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="switchMode"/>
+    <Architecture id="id1" name="switchMode [C-Code]"/>
+    <ScopeMapping>
+      <Path path="SwitchModeOnOff" refId="id0"/>
+      <Path path="switchMode.c:1:Runnable_OnOff" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SwitchModeOnOff/In2" refId="id0"/>
+        <Path path="RteStub_In1_In1_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SwitchModeOnOff/In3" refId="id0"/>
+        <Path path="RteStub_In2_Group_ModeSwitch" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SwitchModeOnOff/Out2" refId="id0"/>
+        <Path path="RteStub_Out1_Out1_Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SwitchModeOnOff/Out3" refId="id0"/>
+        <Path path="RteStub_Out2_Group_ModeSwitch" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="SwitchModeBlueGreen" refId="id0"/>
+      <Path path="switchMode.c:1:Runnable_Color" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SwitchModeBlueGreen/In2" refId="id0"/>
+        <Path path="RteStub_In3_In3_DataElement1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="SwitchModeBlueGreen/In3" refId="id0"/>
+        <Path path="RteStub_In4_MyColorGroup_ModeSwitch" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SwitchModeBlueGreen/Out2" refId="id0"/>
+        <Path path="RteStub_Out3_Out3_DataElement2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="SwitchModeBlueGreen/Out3" refId="id0"/>
+        <Path path="RteStub_MyName_MyColorGroup_ModeSwitch" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

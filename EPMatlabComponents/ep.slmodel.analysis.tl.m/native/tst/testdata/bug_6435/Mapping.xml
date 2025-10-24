@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="StandardModel_tl"/>
+    <Architecture id="id1" name="StandardModel_tl [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem"/>
+      <Path refId="id1" path="standartSubsystem.c:1:Sa1_standartSubsystem"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa1_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In2"/>
+        <Path refId="id1" path="Sa1_In2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa1_Out1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out2"/>
+        <Path refId="id1" path="Sa1_Out2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out3"/>
+        <Path refId="id1" path="Sa1_Out3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart/Calvariable"/>
+        <Path refId="id1" path="Ca1_V_Calvariable"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation/Saturation[sat_lower]"/>
+        <Path refId="id1" path="Sa4_Saturation_lower"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation/Saturation[sat_upper]"/>
+        <Path refId="id1" path="Sa4_Saturation_upper"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Constant1/Constant1[const]"/>
+        <Path refId="id1" path="Sa4_Constant1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch2/Switch2[switch_threshold]"/>
+        <Path refId="id1" path="Sa2_Switch2_threshold"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch1/Switch1[switch_threshold]"/>
+        <Path refId="id1" path="Sa2_Switch1_threshold"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay/Relay[relay_out_off]"/>
+        <Path refId="id1" path="Sa2_Relay_offoutput"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay/Relay[relay_out_on]"/>
+        <Path refId="id1" path="Sa2_Relay_onoutput"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay/Relay[relay_switch_off]"/>
+        <Path refId="id1" path="Sa2_Relay_offswitch"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay/Relay[relay_switch_on]"/>
+        <Path refId="id1" path="Sa2_Relay_onswitch"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart/fail_O2"/>
+        <Path refId="id1" path="fail_O2"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem"/>
+      <Path refId="id1" path="standartSubsystem.c:1:Sa1_standartSubsystem/standartSubsystem.c:1:Sa2_AtomicSubsystem"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In"/>
+        <Path refId="id1" path="Sa2_In"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="maxRate"/>
+        <Path refId="id1" path="Sa2_maxRate"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa2_AtomicSubsystem:return"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch2/Switch2[switch_threshold]"/>
+        <Path refId="id1" path="Sa2_Switch2_threshold"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Switch1/Switch1[switch_threshold]"/>
+        <Path refId="id1" path="Sa2_Switch1_threshold"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay/Relay[relay_out_off]"/>
+        <Path refId="id1" path="Sa2_Relay_offoutput"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay/Relay[relay_out_on]"/>
+        <Path refId="id1" path="Sa2_Relay_onoutput"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay/Relay[relay_switch_off]"/>
+        <Path refId="id1" path="Sa2_Relay_offswitch"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem/Relay/Relay[relay_switch_on]"/>
+        <Path refId="id1" path="Sa2_Relay_onswitch"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1"/>
+      <Path refId="id1" path="standartSubsystem.c:1:Sa1_standartSubsystem/standartSubsystem.c:1:Sa3_AtomicSubsystem1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa2_Out1_a"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa4_Saturation"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out2"/>
+        <Path refId="id1" path="Sa4_Product"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out3"/>
+        <Path refId="id1" path="fail_O2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart/Calvariable"/>
+        <Path refId="id1" path="Ca1_V_Calvariable"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation/Saturation[sat_lower]"/>
+        <Path refId="id1" path="Sa4_Saturation_lower"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation/Saturation[sat_upper]"/>
+        <Path refId="id1" path="Sa4_Saturation_upper"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Constant1/Constant1[const]"/>
+        <Path refId="id1" path="Sa4_Constant1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/StateChart/fail_O2"/>
+        <Path refId="id1" path="fail_O2"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2"/>
+      <Path refId="id1" path="standartSubsystem.c:1:Sa1_standartSubsystem/standartSubsystem.c:1:Sa3_AtomicSubsystem1/standartSubsystem.c:1:Sa4_Subsystem2"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sa2_Out1_a"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sa4_Saturation"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out2"/>
+        <Path refId="id1" path="Sa4_Product"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation/Saturation[sat_lower]"/>
+        <Path refId="id1" path="Sa4_Saturation_lower"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Saturation/Saturation[sat_upper]"/>
+        <Path refId="id1" path="Sa4_Saturation_upper"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standartSubsystem/Subsystem/standartSubsystem/AtomicSubsystem1/Subsystem2/Constant1/Constant1[const]"/>
+        <Path refId="id1" path="Sa4_Constant1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

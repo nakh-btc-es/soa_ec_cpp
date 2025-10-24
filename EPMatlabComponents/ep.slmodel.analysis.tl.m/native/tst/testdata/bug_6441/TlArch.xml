@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.169" modelPath="E:\EP2\Git\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_6441\Struct_Interfaces.mdl" modelCreationDate="2006-10-19T09:38:01" creator="alex">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.169" modelPath="E:\EP2\Git\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_6441\Struct_Interfaces.mdl" creationDate="2006-10-19T09:38:01" modificationDate="2021-11-16T14:26:06">
+    <subsystem subsysID="ss1" physicalPath="Struct_Interfaces/PI_StructPointers/Subsystem/PI_StructPointers" path="PI_StructPointers/Subsystem/PI_StructPointers" sampleTime="0.0001" name="PI_StructPointers" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="ref." physicalPath="Struct_Interfaces/PI_StructPointers/Subsystem/PI_StructPointers/ref." path="PI_StructPointers/Subsystem/PI_StructPointers/ref.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float64/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="y." physicalPath="Struct_Interfaces/PI_StructPointers/Subsystem/PI_StructPointers/y." path="PI_StructPointers/Subsystem/PI_StructPointers/y.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float64/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="u." physicalPath="Struct_Interfaces/PI_StructPointers/Subsystem/PI_StructPointers/u." path="PI_StructPointers/Subsystem/PI_StructPointers/u.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float64/>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="Struct_Interfaces/PI_StructPointers/Subsystem/PI_StructPointers/PI_Legacy_Code" path="PI_StructPointers/Subsystem/PI_StructPointers/PI_Legacy_Code" sampleTime="0.0001" name="PI_Legacy_Code" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="ref" physicalPath="Struct_Interfaces/PI_StructPointers/Subsystem/PI_StructPointers/PI_Legacy_Code/ref" path="PI_StructPointers/Subsystem/PI_StructPointers/PI_Legacy_Code/ref">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float64/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="y" physicalPath="Struct_Interfaces/PI_StructPointers/Subsystem/PI_StructPointers/PI_Legacy_Code/y" path="PI_StructPointers/Subsystem/PI_StructPointers/PI_Legacy_Code/y">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float64/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="u." physicalPath="Struct_Interfaces/PI_StructPointers/Subsystem/PI_StructPointers/PI_Legacy_Code/u." path="PI_StructPointers/Subsystem/PI_StructPointers/PI_Legacy_Code/u.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float64/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

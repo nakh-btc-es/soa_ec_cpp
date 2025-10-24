@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_test_point_ev_disp\start.m" modelVersion="1.65" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_test_point_ev_disp\sldemo_mdlref_datamngt.mdl" modelCreationDate="2003-05-19T13:24:40" creator="The MathWorks Inc.">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.65" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_test_point_ev_disp\sldemo_mdlref_datamngt.mdl" creationDate="2003-05-19T13:24:40" modificationDate="2024-09-11T18:16:03" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_test_point_ev_disp\start.m">
+    <subsystem subsysID="ss1" physicalPath="sldemo_mdlref_datamngt" path="" sampleTime="0.1" name="sldemo_mdlref_datamngt" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sldemo_mdlref_datamngt/In1" path="In1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sldemo_mdlref_datamngt/In2" path="In2">
+        <boolean/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="sldemo_mdlref_datamngt/In3" path="In3">
+        <boolean/>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="sldemo_mdlref_datamngt/In4" path="In4" signalName="TP_Sine">
+        <double/>
+      </inport>
+      <inport portNumber="5" name="In5" physicalPath="sldemo_mdlref_datamngt/In5" path="In5">
+        <double/>
+      </inport>
+      <parameter name="AAA" path="top_A/MultipleOutputsPerBlock/Constant" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Constant" origin="explicit_param" workspace="AAA" initValue="1.0">
+        <double/>
+        <usageContext path="top_A/MultipleOutputsPerBlock/Constant" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="BBB" path="top_A/MultipleOutputsPerBlock/Constant1" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Constant1" origin="explicit_param" workspace="BBB" initValue="0.0">
+        <double/>
+        <usageContext path="top_A/MultipleOutputsPerBlock/Constant1" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sldemo_mdlref_datamngt/Out1" path="Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="sldemo_mdlref_datamngt/Out2" path="Out2">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="sldemo_mdlref_datamngt/Out3" path="Out3">
+        <double/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="sldemo_mdlref_datamngt/Out4" path="Out4">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="sldemo_mdlref_datamngt/Out5" path="Out5">
+        <double/>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="sldemo_mdlref_datamngt/Out6" path="Out6">
+        <double/>
+      </outport>
+      <outport portNumber="7" name="Out7" physicalPath="sldemo_mdlref_datamngt/Out7" path="Out7">
+        <double/>
+      </outport>
+      <display physicalPath="sldemo_mdlref_datamngt/In1" path="In1" name="In1" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Probe" path="top_A/MultipleOutputsPerBlock/Probe" name="Probe" portNumber="2">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Probe" path="top_A/MultipleOutputsPerBlock/Probe" name="Probe" portNumber="3">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/In3" path="top_A/In3" name="In3" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/In2_Main" path="top_A/In2_Main" name="In2_Main" portNumber="1" signalName="TP_Sine">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/In1" path="top_A/Subsystem/In1" name="In1" portNumber="1" signalName="TPIn1">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/Concatenate" path="Concatenate" name="Concatenate" portNumber="1">
+        <array size="2" startIndex="1">
+          <boolean/>
+        </array>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/In1_Main" path="top_A/In1_Main" name="In1_Main" portNumber="1" signalName="NameForIn1_Main">
+        <array size="2" startIndex="1">
+          <boolean/>
+        </array>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Selector" path="top_A/MultipleOutputsPerBlock/Selector" name="Selector" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem" path="top_A/Subsystem" name="Subsystem" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/Gain" path="top_A/Subsystem/Gain" name="Gain" portNumber="1" signalName="TP_Gain">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/Gain1" path="top_A/Subsystem/Gain1" name="Gain1" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/Chart" path="top_A/Subsystem/Chart" name="chart" stateflowVariable="chart" signalName="chart">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Probe" path="top_A/MultipleOutputsPerBlock/Probe" name="Probe" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Switch" path="top_A/MultipleOutputsPerBlock/Switch" name="Switch" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/Gain2" path="top_A/Subsystem/Gain2" name="Gain2" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="reference/Initial Count" path="top_A/Model/Initial Count" name="Initial Count" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="reference/Trigger on&#10;rising edge" path="top_A/Model/Trigger on&#10;rising edge" name="Trigger on&#10;rising edge" portNumber="1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <int8/>
+        </array>
+      </display>
+      <display physicalPath="reference/Selector" path="top_A/Model/Selector" name="Selector" portNumber="1" modelRef="model002" signalName="reset changed">
+        <int8/>
+      </display>
+      <display physicalPath="reference/Increment" path="top_A/Model/Increment" name="Increment" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="reference/Range Check" path="top_A/Model/Range Check" name="Range Check" portNumber="1" modelRef="model002" signalName="OverflowState">
+        <double/>
+      </display>
+      <display physicalPath="reference/Reset Count" path="top_A/Model/Reset Count" name="Reset Count" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="sldemo_mdlref_datamngt/top_A" path="top_A" sampleTime="0.1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1_Main" physicalPath="sldemo_mdlref_datamngt/top_A/In1_Main" path="top_A/In1_Main" signalName="NameForIn1_Main">
+        <array size="2" startIndex="1">
+          <boolean/>
+        </array>
+      </inport>
+      <inport portNumber="2" name="In2_Main" physicalPath="sldemo_mdlref_datamngt/top_A/In2_Main" path="top_A/In2_Main" signalName="TP_Sine">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="sldemo_mdlref_datamngt/top_A/In3" path="top_A/In3" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="sldemo_mdlref_datamngt/top_A/In4" path="top_A/In4">
+        <double/>
+      </inport>
+      <parameter name="AAA" path="top_A/MultipleOutputsPerBlock/Constant" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Constant" origin="explicit_param" workspace="AAA" initValue="1.0">
+        <double/>
+        <usageContext path="top_A/MultipleOutputsPerBlock/Constant" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="BBB" path="top_A/MultipleOutputsPerBlock/Constant1" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Constant1" origin="explicit_param" workspace="BBB" initValue="0.0">
+        <double/>
+        <usageContext path="top_A/MultipleOutputsPerBlock/Constant1" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out7" physicalPath="sldemo_mdlref_datamngt/top_A/Out7" path="top_A/Out7">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out8" physicalPath="sldemo_mdlref_datamngt/top_A/Out8" path="top_A/Out8">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Out1" physicalPath="sldemo_mdlref_datamngt/top_A/Out1" path="top_A/Out1">
+        <double/>
+      </outport>
+      <outport portNumber="4" name="Out2" physicalPath="sldemo_mdlref_datamngt/top_A/Out2" path="top_A/Out2">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+      <outport portNumber="5" name="Out3" physicalPath="sldemo_mdlref_datamngt/top_A/Out3" path="top_A/Out3">
+        <double/>
+      </outport>
+      <outport portNumber="6" name="Out4" physicalPath="sldemo_mdlref_datamngt/top_A/Out4" path="top_A/Out4">
+        <double/>
+      </outport>
+      <outport portNumber="7" name="Out5" physicalPath="sldemo_mdlref_datamngt/top_A/Out5" path="top_A/Out5">
+        <double/>
+      </outport>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Probe" path="top_A/MultipleOutputsPerBlock/Probe" name="Probe" portNumber="2">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Probe" path="top_A/MultipleOutputsPerBlock/Probe" name="Probe" portNumber="3">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/In3" path="top_A/In3" name="In3" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/In2_Main" path="top_A/In2_Main" name="In2_Main" portNumber="1" signalName="TP_Sine">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/In1" path="top_A/Subsystem/In1" name="In1" portNumber="1" signalName="TPIn1">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/In1_Main" path="top_A/In1_Main" name="In1_Main" portNumber="1" signalName="NameForIn1_Main">
+        <array size="2" startIndex="1">
+          <boolean/>
+        </array>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Selector" path="top_A/MultipleOutputsPerBlock/Selector" name="Selector" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem" path="top_A/Subsystem" name="Subsystem" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/Gain" path="top_A/Subsystem/Gain" name="Gain" portNumber="1" signalName="TP_Gain">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/Gain1" path="top_A/Subsystem/Gain1" name="Gain1" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/Chart" path="top_A/Subsystem/Chart" name="chart" stateflowVariable="chart" signalName="chart">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Probe" path="top_A/MultipleOutputsPerBlock/Probe" name="Probe" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Switch" path="top_A/MultipleOutputsPerBlock/Switch" name="Switch" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/Gain2" path="top_A/Subsystem/Gain2" name="Gain2" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="reference/Initial Count" path="top_A/Model/Initial Count" name="Initial Count" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="reference/Trigger on&#10;rising edge" path="top_A/Model/Trigger on&#10;rising edge" name="Trigger on&#10;rising edge" portNumber="1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <int8/>
+        </array>
+      </display>
+      <display physicalPath="reference/Selector" path="top_A/Model/Selector" name="Selector" portNumber="1" modelRef="model002" signalName="reset changed">
+        <int8/>
+      </display>
+      <display physicalPath="reference/Increment" path="top_A/Model/Increment" name="Increment" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="reference/Range Check" path="top_A/Model/Range Check" name="Range Check" portNumber="1" modelRef="model002" signalName="OverflowState">
+        <double/>
+      </display>
+      <display physicalPath="reference/Reset Count" path="top_A/Model/Reset Count" name="Reset Count" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="reference" path="top_A/Model" sampleTime="0.1" name="Model" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <display physicalPath="reference/Initial Count" path="top_A/Model/Initial Count" name="Initial Count" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="reference/Trigger on&#10;rising edge" path="top_A/Model/Trigger on&#10;rising edge" name="Trigger on&#10;rising edge" portNumber="1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <int8/>
+        </array>
+      </display>
+      <display physicalPath="reference/Selector" path="top_A/Model/Selector" name="Selector" portNumber="1" modelRef="model002" signalName="reset changed">
+        <int8/>
+      </display>
+      <display physicalPath="reference/Increment" path="top_A/Model/Increment" name="Increment" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <display physicalPath="reference/Range Check" path="top_A/Model/Range Check" name="Range Check" portNumber="1" modelRef="model002" signalName="OverflowState">
+        <double/>
+      </display>
+      <display physicalPath="reference/Reset Count" path="top_A/Model/Reset Count" name="Reset Count" portNumber="1" modelRef="model002">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="reference/Range Check" path="top_A/Model/Range Check" sampleTime="0.1" name="Range Check" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="CountIn" physicalPath="reference/Range Check/CountIn" path="top_A/Model/Range Check/CountIn" modelRef="model002" signalName="OverflowState">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Count" physicalPath="reference/Range Check/Count" path="top_A/Model/Range Check/Count" modelRef="model002" signalName="OverflowState">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock" path="top_A/MultipleOutputsPerBlock" sampleTime="0.1" name="MultipleOutputsPerBlock" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/In1" path="top_A/MultipleOutputsPerBlock/In1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/In2" path="top_A/MultipleOutputsPerBlock/In2">
+        <double/>
+      </inport>
+      <parameter name="AAA" path="top_A/MultipleOutputsPerBlock/Constant" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Constant" origin="explicit_param" workspace="AAA" initValue="1.0">
+        <double/>
+        <usageContext path="top_A/MultipleOutputsPerBlock/Constant" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="BBB" path="top_A/MultipleOutputsPerBlock/Constant1" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Constant1" origin="explicit_param" workspace="BBB" initValue="0.0">
+        <double/>
+        <usageContext path="top_A/MultipleOutputsPerBlock/Constant1" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Out1" path="top_A/MultipleOutputsPerBlock/Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Out2" path="top_A/MultipleOutputsPerBlock/Out2">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Out3" path="top_A/MultipleOutputsPerBlock/Out3">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Out4" path="top_A/MultipleOutputsPerBlock/Out4">
+        <double/>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Out5" path="top_A/MultipleOutputsPerBlock/Out5">
+        <double/>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Out6" path="top_A/MultipleOutputsPerBlock/Out6">
+        <double/>
+      </outport>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Probe" path="top_A/MultipleOutputsPerBlock/Probe" name="Probe" portNumber="2">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Probe" path="top_A/MultipleOutputsPerBlock/Probe" name="Probe" portNumber="3">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Selector" path="top_A/MultipleOutputsPerBlock/Selector" name="Selector" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Probe" path="top_A/MultipleOutputsPerBlock/Probe" name="Probe" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/MultipleOutputsPerBlock/Switch" path="top_A/MultipleOutputsPerBlock/Switch" name="Switch" portNumber="1">
+        <double/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem" path="top_A/Subsystem" sampleTime="0.1" name="Subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/In1" path="top_A/Subsystem/In1" signalName="TPIn1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/Out1" path="top_A/Subsystem/Out1">
+        <double/>
+      </outport>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/In1" path="top_A/Subsystem/In1" name="In1" portNumber="1" signalName="TPIn1">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/Gain" path="top_A/Subsystem/Gain" name="Gain" portNumber="1" signalName="TP_Gain">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/Gain1" path="top_A/Subsystem/Gain1" name="Gain1" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/Chart" path="top_A/Subsystem/Chart" name="chart" stateflowVariable="chart" signalName="chart">
+        <double/>
+      </display>
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/Gain2" path="top_A/Subsystem/Gain2" name="Gain2" portNumber="1">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss7"/>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/Chart" path="top_A/Subsystem/Chart" sampleTime="0.1" name="Chart" scopeKind="SUT" kind="stateflow">
+      <display physicalPath="sldemo_mdlref_datamngt/top_A/Subsystem/Chart" path="top_A/Subsystem/Chart" name="chart" stateflowVariable="chart" signalName="chart">
+        <double/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.11" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_test_point_ev_disp\reference.mdl" creationDate="2018-09-04T14:10:08" modificationDate="2024-09-11T18:16:03" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_test_point_ev_disp\start.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

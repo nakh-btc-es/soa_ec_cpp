@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aa-component name="aa_methods_enums" aa_version="R22-11" model_name="aa_methods_enums" matlab_version="R2024b">
+  <types>
+    <type typeId="t15" name="ABC" kind="non-primitive"/>
+    <type typeId="t5" name="AliasAliasFxp2" kind="non-primitive"/>
+    <type typeId="t1" name="AliasFxp2" kind="non-primitive"/>
+    <type typeId="t4" name="Lamp" kind="non-primitive"/>
+    <type typeId="t7" name="rt_Array_ABC_2" kind="non-primitive"/>
+    <type typeId="t6" name="rt_Array_ABC_3" kind="non-primitive"/>
+    <type typeId="t11" name="rt_Array_AliasAliasFxp2_2" kind="non-primitive"/>
+    <type typeId="t3" name="rt_Array_AliasFxp2_2" kind="non-primitive"/>
+    <type typeId="t9" name="rt_Array_Lamp_6" kind="non-primitive"/>
+    <type typeId="t13" name="rt_Array_Letters_2" kind="non-primitive"/>
+    <type typeId="t2" name="rt_Array_Letters_3" kind="non-primitive"/>
+    <type typeId="t14" name="rt_Array_MyFxp_2" kind="non-primitive"/>
+    <type typeId="t10" name="rt_Array_MyFxp_6" kind="non-primitive"/>
+    <type typeId="t12" name="rt_Array_SFIX16_EN3_2" kind="non-primitive"/>
+    <type typeId="t8" name="rt_Array_SFIX16_EN5_6" kind="non-primitive"/>
+  </types>
+  <interfaces>
+    <interface name="RequiredInterface">
+      <events>
+        <event eventId="ev1" name="In2" typeRef="t1"/>
+        <event eventId="ev2" name="In1" typeRef="t2"/>
+        <event eventId="ev3" name="In3" typeRef="t3"/>
+        <event eventId="ev4" name="In4" typeRef="t4"/>
+      </events>
+    </interface>
+    <interface name="client1">
+      <methods>
+        <method methodId="met1" name="my_func1">
+          <in name="u" typeRef="t1"/>
+          <out name="y" typeRef="t5"/>
+        </method>
+      </methods>
+    </interface>
+    <interface name="client2">
+      <methods>
+        <method methodId="met2" name="my_func2">
+          <in name="u1" typeRef="t6"/>
+          <in name="u2" typeRef="t3"/>
+          <out name="y1" typeRef="t7"/>
+          <out name="y2" typeRef="t8"/>
+        </method>
+      </methods>
+    </interface>
+    <interface name="client3">
+      <methods>
+        <method methodId="met3" name="my_func3">
+          <in name="u" typeRef="t4"/>
+          <out name="y" typeRef="t9"/>
+        </method>
+      </methods>
+    </interface>
+    <interface name="ProvidedInterface">
+      <events>
+        <event eventId="ev5" name="Out1" typeRef="t5"/>
+        <event eventId="ev6" name="Out2" typeRef="t7"/>
+        <event eventId="ev7" name="Out3" typeRef="t10"/>
+        <event eventId="ev8" name="Out4" typeRef="t9"/>
+      </events>
+    </interface>
+    <interface name="server1">
+      <methods>
+        <method methodId="met4" name="my_func1">
+          <in name="u1" typeRef="t11"/>
+          <out name="y1" typeRef="t3"/>
+          <out name="y2" typeRef="t12"/>
+          <out name="y3" typeRef="t3"/>
+        </method>
+      </methods>
+    </interface>
+    <interface name="server2">
+      <methods>
+        <method methodId="met5" name="my_func2">
+          <in name="u1" typeRef="t6"/>
+          <in name="u2" typeRef="t13"/>
+          <in name="u3" typeRef="t13"/>
+          <out name="y1" typeRef="t2"/>
+          <out name="y2" typeRef="t7"/>
+          <out name="y3" typeRef="t7"/>
+        </method>
+      </methods>
+    </interface>
+    <interface name="server3">
+      <methods>
+        <method methodId="met6" name="my_func3">
+          <in name="u1" typeRef="t14"/>
+          <in name="u2" typeRef="t15"/>
+          <in name="u3" typeRef="t12"/>
+          <out name="y1" typeRef="t14"/>
+          <out name="y2" typeRef="t15"/>
+          <out name="y3" typeRef="t3"/>
+        </method>
+      </methods>
+    </interface>
+  </interfaces>
+  <ports>
+    <rport name="RequiredPort" instanceKey="aa_methods_enums/aa_methods_enums_RootSwComponentPrototype/RequiredPort">
+      <event-refs>
+        <event-ref eventRef="ev1" var="RequiredPort_In2"/>
+        <event-ref eventRef="ev2" var="RequiredPort_In1"/>
+        <event-ref eventRef="ev3" var="RequiredPort_In3"/>
+        <event-ref eventRef="ev4" var="RequiredPort_In4"/>
+      </event-refs>
+    </rport>
+    <rport name="client1" instanceKey="aa_methods_enums/aa_methods_enums_RootSwComponentPrototype/client1">
+      <method-refs>
+        <method-ref methodRef="met1" func="client1_client1_my_func1"/>
+      </method-refs>
+    </rport>
+    <rport name="client2" instanceKey="aa_methods_enums/aa_methods_enums_RootSwComponentPrototype/client2">
+      <method-refs>
+        <method-ref methodRef="met2" func="client2_client2_my_func2"/>
+      </method-refs>
+    </rport>
+    <rport name="client3" instanceKey="aa_methods_enums/aa_methods_enums_RootSwComponentPrototype/client3">
+      <method-refs>
+        <method-ref methodRef="met3" func="client3_client3_my_func3"/>
+      </method-refs>
+    </rport>
+    <pport name="ProvidedPort" instanceKey="aa_methods_enums/aa_methods_enums_RootSwComponentPrototype/ProvidedPort">
+      <event-refs>
+        <event-ref eventRef="ev5" var="ProvidedPort_Out1"/>
+        <event-ref eventRef="ev6" var="ProvidedPort_Out2"/>
+        <event-ref eventRef="ev7" var="ProvidedPort_Out3"/>
+        <event-ref eventRef="ev8" var="ProvidedPort_Out4"/>
+      </event-refs>
+    </pport>
+    <pport name="server1" instanceKey="aa_methods_enums/aa_methods_enums_RootSwComponentPrototype/server1">
+      <method-refs>
+        <method-ref methodRef="met4" func="sut_server1_my_func1"/>
+      </method-refs>
+    </pport>
+    <pport name="server2" instanceKey="aa_methods_enums/aa_methods_enums_RootSwComponentPrototype/server2">
+      <method-refs>
+        <method-ref methodRef="met5" func="sut_server2_my_func2"/>
+      </method-refs>
+    </pport>
+    <pport name="server3" instanceKey="aa_methods_enums/aa_methods_enums_RootSwComponentPrototype/server3">
+      <method-refs>
+        <method-ref methodRef="met6" func="sut_server3_my_func3"/>
+      </method-refs>
+    </pport>
+  </ports>
+</aa-component>

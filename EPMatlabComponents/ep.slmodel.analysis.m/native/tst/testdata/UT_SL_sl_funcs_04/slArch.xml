@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" modelVersion="16.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_sl_funcs_04\sl_func_04.slx" modelCreationDate="2021-09-07T12:27:49" creator="developer">
+  <toolInfo name="Matlab" release="(R2022b)" version="9.13" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2022b)" version="10.6" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="16.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_sl_funcs_04\sl_func_04.slx" creationDate="2021-09-07T12:27:49" modificationDate="2023-05-26T10:35:08">
+    <subsystem subsysID="ss1" physicalPath="sl_func_04" path="" sampleTime="0.1" name="sl_func_04" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sl_func_04/In1" path="In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sl_func_04/In2" path="In2">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="sl_func_04/In3" path="In3">
+        <double/>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="sl_func_04/In4" path="In4">
+        <double/>
+      </inport>
+      <inport portNumber="5" name="In5" physicalPath="sl_func_04/In5" path="In5">
+        <double/>
+      </inport>
+      <inport portNumber="6" name="In6" physicalPath="sl_func_04/In6" path="In6">
+        <double/>
+      </inport>
+      <inport portNumber="7" name="In8" physicalPath="sl_func_04/In8" path="In8">
+        <double/>
+      </inport>
+      <inport portNumber="8" name="In9" physicalPath="sl_func_04/In9" path="In9">
+        <double/>
+      </inport>
+      <inport portNumber="9" name="In11" physicalPath="sl_func_04/In11" path="In11">
+        <double/>
+      </inport>
+      <inport portNumber="10" name="In7" physicalPath="sl_func_04/In7" path="In7">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sl_func_04/Out1" path="Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="sl_func_04/Out2" path="Out2">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="sl_func_04/Out3" path="Out3">
+        <double/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="sl_func_04/Out4" path="Out4">
+        <double/>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="sl_func_04/Out5" path="Out5">
+        <double/>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="sl_func_04/Out6" path="Out6">
+        <double/>
+      </outport>
+      <outport portNumber="7" name="Out8" physicalPath="sl_func_04/Out8" path="Out8">
+        <double/>
+      </outport>
+      <outport portNumber="8" name="Out9" physicalPath="sl_func_04/Out9" path="Out9">
+        <double/>
+      </outport>
+      <outport portNumber="9" name="Out11" physicalPath="sl_func_04/Out11" path="Out11">
+        <double/>
+      </outport>
+      <outport portNumber="10" name="Out7" physicalPath="sl_func_04/Out7" path="Out7">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="sl_func_04/sub_e" path="sub_e" sampleTime="0.1" name="sub_e" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sl_func_04/sub_e/In1" path="sub_e/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sl_func_04/sub_e/Out1" path="sub_e/Out1">
+        <double/>
+      </outport>
+      <slfunc_caller path="sub_e/Function Caller" pathCaller="sl_func_04/sub_e/Function Caller" pathFunction="sl_func_04/Valid"/>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="sl_func_04/sub_f" path="sub_f" sampleTime="0.1" name="sub_f" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sl_func_04/sub_f/In1" path="sub_f/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sl_func_04/sub_f/Out1" path="sub_f/Out1">
+        <double/>
+      </outport>
+      <slfunc_caller path="sub_f/sub/Function Caller" pathCaller="sl_func_04/sub_f/sub/Function Caller" pathFunction="sl_func_04/Valid"/>
+      <subsystem refSubsysID="ss9"/>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="sl_func_04/sub_f/sub" path="sub_f/sub" sampleTime="0.1" name="sub" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sl_func_04/sub_f/sub/In1" path="sub_f/sub/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sl_func_04/sub_f/sub/Out1" path="sub_f/sub/Out1">
+        <double/>
+      </outport>
+      <slfunc_caller path="sub_f/sub/Function Caller" pathCaller="sl_func_04/sub_f/sub/Function Caller" pathFunction="sl_func_04/Valid"/>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

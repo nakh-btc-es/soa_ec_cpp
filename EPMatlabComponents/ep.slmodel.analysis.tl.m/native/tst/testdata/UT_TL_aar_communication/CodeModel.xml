@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Local\Temp\btc_temp_root\35dc1\aar_communication\TLProj\S1" name="AdaptiveSwc.cpp" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Local\Temp\btc_temp_root\35dc1\aar_communication\TLProj\S1" name="AdaptiveSwc_S1.cpp" kind="source" annotate="yes" id="fID2"/>
+    <File path="C:\Users\developer\AppData\Local\Temp\btc_temp_root\35dc1\aar_communication\TLProj\S1" name="S1.cpp" kind="source" annotate="yes" id="fID3"/>
+    <File path="C:\Users\developer\AppData\Local\Temp\btc_temp_root\35dc1\aar_communication\TLSim" name="AdaptiveSwc_S1_frm.cpp" kind="source" annotate="no" id="fID4"/>
+    <File path="C:\Users\developer\AppData\Local\Temp\btc_temp_root\35dc1\aar_communication\TLSim" name="S1_ARfrm.cpp" kind="source" annotate="no" id="fID5"/>
+    <File path="C:\Users\developer\AppData\Local\Temp\btc_temp_root\35dc1\aar_communication\TLSim" name="S1_fri.cpp" kind="source" annotate="no" id="fID6"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\btc_temp_root\35dc1\aar_communication\TLProj\S1"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\btc_temp_root\35dc1\aar_communication\TLSim"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.2\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.2\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.2\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="__SIL__"/>
+    <Define name="BTC_EP_TL_VERSION" value="52"/>
+    <Define name="TL_CODE_SFCN"/>
+  </Defines>
+  <Functions archName="aar_communication [C-Code]">
+    <Function name="S1" sampleTime="0.1">
+      <Args>
+        <Arg name="Sa1_PP_ServiceA_MethodA_err">
+          <Variable name="Arg_In_Out_a_"/>
+        </Arg>
+      </Args>
+      <Interface>
+        <InterfaceObj kind="in" var="Event_AdaptiveSwc_RP_ServiceB_EventB_NoServiceDiscovery_S1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Field_AdaptiveSwc_RP_ServiceB_FieldB_NoServiceDiscovery_S1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="in_a" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Event_AdaptiveSwc_PP_ServiceA_EventA_S1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Field_AdaptiveSwc_RP_ServiceB_FieldB_NoServiceDiscovery_S1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="out_a" scaling="scID1"/>
+        <InterfaceObj kind="in" var="AraCoreError_AdaptiveSwc_RP_ServiceB_EventB" access=".errorCode" scaling="scID1"/>
+        <InterfaceObj kind="in" var="AraCoreError_AdaptiveSwc_RP_ServiceB_EventB" access=".errorDomain" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="f_EventCommunication" sampleTime="0.1">
+      <Interface>
+        <InterfaceObj kind="in" var="Event_AdaptiveSwc_RP_ServiceB_EventB_NoServiceDiscovery_S1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Event_AdaptiveSwc_PP_ServiceA_EventA_S1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="AraCoreError_AdaptiveSwc_RP_ServiceB_EventB" access=".errorCode" scaling="scID1"/>
+        <InterfaceObj kind="in" var="AraCoreError_AdaptiveSwc_RP_ServiceB_EventB" access=".errorDomain" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="f_FieldCommunication" sampleTime="0.1">
+      <Interface>
+        <InterfaceObj kind="in" var="Field_AdaptiveSwc_RP_ServiceB_FieldB_NoServiceDiscovery_S1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Field_AdaptiveSwc_RP_ServiceB_FieldB_NoServiceDiscovery_S1" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="f_MethodBehavior" sampleTime="0.1">
+      <Args>
+        <Arg name="araCoreError">
+          <Variable name="Arg_In_Out_a_"/>
+        </Arg>
+      </Args>
+      <Interface>
+        <InterfaceObj kind="in" var="in" scaling="scID1"/>
+        <InterfaceObj kind="out" var="out" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="f_MethodCall" sampleTime="0.1">
+      <Interface/>
+    </Function>
+    <Function name="f_PersistantDataCommunication" sampleTime="0.1">
+      <Interface/>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

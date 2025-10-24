@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="264">
+	<Types />
+	<Scope uid="264" name="main" path="main" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="main">
+		<InPort name="Input" portNumber="1" compositeSig="none" type="double">
+			<Variable varid="varif_381" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_381" initValue="0.0" lsb="1.0" offset="0.0" displayName="Input" identifier="INPUT:Input" />
+			</Variable>
+		</InPort>
+		<OutPort name="Outport" portNumber="1" compositeSig="none" type="double">
+			<Variable varid="varif_383" signalType="double" isFloat="yes" tlTypeName="double" type="double">
+				<ifName ifid="if_383" initValue="0.0" lsb="1.0" offset="0.0" displayName="Outport" identifier="OUTPUT:Outport" />
+			</Variable>
+		</OutPort>
+		<Calibration name="p1" path="main/Gain" physicalPath="main/Gain" origin="explicit_param">
+			<CalibrationUsage path="main/Gain" physicalPath="main/Gain" blockAttribute="Gain" />
+			<Variable varid="varif_385" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_385" initValue="2.0" lsb="1.0" offset="0.0" displayName="p1" identifier="PARAMETER:Gain/p1" />
+			</Variable>
+		</Calibration>
+		<Calibration name="p2" path="main/Gain" physicalPath="main/Gain" origin="explicit_param">
+			<CalibrationUsage path="main/Gain" physicalPath="main/Gain" blockAttribute="Gain" />
+			<Variable varid="varif_387" signalType="double" isFloat="yes" tlTypeName="double">
+				<ifName ifid="if_387" initValue="3.0" lsb="1.0" offset="0.0" displayName="p2" identifier="PARAMETER:Gain/p2" />
+			</Variable>
+		</Calibration>
+		<Model name="main" modelPath="/E:/modelsdev/UT_MIL_SL/EP_3342/ML2019a/main.slx" type="SimulinkModel" />
+	</Scope>
+</ExtractionModel>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.1128" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_ar_poscontrol\ar_poscontrol.mdl" modelCreationDate="1999-04-29T14:43:10" creator="KlausG">
+  <toolInfo name="Matlab" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1128" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_ar_poscontrol\ar_poscontrol.mdl" creationDate="1999-04-29T14:43:10" modificationDate="2021-11-15T15:45:17">
+    <subsystem subsysID="ss1" physicalPath="ar_poscontrol/TL_Controller/Subsystem/TL_Controller" path="TL_Controller/Subsystem/TL_Controller" sampleTime="0.001" name="TL_Controller" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="ReceiverPort" physicalPath="ar_poscontrol/TL_Controller/Subsystem/TL_Controller/ReceiverPort" path="TL_Controller/Subsystem/TL_Controller/ReceiverPort">
+        <miltype>
+          <bus>
+            <signal signalName="if_ref_pos.ref">
+              <double/>
+            </signal>
+            <signal signalName="if_ref_pos.pos">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="if_ref_pos.ref">
+              <fixedPoint baseType="Int16" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="-3.2000000000000000e+01" max="3.1999023437500000e+01"/>
+            </signal>
+            <signal signalName="if_ref_pos.pos">
+              <fixedPoint baseType="Int16" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="-3.2000000000000000e+01" max="3.1999023437500000e+01"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="SenderPort" physicalPath="ar_poscontrol/TL_Controller/Subsystem/TL_Controller/SenderPort" path="TL_Controller/Subsystem/TL_Controller/SenderPort">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype initValue="-1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.9531250000000000e-03" offset="0.0000000000000000e+00" min="-6.4000000000000000e+01" max="6.3998046875000000e+01"/>
+        </siltype>
+      </outport>
+      <display physicalPath="ar_poscontrol/TL_Controller/Subsystem/TL_Controller/Controller_Runnable/sPI1" path="TL_Controller/Subsystem/TL_Controller/Controller_Runnable/sPI1" name="sPI1" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.9531250000000000e-03" offset="0.0000000000000000e+00" min="-6.4000000000000000e+01" max="6.3998046875000000e+01"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="ar_poscontrol/TL_Controller/Subsystem/TL_Controller/Controller_Runnable" path="TL_Controller/Subsystem/TL_Controller/Controller_Runnable" sampleTime="0.001" name="Controller_Runnable" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="(ref)" physicalPath="ar_poscontrol/TL_Controller/Subsystem/TL_Controller/Controller_Runnable/(ref)" path="TL_Controller/Subsystem/TL_Controller/Controller_Runnable/(ref)">
+        <miltype signalName="ref">
+          <double/>
+        </miltype>
+        <siltype signalName="ref">
+          <fixedPoint baseType="Int16" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="-3.2000000000000000e+01" max="3.1999023437500000e+01"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="(pos)" physicalPath="ar_poscontrol/TL_Controller/Subsystem/TL_Controller/Controller_Runnable/(pos)" path="TL_Controller/Subsystem/TL_Controller/Controller_Runnable/(pos)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="-3.2000000000000000e+01" max="3.1999023437500000e+01"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="(upi)" physicalPath="ar_poscontrol/TL_Controller/Subsystem/TL_Controller/Controller_Runnable/(upi)" path="TL_Controller/Subsystem/TL_Controller/Controller_Runnable/(upi)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype initValue="-1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.9531250000000000e-03" offset="0.0000000000000000e+00" min="-6.4000000000000000e+01" max="6.3998046875000000e+01"/>
+        </siltype>
+      </outport>
+      <display physicalPath="ar_poscontrol/TL_Controller/Subsystem/TL_Controller/Controller_Runnable/sPI1" path="TL_Controller/Subsystem/TL_Controller/Controller_Runnable/sPI1" name="sPI1" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.9531250000000000e-03" offset="0.0000000000000000e+00" min="-6.4000000000000000e+01" max="6.3998046875000000e+01"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="ar_poscontrol/TL_Controller/Subsystem/TL_Controller/Position_Linearization_Runnable" path="TL_Controller/Subsystem/TL_Controller/Position_Linearization_Runnable" sampleTime="0.001" name="Position_Linearization_Runnable" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="(position)" physicalPath="ar_poscontrol/TL_Controller/Subsystem/TL_Controller/Position_Linearization_Runnable/(position)" path="TL_Controller/Subsystem/TL_Controller/Position_Linearization_Runnable/(position)">
+        <miltype signalName="pos">
+          <double/>
+        </miltype>
+        <siltype signalName="pos">
+          <fixedPoint baseType="Int16" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="-3.2000000000000000e+01" max="3.1999023437500000e+01"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="(lin.pos)" physicalPath="ar_poscontrol/TL_Controller/Subsystem/TL_Controller/Position_Linearization_Runnable/(lin.pos)" path="TL_Controller/Subsystem/TL_Controller/Position_Linearization_Runnable/(lin.pos)">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="9.7656250000000000e-04" offset="0.0000000000000000e+00" min="-3.2000000000000000e+01" max="3.1999023437500000e+01"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

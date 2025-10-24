@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.6p0\tmp\4ts_16a9ova10\DevTL\VariantArrayCals\TLProj\vc_ai_b_c\top_A" name="top_A.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.6p0\tmp\4ts_16a9ova10\DevTL\VariantArrayCals\TLProj\vc_ai_b_c\top_A" name="variant_code.c" kind="source" annotate="yes" id="fID2"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.6p0\tmp\4ts_16a9ova10\DevTL\VariantArrayCals\TLSim" name="top_A_fri.c" kind="source" annotate="no" id="fID3"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.6p0\tmp\4ts_16a9ova10\DevTL\VariantArrayCals\TLProj\vc_ai_b_c\top_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.6p0\tmp\4ts_16a9ova10\DevTL\VariantArrayCals\TLSim"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.0\Matlab\Tl\ApplicationBuilder\generic"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="LOG_VARS"/>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+  </Defines>
+  <Functions archName="variant_array_cals [C-Code]">
+    <Function name="top_A" initFunc="RESTART_top_A" sampleTime="2.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_InPort0" scaling="scID1"/>
+        <InterfaceObj kind="cal" var="p" access="[0]" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="p" access="[1]" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="p" access="[2]" scaling="scID1" initVal="3.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Vca_a_incomplete_a_vi1" access=".p_a[0]" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Vca_a_incomplete_a_vi1" access=".p_a[1]" scaling="scID1" initVal="3.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Vca_a_incomplete_a_vi1" access=".p_a[2]" scaling="scID1" initVal="4.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Vca_a_incomplete_a_vi1" access=".p_ai[0]" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Vca_a_incomplete_a_vi1" access=".p_ai[1]" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Vca_a_incomplete_a_vi1" access=".p_ai[2]" scaling="scID1" initVal="3.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Vca_b_b_vi2" access=".p_b_d[0]" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Vca_b_b_vi2" access=".p_b_d[1]" scaling="scID1" initVal="3.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Vca_b_b_vi2" access=".p_b_d[2]" scaling="scID1" initVal="4.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Vca_c_c_vi1" access=".p_c[0]" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Vca_c_c_vi1" access=".p_c[1]" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Vca_c_c_vi1" access=".p_c[2]" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort0" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort3" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort4" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort5" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa2_sub_B" fileref="fID1" initFunc="RESTART_top_A" sampleTime="2.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_InPort0" scaling="scID1"/>
+        <InterfaceObj kind="in" var="p" access="[0]" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="p" access="[1]" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="p" access="[2]" scaling="scID1" initVal="3.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Vca_a_incomplete_a_vi1" access=".p_a[0]" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Vca_a_incomplete_a_vi1" access=".p_a[1]" scaling="scID1" initVal="3.0000000000000000e+00"/>
+        <InterfaceObj kind="in" var="Vca_a_incomplete_a_vi1" access=".p_a[2]" scaling="scID1" initVal="4.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa2_Logical_Operator" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

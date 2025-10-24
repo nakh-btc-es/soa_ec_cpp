@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_sl_array_of_buses\Test_init.m" modelVersion="1.49" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_sl_array_of_buses\arrayOfBuses.mdl" modelCreationDate="2018-07-20T12:06:01" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.49" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_sl_array_of_buses\arrayOfBuses.mdl" creationDate="2018-07-20T12:06:01" modificationDate="2024-09-11T18:37:19" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_sl_array_of_buses\Test_init.m">
+    <subsystem subsysID="ss1" physicalPath="arrayOfBuses" path="" sampleTime="0.2" name="arrayOfBuses" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="arrayOfBuses/In1" path="In1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <parameter name="AAA" path="TopLevel/SubsystemOK1/Constant" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/Constant" origin="explicit_param" workspace="AAA" initValue="1.0">
+        <double/>
+        <usageContext path="TopLevel/SubsystemOK1/Constant" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <usageContext path="TopLevel/SubsystemOK1/SubsystemNOK/Constant" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <usageContext path="TopLevel/SubsystemOK2/Constant" physicalPath="arrayOfBuses/TopLevel/SubsystemOK2/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="ARY_NUM" path="TopLevel/SubsystemOK1/SubsystemNOK/Selector" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Selector" origin="explicit_param" workspace="ARY_NUM" initValue="5.0">
+        <double/>
+        <usageContext path="TopLevel/SubsystemOK1/SubsystemNOK/Selector" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Selector" simulinkBlockType="Selector" blockAttribute="InputPortWidth"/>
+      </parameter>
+      <parameter name="BBB" path="TopLevel/SubsystemOK1/Constant1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/Constant1" origin="explicit_param" workspace="BBB" initValue="0.0">
+        <double/>
+        <usageContext path="TopLevel/SubsystemOK1/Constant1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <usageContext path="TopLevel/SubsystemOK1/SubsystemNOK/Constant1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <usageContext path="TopLevel/SubsystemOK2/Constant1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK2/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out2" physicalPath="arrayOfBuses/Out2" path="Out2">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out1" physicalPath="arrayOfBuses/Out1" path="Out1">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="arrayOfBuses/Out3" path="Out3">
+        <double/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="arrayOfBuses/Out4" path="Out4">
+        <double/>
+      </outport>
+      <display physicalPath="arrayOfBuses/In1" path="In1" name="In1" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="arrayOfBuses/TopLevel/In1" path="TopLevel/In1" name="In1" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/In1" path="TopLevel/SubsystemOK1/In1" name="In1" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Switch" path="TopLevel/SubsystemOK1/SubsystemNOK/Switch" name="Switch" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/Switch" path="TopLevel/SubsystemOK1/Switch" name="Switch" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="arrayOfBuses/TopLevel/SubsystemOK2/Switch" path="TopLevel/SubsystemOK2/Switch" name="Switch" portNumber="1">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="arrayOfBuses/TopLevel" path="TopLevel" sampleTime="0.2" name="TopLevel" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="arrayOfBuses/TopLevel/In1" path="TopLevel/In1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="arrayOfBuses/TopLevel/In2" path="TopLevel/In2">
+        <double/>
+      </inport>
+      <parameter name="AAA" path="TopLevel/SubsystemOK1/Constant" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/Constant" origin="explicit_param" workspace="AAA" initValue="1.0">
+        <double/>
+        <usageContext path="TopLevel/SubsystemOK1/Constant" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <usageContext path="TopLevel/SubsystemOK1/SubsystemNOK/Constant" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <usageContext path="TopLevel/SubsystemOK2/Constant" physicalPath="arrayOfBuses/TopLevel/SubsystemOK2/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="ARY_NUM" path="TopLevel/SubsystemOK1/SubsystemNOK/Selector" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Selector" origin="explicit_param" workspace="ARY_NUM" initValue="5.0">
+        <double/>
+        <usageContext path="TopLevel/SubsystemOK1/SubsystemNOK/Selector" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Selector" simulinkBlockType="Selector" blockAttribute="InputPortWidth"/>
+      </parameter>
+      <parameter name="BBB" path="TopLevel/SubsystemOK1/Constant1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/Constant1" origin="explicit_param" workspace="BBB" initValue="0.0">
+        <double/>
+        <usageContext path="TopLevel/SubsystemOK1/Constant1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <usageContext path="TopLevel/SubsystemOK1/SubsystemNOK/Constant1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <usageContext path="TopLevel/SubsystemOK2/Constant1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK2/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="arrayOfBuses/TopLevel/Out1" path="TopLevel/Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="arrayOfBuses/TopLevel/Out2" path="TopLevel/Out2">
+        <double/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="arrayOfBuses/TopLevel/Out3" path="TopLevel/Out3">
+        <double/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="arrayOfBuses/TopLevel/Out4" path="TopLevel/Out4">
+        <double/>
+      </outport>
+      <display physicalPath="arrayOfBuses/TopLevel/In1" path="TopLevel/In1" name="In1" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/In1" path="TopLevel/SubsystemOK1/In1" name="In1" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Switch" path="TopLevel/SubsystemOK1/SubsystemNOK/Switch" name="Switch" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/Switch" path="TopLevel/SubsystemOK1/Switch" name="Switch" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="arrayOfBuses/TopLevel/SubsystemOK2/Switch" path="TopLevel/SubsystemOK2/Switch" name="Switch" portNumber="1">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1" path="TopLevel/SubsystemOK1" sampleTime="0.2" name="SubsystemOK1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/In1" path="TopLevel/SubsystemOK1/In1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/In2" path="TopLevel/SubsystemOK1/In2">
+        <double/>
+      </inport>
+      <parameter name="AAA" path="TopLevel/SubsystemOK1/Constant" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/Constant" origin="explicit_param" workspace="AAA" initValue="1.0">
+        <double/>
+        <usageContext path="TopLevel/SubsystemOK1/Constant" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <usageContext path="TopLevel/SubsystemOK1/SubsystemNOK/Constant" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="ARY_NUM" path="TopLevel/SubsystemOK1/SubsystemNOK/Selector" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Selector" origin="explicit_param" workspace="ARY_NUM" initValue="5.0">
+        <double/>
+        <usageContext path="TopLevel/SubsystemOK1/SubsystemNOK/Selector" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Selector" simulinkBlockType="Selector" blockAttribute="InputPortWidth"/>
+      </parameter>
+      <parameter name="BBB" path="TopLevel/SubsystemOK1/Constant1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/Constant1" origin="explicit_param" workspace="BBB" initValue="0.0">
+        <double/>
+        <usageContext path="TopLevel/SubsystemOK1/Constant1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+        <usageContext path="TopLevel/SubsystemOK1/SubsystemNOK/Constant1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/Out1" path="TopLevel/SubsystemOK1/Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out3" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/Out3" path="TopLevel/SubsystemOK1/Out3">
+        <double/>
+      </outport>
+      <display physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/In1" path="TopLevel/SubsystemOK1/In1" name="In1" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Switch" path="TopLevel/SubsystemOK1/SubsystemNOK/Switch" name="Switch" portNumber="1">
+        <double/>
+      </display>
+      <display physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/Switch" path="TopLevel/SubsystemOK1/Switch" name="Switch" portNumber="1">
+        <double/>
+      </display>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK" path="TopLevel/SubsystemOK1/SubsystemNOK" sampleTime="0.2" name="SubsystemNOK" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/In1" path="TopLevel/SubsystemOK1/SubsystemNOK/In1" signalName="&lt;signal1&gt;">
+        <array size="5" startIndex="1">
+          <bus busType="non_virtual" busObjectName="ST_S">
+            <signal signalName="uc_A">
+              <uint8/>
+            </signal>
+            <signal signalName="uc_B">
+              <uint8/>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/In2" path="TopLevel/SubsystemOK1/SubsystemNOK/In2">
+        <double/>
+      </inport>
+      <parameter name="AAA" path="TopLevel/SubsystemOK1/SubsystemNOK/Constant" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Constant" origin="explicit_param" workspace="AAA" initValue="1.0">
+        <double/>
+        <usageContext path="TopLevel/SubsystemOK1/SubsystemNOK/Constant" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="ARY_NUM" path="TopLevel/SubsystemOK1/SubsystemNOK/Selector" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Selector" origin="explicit_param" workspace="ARY_NUM" initValue="5.0">
+        <double/>
+        <usageContext path="TopLevel/SubsystemOK1/SubsystemNOK/Selector" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Selector" simulinkBlockType="Selector" blockAttribute="InputPortWidth"/>
+      </parameter>
+      <parameter name="BBB" path="TopLevel/SubsystemOK1/SubsystemNOK/Constant1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Constant1" origin="explicit_param" workspace="BBB" initValue="0.0">
+        <double/>
+        <usageContext path="TopLevel/SubsystemOK1/SubsystemNOK/Constant1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Out1" path="TopLevel/SubsystemOK1/SubsystemNOK/Out1">
+        <double/>
+      </outport>
+      <display physicalPath="arrayOfBuses/TopLevel/SubsystemOK1/SubsystemNOK/Switch" path="TopLevel/SubsystemOK1/SubsystemNOK/Switch" name="Switch" portNumber="1">
+        <double/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="arrayOfBuses/TopLevel/SubsystemOK2" path="TopLevel/SubsystemOK2" sampleTime="0.2" name="SubsystemOK2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK2/In1" path="TopLevel/SubsystemOK2/In1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="ST_S">
+          <signal signalName="uc_A">
+            <uint8/>
+          </signal>
+          <signal signalName="uc_B">
+            <uint8/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="arrayOfBuses/TopLevel/SubsystemOK2/In2" path="TopLevel/SubsystemOK2/In2">
+        <double/>
+      </inport>
+      <parameter name="AAA" path="TopLevel/SubsystemOK2/Constant" physicalPath="arrayOfBuses/TopLevel/SubsystemOK2/Constant" origin="explicit_param" workspace="AAA" initValue="1.0">
+        <double/>
+        <usageContext path="TopLevel/SubsystemOK2/Constant" physicalPath="arrayOfBuses/TopLevel/SubsystemOK2/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="BBB" path="TopLevel/SubsystemOK2/Constant1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK2/Constant1" origin="explicit_param" workspace="BBB" initValue="0.0">
+        <double/>
+        <usageContext path="TopLevel/SubsystemOK2/Constant1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK2/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK2/Out1" path="TopLevel/SubsystemOK2/Out1">
+        <double/>
+      </outport>
+      <display physicalPath="arrayOfBuses/TopLevel/SubsystemOK2/Switch" path="TopLevel/SubsystemOK2/Switch" name="Switch" portNumber="1">
+        <double/>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="arrayOfBuses/TopLevel/SubsystemOK3" path="TopLevel/SubsystemOK3" sampleTime="0.2" name="SubsystemOK3" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK3/In1" path="TopLevel/SubsystemOK3/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="arrayOfBuses/TopLevel/SubsystemOK3/Out1" path="TopLevel/SubsystemOK3/Out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

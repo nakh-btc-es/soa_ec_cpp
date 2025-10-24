@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.15" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_9499\bug_9499.mdl" modelCreationDate="2008-04-28T16:55:39" creator="alex">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.15" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_9499\bug_9499.mdl" creationDate="2008-04-28T16:55:39" modificationDate="2021-11-16T11:27:46">
+    <subsystem subsysID="ss1" physicalPath="bug_9499/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in." physicalPath="bug_9499/top_A/Subsystem/top_A/in." path="top_A/Subsystem/top_A/in.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2799609375000000e+02"/>
+        </siltype>
+      </inport>
+      <calibration name="cal3[switch_threshold]" path="top_A/Subsystem/top_A/cal3" physicalPath="bug_9499/top_A/Subsystem/top_A/cal3" origin="switch_threshold" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2799609375000000e+02"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/cal3" targetLinkBlockKind="TL_Switch" physicalPath="bug_9499/top_A/Subsystem/top_A/cal3" simulinkBlockType="Switch" blockAttribute="threshold"/>
+      </calibration>
+      <calibration name="cal1[const]" path="top_A/Subsystem/top_A/cal1" physicalPath="bug_9499/top_A/Subsystem/top_A/cal1" origin="const" restricted="false">
+        <miltype initValue="1.3999999999999999e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.3999999999999999e+00">
+          <fixedPoint baseType="Int16" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2799609375000000e+02"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/cal1" targetLinkBlockKind="TL_Constant" physicalPath="bug_9499/top_A/Subsystem/top_A/cal1" simulinkBlockType="Constant" blockAttribute="output"/>
+        <usageContext path="top_A/Subsystem/top_A/cal2" targetLinkBlockKind="TL_Constant" physicalPath="bug_9499/top_A/Subsystem/top_A/cal2" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="out." physicalPath="bug_9499/top_A/Subsystem/top_A/out." path="top_A/Subsystem/top_A/out.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2799609375000000e+02"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

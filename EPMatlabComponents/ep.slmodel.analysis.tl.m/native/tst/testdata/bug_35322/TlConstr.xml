@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architectureConstraints>
+  <scope path="top_A/Subsystem/top_A">
+    <assumptions origin="tl_relay:onswitch">
+      <signalValue signal="top_A/Subsystem/top_A/Relay1/c" relation="geq" value="-7.0000000000000000e+00"/>
+    </assumptions>
+    <assumptions origin="tl_relay:offswitch">
+      <signalValue signal="top_A/Subsystem/top_A/Relay2/d" relation="leq" value="7.0000000000000000e+00"/>
+    </assumptions>
+    <assumptions origin="tl_saturate:upperlimit">
+      <signalValue signal="top_A/Subsystem/top_A/Saturation1/a" relation="geq" value="-7.0000000000000000e+00"/>
+    </assumptions>
+    <assumptions origin="tl_saturate:lowerlimit">
+      <signalValue signal="top_A/Subsystem/top_A/Saturation2/b" relation="leq" value="7.0000000000000000e+00"/>
+    </assumptions>
+  </scope>
+</architectureConstraints>

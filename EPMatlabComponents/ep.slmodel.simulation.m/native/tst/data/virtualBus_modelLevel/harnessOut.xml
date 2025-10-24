@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<BusType name="BTC_BusObj1" virtual="false">
+			<Comp name="Out3.OutBus1.a" type="double" dim1="1" dim2="3" />
+			<Comp name="Out3.OutBus1.b" type="double" width="3" />
+			<Comp name="Out3.OutBus1.c" type="double" dim1="4" dim2="2" />
+			<Comp name="Out3.OutBus1.Alias1" type="double" />
+			<Comp name="Out3.OutBus1.Color1" type="DDColor" />
+		</BusType>
+		<BusType name="BTC_BusObj2" virtual="false">
+			<Comp name="Out4.OutBus2.Alias2" type="double" />
+			<Comp name="Out4.OutBus2.Color2" type="DDColor" />
+			<Comp name="Out4.OutBus2.a1" type="single" width="2" />
+			<Comp name="Out4.OutBus2.a2" type="uint32" dim1="2" dim2="3" />
+			<Comp name="Out4.OutBus2.b_bus_obj.a" type="double" dim1="1" dim2="3" />
+			<Comp name="Out4.OutBus2.b_bus_obj.b" type="double" width="3" />
+			<Comp name="Out4.OutBus2.b_bus_obj.c" type="double" dim1="4" dim2="2" />
+			<Comp name="Out4.OutBus2.b_bus_obj.Alias1" type="double" />
+			<Comp name="Out4.OutBus2.b_bus_obj.Color1" type="DDColor" />
+		</BusType>
+	</Types>
+	<Inports>
+		<Inport portNr="1" dim1="1" dim2="3" type="double">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out1(1)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out1(1)(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out1(1)(3)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="2" dim1="2" dim2="2" type="int16">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out2(1)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out2(2)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out2(1)(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out2(2)(2)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="3" width="1" type="BTC_BusObj1">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out3.OutBus1.a(1)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.OutBus1.a(1)(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.OutBus1.a(1)(3)</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.OutBus1.b(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.OutBus1.b(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.OutBus1.b(3)</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.OutBus1.c(1)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.OutBus1.c(2)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.OutBus1.c(3)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.OutBus1.c(4)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.OutBus1.c(1)(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.OutBus1.c(2)(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.OutBus1.c(3)(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.OutBus1.c(4)(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.OutBus1.Alias1</ScalarRef>
+				<ScalarRef>OUTPUT:Out3.OutBus1.Color1</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="4" width="1" type="BTC_BusObj2">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out4.OutBus2.Alias2</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.Color2</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.a1(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.a1(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.a2(1)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.a2(2)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.a2(1)(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.a2(2)(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.a2(1)(3)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.a2(2)(3)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.b_bus_obj.a(1)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.b_bus_obj.a(1)(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.b_bus_obj.a(1)(3)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.b_bus_obj.b(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.b_bus_obj.b(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.b_bus_obj.b(3)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.b_bus_obj.c(1)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.b_bus_obj.c(2)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.b_bus_obj.c(3)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.b_bus_obj.c(4)(1)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.b_bus_obj.c(1)(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.b_bus_obj.c(2)(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.b_bus_obj.c(3)(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.b_bus_obj.c(4)(2)</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.b_bus_obj.Alias1</ScalarRef>
+				<ScalarRef>OUTPUT:Out4.OutBus2.b_bus_obj.Color1</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="5" type="int16">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out5</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="6" width="1" type="" kind="VirtualBus">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out6.{&lt;signal1&gt;}.signal1</ScalarRef>
+				<ScalarRef>OUTPUT:Out6.{&lt;signal1&gt;}.OutInt16</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="7" width="1" type="" kind="VirtualBus">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out7.VirtualBus.InUInt32</ScalarRef>
+				<ScalarRef>OUTPUT:Out7.VirtualBus.signal2</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="8" width="1" type="" kind="VirtualBus">
+			<ScalarRefs>
+				<ScalarRef>OUTPUT:Out8.VirtualBusAliasTypes.MyAlias</ScalarRef>
+				<ScalarRef>OUTPUT:Out8.VirtualBusAliasTypes.signal2</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+	</Inports>
+</SFunction>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="PowerWindowAutosar"/>
+    <Architecture id="id1" name="PowerWindowAutosar [C-Code]"/>
+    <ScopeMapping>
+      <Path path="Runnable_sys" refId="id0"/>
+      <Path path="PowerWindowAutosar.c:1:PowerWindow_Runnable" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Runnable_sys/R_driver_down_value_read" refId="id0"/>
+        <Path path="RteStub_driver_down_R_driver_down_value" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Runnable_sys/R_driver_up_value_read" refId="id0"/>
+        <Path path="RteStub_driver_up_R_driver_up_value" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Runnable_sys/R_passenger_down_value_read" refId="id0"/>
+        <Path path="RteStub_passenger_down_R_passenger_down_value" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Runnable_sys/R_passenger_up_value_read" refId="id0"/>
+        <Path path="RteStub_passenger_up_R_passenger_up_value" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Runnable_sys/R_window_position_value_read" refId="id0"/>
+        <Path path="RteStub_window_position_R_window_position_value" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Runnable_sys/R_obstacle_position_value_read" refId="id0"/>
+        <Path path="RteStub_obstacle_position_R_obstacle_position_value" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Runnable_sys/P_move_down_value_write" refId="id0"/>
+        <Path path="RteStub_move_down_P_move_down_value" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Runnable_sys/P_move_up_value_write" refId="id0"/>
+        <Path path="RteStub_move_up_P_move_up_value" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Runnable_sys/P_obstacle_detection_value_write" refId="id0"/>
+        <Path path="RteStub_obstacle_detection_P_obstacle_detection_value" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="R_auto_down_time_auto_down_time" refId="id0"/>
+        <Path path="Rte_Prm_R_auto_down_time_auto_down_time_data" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="R_auto_up_time_auto_up_time" refId="id0"/>
+        <Path path="Rte_Prm_R_auto_up_time_auto_up_time_data" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="R_emergency_down_time_emergency_down_time" refId="id0"/>
+        <Path path="Rte_Prm_R_emergency_down_time_emergency_down_time_data" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="R_position_endstop_top_position_endstop_top" refId="id0"/>
+        <Path path="Rte_Prm_R_position_endstop_top_position_endstop_top_data" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="Runnable_sys/detect_obstacle_endstop" refId="id0"/>
+      <Path path="PowerWindowAutosar.c:1:PowerWindow_Runnable/PowerWindowAutosar.c:1:detect_obstacle_endstop" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Runnable_sys/detect_obstacle_endstop/move_up" refId="id0"/>
+        <Path path="move_up_prev" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Runnable_sys/detect_obstacle_endstop/endstop_top" refId="id0"/>
+        <Path path="endstop_top" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Runnable_sys/detect_obstacle_endstop/endstop_bottom" refId="id0"/>
+        <Path path="endstop_bottom" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="R_position_endstop_top_position_endstop_top" refId="id0"/>
+        <Path path="Rte_Prm_R_position_endstop_top_position_endstop_top_data" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

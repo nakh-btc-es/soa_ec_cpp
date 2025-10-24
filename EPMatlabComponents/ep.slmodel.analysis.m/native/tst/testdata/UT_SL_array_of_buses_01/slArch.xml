@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_array_of_buses_01\init_model.m" modelVersion="1.17" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_array_of_buses_01\aob_model.slx" modelCreationDate="2020-09-14T11:33:01" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.17" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_array_of_buses_01\aob_model.slx" creationDate="2020-09-14T11:33:01" modificationDate="2024-09-11T18:17:27" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_array_of_buses_01\init_model.m">
+    <subsystem subsysID="ss1" physicalPath="aob_model" path="" sampleTime="0.01" name="aob_model" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="aob_model/In1" path="In1" signalName="s1">
+        <array size="2" startIndex="1">
+          <array size="5" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighBus">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowBus">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="aob_model/In2" path="In2" signalName="s3">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighBus">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowBus">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="aob_model/In3" path="In3" signalName="a1">
+        <bus busType="non_virtual" busObjectName="LowBus">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <uint8 max="10"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="aob_model/In4" path="In4" signalName="a2">
+        <bus busType="non_virtual" busObjectName="LowBus">
+          <signal signalName="a">
+            <array size="3" startIndex="1">
+              <uint8 max="10"/>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <boolean/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="0" name="Data Store&#10;Read" physicalPath="aob_model/top_B/sub_C/Data Store&#10;Read" path="top_B/sub_C/Data Store&#10;Read" signalName="HighBusSig">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HighBus">
+            <signal signalName="x">
+              <array size="3" startIndex="1">
+                <bus busType="non_virtual" busObjectName="LowBus">
+                  <signal signalName="a">
+                    <array size="3" startIndex="1">
+                      <uint8 max="10"/>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="y">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </array>
+            </signal>
+          </bus>
+        </array>
+        <dataStoreMemory signalName="HighBusSig"/>
+      </inport>
+      <parameter name="switchP1" path="top_B/Constant" physicalPath="aob_model/top_B/Constant" origin="explicit_param" workspace="switchP1" initValue="1.0">
+        <double/>
+        <usageContext path="top_B/Constant" physicalPath="aob_model/top_B/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="aob_model/Out1" path="Out1" signalName="s2">
+        <array size="2" startIndex="1">
+          <array size="5" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighBus">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowBus">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="aob_model/Out2" path="Out2" signalName="s4">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighBus">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowBus">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out5" physicalPath="aob_model/Out5" path="Out5" signalName="s7">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighBus">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowBus">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="aob_model/Out4" path="Out4" signalName="yy">
+        <double/>
+      </outport>
+      <outport portNumber="5" name="Out3" physicalPath="aob_model/Out3" path="Out3" signalName="a3">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="LowBus">
+            <signal signalName="a">
+              <array size="3" startIndex="1">
+                <uint8 max="10"/>
+              </array>
+            </signal>
+            <signal signalName="b">
+              <boolean/>
+            </signal>
+          </bus>
+        </array>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="aob_model/Out6" path="Out6" signalName="a4">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <bus busType="non_virtual" busObjectName="LowBus">
+              <signal signalName="a">
+                <array size="3" startIndex="1">
+                  <uint8 max="10"/>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="7" name="Out7" physicalPath="aob_model/Out7" path="Out7" signalName="a5">
+        <array size="1" startIndex="1">
+          <array size="2" startIndex="1">
+            <bus busType="non_virtual" busObjectName="LowBus">
+              <signal signalName="a">
+                <array size="3" startIndex="1">
+                  <uint8 max="10"/>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="aob_model/top_A" path="top_A" sampleTime="0.01" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="aob_model/top_A/In1" path="top_A/In1" signalName="s3">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighBus">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowBus">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="aob_model/top_A/In2" path="top_A/In2" signalName="s1">
+        <array size="2" startIndex="1">
+          <array size="5" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighBus">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowBus">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="aob_model/top_A/Out1" path="top_A/Out1" signalName="s5">
+        <array size="1" startIndex="1">
+          <array size="2" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighBus">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowBus">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="aob_model/top_A/Out2" path="top_A/Out2" signalName="s6">
+        <array size="2" startIndex="1">
+          <array size="2" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighBus">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowBus">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="aob_model/top_B" path="top_B" sampleTime="0.01" name="top_B" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="aob_model/top_B/In1" path="top_B/In1" signalName="s3">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighBus">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowBus">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="0" name="Data Store&#10;Read" physicalPath="aob_model/top_B/sub_C/Data Store&#10;Read" path="top_B/sub_C/Data Store&#10;Read" signalName="HighBusSig">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HighBus">
+            <signal signalName="x">
+              <array size="3" startIndex="1">
+                <bus busType="non_virtual" busObjectName="LowBus">
+                  <signal signalName="a">
+                    <array size="3" startIndex="1">
+                      <uint8 max="10"/>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="y">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </array>
+            </signal>
+          </bus>
+        </array>
+        <dataStoreMemory signalName="HighBusSig"/>
+      </inport>
+      <parameter name="switchP1" path="top_B/Constant" physicalPath="aob_model/top_B/Constant" origin="explicit_param" workspace="switchP1" initValue="1.0">
+        <double/>
+        <usageContext path="top_B/Constant" physicalPath="aob_model/top_B/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="aob_model/top_B/Out1" path="top_B/Out1" signalName="ds4">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighBus">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowBus">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="aob_model/top_B/sub_C" path="top_B/sub_C" sampleTime="0.01" name="sub_C" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="0" name="Data Store&#10;Read" physicalPath="aob_model/top_B/sub_C/Data Store&#10;Read" path="top_B/sub_C/Data Store&#10;Read" signalName="HighBusSig">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HighBus">
+            <signal signalName="x">
+              <array size="3" startIndex="1">
+                <bus busType="non_virtual" busObjectName="LowBus">
+                  <signal signalName="a">
+                    <array size="3" startIndex="1">
+                      <uint8 max="10"/>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="y">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </array>
+            </signal>
+          </bus>
+        </array>
+        <dataStoreMemory signalName="HighBusSig"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="aob_model/top_B/sub_C/Out1" path="top_B/sub_C/Out1" signalName="ds2">
+        <array size="3" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HighBus">
+            <signal signalName="x">
+              <array size="3" startIndex="1">
+                <bus busType="non_virtual" busObjectName="LowBus">
+                  <signal signalName="a">
+                    <array size="3" startIndex="1">
+                      <uint8 max="10"/>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="y">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </array>
+            </signal>
+          </bus>
+        </array>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\3ec189742\bug_11643\TLProj\top_B" name="top_B.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\3ec189742\bug_11643\TLSim" name="top_B_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\3ec189742\bug_11643\TLProj\top_B"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\3ec189742\bug_11643\TLSim"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dSpace\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="bug_11643 [C-Code]">
+    <Function name="top_B" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sb1_In1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="b" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="a" scaling="scID1" min="1.0000000000000000e+00" max="5.0000000000000000e+00" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sb1_Out1" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="Sb1_In1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="Sb1_Merge1" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sb2_sub_B1" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sb1_In1" min="0.0000000000000000e+00" max="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="b" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sb1_Merge1" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="1.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

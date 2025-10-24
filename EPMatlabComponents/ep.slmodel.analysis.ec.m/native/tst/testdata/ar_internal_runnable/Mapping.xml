@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Wrapper_SWC_SumMultiply"/>
+    <Architecture id="id1" name="Wrapper_SWC_SumMultiply [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Wrapper_SWC_SumMultiply.c:1:Wrapper_SWC_SumMultiply_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="RP_A_A" refId="id0"/>
+        <Path path="RteStub_IF_A_RP_A_A" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="RP_B_B" refId="id0"/>
+        <Path path="RteStub_IF_B_RP_B_B" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Mock_CP_Multiply/dsin_CP_Multiply_Out" refId="id0"/>
+        <Path path="dsin_CP_Multiply_Out" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="PP_D_D" refId="id0"/>
+        <Path path="RteStub_IF_D_PP_D_D" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_CP_Multiply/dsout_CP_Multiply_In1" refId="id0"/>
+        <Path path="dsout_CP_Multiply_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_CP_Multiply/dsout_CP_Multiply_In2" refId="id0"/>
+        <Path path="dsout_CP_Multiply_In2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="Wrapper_SWC_SumMultiply:RP_K_K" refId="id0"/>
+        <Path path="Rte_Prm_RP_K_K_data" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

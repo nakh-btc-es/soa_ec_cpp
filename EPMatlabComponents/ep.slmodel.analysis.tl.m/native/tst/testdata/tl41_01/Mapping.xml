@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="ar_poscontrol"/>
+    <Architecture id="id1" name="ar_poscontrol [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="TL_Controller/Subsystem/TL_Controller/Controller_Runnable"/>
+      <Path refId="id1" path="controller.c:1:controller_runnable"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="ref"/>
+        <Path refId="id1" path="Rte_Controller_RequiredSignals_ref"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="pos"/>
+        <Path refId="id1" path="Rte_Irv_Controller_LinPos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="Activating_RTE_Event"/>
+        <Path refId="id1" path="activation"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="upi"/>
+        <Path refId="id1" path="Rte_Controller_ProvidedSignal_upi"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="TL_Controller/Subsystem/TL_Controller/Position_Linearization_Runnable"/>
+      <Path refId="id1" path="controller.c:1:linearization_runnable"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="(position)"/>
+        <Path refId="id1" path="Rte_Controller_RequiredSignals_pos"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="(lin.pos)"/>
+        <Path refId="id1" path="Rte_Irv_Controller_LinPos"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

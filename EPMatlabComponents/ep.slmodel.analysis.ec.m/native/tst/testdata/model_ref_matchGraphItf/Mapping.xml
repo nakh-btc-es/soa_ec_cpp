@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="main_model"/>
+    <Architecture id="id1" name="main_model [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="main_model.c:1:main_model_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="a" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="c" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out2" refId="id0"/>
+        <Path path="x" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="top_A/disp_block1/disp(1)" refId="id0"/>
+        <Path path="disp_b" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="ref_sub2/sub_B/disp_block1/disp(1)" refId="id0"/>
+        <Path path="disp_c2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="top_A/ref_sub/disp_block1/disp(1)" refId="id0"/>
+        <Path path="disp_c" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="top_A" refId="id0"/>
+      <Path path="main_model.c:1:main_model_step/top_A.c:1:func_A" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/In1" refId="id0"/>
+        <Path path="rtu_In1" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/Out1" refId="id0"/>
+        <Path path="rty_Out1" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="top_A/disp_block1/disp(1)" refId="id0"/>
+        <Path path="disp_b" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="top_A/ref_sub/disp_block1/disp(1)" refId="id0"/>
+        <Path path="disp_c" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="top_A/disp_block1" refId="id0"/>
+      <Path path="main_model.c:1:main_model_step/top_A.c:1:func_A/disp1.c:1:disp1" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/disp_block1/disp_sig" refId="id0"/>
+        <Path path="rtu_disp_sig" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="top_A/disp_block1/disp(1)" refId="id0"/>
+        <Path path="disp_b" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="top_A/ref_sub" refId="id0"/>
+      <Path path="main_model.c:1:main_model_step/top_A.c:1:func_A/sub_model_A.c:1:sub_model_A" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/ref_sub/In1" refId="id0"/>
+        <Path path="b" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/ref_sub/Out1" refId="id0"/>
+        <Path path="c" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="top_A/ref_sub/disp_block1/disp(1)" refId="id0"/>
+        <Path path="disp_c" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="top_A/ref_sub/disp_block1" refId="id0"/>
+      <Path path="main_model.c:1:main_model_step/top_A.c:1:func_A/sub_model_A.c:1:sub_model_A/disp2.c:1:disp2" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/ref_sub/disp_block1/disp_sig" refId="id0"/>
+        <Path path="rtu_disp_sig" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="top_A/ref_sub/disp_block1/disp(1)" refId="id0"/>
+        <Path path="disp_c" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="ref_sub2" refId="id0"/>
+      <Path path="main_model.c:1:main_model_step/sub_model_B.c:1:sub_model_B" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="ref_sub2/In2" refId="id0"/>
+        <Path path="a" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="ref_sub2/Out1" refId="id0"/>
+        <Path path="x" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="ref_sub2/sub_B/disp_block1/disp(1)" refId="id0"/>
+        <Path path="disp_c2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="ref_sub2/sub_B" refId="id0"/>
+      <Path path="main_model.c:1:main_model_step/sub_model_B.c:1:sub_model_B/sub_model_B_sub_B.c:1:sub_model_B_sub_B" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="ref_sub2/sub_B/In1" refId="id0"/>
+        <Path path="rtu_In1" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="ref_sub2/sub_B/Out1" refId="id0"/>
+        <Path path="rty_Out1" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="ref_sub2/sub_B/disp_block1/disp(1)" refId="id0"/>
+        <Path path="disp_c2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="ref_sub2/sub_B/disp_block1" refId="id0"/>
+      <Path path="main_model.c:1:main_model_step/sub_model_B.c:1:sub_model_B/sub_model_B_sub_B.c:1:sub_model_B_sub_B/disp3.c:1:disp3" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="ref_sub2/sub_B/disp_block1/disp_sig" refId="id0"/>
+        <Path path="rtu_disp_sig" refId="id1"/>
+        <SignalMapping>
+          <Path path="" refId="id0"/>
+          <Path path="" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="ref_sub2/sub_B/disp_block1/disp(1)" refId="id0"/>
+        <Path path="disp_c2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Wrapper_mControllerWithInterface_server"/>
+    <Architecture id="id1" name="Wrapper_mControllerWithInterface_server [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Wrapper_mControllerWithInterface_server.c:1:Wrapper_mControllerWithInterface_server_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_doOverride_Op" refId="id0"/>
+        <Path path="root_in2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_doOverride_CMask" refId="id0"/>
+        <Path path="root_in3" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_doOverride_CRec" refId="id0"/>
+        <Path path="root_in4" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_doOverride_InOut" refId="id0"/>
+        <Path path="root_in5" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_readData_Op" refId="id0"/>
+        <Path path="root_in1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="DataOut" refId="id0"/>
+        <Path path="RteStub_DataOutInterface_DataOut_DE1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="out_doOverride_Rec" refId="id0"/>
+        <Path path="root_out4" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="out_doOverride_Neg" refId="id0"/>
+        <Path path="root_out5" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="out_doOverride_InOut" refId="id0"/>
+        <Path path="root_out6" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="out_doreadData_Data" refId="id0"/>
+        <Path path="root_out1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="out_doreadData_NegCode" refId="id0"/>
+        <Path path="root_out2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="out_doreadData_ERR" refId="id0"/>
+        <Path path="root_out3" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="mControllerWithInterface_server/mControllerWithInterface_server/Runnable_Step" refId="id0"/>
+      <Path path="Wrapper_mControllerWithInterface_server.c:1:Wrapper_mControllerWithInterface_server_step/mControllerWithInterface_server.c:1:Runnable_Step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="mControllerWithInterface_server/mControllerWithInterface_server/Runnable_Step/SubVal" refId="id0"/>
+        <Path path="RteStub_IRV4" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="mControllerWithInterface_server/mControllerWithInterface_server/Runnable_Step/Override" refId="id0"/>
+        <Path path="RteStub_IRV3" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="mControllerWithInterface_server/mControllerWithInterface_server/Runnable_Step/CurVal" refId="id0"/>
+        <Path path="RteStub_IRV2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="mControllerWithInterface_server/mControllerWithInterface_server/Runnable_Step/DataOut" refId="id0"/>
+        <Path path="RteStub_DataOutInterface_DataOut_DE1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="mControllerWithInterface_server/mControllerWithInterface_server/Runnable_Step/RealVal" refId="id0"/>
+        <Path path="RteStub_IRV1" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

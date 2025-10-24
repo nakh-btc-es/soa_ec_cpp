@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="24y">
+	<Scope uid="24y" name="Subsystem1" path="fixed_point/Subsystem1" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="fixed_point/Subsystem1" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_299" signalType="fixdt(1,16,3)" isFloat="yes">
+				<ifName ifid="if_299" lsb="0.125" offset="0.0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_300" signalType="fixdt(0,1,0)" isFloat="yes">
+				<ifName ifid="if_300" lsb="1.0" offset="0.0" displayName="In2" identifier="INPUT:In2" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_301" signalName="test_internalRule" signalType="fixdt(1,32,17)" isFloat="yes">
+				<ifName ifid="if_301" lsb="7.62939453125E-6" offset="0.0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_302" signalName="test_sameAsInput" signalType="fixdt(0,1,0)" isFloat="yes">
+				<ifName ifid="if_302" lsb="1.0" offset="0.0" displayName="Out2" identifier="OUTPUT:Out2" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out3" portNumber="3" compositeSig="none">
+			<Variable varid="varif_303" signalType="fixdt(0,16,1.3322676295501878e-15,0)" isFloat="yes">
+				<ifName ifid="if_303" lsb="1.3322676295501878E-15" offset="0.0" displayName="Out3" identifier="OUTPUT:Out3" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out4" portNumber="4" compositeSig="none">
+			<Variable varid="varif_304" signalType="fixdt(1,32,29)" isFloat="yes">
+				<ifName ifid="if_304" lsb="1.862645149230957E-9" offset="0.0" displayName="Out4" identifier="OUTPUT:Out4" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out5" portNumber="5" compositeSig="none">
+			<Variable varid="varif_305" signalType="fixdt(1,8,10)" isFloat="yes">
+				<ifName ifid="if_305" lsb="9.765625E-4" offset="0.0" displayName="Out5" identifier="OUTPUT:Out5" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out6" portNumber="6" compositeSig="none">
+			<Variable varid="varif_306" signalType="fixdt(1,16,13)" isFloat="yes">
+				<ifName ifid="if_306" lsb="1.220703125E-4" offset="0.0" displayName="Out6" identifier="OUTPUT:Out6" />
+			</Variable>
+		</OutPort>
+		<Display name="Gain" path="fixed_point/Subsystem1/Gain" physicalPath="fixed_point/Subsystem1/Gain" portNumber="1">
+			<Variable varid="varif_307" signalName="test_sameAsInput" signalType="fixdt(0,1,0)" isFloat="yes">
+				<ifName ifid="if_307" lsb="1.0" offset="0.0" displayName="Gain" identifier="LOCAL:Gain" />
+			</Variable>
+		</Display>
+		<Display name="Gain1" path="fixed_point/Subsystem1/Gain1" physicalPath="fixed_point/Subsystem1/Gain1" portNumber="1">
+			<Variable varid="varif_308" signalName="test_internalRule" signalType="fixdt(1,32,17)" isFloat="yes">
+				<ifName ifid="if_308" lsb="7.62939453125E-6" offset="0.0" displayName="Gain1" identifier="LOCAL:Gain1" />
+			</Variable>
+		</Display>
+		<Display name="Gain10" path="fixed_point/Subsystem1/Gain10" physicalPath="fixed_point/Subsystem1/Gain10" portNumber="1">
+			<Variable varid="varif_309" signalType="fixdt(1,32,29)" isFloat="yes">
+				<ifName ifid="if_309" lsb="1.862645149230957E-9" offset="0.0" displayName="Gain10" identifier="LOCAL:Gain10" />
+			</Variable>
+		</Display>
+		<Display name="Gain12" path="fixed_point/Subsystem1/Gain12" physicalPath="fixed_point/Subsystem1/Gain12" portNumber="1">
+			<Variable varid="varif_310" signalType="fixdt(1,8,10)" isFloat="yes">
+				<ifName ifid="if_310" lsb="9.765625E-4" offset="0.0" displayName="Gain12" identifier="LOCAL:Gain12" />
+			</Variable>
+		</Display>
+		<Display name="Gain13" path="fixed_point/Subsystem1/Gain13" physicalPath="fixed_point/Subsystem1/Gain13" portNumber="1">
+			<Variable varid="varif_311" signalType="fixdt(1,16,13)" isFloat="yes">
+				<ifName ifid="if_311" lsb="1.220703125E-4" offset="0.0" displayName="Gain13" identifier="LOCAL:Gain13" />
+			</Variable>
+		</Display>
+		<Display name="Gain6" path="fixed_point/Subsystem1/Gain6" physicalPath="fixed_point/Subsystem1/Gain6" portNumber="1">
+			<Variable varid="varif_312" signalType="fixdt(0,16,1.3322676295501878e-15,0)" isFloat="yes">
+				<ifName ifid="if_312" lsb="1.3322676295501878E-15" offset="0.0" displayName="Gain6" identifier="LOCAL:Gain6" />
+			</Variable>
+		</Display>
+		<Calibration name="fi_param2" path="fixed_point/Subsystem1/Constant10" physicalPath="fixed_point/Subsystem1/Constant10" origin="explicit_param">
+			<CalibrationUsage path="fixed_point/Subsystem1/Constant10" physicalPath="fixed_point/Subsystem1/Constant10" blockAttribute="Value" />
+			<Variable varid="varif_313" signalType="fixdt(1,32,29)" isFloat="yes">
+				<ifName ifid="if_313" initValue="0.0" lsb="1.862645149230957E-9" offset="0.0" displayName="fi_param2" identifier="PARAMETER:Constant10/fi_param2" />
+			</Variable>
+		</Calibration>
+		<Calibration name="fi_param4" path="fixed_point/Subsystem1/Constant12" physicalPath="fixed_point/Subsystem1/Constant12" origin="explicit_param">
+			<CalibrationUsage path="fixed_point/Subsystem1/Constant12" physicalPath="fixed_point/Subsystem1/Constant12" blockAttribute="Value" />
+			<Variable varid="varif_314" signalType="fixdt(1,8,10)" isFloat="yes">
+				<ifName ifid="if_314" initValue="0.0048828125" lsb="9.765625E-4" offset="0.0" displayName="fi_param4" identifier="PARAMETER:Constant12/fi_param4" />
+			</Variable>
+		</Calibration>
+		<Calibration name="fi_param7" path="fixed_point/Subsystem1/Constant13" physicalPath="fixed_point/Subsystem1/Constant13" origin="explicit_param">
+			<CalibrationUsage path="fixed_point/Subsystem1/Constant13" physicalPath="fixed_point/Subsystem1/Constant13" blockAttribute="Value" />
+			<Variable varid="varif_315" signalType="fixdt(1,16,13)" isFloat="yes">
+				<ifName ifid="if_315" initValue="3.1416015625" lsb="1.220703125E-4" offset="0.0" displayName="fi_param7" identifier="PARAMETER:Constant13/fi_param7" />
+			</Variable>
+		</Calibration>
+		<Calibration name="fxp_param6" path="fixed_point/Subsystem1/Constant6" physicalPath="fixed_point/Subsystem1/Constant6" origin="explicit_param">
+			<CalibrationUsage path="fixed_point/Subsystem1/Constant6" physicalPath="fixed_point/Subsystem1/Constant6" blockAttribute="Value" />
+			<Variable varid="varif_316" signalType="fixdt(0,16,1.3322676295501878e-15,0)" isFloat="yes">
+				<ifName ifid="if_316" initValue="0.0" lsb="1.3322676295501878E-15" offset="0.0" displayName="fxp_param6" identifier="PARAMETER:Constant6/fxp_param6" />
+			</Variable>
+		</Calibration>
+		<Model name="fixed_point" modelPath="/E:/ModelsDev/UT_MIL_SL/fixed_point_sl/ml2015asp1/fixed_point.mdl" type="SimulinkModel" />
+	</Scope>
+</ExtractionModel>

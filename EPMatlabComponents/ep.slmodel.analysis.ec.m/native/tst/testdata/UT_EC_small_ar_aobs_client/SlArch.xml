@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20220105T085833_3336\tmp_small_ar_aobs_client\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20220105T085833_3336\tmp_small_ar_aobs_client\init_Wrapper_ar_aob_client.m" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20220105T085833_3336\tmp_small_ar_aobs_client\Wrapper_ar_aob_client.slx" modelCreationDate="2022-01-05T08:58:36" creator="developer">
+  <toolInfo name="Matlab" release="(R2019a)" version="9.6" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2019a)" version="9.3" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20220105T085833_3336\tmp_small_ar_aobs_client\Wrapper_ar_aob_client.slx" creationDate="2022-01-05T08:58:36" modificationDate="2022-01-05T08:58:41" initScript="C:\Users\developer\AppData\Local\Temp\ut20220105T085833_3336\tmp_small_ar_aobs_client\init_Wrapper_ar_aob_client.m">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_ar_aob_client" path="" sampleTime="0.1" name="Wrapper_ar_aob_client" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In_aob" physicalPath="Wrapper_ar_aob_client/In_aob" path="In_aob" signalName="&lt;signal1&gt;">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HighBus">
+            <signal signalName="x">
+              <array size="3" startIndex="1">
+                <bus busType="non_virtual" busObjectName="LowBus">
+                  <signal signalName="a">
+                    <array size="3" startIndex="1">
+                      <uint8 max="10"/>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="y">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </array>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <inport portNumber="0" name="dsin_f_d_out" physicalPath="Wrapper_ar_aob_client/Mock_f/dsin_f_d_out" path="Mock_f/dsin_f_d_out" signalName="dsin_f_d_out">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighBus">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowBus">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+        <dataStoreMemory signalName="dsin_f_d_out"/>
+      </inport>
+      <outport portNumber="1" name="Out_aob" physicalPath="Wrapper_ar_aob_client/Out_aob" path="Out_aob" signalName="&lt;signal1&gt;">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighBus">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowBus">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="0" name="dsout_f_d_in" physicalPath="Wrapper_ar_aob_client/Mock_f/dsout_f_d_in" path="Mock_f/dsout_f_d_in" signalName="dsout_f_d_in">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighBus">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowBus">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+        <dataStoreMemory signalName="dsout_f_d_in"/>
+      </outport>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="ar_aob_client/Runnable1" path="ar_aob_client/ar_aob_client/Runnable1" sampleTime="0.1" name="Runnable1" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="ar_aob_client/Runnable1/In1" path="ar_aob_client/ar_aob_client/Runnable1/In1" modelRef="model002" signalName="&lt;signal1&gt;">
+        <array size="2" startIndex="1">
+          <bus busType="non_virtual" busObjectName="HighBus">
+            <signal signalName="x">
+              <array size="3" startIndex="1">
+                <bus busType="non_virtual" busObjectName="LowBus">
+                  <signal signalName="a">
+                    <array size="3" startIndex="1">
+                      <uint8 max="10"/>
+                    </array>
+                  </signal>
+                  <signal signalName="b">
+                    <boolean/>
+                  </signal>
+                </bus>
+              </array>
+            </signal>
+            <signal signalName="y">
+              <array size="2" startIndex="1">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </array>
+            </signal>
+          </bus>
+        </array>
+      </inport>
+      <inport portNumber="0" name="dsin_f_d_out" physicalPath="Wrapper_ar_aob_client/Mock_f/dsin_f_d_out" path="Mock_f/dsin_f_d_out" signalName="dsin_f_d_out">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighBus">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowBus">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+        <dataStoreMemory signalName="dsin_f_d_out"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ar_aob_client/Runnable1/Out1" path="ar_aob_client/ar_aob_client/Runnable1/Out1" modelRef="model002" signalName="&lt;signal1&gt;">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighBus">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowBus">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="0" name="dsout_f_d_in" physicalPath="Wrapper_ar_aob_client/Mock_f/dsout_f_d_in" path="Mock_f/dsout_f_d_in" signalName="dsout_f_d_in">
+        <array size="2" startIndex="1">
+          <array size="1" startIndex="1">
+            <bus busType="non_virtual" busObjectName="HighBus">
+              <signal signalName="x">
+                <array size="3" startIndex="1">
+                  <bus busType="non_virtual" busObjectName="LowBus">
+                    <signal signalName="a">
+                      <array size="3" startIndex="1">
+                        <uint8 max="10"/>
+                      </array>
+                    </signal>
+                    <signal signalName="b">
+                      <boolean/>
+                    </signal>
+                  </bus>
+                </array>
+              </signal>
+              <signal signalName="y">
+                <array size="2" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <bus busType="non_virtual" busObjectName="LowBus">
+                      <signal signalName="a">
+                        <array size="3" startIndex="1">
+                          <uint8 max="10"/>
+                        </array>
+                      </signal>
+                      <signal signalName="b">
+                        <boolean/>
+                      </signal>
+                    </bus>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </array>
+        </array>
+        <dataStoreMemory signalName="dsout_f_d_in"/>
+      </outport>
+      <slfunc_caller path="ar_aob_client/ar_aob_client/Runnable1/Function Caller" pathCaller="ar_aob_client/Runnable1/Function Caller" pathFunction="Wrapper_ar_aob_client/Mock_f"/>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.88" modelPath="C:\Users\developer\AppData\Local\Temp\ut20220105T085833_3336\tmp_small_ar_aobs_client\ar_aob_client.slx" creationDate="2020-09-21T14:36:38" modificationDate="2022-01-03T18:55:31" initScript="C:\Users\developer\AppData\Local\Temp\ut20220105T085833_3336\tmp_small_ar_aobs_client\init_Wrapper_ar_aob_client.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

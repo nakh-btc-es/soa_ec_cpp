@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="sl_func_ds.c" path="C:\Users\developer\AppData\Local\Temp\ut20210927T065114_13256\tmp_SLFunctionsWithDS\sl_func_ds_ert_rtw"/>
+    <File annotate="yes" id="ID72" kind="source" name="sub_model_01.c" path="C:\Users\developer\AppData\Local\Temp\ut20210927T065114_13256\tmp_SLFunctionsWithDS\slprj\ert\sub_model_01"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20210927T065114_13256\tmp_SLFunctionsWithDS\slprj\ert\sub_model_01"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20210927T065114_13256\tmp_SLFunctionsWithDS"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20210927T065114_13256\tmp_SLFunctionsWithDS\sl_func_ds_ert_rtw"/>
+    <IncludePath path="C:\Matlab\R2017b\extern\include"/>
+    <IncludePath path="C:\Matlab\R2017b\simulink\include"/>
+    <IncludePath path="C:\Matlab\R2017b\rtw\c\src"/>
+    <IncludePath path="C:\Matlab\R2017b\rtw\c\src\ext_mode\common"/>
+    <IncludePath path="C:\Matlab\R2017b\rtw\c\ert"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20210927T065114_13256\tmp_SLFunctionsWithDS\slprj\ert\_sharedutils"/>
+  </IncludePaths>
+  <Functions archName="sl_func_ds [C-Code]">
+    <Function fileref="ID71" initFunc="sl_func_ds_initialize" name="sl_func_ds_step">
+      <Interface>
+        <InterfaceObj kind="in" var="sig_in1"/>
+        <InterfaceObj kind="in" var="sig_in2"/>
+        <InterfaceObj kind="in" var="store_B"/>
+        <InterfaceObj kind="in" var="store_C"/>
+        <InterfaceObj kind="in" var="store_E"/>
+        <InterfaceObj kind="out" var="sig_out"/>
+        <InterfaceObj kind="out" var="sig_out2"/>
+        <InterfaceObj kind="out" var="sig_XXX"/>
+        <InterfaceObj kind="out" var="store_A"/>
+        <InterfaceObj kind="out" var="store_D"/>
+        <InterfaceObj kind="cal" var="ParamA"/>
+        <InterfaceObj kind="disp" var="compare_sigs"/>
+        <InterfaceObj kind="disp" var="direct_C"/>
+        <InterfaceObj kind="disp" var="read_fromC"/>
+        <InterfaceObj kind="disp" var="sig_X"/>
+        <InterfaceObj kind="disp" var="sig_XX"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="sl_func_ds_initialize" name="func_A">
+      <Interface>
+        <InterfaceObj kind="in" var="sig_in2"/>
+        <InterfaceObj kind="in" var="store_B"/>
+        <InterfaceObj kind="out" var="sig_X"/>
+        <InterfaceObj kind="out" var="store_A"/>
+        <InterfaceObj kind="disp" var="sig_X"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID72" initFunc="sl_func_ds_initialize" name="sub_model_01">
+      <Interface>
+        <InterfaceObj kind="in" var="var_in1"/>
+        <InterfaceObj kind="in" var="var_in2"/>
+        <InterfaceObj kind="in" var="store_B"/>
+        <InterfaceObj kind="in" var="store_C"/>
+        <InterfaceObj kind="out" var="var_out"/>
+        <InterfaceObj kind="out" var="store_A"/>
+        <InterfaceObj kind="out" var="store_D"/>
+        <InterfaceObj kind="disp" var="compare_sigs"/>
+        <InterfaceObj kind="disp" var="direct_C"/>
+        <InterfaceObj kind="disp" var="read_fromC"/>
+        <InterfaceObj kind="disp" var="sig_XX"/>
+      </Interface>
+    </Function>
+    <Function initFunc="sl_func_ds_initialize" name="func_B">
+      <Interface>
+        <InterfaceObj kind="in" var="var_in2"/>
+        <InterfaceObj kind="in" var="store_B"/>
+        <InterfaceObj kind="out" var="sig_XX"/>
+        <InterfaceObj kind="out" var="store_A"/>
+        <InterfaceObj kind="disp" var="sig_XX"/>
+      </Interface>
+    </Function>
+    <Function initFunc="sl_func_ds_initialize" name="func_C">
+      <Interface>
+        <InterfaceObj kind="in" var="store_C"/>
+        <InterfaceObj kind="out" var="read_fromC"/>
+        <InterfaceObj kind="out" var="sum_c"/>
+        <InterfaceObj kind="disp" var="direct_C"/>
+        <InterfaceObj kind="disp" var="read_fromC"/>
+      </Interface>
+    </Function>
+    <Function initFunc="sl_func_ds_initialize" name="func_func_c">
+      <Interface>
+        <InterfaceObj kind="in" var="store_C"/>
+        <InterfaceObj kind="out" var="sig_inner_fromC"/>
+      </Interface>
+    </Function>
+    <Function initFunc="sl_func_ds_initialize" name="func_func_c2">
+      <Interface>
+        <InterfaceObj kind="in" var="store_C"/>
+        <InterfaceObj kind="out" var="c_plus_c"/>
+        <InterfaceObj kind="disp" var="direct_C"/>
+      </Interface>
+    </Function>
+    <Function initFunc="sl_func_ds_initialize" name="func_D">
+      <Interface>
+        <InterfaceObj kind="in" var="read_fromC"/>
+        <InterfaceObj kind="in" var="sum_c"/>
+        <InterfaceObj kind="out" var="store_D"/>
+        <InterfaceObj kind="disp" var="compare_sigs"/>
+      </Interface>
+    </Function>
+  </Functions>
+</CodeModel>

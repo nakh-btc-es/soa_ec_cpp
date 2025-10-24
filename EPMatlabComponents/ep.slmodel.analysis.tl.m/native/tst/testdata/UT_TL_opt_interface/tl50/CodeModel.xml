@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\325c16c30\opt_interface\TLProj\top_A" name="top_A.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\325c16c30\opt_interface\TLSim" name="top_A_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\325c16c30\opt_interface\TLProj\top_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\325c16c30\opt_interface\TLSim"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.0\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.0\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\dspace\dSPACE TargetLink 5.0\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="__SIL__"/>
+    <Define name="BTC_EP_TL_VERSION" value="50"/>
+  </Defines>
+  <Functions archName="opt_interface [C-Code]">
+    <Function name="top_A" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_in1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_in2" scaling="scID2"/>
+        <InterfaceObj kind="in" var="Sa1_in3" scaling="scID3"/>
+        <InterfaceObj kind="cal" var="gain_cal" scaling="scID3" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa1_out1" scaling="scID2"/>
+        <InterfaceObj kind="out" var="Sa1_out2" scaling="scID3"/>
+        <InterfaceObj kind="out" var="Sa1_out3" scaling="scID2"/>
+        <InterfaceObj kind="out" var="Sa1_out4" scaling="scID2"/>
+        <InterfaceObj kind="out" var="Sa1_out5" scaling="scID2"/>
+        <InterfaceObj kind="disp" var="Sa1_Sum1" scaling="scID2"/>
+        <InterfaceObj kind="disp" var="Sa2_Sum1" scaling="scID2"/>
+        <InterfaceObj kind="disp" var="Sa7_Sum1" scaling="scID2"/>
+        <InterfaceObj kind="disp" var="Sa8_Sum1" scaling="scID2"/>
+      </Interface>
+    </Function>
+    <Function name="Sa2_sub_B1" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="IF_Sa1_in2" scaling="scID2"/>
+        <InterfaceObj kind="out" var="Sa2_Sum1" scaling="scID2"/>
+        <InterfaceObj kind="disp" var="Sa2_Sum1" scaling="scID2"/>
+      </Interface>
+    </Function>
+    <Function name="Sa3_sub_B2" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa3_In1" scaling="scID2"/>
+        <InterfaceObj kind="cal" var="gain_cal" scaling="scID3" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa3_Out1" scaling="scID2"/>
+      </Interface>
+    </Function>
+    <Function name="Sa4_sub_B3" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa4_In1" scaling="scID2"/>
+        <InterfaceObj kind="cal" var="gain_cal" scaling="scID3" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa4_Out1" scaling="scID2"/>
+      </Interface>
+    </Function>
+    <Function name="Sa5_sub_B4" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="cal" var="gain_cal" scaling="scID3" initVal="2.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa6_sub_B5" fileref="fID1" sampleTime="1.0">
+      <Interface/>
+    </Function>
+    <Function name="Sa7_sub_B6" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="IF_Sa1_in2" scaling="scID2"/>
+        <InterfaceObj kind="out" var="Sa7_Sum1" scaling="scID2"/>
+        <InterfaceObj kind="disp" var="Sa7_Sum1" scaling="scID2"/>
+      </Interface>
+    </Function>
+    <Function name="Sa8_sub_B7" fileref="fID1" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="IF_Sa1_in2" scaling="scID2"/>
+        <InterfaceObj kind="out" var="Sa8_Sum1" scaling="scID2"/>
+        <InterfaceObj kind="disp" var="Sa8_Sum1" scaling="scID2"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="3.9062500000000000e-03" offset="0.0000000000000000e+00"/>
+    <Scaling id="scID2" lsb="2.5600000000000000e+02" offset="0.0000000000000000e+00"/>
+    <Scaling id="scID3" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

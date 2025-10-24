@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="detect_obstacle_endstop.c" path="C:/Users/developer/AppData/Local/Temp/ut20201124T151325_5652/tmp_ut_simple_04/powerwindow_sl_ert_rtw"/>
+    <File annotate="yes" id="ID72" kind="source" name="powerwindow_controller_step.c" path="C:/Users/developer/AppData/Local/Temp/ut20201124T151325_5652/tmp_ut_simple_04/powerwindow_sl_ert_rtw"/>
+    <File annotate="yes" id="ID73" kind="source" name="powerwindow_sl.c" path="C:/Users/developer/AppData/Local/Temp/ut20201124T151325_5652/tmp_ut_simple_04/powerwindow_sl_ert_rtw"/>
+    <File annotate="yes" id="ID74" kind="source" name="validate_passenger.c" path="C:/Users/developer/AppData/Local/Temp/ut20201124T151325_5652/tmp_ut_simple_04/powerwindow_sl_ert_rtw"/>
+    <File annotate="yes" id="ID75" kind="source" name="check_up_fct.c" path="C:/Users/developer/AppData/Local/Temp/ut20201124T151325_5652/tmp_ut_simple_04/slprj/ert/validated_driver"/>
+    <File annotate="yes" id="ID76" kind="source" name="driver_switch.c" path="C:/Users/developer/AppData/Local/Temp/ut20201124T151325_5652/tmp_ut_simple_04/slprj/ert/validated_driver"/>
+    <File annotate="yes" id="ID77" kind="source" name="test.c" path="C:/Users/developer/AppData/Local/Temp/ut20201124T151325_5652/tmp_ut_simple_04/slprj/ert/validated_driver"/>
+    <File annotate="yes" id="ID78" kind="source" name="validated_driver.c" path="C:/Users/developer/AppData/Local/Temp/ut20201124T151325_5652/tmp_ut_simple_04/slprj/ert/validated_driver"/>
+    <File annotate="yes" id="ID79" kind="source" name="validated_driver1.c" path="C:/Users/developer/AppData/Local/Temp/ut20201124T151325_5652/tmp_ut_simple_04/slprj/ert/validated_driver1"/>
+    <File annotate="yes" id="ID80" kind="source" name="check_down.c" path="C:/Users/developer/AppData/Local/Temp/ut20201124T151325_5652/tmp_ut_simple_04/slprj/ert/check_down"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20201124T151325_5652\tmp_ut_simple_04\slprj\ert\check_down"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20201124T151325_5652\tmp_ut_simple_04\slprj\ert\validated_driver1"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20201124T151325_5652\tmp_ut_simple_04\slprj\ert\validated_driver"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20201124T151325_5652\tmp_ut_simple_04"/>
+    <IncludePath path="C:\Matlab\R2017b\simulink\include\sf_runtime"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20201124T151325_5652\tmp_ut_simple_04\powerwindow_sl_ert_rtw"/>
+    <IncludePath path="C:\Matlab\R2017b\extern\include"/>
+    <IncludePath path="C:\Matlab\R2017b\simulink\include"/>
+    <IncludePath path="C:\Matlab\R2017b\rtw\c\src"/>
+    <IncludePath path="C:\Matlab\R2017b\rtw\c\src\ext_mode\common"/>
+    <IncludePath path="C:\Matlab\R2017b\rtw\c\ert"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20201124T151325_5652\tmp_ut_simple_04\slprj\ert\_sharedutils"/>
+  </IncludePaths>
+  <Functions archName="powerwindow_sl [C-Code]">
+    <Function fileref="ID73" initFunc="powerwindow_sl_initialize" name="powerwindow_sl_step">
+      <Interface>
+        <InterfaceObj kind="in" var="driver_up"/>
+        <InterfaceObj kind="in" var="driver_down"/>
+        <InterfaceObj kind="in" var="passenger_up"/>
+        <InterfaceObj kind="in" var="passenger_down"/>
+        <InterfaceObj kind="in" var="obstacle_position"/>
+        <InterfaceObj kind="in" var="window_position"/>
+        <InterfaceObj kind="out" var="obstacle_detection"/>
+        <InterfaceObj kind="out" var="move_up"/>
+        <InterfaceObj kind="out" var="move_down"/>
+        <InterfaceObj kind="out" var="out1"/>
+        <InterfaceObj kind="out" var="out2"/>
+        <InterfaceObj kind="out" var="out3"/>
+        <InterfaceObj kind="cal" var="auto_down_time"/>
+        <InterfaceObj kind="cal" var="auto_up_time"/>
+        <InterfaceObj kind="cal" var="emergency_down_time"/>
+        <InterfaceObj kind="cal" var="position_endstop_top"/>
+        <InterfaceObj kind="disp" var="endstop_bottom"/>
+        <InterfaceObj kind="disp" var="endstop_top"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID72" initFunc="powerwindow_sl_initialize" name="powerwindow_controller_step">
+      <Interface>
+        <InterfaceObj kind="in" var="driver_up"/>
+        <InterfaceObj kind="in" var="driver_down"/>
+        <InterfaceObj kind="in" var="passenger_up"/>
+        <InterfaceObj kind="in" var="passenger_down"/>
+        <InterfaceObj kind="in" var="obstacle_position"/>
+        <InterfaceObj kind="in" var="window_position"/>
+        <InterfaceObj kind="out" var="obstacle_detection"/>
+        <InterfaceObj kind="out" var="move_up"/>
+        <InterfaceObj kind="out" var="move_down"/>
+        <InterfaceObj kind="out" var="out1"/>
+        <InterfaceObj kind="out" var="out2"/>
+        <InterfaceObj kind="out" var="out3"/>
+        <InterfaceObj kind="cal" var="auto_down_time"/>
+        <InterfaceObj kind="cal" var="auto_up_time"/>
+        <InterfaceObj kind="cal" var="emergency_down_time"/>
+        <InterfaceObj kind="cal" var="position_endstop_top"/>
+        <InterfaceObj kind="disp" var="endstop_bottom"/>
+        <InterfaceObj kind="disp" var="endstop_top"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID74" initFunc="powerwindow_sl_initialize" name="validate_passenger">
+      <Interface>
+        <InterfaceObj kind="in" var="passenger_up"/>
+        <InterfaceObj kind="in" var="passenger_down"/>
+        <InterfaceObj kind="in" var="endstop_top"/>
+        <InterfaceObj kind="in" var="endstop_bottom"/>
+        <InterfaceObj kind="out" var="passenger_validated_neutral"/>
+        <InterfaceObj kind="out" var="passenger_validated_up"/>
+        <InterfaceObj kind="out" var="passenger_validated_down"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="powerwindow_sl_initialize" name="detect_obstacle_endstop">
+      <Interface>
+        <InterfaceObj kind="in" var="obstacle_position"/>
+        <InterfaceObj kind="in" var="window_position"/>
+        <InterfaceObj kind="in" var="prev_move_up"/>
+        <InterfaceObj kind="out" var="obstacle_detection"/>
+        <InterfaceObj kind="out" var="endstop_top"/>
+        <InterfaceObj kind="out" var="endstop_bottom"/>
+        <InterfaceObj kind="cal" var="position_endstop_top"/>
+        <InterfaceObj kind="disp" var="endstop_bottom"/>
+        <InterfaceObj kind="disp" var="endstop_top"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID78" initFunc="powerwindow_sl_initialize" name="validated_driver">
+      <Interface>
+        <InterfaceObj kind="in" var="driver_up"/>
+        <InterfaceObj kind="in" var="driver_down"/>
+        <InterfaceObj kind="in" var="endstop_top"/>
+        <InterfaceObj kind="in" var="endstop_bottom"/>
+        <InterfaceObj kind="out" var="driver_validated_neutral"/>
+        <InterfaceObj kind="out" var="out2_Model"/>
+        <InterfaceObj kind="out" var="driver_validated_down"/>
+      </Interface>
+    </Function>
+    <Function initFunc="powerwindow_sl_initialize" name="test">
+      <Interface>
+        <InterfaceObj kind="in" var="endstop_bottom"/>
+        <InterfaceObj kind="out" var="driver_validated_up_subsystem"/>
+      </Interface>
+    </Function>
+    <Function initFunc="powerwindow_sl_initialize" name="check_up_fct">
+      <Interface>
+        <InterfaceObj kind="in" var="endstop_top"/>
+      </Interface>
+    </Function>
+    <Function initFunc="powerwindow_sl_initialize" name="driver_switch">
+      <Interface>
+        <InterfaceObj kind="in" var="driver_up"/>
+        <InterfaceObj kind="in" var="driver_down"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID80" initFunc="powerwindow_sl_initialize" name="check_down">
+      <Interface/>
+    </Function>
+    <Function fileref="ID79" initFunc="powerwindow_sl_initialize" name="validated_driver1">
+      <Interface>
+        <InterfaceObj kind="in" var="driver_up"/>
+        <InterfaceObj kind="in" var="driver_down"/>
+        <InterfaceObj kind="in" var="endstop_top"/>
+        <InterfaceObj kind="in" var="endstop_bottom"/>
+        <InterfaceObj kind="out" var="out1"/>
+        <InterfaceObj kind="out" var="out2"/>
+        <InterfaceObj kind="out" var="out3"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID80" initFunc="powerwindow_sl_initialize" name="check_down">
+      <Interface/>
+    </Function>
+  </Functions>
+</CodeModel>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aa-component name="port_identifier" aa_version="R21-11" model_name="port_identifier" matlab_version="R2023b">
+  <types>
+    <type typeId="t2" name="SFIX16_EN8" kind="non-primitive"/>
+    <type typeId="t3" name="float" kind="fundamental"/>
+    <type typeId="t1" name="int32_t" kind="primitive"/>
+  </types>
+  <interfaces>
+    <interface name="r_if">
+      <namespaces>
+        <namespace symbol="b"/>
+      </namespaces>
+      <events>
+        <event eventId="ev1" name="In2" typeRef="t1"/>
+        <event eventId="ev2" name="In3" typeRef="t2"/>
+      </events>
+    </interface>
+    <interface name="r2_if">
+      <namespaces>
+        <namespace symbol="bar"/>
+      </namespaces>
+      <events>
+        <event eventId="ev3" name="Event1" typeRef="t3"/>
+      </events>
+    </interface>
+    <interface name="p_if">
+      <namespaces>
+        <namespace symbol="p">
+          <namespace symbol="p2"/>
+        </namespace>
+      </namespaces>
+      <events>
+        <event eventId="ev4" name="evX" typeRef="t3"/>
+        <event eventId="ev5" name="evY" typeRef="t2"/>
+      </events>
+    </interface>
+    <interface name="p2_if">
+      <namespaces>
+        <namespace symbol="x">
+          <namespace symbol="xx">
+            <namespace symbol="xxx"/>
+          </namespace>
+        </namespace>
+      </namespaces>
+      <events>
+        <event eventId="ev6" name="evP" typeRef="t1"/>
+      </events>
+    </interface>
+  </interfaces>
+  <ports>
+    <rport name="RequiredPort" instanceKey="1">
+      <event-refs>
+        <event-ref eventRef="ev1" var="RequiredPort_In2"/>
+        <event-ref eventRef="ev2" var="RequiredPort_In3"/>
+      </event-refs>
+    </rport>
+    <rport name="req_port" instanceKey="2">
+      <event-refs>
+        <event-ref eventRef="ev3" var="req_port_Event1"/>
+      </event-refs>
+    </rport>
+    <pport name="ProvidedPort" instanceKey="3">
+      <event-refs>
+        <event-ref eventRef="ev4" var="ProvidedPort_evX"/>
+        <event-ref eventRef="ev5" var="ProvidedPort_evY"/>
+      </event-refs>
+    </pport>
+    <pport name="prov_port" instanceKey="4">
+      <event-refs>
+        <event-ref eventRef="ev6" var="prov_port_evP"/>
+      </event-refs>
+    </pport>
+  </ports>
+</aa-component>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_7719\TLProj\Subsystem" name="Subsystem.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_7719\TLProj\Subsystem" name="crash.c" kind="source" annotate="yes" id="fID2"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_7719\TLSim" name="Subsystem_fri.c" kind="source" annotate="no" id="fID3"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_7719\TLProj\Subsystem"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_7719\TLSim"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="caltest [C-Code]">
+    <Function name="Subsystem" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_in_" scaling="scID1"/>
+        <InterfaceObj kind="cal" var="Sa1_Constant" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa1_out_" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa2_crash" sampleTime="1.0">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_in_" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_Constant" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa2_Sum" scaling="scID1"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

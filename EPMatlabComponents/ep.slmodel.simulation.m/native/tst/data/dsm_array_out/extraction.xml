@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="2CB">
+	<Scope uid="2CB" name="sub_D1" path="datastore_examples/my_frame/top_A/sub_D1" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="sub_model_02" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_696" width1="1" width2="3" signalType="int8" signalDim="[2 1 3]" isFloat="yes">
+				<ifName ifid="if_698" index1="1" index2="1" lsb="1" offset="0" displayName="In1(1)(1)" identifier="INPUT:In1(1)(1)" />
+				<ifName ifid="if_699" index1="1" index2="2" lsb="1" offset="0" displayName="In1(1)(2)" identifier="INPUT:In1(1)(2)" />
+				<ifName ifid="if_700" index1="1" index2="3" lsb="1" offset="0" displayName="In1(1)(3)" identifier="INPUT:In1(1)(3)" />
+			</Variable>
+		</InPort>
+		<InPort name="In3" portNumber="2" compositeSig="none">
+			<Variable varid="varif_701" width1="2" width2="3" signalType="boolean" signalDim="[2 2 3]" isFloat="yes">
+				<ifName ifid="if_704" index1="1" index2="1" lsb="1" offset="0" displayName="In3(1)(1)" identifier="INPUT:In3(1)(1)" />
+				<ifName ifid="if_707" index1="2" index2="1" lsb="1" offset="0" displayName="In3(2)(1)" identifier="INPUT:In3(2)(1)" />
+				<ifName ifid="if_705" index1="1" index2="2" lsb="1" offset="0" displayName="In3(1)(2)" identifier="INPUT:In3(1)(2)" />
+				<ifName ifid="if_708" index1="2" index2="2" lsb="1" offset="0" displayName="In3(2)(2)" identifier="INPUT:In3(2)(2)" />
+				<ifName ifid="if_706" index1="1" index2="3" lsb="1" offset="0" displayName="In3(1)(3)" identifier="INPUT:In3(1)(3)" />
+				<ifName ifid="if_709" index1="2" index2="3" lsb="1" offset="0" displayName="In3(2)(3)" identifier="INPUT:In3(2)(3)" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="3" compositeSig="none">
+			<Variable varid="varif_710" signalType="boolean" isFloat="yes">
+				<ifName ifid="if_710" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+			</Variable>
+		</InPort>
+		<DataStoreWrite name="Out1" path="datastore_examples/my_frame/top_A/sub_D1/Out1" physicalPath="sub_model_02/Out1" portNumber="0" signal="DS_02" compositeSig="none">
+			<Variable varid="varif_711" width1="1" width2="3" signalType="int8" signalDim="[2 1 3]" isFloat="yes">
+				<ifName ifid="if_713" index1="1" index2="1" lsb="1" offset="0" displayName="Out1@DS_02(1)(1)" identifier="OUTPUT:Out1(1)(1)" />
+				<ifName ifid="if_714" index1="1" index2="2" lsb="1" offset="0" displayName="Out1@DS_02(1)(2)" identifier="OUTPUT:Out1(1)(2)" />
+				<ifName ifid="if_715" index1="1" index2="3" lsb="1" offset="0" displayName="Out1@DS_02(1)(3)" identifier="OUTPUT:Out1(1)(3)" />
+			</Variable>
+		</DataStoreWrite>
+		<DataStoreWrite name="Out2" path="datastore_examples/my_frame/top_A/sub_D1/Out2" physicalPath="sub_model_02/Out2" portNumber="0" signal="DS_03" compositeSig="none">
+			<Variable varid="varif_716" signalType="boolean" isFloat="yes">
+				<ifName ifid="if_716" lsb="1" offset="0" displayName="Out2@DS_03" identifier="OUTPUT:Out2" />
+			</Variable>
+		</DataStoreWrite>
+		<Calibration name="P_03" path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" origin="explicit_param">
+			<CalibrationUsage path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" blockAttribute="Parameter" />
+			<Variable varid="varif_717" signalType="boolean" isFloat="yes">
+				<ifName ifid="if_717" initValue="0" lsb="1" offset="0" displayName="P_03" identifier="PARAMETER:sub_XX/to/deep/check_SF3/P_03" />
+			</Variable>
+		</Calibration>
+		<Model name="sub_model_02" modelPath="/E:/ModelsDev/SL/DataStoreMemory/ml2015asp1/sub_model_02.mdl" type="SimulinkModel" />
+		<Scope uid="2CO" name="sub_XX" path="datastore_examples/my_frame/top_A/sub_D1/sub_XX" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="sub_model_02/sub_XX" subsystemLogging="on">
+			<Calibration name="P_03" path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" origin="explicit_param">
+				<CalibrationUsage path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" blockAttribute="Parameter" />
+				<Variable varid="varif_721" signalType="boolean" isFloat="yes">
+					<ifName ifid="if_721" initValue="0" lsb="1" offset="0" displayName="P_03" identifier="PARAMETER:to/deep/check_SF3/P_03" />
+				</Variable>
+			</Calibration>
+			<Model name="sub_model_02" modelPath="/E:/ModelsDev/SL/DataStoreMemory/ml2015asp1/sub_model_02.mdl" type="SimulinkModel" />
+			<Scope uid="2CP" name="from" path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/from" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="sub_model_02/sub_XX/from" subsystemLogging="on">
+				<DataStoreRead name="In1" path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/from/In1" physicalPath="sub_model_02/sub_XX/from/In1" portNumber="0" signal="local_DS_02" compositeSig="none">
+					<Variable varid="varif_726" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_726" lsb="1" offset="0" displayName="In1@local_DS_02" identifier="INPUT:In1" />
+					</Variable>
+				</DataStoreRead>
+				<DataStoreRead name="In2" path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/from/In2" physicalPath="sub_model_02/sub_XX/from/In2" portNumber="0" signal="DS_08" compositeSig="none">
+					<Variable varid="varif_727" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_727" lsb="1" offset="0" displayName="In2@DS_08" identifier="INPUT:In2" />
+					</Variable>
+				</DataStoreRead>
+				<OutPort name="Out1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_728" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_728" lsb="1" offset="0" displayName="Out1" identifier="OUTPUT:Out1" />
+					</Variable>
+				</OutPort>
+				<OutPort name="Out2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_729" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_729" lsb="1" offset="0" displayName="Out2" identifier="OUTPUT:Out2" />
+					</Variable>
+				</OutPort>
+				<Model name="sub_model_02" modelPath="/E:/ModelsDev/SL/DataStoreMemory/ml2015asp1/sub_model_02.mdl" type="SimulinkModel" />
+			</Scope>
+			<Scope uid="2CQ" name="to" path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/to" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="sub_model_02/sub_XX/to" subsystemLogging="on">
+				<InPort name="In1" portNumber="1" compositeSig="none">
+					<Variable varid="varif_736" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_736" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+					</Variable>
+				</InPort>
+				<InPort name="In2" portNumber="2" compositeSig="none">
+					<Variable varid="varif_737" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_737" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+					</Variable>
+				</InPort>
+				<DataStoreWrite name="Out2" path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/to/deep/Out2" physicalPath="sub_model_02/sub_XX/to/deep/Out2" portNumber="0" signal="DS_08" compositeSig="none">
+					<Variable varid="varif_738" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_738" lsb="1" offset="0" displayName="Out2@DS_08" identifier="OUTPUT:deep/Out2" />
+					</Variable>
+				</DataStoreWrite>
+				<Calibration name="P_03" path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" origin="explicit_param">
+					<CalibrationUsage path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" blockAttribute="Parameter" />
+					<Variable varid="varif_739" signalType="boolean" isFloat="yes">
+						<ifName ifid="if_739" initValue="0" lsb="1" offset="0" displayName="P_03" identifier="PARAMETER:deep/check_SF3/P_03" />
+					</Variable>
+				</Calibration>
+				<Model name="sub_model_02" modelPath="/E:/ModelsDev/SL/DataStoreMemory/ml2015asp1/sub_model_02.mdl" type="SimulinkModel" />
+				<Scope uid="2CR" name="deep" path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/to/deep" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="sub_model_02/sub_XX/to/deep" subsystemLogging="on">
+					<InPort name="In1" portNumber="1" compositeSig="none">
+						<Variable varid="varif_746" signalType="boolean" isFloat="yes">
+							<ifName ifid="if_746" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+						</Variable>
+					</InPort>
+					<InPort name="In2" portNumber="2" compositeSig="none">
+						<Variable varid="varif_747" signalType="boolean" isFloat="yes">
+							<ifName ifid="if_747" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+						</Variable>
+					</InPort>
+					<DataStoreWrite name="Out2" path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/to/deep/Out2" physicalPath="sub_model_02/sub_XX/to/deep/Out2" portNumber="0" signal="DS_08" compositeSig="none">
+						<Variable varid="varif_748" signalType="boolean" isFloat="yes">
+							<ifName ifid="if_748" lsb="1" offset="0" displayName="Out2@DS_08" identifier="OUTPUT:Out2" />
+						</Variable>
+					</DataStoreWrite>
+					<Calibration name="P_03" path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" origin="explicit_param">
+						<CalibrationUsage path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" blockAttribute="Parameter" />
+						<Variable varid="varif_749" signalType="boolean" isFloat="yes">
+							<ifName ifid="if_749" initValue="0" lsb="1" offset="0" displayName="P_03" identifier="PARAMETER:check_SF3/P_03" />
+						</Variable>
+					</Calibration>
+					<Model name="sub_model_02" modelPath="/E:/ModelsDev/SL/DataStoreMemory/ml2015asp1/sub_model_02.mdl" type="SimulinkModel" />
+					<Scope uid="2CS" name="check_SF3" path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" sampleTime="0.2" scopeKind="SUT" type="SimulinkScope" kind="STATEFLOW" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" subsystemLogging="on">
+						<InPort name="u" portNumber="1" compositeSig="none">
+							<Variable varid="varif_754" signalType="boolean" isFloat="yes">
+								<ifName ifid="if_754" lsb="1" offset="0" displayName="u" identifier="INPUT:u" />
+							</Variable>
+						</InPort>
+						<Calibration name="P_03" path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" origin="explicit_param">
+							<CalibrationUsage path="datastore_examples/my_frame/top_A/sub_D1/sub_XX/to/deep/check_SF3" physicalPath="sub_model_02/sub_XX/to/deep/check_SF3" blockAttribute="Parameter" />
+							<Variable varid="varif_755" signalType="boolean" isFloat="yes">
+								<ifName ifid="if_755" initValue="0" lsb="1" offset="0" displayName="P_03" identifier="PARAMETER:P_03" />
+							</Variable>
+						</Calibration>
+						<Model name="sub_model_02" modelPath="/E:/ModelsDev/SL/DataStoreMemory/ml2015asp1/sub_model_02.mdl" type="SimulinkModel" />
+					</Scope>
+				</Scope>
+			</Scope>
+		</Scope>
+	</Scope>
+</ExtractionModel>

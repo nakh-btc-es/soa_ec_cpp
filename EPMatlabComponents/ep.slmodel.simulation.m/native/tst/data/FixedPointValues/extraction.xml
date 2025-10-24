@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="2D0">
+	<Scope uid="2D0" name="Subsystem" path="FixedPointValues/Subsystem" sampleTime="0.02" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="FixedPointValues/Subsystem" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_820" signalType="double" isFloat="yes">
+				<ifName ifid="if_71" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_821" signalType="double" isFloat="yes">
+				<ifName ifid="if_72" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+			</Variable>
+		</InPort>
+		<InPort name="In3" portNumber="3" compositeSig="none">
+			<Variable varid="varif_822" signalType="double" isFloat="yes">
+				<ifName ifid="if_73" lsb="1" offset="0" displayName="In3" identifier="INPUT:In3" />
+			</Variable>
+		</InPort>
+		<InPort name="In4" portNumber="4" compositeSig="none">
+			<Variable varid="varif_823" signalType="fixdt(1,16,0.1,1)" isFloat="yes">
+				<ifName ifid="if_74" lsb="0.1" offset="1.0" displayName="In4" identifier="INPUT:In4" />
+			</Variable>
+		</InPort>
+		<InPort name="In5" portNumber="5" compositeSig="none">
+			<Variable varid="varif_824" signalType="fixdt(1,16,0.25,1)" isFloat="yes">
+				<ifName ifid="if_80" lsb="0.25" offset="1.0" displayName="In5" identifier="INPUT:In5" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_825" signalType="fixdt(1,16,0.5,5)" isFloat="yes">
+				<ifName ifid="if_75" lsb="0.5" offset="5.0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_826" signalType="fixdt(1,16,0.1,2)" isFloat="yes">
+				<ifName ifid="if_76" lsb="0.1" offset="2.0" displayName="Out2" identifier="OUTPUT:Out2" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out3" portNumber="3" compositeSig="none">
+			<Variable varid="varif_827" signalType="double" isFloat="yes">
+				<ifName ifid="if_77" lsb="1" offset="0" displayName="Out3" identifier="OUTPUT:Out3" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out4" portNumber="4" compositeSig="none">
+			<Variable varid="varif_828" signalType="fixdt(1,16,0.5,5)" isFloat="yes">
+				<ifName ifid="if_78" lsb="0.5" offset="5.0" displayName="Out4" identifier="OUTPUT:Out4" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out5" portNumber="5" compositeSig="none">
+			<Variable varid="varif_829" signalType="fixdt(1,16,0.1,0)" isFloat="yes">
+				<ifName ifid="if_81" lsb="0.1" offset="0.0" displayName="Out5" identifier="OUTPUT:Out5" />
+			</Variable>
+		</OutPort>
+		<Display name="Gain3" path="FixedPointValues/Subsystem/Gain3" physicalPath="FixedPointValues/Subsystem/Gain3" portNumber="1">
+			<Variable varid="varif_830" signalType="fixdt(1,16,3)" isFloat="yes">
+				<ifName ifid="if_79" lsb="0.125" offset="0.0" displayName="Gain3" identifier="LOCAL:Gain3" />
+			</Variable>
+		</Display>
+		<Calibration name="GAIN_FACTOR" path="FixedPointValues/Subsystem/Gain6" physicalPath="FixedPointValues/Subsystem/Gain6" origin="explicit_param">
+			<CalibrationUsage path="FixedPointValues/Subsystem/Gain6" physicalPath="FixedPointValues/Subsystem/Gain6" blockAttribute="Gain" />
+			<Variable varid="varif_831" signalType="fixdt(1,16,0.1,0)" isFloat="yes">
+				<ifName ifid="if_82" initValue="0.2" lsb="0.1" offset="0.0" displayName="GAIN_FACTOR" identifier="PARAMETER:Gain6/GAIN_FACTOR" />
+			</Variable>
+		</Calibration>
+		<Model name="FixedPointValues" modelPath="/E:/ModelsDev/SL/FixedPointValues/ml2015asp1/FixedPointValues.slx" type="SimulinkModel" />
+	</Scope>
+</ExtractionModel>

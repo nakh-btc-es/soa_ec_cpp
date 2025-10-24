@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="simplebc_EC"/>
+    <Architecture id="id1" name="simplebc_EC [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="simplebc_EC.c:1:simplebc_EC_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_pwron" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In2" refId="id0"/>
+        <Path path="BTCAnnotatedInport_tr" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In3" refId="id0"/>
+        <Path path="BTCAnnotatedInport_clk" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In4" refId="id0"/>
+        <Path path="BTCAnnotatedInport_gp" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In5" refId="id0"/>
+        <Path path="BTCAnnotatedInport_ap" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In6" refId="id0"/>
+        <Path path="BTCAnnotatedInport_flame" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In7" refId="id0"/>
+        <Path path="BTCAnnotatedInport_fs_m1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In8" refId="id0"/>
+        <Path path="BTCAnnotatedInport_fs_y1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In9" refId="id0"/>
+        <Path path="BTCAnnotatedInport_fs_ignition" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In10" refId="id0"/>
+        <Path path="BTCAnnotatedInport_lockout_reset" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In11" refId="id0"/>
+        <Path path="BTCAnnotatedInport_reg_ratio" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In12" refId="id0"/>
+        <Path path="BTCAnnotatedInport_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In13" refId="id0"/>
+        <Path path="BTCAnnotatedInport_In2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_m1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out2" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_y1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out3" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_ignition" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out4" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_statusdisp" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out5" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_errordisp" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out6" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_fanspeed" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out7" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_gp_test" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out8" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_ap_test" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out9" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_flame_test" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out10" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_unlock" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="burnercontroller/lockcontroller" refId="id0"/>
+      <Path path="simplebc_EC.c:1:simplebc_EC_step/lockcontroller.c:1:lockcontroller" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/lockcontroller/mainctrlock" refId="id0"/>
+        <Path path="mainctrlock" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/lockcontroller/srinplock" refId="id0"/>
+        <Path path="srinplock" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/lockcontroller/reset_in" refId="id0"/>
+        <Path path="BTCAnnotatedInport_lockout_reset" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/lockcontroller/sroutplock" refId="id0"/>
+        <Path path="sroutplock" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/lockcontroller/lock" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_errordisp" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/lockcontroller/unlock" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_unlock" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="burnercontroller/maincontroller" refId="id0"/>
+      <Path path="simplebc_EC.c:1:simplebc_EC_step/maincontroller.c:1:maincontroller" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/maincontroller/clk" refId="id0"/>
+        <Path path="BTCAnnotatedInport_clk" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/maincontroller/unlock" refId="id0"/>
+        <Path path="BTCAnnotatedInport_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/maincontroller/lock" refId="id0"/>
+        <Path path="BTCAnnotatedInport_In2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/maincontroller/pwron_in" refId="id0"/>
+        <Path path="BTCAnnotatedInport_pwron" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/maincontroller/tr_in" refId="id0"/>
+        <Path path="BTCAnnotatedInport_tr" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/maincontroller/gp_on" refId="id0"/>
+        <Path path="gp_on" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/maincontroller/ap_on" refId="id0"/>
+        <Path path="ap_on" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/maincontroller/flame_on" refId="id0"/>
+        <Path path="flame_on" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/maincontroller/m1_on" refId="id0"/>
+        <Path path="m1_on" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/maincontroller/y1_on" refId="id0"/>
+        <Path path="y1_on" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/maincontroller/ignition_on" refId="id0"/>
+        <Path path="ignition_on" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/maincontroller/stateno" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_statusdisp" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/maincontroller/mainctrllock" refId="id0"/>
+        <Path path="mainctrlock" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="burnercontroller/fanspeedcontrol" refId="id0"/>
+      <Path path="simplebc_EC.c:1:simplebc_EC_step/fanspeedcontrol.c:1:fanspeedcontrol" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/fanspeedcontrol/stateno" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_statusdisp" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/fanspeedcontrol/reg_ratio" refId="id0"/>
+        <Path path="BTCAnnotatedInport_reg_ratio" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/fanspeedcontrol/fanspeed" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_fanspeed" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="burnercontroller/input_verification" refId="id0"/>
+      <Path path="simplebc_EC.c:1:simplebc_EC_step/input_verification.c:1:input_verification" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/input_verification/In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_gp" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/input_verification/In2" refId="id0"/>
+        <Path path="BTCAnnotatedInport_ap" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/input_verification/In3" refId="id0"/>
+        <Path path="BTCAnnotatedInport_flame" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/input_verification/Out1" refId="id0"/>
+        <Path path="gp_on" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/input_verification/Out2" refId="id0"/>
+        <Path path="ap_on" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/input_verification/Out3" refId="id0"/>
+        <Path path="flame_on" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/input_verification/Out4" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_gp_test" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/input_verification/Out5" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_ap_test" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/input_verification/Out6" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_flame_test" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/input_verification/Out7" refId="id0"/>
+        <Path path="srinplock" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="burnercontroller/output_verification" refId="id0"/>
+      <Path path="simplebc_EC.c:1:simplebc_EC_step/output_verification.c:1:output_verification" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/output_verification/In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_fs_m1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/output_verification/In2" refId="id0"/>
+        <Path path="BTCAnnotatedInport_fs_y1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/output_verification/In3" refId="id0"/>
+        <Path path="BTCAnnotatedInport_fs_ignition" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/output_verification/In4" refId="id0"/>
+        <Path path="m1_on" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/output_verification/In5" refId="id0"/>
+        <Path path="y1_on" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="burnercontroller/output_verification/In6" refId="id0"/>
+        <Path path="ignition_on" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/output_verification/Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_m1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/output_verification/Out2" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_y1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/output_verification/Out3" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_ignition" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="burnercontroller/output_verification/Out4" refId="id0"/>
+        <Path path="sroutplock" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

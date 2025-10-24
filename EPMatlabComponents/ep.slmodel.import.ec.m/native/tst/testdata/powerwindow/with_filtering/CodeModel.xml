@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="detect_obstacle_endstop.c" path="E:/EP2/git_repo/Dev/EPSimulinkModel/com.btc.ep.slmodel.import.ec.m/native/tst/tmpdir/tmp_ut_ats_analyze_01/powerwindow_ec_ert_rtw"/>
+    <File annotate="yes" id="ID72" kind="source" name="powerwindow_ec.c" path="E:/EP2/git_repo/Dev/EPSimulinkModel/com.btc.ep.slmodel.import.ec.m/native/tst/tmpdir/tmp_ut_ats_analyze_01/powerwindow_ec_ert_rtw"/>
+    <File annotate="yes" id="ID73" kind="source" name="validate_driver.c" path="E:/EP2/git_repo/Dev/EPSimulinkModel/com.btc.ep.slmodel.import.ec.m/native/tst/tmpdir/tmp_ut_ats_analyze_01/powerwindow_ec_ert_rtw"/>
+    <File annotate="yes" id="ID74" kind="source" name="validate_passenger.c" path="E:/EP2/git_repo/Dev/EPSimulinkModel/com.btc.ep.slmodel.import.ec.m/native/tst/tmpdir/tmp_ut_ats_analyze_01/powerwindow_ec_ert_rtw"/>
+    <File annotate="no" id="ID75" kind="source" name="getSimulationTime.c" path="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.import.ec.m\native\tst\tmpdir\tmp_ut_ats_analyze_01\powerwindow_ec_ep_stubs"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.import.ec.m\native\tst\tmpdir\tmp_ut_ats_analyze_01"/>
+    <IncludePath path="C:\Matlab\R2017b\simulink\include\sf_runtime"/>
+    <IncludePath path="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.import.ec.m\native\tst\tmpdir\tmp_ut_ats_analyze_01\powerwindow_ec_ert_rtw"/>
+    <IncludePath path="C:\Matlab\R2017b\extern\include"/>
+    <IncludePath path="C:\Matlab\R2017b\simulink\include"/>
+    <IncludePath path="C:\Matlab\R2017b\rtw\c\src"/>
+    <IncludePath path="C:\Matlab\R2017b\rtw\c\src\ext_mode\common"/>
+    <IncludePath path="C:\Matlab\R2017b\rtw\c\ert"/>
+  </IncludePaths>
+  <Functions archName="powerwindow_ec [C-Code]">
+    <Function fileref="ID72" initFunc="powerwindow_ec_initialize" name="powerwindow_ec_step" preStepFunc="btcStepCounter">
+      <Interface>
+        <InterfaceObj kind="in" var="driver_up"/>
+        <InterfaceObj kind="in" var="driver_down"/>
+        <InterfaceObj kind="in" var="passenger_up"/>
+        <InterfaceObj kind="in" var="passenger_down"/>
+        <InterfaceObj kind="in" var="obstacle_position"/>
+        <InterfaceObj kind="in" var="window_position"/>
+        <InterfaceObj kind="out" var="obstacle_detection"/>
+        <InterfaceObj kind="out" var="move_up"/>
+        <InterfaceObj kind="out" var="move_down"/>
+        <InterfaceObj kind="cal" var="auto_down_time"/>
+        <InterfaceObj kind="cal" var="auto_up_time"/>
+        <InterfaceObj kind="cal" var="emergency_down_time"/>
+        <InterfaceObj kind="cal" var="position_endstop_top"/>
+        <InterfaceObj kind="disp" var="endstop_bottom"/>
+        <InterfaceObj kind="disp" var="endstop_top"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID73" initFunc="powerwindow_ec_initialize" name="validate_driver" preStepFunc="btcStepCounter">
+      <Interface>
+        <InterfaceObj kind="in" var="driver_up"/>
+        <InterfaceObj kind="in" var="driver_down"/>
+        <InterfaceObj kind="in" var="endstop_top"/>
+        <InterfaceObj kind="in" var="endstop_bottom"/>
+        <InterfaceObj kind="out" var="driver_validated_neutral"/>
+        <InterfaceObj kind="out" var="driver_validated_up"/>
+        <InterfaceObj kind="out" var="driver_validated_down"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID74" initFunc="powerwindow_ec_initialize" name="validate_passenger" preStepFunc="btcStepCounter">
+      <Interface>
+        <InterfaceObj kind="in" var="passenger_up"/>
+        <InterfaceObj kind="in" var="passenger_down"/>
+        <InterfaceObj kind="in" var="endstop_top"/>
+        <InterfaceObj kind="in" var="endstop_bottom"/>
+        <InterfaceObj kind="out" var="passenger_validated_neutral"/>
+        <InterfaceObj kind="out" var="passenger_validated_up"/>
+        <InterfaceObj kind="out" var="passenger_validated_down"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="powerwindow_ec_initialize" name="detect_obstacle_endstop" preStepFunc="btcStepCounter">
+      <Interface>
+        <InterfaceObj kind="in" var="obstacle_position"/>
+        <InterfaceObj kind="in" var="window_position"/>
+        <InterfaceObj kind="in" var="prev_move_up"/>
+        <InterfaceObj kind="out" var="obstacle_detection"/>
+        <InterfaceObj kind="out" var="endstop_top"/>
+        <InterfaceObj kind="out" var="endstop_bottom"/>
+        <InterfaceObj kind="cal" var="position_endstop_top"/>
+        <InterfaceObj kind="disp" var="endstop_bottom"/>
+        <InterfaceObj kind="disp" var="endstop_top"/>
+      </Interface>
+    </Function>
+  </Functions>
+</CodeModel>

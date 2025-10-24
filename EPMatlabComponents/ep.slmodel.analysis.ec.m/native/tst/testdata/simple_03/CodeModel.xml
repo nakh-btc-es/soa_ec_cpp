@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File annotate="yes" id="ID71" kind="source" name="modelbuses.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_03\modelbuses_ert_rtw"/>
+    <File annotate="yes" id="ID72" kind="source" name="subfct1.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_03\modelbuses_ert_rtw"/>
+    <File annotate="yes" id="ID73" kind="source" name="subfct2.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_03\modelbuses_ert_rtw"/>
+    <File annotate="yes" id="ID74" kind="source" name="subfct2bis.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_03\modelbuses_ert_rtw"/>
+    <File annotate="yes" id="ID75" kind="source" name="subfct3.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_03\modelbuses_ert_rtw"/>
+    <File annotate="yes" id="ID76" kind="source" name="subfct3bis.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_03\modelbuses_ert_rtw"/>
+    <File annotate="yes" id="ID77" kind="source" name="subfct4.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_03\modelbuses_ert_rtw"/>
+    <File annotate="yes" id="ID78" kind="source" name="subfct5.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_03\modelbuses_ert_rtw"/>
+    <File annotate="yes" id="ID79" kind="source" name="subfct6.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_03\modelbuses_ert_rtw"/>
+    <File annotate="yes" id="ID80" kind="source" name="subfct7.c" path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_03\modelbuses_ert_rtw"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_03"/>
+    <IncludePath path="C:\Users\developer\AppData\Local\Temp\ut20200415T080751\tmp_ut_simple_03\modelbuses_ert_rtw"/>
+    <IncludePath path="C:\Matlab\R2019b\extern\include"/>
+    <IncludePath path="C:\Matlab\R2019b\simulink\include"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\src"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\src\ext_mode\common"/>
+    <IncludePath path="C:\Matlab\R2019b\rtw\c\ert"/>
+  </IncludePaths>
+  <Functions archName="modelbuses [C-Code]">
+    <Function fileref="ID71" initFunc="modelbuses_initialize" name="modelbuses_step">
+      <Interface>
+        <InterfaceObj access=".FlptSig1" kind="in" var="InBusA"/>
+        <InterfaceObj access=".FlptSig2" kind="in" var="InBusA"/>
+        <InterfaceObj kind="in" var="InB"/>
+        <InterfaceObj kind="in" var="InC"/>
+        <InterfaceObj access=".BusSig1.FlptSig1" kind="in" var="InBusOfBuses"/>
+        <InterfaceObj access=".BusSig1.FlptSig2" kind="in" var="InBusOfBuses"/>
+        <InterfaceObj access=".BusSig2.FxptSig1" kind="in" var="InBusOfBuses"/>
+        <InterfaceObj access=".BusSig2.FxptSig2" kind="in" var="InBusOfBuses"/>
+        <InterfaceObj kind="in" var="InD"/>
+        <InterfaceObj access=".DoubleFlptSig" kind="in" var="InBusOfSignalAndBus"/>
+        <InterfaceObj access=".BusSig1.FlptSig1" kind="in" var="InBusOfSignalAndBus"/>
+        <InterfaceObj access=".BusSig1.FlptSig2" kind="in" var="InBusOfSignalAndBus"/>
+        <InterfaceObj access=".FlptSig1" kind="out" var="OutBusA"/>
+        <InterfaceObj access=".FlptSig2" kind="out" var="OutBusA"/>
+        <InterfaceObj kind="out" var="OutB"/>
+        <InterfaceObj kind="out" var="OutC"/>
+        <InterfaceObj kind="out" var="OutD"/>
+        <InterfaceObj kind="out" var="OutE"/>
+        <InterfaceObj kind="out" var="OutF"/>
+        <InterfaceObj kind="out" var="OutG"/>
+        <InterfaceObj kind="out" var="OutH"/>
+        <InterfaceObj kind="out" var="OutI"/>
+        <InterfaceObj access=".FlptSig1" kind="out" var="localObj_OutJ"/>
+        <InterfaceObj access=".FlptSig2" kind="out" var="localObj_OutJ"/>
+        <InterfaceObj access=".FlptSig1" kind="out" var="localObj_OutK"/>
+        <InterfaceObj access=".FlptSig2" kind="out" var="localObj_OutK"/>
+        <InterfaceObj access=".FlptSig1" kind="out" var="localObj_OutL"/>
+        <InterfaceObj access=".FlptSig2" kind="out" var="localObj_OutL"/>
+        <InterfaceObj access=".BusSig1.FlptSig1" kind="out" var="localObj_OutM"/>
+        <InterfaceObj access=".BusSig1.FlptSig2" kind="out" var="localObj_OutM"/>
+        <InterfaceObj access=".BusSig2.FxptSig1" kind="out" var="localObj_OutM"/>
+        <InterfaceObj access=".BusSig2.FxptSig2" kind="out" var="localObj_OutM"/>
+        <InterfaceObj access=".FlptSig1" kind="out" var="localObj_OutN"/>
+        <InterfaceObj access=".FlptSig2" kind="out" var="localObj_OutN"/>
+        <InterfaceObj kind="out" var="localObj_OutO"/>
+        <InterfaceObj kind="out" var="localObj_OutP"/>
+        <InterfaceObj kind="out" var="localObj_OutR"/>
+        <InterfaceObj kind="out" var="localObj_OutS"/>
+        <InterfaceObj kind="out" var="localObj_OutT"/>
+        <InterfaceObj kind="out" var="localObj_OutU"/>
+        <InterfaceObj kind="out" var="localObj_OutV"/>
+        <InterfaceObj kind="out" var="localObj_OutW"/>
+        <InterfaceObj kind="out" var="localObj_OutX"/>
+        <InterfaceObj access=".BusSig1.FlptSig1" kind="out" var="localObj_OutZ"/>
+        <InterfaceObj access=".BusSig1.FlptSig2" kind="out" var="localObj_OutZ"/>
+        <InterfaceObj access=".BusSig2.FxptSig1" kind="out" var="localObj_OutZ"/>
+        <InterfaceObj access=".BusSig2.FxptSig2" kind="out" var="localObj_OutZ"/>
+        <InterfaceObj kind="out" var="localObj_OutAA"/>
+        <InterfaceObj kind="out" var="localObj_OutAB"/>
+        <InterfaceObj access=".localObj_OutAC.DoubleFlptSig" kind="out" var="MotherStruct"/>
+        <InterfaceObj access=".localObj_OutAC.BusSig1.FlptSig1" kind="out" var="MotherStruct"/>
+        <InterfaceObj access=".localObj_OutAC.BusSig1.FlptSig2" kind="out" var="MotherStruct"/>
+        <InterfaceObj kind="cal" var="K"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID71" initFunc="modelbuses_initialize" name="Top_func">
+      <Interface>
+        <InterfaceObj access=".FlptSig1" kind="in" var="InBusA"/>
+        <InterfaceObj access=".FlptSig2" kind="in" var="InBusA"/>
+        <InterfaceObj kind="in" var="InB"/>
+        <InterfaceObj kind="in" var="InC"/>
+        <InterfaceObj access=".BusSig1.FlptSig1" kind="in" var="InBusOfBuses"/>
+        <InterfaceObj access=".BusSig1.FlptSig2" kind="in" var="InBusOfBuses"/>
+        <InterfaceObj access=".BusSig2.FxptSig1" kind="in" var="InBusOfBuses"/>
+        <InterfaceObj access=".BusSig2.FxptSig2" kind="in" var="InBusOfBuses"/>
+        <InterfaceObj kind="in" var="InD"/>
+        <InterfaceObj access=".DoubleFlptSig" kind="in" var="InBusOfSignalAndBus"/>
+        <InterfaceObj access=".BusSig1.FlptSig1" kind="in" var="InBusOfSignalAndBus"/>
+        <InterfaceObj access=".BusSig1.FlptSig2" kind="in" var="InBusOfSignalAndBus"/>
+        <InterfaceObj access=".FlptSig1" kind="out" var="OutBusA"/>
+        <InterfaceObj access=".FlptSig2" kind="out" var="OutBusA"/>
+        <InterfaceObj kind="out" var="OutB"/>
+        <InterfaceObj kind="out" var="OutC"/>
+        <InterfaceObj kind="out" var="OutD"/>
+        <InterfaceObj kind="out" var="OutE"/>
+        <InterfaceObj kind="out" var="OutF"/>
+        <InterfaceObj kind="out" var="OutG"/>
+        <InterfaceObj kind="out" var="OutH"/>
+        <InterfaceObj kind="out" var="OutI"/>
+        <InterfaceObj access=".FlptSig1" kind="out" var="localObj_OutJ"/>
+        <InterfaceObj access=".FlptSig2" kind="out" var="localObj_OutJ"/>
+        <InterfaceObj access=".FlptSig1" kind="out" var="localObj_OutK"/>
+        <InterfaceObj access=".FlptSig2" kind="out" var="localObj_OutK"/>
+        <InterfaceObj access=".FlptSig1" kind="out" var="localObj_OutL"/>
+        <InterfaceObj access=".FlptSig2" kind="out" var="localObj_OutL"/>
+        <InterfaceObj access=".BusSig1.FlptSig1" kind="out" var="localObj_OutM"/>
+        <InterfaceObj access=".BusSig1.FlptSig2" kind="out" var="localObj_OutM"/>
+        <InterfaceObj access=".BusSig2.FxptSig1" kind="out" var="localObj_OutM"/>
+        <InterfaceObj access=".BusSig2.FxptSig2" kind="out" var="localObj_OutM"/>
+        <InterfaceObj access=".FlptSig1" kind="out" var="localObj_OutN"/>
+        <InterfaceObj access=".FlptSig2" kind="out" var="localObj_OutN"/>
+        <InterfaceObj kind="out" var="localObj_OutO"/>
+        <InterfaceObj kind="out" var="localObj_OutP"/>
+        <InterfaceObj kind="out" var="localObj_OutR"/>
+        <InterfaceObj kind="out" var="localObj_OutS"/>
+        <InterfaceObj kind="out" var="localObj_OutT"/>
+        <InterfaceObj kind="out" var="localObj_OutU"/>
+        <InterfaceObj kind="out" var="localObj_OutV"/>
+        <InterfaceObj kind="out" var="localObj_OutW"/>
+        <InterfaceObj kind="out" var="localObj_OutX"/>
+        <InterfaceObj access=".BusSig1.FlptSig1" kind="out" var="localObj_OutZ"/>
+        <InterfaceObj access=".BusSig1.FlptSig2" kind="out" var="localObj_OutZ"/>
+        <InterfaceObj access=".BusSig2.FxptSig1" kind="out" var="localObj_OutZ"/>
+        <InterfaceObj access=".BusSig2.FxptSig2" kind="out" var="localObj_OutZ"/>
+        <InterfaceObj kind="out" var="localObj_OutAA"/>
+        <InterfaceObj kind="out" var="localObj_OutAB"/>
+        <InterfaceObj access=".localObj_OutAC.DoubleFlptSig" kind="out" var="MotherStruct"/>
+        <InterfaceObj access=".localObj_OutAC.BusSig1.FlptSig1" kind="out" var="MotherStruct"/>
+        <InterfaceObj access=".localObj_OutAC.BusSig1.FlptSig2" kind="out" var="MotherStruct"/>
+        <InterfaceObj kind="cal" var="K"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID73" initFunc="modelbuses_initialize" name="subfct2">
+      <Interface>
+        <InterfaceObj access=".FlptSig1" kind="in" var="OutBusA"/>
+        <InterfaceObj access=".FlptSig2" kind="in" var="OutBusA"/>
+        <InterfaceObj kind="out" var="OutB"/>
+        <InterfaceObj kind="out" var="OutC"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID75" initFunc="modelbuses_initialize" name="subfct3">
+      <Interface>
+        <InterfaceObj kind="in" var="InB"/>
+        <InterfaceObj kind="in" var="InC"/>
+        <InterfaceObj kind="out" var="OutF"/>
+        <InterfaceObj kind="out" var="OutG"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID77" initFunc="modelbuses_initialize" name="subfct4">
+      <Interface>
+        <InterfaceObj access=".FlptSig1" kind="in" var="InBusB"/>
+        <InterfaceObj access=".FlptSig2" kind="in" var="InBusB"/>
+        <InterfaceObj access=".FlptSig1" kind="out" var="InBusB"/>
+        <InterfaceObj access=".FlptSig2" kind="out" var="InBusB"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID78" initFunc="modelbuses_initialize" name="subfct5">
+      <Interface>
+        <InterfaceObj access=".BusSig1.FlptSig1" kind="in" var="InBusOfBuses"/>
+        <InterfaceObj access=".BusSig1.FlptSig2" kind="in" var="InBusOfBuses"/>
+        <InterfaceObj access=".BusSig2.FxptSig1" kind="in" var="InBusOfBuses"/>
+        <InterfaceObj access=".BusSig2.FxptSig2" kind="in" var="InBusOfBuses"/>
+        <InterfaceObj access=".BusSig1.FlptSig1" kind="out" var="localObj_OutZ"/>
+        <InterfaceObj access=".BusSig1.FlptSig2" kind="out" var="localObj_OutZ"/>
+        <InterfaceObj access=".BusSig2.FxptSig1" kind="out" var="localObj_OutZ"/>
+        <InterfaceObj access=".BusSig2.FxptSig2" kind="out" var="localObj_OutZ"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID79" initFunc="modelbuses_initialize" name="subfct6">
+      <Interface>
+        <InterfaceObj kind="in" var="InB"/>
+        <InterfaceObj kind="in" var="InD"/>
+        <InterfaceObj kind="out" var="InB"/>
+        <InterfaceObj kind="out" var="InD"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID80" initFunc="modelbuses_initialize" name="subfct7">
+      <Interface>
+        <InterfaceObj access=".DoubleFlptSig" kind="in" var="InBusOfSignalAndBus"/>
+        <InterfaceObj access=".BusSig1.FlptSig1" kind="in" var="InBusOfSignalAndBus"/>
+        <InterfaceObj access=".BusSig1.FlptSig2" kind="in" var="InBusOfSignalAndBus"/>
+        <InterfaceObj access=".localObj_OutAC.DoubleFlptSig" kind="out" var="MotherStruct"/>
+        <InterfaceObj access=".localObj_OutAC.BusSig1.FlptSig1" kind="out" var="MotherStruct"/>
+        <InterfaceObj access=".localObj_OutAC.BusSig1.FlptSig2" kind="out" var="MotherStruct"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID72" initFunc="modelbuses_initialize" name="subfct1">
+      <Interface>
+        <InterfaceObj access=".FlptSig1" kind="in" var="InBusA"/>
+        <InterfaceObj access=".FlptSig2" kind="in" var="InBusA"/>
+        <InterfaceObj access=".FlptSig1" kind="out" var="OutBusA"/>
+        <InterfaceObj access=".FlptSig2" kind="out" var="OutBusA"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID74" initFunc="modelbuses_initialize" name="subfct2bis">
+      <Interface>
+        <InterfaceObj kind="out" var="OutD"/>
+        <InterfaceObj kind="out" var="OutE"/>
+      </Interface>
+    </Function>
+    <Function fileref="ID76" initFunc="modelbuses_initialize" name="subfct3bis">
+      <Interface>
+        <InterfaceObj kind="in" var="InB"/>
+        <InterfaceObj kind="in" var="InC"/>
+        <InterfaceObj kind="out" var="OutH"/>
+        <InterfaceObj kind="out" var="OutI"/>
+      </Interface>
+    </Function>
+  </Functions>
+</CodeModel>

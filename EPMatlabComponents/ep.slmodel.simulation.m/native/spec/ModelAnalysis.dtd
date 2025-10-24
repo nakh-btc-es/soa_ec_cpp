@@ -1,0 +1,672 @@
+<!-- DTD description for the Model Analysis.                              -->
+<!--                                                                      -->
+<!-- author: koopmann@osc-es.de, steenblock@osc-es.de                     -->
+<!--                                                                      -->
+<!-- (c) 2005-2006 OSC Embedded Systems AG, Germany.                      -->
+
+
+<!-- ma:ModelAnalysis: Root Node containing all subsystems                -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      Subsystem*       flat list of all subsystems                    -->
+<!--      SystemTimeVar?   info about the SystemTime variable             -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      xmlns:ma    namespace: "http://www.osc-es.de/ModelAnalysis"     -->
+
+<!ELEMENT ma:ModelAnalysis (ma:Subsystem*, ma:SystemTimeVar?)>
+<!ATTLIST ma:ModelAnalysis
+               xmlns:ma CDATA #REQUIRED>
+
+<!-- ma:Subsystem: Node for a subsystem                                   -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      Children?      If existing, all children subsystems are listed. -->
+<!--      Parents?       If existing, all parent subsystems are listed.   -->
+<!--      CallStacks?    call paths of the step function                  -->
+<!--      Interface      Interface description of the subsystem.          -->
+<!--      Signature      Interface description of the step function.      -->
+<!--      ModelReference If existing, the corresponding mode reference    -->
+<!--                     block in TL and/or SL are listed.                -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      id          Unique ID for xml node. Needed for references.      -->
+<!--                  (ss%d, lfdnr1)                                      -->
+<!--      tlPath      full path to the subsystem in the TargetLink model. -->
+<!--      slPath      full Path to the subsystem in the Simulink model,   -->
+<!--                  if available.                                       -->
+<!--      sampleTime  of the current subsystem.                           -->
+<!--      stepFct     Name of the Step Function.                          -->
+<!--                  (might be empty for DummySubsystems)                -->
+<!--      initFct     Name of the global Init Function. (TL RESTART)      -->
+<!--      postInitFct Name of the second global Init Function. (TL INIT)  -->
+<!--      module      Name of C-file containing the Step Function.        -->
+<!--      storage     Storage of the StepFunction: global, static, extern -->
+<!--      isDummy     "yes" if Subsystem is a DummySubsystem              -->
+<!--                  otherwise "no" (default = "no")                     -->
+<!--      milSupport  "yes" if Subsystem is supported for MIL Simulation  -->
+<!--                  otherwise "no" (default for non-dummy = "yes")      -->
+<!--      description Content of the description field in the function    -->
+<!--                  block.                                              -->
+<!--      kind        current node is a Stateflow chart or a SL subsystem -->
+<!--      cvUsage     "true" if CV engine can be used for Step Function,  -->
+<!--                  otherwise "false" (default = "true")                -->
+<!--      peculiarities Binary code whose fields symbolize peculiarities:  -->
+<!--                          1. Bit (LSB/most right Bit): Float Usage    -->
+<!--                          2. Bit: Recursion                           -->
+<!--                          3. Bit: Usage of undefined Variable         -->
+<!--                          4. Bit: Usage of undefined Function         -->
+<!--                          5. Bit: Function named "main"               -->
+<!--                          6. Bit: Dummy Subsystem                     -->
+<!ELEMENT ma:Subsystem (ma:Children?,ma:Parents?,ma:CallStacks?,ma:Interface,ma:Signature?,ma:Function?,ma:ModelReference*)>
+<!ATTLIST ma:Subsystem
+               id            ID           #REQUIRED         
+               tlPath        CDATA        #REQUIRED
+               slPath        CDATA        #IMPLIED
+               sampleTime    CDATA        #REQUIRED
+               stepFct       CDATA        #REQUIRED
+               initFct       CDATA        #IMPLIED
+               postInitFct   CDATA        #IMPLIED
+               module        CDATA        #IMPLIED
+               storage       (global|
+                             static|
+                             extern)      #IMPLIED
+               isDummy       (yes|no)     #IMPLIED
+               milSupport    (yes|no)     #IMPLIED
+               description   CDATA        #IMPLIED
+               kind          (SUBSYSTEM|
+                             STATEFLOW)   #REQUIRED 
+               cvUsage       (true|false) #IMPLIED
+               peculiarities CDATA        #IMPLIED>
+
+
+<!-- ma:Function: Node for a function                                     -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      kind        kind of Function (currently only "proxStep")        -->
+<!--      name        name of Function                                    -->
+<!--                  (might be empty for DummySubsystems)                -->
+<!--      module      name of C-file containing the Function              -->
+<!--      storage     storage of the Function: global, static, extern     -->
+<!ELEMENT ma:Function EMPTY>
+<!ATTLIST ma:Function
+               kind          (proxyStep)  #IMPLIED
+               name          CDATA        #REQUIRED
+               module        CDATA        #IMPLIED
+               storage       (global |
+                              static |
+                              extern)     #IMPLIED>
+
+
+<!-- ma:CallStacks: list of call paths                                    -->
+<!--                                                                      -->
+<!ELEMENT ma:CallStacks (ma:CallStack+)>
+
+
+<!-- ma:CallStacks: info describing a single call stack                   -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      path        path consisting of all function names on stack      -->
+<!--                  separated by a slash                                -->
+<!ELEMENT ma:CallStack EMPTY>
+<!ATTLIST ma:CallStack path  CDATA  #REQUIRED>
+
+
+<!-- ma:ModelReference: ModelReference info of a subsystem                -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      path        path to the subsystem                               -->
+<!--      model       model name of the model reference                   -->
+<!--      kind        SL or TL model                                      -->
+<!ELEMENT ma:ModelReference EMPTY>
+<!ATTLIST ma:ModelReference path  CDATA  #REQUIRED
+                            model CDATA  #REQUIRED
+                            kind (SL|TL) #REQUIRED>
+
+<!-- ma:Parents: Describes the list of parent subsystems                  -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      SubsystemRef+ List of references to subsystems.                 -->
+<!ELEMENT ma:Parents (ma:SubsystemRef+)>
+
+<!-- ma:Children: Describes the list of children subsystems or blocks.    -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      SubsystemRef  references to child subsystems                    -->
+<!--      Block         block contained inside the Subsystem              -->
+<!ELEMENT ma:Children (ma:SubsystemRef|ma:Block)+>
+
+<!-- ma:Block: some arbitrary block from the model                        -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      name        name of block                                       -->
+<!--      path        model path of block                                 -->
+<!--      type        type of block                                       -->
+<!ELEMENT ma:Block EMPTY>
+<!ATTLIST ma:Block name  CDATA  #REQUIRED
+                   path  CDATA  #REQUIRED
+                   type  CDATA  #REQUIRED>
+
+<!-- ma:SubsystemRef: References a subsystem.                             -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      refID       id of the subsystem.                                -->
+<!ELEMENT ma:SubsystemRef EMPTY>
+<!ATTLIST ma:SubsystemRef refID IDREF #REQUIRED>
+
+<!-- ma:Interface: Describes the interface of a subsystem.                -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      Input*      List of input objects of the interface.             -->
+<!--      Output*     List of output objects of the interface.            -->
+<!--      Parameter*  List of parameter objects                           -->
+<!ELEMENT ma:Interface (ma:Input*,ma:Output*,ma:Parameter*)>
+
+<!-- ma:Input: Describes an input object of the interface.                -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      Port        Port description                                    -->
+<!--      Calibration Calibration description                             -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      id          global unique ID of the input.                      -->
+<!--                  (ip%d, lfdnr2)                                      -->
+<!ELEMENT ma:Input (ma:Port|ma:Calibration)>
+<!ATTLIST ma:Input
+               id       ID    #REQUIRED>
+
+<!-- ma:Output: Describes an output object of the interface.              -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      Port             Port description                               -->
+<!--      DisplayVariable  Observable DISP variable                       -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      id          global unique ID of the output                      -->
+<!--                  (op%d, lfdnr3)                                      -->
+<!ELEMENT ma:Output (ma:Port|ma:Display)>
+<!ATTLIST ma:Output
+               id       ID    #REQUIRED>
+
+<!-- ma:Parameter: Describes a parameter object of the interface.         -->
+<!--                                                                      -->
+<!-- Parameter objects are used in the C code but haven't a corresponding -->
+<!-- Simulink port representation, for example variables of class         -->
+<!-- TL_CG_FCN_REUSE_SUB_STRUCT for resused subsystems or the trigger_id  -->
+<!-- in SF functions.                                                     -->
+<!-- Another example: Block variables with variable class FCN_* without   -->
+<!-- any corresponding Simulink port representation.                      -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      paramNr         >=  1: Position in the input argument list      -->
+<!--                          of function.                                -->
+<!--                      == -1: Function Return Value.                   -->
+<!--                      ==  0: Global Parameter                         -->
+<!--      expression      call expression of the current parameter,       -->
+<!--                      i.e.: &(ISV_var)                                -->
+<!--      declaration     for variables of class FCN_* a declaration is   -->
+<!--                      necessary, the var name is chosen automatically -->
+<!--                      i.e.: int _OSC_FCN_PARAMETER_%d_;               -->
+<!--      module          file name of module where the global parameter  -->
+<!--                      variable is declared                            -->
+<!--                      every parameter without attribute declaration   -->
+<!--                      must have this attribute                        -->
+<!--      argName         name of referenced parameter                    -->
+<!--                      every parameter without attribute declaration   -->
+<!--                      must have this attribute                        -->
+<!--      argType         type of referenced parameter                    -->
+<!--                      every parameter without attribute declaration   -->
+<!--                      must have this attribute                        -->
+<!ELEMENT ma:Parameter EMPTY>
+<!ATTLIST ma:Parameter
+               paramNr          CDATA        #REQUIRED
+               expression       CDATA        #IMPLIED
+               declaration      CDATA        #IMPLIED
+               module           CDATA        #IMPLIED
+               argName          CDATA        #IMPLIED
+               argType          CDATA        #IMPLIED>
+
+
+<!-- ma:Signature: Describes the signature of the StepFunction.           -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      Args            All arguments of the function.                  -->
+<!--      InterfaceVars   All interface variables of the function.        -->
+<!--                                                                      -->
+<!ELEMENT ma:Signature (ma:Args, ma:InterfaceVars?)>
+
+
+<!-- ma:Args: All argments inside signature of the StepFunction.          -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      Arg*              Arguments of the function.                    -->
+<!--                                                                      -->
+<!ELEMENT ma:Args (ma:Arg*)>
+
+
+<!-- NOTE: following Node is not used at all by ModelAnalysis             -->
+<!--       maybe it should be removed                                     -->
+<!--                                                                      -->
+<!-- ma:InterfaceVars: All IF variables of the StepFunction.              -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      InterfaceVar*     IF variable of the function.                  -->
+<!--                                                                      -->
+<!ELEMENT ma:InterfaceVars (ma:InterfaceVar*)>
+
+
+<!-- ma:Arg: Describes an argument inside the Signature of a Function.    -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      pos             >=  1: Position in the input argument list      -->
+<!--                          of function.                                -->
+<!--                      == -1: Function Return Value.                   -->
+<!--      name            always set                                      -->
+<!--      ext_name        name as used by ET from the outside of func     -->
+<!--      type            type of argument                                -->
+<!--      usage           used by value or reference ("c" == const):      -->
+<!--                      "val" (default), "cval", "ptr", "cptr",         -->
+<!--                      "ptrCval", "cptrCval", "fptr"                   -->
+<!--      ext_usage       type of ext var (ext_name) value or pointer     -->
+<!--                      "val" (default), "ptr"                          -->
+<!--      width1          width1 of 1-dim or 2-dim arrays                 -->
+<!--      width2          width2 of 2-dim arrays                          -->
+<!ELEMENT ma:Arg EMPTY>
+<!ATTLIST ma:Arg
+             pos          CDATA        #REQUIRED
+             name         CDATA        #REQUIRED
+             ext_name     CDATA        #REQUIRED
+             type         CDATA        #REQUIRED
+             usage        (val     |
+                           cval    |
+                           ptr     |
+                           cptr    |
+                           ptrCval |
+                           cptrCval|
+                           fptr)       #IMPLIED
+             ext_usage    (val     |
+                           ptr)        #IMPLIED
+             width1        CDATA       #IMPLIED
+             width2        CDATA       #IMPLIED>
+
+<!-- ma:InterfaceVar: Describes an IF variable of a Function.             -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      ivid            unique ID of IF variable  (iv%d, lfdnr6)        -->
+<!--      name            always set                                      -->
+<!--      type            type of argument                                -->
+<!--      usage           used by value or reference ("c" == const):      -->
+<!--                      "val" (default), "cval", "ptr", "cptr",         -->
+<!--                      "ptrCval", "cptrCval"                           -->
+<!--      width1          width1 of 1-dim or 2-dim arrays                 -->
+<!--      width2          width2 of 2-dim arrays                          -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      InterfaceVar*   Nested Interface variables (inside structs).    -->
+<!--                                                                      -->
+<!ELEMENT ma:InterfaceVar EMPTY>
+<!ATTLIST ma:InterfaceVar
+             ivid         ID           #REQUIRED
+             name         CDATA        #IMPLIED
+             type         CDATA        #IMPLIED
+             usage        (val     |
+                           cval    |
+                           ptr     |
+                           cptr    |
+                           ptrCval |
+                           cptrCval)   #IMPLIED
+             width1        CDATA       #IMPLIED
+             width2        CDATA       #IMPLIED>
+
+<!-- ma:Port: Describes a single port.                                    -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      Variable        Definition of the variable. A port can have more-->
+<!--                      than one variable (->BusPort).                  -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      tlPath          Path to the port/DSM in the TargetLink model.   -->
+<!--      slPath          Path to the port/DSM in the Simulink model,     -->
+<!--                      if available.                                   -->
+<!--      portNumber      Port number in the Simulink model.              -->
+<!--                      (note: for DSM always == 0)                     -->
+<!--      signal          name of the Injected/Tunnelling Signal          -->
+<!--                      (only available for DSM Ports)                  -->
+<!--      compositeSig    kind of signal that goes through the port       -->
+<!--                      (default is none, i.e. a non-composite sig)     -->
+<!ELEMENT ma:Port (ma:Variable+)>
+<!ATTLIST ma:Port
+               tlPath          CDATA          #REQUIRED
+               slPath          CDATA          #IMPLIED
+               portNumber      CDATA          #REQUIRED
+               signal          CDATA          #IMPLIED
+               compositeSig   (none|mux|bus|pseudo_bus)  #IMPLIED>
+
+<!-- ma:Variable: Definition of a variable. (defined by a TL port)        -->
+<!--                                                                      -->
+<!-- This node is used for defining interface variables.                  -->
+<!-- A variable might be global defined (paramNr = 0) or                  -->
+<!-- the return value of the function (only outputs) or part of the       -->
+<!-- parameter list of a function (paramNr >= 1).                         -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      ifName          Interface Name. The name of the respective      -->
+<!--                      variable in the code-interface. For global      -->
+<!--                      variables the name is identical to the varName. -->
+<!--                      For parameter (paramNr>0) or function return    -->
+<!--                      values (paramNr==-1) a global variable          -->
+<!--                      with this name has to be defined.               -->
+<!--                      The number of ifNames is equal with the signal  -->
+<!--                      width.                                          -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      varid           unique ID of this node  (var%d, lfdnr4)         -->
+<!--      paramNr         >=  1: Position in the parameter list.          -->
+<!--                      ==  0: global defined variable.                 -->
+<!--                      == -1: Function Return Value.                   -->
+<!--      usage           A parameter (paramNr > 0) might be used either  -->
+<!--                      as call by value(VAL) or as call by reference   -->
+<!--                      value (REF).                                    -->
+<!--                      A function return value might also be used as   -->
+<!--                      return by value(VAL) or as return by reference  -->
+<!--                      value (REF).                                    -->
+<!--                                                                      -->
+<!--                      Only if (paramNr!=0) this attribute need to be  -->
+<!--                      defined.                                        -->
+<!--      globalName      If variable is global, the name of the variable.-->
+<!--                      Otherwise, the attribute does not exist.        -->
+<!--      module          Name of C-file containing the variable.         -->
+<!--      typeName        of the current variable. for example struct     -->
+<!--                      typedef.                                        -->
+<!--      width1          Width of the first array index. Exists, if and  -->
+<!--                      only if the variable is of type array.          -->
+<!--      width2          Width of the second array index. Only exists,   -->
+<!--                      if and only if the variable is a two-dimensional-->
+<!--                      array.                                          -->
+<!--      isDummy         If "yes" the variable is not present in the     -->
+<!--                      original C-code. Default is "no".               -->
+<!--      isMacro         If "yes" the variable name is a Macro symbol    -->
+<!--                      that will be replaced. Default is "no".         -->
+<!--                                                                      -->
+<!ELEMENT ma:Variable (ma:ifName+)>
+<!ATTLIST ma:Variable
+               varid            ID        #REQUIRED
+               paramNr          CDATA     #REQUIRED
+               usage            (VAL|REF) #IMPLIED
+               globalName       CDATA     #IMPLIED
+               module           CDATA     #IMPLIED
+               typeName         CDATA     #REQUIRED
+               width1           CDATA     #IMPLIED
+               width2           CDATA     #IMPLIED
+               isDummy          (yes|no)  #IMPLIED
+               isMacro          (yes|no)  #IMPLIED>
+
+<!-- ma:ifName: Definition of a variable name.                            -->
+<!--                                                                      -->
+<!-- This node is used to define the internal unique interface name.      -->
+<!-- For global variables the name is identical to the varName. For       -->
+<!-- parameter or function return values a global variable with this name -->
+<!-- has to be defined.                                                   -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      DataType        Definition of the datatype.                     -->
+<!--      DisplayInfo     Info for displaying the IF object.              -->
+<!--      VarRef*         References to Interface Variables (TODO +).     -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      ifid            unique ID of this node.  (if%d, lfdnr5)         -->
+<!--      signalName      Name of the signal                              -->
+<!--      signalType      Type of the signal (might be missing).          -->
+<!--      slSignalType    Type of the signal in SL model (m. be m.).      -->
+<!--      min             Min value allowed by Model Spec (if any)        -->
+<!--      max             Max value allowed by Model Spec (if any)        -->
+<!--      slMin           Min value allowed by SL Model Spec (if any)     -->
+<!--      slMax           Max value allowed by SL Model Spec (if any)     -->
+<!--      index1          First array index of vector. (might be negative)-->
+<!--                      For scalars (non arrays) the attribute does not -->
+<!--                      exist.                                          -->
+<!--      index2          Second array index of matrix.(might be negative)-->
+<!--                      For one-dimensional arrays or scalars the       -->
+<!--                      attribute does not exist.                       -->
+<!--      accessPath      struct/array access path without first var name -->
+<!--                      example: ".a.var"                               -->
+<!--      initValue       variable initialization, if any                 -->
+<!--      invisible       specify if the interface object is visible      -->
+<!ELEMENT ma:ifName (ma:DataType, ma:DisplayInfo, ma:VarRef*)>
+<!ATTLIST ma:ifName
+               ifid             ID      #REQUIRED
+               signalName       CDATA   #IMPLIED
+               signalType       CDATA   #IMPLIED
+               slSignalType     CDATA   #IMPLIED
+               min              CDATA   #IMPLIED
+               max              CDATA   #IMPLIED
+               slMin            CDATA   #IMPLIED
+               slMax            CDATA   #IMPLIED
+               index1           CDATA   #IMPLIED
+               index2           CDATA   #IMPLIED
+               accessPath       CDATA   #IMPLIED
+               initValue        CDATA   #IMPLIED
+               invisible        CDATA   #IMPLIED>
+
+
+<!-- ma:VarRef: Reference to Interface Variable.                          -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      ivref           reference to an Interface Variable              -->
+<!--      idx1            index1 for 1-dim or 2-dim array IF vars         -->
+<!--      idx2            index2 for 2-dim array IF vars                  -->
+<!ELEMENT ma:VarRef EMPTY>
+<!ATTLIST ma:VarRef    
+             ivref         IDREF       #REQUIRED
+             idx1          CDATA       #IMPLIED
+             idx2          CDATA       #IMPLIED>
+
+<!-- ma:DisplayInfo: Info data for displaying the interface object.       -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      ModelInfo+    Info related to model view.                       -->
+<!--      (eventually also CodeInfo)                                      -->
+<!--                                                                      -->
+<!ELEMENT ma:DisplayInfo (ma:ModelInfo+)>
+
+
+<!-- ma:ModelInfo:   Info for interface object related to model view.     -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      relPath        relative path from subsystem to block            -->
+<!--                     (excluding the block name)                       -->
+<!--      name           name of block in model                           -->
+<!--      specifier      additional info for identifying the signal       -->
+<!--                                                                      -->
+<!ELEMENT ma:ModelInfo EMPTY>
+<!ATTLIST ma:ModelInfo
+               relPath    CDATA   #REQUIRED
+               name       CDATA   #REQUIRED
+               specifier  CDATA   #REQUIRED>
+
+
+<!-- ma:Calibration: Definition of a calibratable variable.               -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      ModelContext+   List of model contexts the variable is used in. -->
+<!--      Variable        Definition of the variable. A CAL object can    -->
+<!--                      have only one variable.                         -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      tlBlockPath     Full path to the TargetLink block, inducing the -->
+<!--                      calibration variable.                           -->
+<!--                      Note: This attribute is required if 'usage'     -->
+<!--                      attribute of this same node has _not_ the value -->
+<!--                      "explict_param".                                -->
+<!--      slBlockPath     Full Path to the corresponding Simulink block.  -->
+<!--      usage           "explicit_param", "const", "sat_lower",         -->
+<!--                      "sat_upper", "sf_const", "sf_param",            -->
+<!--                      "switch_threshold", "relay_out_on",             -->
+<!--                      "relay_out_off","relay_switch_on",              -->
+<!--                      "relay_switch_off", "gain"                      -->
+<!--      name            Name of the Calibration variable as used in     -->
+<!--                      the model.                                      -->
+<!--                      Notes: For Stateflow variables equal to         -->
+<!--                      the attribute "sfVariable".                     -->
+<!--                      Potentially non-empty only for                  -->
+<!--                      usage="explicit_param".                         -->
+<!--      ddPath          Path to DataDictionary pool object              -->
+<!--                      representing the Calibration variable.          -->
+<!--                      Potentially non-empty only for                  -->
+<!--                      usage="explicit_param".                         -->
+<!--      workspace       expression/variable used on MIL level for CAL   -->
+<!--                      Potentially non-empty only for                  -->
+<!--                      usage="explicit_param".                         -->
+<!--      restricted      Value is "yes" if Calibration variable is       -->
+<!--                      restricted by to its initial value.             -->
+<!--                      (default is "no")                               -->
+<!--      sfVariable      Name of the Stateflow variable for usage        -->
+<!--                      sf_const or sf_param.                           -->
+<!--      startIdx        FirstIndex used for variables in SF-Charts.     -->
+<!--                      Default value is 1.                             -->
+<!ELEMENT ma:Calibration (ma:ModelContext+, ma:Variable)>
+<!ATTLIST ma:Calibration
+               tlBlockPath     CDATA              #IMPLIED
+               slBlockPath     CDATA              #IMPLIED
+               usage           (explicit_param|
+                                const|
+                                sat_lower|
+                                sat_upper|
+                                sf_const|
+                                sf_param|
+                                switch_threshold|
+                                relay_out_on|
+                                relay_out_off|
+                                relay_switch_on|
+                                relay_switch_off|
+                                gain)             #REQUIRED
+               name            CDATA              #IMPLIED
+               ddPath          CDATA              #IMPLIED
+               workspace       CDATA              #IMPLIED
+               restricted      (yes|no)           #IMPLIED
+               sfVariable      CDATA              #IMPLIED
+               startIdx        CDATA              #IMPLIED>
+
+<!-- ma:ModelContext: Info about the model context of a variable.         -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      tlPath          Full path to the TargetLink block that uses     -->
+<!--                      the variable.                                   -->
+<!--      slPath          Full path to the Simulink block that            -->
+<!--                      corresponds to tlPath.                          -->
+<!--      blockKind       TL block kind (often == MaskType)               -->
+<!--      blockType       SL block type                                   -->
+<!--      blockUsage      SL usage in block                               -->
+<!--      usage           "explicit_param", "const", "sat_lower",         -->
+<!--                      "sat_upper", "sf_const", "sf_param",            -->
+<!--                      "switch_threshold", "relay_out_on",             -->
+<!--                      "relay_out_off","relay_switch_on",              -->
+<!--                      "relay_switch_off", "gain"                      -->
+<!--      sfVariable      Name of the Stateflow variable for usage        -->
+<!--                      sf_const or sf_param.                           -->
+<!--      restriction     flag for restrictions in this context           -->
+<!--                      example: tl_relay:offswitch, ...                -->
+<!--                      (if not set, no restriction in this context)    -->
+<!ELEMENT ma:ModelContext EMPTY>
+<!ATTLIST ma:ModelContext
+               tlPath          CDATA              #IMPLIED
+               slPath          CDATA              #IMPLIED
+               blockKind       CDATA              #IMPLIED
+               blockType       CDATA              #IMPLIED
+               blockUsage      CDATA              #IMPLIED
+               usage           (explicit_param|
+                                const|
+                                sat_lower|
+                                sat_upper|
+                                sf_const|
+                                sf_param|
+                                switch_threshold|
+                                relay_out_on|
+                                relay_out_off|
+                                relay_switch_on|
+                                relay_switch_off|
+                                gain)             #REQUIRED
+               sfVariable      CDATA              #IMPLIED
+               restriction     CDATA              #IMPLIED>
+
+<!-- ma:Display: Definition of a DISP (observable) variable.              -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      Variable        Definition of the variable. A DISP object can   -->
+<!--                      have multiple variables.                        -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      tlBlockPath     Full path to the TargetLink block, inducing the -->
+<!--                      DISP variable.                                  -->
+<!--      slBlockPath     Full Path to the corresponding Simulink block.  -->
+<!--      portNumber      block output port number                        -->
+<!--                      - required for SL blocks.                       -->
+<!--      sfVariable      Name of the Stateflow variable                  -->
+<!--                      - required for Stateflow blocks.                -->
+<!--      startIdx        FirstIndex used for variables in SF-Charts.     -->
+<!--                      Default value is 1.                             -->
+<!--      compositeSig    kind of signal that goes through the port       -->
+<!--                      (default is none, i.e. a non-composite sig)     -->
+<!ELEMENT ma:Display (ma:Variable+)>
+<!ATTLIST ma:Display
+               tlBlockPath     CDATA             #REQUIRED   
+               slBlockPath     CDATA             #IMPLIED
+               portNumber      CDATA             #IMPLIED
+               sfVariable      CDATA             #IMPLIED
+               startIdx        CDATA             #IMPLIED
+               compositeSig   (none|mux|bus|pseudo_bus)  #IMPLIED>
+
+<!-- ma:DataType: Definition of a datatype. Width is always singular.     -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      Scaling         Singular Scaling node.                          -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      tlTypeName      Int16, UInt32, ... (TL Basetype names!)         -->
+<!--      tlTypeMin       Minimum of the C-datatype (-32768, -128, ...)   -->
+<!--                      in integer, for isFloat=yes in floating point   -->
+<!--      tlTypeMax       Maximum of the C-datatype (32767, 127, ...      -->
+<!--                      in integer, for isFloat=yes in floating point   -->
+<!--      isFloat         Determines, if the datatype is of kind float.   -->
+<!--                      (default is "no".)                              -->
+<!ELEMENT ma:DataType (ma:Scaling)>
+<!ATTLIST ma:DataType
+               tlTypeName      CDATA    #REQUIRED   
+               tlTypeMin       CDATA    #REQUIRED
+               tlTypeMax       CDATA    #REQUIRED
+               isFloat         (yes|no) #IMPLIED>
+
+<!-- ma:Scaling: Scaling definition.                                      -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      lsb             as float number (0.5 instead of 2^-1)           -->
+<!--      offset          as float number.                                -->
+<!--      upper           upper limit as flp number.                      -->
+<!--                      (constrained or implemented, without exponent)  -->
+<!--      lower           lower limit as flp number.                      -->
+<!--                      (constrained or implemented, without exponent)  -->
+<!--      physUnit        physical unit of the scaled value, if available -->
+<!ELEMENT ma:Scaling EMPTY>
+<!ATTLIST ma:Scaling
+               lsb             CDATA #REQUIRED   
+               offset          CDATA #REQUIRED
+               upper           CDATA #REQUIRED   
+               lower           CDATA #REQUIRED
+               physUnit        CDATA #IMPLIED>  
+
+<!-- ma:SystemTimeVar: variable representing the System Time              -->
+<!--                                                                      -->
+<!--                                                                      -->
+<!--   Subnodes:                                                          -->
+<!--      DataType        Type of the System Time variable.               -->
+<!--                                                                      -->
+<!--   Attributes:                                                        -->
+<!--      name            name of the variable                            -->
+<!--      module          name of C-file containing the variable          -->
+<!--                                                                      -->
+<!ELEMENT ma:SystemTimeVar (ma:DataType)>
+<!ATTLIST ma:SystemTimeVar
+               name             CDATA     #REQUIRED
+               module           CDATA     #IMPLIED>

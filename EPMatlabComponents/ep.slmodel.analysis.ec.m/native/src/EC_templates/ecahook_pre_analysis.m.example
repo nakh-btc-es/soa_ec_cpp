@@ -1,0 +1,23 @@
+function stConfig = ecahook_pre_analysis(stConfig, stAdditionalInfo)
+%%%%%
+%   stConfig = ecahook_pre_analysis(stConfig, stModelInfo)
+%
+%   stConfig : for pre-analysis hook only an empty structure
+%
+% -----------------------------------------------------------------------------
+% 
+% Additional Infos
+% 
+% -----------------------------------------------------------------------------
+%
+%   stAdditionalInfo           (struct)    struct containing the following fields
+%      .sModelName             (string)       the model's name
+%      .sModelPath             (string)       the model's path 
+%      .sInitFilePath          (string)       the init file's path
+%      .sInitFileName          (string)       the init file's name
+%      .sStubCodeFolder        (string)       the stub Code Folder
+%      .casReferencedModels    (cell)         all models referenced by the main model
+%      .bIsWrapperMode         (boolean)      special mode that is active in the Wrapper workflow
+%      .sWrappedAutosarModel   (string)       <empty> for pre-analysis!!
+%%%%%%
+end

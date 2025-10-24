@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="223">
+	<Scope uid="223" name="resettableSub" path="resettableSub" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="resettableSub" subsystemLogging="on">
+		<InPort name="In1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_113" signalName="Input" signalType="double" isFloat="yes">
+				<ifName ifid="if_113" lsb="1" offset="0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<InPort name="In2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_114" signalName="Enable Signal" signalType="double" isFloat="yes">
+				<ifName ifid="if_114" lsb="1" offset="0" displayName="In2" identifier="INPUT:In2" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none">
+			<Variable varid="varif_115" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes">
+				<ifName ifid="if_116" index1="1" lsb="1" offset="0" displayName="Out1(1)" identifier="OUTPUT:Out1(1)" />
+				<ifName ifid="if_117" index1="2" lsb="1" offset="0" displayName="Out1(2)" identifier="OUTPUT:Out1(2)" />
+			</Variable>
+		</OutPort>
+		<OutPort name="Out2" portNumber="2" compositeSig="none">
+			<Variable varid="varif_118" width1="2" signalType="double" signalDim="[1 2]" isFloat="yes">
+				<ifName ifid="if_119" index1="1" lsb="1" offset="0" displayName="Out2(1)" identifier="OUTPUT:Out2(1)" />
+				<ifName ifid="if_120" index1="2" lsb="1" offset="0" displayName="Out2(2)" identifier="OUTPUT:Out2(2)" />
+			</Variable>
+		</OutPort>
+		<Model name="resettableSub" modelPath="/E:/ModelsDev/UT_MIL_SL/ResettableSubs/ml2015asp1/resettableSub.slx" type="SimulinkModel" />
+		<Scope uid="221" name="Discrete Time Integrator Falling Reset" path="resettableSub/Discrete Time Integrator&#xA;Falling Reset" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="resettableSub/Discrete Time Integrator&#xA;Falling Reset" subsystemLogging="on">
+			<InPort name="In" portNumber="1" compositeSig="none">
+				<Variable varid="varif_123" signalName="Input" signalType="double" isFloat="yes">
+					<ifName ifid="if_123" lsb="1" offset="0" displayName="In" identifier="INPUT:In" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out" portNumber="1" compositeSig="none">
+				<Variable varid="varif_124" signalType="double" isFloat="yes">
+					<ifName ifid="if_124" lsb="1" offset="0" displayName="Out" identifier="OUTPUT:Out" />
+				</Variable>
+			</OutPort>
+			<Model name="resettableSub" modelPath="/E:/ModelsDev/UT_MIL_SL/ResettableSubs/ml2015asp1/resettableSub.slx" type="SimulinkModel" />
+		</Scope>
+		<Scope uid="222" name="Discrete Time Integrator Rising Reset" path="resettableSub/Discrete Time Integrator&#xA;Rising Reset" sampleTime="0.1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="resettableSub/Discrete Time Integrator&#xA;Rising Reset" subsystemLogging="on">
+			<InPort name="In" portNumber="1" compositeSig="none">
+				<Variable varid="varif_127" signalName="Input" signalType="double" isFloat="yes">
+					<ifName ifid="if_127" lsb="1" offset="0" displayName="In" identifier="INPUT:In" />
+				</Variable>
+			</InPort>
+			<OutPort name="Out" portNumber="1" compositeSig="none">
+				<Variable varid="varif_128" signalType="double" isFloat="yes">
+					<ifName ifid="if_128" lsb="1" offset="0" displayName="Out" identifier="OUTPUT:Out" />
+				</Variable>
+			</OutPort>
+			<Model name="resettableSub" modelPath="/E:/ModelsDev/UT_MIL_SL/ResettableSubs/ml2015asp1/resettableSub.slx" type="SimulinkModel" />
+		</Scope>
+	</Scope>
+</ExtractionModel>

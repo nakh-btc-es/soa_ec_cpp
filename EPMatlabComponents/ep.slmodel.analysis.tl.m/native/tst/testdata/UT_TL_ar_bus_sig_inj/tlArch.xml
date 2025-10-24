@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.19" modelPath="E:\ModelsDev\UT_TL\ar_bus_sig_inj\ml2017b_tl43\ar_bus_sig_inj.slx" modelCreationDate="2023-06-05T14:07:16" creator="developer">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.3" patchLevel="p7"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.19" modelPath="E:\ModelsDev\UT_TL\ar_bus_sig_inj\ml2017b_tl43\ar_bus_sig_inj.slx" creationDate="2023-06-05T14:07:16" modificationDate="2023-06-07T15:42:13">
+    <subsystem subsysID="ss1" physicalPath="ar_bus_sig_inj/Subsystem/Subsystem/Subsystem" path="Subsystem/Subsystem/Subsystem" sampleTime="1" name="Subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="InPort" physicalPath="ar_bus_sig_inj/Subsystem/Subsystem/Subsystem/InPort" path="Subsystem/Subsystem/Subsystem/InPort">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="0" name="RteDataStoreRead" physicalPath="ar_bus_sig_inj/Subsystem/Subsystem/Subsystem/ReceiverComSpec/RteDataStoreRead" path="Subsystem/Subsystem/Subsystem/ReceiverComSpec/RteDataStoreRead">
+        <miltype signalName="StatusReceiver">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="StatusReceiver">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+        <dataStoreMemory signalName="StatusReceiver"/>
+      </inport>
+      <inport portNumber="0" name="Data Store Read Bus" physicalPath="ar_bus_sig_inj/Subsystem/Subsystem/Subsystem/ReceiverComSpec/Data Store Read Bus" path="Subsystem/Subsystem/Subsystem/ReceiverComSpec/Data Store Read Bus">
+        <miltype>
+          <bus busType="non_virtual" busObjectName="transformerBus">
+            <signal signalName="ErrorReceiver.errorCode">
+              <double/>
+            </signal>
+            <signal signalName="ErrorReceiver.transformerClass">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus busType="non_virtual" busObjectName="transformerBus">
+            <signal signalName="ErrorReceiver.errorCode">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal signalName="ErrorReceiver.transformerClass">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+          </bus>
+        </siltype>
+        <dataStoreMemory signalName="ErrorReceiver"/>
+      </inport>
+      <inport portNumber="0" name="RteDataStoreRead" physicalPath="ar_bus_sig_inj/Subsystem/Subsystem/Subsystem/SenderComSpec/RteDataStoreRead" path="Subsystem/Subsystem/Subsystem/SenderComSpec/RteDataStoreRead">
+        <miltype signalName="StatusSender">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="StatusSender">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+        <dataStoreMemory signalName="StatusSender"/>
+      </inport>
+      <inport portNumber="0" name="FeedbDataStoreRead" physicalPath="ar_bus_sig_inj/Subsystem/Subsystem/Subsystem/SenderComSpec/FeedbDataStoreRead" path="Subsystem/Subsystem/Subsystem/SenderComSpec/FeedbDataStoreRead">
+        <miltype signalName="Feedback">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="Feedback">
+          <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        </siltype>
+        <dataStoreMemory signalName="Feedback"/>
+      </inport>
+      <inport portNumber="0" name="Data Store Read Bus" physicalPath="ar_bus_sig_inj/Subsystem/Subsystem/Subsystem/SenderComSpec/Data Store Read Bus" path="Subsystem/Subsystem/Subsystem/SenderComSpec/Data Store Read Bus">
+        <miltype>
+          <bus busType="non_virtual" busObjectName="transformerBus">
+            <signal signalName="ErrorSender.errorCode">
+              <double/>
+            </signal>
+            <signal signalName="ErrorSender.transformerClass">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus busType="non_virtual" busObjectName="transformerBus">
+            <signal signalName="ErrorSender.errorCode">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+            <signal signalName="ErrorSender.transformerClass">
+              <fixedPoint baseType="UInt8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+            </signal>
+          </bus>
+        </siltype>
+        <dataStoreMemory signalName="ErrorSender"/>
+      </inport>
+      <outport portNumber="1" name="OutPort" physicalPath="ar_bus_sig_inj/Subsystem/Subsystem/Subsystem/OutPort" path="Subsystem/Subsystem/Subsystem/OutPort">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="FeedbackOut" physicalPath="ar_bus_sig_inj/Subsystem/Subsystem/Subsystem/FeedbackOut" path="Subsystem/Subsystem/Subsystem/FeedbackOut">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="EqualOut" physicalPath="ar_bus_sig_inj/Subsystem/Subsystem/Subsystem/EqualOut" path="Subsystem/Subsystem/Subsystem/EqualOut">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

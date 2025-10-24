@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\22f42081f\system_time_float\TLProj\top_A" name="system.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\22f42081f\system_time_float\TLProj\top_A" name="top_A.c" kind="source" annotate="yes" id="fID2"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\22f42081f\system_time_float\TLSim" name="top_A_fri.c" kind="source" annotate="no" id="fID3"/>
+    <File name="btc_system_time.c" annotate="no" id="sysID1"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\22f42081f\system_time_float\TLProj\top_A"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\22.1p0\tmp\22f42081f\system_time_float\TLSim"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="system_time [C-Code]">
+    <Function name="top_A" sampleTime="0.02" preStepFunc="system_time_0_02">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_InPort" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_InPort1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_InPort2" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_InPort3" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_OutPort2" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa2_sub_B1" fileref="fID2" sampleTime="0.02" preStepFunc="system_time_0_02">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_InPort1" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa2_Discrete_Time_Integrator" scaling="scID1" initVal="3.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa3_sub_B2" fileref="fID2" sampleTime="0.02" preStepFunc="system_time_0_02">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_InPort1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_InPort3" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa3_Discrete_Time_Integrator" scaling="scID1" initVal="3.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_ar_param_01_support4.4\ut_results\AddModelInfo.xml" modelVersion="7.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_ar_param_01_support4.4\ar_params.slx" modelCreationDate="2021-03-02T14:30:16" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="7.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240916T095445_6544\tmp_ar_param_01_support4.4\ar_params.slx" creationDate="2021-03-02T14:30:16" modificationDate="2024-09-16T10:13:54">
+    <subsystem subsysID="ss1" physicalPath="ar_params" path="" sampleTime="0.1" name="ar_params" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ar_params/In1" path="In1">
+        <int32/>
+      </inport>
+      <parameter name="p_A" path="Constant" physicalPath="ar_params/Constant" origin="explicit_param" workspace="p_A" initValue="0.01">
+        <double/>
+        <usageContext path="Constant" physicalPath="ar_params/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="p_B" path="Constant1" physicalPath="ar_params/Constant1" origin="explicit_param" workspace="p_B">
+        <nonUniformArray size="4">
+          <signal index="1" initValue="0.1">
+            <single/>
+          </signal>
+          <signal index="2" initValue="0.2">
+            <single/>
+          </signal>
+          <signal index="3" initValue="0.3">
+            <single/>
+          </signal>
+          <signal index="4" initValue="0.4">
+            <single/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Constant1" physicalPath="ar_params/Constant1" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="p_C" path="Constant2" physicalPath="ar_params/Constant2" origin="explicit_param" workspace="p_C" initValue="1.0">
+        <boolean/>
+        <usageContext path="Constant2" physicalPath="ar_params/Constant2" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="p_D" path="Constant3" physicalPath="ar_params/Constant3" origin="explicit_param" workspace="p_D" initValue="0.75">
+        <fixedPoint simulinkTypeName="fixdt(1,16,0.25,2)" wordLength="16" isSigned="1" slope="0.25" bias="2.0" min="-8190.0" max="8193.75"/>
+        <usageContext path="Constant3" physicalPath="ar_params/Constant3" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="p_E" path="Constant4" physicalPath="ar_params/Constant4" origin="explicit_param" workspace="p_E">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="1.0">
+                <int32/>
+              </signal>
+              <signal index="2" initValue="2.0">
+                <int32/>
+              </signal>
+              <signal index="3" initValue="3.0">
+                <int32/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="4.0">
+                <int32/>
+              </signal>
+              <signal index="2" initValue="5.0">
+                <int32/>
+              </signal>
+              <signal index="3" initValue="6.0">
+                <int32/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Constant4" physicalPath="ar_params/Constant4" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="ar_params/Out1" path="Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="ar_params/Out2" path="Out2">
+        <array size="4" startIndex="1">
+          <single/>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="ar_params/Out3" path="Out3">
+        <boolean/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="ar_params/Out4" path="Out4">
+        <fixedPoint simulinkTypeName="fixdt(1,16,0.25,2)" wordLength="16" isSigned="1" slope="0.25" bias="2.0" min="-8190.0" max="8193.75"/>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="ar_params/Out5" path="Out5">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="ar_params/Out6" path="Out6">
+        <int32/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

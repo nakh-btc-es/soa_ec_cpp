@@ -1,0 +1,1107 @@
+function stTopModel = ep_ec_aa_wrapper_toplevel_create(stModel, sToplevelName)
+% Creates the main wrapper model for the Adaptive Autosar wrapper model usecase
+%
+%  function ep_ec_aa_wrapper_toplevel_create(stModel, sToplevelName)
+%
+%  INPUT                        DESCRIPTION
+%
+%   - stModel                Information about the original model
+%   - sToplevelName          The name of the wrapper model
+%
+%  OUTPUT                       DESCRIPTION
+%    - stIntegModel
+%         .hModel              (string)  Handle of the created wrapper model(might be empty if not successful)
+%         .sModelFile          (string)  Full path to the created wrapper model(might be empty if not successful)
+%         .sInitScript         (string)  Full path to the created init script of the wrapper model(might be empty if not successful)
+%         .sDataDictionary     (string)  The data dictionary belonging to the wrapper model
+%         .hSchedulerSub       (string)  Handle of the scheduler subsystem
+%         .stIntegModel        (struct)  Struct containing information about integration model
+%
+%
+
+
+%%
+stTopModel = struct( ...
+    'hModel',            [], ...
+    'sModelFile',        '', ...
+    'sInitScript',       '', ...
+    'sDataDictionary',   '', ...
+    'hSchedulerSub',     [], ...
+    'stIntegModel',      [], ...
+    'stServerMockModel', []);
+
+stTopModel.hModel = Eca.aa.wrapper.Utils.createModel(sToplevelName, Eca.aa.wrapper.Tag.Toplevel);
+try
+    oWrapperData = i_createWrapperDataStorageFor(sToplevelName, stModel.sName, stModel.sInitScript, stModel.sPath);
+    oWrapperConfig = i_createWrapperConfig(sToplevelName, stModel.sName, stModel);
+
+    % mock the server model
+    [stTopModel.stServerMockModel, hServerModelRef] = ...
+        i_createMockServerModel(stModel, stTopModel.hModel, oWrapperConfig, oWrapperData);
+
+    % add integration model
+    [stTopModel.stIntegModel, hVariantSub] = i_addAndWireIntegrationModel(stTopModel.hModel, stModel, ...
+        oWrapperData, oWrapperConfig, stTopModel.stServerMockModel.casServerMockNames, stModel.aoProvidedMethods, sToplevelName);
+
+    % add scheduler
+    dCompiledStepSize = get_param(stModel.sName, 'CompiledStepSize');
+    stTopModel.hSchedulerSub = i_addAndConnectScheduler(sToplevelName, dCompiledStepSize, hVariantSub, stTopModel.stIntegModel);
+
+    i_layoutModel(hVariantSub, sToplevelName, hServerModelRef, stTopModel.stIntegModel);
+
+    % save model
+    stTopModel.sModelFile = fullfile(stModel.sPath, [sToplevelName, '.slx']);
+    Eca.aa.wrapper.Utils.saveModel(sToplevelName, stTopModel.sModelFile);
+
+    % evaluate DD and init-script info
+    stTopModel.sInitScript = i_removeIfInitScriptNotNeeded(oWrapperData.getInitScript());
+    stTopModel.sDataDictionary = oWrapperData.getFileDD();
+
+    % activate Schedule Editor if necessary
+    i_activateScheduleEditorIfNeeded(stTopModel.hModel, stTopModel.stIntegModel);
+catch oEx
+    if exist('oWrapperData', 'var')
+        i_cleanupAfterError(stTopModel, oWrapperData);
+        oWrapperData.close();
+    else
+        i_cleanupAfterError(stTopModel);
+    end
+    rethrow(oEx);
+end
+end
+
+
+%%
+function i_cleanupAfterError(stTopModel, oWrapperData)
+ahOpenModels = stTopModel.hModel;
+if isfield(stTopModel.stServerMockModel, 'hModel')
+    ahOpenModels = [ahOpenModels, stTopModel.stServerMockModel.hModel];
+end
+if isfield(stTopModel.stIntegModel, 'hModel')
+    ahOpenModels = [ahOpenModels, stTopModel.stIntegModel.hModel];
+end
+i_closeModelsRobustly(ahOpenModels);
+if exist('oWrapperData', 'var')
+    oWrapperData.close();
+end
+end
+
+
+%%
+function [stIntegModel, hVariantSub] = i_addAndWireIntegrationModel(hTopLevelModel, stModel, oWrapperData, ...
+    oWrapperConfig, casServerMockNames, aoProvidedMethods, sToplevelName)
+
+casTriggerFunctionNames = cellfun(@(x) x.getCodeGlobalFunction, num2cell(aoProvidedMethods), 'UniformOutput', false);
+stIntegModel = ep_ec_aa_wrapper_integration_create(stModel, oWrapperData, oWrapperConfig, casServerMockNames, casTriggerFunctionNames);
+
+% trigger the sut-provided methods (mock clients) inside the integration and model and treat as step functions
+aoSLFctTriggers = i_addSutMethodSLFunctions(hTopLevelModel, stModel.aoProvidedMethods, oWrapperData);
+nPorts = numel(stIntegModel.aoRootInports) + numel(stIntegModel.aoFuncCalls);
+ahInports = ep_find_system(stIntegModel.hModel, 'SearchDepth', 1, 'FindAll', 'on', 'type', 'block', 'BlockType', 'Inport');
+
+if(nPorts==0)
+    
+adLastPosition = get_param(ahInports(nPorts), 'Position');
+sPath = stIntegModel.sIntegModelName;
+for i = 1:numel(aoSLFctTriggers)
+    aoSLFctTriggers(i).nPortNum = nPorts + i;
+    hNewTrigger = add_block('built-in/Inport', [sPath '/' aoSLFctTriggers(i).sPortName],...
+        'MakeNameUnique',        'on',...
+        'Position',              [adLastPosition(1), adLastPosition(2)+80, adLastPosition(3), adLastPosition(4)+80], ...
+        'showname',             'on', ...
+        'OutputFunctionCall',   'on');
+    adLastPosition = get_param(hNewTrigger, 'Position');
+
+    sSLFctName = aoSLFctTriggers(i).stSLFunction.sSLFunctionName;
+    hFctCallSub = i_addFunctionCallSub(stIntegModel.hModel, [sSLFctName '_sub'], sSLFctName);
+    set_param(hFctCallSub, 'Position', [adLastPosition(1)+100, adLastPosition(2)+22, adLastPosition(3)+200, adLastPosition(4)+45]);
+    stNewTriggerPCInfo = get_param(hNewTrigger, 'PortConnectivity');
+    stFctCallSubPCInfo = get_param(hFctCallSub, 'PortConnectivity');
+    add_line(sPath, [stNewTriggerPCInfo.Position; stFctCallSubPCInfo.Position]);
+end
+save_system(stIntegModel.hModel);
+stIntegModel.aoFuncCalls = [stIntegModel.aoFuncCalls, aoSLFctTriggers];
+stModel.aoInports = cat(1, stModel.aoInports, aoSLFctTriggers');
+
+
+if(stModel.bHasFieldsUpdate)
+    sExtraSubName = [stIntegModel.sIntegModelName, '_enh'];
+    hModelRefIntegrationModel =  i_createMainModelRefBlock(hTopLevelModel, stIntegModel.sIntegModelName);
+    hFieldsSub = i_createExtraSub(hTopLevelModel, hModelRefIntegrationModel, sExtraSubName, stIntegModel.sIntegModelName);
+
+    % add dummy Triggerports
+    aoMsgPorts = stIntegModel.aoRootInports(~cellfun(@isempty, {stIntegModel.aoRootInports.sMessageTriggeredSubName}));
+    aoMsgTriggerPorts = repmat(Eca.aa.wrapper.Port, 1, numel(aoMsgPorts));
+    nPorts = numel(stIntegModel.aoRootInports) + numel(stIntegModel.aoFuncCalls);
+    for i = 1:numel(aoMsgPorts)
+        aoMsgTriggerPorts(i) = i_createTriggerPort(aoMsgPorts(i).sMessageTriggeredSubName, nPorts + i);
+        aoMsgTriggerPorts(i).sMessageTriggeredSubName = aoMsgPorts(i).sMessageTriggeredSubName;
+        aoMsgTriggerPorts(i).dSampleTime = -1;
+    end
+    stIntegModel.aoMessageTriggerPorts = aoMsgTriggerPorts;
+    stModel.aoInports = cat(1, stModel.aoInports, aoMsgTriggerPorts');
+
+    sPath = [oWrapperData.sWrapperModelName '/' stIntegModel.sIntegModelName];
+    for i = 1:numel(aoMsgTriggerPorts)
+        ahInportBlocks = ep_find_system(sPath, 'SearchDepth', 1, 'FindAll', 'on', 'BlockType','Inport', 'Name', aoMsgPorts(i).sPortName);
+        stMSTInportPortHandles = get_param(ahInportBlocks(1), 'PortHandles');
+        adInPos =  get_param(ahInportBlocks(1), 'Position');
+        adTriggerPosition = [adInPos(1)-400, adInPos(2), adInPos(3)-400, adInPos(4)];
+        hNewTrigger = add_block('built-in/Inport', [sPath '/' aoMsgTriggerPorts(i).sPortName],...
+            'MakeNameUnique',        'on',...
+            'Position',              adTriggerPosition, ...
+            'showname',             'on', ...
+            'OutputFunctionCall',   'on');
+        adSentPosition = [adTriggerPosition(1)+200, adTriggerPosition(2), adTriggerPosition(3)+205, adTriggerPosition(4)];
+        hSendBlock = add_block('simulink/Messages & Events/Send', [sPath '/' aoMsgTriggerPorts(i).sPortName '_send'], ...
+            'MakeNameUnique', 'on', 'Position', adSentPosition);
+        set_param(hSendBlock, 'ShowEnablePort', 'on');
+        hEnableSub = i_createEnableSendSub(sPath, adTriggerPosition);
+        stNewTriggerPCInfo = get_param(hNewTrigger, 'PortConnectivity');
+        stEnableSubPortHandles = get_param(hEnableSub, 'PortHandles');
+        add_line(sPath, [stNewTriggerPCInfo.Position; get_param(stEnableSubPortHandles.Inport, 'Position')]);
+        stSendPortHandle = get_param(hSendBlock, 'PortHandles');
+        stEnablePortHandle = get_param(hEnableSub, 'PortHandles');
+        add_line(sPath, stEnablePortHandle.Outport, stSendPortHandle.Inport(1), 'autorouting','on');
+        hLine = get_param(stMSTInportPortHandles.Outport, 'Line');
+        hDestPort = get_param(hLine, 'DstPortHandle');
+        delete_line(hLine);
+        adEnablePos =  get_param(hEnableSub, 'Position');
+        set_param(ahInportBlocks(1), 'Position', ...
+            [adEnablePos(1), adEnablePos(2)+20, adEnablePos(3), adEnablePos(4)+20]);
+        add_line(sPath, stMSTInportPortHandles.Outport, stSendPortHandle.Inport(2), 'autorouting','on');
+        add_line(sPath, stSendPortHandle.Outport, hDestPort, 'autorouting','on');
+    end
+
+    % create event-sender stateflow charts
+    casEvents = i_scheduleEventsForScheduleEditor(stModel.aoInports, hFieldsSub, hModelRefIntegrationModel);
+    stIntegModel.casEventsScheduleEditor = casEvents;
+    if isMATLABReleaseOlderThan('R2024a')
+        i_addEventDisclaimerOnToplevel(casEvents, hTopLevelModel);
+    end
+
+    hVariantSub = Simulink.VariantUtils.convertToVariantSubsystem(hFieldsSub);
+else
+    hModelRefIntegrationModel =  i_createMainModelRefBlock(hTopLevelModel, stIntegModel.sIntegModelName);
+    hVariantSub = Simulink.VariantUtils.convertToVariantSubsystem(hModelRefIntegrationModel);
+end
+
+
+% add "do not edit" note
+ep_ec_ui_create_label([sToplevelName '/' get_param(hVariantSub, 'Name')], [387, -60], 'Read-only model - do not edit', '#aa0000');
+ep_ec_ui_create_bordered_area([375, -70, 570, -35], [0.67, 0, 0], [sToplevelName '/' get_param(hVariantSub, 'Name')], 5, '');
+
+% note: the SL command "Simulink.VariantManager.convertToVariant" is introducing artificial whitespaces inport-names
+% --> repair these names to get *exactly* the same name as the original one!
+i_repairVariantSubPortNames(hVariantSub, stIntegModel.aoRootInports, stIntegModel.aoRootOutports);
+i_createBTCMask(hVariantSub, stModel.sName);
+stBlockInfo = i_addAndWireRootPorts(sToplevelName, hVariantSub, stIntegModel.aoRootInports, stIntegModel.aoRootOutports);
+
+% Add Dummy subsystem
+hDummySub = i_addDummySub(stModel.sName, hVariantSub, get_param(hModelRefIntegrationModel, 'Position'));
+i_addContentToDummySub(hDummySub, stBlockInfo, stModel.aoInports)
+
+% Set the integration model reference as the active variant subsystem choise
+if(stModel.bHasFieldsUpdate)
+    i_setVariantConfigForVariantSubsystem(hVariantSub, hFieldsSub, hDummySub);
+else
+    i_setVariantConfigForVariantSubsystem(hVariantSub, hModelRefIntegrationModel, hDummySub);
+end
+end
+
+
+%%
+function hEnableSub = i_createEnableSendSub(sPath, adLastPosition)
+hEnableSub = add_block('built-in/SubSystem', [sPath, '/', 'EnableSub'], 'MakeNameUnique','on', ...
+    'Position', [adLastPosition(1)+100, adLastPosition(2), adLastPosition(3)+105, adLastPosition(4)]);
+hFCSub = i_createFCSub(hEnableSub);
+hDetectChange = add_block('simulink/Logic and Bit Operations/Detect Change', ...
+    [getfullname(hEnableSub), '/', 'DetectChange'], 'MakeNameUnique', 'on');
+stFCSubPortHandles = get_param(hFCSub, 'PortHandles');
+stDetectChangePortHandles = get_param(hDetectChange, 'PortHandles');
+add_line(getfullname(hEnableSub), stFCSubPortHandles.Outport, stDetectChangePortHandles.Inport, 'autorouting', 'on');
+hInport = add_block('built-in/Inport', [getfullname(hEnableSub), '/', 'Inport']);
+hOutport = add_block('built-in/Outport', [getfullname(hEnableSub), '/', 'Outport']);
+stInportPortHandles = get_param(hInport, 'PortHandles');
+stOutportPortHandles = get_param(hOutport, 'PortHandles');
+stFCSubPortHandles = get_param(hFCSub, 'PortHandles');
+add_line(getfullname(hEnableSub), stInportPortHandles.Outport, stFCSubPortHandles.Trigger, 'autorouting', 'on');
+add_line(getfullname(hEnableSub), stDetectChangePortHandles.Outport, stOutportPortHandles.Inport, 'autorouting', 'on');
+add_line(getfullname(hEnableSub), stFCSubPortHandles.Outport, stFCSubPortHandles.Inport, 'autorouting', 'on');
+end
+
+
+%%
+function hFCSub = i_createFCSub(hEnableSub)
+hFCSub = add_block('simulink/Ports & Subsystems/Function-Call Subsystem', [getfullname(hEnableSub), '/', 'Sub'], ...
+    'MakeNameUnique', 'on');
+hSum = add_block('built-in/Sum', [getfullname(hFCSub), '/', 'Sum']);
+hConst = add_block('simulink/Commonly Used Blocks/Constant', [getfullname(hFCSub), '/', 'Const']);
+delete_line(ep_find_system(hFCSub, 'SearchDepth', 1, 'FindAll', 'on', 'type','line'));
+ahInportBlocks = ep_find_system(hFCSub, 'SearchDepth', 1, 'FindAll', 'on', 'BlockType','Inport');
+set_param(ahInportBlocks(1), 'LatchInputForFeedbackSignals', 'on');
+ahOutportBlocks = ep_find_system(hFCSub, 'SearchDepth', 1, 'FindAll', 'on', 'BlockType','Outport');
+stInPortHandles = get_param(ahInportBlocks(1), 'PortHandles');
+stOutPortHandles = get_param(ahOutportBlocks(1), 'PortHandles');
+stSumPortHandles = get_param(hSum, 'PortHandles');
+stConstPortHandles = get_param(hConst, 'PortHandles');
+add_line(getfullname(hFCSub), stInPortHandles.Outport, stSumPortHandles.Inport(1), 'autorouting', 'on');
+add_line(getfullname(hFCSub), stConstPortHandles.Outport, stSumPortHandles.Inport(2), 'autorouting', 'on');
+add_line(getfullname(hFCSub), stSumPortHandles.Outport, stOutPortHandles.Inport, 'autorouting', 'on');
+end
+
+
+%%
+function hMainModelRef = i_createMainModelRefBlock(hTopLevelModel, sMainModelName)
+hMainModelRef = i_createModelRefBlock(hTopLevelModel, sMainModelName);
+set(hMainModelRef, 'Tag', ep_ec_tag_get('AUTOSAR Main ModelRef'));
+end
+
+
+%%
+function i_addContentToDummySub(hDummySub, stBlockInfo, aoInports)
+i_addIOBlocksToDummySub(hDummySub, stBlockInfo);
+i_addCalledFunctionsToDummySub(hDummySub, aoInports);
+addterms(hDummySub);
+end
+
+
+%%
+function i_addCalledFunctionsToDummySub(hDummySub, aoInports)
+dOffset = 0;
+for i=1:numel(aoInports)
+    if aoInports(i).bIsFunctionCall && isempty(aoInports(i).sMessageTriggeredSubName)
+        hFctCallBlk = add_block('built-in/Inport', [getfullname(hDummySub) '/' aoInports(i).sPortName],...
+            'OutputFunctionCall', 'on', 'showname', 'on');
+
+        if ~isempty(aoInports(i).stSLFunction)
+            sFctCall = aoInports(i).stSLFunction.sSLFunctionName;
+        else
+            sFctCall = ['sut_' aoInports(i).sPortName];
+        end
+        hFctCallSubBlk = i_addFunctionCallSub(hDummySub, [sFctCall '_sub'], sFctCall);
+        dOffset = i_layoutToTriggerBlock(hFctCallBlk, hFctCallSubBlk, dOffset);
+
+    elseif aoInports(i).bIsFunctionCall && ~isempty(aoInports(i).sMessageTriggeredSubName)
+        hFctCallBlk = add_block('built-in/Inport', [getfullname(hDummySub) '/' aoInports(i).sPortName],...
+            'OutputFunctionCall', 'on', 'showname', 'on');
+
+        sTrimmedMsgSubName = erase(aoInports(i).sMessageTriggeredSubName, {' ', newline, char(13)});
+        hMsgTriggeredSubBlk = i_addFunctionCallSub(hDummySub, [sTrimmedMsgSubName '_sub'], ['sut_' sTrimmedMsgSubName]);
+        dOffset = i_layoutToTriggerBlock(hFctCallBlk, hMsgTriggeredSubBlk, dOffset);
+    end
+end
+end
+
+
+%%
+function hFctCallSubBlk = i_addFunctionCallSub(hModel, sSubsystenName, sFunctionCall)
+hFctCallSubBlk = add_block('simulink/Ports & Subsystems/Function-Call Subsystem', [getfullname(hModel) '/' sSubsystenName]);
+ahAllLines = ep_find_system(hFctCallSubBlk, 'SearchDepth', 1, 'FindAll', 'on', 'type','line');
+delete_line(ahAllLines);
+ahInports = ep_find_system(hFctCallSubBlk, 'SearchDepth', 1, 'FindAll', 'on', 'type', 'block', 'BlockType', 'Inport');
+delete_block(ahInports);
+ahOutports = ep_find_system(hFctCallSubBlk, 'SearchDepth', 1, 'FindAll', 'on', 'type', 'block', 'BlockType', 'Outport');
+delete_block(ahOutports);
+
+hFctCallerBlk = add_block('simulink/User-Defined Functions/Function Caller', [getfullname(hFctCallSubBlk) '/' sFunctionCall '_sub']);
+set_param(hFctCallerBlk, 'FunctionPrototype', [sFunctionCall '()']);
+end
+
+
+%%
+function  dOffset = i_layoutToTriggerBlock(hTrigger, hFctCallSub, dOffset)
+adPosition = get_param(hTrigger, 'Position');
+set_param(hTrigger, 'Position', [adPosition(1), adPosition(2) + dOffset, adPosition(3), adPosition(4) + dOffset]);
+adPosition = get_param(hTrigger, 'Position');
+set_param(hFctCallSub, 'Position', [adPosition(1) + 30, adPosition(2) + 80, adPosition(3) + 130, adPosition(4) + 80]);
+dOffset = dOffset + 150;
+
+sSubsystemPath = fileparts(getfullname(hTrigger));
+stTriggerHandles = get_param(hTrigger, 'PortHandles');
+stFctCallSubHandles = get_param(hFctCallSub, 'PortHandles');
+add_line(sSubsystemPath, stTriggerHandles.Outport, stFctCallSubHandles.Trigger, 'autorouting', 'on');
+end
+
+
+%%
+function [ahVarInBlocks, ahVarOutBlocks] = i_repairVariantSubPortNames(hVariantSub, aoInports, aoOutports)
+[ahVarInBlocks, ahVarOutBlocks] = i_getPorts(hVariantSub);
+for i=1:numel(ahVarInBlocks)
+    try
+        set_param(ahVarInBlocks(i), 'Name', aoInports(i).sPortName);
+    catch
+    end
+end
+for i=1:numel(ahVarOutBlocks)
+    try
+        set_param(ahVarOutBlocks(i), 'Name', aoOutports(i).sPortName);
+    catch
+    end
+end
+end
+
+
+%%
+function [ahInports, ahOutports] = i_getPorts(hModel)
+ahInports = ep_find_system(hModel, ...
+    'SearchDepth',     1,...
+    'LookUnderMasks',  'all',...
+    'FollowLinks',     'on',...
+    'BlockType',       'Inport');
+
+ahOutports = ep_find_system(hModel, ...
+    'SearchDepth',     1,...
+    'LookUnderMasks',  'all',...
+    'FollowLinks',     'on',...
+    'BlockType',       'Outport');
+end
+
+
+%%
+function i_addIOBlocksToDummySub(hDummySub, stBlockInfo)
+for i=1:numel(stBlockInfo.casInportBlkPaths)
+    add_block(stBlockInfo.casInportBlkPaths{i}, [getfullname(hDummySub) '/' stBlockInfo.casInportBlkNames{i}]);
+end
+for i=1:numel(stBlockInfo.casOutportBlkPaths)
+    add_block(stBlockInfo.casOutportBlkPaths{i}, [getfullname(hDummySub) '/' stBlockInfo.casOutportBlkNames{i}]);
+end
+end
+
+
+%%
+function hDummySub = i_addDummySub(sOrigModelName, hVariantSub, aiPosition)
+sDummyName = ['dummy_' ['W_integ_', sOrigModelName]];
+hDummySub = add_block('built-in/SubSystem', [getfullname(hVariantSub), '/', sDummyName]);
+
+i_adaptDummyBlockPosition(hDummySub, aiPosition);
+end
+
+
+%%
+function i_adaptDummyBlockPosition(hDummySub, aiPosition)
+height = aiPosition(4) - aiPosition(1);
+top = aiPosition(2)+height+100;
+left = aiPosition(1);
+right = aiPosition(3);
+bottom = aiPosition(4)+height+100;
+
+set_param(hDummySub, 'Position', [left top right bottom]);
+end
+
+
+%%
+function i_setVariantConfigForVariantSubsystem(hVariantSub, hOrigModelRef, hDummySub)
+set_param(hVariantSub, 'PropagateVariantConditions', 'on');
+sLabelOrig  = 'orig';
+sLabelDummy = 'dummy';
+
+set_param(hOrigModelRef, 'VariantControl', sLabelOrig);
+set_param(hDummySub, 'VariantControl', sLabelDummy);
+
+set_param(hVariantSub, 'OverrideUsingVariant', sLabelOrig);
+set_param(hVariantSub, 'VariantControl', '');
+end
+
+
+%%
+function aoSLFunctionTriggers = i_addSutMethodSLFunctions(hModel, aoProvidedMethods, oWrapperData)
+nMethods = numel(aoProvidedMethods);
+aoSLFunctionTriggers = repmat(Eca.aa.wrapper.Port, 1, nMethods);
+jDataStoreHashSet = java.util.HashSet();
+
+for i = 1:nMethods
+    aoSLFunctionTriggers(i) = i_createTriggerPort(aoProvidedMethods(i).getDisplayFunctionName(), i);
+    [hSimulinkFunction, sSLFunctionName] = i_addGlobalSLFunction(hModel, aoProvidedMethods(i), i, oWrapperData, jDataStoreHashSet);
+    aoSLFunctionTriggers(i).stSLFunction = ...
+        struct('hSimulinkFunction',   hSimulinkFunction, ...
+        'sSLFunctionName',     sSLFunctionName);
+end
+end
+
+
+%%
+function [hSubsystem, sSLFunctionName]= i_addGlobalSLFunction(hModel, oProvidedMethod, iOrdinance, oWrapperData, jDataStoreHashSet)
+[hSubsystem, sSLFunctionName] = i_addSLFunctionBlock(hModel, oProvidedMethod, iOrdinance);
+sSubsystemPath = getfullname(hSubsystem);
+
+% add blocks for this hierarchy layer
+hFunctionCaller = i_addFunctionCallBlock(sSubsystemPath, oProvidedMethod, oWrapperData);
+[ahDataStoreReads, ahDataStoreWrites] = i_addDataStoreAccessBlocks(sSubsystemPath, oProvidedMethod, oWrapperData, jDataStoreHashSet);
+
+% wire blocks
+stFnctCallerPortHandles = get_param(hFunctionCaller, 'PortHandles');
+for i = 1:numel(stFnctCallerPortHandles.Inport)
+    stDataStoreRdPortHandle = get_param(ahDataStoreReads(i), 'PortHandles');
+    add_line(sSubsystemPath, stDataStoreRdPortHandle.Outport, stFnctCallerPortHandles.Inport(i), 'autorouting', 'on');
+    i_addAndConnectWorkaroundBlock(sSubsystemPath, hFunctionCaller, stDataStoreRdPortHandle, i);
+end
+for i = 1:numel(stFnctCallerPortHandles.Outport)
+    stDataStoreWrtPortHandle = get_param(ahDataStoreWrites(i), 'PortHandles');
+    add_line(sSubsystemPath, stFnctCallerPortHandles.Outport(i), stDataStoreWrtPortHandle.Inport, 'autorouting', 'on');
+end
+end
+
+
+%%
+function [hSubsystem, sSLFunctionName] = i_addSLFunctionBlock(hModel, oProvidedMethod, iOrdinance)
+sSLFunctionName = ['call_', oProvidedMethod.getDisplayFunctionName()];
+hSubsystem = add_block('simulink/User-Defined Functions/Simulink Function', ...
+    [get_param(hModel, 'Name') '/' sSLFunctionName], ...
+    'MakeNameUnique',       'on', ...
+    'ShowName',             'off', ...
+    'FunctionPrototype',    [sSLFunctionName, '()'], ...
+    'Position',             [300, 100 + ((iOrdinance - 1) * 150), 450, 150 + ((iOrdinance - 1) * 150)]);
+
+hLine = ep_find_system(hSubsystem, 'FindAll', 'on', 'Type', 'line', 'Connected', 'off');
+delete_line(hLine);
+hTriggerPort = ep_find_system(hSubsystem, 'FindAll', 'on', 'BlockType', 'TriggerPort');
+set_param(hTriggerPort, 'FunctionVisibility',   'global');
+set_param(hTriggerPort, 'ShowName',   'off');
+end
+
+
+%%
+function hFunctionCallBlock = i_addFunctionCallBlock(sSubsystemPath, oProvidedMethod, oWrapperData)
+sFctCallBlockName = oProvidedMethod.getMethodName();
+%TODO: Make block larger depending on interface amount
+hFunctionCallBlock = add_block('simulink/User-Defined Functions/Function Caller', ...
+    [sSubsystemPath  '/' sFctCallBlockName], ...
+    'MakeNameUnique', 'on', ...
+    'Position', [150 90 300 135]);
+
+set_param(hFunctionCallBlock, 'FunctionPrototype', i_enhanceSutServerTriggerPrototype(oProvidedMethod));
+
+sInArgSp = i_createArgSpec(oProvidedMethod.aoFunctionInArgs, oWrapperData);
+set_param(hFunctionCallBlock, 'InputArgumentSpecifications', sInArgSp)
+
+sOutArgSp = i_createArgSpec(oProvidedMethod.aoFunctionOutArgs, oWrapperData);
+set_param(hFunctionCallBlock, 'OutputArgumentSpecifications', sOutArgSp)
+end
+
+
+%%
+function i_addAndConnectWorkaroundBlock(sSubsystemPath, hFunctionCaller, stDataStoreRdPortHandle, iOffset)
+adPosition = get_param(hFunctionCaller, 'Position');
+hWorkaround = ep_ec_aa_wrapper_workaround_block_create(sSubsystemPath, adPosition(1), adPosition(2)+(iOffset)*80);
+stWorkaroundPorts = get_param(hWorkaround, 'PortHandles');
+add_line(sSubsystemPath, stDataStoreRdPortHandle.Outport, stWorkaroundPorts.Inport, 'autorouting', 'on');
+end
+
+
+%%
+function sSutServerTriggerPrototype = i_enhanceSutServerTriggerPrototype(oProvidedMethod)
+sSutServerTriggerPrototype = strrep(oProvidedMethod.sFunctionPrototype, oProvidedMethod.sFunctionName, oProvidedMethod.getCodeGlobalFunction());
+end
+
+
+%%
+function sResult = i_createArgSpec(aoFuncArgs, oWrapperData)
+casInstances = arrayfun(@(o) oWrapperData.getTypeInstance(o.sDataType, o.aiDim), aoFuncArgs, 'UniformOutput', false);
+sResult = strjoin(casInstances, ', ');
+end
+
+
+%%
+function [ahDataStoreReads, ahDataStoreWrites] = i_addDataStoreAccessBlocks(sSubsystemPath, oProvidedMethod, oWrapperData, jDataStoreHashSet)
+sPrefix = [oProvidedMethod.getDisplayFunctionName(), '_'];
+
+ahDataStoreReads = ...
+    i_addDataStoreReadBlocksGeneric(sSubsystemPath, oProvidedMethod.aoFunctionInArgs, 'read', sPrefix, oWrapperData, jDataStoreHashSet);
+ahDataStoreWrites = ...
+    i_addDataStoreReadBlocksGeneric(sSubsystemPath, oProvidedMethod.aoFunctionOutArgs, 'write', sPrefix, oWrapperData, jDataStoreHashSet);
+end
+
+
+%%
+function ahDataStoreIO = i_addDataStoreReadBlocksGeneric(sSubsystemPath, aoFunctionArgs, sKind, sPrefix, oWrapperData, jDataStoreHashSet)
+switch sKind
+    case 'read'
+        sBlockType = 'simulink/Signal Routing/Data Store Read';
+        sNamePattern = 'In';
+        nPadding = 0;
+
+    case 'write'
+        sBlockType = 'simulink/Signal Routing/Data Store Write';
+        sNamePattern = 'Out';
+        nPadding = 400; % TODO: remove this detailed layout; should be part of integration logic
+
+    otherwise
+        error('INTERNAL:ERROR', 'Unknown kind %s.', sKind);
+end
+
+nArgs = numel(aoFunctionArgs);
+ahDataStoreIO = zeros(1, nArgs);
+
+for i = 1:nArgs
+    oFunctionArg = aoFunctionArgs(i);
+
+    sDSBlockName = [sPrefix, oFunctionArg.sName '_' sNamePattern];
+    hDataStoreIO = add_block(sBlockType, ...
+        [sSubsystemPath '/' sDSBlockName], ...
+        'MakeNameUnique', 'on', ...
+        'Position', [nPadding - 50, 100 + ((i - 1) * 50), 100 + nPadding, 125 + ((i - 1) * 50)]);
+
+
+    [sDSName, bHashDuplication] = ep_ec_aa_wrapper_hash_create(sDSBlockName, jDataStoreHashSet);
+    sDSName = ['c_' sDSName]; %#ok
+    if bHashDuplication
+        warning('EP:ECAA_WRAPPER:HASH_DUPLICATE', 'Detected duplicate hashing result from DataStore block name: %s', sDSBlockName);
+    end
+
+    set_param(hDataStoreIO, 'DataStoreName', sDSName);
+    sDSDataType = oFunctionArg.getDataTypeForDataStoreSignals;
+    oWrapperData.createAndPersistDataStoreSignal(sDSName, sDSDataType, oFunctionArg.getVariableStyleDim, sDSBlockName);
+
+    ahDataStoreIO(i) = hDataStoreIO;
+end
+end
+
+
+%%
+function oTriggerPort = i_createTriggerPort(sFunctionName, iOrdinance)
+oTriggerPort = Eca.aa.wrapper.Port;
+
+oTriggerPort.sPortName = sFunctionName;
+oTriggerPort.nPortNum = iOrdinance;
+oTriggerPort.bIsFunctionCall = true;
+end
+
+
+%%
+function i_createSchedulerMask(hBlock)
+oMask = Simulink.Mask.create(hBlock);
+oMask.Display = 'disp(''\color{gray}\fontsize{50}⏲'', ''texmode'', ''on'');';
+end
+
+
+%%
+function i_createBTCMask(hBlock, sOrigModel)
+oMask = Simulink.Mask.create(hBlock);
+oMask.addDialogControl( ...
+    'Name',    'DescGroupVar', ...
+    'Type',    'group', ...
+    'Prompt',  'BTC Embedded Systems SUT block');
+oMask.addDialogControl( ...
+    'Name',    'DescTextVar', ...
+    'Type',    'text', ...
+    'Prompt',  'This is the BTC Embedded Systems SUT block, referencing the original Adaptive AUTOSAR model.', ...
+    'Container', 'DescGroupVar');
+oMask.addDialogControl( ...
+    'Name',    'DescButVar', ...
+    'Type',    'pushbutton', ...
+    'Prompt',  'Open original model...', ...
+    'Callback', ['open_system(''' sOrigModel ''');'], ...
+    'Container', 'DescGroupVar');
+%Spaces are needed for formatting! Do not remove!
+oMask.Display = ['disp(''\color{white}\it\fontsize{20}                          embedded\newline' ...
+    '                          systems'', ''texmode'', ''on'');disp(''{{\color{white}\bf\fontsize{50}' ...
+    '\it   BTC}  \fontsize{80}|      \color{black}\fontsize{20}\newline }'', ''texmode'',''on'');'];
+
+set_param(hBlock, 'BackgroundColor', '[0.11 0.34 0.51]');
+set_param(hBlock, 'OpenFcn', 'open_system(gcb, ''mask'');');
+end
+
+
+%%
+function nTicks = i_computeTriggerTicks(dCompiledStepSize, varargin)
+dBlkSampleTime= varargin{1};
+if (dBlkSampleTime<=0)
+    nTicks=1;
+else
+    dSampleTime = str2double(dCompiledStepSize);
+    nTicks= round(varargin{1}/dSampleTime);
+end
+end
+
+
+%%
+function hSchedulerSub = i_addAndConnectScheduler(sWrapperModelName, dCompiledStepSize, hIntegrationModel, stIntegModel)
+stIntegModelPorts = get_param(hIntegrationModel, 'PortHandles');
+mEventDestPort = containers.Map();
+aoAllScheduledCalls = [stIntegModel.aoFuncCalls];
+
+if isfield(stIntegModel, 'aoMessageTriggerPorts')
+    aoAllScheduledCalls = [aoAllScheduledCalls stIntegModel.aoMessageTriggerPorts];
+end
+
+astCalls = repmat(struct( ...
+    'sEventName',    '', ...
+    'nTriggerTicks', 1, ...
+    'sColor',        'black'), 1, numel(aoAllScheduledCalls));
+
+iCallIdx = 0;
+for i = 1:numel(stIntegModel.aoFuncCalls)
+    oPort = aoAllScheduledCalls(i);
+
+    iCallIdx = iCallIdx + 1;
+    sEventName = oPort.sPortName;
+    astCalls(iCallIdx).sEventName = sEventName;
+    astCalls(iCallIdx).nTriggerTick = i_computeTriggerTicks(dCompiledStepSize, oPort.dSampleTime);
+
+    % memorize the destination port of the event
+    hEventDestPort = stIntegModelPorts.Inport(oPort.nPortNum);
+    mEventDestPort(sEventName) = hEventDestPort;
+end
+
+if isfield(stIntegModel, 'aoMessageTriggerPorts')
+    for i = 1:numel(stIntegModel.aoMessageTriggerPorts)
+        oPort = stIntegModel.aoMessageTriggerPorts(i);
+
+        iCallIdx = iCallIdx + 1;
+        sEventName = oPort.sPortName;
+        astCalls(iCallIdx).sEventName = sEventName;
+        astCalls(iCallIdx).nTriggerTick = i_computeTriggerTicks(dCompiledStepSize, oPort.dSampleTime);
+
+        % memorize the destination port of the event
+        hEventDestPort = stIntegModelPorts.Inport(oPort.nPortNum);
+        mEventDestPort(sEventName) = hEventDestPort;
+    end
+end
+
+stResult = ep_ec_model_wrapper_scheduler_create( ...
+    'Location', sWrapperModelName, ...
+    'Calls',    astCalls);
+hSchedulerSub = stResult.hSchedulerSub;
+
+casEventNames = stResult.mEventSrcPort.keys;
+for i = 1:numel(casEventNames)
+    sEventName = casEventNames{i};
+    add_line(sWrapperModelName, stResult.mEventSrcPort(sEventName), mEventDestPort(sEventName), 'autorouting', 'on');
+end
+
+i_createSchedulerMask(hSchedulerSub);
+end
+
+
+%%
+function  stBlocksInfo = i_addAndWireRootPorts(sTargetSub, hVariantSub, aoInports, aoOutports)
+stBlocksInfo = struct(...
+    'casInportBlkPaths', {{}}, ...
+    'casInportBlkNames', {{}}, ...
+    'casOutportBlkPaths', {{}}, ...
+    'casOutportBlkNames', {{}});
+stBlocksInfo.casInportBlkPaths = cell(1, numel(aoInports));
+stBlocksInfo.casInportBlkNames = stBlocksInfo.casInportBlkPaths;
+stBlocksInfo.casOutportBlkPaths = cell(1, numel(aoOutports));
+stBlocksInfo.casOutportBlkNames = stBlocksInfo.casOutportBlkPaths;
+stPortHandlesVariantSub = get_param(hVariantSub, 'PortHandles');
+
+for i = 1:numel(aoInports)
+    oPort = aoInports(i);
+    if ~oPort.bIsFunctionCall && ~oPort.bIsClientServer
+        hPortToConnectTo = stPortHandlesVariantSub.Inport(oPort.nPortNum);
+        hPortBlock = add_block('built-in/Inport', [sTargetSub '/' oPort.sPortName],...
+            'MakeNameUnique',       'on',...
+            'Position',             i_getIdealPortBlockPosition(hPortToConnectTo), ...%
+            'PortDimensions',       oPort.getDimForPortAttributeSetting, ...
+            'BusOutputAsStruct',    oPort.sOutputAsVirtualBus, ...
+            'OutDataTypeStr',       oPort.sOutDataTypeStr, ...
+            'showname',             'on', ...
+            'BackgroundColor',      '[0.22 0.79 0.62]');
+        stPortHandles = get_param(hPortBlock, 'PortHandles');
+        add_line(sTargetSub, stPortHandles.Outport, hPortToConnectTo);
+        stBlocksInfo.casInportBlkPaths{i} = [sTargetSub '/' oPort.sPortName];
+        stBlocksInfo.casInportBlkNames{i} = oPort.sPortName;
+    end
+end
+
+
+for i = 1:numel(aoOutports)
+    oPort = aoOutports(i);
+    hPortToConnectTo = stPortHandlesVariantSub.Outport(i);
+    hPortBlock = add_block('built-in/Outport', [sTargetSub '/' oPort.sPortName],...
+        'MakeNameUnique',       'on',...
+        'Position',             i_getIdealPortBlockPosition(hPortToConnectTo), ...
+        'PortDimensions',       oPort.getDimForPortAttributeSetting, ...
+        'BusOutputAsStruct',    oPort.sOutputAsVirtualBus, ...
+        'OutDataTypeStr',       oPort.sOutDataTypeStr, ...
+        'showname',             'on', ...
+        'BackgroundColor',      '[0.22 0.79 0.62]');
+    stPortHandles = get_param(hPortBlock, 'PortHandles');
+    add_line(sTargetSub, hPortToConnectTo, stPortHandles.Inport);
+    stBlocksInfo.casOutportBlkPaths{i} = [sTargetSub '/' oPort.sPortName];
+    stBlocksInfo.casOutportBlkNames{i} = oPort.sPortName;
+end
+end
+
+
+%%
+function adBlockPos = i_getIdealPortBlockPosition(hPort)
+% common port block properties
+dBlockDistance = 70;
+dBlockWidth = 30;
+dHalfBlockHeight = 7;
+dBlockHeight = dHalfBlockHeight + dHalfBlockHeight;
+
+adPortPos = get_param(hPort, 'Position');
+bIsInport = strcmpi(get_param(hPort, 'PortType'), 'inport') || strcmpi(get_param(hPort, 'PortType'), 'trigger');
+if bIsInport
+    adLeftUpper = adPortPos - [(dBlockDistance + dBlockWidth), dHalfBlockHeight];
+else
+    adLeftUpper = adPortPos + [dBlockDistance, -dHalfBlockHeight];
+end
+adRightLower = adLeftUpper + [dBlockWidth, dBlockHeight];
+adBlockPos = [adLeftUpper, adRightLower];
+end
+
+
+%%
+function hModelRef = i_createModelRefBlock(hTargetSub, sModelName)
+%Add TopLevel SUT subsytems
+hModelRef = add_block('built-in/ModelReference', [getfullname(hTargetSub), '/', sModelName]);
+set(hModelRef, 'ModelName', sModelName);
+set(hModelRef, 'SimulationMode', 'Normal');
+
+%Adapt positions
+P1_MDLREFBLK = 500; P2_MDLREFBLK = 100; MDLREFBLK_WIDTH = 800;
+
+anPortNumbers = get(hModelRef, 'Ports');
+nMaxIOPorts = max(3, max(anPortNumbers(1), anPortNumbers(2)));
+set(hModelRef, 'Position', [P1_MDLREFBLK, P2_MDLREFBLK, P1_MDLREFBLK + MDLREFBLK_WIDTH, P2_MDLREFBLK + 40*nMaxIOPorts]);
+end
+
+
+%%
+function oWrapperConfig = i_createWrapperConfig(sToplevelName, sModelName, stModel)
+dCompiledStepSize = get_param(sModelName, 'CompiledStepSize');
+oWrapperConfig = ep_ec_aa_wrapper_config_settings_adapt(sToplevelName, sModelName, dCompiledStepSize);
+
+% config adaptiongs needed to support field update events
+if stModel.bHasFieldsUpdate
+    set_param(oWrapperConfig, 'EnableMultiTasking', 'on');
+    set_param(oWrapperConfig, 'ModelReferenceNumInstancesAllowed', 'Single');
+    set_param(oWrapperConfig, 'MultiTaskDSMMsg', 'none');
+end
+end
+
+
+%%
+function oWrapperData = i_createWrapperDataStorageFor(sWrapperModelName, sModelName, sInitScript, sModelPath)
+oWrapperData = Eca.WrapperModelData(sWrapperModelName, sModelName);
+sModelDD = get_param(sModelName, 'DataDictionary');
+if ~isempty(sModelDD)
+    oWrapperData.referenceDD(sModelDD);
+end
+if ~isempty(sInitScript)
+    oWrapperData.addInitScriptContent(i_getInitModelCommands(sInitScript, sModelPath));
+end
+end
+
+
+%%
+function sContent = i_getInitModelCommands(sOrigInitScript, sModelPath)
+sContent = '';
+if isempty(sOrigInitScript)
+    return;
+end
+
+[sScriptPath, sScriptName] = fileparts(sOrigInitScript);
+if strcmpi(sModelPath, sScriptPath)
+    % script is lying next to the model (and wrapper model) --> simply call the original script by name
+    sContent = sprintf('%s;\n', sScriptName);
+    return;
+end
+
+sWarningMsg = 'Original model init script could not be called. The wrapper model might be in an invalid state.';
+casContentLines = { ...
+    sprintf('if ~isempty(which(''%s''))', sScriptName), ...
+    sprintf('  %s;', sScriptName), ...
+    sprintf('else'), ...
+    sprintf('  if exist(''%s'', ''file'')', sOrigInitScript), ...
+    sprintf('    run(''%s'');', sOrigInitScript), ...
+    sprintf('  else'), ...
+    sprintf('    warning(''EP:CRITICAL'', ''%s'');', sWarningMsg), ...
+    sprintf('  end'), ...
+    sprintf('end')};
+sContent = strjoin(casContentLines, '\n');
+end
+
+
+%%
+function i_closeModelsRobustly(ahModels)
+for i = 1:numel(ahModels)
+    hModel = ahModels(i);
+    if ~isempty(hModel)
+        try %#ok<TRYNC>
+            close_system(hModel, 0);
+        end
+    end
+end
+end
+
+
+%%
+% note: the wrapper init script is only needed, if it contains more than just commented lines
+function sWrapperInitScript = i_removeIfInitScriptNotNeeded(sWrapperInitScript)
+if (isempty(sWrapperInitScript) || ~exist(sWrapperInitScript, 'file'))
+    return;
+end
+
+bIsNeeded = false;
+
+sContent = fileread(sWrapperInitScript);
+if isempty(sContent)
+    bIsNeeded = false;
+end
+
+casLines = strsplit(sContent, '\n');
+for i = 1:numel(casLines)
+    % check if the line is a comment starting with a "%"; if it is not, we have a command and the init script is needed
+    if isempty(regexp(casLines{i}, '^\s*%', 'once'))
+        bIsNeeded = true;
+        break;
+    end
+end
+
+if ~bIsNeeded
+    delete(sWrapperInitScript);
+    sWrapperInitScript = '';
+end
+end
+
+
+%%
+function [stServerMockModel, hModelRefBlk] = i_createMockServerModel(stModel, hTopModel, oWrapperConfig, oWrapperData)
+
+stServerMockModel = [];
+stServerMockModel.casServerMockNames = [];
+hModelRefBlk = [];
+
+stServerMockArgs = struct(...
+    'sOrigModelName',    stModel.sName, ...
+    'sTargetPath',       stModel.sPath, ...
+    'aoRequiredMethods', stModel.aoRequiredMethods, ...
+    'oWrapperConfig',    oWrapperConfig, ...
+    'oWrapperData',      oWrapperData);
+
+if ~isempty(stServerMockArgs.aoRequiredMethods)
+    stServerMockModel = ep_ec_aa_wrapper_server_functions_mock(stServerMockArgs);
+
+    hModelRefBlk = add_block('built-in/ModelReference', [getfullname(hTopModel) '/' stServerMockModel.sName]);
+    set(hModelRefBlk, 'ModelName', stServerMockModel.sName);
+    set(hModelRefBlk, 'SimulationMode', 'Normal');
+    if stModel.bHasFieldsUpdate
+        set_param(hModelRefBlk, 'ScheduleRatesWith', 'Schedule Editor');
+    end
+end
+end
+
+
+%%
+function i_layoutServerMockModel(hModelRefIntegrationModel, hServerMockModel, sToplevelName)
+aiIntegrationModelPosition = get_param(hModelRefIntegrationModel, 'Position');
+if ~isempty(hServerMockModel)
+    ep_ec_ui_arrange_blocks([aiIntegrationModelPosition(1)-25+200, aiIntegrationModelPosition(4)+20], hServerMockModel, "top_down", [350 75], 50, [1, 1]);
+    aiLastServerMockPosition = get_param(hServerMockModel(end), 'Position');
+    aiBorders = [aiIntegrationModelPosition(1)+200, aiIntegrationModelPosition(4)+25, aiIntegrationModelPosition(3)-200, aiLastServerMockPosition(4)+25];
+    iBorderWidth = 2;
+    ep_ec_ui_create_bordered_area(aiBorders, [0.11 0.34 0.51], sToplevelName, iBorderWidth, '');
+    ep_ec_ui_create_label(sToplevelName, [aiBorders(1)+iBorderWidth+3, aiBorders(2)+iBorderWidth+1, aiBorders(3)+iBorderWidth+1+133, aiBorders(4)+iBorderWidth+1+30], 'Server Function Mocks', '#1d5781');
+    i_createServerMockMdlMask(hServerMockModel);
+end
+
+set_param(hServerMockModel, 'ShowName', 'off');
+set_param(hServerMockModel, 'ForegroundColor', '[0.11 0.34 0.51]');
+
+end
+
+
+%%
+function i_createServerMockMdlMask(hBlock)
+oMask = Simulink.Mask.create(hBlock);
+oMask.Display = 'disp(''{\bf\fontsize{16}Double click to enter}'', ''texmode'', ''on'');';
+end
+
+
+%%
+function i_layoutClientMocks(hModelRefIntegrationModel, sToplevelName, stIntegModel)
+adIntegrationModelPosition = get_param(hModelRefIntegrationModel, 'Position');
+
+astSLFunctions = [stIntegModel.aoFuncCalls.stSLFunction];
+if ~isempty(astSLFunctions)
+    ahSLFunctions = [astSLFunctions.hSimulinkFunction];
+    if numel(ahSLFunctions) > 0
+        ep_ec_ui_arrange_blocks([adIntegrationModelPosition(1)+115, adIntegrationModelPosition(2)+25], ahSLFunctions, "bottom_up", [420 50], 70, [7, 1]);
+        adFirstSLFctPosition = get_param(ahSLFunctions(1), 'Position');
+        sMockSubName = 'Client Function Mocks';
+        Simulink.BlockDiagram.createSubsystem(ahSLFunctions, 'Name', sMockSubName);
+        hMockSub = ep_find_system(sToplevelName, 'FindAll', 'On', 'BlockType', 'SubSystem', 'Name', sMockSubName);
+        set_param(hMockSub, 'Position', adFirstSLFctPosition);
+        set_param(hMockSub, 'ShowName', 'off');
+        i_createClientMockMask(hMockSub);
+        ep_ec_ui_create_label(sToplevelName, [adFirstSLFctPosition(1)+2, adFirstSLFctPosition(4)+5, adFirstSLFctPosition(1)+150, adFirstSLFctPosition(4)+35], sMockSubName, '#7a7a7a');
+    end
+end
+end
+
+
+%%
+function i_createClientMockMask(hBlock)
+oMask = Simulink.Mask.create(hBlock);
+sFunction = strrep(get_param(hBlock, 'Name'), '_', '\_');
+oMask.Display = ['color(''gray''); disp(''{\fontsize{16}' sFunction '}'', ''texmode'', ''on'');'];
+end
+
+
+%%
+function i_layoutModel(hVariantSub, sToplevelName, hServerFunctionMockRefModel, stIntegModel)
+i_layoutClientMocks(hVariantSub, sToplevelName, stIntegModel);
+i_layoutServerMockModel(hVariantSub, hServerFunctionMockRefModel, sToplevelName);
+
+lineHandles = find_system(sToplevelName, 'FindAll', 'On', 'SearchDepth', 1, 'Type', 'Line');
+Simulink.BlockDiagram.routeLine(lineHandles);
+end
+
+
+%%
+function oState = i_createScheduleState(oChart)
+oState = Stateflow.State(oChart);
+% Add a default transition to the state.
+oT0 = Stateflow.Transition(oChart);
+oT0.Destination = oState;
+oT0.DestinationOClock = 0;
+oT0.SourceEndpoint = oT0.DestinationEndpoint - [0 30];
+oT0.Midpoint = oT0.DestinationEndpoint - [0 30];
+end
+
+
+%%
+function i_updateStateWithSchedule(hState, sEventName)
+% Trigger
+% en,du:
+% send(eventStep);
+sContent = sprintf('Trigger\nen, du:\nsend(%s);\n', sEventName);
+hState.LabelString = sContent;
+end
+
+
+%%
+function oChart = i_getStateflowObject(hChart)
+oRoot = sfroot;
+oModel = oRoot.find('-isa', 'Simulink.BlockDiagram', '-and', 'Name', get_param(bdroot(hChart), 'Name'));
+oChart = oModel.find('-isa','Stateflow.Chart', '-and', 'Name', get_param(hChart, 'Name'));
+end
+
+
+%%
+function hSub = i_createExtraSub(hTopLevelModel, hModelRefIntegrationModel, sExtraSubName, sIntegModelName)
+set_param(hModelRefIntegrationModel, 'Name', sExtraSubName);
+Simulink.BlockDiagram.createSubsystem(hModelRefIntegrationModel,'Name', sIntegModelName);
+set_param(hModelRefIntegrationModel, 'ScheduleRatesWith', 'Schedule Editor');
+
+hSub = ep_find_system(hTopLevelModel, ...
+    'SearchDepth', '1', ...
+    'BlockType',   'SubSystem', ...
+    'Name', sIntegModelName);
+
+%Adapt positions
+P1_MDLREFBLK = 500; P2_MDLREFBLK = 100; MDLREFBLK_WIDTH = 800;
+
+anPortNumbers = get(hSub, 'Ports');
+nMaxIOPorts = max(3, max(anPortNumbers(1), anPortNumbers(2)));
+set(hSub, 'Position', [P1_MDLREFBLK, P2_MDLREFBLK, P1_MDLREFBLK + MDLREFBLK_WIDTH, P2_MDLREFBLK + 40*nMaxIOPorts]);
+end
+
+
+%%
+function casEvents = i_scheduleEventsForScheduleEditor(aoInports, hFieldsSub, hModelRefIntegrationModel)
+dOffset = 0;
+bAddBtcEvent = false;
+casEvents = {};
+for i = 1:numel(aoInports)
+    oPort = aoInports(i);
+    if oPort.bIsFunctionCall && ~oPort.bIsClientServer && isempty(oPort.sMessageTriggeredSubName)
+        bAddBtcEvent = true;
+        hChart =  add_block('sflib/Chart', [getfullname(hFieldsSub), '/', oPort.sPortName, '_Chart']);
+        adBlockPos = get_param(hModelRefIntegrationModel, 'Position');
+        set_param(hChart, 'Position', [adBlockPos(1) + 50 + dOffset, adBlockPos(2) - 150, adBlockPos(1) + 120 + dOffset, adBlockPos(2) - 70]);
+        dOffset = dOffset + 180;
+        oChart = i_getStateflowObject(hChart);
+        hState = i_createScheduleState(oChart);
+        sEventName = ['ev_', oPort.sPortName];
+        i_updateStateWithSchedule(hState, sEventName);
+
+        oEvent = Stateflow.Event(oChart);
+        oEvent.Trigger = 'Function call';
+        oEvent.Scope = 'Input';
+        oEvent.Name = oPort.sPortName;
+
+        stPortHandlesChart = get_param(hChart, 'PortHandles');
+        hTriggerPort = ep_find_system(hFieldsSub, ...
+            'SearchDepth', '1', ...
+            'BlockType',   'Inport', ...
+            'Name', oPort.sPortName);
+        adTriggerPos = i_getIdealPortBlockPosition(stPortHandlesChart.Trigger);
+        set_param(hTriggerPort, 'Position', [adTriggerPos(1), adTriggerPos(2) - 10, adTriggerPos(3), adTriggerPos(4) - 10]);
+        stPortHandlesTriggerPort = get_param(hTriggerPort, 'PortHandles');
+        add_line(getfullname(hFieldsSub), stPortHandlesTriggerPort.Outport, stPortHandlesChart.Trigger, 'autorouting', 'on');
+        ahUnconnectedLines = find_system(hFieldsSub, 'FindAll', 'On', 'LookUnderMasks', 'All', 'Type', 'line', 'Connected', 'off');
+        delete_line(ahUnconnectedLines);
+        set_param(hChart, 'Commented','On');
+        casEvents{end+1} = sEventName; %#ok
+    end
+end
+if bAddBtcEvent
+    hChart =  add_block('sflib/Chart', [getfullname(hFieldsSub), '/BTC_Data_Event_Chart']);
+    adBlockPos = get_param(hModelRefIntegrationModel, 'Position');
+    set_param(hChart, 'Position', [adBlockPos(1) - 120, adBlockPos(2) - 150, adBlockPos(1) - 50, adBlockPos(2) - 70]);
+    oChart = i_getStateflowObject(hChart);
+    hState = i_createScheduleState(oChart);
+    sEventName = 'ev_btc';
+    i_updateStateWithSchedule(hState, sEventName);
+    set_param(hChart, 'Commented','On');
+    casEvents{end+1} = sEventName;
+end
+end
+
+
+%%
+function i_addEventDisclaimerOnToplevel(casEvents, hTopLevelModel)
+if isempty(casEvents)
+    return;
+end
+adUpperLeft  = [20 , 55 - (numel(casEvents) * 15)];
+adLowerRight = [20 + 380, 80];
+
+adBorders = [adUpperLeft, adLowerRight];
+iBorderWidth = 5;
+sContent = ['Manually add the following events to the Simulink Schedule Editor:', newline, strjoin(casEvents, newline)];
+ep_ec_ui_create_bordered_area(adBorders, [0.9 0 0], getfullname(hTopLevelModel), iBorderWidth, sContent);
+end
+
+
+%%
+function i_activateScheduleEditorIfNeeded(hTopLevelModel, stIntegModel)
+% only add events and active schedule editor upwards of version R2024a
+if isMATLABReleaseOlderThan('R2024a')
+    return;
+end
+casEvents = stIntegModel.casEventsScheduleEditor;
+if ~isempty(casEvents)
+    i_createEventsInScheduleEditor(hTopLevelModel, casEvents);
+    ep_ec_aa_wrapper_activate_event_scheduling(getfullname(hTopLevelModel), true);
+end
+end
+
+
+%%
+function i_createEventsInScheduleEditor(hTopLevelModel, casEvents)
+sModel = get_param(hTopLevelModel, 'Name');
+set_param(hTopLevelModel, 'SimulationCommand', 'Update');
+oActualSchedule = get_param(sModel, 'Schedule');
+aoEvents = oActualSchedule.Events;
+for i = 1:numel(casEvents)
+    aoEvents = [aoEvents; i_createEvent(casEvents{i})];%#ok
+end
+oActualSchedule.Events = aoEvents;
+set_param(sModel, 'Schedule', oActualSchedule);
+end
+
+
+%%
+function oSchEvent = i_createEvent(sEventName)
+oSchEvent = simulink.schedule.Event;
+oSchEvent.Name = sEventName;
+end
+

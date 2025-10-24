@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240927T151145_6952\tmp_ut_variant_subsystems\ModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20240927T151145_6952\tmp_ut_variant_subsystems\start.m" modelVersion="11.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240927T151145_6952\tmp_ut_variant_subsystems\variant_subsystems_enum.slx" modelCreationDate="2009-03-11T02:42:01" creator="The MathWorks Inc.">
+  <toolInfo name="Matlab" release="(R2023b)" version="23.2" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2023b)" version="23.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="11.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240927T151145_6952\tmp_ut_variant_subsystems\variant_subsystems_enum.slx" creationDate="2009-03-11T02:42:01" modificationDate="2024-09-27T15:12:12" initScript="C:\Users\developer\AppData\Local\Temp\ut20240927T151145_6952\tmp_ut_variant_subsystems\start.m">
+    <subsystem subsysID="ss1" physicalPath="variant_subsystems_enum/Toplevel" path="Toplevel" sampleTime="0.01" name="Toplevel" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="variant_subsystems_enum/Toplevel/In1" path="Toplevel/In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="variant_subsystems_enum/Toplevel/In2" path="Toplevel/In2">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="variant_subsystems_enum/Toplevel/In3" path="Toplevel/In3">
+        <double/>
+      </inport>
+      <parameter name="VSSE_CURRENT_BUILD" path="Toplevel/Filter3" physicalPath="variant_subsystems_enum/Toplevel/Filter3" origin="explicit_param" workspace="VSSE_CURRENT_BUILD" initValue="1">
+        <enumType name="BUILD_TYPE">
+          <enumElement name="PROTOTYPE" value="1"/>
+          <enumElement name="PRODUCTION" value="2"/>
+        </enumType>
+        <usageContext path="Toplevel/Filter3" physicalPath="variant_subsystems_enum/Toplevel/Filter3" simulinkBlockType="SubSystem" blockAttribute="CompiledActiveChoiceControl"/>
+        <usageContext path="Toplevel/Subsystem/Variants/Filter2" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter2" simulinkBlockType="SubSystem"/>
+      </parameter>
+      <parameter name="VSSE_CURRENT_BUILD1" path="Toplevel/Subsystem/Variants/Filter1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter1" origin="explicit_param" workspace="VSSE_CURRENT_BUILD1" initValue="1">
+        <enumType name="BUILD_TYPE">
+          <enumElement name="PROTOTYPE" value="1"/>
+          <enumElement name="PRODUCTION" value="2"/>
+        </enumType>
+        <usageContext path="Toplevel/Subsystem/Variants/Filter1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter1" simulinkBlockType="SubSystem"/>
+      </parameter>
+      <parameter name="VSSE_MODE" path="Toplevel/Subsystem/Controller" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Controller" origin="explicit_param" workspace="VSSE_MODE" initValue="2.0">
+        <double/>
+        <usageContext path="Toplevel/Subsystem/Controller" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Controller" simulinkBlockType="SubSystem"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="variant_subsystems_enum/Toplevel/Out1" path="Toplevel/Out1">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="variant_subsystems_enum/Toplevel/Filter3/Prototype" path="Toplevel/Filter3/Prototype" sampleTime="0.01" name="Prototype" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="variant_subsystems_enum/Toplevel/Filter3/Prototype/In1" path="Toplevel/Filter3/Prototype/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="variant_subsystems_enum/Toplevel/Filter3/Prototype/Out1" path="Toplevel/Filter3/Prototype/Out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="variant_subsystems_enum/Toplevel/Subsystem" path="Toplevel/Subsystem" sampleTime="0.01" name="Subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/In1" path="Toplevel/Subsystem/In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/In2" path="Toplevel/Subsystem/In2">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/In3" path="Toplevel/Subsystem/In3">
+        <double/>
+      </inport>
+      <parameter name="VSSE_CURRENT_BUILD" path="Toplevel/Subsystem/Variants/Filter2" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter2" origin="explicit_param" workspace="VSSE_CURRENT_BUILD" initValue="1">
+        <enumType name="BUILD_TYPE">
+          <enumElement name="PROTOTYPE" value="1"/>
+          <enumElement name="PRODUCTION" value="2"/>
+        </enumType>
+        <usageContext path="Toplevel/Subsystem/Variants/Filter2" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter2" simulinkBlockType="SubSystem"/>
+      </parameter>
+      <parameter name="VSSE_CURRENT_BUILD1" path="Toplevel/Subsystem/Variants/Filter1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter1" origin="explicit_param" workspace="VSSE_CURRENT_BUILD1" initValue="1">
+        <enumType name="BUILD_TYPE">
+          <enumElement name="PROTOTYPE" value="1"/>
+          <enumElement name="PRODUCTION" value="2"/>
+        </enumType>
+        <usageContext path="Toplevel/Subsystem/Variants/Filter1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter1" simulinkBlockType="SubSystem"/>
+      </parameter>
+      <parameter name="VSSE_MODE" path="Toplevel/Subsystem/Controller" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Controller" origin="explicit_param" workspace="VSSE_MODE" initValue="2.0">
+        <double/>
+        <usageContext path="Toplevel/Subsystem/Controller" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Controller" simulinkBlockType="SubSystem"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Out1" path="Toplevel/Subsystem/Out1">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Controller/Nonlinear Controller" path="Toplevel/Subsystem/Controller/Nonlinear Controller" sampleTime="0.01" name="Nonlinear Controller" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="sensor1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Controller/Nonlinear Controller/sensor1" path="Toplevel/Subsystem/Controller/Nonlinear Controller/sensor1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="sensor2" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Controller/Nonlinear Controller/sensor2" path="Toplevel/Subsystem/Controller/Nonlinear Controller/sensor2">
+        <double/>
+      </inport>
+      <inport portNumber="3" name="sensor3" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Controller/Nonlinear Controller/sensor3" path="Toplevel/Subsystem/Controller/Nonlinear Controller/sensor3">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Controller/Nonlinear Controller/Out1" path="Toplevel/Subsystem/Controller/Nonlinear Controller/Out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants" path="Toplevel/Subsystem/Variants" sampleTime="0.01" name="Variants" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/In1" path="Toplevel/Subsystem/Variants/In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/In2" path="Toplevel/Subsystem/Variants/In2">
+        <double/>
+      </inport>
+      <parameter name="VSSE_CURRENT_BUILD" path="Toplevel/Subsystem/Variants/Filter2" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter2" origin="explicit_param" workspace="VSSE_CURRENT_BUILD" initValue="1">
+        <enumType name="BUILD_TYPE">
+          <enumElement name="PROTOTYPE" value="1"/>
+          <enumElement name="PRODUCTION" value="2"/>
+        </enumType>
+        <usageContext path="Toplevel/Subsystem/Variants/Filter2" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter2" simulinkBlockType="SubSystem"/>
+      </parameter>
+      <parameter name="VSSE_CURRENT_BUILD1" path="Toplevel/Subsystem/Variants/Filter1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter1" origin="explicit_param" workspace="VSSE_CURRENT_BUILD1" initValue="1">
+        <enumType name="BUILD_TYPE">
+          <enumElement name="PROTOTYPE" value="1"/>
+          <enumElement name="PRODUCTION" value="2"/>
+        </enumType>
+        <usageContext path="Toplevel/Subsystem/Variants/Filter1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter1" simulinkBlockType="SubSystem"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Out1" path="Toplevel/Subsystem/Variants/Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Out2" path="Toplevel/Subsystem/Variants/Out2">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss7"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter1/Prototype" path="Toplevel/Subsystem/Variants/Filter1/Prototype" sampleTime="0.01" name="Prototype" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter1/Prototype/In1" path="Toplevel/Subsystem/Variants/Filter1/Prototype/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter1/Prototype/Out1" path="Toplevel/Subsystem/Variants/Filter1/Prototype/Out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter2/Prototype" path="Toplevel/Subsystem/Variants/Filter2/Prototype" sampleTime="0.01" name="Prototype" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter2/Prototype/In1" path="Toplevel/Subsystem/Variants/Filter2/Prototype/In1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="variant_subsystems_enum/Toplevel/Subsystem/Variants/Filter2/Prototype/Out1" path="Toplevel/Subsystem/Variants/Filter2/Prototype/Out1">
+        <double/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

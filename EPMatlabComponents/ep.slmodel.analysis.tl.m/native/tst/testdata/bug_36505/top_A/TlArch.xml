@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.70" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_36505\disp_model.mdl" modelCreationDate="2016-02-17T14:11:40" creator="developer">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.70" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_36505\disp_model.mdl" creationDate="2016-02-17T14:11:40" modificationDate="2021-11-18T11:43:22">
+    <subsystem subsysID="ss1" physicalPath="disp_model/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="0.01" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="InPort1" physicalPath="disp_model/top_A/Subsystem/top_A/InPort1" path="top_A/Subsystem/top_A/InPort1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="InPort2" physicalPath="disp_model/top_A/Subsystem/top_A/InPort2" path="top_A/Subsystem/top_A/InPort2">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="OutPort1" physicalPath="disp_model/top_A/Subsystem/top_A/OutPort1" path="top_A/Subsystem/top_A/OutPort1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </outport>
+      <display physicalPath="disp_model/top_A/Subsystem/top_A/Chart_X" path="top_A/Subsystem/top_A/Chart_X" name="y" stateflowVariable="y" portNumber="1">
+        <miltype initValue="-1.0000000000000000e+00" signalName="y">
+          <int16/>
+        </miltype>
+        <siltype initValue="-1.0000000000000000e+00" signalName="y">
+          <Float64/>
+        </siltype>
+      </display>
+      <display physicalPath="disp_model/top_A/Subsystem/top_A/Gain" path="top_A/Subsystem/top_A/Gain" name="Gain" portNumber="1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="disp_model/top_A/Subsystem/top_A/InPort1" path="top_A/Subsystem/top_A/InPort1" name="InPort1" portNumber="1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="disp_model/top_A/Subsystem/top_A/InPort2" path="top_A/Subsystem/top_A/InPort2" name="InPort2" portNumber="1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="disp_model/top_A/Subsystem/top_A/Logical&#10;Operator" path="top_A/Subsystem/top_A/Logical&#10;Operator" name="Logical&#10;Operator" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="disp_model/top_A/Subsystem/top_A/Relational&#10;Operator" path="top_A/Subsystem/top_A/Relational&#10;Operator" name="Relational&#10;Operator" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="disp_model/top_A/Subsystem/top_A/Relational&#10;Operator1" path="top_A/Subsystem/top_A/Relational&#10;Operator1" name="Relational&#10;Operator1" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="disp_model/top_A/Subsystem/top_A/Unit Delay" path="top_A/Subsystem/top_A/Unit Delay" name="Unit Delay" portNumber="1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="disp_model/top_A/Subsystem/top_A/Chart_X" path="top_A/Subsystem/top_A/Chart_X" name="x" stateflowVariable="x">
+        <miltype initValue="3.0000000000000000e+00" signalName="x">
+          <int16/>
+        </miltype>
+        <siltype initValue="3.0000000000000000e+00" signalName="x">
+          <Float64/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="disp_model/top_A/Subsystem/top_A/Chart_X" path="top_A/Subsystem/top_A/Chart_X" sampleTime="0.01" name="Chart_X" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="u" physicalPath="disp_model/top_A/Subsystem/top_A/Chart_X/u" path="top_A/Subsystem/top_A/Chart_X/u">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="y" physicalPath="disp_model/top_A/Subsystem/top_A/Chart_X/y" path="top_A/Subsystem/top_A/Chart_X/y">
+        <miltype signalName="y">
+          <int16/>
+        </miltype>
+        <siltype initValue="-1.0000000000000000e+00" signalName="y">
+          <Float64/>
+        </siltype>
+      </outport>
+      <display physicalPath="disp_model/top_A/Subsystem/top_A/Chart_X" path="top_A/Subsystem/top_A/Chart_X" name="x" stateflowVariable="x">
+        <miltype initValue="3.0000000000000000e+00" signalName="x">
+          <int16/>
+        </miltype>
+        <siltype initValue="3.0000000000000000e+00" signalName="x">
+          <Float64/>
+        </siltype>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

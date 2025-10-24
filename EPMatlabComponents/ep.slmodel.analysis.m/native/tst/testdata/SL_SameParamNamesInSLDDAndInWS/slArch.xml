@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_same_param_names_sldd_ws\start.m" modelVersion="1.17" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_same_param_names_sldd_ws\main.slx" modelCreationDate="2020-01-27T08:58:10" creator="developer">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.17" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_same_param_names_sldd_ws\main.slx" creationDate="2020-01-27T08:58:10" modificationDate="2024-09-11T18:47:11" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_same_param_names_sldd_ws\start.m">
+    <subsystem subsysID="ss1" physicalPath="main" path="" sampleTime="0.01" name="main" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="main/In1" path="In1">
+        <double/>
+      </inport>
+      <parameter name="a" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" modelRef="model003" origin="explicit_param" workspace="a" initValue="2.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="c" path="TopLevel/Subsystem/Gain" physicalPath="main/TopLevel/Subsystem/Gain" origin="explicit_param" workspace="c" initValue="2.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/Gain" physicalPath="main/TopLevel/Subsystem/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="w" path="TopLevel/Gain2" physicalPath="main/TopLevel/Gain2" origin="explicit_param" workspace="w" initValue="5.0">
+        <double/>
+        <usageContext path="TopLevel/Gain2" physicalPath="main/TopLevel/Gain2" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="b" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" modelRef="model003" origin="explicit_param" workspace="b">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="2.0">
+            <int16/>
+          </signal>
+          <signal index="2" initValue="3.0">
+            <int16/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="d" path="TopLevel/Subsystem/Gain1" physicalPath="main/TopLevel/Subsystem/Gain1" origin="explicit_param" workspace="d" initValue="3.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/Gain1" physicalPath="main/TopLevel/Subsystem/Gain1" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="m_s" path="TopLevel/Subsystem/Gain2" physicalPath="main/TopLevel/Subsystem/Gain2" origin="explicit_param" workspace="m_s" initValue="4.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/Gain2" physicalPath="main/TopLevel/Subsystem/Gain2" simulinkBlockType="Gain" blockAttribute="Gain"/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain2" physicalPath="param/Atomic Subsystem/Gain2" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="m_s_w" path="TopLevel/Gain" physicalPath="main/TopLevel/Gain" origin="explicit_param" workspace="m_s_w" initValue="2.0">
+        <double/>
+        <usageContext path="TopLevel/Gain" physicalPath="main/TopLevel/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Gain" physicalPath="param/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="m_w" path="TopLevel/Gain1" physicalPath="main/TopLevel/Gain1" origin="explicit_param" workspace="m_w" initValue="2.0">
+        <double/>
+        <usageContext path="TopLevel/Gain1" physicalPath="main/TopLevel/Gain1" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="ref1" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" modelRef="model002" origin="explicit_param" workspace="ref1">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="5.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <parameter name="ref2" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" modelRef="model002" origin="explicit_param" workspace="ref2" initValue="6.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <parameter name="s_w" path="TopLevel/Subsystem/RefModel/Gain1" physicalPath="param/Gain1" modelRef="model003" origin="explicit_param" workspace="s_w" initValue="3.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Gain1" physicalPath="param/Gain1" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="main/Out1" path="Out1">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+      <display physicalPath="param/Atomic Subsystem/Gain" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" name="Gain" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+      <display physicalPath="param/Atomic Subsystem/Gain1" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" name="Gain1" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="main/TopLevel" path="TopLevel" sampleTime="0.01" name="TopLevel" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="main/TopLevel/In1" path="TopLevel/In1">
+        <double/>
+      </inport>
+      <parameter name="a" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" modelRef="model003" origin="explicit_param" workspace="a" initValue="2.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="c" path="TopLevel/Subsystem/Gain" physicalPath="main/TopLevel/Subsystem/Gain" origin="explicit_param" workspace="c" initValue="2.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/Gain" physicalPath="main/TopLevel/Subsystem/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="w" path="TopLevel/Gain2" physicalPath="main/TopLevel/Gain2" origin="explicit_param" workspace="w" initValue="5.0">
+        <double/>
+        <usageContext path="TopLevel/Gain2" physicalPath="main/TopLevel/Gain2" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="b" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" modelRef="model003" origin="explicit_param" workspace="b">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="2.0">
+            <int16/>
+          </signal>
+          <signal index="2" initValue="3.0">
+            <int16/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="d" path="TopLevel/Subsystem/Gain1" physicalPath="main/TopLevel/Subsystem/Gain1" origin="explicit_param" workspace="d" initValue="3.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/Gain1" physicalPath="main/TopLevel/Subsystem/Gain1" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="m_s" path="TopLevel/Subsystem/Gain2" physicalPath="main/TopLevel/Subsystem/Gain2" origin="explicit_param" workspace="m_s" initValue="4.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/Gain2" physicalPath="main/TopLevel/Subsystem/Gain2" simulinkBlockType="Gain" blockAttribute="Gain"/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain2" physicalPath="param/Atomic Subsystem/Gain2" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="m_s_w" path="TopLevel/Gain" physicalPath="main/TopLevel/Gain" origin="explicit_param" workspace="m_s_w" initValue="2.0">
+        <double/>
+        <usageContext path="TopLevel/Gain" physicalPath="main/TopLevel/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Gain" physicalPath="param/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="m_w" path="TopLevel/Gain1" physicalPath="main/TopLevel/Gain1" origin="explicit_param" workspace="m_w" initValue="2.0">
+        <double/>
+        <usageContext path="TopLevel/Gain1" physicalPath="main/TopLevel/Gain1" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="ref1" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" modelRef="model002" origin="explicit_param" workspace="ref1">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="5.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <parameter name="ref2" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" modelRef="model002" origin="explicit_param" workspace="ref2" initValue="6.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <parameter name="s_w" path="TopLevel/Subsystem/RefModel/Gain1" physicalPath="param/Gain1" modelRef="model003" origin="explicit_param" workspace="s_w" initValue="3.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Gain1" physicalPath="param/Gain1" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="main/TopLevel/Out1" path="TopLevel/Out1">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+      <display physicalPath="param/Atomic Subsystem/Gain" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" name="Gain" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+      <display physicalPath="param/Atomic Subsystem/Gain1" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" name="Gain1" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="main/TopLevel/Subsystem" path="TopLevel/Subsystem" sampleTime="0.01" name="Subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="main/TopLevel/Subsystem/In1" path="TopLevel/Subsystem/In1">
+        <double/>
+      </inport>
+      <parameter name="a" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" modelRef="model003" origin="explicit_param" workspace="a" initValue="2.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="c" path="TopLevel/Subsystem/Gain" physicalPath="main/TopLevel/Subsystem/Gain" origin="explicit_param" workspace="c" initValue="2.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/Gain" physicalPath="main/TopLevel/Subsystem/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="b" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" modelRef="model003" origin="explicit_param" workspace="b">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="2.0">
+            <int16/>
+          </signal>
+          <signal index="2" initValue="3.0">
+            <int16/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="d" path="TopLevel/Subsystem/Gain1" physicalPath="main/TopLevel/Subsystem/Gain1" origin="explicit_param" workspace="d" initValue="3.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/Gain1" physicalPath="main/TopLevel/Subsystem/Gain1" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="m_s" path="TopLevel/Subsystem/Gain2" physicalPath="main/TopLevel/Subsystem/Gain2" origin="explicit_param" workspace="m_s" initValue="4.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/Gain2" physicalPath="main/TopLevel/Subsystem/Gain2" simulinkBlockType="Gain" blockAttribute="Gain"/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain2" physicalPath="param/Atomic Subsystem/Gain2" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="m_s_w" path="TopLevel/Subsystem/RefModel/Gain" physicalPath="param/Gain" modelRef="model003" origin="explicit_param" workspace="m_s_w" initValue="2.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Gain" physicalPath="param/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="ref1" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" modelRef="model002" origin="explicit_param" workspace="ref1">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="5.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <parameter name="ref2" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" modelRef="model002" origin="explicit_param" workspace="ref2" initValue="6.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <parameter name="s_w" path="TopLevel/Subsystem/RefModel/Gain1" physicalPath="param/Gain1" modelRef="model003" origin="explicit_param" workspace="s_w" initValue="3.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Gain1" physicalPath="param/Gain1" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="main/TopLevel/Subsystem/Out1" path="TopLevel/Subsystem/Out1">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+      <display physicalPath="param/Atomic Subsystem/Gain" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" name="Gain" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+      <display physicalPath="param/Atomic Subsystem/Gain1" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" name="Gain1" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="param" path="TopLevel/Subsystem/RefModel" sampleTime="0.01" name="RefModel" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="In1" physicalPath="param/In1" path="TopLevel/Subsystem/RefModel/In1" modelRef="model003">
+        <double/>
+      </inport>
+      <parameter name="a" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" modelRef="model003" origin="explicit_param" workspace="a" initValue="2.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="b" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" modelRef="model003" origin="explicit_param" workspace="b">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="2.0">
+            <int16/>
+          </signal>
+          <signal index="2" initValue="3.0">
+            <int16/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="m_s" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain2" physicalPath="param/Atomic Subsystem/Gain2" modelRef="model003" origin="explicit_param" workspace="m_s" initValue="4.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain2" physicalPath="param/Atomic Subsystem/Gain2" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="m_s_w" path="TopLevel/Subsystem/RefModel/Gain" physicalPath="param/Gain" modelRef="model003" origin="explicit_param" workspace="m_s_w" initValue="2.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Gain" physicalPath="param/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="ref1" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" modelRef="model002" origin="explicit_param" workspace="ref1">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="5.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <parameter name="ref2" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" modelRef="model002" origin="explicit_param" workspace="ref2" initValue="6.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <parameter name="s_w" path="TopLevel/Subsystem/RefModel/Gain1" physicalPath="param/Gain1" modelRef="model003" origin="explicit_param" workspace="s_w" initValue="3.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Gain1" physicalPath="param/Gain1" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="param/Out1" path="TopLevel/Subsystem/RefModel/Out1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+      <display physicalPath="param/Atomic Subsystem/Gain" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" name="Gain" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+      <display physicalPath="param/Atomic Subsystem/Gain1" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" name="Gain1" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="param/Atomic Subsystem" path="TopLevel/Subsystem/RefModel/Atomic Subsystem" sampleTime="0.01" name="Atomic Subsystem" scopeKind="SUT" kind="subsystem" modelRef="model003">
+      <inport portNumber="1" name="In1" physicalPath="param/Atomic Subsystem/In1" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/In1" modelRef="model003">
+        <double/>
+      </inport>
+      <parameter name="a" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" modelRef="model003" origin="explicit_param" workspace="a" initValue="2.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" physicalPath="param/Atomic Subsystem/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="b" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" modelRef="model003" origin="explicit_param" workspace="b">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="2.0">
+            <int16/>
+          </signal>
+          <signal index="2" initValue="3.0">
+            <int16/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" physicalPath="param/Atomic Subsystem/Gain1" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="m_s" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain2" physicalPath="param/Atomic Subsystem/Gain2" modelRef="model003" origin="explicit_param" workspace="m_s" initValue="4.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain2" physicalPath="param/Atomic Subsystem/Gain2" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model003"/>
+      </parameter>
+      <parameter name="ref1" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" modelRef="model002" origin="explicit_param" workspace="ref1">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="5.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <parameter name="ref2" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" modelRef="model002" origin="explicit_param" workspace="ref2" initValue="6.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="param/Atomic Subsystem/Out1" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Out1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+      <display physicalPath="param/Atomic Subsystem/Gain" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain" name="Gain" portNumber="1" modelRef="model003">
+        <double/>
+      </display>
+      <display physicalPath="param/Atomic Subsystem/Gain1" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Gain1" name="Gain1" portNumber="1" modelRef="model003">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </display>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="ref" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model" sampleTime="0.01" name="Model" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="ref/In1" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/In1" modelRef="model002">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="ref/In2" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/In2" modelRef="model002">
+        <double/>
+      </inport>
+      <parameter name="ref1" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" modelRef="model002" origin="explicit_param" workspace="ref1">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="5.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain" physicalPath="ref/Gain" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <parameter name="ref2" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" modelRef="model002" origin="explicit_param" workspace="ref2" initValue="6.0">
+        <double/>
+        <usageContext path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Gain1" physicalPath="ref/Gain1" simulinkBlockType="Gain" blockAttribute="Gain" modelRef="model002"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="ref/Out1" path="TopLevel/Subsystem/RefModel/Atomic Subsystem/Model/Out1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.3" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_same_param_names_sldd_ws\ref.slx" creationDate="2020-01-27T14:56:17" modificationDate="2024-09-11T18:47:11" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_same_param_names_sldd_ws\start.m"/>
+  <model modelID="model003" modelKind="model_ref" modelVersion="3.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_same_param_names_sldd_ws\param.mdl" creationDate="2017-09-20T16:34:20" modificationDate="2024-09-11T18:47:11" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_same_param_names_sldd_ws\start.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

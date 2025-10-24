@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="port_read"/>
+    <Architecture id="id1" name="port_read [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A"/>
+      <Path refId="id1" path="top_A.c:1:top_A"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InA_SL_1"/>
+        <Path refId="id1" path="Sa1_InA_SL_1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InA_SL_2"/>
+        <Path refId="id1" path="Sa1_InA_SL_2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutA_SL_1"/>
+        <Path refId="id1" path="Sa1_OutA_SL_1"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutA_SL_2"/>
+        <Path refId="id1" path="Sa1_OutA_SL_2"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutA_SL_3"/>
+        <Path refId="id1" path="Sa1_OutA_SL_3"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Sa2_sub_B"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InB_SL_1"/>
+        <Path refId="id1" path="Sa2_InB_SL_1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InB_SL_2"/>
+        <Path refId="id1" path="IF_Sa1_InA_SL_2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutB_SL_1"/>
+        <Path refId="id1" path="Sa2_OutB_SL_1"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_B/sub_C/sub_E"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Sa2_sub_B/top_A.c:1:Sa7_sub_E"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InE_SL_1"/>
+        <Path refId="id1" path="Sa7_InE_SL_1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutE_SL_1"/>
+        <Path refId="id1" path="IF_Sa7_OutE_SL_1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_P"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Sa3_sub_P"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InP_SL_1"/>
+        <Path refId="id1" path="IF_Sa1_InA_SL_2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutP_SL_1"/>
+        <Path refId="id1" path="Sa8_OutQ_SL_1_a"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_A/Subsystem/top_A/sub_P/sub_Q"/>
+      <Path refId="id1" path="top_A.c:1:top_A/top_A.c:1:Sa3_sub_P/top_A.c:1:Sa8_sub_Q"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InQ_SL_1"/>
+        <Path refId="id1" path="Sa8_InQ_SL_1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutQ_SL_1"/>
+        <Path refId="id1" path="Sa8_OutQ_SL_1"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

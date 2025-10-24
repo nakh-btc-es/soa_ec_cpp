@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="Wrapper_HvacHmi_Service"/>
+    <Architecture id="id1" name="Wrapper_HvacHmi_Service [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="Wrapper_HvacHmi_Service.c:1:Wrapper_HvacHmi_Service_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Rp_EvtCmdIgnSts_EvtCmdIgnSts" refId="id0"/>
+        <Path path="RteStub_EvtCmdIgnSts_Rp_EvtCmdIgnSts_EvtCmdIgnSts" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_Trigger_HVAC_AirFlowControlRequest_MhHVAC_AirFlowControlRequest" refId="id0"/>
+        <Path path="in_Trigger_HVAC_AirFlowControlRequest_1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_Trigger_HVAC_AirFlowControlRequest_1.FrontHVAC_BlwFuncReq" refId="id0"/>
+          <Path path=".FrontHVAC_BlwFuncReq" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_Trigger_HVAC_AirFlowControlRequest_MhHVAC_AirFlowControlRequest" refId="id0"/>
+        <Path path="in_Trigger_HVAC_AirFlowControlRequest_1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_Trigger_HVAC_AirFlowControlRequest_1.FrontHVAC_BlwJumpValueReq" refId="id0"/>
+          <Path path=".FrontHVAC_BlwJumpValueReq" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_Trigger_HVAC_AirFlowControlRequest_MhCategory_t" refId="id0"/>
+        <Path path="in_Trigger_HVAC_AirFlowControlRequest_MhCategory_t" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_Trigger_HVAC_DistributionModeRequest_MhHVAC_DistributionModeRequest" refId="id0"/>
+        <Path path="in_Trigger_HVAC_DistributionModeRequest_1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_Trigger_HVAC_DistributionModeRequest_1.CDSF_FrontLeftModeDefrost_Req" refId="id0"/>
+          <Path path=".CDSF_FrontLeftModeDefrost_Req" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_Trigger_HVAC_DistributionModeRequest_MhHVAC_DistributionModeRequest" refId="id0"/>
+        <Path path="in_Trigger_HVAC_DistributionModeRequest_1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_Trigger_HVAC_DistributionModeRequest_1.CDSF_FrontLeftModePanel_Req" refId="id0"/>
+          <Path path=".CDSF_FrontLeftModePanel_Req" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_Trigger_HVAC_DistributionModeRequest_MhHVAC_DistributionModeRequest" refId="id0"/>
+        <Path path="in_Trigger_HVAC_DistributionModeRequest_1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_Trigger_HVAC_DistributionModeRequest_1.CDSF_FrontLeftModeFloor_Req" refId="id0"/>
+          <Path path=".CDSF_FrontLeftModeFloor_Req" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_Trigger_HVAC_DistributionModeRequest_MhHVAC_DistributionModeRequest" refId="id0"/>
+        <Path path="in_Trigger_HVAC_DistributionModeRequest_1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_Trigger_HVAC_DistributionModeRequest_1.CDSF_FrontRightModeDefrost_Req" refId="id0"/>
+          <Path path=".CDSF_FrontRightModeDefrost_Req" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_Trigger_HVAC_DistributionModeRequest_MhHVAC_DistributionModeRequest" refId="id0"/>
+        <Path path="in_Trigger_HVAC_DistributionModeRequest_1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_Trigger_HVAC_DistributionModeRequest_1.CDSF_FrontRightModePanel_Req" refId="id0"/>
+          <Path path=".CDSF_FrontRightModePanel_Req" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_Trigger_HVAC_DistributionModeRequest_MhHVAC_DistributionModeRequest" refId="id0"/>
+        <Path path="in_Trigger_HVAC_DistributionModeRequest_1" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_Trigger_HVAC_DistributionModeRequest_1.CDSF_FrontRightModeFloor_Req" refId="id0"/>
+          <Path path=".CDSF_FrontRightModeFloor_Req" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_Trigger_HVAC_DistributionModeRequest_MhCategory_t" refId="id0"/>
+        <Path path="in_Trigger_HVAC_DistributionModeRequest_MhCategory_t" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_Trigger_HVAC_Recirculation_Req_MhCategory_t" refId="id0"/>
+        <Path path="in_Trigger_HVAC_Recirculation_Req_MhCategory_t" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_Trigger_TemperatureRequest_MhTemperatureRequest_DT" refId="id0"/>
+        <Path path="in_Trigger_TemperatureRequest_MhTemperatureRequest_DT" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_Trigger_TemperatureRequest_MhTemperatureRequest_DT.FrontHVAC_Func" refId="id0"/>
+          <Path path=".FrontHVAC_Func" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_Trigger_TemperatureRequest_MhTemperatureRequest_DT" refId="id0"/>
+        <Path path="in_Trigger_TemperatureRequest_MhTemperatureRequest_DT" refId="id1"/>
+        <SignalMapping>
+          <Path path=".in_Trigger_TemperatureRequest_MhTemperatureRequest_DT.FrontHVAC_Func_jumpVAL" refId="id0"/>
+          <Path path=".FrontHVAC_Func_jumpVAL" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="in_Trigger_TemperatureRequest_MhCategory_t" refId="id0"/>
+        <Path path="in_Trigger_TemperatureRequest_MhCategory_t" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Mock_Cp_Proxi_GetValue/dsin_Cp_Proxi_GetValue_ERR" refId="id0"/>
+        <Path path="dsin_Cp_Proxi_GetValue_ERR" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Mock_Cp_Proxi_GetValue/dsin_Cp_Proxi_GetValue_Parameter_Size" refId="id0"/>
+        <Path path="dsin_Cp_Proxi_GetValue_Parameter_Size" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Mock_Cp_Proxi_GetValue/dsin_Cp_Proxi_GetValue_Parameter_Value" refId="id0"/>
+        <Path path="dsin_Cp_Proxi_GetValue_Parameter_Value" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Pp_EvtHVAC_BlowerStatus_Customer_HVAC_BlowerStatus_Customer" refId="id0"/>
+        <Path path="RteStub_EvtHVAC_BlowerStatus_Customer_Pp_EvtHVAC_BlowerStatus_Customer_HVAC_BlowerStatus_Customer" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Pp_EvtHVAC_DistributionMode_Customer_HVAC_DistributionMode_Customer" refId="id0"/>
+        <Path path="RteStub_EvtHVAC_DistributionMode_Customer_Pp_EvtHVAC_DistributionMode_Customer_HVAC_DistributionMode_Customer" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.HVACLeftMode_Sts" refId="id0"/>
+          <Path path=".HVACLeftMode_Sts" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Pp_EvtHVAC_DistributionMode_Customer_HVAC_DistributionMode_Customer" refId="id0"/>
+        <Path path="RteStub_EvtHVAC_DistributionMode_Customer_Pp_EvtHVAC_DistributionMode_Customer_HVAC_DistributionMode_Customer" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.HVACRightMode_Sts" refId="id0"/>
+          <Path path=".HVACRightMode_Sts" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Pp_EvtHVAC_Recirculation_Status_Client_HVAC_Recirculation_Status_Client" refId="id0"/>
+        <Path path="RteStub_EvtHVAC_Recirculation_Status_Client_Pp_EvtHVAC_Recirculation_Status_Client_HVAC_Recirculation_Status_Client" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.recirc_sts" refId="id0"/>
+          <Path path=".recirc_sts" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Pp_EvtHVAC_Recirculation_Status_Client_HVAC_Recirculation_Status_Client" refId="id0"/>
+        <Path path="RteStub_EvtHVAC_Recirculation_Status_Client_Pp_EvtHVAC_Recirculation_Status_Client_HVAC_Recirculation_Status_Client" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.recirc_mode_sts" refId="id0"/>
+          <Path path=".recirc_mode_sts" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Pp_EvtHVACSync_Sts_HVACSync_Sts" refId="id0"/>
+        <Path path="RteStub_EvtHVACSync_Sts_Pp_EvtHVACSync_Sts_HVACSync_Sts" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Pp_EvtHVAC_BlowerStatus_Internal_HVAC_BlowerStatus_Internal" refId="id0"/>
+        <Path path="RteStub_EvtHVAC_BlowerStatus_Internal_Pp_EvtHVAC_BlowerStatus_Internal_HVAC_BlowerStatus_Internal" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Pp_EvtHVAC_DistributionMode_Internal_HVAC_DistributionMode_Internal" refId="id0"/>
+        <Path path="RteStub_EvtHVAC_DistributionMode_Internal_Pp_EvtHVAC_DistributionMode_Internal_HVAC_DistributionMode_Internal" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.HVACLeftMode_Sts" refId="id0"/>
+          <Path path=".HVACLeftMode_Sts" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Pp_EvtHVAC_DistributionMode_Internal_HVAC_DistributionMode_Internal" refId="id0"/>
+        <Path path="RteStub_EvtHVAC_DistributionMode_Internal_Pp_EvtHVAC_DistributionMode_Internal_HVAC_DistributionMode_Internal" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.HVACRightMode_Sts" refId="id0"/>
+          <Path path=".HVACRightMode_Sts" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Pp_EvtTemperatureStatus_Customer_TemperatureStatus_Customer" refId="id0"/>
+        <Path path="RteStub_EvtTemperatureStatus_Customer_Pp_EvtTemperatureStatus_Customer_TemperatureStatus_Customer" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.HVACDRVTemp" refId="id0"/>
+          <Path path=".HVACDRVTemp" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Pp_EvtTemperatureStatus_Customer_TemperatureStatus_Customer" refId="id0"/>
+        <Path path="RteStub_EvtTemperatureStatus_Customer_Pp_EvtTemperatureStatus_Customer_TemperatureStatus_Customer" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.HVACPSNTemp" refId="id0"/>
+          <Path path=".HVACPSNTemp" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Pp_EvtTemperatureStatus_Internal_TemperatureStatus_Internal" refId="id0"/>
+        <Path path="RteStub_EvtTemperatureStatus_Internal_Pp_EvtTemperatureStatus_Internal_TemperatureStatus_Internal" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.HVAC_FL_Temp" refId="id0"/>
+          <Path path=".HVAC_FL_Temp" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Pp_EvtTemperatureStatus_Internal_TemperatureStatus_Internal" refId="id0"/>
+        <Path path="RteStub_EvtTemperatureStatus_Internal_Pp_EvtTemperatureStatus_Internal_TemperatureStatus_Internal" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.HVAC_FR_Temp" refId="id0"/>
+          <Path path=".HVAC_FR_Temp" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="out_Trigger_HVAC_AirFlowControlRequest_MhreqResp_t" refId="id0"/>
+        <Path path="out_Trigger_HVAC_AirFlowControlRequest_MhreqResp_t" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="out_Trigger_HVAC_DistributionModeRequest_MhreqResp_t" refId="id0"/>
+        <Path path="out_Trigger_HVAC_DistributionModeRequest_MhreqResp_t" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="out_Trigger_HVAC_Recirculation_Req_MhreqResp_t" refId="id0"/>
+        <Path path="out_Trigger_HVAC_Recirculation_Req_MhreqResp_t" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="out_Trigger_TemperatureRequest_MhreqResp_t" refId="id0"/>
+        <Path path="out_Trigger_TemperatureRequest_MhreqResp_t" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_Cp_Proxi_GetValue/dsout_Cp_Proxi_GetValue_Parameter_ID" refId="id0"/>
+        <Path path="dsout_Cp_Proxi_GetValue_Parameter_ID" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_Cp_Proxi_GetValue/dsout_Cp_Proxi_GetValue_Parameter_Size" refId="id0"/>
+        <Path path="dsout_Cp_Proxi_GetValue_Parameter_Size" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_Cp_Proxi_GetValue/dsout_Cp_Proxi_GetValue_Parameter_Value" refId="id0"/>
+        <Path path="dsout_Cp_Proxi_GetValue_Parameter_Value" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys" refId="id0"/>
+      <Path path="Wrapper_HvacHmi_Service.c:1:Wrapper_HvacHmi_Service_step/HvacHmi_Service.c:1:HvacHmi_Service_Main" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/Rp_EvtCmdIgnSts_EvtCmdIgnSts_read" refId="id0"/>
+        <Path path="RteStub_EvtCmdIgnSts_Rp_EvtCmdIgnSts_EvtCmdIgnSts" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/IRV_Getter_HVAC_AirFlowControlRequest_read" refId="id0"/>
+        <Path path="RteStub_IRV_Getter_HVAC_AirFlowControlRequest" refId="id1"/>
+        <SignalMapping>
+          <Path path=".IRV_Getter_HVAC_AirFlowControlRequest.FrontHVAC_BlwFuncReq" refId="id0"/>
+          <Path path=".FrontHVAC_BlwFuncReq" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/IRV_Getter_HVAC_AirFlowControlRequest_read" refId="id0"/>
+        <Path path="RteStub_IRV_Getter_HVAC_AirFlowControlRequest" refId="id1"/>
+        <SignalMapping>
+          <Path path=".IRV_Getter_HVAC_AirFlowControlRequest.FrontHVAC_BlwJumpValueReq" refId="id0"/>
+          <Path path=".FrontHVAC_BlwJumpValueReq" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/IRV_Getter_HVAC_DistributionModeRequest_read" refId="id0"/>
+        <Path path="RteStub_IRV_Getter_HVAC_DistributionModeRequest" refId="id1"/>
+        <SignalMapping>
+          <Path path=".IRV_Getter_HVAC_DistributionModeRequest.CDSF_FrontLeftModeDefrost_Req" refId="id0"/>
+          <Path path=".CDSF_FrontLeftModeDefrost_Req" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/IRV_Getter_HVAC_DistributionModeRequest_read" refId="id0"/>
+        <Path path="RteStub_IRV_Getter_HVAC_DistributionModeRequest" refId="id1"/>
+        <SignalMapping>
+          <Path path=".IRV_Getter_HVAC_DistributionModeRequest.CDSF_FrontLeftModePanel_Req" refId="id0"/>
+          <Path path=".CDSF_FrontLeftModePanel_Req" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/IRV_Getter_HVAC_DistributionModeRequest_read" refId="id0"/>
+        <Path path="RteStub_IRV_Getter_HVAC_DistributionModeRequest" refId="id1"/>
+        <SignalMapping>
+          <Path path=".IRV_Getter_HVAC_DistributionModeRequest.CDSF_FrontLeftModeFloor_Req" refId="id0"/>
+          <Path path=".CDSF_FrontLeftModeFloor_Req" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/IRV_Getter_HVAC_DistributionModeRequest_read" refId="id0"/>
+        <Path path="RteStub_IRV_Getter_HVAC_DistributionModeRequest" refId="id1"/>
+        <SignalMapping>
+          <Path path=".IRV_Getter_HVAC_DistributionModeRequest.CDSF_FrontRightModeDefrost_Req" refId="id0"/>
+          <Path path=".CDSF_FrontRightModeDefrost_Req" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/IRV_Getter_HVAC_DistributionModeRequest_read" refId="id0"/>
+        <Path path="RteStub_IRV_Getter_HVAC_DistributionModeRequest" refId="id1"/>
+        <SignalMapping>
+          <Path path=".IRV_Getter_HVAC_DistributionModeRequest.CDSF_FrontRightModePanel_Req" refId="id0"/>
+          <Path path=".CDSF_FrontRightModePanel_Req" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/IRV_Getter_HVAC_DistributionModeRequest_read" refId="id0"/>
+        <Path path="RteStub_IRV_Getter_HVAC_DistributionModeRequest" refId="id1"/>
+        <SignalMapping>
+          <Path path=".IRV_Getter_HVAC_DistributionModeRequest.CDSF_FrontRightModeFloor_Req" refId="id0"/>
+          <Path path=".CDSF_FrontRightModeFloor_Req" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/IRV_Getter_TemperatureRequest_read" refId="id0"/>
+        <Path path="RteStub_IRV_Getter_TemperatureRequest" refId="id1"/>
+        <SignalMapping>
+          <Path path=".IRV_Getter_TemperatureRequest.FrontHVAC_Func" refId="id0"/>
+          <Path path=".FrontHVAC_Func" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/IRV_Getter_TemperatureRequest_read" refId="id0"/>
+        <Path path="RteStub_IRV_Getter_TemperatureRequest" refId="id1"/>
+        <SignalMapping>
+          <Path path=".IRV_Getter_TemperatureRequest.FrontHVAC_Func_jumpVAL" refId="id0"/>
+          <Path path=".FrontHVAC_Func_jumpVAL" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Mock_Cp_Proxi_GetValue/dsin_Cp_Proxi_GetValue_ERR" refId="id0"/>
+        <Path path="dsin_Cp_Proxi_GetValue_ERR" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Mock_Cp_Proxi_GetValue/dsin_Cp_Proxi_GetValue_Parameter_Size" refId="id0"/>
+        <Path path="dsin_Cp_Proxi_GetValue_Parameter_Size" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Mock_Cp_Proxi_GetValue/dsin_Cp_Proxi_GetValue_Parameter_Value" refId="id0"/>
+        <Path path="dsin_Cp_Proxi_GetValue_Parameter_Value" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/Pp_EvtHVAC_BlowerStatus_Customer_HVAC_BlowerStatus_Customer_write" refId="id0"/>
+        <Path path="RteStub_EvtHVAC_BlowerStatus_Customer_Pp_EvtHVAC_BlowerStatus_Customer_HVAC_BlowerStatus_Customer" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/Pp_EvtHVAC_DistributionMode_Customer_HVAC_DistributionMode_Customer_write" refId="id0"/>
+        <Path path="RteStub_EvtHVAC_DistributionMode_Customer_Pp_EvtHVAC_DistributionMode_Customer_HVAC_DistributionMode_Customer" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.HVACLeftMode_Sts" refId="id0"/>
+          <Path path=".HVACLeftMode_Sts" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/Pp_EvtHVAC_DistributionMode_Customer_HVAC_DistributionMode_Customer_write" refId="id0"/>
+        <Path path="RteStub_EvtHVAC_DistributionMode_Customer_Pp_EvtHVAC_DistributionMode_Customer_HVAC_DistributionMode_Customer" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.HVACRightMode_Sts" refId="id0"/>
+          <Path path=".HVACRightMode_Sts" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/Pp_EvtHVAC_Recirculation_Status_Client_HVAC_Recirculation_Status_Client_write" refId="id0"/>
+        <Path path="RteStub_EvtHVAC_Recirculation_Status_Client_Pp_EvtHVAC_Recirculation_Status_Client_HVAC_Recirculation_Status_Client" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.recirc_sts" refId="id0"/>
+          <Path path=".recirc_sts" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/Pp_EvtHVAC_Recirculation_Status_Client_HVAC_Recirculation_Status_Client_write" refId="id0"/>
+        <Path path="RteStub_EvtHVAC_Recirculation_Status_Client_Pp_EvtHVAC_Recirculation_Status_Client_HVAC_Recirculation_Status_Client" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.recirc_mode_sts" refId="id0"/>
+          <Path path=".recirc_mode_sts" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/Pp_EvtHVACSync_Sts_HVACSync_Sts_write" refId="id0"/>
+        <Path path="RteStub_EvtHVACSync_Sts_Pp_EvtHVACSync_Sts_HVACSync_Sts" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/Pp_EvtHVAC_BlowerStatus_Internal_HVAC_BlowerStatus_Internal_write" refId="id0"/>
+        <Path path="RteStub_EvtHVAC_BlowerStatus_Internal_Pp_EvtHVAC_BlowerStatus_Internal_HVAC_BlowerStatus_Internal" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/Pp_EvtHVAC_DistributionMode_Internal_HVAC_DistributionMode_Internal_write" refId="id0"/>
+        <Path path="RteStub_EvtHVAC_DistributionMode_Internal_Pp_EvtHVAC_DistributionMode_Internal_HVAC_DistributionMode_Internal" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.HVACLeftMode_Sts" refId="id0"/>
+          <Path path=".HVACLeftMode_Sts" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/Pp_EvtHVAC_DistributionMode_Internal_HVAC_DistributionMode_Internal_write" refId="id0"/>
+        <Path path="RteStub_EvtHVAC_DistributionMode_Internal_Pp_EvtHVAC_DistributionMode_Internal_HVAC_DistributionMode_Internal" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.HVACRightMode_Sts" refId="id0"/>
+          <Path path=".HVACRightMode_Sts" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/Pp_EvtTemperatureStatus_Customer_TemperatureStatus_Customer_write" refId="id0"/>
+        <Path path="RteStub_EvtTemperatureStatus_Customer_Pp_EvtTemperatureStatus_Customer_TemperatureStatus_Customer" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.HVACDRVTemp" refId="id0"/>
+          <Path path=".HVACDRVTemp" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/Pp_EvtTemperatureStatus_Customer_TemperatureStatus_Customer_write" refId="id0"/>
+        <Path path="RteStub_EvtTemperatureStatus_Customer_Pp_EvtTemperatureStatus_Customer_TemperatureStatus_Customer" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.HVACPSNTemp" refId="id0"/>
+          <Path path=".HVACPSNTemp" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/Pp_EvtTemperatureStatus_Internal_TemperatureStatus_Internal_write" refId="id0"/>
+        <Path path="RteStub_EvtTemperatureStatus_Internal_Pp_EvtTemperatureStatus_Internal_TemperatureStatus_Internal" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.HVAC_FL_Temp" refId="id0"/>
+          <Path path=".HVAC_FL_Temp" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="HvacHmi_Service/HvacHmi_Service/HvacHmi_Service_Main_sys/Pp_EvtTemperatureStatus_Internal_TemperatureStatus_Internal_write" refId="id0"/>
+        <Path path="RteStub_EvtTemperatureStatus_Internal_Pp_EvtTemperatureStatus_Internal_TemperatureStatus_Internal" refId="id1"/>
+        <SignalMapping>
+          <Path path=".&lt;signal1&gt;.HVAC_FR_Temp" refId="id0"/>
+          <Path path=".HVAC_FR_Temp" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_Cp_Proxi_GetValue/dsout_Cp_Proxi_GetValue_Parameter_ID" refId="id0"/>
+        <Path path="dsout_Cp_Proxi_GetValue_Parameter_ID" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_Cp_Proxi_GetValue/dsout_Cp_Proxi_GetValue_Parameter_Size" refId="id0"/>
+        <Path path="dsout_Cp_Proxi_GetValue_Parameter_Size" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Mock_Cp_Proxi_GetValue/dsout_Cp_Proxi_GetValue_Parameter_Value" refId="id0"/>
+        <Path path="dsout_Cp_Proxi_GetValue_Parameter_Value" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<BusType name="BTC_BusObj1" virtual="false">
+			<Comp name="In1.{&lt;signal1&gt;}.a" type="double" />
+			<Comp name="In1.{&lt;signal1&gt;}.b" type="double" width="3" />
+		</BusType>
+		<BusType name="BTC_BusObj2" virtual="false">
+			<Comp name="In2.{&lt;signal1&gt;}.a2" type="double" />
+			<Comp name="In2.{&lt;signal1&gt;}.b_bus_obj.a" type="double" />
+			<Comp name="In2.{&lt;signal1&gt;}.b_bus_obj.b" type="double" width="3" />
+		</BusType>
+		<EnumType name="TrafficLight">
+			<EnumValue name="GREEN" ordinal="1" />
+			<EnumValue name="YELLOW" ordinal="3" />
+			<EnumValue name="RED" ordinal="8" />
+		</EnumType>
+	</Types>
+	<Outports sampleTime="1">
+		<Outport portNr="1" width="1" type="BTC_BusObj1">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In1.{&lt;signal1&gt;}.a</ScalarRef>
+				<ScalarRef>INPUT:In1.{&lt;signal1&gt;}.b(1)</ScalarRef>
+				<ScalarRef>INPUT:In1.{&lt;signal1&gt;}.b(2)</ScalarRef>
+				<ScalarRef>INPUT:In1.{&lt;signal1&gt;}.b(3)</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="2" width="1" type="BTC_BusObj2">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In2.{&lt;signal1&gt;}.a2</ScalarRef>
+				<ScalarRef>INPUT:In2.{&lt;signal1&gt;}.b_bus_obj.a</ScalarRef>
+				<ScalarRef>INPUT:In2.{&lt;signal1&gt;}.b_bus_obj.b(1)</ScalarRef>
+				<ScalarRef>INPUT:In2.{&lt;signal1&gt;}.b_bus_obj.b(2)</ScalarRef>
+				<ScalarRef>INPUT:In2.{&lt;signal1&gt;}.b_bus_obj.b(3)</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="3" width="5" type="TrafficLight">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In3(1)</ScalarRef>
+				<ScalarRef>INPUT:In3(2)</ScalarRef>
+				<ScalarRef>INPUT:In3(3)</ScalarRef>
+				<ScalarRef>INPUT:In3(4)</ScalarRef>
+				<ScalarRef>INPUT:In3(5)</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="4" width="1" type="BTC_BusObj1">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In4.{&lt;signal1&gt;}.a</ScalarRef>
+				<ScalarRef>INPUT:In4.{&lt;signal1&gt;}.b(1)</ScalarRef>
+				<ScalarRef>INPUT:In4.{&lt;signal1&gt;}.b(2)</ScalarRef>
+				<ScalarRef>INPUT:In4.{&lt;signal1&gt;}.b(3)</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+	</Outports>
+</SFunction>

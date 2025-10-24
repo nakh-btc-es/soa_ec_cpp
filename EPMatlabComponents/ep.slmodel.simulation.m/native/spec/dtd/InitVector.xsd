@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+    <xs:element name="TestVector">
+        <xs:annotation>
+            <xs:documentation> A TestVector </xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Inputs" type="SignalGroupType" minOccurs="1" maxOccurs="1">
+                    <xs:annotation>
+                        <xs:documentation>The vector input signals group</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="length" type="xs:positiveInteger" use="required">
+                <xs:annotation>
+                    <xs:documentation>Trace length (number of states) (>=1)
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="name" type="xs:string" use="required"> </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:complexType name="SignalGroupType">
+        <xs:choice maxOccurs="unbounded">
+            <xs:element name="Inport" type="InportType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>The vector interface objects</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="Calibration" type="CalibrationType" minOccurs="0" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>The vector interface objects</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:choice>
+
+    </xs:complexType>
+    
+    <xs:complexType name="InportType">
+     
+        <xs:attribute name="ifid" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>Unique object ID (corresponding IDs in MIL/SIL).This ID
+                    establishes the relation between the simulated objects from MIL and SIL. General
+                    rule: objects with the same ID are related. </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="identifier" type="xs:string"></xs:attribute>
+        <xs:attribute name="signalType" type="xs:string"></xs:attribute>
+        <xs:attribute name="matFile" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>Full path to the MAT file storing the inport data</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="CalibrationType">
+        <xs:attribute name="initValue" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>Init value of the calibration object.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="identifier" type="xs:string"></xs:attribute>
+        <xs:attribute name="ifid" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation>Unique object ID (corresponding IDs in MIL/SIL).This ID
+                    establishes the relation between the simulated objects from MIL and SIL. General
+                    rule: objects with the same ID are related. </xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+        <xs:attribute name="signalType" type="xs:string"></xs:attribute>
+    </xs:complexType>
+</xs:schema>

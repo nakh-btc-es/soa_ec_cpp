@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<BusType name="myBusZ" virtual="false">
+			<Comp name="In3.z.x" type="single" />
+			<Comp name="In3.z.y" type="double" width="2" />
+		</BusType>
+	</Types>
+	<Outports sampleTime="0.02">
+		<Outport portNr="1" type="int16">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In1</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="2" width="2" type="int32">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In2(1)</ScalarRef>
+				<ScalarRef>INPUT:In2(2)</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+		<Outport portNr="3" width="1" type="myBusZ">
+			<ScalarRefs>
+				<ScalarRef>INPUT:In3.z.x</ScalarRef>
+				<ScalarRef>INPUT:In3.z.y(1)</ScalarRef>
+				<ScalarRef>INPUT:In3.z.y(2)</ScalarRef>
+			</ScalarRefs>
+		</Outport>
+	</Outports>
+</SFunction>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.20" modelPath="E:\EP2\Git\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_cal_in_2_modules\cal_in_2_modules.mdl" modelCreationDate="2006-12-01T13:37:23" creator="alex">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.20" modelPath="E:\EP2\Git\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_cal_in_2_modules\cal_in_2_modules.mdl" creationDate="2006-12-01T13:37:23" modificationDate="2021-11-16T14:20:54">
+    <subsystem subsysID="ss1" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem" path="Subsystem/Subsystem/Subsystem" sampleTime="0.01" name="Subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in." physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/in." path="Subsystem/Subsystem/Subsystem/in.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="Relay[relay_out_off]" path="Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay" origin="relay_out_off" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay" targetLinkBlockKind="TL_Relay" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay" simulinkBlockType="Relay" blockAttribute="offoutput"/>
+      </calibration>
+      <calibration name="Relay[relay_out_on]" path="Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay" origin="relay_out_on" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay" targetLinkBlockKind="TL_Relay" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay" simulinkBlockType="Relay" blockAttribute="onoutput"/>
+      </calibration>
+      <calibration name="Saturation[sat_lower]" path="Subsystem/Subsystem/Subsystem/Saturation" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/Saturation" origin="sat_lower" restricted="false">
+        <miltype initValue="-1.5707963267948966e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="-1.5707963267948966e+00">
+          <fixedPoint baseType="Int16" lsb="6.1035156250000000e-05" offset="0.0000000000000000e+00" min="-2.0000000000000000e+00" max="1.9999389648437500e+00"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/Saturation" targetLinkBlockKind="TL_Saturate" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/Saturation" simulinkBlockType="Saturate" blockAttribute="lowerlimit" restriction="tl_saturate:lowerlimit"/>
+      </calibration>
+      <calibration name="Saturation[sat_upper]" path="Subsystem/Subsystem/Subsystem/Saturation" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/Saturation" origin="sat_upper" restricted="false">
+        <miltype initValue="3.1415926535897931e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="3.1415926535897931e+00">
+          <fixedPoint baseType="Int16" lsb="1.2207031250000000e-04" offset="0.0000000000000000e+00" min="-4.0000000000000000e+00" max="3.9998779296875000e+00"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/Saturation" targetLinkBlockKind="TL_Saturate" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/Saturation" simulinkBlockType="Saturate" blockAttribute="upperlimit" restriction="tl_saturate:upperlimit"/>
+      </calibration>
+      <outport portNumber="1" name="out." physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/out." path="Subsystem/Subsystem/Subsystem/out.">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="out.1" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/out.1" path="Subsystem/Subsystem/Subsystem/out.1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/Atomic Subsystem" path="Subsystem/Subsystem/Subsystem/Atomic Subsystem" sampleTime="0.01" name="Atomic Subsystem" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/Atomic Subsystem/In1" path="Subsystem/Subsystem/Subsystem/Atomic Subsystem/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="Relay[relay_out_off]" path="Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay" origin="relay_out_off" restricted="false">
+        <miltype initValue="0.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay" targetLinkBlockKind="TL_Relay" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay" simulinkBlockType="Relay" blockAttribute="offoutput"/>
+      </calibration>
+      <calibration name="Relay[relay_out_on]" path="Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay" origin="relay_out_on" restricted="false">
+        <miltype initValue="1.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="1.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay" targetLinkBlockKind="TL_Relay" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/Atomic Subsystem/Relay" simulinkBlockType="Relay" blockAttribute="onoutput"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/Atomic Subsystem/Out1" path="Subsystem/Subsystem/Subsystem/Atomic Subsystem/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/local_cal" path="Subsystem/Subsystem/Subsystem/local_cal" sampleTime="0.01" name="local_cal" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/local_cal/In1" path="Subsystem/Subsystem/Subsystem/local_cal/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="cal_in_2_modules/Subsystem/Subsystem/Subsystem/local_cal/Out1" path="Subsystem/Subsystem/Subsystem/local_cal/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

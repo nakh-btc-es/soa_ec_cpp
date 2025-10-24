@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="test"/>
+    <Architecture id="id1" name="test [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="test.c:1:test_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In_BMS_flgDcChgLine_Close" refId="id0"/>
+        <Path path="MIL_BMS_flgDcChgLine_Close" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out_flgChgLine_Close" refId="id0"/>
+        <Path path="MIL_Out_flgChgLine_Close" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="Pre flgChgLine_Close(1)" refId="id0"/>
+        <Path path="MIL_Out_flgChgLine_Close" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ParDt_VMM03LMC_tiLvInitAwakeHold_s_sfix16sp01" refId="id0"/>
+        <Path path="ParDt_VMM03LMC_tiLvInitAwakeHold_s_sfix16sp01" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20200909T082706_10532\tmp_ut_complete_ar_server\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20200909T082706_10532\tmp_ut_complete_ar_server\init_Wrapper_mControllerWithInterface_server.m" modelVersion="1.64" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200909T082706_10532\tmp_ut_complete_ar_server\Wrapper_mControllerWithInterface_server.slx" modelCreationDate="2020-04-28T13:08:48" creator="developer">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.64" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200909T082706_10532\tmp_ut_complete_ar_server\Wrapper_mControllerWithInterface_server.slx" creationDate="2020-04-28T13:08:48" modificationDate="2020-09-08T15:08:46" initScript="C:\Users\developer\AppData\Local\Temp\ut20200909T082706_10532\tmp_ut_complete_ar_server\init_Wrapper_mControllerWithInterface_server.m">
+    <subsystem subsysID="ss1" physicalPath="Wrapper_mControllerWithInterface_server" path="" sampleTime="0.001" name="Wrapper_mControllerWithInterface_server" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in_doOverride_Op" physicalPath="Wrapper_mControllerWithInterface_server/in_doOverride_Op" path="in_doOverride_Op" signalName="root_in2">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="in_doOverride_CMask" physicalPath="Wrapper_mControllerWithInterface_server/in_doOverride_CMask" path="in_doOverride_CMask" signalName="root_in3">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <inport portNumber="3" name="in_doOverride_CRec" physicalPath="Wrapper_mControllerWithInterface_server/in_doOverride_CRec" path="in_doOverride_CRec" signalName="root_in4">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <inport portNumber="4" name="in_doOverride_InOut" physicalPath="Wrapper_mControllerWithInterface_server/in_doOverride_InOut" path="in_doOverride_InOut" signalName="root_in5">
+        <double/>
+      </inport>
+      <inport portNumber="5" name="in_readData_Op" physicalPath="Wrapper_mControllerWithInterface_server/in_readData_Op" path="in_readData_Op" signalName="root_in1">
+        <double/>
+      </inport>
+      <outport portNumber="1" name="DataOut" physicalPath="Wrapper_mControllerWithInterface_server/DataOut" path="DataOut" signalName="root_out7">
+        <uint16/>
+      </outport>
+      <outport portNumber="2" name="out_doOverride_Rec" physicalPath="Wrapper_mControllerWithInterface_server/out_doOverride_Rec" path="out_doOverride_Rec" signalName="root_out4">
+        <array size="2" startIndex="1">
+          <uint8/>
+        </array>
+      </outport>
+      <outport portNumber="3" name="out_doOverride_Neg" physicalPath="Wrapper_mControllerWithInterface_server/out_doOverride_Neg" path="out_doOverride_Neg" signalName="root_out5">
+        <double/>
+      </outport>
+      <outport portNumber="4" name="out_doOverride_InOut" physicalPath="Wrapper_mControllerWithInterface_server/out_doOverride_InOut" path="out_doOverride_InOut" signalName="root_out6">
+        <double/>
+      </outport>
+      <outport portNumber="5" name="out_doreadData_Data" physicalPath="Wrapper_mControllerWithInterface_server/out_doreadData_Data" path="out_doreadData_Data" signalName="root_out1">
+        <array size="2" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+      <outport portNumber="6" name="out_doreadData_NegCode" physicalPath="Wrapper_mControllerWithInterface_server/out_doreadData_NegCode" path="out_doreadData_NegCode" signalName="root_out2">
+        <uint8/>
+      </outport>
+      <outport portNumber="7" name="out_doreadData_ERR" physicalPath="Wrapper_mControllerWithInterface_server/out_doreadData_ERR" path="out_doreadData_ERR" signalName="root_out3">
+        <double/>
+      </outport>
+      <subsystem refSubsysID="ss7"/>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="mControllerWithInterface_server/Runnable_Step" path="mControllerWithInterface_server/mControllerWithInterface_server/Runnable_Step" sampleTime="0.001" name="Runnable_Step" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="SubVal" physicalPath="mControllerWithInterface_server/Runnable_Step/SubVal" path="mControllerWithInterface_server/mControllerWithInterface_server/Runnable_Step/SubVal" modelRef="model002" signalName="subValIRV">
+        <uint16/>
+      </inport>
+      <inport portNumber="2" name="Override" physicalPath="mControllerWithInterface_server/Runnable_Step/Override" path="mControllerWithInterface_server/mControllerWithInterface_server/Runnable_Step/Override" modelRef="model002" signalName="overrideIRV">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="CurVal" physicalPath="mControllerWithInterface_server/Runnable_Step/CurVal" path="mControllerWithInterface_server/mControllerWithInterface_server/Runnable_Step/CurVal" modelRef="model002">
+        <uint16/>
+      </outport>
+      <outport portNumber="2" name="DataOut" physicalPath="mControllerWithInterface_server/Runnable_Step/DataOut" path="mControllerWithInterface_server/mControllerWithInterface_server/Runnable_Step/DataOut" modelRef="model002">
+        <uint16/>
+      </outport>
+      <outport portNumber="3" name="RealVal" physicalPath="mControllerWithInterface_server/Runnable_Step/RealVal" path="mControllerWithInterface_server/mControllerWithInterface_server/Runnable_Step/RealVal" modelRef="model002">
+        <uint16/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.173" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200909T082706_10532\tmp_ut_complete_ar_server\mControllerWithInterface_server.slx" creationDate="2013-07-25T14:12:43" modificationDate="2020-09-08T15:08:46" initScript="C:\Users\developer\AppData\Local\Temp\ut20200909T082706_10532\tmp_ut_complete_ar_server\init_Wrapper_mControllerWithInterface_server.m"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

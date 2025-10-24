@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mappings>
+   <ArchitectureMapping>
+      <Architecture id="id0" name="funcall_gen"/>
+      <Architecture id="id1" name="funcall_gen [C-Code]"/>
+      <ScopeMapping>
+         <Path path="" refId="id0"/>
+         <Path path="funcall_gen.c:1:funcall_gen_step" refId="id1"/>
+         <InterfaceObjectMapping kind="Output">
+            <Path path="out" refId="id0"/>
+            <Path path="out" refId="id1"/>
+            <SignalMapping>
+               <Path path="" refId="id0"/>
+               <Path path="" refId="id1"/>
+            </SignalMapping>
+         </InterfaceObjectMapping>
+         <InterfaceObjectMapping kind="Local">
+            <Path path="sut/Data Type Conversion(1)" refId="id0"/>
+            <Path path="out" refId="id1"/>
+            <SignalMapping>
+               <Path path="" refId="id0"/>
+               <Path path="" refId="id1"/>
+            </SignalMapping>
+         </InterfaceObjectMapping>
+         <InterfaceObjectMapping kind="Parameter">
+            <Path path="K" refId="id0"/>
+            <Path path="K" refId="id1"/>
+            <SignalMapping>
+               <Path path="" refId="id0"/>
+               <Path path="" refId="id1"/>
+            </SignalMapping>
+         </InterfaceObjectMapping>
+      </ScopeMapping>
+      <ScopeMapping>
+         <Path path="sut" refId="id0"/>
+         <Path path="funcall_gen.c:1:funcall_gen_step/sut_func.c:1:sut_func" refId="id1"/>
+         <InterfaceObjectMapping kind="Input">
+            <Path path="sut/in" refId="id0"/>
+            <Path path="in" refId="id1"/>
+            <SignalMapping>
+               <Path path="" refId="id0"/>
+               <Path path="" refId="id1"/>
+            </SignalMapping>
+         </InterfaceObjectMapping>
+         <InterfaceObjectMapping kind="Output">
+            <Path path="sut/out" refId="id0"/>
+            <Path path="out" refId="id1"/>
+            <SignalMapping>
+               <Path path="" refId="id0"/>
+               <Path path="" refId="id1"/>
+            </SignalMapping>
+         </InterfaceObjectMapping>
+         <InterfaceObjectMapping kind="Local">
+            <Path path="sut/Data Type Conversion(1)" refId="id0"/>
+            <Path path="out" refId="id1"/>
+            <SignalMapping>
+               <Path path="" refId="id0"/>
+               <Path path="" refId="id1"/>
+            </SignalMapping>
+         </InterfaceObjectMapping>
+         <InterfaceObjectMapping kind="Parameter">
+            <Path path="K" refId="id0"/>
+            <Path path="K" refId="id1"/>
+            <SignalMapping>
+               <Path path="" refId="id0"/>
+               <Path path="" refId="id1"/>
+            </SignalMapping>
+         </InterfaceObjectMapping>
+      </ScopeMapping>
+   </ArchitectureMapping>
+</Mappings>

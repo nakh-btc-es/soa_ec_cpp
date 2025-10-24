@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20241009T102620_5124\tmp_ut_ar_switch_mode\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_ar_switch_mode\init.m" modelVersion="1.27" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_ar_switch_mode\switchMode.slx" modelCreationDate="2019-12-10T12:46:57" creator="developer">
+  <toolInfo name="Matlab" release="(R2019b)" version="9.7" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2019b)" version="10.0" patchLevel=""/>
+  <model modelKind="model" modelID="model001" modelVersion="1.27" modelPath="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_ar_switch_mode\switchMode.slx" creationDate="2019-12-10T12:46:57" initScript="C:\Users\developer\AppData\Local\Temp\ut20200415T092139\tmp_ut_ar_switch_mode\init.m">
+    <subsystem subsysID="ss1" physicalPath="switchMode" path="" sampleTime="1" name="switchMode" scopeKind="DUMMY" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="switchMode/In1" path="In1">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="MSReceiverOnOff" physicalPath="switchMode/MSReceiverOnOff" path="MSReceiverOnOff">
+        <enumType name="SwitchMode">
+          <enumElement name="On" value="0"/>
+          <enumElement name="Off" value="1"/>
+        </enumType>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="switchMode/In3" path="In3">
+        <double/>
+      </inport>
+      <inport portNumber="4" name="MSReceiverColor" physicalPath="switchMode/MSReceiverColor" path="MSReceiverColor">
+        <enumType name="SwitchModeColor">
+          <enumElement name="Blue" value="10"/>
+          <enumElement name="Green" value="100"/>
+        </enumType>
+      </inport>
+      <inport portNumber="5" name="In4" physicalPath="switchMode/In4" path="In4">
+        <unsupportedTypeInformation/>
+      </inport>
+      <inport portNumber="6" name="In5" physicalPath="switchMode/In5" path="In5">
+        <unsupportedTypeInformation/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="switchMode/Out1" path="Out1">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="MSSenderOnOff" physicalPath="switchMode/MSSenderOnOff" path="MSSenderOnOff">
+        <enumType name="SwitchMode">
+          <enumElement name="On" value="0"/>
+          <enumElement name="Off" value="1"/>
+        </enumType>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="switchMode/Out3" path="Out3">
+        <double/>
+      </outport>
+      <outport portNumber="4" name="MSSenderColor" physicalPath="switchMode/MSSenderColor" path="MSSenderColor">
+        <enumType name="SwitchModeColor">
+          <enumElement name="Blue" value="10"/>
+          <enumElement name="Green" value="100"/>
+        </enumType>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="switchMode/SwitchModeBlueGreen" path="SwitchModeBlueGreen" sampleTime="1" name="SwitchModeBlueGreen" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In2" physicalPath="switchMode/SwitchModeBlueGreen/In2" path="SwitchModeBlueGreen/In2">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In3" physicalPath="switchMode/SwitchModeBlueGreen/In3" path="SwitchModeBlueGreen/In3">
+        <enumType name="SwitchModeColor">
+          <enumElement name="Blue" value="10"/>
+          <enumElement name="Green" value="100"/>
+        </enumType>
+      </inport>
+      <outport portNumber="1" name="Out2" physicalPath="switchMode/SwitchModeBlueGreen/Out2" path="SwitchModeBlueGreen/Out2">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out3" physicalPath="switchMode/SwitchModeBlueGreen/Out3" path="SwitchModeBlueGreen/Out3">
+        <enumType name="SwitchModeColor">
+          <enumElement name="Blue" value="10"/>
+          <enumElement name="Green" value="100"/>
+        </enumType>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="switchMode/SwitchModeOnOff" path="SwitchModeOnOff" sampleTime="1" name="SwitchModeOnOff" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In2" physicalPath="switchMode/SwitchModeOnOff/In2" path="SwitchModeOnOff/In2">
+        <double/>
+      </inport>
+      <inport portNumber="2" name="In3" physicalPath="switchMode/SwitchModeOnOff/In3" path="SwitchModeOnOff/In3">
+        <enumType name="SwitchMode">
+          <enumElement name="On" value="0"/>
+          <enumElement name="Off" value="1"/>
+        </enumType>
+      </inport>
+      <outport portNumber="1" name="Out2" physicalPath="switchMode/SwitchModeOnOff/Out2" path="SwitchModeOnOff/Out2">
+        <double/>
+      </outport>
+      <outport portNumber="2" name="Out3" physicalPath="switchMode/SwitchModeOnOff/Out3" path="SwitchModeOnOff/Out3">
+        <enumType name="SwitchMode">
+          <enumElement name="On" value="0"/>
+          <enumElement name="Off" value="1"/>
+        </enumType>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

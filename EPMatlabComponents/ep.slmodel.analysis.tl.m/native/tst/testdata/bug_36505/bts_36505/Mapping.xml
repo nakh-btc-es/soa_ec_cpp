@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="disp_model"/>
+    <Architecture id="id1" name="disp_model [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="bts_36505/Subsystem/bts_36505"/>
+      <Path refId="id1" path="bts_36505.c:1:bts_36505"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort1"/>
+        <Path refId="id1" path="mdisp_var8"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort2"/>
+        <Path refId="id1" path="mdisp_var"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="InPort3"/>
+        <Path refId="id1" path="mdisp_var5"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort1"/>
+        <Path refId="id1" path="Sf1_OutPort1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="OutPort2"/>
+        <Path refId="id1" path="Sf1_OutPort2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="bts_36505/Subsystem/bts_36505/InPort2(1)"/>
+        <Path refId="id1" path="mdisp_var"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="bts_36505/Subsystem/bts_36505/Chart_X"/>
+      <Path refId="id1" path="bts_36505.c:1:bts_36505/bts_36505.c:1:Cf1_Chart_X"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="u"/>
+        <Path refId="id1" path="mdisp_var"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="y"/>
+        <Path refId="id1" path="DD_Cf1_y"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="bts_36505/Subsystem/bts_36505/Chart_Y"/>
+      <Path refId="id1" path="bts_36505.c:1:bts_36505/bts_36505.c:1:Cf3_Chart_Y"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="u"/>
+        <Path refId="id1" path="mdisp_var5"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="y"/>
+        <Path refId="id1" path="DD_Cf3_y"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

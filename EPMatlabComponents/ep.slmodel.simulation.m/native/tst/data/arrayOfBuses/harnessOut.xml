@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SFunction>
+	<Types>
+		<BusType name="HighBus" virtual="false">
+			<Comp name="y" type="LowBus" dim1="1" dim2="2" />
+			<Comp name="x" type="LowBus" width="2" />
+			<Comp name="n" type="single" width="2" />
+			<Comp name="m" type="int8" />
+		</BusType>
+		<BusType name="LowBus" virtual="false">
+			<Comp name="b" type="boolean" />
+			<Comp name="a" type="uint8" width="2" />
+		</BusType>
+	</Types>
+	<Inports debug="false">
+		<Inport portNr="1" dim1="2" dim2="1" type="HighBus">
+			<ScalarRefs>
+				<ScalarRef displayName="Out1.s2(1)(1).y(1)(1).b">OUTPUT:Out1.s2(1)(1).y(1)(1).b</ScalarRef>
+				<ScalarRef displayName="Out1.s2(1)(1).y(1)(1).a(1)">OUTPUT:Out1.s2(1)(1).y(1)(1).a(1)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(1)(1).y(1)(1).a(2)">OUTPUT:Out1.s2(1)(1).y(1)(1).a(2)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(1)(1).y(1)(2).b">OUTPUT:Out1.s2(1)(1).y(1)(2).b</ScalarRef>
+				<ScalarRef displayName="Out1.s2(1)(1).y(1)(2).a(1)">OUTPUT:Out1.s2(1)(1).y(1)(2).a(1)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(1)(1).y(1)(2).a(2)">OUTPUT:Out1.s2(1)(1).y(1)(2).a(2)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(1)(1).x(1).b">OUTPUT:Out1.s2(1)(1).x(1).b</ScalarRef>
+				<ScalarRef displayName="Out1.s2(1)(1).x(1).a(1)">OUTPUT:Out1.s2(1)(1).x(1).a(1)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(1)(1).x(1).a(2)">OUTPUT:Out1.s2(1)(1).x(1).a(2)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(1)(1).x(2).b">OUTPUT:Out1.s2(1)(1).x(2).b</ScalarRef>
+				<ScalarRef displayName="Out1.s2(1)(1).x(2).a(1)">OUTPUT:Out1.s2(1)(1).x(2).a(1)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(1)(1).x(2).a(2)">OUTPUT:Out1.s2(1)(1).x(2).a(2)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(1)(1).n(1)">OUTPUT:Out1.s2(1)(1).n(1)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(1)(1).n(2)">OUTPUT:Out1.s2(1)(1).n(2)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(1)(1).m">OUTPUT:Out1.s2(1)(1).m</ScalarRef>
+				<ScalarRef displayName="Out1.s2(2)(1).y(1)(1).b">OUTPUT:Out1.s2(2)(1).y(1)(1).b</ScalarRef>
+				<ScalarRef displayName="Out1.s2(2)(1).y(1)(1).a(1)">OUTPUT:Out1.s2(2)(1).y(1)(1).a(1)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(2)(1).y(1)(1).a(2)">OUTPUT:Out1.s2(2)(1).y(1)(1).a(2)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(2)(1).y(1)(2).b">OUTPUT:Out1.s2(2)(1).y(1)(2).b</ScalarRef>
+				<ScalarRef displayName="Out1.s2(2)(1).y(1)(2).a(1)">OUTPUT:Out1.s2(2)(1).y(1)(2).a(1)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(2)(1).y(1)(2).a(2)">OUTPUT:Out1.s2(2)(1).y(1)(2).a(2)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(2)(1).x(1).b">OUTPUT:Out1.s2(2)(1).x(1).b</ScalarRef>
+				<ScalarRef displayName="Out1.s2(2)(1).x(1).a(1)">OUTPUT:Out1.s2(2)(1).x(1).a(1)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(2)(1).x(1).a(2)">OUTPUT:Out1.s2(2)(1).x(1).a(2)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(2)(1).x(2).b">OUTPUT:Out1.s2(2)(1).x(2).b</ScalarRef>
+				<ScalarRef displayName="Out1.s2(2)(1).x(2).a(1)">OUTPUT:Out1.s2(2)(1).x(2).a(1)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(2)(1).x(2).a(2)">OUTPUT:Out1.s2(2)(1).x(2).a(2)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(2)(1).n(1)">OUTPUT:Out1.s2(2)(1).n(1)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(2)(1).n(2)">OUTPUT:Out1.s2(2)(1).n(2)</ScalarRef>
+				<ScalarRef displayName="Out1.s2(2)(1).m">OUTPUT:Out1.s2(2)(1).m</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="2" width="2" type="LowBus">
+			<ScalarRefs>
+				<ScalarRef displayName="Out3.a3(1).b">OUTPUT:Out3.a3(1).b</ScalarRef>
+				<ScalarRef displayName="Out3.a3(1).a(1)">OUTPUT:Out3.a3(1).a(1)</ScalarRef>
+				<ScalarRef displayName="Out3.a3(1).a(2)">OUTPUT:Out3.a3(1).a(2)</ScalarRef>
+				<ScalarRef displayName="Out3.a3(2).b">OUTPUT:Out3.a3(2).b</ScalarRef>
+				<ScalarRef displayName="Out3.a3(2).a(1)">OUTPUT:Out3.a3(2).a(1)</ScalarRef>
+				<ScalarRef displayName="Out3.a3(2).a(2)">OUTPUT:Out3.a3(2).a(2)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="3" dim1="2" dim2="1" type="LowBus">
+			<ScalarRefs>
+				<ScalarRef displayName="Out6.a4(1)(1).b">OUTPUT:Out6.a4(1)(1).b</ScalarRef>
+				<ScalarRef displayName="Out6.a4(1)(1).a(1)">OUTPUT:Out6.a4(1)(1).a(1)</ScalarRef>
+				<ScalarRef displayName="Out6.a4(1)(1).a(2)">OUTPUT:Out6.a4(1)(1).a(2)</ScalarRef>
+				<ScalarRef displayName="Out6.a4(2)(1).b">OUTPUT:Out6.a4(2)(1).b</ScalarRef>
+				<ScalarRef displayName="Out6.a4(2)(1).a(1)">OUTPUT:Out6.a4(2)(1).a(1)</ScalarRef>
+				<ScalarRef displayName="Out6.a4(2)(1).a(2)">OUTPUT:Out6.a4(2)(1).a(2)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+		<Inport portNr="4" dim1="1" dim2="2" type="LowBus">
+			<ScalarRefs>
+				<ScalarRef displayName="Out7.a5(1)(1).b">OUTPUT:Out7.a5(1)(1).b</ScalarRef>
+				<ScalarRef displayName="Out7.a5(1)(1).a(1)">OUTPUT:Out7.a5(1)(1).a(1)</ScalarRef>
+				<ScalarRef displayName="Out7.a5(1)(1).a(2)">OUTPUT:Out7.a5(1)(1).a(2)</ScalarRef>
+				<ScalarRef displayName="Out7.a5(1)(2).b">OUTPUT:Out7.a5(1)(2).b</ScalarRef>
+				<ScalarRef displayName="Out7.a5(1)(2).a(1)">OUTPUT:Out7.a5(1)(2).a(1)</ScalarRef>
+				<ScalarRef displayName="Out7.a5(1)(2).a(2)">OUTPUT:Out7.a5(1)(2).a(2)</ScalarRef>
+			</ScalarRefs>
+		</Inport>
+	</Inports>
+</SFunction>

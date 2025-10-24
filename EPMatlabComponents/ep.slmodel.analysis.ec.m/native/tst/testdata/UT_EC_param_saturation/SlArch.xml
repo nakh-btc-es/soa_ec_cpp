@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_param_saturation_many\ut_results\AddModelInfo.xml" modelVersion="1.89" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_param_saturation_many\param_sat_blocks.slx" modelCreationDate="2023-10-26T17:41:03" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.89" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_param_saturation_many\param_sat_blocks.slx" creationDate="2023-10-26T17:41:03" modificationDate="2024-09-12T19:14:47">
+    <subsystem subsysID="ss1" physicalPath="param_sat_blocks" path="" sampleTime="2" name="param_sat_blocks" scopeKind="DUMMY" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="param_sat_blocks/In1" path="In1" signalName="Input">
+        <int32/>
+      </inport>
+      <inport portNumber="2" name="Call_Dimensions" physicalPath="param_sat_blocks/Call_Dimensions" path="Call_Dimensions">
+        <unsupportedTypeInformation/>
+      </inport>
+      <inport portNumber="3" name="Call_Locations" physicalPath="param_sat_blocks/Call_Locations" path="Call_Locations">
+        <unsupportedTypeInformation/>
+      </inport>
+      <inport portNumber="4" name="Call_MultipleUsages" physicalPath="param_sat_blocks/Call_MultipleUsages" path="Call_MultipleUsages">
+        <unsupportedTypeInformation/>
+      </inport>
+      <parameter name="paramMatrix2" path="Dimensions/ParamParamMatrix" physicalPath="param_sat_blocks/Dimensions/ParamParamMatrix" origin="explicit_param" workspace="paramMatrix2">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="-10.0">
+                <int16/>
+              </signal>
+              <signal index="2" initValue="-15.0">
+                <int16/>
+              </signal>
+              <signal index="3" initValue="-20.0">
+                <int16/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="-20.0">
+                <int16/>
+              </signal>
+              <signal index="2" initValue="-30.0">
+                <int16/>
+              </signal>
+              <signal index="3" initValue="-40.0">
+                <int16/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Dimensions/ParamParamMatrix" physicalPath="param_sat_blocks/Dimensions/ParamParamMatrix" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="Dimensions/ParamParamScalarMatrix" physicalPath="param_sat_blocks/Dimensions/ParamParamScalarMatrix" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="Dimensions/ParamValueMatrix" physicalPath="param_sat_blocks/Dimensions/ParamValueMatrix" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+      </parameter>
+      <parameter name="paramScalar1" path="Dimensions/ParamParamScalar" physicalPath="param_sat_blocks/Dimensions/ParamParamScalar" origin="explicit_param" workspace="paramScalar1" initValue="5.0">
+        <int8/>
+        <usageContext path="Dimensions/ParamParamScalar" physicalPath="param_sat_blocks/Dimensions/ParamParamScalar" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Dimensions/ParamParamScalarMatrix" physicalPath="param_sat_blocks/Dimensions/ParamParamScalarMatrix" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Dimensions/ParamParamScalarVector" physicalPath="param_sat_blocks/Dimensions/ParamParamScalarVector" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Dimensions/ParamValueMatrixScalar" physicalPath="param_sat_blocks/Dimensions/ParamValueMatrixScalar" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Dimensions/ParamValueScalar" physicalPath="param_sat_blocks/Dimensions/ParamValueScalar" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Dimensions/ParamValueScalarMatrix" physicalPath="param_sat_blocks/Dimensions/ParamValueScalarMatrix" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Dimensions/ParamValueScalarVector" physicalPath="param_sat_blocks/Dimensions/ParamValueScalarVector" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Dimensions/ParamValueVectorScalar" physicalPath="param_sat_blocks/Dimensions/ParamValueVectorScalar" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="MultipleUsageInScopes/Scope1/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope1/Saturation" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="MultipleUsageInScopes/Scope2/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope2/Saturation" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="MultipleUsageInScopes/Scope3/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope3/Saturation" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+      </parameter>
+      <parameter name="paramScalar2" path="Dimensions/ParamParamScalar" physicalPath="param_sat_blocks/Dimensions/ParamParamScalar" origin="explicit_param" workspace="paramScalar2" initValue="-5.0">
+        <int32/>
+        <usageContext path="Dimensions/ParamParamScalar" physicalPath="param_sat_blocks/Dimensions/ParamParamScalar" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="Dimensions/ParamValueMatrixScalar" physicalPath="param_sat_blocks/Dimensions/ParamValueMatrixScalar" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="Dimensions/ParamValueScalarMatrix" physicalPath="param_sat_blocks/Dimensions/ParamValueScalarMatrix" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="Dimensions/ParamValueScalarVector" physicalPath="param_sat_blocks/Dimensions/ParamValueScalarVector" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="Dimensions/ParamValueVectorScalar" physicalPath="param_sat_blocks/Dimensions/ParamValueVectorScalar" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="MultipleUsageInScopes/Scope1/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope1/Saturation" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+      </parameter>
+      <parameter name="paramVector1" path="Dimensions/ParamParamVector" physicalPath="param_sat_blocks/Dimensions/ParamParamVector" origin="explicit_param" workspace="paramVector1">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="10.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="20.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Dimensions/ParamParamVector" physicalPath="param_sat_blocks/Dimensions/ParamParamVector" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Dimensions/ParamValueVector" physicalPath="param_sat_blocks/Dimensions/ParamValueVector" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Locations/SLDD_Model" physicalPath="param_sat_blocks/Locations/SLDD_Model" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Locations/SLDD_SLDD" physicalPath="param_sat_blocks/Locations/SLDD_SLDD" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Locations/SLDD_SLDD1Ref" physicalPath="param_sat_blocks/Locations/SLDD_SLDD1Ref" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+      </parameter>
+      <parameter name="paramVector1_slddref" path="Locations/refModel/SLDD_Model" physicalPath="refModel/SLDD_Model" modelRef="model002" origin="explicit_param" workspace="paramVector1_slddref">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="15.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="25.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Locations/refModel/SLDD_Model" physicalPath="refModel/SLDD_Model" simulinkBlockType="Saturate" blockAttribute="UpperLimit" modelRef="model002"/>
+        <usageContext path="Locations/refModel/SLDD_SLDD" physicalPath="refModel/SLDD_SLDD" simulinkBlockType="Saturate" blockAttribute="UpperLimit" modelRef="model002"/>
+        <usageContext path="Locations/refModel/SLDD_SLDD" physicalPath="refModel/SLDD_SLDD" simulinkBlockType="Saturate" blockAttribute="LowerLimit" modelRef="model002"/>
+      </parameter>
+      <parameter name="paramVector2" path="Dimensions/ParamParamScalarVector" physicalPath="param_sat_blocks/Dimensions/ParamParamScalarVector" origin="explicit_param" workspace="paramVector2">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-12.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="-24.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Dimensions/ParamParamScalarVector" physicalPath="param_sat_blocks/Dimensions/ParamParamScalarVector" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="Dimensions/ParamParamVector" physicalPath="param_sat_blocks/Dimensions/ParamParamVector" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="Dimensions/ParamValueVector1" physicalPath="param_sat_blocks/Dimensions/ParamValueVector1" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="Locations/SLDD_SLDD" physicalPath="param_sat_blocks/Locations/SLDD_SLDD" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+      </parameter>
+      <parameter name="paramVector2_slddref" path="Locations/SLDD_SLDD1Ref" physicalPath="param_sat_blocks/Locations/SLDD_SLDD1Ref" origin="explicit_param" workspace="paramVector2_slddref">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-14.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="-28.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Locations/SLDD_SLDD1Ref" physicalPath="param_sat_blocks/Locations/SLDD_SLDD1Ref" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+      </parameter>
+      <parameter name="paramVector1_model" path="Locations/Model_Model" physicalPath="param_sat_blocks/Locations/Model_Model" origin="explicit_param" workspace="paramVector1_model">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="10.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="20.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Locations/Model_Model" physicalPath="param_sat_blocks/Locations/Model_Model" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Locations/SLDD_Model" physicalPath="param_sat_blocks/Locations/SLDD_Model" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <source kind="ModelWorkspace" file="param_sat_blocks"/>
+      </parameter>
+      <parameter name="paramVector1_model" path="Locations/refModel/Model_Model" physicalPath="refModel/Model_Model" modelRef="model002" origin="explicit_param" workspace="paramVector1_model">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="15.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="25.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Locations/refModel/Model_Model" physicalPath="refModel/Model_Model" simulinkBlockType="Saturate" blockAttribute="UpperLimit" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="refModel"/>
+      </parameter>
+      <parameter name="paramVector2_model" path="Locations/Model_Model" physicalPath="param_sat_blocks/Locations/Model_Model" origin="explicit_param" workspace="paramVector2_model">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-12.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="-24.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Locations/Model_Model" physicalPath="param_sat_blocks/Locations/Model_Model" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="MultipleUsageInScopes/Scope3/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope3/Saturation" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <source kind="ModelWorkspace" file="param_sat_blocks"/>
+      </parameter>
+      <parameter name="paramVector2_model" path="Locations/refModel/Model_Model" physicalPath="refModel/Model_Model" modelRef="model002" origin="explicit_param" workspace="paramVector2_model">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-14.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="-28.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Locations/refModel/Model_Model" physicalPath="refModel/Model_Model" simulinkBlockType="Saturate" blockAttribute="LowerLimit" modelRef="model002"/>
+        <usageContext path="Locations/refModel/SLDD_Model" physicalPath="refModel/SLDD_Model" simulinkBlockType="Saturate" blockAttribute="LowerLimit" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="refModel"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="param_sat_blocks/Out1" path="Out1" signalName="Dimensions_1">
+        <int32/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="param_sat_blocks/Out2" path="Out2" signalName="Dimensions_2">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="param_sat_blocks/Out3" path="Out3" signalName="Dimensions_3">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="param_sat_blocks/Out4" path="Out4" signalName="Dimensions_4">
+        <int32/>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="param_sat_blocks/Out5" path="Out5" signalName="Dimensions_5">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="param_sat_blocks/Out6" path="Out6" signalName="Dimensions_6">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="7" name="Out7" physicalPath="param_sat_blocks/Out7" path="Out7" signalName="Dimensions_7">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="8" name="Out8" physicalPath="param_sat_blocks/Out8" path="Out8" signalName="Dimensions_8">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="9" name="Out9" physicalPath="param_sat_blocks/Out9" path="Out9" signalName="Dimensions_9">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="10" name="Out10" physicalPath="param_sat_blocks/Out10" path="Out10" signalName="Dimensions_10">
+        <int32/>
+      </outport>
+      <outport portNumber="11" name="Out11" physicalPath="param_sat_blocks/Out11" path="Out11" signalName="Dimensions_11">
+        <int32/>
+      </outport>
+      <outport portNumber="12" name="Out12" physicalPath="param_sat_blocks/Out12" path="Out12" signalName="Dimensions_12">
+        <int32/>
+      </outport>
+      <outport portNumber="13" name="Out13" physicalPath="param_sat_blocks/Out13" path="Out13" signalName="Dimensions_13">
+        <int32/>
+      </outport>
+      <outport portNumber="14" name="Out14" physicalPath="param_sat_blocks/Out14" path="Out14" signalName="Locations_1">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="15" name="Out15" physicalPath="param_sat_blocks/Out15" path="Out15" signalName="Locations_2">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="16" name="Out16" physicalPath="param_sat_blocks/Out16" path="Out16" signalName="Locations_3">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="17" name="Out17" physicalPath="param_sat_blocks/Out17" path="Out17" signalName="Locations_4">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="18" name="Out18" physicalPath="param_sat_blocks/Out18" path="Out18" signalName="Locations_5">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="19" name="Out19" physicalPath="param_sat_blocks/Out19" path="Out19" signalName="Locations_6">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="20" name="Out20" physicalPath="param_sat_blocks/Out20" path="Out20" signalName="Locations_7">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="21" name="Out21" physicalPath="param_sat_blocks/Out21" path="Out21" signalName="MultipleUsageInScopes_1">
+        <int32/>
+      </outport>
+      <outport portNumber="22" name="Out22" physicalPath="param_sat_blocks/Out22" path="Out22" signalName="MultipleUsageInScopes_2">
+        <int32/>
+      </outport>
+      <outport portNumber="23" name="Out23" physicalPath="param_sat_blocks/Out23" path="Out23" signalName="MultipleUsageInScopes_3">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="param_sat_blocks/Dimensions" path="Dimensions" sampleTime="2" name="Dimensions" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="param_sat_blocks/Dimensions/In1" path="Dimensions/In1" signalName="Input">
+        <int32/>
+      </inport>
+      <parameter name="paramMatrix2" path="Dimensions/ParamParamMatrix" physicalPath="param_sat_blocks/Dimensions/ParamParamMatrix" origin="explicit_param" workspace="paramMatrix2">
+        <nonUniformArray size="2">
+          <signal index="1">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="-10.0">
+                <int16/>
+              </signal>
+              <signal index="2" initValue="-15.0">
+                <int16/>
+              </signal>
+              <signal index="3" initValue="-20.0">
+                <int16/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="3">
+              <signal index="1" initValue="-20.0">
+                <int16/>
+              </signal>
+              <signal index="2" initValue="-30.0">
+                <int16/>
+              </signal>
+              <signal index="3" initValue="-40.0">
+                <int16/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Dimensions/ParamParamMatrix" physicalPath="param_sat_blocks/Dimensions/ParamParamMatrix" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="Dimensions/ParamParamScalarMatrix" physicalPath="param_sat_blocks/Dimensions/ParamParamScalarMatrix" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="Dimensions/ParamValueMatrix" physicalPath="param_sat_blocks/Dimensions/ParamValueMatrix" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+      </parameter>
+      <parameter name="paramScalar1" path="Dimensions/ParamParamScalar" physicalPath="param_sat_blocks/Dimensions/ParamParamScalar" origin="explicit_param" workspace="paramScalar1" initValue="5.0">
+        <int8/>
+        <usageContext path="Dimensions/ParamParamScalar" physicalPath="param_sat_blocks/Dimensions/ParamParamScalar" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Dimensions/ParamParamScalarMatrix" physicalPath="param_sat_blocks/Dimensions/ParamParamScalarMatrix" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Dimensions/ParamParamScalarVector" physicalPath="param_sat_blocks/Dimensions/ParamParamScalarVector" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Dimensions/ParamValueMatrixScalar" physicalPath="param_sat_blocks/Dimensions/ParamValueMatrixScalar" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Dimensions/ParamValueScalar" physicalPath="param_sat_blocks/Dimensions/ParamValueScalar" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Dimensions/ParamValueScalarMatrix" physicalPath="param_sat_blocks/Dimensions/ParamValueScalarMatrix" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Dimensions/ParamValueScalarVector" physicalPath="param_sat_blocks/Dimensions/ParamValueScalarVector" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Dimensions/ParamValueVectorScalar" physicalPath="param_sat_blocks/Dimensions/ParamValueVectorScalar" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+      </parameter>
+      <parameter name="paramScalar2" path="Dimensions/ParamParamScalar" physicalPath="param_sat_blocks/Dimensions/ParamParamScalar" origin="explicit_param" workspace="paramScalar2" initValue="-5.0">
+        <int32/>
+        <usageContext path="Dimensions/ParamParamScalar" physicalPath="param_sat_blocks/Dimensions/ParamParamScalar" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="Dimensions/ParamValueMatrixScalar" physicalPath="param_sat_blocks/Dimensions/ParamValueMatrixScalar" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="Dimensions/ParamValueScalarMatrix" physicalPath="param_sat_blocks/Dimensions/ParamValueScalarMatrix" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="Dimensions/ParamValueScalarVector" physicalPath="param_sat_blocks/Dimensions/ParamValueScalarVector" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="Dimensions/ParamValueVectorScalar" physicalPath="param_sat_blocks/Dimensions/ParamValueVectorScalar" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+      </parameter>
+      <parameter name="paramVector1" path="Dimensions/ParamParamVector" physicalPath="param_sat_blocks/Dimensions/ParamParamVector" origin="explicit_param" workspace="paramVector1">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="10.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="20.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Dimensions/ParamParamVector" physicalPath="param_sat_blocks/Dimensions/ParamParamVector" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Dimensions/ParamValueVector" physicalPath="param_sat_blocks/Dimensions/ParamValueVector" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+      </parameter>
+      <parameter name="paramVector2" path="Dimensions/ParamParamScalarVector" physicalPath="param_sat_blocks/Dimensions/ParamParamScalarVector" origin="explicit_param" workspace="paramVector2">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-12.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="-24.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Dimensions/ParamParamScalarVector" physicalPath="param_sat_blocks/Dimensions/ParamParamScalarVector" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="Dimensions/ParamParamVector" physicalPath="param_sat_blocks/Dimensions/ParamParamVector" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <usageContext path="Dimensions/ParamValueVector1" physicalPath="param_sat_blocks/Dimensions/ParamValueVector1" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="param_sat_blocks/Dimensions/Out1" path="Dimensions/Out1">
+        <int32/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="param_sat_blocks/Dimensions/Out2" path="Dimensions/Out2">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="param_sat_blocks/Dimensions/Out3" path="Dimensions/Out3">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="param_sat_blocks/Dimensions/Out4" path="Dimensions/Out4">
+        <int32/>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="param_sat_blocks/Dimensions/Out5" path="Dimensions/Out5">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="param_sat_blocks/Dimensions/Out6" path="Dimensions/Out6">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="7" name="Out7" physicalPath="param_sat_blocks/Dimensions/Out7" path="Dimensions/Out7">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="8" name="Out8" physicalPath="param_sat_blocks/Dimensions/Out8" path="Dimensions/Out8">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="9" name="Out9" physicalPath="param_sat_blocks/Dimensions/Out9" path="Dimensions/Out9">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <int32/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="10" name="Out10" physicalPath="param_sat_blocks/Dimensions/Out10" path="Dimensions/Out10">
+        <int32/>
+      </outport>
+      <outport portNumber="11" name="Out11" physicalPath="param_sat_blocks/Dimensions/Out11" path="Dimensions/Out11">
+        <int32/>
+      </outport>
+      <outport portNumber="12" name="Out12" physicalPath="param_sat_blocks/Dimensions/Out12" path="Dimensions/Out12">
+        <int32/>
+      </outport>
+      <outport portNumber="13" name="Out13" physicalPath="param_sat_blocks/Dimensions/Out13" path="Dimensions/Out13">
+        <int32/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="param_sat_blocks/Locations" path="Locations" sampleTime="2" name="Locations" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="param_sat_blocks/Locations/In1" path="Locations/In1" signalName="Input">
+        <int32/>
+      </inport>
+      <parameter name="paramVector1" path="Locations/SLDD_Model" physicalPath="param_sat_blocks/Locations/SLDD_Model" origin="explicit_param" workspace="paramVector1">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="10.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="20.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Locations/SLDD_Model" physicalPath="param_sat_blocks/Locations/SLDD_Model" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Locations/SLDD_SLDD" physicalPath="param_sat_blocks/Locations/SLDD_SLDD" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Locations/SLDD_SLDD1Ref" physicalPath="param_sat_blocks/Locations/SLDD_SLDD1Ref" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+      </parameter>
+      <parameter name="paramVector1_slddref" path="Locations/refModel/SLDD_Model" physicalPath="refModel/SLDD_Model" modelRef="model002" origin="explicit_param" workspace="paramVector1_slddref">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="15.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="25.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Locations/refModel/SLDD_Model" physicalPath="refModel/SLDD_Model" simulinkBlockType="Saturate" blockAttribute="UpperLimit" modelRef="model002"/>
+        <usageContext path="Locations/refModel/SLDD_SLDD" physicalPath="refModel/SLDD_SLDD" simulinkBlockType="Saturate" blockAttribute="UpperLimit" modelRef="model002"/>
+        <usageContext path="Locations/refModel/SLDD_SLDD" physicalPath="refModel/SLDD_SLDD" simulinkBlockType="Saturate" blockAttribute="LowerLimit" modelRef="model002"/>
+      </parameter>
+      <parameter name="paramVector2" path="Locations/SLDD_SLDD" physicalPath="param_sat_blocks/Locations/SLDD_SLDD" origin="explicit_param" workspace="paramVector2">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-12.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="-24.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Locations/SLDD_SLDD" physicalPath="param_sat_blocks/Locations/SLDD_SLDD" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+      </parameter>
+      <parameter name="paramVector2_slddref" path="Locations/SLDD_SLDD1Ref" physicalPath="param_sat_blocks/Locations/SLDD_SLDD1Ref" origin="explicit_param" workspace="paramVector2_slddref">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-14.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="-28.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Locations/SLDD_SLDD1Ref" physicalPath="param_sat_blocks/Locations/SLDD_SLDD1Ref" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+      </parameter>
+      <parameter name="paramVector1_model" path="Locations/Model_Model" physicalPath="param_sat_blocks/Locations/Model_Model" origin="explicit_param" workspace="paramVector1_model">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="10.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="20.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Locations/Model_Model" physicalPath="param_sat_blocks/Locations/Model_Model" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="Locations/SLDD_Model" physicalPath="param_sat_blocks/Locations/SLDD_Model" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <source kind="ModelWorkspace" file="param_sat_blocks"/>
+      </parameter>
+      <parameter name="paramVector1_model" path="Locations/refModel/Model_Model" physicalPath="refModel/Model_Model" modelRef="model002" origin="explicit_param" workspace="paramVector1_model">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="15.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="25.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Locations/refModel/Model_Model" physicalPath="refModel/Model_Model" simulinkBlockType="Saturate" blockAttribute="UpperLimit" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="refModel"/>
+      </parameter>
+      <parameter name="paramVector2_model" path="Locations/Model_Model" physicalPath="param_sat_blocks/Locations/Model_Model" origin="explicit_param" workspace="paramVector2_model">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-12.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="-24.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Locations/Model_Model" physicalPath="param_sat_blocks/Locations/Model_Model" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <source kind="ModelWorkspace" file="param_sat_blocks"/>
+      </parameter>
+      <parameter name="paramVector2_model" path="Locations/refModel/Model_Model" physicalPath="refModel/Model_Model" modelRef="model002" origin="explicit_param" workspace="paramVector2_model">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-14.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="-28.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Locations/refModel/Model_Model" physicalPath="refModel/Model_Model" simulinkBlockType="Saturate" blockAttribute="LowerLimit" modelRef="model002"/>
+        <usageContext path="Locations/refModel/SLDD_Model" physicalPath="refModel/SLDD_Model" simulinkBlockType="Saturate" blockAttribute="LowerLimit" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="refModel"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="param_sat_blocks/Locations/Out1" path="Locations/Out1">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="param_sat_blocks/Locations/Out2" path="Locations/Out2">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="param_sat_blocks/Locations/Out3" path="Locations/Out3">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="param_sat_blocks/Locations/Out4" path="Locations/Out4">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="param_sat_blocks/Locations/Out5" path="Locations/Out5">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="param_sat_blocks/Locations/Out6" path="Locations/Out6">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="7" name="Out7" physicalPath="param_sat_blocks/Locations/Out7" path="Locations/Out7">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="refModel" path="Locations/refModel" sampleTime="2" name="refModel" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="refModel/In1" path="Locations/refModel/In1" modelRef="model002">
+        <int32/>
+      </inport>
+      <parameter name="paramVector1_slddref" path="Locations/refModel/SLDD_Model" physicalPath="refModel/SLDD_Model" modelRef="model002" origin="explicit_param" workspace="paramVector1_slddref">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="15.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="25.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Locations/refModel/SLDD_Model" physicalPath="refModel/SLDD_Model" simulinkBlockType="Saturate" blockAttribute="UpperLimit" modelRef="model002"/>
+        <usageContext path="Locations/refModel/SLDD_SLDD" physicalPath="refModel/SLDD_SLDD" simulinkBlockType="Saturate" blockAttribute="UpperLimit" modelRef="model002"/>
+        <usageContext path="Locations/refModel/SLDD_SLDD" physicalPath="refModel/SLDD_SLDD" simulinkBlockType="Saturate" blockAttribute="LowerLimit" modelRef="model002"/>
+      </parameter>
+      <parameter name="paramVector1_model" path="Locations/refModel/Model_Model" physicalPath="refModel/Model_Model" modelRef="model002" origin="explicit_param" workspace="paramVector1_model">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="15.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="25.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Locations/refModel/Model_Model" physicalPath="refModel/Model_Model" simulinkBlockType="Saturate" blockAttribute="UpperLimit" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="refModel"/>
+      </parameter>
+      <parameter name="paramVector2_model" path="Locations/refModel/Model_Model" physicalPath="refModel/Model_Model" modelRef="model002" origin="explicit_param" workspace="paramVector2_model">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-14.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="-28.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="Locations/refModel/Model_Model" physicalPath="refModel/Model_Model" simulinkBlockType="Saturate" blockAttribute="LowerLimit" modelRef="model002"/>
+        <usageContext path="Locations/refModel/SLDD_Model" physicalPath="refModel/SLDD_Model" simulinkBlockType="Saturate" blockAttribute="LowerLimit" modelRef="model002"/>
+        <source kind="ModelWorkspace" file="refModel"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="refModel/Out1" path="Locations/refModel/Out1" modelRef="model002">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="refModel/Out2" path="Locations/refModel/Out2" modelRef="model002">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out4" physicalPath="refModel/Out4" path="Locations/refModel/Out4" modelRef="model002">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="param_sat_blocks/MultipleUsageInScopes" path="MultipleUsageInScopes" sampleTime="2" name="MultipleUsageInScopes" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="param_sat_blocks/MultipleUsageInScopes/In1" path="MultipleUsageInScopes/In1" signalName="Input">
+        <int32/>
+      </inport>
+      <parameter name="paramScalar1" path="MultipleUsageInScopes/Scope1/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope1/Saturation" origin="explicit_param" workspace="paramScalar1" initValue="5.0">
+        <int8/>
+        <usageContext path="MultipleUsageInScopes/Scope1/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope1/Saturation" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="MultipleUsageInScopes/Scope2/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope2/Saturation" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+        <usageContext path="MultipleUsageInScopes/Scope3/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope3/Saturation" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+      </parameter>
+      <parameter name="paramScalar2" path="MultipleUsageInScopes/Scope1/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope1/Saturation" origin="explicit_param" workspace="paramScalar2" initValue="-5.0">
+        <int32/>
+        <usageContext path="MultipleUsageInScopes/Scope1/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope1/Saturation" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+      </parameter>
+      <parameter name="paramVector2_model" path="MultipleUsageInScopes/Scope3/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope3/Saturation" origin="explicit_param" workspace="paramVector2_model">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-12.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="-24.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="MultipleUsageInScopes/Scope3/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope3/Saturation" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <source kind="ModelWorkspace" file="param_sat_blocks"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="param_sat_blocks/MultipleUsageInScopes/Out1" path="MultipleUsageInScopes/Out1">
+        <int32/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="param_sat_blocks/MultipleUsageInScopes/Out2" path="MultipleUsageInScopes/Out2">
+        <int32/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="param_sat_blocks/MultipleUsageInScopes/Out3" path="MultipleUsageInScopes/Out3">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope1" path="MultipleUsageInScopes/Scope1" sampleTime="2" name="Scope1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope1/In1" path="MultipleUsageInScopes/Scope1/In1" signalName="Input">
+        <int32/>
+      </inport>
+      <parameter name="paramScalar1" path="MultipleUsageInScopes/Scope1/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope1/Saturation" origin="explicit_param" workspace="paramScalar1" initValue="5.0">
+        <int8/>
+        <usageContext path="MultipleUsageInScopes/Scope1/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope1/Saturation" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+      </parameter>
+      <parameter name="paramScalar2" path="MultipleUsageInScopes/Scope1/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope1/Saturation" origin="explicit_param" workspace="paramScalar2" initValue="-5.0">
+        <int32/>
+        <usageContext path="MultipleUsageInScopes/Scope1/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope1/Saturation" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope1/Out1" path="MultipleUsageInScopes/Scope1/Out1">
+        <int32/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope2" path="MultipleUsageInScopes/Scope2" sampleTime="2" name="Scope2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope2/In1" path="MultipleUsageInScopes/Scope2/In1" signalName="Input">
+        <int32/>
+      </inport>
+      <parameter name="paramScalar1" path="MultipleUsageInScopes/Scope2/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope2/Saturation" origin="explicit_param" workspace="paramScalar1" initValue="5.0">
+        <int8/>
+        <usageContext path="MultipleUsageInScopes/Scope2/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope2/Saturation" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope2/Out1" path="MultipleUsageInScopes/Scope2/Out1">
+        <int32/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope3" path="MultipleUsageInScopes/Scope3" sampleTime="2" name="Scope3" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope3/In1" path="MultipleUsageInScopes/Scope3/In1" signalName="Input">
+        <int32/>
+      </inport>
+      <parameter name="paramScalar1" path="MultipleUsageInScopes/Scope3/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope3/Saturation" origin="explicit_param" workspace="paramScalar1" initValue="5.0">
+        <int8/>
+        <usageContext path="MultipleUsageInScopes/Scope3/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope3/Saturation" simulinkBlockType="Saturate" blockAttribute="UpperLimit"/>
+      </parameter>
+      <parameter name="paramVector2_model" path="MultipleUsageInScopes/Scope3/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope3/Saturation" origin="explicit_param" workspace="paramVector2_model">
+        <nonUniformArray size="2">
+          <signal index="1" initValue="-12.0">
+            <int32/>
+          </signal>
+          <signal index="2" initValue="-24.0">
+            <int32/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="MultipleUsageInScopes/Scope3/Saturation" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope3/Saturation" simulinkBlockType="Saturate" blockAttribute="LowerLimit"/>
+        <source kind="ModelWorkspace" file="param_sat_blocks"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="param_sat_blocks/MultipleUsageInScopes/Scope3/Out1" path="MultipleUsageInScopes/Scope3/Out1">
+        <array size="2" startIndex="1">
+          <int32/>
+        </array>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.35" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_ut_param_saturation_many\refModel.slx" creationDate="2023-10-24T12:50:21" modificationDate="2024-09-12T19:14:47"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.import.ec.m\native\tst\tmpdir\tmp_ut_local_analyze_01\ut_results\AddModelInfo.xml" initScript="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.import.ec.m\native\tst\tmpdir\tmp_ut_local_analyze_01\virtual_parent_init.m" modelVersion="1.27" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.import.ec.m\native\tst\tmpdir\tmp_ut_local_analyze_01\virtual_parent.slx" modelCreationDate="2019-07-05T11:36:34" creator="developer">
+  <toolInfo name="Matlab" release="(R2017b)" version="9.3" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2017b)" version="9.0" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.27" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.import.ec.m\native\tst\tmpdir\tmp_ut_local_analyze_01\virtual_parent.slx" creationDate="2019-07-05T11:36:34" modificationDate="2020-08-28T16:34:55" initScript="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.import.ec.m\native\tst\tmpdir\tmp_ut_local_analyze_01\virtual_parent_init.m">
+    <subsystem subsysID="ss1" physicalPath="virtual_parent" path="" sampleTime="0.2" name="virtual_parent" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="virtual_parent/In1" path="In1" signalName="in1">
+        <boolean/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="virtual_parent/In2" path="In2" signalName="in2">
+        <boolean/>
+      </inport>
+      <parameter name="param_A" path="parentFrame/top_A/Constant" physicalPath="virtual_parent/parentFrame/top_A/Constant" origin="explicit_param" workspace="param_A" initValue="1.0000000000000000e+00">
+        <boolean/>
+        <usageContext path="parentFrame/top_A/Constant" physicalPath="virtual_parent/parentFrame/top_A/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <parameter name="param_B" path="parentFrame/top_B/sub_X/Constant" physicalPath="virtual_parent/parentFrame/top_B/sub_X/Constant" origin="explicit_param" workspace="param_B" initValue="0.0000000000000000e+00">
+        <boolean/>
+        <usageContext path="parentFrame/top_B/sub_X/Constant" physicalPath="virtual_parent/parentFrame/top_B/sub_X/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="virtual_parent/Out1" path="Out1" signalName="out1">
+        <boolean/>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="virtual_parent/parentFrame/top_A" path="parentFrame/top_A" sampleTime="0.2" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="virtual_parent/parentFrame/top_A/In1" path="parentFrame/top_A/In1" signalName="in1">
+        <boolean/>
+      </inport>
+      <parameter name="param_A" path="parentFrame/top_A/Constant" physicalPath="virtual_parent/parentFrame/top_A/Constant" origin="explicit_param" workspace="param_A" initValue="1.0000000000000000e+00">
+        <boolean/>
+        <usageContext path="parentFrame/top_A/Constant" physicalPath="virtual_parent/parentFrame/top_A/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="virtual_parent/parentFrame/top_A/Out1" path="parentFrame/top_A/Out1" signalName="out_A">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="virtual_parent/parentFrame/top_B" path="parentFrame/top_B" sampleTime="0.2" name="top_B" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="virtual_parent/parentFrame/top_B/In1" path="parentFrame/top_B/In1" signalName="in2">
+        <boolean/>
+      </inport>
+      <parameter name="param_B" path="parentFrame/top_B/sub_X/Constant" physicalPath="virtual_parent/parentFrame/top_B/sub_X/Constant" origin="explicit_param" workspace="param_B" initValue="0.0000000000000000e+00">
+        <boolean/>
+        <usageContext path="parentFrame/top_B/sub_X/Constant" physicalPath="virtual_parent/parentFrame/top_B/sub_X/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="virtual_parent/parentFrame/top_B/Out1" path="parentFrame/top_B/Out1" signalName="out_B">
+        <boolean/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

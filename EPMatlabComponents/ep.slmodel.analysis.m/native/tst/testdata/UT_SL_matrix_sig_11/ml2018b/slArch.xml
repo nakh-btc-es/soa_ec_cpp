@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_matrix_sig_11\init_matrix_model.m" modelVersion="1.36" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_matrix_sig_11\matrix_model_sl.mdl" modelCreationDate="2015-02-02T09:23:30" creator="alex">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.36" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_matrix_sig_11\matrix_model_sl.mdl" creationDate="2015-02-02T09:23:30" modificationDate="2020-10-26T10:25:44" initScript="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.m\native\tst\tmpdir\tmp_ut_matrix_sig_11\init_matrix_model.m">
+    <subsystem subsysID="ss1" physicalPath="matrix_model_sl/top_A" path="top_A" sampleTime="0.1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="matrix_model_sl/top_A/In1" path="top_A/In1" signalName="main">
+        <bus busType="non_virtual" busObjectName="myBus3">
+          <signal signalName="x">
+            <bus busType="non_virtual" busObjectName="myBus1">
+              <signal signalName="a">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <int16/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <array size="4" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <int8/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="y">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="c">
+                <array size="3" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <single/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="matrix_model_sl/top_A/In2" path="top_A/In2" signalName="zz">
+        <bus>
+          <signal signalName="xx">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="c">
+                <array size="3" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <single/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="dd">
+            <array size="4" startIndex="1">
+              <array size="1" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="cc">
+            <bus>
+              <signal signalName="bb">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="aa">
+                <array size="3" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="matrix_model_sl/top_A/Out1" path="top_A/Out1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus3">
+          <signal signalName="x">
+            <bus busType="non_virtual" busObjectName="myBus1">
+              <signal signalName="a">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <int16/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <array size="4" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <int8/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="y">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="c">
+                <array size="3" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <single/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="matrix_model_sl/top_A/Out2" path="top_A/Out2" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus1">
+          <signal signalName="a">
+            <array size="1" startIndex="1">
+              <array size="3" startIndex="1">
+                <int16/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="4" startIndex="1">
+              <array size="2" startIndex="1">
+                <int8/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="matrix_model_sl/top_A/Out3" path="top_A/Out3">
+        <array size="4" startIndex="1">
+          <array size="2" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="matrix_model_sl/top_A/Out4" path="top_A/Out4" signalName="&lt;signal1&gt;">
+        <bus>
+          <signal signalName="xx">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="c">
+                <array size="3" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <single/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="dd">
+            <array size="4" startIndex="1">
+              <array size="1" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="cc">
+            <bus>
+              <signal signalName="bb">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="aa">
+                <array size="3" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <display physicalPath="matrix_model_sl/top_A/In1" path="top_A/In1" name="In1" portNumber="1" signalName="main">
+        <bus busType="non_virtual" busObjectName="myBus3">
+          <signal signalName="x">
+            <bus busType="non_virtual" busObjectName="myBus1">
+              <signal signalName="a">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <int16/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <array size="4" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <int8/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="y">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="c">
+                <array size="3" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <single/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/In2" path="top_A/In2" name="In2" portNumber="1" signalName="zz">
+        <bus>
+          <signal signalName="xx">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="c">
+                <array size="3" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <single/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="dd">
+            <array size="4" startIndex="1">
+              <array size="1" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="cc">
+            <bus>
+              <signal signalName="bb">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="aa">
+                <array size="3" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B1/Unit Delay" path="top_A/sub_B1/Unit Delay" name="Unit Delay" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus3">
+          <signal signalName="x">
+            <bus busType="non_virtual" busObjectName="myBus1">
+              <signal signalName="a">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <int16/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <array size="4" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <int8/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="y">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="c">
+                <array size="3" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <single/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B2/Unit Delay" path="top_A/sub_B2/Unit Delay" name="Unit Delay" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus1">
+          <signal signalName="a">
+            <array size="1" startIndex="1">
+              <array size="3" startIndex="1">
+                <int16/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="4" startIndex="1">
+              <array size="2" startIndex="1">
+                <int8/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B3/Unit Delay" path="top_A/sub_B3/Unit Delay" name="Unit Delay" portNumber="1">
+        <array size="4" startIndex="1">
+          <array size="2" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B4/Unit Delay" path="top_A/sub_B4/Unit Delay" name="Unit Delay" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus>
+          <signal signalName="xx">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="c">
+                <array size="3" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <single/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="dd">
+            <array size="4" startIndex="1">
+              <array size="1" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="cc">
+            <bus>
+              <signal signalName="bb">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="aa">
+                <array size="3" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B4/Unit Delay1" path="top_A/sub_B4/Unit Delay1" name="Unit Delay1" portNumber="1">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int16/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B4/Unit Delay2" path="top_A/sub_B4/Unit Delay2" name="Unit Delay2" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus2">
+          <signal signalName="c">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <single/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="d">
+            <boolean/>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B4/Unit Delay3" path="top_A/sub_B4/Unit Delay3" name="Unit Delay3" portNumber="1">
+        <array size="3" startIndex="1">
+          <array size="1" startIndex="1">
+            <single/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B4/Unit Delay4" path="top_A/sub_B4/Unit Delay4" name="Unit Delay4" portNumber="1">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="matrix_model_sl/top_A/sub_B1" path="top_A/sub_B1" sampleTime="0.1" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="matrix_model_sl/top_A/sub_B1/In1" path="top_A/sub_B1/In1" signalName="main">
+        <bus busType="non_virtual" busObjectName="myBus3">
+          <signal signalName="x">
+            <bus busType="non_virtual" busObjectName="myBus1">
+              <signal signalName="a">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <int16/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <array size="4" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <int8/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="y">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="c">
+                <array size="3" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <single/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="matrix_model_sl/top_A/sub_B1/Out1" path="top_A/sub_B1/Out1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus3">
+          <signal signalName="x">
+            <bus busType="non_virtual" busObjectName="myBus1">
+              <signal signalName="a">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <int16/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <array size="4" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <int8/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="y">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="c">
+                <array size="3" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <single/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <display physicalPath="matrix_model_sl/top_A/sub_B1/Unit Delay" path="top_A/sub_B1/Unit Delay" name="Unit Delay" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus3">
+          <signal signalName="x">
+            <bus busType="non_virtual" busObjectName="myBus1">
+              <signal signalName="a">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <int16/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <array size="4" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <int8/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="y">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="c">
+                <array size="3" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <single/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="matrix_model_sl/top_A/sub_B2" path="top_A/sub_B2" sampleTime="0.1" name="sub_B2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="matrix_model_sl/top_A/sub_B2/In1" path="top_A/sub_B2/In1" signalName="x">
+        <bus busType="non_virtual" busObjectName="myBus1">
+          <signal signalName="a">
+            <array size="1" startIndex="1">
+              <array size="3" startIndex="1">
+                <int16/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="4" startIndex="1">
+              <array size="2" startIndex="1">
+                <int8/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="matrix_model_sl/top_A/sub_B2/Out1" path="top_A/sub_B2/Out1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus1">
+          <signal signalName="a">
+            <array size="1" startIndex="1">
+              <array size="3" startIndex="1">
+                <int16/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="4" startIndex="1">
+              <array size="2" startIndex="1">
+                <int8/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </outport>
+      <display physicalPath="matrix_model_sl/top_A/sub_B2/Unit Delay" path="top_A/sub_B2/Unit Delay" name="Unit Delay" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus1">
+          <signal signalName="a">
+            <array size="1" startIndex="1">
+              <array size="3" startIndex="1">
+                <int16/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="b">
+            <array size="4" startIndex="1">
+              <array size="2" startIndex="1">
+                <int8/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="matrix_model_sl/top_A/sub_B3" path="top_A/sub_B3" sampleTime="0.1" name="sub_B3" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="matrix_model_sl/top_A/sub_B3/In1" path="top_A/sub_B3/In1" signalName="b">
+        <array size="4" startIndex="1">
+          <array size="2" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="matrix_model_sl/top_A/sub_B3/Out1" path="top_A/sub_B3/Out1">
+        <array size="4" startIndex="1">
+          <array size="2" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="matrix_model_sl/top_A/sub_B3/Unit Delay" path="top_A/sub_B3/Unit Delay" name="Unit Delay" portNumber="1">
+        <array size="4" startIndex="1">
+          <array size="2" startIndex="1">
+            <int8/>
+          </array>
+        </array>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="matrix_model_sl/top_A/sub_B4" path="top_A/sub_B4" sampleTime="0.1" name="sub_B4" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="matrix_model_sl/top_A/sub_B4/In1" path="top_A/sub_B4/In1" signalName="zz">
+        <bus>
+          <signal signalName="xx">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="c">
+                <array size="3" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <single/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="dd">
+            <array size="4" startIndex="1">
+              <array size="1" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="cc">
+            <bus>
+              <signal signalName="bb">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="aa">
+                <array size="3" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="matrix_model_sl/top_A/sub_B4/In2" path="top_A/sub_B4/In2" signalName="a">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int16/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="matrix_model_sl/top_A/sub_B4/In3" path="top_A/sub_B4/In3" signalName="y">
+        <bus busType="non_virtual" busObjectName="myBus2">
+          <signal signalName="c">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <single/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="d">
+            <boolean/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="matrix_model_sl/top_A/sub_B4/In4" path="top_A/sub_B4/In4" signalName="c">
+        <array size="3" startIndex="1">
+          <array size="1" startIndex="1">
+            <single/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="5" name="In5" physicalPath="matrix_model_sl/top_A/sub_B4/In5" path="top_A/sub_B4/In5" signalName="d">
+        <boolean/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="matrix_model_sl/top_A/sub_B4/Out1" path="top_A/sub_B4/Out1" signalName="&lt;signal1&gt;">
+        <bus>
+          <signal signalName="xx">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="c">
+                <array size="3" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <single/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="dd">
+            <array size="4" startIndex="1">
+              <array size="1" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="cc">
+            <bus>
+              <signal signalName="bb">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="aa">
+                <array size="3" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="matrix_model_sl/top_A/sub_B4/Out2" path="top_A/sub_B4/Out2">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int16/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="matrix_model_sl/top_A/sub_B4/Out3" path="top_A/sub_B4/Out3" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus2">
+          <signal signalName="c">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <single/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="d">
+            <boolean/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="matrix_model_sl/top_A/sub_B4/Out4" path="top_A/sub_B4/Out4">
+        <array size="3" startIndex="1">
+          <array size="1" startIndex="1">
+            <single/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="matrix_model_sl/top_A/sub_B4/Out5" path="top_A/sub_B4/Out5">
+        <boolean/>
+      </outport>
+      <display physicalPath="matrix_model_sl/top_A/sub_B4/Unit Delay" path="top_A/sub_B4/Unit Delay" name="Unit Delay" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus>
+          <signal signalName="xx">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="c">
+                <array size="3" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <single/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <boolean/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="dd">
+            <array size="4" startIndex="1">
+              <array size="1" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="cc">
+            <bus>
+              <signal signalName="bb">
+                <array size="1" startIndex="1">
+                  <array size="3" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="aa">
+                <array size="3" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B4/Unit Delay1" path="top_A/sub_B4/Unit Delay1" name="Unit Delay1" portNumber="1">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <int16/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B4/Unit Delay2" path="top_A/sub_B4/Unit Delay2" name="Unit Delay2" portNumber="1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus2">
+          <signal signalName="c">
+            <array size="3" startIndex="1">
+              <array size="1" startIndex="1">
+                <single/>
+              </array>
+            </array>
+          </signal>
+          <signal signalName="d">
+            <boolean/>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B4/Unit Delay3" path="top_A/sub_B4/Unit Delay3" name="Unit Delay3" portNumber="1">
+        <array size="3" startIndex="1">
+          <array size="1" startIndex="1">
+            <single/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B4/Unit Delay4" path="top_A/sub_B4/Unit Delay4" name="Unit Delay4" portNumber="1">
+        <boolean/>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

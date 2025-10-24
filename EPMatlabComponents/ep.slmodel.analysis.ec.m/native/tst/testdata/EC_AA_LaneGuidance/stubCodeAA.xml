@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aa-component name="LaneGuidance" aa_version="R22-11" model_name="autosar_LaneGuidance" matlab_version="R2024b">
+  <types>
+    <type typeId="t1" name="double" kind="fundamental"/>
+  </types>
+  <interfaces>
+    <interface name="RequiredInterface">
+      <namespaces>
+        <namespace symbol="company">
+          <namespace symbol="chassis">
+            <namespace symbol="required"/>
+          </namespace>
+        </namespace>
+      </namespaces>
+      <events>
+        <event eventId="ev1" name="LeftLaneDistance" typeRef="t1"/>
+        <event eventId="ev2" name="LeftTurnIndicator" typeRef="t1"/>
+        <event eventId="ev3" name="RightLaneDistance" typeRef="t1"/>
+        <event eventId="ev4" name="RightTurnIndicator" typeRef="t1"/>
+        <event eventId="ev5" name="LeftCarInBlindSpot" typeRef="t1"/>
+        <event eventId="ev6" name="RightCarInBlindSpot" typeRef="t1"/>
+      </events>
+    </interface>
+    <interface name="ProvidedInterface">
+      <namespaces>
+        <namespace symbol="company">
+          <namespace symbol="chassis">
+            <namespace symbol="provided"/>
+          </namespace>
+        </namespace>
+      </namespaces>
+      <events>
+        <event eventId="ev7" name="LeftHazardIndicator" typeRef="t1"/>
+        <event eventId="ev8" name="RightHazardIndicator" typeRef="t1"/>
+      </events>
+    </interface>
+  </interfaces>
+  <ports>
+    <rport name="RequiredPort" instanceKey="autosar_LaneGuidance/autosar_LaneGuidance_RootSwComponentPrototype/RequiredPort">
+      <event-refs>
+        <event-ref eventRef="ev1" var="RequiredPort_LeftLaneDistance"/>
+        <event-ref eventRef="ev2" var="RequiredPort_LeftTurnIndicator"/>
+        <event-ref eventRef="ev3" var="RequiredPort_RightLaneDistance"/>
+        <event-ref eventRef="ev4" var="RequiredPort_RightTurnIndicator"/>
+        <event-ref eventRef="ev5" var="RequiredPort_LeftCarInBlindSpot"/>
+        <event-ref eventRef="ev6" var="RequiredPort_RightCarInBlindSpot"/>
+      </event-refs>
+    </rport>
+    <pport name="ProvidedPort" instanceKey="autosar_LaneGuidance/autosar_LaneGuidance_RootSwComponentPrototype/ProvidedPort">
+      <event-refs>
+        <event-ref eventRef="ev7" var="ProvidedPort_LeftHazardIndicator"/>
+        <event-ref eventRef="ev8" var="ProvidedPort_RightHazardIndicator"/>
+      </event-refs>
+    </pport>
+  </ports>
+</aa-component>

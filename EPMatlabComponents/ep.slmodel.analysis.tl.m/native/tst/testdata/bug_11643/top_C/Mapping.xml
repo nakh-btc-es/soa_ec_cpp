@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="bug_11643"/>
+    <Architecture id="id1" name="bug_11643 [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="top_C/Subsystem/top_C"/>
+      <Path refId="id1" path="top_C.c:1:top_C"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sc1_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sc1_Out1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_C/Subsystem/top_C/In1(1)"/>
+        <Path refId="id1" path="Sc1_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="top_C/Subsystem/top_C/Merge1(1)"/>
+        <Path refId="id1" path="Sc1_Merge1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="top_C/Subsystem/top_C/sub_B1"/>
+      <Path refId="id1" path="top_C.c:1:top_C/top_C.c:1:Sc2_sub_B1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id1" path="Sc1_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id1" path="Sc1_Merge1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.38" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_22235\special_path_model.mdl" modelCreationDate="2011-05-24T15:45:20" creator="alex">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.38" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bug_22235\special_path_model.mdl" creationDate="2011-05-24T15:45:20" modificationDate="2021-11-17T11:13:34">
+    <subsystem subsysID="ss1" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A" path="some[abc] sub &amp; more/top_A/Subsystem/top_A" sampleTime="1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/In1" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="a" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Ga*-_++#in1" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Ga*-_++#in1" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/my_cals/a">
+        <miltype initValue="7.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="7.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Ga*-_++#in1" targetLinkBlockKind="TL_Gain" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Ga*-_++#in1" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <calibration name="b" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Gain%d1" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Gain%d1" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/my_cals/b">
+        <miltype initValue="7.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="7.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Gain%d1" targetLinkBlockKind="TL_Gain" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Gain%d1" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <calibration name="c" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Gain[1]" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Gain[1]" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/my_cals/c">
+        <miltype initValue="7.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="7.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Gain[1]" targetLinkBlockKind="TL_Gain" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Gain[1]" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/Out1" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Gain[1]" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Gain[1]" name="Gain[1]" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Gain%d1" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Gain%d1" name="Gain%d1" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Ga*-_++#in1" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Ga*-_++#in1" name="Ga*-_++#in1" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ" sampleTime="1" name="sub_CZ" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/In1" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="c" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Gain[1]" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Gain[1]" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/my_cals/c">
+        <miltype initValue="7.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="7.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Gain[1]" targetLinkBlockKind="TL_Gain" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Gain[1]" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Out1" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Gain[1]" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/look//at//me/sub_CZ/Gain[1]" name="Gain[1]" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY" sampleTime="1" name="sub_BY" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/In1" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="b" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Gain%d1" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Gain%d1" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/my_cals/b">
+        <miltype initValue="7.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="7.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Gain%d1" targetLinkBlockKind="TL_Gain" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Gain%d1" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Out1" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Gain%d1" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub.only.one/sub_BY/Gain%d1" name="Gain%d1" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX" sampleTime="1" name="sub_AX" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/In1" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/In1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <calibration name="a" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Ga*-_++#in1" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Ga*-_++#in1" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/my_cals/a">
+        <miltype initValue="7.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="7.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+        <usageContext path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Ga*-_++#in1" targetLinkBlockKind="TL_Gain" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Ga*-_++#in1" simulinkBlockType="Gain" blockAttribute="gain"/>
+      </calibration>
+      <outport portNumber="1" name="Out1" physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Out1" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Out1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="special_path_model/some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Ga*-_++#in1" path="some[abc] sub &amp; more/top_A/Subsystem/top_A/sub\s%x;|and&amp;so@on/sub_AX/Ga*-_++#in1" name="Ga*-_++#in1" portNumber="1">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

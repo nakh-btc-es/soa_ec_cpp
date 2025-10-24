@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.109" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bus_04\bus_port3.mdl" modelCreationDate="2008-10-14T09:10:53" creator="alex">
+  <toolInfo name="Matlab" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015aSP1)" version="8.5.1" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.1" patchLevel="p3"/>
+  <model modelID="model001" modelKind="model" modelVersion="1.109" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bus_04\bus_port3.mdl" creationDate="2008-10-14T09:10:53" modificationDate="2021-11-22T11:13:05">
+    <subsystem subsysID="ss1" physicalPath="bus_port3/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="InPort1" physicalPath="bus_port3/top_A/Subsystem/top_A/InPort1" path="top_A/Subsystem/top_A/InPort1">
+        <miltype signalName="a">
+          <nonUniformArray size="2">
+            <signal index="1">
+              <double/>
+            </signal>
+            <signal index="2">
+              <double/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype missingTypeSinceNoCVar="true" signalName="a">
+          <nonUniformArray size="2">
+            <signal index="1">
+              <unsupportedTypeInformation/>
+            </signal>
+            <signal index="2">
+              <unsupportedTypeInformation/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="InPort2" physicalPath="bus_port3/top_A/Subsystem/top_A/InPort2" path="top_A/Subsystem/top_A/InPort2">
+        <miltype signalName="b">
+          <nonUniformArray size="3">
+            <signal index="1">
+              <double/>
+            </signal>
+            <signal index="2">
+              <double/>
+            </signal>
+            <signal index="3">
+              <double/>
+            </signal>
+          </nonUniformArray>
+        </miltype>
+        <siltype signalName="b">
+          <nonUniformArray size="3">
+            <signal index="1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal index="3">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </nonUniformArray>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="OutPort1" physicalPath="bus_port3/top_A/Subsystem/top_A/OutPort1" path="top_A/Subsystem/top_A/OutPort1">
+        <miltype signalName="b_cal">
+          <int16/>
+        </miltype>
+        <siltype signalName="b_cal">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="OutPort2" physicalPath="bus_port3/top_A/Subsystem/top_A/OutPort2" path="top_A/Subsystem/top_A/OutPort2">
+        <miltype signalName="y">
+          <int32/>
+        </miltype>
+        <siltype signalName="y">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="3" name="Bus Outport" physicalPath="bus_port3/top_A/Subsystem/top_A/Bus Outport" path="top_A/Subsystem/top_A/Bus Outport">
+        <miltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <int32/>
+                </signal>
+                <signal index="2">
+                  <int32/>
+                </signal>
+                <signal index="3">
+                  <int32/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <int32/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="3">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss9"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_B1" path="top_A/Subsystem/top_A/sub_B1" sampleTime="1" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_B1/in1" path="top_A/Subsystem/top_A/sub_B1/in1">
+        <miltype>
+          <bus>
+            <signal signalName="a_mux.a">
+              <nonUniformArray size="2">
+                <signal index="1">
+                  <double/>
+                </signal>
+                <signal index="2">
+                  <double/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="a_mux.b_middle">
+              <double/>
+            </signal>
+            <signal signalName="a_mux.a_cal">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal missingTypeSinceNoCVar="true" signalName="a_mux.a">
+              <nonUniformArray size="2">
+                <signal index="1">
+                  <unsupportedTypeInformation/>
+                </signal>
+                <signal index="2">
+                  <unsupportedTypeInformation/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="a_mux.b_middle">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal initValue="1.0000000000000000e+00" signalName="a_mux.a_cal">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="in2" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_B1/in2" path="top_A/Subsystem/top_A/sub_B1/in2">
+        <miltype signalName="b_cal">
+          <int16/>
+        </miltype>
+        <siltype initValue="2.0000000000000000e+00" signalName="b_cal">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_B1/Out1" path="top_A/Subsystem/top_A/sub_B1/Out1">
+        <miltype>
+          <bus>
+            <signal signalName="x.a_mux.a">
+              <nonUniformArray size="2">
+                <signal index="1">
+                  <double/>
+                </signal>
+                <signal index="2">
+                  <double/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="x.a_mux.b_middle">
+              <double/>
+            </signal>
+            <signal signalName="x.a_mux.a_cal">
+              <double/>
+            </signal>
+            <signal signalName="x.b_cal">
+              <int16/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal missingTypeSinceNoCVar="true" signalName="x.a_mux.a">
+              <nonUniformArray size="2">
+                <signal index="1">
+                  <unsupportedTypeInformation/>
+                </signal>
+                <signal index="2">
+                  <unsupportedTypeInformation/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="x.a_mux.b_middle">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal initValue="1.0000000000000000e+00" signalName="x.a_mux.a_cal">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal initValue="2.0000000000000000e+00" signalName="x.b_cal">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_B1/Out2" path="top_A/Subsystem/top_A/sub_B1/Out2">
+        <miltype>
+          <bus>
+            <signal signalName="y.a_mux.a">
+              <nonUniformArray size="2">
+                <signal index="1">
+                  <double/>
+                </signal>
+                <signal index="2">
+                  <double/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="y.a_mux.b_middle">
+              <double/>
+            </signal>
+            <signal signalName="y.a_mux.a_cal">
+              <double/>
+            </signal>
+            <signal signalName="y.a1">
+              <double/>
+            </signal>
+            <signal signalName="y.a2">
+              <double/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal missingTypeSinceNoCVar="true" signalName="y.a_mux.a">
+              <nonUniformArray size="2">
+                <signal index="1">
+                  <unsupportedTypeInformation/>
+                </signal>
+                <signal index="2">
+                  <unsupportedTypeInformation/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="y.a_mux.b_middle">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal initValue="1.0000000000000000e+00" signalName="y.a_mux.a_cal">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal initValue="2.0000000000000000e+00" signalName="y.a1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal initValue="5.0000000000000000e+00" signalName="y.a2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_B5" path="top_A/Subsystem/top_A/sub_B5" sampleTime="1" name="sub_B5" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="Bus Inport" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_B5/Bus Inport" path="top_A/Subsystem/top_A/sub_B5/Bus Inport">
+        <miltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <int32/>
+                </signal>
+                <signal index="2">
+                  <int32/>
+                </signal>
+                <signal index="3">
+                  <int32/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <int32/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="3">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Bus Outport" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_B5/Bus Outport" path="top_A/Subsystem/top_A/sub_B5/Bus Outport">
+        <miltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <int32/>
+                </signal>
+                <signal index="2">
+                  <int32/>
+                </signal>
+                <signal index="3">
+                  <int32/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <int32/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="3">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_C2" path="top_A/Subsystem/top_A/sub_C2" sampleTime="1" name="sub_C2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_C2/in1" path="top_A/Subsystem/top_A/sub_C2/in1">
+        <miltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <int32/>
+                </signal>
+                <signal index="2">
+                  <int32/>
+                </signal>
+                <signal index="3">
+                  <int32/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <int32/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="3">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_C2/Out1" path="top_A/Subsystem/top_A/sub_C2/Out1">
+        <miltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <int32/>
+                </signal>
+                <signal index="2">
+                  <int32/>
+                </signal>
+                <signal index="3">
+                  <int32/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <int32/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="3">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_D1" path="top_A/Subsystem/top_A/sub_D1" sampleTime="1" name="sub_D1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_D1/in1" path="top_A/Subsystem/top_A/sub_D1/in1">
+        <miltype signalName="y">
+          <int32/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="y">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_D1/Out1" path="top_A/Subsystem/top_A/sub_D1/Out1">
+        <miltype signalName="y">
+          <int32/>
+        </miltype>
+        <siltype signalName="y">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss6"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_D1/sub_E" path="top_A/Subsystem/top_A/sub_D1/sub_E" sampleTime="1" name="sub_E" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_D1/sub_E/in1" path="top_A/Subsystem/top_A/sub_D1/sub_E/in1">
+        <miltype signalName="y">
+          <int32/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="y">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_D1/sub_E/Out1" path="top_A/Subsystem/top_A/sub_D1/sub_E/Out1">
+        <miltype signalName="y">
+          <int32/>
+        </miltype>
+        <siltype signalName="y">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_D2" path="top_A/Subsystem/top_A/sub_D2" sampleTime="1" name="sub_D2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_D2/in1" path="top_A/Subsystem/top_A/sub_D2/in1">
+        <miltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <int32/>
+                </signal>
+                <signal index="2">
+                  <int32/>
+                </signal>
+                <signal index="3">
+                  <int32/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <int32/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="3">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_D2/Out1" path="top_A/Subsystem/top_A/sub_D2/Out1">
+        <miltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <int32/>
+                </signal>
+                <signal index="2">
+                  <int32/>
+                </signal>
+                <signal index="3">
+                  <int32/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <int32/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="3">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_D2/sub_E" path="top_A/Subsystem/top_A/sub_D2/sub_E" sampleTime="1" name="sub_E" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="in1" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_D2/sub_E/in1" path="top_A/Subsystem/top_A/sub_D2/sub_E/in1">
+        <miltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <int32/>
+                </signal>
+                <signal index="2">
+                  <int32/>
+                </signal>
+                <signal index="3">
+                  <int32/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <int32/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="3">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="bus_port3/top_A/Subsystem/top_A/sub_D2/sub_E/Out1" path="top_A/Subsystem/top_A/sub_D2/sub_E/Out1">
+        <miltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <int32/>
+                </signal>
+                <signal index="2">
+                  <int32/>
+                </signal>
+                <signal index="3">
+                  <int32/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <int32/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <int32/>
+            </signal>
+          </bus>
+        </miltype>
+        <siltype>
+          <bus>
+            <signal signalName="bccc.bcc.bc.signal1">
+              <nonUniformArray size="3">
+                <signal index="1">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="2">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+                <signal index="3">
+                  <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+                </signal>
+              </nonUniformArray>
+            </signal>
+            <signal signalName="bccc.bcc.bc.c0">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.bcc.c1">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+            <signal signalName="bccc.c2">
+              <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+            </signal>
+          </bus>
+        </siltype>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="bus_port3/top_A/Subsystem/top_A/Chart1" path="top_A/Subsystem/top_A/Chart1" sampleTime="1" name="Chart1" scopeKind="SUT" kind="stateflow">
+      <inport portNumber="1" name="u1" physicalPath="bus_port3/top_A/Subsystem/top_A/Chart1/u1" path="top_A/Subsystem/top_A/Chart1/u1">
+        <miltype signalName="c0">
+          <int32/>
+        </miltype>
+        <siltype signalName="c0">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="u2" physicalPath="bus_port3/top_A/Subsystem/top_A/Chart1/u2" path="top_A/Subsystem/top_A/Chart1/u2">
+        <miltype signalName="b_cal">
+          <int16/>
+        </miltype>
+        <siltype signalName="b_cal">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="u3" physicalPath="bus_port3/top_A/Subsystem/top_A/Chart1/u3" path="top_A/Subsystem/top_A/Chart1/u3">
+        <miltype>
+          <int8/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int8" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-1.2800000000000000e+02" max="1.2700000000000000e+02"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="y" physicalPath="bus_port3/top_A/Subsystem/top_A/Chart1/y" path="top_A/Subsystem/top_A/Chart1/y">
+        <miltype signalName="y">
+          <int32/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="y">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="library" modelVersion="1.8" modelPath="E:\EP2\dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_bus_04\bus_port3_lib.mdl" creationDate="2008-11-05T17:54:22" modificationDate="2021-11-22T11:13:05"/>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

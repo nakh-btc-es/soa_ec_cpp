@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="16.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_signal_injection1\signal_injection.slx" modelCreationDate="2013-08-22T12:00:00" creator="dSPACE GmbH">
+  <toolInfo name="Matlab" release="(R2022b)" version="9.13" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2022b)" version="10.6" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="22.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="16.1" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_signal_injection1\signal_injection.slx" creationDate="2013-08-22T12:00:00" modificationDate="2023-05-26T09:15:39">
+    <subsystem subsysID="ss1" physicalPath="signal_injection/controller/Subsystem/controller" path="controller/Subsystem/controller" sampleTime="0.001" name="controller" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="REF" physicalPath="signal_injection/controller/Subsystem/controller/REF" path="controller/Subsystem/controller/REF">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="POS" physicalPath="signal_injection/controller/Subsystem/controller/POS" path="controller/Subsystem/controller/POS">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </inport>
+      <inport portNumber="0" name="DataStoreReadWithCustomCodeMask" physicalPath="signal_injection/controller/Subsystem/controller/SignalValidationFcnStub/DataStoreReadWithCustomCodeMask" path="controller/Subsystem/controller/SignalValidationFcnStub/DataStoreReadWithCustomCodeMask">
+        <miltype signalName="StatusSignal">
+          <double/>
+        </miltype>
+        <siltype signalName="StatusSignal">
+          <Float32/>
+        </siltype>
+        <dataStoreMemory signalName="StatusSignal"/>
+      </inport>
+      <outport portNumber="1" name="UPI" physicalPath="signal_injection/controller/Subsystem/controller/UPI" path="controller/Subsystem/controller/UPI">
+        <miltype>
+          <double/>
+        </miltype>
+        <siltype>
+          <Float32/>
+        </siltype>
+      </outport>
+      <outport portNumber="0" name="DataStoreWrite_withCustomCodeMask" physicalPath="signal_injection/controller/Subsystem/controller/Algorithm/DataStoreWrite_withCustomCodeMask" path="controller/Subsystem/controller/Algorithm/DataStoreWrite_withCustomCodeMask">
+        <miltype signalName="SystemState">
+          <double/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00" signalName="SystemState">
+          <Float32/>
+        </siltype>
+        <dataStoreMemory signalName="SystemState"/>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

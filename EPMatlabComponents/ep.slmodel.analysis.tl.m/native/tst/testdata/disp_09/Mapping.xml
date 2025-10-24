@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="SimModel_tl"/>
+    <Architecture id="id1" name="SimModel_tl [C-Code]"/>
+    <Architecture id="id2" name="SimModel_sl"/>
+    <ScopeMapping>
+      <Path refId="id0" path="standardSubsystem/Subsystem/standardSubsystem"/>
+      <Path refId="id1" path="standardSubsystem.c:1:Sa1_standardSubsystem"/>
+      <Path refId="id2" path="standardSubsystem"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In1"/>
+        <Path refId="id2" path="In1"/>
+        <Path refId="id1" path="Sa1_In1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In2"/>
+        <Path refId="id2" path="In2"/>
+        <Path refId="id1" path="Sa1_In2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out3"/>
+        <Path refId="id2" path="Out3"/>
+        <Path refId="id1" path="Sa1_Out3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="b_out3"/>
+        <Path refId="id2" path="b_out3"/>
+        <Path refId="id1" path="Sa3_b_out3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="b_out4"/>
+        <Path refId="id2" path="b_out4"/>
+        <Path refId="id1" path="Sa3_b_out4"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="b_out5"/>
+        <Path refId="id2" path="b_out5"/>
+        <Path refId="id1" path="Sa3_b_out5"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standardSubsystem/Subsystem/standardSubsystem/FLP_Sub/Gain/expl_p1_gain"/>
+        <Path refId="id2" path="standardSubsystem/FLP_Sub/Gain/expl_p1_gain"/>
+        <Path refId="id1" path="expl_p1_gain"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="standardSubsystem/Subsystem/standardSubsystem/FLP_Sub/Gain(1)"/>
+        <Path refId="id2" path="standardSubsystem/FLP_Sub/Gain(1)"/>
+        <Path refId="id1" path="Sa3_Gain"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="standardSubsystem/Subsystem/standardSubsystem/FLP_Sub/RelOp1(1)"/>
+        <Path refId="id2" path="standardSubsystem/FLP_Sub/RelOp1(1)"/>
+        <Path refId="id1" path="rel_op1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="standardSubsystem/Subsystem/standardSubsystem/FLP_Sub/RelOp2(1)"/>
+        <Path refId="id2" path="standardSubsystem/FLP_Sub/RelOp2(1)"/>
+        <Path refId="id1" path="rel_op2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="standardSubsystem/Subsystem/standardSubsystem/FLP_Sub/RelOp3(1)"/>
+        <Path refId="id2" path="standardSubsystem/FLP_Sub/RelOp3(1)"/>
+        <Path refId="id1" path="rel_op3"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="standardSubsystem/Subsystem/standardSubsystem/AtomicSubsystem"/>
+      <Path refId="id1" path="standardSubsystem.c:1:Sa1_standardSubsystem/standardSubsystem.c:1:Sa2_AtomicSubsystem"/>
+      <Path refId="id2" path="standardSubsystem/AtomicSubsystem"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="In"/>
+        <Path refId="id2" path="In"/>
+        <Path refId="id1" path="Sa2_In"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path refId="id0" path="maxRate"/>
+        <Path refId="id2" path="maxRate"/>
+        <Path refId="id1" path="Sa2_maxRate"/>
+        <SignalMapping>
+          <Path refId="id0" path=""/>
+          <Path refId="id2" path=""/>
+          <Path refId="id1" path="-&gt;"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="Out1"/>
+        <Path refId="id2" path="Out1"/>
+        <Path refId="id1" path="Sa2_AtomicSubsystem:return"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path refId="id0" path="standardSubsystem/Subsystem/standardSubsystem/FLP_Sub"/>
+      <Path refId="id1" path="standardSubsystem.c:1:Sa1_standardSubsystem/standardSubsystem.c:1:FL_Sub"/>
+      <Path refId="id2" path="standardSubsystem/FLP_Sub"/>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="b_out3"/>
+        <Path refId="id2" path="b_out3"/>
+        <Path refId="id1" path="Sa3_b_out3"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="b_out4"/>
+        <Path refId="id2" path="b_out4"/>
+        <Path refId="id1" path="Sa3_b_out4"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="b_out5"/>
+        <Path refId="id2" path="b_out5"/>
+        <Path refId="id1" path="Sa3_b_out5"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path refId="id0" path="standardSubsystem/Subsystem/standardSubsystem/FLP_Sub/Gain/expl_p1_gain"/>
+        <Path refId="id2" path="standardSubsystem/FLP_Sub/Gain/expl_p1_gain"/>
+        <Path refId="id1" path="expl_p1_gain"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="standardSubsystem/Subsystem/standardSubsystem/FLP_Sub/Gain(1)"/>
+        <Path refId="id2" path="standardSubsystem/FLP_Sub/Gain(1)"/>
+        <Path refId="id1" path="Sa3_Gain"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="standardSubsystem/Subsystem/standardSubsystem/FLP_Sub/RelOp1(1)"/>
+        <Path refId="id2" path="standardSubsystem/FLP_Sub/RelOp1(1)"/>
+        <Path refId="id1" path="rel_op1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="standardSubsystem/Subsystem/standardSubsystem/FLP_Sub/RelOp2(1)"/>
+        <Path refId="id2" path="standardSubsystem/FLP_Sub/RelOp2(1)"/>
+        <Path refId="id1" path="rel_op2"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path refId="id0" path="standardSubsystem/Subsystem/standardSubsystem/FLP_Sub/RelOp3(1)"/>
+        <Path refId="id2" path="standardSubsystem/FLP_Sub/RelOp3(1)"/>
+        <Path refId="id1" path="rel_op3"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

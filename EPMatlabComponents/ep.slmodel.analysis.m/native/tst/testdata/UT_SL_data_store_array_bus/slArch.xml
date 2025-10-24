@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_data_stores_bus_03\init_model.m" modelVersion="16.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_data_stores_bus_03\ds_with_array_of_buses.slx" modelCreationDate="2020-09-30T11:42:51" creator="developer">
+  <toolInfo name="Matlab" release="(R2022b)" version="9.13" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2022b)" version="10.6" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="16.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_data_stores_bus_03\ds_with_array_of_buses.slx" creationDate="2020-09-30T11:42:51" modificationDate="2023-05-26T10:08:16" initScript="C:\Users\developer\AppData\Local\Temp\ut20230525T170212_19176\tmp_ut_data_stores_bus_03\init_model.m">
+    <subsystem subsysID="ss1" physicalPath="ds_with_array_of_buses" path="" sampleTime="0.01" name="ds_with_array_of_buses" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ds_with_array_of_buses/In1" path="In1" signalName="&lt;signal1&gt;">
+        <array size="3" startIndex="1">
+          <array size="1" startIndex="1">
+            <bus busType="non_virtual" busObjectName="LowBus">
+              <signal signalName="a">
+                <array size="3" startIndex="1">
+                  <uint8 max="10"/>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="ds_with_array_of_buses/Out1" path="Out1" signalName="&lt;signal1&gt;">
+        <array size="3" startIndex="1">
+          <array size="1" startIndex="1">
+            <bus busType="non_virtual" busObjectName="LowBus">
+              <signal signalName="a">
+                <array size="3" startIndex="1">
+                  <uint8 max="10"/>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <boolean/>
+              </signal>
+            </bus>
+          </array>
+        </array>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.46" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_ep_2661\ep_2661.slx" modelCreationDate="2021-11-24T03:01:40" creator="BTCJ_support">
+  <toolInfo name="Matlab" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2015b)" version="8.6" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="4.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.46" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_ep_2661\ep_2661.slx" creationDate="2021-11-24T03:01:40" modificationDate="2021-11-24T13:30:42">
+    <subsystem subsysID="ss1" physicalPath="ep_2661/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="0.2" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="bit1" physicalPath="ep_2661/top_A/Subsystem/top_A/bit1" path="top_A/Subsystem/top_A/bit1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="in1" physicalPath="ep_2661/top_A/Subsystem/top_A/in1" path="top_A/Subsystem/top_A/in1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="ep_2661/top_A/Subsystem/top_A/out1" path="top_A/Subsystem/top_A/out1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="out2" physicalPath="ep_2661/top_A/Subsystem/top_A/out2" path="top_A/Subsystem/top_A/out2">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/Atomic/Merge" path="top_A/Subsystem/top_A/Atomic/Merge" name="Merge" portNumber="1">
+        <miltype initValue="0.0000000000000000e+00">
+          <int16/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/Atomic/pwron/Relational&#10;Operator" path="top_A/Subsystem/top_A/Atomic/pwron/Relational&#10;Operator" name="Relational&#10;Operator" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/Atomic/pwron/rescaler1" path="top_A/Subsystem/top_A/Atomic/pwron/rescaler1" name="rescaler1" portNumber="1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/Atomic/pwron/rescaler2" path="top_A/Subsystem/top_A/Atomic/pwron/rescaler2" name="rescaler2" portNumber="1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/Atomic/rescaler_B" path="top_A/Subsystem/top_A/Atomic/rescaler_B" name="rescaler_B" portNumber="1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/NonAtomic/pwron/Relational&#10;Operator" path="top_A/Subsystem/top_A/NonAtomic/pwron/Relational&#10;Operator" name="Relational&#10;Operator" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/NonAtomic/pwron/rescaler1" path="top_A/Subsystem/top_A/NonAtomic/pwron/rescaler1" name="rescaler1" portNumber="1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/NonAtomic/pwron/rescaler2" path="top_A/Subsystem/top_A/NonAtomic/pwron/rescaler2" name="rescaler2" portNumber="1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/NonAtomic/rescaler_A" path="top_A/Subsystem/top_A/NonAtomic/rescaler_A" name="rescaler_A" portNumber="1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="ep_2661/top_A/Subsystem/top_A/Atomic" path="top_A/Subsystem/top_A/Atomic" sampleTime="0.2" name="Atomic" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ep_2661/top_A/Subsystem/top_A/Atomic/In1" path="top_A/Subsystem/top_A/Atomic/In1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="in1" physicalPath="ep_2661/top_A/Subsystem/top_A/Atomic/in1" path="top_A/Subsystem/top_A/Atomic/in1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="ep_2661/top_A/Subsystem/top_A/Atomic/out1" path="top_A/Subsystem/top_A/Atomic/out1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/Atomic/Merge" path="top_A/Subsystem/top_A/Atomic/Merge" name="Merge" portNumber="1">
+        <miltype initValue="0.0000000000000000e+00">
+          <int16/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/Atomic/pwron/Relational&#10;Operator" path="top_A/Subsystem/top_A/Atomic/pwron/Relational&#10;Operator" name="Relational&#10;Operator" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/Atomic/pwron/rescaler1" path="top_A/Subsystem/top_A/Atomic/pwron/rescaler1" name="rescaler1" portNumber="1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/Atomic/pwron/rescaler2" path="top_A/Subsystem/top_A/Atomic/pwron/rescaler2" name="rescaler2" portNumber="1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/Atomic/rescaler_B" path="top_A/Subsystem/top_A/Atomic/rescaler_B" name="rescaler_B" portNumber="1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="ep_2661/top_A/Subsystem/top_A/NonAtomic" path="top_A/Subsystem/top_A/NonAtomic" sampleTime="0.2" name="NonAtomic" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="ep_2661/top_A/Subsystem/top_A/NonAtomic/In1" path="top_A/Subsystem/top_A/NonAtomic/In1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="in1" physicalPath="ep_2661/top_A/Subsystem/top_A/NonAtomic/in1" path="top_A/Subsystem/top_A/NonAtomic/in1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </inport>
+      <outport portNumber="1" name="out1" physicalPath="ep_2661/top_A/Subsystem/top_A/NonAtomic/out1" path="top_A/Subsystem/top_A/NonAtomic/out1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype initValue="0.0000000000000000e+00">
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </outport>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/NonAtomic/pwron/Relational&#10;Operator" path="top_A/Subsystem/top_A/NonAtomic/pwron/Relational&#10;Operator" name="Relational&#10;Operator" portNumber="1">
+        <miltype>
+          <boolean/>
+        </miltype>
+        <siltype>
+          <Bool/>
+        </siltype>
+      </display>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/NonAtomic/pwron/rescaler1" path="top_A/Subsystem/top_A/NonAtomic/pwron/rescaler1" name="rescaler1" portNumber="1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/NonAtomic/pwron/rescaler2" path="top_A/Subsystem/top_A/NonAtomic/pwron/rescaler2" name="rescaler2" portNumber="1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+      <display physicalPath="ep_2661/top_A/Subsystem/top_A/NonAtomic/rescaler_A" path="top_A/Subsystem/top_A/NonAtomic/rescaler_A" name="rescaler_A" portNumber="1">
+        <miltype>
+          <int16/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int16" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-3.2768000000000000e+04" max="3.2767000000000000e+04"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

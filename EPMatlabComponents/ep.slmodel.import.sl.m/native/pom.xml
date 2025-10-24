@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ep.slmodel.import.sl.m</artifactId>
+    <packaging>nar</packaging>
+
+    <parent>
+        <groupId>btc_es</groupId>
+        <artifactId>ep.matlabcomponents.matlab.parent</artifactId>
+        <version>243.0.6-SNAPSHOT</version>
+        <relativePath>../../releng/ep.matlabcomponents.matlab.parent</relativePath>
+    </parent>
+
+    <properties>
+        <!-- Subdirectory of src where private scripts are stored (not belonging to modules interface).-->
+        <matlab.private>privat</matlab.private>
+        <!-- Default value for test timeout: 15 minutes. (Possible units: h (hours) m (minutes) s (seconds) -->
+        <test.timeout>15m</test.timeout>
+        <export.resource>spec/dtd/*.dtd</export.resource>
+    </properties>
+
+    <dependencies>
+        <!-- Compile dependencies -->
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.slmodel.openclose.m</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+            <type>nar</type>
+        </dependency>
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.slmodel.m</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+            <type>nar</type>
+        </dependency>
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.slmodel.analysis.m</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+            <type>nar</type>
+        </dependency>        
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.core.utils.m</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+            <type>nar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.btc</groupId>
+            <artifactId>ct.nativeaccess</artifactId>
+            <version>${coretech.version}</version>
+            <scope>compile</scope>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>com.btc</groupId>
+            <artifactId>ct.core</artifactId>
+            <version>${coretech.version}</version>
+            <scope>compile</scope>
+            <type>jar</type>
+        </dependency>
+        <!-- Test dependencies -->
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.ats.models.m</artifactId>
+            <version>${ep.ats.version}</version>
+            <scope>test</scope>
+            <type>nar</type>
+        </dependency>
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.ats.models.dev.sl</artifactId>
+            <version>${ep.ats.version}</version>
+            <scope>test</scope>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.architecture.spec</artifactId>
+            <version>${ep.architecture.version}</version>
+            <scope>test</scope>
+            <type>jar</type>
+        </dependency>         
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.architecture.spec.test.utils</artifactId>
+            <version>${ep.architecture.version}</version>
+            <scope>test</scope>
+            <type>jar</type>
+        </dependency>         
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>cct.mxx_xmltree.c</artifactId>
+            <version>${ccoretech.version}</version>
+            <scope>test</scope>
+            <type>nar</type>
+        </dependency>
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.test.utils.m</artifactId>
+            <version>${project.version}</version>
+            <scope>test</scope>
+            <type>nar</type>
+        </dependency>          
+        <dependency>
+            <groupId>btc_es</groupId>
+            <artifactId>ep.slmodel.test.utils.m</artifactId>
+            <version>${project.version}</version>
+            <scope>test</scope>
+            <type>nar</type>
+        </dependency>
+    </dependencies>
+</project>

@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="main_model"/>
+    <Architecture id="id1" name="main_model [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="main_model.c:1:main_model_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_main_model_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_main_model_Out1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel/RefModel/Subsystem_RefModel/Gain1(1)" refId="id0"/>
+        <Path path="RefModel_gain" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Gain(1)" refId="id0"/>
+        <Path path="Subsystem_ParamModel_In" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="TopLevel/Gain1(1)" refId="id0"/>
+        <Path path="mainModel_gain" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="a" refId="id0"/>
+        <Path path="a" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="c" refId="id0"/>
+        <Path path="c" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="w" refId="id0"/>
+        <Path path="w" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="b" refId="id0"/>
+        <Path path="b" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="d" refId="id0"/>
+        <Path path="d" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="m_s" refId="id0"/>
+        <Path path="m_s" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="m_s" refId="id0"/>
+        <Path path="m_s" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="m_s_w" refId="id0"/>
+        <Path path="m_s_w" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="m_s_w" refId="id0"/>
+        <Path path="m_s_w" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="m_w" refId="id0"/>
+        <Path path="m_w" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ref1" refId="id0"/>
+        <Path path="ref1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ref2" refId="id0"/>
+        <Path path="ref2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="s_w" refId="id0"/>
+        <Path path="s_w" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="TopLevel" refId="id0"/>
+      <Path path="main_model.c:1:main_model_step/main_TopLevel.c:1:main_TopLevel" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="TopLevel/In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_main_model_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="TopLevel/Out1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_main_model_Out1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel/RefModel/Subsystem_RefModel/Gain1(1)" refId="id0"/>
+        <Path path="RefModel_gain" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Gain(1)" refId="id0"/>
+        <Path path="Subsystem_ParamModel_In" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="TopLevel/Gain1(1)" refId="id0"/>
+        <Path path="mainModel_gain" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="a" refId="id0"/>
+        <Path path="a" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="c" refId="id0"/>
+        <Path path="c" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="w" refId="id0"/>
+        <Path path="w" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="b" refId="id0"/>
+        <Path path="b" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="d" refId="id0"/>
+        <Path path="d" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="m_s" refId="id0"/>
+        <Path path="m_s" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="m_s" refId="id0"/>
+        <Path path="m_s" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="m_s_w" refId="id0"/>
+        <Path path="m_s_w" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="m_s_w" refId="id0"/>
+        <Path path="m_s_w" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="m_w" refId="id0"/>
+        <Path path="m_w" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ref1" refId="id0"/>
+        <Path path="ref1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ref2" refId="id0"/>
+        <Path path="ref2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="s_w" refId="id0"/>
+        <Path path="s_w" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="TopLevel/Subsystem_Main" refId="id0"/>
+      <Path path="main_model.c:1:main_model_step/main_TopLevel.c:1:main_TopLevel/subsystem_Main.c:1:subsystem_Main" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="TopLevel/Subsystem_Main/In1" refId="id0"/>
+        <Path path="Subsystem_Main_In" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="TopLevel/Subsystem_Main/Out1" refId="id0"/>
+        <Path path="Subsystem_Main_Out" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel/RefModel/Subsystem_RefModel/Gain1(1)" refId="id0"/>
+        <Path path="RefModel_gain" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Gain(1)" refId="id0"/>
+        <Path path="Subsystem_ParamModel_In" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="a" refId="id0"/>
+        <Path path="a" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="c" refId="id0"/>
+        <Path path="c" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="b" refId="id0"/>
+        <Path path="b" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="d" refId="id0"/>
+        <Path path="d" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="m_s" refId="id0"/>
+        <Path path="m_s" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="m_s" refId="id0"/>
+        <Path path="m_s" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="m_s_w" refId="id0"/>
+        <Path path="m_s_w" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ref1" refId="id0"/>
+        <Path path="ref1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ref2" refId="id0"/>
+        <Path path="ref2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="s_w" refId="id0"/>
+        <Path path="s_w" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="TopLevel/Subsystem_Main/ParamModel" refId="id0"/>
+      <Path path="main_model.c:1:main_model_step/main_TopLevel.c:1:main_TopLevel/subsystem_Main.c:1:subsystem_Main/param_model.c:1:param_model" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_param_model_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Out1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_param_model_Out1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel/RefModel/Subsystem_RefModel/Gain1(1)" refId="id0"/>
+        <Path path="RefModel_gain" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Gain(1)" refId="id0"/>
+        <Path path="Subsystem_ParamModel_In" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="a" refId="id0"/>
+        <Path path="a" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="b" refId="id0"/>
+        <Path path="b" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="m_s" refId="id0"/>
+        <Path path="m_s" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="m_s_w" refId="id0"/>
+        <Path path="m_s_w" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ref1" refId="id0"/>
+        <Path path="ref1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ref2" refId="id0"/>
+        <Path path="ref2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="s_w" refId="id0"/>
+        <Path path="s_w" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel" refId="id0"/>
+      <Path path="main_model.c:1:main_model_step/main_TopLevel.c:1:main_TopLevel/subsystem_Main.c:1:subsystem_Main/param_model.c:1:param_model/sub_ParamModel.c:1:sub_ParamModel" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel/In1" refId="id0"/>
+        <Path path="Subsystem_ParamModel_In" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel/Out1" refId="id0"/>
+        <Path path="Subsystem_ParamModel_Out" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel/RefModel/Subsystem_RefModel/Gain1(1)" refId="id0"/>
+        <Path path="RefModel_gain" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="a" refId="id0"/>
+        <Path path="a" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="b" refId="id0"/>
+        <Path path="b" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="m_s" refId="id0"/>
+        <Path path="m_s" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ref1" refId="id0"/>
+        <Path path="ref1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ref2" refId="id0"/>
+        <Path path="ref2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel/RefModel" refId="id0"/>
+      <Path path="main_model.c:1:main_model_step/main_TopLevel.c:1:main_TopLevel/subsystem_Main.c:1:subsystem_Main/param_model.c:1:param_model/sub_ParamModel.c:1:sub_ParamModel/ref_model.c:1:ref_model" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel/RefModel/In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_ref_model_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel/RefModel/In2" refId="id0"/>
+        <Path path="BTCAnnotatedInport_ref_model_In2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel/RefModel/Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_ref_model_Out1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel/RefModel/Subsystem_RefModel/Gain1(1)" refId="id0"/>
+        <Path path="RefModel_gain" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ref1" refId="id0"/>
+        <Path path="ref1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ref2" refId="id0"/>
+        <Path path="ref2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel/RefModel/Subsystem_RefModel" refId="id0"/>
+      <Path path="main_model.c:1:main_model_step/main_TopLevel.c:1:main_TopLevel/subsystem_Main.c:1:subsystem_Main/param_model.c:1:param_model/sub_ParamModel.c:1:sub_ParamModel/ref_model.c:1:ref_model/sub_RefModel.c:1:sub_RefModel" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel/RefModel/Subsystem_RefModel/In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_ref_model_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel/RefModel/Subsystem_RefModel/In2" refId="id0"/>
+        <Path path="BTCAnnotatedInport_ref_model_In2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel/RefModel/Subsystem_RefModel/Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_ref_model_Out1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Local">
+        <Path path="TopLevel/Subsystem_Main/ParamModel/Subsystem_ParamModel/RefModel/Subsystem_RefModel/Gain1(1)" refId="id0"/>
+        <Path path="RefModel_gain" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ref1" refId="id0"/>
+        <Path path="ref1" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="ref2" refId="id0"/>
+        <Path path="ref2" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

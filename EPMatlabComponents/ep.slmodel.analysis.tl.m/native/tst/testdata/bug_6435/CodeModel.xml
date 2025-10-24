@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+  <Files>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_6435\TLProj\standartSubsystem" name="standartSubsystem.c" kind="source" annotate="yes" id="fID1"/>
+    <File path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_6435\TLSim" name="standartSubsystem_fri.c" kind="source" annotate="no" id="fID2"/>
+  </Files>
+  <IncludePaths>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_6435\TLProj\standartSubsystem"/>
+    <IncludePath path="C:\Users\developer\AppData\Roaming\BTC\ep\2.11p0\tmp\2a3841f2f\bug_6435\TLSim"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\SimFiles\Generic"/>
+    <IncludePath path="C:\Program Files\dSPACE TargetLink 4.1\Matlab\Tl\ApplicationBuilder\BoardPackages\HostPC64\MSVC"/>
+  </IncludePaths>
+  <Defines>
+    <Define name="TL_FRAME"/>
+    <Define name="TL_CODE_HOST"/>
+    <Define name="__MSC__"/>
+    <Define name="BTC_EP_TL_VERSION" value="41"/>
+  </Defines>
+  <Functions archName="StandardModel_tl [C-Code]">
+    <Function name="Sa1_standartSubsystem" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa1_In1" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa1_In2" scaling="scID2" min="-8.0000000000000000e+02" max="3.0000000000000000e+02"/>
+        <InterfaceObj kind="cal" var="Ca1_V_Calvariable" scaling="scID1" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa4_Saturation_lower" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa4_Saturation_upper" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa4_Constant1" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa2_Switch2_threshold" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa2_Switch1_threshold" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa2_Relay_offoutput" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa2_Relay_onoutput" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa2_Relay_offswitch" scaling="scID1" initVal="-1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa2_Relay_onswitch" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa1_Out1" scaling="scID3"/>
+        <InterfaceObj kind="out" var="Sa1_Out2" scaling="scID1"/>
+        <InterfaceObj kind="out" var="Sa1_Out3" scaling="scID1"/>
+        <InterfaceObj kind="disp" var="fail_O2" scaling="scID1" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa2_AtomicSubsystem" fileref="fID1" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa2_In" scaling="scID1"/>
+        <InterfaceObj kind="in" var="Sa2_maxRate" scaling="scID1"/>
+        <InterfaceObj kind="cal" var="Sa2_Switch2_threshold" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa2_Switch1_threshold" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa2_Relay_offoutput" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa2_Relay_onoutput" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa2_Relay_offswitch" scaling="scID1" initVal="-1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa2_Relay_onswitch" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="" scaling="scID1"/>
+      </Interface>
+    </Function>
+    <Function name="Sa3_AtomicSubsystem1" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa2_Out1_a" scaling="scID1"/>
+        <InterfaceObj kind="cal" var="Ca1_V_Calvariable" scaling="scID1" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa4_Saturation_lower" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa4_Saturation_upper" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa4_Constant1" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa4_Saturation" scaling="scID1" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        <InterfaceObj kind="out" var="Sa4_Product" scaling="scID1"/>
+        <InterfaceObj kind="out" var="fail_O2" scaling="scID1" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="disp" var="fail_O2" scaling="scID1" min="0.0000000000000000e+00" max="1.0000000000000000e+00" initVal="0.0000000000000000e+00"/>
+      </Interface>
+    </Function>
+    <Function name="Sa4_Subsystem2" sampleTime="0.01">
+      <Interface>
+        <InterfaceObj kind="in" var="Sa2_Out1_a" scaling="scID1"/>
+        <InterfaceObj kind="cal" var="Sa4_Saturation_lower" scaling="scID1" initVal="0.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa4_Saturation_upper" scaling="scID1" initVal="2.0000000000000000e+00"/>
+        <InterfaceObj kind="cal" var="Sa4_Constant1" scaling="scID1" initVal="1.0000000000000000e+00"/>
+        <InterfaceObj kind="out" var="Sa4_Saturation" scaling="scID1" min="0.0000000000000000e+00" max="2.5500000000000000e+02"/>
+        <InterfaceObj kind="out" var="Sa4_Product" scaling="scID1"/>
+      </Interface>
+    </Function>
+  </Functions>
+  <Scalings>
+    <Scaling id="scID1" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00"/>
+    <Scaling id="scID2" lsb="2.5000000000000000e-01" offset="-4.0000000000000000e+00"/>
+    <Scaling id="scID3" lsb="5.0000000000000000e-01" offset="-3.0000000000000000e+00"/>
+  </Scalings>
+</CodeModel>

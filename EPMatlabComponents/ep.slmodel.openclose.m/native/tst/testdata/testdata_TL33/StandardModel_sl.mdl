@@ -1,0 +1,1896 @@
+Model {
+  Name			  "StandardModel_sl"
+  Version		  6.4
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    2
+    Inport {
+      Name		      "In1"
+    }
+    Inport {
+      Name		      "In2"
+    }
+    NumRootOutports	    3
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      Name		      "Out1"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      Name		      "Out2"
+    }
+    Outport {
+      BusObject		      ""
+      BusOutputAsStruct	      "off"
+      Name		      "Out3"
+    }
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.425"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "ibm-5348_P100-1997"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  on
+  Created		  "Fri Mar 10 11:47:00 2006"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "alexh"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu May 03 17:12:26 2007"
+  ModelVersionFormat	  "1.%<AutoIncrement:425>"
+  ConfigurationManager	  "None"
+  UserBdParams		  "DS_PROJECTFILE;TL_MAIN_DATA;"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ProdHWDeviceType	  "32-bit Generic"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.2.0"
+      Array {
+	Type			"Handle"
+	Dimension		7
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.2.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.01"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "FixedStepDiscrete"
+	  SolverName		  "FixedStepDiscrete"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  RateTranMode		  "Deterministic"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.2.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveFormat		  "StructureWithTime"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    5
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "InitFltsAndDblsToZero"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.2.0"
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  ParameterPooling	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.2.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  CheckSSInitialOutputMsg on
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskCondExecSysMsg "none"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  ModelReferenceSimTargetVerbose off
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StrictBusMsg		  "None"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.2.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.2.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  8
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "IncludeHyperlinkInReport"
+	    PropName		    "DisabledProps"
+	  }
+	  Version		  "1.2.0"
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      9
+	      Array {
+		Type			"Cell"
+		Dimension		9
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.2.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      PrefixModelToSubsysFcnNames on
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      10
+	      Array {
+		Type			"Cell"
+		Dimension		12
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      Version		      "1.2.0"
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      IncludeERTFirstTime     on
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      SimulationMode	      "normal"
+      CurrentDlgPage	      "Data Import//Export"
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  DS_PROJECTFILE	  "StandardModel.dd"
+  TL_MAIN_DATA		  "struct('date',733116.453526285,'maxnumsimulations',"
+"10,'codeopt',struct('inliningthreshold',6,'target',['Generic ANSI-C'],'assemb"
+"ler',0,'optlevel',0,'linebreaklimit',100,'stateactcodinglimit',1,'functionsfo"
+"r64bitops',1,'sections',1,'sfbitfields',1,'globalbitfields',0,'sharefunctions"
+"',0,'noinitstozero',0,'limidentlength',1,'decimals',1,'separatesearch',0,'cle"
+"ancode',0,'optimizedbooltype',1,'keepsaturation',0,'extvarsharing',0,'outputs"
+"tylefile','cconfig.xml','rootstylesheet','TL_CSourceCodeSS.xsl'),'frameopt',s"
+"truct('exectime',1,'stacksize',1,'simconfig',['default EVM'],'targettimeout',"
+"1,'mexargs','-g','tcargs',''),'logopt',struct('plotinterval',0.1,'globalloggi"
+"ngmode',1),'export',struct('directory','.\\export','sysfiles',1,'docfiles',0,"
+"'tools',0),'codecoveragelevel',0,'asapscript','asap2_all_in_one','docscript',"
+"'tldoc_default','rtos',struct('enablemultirate',0,'currentrtos',['generic RTO"
+"S'],'autopriority',0,'autoinitalarm',1,'alarminitwithrestart',1,'alarmactivat"
+"ionkind',1,'alarmstartoffset',0))"
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Ground
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Relay
+      OnSwitchValue	      "eps"
+      OffSwitchValue	      "eps"
+      OnOutputValue	      "1"
+      OffOutputValue	      "0"
+      OutputDataTypeScalingMode	"All ports same datatype"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      ConRadixGroup	      "Use specified scaling"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimit	      "0.5"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutDataTypeMode	      "Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      UnitDelay
+      X0		      "0"
+      SampleTime	      "1"
+      StateMustResolveToSignalObject off
+      RTWStateStorageClass    "Auto"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "StandardModel_sl"
+    Location		    [434, 74, 1107, 894]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Inport
+      Name		      "In1"
+      Position		      [90, 233, 120, 247]
+      BackgroundColor	      "orange"
+      IconDisplay	      "Port number"
+    }
+    Block {
+      BlockType		      Inport
+      Name		      "In2"
+      Position		      [90, 588, 120, 602]
+      BackgroundColor	      "orange"
+      Port		      "2"
+      IconDisplay	      "Port number"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "standartSubsystem"
+      Description	      "a"
+      Ports		      [2, 3]
+      Position		      [195, 59, 345, 771]
+      BackgroundColor	      "lightBlue"
+      DropShadow	      on
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      MaskHideContents	      off
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"standartSubsystem"
+	Location		[-44, 148, 1193, 620]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [215, 203, 245, 217]
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "1"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "In2"
+	  Position		  [205, 358, 235, 372]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  PortDimensions	  "1"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "AtomicSubsystem"
+	  Ports			  [2, 1]
+	  Position		  [345, 134, 490, 441]
+	  BackgroundColor	  "lightBlue"
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "AtomicSubsystem"
+	    Location		    [180, 334, 1084, 878]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In"
+	      Position		      [90, 43, 120, 57]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "maxRate"
+	      Position		      [80, 138, 110, 152]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "InPort"
+	      Tag		      "struct('logdata',struct('maxnumvals',in"
+"f,'plotchannels',[],'loggingmode',3,'channels',1),'output',struct('variable',"
+"'','description','','name','$S_$B','width',1,'address','','max',NaN,'min',NaN"
+",'class','FCN_REF_ARG','type','Int16','scaling','','lsb',1,'offset',0,'arb',0"
+",'freeze',1,'unit','','autoscalingmode',1,'lowerheadroom',1,'upperheadroom',1"
+",'headroomunit','bit','keepdatatype',1,'castoutput',0,'show',0),'message',str"
+"uct('name','','component','','accessor',''),'virtual',1,'scalingvalid',0,'dat"
+"e',733116.436957025)"
+	      Ports		      [1, 1]
+	      Position		      [180, 135, 220, 155]
+	      SourceBlock	      "tldummylib/InPort"
+	      SourceType	      "Dummy_Inport"
+	      ShowPortLabels	      on
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "InPort1"
+	      Tag		      "struct('logdata',struct('maxnumvals',in"
+"f,'plotchannels',[],'loggingmode',3,'channels',1),'output',struct('variable',"
+"'','description','','name','$S_$B','width',1,'address','','max',NaN,'min',NaN"
+",'class','FCN_ARG','type','Int16','scaling','','lsb',1,'offset',0,'arb',0,'fr"
+"eeze',1,'unit','','autoscalingmode',1,'lowerheadroom',1,'upperheadroom',1,'he"
+"adroomunit','bit','keepdatatype',1,'castoutput',0,'show',0),'message',struct("
+"'name','','component','','accessor',''),'virtual',1,'scalingvalid',0,'date',7"
+"33116.437838021)"
+	      Ports		      [1, 1]
+	      Position		      [190, 40, 230, 60]
+	      SourceBlock	      "tldummylib/InPort"
+	      SourceType	      "Dummy_Inport"
+	      ShowPortLabels	      on
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "OutPort"
+	      Tag		      "struct('comment',struct('text','','plac"
+"ement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingmode',3"
+",'channels',1),'output',struct('variable','','description','','name','$S_$B',"
+"'width',1,'address','','max',NaN,'min',NaN,'class','FCN_RETURN','type','Int16"
+"','scaling','','lsb',1,'offset',0,'arb',0,'freeze',1,'unit','','autoscalingmo"
+"de',1,'lowerheadroom',1,'upperheadroom',1,'headroomunit','bit','keepdatatype'"
+",1,'checkmin',0,'checkmax',0,'castoutput',0,'show',0),'message',struct('name'"
+",'','component',''),'virtual',1,'scalingvalid',0,'date',733116.437082986)"
+	      Ports		      [1, 1]
+	      Position		      [600, 330, 640, 350]
+	      SourceBlock	      "tldummylib/OutPort"
+	      SourceType	      "Dummy_Outport"
+	      ShowPortLabels	      on
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	    }
+	    Block {
+	      BlockType		      Relay
+	      Name		      "Relay"
+	      Tag		      "struct('comment',struct('text','','plac"
+"ement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingmode',3"
+",'channels',1),'output',struct('variable','','description','','name','$S_$B',"
+"'width',1,'address','','max',NaN,'min',NaN,'class','default','type','Int16','"
+"scaling','','lsb',1,'offset',0,'arb',0,'freeze',1,'unit','','autoscalingmode'"
+",1,'lowerheadroom',1,'upperheadroom',1,'headroomunit','bit','keepdatatype',1,"
+"'castoutput',0,'show',0),'onoutput',struct('variable','','description','','na"
+"me','$S_$B_onoutput','width',1,'address','','max',NaN,'min',NaN,'class','CAL'"
+",'type','Int16','scaling','','lsb',1,'offset',0,'arb',0,'freeze',1,'unit','',"
+"'keepdatatype',1,'value','1'),'offoutput',struct('variable','','description',"
+"'','name','$S_$B_offoutput','width',1,'address','','max',NaN,'min',NaN,'class"
+"','CAL','type','Int16','scaling','','lsb',1,'offset',0,'arb',0,'freeze',1,'un"
+"it','','keepdatatype',1,'value','0'),'onswitch',struct('variable','','descrip"
+"tion','','name','$S_$B_onswitch','width',1,'address','','max',NaN,'min',NaN,'"
+"class','CAL','type','Int16','scaling','','lsb',1,'offset',0,'arb',0,'freeze',"
+"1,'unit','','keepdatatype',1,'value','1','scalar',0),'offswitch',struct('vari"
+"able','','description','','name','$S_$B_offswitch','width',1,'address','','ma"
+"x',NaN,'min',NaN,'class','CAL','type','Int16','scaling','','lsb',1,'offset',0"
+",'arb',0,'freeze',1,'unit','','keepdatatype',1,'value','-1','scalar',0),'scal"
+"ingvalid',0,'date',733110.704651296)"
+	      Position		      [395, 240, 435, 280]
+	      Orientation	      "left"
+	      BackgroundColor	      "lightBlue"
+	      NamePlacement	      "alternate"
+	      OnSwitchValue	      "1"
+	      OffSwitchValue	      "-1"
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch1"
+	      Tag		      "struct('comment',struct('text','','plac"
+"ement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingmode',3"
+",'channels',1),'output',struct('variable','','description','','name','$S_$B',"
+"'width',1,'address','','max',NaN,'min',NaN,'class','default','type','Int16','"
+"scaling','','lsb',1,'offset',0,'arb',0,'freeze',1,'unit','','autoscalingmode'"
+",1,'lowerheadroom',1,'upperheadroom',1,'headroomunit','bit','keepdatatype',1,"
+"'checkmin',0,'checkmax',0,'castoutput',0,'show',0),'threshold',struct('variab"
+"le','','description','','name','$S_$B_threshold','width',1,'address','','max'"
+",NaN,'min',NaN,'class','CAL','type','Int16','scaling','','lsb',1,'offset',0,'"
+"arb',0,'freeze',1,'unit','','keepdatatype',1,'value','0','scalar',0,'criteria"
+"',1),'scalingvalid',0,'date',733114.678123935)"
+	      Position		      [560, 135, 600, 195]
+	      BackgroundColor	      "lightBlue"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch2"
+	      Tag		      "struct('comment',struct('text','','plac"
+"ement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingmode',3"
+",'channels',1),'output',struct('variable','','description','','name','$S_$B',"
+"'width',1,'address','','max',NaN,'min',NaN,'class','default','type','Int16','"
+"scaling','','lsb',1,'offset',0,'arb',0,'freeze',1,'unit','','autoscalingmode'"
+",1,'lowerheadroom',1,'upperheadroom',1,'headroomunit','bit','keepdatatype',1,"
+"'checkmin',0,'checkmax',0,'castoutput',0,'show',0),'threshold',struct('variab"
+"le','','description','','name','$S_$B_threshold','width',1,'address','','max'"
+",NaN,'min',NaN,'class','CAL','type','Int16','scaling','','lsb',1,'offset',0,'"
+"arb',0,'freeze',1,'unit','','keepdatatype',1,'value','0','scalar',0,'criteria"
+"',1),'scalingvalid',0,'date',733114.678124653)"
+	      Position		      [515, 310, 555, 370]
+	      BackgroundColor	      "lightBlue"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      Position		      [710, 333, 740, 347]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "InPort1"
+	      SrcPort		      1
+	      Points		      [30, 0]
+	      Branch {
+		Points			[0, 35; 80, 0; 0, 75]
+		Branch {
+		  Points		  [-20, 0; 0, 180]
+		  DstBlock		  "Switch2"
+		  DstPort		  2
+		}
+		Branch {
+		  Points		  [0, 60; 145, 0]
+		  Branch {
+		    Points		    [0, 40]
+		    DstBlock		    "Relay"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [10, 0; 0, -55]
+		    DstBlock		    "Switch1"
+		    DstPort		    2
+		  }
+		}
+	      }
+	      Branch {
+		Points			[265, 0; 0, 135]
+		DstBlock		"Switch1"
+		DstPort			3
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "InPort"
+	      SrcPort		      1
+	      DstBlock		      "Switch1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "OutPort"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Switch2"
+	      SrcPort		      1
+	      DstBlock		      "OutPort"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Switch1"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, 135; -125, 0; 0, 60]
+	      DstBlock		      "Switch2"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Relay"
+	      SrcPort		      1
+	      Points		      [-10, 0; 0, 60]
+	      DstBlock		      "Switch2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In"
+	      SrcPort		      1
+	      DstBlock		      "InPort1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "maxRate"
+	      SrcPort		      1
+	      DstBlock		      "InPort"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "AtomicSubsystem1"
+	  Ports			  [1, 3]
+	  Position		  [670, 136, 810, 444]
+	  BackgroundColor	  "lightBlue"
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  MaskHideContents	  off
+	  System {
+	    Name		    "AtomicSubsystem1"
+	    Location		    [-20, 245, 1248, 956]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      Position		      [120, 293, 150, 307]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "StateChart"
+	      Description	      "Stateflow diagram to determine control "
+"system operating mode"
+	      Ports		      [0, 1]
+	      Position		      [735, 215, 920, 535]
+	      BackgroundColor	      "green"
+	      MinAlgLoopOccurrences   off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      MaskHideContents	      off
+	      MaskType		      "Stateflow"
+	      MaskDescription	      "Stateflow diagram"
+	      MaskDisplay	      "plot(sf('Private','sfblk','xIcon'),sf('"
+"Private','sfblk','yIcon'));text(0.5,0,sf('Private', 'sfblk', 'tIcon'),'Horizo"
+"ntalAl','Center','VerticalAl','Bottom');"
+	      MaskSelfModifiable      on
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      off
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      System {
+		Name			"StateChart"
+		Location		[253, 221, 867, 588]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	"[0.500000, 0.500000, 0.500000, 0.5000"
+"00]"
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Demux
+		  Name			  " Demux "
+		  Ports			  [1, 1]
+		  Position		  [270, 160, 320, 200]
+		  Outputs		  "1"
+		}
+		Block {
+		  BlockType		  Ground
+		  Name			  " Ground "
+		  Position		  [20, 121, 40, 139]
+		}
+		Block {
+		  BlockType		  "S-Function"
+		  Name			  " SFunction "
+		  Tag			  "Stateflow S-Function StandardModel_"
+"sl 2"
+		  Ports			  [1, 2]
+		  Position		  [180, 100, 230, 160]
+		  FunctionName		  "sf_sfun"
+		  Parameters		  "Calvariable"
+		  PortCounts		  "[1 2]"
+		  Port {
+		    PortNumber		    2
+		    Name		    "fail_O2"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  " Terminator "
+		  Position		  [460, 171, 480, 189]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "fail_O2"
+		  Position		  [460, 101, 480, 119]
+		  IconDisplay		  "Port number"
+		  BusOutputAsStruct	  off
+		}
+		Line {
+		  SrcBlock		  " SFunction "
+		  SrcPort		  1
+		  Points		  [0, 65]
+		  DstBlock		  " Demux "
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  " Ground "
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  " Demux "
+		  SrcPort		  1
+		  DstBlock		  " Terminator "
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "fail_O2"
+		  Labels		  [0, 0]
+		  SrcBlock		  " SFunction "
+		  SrcPort		  2
+		  DstBlock		  "fail_O2"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Subsystem2"
+	      Ports		      [1, 2]
+	      Position		      [305, 149, 475, 451]
+	      BackgroundColor	      "green"
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      MaskHideContents	      off
+	      System {
+		Name			"Subsystem2"
+		Location		[72, 110, 1165, 446]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	"[0.500000, 0.500000, 0.500000, 0.5000"
+"00]"
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "In1"
+		  Position		  [320, 138, 350, 152]
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  Tag			  "struct('comment',struct('text','','"
+"placement',1),'output',struct('variable','','description','','name','$S_$B','"
+"width',1,'address','','max',NaN,'min',NaN,'class','GLOBAL','type','Int16','sc"
+"aling','','lsb',1,'offset',0,'arb',0,'freeze',1,'unit','','keepdatatype',1,'v"
+"alue','10','tolerance',1,'show',0),'dt','inf','scalingvalid',0,'date',733116."
+"443451736)"
+		  Position		  [320, 216, 360, 254]
+		  BackgroundColor	  "lightBlue"
+		  Value			  "10"
+		  VectorParams1D	  on
+		  SamplingMode		  "Sample based"
+		  OutDataTypeMode	  "Inherit from 'Constant value'"
+		  OutDataType		  "sfix(16)"
+		  ConRadixGroup		  "Use specified scaling"
+		  OutScaling		  "2^0"
+		  SampleTime		  "inf"
+		  FramePeriod		  "inf"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant1"
+		  Tag			  "struct('comment',struct('text','','"
+"placement',1),'output',struct('variable','','description','','name','$S_$B','"
+"width',1,'address','','max',NaN,'min',NaN,'class','CAL','type','Int16','scali"
+"ng','','lsb',1,'offset',0,'arb',0,'freeze',1,'unit','','keepdatatype',1,'valu"
+"e','1','tolerance',1,'show',0),'dt','inf','scalingvalid',0,'date',733114.6781"
+"25567)"
+		  Position		  [315, 296, 355, 334]
+		  BackgroundColor	  "lightBlue"
+		  Value			  "1"
+		  VectorParams1D	  on
+		  SamplingMode		  "Sample based"
+		  OutDataTypeMode	  "Inherit from 'Constant value'"
+		  OutDataType		  "sfix(16)"
+		  ConRadixGroup		  "Use specified scaling"
+		  OutScaling		  "2^0"
+		  SampleTime		  "inf"
+		  FramePeriod		  "inf"
+		}
+		Block {
+		  BlockType		  Product
+		  Name			  "Product"
+		  Tag			  "struct('comment',struct('text','','"
+"placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingmod"
+"e',3,'channels',1),'output',struct('variable','','description','','name','$S_"
+"$B','width',1,'address','','max',NaN,'min',NaN,'class','default','type','Int1"
+"6','scaling','','lsb',1,'offset',0,'arb',0,'freeze',1,'unit','','autoscalingm"
+"ode',1,'lowerheadroom',1,'upperheadroom',1,'headroomunit','bit','keepdatatype"
+"',1,'checkmin',0,'checkmax',0,'castoutput',0,'show',0),'inputs','*/','excepti"
+"onhandling',1,'scalingvalid',0,'date',733116.444770463)"
+		  Ports			  [2, 1]
+		  Position		  [455, 225, 495, 265]
+		  Inputs		  "*/"
+		}
+		Block {
+		  BlockType		  Saturate
+		  Name			  "Saturation"
+		  Tag			  "struct('comment',struct('text','','"
+"placement',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingmod"
+"e',3,'channels',1),'output',struct('variable','','description','','name','$S_"
+"$B','width',1,'address','','max',255,'min',0,'class','default','type','uint16"
+"','scaling','','lsb',1,'offset',0,'arb',0,'freeze',1,'unit','','autoscalingmo"
+"de',1,'lowerheadroom',1,'upperheadroom',1,'headroomunit','bit','keepdatatype'"
+",1,'castoutput',0,'show',0),'lowerlimit',struct('variable','','description','"
+"','name','$S_$B_lower','width',1,'address','','max',NaN,'min',NaN,'class','CA"
+"L','type','Int16','scaling','','lsb',1,'offset',0,'arb',0,'freeze',1,'unit','"
+"','keepdatatype',1,'value','0','scalar',0),'upperlimit',struct('variable','',"
+"'description','','name','$S_$B_upper','width',1,'address','','max',NaN,'min',"
+"NaN,'class','CAL','type','Int16','scaling','','lsb',1,'offset',0,'arb',0,'fre"
+"eze',1,'unit','','keepdatatype',1,'value','2','scalar',0),'scalingvalid',0,'d"
+"ate',733114.678127731)"
+		  Position		  [450, 132, 490, 158]
+		  BackgroundColor	  "lightBlue"
+		  UpperLimit		  "2"
+		  LowerLimit		  "0"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out1"
+		  Position		  [650, 138, 680, 152]
+		  IconDisplay		  "Port number"
+		  BusOutputAsStruct	  off
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Out2"
+		  Position		  [645, 238, 675, 252]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  BusOutputAsStruct	  off
+		}
+		Line {
+		  SrcBlock		  "Product"
+		  SrcPort		  1
+		  DstBlock		  "Out2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Product"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant1"
+		  SrcPort		  1
+		  Points		  [40, 0; 0, -60]
+		  DstBlock		  "Product"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Saturation"
+		  SrcPort		  1
+		  DstBlock		  "Out1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "In1"
+		  SrcPort		  1
+		  DstBlock		  "Saturation"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      Position		      [615, 218, 645, 232]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out2"
+	      Position		      [630, 368, 660, 382]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out3"
+	      Position		      [1085, 368, 1115, 382]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "StateChart"
+	      SrcPort		      1
+	      DstBlock		      "Out3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Subsystem2"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "Subsystem2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Subsystem2"
+	      SrcPort		      2
+	      DstBlock		      "Out2"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "In1_"
+	  Tag			  "struct('logdata',struct('maxnumvals',inf,'p"
+"lotchannels',[],'loggingmode',3,'channels',1),'output',struct('variable','','"
+"description','','name','$S_$B','width',1,'address','','max',NaN,'min',NaN,'cl"
+"ass','default','type','Int16','scaling','','lsb',1,'offset',0,'arb',0,'freeze"
+"',1,'unit','','autoscalingmode',1,'lowerheadroom',1,'upperheadroom',1,'headro"
+"omunit','bit','keepdatatype',1,'castoutput',0,'show',0),'message',struct('nam"
+"e','','component','','accessor',''),'virtual',1,'scalingvalid',0,'date',73311"
+"4.678131354)"
+	  Ports			  [1, 1]
+	  Position		  [265, 203, 295, 217]
+	  ShowName		  off
+	  SourceBlock		  "tldummylib/InPort"
+	  SourceType		  "Dummy_Inport"
+	  ShowPortLabels	  on
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "In2_"
+	  Tag			  "struct('logdata',struct('maxnumvals',inf,'p"
+"lotchannels',[],'loggingmode',3,'channels',1),'output',struct('variable','','"
+"description','','name','$S_$B','width',1,'address','','max',300,'min',-800,'c"
+"lass','default','type','Int16','scaling','','lsb',2^-2,'offset',-4,'arb',0,'f"
+"reeze',1,'unit','','autoscalingmode',1,'lowerheadroom',1,'upperheadroom',1,'h"
+"eadroomunit','bit','keepdatatype',1,'castoutput',0,'show',0),'message',struct"
+"('name','','component','','accessor',''),'virtual',1,'scalingvalid',0,'date',"
+"733116.429755926)"
+	  Ports			  [1, 1]
+	  Position		  [255, 358, 285, 372]
+	  ShowName		  off
+	  SourceBlock		  "tldummylib/InPort"
+	  SourceType		  "Dummy_Inport"
+	  ShowPortLabels	  on
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Out1_"
+	  Tag			  "struct('comment',struct('text','','placemen"
+"t',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingmode',3,'ch"
+"annels',1),'output',struct('variable','','description','','name','$S_$B','wid"
+"th',1,'address','','max',NaN,'min',NaN,'class','default','type','Int16','scal"
+"ing','','lsb',2^-1,'offset',-3,'arb',0,'freeze',1,'unit','','autoscalingmode'"
+",1,'lowerheadroom',1,'upperheadroom',1,'headroomunit','bit','keepdatatype',1,"
+"'checkmin',1,'checkmax',1,'castoutput',0,'show',0),'message',struct('name',''"
+",'component',''),'virtual',0,'scalingvalid',0,'date',733116.428905822)"
+	  Ports			  [1, 1]
+	  Position		  [925, 183, 955, 197]
+	  ShowName		  off
+	  SourceBlock		  "tldummylib/OutPort"
+	  SourceType		  "Dummy_Outport"
+	  ShowPortLabels	  on
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Out2_"
+	  Tag			  "struct('comment',struct('text','','placemen"
+"t',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingmode',3,'ch"
+"annels',1),'output',struct('variable','','description','','name','$S_$B','wid"
+"th',1,'address','','max',NaN,'min',NaN,'class','default','type','Int16','scal"
+"ing','','lsb',1,'offset',0,'arb',0,'freeze',1,'unit','','autoscalingmode',1,'"
+"lowerheadroom',1,'upperheadroom',1,'headroomunit','bit','keepdatatype',1,'che"
+"ckmin',0,'checkmax',0,'castoutput',0,'show',0),'message',struct('name','','co"
+"mponent',''),'virtual',1,'scalingvalid',0,'date',733114.678132257)"
+	  Ports			  [1, 1]
+	  Position		  [930, 283, 960, 297]
+	  ShowName		  off
+	  SourceBlock		  "tldummylib/OutPort"
+	  SourceType		  "Dummy_Outport"
+	  ShowPortLabels	  on
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Out3_"
+	  Tag			  "struct('comment',struct('text','','placemen"
+"t',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingmode',3,'ch"
+"annels',1),'output',struct('variable','','description','','name','$S_$B','wid"
+"th',1,'address','','max',NaN,'min',NaN,'class','default','type','Int32','scal"
+"ing','','lsb',1,'offset',0,'arb',0,'freeze',1,'unit','','autoscalingmode',1,'"
+"lowerheadroom',1,'upperheadroom',1,'headroomunit','bit','keepdatatype',1,'che"
+"ckmin',0,'checkmax',0,'castoutput',0,'show',0),'message',struct('name','','co"
+"mponent',''),'virtual',1,'scalingvalid',0,'date',733114.678132801)"
+	  Ports			  [1, 1]
+	  Position		  [925, 383, 955, 397]
+	  ShowName		  off
+	  SourceBlock		  "tldummylib/OutPort"
+	  SourceType		  "Dummy_Outport"
+	  ShowPortLabels	  on
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	}
+	Block {
+	  BlockType		  UnitDelay
+	  Name			  "Unit Delay"
+	  Tag			  "struct('comment',struct('text','','placemen"
+"t',1),'logdata',struct('maxnumvals',inf,'plotchannels',[],'loggingmode',3,'ch"
+"annels',1),'output',struct('variable','','description','','name','$S_$B','wid"
+"th',1,'address','','max',NaN,'min',NaN,'class','default','type','Int16','scal"
+"ing','','lsb',1,'offset',0,'arb',0,'freeze',1,'unit','','autoscalingmode',1,'"
+"lowerheadroom',1,'upperheadroom',1,'headroomunit','bit','keepdatatype',1,'che"
+"ckmin',0,'checkmax',0,'castoutput',0,'show',0),'state',struct('variable','','"
+"description','','name','X_$S_$B','width',1,'address','','max',NaN,'min',NaN,'"
+"class','default','type','Int16','scaling','','lsb',1,'offset',0,'arb',0,'free"
+"ze',1,'unit','','initial','-2'),'dt','-1','scalingvalid',0,'date',733116.4403"
+"09815)"
+	  Position		  [845, 170, 885, 210]
+	  X0			  "-2"
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [985, 183, 1015, 197]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  Position		  [980, 283, 1010, 297]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out3"
+	  Position		  [975, 383, 1005, 397]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "Unit Delay"
+	  SrcPort		  1
+	  DstBlock		  "Out1_"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "AtomicSubsystem1"
+	  SrcPort		  1
+	  DstBlock		  "Unit Delay"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "AtomicSubsystem"
+	  SrcPort		  1
+	  DstBlock		  "AtomicSubsystem1"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "In1_"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "In1_"
+	  SrcPort		  1
+	  DstBlock		  "AtomicSubsystem"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "In2"
+	  SrcPort		  1
+	  DstBlock		  "In2_"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "In2_"
+	  SrcPort		  1
+	  DstBlock		  "AtomicSubsystem"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Out1_"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Out2_"
+	  SrcPort		  1
+	  DstBlock		  "Out2"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "AtomicSubsystem1"
+	  SrcPort		  2
+	  DstBlock		  "Out2_"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Out3_"
+	  SrcPort		  1
+	  DstBlock		  "Out3"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "AtomicSubsystem1"
+	  SrcPort		  3
+	  DstBlock		  "Out3_"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Out1"
+      Position		      [425, 173, 455, 187]
+      BackgroundColor	      "yellow"
+      IconDisplay	      "Port number"
+      BusOutputAsStruct	      off
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Out2"
+      Position		      [420, 408, 450, 422]
+      BackgroundColor	      "yellow"
+      Port		      "2"
+      IconDisplay	      "Port number"
+      BusOutputAsStruct	      off
+    }
+    Block {
+      BlockType		      Outport
+      Name		      "Out3"
+      Position		      [420, 643, 450, 657]
+      BackgroundColor	      "yellow"
+      Port		      "3"
+      IconDisplay	      "Port number"
+      BusOutputAsStruct	      off
+    }
+    Line {
+      SrcBlock		      "In1"
+      SrcPort		      1
+      DstBlock		      "standartSubsystem"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "In2"
+      SrcPort		      1
+      DstBlock		      "standartSubsystem"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "standartSubsystem"
+      SrcPort		      1
+      DstBlock		      "Out1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "standartSubsystem"
+      SrcPort		      2
+      DstBlock		      "Out2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "standartSubsystem"
+      SrcPort		      3
+      DstBlock		      "Out3"
+      DstPort		      1
+    }
+  }
+}
+
+# Finite State Machines
+#
+#    Stateflow Version 6.4 (R2006a) dated Feb  2 2006, 05:30:12
+#
+#
+
+Stateflow {
+
+	machine {
+		id                   		1
+		name                 		"StandardModel_sl"
+		created              		"05-Mar-2007 11:18:14"
+		isLibrary            		0
+		firstTarget          		13
+		sfVersion            		64014000
+	}
+
+	chart {
+		id                                        		2
+		name                                      		"standartSubsystem/AtomicSubsystem1/StateChart"
+		description                               		"$TL$ functionname=$O; $TL$"
+		windowPosition                            		[-45 -80.25 960 690]
+		viewLimits                                		[0 1833 0 1308]
+		zoomFactor                                		2
+		transitionColor                           		[0.29 0.329 0.503]
+		transitionLabelColor                      		[0.29 0.329 0.503]
+		selectionColor                            		[0.866 0.035 0.507]
+		screen                                    		[1 1 1280 1024 1.333333333333333]
+		treeNode                                  		[0 3 0 0]
+		viewObj                                   		2
+		machine                                   		1
+		subviewS {
+			zoomFactor		2
+		}
+		decomposition                             		SET_CHART
+		firstData                                 		10
+		updateMethod                              		DISCRETE
+		sampleTime                                		"0.01"
+		chartFileNumber                           		2
+		disableImplicitCasting                    		1
+	}
+
+	state {
+		id                           		3
+		description                  		"This state determines the validity of the exhaust gas oxyg"
+						"en sensor (EGO) data.\n"
+						"$TL$ name=$C_X_$O$R; $TL$"
+		labelString                  		"OxygenSensMode"
+		position                     		[22.184 11.387 419.702 283.217]
+		fontSize                     		13.54
+		arrowSize                    		12
+		chart                        		2
+		treeNode                     		[2 6 0 0]
+		firstTransition              		7
+		subgrouped                   		1
+		subviewer                    		2
+		subviewS {
+			x1        		-15
+			y1        		-15
+			pos       		[0 0 504.327 205.592]
+			fontSize  		13.54
+		}
+		type                         		AND_STATE
+		decomposition                		CLUSTER_STATE
+		executionOrder               		1
+		eml {
+			treatIntsAsFixpt         		0
+		}
+	}
+
+	state {
+		id                           		4
+		description                  		"Normal EGO sensor operation gives a reliable indication of"
+						" excess oxygen in the exhaust gas, from which air/fuel mix"
+						"ture can be inferred.\n"
+						"$TL$ name=$C_X_$O$R; $TL$"
+		labelString                  		"O2_Normal\n"
+						"entry: fail_O2 = 0;"
+		position                     		[63 223.5 139.5 60]
+		fontSize                     		14
+		chart                        		2
+		treeNode                     		[3 0 5 0]
+		subviewer                    		2
+		type                         		OR_STATE
+		decomposition                		CLUSTER_STATE
+		eml {
+			treatIntsAsFixpt         		0
+		}
+	}
+
+	state {
+		id                           		5
+		description                  		"The EGO sensor has failed.\n"
+						"$TL$ name=$C_X_$O$R; $TL$"
+		labelString                  		"O2_Fail\n"
+						"entry: fail_O2 = 1;"
+		position                     		[287.863 63.423 146.99 55.291]
+		fontSize                     		14
+		arrowSize                    		6.67
+		chart                        		2
+		treeNode                     		[3 0 6 4]
+		subviewer                    		2
+		type                         		OR_STATE
+		decomposition                		CLUSTER_STATE
+		eml {
+			treatIntsAsFixpt         		0
+		}
+	}
+
+	state {
+		id                           		6
+		description                  		"The EGO sensor must come up to temperature before its data"
+						" is reliable.\n"
+						"$TL$ name=$C_X_$O$R; $TL$"
+		labelString                  		"O2_Warmup\n"
+						"entry: fail_O2 = 1;"
+		position                     		[44.203 51.16 130.081 46.922]
+		fontSize                     		14
+		arrowSize                    		6.67
+		chart                        		2
+		treeNode                     		[3 0 0 5]
+		subviewer                    		2
+		type                         		OR_STATE
+		decomposition                		CLUSTER_STATE
+		eml {
+			treatIntsAsFixpt         		0
+		}
+	}
+
+	transition {
+		id             		7
+		description    		"It is assumed that the time o2_t_thresh is sufficient for "
+						"the sensor to warm up to operational temperature."
+		labelString    		"[Calvariable== 5]"
+		labelPosition  		[83.99 115.455 109.447 20.959]
+		fontSize       		14
+		src {
+			id          		6
+			intersection		[3 0 1 0.7187 80.7895 98.082 0 0]
+		}
+		dst {
+			id          		4
+			intersection		[4 -1 0 0.4444 63 256.8333 0 0]
+		}
+		midPoint       		[42.0873 194.2979]
+		chart          		2
+		linkNode       		[3 0 8]
+		dataLimits     		[37.849 80.79 98.082 259.233]
+		subviewer      		2
+		executionOrder 		1
+	}
+
+	transition {
+		id             		8
+		labelPosition  		[62.357 110.409 7.496 11.977]
+		fontSize       		7.526
+		arrowSize      		6.67
+		src {
+			intersection		[0 0 0 0.8711 51.7846 113.2413 0 0]
+		}
+		dst {
+			id          		6
+			intersection		[3 0 1 0.8004 70.1723 98.082 0 0]
+		}
+		midPoint       		[59.6312 110.9871]
+		chart          		2
+		linkNode       		[3 7 9]
+		dataLimits     		[51.785 72.173 98.082 113.241]
+		subviewer      		2
+		executionOrder 		1
+	}
+
+	transition {
+		id             		9
+		description    		"The failure condition is indicated by excessive output vol"
+						"tage."
+		labelString    		"[Calvariable == 7]"
+		labelPosition  		[233.854 252.14 113.945 20.959]
+		fontSize       		14
+		arrowSize      		6.67
+		src {
+			id          		4
+			intersection		[2 1 0 0.3827 202.5 246.463 0 0]
+		}
+		dst {
+			id          		5
+			intersection		[3 0 1 0.1617 411.0782 118.714 0 0]
+		}
+		midPoint       		[400 180]
+		chart          		2
+		linkNode       		[3 8 0]
+		dataLimits     		[202.5 413.079 118.714 250.3]
+		subviewer      		2
+		executionOrder 		1
+	}
+
+	data {
+		id                            		10
+		name                          		"Calvariable"
+		description                   		"minimum manifold pressure expected at zero speed\n"
+						"$TL$ name=$C_V_$O$R; type=UInt16; lsb=2^-15; class=CAL; $T"
+						"L$"
+		linkNode                      		[2 0 11]
+		scope                         		PARAMETER_DATA
+		initFromWorkspace             		1
+		machine                       		1
+		props {
+			range {
+				minimum		"0"
+				maximum		"1"
+			}
+			initialValue		"1"
+			type {
+				primitive 		SF_INT32_TYPE
+				units     		"bar (absolute)"
+			}
+		}
+		dataType                      		"int32"
+		fixptType {
+			slope   		1
+			baseType		SF_INT16_TYPE
+		}
+		units                         		"bar (absolute)"
+	}
+
+	data {
+		id                            		11
+		name                          		"fail_O2"
+		description                   		"failure of oxygene sensor\n"
+						"$TL$ name=$O; type=Bool; class=MERGEABLE_DISP; $TL$"
+		linkNode                      		[2 10 0]
+		scope                         		OUTPUT_DATA
+		machine                       		1
+		props {
+			range {
+				minimum		"0"
+				maximum		"1"
+			}
+			type {
+				primitive 		SF_INT32_TYPE
+			}
+		}
+		dataType                      		"int32"
+		fixptType {
+			slope   		1
+			baseType		SF_INT16_TYPE
+		}
+		dlgFixptMode                  		1
+	}
+
+	instance {
+		id     		12
+		name   		"standartSubsystem/AtomicSubsystem1/StateChart"
+		machine		1
+		chart  		2
+	}
+
+	target {
+		id                        		13
+		name                      		"sfun"
+		description               		"Default Simulink S-Function Target."
+		machine                   		1
+		linkNode                  		[1 0 0]
+	}
+}

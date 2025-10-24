@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20241107T104446_8056\tmp_ut_simple_03\ut_results\AddModelInfo.xml" initScript="C:\Users\developer\AppData\Local\Temp\ut20241107T104446_8056\tmp_ut_simple_03\Init.m" modelVersion="1.359" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241107T104446_8056\tmp_ut_simple_03\modelbuses.slx" modelCreationDate="2017-10-08T01:28:24" creator="nabilekhoury">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.359" modelPath="C:\Users\developer\AppData\Local\Temp\ut20241107T104446_8056\tmp_ut_simple_03\modelbuses.slx" creationDate="2017-10-08T01:28:24" modificationDate="2024-11-07T10:44:57" initScript="C:\Users\developer\AppData\Local\Temp\ut20241107T104446_8056\tmp_ut_simple_03\Init.m">
+    <subsystem subsysID="ss1" physicalPath="modelbuses" path="" sampleTime="0.01" name="modelbuses" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="InBusA" physicalPath="modelbuses/InBusA" path="InBusA" signalName="InBusA">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="2" name="InB" physicalPath="modelbuses/InB" path="InB" signalName="InB">
+        <single min="0.0" max="6.0"/>
+      </inport>
+      <inport portNumber="3" name="InC" physicalPath="modelbuses/InC" path="InC" signalName="InC">
+        <single min="-7.0" max="8.0"/>
+      </inport>
+      <inport portNumber="4" name="InD" physicalPath="modelbuses/InD" path="InD" signalName="InBusOfBuses">
+        <bus busType="non_virtual" busObjectName="myBusOfBuses">
+          <signal signalName="BusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="BusSig2">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="FxptSig1">
+                <fixedPoint simulinkTypeName="fixdt(1,16,0.03125,0)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-1024.0" max="10.0"/>
+              </signal>
+              <signal signalName="FxptSig2">
+                <fixedPoint simulinkTypeName="fixdt(1,16,0.03125,0)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-10.0" max="15.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="5" name="InE" physicalPath="modelbuses/InE" path="InE" signalName="InD">
+        <single min="-7.0" max="8.0"/>
+      </inport>
+      <inport portNumber="6" name="InF" physicalPath="modelbuses/InF" path="InF" signalName="InBusOfSignalAndBus">
+        <bus busType="non_virtual" busObjectName="myBusOfSignalAndBus">
+          <signal signalName="DoubleFlptSig">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="BusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <parameter name="K" path="Top/Constant" physicalPath="modelbuses/Top/Constant" origin="explicit_param" workspace="K" initValue="1.0">
+        <single min="0.0"/>
+        <usageContext path="Top/Constant" physicalPath="modelbuses/Top/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="OutBusA" physicalPath="modelbuses/OutBusA" path="OutBusA" signalName="OutBusA">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="2" name="OutB" physicalPath="modelbuses/OutB" path="OutB" signalName="OutB">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="3" name="OutC" physicalPath="modelbuses/OutC" path="OutC" signalName="OutC">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="4" name="OutD" physicalPath="modelbuses/OutD" path="OutD" signalName="OutD">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="5" name="OutE" physicalPath="modelbuses/OutE" path="OutE" signalName="OutE">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="6" name="OutF" physicalPath="modelbuses/OutF" path="OutF" signalName="OutF">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="7" name="OutG" physicalPath="modelbuses/OutG" path="OutG" signalName="OutG">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="8" name="OutH" physicalPath="modelbuses/OutH" path="OutH" signalName="OutH">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="9" name="OutI" physicalPath="modelbuses/OutI" path="OutI" signalName="OutI">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="10" name="OutJ" physicalPath="modelbuses/OutJ" path="OutJ" signalName="localObj_OutJ">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="11" name="OutK" physicalPath="modelbuses/OutK" path="OutK" signalName="localObj_OutK">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="12" name="OutL" physicalPath="modelbuses/OutL" path="OutL" signalName="localObj_OutL">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="13" name="OutM" physicalPath="modelbuses/OutM" path="OutM" signalName="localObj_OutM">
+        <bus busType="non_virtual" busObjectName="myBusOfBuses">
+          <signal signalName="BusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="BusSig2">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="FxptSig1">
+                <fixedPoint simulinkTypeName="fixdt(1,16,0.03125,0)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-1024.0" max="10.0"/>
+              </signal>
+              <signal signalName="FxptSig2">
+                <fixedPoint simulinkTypeName="fixdt(1,16,0.03125,0)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-10.0" max="15.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="14" name="OutN" physicalPath="modelbuses/OutN" path="OutN" signalName="localObj_OutN">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="15" name="OutO" physicalPath="modelbuses/OutO" path="OutO" signalName="localObj_OutO">
+        <single/>
+      </outport>
+      <outport portNumber="16" name="OutP" physicalPath="modelbuses/OutP" path="OutP" signalName="localObj_OutP">
+        <single/>
+      </outport>
+      <outport portNumber="17" name="OutQ" physicalPath="modelbuses/OutQ" path="OutQ" signalName="localObj_OutQ (not mappable)">
+        <bus>
+          <signal signalName="InB">
+            <single/>
+          </signal>
+          <signal signalName="InC">
+            <single/>
+          </signal>
+          <signal signalName="NotMappable_K">
+            <single/>
+          </signal>
+          <signal signalName="NotMappable">
+            <single/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="18" name="OutR" physicalPath="modelbuses/OutR" path="OutR" signalName="localObj_OutR">
+        <single/>
+      </outport>
+      <outport portNumber="19" name="OutIS" physicalPath="modelbuses/OutIS" path="OutIS" signalName="localObj_OutS">
+        <single/>
+      </outport>
+      <outport portNumber="20" name="OutIT" physicalPath="modelbuses/OutIT" path="OutIT" signalName="localObj_OutT">
+        <single/>
+      </outport>
+      <outport portNumber="21" name="OutIU" physicalPath="modelbuses/OutIU" path="OutIU" signalName="localObj_OutU">
+        <single/>
+      </outport>
+      <outport portNumber="22" name="OutV" physicalPath="modelbuses/OutV" path="OutV" signalName="localObj_OutV">
+        <single/>
+      </outport>
+      <outport portNumber="23" name="OutW" physicalPath="modelbuses/OutW" path="OutW" signalName="localObj_OutW">
+        <single/>
+      </outport>
+      <outport portNumber="24" name="OutX" physicalPath="modelbuses/OutX" path="OutX" signalName="localObj_OutX">
+        <single/>
+      </outport>
+      <outport portNumber="25" name="OutY" physicalPath="modelbuses/OutY" path="OutY" signalName="localObj_OutY (not mappable)">
+        <bus>
+          <signal signalName="InB">
+            <single/>
+          </signal>
+          <signal signalName="InC">
+            <single/>
+          </signal>
+          <signal signalName="NotMappable_K">
+            <single/>
+          </signal>
+          <signal signalName="NotMappable">
+            <single/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="26" name="OutZ" physicalPath="modelbuses/OutZ" path="OutZ" signalName="localObj_OutZ">
+        <bus busType="non_virtual" busObjectName="myBusOfBuses">
+          <signal signalName="BusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="BusSig2">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="FxptSig1">
+                <fixedPoint simulinkTypeName="fixdt(1,16,0.03125,0)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-1024.0" max="10.0"/>
+              </signal>
+              <signal signalName="FxptSig2">
+                <fixedPoint simulinkTypeName="fixdt(1,16,0.03125,0)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-10.0" max="15.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="27" name="OutAA" physicalPath="modelbuses/OutAA" path="OutAA" signalName="localObj_OutAA">
+        <single/>
+      </outport>
+      <outport portNumber="28" name="OutIAB" physicalPath="modelbuses/OutIAB" path="OutIAB" signalName="localObj_OutAB">
+        <single/>
+      </outport>
+      <outport portNumber="29" name="Out28" physicalPath="modelbuses/Out28" path="Out28" signalName="localObj_OutAC">
+        <bus busType="non_virtual" busObjectName="myBusOfSignalAndBus">
+          <signal signalName="DoubleFlptSig">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="BusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <subsystem refSubsysID="ss2"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="modelbuses/Top" path="Top" sampleTime="0.01" name="Top" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="modelbuses/Top/In1" path="Top/In1" signalName="InBusA">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="modelbuses/Top/In2" path="Top/In2" signalName="InB">
+        <single min="0.0" max="6.0"/>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="modelbuses/Top/In3" path="Top/In3" signalName="InC">
+        <single min="-7.0" max="8.0"/>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="modelbuses/Top/In4" path="Top/In4" signalName="InBusOfBuses">
+        <bus busType="non_virtual" busObjectName="myBusOfBuses">
+          <signal signalName="BusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="BusSig2">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="FxptSig1">
+                <fixedPoint simulinkTypeName="fixdt(1,16,0.03125,0)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-1024.0" max="10.0"/>
+              </signal>
+              <signal signalName="FxptSig2">
+                <fixedPoint simulinkTypeName="fixdt(1,16,0.03125,0)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-10.0" max="15.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="5" name="In5" physicalPath="modelbuses/Top/In5" path="Top/In5" signalName="InD">
+        <single min="-7.0" max="8.0"/>
+      </inport>
+      <inport portNumber="6" name="In6" physicalPath="modelbuses/Top/In6" path="Top/In6" signalName="InBusOfSignalAndBus">
+        <bus busType="non_virtual" busObjectName="myBusOfSignalAndBus">
+          <signal signalName="DoubleFlptSig">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="BusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <parameter name="K" path="Top/Constant" physicalPath="modelbuses/Top/Constant" origin="explicit_param" workspace="K" initValue="1.0">
+        <single min="0.0"/>
+        <usageContext path="Top/Constant" physicalPath="modelbuses/Top/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out" physicalPath="modelbuses/Top/Out" path="Top/Out" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="modelbuses/Top/Out2" path="Top/Out2" signalName="FlptSig1">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="modelbuses/Top/Out3" path="Top/Out3" signalName="FlptSig2">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="modelbuses/Top/Out4" path="Top/Out4">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="5" name="Out5" physicalPath="modelbuses/Top/Out5" path="Top/Out5">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="6" name="Out6" physicalPath="modelbuses/Top/Out6" path="Top/Out6" signalName="OutF">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="7" name="Out7" physicalPath="modelbuses/Top/Out7" path="Top/Out7">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="8" name="Out8" physicalPath="modelbuses/Top/Out8" path="Top/Out8">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="9" name="Out9" physicalPath="modelbuses/Top/Out9" path="Top/Out9">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="10" name="Out10" physicalPath="modelbuses/Top/Out10" path="Top/Out10" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="11" name="Out1" physicalPath="modelbuses/Top/Out1" path="Top/Out1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="12" name="Out11" physicalPath="modelbuses/Top/Out11" path="Top/Out11" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="13" name="Out12" physicalPath="modelbuses/Top/Out12" path="Top/Out12" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBusOfBuses">
+          <signal signalName="BusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="BusSig2">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="FxptSig1">
+                <fixedPoint simulinkTypeName="fixdt(1,16,0.03125,0)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-1024.0" max="10.0"/>
+              </signal>
+              <signal signalName="FxptSig2">
+                <fixedPoint simulinkTypeName="fixdt(1,16,0.03125,0)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-10.0" max="15.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="14" name="Out13" physicalPath="modelbuses/Top/Out13" path="Top/Out13" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="15" name="Out14" physicalPath="modelbuses/Top/Out14" path="Top/Out14" signalName="InB">
+        <single/>
+      </outport>
+      <outport portNumber="16" name="Out15" physicalPath="modelbuses/Top/Out15" path="Top/Out15" signalName="InB">
+        <single/>
+      </outport>
+      <outport portNumber="17" name="Out16" physicalPath="modelbuses/Top/Out16" path="Top/Out16" signalName="signal2">
+        <bus>
+          <signal signalName="InB">
+            <single/>
+          </signal>
+          <signal signalName="InC">
+            <single/>
+          </signal>
+          <signal signalName="NotMappable_K">
+            <single/>
+          </signal>
+          <signal signalName="NotMappable">
+            <single/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="18" name="Out17" physicalPath="modelbuses/Top/Out17" path="Top/Out17" signalName="InC">
+        <single/>
+      </outport>
+      <outport portNumber="19" name="Out18" physicalPath="modelbuses/Top/Out18" path="Top/Out18" signalName="NotMappable_K">
+        <single/>
+      </outport>
+      <outport portNumber="20" name="Out19" physicalPath="modelbuses/Top/Out19" path="Top/Out19" signalName="NotMappable">
+        <single/>
+      </outport>
+      <outport portNumber="21" name="Out20" physicalPath="modelbuses/Top/Out20" path="Top/Out20" signalName="InB">
+        <single/>
+      </outport>
+      <outport portNumber="22" name="Out21" physicalPath="modelbuses/Top/Out21" path="Top/Out21" signalName="InC">
+        <single/>
+      </outport>
+      <outport portNumber="23" name="Out22" physicalPath="modelbuses/Top/Out22" path="Top/Out22" signalName="NotMappable_K">
+        <single/>
+      </outport>
+      <outport portNumber="24" name="Out23" physicalPath="modelbuses/Top/Out23" path="Top/Out23" signalName="NotMappable">
+        <single/>
+      </outport>
+      <outport portNumber="25" name="Out24" physicalPath="modelbuses/Top/Out24" path="Top/Out24" signalName="myVirualBus">
+        <bus>
+          <signal signalName="InB">
+            <single/>
+          </signal>
+          <signal signalName="InC">
+            <single/>
+          </signal>
+          <signal signalName="NotMappable_K">
+            <single/>
+          </signal>
+          <signal signalName="NotMappable">
+            <single/>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="26" name="Out25" physicalPath="modelbuses/Top/Out25" path="Top/Out25" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBusOfBuses">
+          <signal signalName="BusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="BusSig2">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="FxptSig1">
+                <fixedPoint simulinkTypeName="fixdt(1,16,0.03125,0)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-1024.0" max="10.0"/>
+              </signal>
+              <signal signalName="FxptSig2">
+                <fixedPoint simulinkTypeName="fixdt(1,16,0.03125,0)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-10.0" max="15.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="27" name="Out26" physicalPath="modelbuses/Top/Out26" path="Top/Out26">
+        <single/>
+      </outport>
+      <outport portNumber="28" name="Out27" physicalPath="modelbuses/Top/Out27" path="Top/Out27">
+        <single/>
+      </outport>
+      <outport portNumber="29" name="Out28" physicalPath="modelbuses/Top/Out28" path="Top/Out28" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBusOfSignalAndBus">
+          <signal signalName="DoubleFlptSig">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="BusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <subsystem refSubsysID="ss3"/>
+      <subsystem refSubsysID="ss4"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss8"/>
+      <subsystem refSubsysID="ss9"/>
+      <subsystem refSubsysID="ss10"/>
+      <subsystem refSubsysID="ss11"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="modelbuses/Top/subfct2" path="Top/subfct2" sampleTime="0.01" name="subfct2" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="modelbuses/Top/subfct2/In1" path="Top/subfct2/In1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="modelbuses/Top/subfct2/Out1" path="Top/subfct2/Out1" signalName="FlptSig1">
+        <single min="-10.0" max="10.0"/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="modelbuses/Top/subfct2/Out2" path="Top/subfct2/Out2" signalName="FlptSig2">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="modelbuses/Top/subfct2bis" path="Top/subfct2bis" sampleTime="0.01" name="subfct2bis" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="modelbuses/Top/subfct2bis/In1" path="Top/subfct2bis/In1" signalName="FlptSig1">
+        <single min="-10.0" max="10.0"/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="modelbuses/Top/subfct2bis/In2" path="Top/subfct2bis/In2" signalName="FlptSig2">
+        <single min="-20.0" max="20.0"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="modelbuses/Top/subfct2bis/Out1" path="Top/subfct2bis/Out1">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="modelbuses/Top/subfct2bis/Out2" path="Top/subfct2bis/Out2">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="modelbuses/Top/subfct3" path="Top/subfct3" sampleTime="0.01" name="subfct3" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="modelbuses/Top/subfct3/In1" path="Top/subfct3/In1" signalName="myVirualBus">
+        <bus>
+          <signal signalName="InB">
+            <single min="0.0" max="6.0"/>
+          </signal>
+          <signal signalName="InC">
+            <single min="-7.0" max="8.0"/>
+          </signal>
+          <signal signalName="NotMappable_K">
+            <single min="0.0"/>
+          </signal>
+          <signal signalName="NotMappable">
+            <single/>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="modelbuses/Top/subfct3/Out1" path="Top/subfct3/Out1" signalName="OutF">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="modelbuses/Top/subfct3/Out2" path="Top/subfct3/Out2">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="modelbuses/Top/subfct3bis" path="Top/subfct3bis" sampleTime="0.01" name="subfct3bis" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="modelbuses/Top/subfct3bis/In1" path="Top/subfct3bis/In1" signalName="&lt;signal1&gt;">
+        <bus>
+          <signal signalName="InB">
+            <single min="0.0" max="6.0"/>
+          </signal>
+          <signal signalName="InC">
+            <single min="-7.0" max="8.0"/>
+          </signal>
+          <signal signalName="NotMappable_K">
+            <single min="0.0"/>
+          </signal>
+          <signal signalName="NotMappable">
+            <single/>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="modelbuses/Top/subfct3bis/Out1" path="Top/subfct3bis/Out1">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="modelbuses/Top/subfct3bis/Out2" path="Top/subfct3bis/Out2">
+        <single min="-20.0" max="20.0"/>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="modelbuses/Top/subfct4" path="Top/subfct4" sampleTime="0.01" name="subfct4" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="modelbuses/Top/subfct4/In1" path="Top/subfct4/In1" signalName="Nest2NonVirtual">
+        <bus>
+          <signal signalName="signal1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="InBusB">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="modelbuses/Top/subfct4/In2" path="Top/subfct4/In2" signalName="Nest1Virtual1NonVirtual">
+        <bus>
+          <signal signalName="LocalBusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="myVirualBus">
+            <bus>
+              <signal signalName="InB">
+                <single min="0.0" max="6.0"/>
+              </signal>
+              <signal signalName="InC">
+                <single min="-7.0" max="8.0"/>
+              </signal>
+              <signal signalName="NotMappable_K">
+                <single min="0.0"/>
+              </signal>
+              <signal signalName="NotMappable">
+                <single/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="modelbuses/Top/subfct4/In3" path="Top/subfct4/In3" signalName="Nest1Signal1NonVirtual">
+        <bus>
+          <signal signalName="InB">
+            <single min="0.0" max="6.0"/>
+          </signal>
+          <signal signalName="LocalBusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="modelbuses/Top/subfct4/In4" path="Top/subfct4/In4" signalName="Nest2Virtuals">
+        <bus>
+          <signal signalName="myVirualBus">
+            <bus>
+              <signal signalName="InB">
+                <single min="0.0" max="6.0"/>
+              </signal>
+              <signal signalName="InC">
+                <single min="-7.0" max="8.0"/>
+              </signal>
+              <signal signalName="NotMappable_K">
+                <single min="0.0"/>
+              </signal>
+              <signal signalName="NotMappable">
+                <single/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="signal2">
+            <bus>
+              <signal signalName="InB">
+                <single min="0.0" max="6.0"/>
+              </signal>
+              <signal signalName="InC">
+                <single min="-7.0" max="8.0"/>
+              </signal>
+              <signal signalName="NotMappable_K">
+                <single min="0.0"/>
+              </signal>
+              <signal signalName="NotMappable">
+                <single/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="modelbuses/Top/subfct4/Out1" path="Top/subfct4/Out1" signalName="&lt;signal1&gt;">
+        <bus>
+          <signal signalName="signal1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="InBusB">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="modelbuses/Top/subfct4/Out2" path="Top/subfct4/Out2" signalName="&lt;signal1&gt;">
+        <bus>
+          <signal signalName="LocalBusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="myVirualBus">
+            <bus>
+              <signal signalName="InB">
+                <single min="0.0" max="6.0"/>
+              </signal>
+              <signal signalName="InC">
+                <single min="-7.0" max="8.0"/>
+              </signal>
+              <signal signalName="NotMappable_K">
+                <single min="0.0"/>
+              </signal>
+              <signal signalName="NotMappable">
+                <single/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="modelbuses/Top/subfct4/Out3" path="Top/subfct4/Out3" signalName="&lt;signal1&gt;">
+        <bus>
+          <signal signalName="InB">
+            <single min="0.0" max="6.0"/>
+          </signal>
+          <signal signalName="LocalBusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="modelbuses/Top/subfct4/Out4" path="Top/subfct4/Out4" signalName="&lt;signal1&gt;">
+        <bus>
+          <signal signalName="myVirualBus">
+            <bus>
+              <signal signalName="InB">
+                <single min="0.0" max="6.0"/>
+              </signal>
+              <signal signalName="InC">
+                <single min="-7.0" max="8.0"/>
+              </signal>
+              <signal signalName="NotMappable_K">
+                <single min="0.0"/>
+              </signal>
+              <signal signalName="NotMappable">
+                <single/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="signal2">
+            <bus>
+              <signal signalName="InB">
+                <single min="0.0" max="6.0"/>
+              </signal>
+              <signal signalName="InC">
+                <single min="-7.0" max="8.0"/>
+              </signal>
+              <signal signalName="NotMappable_K">
+                <single min="0.0"/>
+              </signal>
+              <signal signalName="NotMappable">
+                <single/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="modelbuses/Top/subfct5" path="Top/subfct5" sampleTime="0.01" name="subfct5" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="modelbuses/Top/subfct5/In1" path="Top/subfct5/In1" signalName="InBusOfBuses">
+        <bus busType="non_virtual" busObjectName="myBusOfBuses">
+          <signal signalName="BusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="BusSig2">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="FxptSig1">
+                <fixedPoint simulinkTypeName="fixdt(1,16,0.03125,0)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-1024.0" max="10.0"/>
+              </signal>
+              <signal signalName="FxptSig2">
+                <fixedPoint simulinkTypeName="fixdt(1,16,0.03125,0)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-10.0" max="15.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out2" physicalPath="modelbuses/Top/subfct5/Out2" path="Top/subfct5/Out2" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBusOfBuses">
+          <signal signalName="BusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="BusSig2">
+            <bus busType="non_virtual" busObjectName="myBus2">
+              <signal signalName="FxptSig1">
+                <fixedPoint simulinkTypeName="fixdt(1,16,0.03125,0)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-1024.0" max="10.0"/>
+              </signal>
+              <signal signalName="FxptSig2">
+                <fixedPoint simulinkTypeName="fixdt(1,16,0.03125,0)" wordLength="16" isSigned="1" slope="0.03125" bias="0.0" min="-10.0" max="15.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss9" physicalPath="modelbuses/Top/subfct6" path="Top/subfct6" sampleTime="0.01" name="subfct6" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="modelbuses/Top/subfct6/In1" path="Top/subfct6/In1" signalName="NameVritualBus">
+        <bus>
+          <signal signalName="InB">
+            <single min="0.0" max="6.0"/>
+          </signal>
+          <signal signalName="InD">
+            <single min="-7.0" max="8.0"/>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out2" physicalPath="modelbuses/Top/subfct6/Out2" path="Top/subfct6/Out2" signalName="NameVritualBus">
+        <bus>
+          <signal signalName="InB">
+            <single min="0.0" max="6.0"/>
+          </signal>
+          <signal signalName="InD">
+            <single min="-7.0" max="8.0"/>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="modelbuses/Top/subfct7" path="Top/subfct7" sampleTime="0.01" name="subfct7" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="modelbuses/Top/subfct7/In1" path="Top/subfct7/In1" signalName="InBusOfSignalAndBus">
+        <bus busType="non_virtual" busObjectName="myBusOfSignalAndBus">
+          <signal signalName="DoubleFlptSig">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="BusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out2" physicalPath="modelbuses/Top/subfct7/Out2" path="Top/subfct7/Out2" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBusOfSignalAndBus">
+          <signal signalName="DoubleFlptSig">
+            <double min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="BusSig1">
+            <bus busType="non_virtual" busObjectName="myBus">
+              <signal signalName="FlptSig1">
+                <single min="-10.0" max="10.0"/>
+              </signal>
+              <signal signalName="FlptSig2">
+                <single min="-20.0" max="20.0"/>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <subsystem subsysID="ss11" physicalPath="modelbuses/Top/subsys1" path="Top/subsys1" sampleTime="0.01" name="subsys1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="modelbuses/Top/subsys1/In1" path="Top/subsys1/In1" signalName="InBusA">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="modelbuses/Top/subsys1/Out1" path="Top/subsys1/Out1" signalName="&lt;signal1&gt;">
+        <bus busType="non_virtual" busObjectName="myBus">
+          <signal signalName="FlptSig1">
+            <single min="-10.0" max="10.0"/>
+          </signal>
+          <signal signalName="FlptSig2">
+            <single min="-20.0" max="20.0"/>
+          </signal>
+        </bus>
+      </outport>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

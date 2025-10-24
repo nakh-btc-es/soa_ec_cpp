@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tl:TargetLinkArchitecture xmlns:tl="http://btc-es.de/ep/targetlink/2014/12/09" modelVersion="1.2" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_simple_slfunc\slfunc_model.slx" modelCreationDate="2021-01-21T12:06:20" creator="developer">
+  <toolInfo name="Matlab" release="(R2019a)" version="9.6" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2019a)" version="9.3" patchLevel=""/>
+  <toolInfo name="TargetLink" release="" version="5.1" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.2" modelPath="E:\EP2\git_repo\Dev\EPSimulinkModel\com.btc.ep.slmodel.analysis.tl.m\native\tst\tmpdir\tmp_ut_simple_slfunc\slfunc_model.slx" creationDate="2021-01-21T12:06:20" modificationDate="2021-03-12T16:21:05">
+    <subsystem subsysID="ss1" physicalPath="slfunc_model/top_A/Subsystem/top_A" path="top_A/Subsystem/top_A" sampleTime="0.1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="InPort1" physicalPath="slfunc_model/top_A/Subsystem/top_A/InPort1" path="top_A/Subsystem/top_A/InPort1">
+        <miltype>
+          <int32/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </inport>
+      <inport portNumber="2" name="InPort2" physicalPath="slfunc_model/top_A/Subsystem/top_A/InPort2" path="top_A/Subsystem/top_A/InPort2">
+        <miltype>
+          <int32/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </inport>
+      <inport portNumber="3" name="InPort3" physicalPath="slfunc_model/top_A/Subsystem/top_A/InPort3" path="top_A/Subsystem/top_A/InPort3">
+        <miltype>
+          <int32/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </inport>
+      <calibration name="my_cal" path="top_A/Subsystem/top_A/my_func1_def/Constant" physicalPath="slfunc_model/top_A/Subsystem/top_A/my_func1_def/Constant" origin="explicit_param" restricted="false" ddPath="//DD0/Pool/Variables/my_cal">
+        <miltype initValue="3.0000000000000000e+00">
+          <double/>
+        </miltype>
+        <siltype initValue="3.0000000000000000e+00">
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+        <usageContext path="top_A/Subsystem/top_A/my_func1_def/Constant" targetLinkBlockKind="TL_Constant" physicalPath="slfunc_model/top_A/Subsystem/top_A/my_func1_def/Constant" simulinkBlockType="Constant" blockAttribute="output"/>
+      </calibration>
+      <outport portNumber="1" name="OutPort1" physicalPath="slfunc_model/top_A/Subsystem/top_A/OutPort1" path="top_A/Subsystem/top_A/OutPort1">
+        <miltype>
+          <int32/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </outport>
+      <outport portNumber="2" name="OutPort2" physicalPath="slfunc_model/top_A/Subsystem/top_A/OutPort2" path="top_A/Subsystem/top_A/OutPort2">
+        <miltype>
+          <int32/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </outport>
+      <display physicalPath="slfunc_model/top_A/Subsystem/top_A/my_func1_def/Sum1" path="top_A/Subsystem/top_A/my_func1_def/Sum1" name="Sum1" portNumber="1">
+        <miltype>
+          <int32/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </display>
+      <display physicalPath="slfunc_model/top_A/Subsystem/top_A/my_func2_def/Sum1" path="top_A/Subsystem/top_A/my_func2_def/Sum1" name="Sum1" portNumber="1">
+        <miltype>
+          <int32/>
+        </miltype>
+        <siltype>
+          <fixedPoint baseType="Int32" lsb="1.0000000000000000e+00" offset="0.0000000000000000e+00" min="-2.1474836480000000e+09" max="2.1474836470000000e+09"/>
+        </siltype>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</tl:TargetLinkArchitecture>

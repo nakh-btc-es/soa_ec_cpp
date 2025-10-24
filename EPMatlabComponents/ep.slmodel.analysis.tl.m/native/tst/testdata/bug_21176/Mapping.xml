@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="MPT_Max_trq_Schutzstufe"/>
+    <Architecture id="id1" name="MPT_Max_trq_Schutzstufe [C-Code]"/>
+    <ScopeMapping>
+      <Path refId="id0" path="Subsystem/Subsystem/Subsystem"/>
+      <Path refId="id1" path="Subsystem.c:1:Subsystem"/>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="PTM_M_HOK_Schutz_11"/>
+        <Path refId="id1" path="Sa1_PTM_M_HOK_Schutz_11"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="PTM_M_HOK_Schutz_21"/>
+        <Path refId="id1" path="Sa1_PTM_M_HOK_Schutz_21"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="PTM_M_HOK_Sat_Change1"/>
+        <Path refId="id1" path="Sa1_PTM_M_HOK_Sat_Change1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="PTM_M_PSM_Act_MPT_HOK1"/>
+        <Path refId="id1" path="Sa1_PTM_M_PSM_Act_MPT_HOK1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="PTM_M_Temp_Warning1"/>
+        <Path refId="id1" path="Sa1_PTM_M_Temp_Warning1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path refId="id0" path="dummy_out"/>
+        <Path refId="id1" path="Sa1_dummy_out"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

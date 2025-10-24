@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="sum_multiply_autosar"/>
+    <Architecture id="id1" name="sum_multiply_autosar [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="sum_multiply_autosar.c:1:Runnable_Step_fct" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="RteStub_In1_Rport_In_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In2" refId="id0"/>
+        <Path path="RteStub_In2_Rport_In2_In2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="RteStub_Out1_SPort_Out_Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="K" refId="id0"/>
+        <Path path="Rte_Prm_CPrm_Port_K_data" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="Subsystem/mutilply_by_K" refId="id0"/>
+      <Path path="sum_multiply_autosar.c:1:Runnable_Step_fct/sum_multiply_autosar.c:1:multiply_by_K" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="Subsystem/mutilply_by_K/disp_var" refId="id0"/>
+        <Path path="disp_var" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Parameter">
+        <Path path="K" refId="id0"/>
+        <Path path="Rte_Prm_CPrm_Port_K_data" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

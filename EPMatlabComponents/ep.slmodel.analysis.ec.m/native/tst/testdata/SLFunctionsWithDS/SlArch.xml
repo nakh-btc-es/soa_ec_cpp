@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" infoXML="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_SLFunctionsWithDS\ut_results\AddModelInfo.xml" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_SLFunctionsWithDS\sl_func_ds.slx" modelCreationDate="2021-09-21T11:29:55" creator="developer">
+  <toolInfo name="Matlab" release="(R2018b)" version="9.5" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2018b)" version="9.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_SLFunctionsWithDS\sl_func_ds.slx" creationDate="2021-09-21T11:29:55" modificationDate="2024-09-12T18:44:26">
+    <subsystem subsysID="ss1" physicalPath="sl_func_ds" path="" sampleTime="0.01" name="sl_func_ds" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sl_func_ds/In1" path="In1" signalName="sig_in1">
+        <int8/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sl_func_ds/In2" path="In2" signalName="sig_in2">
+        <int8/>
+      </inport>
+      <inport portNumber="0" name="readB" physicalPath="sl_func_ds/myFunction/readB" path="myFunction/readB" signalName="store_B" initValue="7.0">
+        <int8/>
+        <dataStoreMemory signalName="store_B"/>
+      </inport>
+      <inport portNumber="0" name="readC" physicalPath="sub_model_01/sub_V1/sub_C/getC_block/readC" path="sub_M/sub_V1/sub_C/getC_block/readC" modelRef="model002" signalName="store_C" initValue="33.0">
+        <int8/>
+        <dataStoreMemory signalName="store_C"/>
+      </inport>
+      <inport portNumber="0" name="readE" physicalPath="sl_func_ds/myFunction2/readE" path="myFunction2/readE" signalName="store_E" initValue="22.0">
+        <int8/>
+        <dataStoreMemory signalName="store_E"/>
+      </inport>
+      <parameter name="ParamA" path="myFunction/Constant" physicalPath="sl_func_ds/myFunction/Constant" origin="explicit_param" workspace="ParamA" initValue="2.0">
+        <int8/>
+        <usageContext path="myFunction/Constant" physicalPath="sl_func_ds/myFunction/Constant" simulinkBlockType="Constant" blockAttribute="Value"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="sl_func_ds/Out1" path="Out1" signalName="sig_out">
+        <boolean/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="sl_func_ds/Out2" path="Out2" signalName="sig_out2">
+        <boolean/>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="sl_func_ds/Out3" path="Out3" signalName="sig_XXX">
+        <int8/>
+      </outport>
+      <outport portNumber="0" name="writeA" physicalPath="sl_func_ds/myFunction/writeA" path="myFunction/writeA" signalName="store_A" initValue="3.0">
+        <int8/>
+        <dataStoreMemory signalName="store_A"/>
+      </outport>
+      <outport portNumber="0" name="writeD" physicalPath="sub_model_01/setD_block/writeD" path="sub_M/setD_block/writeD" modelRef="model002" signalName="store_D" initValue="0.0">
+        <boolean/>
+        <dataStoreMemory signalName="store_D"/>
+      </outport>
+      <display physicalPath="sl_func_ds/sub_A/myCaller" path="sub_A/myCaller" name="myCaller" portNumber="1" signalName="sig_X">
+        <int8/>
+      </display>
+      <display physicalPath="sub_model_01/sub_V1/sub_B/myCaller" path="sub_M/sub_V1/sub_B/myCaller" name="myCaller" portNumber="1" modelRef="model002" signalName="sig_XX">
+        <int8/>
+      </display>
+      <display physicalPath="sub_model_01/sub_V1/sub_C/getC_in_same_context" path="sub_M/sub_V1/sub_C/getC_in_same_context" name="getC_in_same_context" portNumber="1" modelRef="model002" signalName="read_fromC">
+        <int8/>
+      </display>
+      <display physicalPath="sub_model_01/sub_V1/sub_C/sub_sub_C2/readC_directly" path="sub_M/sub_V1/sub_C/sub_sub_C2/readC_directly" name="readC_directly" portNumber="1" modelRef="model002" signalName="direct_C">
+        <int8/>
+      </display>
+      <display physicalPath="sub_model_01/sub_V2/sub_D/RelOpD" path="sub_M/sub_V2/sub_D/RelOpD" name="RelOpD" portNumber="1" modelRef="model002" signalName="compare_sigs">
+        <boolean/>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss3"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="sl_func_ds/sub_A" path="sub_A" sampleTime="0.01" name="sub_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="sl_func_ds/sub_A/In1" path="sub_A/In1" signalName="sig_in2">
+        <int8/>
+      </inport>
+      <inport portNumber="0" name="readB" physicalPath="sl_func_ds/myFunction/readB" path="myFunction/readB" signalName="store_B" initValue="7.0">
+        <int8/>
+        <dataStoreMemory signalName="store_B"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sl_func_ds/sub_A/Out1" path="sub_A/Out1" signalName="sig_X">
+        <int8/>
+      </outport>
+      <outport portNumber="0" name="writeA" physicalPath="sl_func_ds/myFunction/writeA" path="myFunction/writeA" signalName="store_A" initValue="3.0">
+        <int8/>
+        <dataStoreMemory signalName="store_A"/>
+      </outport>
+      <display physicalPath="sl_func_ds/sub_A/myCaller" path="sub_A/myCaller" name="myCaller" portNumber="1" signalName="sig_X">
+        <int8/>
+      </display>
+      <slfunc_caller path="sub_A/myCaller" pathCaller="sl_func_ds/sub_A/myCaller" pathFunction="sl_func_ds/myFunction"/>
+    </subsystem>
+    <subsystem subsysID="ss3" physicalPath="sub_model_01" path="sub_M" sampleTime="0.01" name="sub_M" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="sub_model_01/In1" path="sub_M/In1" modelRef="model002" signalName="var_in1">
+        <int8/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sub_model_01/In2" path="sub_M/In2" modelRef="model002" signalName="var_in2">
+        <int8/>
+      </inport>
+      <inport portNumber="0" name="readB" physicalPath="sl_func_ds/myFunction/readB" path="myFunction/readB" signalName="store_B" initValue="7.0">
+        <int8/>
+        <dataStoreMemory signalName="store_B"/>
+      </inport>
+      <inport portNumber="0" name="readC" physicalPath="sub_model_01/sub_V1/sub_C/getC_block/readC" path="sub_M/sub_V1/sub_C/getC_block/readC" modelRef="model002" signalName="store_C" initValue="33.0">
+        <int8/>
+        <dataStoreMemory signalName="store_C"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sub_model_01/Out1" path="sub_M/Out1" modelRef="model002" signalName="var_out">
+        <boolean/>
+      </outport>
+      <outport portNumber="0" name="writeA" physicalPath="sl_func_ds/myFunction/writeA" path="myFunction/writeA" signalName="store_A" initValue="3.0">
+        <int8/>
+        <dataStoreMemory signalName="store_A"/>
+      </outport>
+      <outport portNumber="0" name="writeD" physicalPath="sub_model_01/setD_block/writeD" path="sub_M/setD_block/writeD" modelRef="model002" signalName="store_D" initValue="0.0">
+        <boolean/>
+        <dataStoreMemory signalName="store_D"/>
+      </outport>
+      <display physicalPath="sub_model_01/sub_V1/sub_B/myCaller" path="sub_M/sub_V1/sub_B/myCaller" name="myCaller" portNumber="1" modelRef="model002" signalName="sig_XX">
+        <int8/>
+      </display>
+      <display physicalPath="sub_model_01/sub_V1/sub_C/getC_in_same_context" path="sub_M/sub_V1/sub_C/getC_in_same_context" name="getC_in_same_context" portNumber="1" modelRef="model002" signalName="read_fromC">
+        <int8/>
+      </display>
+      <display physicalPath="sub_model_01/sub_V1/sub_C/sub_sub_C2/readC_directly" path="sub_M/sub_V1/sub_C/sub_sub_C2/readC_directly" name="readC_directly" portNumber="1" modelRef="model002" signalName="direct_C">
+        <int8/>
+      </display>
+      <display physicalPath="sub_model_01/sub_V2/sub_D/RelOpD" path="sub_M/sub_V2/sub_D/RelOpD" name="RelOpD" portNumber="1" modelRef="model002" signalName="compare_sigs">
+        <boolean/>
+      </display>
+      <slfunc_caller path="sub_M/sub_V1/sub_C/getC_in_same_context" pathCaller="sub_model_01/sub_V1/sub_C/getC_in_same_context" pathFunction="sub_model_01/sub_V1/sub_C/getC_block"/>
+      <slfunc_caller path="sub_M/sub_V1/sub_C/sub_sub_C/getC_caller" pathCaller="sub_model_01/sub_V1/sub_C/sub_sub_C/getC_caller" pathFunction="sub_model_01/sub_V1/sub_C/getC_block"/>
+      <slfunc_caller path="sub_M/sub_V1/sub_C/sub_sub_C2/getC_caller" pathCaller="sub_model_01/sub_V1/sub_C/sub_sub_C2/getC_caller" pathFunction="sub_model_01/sub_V1/sub_C/getC_block"/>
+      <slfunc_caller path="sub_M/sub_V2/sub_D/setD_caller" pathCaller="sub_model_01/sub_V2/sub_D/setD_caller" pathFunction="sub_model_01/setD_block"/>
+      <slfunc_caller path="sub_M/sub_V1/sub_B/myCaller" pathCaller="sub_model_01/sub_V1/sub_B/myCaller" pathFunction="sl_func_ds/myFunction"/>
+      <subsystem refSubsysID="ss5"/>
+      <subsystem refSubsysID="ss6"/>
+      <subsystem refSubsysID="ss10"/>
+    </subsystem>
+    <subsystem subsysID="ss5" physicalPath="sub_model_01/sub_V1/sub_B" path="sub_M/sub_V1/sub_B" sampleTime="0.01" name="sub_B" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="sub_model_01/sub_V1/sub_B/In1" path="sub_M/sub_V1/sub_B/In1" modelRef="model002" signalName="var_in2">
+        <int8/>
+      </inport>
+      <inport portNumber="0" name="readB" physicalPath="sl_func_ds/myFunction/readB" path="myFunction/readB" signalName="store_B" initValue="7.0">
+        <int8/>
+        <dataStoreMemory signalName="store_B"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sub_model_01/sub_V1/sub_B/Out1" path="sub_M/sub_V1/sub_B/Out1" modelRef="model002" signalName="sig_XX">
+        <int8/>
+      </outport>
+      <outport portNumber="0" name="writeA" physicalPath="sl_func_ds/myFunction/writeA" path="myFunction/writeA" signalName="store_A" initValue="3.0">
+        <int8/>
+        <dataStoreMemory signalName="store_A"/>
+      </outport>
+      <display physicalPath="sub_model_01/sub_V1/sub_B/myCaller" path="sub_M/sub_V1/sub_B/myCaller" name="myCaller" portNumber="1" modelRef="model002" signalName="sig_XX">
+        <int8/>
+      </display>
+      <slfunc_caller path="sub_M/sub_V1/sub_B/myCaller" pathCaller="sub_model_01/sub_V1/sub_B/myCaller" pathFunction="sl_func_ds/myFunction"/>
+    </subsystem>
+    <subsystem subsysID="ss6" physicalPath="sub_model_01/sub_V1/sub_C" path="sub_M/sub_V1/sub_C" sampleTime="0.01" name="sub_C" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="0" name="readC" physicalPath="sub_model_01/sub_V1/sub_C/getC_block/readC" path="sub_M/sub_V1/sub_C/getC_block/readC" modelRef="model002" signalName="store_C" initValue="33.0">
+        <int8/>
+        <dataStoreMemory signalName="store_C"/>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="sub_model_01/sub_V1/sub_C/Out1" path="sub_M/sub_V1/sub_C/Out1" modelRef="model002" signalName="read_fromC">
+        <int8/>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="sub_model_01/sub_V1/sub_C/Out2" path="sub_M/sub_V1/sub_C/Out2" modelRef="model002" signalName="sum_c">
+        <int8/>
+      </outport>
+      <display physicalPath="sub_model_01/sub_V1/sub_C/getC_in_same_context" path="sub_M/sub_V1/sub_C/getC_in_same_context" name="getC_in_same_context" portNumber="1" modelRef="model002" signalName="read_fromC">
+        <int8/>
+      </display>
+      <display physicalPath="sub_model_01/sub_V1/sub_C/sub_sub_C2/readC_directly" path="sub_M/sub_V1/sub_C/sub_sub_C2/readC_directly" name="readC_directly" portNumber="1" modelRef="model002" signalName="direct_C">
+        <int8/>
+      </display>
+      <slfunc_caller path="sub_M/sub_V1/sub_C/getC_in_same_context" pathCaller="sub_model_01/sub_V1/sub_C/getC_in_same_context" pathFunction="sub_model_01/sub_V1/sub_C/getC_block"/>
+      <slfunc_caller path="sub_M/sub_V1/sub_C/sub_sub_C/getC_caller" pathCaller="sub_model_01/sub_V1/sub_C/sub_sub_C/getC_caller" pathFunction="sub_model_01/sub_V1/sub_C/getC_block"/>
+      <slfunc_caller path="sub_M/sub_V1/sub_C/sub_sub_C2/getC_caller" pathCaller="sub_model_01/sub_V1/sub_C/sub_sub_C2/getC_caller" pathFunction="sub_model_01/sub_V1/sub_C/getC_block"/>
+      <subsystem refSubsysID="ss7"/>
+      <subsystem refSubsysID="ss8"/>
+    </subsystem>
+    <subsystem subsysID="ss7" physicalPath="sub_model_01/sub_V1/sub_C/sub_sub_C" path="sub_M/sub_V1/sub_C/sub_sub_C" sampleTime="0.01" name="sub_sub_C" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="0" name="readC" physicalPath="sub_model_01/sub_V1/sub_C/getC_block/readC" path="sub_M/sub_V1/sub_C/getC_block/readC" modelRef="model002" signalName="store_C" initValue="33.0">
+        <int8/>
+        <dataStoreMemory signalName="store_C"/>
+      </inport>
+      <outport portNumber="1" name="Out2" physicalPath="sub_model_01/sub_V1/sub_C/sub_sub_C/Out2" path="sub_M/sub_V1/sub_C/sub_sub_C/Out2" modelRef="model002" signalName="sig_inner_fromC">
+        <int8/>
+      </outport>
+      <slfunc_caller path="sub_M/sub_V1/sub_C/sub_sub_C/getC_caller" pathCaller="sub_model_01/sub_V1/sub_C/sub_sub_C/getC_caller" pathFunction="sub_model_01/sub_V1/sub_C/getC_block"/>
+    </subsystem>
+    <subsystem subsysID="ss8" physicalPath="sub_model_01/sub_V1/sub_C/sub_sub_C2" path="sub_M/sub_V1/sub_C/sub_sub_C2" sampleTime="0.01" name="sub_sub_C2" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="0" name="readC" physicalPath="sub_model_01/sub_V1/sub_C/getC_block/readC" path="sub_M/sub_V1/sub_C/getC_block/readC" modelRef="model002" signalName="store_C" initValue="33.0">
+        <int8/>
+        <dataStoreMemory signalName="store_C"/>
+      </inport>
+      <outport portNumber="1" name="Out2" physicalPath="sub_model_01/sub_V1/sub_C/sub_sub_C2/Out2" path="sub_M/sub_V1/sub_C/sub_sub_C2/Out2" modelRef="model002" signalName="c_plus_c">
+        <int8/>
+      </outport>
+      <display physicalPath="sub_model_01/sub_V1/sub_C/sub_sub_C2/readC_directly" path="sub_M/sub_V1/sub_C/sub_sub_C2/readC_directly" name="readC_directly" portNumber="1" modelRef="model002" signalName="direct_C">
+        <int8/>
+      </display>
+      <slfunc_caller path="sub_M/sub_V1/sub_C/sub_sub_C2/getC_caller" pathCaller="sub_model_01/sub_V1/sub_C/sub_sub_C2/getC_caller" pathFunction="sub_model_01/sub_V1/sub_C/getC_block"/>
+    </subsystem>
+    <subsystem subsysID="ss10" physicalPath="sub_model_01/sub_V2/sub_D" path="sub_M/sub_V2/sub_D" sampleTime="0.01" name="sub_D" scopeKind="SUT" kind="subsystem" modelRef="model002">
+      <inport portNumber="1" name="In1" physicalPath="sub_model_01/sub_V2/sub_D/In1" path="sub_M/sub_V2/sub_D/In1" modelRef="model002" signalName="read_fromC">
+        <int8/>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="sub_model_01/sub_V2/sub_D/In2" path="sub_M/sub_V2/sub_D/In2" modelRef="model002" signalName="sum_c">
+        <int8/>
+      </inport>
+      <outport portNumber="0" name="writeD" physicalPath="sub_model_01/setD_block/writeD" path="sub_M/setD_block/writeD" modelRef="model002" signalName="store_D" initValue="0.0">
+        <boolean/>
+        <dataStoreMemory signalName="store_D"/>
+      </outport>
+      <display physicalPath="sub_model_01/sub_V2/sub_D/RelOpD" path="sub_M/sub_V2/sub_D/RelOpD" name="RelOpD" portNumber="1" modelRef="model002" signalName="compare_sigs">
+        <boolean/>
+      </display>
+      <slfunc_caller path="sub_M/sub_V2/sub_D/setD_caller" pathCaller="sub_model_01/sub_V2/sub_D/setD_caller" pathFunction="sub_model_01/setD_block"/>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <model modelID="model002" modelKind="model_ref" modelVersion="1.0" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240912T144520_1728\tmp_SLFunctionsWithDS\sub_model_01.slx" creationDate="2021-09-21T11:29:55" modificationDate="2024-09-12T18:44:26"/>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

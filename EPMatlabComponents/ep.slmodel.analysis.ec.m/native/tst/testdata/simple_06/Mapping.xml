@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mappings>
+  <ArchitectureMapping>
+    <Architecture id="id0" name="model_ref_EC"/>
+    <Architecture id="id1" name="model_ref_EC [C-Code]"/>
+    <ScopeMapping>
+      <Path path="" refId="id0"/>
+      <Path path="model_ref_EC.c:1:model_ref_EC_step" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_InPort1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In2" refId="id0"/>
+        <Path path="BTCAnnotatedInport_InPort2" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="In3" refId="id0"/>
+        <Path path="BTCAnnotatedInport_InPort3" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_OutPort1" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="top_A/sub_X/sub3" refId="id0"/>
+      <Path path="model_ref_EC.c:1:model_ref_EC_step/sub3_EC.c:1:sub3_EC" refId="id1"/>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/sub_X/sub3/Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_sub3_Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="top_A/sub_x2" refId="id0"/>
+      <Path path="model_ref_EC.c:1:model_ref_EC_step/sub2_EC.c:1:sub2_EC" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/sub_x2/In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_InPort1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/sub_x2/In2" refId="id0"/>
+        <Path path="BTCAnnotatedInport_sub2_In2" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/sub_x2/In3" refId="id0"/>
+        <Path path="BTCAnnotatedInport_sub2_In3" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(3)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/sub_x2/Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_sub2_Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/sub_x2/Out2" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_sub2_Out2" refId="id1"/>
+        <SignalMapping>
+          <Path path="(1)" refId="id0"/>
+          <Path path="[0]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(2)" refId="id0"/>
+          <Path path="[1]" refId="id1"/>
+        </SignalMapping>
+        <SignalMapping>
+          <Path path="(3)" refId="id0"/>
+          <Path path="[2]" refId="id1"/>
+        </SignalMapping>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+    <ScopeMapping>
+      <Path path="top_A/sub_x2/sub2/sub_X/sub_Y/Model4" refId="id0"/>
+      <Path path="model_ref_EC.c:1:model_ref_EC_step/sub2_EC.c:1:sub2_EC/sub4_EC.c:1:sub4_EC" refId="id1"/>
+      <InterfaceObjectMapping kind="Input">
+        <Path path="top_A/sub_x2/sub2/sub_X/sub_Y/Model4/In1" refId="id0"/>
+        <Path path="BTCAnnotatedInport_sub4_In1" refId="id1"/>
+      </InterfaceObjectMapping>
+      <InterfaceObjectMapping kind="Output">
+        <Path path="top_A/sub_x2/sub2/sub_X/sub_Y/Model4/Out1" refId="id0"/>
+        <Path path="BTCAnnotatedOutport_sub4_Out1" refId="id1"/>
+      </InterfaceObjectMapping>
+    </ScopeMapping>
+  </ArchitectureMapping>
+</Mappings>

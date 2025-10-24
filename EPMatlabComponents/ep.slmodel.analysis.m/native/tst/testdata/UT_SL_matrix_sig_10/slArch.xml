@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sl:SimulinkArchitecture xmlns:sl="http://btc-es.de/ep/simulink/2014/12/09" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_matrix_sig_10\init_matrix_model.m" modelVersion="1.35" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_matrix_sig_10\matrix_model_sl.mdl" modelCreationDate="2015-02-02T09:23:30" creator="alex">
+  <toolInfo name="Matlab" release="(R2020b)" version="9.9" patchLevel=""/>
+  <toolInfo name="Simulink" release="(R2020b)" version="10.2" patchLevel=""/>
+  <model modelID="model001" modelKind="model" modelVersion="1.35" modelPath="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_matrix_sig_10\matrix_model_sl.mdl" creationDate="2015-02-02T09:23:30" modificationDate="2024-09-11T18:24:06" initScript="C:\Users\developer\AppData\Local\Temp\ut20240911T173632_4320\tmp_ut_matrix_sig_10\init_matrix_model.m">
+    <subsystem subsysID="ss1" physicalPath="matrix_model_sl/top_A" path="top_A" sampleTime="0.1" name="top_A" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="matrix_model_sl/top_A/In1" path="top_A/In1">
+        <array size="2" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <parameter name="A" path="top_A/sub_B1/Gain" physicalPath="matrix_model_sl/top_A/sub_B1/Gain" origin="explicit_param" workspace="A">
+        <nonUniformArray size="6">
+          <signal index="1" initValue="1.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="4.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="2.0">
+            <double/>
+          </signal>
+          <signal index="4" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="5" initValue="3.0">
+            <double/>
+          </signal>
+          <signal index="6" initValue="6.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B1/Gain" physicalPath="matrix_model_sl/top_A/sub_B1/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="B" path="top_A/sub_B1/Gain1" physicalPath="matrix_model_sl/top_A/sub_B1/Gain1" origin="explicit_param" workspace="B">
+        <nonUniformArray size="6">
+          <signal index="1" initValue="1.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="4.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="2.0">
+            <double/>
+          </signal>
+          <signal index="4" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="5" initValue="3.0">
+            <double/>
+          </signal>
+          <signal index="6" initValue="6.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B1/Gain1" physicalPath="matrix_model_sl/top_A/sub_B1/Gain1" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="C" path="top_A/sub_B1/Gain2" physicalPath="matrix_model_sl/top_A/sub_B1/Gain2" origin="explicit_param" workspace="C">
+        <nonUniformArray size="6">
+          <signal index="1" initValue="1.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="4.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="2.0">
+            <double/>
+          </signal>
+          <signal index="4" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="5" initValue="3.0">
+            <double/>
+          </signal>
+          <signal index="6" initValue="6.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B1/Gain2" physicalPath="matrix_model_sl/top_A/sub_B1/Gain2" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="D" path="top_A/sub_B1/Gain3" physicalPath="matrix_model_sl/top_A/sub_B1/Gain3" origin="explicit_param" workspace="D">
+        <nonUniformArray size="3">
+          <signal index="1">
+            <nonUniformArray size="2">
+              <signal index="1" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="5.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="2">
+              <signal index="1" initValue="4.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="3.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="3">
+            <nonUniformArray size="2">
+              <signal index="1" initValue="2.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="6.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B1/Gain3" physicalPath="matrix_model_sl/top_A/sub_B1/Gain3" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <display physicalPath="matrix_model_sl/top_A/sub_B1/Gain" path="top_A/sub_B1/Gain" name="Gain" portNumber="1">
+        <array size="6" startIndex="1">
+          <double/>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B1/Gain1" path="top_A/sub_B1/Gain1" name="Gain1" portNumber="1">
+        <array size="6" startIndex="1">
+          <array size="1" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B1/Gain2" path="top_A/sub_B1/Gain2" name="Gain2" portNumber="1">
+        <array size="1" startIndex="1">
+          <array size="6" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B1/Gain3" path="top_A/sub_B1/Gain3" name="Gain3" portNumber="1">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B2/Gain1" path="top_A/sub_B2/Gain1" name="Gain1" portNumber="1">
+        <array size="1" startIndex="1">
+          <array size="3" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B3/Unit Delay" path="top_A/sub_B3/Unit Delay" name="Unit Delay" portNumber="1" signalName="zz1">
+        <bus>
+          <signal signalName="e">
+            <bus>
+              <signal signalName="a">
+                <array size="1" startIndex="1">
+                  <array size="6" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <array size="3" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="f">
+            <bus>
+              <signal signalName="c">
+                <array size="6" startIndex="1">
+                  <double/>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <array size="6" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B4/Unit Delay" path="top_A/sub_B4/Unit Delay" name="Unit Delay" portNumber="1" signalName="zz2">
+        <bus>
+          <signal signalName="f">
+            <bus>
+              <signal signalName="c">
+                <array size="6" startIndex="1">
+                  <double/>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <array size="6" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="xx">
+            <array size="1" startIndex="1">
+              <array size="3" startIndex="1">
+                <double/>
+              </array>
+            </array>
+          </signal>
+        </bus>
+      </display>
+      <subsystem refSubsysID="ss2"/>
+      <subsystem refSubsysID="ss4"/>
+    </subsystem>
+    <subsystem subsysID="ss2" physicalPath="matrix_model_sl/top_A/sub_B1" path="top_A/sub_B1" sampleTime="0.1" name="sub_B1" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="matrix_model_sl/top_A/sub_B1/In1" path="top_A/sub_B1/In1" signalName="c">
+        <array size="6" startIndex="1">
+          <double/>
+        </array>
+      </inport>
+      <inport portNumber="2" name="In2" physicalPath="matrix_model_sl/top_A/sub_B1/In2" path="top_A/sub_B1/In2" signalName="d">
+        <array size="6" startIndex="1">
+          <array size="1" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="3" name="In3" physicalPath="matrix_model_sl/top_A/sub_B1/In3" path="top_A/sub_B1/In3" signalName="a">
+        <array size="1" startIndex="1">
+          <array size="6" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <inport portNumber="4" name="In4" physicalPath="matrix_model_sl/top_A/sub_B1/In4" path="top_A/sub_B1/In4" signalName="b">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </inport>
+      <parameter name="A" path="top_A/sub_B1/Gain" physicalPath="matrix_model_sl/top_A/sub_B1/Gain" origin="explicit_param" workspace="A">
+        <nonUniformArray size="6">
+          <signal index="1" initValue="1.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="4.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="2.0">
+            <double/>
+          </signal>
+          <signal index="4" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="5" initValue="3.0">
+            <double/>
+          </signal>
+          <signal index="6" initValue="6.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B1/Gain" physicalPath="matrix_model_sl/top_A/sub_B1/Gain" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="B" path="top_A/sub_B1/Gain1" physicalPath="matrix_model_sl/top_A/sub_B1/Gain1" origin="explicit_param" workspace="B">
+        <nonUniformArray size="6">
+          <signal index="1" initValue="1.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="4.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="2.0">
+            <double/>
+          </signal>
+          <signal index="4" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="5" initValue="3.0">
+            <double/>
+          </signal>
+          <signal index="6" initValue="6.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B1/Gain1" physicalPath="matrix_model_sl/top_A/sub_B1/Gain1" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="C" path="top_A/sub_B1/Gain2" physicalPath="matrix_model_sl/top_A/sub_B1/Gain2" origin="explicit_param" workspace="C">
+        <nonUniformArray size="6">
+          <signal index="1" initValue="1.0">
+            <double/>
+          </signal>
+          <signal index="2" initValue="4.0">
+            <double/>
+          </signal>
+          <signal index="3" initValue="2.0">
+            <double/>
+          </signal>
+          <signal index="4" initValue="5.0">
+            <double/>
+          </signal>
+          <signal index="5" initValue="3.0">
+            <double/>
+          </signal>
+          <signal index="6" initValue="6.0">
+            <double/>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B1/Gain2" physicalPath="matrix_model_sl/top_A/sub_B1/Gain2" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <parameter name="D" path="top_A/sub_B1/Gain3" physicalPath="matrix_model_sl/top_A/sub_B1/Gain3" origin="explicit_param" workspace="D">
+        <nonUniformArray size="3">
+          <signal index="1">
+            <nonUniformArray size="2">
+              <signal index="1" initValue="1.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="5.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="2">
+            <nonUniformArray size="2">
+              <signal index="1" initValue="4.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="3.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+          <signal index="3">
+            <nonUniformArray size="2">
+              <signal index="1" initValue="2.0">
+                <double/>
+              </signal>
+              <signal index="2" initValue="6.0">
+                <double/>
+              </signal>
+            </nonUniformArray>
+          </signal>
+        </nonUniformArray>
+        <usageContext path="top_A/sub_B1/Gain3" physicalPath="matrix_model_sl/top_A/sub_B1/Gain3" simulinkBlockType="Gain" blockAttribute="Gain"/>
+      </parameter>
+      <outport portNumber="1" name="Out1" physicalPath="matrix_model_sl/top_A/sub_B1/Out1" path="top_A/sub_B1/Out1">
+        <array size="6" startIndex="1">
+          <double/>
+        </array>
+      </outport>
+      <outport portNumber="2" name="Out2" physicalPath="matrix_model_sl/top_A/sub_B1/Out2" path="top_A/sub_B1/Out2">
+        <array size="6" startIndex="1">
+          <array size="1" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="3" name="Out3" physicalPath="matrix_model_sl/top_A/sub_B1/Out3" path="top_A/sub_B1/Out3">
+        <array size="1" startIndex="1">
+          <array size="6" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </outport>
+      <outport portNumber="4" name="Out4" physicalPath="matrix_model_sl/top_A/sub_B1/Out4" path="top_A/sub_B1/Out4">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </outport>
+      <display physicalPath="matrix_model_sl/top_A/sub_B1/Gain" path="top_A/sub_B1/Gain" name="Gain" portNumber="1">
+        <array size="6" startIndex="1">
+          <double/>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B1/Gain1" path="top_A/sub_B1/Gain1" name="Gain1" portNumber="1">
+        <array size="6" startIndex="1">
+          <array size="1" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B1/Gain2" path="top_A/sub_B1/Gain2" name="Gain2" portNumber="1">
+        <array size="1" startIndex="1">
+          <array size="6" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+      <display physicalPath="matrix_model_sl/top_A/sub_B1/Gain3" path="top_A/sub_B1/Gain3" name="Gain3" portNumber="1">
+        <array size="3" startIndex="1">
+          <array size="2" startIndex="1">
+            <double/>
+          </array>
+        </array>
+      </display>
+    </subsystem>
+    <subsystem subsysID="ss4" physicalPath="matrix_model_sl/top_A/sub_B3" path="top_A/sub_B3" sampleTime="0.1" name="sub_B3" scopeKind="SUT" kind="subsystem">
+      <inport portNumber="1" name="In1" physicalPath="matrix_model_sl/top_A/sub_B3/In1" path="top_A/sub_B3/In1" signalName="z1">
+        <bus>
+          <signal signalName="e">
+            <bus>
+              <signal signalName="a">
+                <array size="1" startIndex="1">
+                  <array size="6" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <array size="3" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="f">
+            <bus>
+              <signal signalName="c">
+                <array size="6" startIndex="1">
+                  <double/>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <array size="6" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </inport>
+      <outport portNumber="1" name="Out1" physicalPath="matrix_model_sl/top_A/sub_B3/Out1" path="top_A/sub_B3/Out1" signalName="zz1">
+        <bus>
+          <signal signalName="e">
+            <bus>
+              <signal signalName="a">
+                <array size="1" startIndex="1">
+                  <array size="6" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <array size="3" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="f">
+            <bus>
+              <signal signalName="c">
+                <array size="6" startIndex="1">
+                  <double/>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <array size="6" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </outport>
+      <display physicalPath="matrix_model_sl/top_A/sub_B3/Unit Delay" path="top_A/sub_B3/Unit Delay" name="Unit Delay" portNumber="1" signalName="zz1">
+        <bus>
+          <signal signalName="e">
+            <bus>
+              <signal signalName="a">
+                <array size="1" startIndex="1">
+                  <array size="6" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+              <signal signalName="b">
+                <array size="3" startIndex="1">
+                  <array size="2" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+          <signal signalName="f">
+            <bus>
+              <signal signalName="c">
+                <array size="6" startIndex="1">
+                  <double/>
+                </array>
+              </signal>
+              <signal signalName="d">
+                <array size="6" startIndex="1">
+                  <array size="1" startIndex="1">
+                    <double/>
+                  </array>
+                </array>
+              </signal>
+            </bus>
+          </signal>
+        </bus>
+      </display>
+    </subsystem>
+    <rootSystem refSubsysID="ss1"/>
+  </model>
+  <root refModelID="model001"/>
+</sl:SimulinkArchitecture>

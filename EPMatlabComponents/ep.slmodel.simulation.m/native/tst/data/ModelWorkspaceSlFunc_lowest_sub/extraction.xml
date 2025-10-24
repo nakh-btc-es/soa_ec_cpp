@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtractionModel type="SimulinkArchitecture" ref="26o">
+	<Types />
+	<Scope uid="26o" name="lowest_sub" path="main/sub_M/sub_B/Model/sub_K/sub_M2/lowest_sub" sampleTime="1" scopeKind="SUT" type="SimulinkScope" kind="SUBSYSTEM" physicalPath="sub_sub_sub_model/lowest_sub">
+		<InPort name="In1" portNumber="1" compositeSig="none" type="int8">
+			<Variable varid="varif_428" signalType="int8" tlTypeName="int8" type="int8">
+				<ifName ifid="if_428" initValue="0" lsb="1.0" offset="0.0" displayName="In1" identifier="INPUT:In1" />
+			</Variable>
+		</InPort>
+		<OutPort name="Out1" portNumber="1" compositeSig="none" type="int8">
+			<Variable varid="varif_430" signalType="int8" tlTypeName="int8" type="int8">
+				<ifName ifid="if_430" initValue="0" lsb="1.0" offset="0.0" displayName="Out1" identifier="OUTPUT:Out1" />
+			</Variable>
+		</OutPort>
+		<Model name="sub_sub_sub_model" modelPath="/E:/ModelsDev/SL/ModelWorkspaceSlFunc/ml2017b/sub_sub_sub_model.slx" type="SimulinkModel" />
+		<SLFunctionCaller pathCaller="sub_sub_sub_model/lowest_sub/myFunc_caller" pathFunction="sub_sub_model/myFunc_definition" />
+	</Scope>
+</ExtractionModel>
