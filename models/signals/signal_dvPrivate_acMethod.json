@@ -1,0 +1,907 @@
+{
+  "a": {
+    "casAllItfTypes": [
+      "Inports",
+      "Outports",
+      "Parameters",
+      "GlobalDataStores",
+      "SharedLocalDataStores",
+      "ExternalParameterObjects",
+      "ModelParameters",
+      "InternalData"
+    ]
+  },
+  "b": {
+    "casFuncItfTypes": [
+      "Allocation",
+      "Initialize",
+      "Output",
+      "Update",
+      "Terminate"
+    ]
+  },
+  "Services": [],
+  "d": {
+    "casActualDataItfTypes": [
+      "Inports",
+      "Outports",
+      "Parameters",
+      "ExternalParameterObjects",
+      "InternalData"
+    ]
+  },
+  "Inports": {
+    "Inports": [
+      {
+        "Type": {
+          "Type": [
+            {
+              "WordLength": 32,
+              "Signed": true,
+              "Identifier": "float",
+              "Name": "single",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:146",
+        "GraphicalName": "InScalar_dvPrivate_amMethod",
+        "VariantInfo": [],
+        "Timing": {
+          "Timing": [
+            {
+              "SamplePeriod": 0.2,
+              "SampleOffset": 0
+            }
+          ]
+        },
+        "Unit": "",
+        "Range": []
+      },
+      {
+        "Type": {
+          "Type": [
+            {
+              "BaseType": {
+                "BaseType": [
+                  {
+                    "WordLength": 32,
+                    "Signed": true,
+                    "Identifier": "float",
+                    "Name": "single",
+                    "ReadOnly": false,
+                    "Volatile": false
+                  }
+                ]
+              },
+              "Dimensions": 2,
+              "Identifier": "",
+              "Name": "matrix2xsingle",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:152",
+        "GraphicalName": "InArray_dvPrivate_amMethod",
+        "VariantInfo": [],
+        "Timing": {
+          "Timing": [
+            {
+              "SamplePeriod": 0.2,
+              "SampleOffset": 0
+            }
+          ]
+        },
+        "Unit": "",
+        "Range": []
+      },
+      {
+        "Type": {
+          "Type": [
+            {
+              "Elements": {
+                "Elements": [
+                  {
+                    "Identifier": "FlptSig1",
+                    "Type": {
+                      "Type": [
+                        {
+                          "WordLength": 32,
+                          "Signed": true,
+                          "Identifier": "float",
+                          "Name": "single",
+                          "ReadOnly": false,
+                          "Volatile": false
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "Identifier": "FlptSig2",
+                    "Type": {
+                      "Type": [
+                        {
+                          "WordLength": 32,
+                          "Signed": true,
+                          "Identifier": "float",
+                          "Name": "single",
+                          "ReadOnly": false,
+                          "Volatile": false
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "Checksum": [],
+              "Identifier": "myBus",
+              "Name": "myBus",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:155",
+        "GraphicalName": "InBus_dvPrivate_amMethod",
+        "VariantInfo": [],
+        "Timing": {
+          "Timing": [
+            {
+              "SamplePeriod": 0.2,
+              "SampleOffset": 0
+            }
+          ]
+        },
+        "Unit": "",
+        "Range": []
+      },
+      {
+        "Type": {
+          "Type": [
+            {
+              "Bias": 0,
+              "SlopeAdjustmentFactor": 1,
+              "FixedExponent": -5,
+              "Scaling": "BinaryPoint",
+              "Slope": 0.03125,
+              "FractionLength": 5,
+              "DataTypeMode": "Fixed-point: binary point scaling",
+              "WordLength": 16,
+              "Signed": true,
+              "Identifier": "int16_t",
+              "Name": "sfix16_En5",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:164",
+        "GraphicalName": "In Bus Element",
+        "VariantInfo": [],
+        "Timing": {
+          "Timing": [
+            {
+              "SamplePeriod": 0.2,
+              "SampleOffset": 0
+            }
+          ]
+        },
+        "Unit": "",
+        "Range": {
+          "Range": [
+            {
+              "Min": "",
+              "Max": "10"
+            }
+          ]
+        }
+      },
+      {
+        "Type": {
+          "Type": [
+            {
+              "Bias": 0,
+              "SlopeAdjustmentFactor": 1,
+              "FixedExponent": -5,
+              "Scaling": "BinaryPoint",
+              "Slope": 0.03125,
+              "FractionLength": 5,
+              "DataTypeMode": "Fixed-point: binary point scaling",
+              "WordLength": 16,
+              "Signed": true,
+              "Identifier": "int16_t",
+              "Name": "sfix16_En5",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:164",
+        "GraphicalName": "In Bus Element",
+        "VariantInfo": [],
+        "Timing": {
+          "Timing": [
+            {
+              "SamplePeriod": 0.2,
+              "SampleOffset": 0
+            }
+          ]
+        },
+        "Unit": "",
+        "Range": {
+          "Range": [
+            {
+              "Min": "-10",
+              "Max": "15"
+            }
+          ]
+        }
+      },
+      {
+        "Type": {
+          "Type": [
+            {
+              "Bias": 0,
+              "SlopeAdjustmentFactor": 1,
+              "FixedExponent": -5,
+              "Scaling": "BinaryPoint",
+              "Slope": 0.03125,
+              "FractionLength": 5,
+              "DataTypeMode": "Fixed-point: binary point scaling",
+              "WordLength": 16,
+              "Signed": true,
+              "Identifier": "int16_t",
+              "Name": "sfix16_En5",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:170",
+        "GraphicalName": "In Bus Element1",
+        "VariantInfo": [],
+        "Timing": {
+          "Timing": [
+            {
+              "SamplePeriod": 0.2,
+              "SampleOffset": 0
+            }
+          ]
+        },
+        "Unit": "",
+        "Range": {
+          "Range": [
+            {
+              "Min": "",
+              "Max": "10"
+            }
+          ]
+        }
+      },
+      {
+        "Type": {
+          "Type": [
+            {
+              "Bias": 0,
+              "SlopeAdjustmentFactor": 1,
+              "FixedExponent": -5,
+              "Scaling": "BinaryPoint",
+              "Slope": 0.03125,
+              "FractionLength": 5,
+              "DataTypeMode": "Fixed-point: binary point scaling",
+              "WordLength": 16,
+              "Signed": true,
+              "Identifier": "int16_t",
+              "Name": "sfix16_En5",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:170",
+        "GraphicalName": "In Bus Element1",
+        "VariantInfo": [],
+        "Timing": {
+          "Timing": [
+            {
+              "SamplePeriod": 0.2,
+              "SampleOffset": 0
+            }
+          ]
+        },
+        "Unit": "",
+        "Range": {
+          "Range": [
+            {
+              "Min": "-10",
+              "Max": "15"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Outports": {
+    "Outports": [
+      {
+        "Type": {
+          "Type": [
+            {
+              "WordLength": 32,
+              "Signed": true,
+              "Identifier": "float",
+              "Name": "single",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:147",
+        "GraphicalName": "OutScalar_dvPrivate_amMethod",
+        "VariantInfo": [],
+        "Timing": {
+          "Timing": [
+            {
+              "SamplePeriod": 0.2,
+              "SampleOffset": 0
+            }
+          ]
+        },
+        "Unit": "",
+        "Range": []
+      },
+      {
+        "Type": {
+          "Type": [
+            {
+              "BaseType": {
+                "BaseType": [
+                  {
+                    "WordLength": 32,
+                    "Signed": true,
+                    "Identifier": "float",
+                    "Name": "single",
+                    "ReadOnly": false,
+                    "Volatile": false
+                  }
+                ]
+              },
+              "Dimensions": 2,
+              "Identifier": "",
+              "Name": "matrix2xsingle",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:154",
+        "GraphicalName": "OutArray_dvPrivate_amMethod",
+        "VariantInfo": [],
+        "Timing": {
+          "Timing": [
+            {
+              "SamplePeriod": 0.2,
+              "SampleOffset": 0
+            }
+          ]
+        },
+        "Unit": "",
+        "Range": []
+      },
+      {
+        "Type": {
+          "Type": [
+            {
+              "Elements": {
+                "Elements": [
+                  {
+                    "Identifier": "FlptSig1",
+                    "Type": {
+                      "Type": [
+                        {
+                          "WordLength": 32,
+                          "Signed": true,
+                          "Identifier": "float",
+                          "Name": "single",
+                          "ReadOnly": false,
+                          "Volatile": false
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "Identifier": "FlptSig2",
+                    "Type": {
+                      "Type": [
+                        {
+                          "WordLength": 32,
+                          "Signed": true,
+                          "Identifier": "float",
+                          "Name": "single",
+                          "ReadOnly": false,
+                          "Volatile": false
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "Checksum": [],
+              "Identifier": "myBus",
+              "Name": "myBus",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:157",
+        "GraphicalName": "OutBus_dvPrivate_amMethod",
+        "VariantInfo": [],
+        "Timing": {
+          "Timing": [
+            {
+              "SamplePeriod": 0.2,
+              "SampleOffset": 0
+            }
+          ]
+        },
+        "Unit": "",
+        "Range": []
+      },
+      {
+        "Type": {
+          "Type": [
+            {
+              "Bias": 0,
+              "SlopeAdjustmentFactor": 1,
+              "FixedExponent": -5,
+              "Scaling": "BinaryPoint",
+              "Slope": 0.03125,
+              "FractionLength": 5,
+              "DataTypeMode": "Fixed-point: binary point scaling",
+              "WordLength": 16,
+              "Signed": true,
+              "Identifier": "int16_t",
+              "Name": "sfix16_En5",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:166",
+        "GraphicalName": "Bus Element Out",
+        "VariantInfo": [],
+        "Timing": {
+          "Timing": [
+            {
+              "SamplePeriod": 0.2,
+              "SampleOffset": 0
+            }
+          ]
+        },
+        "Unit": "",
+        "Range": {
+          "Range": [
+            {
+              "Min": "",
+              "Max": "10"
+            }
+          ]
+        }
+      },
+      {
+        "Type": {
+          "Type": [
+            {
+              "Bias": 0,
+              "SlopeAdjustmentFactor": 1,
+              "FixedExponent": -5,
+              "Scaling": "BinaryPoint",
+              "Slope": 0.03125,
+              "FractionLength": 5,
+              "DataTypeMode": "Fixed-point: binary point scaling",
+              "WordLength": 16,
+              "Signed": true,
+              "Identifier": "int16_t",
+              "Name": "sfix16_En5",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:166",
+        "GraphicalName": "Bus Element Out",
+        "VariantInfo": [],
+        "Timing": {
+          "Timing": [
+            {
+              "SamplePeriod": 0,
+              "SampleOffset": 0
+            }
+          ]
+        },
+        "Unit": "",
+        "Range": {
+          "Range": [
+            {
+              "Min": "-10",
+              "Max": "15"
+            }
+          ]
+        }
+      },
+      {
+        "Type": {
+          "Type": [
+            {
+              "Bias": 0,
+              "SlopeAdjustmentFactor": 1,
+              "FixedExponent": -5,
+              "Scaling": "BinaryPoint",
+              "Slope": 0.03125,
+              "FractionLength": 5,
+              "DataTypeMode": "Fixed-point: binary point scaling",
+              "WordLength": 16,
+              "Signed": true,
+              "Identifier": "int16_t",
+              "Name": "sfix16_En5",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:172",
+        "GraphicalName": "Bus Element Out1",
+        "VariantInfo": [],
+        "Timing": {
+          "Timing": [
+            {
+              "SamplePeriod": 0,
+              "SampleOffset": 0
+            }
+          ]
+        },
+        "Unit": "",
+        "Range": {
+          "Range": [
+            {
+              "Min": "",
+              "Max": "10"
+            }
+          ]
+        }
+      },
+      {
+        "Type": {
+          "Type": [
+            {
+              "Bias": 0,
+              "SlopeAdjustmentFactor": 1,
+              "FixedExponent": -5,
+              "Scaling": "BinaryPoint",
+              "Slope": 0.03125,
+              "FractionLength": 5,
+              "DataTypeMode": "Fixed-point: binary point scaling",
+              "WordLength": 16,
+              "Signed": true,
+              "Identifier": "int16_t",
+              "Name": "sfix16_En5",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:172",
+        "GraphicalName": "Bus Element Out1",
+        "VariantInfo": [],
+        "Timing": {
+          "Timing": [
+            {
+              "SamplePeriod": 0.2,
+              "SampleOffset": 0
+            }
+          ]
+        },
+        "Unit": "",
+        "Range": {
+          "Range": [
+            {
+              "Min": "-10",
+              "Max": "15"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Parameters": {
+    "Parameters": [
+      {
+        "Type": {
+          "Type": [
+            {
+              "BaseType": {
+                "BaseType": [
+                  {
+                    "WordLength": 32,
+                    "Signed": true,
+                    "Identifier": "float",
+                    "Name": "single",
+                    "ReadOnly": false,
+                    "Volatile": false
+                  }
+                ]
+              },
+              "Dimensions": [
+                1,
+                2
+              ],
+              "Identifier": "",
+              "Name": "matrix1x2xsingle",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "",
+        "GraphicalName": "ParamArray",
+        "VariantInfo": [],
+        "Timing": [],
+        "Unit": "",
+        "Range": []
+      },
+      {
+        "Type": {
+          "Type": [
+            {
+              "BaseType": {
+                "BaseType": [
+                  {
+                    "WordLength": 32,
+                    "Signed": true,
+                    "Identifier": "float",
+                    "Name": "single",
+                    "ReadOnly": false,
+                    "Volatile": false
+                  }
+                ]
+              },
+              "Dimensions": [
+                1,
+                1
+              ],
+              "Identifier": "",
+              "Name": "matrix1x1xsingle",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "",
+        "GraphicalName": "ParamScalar",
+        "VariantInfo": [],
+        "Timing": [],
+        "Unit": "",
+        "Range": []
+      },
+      {
+        "Type": {
+          "Type": [
+            {
+              "BaseType": {
+                "BaseType": [
+                  {
+                    "WordLength": 32,
+                    "Signed": true,
+                    "Identifier": "float",
+                    "Name": "single",
+                    "ReadOnly": false,
+                    "Volatile": false
+                  }
+                ]
+              },
+              "Dimensions": [
+                1,
+                1
+              ],
+              "Identifier": "",
+              "Name": "matrix1x1xsingle",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:174",
+        "GraphicalName": "Dialog:InitialCondition",
+        "VariantInfo": [],
+        "Timing": [],
+        "Unit": "",
+        "Range": []
+      },
+      {
+        "Type": {
+          "Type": [
+            {
+              "BaseType": {
+                "BaseType": [
+                  {
+                    "WordLength": 32,
+                    "Signed": true,
+                    "Identifier": "float",
+                    "Name": "single",
+                    "ReadOnly": false,
+                    "Volatile": false
+                  }
+                ]
+              },
+              "Dimensions": [
+                1,
+                1
+              ],
+              "Identifier": "",
+              "Name": "matrix1x1xsingle",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:176",
+        "GraphicalName": "Dialog:InitialCondition",
+        "VariantInfo": [],
+        "Timing": [],
+        "Unit": "",
+        "Range": []
+      }
+    ]
+  },
+  "GlobalDataStores": [],
+  "SharedLocalDataStores": [],
+  "ExternalParameterObjects": {
+    "ExternalParameterObjects": [
+      {
+        "Type": {
+          "Type": [
+            {
+              "BaseType": {
+                "BaseType": [
+                  {
+                    "WordLength": 32,
+                    "Signed": true,
+                    "Identifier": "float",
+                    "Name": "single",
+                    "ReadOnly": false,
+                    "Volatile": false
+                  }
+                ]
+              },
+              "Dimensions": [
+                1,
+                1
+              ],
+              "Identifier": "",
+              "Name": "matrix1x1xsingle",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "",
+        "GraphicalName": "ParamScalar",
+        "VariantInfo": [],
+        "Timing": [],
+        "Unit": "",
+        "Range": []
+      },
+      {
+        "Type": {
+          "Type": [
+            {
+              "BaseType": {
+                "BaseType": [
+                  {
+                    "WordLength": 32,
+                    "Signed": true,
+                    "Identifier": "float",
+                    "Name": "single",
+                    "ReadOnly": false,
+                    "Volatile": false
+                  }
+                ]
+              },
+              "Dimensions": [
+                1,
+                2
+              ],
+              "Identifier": "",
+              "Name": "matrix1x2xsingle",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "",
+        "GraphicalName": "ParamArray",
+        "VariantInfo": [],
+        "Timing": [],
+        "Unit": "",
+        "Range": []
+      }
+    ]
+  },
+  "ModelParameters": [],
+  "InternalData": {
+    "InternalData": [
+      {
+        "DataReads": [],
+        "DataWrites": [],
+        "Type": {
+          "Type": [
+            {
+              "BaseType": {
+                "BaseType": [
+                  {
+                    "WordLength": 32,
+                    "Signed": true,
+                    "Identifier": "float",
+                    "Name": "single",
+                    "ReadOnly": false,
+                    "Volatile": false
+                  }
+                ]
+              },
+              "Dimensions": 2,
+              "Identifier": "",
+              "Name": "matrix2xsingle",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:174",
+        "GraphicalName": "LocArray_dvPrivate_amMethod",
+        "VariantInfo": [],
+        "Timing": {
+          "Timing": [
+            {
+              "SamplePeriod": 0.2,
+              "SampleOffset": 0
+            }
+          ]
+        },
+        "Unit": "",
+        "Range": []
+      },
+      {
+        "DataReads": [],
+        "DataWrites": [],
+        "Type": {
+          "Type": [
+            {
+              "WordLength": 32,
+              "Signed": true,
+              "Identifier": "float",
+              "Name": "single",
+              "ReadOnly": false,
+              "Volatile": false
+            }
+          ]
+        },
+        "SID": "signal_dvPrivate_acMethod:176",
+        "GraphicalName": "LocScalar_dvPrivate_amMethod",
+        "VariantInfo": [],
+        "Timing": {
+          "Timing": [
+            {
+              "SamplePeriod": 0.2,
+              "SampleOffset": 0
+            }
+          ]
+        },
+        "Unit": "",
+        "Range": []
+      }
+    ]
+  }
+}

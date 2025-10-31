@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeModel>
+	<Files>
+		<File id="ID68" name="messageModel.cpp" path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\messageModel_ert_rtw" relPath=".\messageModel_ert_rtw" annotate="yes" kind="source" />
+		<File id="ID71" name="messageModel_data.cpp" path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\messageModel_ert_rtw" relPath=".\messageModel_ert_rtw" annotate="yes" kind="source" />
+		<File id="ID73" name="messageModel_adapter.cpp" path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\ep_code_adapter" relPath=".\ep_code_adapter" annotate="yes" kind="source" />
+	</Files>
+	<IncludePaths>
+		<IncludePath path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\messageModel_ert_rtw" relPath=".\messageModel_ert_rtw" />
+		<IncludePath path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\slprj" relPath=".\slprj" />
+		<IncludePath path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\slprj\_jitprj" relPath=".\slprj\_jitprj" />
+		<IncludePath path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\slprj\ert" relPath=".\slprj\ert" />
+		<IncludePath path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\slprj\ert\messageModel" relPath=".\slprj\ert\messageModel" />
+		<IncludePath path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\slprj\ert\messageModel\tmwinternal" relPath=".\slprj\ert\messageModel\tmwinternal" />
+		<IncludePath path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\slprj\ert\_sharedutils" relPath=".\slprj\ert\_sharedutils" />
+		<IncludePath path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\slprj\_sfprj" relPath=".\slprj\_sfprj" />
+		<IncludePath path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\slprj\_sfprj\precompile" relPath=".\slprj\_sfprj\precompile" />
+		<IncludePath path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\slprj\_sfprj\EMLReport" relPath=".\slprj\_sfprj\EMLReport" />
+		<IncludePath path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\slprj\_sfprj\EMLReport\s5zvHyH5qlu5fkIpluJPn2E" relPath=".\slprj\_sfprj\EMLReport\s5zvHyH5qlu5fkIpluJPn2E" />
+		<IncludePath path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\slprj\sim" relPath=".\slprj\sim" />
+		<IncludePath path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\slprj\sim\varcache" relPath=".\slprj\sim\varcache" />
+		<IncludePath path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\slprj\sim\varcache\messageModel" relPath=".\slprj\sim\varcache\messageModel" />
+		<IncludePath path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\slprj\sim\varcache\messageModel\tmwinternal" relPath=".\slprj\sim\varcache\messageModel\tmwinternal" />
+		<IncludePath path="Y:\Documents\GitHub\soa_ec_cpp\models\messages\messageModel_ert_rtw\tmwinternal" relPath=".\messageModel_ert_rtw\tmwinternal" />
+	</IncludePaths>
+	<Functions>
+		<Function name="main_step" fileref="ID73" sampleTime="1.0">
+			<InitPhase stimulate="no">
+				<Function name="main_initialize" fileref="ID73" />
+			</InitPhase>
+			<Interface>
+				<InterfaceObj kind="in" var="g_InScalar" fileref="ID73" />
+				<InterfaceObj kind="in" var="g_InArray" fileref="ID73" />
+				<InterfaceObj kind="in" var="g_InBusMsg" access=".FlptSig1" />
+				<InterfaceObj kind="in" var="g_InBusMsg" access=".FlptSig2" />
+				<InterfaceObj kind="in" var="g_InBusElmMyBus" access=".FlptSig1" />
+				<InterfaceObj kind="in" var="g_InBusElmMyBus" access=".FlptSig2" />
+				<InterfaceObj kind="in" var="g_InBusElmSig1_FxptSig" fileref="ID73" scaling="scID231" />
+				<InterfaceObj kind="in" var="g_InBusElmSig2_FxptSig" fileref="ID73" scaling="scID231" />
+				<InterfaceObj kind="out" var="g_OutScalar" fileref="ID73" />
+				<InterfaceObj kind="out" var="g_OutArray" fileref="ID73" />
+				<InterfaceObj kind="out" var="g_OutBusMsg" access=".FlptSig1" />
+				<InterfaceObj kind="out" var="g_OutBusMsg" access=".FlptSig2" />
+				<InterfaceObj kind="out" var="g_OutBusElmMyBus" access=".FlptSig1" />
+				<InterfaceObj kind="out" var="g_OutBusElmMyBus" access=".FlptSig2" />
+				<InterfaceObj kind="out" var="g_OutBusElmSig1_FxptSig" fileref="ID73" scaling="scID231" />
+				<InterfaceObj kind="out" var="g_OutBusElmSig2_FxptSig" fileref="ID73" scaling="scID231" />
+			</Interface>
+		</Function>
+	</Functions>
+	<Scalings>
+		<Scaling id="scID231" lsb="1.0" offset="0.0" />
+	</Scalings>
+</CodeModel>

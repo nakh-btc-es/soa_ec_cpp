@@ -39,6 +39,10 @@ if oKind.isClassicAUTOSAR()
 elseif oKind.isAdaptiveAUTOSAR()
     stResult = ep_ec_adaptive_autosar_wrapper_create(stCreationArgs);
 
+elseif strcmp(get_param(stCreationArgs.ModelName, 'SystemTargetFile'),'ert.tlc') && ...
+    strcmp(get_param(stCreationArgs.ModelName, 'TargetLang'),'C++') && ...
+    strcmp(get_param(stCreationArgs.ModelName, 'CodeInterfacePackaging'),'C++ class')
+    stResult = ep_ec_adaptive_autosar_wrapper_create(stCreationArgs);
 else
     stResult = i_createFailureResult( ...
         sprintf('Model "%s" is not a valid AUTOSAR model. Cannot create wrapper.', stCreationArgs.ModelName));
